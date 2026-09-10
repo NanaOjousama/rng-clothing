@@ -178,7 +178,7 @@ def write_index(wiki: dict, smapi: dict | None) -> None:
         "",
         "| Layer | What it answers |",
         "|---|---|",
-        "| `assembly_index.json` | classes/members of the **installed 1.6.15 assembly** — `IClickableMenu`, controller snapping, tailoring internals. Outranks the wiki. Built by `tools/AssemblyIndex`; gitignored. |",
+        "| `assembly/stardew_index.json` | classes/members of the **installed 1.6.15 assembly** (1093 types) — `IClickableMenu` controller snapping, `TailoringMenu` members. Outranks the wiki. Built by `tools/AssemblyIndex`; gitignored, because it derives from game files. |",
         "| `smapi/docs/`, `smapi/src/` | SMAPI's own documentation and API surface |",
         "| `wiki/` | official Modding: pages, as wikitext |",
         "",
@@ -186,7 +186,8 @@ def write_index(wiki: dict, smapi: dict | None) -> None:
         "",
         "```",
         "rg -i 'IClickableMenu' references/stardew-official/",
-        "jq '.types[]|select(.name|test(\"Tailor\"))' references/stardew-official/assembly_index.json",
+        "jq '.types[]|select(.name|test(\"Tailor\"))' \\",
+        "   references/stardew-official/assembly/stardew_index.json",
         "```",
         "",
         "## Wiki pages mirrored",
@@ -211,16 +212,33 @@ def write_index(wiki: dict, smapi: dict | None) -> None:
 
 
 def main(argv: list[str]) -> int:
+    # Parse properly.  A bare `in argv` check meant `--help` fell through and
+    # performed a full network re-mirror, which overwrote a hand-corrected
+    # INDEX.md.  Anything that touches the network must be asked for explicitly.
+    import argparse
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--wiki", action="store_true", help="wiki pages only, skip the SMAPI clone")
+    ap.add_argument("--smapi", action="store_true", help="SMAPI clone only, skip the wiki")
+    args = ap.parse_args(argv)
+
     OUT.mkdir(parents=True, exist_ok=True)
-    print("wiki:")
-    wiki = mirror_wiki()
+    wiki = {"pages": {}, "missing": []}
+    if not args.smapi:
+        print("wiki:")
+        wiki = mirror_wiki()
     smapi = None
-    if "--wiki" not in argv:
+    if not args.wiki:
         print("smapi:")
         try:
             smapi = mirror_smapi()
         except subprocess.CalledProcessError as exc:
             print(f"  clone failed: {exc}", file=sys.stderr)
+    if args.smapi:
+        # keep the existing page list rather than blanking it out of the index
+        prev = OUT / "meta" / "mirror.json"
+        if prev.exists():
+            wiki = json.loads(prev.read_text()).get("wiki", wiki)
     write_index(wiki, smapi)
     print(f"\n{len(wiki['pages'])} wiki pages, "
           f"{smapi['files'] if smapi else 0} SMAPI files -> {OUT}")

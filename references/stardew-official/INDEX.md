@@ -11,7 +11,7 @@ plus SMAPI's docs and API-surface source. Not the whole wiki.
 
 | Layer | What it answers |
 |---|---|
-| `assembly/stardew_index.json` | classes/members of the **installed 1.6.15 assembly** — `IClickableMenu`, controller snapping, tailoring internals. Outranks the wiki. Built by `tools/AssemblyIndex`; gitignored. |
+| `assembly/stardew_index.json` | classes/members of the **installed 1.6.15 assembly** (1093 types) — `IClickableMenu` controller snapping, `TailoringMenu` members. Outranks the wiki. Built by `tools/AssemblyIndex`; gitignored, because it derives from game files. |
 | `smapi/docs/`, `smapi/src/` | SMAPI's own documentation and API surface |
 | `wiki/` | official Modding: pages, as wikitext |
 
@@ -19,7 +19,8 @@ plus SMAPI's docs and API-surface source. Not the whole wiki.
 
 ```
 rg -i 'IClickableMenu' references/stardew-official/
-jq '.types[]|select(.name|test("Tailor"))' references/stardew-official/assembly/stardew_index.json
+jq '.types[]|select(.name|test("Tailor"))' \
+   references/stardew-official/assembly/stardew_index.json
 ```
 
 ## Wiki pages mirrored
