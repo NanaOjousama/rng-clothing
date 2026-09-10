@@ -1,27 +1,27 @@
 {
-  "session": "20260909-191551",
-  "timestamp": "2026-09-09T19:29:05.1893814-04:00",
+  "session": "20260910-013201",
+  "timestamp": "2026-09-10T01:33:16.7000784-04:00",
   "world_ready": true,
   "farmer": {
     "name": "nana",
-    "facing_direction": 2,
-    "facing_name": "front",
-    "current_frame": 0,
-    "animation_frame_flip": false,
-    "animation_frame_index": 0,
+    "facing_direction": 3,
+    "facing_name": "left",
+    "current_frame": 6,
+    "animation_frame_flip": true,
+    "animation_frame_index": 6,
     "source_rect": {
       "X": 0,
-      "Y": 0,
+      "Y": 32,
       "Width": 16,
       "Height": 32
     },
     "world_position": {
-      "X": 1393.1217,
-      "Y": 450.8966
+      "X": 1452.8408,
+      "Y": 608.0
     },
     "tile": {
-      "X": 22,
-      "Y": 7
+      "X": 23,
+      "Y": 9
     },
     "location": "FarmHouse",
     "hairstyle": 38,
@@ -40,8 +40,8 @@
     "zoom_level": 0.8,
     "ui_scale": 0.75,
     "viewport": {
-      "X": 594,
-      "Y": 1,
+      "X": 653,
+      "Y": 158,
       "Width": 1600,
       "Height": 900
     },
@@ -51,17 +51,17 @@
     }
   },
   "hat": {
-    "fashion_sense_id": "RNGClothing.FashionSense.Cap2Fit/Hat/Cap2 Rare Pastel ring+clasp #905331759",
+    "fashion_sense_id": "RNGClothing.FashionSense.Cap2Rolls/Hat/Cap2 Sailor dot #786649691",
     "is_fashion_sense": true,
-    "vanilla_hat": "(H)RNGClothing.FashionSense.Cap2Fit/Hat/Cap2_Rare_Pastel_ring_clasp_905331759/Item",
-    "vanilla_hat_name": "Cap2 Rare Pastel ring+clasp #905331759",
-    "pack_id": "RNGClothing.FashionSense.Cap2Fit",
-    "appearance_name": "Cap2 Rare Pastel ring+clasp #905331759",
-    "texture_path": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/RNG-Cap2Fit/Hats/Cap02/hat.png",
-    "direction_model": "FrontHat",
+    "vanilla_hat": "(H)85",
+    "vanilla_hat_name": "Swashbuckler Hat",
+    "pack_id": "RNGClothing.FashionSense.Cap2Rolls",
+    "appearance_name": "Cap2 Sailor dot #786649691",
+    "texture_path": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/RNG-Cap2Rolls/Hats/Roll08s786649691/hat.png",
+    "direction_model": "LeftHat",
     "source_rectangle": {
       "X": 0,
-      "Y": 0,
+      "Y": 40,
       "Width": 20,
       "Height": 20
     },
@@ -75,7 +75,7 @@
       "Y": 0
     },
     "hide_hair": false,
-    "flipped": false,
+    "flipped": true,
     "disable_grayscale": true,
     "predicted_draw": {
       "feature_offset": {
@@ -88,7 +88,7 @@
         "Y": 0
       },
       "effective_scale": 4.0,
-      "flip_from_animation_frame": false,
+      "flip_from_animation_frame": true,
       "note": "HeadPosition is added to the sprite ORIGIN, so it moves the hat by -HeadPosition * scale on screen."
     }
   }

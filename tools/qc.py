@@ -395,10 +395,21 @@ def main(argv: list[str]) -> int:
     p.add_argument("args", nargs="*", help="key=value pairs")
 
     args = ap.parse_args(argv)
-    return {"ping": cmd_ping, "state": cmd_state, "packs": cmd_packs,
-            "refresh": cmd_refresh, "worn": cmd_worn, "compare": cmd_compare,
-            "menu-probe": cmd_menu_probe, "smapi-log": cmd_smapi_log,
-            "raw": cmd_raw}[args.cmd](args)
+    handler = {"ping": cmd_ping, "state": cmd_state, "packs": cmd_packs,
+               "refresh": cmd_refresh, "worn": cmd_worn, "compare": cmd_compare,
+               "menu-probe": cmd_menu_probe, "smapi-log": cmd_smapi_log,
+               "raw": cmd_raw}[args.cmd]
+    # A tripped guard is the expected outcome of a bad run, not a crash: print
+    # what it found and exit non-zero, so a caller (or a script) reads the
+    # diagnosis instead of a traceback.
+    try:
+        return handler(args)
+    except BridgeDown as exc:
+        print(f"\nQC GUARD / BRIDGE: {exc}", file=sys.stderr)
+        return 1
+    except RuntimeError as exc:
+        print(f"\nQC COMMAND FAILED: {exc}", file=sys.stderr)
+        return 1
 
 
 if __name__ == "__main__":
