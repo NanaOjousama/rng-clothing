@@ -29,6 +29,14 @@ direction is what the new source-authority rule formalises.
   farmer/view/hat state resolved, including FS id and texture path.
 - **Worn-fit measurement from real captures.** The worn / nohat / hatonly
   capture triple makes hat seating measurable; an isolated sprite cannot.
+- **All four authored bases captured live** (2026-09-10, session
+  `20260910-013851`): 20 appearances x 4 directions = **80 frames, every one
+  drawing real pixels**. All seated — centre +0.0, top +4, contact 5, 0 floating
+  columns. Closes the long-standing "no in-game capture of any authored output
+  yet". Evidence: `qc_bridge/captures/20260910-013851/`, `fit_metrics.json`.
+- **The QC bridge CLI is verified against a live game**, including both guards
+  tested for failure: a wrong `--expect` refuses, and a pack installed
+  mid-session is caught before any capture runs.
 - **Fashion Sense technical reference is complete and machine-readable**
   (`references/fashion-sense-official/`, gathered 2026-09-08 from the official
   `development` branch): 39 wiki pages, C# appearance models, 45 Example Pack
@@ -47,8 +55,6 @@ direction is what the new source-authority rule formalises.
 
 ## NOT YET PROVEN
 
-- **No in-game capture of any authored base output yet** (carried over from
-  headwear phase; still open).
 - Highlight share of authored bases is 1–4% against corpus families' 6–16%.
 - `wide_brim_hat` carries 93 cells against its family's 108.
 - True long coats / long outerwear: rejected from output, lower-body
@@ -127,11 +133,17 @@ Each cost real time. Do not re-enter them.
 
 ## NEXT TEST
 
-1. **Blocked on the game being launched:** `qc.py ping`, `packs`, `refresh`,
-   `worn`, `menu-probe` are written and import-clean but **unverified against a
-   live game** — the bridge was down all session. Verify these first.
-2. Then `qc.py worn` against an authored base — closing the oldest open item,
-   "no in-game capture of any authored output yet".
+1. **Decide on decal back-view coverage.** Live capture confirmed
+   `brim_edge` contributes **nothing to the back frame** on `wide_brim_hat` —
+   it declares `views: ['front','left']`, so the render matches the data and
+   this is an authoring gap, not a bug. **21 of 44 decals have no back view.**
+   For a wide brim, which is fully visible from behind, that may read as an
+   inconsistency in game. Your art call; capture evidence is in
+   `qc_bridge/captures/20260910-013851/Auth07WideFCMDecal/`.
+2. **Explain the seating difference between sessions.** Authored bases measure
+   top +4 / contact 5 / face 914-994px; the SourceCap set in the same scene
+   measured top +0 / contact 1 / face 742-790px. Same hairstyle and scene, so
+   the difference is real and unexplained. Not yet a defect — a question.
 3. Only then begin Generator V2 design.
 
 Unrelated, noted not fixed: the SMAPI log shows repeated vanilla
