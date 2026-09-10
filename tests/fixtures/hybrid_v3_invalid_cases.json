@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0.0",
+  "cases": [
+    {"id": "POLO_FULL_REAR_PLACKET", "base": {"family": "POLO_SHIRT", "intent": "POLO_CLASSIC", "fit": "UNISEX_REGULAR"}, "mutation": "polo_full_rear_placket", "expectedCodes": ["PARAMETER_OUT_OF_RANGE", "ILLEGAL_VISIBILITY_OVERRIDE", "POLO_PLACKET_NOT_SHORT", "POLO_REAR_OPENING_FORBIDDEN"]},
+    {"id": "SWEATER_VEST_WITH_SLEEVE", "base": {"family": "SWEATER_VEST", "intent": "VEST_ACADEMIC", "fit": "MASC_TAILORED"}, "mutation": "vest_add_sleeve", "expectedCodes": ["FORBIDDEN_COMPONENT_TYPE", "COMPONENT_OUTSIDE_ALLOWED_FAMILY", "SLEEVE_ARMHOLE_CONTRADICTION", "SWEATER_VEST_ARMHOLE_INVALID"]},
+    {"id": "CARDIGAN_WITH_BLAZER_LAPEL", "base": {"family": "CARDIGAN", "intent": "CARDIGAN_ACADEMIC", "fit": "UNISEX_REGULAR"}, "mutation": "cardigan_add_lapel", "expectedCodes": ["FORBIDDEN_COMPONENT_TYPE", "COMPONENT_OUTSIDE_ALLOWED_FAMILY", "CARDIGAN_HARD_LAPEL"]},
+    {"id": "BLAZER_WITHOUT_LAPEL", "base": {"family": "BLAZER", "intent": "BLAZER_CLEAN_TAILORED", "fit": "MASC_TAILORED"}, "mutation": "remove_lapel", "expectedCodes": ["MISSING_REQUIRED_TYPE", "MANDATORY_IDENTITY_LOSS", "BLAZER_LAPEL_MISSING"]},
+    {"id": "SAILOR_WITHOUT_REAR_PANEL", "base": {"family": "SAILOR_TOP", "intent": "SAILOR_DECK_CLASSIC", "fit": "UNISEX_REGULAR"}, "mutation": "remove_rear_panel", "expectedCodes": ["MISSING_REQUIRED_TYPE", "MANDATORY_IDENTITY_LOSS", "SAILOR_REAR_PANEL_MISSING"]},
+    {"id": "UNATTACHED_COLLAR", "base": {"family": "T_SHIRT", "intent": "TEE_CLEAN_ESSENTIAL", "fit": "UNISEX_REGULAR"}, "mutation": "unattach_collar", "expectedCodes": ["UNATTACHED_COMPONENT"]},
+    {"id": "WRAP_WITHOUT_CONTINUITY", "base": {"family": "CARDIGAN", "intent": "CARDIGAN_RELAXED_WEEKEND", "fit": "UNISEX_BOXY"}, "mutation": "remove_hem_continuity", "expectedCodes": ["MISSING_WRAP_CONTINUITY"]},
+    {"id": "COMPONENT_OUTSIDE_FAMILY", "base": {"family": "T_SHIRT", "intent": "TEE_CLEAN_ESSENTIAL", "fit": "UNISEX_REGULAR"}, "mutation": "add_sailor_rear_panel", "expectedCodes": ["FORBIDDEN_COMPONENT_TYPE", "COMPONENT_OUTSIDE_ALLOWED_FAMILY"]},
+    {"id": "COMPONENT_PARENT_CYCLE", "base": {"family": "POLO_SHIRT", "intent": "POLO_CLASSIC", "fit": "UNISEX_REGULAR"}, "mutation": "create_parent_cycle", "expectedCodes": ["COMPONENT_GRAPH_CYCLE"]}
+  ]
+}

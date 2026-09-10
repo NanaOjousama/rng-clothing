@@ -1,0 +1,21 @@
+{
+  "id": "T_SHIRT",
+  "description": "Compact everyday pullover whose identity comes from neckline, clean torso field, and at most one restrained surface cue.",
+  "validNecklines": ["round", "crew", "shallow_v"],
+  "validCollars": ["none"],
+  "validClosures": ["none"],
+  "validFits": ["fitted", "regular", "relaxed"],
+  "validDetails": ["none", "center_stripe", "chest_accent", "lower_trim"],
+  "validPatterns": ["none", "horizontal_stripe", "simple_border"],
+  "shoulderProfile": "compact_soft",
+  "frontStructure": "single connected fabric field with a centered neckline",
+  "backStructure": "quiet single field; preserve neckline edge but remove front-only accent",
+  "sideStructure": "compressed pullover with neckline and any wrapping stripe retained",
+  "allowedDetailLocations": ["center_front", "upper_chest", "lower_hem"],
+  "allowedSecondaryRegions": ["neck_edge", "single_stripe", "lower_trim"],
+  "validMotifLocations": ["front_upper_chest"],
+  "baseShadingZones": ["upper_shoulders", "outer_edges", "lower_hem"],
+  "maximumComplexity": "Common through Rare budgets; never more than one motif",
+  "incompatibleFeatures": ["folded_collar", "wide_collar", "sailor_collar", "center_opening", "button_closure", "inner_layer"],
+  "renderProfile": "pullover_lightweight"
+}

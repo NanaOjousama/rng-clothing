@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RNG Clothing coordinated hoodie layer recipe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "formatVersion",
+    "id",
+    "collection",
+    "itemName",
+    "itemDescription",
+    "rarity",
+    "hoodieSubtype",
+    "fitIntent",
+    "hoodLayer",
+    "assembly",
+    "referenceInfluence",
+    "baseUpperRecipe"
+  ],
+  "properties": {
+    "formatVersion": {"const": "5.5.0"},
+    "id": {"type": "string", "minLength": 1},
+    "collection": {"const": "HoodieLayerArchitectureCorrection"},
+    "itemName": {"type": "string", "minLength": 1},
+    "itemDescription": {"type": "string", "minLength": 1},
+    "rarity": {"enum": ["Common", "Uncommon", "Rare"]},
+    "hoodieSubtype": {
+      "enum": [
+        "pullover",
+        "zip",
+        "pouch",
+        "contrast_hood",
+        "reference_soft_charm",
+        "reference_tonal_crest"
+      ]
+    },
+    "fitIntent": {"enum": ["fitted", "regular", "relaxed", "cropped", "baggy"]},
+    "hoodLayer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "lining", "volume", "drawstrings"],
+      "properties": {
+        "state": {"enum": ["down", "up"]},
+        "lining": {"enum": ["self", "contrast"]},
+        "volume": {"enum": ["compact", "standard", "baggy"]},
+        "drawstrings": {"type": "boolean"}
+      }
+    },
+    "assembly": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["shirt", "sleeves", "hat", "accessory", "preset"],
+      "properties": {
+        "shirt": {"const": true},
+        "sleeves": {"const": "native_sleeve_colors"},
+        "hat": {"const": true},
+        "accessory": {"const": false},
+        "preset": {"const": true}
+      }
+    },
+    "referenceInfluence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "traitsOnly", "copiedPixels"],
+      "properties": {
+        "source": {"type": "string"},
+        "traitsOnly": {"type": "array", "items": {"type": "string"}, "minItems": 2},
+        "copiedPixels": {"const": false}
+      }
+    },
+    "baseUpperRecipe": {"type": "object"}
+  }
+}

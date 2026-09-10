@@ -1,0 +1,85 @@
+{
+ "_comment": "Front-emblem grammar for the cap2 family. Every bound is derived from the base's own pixels, not chosen.",
+ "zone": {
+  "name": "front_panel",
+  "derivation": "the flat field of a single authored value (step 1, RGB 81) that the author's own emblem sits inside",
+  "cells": {
+   "x0": 8,
+   "x1": 11,
+   "y0": 9,
+   "y1": 11
+  },
+  "size": [
+   4,
+   3
+  ],
+  "note": "row 10 alone widens to cols 7-12, but the safe rectangle common to all three rows is 4x3. A motif may not rely on the wider middle row.",
+  "field_value": "step 1 of the base vocabulary (RGB 81)",
+  "why_small": "this is the whole flat area the authored construction provides. It is not a limitation we chose and must not be enlarged by editing the cap."
+ },
+ "placement": {
+  "anchor": "centred horizontally in the 4-wide zone; a 3-wide motif sits at x8-10 by integer division",
+  "vertical": "centred in the 3-row zone; a 1-row motif sits on row 10, exactly where the author put theirs",
+  "repositioning": "FORBIDDEN \u2014 the authored cells are the placement"
+ },
+ "size_bounds": {
+  "max": [
+   4,
+   3
+  ],
+  "min": [
+   2,
+   1
+  ],
+  "note": "a motif larger than 4x3 would cross the visor edge or the crown seam"
+ },
+ "allowed_motif_categories": [
+  "badge / round patch",
+  "letter or single glyph",
+  "star",
+  "heart",
+  "shield",
+  "simple sport or outdoor symbol",
+  "plain bar (the author's own)"
+ ],
+ "denied_motif_categories": [
+  "bands and trims (no band zone exists on this construction)",
+  "feathers, poms, tassels, bows (attachments; nothing may project outside the authored silhouette)",
+  "gemstones or jewellery (reserved for a future fantasy/festival tag)",
+  "anything requiring more than 4x3",
+  "anything needing its own outline colour outside the base vocabulary"
+ ],
+ "occupancy": {
+  "rule": "front_panel is SINGLE-OCCUPANCY",
+  "why": "the zone is 4x3; two motifs would touch and read as noise",
+  "max_motifs": 1
+ },
+ "readability": {
+  "rule": "solid runs, high contrast. Alternating single pixels fragment into noise at gameplay scale.",
+  "contrast_floor": "a motif must differ from the field (step 1, luminance 81) by at least 80 luminance; step 3 is 165 (+84) and step 5 is 254 (+173)",
+  "palette_roles": "motifs are drawn in the base's OWN vocabulary steps so they recolour with the garment. They are cloth, not metal, and never carry an independent hue.",
+  "judged_at": "4x gameplay scale, worn, not on a transparency checker"
+ },
+ "direction_behaviour": {
+  "Front": "the emblem is drawn here and only here",
+  "Right": "EMPTY \u2014 the front panel is not visible in profile on this construction",
+  "Left": "EMPTY \u2014 same",
+  "Back": "EMPTY \u2014 no front panel exists behind",
+  "per_view_adaptation": "not required and not permitted; the author draws front-only and no compressed side variant exists to derive from",
+  "why_sides_stay_empty": "inventing a side or back emblem would be procedural invention, which this family forbids"
+ },
+ "palette_role_constraints": {
+  "why": "multiplicative tinting scales the whole authored ladder by the tint's luminance, so every rung shrinks proportionally. Source span 197 became 102-117 across the four palettes; predicted and measured agreed to within 1.",
+  "weakest_rung": "visor field to outline is only 24 apart in the source \u2014 the author relied on the sprite being drawn near-white. Tinting halved it to 13, at which point the visor's field merged with its own outline and the peak changed apparent thickness.",
+  "floors": {
+   "visor_outline": 20,
+   "crown_visor": 40
+  },
+  "measured_before_fix": {
+   "visor_outline": "13-14 (FAIL)",
+   "crown_visor": "68-78 (pass)"
+  },
+  "remedy": "darken the OUTLINE role only, until it separates. Geometry is provably identical across variants, hue is untouched, and the crown/visor relationship is untouched.",
+  "not_a_geometry_change": "the base, visor and silhouette are not modified"
+ }
+}

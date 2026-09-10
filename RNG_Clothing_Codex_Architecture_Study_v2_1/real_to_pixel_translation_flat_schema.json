@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0",
+  "purpose": "Neutral semantic translation scaffold. Not a garment design and not visual ground truth.",
+  "views": [
+    "front",
+    "right",
+    "back",
+    "left"
+  ],
+  "anchorZones": {
+    "neck_collar": {
+      "views": [
+        "front",
+        "right",
+        "back",
+        "left"
+      ],
+      "meaning": "neckline/collar/hood attachment zone"
+    },
+    "opening_placket": {
+      "views": [
+        "front",
+        "right",
+        "left"
+      ],
+      "meaning": "front opening/placket/zip; side only if physically visible"
+    },
+    "chest_pocket_panel": {
+      "views": [
+        "front",
+        "right",
+        "left",
+        "back"
+      ],
+      "meaning": "pocket/panel region if architecture requires it"
+    },
+    "waist_belt": {
+      "views": [
+        "front",
+        "right",
+        "back",
+        "left"
+      ],
+      "meaning": "continuous wrap feature; must remain continuous across visible views"
+    },
+    "hem": {
+      "views": [
+        "front",
+        "right",
+        "back",
+        "left"
+      ],
+      "meaning": "termination/rib/waistband/coat hem"
+    },
+    "rear_structure": {
+      "views": [
+        "back",
+        "right",
+        "left"
+      ],
+      "meaning": "yoke, storm flap, hood mass, sailor panel, rear seam/vent"
+    }
+  },
+  "featureRules": {
+    "collar": "must attach to neckline and change correctly by view",
+    "placket": "front-dominant; never copied to back",
+    "zipper": "must follow opening topology and terminate physically",
+    "belt": "wraps across front/side/back when present",
+    "pocket": "must attach to a garment panel; can disappear when occluded",
+    "lapel": "front collar-opening structure; side shows depth; back does not show lapel faces",
+    "hood": "front opening + side depth + back mass",
+    "storm_flap": "upper-chest/back panel with physically plausible side continuation",
+    "armhole": "for sleeveless garments, must visibly cut into side/shoulder architecture"
+  },
+  "workflow": [
+    "load_architecture_definition",
+    "inspect_real_world_reference",
+    "extract_only_real_structural_features",
+    "place_features_on_neutral_flat_by_attachment_and_visibility",
+    "validate_feature_continuity_across_views",
+    "compress_to_semantic_directional_grammar",
+    "map_to_16x16_pixel_priority",
+    "render_with_proven_V5_HD_backend"
+  ]
+}

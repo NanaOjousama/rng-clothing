@@ -1,0 +1,69 @@
+{
+  "id": "pairB2_trim_double",
+  "seed": 1067403,
+  "attempt": 0,
+  "family": "SAILOR_TOP",
+  "architecture": "CLASSIC_SQUARE_FLAP",
+  "fit": "REGULAR",
+  "material": "WOVEN",
+  "collar_width": "WIDE",
+  "rear_flap_depth": "STANDARD",
+  "neckline": "STANDARD_V",
+  "trim_style": "DOUBLE",
+  "center_detail": "TIE",
+  "color_architecture": "MONOCHROME_WITH_CONTRAST_TRIM",
+  "palette_family": "SLATE_STONE",
+  "palette": {
+    "body": {
+      "deep": "#191B20",
+      "shadow": "#2E3138",
+      "base": "#474B55",
+      "light": "#666B77"
+    },
+    "collar": {
+      "deep": "#191B20",
+      "shadow": "#2E3138",
+      "base": "#474B55",
+      "light": "#666B77"
+    },
+    "trim": {
+      "deep": "#7E8188",
+      "shadow": "#A8ACB4",
+      "base": "#D2D6DC",
+      "light": "#EFF2F5"
+    },
+    "accent": {
+      "deep": "#7E8188",
+      "shadow": "#A8ACB4",
+      "base": "#D2D6DC",
+      "light": "#EFF2F5"
+    }
+  },
+  "derived": {
+    "collar_left": 2,
+    "collar_right": 13,
+    "collar_columns": 12,
+    "flap_depth_rows": 7,
+    "v_depth_row": 7,
+    "fit_taper": 0,
+    "relaxed_widening_applied": false,
+    "crisp_collar_edge": true,
+    "hem_rib": false,
+    "fold_density": 2,
+    "trim_lines": 2,
+    "has_center_detail": true,
+    "collar_body_contrast": 0.0,
+    "trim_collar_contrast": 138.7
+  },
+  "rejected": [],
+  "pinned": {
+    "collar_width": "WIDE",
+    "rear_flap_depth": "STANDARD",
+    "trim_style": "DOUBLE",
+    "center_detail": "TIE",
+    "neckline": "STANDARD_V",
+    "fit": "REGULAR",
+    "material": "WOVEN",
+    "color_architecture": "MONOCHROME_WITH_CONTRAST_TRIM"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "formatVersion": "5A",
+  "purpose": "Semantic sleeve intents and their honest Fashion Sense 7.5.0 translation status.",
+  "sleeves": {
+    "sleeveless": {
+      "status": "PROTOTYPE_SAFE",
+      "translation": "hide_native_sleeves_and_remove_torso_sleeve_cells",
+      "compatibleArticles": ["DRESS", "ONE_PIECE"],
+      "hideSleeves": true
+    },
+    "short_sleeve": {
+      "status": "PROTOTYPE_SAFE",
+      "translation": "native_animated_sleeves_with_semantic_palette",
+      "compatibleArticles": ["DRESS", "ONE_PIECE"],
+      "hideSleeves": false
+    },
+    "fitted_long_sleeve": {
+      "status": "PROTOTYPE_SAFE_BOUNDED",
+      "translation": "native_animated_sleeves_with_semantic_palette",
+      "compatibleArticles": ["DRESS", "ONE_PIECE", "BOUNDED_LONG_OUTERWEAR"],
+      "hideSleeves": false,
+      "limitation": "Shirt SleeveColors recolor the active native/custom sleeve layer; the shirt JSON does not itself select a sleeve silhouette."
+    },
+    "loose_long_sleeve": {
+      "status": "COMPANION_REQUIRED",
+      "translation": "separate_fashion_sense_sleeves_appearance_and_full_animation_atlas",
+      "compatibleArticles": ["DRESS", "ONE_PIECE", "BOUNDED_LONG_OUTERWEAR"]
+    },
+    "oversized_sleeve": {
+      "status": "COMPANION_REQUIRED",
+      "translation": "separate_fashion_sense_sleeves_appearance_and_full_animation_atlas",
+      "compatibleArticles": ["DRESS", "ONE_PIECE"]
+    },
+    "off_shoulder": {
+      "status": "COMPANION_REQUIRED",
+      "translation": "skin_masked_custom_sleeves_plus_shirt_coverage_variant",
+      "compatibleArticles": ["DRESS", "ONE_PIECE"]
+    },
+    "one_shoulder": {
+      "status": "COMPANION_REQUIRED",
+      "translation": "direction_aware_asymmetric_custom_sleeves_atlas",
+      "compatibleArticles": ["DRESS", "ONE_PIECE"]
+    }
+  },
+  "prototypeAllowed": ["sleeveless", "short_sleeve", "fitted_long_sleeve"]
+}

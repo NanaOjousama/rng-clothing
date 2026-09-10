@@ -1,0 +1,35 @@
+{
+  "formatVersion": 4,
+  "logicalFrame": [16, 16],
+  "scale": 2,
+  "bodyPosition": [0, 32],
+  "purpose": "Renderer-owned logical-cell translation rules. Semantic V4 recipes contain no coordinates.",
+  "articles": {
+    "FITTED_SHIRT": {
+      "operation": "taper_lower_silhouette",
+      "rowInsets": {"10": 1, "11": 1, "12": 1, "13": 1, "14": 1, "15": 1},
+      "sleeveMaterial": "outer_fabric"
+    },
+    "SWEATER_TOP": {
+      "operation": "preserve_heavy_mass",
+      "sleeveMaterial": "outer_fabric"
+    },
+    "VEST_TOP": {
+      "operation": "translate_vest_materials",
+      "innerShirtRegions": ["SLEEVE", "SHOULDER_CAP", "COLLAR"],
+      "sleeveMaterial": "inner_shirt"
+    },
+    "CROPPED_JACKET": {
+      "operation": "crop_outer_shell",
+      "maximumOccupiedY": 13,
+      "terminationRole": "SHADOW",
+      "terminationEdgeInset": 1,
+      "sleeveMaterial": "outer_fabric"
+    },
+    "SHORT_OUTERWEAR": {
+      "operation": "preserve_full_short_shell",
+      "minimumOccupiedY": 15,
+      "sleeveMaterial": "outer_fabric"
+    }
+  }
+}

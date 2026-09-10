@@ -1,0 +1,65 @@
+# ---------------------------------------------------------------------------
+# RNG_clothing .gitignore
+#
+# Principle: git carries OUR code, docs, authored art and catalogue indexes.
+# It does not carry (a) regenerable output, (b) third-party art corpora.
+#
+# (b) is deliberate on two grounds: size (the corpora are ~60MB of the 385MB
+# tree) and redistribution -- `generator conent/` and `references/benchmark/`
+# are other authors' Fashion Sense packs.  They are the SOURCE AUTHORITY for
+# construction, so a second machine still needs them; `tools/corpus_manifest.py`
+# records their hashes so any machine can prove it holds the same corpus
+# without the repo republishing someone else's art.
+# ---------------------------------------------------------------------------
+
+# Python / build
+.venv/
+__pycache__/
+*.pyc
+bin/
+obj/
+
+# Regenerable output and captures
+output/
+test-packs/
+qc_bridge/captures/
+qc_bridge/responses/
+qc_bridge/requests/
+qc_bridge/sessions/
+reports/**/*.png
+
+# Third-party art corpora -- see tools/corpus_manifest.py (SOURCE AUTHORITY,
+# synced out of band, never republished from this repo)
+generator conent/
+references/benchmark/
+references/ref_codex/
+references/style-profiles/
+references/lifestyle/
+references/hoodie/
+motif/
+[FS] Jedone's Casual Hat Pack/
+
+# Archives -- unpack, don't version
+*.zip
+*.7z
+*.rar
+
+# Local reference mirror of the installed game assembly: metadata index only,
+# never the assembly or its content (that would redistribute game files)
+references/stardew-official/assembly/
+
+# Large loose reference sheets in root
+sailorstyle_female.png
+SAILORSTYLE_MALE.png
+Screenshot_*.png
+
+# Editor cruft
+.*.kate-swp
+*~
+
+# Embedded upstream clone: the official Fashion Sense wiki, kept as a live git
+# checkout so it can be `git pull`ed.  Not tracked here (a nested repo becomes
+# a broken gitlink); re-clone with:
+#   git clone https://github.com/Floogen/FashionSense.wiki.git \
+#             references/fashion-sense-official/wiki-git
+references/fashion-sense-official/wiki-git/

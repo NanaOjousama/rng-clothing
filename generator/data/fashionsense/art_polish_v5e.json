@@ -1,0 +1,46 @@
+{
+  "formatVersion": "1.0.0",
+  "name": "POST_V5E_GAMEPLAY_ART_POLISH",
+  "priority": [
+    "coverage",
+    "article_identity",
+    "silhouette",
+    "construction",
+    "layering",
+    "surface_design",
+    "palette",
+    "restrained_shading"
+  ],
+  "outline": {
+    "darkAnchors": ["neck_recess", "outer_sides", "underarm", "hem_corners", "overlap"],
+    "litEdgePolicy": "upper_left_connected_runs_only",
+    "shadowEdgePolicy": "right_and_lower_selective_reinforcement",
+    "uniformDarkRingRejected": true
+  },
+  "clusters": {
+    "minimumHighlightCluster": 2,
+    "isolatedLightPixelAllowedOnlyFor": ["button", "clasp", "badge", "zip_pull"],
+    "textureSpeckleRejected": true
+  },
+  "construction": {
+    "maximumDominantGesturesPerView": 1,
+    "boundedInnerLayers": true,
+    "fullWidthDarkHemRejected": true,
+    "sideViewsAreReconstructed": true,
+    "backViewsRequireArticleCue": true
+  },
+  "rarity": {
+    "Common": {"maximumStrongRegions": 1, "complexityCeiling": "low"},
+    "Uncommon": {"maximumStrongRegions": 2, "complexityCeiling": "moderate"},
+    "Rare": {"maximumStrongRegions": 3, "complexityCeiling": "high_controlled"}
+  },
+  "runtimeFrozen": {
+    "shirtScale": 2,
+    "shirtBodyPosition": [0, 32],
+    "shirtFrame": [16, 16],
+    "nativeSleevesContract": "NATIVE_ANIMATED_SLEEVES_V1",
+    "alphaGeometryMayChange": false,
+    "hoodAnchorsMayChange": false,
+    "hoodDrawOrderMayChange": false
+  }
+}

@@ -1,0 +1,839 @@
+{
+  "schemaVersion": "2.0.0",
+  "generator": {
+    "pipeline": [
+      "1_RARITY_LANE",
+      "2_GARMENT_FAMILY_ROLL",
+      "3_ARCHITECTURE_LOOKUP",
+      "4_DESIGN_CONCEPT_ROLL",
+      "5_FIT_PROFILE",
+      "6_CONSTRUCTION_FEATURE_ROLLS",
+      "7_PHYSICAL_VALIDITY_CHECK",
+      "8_DIRECTIONAL_MODEL",
+      "9_MATERIAL_BEHAVIOR",
+      "10_PIXEL_PRIORITY_COMPRESSION",
+      "11_SEMANTIC_REGION_MAP",
+      "12_PALETTE_STORY",
+      "13_RARITY_POLISH",
+      "14_PROVEN_V5_HD_RENDER",
+      "15_FARMER_PREVIEW",
+      "16_QUALITY_DIVERSITY_GATE",
+      "17_ACCEPT_OR_REROLL"
+    ],
+    "rarity_policy": {
+      "COMMON": {
+        "architecture_budget": "simple",
+        "surface_budget": "low",
+        "identity": "clean everyday construction; art quality stays competent",
+        "allowed_complexity": [
+          "basic top",
+          "simple knit",
+          "simple shirt",
+          "simple vest"
+        ]
+      },
+      "UNCOMMON": {
+        "architecture_budget": "moderate",
+        "surface_budget": "moderate",
+        "identity": "broader garment families and stronger construction variation"
+      },
+      "RARE": {
+        "architecture_budget": "premium_restrained",
+        "surface_budget": "controlled",
+        "identity": "higher design sophistication and finish, NOT spectacle"
+      },
+      "LEGENDARY": {
+        "architecture_budget": "signature",
+        "surface_budget": "high_but_coherent",
+        "identity": "memorable silhouette/construction/theme; spectacle allowed when justified"
+      }
+    },
+    "reproducibility_rules": [
+      "Do not rely on model memory for garment anatomy.",
+      "Every family loads a versioned architecture definition.",
+      "Every generated garment saves its exact semantic recipe and RNG seed.",
+      "Every feature must declare attachment region and visible directions.",
+      "Palette selection occurs after architecture/material.",
+      "Renderer does not invent garment structure; it executes the recipe.",
+      "Human/Farmer-scale preview overrides metrics.",
+      "Failed concept is rerolled; do not endlessly polish the same bad design.",
+      "Working V5/HD renderer remains frozen unless fixing a verified renderer bug."
+    ]
+  },
+  "garments": {
+    "T_SHIRT": {
+      "base_formula": "KNIT_TORSO + BOUND_NECKLINE + SHORT_SLEEVES + SIMPLE_HEM",
+      "male": [
+        "straighter torso",
+        "slightly longer body",
+        "broader shoulder/neck proportions common"
+      ],
+      "female": [
+        "waist shaping more common",
+        "cropped lengths more common",
+        "wider/deeper neck variants common"
+      ],
+      "front": [
+        "neckline",
+        "sleeve termination",
+        "clean torso field"
+      ],
+      "side": [
+        "shoulder-to-sleeve transition",
+        "single torso plane",
+        "no fake front seam"
+      ],
+      "back": [
+        "rear neck band",
+        "clean knit field"
+      ],
+      "pixel_priority": [
+        "neckline",
+        "shoulder/sleeve silhouette",
+        "hem",
+        "one optional surface cue"
+      ]
+    },
+    "POLO_SHIRT": {
+      "inherits": "T_SHIRT",
+      "base_formula": "T_SHIRT + FOLDED_COLLAR + SHORT_CENTER_PLACKET",
+      "male": [
+        "straight/athletic torso",
+        "collar may be broader",
+        "body often longer"
+      ],
+      "female": [
+        "fitted/cropped variants common",
+        "smaller collar possible",
+        "waist shaping more common"
+      ],
+      "front": [
+        "two collar leaves",
+        "short placket ending upper chest",
+        "knit body",
+        "short sleeves"
+      ],
+      "side": [
+        "one visible collar fold",
+        "short sleeve",
+        "NO full-length placket",
+        "clean torso"
+      ],
+      "back": [
+        "shallow rear collar band",
+        "uninterrupted knit back"
+      ],
+      "pixel_priority": [
+        "collar",
+        "placket length",
+        "sleeve/hem",
+        "buttons only if space remains"
+      ],
+      "hard_reject": [
+        "placket reaches hem",
+        "hard blazer lapels",
+        "full button-shirt back logic"
+      ]
+    },
+    "HENLEY": {
+      "inherits": "T_SHIRT",
+      "base_formula": "T_SHIRT + COLLARLESS_SHORT_BUTTON_PLACKET",
+      "male": [
+        "straight/relaxed torso common",
+        "medium placket"
+      ],
+      "female": [
+        "fitted/cropped common",
+        "wider neckline possible"
+      ],
+      "front": [
+        "collarless opening",
+        "short placket",
+        "knit body"
+      ],
+      "side": [
+        "no collar mass",
+        "no full placket"
+      ],
+      "back": [
+        "plain rear neck",
+        "plain knit back"
+      ],
+      "pixel_priority": [
+        "neck opening",
+        "short placket",
+        "fit/hem"
+      ]
+    },
+    "BUTTON_SHIRT": {
+      "base_formula": "WOVEN_TORSO + FOLDED_COLLAR + FULL_FRONT_PLACKET + CUFFS + OPTIONAL_YOKE/POCKET",
+      "male": [
+        "straighter body",
+        "broader yoke/collar",
+        "longer shirttail common"
+      ],
+      "female": [
+        "waist darts/shaping common",
+        "cropped variants common",
+        "narrower collar possible"
+      ],
+      "front": [
+        "collar",
+        "full opening",
+        "optional chest pocket",
+        "woven hem"
+      ],
+      "side": [
+        "collar depth",
+        "side seam",
+        "cuff",
+        "shirttail behavior"
+      ],
+      "back": [
+        "yoke or clean rear plane",
+        "NO copied front placket"
+      ],
+      "pixel_priority": [
+        "collar",
+        "full opening",
+        "hem/yoke",
+        "pocket"
+      ]
+    },
+    "OVERSHIRT": {
+      "inherits": "BUTTON_SHIRT",
+      "base_formula": "BUTTON_SHIRT + HEAVIER_MATERIAL + RELAXED_VOLUME + LARGER_POCKETS",
+      "male": [
+        "boxy/relaxed",
+        "larger utility pockets",
+        "longer body common"
+      ],
+      "female": [
+        "cropped or oversized forms common",
+        "dropped shoulder common"
+      ],
+      "front": [
+        "shirt collar/opening",
+        "large pocket/panel logic",
+        "heavier hem"
+      ],
+      "side": [
+        "visible outer-layer depth",
+        "pocket/hem cue"
+      ],
+      "back": [
+        "broad yoke or clean heavy fabric plane"
+      ],
+      "pixel_priority": [
+        "volume",
+        "collar/opening",
+        "large pockets",
+        "hem weight"
+      ]
+    },
+    "SWEATSHIRT": {
+      "base_formula": "PULLOVER_KNIT + RIB_NECK + RIB_CUFFS + RIB_HEM",
+      "male": [
+        "straight/relaxed",
+        "longer torso common",
+        "broad rib terminations"
+      ],
+      "female": [
+        "cropped or oversized common",
+        "waist rib may shape torso"
+      ],
+      "front": [
+        "crew neck",
+        "broad torso",
+        "rib hem"
+      ],
+      "side": [
+        "sleeve bulk",
+        "simple torso",
+        "rib hem"
+      ],
+      "back": [
+        "plain back",
+        "rear neck band",
+        "rib hem"
+      ],
+      "pixel_priority": [
+        "pullover silhouette",
+        "rib terminations",
+        "neckline"
+      ]
+    },
+    "HOODIE": {
+      "inherits": "SWEATSHIRT",
+      "base_formula": "SWEATSHIRT + HOOD_MASS + OPTIONAL_DRAWSTRINGS + OPTIONAL_KANGAROO",
+      "male": [
+        "roomier torso/hood common",
+        "longer body"
+      ],
+      "female": [
+        "cropped/fitted/oversized all valid",
+        "hood size may be smaller or oversized intentionally"
+      ],
+      "front": [
+        "hood opening",
+        "drawstring optional",
+        "kangaroo optional"
+      ],
+      "side": [
+        "hood depth MUST exist",
+        "outer torso",
+        "pocket edge optional"
+      ],
+      "back": [
+        "hood mass MUST exist",
+        "clean sweatshirt back"
+      ],
+      "pixel_priority": [
+        "hood",
+        "silhouette",
+        "pocket",
+        "drawstrings"
+      ],
+      "hard_reject": [
+        "side/back lacks hood mass"
+      ]
+    },
+    "SWEATER": {
+      "base_formula": "KNIT_PULLOVER + KNIT_NECKLINE + RIB_CUFFS + RIB_HEM",
+      "male": [
+        "straight/relaxed",
+        "crew/V common"
+      ],
+      "female": [
+        "cropped/fitted/oversized, varied necklines"
+      ],
+      "front": [
+        "knit neckline",
+        "broad fabric planes",
+        "rib hem"
+      ],
+      "side": [
+        "soft knit depth",
+        "cuff/hem"
+      ],
+      "back": [
+        "coherent knit plane",
+        "rear neck"
+      ],
+      "pixel_priority": [
+        "neckline",
+        "knit mass",
+        "rib terminations",
+        "one restrained texture system"
+      ]
+    },
+    "SWEATER_VEST": {
+      "inherits": "SWEATER",
+      "base_formula": "SWEATER - SLEEVES + CUT_IN_BOUND_ARMHOLES",
+      "male": [
+        "straight/tapered torso",
+        "deep V common",
+        "shirt layering common"
+      ],
+      "female": [
+        "cropped/fitted common",
+        "armholes may cut in higher",
+        "wide/deep neck variants common"
+      ],
+      "front": [
+        "V/crew neck binding",
+        "cut-in armholes",
+        "rib hem",
+        "optional inner shirt"
+      ],
+      "side": [
+        "SLEEVELESS armhole must be obvious",
+        "narrow shoulder strap",
+        "NO full shoulder slab"
+      ],
+      "back": [
+        "shallow rear neck",
+        "bound armholes",
+        "clean knit back"
+      ],
+      "pixel_priority": [
+        "armholes",
+        "neck binding",
+        "hem",
+        "layered shirt"
+      ],
+      "hard_reject": [
+        "solid side shoulder slab",
+        "floating top-edge band",
+        "reads as sleeved top"
+      ]
+    },
+    "CARDIGAN": {
+      "inherits": "SWEATER",
+      "base_formula": "SWEATER + OPEN_OR_BUTTON_FRONT",
+      "male": [
+        "straight/relaxed common",
+        "V/shawl collar common"
+      ],
+      "female": [
+        "cropped/waist-shaped variants common",
+        "wider necklines common"
+      ],
+      "front": [
+        "two knit front edges",
+        "open/button topology",
+        "optional visible inner layer"
+      ],
+      "side": [
+        "one hanging knit edge",
+        "collar depth",
+        "soft outer-layer read"
+      ],
+      "back": [
+        "coherent knit mass",
+        "shallow rear neck",
+        "no front opening copied"
+      ],
+      "pixel_priority": [
+        "open front",
+        "soft collar/edge",
+        "layering",
+        "rib terminations"
+      ],
+      "hard_reject": [
+        "hard triangular blazer lapels unless explicitly shawl-derived"
+      ]
+    },
+    "WAISTCOAT": {
+      "base_formula": "TAILORED_SLEEVELESS + V_FRONT + FULL_OPENING + SHAPED_ARMHOLES",
+      "male": [
+        "longer/straighter tailored torso",
+        "deeper V",
+        "sharper front quarters"
+      ],
+      "female": [
+        "waist-shaped/cropped common",
+        "narrower armhole/shoulder variants"
+      ],
+      "front": [
+        "tailored V",
+        "front opening",
+        "button line",
+        "optional welt pockets"
+      ],
+      "side": [
+        "thin tailored layer",
+        "shaped armhole",
+        "no knit ribbing"
+      ],
+      "back": [
+        "tailored back may use different fabric/strap logic"
+      ],
+      "pixel_priority": [
+        "tailored V",
+        "armholes",
+        "opening",
+        "waist shaping"
+      ]
+    },
+    "BOMBER_JACKET": {
+      "base_formula": "SHORT_OUTERWEAR + FRONT_OPENING + RIB_COLLAR + RIB_CUFFS + RIB_WAIST",
+      "male": [
+        "boxy/blouson common",
+        "broader ribs"
+      ],
+      "female": [
+        "cropped/fitted or oversized forms common"
+      ],
+      "front": [
+        "front opening",
+        "rib collar",
+        "rounded body",
+        "rib waistband"
+      ],
+      "side": [
+        "blouson depth",
+        "rib waist"
+      ],
+      "back": [
+        "rounded upper body",
+        "rib hem"
+      ],
+      "pixel_priority": [
+        "rib waistband",
+        "rounded volume",
+        "collar/opening"
+      ]
+    },
+    "VARSITY_JACKET": {
+      "inherits": "BOMBER_JACKET",
+      "base_formula": "BOMBER_JACKET + CONTRAST_SLEEVES + STRIPED_RIBS + SNAP_FRONT",
+      "male": [
+        "classic athletic boxy fit"
+      ],
+      "female": [
+        "cropped/oversized common"
+      ],
+      "front": [
+        "contrast sleeve/body topology",
+        "snap front",
+        "striped ribs"
+      ],
+      "side": [
+        "contrast sleeve",
+        "rib edge",
+        "pocket cue"
+      ],
+      "back": [
+        "contrast sleeves remain",
+        "plain or motif back"
+      ],
+      "pixel_priority": [
+        "contrast sleeves",
+        "ribs",
+        "snap opening"
+      ],
+      "hard_reject": [
+        "identity depends only on letter/logo motif"
+      ]
+    },
+    "WORK_JACKET": {
+      "base_formula": "STRUCTURED_SHORT_OUTER + SIMPLE_COLLAR + UTILITY_POCKETS + STRAIGHT_HEM",
+      "male": [
+        "boxy/straight",
+        "large pockets"
+      ],
+      "female": [
+        "cropped or shaped versions valid"
+      ],
+      "front": [
+        "simple collar",
+        "firm opening",
+        "utility pockets"
+      ],
+      "side": [
+        "structured outer-layer thickness",
+        "pocket/hem cue"
+      ],
+      "back": [
+        "clean/yoked workwear plane"
+      ],
+      "pixel_priority": [
+        "pockets/panels",
+        "collar",
+        "firm hem"
+      ]
+    },
+    "DENIM_JACKET": {
+      "inherits": "WORK_JACKET",
+      "base_formula": "STRUCTURED_JACKET + POINT_COLLAR + FULL_OPENING + CHEST_POCKETS + YOKE + WAISTBAND",
+      "male": [
+        "straight/boxy",
+        "larger chest pockets"
+      ],
+      "female": [
+        "cropped/fitted common",
+        "more waist shaping possible"
+      ],
+      "front": [
+        "point collar",
+        "chest pockets",
+        "button opening",
+        "panel seams"
+      ],
+      "side": [
+        "collar depth",
+        "waistband",
+        "side seam/pocket"
+      ],
+      "back": [
+        "yoke",
+        "panel seams",
+        "waist tabs optional"
+      ],
+      "pixel_priority": [
+        "collar",
+        "yoke/pockets",
+        "opening",
+        "waistband"
+      ]
+    },
+    "BLAZER": {
+      "base_formula": "TAILORED_OUTER + LAPELS + SHAPED_FRONT_QUARTERS + STRUCTURED_SHOULDER",
+      "male": [
+        "longer line",
+        "broader shoulders/lapels",
+        "less waist suppression common"
+      ],
+      "female": [
+        "waist suppression/cropping common",
+        "lapel width highly variable"
+      ],
+      "front": [
+        "lapels",
+        "tailored opening",
+        "pockets",
+        "shaped hem/front quarters"
+      ],
+      "side": [
+        "jacket depth",
+        "lapel/collar continuation",
+        "tailored waist"
+      ],
+      "back": [
+        "center seam/vents or clean tailored plane"
+      ],
+      "pixel_priority": [
+        "lapels",
+        "tailored silhouette",
+        "opening",
+        "back seam/vent"
+      ],
+      "hard_reject": [
+        "no lapel signal",
+        "reads as generic work jacket"
+      ]
+    },
+    "TRENCH_COAT": {
+      "base_formula": "LONG_OUTER + LAPELS + DOUBLE/SINGLE_BREASTED_OPENING + BELT + STORM_FLAP + CUFF_STRAPS",
+      "male": [
+        "straighter long body",
+        "broader lapel/storm-flap proportions common"
+      ],
+      "female": [
+        "belt-defined waist/flared lower shape common"
+      ],
+      "front": [
+        "lapels",
+        "button opening",
+        "belt wrapping torso",
+        "storm flap",
+        "long hem"
+      ],
+      "side": [
+        "belt continues",
+        "coat depth",
+        "long silhouette",
+        "cuff strap"
+      ],
+      "back": [
+        "storm yoke/flap",
+        "belt continues across back",
+        "center seam/vent"
+      ],
+      "pixel_priority": [
+        "long silhouette",
+        "lapels",
+        "belt continuity",
+        "storm yoke"
+      ],
+      "hard_reject": [
+        "random cross/vertical trim not tied to real seam/opening",
+        "belt vanishes on side/back"
+      ]
+    },
+    "SAILOR_TOP": {
+      "base_formula": "TOP + BROAD_SAILOR_COLLAR + FRONT_V + REAR_SQUARE_COLLAR_PANEL",
+      "male": [
+        "straighter/uniform-like fit common",
+        "broader collar possible"
+      ],
+      "female": [
+        "cropped/fitted/bloused versions common",
+        "tie/ribbon variants common"
+      ],
+      "front": [
+        "broad sailor V/collar",
+        "closed body"
+      ],
+      "side": [
+        "compressed collar depth",
+        "sleeve/hem"
+      ],
+      "back": [
+        "square/rectangular rear collar panel is mandatory"
+      ],
+      "pixel_priority": [
+        "collar geometry",
+        "rear panel",
+        "V inset"
+      ]
+    },
+    "WRAP_TOP": {
+      "base_formula": "TWO_FRONT_PANELS + DIAGONAL_OVERLAP + SIDE/WAIST_CLOSURE",
+      "male": [
+        "straighter robe/workwear-derived overlap valid"
+      ],
+      "female": [
+        "fitted/cropped/waist-shaped common"
+      ],
+      "front": [
+        "one dominant diagonal overlap",
+        "side closure"
+      ],
+      "side": [
+        "overlap terminates physically",
+        "tie/closure optional"
+      ],
+      "back": [
+        "clean back unless belt/tie wraps"
+      ],
+      "pixel_priority": [
+        "diagonal front",
+        "waist closure",
+        "silhouette"
+      ],
+      "hard_reject": [
+        "diagonal becomes random decorative sash"
+      ]
+    }
+  },
+  "referenceSources": {
+    "POLO_SHIRT": [
+      {
+        "label": "Men's polo tech pack with construction callouts",
+        "url": "https://dlkgolf.co.uk/wp-content/uploads/2024/10/dlk-malepoloshirt-techpack.pdf",
+        "use_for": [
+          "rib collar",
+          "collar stand",
+          "short placket",
+          "cuffs",
+          "hem",
+          "front/back relationship"
+        ]
+      },
+      {
+        "label": "Polo technical flat \u2014 front/back",
+        "url": "https://www.etsy.com/uk/listing/1008460582/polo-shirt-fashion-flat-technical",
+        "use_for": [
+          "overall silhouette",
+          "front collar/placket",
+          "plain back"
+        ]
+      }
+    ],
+    "SWEATER_VEST": [
+      {
+        "label": "Sweater vest technical illustration \u2014 front/back",
+        "url": "https://www.vectorstock.com/royalty-free-vectors/sweater-vest-vectors",
+        "use_for": [
+          "cut-in armholes",
+          "rib V/crew neck",
+          "rib hem",
+          "sleeveless side logic"
+        ]
+      }
+    ],
+    "CARDIGAN": [
+      {
+        "label": "Cardigan technical illustration \u2014 V-neck/button front",
+        "url": "https://www.gettyimages.com/photos/cardigan-technical-fashion-illustration",
+        "use_for": [
+          "open/button front",
+          "rib neck/cuffs/hem",
+          "soft knit back"
+        ]
+      }
+    ],
+    "HOODIE": [
+      {
+        "label": "Hoodie tech pack guide / flat sketch",
+        "url": "https://www.artisancasual.com/blog/Hoodie-Tech-Pack-Template-How-to-Create-a-Production-Ready-Tech-Pack-With-Checklist_b16540",
+        "use_for": [
+          "hood mass",
+          "drawstrings",
+          "kangaroo pocket",
+          "rib cuffs/hem"
+        ]
+      }
+    ],
+    "BUTTON_SHIRT": [
+      {
+        "label": "Men's button-up product example",
+        "url": "https://www.calvinklein.ca/en/men/apparel/tops/tech-stretch-slim-button-down-shirt/4LB149G-UB1.html",
+        "use_for": [
+          "point collar",
+          "full button front",
+          "barrel cuffs",
+          "shirttail hem",
+          "slim fit"
+        ]
+      }
+    ],
+    "SWEATSHIRT": [
+      {
+        "label": "Sweatshirt technical-flat family",
+        "url": "https://www.gettyimages.com/photos/sweatshirt-technical-fashion-illustration",
+        "use_for": [
+          "crew neck",
+          "pullover body",
+          "rib cuffs",
+          "rib hem",
+          "front/back simplicity"
+        ]
+      }
+    ],
+    "HENLEY": [
+      {
+        "label": "Henley technical-flat family",
+        "url": "https://www.gettyimages.com/photos/henley-shirt-technical-fashion-illustration",
+        "use_for": [
+          "collarless neckline",
+          "short button placket",
+          "plain back"
+        ]
+      }
+    ],
+    "VARSITY_JACKET": [
+      {
+        "label": "Varsity jacket technical flat \u2014 front/back/side",
+        "url": "https://storage.googleapis.com/debnziualblbke/varsity-jacket-template.html",
+        "use_for": [
+          "rib collar/cuffs/hem",
+          "contrast sleeves",
+          "snap front",
+          "side profile"
+        ]
+      }
+    ],
+    "DENIM_JACKET": [
+      {
+        "label": "Denim jacket vector technical family",
+        "url": "https://www.vectorstock.com/royalty-free-vectors/jean-jacket-front-and-back-vectors",
+        "use_for": [
+          "point collar",
+          "yoke",
+          "chest pockets",
+          "button front",
+          "waist tabs"
+        ]
+      }
+    ],
+    "BLAZER": [
+      {
+        "label": "Blazer technical fashion sketch",
+        "url": "https://www.magnific.com/vectors/blazer-technical-fashion-sketch",
+        "use_for": [
+          "notch lapels",
+          "tailored front",
+          "flap pockets",
+          "center-back seam"
+        ]
+      }
+    ],
+    "TRENCH_COAT": [
+      {
+        "label": "Trench coat technical drawing \u2014 front/back",
+        "url": "https://www.artofit.org/image-gallery/908953137412694540/flat-drawing-technical-drawing-trench-coat-front-back/",
+        "use_for": [
+          "lapels",
+          "double-breasted opening",
+          "belt",
+          "storm flap/yoke",
+          "cuff straps",
+          "long silhouette"
+        ]
+      }
+    ]
+  }
+}

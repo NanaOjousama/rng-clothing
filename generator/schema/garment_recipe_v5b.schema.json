@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rng-clothing.invalid/schema/garment_recipe_v5b.schema.json",
+  "title": "RNG Clothing V5B Sleeve and Upper-Garment Recipe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["formatVersion", "id", "collection", "articleType", "constructionVariant", "sleeveIntent", "shoulderIntent", "necklineIntent", "collarIntent", "layeringIntent", "openingIntent", "surfaceTranslation", "baseArticleRecipe"],
+  "properties": {
+    "formatVersion": {"const": "5.2.0"},
+    "id": {"type": "string", "pattern": "^v5b-[0-9]{2}$"},
+    "collection": {"const": "V5BUpperBenchmark"},
+    "articleType": {"enum": ["FITTED_SHIRT", "SWEATER", "VEST_TOP", "CROPPED_JACKET", "STANDARD_JACKET", "BLOUSE"]},
+    "constructionVariant": {"type": "string", "minLength": 3},
+    "sleeveIntent": {"enum": ["SLEEVELESS", "SHORT_SLEEVE", "FITTED_LONG_SLEEVE", "ROLLED_CUFFED_SLEEVE", "LAYERED_INNER_OUTER_SLEEVE"]},
+    "shoulderIntent": {"enum": ["standard", "narrow", "dropped"]},
+    "necklineIntent": {"enum": ["crew", "v_neck", "square", "high", "open"]},
+    "collarIntent": {"enum": ["none", "shirt_collar", "sailor_like", "high_collar", "lapel", "rounded", "utility"]},
+    "layeringIntent": {"enum": ["single_layer", "visible_inner_layer", "vest_over_inner", "collar_overlay"]},
+    "openingIntent": {"enum": ["closed", "buttoned", "center_open", "partial_open", "wrap_suggestion"]},
+    "surfaceTranslation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primaryZone", "sleeveContinuation", "cuffTreatment"],
+      "properties": {
+        "primaryZone": {"enum": ["collar", "yoke", "chest", "placket", "outer_panels", "waist", "hem"]},
+        "sleeveContinuation": {"enum": ["none", "fabric_match", "inner_layer_match", "trim_echo"]},
+        "cuffTreatment": {"enum": ["none", "simple", "contrast", "layered"]}
+      }
+    },
+    "baseArticleRecipe": {"$ref": "garment_recipe_v4.schema.json"}
+  }
+}

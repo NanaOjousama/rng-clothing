@@ -1,0 +1,60 @@
+[
+ {
+  "category": "Hats",
+  "emitted": [
+   "DisableGrayscale",
+   "HatSize",
+   "HeadPosition",
+   "HideHair",
+   "StartingPosition",
+   "Tags"
+  ],
+  "missing_required": [],
+  "missing_critical": [
+   "ColorMaskLayers",
+   "ColorMasks",
+   "DrawOrderOverride",
+   "Flipped",
+   "HidePlayerBase",
+   "HideWhileSwimming",
+   "HideWhileWearingBathingSuit",
+   "IdleAnimation",
+   "IsPrismatic",
+   "Item",
+   "MovementAnimation",
+   "RequireAnimationToFinish",
+   "Scale",
+   "SkinToneMasks",
+   "UniformAnimation",
+   "UseBaldHead"
+  ]
+ },
+ {
+  "category": "Shirts",
+  "emitted": [
+   "BodyPosition",
+   "DisableGrayscale",
+   "ShirtSize",
+   "StartingPosition",
+   "Tags"
+  ],
+  "missing_required": [],
+  "missing_critical": [
+   "ColorMaskLayers",
+   "ColorMasks",
+   "DrawOrderOverride",
+   "Flipped",
+   "HidePlayerBase",
+   "HideWhileSwimming",
+   "HideWhileWearingBathingSuit",
+   "IdleAnimation",
+   "IsPrismatic",
+   "Item",
+   "MovementAnimation",
+   "RequireAnimationToFinish",
+   "Scale",
+   "SkinToneMasks",
+   "UniformAnimation"
+  ]
+ }
+]

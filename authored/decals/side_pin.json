@@ -1,0 +1,33 @@
+{
+  "name": "side_pin",
+  "motif_class": "pin",
+  "slot": "HEAD",
+  "zone": "side",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 6,
+  "anchor_cell": [
+    0,
+    3
+  ],
+  "anchor_point": "top_right",
+  "style": [
+    "formal",
+    "smart",
+    "festival"
+  ],
+  "views": [
+    "front",
+    "left"
+  ],
+  "fits": [
+    "felt_hat",
+    "wide_brim_hat"
+  ],
+  "description": "a hat pin: a bead head on a needle leaving the crown",
+  "per_view": false,
+  "size": [
+    4,
+    4
+  ]
+}

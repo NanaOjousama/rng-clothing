@@ -1,0 +1,25 @@
+{
+  "id": "xprod_overalls_collared",
+  "name": "XPROD Overalls Over Collared Shirt",
+  "template": null,
+  "blank": "torso_basic",
+  "pieces": [
+    "collar_shirt_folded",
+    "placket_buttons",
+    "button_accent",
+    "bib_overalls",
+    "straps_overalls",
+    "hem_plain"
+  ],
+  "palette": "xprod_denim_work",
+  "sleeve_slot": "primary",
+  "identity": [
+    "collar_shirt_folded",
+    "bib_overalls"
+  ],
+  "max_colors": 10,
+  "tags": [
+    "XPROD"
+  ],
+  "description": "Overall bib and straps over a collared, buttoned shirt."
+}

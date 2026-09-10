@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "3.0.0",
+  "behaviorSource": "specs/palettes/material_color_behavior.json",
+  "families": {
+    "T_SHIRT": {"allowed": ["COTTON_TEE", "KNIT"], "default": "COTTON_TEE"},
+    "POLO_SHIRT": {"allowed": ["KNIT", "COTTON_TEE"], "default": "KNIT", "temporaryMapping": "PIQUE_KNIT is not an approved behavior; KNIT is used without renderer changes.", "forbidden": ["WOVEN_SHIRT"]},
+    "SWEATER_VEST": {"allowed": ["KNIT"], "default": "KNIT"},
+    "CARDIGAN": {"allowed": ["CARDIGAN", "KNIT"], "default": "CARDIGAN"},
+    "BLAZER": {"allowed": ["BLAZER_FORMAL"], "default": "BLAZER_FORMAL"},
+    "SAILOR_TOP": {"allowed": ["WOVEN_SHIRT", "COTTON_TEE"], "default": "WOVEN_SHIRT"}
+  }
+}

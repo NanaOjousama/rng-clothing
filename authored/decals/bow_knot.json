@@ -1,0 +1,34 @@
+{
+  "name": "bow_knot",
+  "motif_class": "bow",
+  "slot": "HEAD",
+  "zone": "side",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 7,
+  "anchor_cell": [
+    1,
+    1
+  ],
+  "anchor_point": "top_right",
+  "style": [
+    "cottagecore",
+    "festival",
+    "casual"
+  ],
+  "views": [
+    "front",
+    "left",
+    "back"
+  ],
+  "fits": [
+    "wide_brim_hat",
+    "knit_cap"
+  ],
+  "description": "a ribbon bow tied at the side of the crown",
+  "per_view": false,
+  "size": [
+    3,
+    3
+  ]
+}

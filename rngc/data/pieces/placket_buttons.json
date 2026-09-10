@@ -1,0 +1,30 @@
+{
+  "id": "placket_buttons",
+  "kind": "opening",
+  "layer": "OVER",
+  "slot": null,
+  "identity": false,
+  "wrap": false,
+  "note": "Centre placket line (vanilla 248 col 3 shadow column). Front only. Role-only.",
+  "views": {
+    "front": {
+      "origin": [
+        7,
+        4
+      ],
+      "rows": [
+        "s",
+        "s",
+        "s",
+        "s",
+        "s",
+        "s",
+        "s",
+        "s",
+        "s",
+        "s",
+        "s"
+      ]
+    }
+  }
+}

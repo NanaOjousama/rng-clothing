@@ -1,0 +1,24 @@
+{
+  "id": "xprod_denim_work",
+  "reference": "blue work shirt under denim bib, cream buttons",
+  "slots": {
+    "primary": {
+      "deep": "#1E2E44",
+      "shadow": "#34507A",
+      "base": "#5B7FB3",
+      "light": "#8FADD6"
+    },
+    "secondary": {
+      "deep": "#1A2436",
+      "shadow": "#2C3D5E",
+      "base": "#3F5A8A",
+      "light": "#6A84B0"
+    },
+    "accent": {
+      "deep": "#9C8D63",
+      "shadow": "#C9B98E",
+      "base": "#F2E8C9",
+      "light": "#FFFBEE"
+    }
+  }
+}

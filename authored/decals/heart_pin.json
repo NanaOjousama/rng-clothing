@@ -1,0 +1,31 @@
+{
+  "name": "heart_pin",
+  "motif_class": "heart",
+  "pending": true,
+  "slot": "HEAD",
+  "zone": "front_panel",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 7,
+  "anchor_cell": [
+    1,
+    2
+  ],
+  "anchor_point": "top_right",
+  "style": [
+    "cottagecore",
+    "casual"
+  ],
+  "views": [
+    "front"
+  ],
+  "fits": [
+    "soft_cap"
+  ],
+  "description": "a small heart pin",
+  "per_view": false,
+  "size": [
+    3,
+    3
+  ]
+}

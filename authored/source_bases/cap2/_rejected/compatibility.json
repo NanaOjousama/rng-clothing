@@ -1,0 +1,90 @@
+{
+  "_comment": "Compatibility grammar for source-derived cap components. Built BEFORE any remix is generated. A pair is ALLOW only where the source author demonstrates it or the constraint is structural; technically fitting pixels are never sufficient evidence of aesthetic compatibility.",
+  "bases": {
+    "cap2": {
+      "family": "SOFT_CAP",
+      "source": "Cap 2 — More Accessories and Stuff, by plurffle",
+      "status": "APPROVED first source-derived soft/baseball-cap base",
+      "size": [20, 20],
+      "directions": ["Front", "Right", "Left", "Back"],
+      "recolourable": true,
+      "recolour_note": "pure greyscale, no ColorMasks declared, so Fashion Sense tints the WHOLE sprite; recolour is multiplicative over the authored value ladder"
+    },
+    "cap_snapback": {
+      "family": "SOFT_CAP_SNAPBACK",
+      "source": "Cap (Snapback) — More Accessories and Stuff, by plurffle",
+      "status": "PRESERVED as a separate future architecture; NOT processed, NOT merged with cap2",
+      "rule": "never averaged, derived or merged with cap2 into a universal cap"
+    }
+  },
+  "components": {
+    "front_emblem": {
+      "classification": "FAMILY-SPECIFIC",
+      "kind": "surface motif",
+      "cells": 4,
+      "authored_cells": "x8-11, y10",
+      "semantic_zone": "visor_face",
+      "valid_directions": ["Front"],
+      "per_view_adaptation_required": false,
+      "per_view_note": "the author draws it front-only; the element is not visible in profile or from behind, so no side or back variant exists or should be invented",
+      "compatible_families": ["SOFT_CAP"],
+      "compatible_bases": ["cap2", "cap1"],
+      "evidence": "the author places the identical element at the identical cells on Cap 1, a different construction — two independent uses",
+      "occupancy": "visor_face is a single-occupancy region; nothing else may be placed there",
+      "conflicts_with": [],
+      "size_limits": "must fit the flat field it sits on: 4 wide x 1 tall at x8-11, y10; the field is only 1 row deep, so a taller motif would cross into the authored visor edge",
+      "scale_limits": "authored at the base's own 20x20 grid; no scaling",
+      "palette_roles": "steps 3 and 5 of the base's own vocabulary — it recolours WITH the garment, not against it; it is cloth, not metal",
+      "coexists_with_other_decorations": "no other component exists for this base yet; the question is deferred rather than answered"
+    },
+    "crown_highlight": {
+      "classification": "BASE-SPECIFIC",
+      "kind": "lighting",
+      "cells": 4,
+      "authored_cells": "x9-11, y6-7",
+      "decision": "LEFT EMBEDDED in the base; not offered to the generator",
+      "why": "it is the specular highlight of this dome. Cap 1's crown is shaded entirely differently, so the element does not travel. Extracting lighting as a movable part would be forcing a separation the author never made."
+    }
+  },
+  "matrix": {
+    "_legend": "ALLOW | ALLOW_WITH_CONSTRAINTS | DENY",
+    "cap2 x front_emblem": {
+      "verdict": "ALLOW",
+      "why": "the author's own construction; reconstruction from base + component is pixel-exact",
+      "constraints": ["Front direction only", "authored cells only, no repositioning"]
+    },
+    "cap2 x crown_highlight": {
+      "verdict": "DENY",
+      "why": "not offered as a component; it is part of the base"
+    },
+    "cap_snapback x front_emblem": {
+      "verdict": "DENY",
+      "why": "no author evidence. Snapback has no front emblem and its front face is shaded differently; the pixels would fit and the result would be invention, not derivation. Revisit only if Snapback is processed and evidence appears."
+    },
+    "cap_snapback x crown_highlight": {
+      "verdict": "DENY",
+      "why": "base-specific to cap2"
+    },
+    "any non-SOFT_CAP base x front_emblem": {
+      "verdict": "DENY",
+      "why": "outside the family the author demonstrated"
+    },
+    "cap2 x any old soft_cap asset": {
+      "verdict": "DENY",
+      "why": "the procedural soft_cap is rejected research; its components are excluded from promotion"
+    }
+  },
+  "remix_axes": {
+    "allowed": [
+      "palette / recolour — the base is pure greyscale and authored to be tinted",
+      "front_emblem present or absent, at its authored cells"
+    ],
+    "forbidden": [
+      "silhouette invention",
+      "repositioning authored components",
+      "mixing with the rejected soft_cap",
+      "merging cap2 with cap_snapback",
+      "any component not proven by exact reconstruction"
+    ]
+  }
+}

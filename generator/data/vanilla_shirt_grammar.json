@@ -1,0 +1,140 @@
+{
+  "formatVersion": 1,
+  "target": "Stardew Valley 1.6.15 native shirt",
+  "purpose": "Reusable logical-pixel grammar derived from representative vanilla shirts; no source tile is copied into generated output.",
+  "evidence": {
+    "gameVersion": "1.6.15.24356",
+    "shirtSheet": "Characters/Farmer/shirts",
+    "installedSheetDimensions": [256, 608],
+    "dataAsset": "Data/Shirts",
+    "sampleSize": {
+      "shirts": 34,
+      "directionFrames": 136
+    },
+    "sampleSpriteIndices": {
+      "T_SHIRT": [1, 6, 128, 194, 200, 209],
+      "SWEATER": [176, 177, 178, 198, 235, 301],
+      "BUTTON_SHIRT": [29, 123, 140, 154, 248, 251],
+      "JACKET": [18, 30, 137, 138, 155, 163, 211, 218, 231, 270, 271, 285],
+      "SAILOR_TOP": [19, 239, 259, 261]
+    },
+    "observedFrameRanges": {
+      "occupiedPixels": {"minimum": 53, "median": 59, "maximum": 64},
+      "meaningfulRenderedColors": {"minimum": 3, "median": 6, "maximum": 11},
+      "renderedLuminanceRange": {"minimum": 31.47, "median": 154.26, "maximum": 226.91},
+      "disconnectedOpaquePixels": {"minimum": 0, "median": 0, "maximum": 0}
+    }
+  },
+  "nativeContract": {
+    "sheetWidth": 256,
+    "singleItemSheetHeight": 32,
+    "frameWidth": 8,
+    "frameHeight": 8,
+    "baseHalfWidth": 128,
+    "dyeMaskXOffset": 128,
+    "spriteIndexFormula": {
+      "x": "(SpriteIndex * 8) % 128",
+      "y": "floor(SpriteIndex * 8 / 128) * 32"
+    },
+    "directionOffsets": {
+      "front": 0,
+      "right": 8,
+      "left": 16,
+      "back": 24
+    },
+    "gameFacingDirections": {
+      "back": 0,
+      "right": 1,
+      "front": 2,
+      "left": 3
+    },
+    "dyeDrawOrder": ["base", "tinted_mask"],
+    "sleeveSamples": {
+      "sourceDirection": "front",
+      "sourceX": 0,
+      "darkRow": 4,
+      "midRow": 3,
+      "lightRow": 2
+    }
+  },
+  "roleLegend": {
+    ".": "transparent",
+    "D": "main_deep",
+    "S": "main_shadow",
+    "B": "main_base",
+    "L": "main_light",
+    "H": "main_highlight"
+  },
+  "silhouetteTemplates": {
+    "fitted": {
+      "front": ["###..###", "########", "########", "########", "########", "########", "########", ".######."],
+      "right": ["###.##..", "#######.", "#######.", "########", "########", ".#######", ".#######", ".######."],
+      "left": {"mirrorOf": "right"},
+      "back": ["########", "########", "########", "########", "########", "########", "########", ".######."]
+    },
+    "regular": {
+      "front": ["###..###", "########", "########", "########", "########", "########", "########", "########"],
+      "right": ["###.##..", "#######.", "#######.", "########", "########", ".#######", ".#######", ".#######"],
+      "left": {"mirrorOf": "right"},
+      "back": ["########", "########", "########", "########", "########", "########", "########", ".######."]
+    },
+    "relaxed": {
+      "front": ["###..###", "########", "########", "########", "########", "########", "########", "########"],
+      "right": ["###.##..", "#######.", "#######.", "########", "########", ".#######", ".#######", ".#######"],
+      "left": {"mirrorOf": "right"},
+      "back": ["########", "########", "########", "########", "########", "########", "########", ".######."]
+    }
+  },
+  "shadingTemplates": {
+    "front": [
+      "DDD..DDD",
+      "LHBBBBHL",
+      "LLBBBBLL",
+      "LBBBBBBL",
+      "SBBBBBBS",
+      "SBBBBBBS",
+      "SSBBBBSS",
+      "DDSSSSDD"
+    ],
+    "right": [
+      "DDS.SS..",
+      "SLBBBBD.",
+      "LLBBBBS.",
+      "LBBBBBSD",
+      "SBBBBBBD",
+      ".SBBBBSD",
+      ".SSBBBBD",
+      ".DDSSSDD"
+    ],
+    "left": {"mirrorOf": "right"},
+    "back": [
+      "DDSSSSDD",
+      "LLBBBBLL",
+      "LBBBBBBL",
+      "LBBBBBBL",
+      "SBBBBBBS",
+      "SBBBBBBS",
+      "SSBBBBSS",
+      ".DDSSDD."
+    ]
+  },
+  "grammarRules": {
+    "shoulders": "Keep the front neckline gap centered; carry a dark shoulder cap into both sides and simplify it to a short top cluster in side view.",
+    "torso": "Use one connected dominant garment field. Interior base clusters should be larger than highlight, accent, or seam clusters.",
+    "neckline": "Spend the top two or three rows on one readable neckline/collar landmark; do not stack unrelated neck details.",
+    "outerEdge": "Prefer shadow or deepest shade on lower outer edges; use light only as a short upper-facing shoulder cluster.",
+    "underCollar": "Place a shadow boundary directly below a collar or yoke so the feature reads as construction rather than noise.",
+    "centerOpening": "Use one continuous center seam/opening. Buttons are sparse points attached to that line, never scattered.",
+    "sideCompression": "Retain palette, collar, hem, and front-edge logic while removing front-only motifs. Do not redraw a second independent design.",
+    "backSimplification": "Remove front closures and chest accents, but retain the back collar/yoke, hem, and broad material shading.",
+    "highlights": "Use contiguous clusters near upper shoulders or a panel edge; avoid single-pixel specular noise.",
+    "accents": "Use one declared landmark and keep it subordinate to silhouette and garment structure.",
+    "dyeMask": "Encode only the main fabric ramp in grayscale. Keep secondary fabric and accent colors in the protected base half.",
+    "directionalGeneration": "Build front, back, and one side from the same recipe, then mirror the structural side view for the opposite direction unless a declared physical feature needs a visibility rule."
+  },
+  "fitInterpretation": {
+    "fitted": "Narrow only the lowest row and tighten lower-edge shading; vanilla's fixed 8x8 anchor leaves little safe silhouette freedom.",
+    "regular": "Use the recurring vanilla coverage and balanced edge shading.",
+    "relaxed": "Keep regular coverage but broaden lower shadow/hem clusters; fit is communicated primarily through value mass rather than extra canvas width."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "bench_tee",
+  "name": "V5 Bench Tee",
+  "template": "TEE",
+  "blank": "torso_basic",
+  "pieces": [
+    "neck_crew",
+    "hem_plain"
+  ],
+  "palette": "bench_tee",
+  "sleeve_slot": "primary",
+  "hide_sleeves": false,
+  "tags": [
+    "TEE",
+    "vanilla 1"
+  ],
+  "description": "Reconstruction of vanilla sprite 1 (Shirt) garment type."
+}

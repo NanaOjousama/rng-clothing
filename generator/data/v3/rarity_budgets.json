@@ -1,0 +1,53 @@
+{
+  "formatVersion": 3,
+  "purpose": "Rarity budgets authored design systems and coordination, not decorative noise.",
+  "rarities": {
+    "Common": {
+      "rendererRoute": "VANILLA_STARDEW_SINGLE_ARTICLE",
+      "minimumActiveSurfaceSystems": 1,
+      "maximumActiveSurfaceSystems": 1,
+      "maximumSupportSystems": 0,
+      "allowedDensity": ["low"],
+      "maximumMotifCellsPerView": 5,
+      "maximumPatternCellsPerView": 8,
+      "maximumSurfaceCellsPerView": 28,
+      "maximumDistinctSurfaceColors": 2,
+      "minimumThemedViews": 1,
+      "intent": "One clear, attractive visual idea with quiet support from construction."
+    },
+    "Uncommon": {
+      "rendererRoute": "FS_HD_SIMPLE_ARTICLE",
+      "minimumActiveSurfaceSystems": 2,
+      "maximumActiveSurfaceSystems": 2,
+      "maximumSupportSystems": 1,
+      "allowedDensity": ["low", "moderate"],
+      "maximumMotifCellsPerView": 8,
+      "maximumPatternCellsPerView": 12,
+      "maximumSurfaceCellsPerView": 34,
+      "maximumDistinctSurfaceColors": 3,
+      "minimumThemedViews": 2,
+      "intent": "One dominant design system plus one subordinate support system."
+    },
+    "Rare": {
+      "rendererRoute": "FS_RARE_PLUS_COMPLEX_GARMENT",
+      "minimumActiveSurfaceSystems": 3,
+      "maximumActiveSurfaceSystems": 3,
+      "maximumSupportSystems": 2,
+      "allowedDensity": ["moderate", "rich_restrained"],
+      "maximumMotifCellsPerView": 11,
+      "maximumPatternCellsPerView": 15,
+      "maximumSurfaceCellsPerView": 46,
+      "maximumDistinctSurfaceColors": 4,
+      "minimumThemedViews": 3,
+      "requiresCoordinatedTopology": true,
+      "intent": "A strong focal composition with two quieter, direction-aware supporting systems."
+    }
+  },
+  "globalRules": [
+    "A higher rarity may coordinate more systems but may not give them equal visual weight.",
+    "One system must remain primary; supports must occupy fewer cells or lower-contrast roles.",
+    "No garment may activate motif, trim, pattern, and color block simultaneously in V3.",
+    "Surface budgets count renderer-visible cells, not semantic labels.",
+    "A Rare fails if its design signature matches a Common after surface systems are removed."
+  ]
+}

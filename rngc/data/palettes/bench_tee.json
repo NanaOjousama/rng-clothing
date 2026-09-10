@@ -1,0 +1,12 @@
+{
+  "id": "bench_tee",
+  "reference": "SPRING_ORCHARD-like green",
+  "slots": {
+    "primary": {
+      "deep": "#2F4A2A",
+      "shadow": "#4E7A3E",
+      "base": "#7FB35A",
+      "light": "#A9D27E"
+    }
+  }
+}

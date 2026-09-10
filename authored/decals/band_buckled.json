@@ -1,0 +1,25 @@
+{
+  "name": "band_buckled",
+  "motif_class": "buckled_band",
+  "slot": "HEAD",
+  "zone": "band",
+  "z": 2,
+  "style": [
+    "formal",
+    "smart"
+  ],
+  "views": [
+    "front",
+    "left",
+    "back"
+  ],
+  "fits": [
+    "felt_hat"
+  ],
+  "description": "ribbon with a small metal buckle on the centre line",
+  "per_view": false,
+  "size": [
+    6,
+    1
+  ]
+}

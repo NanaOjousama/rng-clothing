@@ -1,0 +1,19 @@
+{
+  "name": "pocket_patch",
+  "slot": "TOP",
+  "attach": "chest_left",
+  "z": 2,
+  "style": [
+    "work",
+    "casual"
+  ],
+  "views": [
+    "front"
+  ],
+  "description": "a patch pocket on the wearer's left chest",
+  "per_view": false,
+  "size": [
+    2,
+    2
+  ]
+}

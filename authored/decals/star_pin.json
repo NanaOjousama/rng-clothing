@@ -1,0 +1,31 @@
+{
+  "name": "star_pin",
+  "motif_class": "star",
+  "pending": true,
+  "slot": "HEAD",
+  "zone": "front_panel",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 7,
+  "anchor_cell": [
+    1,
+    2
+  ],
+  "anchor_point": "top_right",
+  "style": [
+    "casual",
+    "smart"
+  ],
+  "views": [
+    "front"
+  ],
+  "fits": [
+    "soft_cap"
+  ],
+  "description": "a five-point star pin",
+  "per_view": false,
+  "size": [
+    3,
+    3
+  ]
+}

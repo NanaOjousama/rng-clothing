@@ -1,0 +1,25 @@
+{
+  "purpose": "Runtime-confirmed Fashion Sense 7.5.0 shirt contract for RNG Clothing V5 (see reports/HD_JACKET_POC.md, reports/FS_HD_JACKET_ANCHOR_CORRECTION.md).",
+  "format": "7.5.0",
+  "logical_frame": [16, 16],
+  "atlas": [16, 64],
+  "atlas_order": ["front", "right", "left", "back"],
+  "scale": 2.0,
+  "body_position": {"X": 0, "Y": 32},
+  "disable_grayscale": true,
+  "sleeve_color_roles": ["shadow", "base", "light"],
+  "max_colors_default": 8,
+  "required_coverage_note": "Rows 0-3 of the installed vanilla plain tee (sprite 1) at 2x. Any garment must keep these cells opaque so the Farmer's shoulders never show skin. Derived from Characters/Farmer/shirts.png 1.6.15.",
+  "required_coverage": {
+    "front": ["######....######", "######....######", "################", "################"],
+    "side":  ["######..####....", "######..####....", "##############..", "##############.."],
+    "back":  ["################", "################", "################", "################"]
+  },
+  "vanilla_8x8": {
+    "purpose": "Resolution-experiment export only (8x8 logical at Scale 4, the vanilla display box).",
+    "logical_frame": [8, 8],
+    "atlas": [8, 32],
+    "scale": 4.0,
+    "body_position": {"X": 0, "Y": 0}
+  }
+}

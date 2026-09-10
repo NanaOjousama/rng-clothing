@@ -1,0 +1,32 @@
+{
+  "name": "leaf_sprig",
+  "motif_class": "leaf",
+  "slot": "HEAD",
+  "zone": "side",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 6,
+  "anchor_cell": [
+    0,
+    3
+  ],
+  "anchor_point": "top_right",
+  "style": [
+    "cottagecore",
+    "work"
+  ],
+  "views": [
+    "front",
+    "left"
+  ],
+  "fits": [
+    "wide_brim_hat",
+    "knit_cap"
+  ],
+  "description": "two leaves on a short stem",
+  "per_view": false,
+  "size": [
+    3,
+    4
+  ]
+}

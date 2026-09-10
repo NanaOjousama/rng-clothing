@@ -1,0 +1,27 @@
+{
+  "name": "band_laced",
+  "motif_class": "band",
+  "slot": "HEAD",
+  "zone": "band",
+  "z": 2,
+  "style": [
+    "formal",
+    "smart",
+    "cottagecore"
+  ],
+  "views": [
+    "front",
+    "left",
+    "back"
+  ],
+  "fits": [
+    "felt_hat",
+    "wide_brim_hat"
+  ],
+  "description": "a band with a laced stitch line under it",
+  "per_view": false,
+  "size": [
+    6,
+    2
+  ]
+}

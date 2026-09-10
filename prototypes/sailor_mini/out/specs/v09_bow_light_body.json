@@ -1,0 +1,69 @@
+{
+  "id": "v09_bow_light_body",
+  "seed": 6760576,
+  "attempt": 0,
+  "family": "SAILOR_TOP",
+  "architecture": "CLASSIC_SQUARE_FLAP",
+  "fit": "FITTED",
+  "material": "COTTON",
+  "collar_width": "STANDARD",
+  "rear_flap_depth": "DEEP",
+  "neckline": "STANDARD_V",
+  "trim_style": "SINGLE",
+  "center_detail": "BOW",
+  "color_architecture": "LIGHT_BODY_DARK_COLLAR",
+  "palette_family": "NAVY_WHITE",
+  "palette": {
+    "body": {
+      "deep": "#8A93A0",
+      "shadow": "#BFC6CF",
+      "base": "#EDF1F5",
+      "light": "#FFFFFF"
+    },
+    "collar": {
+      "deep": "#101725",
+      "shadow": "#1C2A44",
+      "base": "#2C4269",
+      "light": "#46608C"
+    },
+    "trim": {
+      "deep": "#8A93A0",
+      "shadow": "#BFC6CF",
+      "base": "#EDF1F5",
+      "light": "#FFFFFF"
+    },
+    "accent": {
+      "deep": "#5A1A1E",
+      "shadow": "#8C2A30",
+      "base": "#C93B42",
+      "light": "#E06C6B"
+    }
+  },
+  "derived": {
+    "collar_left": 3,
+    "collar_right": 12,
+    "collar_columns": 10,
+    "flap_depth_rows": 9,
+    "v_depth_row": 7,
+    "fit_taper": 1,
+    "relaxed_widening_applied": false,
+    "crisp_collar_edge": true,
+    "hem_rib": false,
+    "fold_density": 1,
+    "trim_lines": 1,
+    "has_center_detail": true,
+    "collar_body_contrast": 176.3,
+    "trim_collar_contrast": 176.3
+  },
+  "rejected": [],
+  "pinned": {
+    "collar_width": "STANDARD",
+    "rear_flap_depth": "DEEP",
+    "trim_style": "SINGLE",
+    "center_detail": "BOW",
+    "neckline": "STANDARD_V",
+    "fit": "FITTED",
+    "material": "COTTON",
+    "color_architecture": "LIGHT_BODY_DARK_COLLAR"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "SAILOR_TOP",
+  "identity": "A compact top dominated by a broad upper collar/yoke and a strong upper-to-lower color boundary in every direction.",
+  "allowedConstruction": {
+    "fit": ["fitted", "regular"],
+    "neckline": ["shallow_v", "open"],
+    "collar": ["wide", "sailor"],
+    "closure": ["none"],
+    "layering": ["single_layer", "overlay_panel"],
+    "hem": ["plain", "structured", "contrast_band"],
+    "panelLayout": ["yoke", "upper_lower_split"]
+  },
+  "constructionRules": [
+    {"when": {"field": "collar", "values": ["sailor"]}, "requiresAll": [{"field": "neckline", "values": ["open"]}, {"field": "panelLayout", "values": ["yoke"]}]},
+    {"when": {"field": "panelLayout", "values": ["yoke"]}, "requiresAll": [{"field": "layering", "values": ["overlay_panel"]}]},
+    {"when": {"field": "panelLayout", "values": ["upper_lower_split"]}, "requiresAll": [{"field": "layering", "values": ["single_layer"]}]}
+  ],
+  "rarityConstruction": {
+    "Common": {
+      "neckline": ["open"],
+      "collar": ["sailor"],
+      "layering": ["overlay_panel"],
+      "hem": ["plain"],
+      "panelLayout": ["yoke"]
+    }
+  },
+  "constructionFeatureLinks": [
+    {"field": "panelLayout", "values": ["yoke"], "requiresAnyFeature": ["yoke"]},
+    {"field": "panelLayout", "values": ["upper_lower_split"], "requiresAnyFeature": ["major_panel_contrast"]},
+    {"field": "hem", "values": ["structured", "contrast_band"], "requiresAnyFeature": ["structured_lower_band"]}
+  ],
+  "allowedSubstantialFeatures": ["broad_collar", "major_panel_contrast", "wrapping_stripe", "yoke", "structured_lower_band"],
+  "allowedMicroDetails": ["small_chest_accent", "small_pin", "single_accent_pixel", "tiny_trim_mark"],
+  "coreRegions": ["BODY", "COLLAR", "YOKE"],
+  "availableColorRegions": ["body", "collar", "yoke", "hem", "stripe"],
+  "primaryRegions": ["body"],
+  "directionPolicy": "The upper collar/yoke is a broad region, especially on the back; side views retain its depth; front emblems are optional and never define the archetype.",
+  "incompatibleFeatures": ["center_open", "buttons", "split_outer_panels", "visible_inner_layer", "folded_collar"]
+}

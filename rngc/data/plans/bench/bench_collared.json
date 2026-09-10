@@ -1,0 +1,20 @@
+{
+  "id": "bench_collared",
+  "name": "V5 Bench Collared Shirt",
+  "template": "COLLARED_SHIRT",
+  "blank": "torso_basic",
+  "pieces": [
+    "collar_shirt_folded",
+    "placket_buttons",
+    "button_accent",
+    "hem_plain"
+  ],
+  "palette": "bench_collared",
+  "sleeve_slot": "primary",
+  "hide_sleeves": false,
+  "tags": [
+    "COLLARED_SHIRT",
+    "vanilla 248"
+  ],
+  "description": "Reconstruction of vanilla sprite 248 (Collared Shirt) garment type."
+}

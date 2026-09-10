@@ -1,0 +1,16 @@
+{
+  "_comment": "Per-base hair policy. KEEP draws the hairstyle normally, HIDE sets HideHair, BALD sets UseBaldHead (and HideHair, since the hairstyle would otherwise still draw over the bald head). Measured over the 116 source hats, 114 KEEP and 2 HIDE, so KEEP is the default and anything else is an authoring decision justified by construction. Values may be a single policy or a per-direction object.",
+  "default": "KEEP",
+  "bases": {
+    "felt_hat": "KEEP",
+    "wide_brim_hat": "KEEP",
+    "soft_cap": "KEEP",
+    "knit_cap": "KEEP"
+  },
+  "_rationale": {
+    "felt_hat": "brimmed, sits on top of the hair; hair framing the crown reads correctly",
+    "wide_brim_hat": "same, and the brim occludes the hair at its widest row",
+    "soft_cap": "REJECTED RESEARCH \u2014 reference only, not for promotion. Four geometry passes (widening, crown row, aperture flare) and a KEEP/HIDE/BALD hair-policy comparison all failed to make it read as naturally worn. The hair-policy run also proved UseBaldHead alone is a no-op (pixel-identical to KEEP), so hair policy was never the lever. Superseded by source-derived constructions taken from `generator conent`; do not modify this base again.",
+    "knit_cap": "close-fitting but not yet reported as a problem"
+  }
+}

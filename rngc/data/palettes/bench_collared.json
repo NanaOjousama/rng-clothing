@@ -1,0 +1,18 @@
+{
+  "id": "bench_collared",
+  "reference": "COOL_EVERYDAY blue woven + cream buttons",
+  "slots": {
+    "primary": {
+      "deep": "#1E2E44",
+      "shadow": "#34507A",
+      "base": "#5B7FB3",
+      "light": "#8FADD6"
+    },
+    "accent": {
+      "deep": "#9C8D63",
+      "shadow": "#C9B98E",
+      "base": "#F2E8C9",
+      "light": "#FFFBEE"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "tassel_hang",
+  "motif_class": "tassel",
+  "slot": "HEAD",
+  "zone": "side",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 6,
+  "anchor_cell": [
+    0,
+    0
+  ],
+  "anchor_point": "top_right",
+  "style": [
+    "festival",
+    "cottagecore"
+  ],
+  "views": [
+    "front",
+    "left"
+  ],
+  "fits": [
+    "wide_brim_hat",
+    "knit_cap"
+  ],
+  "description": "a short tassel swinging from the band",
+  "per_view": false,
+  "size": [
+    2,
+    4
+  ]
+}

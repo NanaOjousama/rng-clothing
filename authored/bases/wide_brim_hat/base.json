@@ -1,0 +1,179 @@
+{
+  "name": "wide_brim_hat",
+  "slot": "HEAD",
+  "size": [
+    20,
+    20
+  ],
+  "style": [
+    "work",
+    "casual",
+    "festival",
+    "cottagecore"
+  ],
+  "description": "small crown under a 16-wide three-row brim: sun hat / cowboy",
+  "anchors": {
+    "band_line": {
+      "front": [
+        7,
+        8
+      ],
+      "left": [
+        7,
+        8
+      ],
+      "back": [
+        7,
+        9
+      ]
+    },
+    "band_side": {
+      "front": [
+        11,
+        7
+      ],
+      "left": [
+        11,
+        7
+      ],
+      "back": [
+        11,
+        8
+      ]
+    },
+    "brim_edge": {
+      "front": [
+        2,
+        9
+      ],
+      "left": [
+        2,
+        9
+      ],
+      "back": [
+        2,
+        10
+      ]
+    },
+    "crown_face": {
+      "front": [
+        8,
+        6
+      ],
+      "left": [
+        8,
+        6
+      ],
+      "back": [
+        8,
+        7
+      ]
+    }
+  },
+  "zones": {
+    "front": {
+      "crown_face": [
+        7,
+        5,
+        12,
+        7
+      ],
+      "crown_top": [
+        7,
+        3,
+        12,
+        4
+      ],
+      "band": [
+        7,
+        7,
+        12,
+        8
+      ],
+      "brim": [
+        3,
+        9,
+        17,
+        11
+      ],
+      "side": [
+        11,
+        5,
+        13,
+        7
+      ]
+    },
+    "left": {
+      "crown_face": [
+        7,
+        4,
+        12,
+        6
+      ],
+      "crown_top": [
+        7,
+        3,
+        12,
+        4
+      ],
+      "band": [
+        7,
+        6,
+        12,
+        7
+      ],
+      "brim": [
+        3,
+        8,
+        17,
+        10
+      ],
+      "side": [
+        11,
+        4,
+        13,
+        6
+      ]
+    },
+    "back": {
+      "crown_face": [
+        7,
+        6,
+        12,
+        8
+      ],
+      "crown_top": [
+        7,
+        4,
+        12,
+        5
+      ],
+      "band": [
+        7,
+        8,
+        12,
+        9
+      ],
+      "brim": [
+        3,
+        10,
+        17,
+        12
+      ],
+      "side": [
+        11,
+        6,
+        13,
+        8
+      ]
+    }
+  },
+  "views": [
+    "front",
+    "back",
+    "left"
+  ],
+  "mirror": {
+    "right": "left"
+  }
+}

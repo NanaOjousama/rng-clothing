@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rng-clothing.local/schema/hybrid-v3/canonical-garment-model.json",
+  "title": "Hybrid V3 Canonical Garment Model",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "identity", "rarityBudget", "architecture", "designIntent", "fit", "material", "components", "relations", "rearStructure", "surfaceIntent", "runtimeEnvelope", "provenance"],
+  "properties": {
+    "schemaVersion": {"const": "3.0.0"},
+    "identity": {"type": "object", "required": ["id", "family"]},
+    "rarityBudget": {"type": "object", "required": ["id", "mode"]},
+    "architecture": {"type": "object", "required": ["id", "version", "digest", "inheritanceChain"]},
+    "designIntent": {"type": "object", "required": ["id", "version", "dominant", "supporting"]},
+    "fit": {"type": "object", "required": ["profile", "version", "resolvedProportions"]},
+    "material": {"type": "object", "required": ["id", "behaviorSource", "temporaryMapping"]},
+    "components": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["instanceId", "definitionId", "componentType", "parent", "attachmentRegion", "parameters", "pixelPriority", "silhouetteImpact"]}},
+    "relations": {"type": "array", "items": {"type": "object", "required": ["type", "from"]}},
+    "rearStructure": {"type": "object"},
+    "surfaceIntent": {"type": "object", "required": ["colorBlockTopology", "decorationBudget"]},
+    "runtimeEnvelope": {"type": "object", "required": ["safeUpperBodyOnly", "nativeSleeves", "customSleevesAllowed", "legOverlapAllowed"]},
+    "provenance": {"type": "object", "required": ["rootSeed", "stageSeeds", "dataDigests"]}
+  }
+}

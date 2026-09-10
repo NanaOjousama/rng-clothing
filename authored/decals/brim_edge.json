@@ -1,0 +1,27 @@
+{
+  "name": "brim_edge",
+  "motif_class": "edge_accent",
+  "edge": true,
+  "slot": "HEAD",
+  "zone": "brim",
+  "z": 2,
+  "style": [
+    "formal",
+    "festival",
+    "cottagecore"
+  ],
+  "views": [
+    "front",
+    "left"
+  ],
+  "fits": [
+    "felt_hat",
+    "wide_brim_hat"
+  ],
+  "description": "a contrast edge run around the brim",
+  "per_view": false,
+  "size": [
+    13,
+    1
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "formatVersion": "4.5",
+  "designConcept": {
+    "id": "aot-scout-fieldwear-v45",
+    "styleProfile": "AoTInspired",
+    "mood": "disciplined field utility",
+    "primaryGesture": "structured military paneling",
+    "secondaryGesture": "restrained leather-like utility rhythm",
+    "paletteRoles": {
+      "fieldLight": [198, 177, 132],
+      "fieldMid": [117, 105, 73],
+      "fieldDark": [57, 49, 38],
+      "leather": [72, 47, 35],
+      "cream": [226, 214, 181],
+      "outline": [35, 32, 29],
+      "light": [225, 204, 158]
+    },
+    "rules": [
+      "Translate military structure into article-native zones.",
+      "Use at most one harness-like line rhythm per compact view.",
+      "Do not copy an insignia or exact costume layout.",
+      "Rarity is expressed through composition, not raw pixel count."
+    ]
+  },
+  "articles": {
+    "PANTS": {
+      "semanticZones": ["waistband", "hip", "leg_left", "leg_right", "side_panel", "knee_panel", "cuff"],
+      "allowedSystems": ["side_utility_seam", "waist_trim", "knee_panel", "single_harness_rhythm"],
+      "runtimeClass": "EXPERIMENTAL"
+    },
+    "SKIRT": {
+      "semanticZones": ["waistband", "front_panel", "side_panel", "pleat", "hem"],
+      "allowedSystems": ["pleat_rhythm", "hem_border", "panel_split", "side_accent"],
+      "runtimeClass": "EXPERIMENTAL"
+    },
+    "FOOTWEAR": {
+      "semanticZones": ["shaft", "cuff", "strap", "toe", "sole"],
+      "allowedSystems": ["cuff_trim", "single_strap", "sole_contrast", "toe_accent"],
+      "runtimeClass": "EXPERIMENTAL"
+    },
+    "MANTLE": {
+      "semanticZones": ["shoulder_anchor", "back_mass", "border", "back_focal", "lower_termination", "clasp"],
+      "allowedSystems": ["back_emblem", "border_trim", "single_fold", "clasp_accent"],
+      "runtimeClass": "EXPERIMENTAL"
+    },
+    "COAT_TAIL_COMPANION": {
+      "semanticZones": ["waist_anchor", "tail_left", "tail_right", "split", "lower_hem"],
+      "allowedSystems": ["split_tail", "edge_trim", "back_hem"],
+      "runtimeClass": "NOT_READY"
+    }
+  },
+  "rarity": {
+    "Common": {"primarySystems": 1, "supportSystems": 0, "focalFeatures": 0},
+    "Uncommon": {"primarySystems": 1, "supportSystems": 1, "focalFeatures": 0},
+    "Rare": {"primarySystems": 1, "supportSystems": 1, "focalFeatures": 1}
+  }
+}

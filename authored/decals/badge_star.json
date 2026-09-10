@@ -1,0 +1,26 @@
+{
+  "name": "badge_star",
+  "motif_class": "badge",
+  "slot": "HEAD",
+  "zone": "crown_face",
+  "z": 3,
+  "style": [
+    "formal",
+    "festival",
+    "smart"
+  ],
+  "views": [
+    "front",
+    "back"
+  ],
+  "fits": [
+    "felt_hat",
+    "wide_brim_hat"
+  ],
+  "description": "a metal star badge, rimmed dark so it reads as applied",
+  "per_view": false,
+  "size": [
+    3,
+    3
+  ]
+}

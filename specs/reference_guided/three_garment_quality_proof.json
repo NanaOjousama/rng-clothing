@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Three authored, reference-guided semantic designs for a bounded visual-quality proof. References provide construction lessons only; no source coordinates, pixels, palette values, logos, or costume layouts are copied.",
+  "garments": [
+    {
+      "id": "HARBORFOLD_CAMP_SHIRT",
+      "name": "Harborfold Camp Shirt",
+      "reference": {
+        "sourcePack": "[FS] Luny's Cottagecore Shirts",
+        "sourceItem": "Casual Button-up Shirt",
+        "sourcePath": "ref_codex/masc clothing/[FS] Luny's Cottagecore Shirts/Shirts/Casual Button-up Shirt",
+        "selectedBecause": "Its larger relaxed footprint, folded collar, shaped side edge, and longer rounded rear hem preserve casual-shirt identity outside the front view.",
+        "referenceOnly": true
+      },
+      "article": "RELAXED_CAMP_SHIRT",
+      "designConcept": "A breezy harbor-market shirt with a soft camp collar and curved split shirttail.",
+      "silhouette": {
+        "fit": "relaxed",
+        "torsoMass": "regular upper chest easing into a softly widened lower woven body",
+        "proportion": "normal length inside the safe upper-body envelope",
+        "contour": "shaped shoulders, gently convex side seam, curved split hem"
+      },
+      "collarNeckline": "wide two-piece camp collar around a shallow open neck; no necktie or narrow V stamp",
+      "opening": "short open upper placket that settles into a quiet buttoned woven front rather than a full contrasting stripe",
+      "layering": "single woven garment with a small visible neck recess; no broad inner-shirt insert",
+      "sleeves": "native Farmer sleeves colored as the shirt fabric; clean folded cuff bridge",
+      "hemWaist": "rounded shirttail with small directional side split and a slightly lower-looking rear termination",
+      "panelsPockets": "one integrated chest pocket and a broad rear yoke with center box-pleat carrier",
+      "front": "camp collar and off-open neck lead into an interrupted placket; pocket balances the opening without mirroring it",
+      "rightLeft": "collar depth, pocket edge on the appropriate side, convex hanging seam, and visible side split retain the draped shirt read",
+      "back": "wide shallow collar band, broad shoulder yoke, short box pleat, and curved rear hem; no front placket mirrored onto the back",
+      "material": "WOVEN_SHIRT",
+      "colorTopology": "fog-aqua main cloth, sand undercollar and neck recess, harbor-teal construction edges, one tiny coral pocket tab",
+      "paletteStory": "COASTAL_MIST",
+      "originalityChanges": "The source's exact white/gray arrangement and pixel layout are discarded; the new design uses a camp collar, one-pocket asymmetry, box pleat, coastal role topology, and newly authored four-direction proportions."
+    },
+    {
+      "id": "ALDERWICK_KNIT_VEST",
+      "name": "Alderwick Knit Vest",
+      "reference": {
+        "sourcePack": "[FS] Gentleman's Collection",
+        "sourceItem": "Brown Sweater Vest",
+        "sourcePath": "ref_codex/masc clothing/FS Gentlemans Collection.zip :: Shirts/Brown Sweater Vest",
+        "selectedBecause": "Its deep V, quiet sleeveless knit mass, visible shirt sleeves, and coherent plain back create a strong layered article with very few pixels.",
+        "referenceOnly": true
+      },
+      "article": "LAYERED_SWEATER_VEST",
+      "designConcept": "A light academic knit vest shaped around a crisp woven shirt layer.",
+      "silhouette": {
+        "fit": "softly tapered",
+        "torsoMass": "compact knit body with visibly cut-in armholes",
+        "proportion": "normal length with a firm ribbed band",
+        "contour": "narrow shoulder straps, defined armhole scoops, slight waist taper"
+      },
+      "collarNeckline": "broad deep V with a two-cell knit binding and a visible folded inner-shirt collar",
+      "opening": "closed pullover knit; the V is neckline topology, not an open cardigan or zipper",
+      "layering": "cream knit shell over a pale woven shirt; inner collar and native shirt sleeves remain substantial",
+      "sleeves": "vest is sleeveless; native Farmer sleeves use the inner woven-shirt ramp and stay fully animated",
+      "hemWaist": "continuous ribbed knit band with a shallow center ease, not a jacket hem",
+      "panelsPockets": "no pockets; two quiet vertical knit ribs flank a broad center field",
+      "front": "deep bound V and shirt collar dominate; restrained rib columns articulate knit structure without a crest or motif",
+      "rightLeft": "bound armhole curve, knit side seam, shirt sleeve exposure, and ribbed hem preserve vest layering",
+      "back": "shallow rounded rear neck band, plain coherent knit back, two upper-back shaping ribs, continuous hem",
+      "material": "KNIT",
+      "colorTopology": "warm cream knit is dominant, dusty plum binds neck and armholes, antique tan supports ribbing, pale shirt remains broad",
+      "paletteStory": "CREAM_ACADEMIC",
+      "originalityChanges": "The brown source colors and plain rectangular field are not reused; the new vest adds an original tapered contour, layered folded collar, wide ribbed binding, quiet paired ribs, and light-primary academic role layout."
+    },
+    {
+      "id": "BLUECURRENT_SADDLE_SHELL",
+      "name": "Bluecurrent Saddle Shell",
+      "reference": {
+        "sourcePack": "[FS] Gentleman's Collection",
+        "sourceItem": "Teal Windbreaker",
+        "sourcePath": "ref_codex/masc clothing/FS Gentlemans Collection.zip :: Shirts/Teal Windbreaker",
+        "selectedBecause": "Its high collar, boxy shell, broad upper paneling, native long sleeves, and disciplined plain back read as sport outerwear rather than another fitted jacket.",
+        "referenceOnly": true
+      },
+      "article": "BOXY_SPORT_WINDBREAKER",
+      "designConcept": "A bright technical shell built around a curved shoulder saddle and gathered lower band.",
+      "silhouette": {
+        "fit": "boxy",
+        "torsoMass": "broad upper shell with a slightly bloused body",
+        "proportion": "short regular shell ending in a gathered band",
+        "contour": "firm shoulder corners, full side depth, inward-gathered waist"
+      },
+      "collarNeckline": "tall guarded stand collar with a small recessed throat opening",
+      "opening": "short half-zip contained inside the collar and upper chest; no full-height center stripe",
+      "layering": "single technical shell with a small lining reveal only at the throat",
+      "sleeves": "native Farmer long sleeves use the primary shell ramp; dark ribbed cuffs make the attachment intentional",
+      "hemWaist": "wide gathered elastic band that pulls the boxy body inward",
+      "panelsPockets": "curved shoulder saddle/yoke, two low slant pocket entries, and side panels that continue around the body",
+      "front": "stand collar and short zip sit above a broad curved saddle; low pocket diagonals and gathered band carry the lower read",
+      "rightLeft": "collar projection, saddle termination, one slant pocket entry, full shell depth, and gathered band author each side",
+      "back": "broad curved rear saddle, uninterrupted main shell field, two short shaping seams, and continuous gathered band",
+      "material": "SPORT_SHELL",
+      "colorTopology": "bright blue shell field, cream saddle/lining blocks, navy structural anchors and band, one localized orange zipper pull/tab",
+      "paletteStory": "BRIGHT_SPORT",
+      "originalityChanges": "The teal reference palette and its exact vertical block layout are discarded; the new design uses a curved saddle, contained half-zip, slant pockets, gathered waist, blue/cream topology, and original directional reconstruction."
+    }
+  ]
+}

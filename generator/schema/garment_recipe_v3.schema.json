@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rng-clothing.invalid/schema/garment_recipe_v3.schema.json",
+  "title": "RNG Clothing V3 Design-First Fashion Sense Top Recipe",
+  "description": "Coordinate-free semantic design recipe. Surface pixels and Fashion Sense fields belong only to renderer backends.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "formatVersion", "id", "generationIndex", "seed", "category", "styleProfile",
+    "themeFamily", "rarity", "archetype", "concept", "construction",
+    "substantialFeatures", "colorBlocking", "surfaceDesign", "paletteStory",
+    "dyeable", "itemName", "itemDescription"
+  ],
+  "properties": {
+    "formatVersion": {"const": 3},
+    "id": {"type": "string", "pattern": "^(?:v3-benchmark-(?:0[1-9]|1[0-2])|aot-v3-0[1-6])$"},
+    "generationIndex": {"type": "integer", "minimum": 1, "maximum": 12},
+    "seed": {"type": "integer", "minimum": 0},
+    "category": {"const": "Lifestyle"},
+    "styleProfile": {"enum": ["V3Benchmark", "AoTInspired"]},
+    "themeFamily": {
+      "enum": ["beach_casual", "seasonal_soft", "formal_elegant", "floral_romantic",
+        "dessert_cute", "witchy_dark", "cyber_tech", "military_structured",
+        "celestial_fantasy", "storybook_whimsical", "elemental", "creature_inspired"]
+    },
+    "rarity": {"enum": ["Common", "Uncommon", "Rare"]},
+    "archetype": {"enum": ["SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"]},
+    "concept": {
+      "type": "object", "additionalProperties": false,
+      "required": ["garmentRole", "silhouetteGoal", "designMood", "primaryGesture",
+        "secondaryGesture", "focalArea", "symmetryBias", "designDensity", "themeEmphasis"],
+      "properties": {
+        "garmentRole": {"enum": ["casual_top", "soft_sweater", "tailored_shirt", "outer_jacket", "dressy_top", "statement_top"]},
+        "silhouetteGoal": {"enum": ["light_clean", "soft_mass", "fitted_tailored", "layered_outerwear", "broad_yoke", "compact_structured"]},
+        "designMood": {"enum": ["bright", "cozy", "refined", "romantic", "playful", "mysterious", "technical", "rugged", "magical", "whimsical", "energetic"]},
+        "primaryGesture": {"enum": ["color_block", "trim", "motif", "pattern", "layering", "closure", "yoke"]},
+        "secondaryGesture": {"enum": ["none", "color_block", "trim", "motif", "pattern", "layering", "closure", "yoke"]},
+        "focalArea": {"enum": ["collar", "shoulders", "upper_chest", "center_chest", "side_chest", "waist", "hem", "upper_back"]},
+        "symmetryBias": {"enum": ["symmetric", "soft_asymmetric", "asymmetric"]},
+        "designDensity": {"enum": ["low", "moderate", "rich_restrained"]},
+        "themeEmphasis": {"enum": ["subtle", "moderate", "strong"]}
+      }
+    },
+    "construction": {
+      "type": "object", "additionalProperties": false,
+      "required": ["fit", "neckline", "collar", "closure", "layering", "hem", "panelLayout"],
+      "properties": {
+        "fit": {"enum": ["fitted", "regular", "relaxed"]},
+        "neckline": {"enum": ["round", "crew", "shallow_v", "open"]},
+        "collar": {"enum": ["none", "small_folded", "wide", "sailor"]},
+        "closure": {"enum": ["none", "center_open", "buttons"]},
+        "layering": {"enum": ["single_layer", "visible_inner_layer", "overlay_panel"]},
+        "hem": {"enum": ["plain", "ribbed", "structured", "contrast_band"]},
+        "panelLayout": {"enum": ["solid", "center_placket", "split_outer_panels", "yoke", "upper_lower_split"]}
+      }
+    },
+    "substantialFeatures": {
+      "type": "array", "minItems": 0, "maxItems": 2, "uniqueItems": true,
+      "items": {"enum": ["contrast_inner_layer", "broad_collar", "ribbed_hem", "major_panel_contrast", "center_placket", "wrapping_stripe", "yoke", "split_outer_panels", "structured_lower_band"]}
+    },
+    "colorBlocking": {
+      "type": "object", "additionalProperties": false,
+      "required": ["type", "topology", "colorRole"],
+      "properties": {
+        "type": {"enum": ["none", "shoulder_block", "yoke_block", "chest_band", "vertical_split", "side_panels", "lower_band", "contrast_sleeves", "inner_layer_emphasis", "waist_block", "center_panel"]},
+        "topology": {"enum": ["front_only", "front_back", "wrap", "shoulder_wrap", "construction_bound"]},
+        "colorRole": {"enum": ["secondary", "accent", "light_accent", "dark_accent"]}
+      }
+    },
+    "surfaceDesign": {
+      "type": "object", "additionalProperties": false,
+      "required": ["compositionType", "supportSystems", "trim", "motif", "pattern", "detailLayout"],
+      "properties": {
+        "compositionType": {"enum": ["color_block_led", "trim_led", "motif_led", "pattern_led", "collar_led", "hem_led", "asymmetric_accent_led"]},
+        "supportSystems": {"type": "array", "minItems": 0, "maxItems": 2, "uniqueItems": true, "items": {"enum": ["color_block", "trim", "motif", "pattern", "detail_layout"]}},
+        "trim": {
+          "type": "object", "additionalProperties": false, "required": ["type", "topology", "colorRole"],
+          "properties": {
+            "type": {"enum": ["none", "collar_trim", "cuff_trim", "hem_trim", "double_stripe", "piping", "scalloped_trim", "lace_border", "decorative_edge_band", "lapel_trim", "seam_emphasis"]},
+            "topology": {"enum": ["front_only", "front_back", "wrap", "shoulder_wrap", "construction_bound"]},
+            "colorRole": {"enum": ["secondary", "accent", "light_accent", "dark_accent"]}
+          }
+        },
+        "motif": {
+          "type": "object", "additionalProperties": false, "required": ["family", "scale", "topology", "colorRoles"],
+          "properties": {
+            "family": {"enum": ["none", "fruit", "flower", "star", "heart", "ribbon", "leaf", "crystal", "lightning", "military_geometry", "creature", "dessert", "cyber_glyph", "sun_wave"]},
+            "scale": {"enum": ["small", "medium", "focal"]},
+            "topology": {"enum": ["front_only", "front_back_pair", "shoulder_wrap", "asymmetric_front"]},
+            "colorRoles": {"type": "array", "minItems": 0, "maxItems": 3, "uniqueItems": true, "items": {"enum": ["secondary", "accent", "light_accent", "dark_accent"]}}
+          }
+        },
+        "pattern": {
+          "type": "object", "additionalProperties": false, "required": ["type", "density", "topology", "colorRole"],
+          "properties": {
+            "type": {"enum": ["none", "dots", "stripes", "chevrons", "diamonds", "checks", "soft_repeat", "military_repeat", "themed_band"]},
+            "density": {"enum": ["sparse", "moderate"]},
+            "topology": {"enum": ["front_only", "front_back", "wrap", "upper_only", "lower_only"]},
+            "colorRole": {"enum": ["secondary", "accent", "light_accent", "dark_accent"]}
+          }
+        },
+        "detailLayout": {"enum": ["none", "pocket_pair", "chest_accent", "shoulder_accent", "center_decoration", "asymmetrical_side_accent", "coordinated_cuff_hem", "front_focal", "front_back_pair", "upper_back", "coordinated_directional"]}
+      }
+    },
+    "paletteStory": {"enum": ["seafoam_coral", "harvest_cream", "ink_ivory", "rose_sage", "berry_cream", "plum_moon", "teal_circuit", "field_tan", "midnight_gold", "storybook_blue", "ember_charcoal", "moss_creature", "aot_garrison_tan", "aot_field_olive", "aot_formal_charcoal", "aot_civilian_rust", "aot_high_contrast_field", "legendary_pearl_midnight_gold", "legendary_crimson_charcoal_ivory", "legendary_jade_cream_bronze", "legendary_frost_silver_black", "legendary_sunset_amber_indigo", "legendary_white_teal_graphite"]},
+    "dyeable": {"const": true},
+    "itemName": {"type": "string", "minLength": 3, "maxLength": 48},
+    "itemDescription": {"type": "string", "minLength": 8, "maxLength": 180}
+  }
+}

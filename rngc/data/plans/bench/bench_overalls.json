@@ -1,0 +1,20 @@
+{
+  "id": "bench_overalls",
+  "name": "V5 Bench Overalls",
+  "template": "OVERALLS",
+  "blank": "torso_basic",
+  "pieces": [
+    "neck_crew",
+    "bib_overalls",
+    "straps_overalls",
+    "hem_plain"
+  ],
+  "palette": "bench_overalls",
+  "sleeve_slot": "primary",
+  "hide_sleeves": false,
+  "tags": [
+    "OVERALLS",
+    "vanilla 216"
+  ],
+  "description": "Reconstruction of vanilla sprite 216 (Plain Overalls) garment type: bib and straps over a shirt."
+}

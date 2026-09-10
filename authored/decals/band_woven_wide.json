@@ -1,0 +1,26 @@
+{
+  "name": "band_woven_wide",
+  "motif_class": "woven_trim",
+  "slot": "HEAD",
+  "zone": "band",
+  "z": 2,
+  "style": [
+    "cottagecore",
+    "casual",
+    "festival"
+  ],
+  "views": [
+    "front",
+    "left",
+    "back"
+  ],
+  "fits": [
+    "wide_brim_hat"
+  ],
+  "description": "a woven band for the wide brim: solid strands, accent light",
+  "per_view": false,
+  "size": [
+    6,
+    1
+  ]
+}

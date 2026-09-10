@@ -1,0 +1,62 @@
+{
+  "formatVersion": "1.0.0",
+  "purpose": "Route semantic rarity to renderer capability without putting renderer coordinates into garment recipes.",
+  "activeSemanticRarities": ["Common", "Uncommon", "Rare"],
+  "routes": {
+    "Common": {
+      "rendererClass": "VANILLA_STARDEW_SINGLE_ARTICLE",
+      "backend": "vanilla",
+      "runtimeDependency": "Content Patcher only",
+      "logicalContract": "native Stardew clothing asset",
+      "maximumGeneratedAppearanceLayers": 0,
+      "supportsStateBehavior": false,
+      "intent": "Attractive, disciplined vanilla-scale clothing with one clear idea."
+    },
+    "Uncommon": {
+      "rendererClass": "FS_HD_SIMPLE_ARTICLE",
+      "backend": "fashionsense",
+      "runtimeDependency": "Fashion Sense 7.5.0",
+      "logicalContract": "16x16 Scale-2 upper article where applicable",
+      "maximumGeneratedAppearanceLayers": 1,
+      "allowedGeneratedComponents": ["Shirt"],
+      "nativeSleeveColorsAllowed": true,
+      "supportsStateBehavior": false,
+      "intent": "Higher-resolution single/simple article with stronger construction and surface design."
+    },
+    "Rare": {
+      "rendererClass": "FS_RARE_PLUS_COMPLEX_GARMENT",
+      "backend": "fashionsense",
+      "runtimeDependency": "Fashion Sense 7.5.0; Content Patcher only when conditional state policy is requested",
+      "logicalContract": "coordinated Fashion Sense appearance layers",
+      "minimumGeneratedAppearanceLayers": 1,
+      "allowedGeneratedComponents": ["Shirt", "Hat", "Accessory"],
+      "nativeSleeveColorsAllowed": true,
+      "sleeveRuntimeContract": "NATIVE_ANIMATED_SLEEVES_V1",
+      "customSleevesStatus": "REJECTED_UNTIL_SEPARATELY_RUNTIME_CALIBRATED",
+      "presetRequiredWhenLayerCountExceedsOne": true,
+      "supportsStateBehavior": true,
+      "intent": "Premium coordinated garment composition with controlled complexity and headroom for future tiers."
+    }
+  },
+  "rarePlusTemplate": {
+    "templateId": "RARE_PLUS_COMPLEX_LAYER_GARMENT_V1",
+    "referenceImplementation": "hoodie_weather_hat_v1",
+    "minimumActiveRarity": "Rare",
+    "supportedComponents": ["Shirt", "native_sleeves_via_SleeveColors", "Hat", "Accessory"],
+    "optionalFeatures": ["Preset", "conditional_state", "weather_policy"],
+    "architectureStatus": "LOCKED_PENDING_FINAL_RUNTIME_CONFIRMATION",
+    "promotionStatus": "EXPERIMENTAL",
+    "reason": "Static contracts and the full 74-style vanilla idle audit pass as diagnostics, but 13 long/bulky Hair IDs require the manual PreserveFrontOnly fallback and live animation confirmation is still pending."
+  },
+  "rules": [
+    "Rarity selects renderer capability; it does not add random decorative pixels.",
+    "Common recipes remain semantic and must be translated into the vanilla renderer's supported vocabulary.",
+    "Uncommon may not silently assemble Hat, Accessory, or generated Sleeves companions.",
+    "Rare uses the RarePlus route in the current Common/Uncommon/Rare system.",
+    "RarePlus coordination remains controlled and may not consume future Legendary/Mythic silhouette, animation, or VFX space.",
+    "A coordinated garment with multiple Fashion Sense appearances must export a preset so the player equips one semantic item.",
+    "Renderer-specific coordinates, anchors, frame maps, and conditions remain outside semantic recipes."
+    ,"Every Fashion Sense upper garment passes POST_V5E_GAMEPLAY_ART_POLISH after article construction and before export; this pass may change shade roles but never alpha geometry or runtime fields."
+    ,"Custom generated Sleeves may not be exported under the rejected 32x64 Scale-2 contract; native animated SleeveColors are the known-good V1 arm path."
+  ]
+}

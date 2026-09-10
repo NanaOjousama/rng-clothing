@@ -1,0 +1,7505 @@
+{
+ "families": [
+  {
+   "family": "Bag",
+   "pack": "Alt-Fashion Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Bag (Backpack, Heart)",
+   "base_cells": 112,
+   "variants": [
+    {
+     "variant": "Bag (Backpack, Small 1)",
+     "class": "REFERENCE-ONLY",
+     "added": 32,
+     "changed": 53,
+     "removed": 12,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Bag (Backpack, Small 2)",
+     "class": "REFERENCE-ONLY",
+     "added": 30,
+     "changed": 46,
+     "removed": 12,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Bag (Backpack, Wings)",
+     "class": "REFERENCE-ONLY",
+     "added": 98,
+     "changed": 49,
+     "removed": 10,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Bag (Backpack, Small 1)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/BagBackpackSmall1/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/BagBackpackSmall1/accessory.json",
+     "why": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Bag (Backpack, Small 2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/BagBackpackSmall2/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/BagBackpackSmall2/accessory.json",
+     "why": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Bag (Backpack, Wings)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/BagBackpackWings/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/BagBackpackWings/accessory.json",
+     "why": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     70,
+     70,
+     70
+    ],
+    [
+     78,
+     78,
+     78
+    ],
+    [
+     92,
+     92,
+     92
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     70.0,
+     78.0,
+     92.0,
+     119.0,
+     165.0,
+     217.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 8,
+    "gaps": [
+     13.0,
+     8.0,
+     14.0,
+     27.0,
+     46.0,
+     52.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/BagBackpackHeart/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.AltFashionSet"
+   }
+  },
+  {
+   "family": "Belt",
+   "pack": "Alt-Fashion Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Belt",
+   "base_cells": 32,
+   "variants": [
+    {
+     "variant": "Belt (Chains 1)",
+     "class": "BASE-SPECIFIC",
+     "added": 30,
+     "changed": 10,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 30 cells but also re-shades 10 of the base's 32, above the 10% bound"
+    },
+    {
+     "variant": "Belt (Chains 2)",
+     "class": "BASE-SPECIFIC",
+     "added": 62,
+     "changed": 11,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 62 cells but also re-shades 11 of the base's 32, above the 10% bound"
+    },
+    {
+     "variant": "Belt (Chains 3)",
+     "class": "REUSABLE",
+     "added": 20,
+     "changed": 0,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 20 cells and disturbs only 0 of the base"
+    },
+    {
+     "variant": "Belt (Chains 4)",
+     "class": "REUSABLE",
+     "added": 10,
+     "changed": 0,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 10 cells and disturbs only 0 of the base"
+    },
+    {
+     "variant": "Belt (Chains 5)",
+     "class": "BASE-SPECIFIC",
+     "added": 28,
+     "changed": 5,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 28 cells but also re-shades 5 of the base's 32, above the 10% bound"
+    },
+    {
+     "variant": "Belt (Wide 1)",
+     "class": "BASE-SPECIFIC",
+     "added": 32,
+     "changed": 11,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 32 cells but also re-shades 11 of the base's 32, above the 10% bound"
+    },
+    {
+     "variant": "Belt (Wide 2)",
+     "class": "BASE-SPECIFIC",
+     "added": 62,
+     "changed": 10,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 62 cells but also re-shades 10 of the base's 32, above the 10% bound"
+    }
+   ],
+   "modelled_count": 7,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     121,
+     121,
+     121
+    ],
+    [
+     144,
+     144,
+     144
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     121.0,
+     144.0,
+     217.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 5,
+    "gaps": [
+     64.0,
+     23.0,
+     73.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/Belt/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.AltFashionSet"
+   }
+  },
+  {
+   "family": "Choker",
+   "pack": "Alt-Fashion Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Choker",
+   "base_cells": 14,
+   "variants": [
+    {
+     "variant": "Choker (Bell 1)",
+     "class": "BASE-SPECIFIC",
+     "added": 10,
+     "changed": 2,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 10 cells but also re-shades 2 of the base's 14, above the 10% bound"
+    },
+    {
+     "variant": "Choker (Bell 2)",
+     "class": "REFERENCE-ONLY",
+     "added": 16,
+     "changed": 2,
+     "removed": 6,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Choker (Bow)",
+     "class": "REFERENCE-ONLY",
+     "added": 18,
+     "changed": 7,
+     "removed": 2,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Choker (Chain)",
+     "class": "REFERENCE-ONLY",
+     "added": 28,
+     "changed": 0,
+     "removed": 10,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Choker (Ring)",
+     "class": "REFERENCE-ONLY",
+     "added": 16,
+     "changed": 4,
+     "removed": 6,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Choker (Spiked)",
+     "class": "REFERENCE-ONLY",
+     "added": 18,
+     "changed": 3,
+     "removed": 10,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Choker (Bell 2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/ChokerBell2/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/ChokerBell2/accessory.json",
+     "why": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Choker (Bow)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/ChokerBow/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/ChokerBow/accessory.json",
+     "why": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Choker (Chain)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/ChokerChain/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/ChokerChain/accessory.json",
+     "why": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Choker (Ring)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/ChokerRing/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/ChokerRing/accessory.json",
+     "why": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Choker (Spiked)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/ChokerSpiked/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/ChokerSpiked/accessory.json",
+     "why": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     182,
+     136,
+     0
+    ],
+    [
+     121,
+     121,
+     121
+    ],
+    [
+     226,
+     178,
+     18
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     255,
+     255,
+     20
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     238,
+     238,
+     238
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7"
+   },
+   "tone": {
+    "levels": [
+     106.0,
+     121.0,
+     140.7,
+     165.0,
+     176.7,
+     217.0,
+     238.0,
+     254.0
+    ],
+    "span": 148.0,
+    "steps": 8,
+    "gaps": [
+     15.0,
+     19.7,
+     24.3,
+     11.7,
+     40.3,
+     21.0,
+     16.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/Choker/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.AltFashionSet"
+   }
+  },
+  {
+   "family": "Corset",
+   "pack": "Alt-Fashion Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Corset (Waist)",
+   "base_cells": 98,
+   "variants": [
+    {
+     "variant": "Corset (Body)",
+     "class": "BASE-SPECIFIC",
+     "added": 30,
+     "changed": 35,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 30 cells but also re-shades 35 of the base's 98, above the 10% bound"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     214,
+     214,
+     214
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light"
+   },
+   "tone": {
+    "levels": [
+     81.0,
+     165.0,
+     214.0,
+     254.0
+    ],
+    "span": 173.0,
+    "steps": 4,
+    "gaps": [
+     84.0,
+     49.0,
+     40.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/CorsetWaist/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.AltFashionSet"
+   }
+  },
+  {
+   "family": "Earrings",
+   "pack": "Alt-Fashion Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Earrings (Studs)",
+   "base_cells": 6,
+   "variants": [
+    {
+     "variant": "Earrings (Circle)",
+     "class": "REFERENCE-ONLY",
+     "added": 26,
+     "changed": 4,
+     "removed": 2,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Earrings (Cross)",
+     "class": "REFERENCE-ONLY",
+     "added": 32,
+     "changed": 2,
+     "removed": 2,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Earrings (Dangling 1)",
+     "class": "BASE-SPECIFIC",
+     "added": 6,
+     "changed": 6,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 6 cells but also re-shades 6 of the base's 6, above the 10% bound"
+    },
+    {
+     "variant": "Earrings (Dangling 2)",
+     "class": "BASE-SPECIFIC",
+     "added": 12,
+     "changed": 4,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 12 cells but also re-shades 4 of the base's 6, above the 10% bound"
+    },
+    {
+     "variant": "Earrings (Hoops)",
+     "class": "BASE-SPECIFIC",
+     "added": 14,
+     "changed": 4,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 14 cells but also re-shades 4 of the base's 6, above the 10% bound"
+    }
+   ],
+   "modelled_count": 3,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Earrings (Circle)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/EarringsCircle/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/EarringsCircle/accessory.json",
+     "why": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Earrings (Cross)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/EarringsCross/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/EarringsCross/accessory.json",
+     "why": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid"
+   },
+   "tone": {
+    "levels": [
+     165.0,
+     217.0,
+     254.0
+    ],
+    "span": 89.0,
+    "steps": 3,
+    "gaps": [
+     52.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/EarringsStuds/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.AltFashionSet"
+   }
+  },
+  {
+   "family": "Harness",
+   "pack": "Alt-Fashion Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Harness (Chest)",
+   "base_cells": 52,
+   "variants": [
+    {
+     "variant": "Harness (Underbust)",
+     "class": "REFERENCE-ONLY",
+     "added": 120,
+     "changed": 16,
+     "removed": 36,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 36 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Harness (Waist 1)",
+     "class": "REFERENCE-ONLY",
+     "added": 48,
+     "changed": 10,
+     "removed": 30,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 30 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Harness (Waist 2)",
+     "class": "REFERENCE-ONLY",
+     "added": 86,
+     "changed": 12,
+     "removed": 30,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 30 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Harness (Underbust)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/HarnessUnderbust/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/HarnessUnderbust/accessory.json",
+     "why": "removes 36 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Harness (Waist 1)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/HarnessWaist1/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/HarnessWaist1/accessory.json",
+     "why": "removes 30 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Harness (Waist 2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/HarnessWaist2/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/HarnessWaist2/accessory.json",
+     "why": "removes 30 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     121,
+     121,
+     121
+    ],
+    [
+     144,
+     144,
+     144
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec"
+   },
+   "tone": {
+    "levels": [
+     81.0,
+     121.0,
+     144.0,
+     165.0,
+     217.0,
+     254.0
+    ],
+    "span": 173.0,
+    "steps": 6,
+    "gaps": [
+     40.0,
+     23.0,
+     21.0,
+     52.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/HarnessChest/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.AltFashionSet"
+   }
+  },
+  {
+   "family": "MakeUp",
+   "pack": "Alt-Fashion Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Make-Up (Lipgloss)",
+   "base_cells": 6,
+   "variants": [
+    {
+     "variant": "Make-Up (Blush)",
+     "class": "REFERENCE-ONLY",
+     "added": 8,
+     "changed": 0,
+     "removed": 6,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Make-Up (Eyebags)",
+     "class": "REFERENCE-ONLY",
+     "added": 8,
+     "changed": 0,
+     "removed": 6,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Make-Up (Lipstick)",
+     "class": "BASE-SPECIFIC",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds no geometry; it re-shades 0 of the base's own cells, which cannot be lifted off this silhouette"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Make-Up (Blush)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/MakeUpBlush/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/MakeUpBlush/accessory.json",
+     "why": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Make-Up (Eyebags)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/MakeUpEyebags/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/MakeUpEyebags/accessory.json",
+     "why": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   "roles": {
+    "0": "outline"
+   },
+   "tone": {
+    "levels": [
+     255.0
+    ],
+    "span": 0.0,
+    "steps": 1,
+    "gaps": []
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Accessories/MakeUpLipgloss/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.AltFashionSet"
+   }
+  },
+  {
+   "family": "Beanie",
+   "pack": "Alt-Fashion Set",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Beanie",
+   "base_cells": 330,
+   "variants": [
+    {
+     "variant": "Beanie (Bunny)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "Back: frame size differs from the base"
+    },
+    {
+     "variant": "Beanie (Cat)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "Back: frame size differs from the base"
+    },
+    {
+     "variant": "Beanie (Floppy)",
+     "class": "REFERENCE-ONLY",
+     "added": 69,
+     "changed": 197,
+     "removed": 10,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Beanie (Bunny)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Hats/BeanieBunny/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Hats/BeanieBunny/hat.json",
+     "why": "Back: frame size differs from the base"
+    },
+    {
+     "name": "Beanie (Cat)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Hats/BeanieCat/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Hats/BeanieCat/hat.json",
+     "why": "Back: frame size differs from the base"
+    },
+    {
+     "name": "Beanie (Floppy)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Hats/BeanieFloppy/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Hats/BeanieFloppy/hat.json",
+     "why": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     214,
+     214,
+     214
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     119.0,
+     165.0,
+     214.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 6,
+    "gaps": [
+     24.0,
+     38.0,
+     46.0,
+     49.0,
+     40.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Hats/Beanie/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.AltFashionSet"
+   }
+  },
+  {
+   "family": "Earmuffs",
+   "pack": "Alt-Fashion Set",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Earmuffs (Horns)",
+   "base_cells": 276,
+   "variants": [
+    {
+     "variant": "Earmuffs (Angel Wings)",
+     "class": "REFERENCE-ONLY",
+     "added": 30,
+     "changed": 66,
+     "removed": 8,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 8 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Earmuffs (Bat Wings)",
+     "class": "REFERENCE-ONLY",
+     "added": 42,
+     "changed": 70,
+     "removed": 12,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Earmuffs (Angel Wings)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Hats/EarmuffsAngelWings/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Hats/EarmuffsAngelWings/hat.json",
+     "why": "removes 8 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Earmuffs (Bat Wings)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Hats/EarmuffsBatWings/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Hats/EarmuffsBatWings/hat.json",
+     "why": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     78,
+     78,
+     78
+    ],
+    [
+     112,
+     112,
+     112
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     172,
+     172,
+     172
+    ],
+    [
+     214,
+     214,
+     214
+    ],
+    [
+     232,
+     232,
+     232
+    ],
+    [
+     248,
+     248,
+     248
+    ],
+    [
+     254,
+     252,
+     255
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7",
+    "8": "step8",
+    "9": "step9"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     78.0,
+     112.0,
+     119.0,
+     165.0,
+     172.0,
+     214.0,
+     232.0,
+     248.0,
+     253.7
+    ],
+    "span": 196.7,
+    "steps": 10,
+    "gaps": [
+     21.0,
+     34.0,
+     7.0,
+     46.0,
+     7.0,
+     42.0,
+     18.0,
+     16.0,
+     5.7
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Hats/EarmuffsHorns/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.AltFashionSet"
+   }
+  },
+  {
+   "family": "Headband",
+   "pack": "Alt-Fashion Set",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Headband (Studded)",
+   "base_cells": 44,
+   "variants": [
+    {
+     "variant": "Headband (Horns)",
+     "class": "BASE-SPECIFIC",
+     "added": 28,
+     "changed": 38,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 28 cells but also re-shades 38 of the base's 44, above the 10% bound"
+    },
+    {
+     "variant": "Headband (Wide)",
+     "class": "BASE-SPECIFIC",
+     "added": 24,
+     "changed": 38,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 24 cells but also re-shades 38 of the base's 44, above the 10% bound"
+    },
+    {
+     "variant": "Headband (Wide, Studded)",
+     "class": "BASE-SPECIFIC",
+     "added": 24,
+     "changed": 6,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 24 cells but also re-shades 6 of the base's 44, above the 10% bound"
+    }
+   ],
+   "modelled_count": 3,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     121,
+     121,
+     121
+    ],
+    [
+     144,
+     144,
+     144
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     121.0,
+     144.0,
+     165.0,
+     217.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 7,
+    "gaps": [
+     24.0,
+     40.0,
+     23.0,
+     21.0,
+     52.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Hats/HeadbandStudded/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.AltFashionSet"
+   }
+  },
+  {
+   "family": "Bra",
+   "pack": "Alt-Fashion Set",
+   "author": "plurffle",
+   "category": "Shirts",
+   "base": "Bra",
+   "base_cells": 124,
+   "variants": [
+    {
+     "variant": "Bra (Strapless)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 0,
+     "removed": 18,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 18 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Bra (Strapless)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/BraStrapless/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/BraStrapless/shirt.json",
+     "why": "removes 18 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     188,
+     188,
+     188
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight"
+   },
+   "tone": {
+    "levels": [
+     81.0,
+     165.0,
+     188.0,
+     217.0,
+     254.0
+    ],
+    "span": 173.0,
+    "steps": 5,
+    "gaps": [
+     84.0,
+     23.0,
+     29.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/Bra/shirt.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.AltFashionSet"
+   }
+  },
+  {
+   "family": "Bustier",
+   "pack": "Alt-Fashion Set",
+   "author": "plurffle",
+   "category": "Shirts",
+   "base": "Bustier (Crop)",
+   "base_cells": 126,
+   "variants": [
+    {
+     "variant": "Bustier (1)",
+     "class": "REFERENCE-ONLY",
+     "added": 60,
+     "changed": 46,
+     "removed": 6,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Bustier (2)",
+     "class": "REFERENCE-ONLY",
+     "added": 74,
+     "changed": 46,
+     "removed": 10,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Bustier (Strapless)",
+     "class": "REFERENCE-ONLY",
+     "added": 60,
+     "changed": 46,
+     "removed": 24,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 24 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Bustier (1)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/Bustier1/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/Bustier1/shirt.json",
+     "why": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Bustier (2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/Bustier2/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/Bustier2/shirt.json",
+     "why": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Bustier (Strapless)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/BustierStrapless/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/BustierStrapless/shirt.json",
+     "why": "removes 24 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     188,
+     188,
+     188
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight"
+   },
+   "tone": {
+    "levels": [
+     81.0,
+     165.0,
+     188.0,
+     217.0,
+     254.0
+    ],
+    "span": 173.0,
+    "steps": 5,
+    "gaps": [
+     84.0,
+     23.0,
+     29.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/BustierCrop/shirt.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.AltFashionSet"
+   }
+  },
+  {
+   "family": "Jacket",
+   "pack": "Alt-Fashion Set",
+   "author": "plurffle",
+   "category": "Shirts",
+   "base": "Jacket",
+   "base_cells": 224,
+   "variants": [
+    {
+     "variant": "Jacket (Crop Top)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 12,
+     "removed": 10,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Jacket (Cropped)",
+     "class": "BASE-SPECIFIC",
+     "added": 0,
+     "changed": 38,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds no geometry; it re-shades 38 of the base's own cells, which cannot be lifted off this silhouette"
+    },
+    {
+     "variant": "Jacket (Oversized)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "Back: frame size differs from the base"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Jacket (Crop Top)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/JacketCropTop/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/JacketCropTop/shirt.json",
+     "why": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Jacket (Oversized)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/JacketOversized/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/JacketOversized/shirt.json",
+     "why": "Back: frame size differs from the base"
+    }
+   ],
+   "vocabulary": [
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     188,
+     188,
+     188
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight"
+   },
+   "tone": {
+    "levels": [
+     81.0,
+     165.0,
+     188.0,
+     217.0,
+     254.0
+    ],
+    "span": 173.0,
+    "steps": 5,
+    "gaps": [
+     84.0,
+     23.0,
+     29.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/Jacket/shirt.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.AltFashionSet"
+   }
+  },
+  {
+   "family": "Top",
+   "pack": "Alt-Fashion Set",
+   "author": "plurffle",
+   "category": "Shirts",
+   "base": "Top",
+   "base_cells": 222,
+   "variants": [
+    {
+     "variant": "Top (Crop)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 26,
+     "removed": 58,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 58 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Top (Crop, Mesh)",
+     "class": "REFERENCE-ONLY",
+     "added": 16,
+     "changed": 68,
+     "removed": 102,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 102 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Top (Crop, Strappy)",
+     "class": "REFERENCE-ONLY",
+     "added": 2,
+     "changed": 76,
+     "removed": 94,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 94 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Top (Keyhole)",
+     "class": "REFERENCE-ONLY",
+     "added": 16,
+     "changed": 66,
+     "removed": 120,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 120 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Top (Low-Cut)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 12,
+     "removed": 4,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 4 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Top (Mesh)",
+     "class": "REFERENCE-ONLY",
+     "added": 10,
+     "changed": 134,
+     "removed": 4,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 4 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Top (Oversized)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "Back: frame size differs from the base"
+    },
+    {
+     "variant": "Top (Oversized, Layered)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "Back: frame size differs from the base"
+    },
+    {
+     "variant": "Top (Strappy)",
+     "class": "REFERENCE-ONLY",
+     "added": 2,
+     "changed": 58,
+     "removed": 36,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 36 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Top (Tube)",
+     "class": "REFERENCE-ONLY",
+     "added": 2,
+     "changed": 54,
+     "removed": 52,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 52 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Top (Turtleneck)",
+     "class": "REFERENCE-ONLY",
+     "added": 16,
+     "changed": 66,
+     "removed": 56,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 56 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Top (Crop)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopCrop/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopCrop/shirt.json",
+     "why": "removes 58 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Top (Crop, Mesh)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopCropMesh/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopCropMesh/shirt.json",
+     "why": "removes 102 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Top (Crop, Strappy)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopCropStrappy/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopCropStrappy/shirt.json",
+     "why": "removes 94 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Top (Keyhole)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopKeyhole/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopKeyhole/shirt.json",
+     "why": "removes 120 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Top (Low-Cut)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopLowCut/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopLowCut/shirt.json",
+     "why": "removes 4 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Top (Mesh)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopMesh/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopMesh/shirt.json",
+     "why": "removes 4 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Top (Oversized)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopOversized/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopOversized/shirt.json",
+     "why": "Back: frame size differs from the base"
+    },
+    {
+     "name": "Top (Oversized, Layered)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopOversizedLayered/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopOversizedLayered/shirt.json",
+     "why": "Back: frame size differs from the base"
+    },
+    {
+     "name": "Top (Strappy)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopStrappy/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopStrappy/shirt.json",
+     "why": "removes 36 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Top (Tube)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopTube/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopTube/shirt.json",
+     "why": "removes 52 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Top (Turtleneck)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopTurtleneck/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/TopTurtleneck/shirt.json",
+     "why": "removes 56 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     72,
+     72,
+     72
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     156,
+     156,
+     156
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     176,
+     176,
+     176
+    ],
+    [
+     188,
+     188,
+     188
+    ],
+    [
+     210,
+     210,
+     210
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     237,
+     235,
+     255
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7",
+    "8": "step8",
+    "9": "step9"
+   },
+   "tone": {
+    "levels": [
+     72.0,
+     81.0,
+     156.0,
+     165.0,
+     176.0,
+     188.0,
+     210.0,
+     217.0,
+     242.3,
+     254.0
+    ],
+    "span": 182.0,
+    "steps": 10,
+    "gaps": [
+     9.0,
+     75.0,
+     9.0,
+     11.0,
+     12.0,
+     22.0,
+     7.0,
+     25.3,
+     11.7
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Alt-Fashion Set/Shirts/Top/shirt.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.AltFashionSet"
+   }
+  },
+  {
+   "family": "Bag",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Bag (Shoulder 1)",
+   "base_cells": 52,
+   "variants": [
+    {
+     "variant": "Bag (Shoulder 2)",
+     "class": "REFERENCE-ONLY",
+     "added": 50,
+     "changed": 0,
+     "removed": 50,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 50 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Bag (Shoulder 3)",
+     "class": "REFERENCE-ONLY",
+     "added": 54,
+     "changed": 13,
+     "removed": 28,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 28 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Bag (Shoulder 4)",
+     "class": "REFERENCE-ONLY",
+     "added": 73,
+     "changed": 3,
+     "removed": 47,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 47 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Bag (Wicker Backpack)",
+     "class": "REFERENCE-ONLY",
+     "added": 109,
+     "changed": 15,
+     "removed": 31,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 31 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Bag (Wicker Backpack, Open)",
+     "class": "REFERENCE-ONLY",
+     "added": 115,
+     "changed": 15,
+     "removed": 31,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 31 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Bag (Shoulder 2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/BagShoulder2/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/BagShoulder2/accessory.json",
+     "why": "removes 50 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Bag (Shoulder 3)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/BagShoulder3/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/BagShoulder3/accessory.json",
+     "why": "removes 28 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Bag (Shoulder 4)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/BagShoulder4/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/BagShoulder4/accessory.json",
+     "why": "removes 47 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Bag (Wicker Backpack)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/BagWickerBackpack/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/BagWickerBackpack/accessory.json",
+     "why": "removes 31 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Bag (Wicker Backpack, Open)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/BagWickerBackpackOpen/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/BagWickerBackpackOpen/accessory.json",
+     "why": "removes 31 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     78,
+     78,
+     78
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     138,
+     138,
+     138
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     78.0,
+     119.0,
+     138.0,
+     165.0,
+     217.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 7,
+    "gaps": [
+     21.0,
+     41.0,
+     19.0,
+     27.0,
+     52.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/BagShoulder1/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Corset",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Corset (Under Bust)",
+   "base_cells": 70,
+   "variants": [
+    {
+     "variant": "Corset (Waist Cincher)",
+     "class": "REFERENCE-ONLY",
+     "added": 60,
+     "changed": 33,
+     "removed": 32,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 32 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Corset (Waist Cincher)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/CorsetWaistCincher/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/CorsetWaistCincher/accessory.json",
+     "why": "removes 32 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     188,
+     188,
+     188
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight"
+   },
+   "tone": {
+    "levels": [
+     81.0,
+     165.0,
+     188.0,
+     217.0,
+     254.0
+    ],
+    "span": 173.0,
+    "steps": 5,
+    "gaps": [
+     84.0,
+     23.0,
+     29.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/CorsetUnderBust/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Neckerchief",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Neckerchief (2)",
+   "base_cells": 98,
+   "variants": [
+    {
+     "variant": "Neckerchief (1)",
+     "class": "REFERENCE-ONLY",
+     "added": 30,
+     "changed": 54,
+     "removed": 11,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 11 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Neckerchief (3)",
+     "class": "REUSABLE",
+     "added": 12,
+     "changed": 0,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 12 cells and disturbs only 0 of the base"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Neckerchief (1)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/Neckerchief1/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/Neckerchief1/accessory.json",
+     "why": "removes 11 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     78,
+     78,
+     78
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     78.0,
+     119.0,
+     165.0,
+     217.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 6,
+    "gaps": [
+     21.0,
+     41.0,
+     46.0,
+     52.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/Neckerchief2/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Overalls",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Overalls",
+   "base_cells": 152,
+   "variants": [
+    {
+     "variant": "Overalls (Small)",
+     "class": "REFERENCE-ONLY",
+     "added": 12,
+     "changed": 24,
+     "removed": 34,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 34 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Overalls (Thick)",
+     "class": "REFERENCE-ONLY",
+     "added": 52,
+     "changed": 48,
+     "removed": 12,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Overalls (Small)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/OverallsSmall/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/OverallsSmall/accessory.json",
+     "why": "removes 34 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Overalls (Thick)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/OverallsThick/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/OverallsThick/accessory.json",
+     "why": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     214,
+     214,
+     214
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     165.0,
+     214.0,
+     255.0
+    ],
+    "span": 198.0,
+    "steps": 5,
+    "gaps": [
+     24.0,
+     84.0,
+     49.0,
+     41.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/Overalls/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Shawl",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Shawl (3)",
+   "base_cells": 222,
+   "variants": [
+    {
+     "variant": "Shawl (1)",
+     "class": "BASE-SPECIFIC",
+     "added": 29,
+     "changed": 23,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 29 cells but also re-shades 23 of the base's 222, above the 10% bound"
+    },
+    {
+     "variant": "Shawl (2)",
+     "class": "REUSABLE",
+     "added": 29,
+     "changed": 15,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 29 cells and disturbs only 15 of the base"
+    }
+   ],
+   "modelled_count": 2,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     188,
+     188,
+     188
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     240,
+     240,
+     240
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight"
+   },
+   "tone": {
+    "levels": [
+     81.0,
+     188.0,
+     217.0,
+     240.0,
+     254.0
+    ],
+    "span": 173.0,
+    "steps": 5,
+    "gaps": [
+     107.0,
+     29.0,
+     23.0,
+     14.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/Shawl3/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Suspenders",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Suspenders",
+   "base_cells": 64,
+   "variants": [
+    {
+     "variant": "Suspenders (H)",
+     "class": "REUSABLE",
+     "added": 2,
+     "changed": 6,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 2 cells and disturbs only 6 of the base"
+    },
+    {
+     "variant": "Suspenders (X)",
+     "class": "REFERENCE-ONLY",
+     "added": 2,
+     "changed": 0,
+     "removed": 2,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Suspenders (Y)",
+     "class": "REFERENCE-ONLY",
+     "added": 50,
+     "changed": 4,
+     "removed": 46,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 46 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Suspenders (X)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/SuspendersX/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/SuspendersX/accessory.json",
+     "why": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Suspenders (Y)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/SuspendersY/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/SuspendersY/accessory.json",
+     "why": "removes 46 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow"
+   },
+   "tone": {
+    "levels": [
+     217.0,
+     254.0
+    ],
+    "span": 37.0,
+    "steps": 2,
+    "gaps": [
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/Suspenders/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Vest",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Vest",
+   "base_cells": 110,
+   "variants": [
+    {
+     "variant": "Vest (Long)",
+     "class": "BASE-SPECIFIC",
+     "added": 60,
+     "changed": 22,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 60 cells but also re-shades 22 of the base's 110, above the 10% bound"
+    },
+    {
+     "variant": "Vest (Sweater)",
+     "class": "REFERENCE-ONLY",
+     "added": 126,
+     "changed": 66,
+     "removed": 22,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 22 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Vest (Thick)",
+     "class": "BASE-SPECIFIC",
+     "added": 36,
+     "changed": 14,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 36 cells but also re-shades 14 of the base's 110, above the 10% bound"
+    },
+    {
+     "variant": "Vest (Thick Sweater)",
+     "class": "REFERENCE-ONLY",
+     "added": 138,
+     "changed": 66,
+     "removed": 22,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 22 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 2,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Vest (Sweater)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/VestSweater/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/VestSweater/accessory.json",
+     "why": "removes 22 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Vest (Thick Sweater)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/VestThickSweater/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/VestThickSweater/accessory.json",
+     "why": "removes 22 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     188,
+     188,
+     188
+    ],
+    [
+     202,
+     202,
+     202
+    ],
+    [
+     214,
+     214,
+     214
+    ],
+    [
+     240,
+     240,
+     240
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     165.0,
+     188.0,
+     202.0,
+     214.0,
+     240.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 8,
+    "gaps": [
+     24.0,
+     84.0,
+     23.0,
+     14.0,
+     12.0,
+     26.0,
+     14.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/Vest/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Waistband",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Waistband",
+   "base_cells": 30,
+   "variants": [
+    {
+     "variant": "Waistband (Thick)",
+     "class": "BASE-SPECIFIC",
+     "added": 58,
+     "changed": 30,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 58 cells but also re-shades 30 of the base's 30, above the 10% bound"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     165.0,
+     217.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 5,
+    "gaps": [
+     24.0,
+     84.0,
+     52.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Accessories/Waistband/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Beret",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Beret",
+   "base_cells": 333,
+   "variants": [
+    {
+     "variant": "Beret (Dotted)",
+     "class": "BASE-SPECIFIC",
+     "added": 0,
+     "changed": 28,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds no geometry; it re-shades 28 of the base's own cells, which cannot be lifted off this silhouette"
+    },
+    {
+     "variant": "Beret (Leaf)",
+     "class": "REUSABLE",
+     "added": 15,
+     "changed": 19,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 15 cells and disturbs only 19 of the base"
+    },
+    {
+     "variant": "Beret (Ribbon)",
+     "class": "REFERENCE-ONLY",
+     "added": 48,
+     "changed": 56,
+     "removed": 1,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 1 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Beret (White Ribbon)",
+     "class": "REFERENCE-ONLY",
+     "added": 48,
+     "changed": 56,
+     "removed": 1,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 1 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 2,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Beret (Ribbon)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/BeretRibbon/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/BeretRibbon/hat.json",
+     "why": "removes 1 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Beret (White Ribbon)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/BeretWhiteRibbon/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/BeretWhiteRibbon/hat.json",
+     "why": "removes 1 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     94,
+     94,
+     94
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     94.0,
+     165.0,
+     217.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 6,
+    "gaps": [
+     24.0,
+     13.0,
+     71.0,
+     52.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/Beret/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "BoaterHat",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Boater Hat",
+   "base_cells": 292,
+   "variants": [
+    {
+     "variant": "Boater Hat (Bow)",
+     "class": "BASE-SPECIFIC",
+     "added": 26,
+     "changed": 92,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 26 cells but also re-shades 92 of the base's 292, above the 10% bound"
+    },
+    {
+     "variant": "Boater Hat (Ribbons)",
+     "class": "BASE-SPECIFIC",
+     "added": 134,
+     "changed": 80,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 134 cells but also re-shades 80 of the base's 292, above the 10% bound"
+    }
+   ],
+   "modelled_count": 2,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     60,
+     22,
+     0
+    ],
+    [
+     81,
+     44,
+     12
+    ],
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     173,
+     91,
+     24
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     206,
+     132,
+     53
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     255,
+     182,
+     72
+    ],
+    [
+     255,
+     225,
+     104
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7",
+    "8": "step8",
+    "9": "step9",
+    "10": "step10",
+    "11": "step11"
+   },
+   "tone": {
+    "levels": [
+     27.3,
+     45.7,
+     57.0,
+     81.0,
+     96.0,
+     119.0,
+     130.3,
+     165.0,
+     169.7,
+     194.7,
+     217.0,
+     254.0
+    ],
+    "span": 226.7,
+    "steps": 12,
+    "gaps": [
+     18.4,
+     11.3,
+     24.0,
+     15.0,
+     23.0,
+     11.3,
+     34.7,
+     4.7,
+     25.0,
+     22.3,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/BoaterHat/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Headband",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Headband (Daisies)",
+   "base_cells": 64,
+   "variants": [
+    {
+     "variant": "Headband (Ribbon)",
+     "class": "REFERENCE-ONLY",
+     "added": 112,
+     "changed": 44,
+     "removed": 10,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Headband (Ribbon)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/HeadbandRibbon/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/HeadbandRibbon/hat.json",
+     "why": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     238,
+     238,
+     238
+    ],
+    [
+     250,
+     250,
+     250
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec"
+   },
+   "tone": {
+    "levels": [
+     81.0,
+     165.0,
+     217.0,
+     238.0,
+     250.0,
+     254.0
+    ],
+    "span": 173.0,
+    "steps": 6,
+    "gaps": [
+     84.0,
+     52.0,
+     21.0,
+     12.0,
+     4.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/HeadbandDaisies/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Headscarf",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Headscarf",
+   "base_cells": 326,
+   "variants": [
+    {
+     "variant": "Headscarf (Dotted)",
+     "class": "BASE-SPECIFIC",
+     "added": 0,
+     "changed": 56,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds no geometry; it re-shades 56 of the base's own cells, which cannot be lifted off this silhouette"
+    },
+    {
+     "variant": "Headscarf (Small)",
+     "class": "REFERENCE-ONLY",
+     "added": 2,
+     "changed": 50,
+     "removed": 26,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 26 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Headscarf (Small, Dotted)",
+     "class": "REFERENCE-ONLY",
+     "added": 2,
+     "changed": 97,
+     "removed": 26,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 26 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Headscarf (Small)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/HeadscarfSmall/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/HeadscarfSmall/hat.json",
+     "why": "removes 26 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Headscarf (Small, Dotted)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/HeadscarfSmallDotted/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/HeadscarfSmallDotted/hat.json",
+     "why": "removes 26 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     154,
+     154,
+     154
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     206,
+     206,
+     206
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     246,
+     246,
+     246
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7",
+    "8": "step8"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     119.0,
+     154.0,
+     165.0,
+     206.0,
+     217.0,
+     246.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 9,
+    "gaps": [
+     24.0,
+     38.0,
+     35.0,
+     11.0,
+     41.0,
+     11.0,
+     29.0,
+     8.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/Headscarf/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Hood",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Hood (Mushroom)",
+   "base_cells": 661,
+   "variants": [
+    {
+     "variant": "Hood (Pointy)",
+     "class": "BASE-SPECIFIC",
+     "added": 0,
+     "changed": 85,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds no geometry; it re-shades 85 of the base's own cells, which cannot be lifted off this silhouette"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     226,
+     226,
+     226
+    ],
+    [
+     246,
+     246,
+     246
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     119.0,
+     165.0,
+     217.0,
+     226.0,
+     246.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 8,
+    "gaps": [
+     24.0,
+     38.0,
+     46.0,
+     52.0,
+     9.0,
+     20.0,
+     8.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/HoodMushroom/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "MushroomHat",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Mushroom Hat",
+   "base_cells": 432,
+   "variants": [
+    {
+     "variant": "Mushroom Hat (Dotted)",
+     "class": "BASE-SPECIFIC",
+     "added": 0,
+     "changed": 50,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds no geometry; it re-shades 50 of the base's own cells, which cannot be lifted off this silhouette"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     115,
+     97,
+     66
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     178,
+     156,
+     97
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     92.7,
+     119.0,
+     143.7,
+     165.0,
+     217.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 8,
+    "gaps": [
+     24.0,
+     11.7,
+     26.3,
+     24.7,
+     21.3,
+     52.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Hats/MushroomHat/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Blouse",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Shirts",
+   "base": "Blouse",
+   "base_cells": 222,
+   "variants": [
+    {
+     "variant": "Blouse (Button Up)",
+     "class": "REFERENCE-ONLY",
+     "added": 2,
+     "changed": 82,
+     "removed": 6,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Blouse (Frill Trim)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 105,
+     "removed": 12,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Blouse (Lacy)",
+     "class": "REFERENCE-ONLY",
+     "added": 6,
+     "changed": 120,
+     "removed": 10,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Blouse (Smocked)",
+     "class": "REFERENCE-ONLY",
+     "added": 6,
+     "changed": 80,
+     "removed": 6,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Blouse (Button Up)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Shirts/BlouseButtonUp/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Shirts/BlouseButtonUp/shirt.json",
+     "why": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Blouse (Frill Trim)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Shirts/BlouseFrillTrim/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Shirts/BlouseFrillTrim/shirt.json",
+     "why": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Blouse (Lacy)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Shirts/BlouseLacy/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Shirts/BlouseLacy/shirt.json",
+     "why": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Blouse (Smocked)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Shirts/BlouseSmocked/shirt.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Shirts/BlouseSmocked/shirt.json",
+     "why": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     188,
+     188,
+     188
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     241,
+     239,
+     255
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec"
+   },
+   "tone": {
+    "levels": [
+     81.0,
+     165.0,
+     188.0,
+     217.0,
+     245.0,
+     254.0
+    ],
+    "span": 173.0,
+    "steps": 6,
+    "gaps": [
+     84.0,
+     23.0,
+     29.0,
+     28.0,
+     9.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Shirts/Blouse/shirt.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Top",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Shirts",
+   "base": "Top (Off Shoulder)",
+   "base_cells": 168,
+   "variants": [
+    {
+     "variant": "Top (Ruched Bust)",
+     "class": "BASE-SPECIFIC",
+     "added": 44,
+     "changed": 96,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 44 cells but also re-shades 96 of the base's 168, above the 10% bound"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     94,
+     94,
+     94
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     180,
+     180,
+     180
+    ],
+    [
+     188,
+     188,
+     188
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6"
+   },
+   "tone": {
+    "levels": [
+     81.0,
+     94.0,
+     165.0,
+     180.0,
+     188.0,
+     217.0,
+     254.0
+    ],
+    "span": 173.0,
+    "steps": 7,
+    "gaps": [
+     13.0,
+     71.0,
+     15.0,
+     8.0,
+     29.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Shirts/TopOffShoulder/shirt.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Turtleneck",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Shirts",
+   "base": "Turtleneck",
+   "base_cells": 240,
+   "variants": [
+    {
+     "variant": "Turtleneck (Ruffled)",
+     "class": "BASE-SPECIFIC",
+     "added": 0,
+     "changed": 40,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds no geometry; it re-shades 40 of the base's own cells, which cannot be lifted off this silhouette"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     188,
+     188,
+     188
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight"
+   },
+   "tone": {
+    "levels": [
+     81.0,
+     165.0,
+     188.0,
+     217.0,
+     254.0
+    ],
+    "span": 173.0,
+    "steps": 5,
+    "gaps": [
+     84.0,
+     23.0,
+     29.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Shirts/Turtleneck/shirt.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "PuffySleeves",
+   "pack": "Cottagecore Set",
+   "author": "plurffle",
+   "category": "Sleeves",
+   "base": "Puffy Sleeves",
+   "base_cells": 9573,
+   "variants": [
+    {
+     "variant": "Puffy Sleeves (Ruffled Trims)",
+     "class": "REFERENCE-ONLY",
+     "added": 525,
+     "changed": 1424,
+     "removed": 1,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 1 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Puffy Sleeves (Ruffled Trims) 2",
+     "class": "REFERENCE-ONLY",
+     "added": 2738,
+     "changed": 4742,
+     "removed": 2201,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 2201 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Puffy Sleeves (Ruffled Trims)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Sleeves/PuffySleevesRuffledTrims/sleeves.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Sleeves/PuffySleevesRuffledTrims/sleeves.json",
+     "why": "removes 1 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Puffy Sleeves (Ruffled Trims) 2",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Sleeves/PuffySleevesRuffledTrims2/sleeves.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Sleeves/PuffySleevesRuffledTrims2/sleeves.json",
+     "why": "removes 2201 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     56,
+     12,
+     3
+    ],
+    [
+     35,
+     21,
+     25
+    ],
+    [
+     91,
+     35,
+     13
+    ],
+    [
+     14,
+     76,
+     59
+    ],
+    [
+     112,
+     23,
+     24
+    ],
+    [
+     107,
+     35,
+     35
+    ],
+    [
+     63,
+     63,
+     63
+    ],
+    [
+     158,
+     39,
+     9
+    ],
+    [
+     73,
+     73,
+     73
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     188,
+     76,
+     11
+    ],
+    [
+     99,
+     99,
+     99
+    ],
+    [
+     181,
+     97,
+     59
+    ],
+    [
+     121,
+     121,
+     121
+    ],
+    [
+     158,
+     120,
+     110
+    ],
+    [
+     137,
+     137,
+     137
+    ],
+    [
+     144,
+     144,
+     144
+    ],
+    [
+     228,
+     153,
+     90
+    ],
+    [
+     247,
+     182,
+     54
+    ],
+    [
+     193,
+     164,
+     151
+    ],
+    [
+     182,
+     206,
+     138
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     178,
+     255,
+     242
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7",
+    "8": "step8",
+    "9": "step9",
+    "10": "step10",
+    "11": "step11",
+    "12": "step12",
+    "13": "step13",
+    "14": "step14",
+    "15": "step15",
+    "16": "step16",
+    "17": "step17",
+    "18": "step18",
+    "19": "step19",
+    "20": "step20",
+    "21": "step21",
+    "22": "step22",
+    "23": "step23"
+   },
+   "tone": {
+    "levels": [
+     23.7,
+     27.0,
+     46.3,
+     49.7,
+     53.0,
+     59.0,
+     63.0,
+     68.7,
+     73.0,
+     81.0,
+     91.7,
+     99.0,
+     112.3,
+     121.0,
+     129.3,
+     137.0,
+     144.0,
+     157.0,
+     161.0,
+     169.3,
+     175.3,
+     217.0,
+     225.0,
+     254.0
+    ],
+    "span": 230.3,
+    "steps": 24,
+    "gaps": [
+     3.3,
+     19.3,
+     3.4,
+     3.3,
+     6.0,
+     4.0,
+     5.7,
+     4.3,
+     8.0,
+     10.7,
+     7.3,
+     13.3,
+     8.7,
+     8.3,
+     7.7,
+     7.0,
+     13.0,
+     4.0,
+     8.3,
+     6.0,
+     41.7,
+     8.0,
+     29.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] Cottagecore Set/Sleeves/PuffySleeves/sleeves.png",
+   "directions": [
+    "sheet"
+   ],
+   "credit": {
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.CottagecoreSet"
+   }
+  },
+  {
+   "family": "Cape",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Cape",
+   "base_cells": 390,
+   "variants": [
+    {
+     "variant": "Cape (Long)",
+     "class": "REFERENCE-ONLY",
+     "added": 96,
+     "changed": 84,
+     "removed": 10,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Cape (Longer)",
+     "class": "REFERENCE-ONLY",
+     "added": 122,
+     "changed": 86,
+     "removed": 8,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 8 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Cape (Short)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "BackAccessory: frame size differs from the base"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Cape (Long)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/CapeLong/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/CapeLong/accessory.json",
+     "why": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Cape (Longer)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/CapeLonger/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/CapeLonger/accessory.json",
+     "why": "removes 8 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Cape (Short)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/CapeShort/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/CapeShort/accessory.json",
+     "why": "BackAccessory: frame size differs from the base"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     119.0,
+     165.0,
+     217.0
+    ],
+    "span": 160.0,
+    "steps": 5,
+    "gaps": [
+     24.0,
+     38.0,
+     46.0,
+     52.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/Cape/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "Collar",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Collar",
+   "base_cells": 95,
+   "variants": [
+    {
+     "variant": "Collar (Fur)",
+     "class": "REFERENCE-ONLY",
+     "added": 85,
+     "changed": 65,
+     "removed": 7,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 7 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Collar (Fur, Extra Fluffy)",
+     "class": "REFERENCE-ONLY",
+     "added": 179,
+     "changed": 65,
+     "removed": 7,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 7 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Collar (Upturned 1)",
+     "class": "REFERENCE-ONLY",
+     "added": 172,
+     "changed": 10,
+     "removed": 81,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 81 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Collar (Upturned 2)",
+     "class": "REFERENCE-ONLY",
+     "added": 172,
+     "changed": 10,
+     "removed": 81,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 81 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Collar (Fur)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/CollarFur/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/CollarFur/accessory.json",
+     "why": "removes 7 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Collar (Fur, Extra Fluffy)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/CollarFurExtraFluffy/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/CollarFurExtraFluffy/accessory.json",
+     "why": "removes 7 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Collar (Upturned 1)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/CollarUpturned1/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/CollarUpturned1/accessory.json",
+     "why": "removes 81 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Collar (Upturned 2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/CollarUpturned2/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/CollarUpturned2/accessory.json",
+     "why": "removes 81 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     119.0,
+     165.0,
+     217.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 6,
+    "gaps": [
+     24.0,
+     38.0,
+     46.0,
+     52.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/Collar/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "Earrings",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Earrings (Studs)",
+   "base_cells": 6,
+   "variants": [
+    {
+     "variant": "Earrings (Dangling 1)",
+     "class": "BASE-SPECIFIC",
+     "added": 6,
+     "changed": 6,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 6 cells but also re-shades 6 of the base's 6, above the 10% bound"
+    },
+    {
+     "variant": "Earrings (Dangling 2)",
+     "class": "BASE-SPECIFIC",
+     "added": 12,
+     "changed": 4,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 12 cells but also re-shades 4 of the base's 6, above the 10% bound"
+    }
+   ],
+   "modelled_count": 2,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid"
+   },
+   "tone": {
+    "levels": [
+     165.0,
+     217.0,
+     254.0
+    ],
+    "span": 89.0,
+    "steps": 3,
+    "gaps": [
+     52.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/EarringsStuds/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "Glasses",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Glasses (Half)",
+   "base_cells": 46,
+   "variants": [
+    {
+     "variant": "Glasses (Large 1)",
+     "class": "REFERENCE-ONLY",
+     "added": 16,
+     "changed": 0,
+     "removed": 6,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Glasses (Large 2)",
+     "class": "REFERENCE-ONLY",
+     "added": 20,
+     "changed": 0,
+     "removed": 6,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Glasses (Large 1)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/GlassesLarge1/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/GlassesLarge1/accessory.json",
+     "why": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Glasses (Large 2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/GlassesLarge2/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/GlassesLarge2/accessory.json",
+     "why": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     45,
+     130,
+     147
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light"
+   },
+   "tone": {
+    "levels": [
+     107.3,
+     165.0,
+     217.0,
+     254.0
+    ],
+    "span": 146.7,
+    "steps": 4,
+    "gaps": [
+     57.7,
+     52.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/GlassesHalf/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "MakeUp",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Make-Up (Lipgloss)",
+   "base_cells": 6,
+   "variants": [
+    {
+     "variant": "Make-Up (Blush)",
+     "class": "REFERENCE-ONLY",
+     "added": 8,
+     "changed": 0,
+     "removed": 6,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Make-Up (Lipstick)",
+     "class": "BASE-SPECIFIC",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds no geometry; it re-shades 0 of the base's own cells, which cannot be lifted off this silhouette"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Make-Up (Blush)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MakeUpBlush/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MakeUpBlush/accessory.json",
+     "why": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   "roles": {
+    "0": "outline"
+   },
+   "tone": {
+    "levels": [
+     255.0
+    ],
+    "span": 0.0,
+    "steps": 1,
+    "gaps": []
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MakeUpLipgloss/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "Mask",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Mask",
+   "base_cells": 91,
+   "variants": [
+    {
+     "variant": "Mask (Bandana 1)",
+     "class": "REFERENCE-ONLY",
+     "added": 36,
+     "changed": 29,
+     "removed": 2,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Mask (Bandana 2)",
+     "class": "BASE-SPECIFIC",
+     "added": 20,
+     "changed": 20,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 20 cells but also re-shades 20 of the base's 91, above the 10% bound"
+    },
+    {
+     "variant": "Mask (Eyes)",
+     "class": "REFERENCE-ONLY",
+     "added": 24,
+     "changed": 10,
+     "removed": 81,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 81 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Mask (Kitsune 1)",
+     "class": "REFERENCE-ONLY",
+     "added": 214,
+     "changed": 32,
+     "removed": 53,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 53 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Mask (Kitsune 2)",
+     "class": "REFERENCE-ONLY",
+     "added": 214,
+     "changed": 32,
+     "removed": 53,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 53 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Mask (Kitsune 3)",
+     "class": "REFERENCE-ONLY",
+     "added": 224,
+     "changed": 27,
+     "removed": 63,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 63 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Mask (Kitsune 4)",
+     "class": "REFERENCE-ONLY",
+     "added": 190,
+     "changed": 14,
+     "removed": 71,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 71 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Mask (Masquerade)",
+     "class": "REFERENCE-ONLY",
+     "added": 32,
+     "changed": 10,
+     "removed": 81,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 81 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Mask (Plague Doctor)",
+     "class": "REFERENCE-ONLY",
+     "added": 252,
+     "changed": 42,
+     "removed": 23,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 23 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Mask (Sleeping Mask)",
+     "class": "REFERENCE-ONLY",
+     "added": 68,
+     "changed": 0,
+     "removed": 91,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 91 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Mask (Bandana 1)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskBandana1/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskBandana1/accessory.json",
+     "why": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Mask (Eyes)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskEye/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskEye/accessory.json",
+     "why": "removes 81 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Mask (Kitsune 1)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskKitsune1/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskKitsune1/accessory.json",
+     "why": "removes 53 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Mask (Kitsune 2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskKitsune2/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskKitsune2/accessory.json",
+     "why": "removes 53 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Mask (Kitsune 3)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskKitsune3/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskKitsune3/accessory.json",
+     "why": "removes 63 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Mask (Kitsune 4)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskKitsune4/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskKitsune4/accessory.json",
+     "why": "removes 71 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Mask (Masquerade)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskMasquerade/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskMasquerade/accessory.json",
+     "why": "removes 81 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Mask (Plague Doctor)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskPlagueDoctor/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskPlagueDoctor/accessory.json",
+     "why": "removes 23 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Mask (Sleeping Mask)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskSleepingMask/accessory.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/MaskSleepingMask/accessory.json",
+     "why": "removes 91 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     11,
+     12,
+     22
+    ],
+    [
+     7,
+     21,
+     31
+    ],
+    [
+     29,
+     30,
+     40
+    ],
+    [
+     40,
+     40,
+     40
+    ],
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     186,
+     53,
+     48
+    ],
+    [
+     130,
+     102,
+     101
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     225,
+     87,
+     82
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     196,
+     169,
+     147
+    ],
+    [
+     234,
+     211,
+     179
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     247,
+     227,
+     200
+    ],
+    [
+     255,
+     250,
+     228
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7",
+    "8": "step8",
+    "9": "step9",
+    "10": "step10",
+    "11": "step11",
+    "12": "step12",
+    "13": "step13",
+    "14": "step14",
+    "15": "step15",
+    "16": "step16"
+   },
+   "tone": {
+    "levels": [
+     15.0,
+     19.7,
+     33.0,
+     40.0,
+     57.0,
+     81.0,
+     95.7,
+     111.0,
+     119.0,
+     131.3,
+     165.0,
+     170.7,
+     208.0,
+     217.0,
+     224.7,
+     244.3,
+     254.0
+    ],
+    "span": 239.0,
+    "steps": 17,
+    "gaps": [
+     4.7,
+     13.3,
+     7.0,
+     17.0,
+     24.0,
+     14.7,
+     15.3,
+     8.0,
+     12.3,
+     33.7,
+     5.7,
+     37.3,
+     9.0,
+     7.7,
+     19.6,
+     9.7
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/Mask/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "Plumbob",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Accessories",
+   "base": "Plumbob (Animated)",
+   "base_cells": 92,
+   "variants": [
+    {
+     "variant": "Plumbob (Health, Animated)",
+     "class": "BASE-SPECIFIC",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds no geometry; it re-shades 0 of the base's own cells, which cannot be lifted off this silhouette"
+    },
+    {
+     "variant": "Plumbob (Health, Static)",
+     "class": "BASE-SPECIFIC",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds no geometry; it re-shades 0 of the base's own cells, which cannot be lifted off this silhouette"
+    },
+    {
+     "variant": "Plumbob (Stamina, Animated)",
+     "class": "BASE-SPECIFIC",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds no geometry; it re-shades 0 of the base's own cells, which cannot be lifted off this silhouette"
+    },
+    {
+     "variant": "Plumbob (Stamina, Static)",
+     "class": "BASE-SPECIFIC",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds no geometry; it re-shades 0 of the base's own cells, which cannot be lifted off this silhouette"
+    },
+    {
+     "variant": "Plumbob (Static)",
+     "class": "BASE-SPECIFIC",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds no geometry; it re-shades 0 of the base's own cells, which cannot be lifted off this silhouette"
+    }
+   ],
+   "modelled_count": 5,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     6,
+     58,
+     43
+    ],
+    [
+     25,
+     99,
+     35
+    ],
+    [
+     87,
+     161,
+     20
+    ],
+    [
+     137,
+     229,
+     50
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light"
+   },
+   "tone": {
+    "levels": [
+     35.7,
+     53.0,
+     89.3,
+     138.7
+    ],
+    "span": 103.0,
+    "steps": 4,
+    "gaps": [
+     17.3,
+     36.3,
+     49.4
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Accessories/PlumbobAnimated/accessory.png",
+   "directions": [
+    "BackAccessory",
+    "FrontAccessory",
+    "LeftAccessory",
+    "RightAccessory"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "Beanie",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Beanie",
+   "base_cells": 334,
+   "variants": [
+    {
+     "variant": "Beanie (Cat)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "Back: frame size differs from the base"
+    },
+    {
+     "variant": "Beanie (Floppy)",
+     "class": "REFERENCE-ONLY",
+     "added": 76,
+     "changed": 188,
+     "removed": 16,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 16 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Beanie (Cat)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BeanieCat/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BeanieCat/hat.json",
+     "why": "Back: frame size differs from the base"
+    },
+    {
+     "name": "Beanie (Floppy)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BeanieFloppy/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BeanieFloppy/hat.json",
+     "why": "removes 16 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     119.0,
+     165.0,
+     217.0,
+     255.0
+    ],
+    "span": 198.0,
+    "steps": 6,
+    "gaps": [
+     24.0,
+     38.0,
+     46.0,
+     52.0,
+     38.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/Beanie/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "Bow",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Bow (Side 1)",
+   "base_cells": 99,
+   "variants": [
+    {
+     "variant": "Bow (Large 1)",
+     "class": "REFERENCE-ONLY",
+     "added": 110,
+     "changed": 72,
+     "removed": 22,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 22 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Bow (Large 2)",
+     "class": "REFERENCE-ONLY",
+     "added": 133,
+     "changed": 77,
+     "removed": 18,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 18 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Bow (Side 2)",
+     "class": "REFERENCE-ONLY",
+     "added": 63,
+     "changed": 0,
+     "removed": 63,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 63 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Bow (Large 1)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BowLarge1/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BowLarge1/hat.json",
+     "why": "removes 22 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Bow (Large 2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BowLarge2/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BowLarge2/hat.json",
+     "why": "removes 18 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Bow (Side 2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BowSide2/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BowSide2/hat.json",
+     "why": "removes 63 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     119.0,
+     165.0,
+     217.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 6,
+    "gaps": [
+     24.0,
+     38.0,
+     46.0,
+     52.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BowSide1/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Right"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "Bows",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Bows (Double, Small 1)",
+   "base_cells": 36,
+   "variants": [
+    {
+     "variant": "Bows (Double)",
+     "class": "REFERENCE-ONLY",
+     "added": 168,
+     "changed": 22,
+     "removed": 6,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Bows (Double, Side)",
+     "class": "REFERENCE-ONLY",
+     "added": 78,
+     "changed": 12,
+     "removed": 24,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 24 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Bows (Double, Small 2)",
+     "class": "REUSABLE",
+     "added": 96,
+     "changed": 0,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 96 cells and disturbs only 0 of the base"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Bows (Double)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BowsDouble/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BowsDouble/hat.json",
+     "why": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Bows (Double, Side)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSide/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSide/hat.json",
+     "why": "removes 24 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     165.0,
+     217.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 5,
+    "gaps": [
+     24.0,
+     84.0,
+     52.0,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSmall1/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "Crown",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Crown (Diadem 1)",
+   "base_cells": 120,
+   "variants": [
+    {
+     "variant": "Crown (Coronet)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "Back: frame size differs from the base"
+    },
+    {
+     "variant": "Crown (Diadem 2)",
+     "class": "REFERENCE-ONLY",
+     "added": 40,
+     "changed": 78,
+     "removed": 16,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 16 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Crown (Coronet)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/CrownCoronet/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/CrownCoronet/hat.json",
+     "why": "Back: frame size differs from the base"
+    },
+    {
+     "name": "Crown (Diadem 2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem2/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem2/hat.json",
+     "why": "removes 16 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     122,
+     51,
+     0
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     177,
+     86,
+     3
+    ],
+    [
+     182,
+     136,
+     0
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     226,
+     178,
+     18
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     255,
+     255,
+     20
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     255,
+     249,
+     242
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7",
+    "8": "step8",
+    "9": "step9",
+    "10": "step10"
+   },
+   "tone": {
+    "levels": [
+     57.7,
+     81.0,
+     88.7,
+     106.0,
+     119.0,
+     140.7,
+     165.0,
+     176.7,
+     217.0,
+     248.7,
+     254.0
+    ],
+    "span": 196.3,
+    "steps": 11,
+    "gaps": [
+     23.3,
+     7.7,
+     17.3,
+     13.0,
+     21.7,
+     24.3,
+     11.7,
+     40.3,
+     31.7,
+     5.3
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem1/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "DecorativeBells",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Decorative Bells (Singles)",
+   "base_cells": 258,
+   "variants": [
+    {
+     "variant": "Decorative Bells (Doubles)",
+     "class": "REUSABLE",
+     "added": 104,
+     "changed": 0,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 104 cells and disturbs only 0 of the base"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     78,
+     7,
+     0
+    ],
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     177,
+     86,
+     3
+    ],
+    [
+     182,
+     136,
+     0
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     226,
+     178,
+     18
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     255,
+     255,
+     20
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     255,
+     249,
+     242
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7",
+    "8": "step8",
+    "9": "step9",
+    "10": "step10"
+   },
+   "tone": {
+    "levels": [
+     28.3,
+     57.0,
+     81.0,
+     88.7,
+     106.0,
+     119.0,
+     140.7,
+     165.0,
+     176.7,
+     217.0,
+     248.7
+    ],
+    "span": 220.4,
+    "steps": 11,
+    "gaps": [
+     28.7,
+     24.0,
+     7.7,
+     17.3,
+     13.0,
+     21.7,
+     24.3,
+     11.7,
+     40.3,
+     31.7
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/DecorativeBellsSingles/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "Earmuffs",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Earmuffs",
+   "base_cells": 224,
+   "variants": [
+    {
+     "variant": "Earmuffs (Cat)",
+     "class": "REUSABLE",
+     "added": 100,
+     "changed": 18,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 100 cells and disturbs only 18 of the base"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     78,
+     78,
+     78
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     172,
+     172,
+     172
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     232,
+     232,
+     232
+    ],
+    [
+     254,
+     252,
+     255
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     78.0,
+     119.0,
+     165.0,
+     172.0,
+     217.0,
+     232.0,
+     253.7
+    ],
+    "span": 196.7,
+    "steps": 8,
+    "gaps": [
+     21.0,
+     41.0,
+     46.0,
+     7.0,
+     45.0,
+     15.0,
+     21.7
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/Earmuffs/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "Garland",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Garland (Dried 1)",
+   "base_cells": 179,
+   "variants": [
+    {
+     "variant": "Garland (Dried 2)",
+     "class": "REUSABLE",
+     "added": 35,
+     "changed": 7,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 35 cells and disturbs only 7 of the base"
+    },
+    {
+     "variant": "Garland (Flowers 1)",
+     "class": "REFERENCE-ONLY",
+     "added": 31,
+     "changed": 163,
+     "removed": 2,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Garland (Flowers 2)",
+     "class": "REFERENCE-ONLY",
+     "added": 72,
+     "changed": 163,
+     "removed": 2,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Garland (Flowers 1)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/GarlandFlowers1/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/GarlandFlowers1/hat.json",
+     "why": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Garland (Flowers 2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/GarlandFlowers2/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/GarlandFlowers2/hat.json",
+     "why": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     50,
+     2,
+     0
+    ],
+    [
+     0,
+     56,
+     28
+    ],
+    [
+     82,
+     36,
+     2
+    ],
+    [
+     18,
+     76,
+     49
+    ],
+    [
+     28,
+     124,
+     7
+    ],
+    [
+     125,
+     65,
+     5
+    ],
+    [
+     167,
+     92,
+     7
+    ],
+    [
+     189,
+     115,
+     9
+    ],
+    [
+     114,
+     216,
+     13
+    ],
+    [
+     216,
+     168,
+     0
+    ],
+    [
+     196,
+     196,
+     196
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7",
+    "8": "step8",
+    "9": "step9",
+    "10": "step10",
+    "11": "step11"
+   },
+   "tone": {
+    "levels": [
+     17.3,
+     28.0,
+     40.0,
+     47.7,
+     53.0,
+     65.0,
+     88.7,
+     104.3,
+     114.3,
+     128.0,
+     196.0,
+     254.0
+    ],
+    "span": 236.7,
+    "steps": 12,
+    "gaps": [
+     10.7,
+     12.0,
+     7.7,
+     5.3,
+     12.0,
+     23.7,
+     15.6,
+     10.0,
+     13.7,
+     68.0,
+     58.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/GarlandDried1/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "HairBuns",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Hair Buns",
+   "base_cells": 138,
+   "variants": [
+    {
+     "variant": "Hair Buns (Small)",
+     "class": "REFERENCE-ONLY",
+     "added": 16,
+     "changed": 48,
+     "removed": 64,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 64 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Hair Buns (Small)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HairBunsSmall/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HairBunsSmall/hat.json",
+     "why": "removes 64 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     104,
+     72,
+     71
+    ],
+    [
+     130,
+     102,
+     101
+    ],
+    [
+     196,
+     169,
+     147
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     247,
+     227,
+     200
+    ],
+    [
+     255,
+     250,
+     228
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6"
+   },
+   "tone": {
+    "levels": [
+     82.3,
+     111.0,
+     170.7,
+     217.0,
+     224.7,
+     244.3,
+     254.0
+    ],
+    "span": 171.7,
+    "steps": 7,
+    "gaps": [
+     28.7,
+     59.7,
+     46.3,
+     7.7,
+     19.6,
+     9.7
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HairBuns/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "Headband",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Headband",
+   "base_cells": 44,
+   "variants": [
+    {
+     "variant": "Headband (Cat 1)",
+     "class": "BASE-SPECIFIC",
+     "added": 20,
+     "changed": 5,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 20 cells but also re-shades 5 of the base's 44, above the 10% bound"
+    },
+    {
+     "variant": "Headband (Cat 2)",
+     "class": "BASE-SPECIFIC",
+     "added": 68,
+     "changed": 19,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 68 cells but also re-shades 19 of the base's 44, above the 10% bound"
+    },
+    {
+     "variant": "Headband (Frilly 1)",
+     "class": "BASE-SPECIFIC",
+     "added": 32,
+     "changed": 33,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 32 cells but also re-shades 33 of the base's 44, above the 10% bound"
+    },
+    {
+     "variant": "Headband (Frilly 2)",
+     "class": "BASE-SPECIFIC",
+     "added": 46,
+     "changed": 35,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 46 cells but also re-shades 35 of the base's 44, above the 10% bound"
+    },
+    {
+     "variant": "Headband (Puffs)",
+     "class": "BASE-SPECIFIC",
+     "added": 64,
+     "changed": 22,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 64 cells but also re-shades 22 of the base's 44, above the 10% bound"
+    },
+    {
+     "variant": "Headband (Small)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 8,
+     "removed": 16,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 16 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Headband (Tie 1)",
+     "class": "REFERENCE-ONLY",
+     "added": 114,
+     "changed": 24,
+     "removed": 12,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Headband (Tie 2)",
+     "class": "REFERENCE-ONLY",
+     "added": 146,
+     "changed": 24,
+     "removed": 12,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 5,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Headband (Small)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HeadbandSmall/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HeadbandSmall/hat.json",
+     "why": "removes 16 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Headband (Tie 1)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HeadbandTie1/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HeadbandTie1/hat.json",
+     "why": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Headband (Tie 2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HeadbandTie2/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HeadbandTie2/hat.json",
+     "why": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     232,
+     144,
+     193
+    ],
+    [
+     239,
+     172,
+     210
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     232,
+     232,
+     232
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7",
+    "8": "step8"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     119.0,
+     165.0,
+     189.7,
+     207.0,
+     217.0,
+     232.0,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 9,
+    "gaps": [
+     24.0,
+     38.0,
+     46.0,
+     24.7,
+     17.3,
+     10.0,
+     15.0,
+     22.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/Headband/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "Hood",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Hood",
+   "base_cells": 560,
+   "variants": [
+    {
+     "variant": "Hood (Cat)",
+     "class": "REFERENCE-ONLY",
+     "added": 134,
+     "changed": 153,
+     "removed": 76,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 76 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Hood (Frog)",
+     "class": "REFERENCE-ONLY",
+     "added": 138,
+     "changed": 178,
+     "removed": 70,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 70 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Hood (Horns)",
+     "class": "REFERENCE-ONLY",
+     "added": 134,
+     "changed": 168,
+     "removed": 76,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 76 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Hood (Rabbit)",
+     "class": "REFERENCE-ONLY",
+     "added": 170,
+     "changed": 175,
+     "removed": 80,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 80 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 0,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Hood (Cat)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HoodCat/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HoodCat/hat.json",
+     "why": "removes 76 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Hood (Frog)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HoodFrog/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HoodFrog/hat.json",
+     "why": "removes 70 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Hood (Horns)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HoodHorns/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HoodHorns/hat.json",
+     "why": "removes 76 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Hood (Rabbit)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HoodRabbit/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/HoodRabbit/hat.json",
+     "why": "removes 80 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     10,
+     10,
+     14
+    ],
+    [
+     24,
+     24,
+     30
+    ],
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     92,
+     92,
+     92
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     232,
+     144,
+     193
+    ],
+    [
+     239,
+     172,
+     210
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     240,
+     240,
+     240
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7",
+    "8": "step8",
+    "9": "step9",
+    "10": "step10",
+    "11": "step11"
+   },
+   "tone": {
+    "levels": [
+     11.3,
+     26.0,
+     57.0,
+     81.0,
+     92.0,
+     119.0,
+     165.0,
+     189.7,
+     207.0,
+     217.0,
+     240.0,
+     254.0
+    ],
+    "span": 242.7,
+    "steps": 12,
+    "gaps": [
+     14.7,
+     31.0,
+     24.0,
+     11.0,
+     27.0,
+     46.0,
+     24.7,
+     17.3,
+     10.0,
+     23.0,
+     14.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/Hood/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "StrawHat",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Straw Hat",
+   "base_cells": 412,
+   "variants": [
+    {
+     "variant": "Straw Hat (Messy)",
+     "class": "REUSABLE",
+     "added": 46,
+     "changed": 0,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 46 cells and disturbs only 0 of the base"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     81,
+     44,
+     12
+    ],
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     173,
+     91,
+     24
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     206,
+     132,
+     53
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     255,
+     182,
+     72
+    ],
+    [
+     255,
+     225,
+     104
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7",
+    "8": "step8",
+    "9": "step9",
+    "10": "step10"
+   },
+   "tone": {
+    "levels": [
+     45.7,
+     57.0,
+     81.0,
+     96.0,
+     119.0,
+     130.3,
+     165.0,
+     169.7,
+     194.7,
+     217.0,
+     254.0
+    ],
+    "span": 208.3,
+    "steps": 11,
+    "gaps": [
+     11.3,
+     24.0,
+     15.0,
+     23.0,
+     11.3,
+     34.7,
+     4.7,
+     25.0,
+     22.3,
+     37.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "SunHat",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Sun Hat",
+   "base_cells": 428,
+   "variants": [
+    {
+     "variant": "Sun Hat (Flowers)",
+     "class": "BASE-SPECIFIC",
+     "added": 5,
+     "changed": 120,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 5 cells but also re-shades 120 of the base's 428, above the 10% bound"
+    },
+    {
+     "variant": "Sun Hat (Ribbon)",
+     "class": "REFERENCE-ONLY",
+     "added": 52,
+     "changed": 360,
+     "removed": 20,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 20 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Sun Hat (Ribbon)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/SunHatRibbon/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/SunHatRibbon/hat.json",
+     "why": "removes 20 cells of the base silhouette: this is a different construction, not a decoration on it"
+    }
+   ],
+   "vocabulary": [
+    [
+     60,
+     22,
+     0
+    ],
+    [
+     81,
+     44,
+     12
+    ],
+    [
+     28,
+     124,
+     7
+    ],
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     89,
+     175,
+     10
+    ],
+    [
+     173,
+     91,
+     24
+    ],
+    [
+     114,
+     216,
+     13
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     206,
+     132,
+     53
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     255,
+     182,
+     72
+    ],
+    [
+     255,
+     225,
+     104
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     247,
+     227,
+     200
+    ],
+    [
+     255,
+     250,
+     228
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7",
+    "8": "step8",
+    "9": "step9",
+    "10": "step10",
+    "11": "step11",
+    "12": "step12",
+    "13": "step13",
+    "14": "step14",
+    "15": "step15",
+    "16": "step16"
+   },
+   "tone": {
+    "levels": [
+     27.3,
+     45.7,
+     53.0,
+     57.0,
+     81.0,
+     91.3,
+     96.0,
+     114.3,
+     119.0,
+     130.3,
+     165.0,
+     169.7,
+     194.7,
+     217.0,
+     224.7,
+     244.3,
+     254.0
+    ],
+    "span": 226.7,
+    "steps": 17,
+    "gaps": [
+     18.4,
+     7.3,
+     4.0,
+     24.0,
+     10.3,
+     4.7,
+     18.3,
+     4.7,
+     11.3,
+     34.7,
+     4.7,
+     25.0,
+     22.3,
+     7.7,
+     19.6,
+     9.7
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/SunHat/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "TulipHat",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Tulip Hat",
+   "base_cells": 384,
+   "variants": [
+    {
+     "variant": "Tulip Hat (Striped)",
+     "class": "BASE-SPECIFIC",
+     "added": 0,
+     "changed": 182,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds no geometry; it re-shades 182 of the base's own cells, which cannot be lifted off this silhouette"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [],
+   "vocabulary": [
+    [
+     57,
+     57,
+     57
+    ],
+    [
+     81,
+     81,
+     81
+    ],
+    [
+     130,
+     102,
+     101
+    ],
+    [
+     119,
+     119,
+     119
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     196,
+     169,
+     147
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     247,
+     227,
+     200
+    ],
+    [
+     255,
+     250,
+     228
+    ],
+    [
+     254,
+     254,
+     254
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7",
+    "8": "step8",
+    "9": "step9"
+   },
+   "tone": {
+    "levels": [
+     57.0,
+     81.0,
+     111.0,
+     119.0,
+     165.0,
+     170.7,
+     217.0,
+     224.7,
+     244.3,
+     254.0
+    ],
+    "span": 197.0,
+    "steps": 10,
+    "gaps": [
+     24.0,
+     30.0,
+     8.0,
+     46.0,
+     5.7,
+     46.3,
+     7.7,
+     19.6,
+     9.7
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/TulipHat/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  },
+  {
+   "family": "Veil",
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "category": "Hats",
+   "base": "Veil",
+   "base_cells": 442,
+   "variants": [
+    {
+     "variant": "Veil (Angled 1)",
+     "class": "REFERENCE-ONLY",
+     "added": 62,
+     "changed": 22,
+     "removed": 365,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 365 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Veil (Angled 2)",
+     "class": "REFERENCE-ONLY",
+     "added": 66,
+     "changed": 20,
+     "removed": 366,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 366 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Veil (Birdcage)",
+     "class": "REFERENCE-ONLY",
+     "added": 94,
+     "changed": 8,
+     "removed": 342,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 342 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Veil (Flowers)",
+     "class": "REFERENCE-ONLY",
+     "added": 8,
+     "changed": 23,
+     "removed": 50,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 50 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Veil (Garland 1)",
+     "class": "REFERENCE-ONLY",
+     "added": 22,
+     "changed": 64,
+     "removed": 125,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 125 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Veil (Garland 2)",
+     "class": "REFERENCE-ONLY",
+     "added": 44,
+     "changed": 58,
+     "removed": 122,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 122 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Veil (Puffy)",
+     "class": "REFERENCE-ONLY",
+     "added": 104,
+     "changed": 0,
+     "removed": 114,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "removes 114 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "variant": "Veil (Speckled)",
+     "class": "REFERENCE-ONLY",
+     "added": 0,
+     "changed": 0,
+     "removed": 0,
+     "modelled": false,
+     "exact": null,
+     "mismatch": {},
+     "reason": "Back: frame size differs from the base"
+    },
+    {
+     "variant": "Veil (Tiara)",
+     "class": "REUSABLE",
+     "added": 45,
+     "changed": 38,
+     "removed": 0,
+     "modelled": true,
+     "exact": true,
+     "mismatch": {},
+     "reason": "adds 45 cells and disturbs only 38 of the base"
+    }
+   ],
+   "modelled_count": 1,
+   "all_exact": true,
+   "promote_to_own_base": [
+    {
+     "name": "Veil (Angled 1)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilAngled1/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilAngled1/hat.json",
+     "why": "removes 365 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Veil (Angled 2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilAngled2/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilAngled2/hat.json",
+     "why": "removes 366 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Veil (Birdcage)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilBirdcage/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilBirdcage/hat.json",
+     "why": "removes 342 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Veil (Flowers)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilFlowers/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilFlowers/hat.json",
+     "why": "removes 50 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Veil (Garland 1)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilGarland1/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilGarland1/hat.json",
+     "why": "removes 125 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Veil (Garland 2)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilGarland2/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilGarland2/hat.json",
+     "why": "removes 122 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Veil (Puffy)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilPuffy/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilPuffy/hat.json",
+     "why": "removes 114 cells of the base silhouette: this is a different construction, not a decoration on it"
+    },
+    {
+     "name": "Veil (Speckled)",
+     "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilSpeckled/hat.png",
+     "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/VeilSpeckled/hat.json",
+     "why": "Back: frame size differs from the base"
+    }
+   ],
+   "vocabulary": [
+    [
+     18,
+     76,
+     49
+    ],
+    [
+     28,
+     124,
+     7
+    ],
+    [
+     89,
+     175,
+     10
+    ],
+    [
+     114,
+     216,
+     13
+    ],
+    [
+     216,
+     168,
+     0
+    ],
+    [
+     165,
+     165,
+     165
+    ],
+    [
+     217,
+     217,
+     217
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   "roles": {
+    "0": "outline",
+    "1": "shadow",
+    "2": "mid",
+    "3": "light",
+    "4": "highlight",
+    "5": "spec",
+    "6": "step6",
+    "7": "step7"
+   },
+   "tone": {
+    "levels": [
+     47.7,
+     53.0,
+     91.3,
+     114.3,
+     128.0,
+     165.0,
+     217.0,
+     255.0
+    ],
+    "span": 207.3,
+    "steps": 8,
+    "gaps": [
+     5.3,
+     38.3,
+     23.0,
+     13.7,
+     37.0,
+     52.0,
+     38.0
+    ]
+   },
+   "base_png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/Veil/hat.png",
+   "directions": [
+    "Back",
+    "Front",
+    "Left",
+    "Right"
+   ],
+   "credit": {
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "pack_id": "SmolHooman.MoreAccessoriesAndStuff"
+   }
+  }
+ ],
+ "failed": []
+}

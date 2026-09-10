@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GamePath>/run/media/deck/USD00/steamapps/common/Stardew Valley</GamePath>
+    <OutputType>Exe</OutputType>
+    <!-- net8.0, not the mod's net6.0: only net8+ runtimes are installed here,
+         and this project merely recompiles the same source headlessly. -->
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>RNGClothingFitting.Tests</AssemblyName>
+    <RootNamespace>RNGClothingFitting.Tests</RootNamespace>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The mod's PURE logic, compiled straight into the test binary. These
+         files depend only on XNA value types and Newtonsoft, never on
+         StardewValley or SMAPI, which is exactly why they are testable
+         headlessly. -->
+    <Compile Include="../RNGClothingFitting/FittingData.cs" />
+    <Compile Include="../RNGClothingFitting/FitHistory.cs" />
+    <Compile Include="../RNGClothingFitting/Symmetry.cs" />
+    <Compile Include="../RNGClothingFitting/FittingGeometry.cs" />
+    <Compile Include="../RNGClothingFitting/FittingSession.cs" />
+    <Compile Include="Tests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Private=true here, unlike the mod: SMAPI supplies these at runtime
+         for a mod, but a standalone test exe must carry them. -->
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(GamePath)/MonoGame.Framework.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(GamePath)/smapi-internal/Newtonsoft.Json.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

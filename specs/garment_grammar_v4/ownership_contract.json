@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "4.2.0-shape-proof",
+  "purpose": "Per-cell structural ownership and deterministic mutation policy.",
+  "fields": [
+    "componentOwner",
+    "system",
+    "topologyRole",
+    "semanticRegion",
+    "shadeAuthority",
+    "protectionLevel",
+    "allowedLaterMutations",
+    "originatingStage"
+  ],
+  "protectionLevels": {
+    "LOCKED": "Later stages may not change topology or semantic identity unless explicitly allowlisted.",
+    "STRUCTURAL": "Palette may resolve color; legacy polish may not rewrite the structural role.",
+    "FORM": "Material/form stages may change shade role within the same region.",
+    "SURFACE": "Surface design may decorate without changing topology."
+  },
+  "stageRules": {
+    "V4_2_SHAPE_TOPOLOGY": ["add_alpha", "remove_alpha", "claim_attachment", "validate_connected_root_mass"],
+    "V4_COMPONENT_COMPILER": ["claim_semantic_region", "assign_identity_shade"],
+    "MATERIAL_FORM": ["change_form_shade_if_owner_allows"],
+    "LEGACY_POLISH": ["mutate_unowned_or_explicitly_allowed_cells_only"],
+    "PALETTE_RESOLVE": ["resolve_final_rgb_without_topology_change"]
+  },
+  "conflictPolicy": "FAIL_OR_LOG_REJECT; never resolve by accidental pass order",
+  "requiredDiagnostics": ["ownership_conflicts", "rejected_mutations", "originating_stage", "cell_coordinates"]
+}

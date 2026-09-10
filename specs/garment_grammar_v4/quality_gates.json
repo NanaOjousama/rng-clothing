@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "4.1.0-experimental",
+  "automatedState": ["PASS", "FAIL"],
+  "humanState": ["PENDING_HUMAN_REVIEW", "APPROVED", "REJECTED"],
+  "rule": "Automated PASS never implies visual approval.",
+  "gates": {
+    "structural": [
+      "mandatory_identity_cells_survive",
+      "forbidden_components_absent",
+      "safe_envelope_respected",
+      "no_detached_alpha_islands",
+      "no_unsupported_top_edge_cells",
+      "wraparound_continuity_valid"
+    ],
+    "stageSurvival": [
+      "requested_topology_edit_present_at_topology_stage",
+      "later_stage_does_not_destroy_protected_identity",
+      "before_after_hashes_saved",
+      "illegal_overwrite_reported"
+    ],
+    "visualChangeContract": {
+      "silhouette_request": "must produce alpha/topology displacement; recolor-only is insufficient",
+      "role_request": "must change intended semantic/shade cells",
+      "identity_request": "must improve or preserve mandatory identity anchors at Farmer scale"
+    },
+    "visual": [
+      "front_right_back_left_farmer_composites_required",
+      "identity_obvious_without_name",
+      "gameplay_scale_overrules_enlarged_contact_sheet"
+    ]
+  }
+}

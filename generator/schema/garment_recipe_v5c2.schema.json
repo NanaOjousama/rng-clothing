@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rng-clothing.invalid/schema/garment_recipe_v5c2.schema.json",
+  "title": "RNG Clothing V5C2 upper-garment recipe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "formatVersion",
+    "id",
+    "collection",
+    "articleType",
+    "articleSubtype",
+    "fitIntent",
+    "sleeveIntent",
+    "necklineIntent",
+    "collarIntent",
+    "openingIntent",
+    "hemIntent",
+    "hoodIntent",
+    "constructionFeatures",
+    "surfacePlan",
+    "referenceInfluence",
+    "baseUpperRecipe"
+  ],
+  "properties": {
+    "formatVersion": {"const": "5.3.0"},
+    "id": {"type": "string", "pattern": "^v5c2-[0-9]{2}$"},
+    "collection": {"const": "V5C2VanillaHoodieStudy"},
+    "articleType": {
+      "enum": ["VEST_TOP", "BLOUSE", "SWEATER", "CROPPED_JACKET", "STANDARD_JACKET", "HOODIE"]
+    },
+    "articleSubtype": {"type": "string", "minLength": 1},
+    "fitIntent": {"enum": ["fitted", "regular", "relaxed", "baggy", "cropped"]},
+    "sleeveIntent": {
+      "enum": ["SHORT_SLEEVE", "FITTED_LONG_SLEEVE", "ROLLED_CUFFED_SLEEVE", "LAYERED_INNER_OUTER_SLEEVE"]
+    },
+    "necklineIntent": {"enum": ["crew", "v_neck", "square", "high", "open", "hooded"]},
+    "collarIntent": {"enum": ["none", "shirt_collar", "rounded", "lapel", "utility", "hood"]},
+    "openingIntent": {"enum": ["closed", "buttoned", "center_open", "partial_open", "zip"]},
+    "hemIntent": {"enum": ["plain", "ribbed", "tailored", "cropped", "structured"]},
+    "hoodIntent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "lining", "drawstrings", "volume"],
+      "properties": {
+        "state": {"enum": ["none", "down"]},
+        "lining": {"enum": ["none", "self", "contrast"]},
+        "drawstrings": {"type": "boolean"},
+        "volume": {"enum": ["none", "compact", "standard", "baggy"]}
+      }
+    },
+    "constructionFeatures": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 2,
+      "maxItems": 7,
+      "items": {"type": "string"}
+    },
+    "surfacePlan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["composition", "primarySystem", "supportSystem", "motif", "pattern", "trim", "focalArea", "topology"],
+      "properties": {
+        "composition": {"enum": ["construction_led", "collar_led", "pattern_led", "motif_led", "opening_led", "pocket_led"]},
+        "primarySystem": {"enum": ["construction", "opening", "pocket", "pattern", "motif", "collar"]},
+        "supportSystem": {"enum": ["none", "trim", "pattern", "motif", "pocket", "color_block"]},
+        "motif": {"type": "string"},
+        "pattern": {"enum": ["none", "knit_yoke", "windowpane", "shoulder_panel", "tonal_repeat"]},
+        "trim": {"enum": ["none", "collar_edge", "lapel_edge", "ribbed", "piping", "cuff_echo", "hood_edge", "zip_edge"]},
+        "focalArea": {"enum": ["collar", "upper_chest", "center_chest", "side_chest", "pocket", "yoke", "hem"]},
+        "topology": {"enum": ["front_only", "front_back_pair", "upper_wrap", "lower_wrap", "construction_bound", "asymmetric_front"]}
+      }
+    },
+    "referenceInfluence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "traitsOnly", "copiedPixels"],
+      "properties": {
+        "source": {"enum": ["vanilla_aggregate", "hoodie_corpus_aggregate", "hoodie_design1_traits", "hoodie_design2_traits"]},
+        "traitsOnly": {"type": "array", "items": {"type": "string"}},
+        "copiedPixels": {"const": false}
+      }
+    },
+    "baseUpperRecipe": {"type": "object"}
+  }
+}

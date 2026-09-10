@@ -1,0 +1,22 @@
+{
+  "id": "xprod_vest_crew",
+  "name": "XPROD Vest Partition With Crew Neck",
+  "template": null,
+  "blank": "torso_basic",
+  "pieces": [
+    "bands_inner_shirt",
+    "neck_crew",
+    "hem_plain"
+  ],
+  "palette": "bench_vest",
+  "sleeve_slot": "secondary",
+  "identity": [
+    "bands_inner_shirt",
+    "neck_crew"
+  ],
+  "max_colors": 10,
+  "tags": [
+    "XPROD"
+  ],
+  "description": "Vest/inner-shirt partition with the tee crew neck instead of a collar."
+}

@@ -1,0 +1,52 @@
+STUDY + DATA-INTEGRATION TASK — DO NOT GENERATE CLOTHING YET
+
+Project:
+/run/media/deck/USD00/RNG_clothing
+
+Read and ingest these two files:
+1. RNG_CLOTHING_CODEX_ARCHITECTURE_STUDY_GUIDE_V2.md
+2. garment_architecture_and_generator_schema_v2.json
+
+Purpose:
+Adopt the versioned real-garment-architecture → semantic recipe → directional grammar → material → palette → rarity-polish → proven V5/HD renderer pipeline.
+
+Rules:
+- Treat linked real-world/technical references as architecture truth, not artwork to copy.
+- Treat generated schematic/flat examples only as explanatory diagrams.
+- Never rely on model memory for garment anatomy.
+- Architecture definitions must become versioned project data.
+- Preserve the proven V5/HD renderer unchanged.
+- Do not route normal generation through controlled/flat experimental rasterizers.
+- Do not generate a batch in this task.
+- Do not change rarity balancing yet.
+- Do not copy reference pixels, logos, branding, or exact palettes.
+
+First inspect the current project and write:
+docs/architecture/GARMENT_ARCHITECTURE_V2_INTEGRATION_PLAN.md
+
+The plan must map:
+- existing design-generation stages to the new schema;
+- existing garment families to architecture definitions;
+- existing palette/material systems to the new order;
+- seed/determinism storage;
+- physical-validity checks;
+- directional visibility/attachment rules;
+- how rarity will constrain architecture budget;
+- what can be integrated without modifying the renderer;
+- any missing carriers/families.
+
+STOP after the integration plan.
+Do not implement until human review.
+
+
+ADDITIONAL REQUIRED STUDY FILES:
+- REAL_TO_PIXEL_TRANSLATION_FLAT.png
+- real_to_pixel_translation_flat_schema.json
+
+Treat the flat as a neutral semantic placement scaffold.
+Do NOT copy its marks as clothing.
+For each architecture family, map real structural features onto the scaffold by:
+attachment region + view visibility + continuity + pixel priority.
+
+The integration plan must include exactly where this neutral-flat translation stage sits between
+architecture lookup and semantic directional rendering.

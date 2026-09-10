@@ -1,0 +1,32 @@
+{
+  "name": "pom_tassel",
+  "motif_class": "tassel",
+  "slot": "HEAD",
+  "zone": "crown_top",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 8,
+  "anchor_cell": [
+    1,
+    3
+  ],
+  "anchor_point": "top_centre",
+  "style": [
+    "cottagecore",
+    "festival"
+  ],
+  "views": [
+    "front",
+    "left",
+    "back"
+  ],
+  "fits": [
+    "knit_cap"
+  ],
+  "description": "a pom with a short tie hanging beneath it",
+  "per_view": false,
+  "size": [
+    4,
+    4
+  ]
+}

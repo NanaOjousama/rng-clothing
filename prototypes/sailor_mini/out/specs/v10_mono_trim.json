@@ -1,0 +1,69 @@
+{
+  "id": "v10_mono_trim",
+  "seed": 9097704,
+  "attempt": 0,
+  "family": "SAILOR_TOP",
+  "architecture": "CLASSIC_SQUARE_FLAP",
+  "fit": "REGULAR",
+  "material": "COTTON",
+  "collar_width": "STANDARD",
+  "rear_flap_depth": "STANDARD",
+  "neckline": "STANDARD_V",
+  "trim_style": "DOUBLE",
+  "center_detail": "TIE",
+  "color_architecture": "MONOCHROME_WITH_CONTRAST_TRIM",
+  "palette_family": "INK_CREAM",
+  "palette": {
+    "body": {
+      "deep": "#14131A",
+      "shadow": "#26242F",
+      "base": "#3A3846",
+      "light": "#565365"
+    },
+    "collar": {
+      "deep": "#14131A",
+      "shadow": "#26242F",
+      "base": "#3A3846",
+      "light": "#565365"
+    },
+    "trim": {
+      "deep": "#8F8A78",
+      "shadow": "#C4BBA4",
+      "base": "#EDE4CC",
+      "light": "#FBF6E8"
+    },
+    "accent": {
+      "deep": "#8F8A78",
+      "shadow": "#C4BBA4",
+      "base": "#EDE4CC",
+      "light": "#FBF6E8"
+    }
+  },
+  "derived": {
+    "collar_left": 3,
+    "collar_right": 12,
+    "collar_columns": 10,
+    "flap_depth_rows": 7,
+    "v_depth_row": 7,
+    "fit_taper": 0,
+    "relaxed_widening_applied": false,
+    "crisp_collar_edge": true,
+    "hem_rib": false,
+    "fold_density": 1,
+    "trim_lines": 2,
+    "has_center_detail": true,
+    "collar_body_contrast": 0.0,
+    "trim_collar_contrast": 170.7
+  },
+  "rejected": [],
+  "pinned": {
+    "collar_width": "STANDARD",
+    "rear_flap_depth": "STANDARD",
+    "trim_style": "DOUBLE",
+    "center_detail": "TIE",
+    "neckline": "STANDARD_V",
+    "fit": "REGULAR",
+    "material": "COTTON",
+    "color_architecture": "MONOCHROME_WITH_CONTRAST_TRIM"
+  }
+}

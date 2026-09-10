@@ -1,0 +1,12 @@
+{
+  "Name": "[FS] Jedone's Casual Hat Pack",
+  "Author": "Jedone",
+  "Version": "1.0.1",
+  "Description": "30 casual hats for your daily outfit.",
+  "UniqueID": "Jedone.casualhatpack",
+  "UpdateKeys": [48657],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "7.5.0"
+  }
+}

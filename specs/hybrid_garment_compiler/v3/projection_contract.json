@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "3.0.0",
+  "directions": ["front", "right", "back", "left"],
+  "visibilityStates": ["FULL", "COMPRESSED", "DEPTH_ONLY", "EDGE_ONLY", "OCCLUDED", "HIDDEN", "FORBIDDEN"],
+  "rules": [
+    "Projection never selects components or parameters.",
+    "Front-only opening faces are forbidden at back.",
+    "Left and right project independently from the same canonical component.",
+    "Wraparound continuity groups must have visible or explicitly occluded handoffs.",
+    "The semantic-flat preview consumes projection output but is never compiler input."
+  ]
+}

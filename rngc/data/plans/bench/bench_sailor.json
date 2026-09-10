@@ -1,0 +1,19 @@
+{
+  "id": "bench_sailor",
+  "name": "V5 Bench Sailor",
+  "template": "SAILOR",
+  "blank": "torso_basic",
+  "pieces": [
+    "collar_sailor",
+    "tie_sailor",
+    "hem_plain"
+  ],
+  "palette": "bench_sailor",
+  "sleeve_slot": "primary",
+  "hide_sleeves": false,
+  "tags": [
+    "SAILOR",
+    "vanilla 259"
+  ],
+  "description": "Reconstruction of vanilla sprite 259 (Sailor Shirt) garment type."
+}

@@ -1,0 +1,25 @@
+{
+  "id": "T_SHIRT",
+  "identity": "The lightest and least segmented garment: a clean torso, one neckline, and a quiet lower edge.",
+  "allowedConstruction": {
+    "fit": ["fitted", "regular", "relaxed"],
+    "neckline": ["round", "crew", "shallow_v"],
+    "collar": ["none"],
+    "closure": ["none"],
+    "layering": ["single_layer"],
+    "hem": ["plain", "contrast_band"],
+    "panelLayout": ["solid", "upper_lower_split"]
+  },
+  "constructionRules": [],
+  "constructionFeatureLinks": [
+    {"field": "panelLayout", "values": ["upper_lower_split"], "requiresAnyFeature": ["major_panel_contrast"]},
+    {"field": "hem", "values": ["contrast_band"], "requiresAnyFeature": ["structured_lower_band"]}
+  ],
+  "allowedSubstantialFeatures": ["major_panel_contrast", "wrapping_stripe", "structured_lower_band"],
+  "allowedMicroDetails": ["small_chest_accent", "small_pin", "single_accent_pixel", "tiny_trim_mark"],
+  "coreRegions": ["BODY"],
+  "availableColorRegions": ["body", "hem", "stripe"],
+  "primaryRegions": ["body"],
+  "directionPolicy": "Single fabric field; neckline persists, front-only micro marks disappear, wrapping regions continue through back and sides.",
+  "incompatibleFeatures": ["open_center", "outer_panels", "visible_inner_layer", "folded_collar", "sailor_yoke"]
+}

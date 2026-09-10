@@ -1,0 +1,33 @@
+{
+  "formatVersion": "5A",
+  "purpose": "Coordinate-free unified-garment article contracts layered over frozen V3 design recipes.",
+  "articles": {
+    "DRESS": {
+      "status": "EXPERIMENTAL",
+      "compatibleArchetypes": ["SAILOR_TOP", "BUTTON_SHIRT", "SWEATER"],
+      "requiredIntentKeys": ["silhouette", "length", "waist", "bodice", "hem"],
+      "allowedLengths": ["short", "medium", "bounded_long"],
+      "validSurfaceTargets": ["bodice", "waist", "lower_mass", "hem", "upper_back"]
+    },
+    "ONE_PIECE": {
+      "status": "EXPERIMENTAL",
+      "compatibleArchetypes": ["BUTTON_SHIRT", "SWEATER", "JACKET", "SAILOR_TOP"],
+      "requiredIntentKeys": ["concept", "lowerForm", "waist", "hem"],
+      "allowedLengths": ["short", "medium", "bounded_long"],
+      "validSurfaceTargets": ["upper_torso", "waist", "utility_region", "lower_panels", "hem", "upper_back"]
+    },
+    "BOUNDED_LONG_OUTERWEAR": {
+      "status": "EXPERIMENTAL",
+      "compatibleArchetypes": ["BUTTON_SHIRT", "JACKET"],
+      "requiredIntentKeys": ["length", "front", "construction", "hem"],
+      "allowedLengths": ["hip", "upper_thigh", "bounded_long"],
+      "validSurfaceTargets": ["collar", "lapel", "outer_panels", "waist", "extended_hem", "back_panel"]
+    }
+  },
+  "rules": [
+    "The semantic recipe contains no pixel coordinates.",
+    "Every article uses one V3 design concept and palette story.",
+    "Extended geometry is a Fashion Sense Shirt overlay and is not leg-articulated.",
+    "All prototypes remain EXPERIMENTAL until manual runtime evidence exists."
+  ]
+}

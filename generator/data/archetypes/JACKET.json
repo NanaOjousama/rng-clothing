@@ -1,0 +1,21 @@
+{
+  "id": "JACKET",
+  "description": "Compact waist-length outer layer with panel shading, an opening or button closure, and optional visible inner fabric.",
+  "validNecklines": ["open"],
+  "validCollars": ["none", "small_folded", "wide"],
+  "validClosures": ["center_open", "buttons"],
+  "validFits": ["regular", "relaxed"],
+  "validDetails": ["none", "chest_accent", "lower_trim", "inner_layer", "button_line"],
+  "validPatterns": ["none", "vertical_trim", "simple_border"],
+  "shoulderProfile": "structured_outer",
+  "frontStructure": "two related outer panels around one centered opening or closure",
+  "backStructure": "quiet outer field with collar/yoke and an optional low center seam",
+  "sideStructure": "one outer panel plus a narrow forward-edge opening cue",
+  "allowedDetailLocations": ["collar_edge", "center_opening", "upper_chest", "lower_hem"],
+  "allowedSecondaryRegions": ["inner_layer", "collar", "closure_trim", "lower_trim"],
+  "validMotifLocations": ["front_upper_chest"],
+  "baseShadingZones": ["outer_panel_edges", "upper_panel_highlight", "under_collar", "lower_band"],
+  "maximumComplexity": "Common through Rare budgets; two details only at Rare and only when their regions do not collide",
+  "incompatibleFeatures": ["round_neck", "crew_neck", "sailor_collar", "horizontal_stripe", "center_stripe"],
+  "renderProfile": "compact_outer_layer"
+}

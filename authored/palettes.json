@@ -1,0 +1,845 @@
+{
+  "source": "PALETTE_STORY_LIBRARY.json",
+  "steps": 6,
+  "palettes": [
+    {
+      "id": "EVERYDAY_STONE_BLUE",
+      "identity": "everyday neutral",
+      "relationship": "cool blue-gray cloth warmed by a small clay accent",
+      "style": [
+        "work",
+        "casual",
+        "smart"
+      ],
+      "accent_budget": "low",
+      "ramps": {
+        "body": [
+          "#202534",
+          "#3F4658",
+          "#5E687A",
+          "#7D899C",
+          "#9EABBA",
+          "#C1CCD6"
+        ],
+        "trim": [
+          "#202534",
+          "#3F4756",
+          "#5E6877",
+          "#828991",
+          "#AAA9A5",
+          "#D2C9B9"
+        ],
+        "accent": [
+          "#4E3529",
+          "#7D533B",
+          "#AB724D",
+          "#CF926A",
+          "#E0B79B",
+          "#F0DBCC"
+        ],
+        "hardware": [
+          "#43444A",
+          "#63656B",
+          "#82878C",
+          "#A3A8AD",
+          "#C5C9CA",
+          "#E8EAE8"
+        ]
+      }
+    },
+    {
+      "id": "COASTAL_SEAFOAM_CORAL",
+      "identity": "coastal",
+      "relationship": "seafoam ramp, warm sand neutral, coral focal",
+      "style": [
+        "casual",
+        "festival",
+        "cottagecore"
+      ],
+      "accent_budget": "medium",
+      "ramps": {
+        "body": [
+          "#17323A",
+          "#32555C",
+          "#4C787D",
+          "#629C9D",
+          "#83BEB8",
+          "#ADDDD2"
+        ],
+        "trim": [
+          "#17323A",
+          "#33585E",
+          "#517D83",
+          "#7CA0A0",
+          "#B1C0B5",
+          "#E8E0C5"
+        ],
+        "accent": [
+          "#59302C",
+          "#904C40",
+          "#C76854",
+          "#EB8872",
+          "#F2AFA0",
+          "#F9D7CD"
+        ],
+        "hardware": [
+          "#495153",
+          "#667373",
+          "#839693",
+          "#A3B7B3",
+          "#C6D8D2",
+          "#F1F6F3"
+        ]
+      }
+    },
+    {
+      "id": "AUTUMN_OCHRE_PLUM",
+      "identity": "cozy autumn",
+      "relationship": "ochre fabric shaded through plum-brown rather than black",
+      "style": [
+        "cottagecore",
+        "casual",
+        "work"
+      ],
+      "accent_budget": "low",
+      "ramps": {
+        "body": [
+          "#2B1D2D",
+          "#533C4D",
+          "#7C5C60",
+          "#AA7D5C",
+          "#CC9F71",
+          "#E6C295"
+        ],
+        "trim": [
+          "#2B1D2D",
+          "#4C3E4A",
+          "#6D6069",
+          "#8E8188",
+          "#B0A2A7",
+          "#CFC3C7"
+        ],
+        "accent": [
+          "#534630",
+          "#7A6740",
+          "#A18850",
+          "#C3A96C",
+          "#E1CA96",
+          "#F5ECD7"
+        ],
+        "hardware": [
+          "#483828",
+          "#725839",
+          "#9D784A",
+          "#BF9967",
+          "#D5BB98",
+          "#EBDECB"
+        ]
+      }
+    },
+    {
+      "id": "SPRING_SAGE_PETAL",
+      "identity": "spring floral",
+      "relationship": "sage cloth, cream air, bounded petal accent",
+      "style": [
+        "cottagecore",
+        "festival"
+      ],
+      "accent_budget": "medium",
+      "ramps": {
+        "body": [
+          "#293741",
+          "#465A56",
+          "#647D6B",
+          "#81A17B",
+          "#A7C198",
+          "#D0E0BD"
+        ],
+        "trim": [
+          "#293741",
+          "#475A58",
+          "#677C70",
+          "#8D9C8C",
+          "#B9BAAB",
+          "#E8D7C8"
+        ],
+        "accent": [
+          "#54343D",
+          "#85505C",
+          "#B66D7A",
+          "#DA8D9A",
+          "#E9B4BA",
+          "#F4DBDC"
+        ],
+        "hardware": [
+          "#4C473E",
+          "#6F6856",
+          "#928A6E",
+          "#B4AB8C",
+          "#D4CCB0",
+          "#F0EDE0"
+        ]
+      }
+    },
+    {
+      "id": "WINTER_FROST_INK",
+      "identity": "winter frost",
+      "relationship": "cold ink anchors pale blue-silver planes",
+      "style": [
+        "formal",
+        "smart"
+      ],
+      "accent_budget": "low",
+      "ramps": {
+        "body": [
+          "#161C2D",
+          "#364153",
+          "#57667A",
+          "#748BA5",
+          "#95B0C7",
+          "#B7D5E4"
+        ],
+        "trim": [
+          "#161C2D",
+          "#3A475A",
+          "#617184",
+          "#8C9BAA",
+          "#BAC4CE",
+          "#E7EDF0"
+        ],
+        "accent": [
+          "#374C55",
+          "#4E707A",
+          "#65939F",
+          "#84B5C0",
+          "#ACD4DC",
+          "#E1F0F1"
+        ],
+        "hardware": [
+          "#454850",
+          "#636A73",
+          "#828B95",
+          "#A3ACB6",
+          "#C5CDD2",
+          "#EBEDEE"
+        ]
+      }
+    },
+    {
+      "id": "FIELD_CANVAS_MOSS",
+      "identity": "field/workwear",
+      "relationship": "canvas tan and moss separated by leather dark",
+      "style": [
+        "work",
+        "cottagecore"
+      ],
+      "accent_budget": "low",
+      "ramps": {
+        "body": [
+          "#252821",
+          "#444A3E",
+          "#696B57",
+          "#998966",
+          "#BFA980",
+          "#DCCBA5"
+        ],
+        "trim": [
+          "#252821",
+          "#4E473E",
+          "#74675C",
+          "#93897C",
+          "#ADAC9D",
+          "#C9CEC0"
+        ],
+        "accent": [
+          "#4E4F48",
+          "#6E7162",
+          "#8E937D",
+          "#AFB49B",
+          "#D2D5BE",
+          "#F4F4EB"
+        ],
+        "hardware": [
+          "#3A3A39",
+          "#5A5C55",
+          "#7A7E73",
+          "#9A9F91",
+          "#BDBFB5",
+          "#DFE0D9"
+        ]
+      }
+    },
+    {
+      "id": "FORMAL_PEARL_MIDNIGHT",
+      "identity": "elegant formal",
+      "relationship": "pearl field framed by midnight with restrained gold",
+      "style": [
+        "formal",
+        "smart"
+      ],
+      "accent_budget": "very_low",
+      "ramps": {
+        "body": [
+          "#131827",
+          "#3D4355",
+          "#6A6E7D",
+          "#9B9A96",
+          "#C9C5BC",
+          "#F4F0E8"
+        ],
+        "trim": [
+          "#131827",
+          "#343949",
+          "#555A69",
+          "#767B89",
+          "#979CAB",
+          "#B9BDC9"
+        ],
+        "accent": [
+          "#483B25",
+          "#705C33",
+          "#997C42",
+          "#BC9D5D",
+          "#D4BF92",
+          "#EBE1CA"
+        ],
+        "hardware": [
+          "#524B3C",
+          "#766C51",
+          "#998E68",
+          "#BCAF84",
+          "#DBD0AA",
+          "#F5F0E2"
+        ]
+      }
+    },
+    {
+      "id": "LUXURY_JADE_BRONZE",
+      "identity": "luxury",
+      "relationship": "deep jade, cream relief, bronze signature",
+      "style": [
+        "formal",
+        "festival"
+      ],
+      "accent_budget": "low",
+      "ramps": {
+        "body": [
+          "#172A28",
+          "#334D48",
+          "#4E7066",
+          "#689384",
+          "#8AB4A2",
+          "#B2D3C2"
+        ],
+        "trim": [
+          "#172A28",
+          "#374E48",
+          "#577368",
+          "#809587",
+          "#AFB5A2",
+          "#E2D5B7"
+        ],
+        "accent": [
+          "#432F20",
+          "#6E4F30",
+          "#996E42",
+          "#B99063",
+          "#D0B293",
+          "#E5D5C3"
+        ],
+        "hardware": [
+          "#4E3A28",
+          "#7A5938",
+          "#A67947",
+          "#C99A63",
+          "#DEBD95",
+          "#F0E0CD"
+        ]
+      }
+    },
+    {
+      "id": "GOTHIC_WINE_ASH",
+      "identity": "gothic",
+      "relationship": "wine cloth rises from violet-black into ash contrast",
+      "style": [
+        "formal",
+        "festival"
+      ],
+      "accent_budget": "medium",
+      "ramps": {
+        "body": [
+          "#17141D",
+          "#39353F",
+          "#605460",
+          "#8E7180",
+          "#B1929F",
+          "#CFB4BD"
+        ],
+        "trim": [
+          "#17141D",
+          "#39353E",
+          "#5B555F",
+          "#7C767F",
+          "#9C989E",
+          "#BCB9BE"
+        ],
+        "accent": [
+          "#46262E",
+          "#77434B",
+          "#A5606A",
+          "#C4828A",
+          "#D6A7AC",
+          "#E8CDCD"
+        ],
+        "hardware": [
+          "#3B3940",
+          "#5C5A62",
+          "#7D7B84",
+          "#9E9CA4",
+          "#C0BDC1",
+          "#E0DEDF"
+        ]
+      }
+    },
+    {
+      "id": "STREET_TEAL_GRAPHITE",
+      "identity": "streetwear",
+      "relationship": "graphite mass, white interruption, electric teal hook",
+      "style": [
+        "casual",
+        "smart"
+      ],
+      "accent_budget": "medium",
+      "ramps": {
+        "body": [
+          "#151C22",
+          "#353D44",
+          "#545F64",
+          "#748085",
+          "#95A1A5",
+          "#B8C2C4"
+        ],
+        "trim": [
+          "#151C22",
+          "#3E4449",
+          "#666D71",
+          "#909596",
+          "#BABDBA",
+          "#E6E5DB"
+        ],
+        "accent": [
+          "#134243",
+          "#186B69",
+          "#1D948E",
+          "#3FB5AD",
+          "#7FCDC6",
+          "#BFE6E0"
+        ],
+        "hardware": [
+          "#414448",
+          "#606668",
+          "#7F8888",
+          "#9FA9A8",
+          "#C2C9C6",
+          "#E7E9E6"
+        ]
+      }
+    },
+    {
+      "id": "SAILOR_COBALT_CREAM",
+      "identity": "sailor",
+      "relationship": "cobalt construction, cream collar, tiny signal red",
+      "style": [
+        "smart",
+        "casual"
+      ],
+      "accent_budget": "very_low",
+      "ramps": {
+        "body": [
+          "#17213B",
+          "#334364",
+          "#4F648B",
+          "#6B87B0",
+          "#8FA7CB",
+          "#B6C8E1"
+        ],
+        "trim": [
+          "#17213B",
+          "#3D4962",
+          "#647089",
+          "#8F97A7",
+          "#BEBEBD",
+          "#F0E5C8"
+        ],
+        "accent": [
+          "#4E2225",
+          "#853D3E",
+          "#B85A58",
+          "#D67C78",
+          "#E2A29E",
+          "#EEC9C5"
+        ],
+        "hardware": [
+          "#494A51",
+          "#686C72",
+          "#878D93",
+          "#A8AEB3",
+          "#CACFD1",
+          "#EEF0EF"
+        ]
+      }
+    },
+    {
+      "id": "CELESTIAL_INDIGO_STAR",
+      "identity": "celestial",
+      "relationship": "indigo-violet ramp with star-gold focal",
+      "style": [
+        "festival",
+        "formal"
+      ],
+      "accent_budget": "medium",
+      "ramps": {
+        "body": [
+          "#17162A",
+          "#373751",
+          "#575778",
+          "#7678A0",
+          "#9799C2",
+          "#B9BADE"
+        ],
+        "trim": [
+          "#17162A",
+          "#3D3C55",
+          "#62627E",
+          "#8988A2",
+          "#B0AEC4",
+          "#D9D4E7"
+        ],
+        "accent": [
+          "#564728",
+          "#7E6834",
+          "#A6893F",
+          "#C9AA5A",
+          "#E6CB87",
+          "#F7EDD1"
+        ],
+        "hardware": [
+          "#494751",
+          "#6A6874",
+          "#8A8998",
+          "#ABAAB9",
+          "#CDCBD6",
+          "#EEEDEF"
+        ]
+      }
+    },
+    {
+      "id": "ARCANE_VIOLET_COPPER",
+      "identity": "arcane",
+      "relationship": "violet cloth and cool slate punctuated by copper",
+      "style": [
+        "festival",
+        "formal"
+      ],
+      "accent_budget": "medium",
+      "ramps": {
+        "body": [
+          "#21182D",
+          "#453755",
+          "#69577D",
+          "#8D76A4",
+          "#AF97C3",
+          "#D0B9DE"
+        ],
+        "trim": [
+          "#21182D",
+          "#453854",
+          "#685878",
+          "#847A94",
+          "#9D9FAC",
+          "#BBC2C5"
+        ],
+        "accent": [
+          "#4A2E23",
+          "#7B4C35",
+          "#AA6A48",
+          "#CA8B69",
+          "#DBB097",
+          "#ECD4C5"
+        ],
+        "hardware": [
+          "#4E3528",
+          "#7D5439",
+          "#AC724A",
+          "#CF9367",
+          "#E0B798",
+          "#F0DBCB"
+        ]
+      }
+    },
+    {
+      "id": "EMBER_SUN_CHARCOAL",
+      "identity": "ember/sun",
+      "relationship": "charcoal contains an orange-to-sun focal ramp",
+      "style": [
+        "work",
+        "festival"
+      ],
+      "accent_budget": "medium",
+      "ramps": {
+        "body": [
+          "#211C20",
+          "#453C3E",
+          "#725B55",
+          "#B5745C",
+          "#DA9572",
+          "#F0BA91"
+        ],
+        "trim": [
+          "#211C20",
+          "#443D40",
+          "#655E60",
+          "#857F81",
+          "#A4A0A3",
+          "#C4C2C4"
+        ],
+        "accent": [
+          "#5C4C2A",
+          "#846D36",
+          "#AC8E42",
+          "#D0AF5D",
+          "#ECD088",
+          "#FCF2D8"
+        ],
+        "hardware": [
+          "#483727",
+          "#735737",
+          "#9E7748",
+          "#BF9865",
+          "#D5BA97",
+          "#EBDDCA"
+        ]
+      }
+    },
+    {
+      "id": "CYBER_CYAN_MAGENTA",
+      "identity": "cyber/neon",
+      "relationship": "dark technical neutral with cyan primary signal and tiny magenta counterpoint",
+      "style": [
+        "festival"
+      ],
+      "accent_budget": "medium",
+      "ramps": {
+        "body": [
+          "#121727",
+          "#32384C",
+          "#53596E",
+          "#727A8D",
+          "#949BAC",
+          "#B6BCCA"
+        ],
+        "trim": [
+          "#121727",
+          "#323847",
+          "#545967",
+          "#6F7C87",
+          "#87A0A7",
+          "#A5C2C6"
+        ],
+        "accent": [
+          "#135053",
+          "#16797A",
+          "#1AA2A2",
+          "#34C5C3",
+          "#6CE0DC",
+          "#C5F2EF"
+        ],
+        "hardware": [
+          "#434750",
+          "#616974",
+          "#7F8A97",
+          "#A0ABB8",
+          "#C3CCD4",
+          "#EAECEE"
+        ]
+      }
+    },
+    {
+      "id": "CEREMONIAL_CRIMSON_IVORY",
+      "identity": "ceremonial",
+      "relationship": "crimson authority, ivory relief, gold used as punctuation",
+      "style": [
+        "formal",
+        "festival"
+      ],
+      "accent_budget": "low",
+      "ramps": {
+        "body": [
+          "#261722",
+          "#513540",
+          "#7E535D",
+          "#B07079",
+          "#D29196",
+          "#EAB4B6"
+        ],
+        "trim": [
+          "#261722",
+          "#593C47",
+          "#87636D",
+          "#AD8C90",
+          "#CEB7B0",
+          "#F0E2C9"
+        ],
+        "accent": [
+          "#534329",
+          "#7C6437",
+          "#A48445",
+          "#C7A55F",
+          "#E4C78C",
+          "#F5E9D1"
+        ],
+        "hardware": [
+          "#493825",
+          "#735834",
+          "#9D7842",
+          "#C0995F",
+          "#D6BC93",
+          "#ECDEC9"
+        ]
+      }
+    },
+    {
+      "id": "PASTEL_PEACH_LILAC",
+      "identity": "soft pastel",
+      "relationship": "pastels retain a strong violet structural anchor",
+      "style": [
+        "cottagecore",
+        "casual"
+      ],
+      "accent_budget": "medium",
+      "ramps": {
+        "body": [
+          "#3B3349",
+          "#5D536D",
+          "#887285",
+          "#C58E88",
+          "#E7B0A0",
+          "#F6D5C9"
+        ],
+        "trim": [
+          "#3B3349",
+          "#5F536D",
+          "#827390",
+          "#A394B2",
+          "#C2B6D1",
+          "#E0D8EC"
+        ],
+        "accent": [
+          "#344748",
+          "#4B6B68",
+          "#628F89",
+          "#81B1A9",
+          "#ABCFC8",
+          "#DDEBE7"
+        ],
+        "hardware": [
+          "#4D4750",
+          "#6F6772",
+          "#938894",
+          "#B4A9B5",
+          "#D5CAD2",
+          "#F1EDEF"
+        ]
+      }
+    },
+    {
+      "id": "WORKWEAR_DENIM_RUST",
+      "identity": "workwear",
+      "relationship": "denim blue, rust leather, brass utility punctuation",
+      "style": [
+        "work",
+        "casual"
+      ],
+      "accent_budget": "low",
+      "ramps": {
+        "body": [
+          "#202933",
+          "#3C4B58",
+          "#596D7C",
+          "#768F9F",
+          "#98B0BC",
+          "#BED0D6"
+        ],
+        "trim": [
+          "#202933",
+          "#47494D",
+          "#6D696A",
+          "#948983",
+          "#BCA99C",
+          "#DFC9BB"
+        ],
+        "accent": [
+          "#51402B",
+          "#7A603A",
+          "#A3814B",
+          "#C6A266",
+          "#E1C393",
+          "#F3E6D1"
+        ],
+        "hardware": [
+          "#3B3D42",
+          "#5A5F63",
+          "#798084",
+          "#9AA2A2",
+          "#BDC2C1",
+          "#E1E2E0"
+        ]
+      }
+    },
+    {
+      "id": "DESERT_CLAY_TURQUOISE",
+      "identity": "high-contrast statement",
+      "relationship": "warm clay field balanced by a cool turquoise focal",
+      "style": [
+        "casual",
+        "festival",
+        "work"
+      ],
+      "accent_budget": "medium",
+      "ramps": {
+        "body": [
+          "#2B2428",
+          "#514445",
+          "#7C635E",
+          "#B37F6B",
+          "#D5A186",
+          "#ECC4AB"
+        ],
+        "trim": [
+          "#2B2428",
+          "#564645",
+          "#7F6862",
+          "#A38C81",
+          "#C3B19D",
+          "#E5D6B3"
+        ],
+        "accent": [
+          "#173D3D",
+          "#216561",
+          "#2D8B84",
+          "#4FACA3",
+          "#89C7BE",
+          "#C2E1DB"
+        ],
+        "hardware": [
+          "#493828",
+          "#735839",
+          "#9E7848",
+          "#C19966",
+          "#D6BB97",
+          "#ECDECB"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "formatVersion": "1.0.0",
+  "collection": "ControlledGrammarPaletteTest",
+  "runtimeContract": {
+    "appearanceType": "Shirt",
+    "scale": 2.0,
+    "bodyPosition": {"X": 0, "Y": 32},
+    "logicalFrame": {"Width": 16, "Height": 16},
+    "nativeFarmerSleeves": true,
+    "customSleeves": false,
+    "directionOrder": ["front", "right", "left", "back"]
+  },
+  "specimens": [
+    {
+      "id": "cgp-fitted-tee",
+      "name": "Orchard Bound Tee",
+      "grammarId": "FITTED_TEE",
+      "materialId": "COTTON_TEE",
+      "paletteStoryId": "SPRING_ORCHARD",
+      "nativeSleeveFabric": "PrimaryFabric",
+      "axes": {"silhouette":"fitted_straight","collar":"small_bound_crew","opening":"closed","layering":"single_fabric","hem":"clean_normal","sleeve":"short_native","panels":"none","side":"quiet_tee_edge","back":"neck_binding","colorTopology":"single_light_fabric_local_accent"}
+    },
+    {
+      "id": "cgp-open-casual-shirt",
+      "name": "Mistshore Open Shirt",
+      "grammarId": "OPEN_CASUAL_SHIRT",
+      "materialId": "WOVEN_SHIRT",
+      "paletteStoryId": "COASTAL_MIST",
+      "nativeSleeveFabric": "PrimaryFabric",
+      "axes": {"silhouette":"relaxed_woven_shell","collar":"folded_casual","opening":"two_open_leaves","layering":"broad_inner_tee","hem":"relaxed_straight","sleeve":"rolled_native","panels":"outer_leaves_and_one_pocket","side":"one_outer_edge","back":"woven_yoke","colorTopology":"broad_inner_outer"}
+    },
+    {
+      "id": "cgp-open-cardigan",
+      "name": "Lavender Hearth Cardigan",
+      "grammarId": "OPEN_CARDIGAN",
+      "materialId": "CARDIGAN",
+      "paletteStoryId": "LAVENDER_DAY",
+      "nativeSleeveFabric": "PrimaryFabric",
+      "axes": {"silhouette":"soft_relaxed_frame","collar":"soft_shawl_edge","opening":"open_knit_edges","layering":"broad_inner_shirt","hem":"ribbed_soft","sleeve":"full_knit_native","panels":"lower_patch_pockets","side":"hanging_knit_edge","back":"unified_knit_mass","colorTopology":"soft_outer_frame"}
+    },
+    {
+      "id": "cgp-sweater-vest",
+      "name": "Cream Ledger Sweater Vest",
+      "grammarId": "SWEATER_VEST",
+      "materialId": "KNIT",
+      "paletteStoryId": "CREAM_ACADEMIC",
+      "nativeSleeveFabric": "SecondaryFabric",
+      "axes": {"silhouette":"compact_knit_vest","collar":"bound_deep_v","opening":"closed_knit","layering":"vest_over_shirt","hem":"ribbed_vest_band","sleeve":"inner_shirt_native","panels":"bound_armholes","side":"vest_edge_over_sleeve","back":"knit_vest_back","colorTopology":"light_vest_dark_inner"}
+    },
+    {
+      "id": "cgp-formal-waistcoat",
+      "name": "Pearl Line Waistcoat",
+      "grammarId": "FORMAL_WAISTCOAT",
+      "materialId": "BLAZER_FORMAL",
+      "paletteStoryId": "FORMAL_PEARL",
+      "nativeSleeveFabric": "SecondaryFabric",
+      "axes": {"silhouette":"fitted_tailored_vest","collar":"deep_formal_v","opening":"buttoned_vest_front","layering":"waistcoat_over_shirt","hem":"shaped_points","sleeve":"formal_shirt_native","panels":"welt_and_button_rhythm","side":"tailored_taper","back":"adjuster_panel","colorTopology":"pearl_vest_slate_shirt"}
+    },
+    {
+      "id": "cgp-crewneck-sweatshirt",
+      "name": "Rosewood Sunday Crew",
+      "grammarId": "CREWNECK_SWEATSHIRT",
+      "materialId": "SWEATSHIRT",
+      "paletteStoryId": "ROSEWOOD_PASTEL",
+      "nativeSleeveFabric": "PrimaryFabric",
+      "axes": {"silhouette":"soft_boxy","collar":"ribbed_crew","opening":"closed","layering":"single_fabric","hem":"gathered_ribbed","sleeve":"full_soft_native","panels":"quiet_body","side":"soft_body_mass","back":"rounded_quiet_back","colorTopology":"single_pastel_with_ribbing"}
+    },
+    {
+      "id": "cgp-cropped-bomber",
+      "name": "Bluebolt Cropped Bomber",
+      "grammarId": "CROPPED_BOMBER",
+      "materialId": "BOMBER_OUTERWEAR",
+      "paletteStoryId": "BRIGHT_SPORT",
+      "nativeSleeveFabric": "PrimaryFabric",
+      "axes": {"silhouette":"short_rounded_shell","collar":"ribbed_short_stand","opening":"full_zip_shell","layering":"small_inner_wedge","hem":"cropped_gathered_band","sleeve":"full_shell_native","panels":"rounded_shoulders_side_pockets","side":"rounded_short_shell","back":"bomber_yoke_and_band","colorTopology":"sport_shoulder_block"}
+    },
+    {
+      "id": "cgp-work-jacket",
+      "name": "Indigo Foundry Work Jacket",
+      "grammarId": "WORK_JACKET",
+      "materialId": "DENIM_WORKWEAR",
+      "paletteStoryId": "DENIM_BLUE",
+      "nativeSleeveFabric": "PrimaryFabric",
+      "axes": {"silhouette":"boxy_firm_shell","collar":"work_collar","opening":"heavy_button_placket","layering":"small_inner_neck","hem":"straight_heavy","sleeve":"full_practical_native","panels":"large_patch_pockets","side":"pocket_mass_and_seam","back":"broad_work_yoke","colorTopology":"denim_yoke_and_canvas_details"}
+    },
+    {
+      "id": "cgp-fitted-blazer",
+      "name": "Midnight Column Blazer",
+      "grammarId": "FITTED_BLAZER",
+      "materialId": "BLAZER_FORMAL",
+      "paletteStoryId": "FORMAL_MIDNIGHT",
+      "nativeSleeveFabric": "PrimaryFabric",
+      "axes": {"silhouette":"fitted_tailored_taper","collar":"broad_notched_lapels","opening":"single_breasted_partial","layering":"substantial_formal_shirt","hem":"shaped_tailored","sleeve":"full_tailored_native","panels":"lapels_welt_pockets","side":"lapel_depth_and_waist","back":"rear_collar_seam_vent","colorTopology":"midnight_frame_ivory_shirt"}
+    },
+    {
+      "id": "cgp-wrap-top",
+      "name": "Seaglass Crosswrap Top",
+      "grammarId": "WRAP_TOP",
+      "materialId": "WOVEN_SHIRT",
+      "paletteStoryId": "SEA_GLASS",
+      "nativeSleeveFabric": "PrimaryFabric",
+      "axes": {"silhouette":"soft_asymmetric_fitted","collar":"crossed_v","opening":"diagonal_overlap","layering":"overlapping_fabric_panels","hem":"sash_bound","sleeve":"fitted_native","panels":"diagonal_wrap_mass","side":"overlap_termination","back":"sash_and_shoulder_seam","colorTopology":"diagonal_two_mass"}
+    },
+    {
+      "id": "cgp-sailor-top",
+      "name": "Harbor Sail Collar Top",
+      "grammarId": "SAILOR_TOP",
+      "materialId": "WOVEN_SHIRT",
+      "paletteStoryId": "SAILOR_NAVY",
+      "nativeSleeveFabric": "PrimaryFabric",
+      "axes": {"silhouette":"neat_upper_emphasis","collar":"broad_sailor_collar","opening":"closed_deep_v","layering":"contrast_v_inset","hem":"straight_tucked","sleeve":"short_banded_native","panels":"front_and_rear_collar","side":"collar_wrap","back":"large_sailor_panel","colorTopology":"navy_body_sailcloth_collar"}
+    },
+    {
+      "id": "cgp-belted-tunic",
+      "name": "Emberpath Belted Tunic",
+      "grammarId": "BELTED_TUNIC",
+      "materialId": "WOVEN_SHIRT",
+      "paletteStoryId": "SUN_EMBER",
+      "nativeSleeveFabric": "PrimaryFabric",
+      "axes": {"silhouette":"straight_longer_looking","collar":"slit_v_neck","opening":"short_neck_slit","layering":"integrated_tunic","hem":"belted_split_termination","sleeve":"full_native","panels":"belt_and_lower_tunic","side":"belt_wrap_side_split","back":"rear_belt_and_upper_seam","colorTopology":"warm_body_cool_sash"}
+    }
+  ]
+}

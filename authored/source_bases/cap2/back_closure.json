@@ -1,0 +1,33 @@
+{
+  "_comment": "CAP2_BACK_CLOSURE — generator-authored hardware detail on the back of Cap 2. A separate slot from the front motif; they never conflict because they sit on different views. Derived from the source back view rather than invented: the adjuster opening is the enclosed transparent gap at row 13, cols 8-11, and the closure sits on the fabric directly above it, where a real snapback strap goes.",
+  "id": "CAP2_BACK_CLOSURE",
+  "provenance": "generator-authored",
+  "view": "Back",
+  "derivation": {
+    "opening_row": 13,
+    "opening_cols": [8, 11],
+    "back_cells": 82,
+    "safe_cells_total": 38,
+    "excluded": ["transparent", "outline", "rim under 8-connectivity", "the opening cells themselves"],
+    "closure_band": "rows 10-11, the fabric immediately above the opening"
+  },
+  "safe_cells_by_row": {"10": [6, 13], "11": [6, 13]},
+  "shapes": {
+    "buckle": {"description": "tiny square buckle", "cells": [[9,11],[10,11]]},
+    "strap":  {"description": "short closure strap", "cells": [[8,11],[9,11],[10,11],[11,11]]},
+    "clasp":  {"description": "strap with a raised tab", "cells": [[9,10],[10,10],[8,11],[9,11],[10,11],[11,11]]}
+  },
+  "colour": {
+    "role": "hardware",
+    "index": 5,
+    "why": "the palette's hardware ramp is metal — the right material for a buckle — and its light end reads as pale hardware against the back fabric",
+    "min_contrast": 60,
+    "measured": "107-124 luminance above the tinted back at these cells",
+    "must_not": "use the opening shadow or the outline role"
+  },
+  "rules": {
+    "view": "Back only",
+    "occupancy": "one closure maximum",
+    "may_not": ["alter the opening", "alter the silhouette", "touch rim or outline cells", "alter any non-overlay source pixel"]
+  }
+}

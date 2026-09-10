@@ -1,0 +1,84 @@
+{
+  "_comment": "Cap 2 family definition. LOCKED: the silhouette, visor, crown, side profile and shading are accepted-good-enough and must not be modified.",
+  "family": "SOFT_CAP",
+  "status": "PROMOTED \u2014 first working rollable cap family",
+  "base": {
+    "id": "cap2",
+    "source": {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "asset": "Cap 2",
+      "png": "generator conent/[FS] More Accessories and Stuff Pack/Hats/Cap2/hat.png",
+      "json": "generator conent/[FS] More Accessories and Stuff Pack/Hats/Cap2/hat.json"
+    },
+    "integrity": "source-derived INTACT; the base is the author's pixels with one 4-cell component lifted and an authored fill in its place. Reconstruction is pixel-exact.",
+    "size": [
+      20,
+      20
+    ],
+    "directions": [
+      "Front",
+      "Right",
+      "Left",
+      "Back"
+    ],
+    "locked": [
+      "silhouette",
+      "visor",
+      "crown",
+      "side profile",
+      "shading"
+    ]
+  },
+  "components": {
+    "front_emblem": {
+      "status": "the ONLY approved extracted reusable component",
+      "classification": "FAMILY-SPECIFIC",
+      "evidence": "the author draws the identical element at the identical cells on Cap 1"
+    },
+    "crown_highlight": {
+      "status": "EMBEDDED in the base; never offered to the generator",
+      "classification": "BASE-SPECIFIC"
+    }
+  },
+  "embedded_or_reference_only": {
+    "count": 67,
+    "includes": [
+      "crown",
+      "visor",
+      "adjuster gap",
+      "all side structure",
+      "all back structure"
+    ],
+    "rule": "remains embedded; not separable without inventing filler"
+  },
+  "allowed_axes": [
+    "palette (the base is pure greyscale, authored to be tinted)",
+    "front emblem presence",
+    "front emblem choice, from the approved motif set only"
+  ],
+  "denied_axes": [
+    "crown swap",
+    "visor swap",
+    "silhouette morph",
+    "snapback mixing (cap_snapback is a separate architecture)",
+    "any asset from the rejected procedural soft_cap",
+    "repositioning the emblem away from its authored cells",
+    "procedural silhouette invention of any kind"
+  ],
+  "promotion": {
+    "date": "2026-09-09",
+    "evidence": {
+      "round_trip_wear": "A (author files byte-verbatim) vs B (round-tripped) \u2014 0 differing pixels, 4 directions x 3 layers, session 20260909-005605",
+      "reconstruction": "base + front_emblem rebuilds the source exactly, 0 px",
+      "worn_batch": "8 variants captured session 20260909-012440; every variant verified to draw its OWN texture",
+      "emblem_contrast": "all emblems 64-160 screen px at dL 67-128 over the field"
+    },
+    "caveat": "emblem PRESENCE reads clearly at gameplay scale; emblem SHAPE largely does not. The zone is 4x3 cells (16x12 screen px), so star, heart, ball, shield and letter_a read as 'a light mark' rather than as distinct symbols. bar and plain are the only two that are unambiguously different. Treat the motif set as accent variety, not iconography.",
+    "next_candidates": [
+      "narrow the motif set to shapes that survive 4x3",
+      "process Cap (Snapback) as its own architecture",
+      "apply the same path to another source family"
+    ]
+  }
+}

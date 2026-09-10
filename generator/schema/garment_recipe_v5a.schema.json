@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rng-clothing.invalid/schema/garment_recipe_v5a.schema.json",
+  "title": "RNG Clothing V5A Unified Garment Recipe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["formatVersion", "id", "articleType", "promotionStatus", "sleeveIntent", "articleIntent", "articleSurfacePlan", "designRecipe"],
+  "properties": {
+    "formatVersion": {"const": "5A"},
+    "id": {"type": "string", "minLength": 1},
+    "articleType": {"enum": ["DRESS", "ONE_PIECE", "BOUNDED_LONG_OUTERWEAR"]},
+    "promotionStatus": {"const": "EXPERIMENTAL"},
+    "sleeveIntent": {"enum": ["sleeveless", "short_sleeve", "fitted_long_sleeve", "loose_long_sleeve", "oversized_sleeve", "off_shoulder", "one_shoulder"]},
+    "articleIntent": {"type": "object", "minProperties": 4},
+    "articleSurfacePlan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primaryTarget", "supportTargets", "topology"],
+      "properties": {
+        "primaryTarget": {"type": "string"},
+        "supportTargets": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "topology": {"enum": ["front_only", "front_back", "wrap", "construction_bound", "asymmetric_front"]}
+      }
+    },
+    "designRecipe": {"type": "object"}
+  }
+}

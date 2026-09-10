@@ -1,0 +1,141 @@
+{
+  "formatVersion": 3,
+  "generatorVersion": "3.0.0",
+  "profile": "AoTInspired",
+  "seed": 2026082914,
+  "purpose": "Exactly six visible collection concepts. No hidden candidate pool and no renderer coordinates.",
+  "concepts": [
+    {
+      "id": "aot-v3-01",
+      "itemName": "Hearthward Work Shirt",
+      "itemDescription": "A fitted rust work shirt with a disciplined collar and pale tailored placket.",
+      "rarity": "Common",
+      "branch": "civilian_everyday",
+      "themeRecognitionTarget": "LOW",
+      "uniquenessTarget": "The only rust civilian single-layer shirt; quiet collar focus and no field panels.",
+      "archetype": "BUTTON_SHIRT",
+      "concept": {"garmentRole": "tailored_shirt", "silhouetteGoal": "fitted_tailored", "designMood": "refined", "primaryGesture": "trim", "secondaryGesture": "none", "focalArea": "collar", "symmetryBias": "symmetric", "designDensity": "low", "themeEmphasis": "subtle"},
+      "construction": {"fit": "fitted", "neckline": "open", "collar": "small_folded", "closure": "buttons", "layering": "single_layer", "hem": "plain", "panelLayout": "center_placket"},
+      "substantialFeatures": ["center_placket"],
+      "colorBlocking": {"type": "none", "topology": "front_only", "colorRole": "secondary"},
+      "surfaceDesign": {
+        "compositionType": "collar_led", "supportSystems": [],
+        "trim": {"type": "collar_trim", "topology": "construction_bound", "colorRole": "dark_accent"},
+        "motif": {"family": "none", "scale": "small", "topology": "front_only", "colorRoles": []},
+        "pattern": {"type": "none", "density": "sparse", "topology": "front_only", "colorRole": "secondary"},
+        "detailLayout": "coordinated_directional"
+      },
+      "paletteStory": "aot_civilian_rust"
+    },
+    {
+      "id": "aot-v3-02",
+      "itemName": "Mossline Field Knit",
+      "itemDescription": "A compact olive field knit with a practical shoulder block and firm ribbed waist.",
+      "rarity": "Common",
+      "branch": "practical_fieldwear",
+      "themeRecognitionTarget": "MODERATE",
+      "uniquenessTarget": "The only simple crew-neck field underlayer; shoulder mass rather than a closure defines it.",
+      "archetype": "SWEATER",
+      "concept": {"garmentRole": "soft_sweater", "silhouetteGoal": "compact_structured", "designMood": "rugged", "primaryGesture": "color_block", "secondaryGesture": "none", "focalArea": "shoulders", "symmetryBias": "symmetric", "designDensity": "low", "themeEmphasis": "subtle"},
+      "construction": {"fit": "regular", "neckline": "crew", "collar": "none", "closure": "none", "layering": "single_layer", "hem": "ribbed", "panelLayout": "solid"},
+      "substantialFeatures": ["ribbed_hem"],
+      "colorBlocking": {"type": "shoulder_block", "topology": "shoulder_wrap", "colorRole": "dark_accent"},
+      "surfaceDesign": {
+        "compositionType": "color_block_led", "supportSystems": [],
+        "trim": {"type": "none", "topology": "construction_bound", "colorRole": "accent"},
+        "motif": {"family": "none", "scale": "small", "topology": "front_only", "colorRoles": []},
+        "pattern": {"type": "none", "density": "sparse", "topology": "front_only", "colorRole": "secondary"},
+        "detailLayout": "shoulder_accent"
+      },
+      "paletteStory": "aot_field_olive"
+    },
+    {
+      "id": "aot-v3-03",
+      "itemName": "Palisade Vest Shirt",
+      "itemDescription": "A fitted taupe field vest framing a pale shirt with disciplined collar piping.",
+      "rarity": "Uncommon",
+      "branch": "military_core",
+      "themeRecognitionTarget": "MODERATE",
+      "uniquenessTarget": "The collection's fitted vest-shirt; a broad pale shirt center, taupe vest frame, and collar piping replace outer-shell framing.",
+      "archetype": "BUTTON_SHIRT",
+      "concept": {"garmentRole": "tailored_shirt", "silhouetteGoal": "fitted_tailored", "designMood": "rugged", "primaryGesture": "color_block", "secondaryGesture": "trim", "focalArea": "shoulders", "symmetryBias": "symmetric", "designDensity": "moderate", "themeEmphasis": "moderate"},
+      "construction": {"fit": "fitted", "neckline": "open", "collar": "small_folded", "closure": "buttons", "layering": "overlay_panel", "hem": "plain", "panelLayout": "yoke"},
+      "substantialFeatures": ["yoke"],
+      "colorBlocking": {"type": "center_panel", "topology": "front_back", "colorRole": "secondary"},
+      "surfaceDesign": {
+        "compositionType": "color_block_led", "supportSystems": ["trim"],
+        "trim": {"type": "piping", "topology": "front_only", "colorRole": "accent"},
+        "motif": {"family": "none", "scale": "medium", "topology": "front_only", "colorRoles": []},
+        "pattern": {"type": "none", "density": "sparse", "topology": "front_only", "colorRole": "secondary"},
+        "detailLayout": "shoulder_accent"
+      },
+      "paletteStory": "aot_high_contrast_field"
+    },
+    {
+      "id": "aot-v3-04",
+      "itemName": "Crosswall Utility Pullover",
+      "itemDescription": "A structured field pullover with dark side panels and a small original regiment-style shoulder badge.",
+      "rarity": "Uncommon",
+      "branch": "practical_fieldwear",
+      "themeRecognitionTarget": "MODERATE",
+      "uniquenessTarget": "The only pullover/yoke hybrid; side-panel mass and a modest asymmetric badge avoid vest and jacket closure logic.",
+      "archetype": "SWEATER",
+      "concept": {"garmentRole": "soft_sweater", "silhouetteGoal": "soft_mass", "designMood": "rugged", "primaryGesture": "motif", "secondaryGesture": "color_block", "focalArea": "side_chest", "symmetryBias": "asymmetric", "designDensity": "moderate", "themeEmphasis": "moderate"},
+      "construction": {"fit": "regular", "neckline": "round", "collar": "none", "closure": "none", "layering": "overlay_panel", "hem": "structured", "panelLayout": "yoke"},
+      "substantialFeatures": ["yoke"],
+      "colorBlocking": {"type": "side_panels", "topology": "construction_bound", "colorRole": "secondary"},
+      "surfaceDesign": {
+        "compositionType": "asymmetric_accent_led", "supportSystems": ["color_block"],
+        "trim": {"type": "none", "topology": "construction_bound", "colorRole": "dark_accent"},
+        "motif": {"family": "star", "scale": "medium", "topology": "asymmetric_front", "colorRoles": ["dark_accent", "accent", "light_accent"]},
+        "pattern": {"type": "none", "density": "sparse", "topology": "front_only", "colorRole": "secondary"},
+        "detailLayout": "shoulder_accent"
+      },
+      "paletteStory": "aot_field_olive"
+    },
+    {
+      "id": "aot-v3-05",
+      "itemName": "Rookfield Crop Jacket",
+      "itemDescription": "A cropped tan field jacket with tall lapels, olive inner layer, utility panels, and an original split-wing badge.",
+      "rarity": "Rare",
+      "branch": "military_core",
+      "themeRecognitionTarget": "STRONG",
+      "uniquenessTarget": "The hero tan split-shell member: wide lapel, visible olive inner layer, shoulder construction, cropped waist, and modest asymmetric split-wing crest.",
+      "archetype": "JACKET",
+      "concept": {"garmentRole": "outer_jacket", "silhouetteGoal": "layered_outerwear", "designMood": "rugged", "primaryGesture": "motif", "secondaryGesture": "color_block", "focalArea": "side_chest", "symmetryBias": "asymmetric", "designDensity": "rich_restrained", "themeEmphasis": "strong"},
+      "construction": {"fit": "regular", "neckline": "open", "collar": "wide", "closure": "center_open", "layering": "visible_inner_layer", "hem": "structured", "panelLayout": "split_outer_panels"},
+      "substantialFeatures": ["contrast_inner_layer", "broad_collar"],
+      "colorBlocking": {"type": "shoulder_block", "topology": "shoulder_wrap", "colorRole": "accent"},
+      "surfaceDesign": {
+        "compositionType": "motif_led", "supportSystems": ["color_block", "trim"],
+        "trim": {"type": "lapel_trim", "topology": "construction_bound", "colorRole": "dark_accent"},
+        "motif": {"family": "star", "scale": "focal", "topology": "asymmetric_front", "colorRoles": ["dark_accent", "accent", "light_accent"]},
+        "pattern": {"type": "none", "density": "moderate", "topology": "front_back", "colorRole": "dark_accent"},
+        "detailLayout": "asymmetrical_side_accent"
+      },
+      "paletteStory": "aot_garrison_tan"
+    },
+    {
+      "id": "aot-v3-06",
+      "itemName": "Nightward Command Jacket",
+      "itemDescription": "A dark formal field jacket with a closed tailored front, pale collar trim, and a restrained burgundy waist cadence.",
+      "rarity": "Rare",
+      "branch": "dark_formal",
+      "themeRecognitionTarget": "STRONG",
+      "uniquenessTarget": "The dark formal premium branch: closed placket, side panels, contrast waist, and disciplined waist cadence instead of Rare 1's split tan shell.",
+      "archetype": "JACKET",
+      "concept": {"garmentRole": "outer_jacket", "silhouetteGoal": "compact_structured", "designMood": "refined", "primaryGesture": "color_block", "secondaryGesture": "trim", "focalArea": "upper_chest", "symmetryBias": "symmetric", "designDensity": "rich_restrained", "themeEmphasis": "strong"},
+      "construction": {"fit": "relaxed", "neckline": "open", "collar": "small_folded", "closure": "buttons", "layering": "overlay_panel", "hem": "contrast_band", "panelLayout": "center_placket"},
+      "substantialFeatures": ["center_placket", "structured_lower_band"],
+      "colorBlocking": {"type": "side_panels", "topology": "construction_bound", "colorRole": "secondary"},
+      "surfaceDesign": {
+        "compositionType": "color_block_led", "supportSystems": ["trim", "pattern"],
+        "trim": {"type": "collar_trim", "topology": "construction_bound", "colorRole": "light_accent"},
+        "motif": {"family": "none", "scale": "focal", "topology": "front_only", "colorRoles": []},
+        "pattern": {"type": "themed_band", "density": "moderate", "topology": "front_back", "colorRole": "accent"},
+        "detailLayout": "front_back_pair"
+      },
+      "paletteStory": "aot_formal_charcoal"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "flower_rose",
+  "motif_class": "flower",
+  "slot": "HEAD",
+  "zone": "side",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 7,
+  "anchor_cell": [
+    1,
+    2
+  ],
+  "anchor_point": "top_right",
+  "style": [
+    "cottagecore",
+    "festival"
+  ],
+  "views": [
+    "front",
+    "left"
+  ],
+  "fits": [
+    "wide_brim_hat",
+    "knit_cap"
+  ],
+  "description": "a tight rose head, darker at its base",
+  "per_view": false,
+  "size": [
+    3,
+    3
+  ]
+}

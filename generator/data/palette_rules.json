@@ -1,0 +1,164 @@
+{
+  "formatVersion": 1,
+  "basis": "Authored palette families plus a grayscale mask ramp informed by representative dyeable vanilla shirts. No RGB auto-lightening is used.",
+  "mainMaskRamp": {
+    "main_deep": 88,
+    "main_shadow": 136,
+    "main_base": 184,
+    "main_light": 224,
+    "main_highlight": 244
+  },
+  "minimumDefaultDyeLuminance": 82,
+  "minimumShadowToBaseLuminanceDelta": 18,
+  "minimumOverallRenderedLuminanceRange": 42,
+  "families": {
+    "forest_cream": {
+      "label": "Forest / Cream",
+      "defaultDye": [92, 132, 91],
+      "secondary": {
+        "shadow": [164, 145, 111],
+        "base": [232, 216, 177],
+        "light": [247, 237, 207]
+      },
+      "allowedAccents": ["rust", "brass", "deep_brown"]
+    },
+    "navy_ivory": {
+      "label": "Navy / Ivory",
+      "defaultDye": [82, 105, 153],
+      "secondary": {
+        "shadow": [174, 170, 151],
+        "base": [229, 225, 201],
+        "light": [249, 246, 224]
+      },
+      "allowedAccents": ["rust", "brass", "burgundy"]
+    },
+    "rust_brown": {
+      "label": "Rust / Brown",
+      "defaultDye": [178, 101, 66],
+      "secondary": {
+        "shadow": [92, 61, 44],
+        "base": [151, 111, 78],
+        "light": [203, 165, 118]
+      },
+      "allowedAccents": ["ivory", "brass", "deep_brown"]
+    },
+    "charcoal_burgundy": {
+      "label": "Charcoal / Burgundy",
+      "defaultDye": [96, 98, 108],
+      "secondary": {
+        "shadow": [83, 39, 53],
+        "base": [137, 55, 76],
+        "light": [184, 91, 109]
+      },
+      "allowedAccents": ["ivory", "brass", "dusty_rose"]
+    },
+    "denim_cream": {
+      "label": "Denim / Cream",
+      "defaultDye": [83, 126, 166],
+      "secondary": {
+        "shadow": [157, 137, 106],
+        "base": [224, 207, 169],
+        "light": [246, 235, 205]
+      },
+      "allowedAccents": ["brass", "rust", "deep_brown"]
+    },
+    "sage_tan": {
+      "label": "Sage / Tan",
+      "defaultDye": [126, 153, 117],
+      "secondary": {
+        "shadow": [135, 105, 76],
+        "base": [193, 159, 112],
+        "light": [225, 199, 153]
+      },
+      "allowedAccents": ["deep_brown", "rust", "ivory"]
+    },
+    "warm_neutral": {
+      "label": "Warm Neutral",
+      "defaultDye": [151, 124, 101],
+      "secondary": {
+        "shadow": [125, 105, 88],
+        "base": [203, 184, 157],
+        "light": [238, 223, 197]
+      },
+      "allowedAccents": ["rust", "burgundy", "deep_brown"]
+    },
+    "cool_neutral": {
+      "label": "Cool Neutral",
+      "defaultDye": [112, 130, 145],
+      "secondary": {
+        "shadow": [117, 127, 137],
+        "base": [181, 193, 199],
+        "light": [226, 233, 232]
+      },
+      "allowedAccents": ["navy", "burgundy", "ivory"]
+    },
+    "field_tan_olive": {
+      "label": "Field Tan / Olive",
+      "defaultDye": [171, 124, 75],
+      "secondary": {
+        "shadow": [48, 53, 37],
+        "base": [78, 88, 57],
+        "light": [119, 127, 83]
+      },
+      "allowedAccents": ["deep_brown", "brass", "ivory"]
+    },
+    "olive_warm_beige": {
+      "label": "Olive / Warm Beige",
+      "defaultDye": [105, 113, 73],
+      "secondary": {
+        "shadow": [119, 96, 68],
+        "base": [190, 161, 113],
+        "light": [225, 205, 160]
+      },
+      "allowedAccents": ["deep_brown", "brass", "ivory"]
+    },
+    "ivory_black_brown": {
+      "label": "Ivory / Black-Brown",
+      "defaultDye": [207, 195, 164],
+      "secondary": {
+        "shadow": [38, 31, 28],
+        "base": [70, 58, 49],
+        "light": [111, 94, 76]
+      },
+      "allowedAccents": ["deep_brown", "brass", "burgundy"]
+    },
+    "dusty_khaki_deep_gray": {
+      "label": "Dusty Khaki / Deep Gray",
+      "defaultDye": [148, 137, 98],
+      "secondary": {
+        "shadow": [47, 49, 51],
+        "base": [76, 78, 79],
+        "light": [117, 117, 112]
+      },
+      "allowedAccents": ["deep_brown", "brass", "ivory"]
+    },
+    "civilian_burgundy_charcoal": {
+      "label": "Civilian Burgundy / Charcoal",
+      "defaultDye": [126, 65, 68],
+      "secondary": {
+        "shadow": [43, 43, 47],
+        "base": [75, 75, 80],
+        "light": [119, 116, 116]
+      },
+      "allowedAccents": ["deep_brown", "ivory", "brass"]
+    }
+  },
+  "accents": {
+    "none": null,
+    "rust": [188, 88, 50],
+    "brass": [211, 158, 66],
+    "deep_brown": [79, 54, 43],
+    "ivory": [242, 231, 203],
+    "burgundy": [128, 48, 65],
+    "dusty_rose": [190, 112, 122],
+    "navy": [51, 70, 112]
+  },
+  "usageRules": {
+    "mainFabric": "Use three to five mask values depending on archetype and rarity.",
+    "secondaryFabric": "Use no more than two adjacent values in one coherent region.",
+    "accent": "Use one authored accent color in a small attached cluster; do not generate an accent ramp for V1.",
+    "common": "Prefer four main values and no accent unless the single feature requires one.",
+    "uncommon": "Allow five main values, one secondary region, and an optional accent.",
+    "rare": "Allow five main values, a secondary region, and one restrained accent; complexity comes from structure, not extra colors."
+  }
+}

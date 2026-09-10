@@ -1,0 +1,25 @@
+{
+  "name": "brim_lace",
+  "motif_class": "lace",
+  "edge": true,
+  "slot": "HEAD",
+  "zone": "brim",
+  "z": 2,
+  "style": [
+    "cottagecore",
+    "festival"
+  ],
+  "views": [
+    "front",
+    "left"
+  ],
+  "fits": [
+    "wide_brim_hat"
+  ],
+  "description": "a solid brim line with lace scalloped beneath it",
+  "per_view": false,
+  "size": [
+    12,
+    2
+  ]
+}

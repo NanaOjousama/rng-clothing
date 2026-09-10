@@ -1,0 +1,22 @@
+{
+  "id": "tie_sailor",
+  "kind": "detail",
+  "layer": "DETAIL",
+  "slot": "accent",
+  "identity": true,
+  "wrap": false,
+  "note": "Small knot and two hanging ends below the sailor V (vanilla 259 row 3 cols 2,5).",
+  "views": {
+    "front": {
+      "origin": [
+        6,
+        5
+      ],
+      "rows": [
+        ".bb.",
+        "b..b",
+        "s..s"
+      ]
+    }
+  }
+}

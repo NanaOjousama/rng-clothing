@@ -1,0 +1,26 @@
+{
+  "name": "crown_button",
+  "motif_class": "button",
+  "slot": "HEAD",
+  "zone": "crown_top",
+  "z": 3,
+  "style": [
+    "casual",
+    "work",
+    "smart"
+  ],
+  "views": [
+    "front",
+    "left",
+    "back"
+  ],
+  "fits": [
+    "knit_cap"
+  ],
+  "description": "the metal button at the centre of a cap's crown",
+  "per_view": false,
+  "size": [
+    1,
+    1
+  ]
+}

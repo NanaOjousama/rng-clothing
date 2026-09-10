@@ -1,0 +1,31 @@
+{
+  "name": "gem_drop",
+  "motif_class": "gem",
+  "pending": true,
+  "slot": "HEAD",
+  "zone": "front_panel",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 6,
+  "anchor_cell": [
+    0,
+    2
+  ],
+  "anchor_point": "top_right",
+  "style": [
+    "smart",
+    "cottagecore"
+  ],
+  "views": [
+    "front"
+  ],
+  "fits": [
+    "soft_cap"
+  ],
+  "description": "a faceted drop gem, bright above and dark below",
+  "per_view": false,
+  "size": [
+    2,
+    3
+  ]
+}

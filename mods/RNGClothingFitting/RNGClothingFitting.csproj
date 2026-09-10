@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GamePath>/run/media/deck/USD00/steamapps/common/Stardew Valley</GamePath>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>RNGClothingFitting</AssemblyName>
+    <RootNamespace>RNGClothingFitting</RootNamespace>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <!-- No Harmony. The fitting mod reads menu state through SMAPI events and
+         writes public properties on Fashion Sense's own loaded models; it
+         patches nothing and suppresses no input. -->
+    <EnableHarmony>false</EnableHarmony>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
+    <!-- Compile-time only. Fashion Sense is already loaded at runtime, and the
+         manifest requires it, so this is never copied to the output. The model
+         classes (HatContentPack, HatModel, Position) are public. -->
+    <Reference Include="FashionSense">
+      <HintPath>$(GamePath)/Mods/FashionSense/FashionSense.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(GamePath)/smapi-internal/Newtonsoft.Json.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

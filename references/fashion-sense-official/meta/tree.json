@@ -1,0 +1,2490 @@
+{
+  "sha": "39e9e9e13c9f9a78416172e73a229cf8703ddb59",
+  "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/39e9e9e13c9f9a78416172e73a229cf8703ddb59",
+  "tree": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+      "size": 66,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/dfe0770424b2a19faf507a501ebfc23be8f54e7b"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d13c54854e866a814b873404ff0060ba9c7b888",
+      "size": 5646,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/4d13c54854e866a814b873404ff0060ba9c7b888"
+    },
+    {
+      "path": "FashionSense",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6d9b5b004e4a448e7e0e2bb617de27b6e04529ea",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/6d9b5b004e4a448e7e0e2bb617de27b6e04529ea"
+    },
+    {
+      "path": "FashionSense/Examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "27717ba98832c300ec0c7ca37e126b0f61850691",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/27717ba98832c300ec0c7ca37e126b0f61850691"
+    },
+    {
+      "path": "FashionSense/Examples/[CP] Example Pack",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3885c96857a05fc968e661baca107ab8f61c60e6",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/3885c96857a05fc968e661baca107ab8f61c60e6"
+    },
+    {
+      "path": "FashionSense/Examples/[CP] Example Pack/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f8eb01d51a3653da92d10c98b177068ca25b7993",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/f8eb01d51a3653da92d10c98b177068ca25b7993"
+    },
+    {
+      "path": "FashionSense/Examples/[CP] Example Pack/assets/actual_hat.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "246b8197ed4c4a5041273a9a34c0b2012abef66f",
+      "size": 765,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/246b8197ed4c4a5041273a9a34c0b2012abef66f"
+    },
+    {
+      "path": "FashionSense/Examples/[CP] Example Pack/assets/test_hat.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "810b9ad97fc36f47f38b50afeb8c076cf6f4a8dd",
+      "size": 219,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/810b9ad97fc36f47f38b50afeb8c076cf6f4a8dd"
+    },
+    {
+      "path": "FashionSense/Examples/[CP] Example Pack/content.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8be220365bf2332f26f0878ee65c6c576de30ba",
+      "size": 3512,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/f8be220365bf2332f26f0878ee65c6c576de30ba"
+    },
+    {
+      "path": "FashionSense/Examples/[CP] Example Pack/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1314bf8c43dd4642cd65c889c09dd38b283d34c4",
+      "size": 498,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/1314bf8c43dd4642cd65c889c09dd38b283d34c4"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9a19887331dcad9e18fe9aeaea2f205c69f99566",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/9a19887331dcad9e18fe9aeaea2f205c69f99566"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ab0f6f704137daf3e34860831b2704b47a9b49e4",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/ab0f6f704137daf3e34860831b2704b47a9b49e4"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/AccessoryTemplate",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "85f94614890853fffb4d320db630518a606dccf4",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/85f94614890853fffb4d320db630518a606dccf4"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/AccessoryTemplate/accessory.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d52f4c59df50561ed94c56eb72be2f7b96328c50",
+      "size": 1153,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/d52f4c59df50561ed94c56eb72be2f7b96328c50"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/AccessoryTemplate/accessory.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a837da9dd4c7e1c0421d94d36948b35cd6ed7c7d",
+      "size": 202,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a837da9dd4c7e1c0421d94d36948b35cd6ed7c7d"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/FlowingCape",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3d235e3db10f4c44b531b221992c2c7f549bc407",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/3d235e3db10f4c44b531b221992c2c7f549bc407"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/FlowingCape/accessory.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba1e3d622cd65637bca1a220b8cf507f1361db4a",
+      "size": 2311,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/ba1e3d622cd65637bca1a220b8cf507f1361db4a"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/FlowingCape/accessory.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcd9158622bdf64eeeecf2c96f6d884de43510c7",
+      "size": 953,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/bcd9158622bdf64eeeecf2c96f6d884de43510c7"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/FlowingScarf",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ce98cb22596564cd5b1c7c78a1c7544689b95e1f",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/ce98cb22596564cd5b1c7c78a1c7544689b95e1f"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/FlowingScarf/accessory.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ce1414b6f07df748c623c29163a0fab3797492a",
+      "size": 2026,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/4ce1414b6f07df748c623c29163a0fab3797492a"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/FlowingScarf/accessory.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03f753fe411ce79f6b881c0ad15dfb2d36771213",
+      "size": 560,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/03f753fe411ce79f6b881c0ad15dfb2d36771213"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/OneWingedAngel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a61adc5ae2cb55c201750fafd8a5a6cef0bb759d",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/a61adc5ae2cb55c201750fafd8a5a6cef0bb759d"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/OneWingedAngel/accessory.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23a74df66548b500c744c244450c6d9507e48136",
+      "size": 975,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/23a74df66548b500c744c244450c6d9507e48136"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/OneWingedAngel/accessory.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1fd869c5ad6a6f27828193be6b8dd50aa3fd2e0",
+      "size": 586,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/d1fd869c5ad6a6f27828193be6b8dd50aa3fd2e0"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/Priestess",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "056672afa89e2cc5d024ad51858b8d59d5ea5b78",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/056672afa89e2cc5d024ad51858b8d59d5ea5b78"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/Priestess/accessory.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fcd55b41717cf4395b6381f6bba6e8da57e1f1c",
+      "size": 2947,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/2fcd55b41717cf4395b6381f6bba6e8da57e1f1c"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/Priestess/accessory.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d7df9a21359d459c24743989f97cc075cd318f6",
+      "size": 878,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/2d7df9a21359d459c24743989f97cc075cd318f6"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/ShinySunglasses",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e87a2a15b258d003ba5d7e9257432b18b667ce6e",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/e87a2a15b258d003ba5d7e9257432b18b667ce6e"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/ShinySunglasses/accessory.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a14b6ad2285103bbb1f33f34e2719e80ad32204",
+      "size": 1360,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/5a14b6ad2285103bbb1f33f34e2719e80ad32204"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/ShinySunglasses/accessory.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2978c5b807fa7d1c48e69533fb4651022e6cc378",
+      "size": 369,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/2978c5b807fa7d1c48e69533fb4651022e6cc378"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/TwoToneGlasses",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ab2004116a8787774970f995d7b8bb91fb84b01f",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/ab2004116a8787774970f995d7b8bb91fb84b01f"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/TwoToneGlasses/accessory.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0813bcf185ed53023bbc961bbbca520e7ce80577",
+      "size": 1223,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/0813bcf185ed53023bbc961bbbca520e7ce80577"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Accessories/TwoToneGlasses/accessory.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b96c180ee2e7a81871427ce384819a4ed7cb4ac8",
+      "size": 360,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/b96c180ee2e7a81871427ce384819a4ed7cb4ac8"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Bodies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "70100202c385e4f416f71a1e324b5936fb6205b6",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/70100202c385e4f416f71a1e324b5936fb6205b6"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Bodies/BodyTemplate",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee3bb2d73b633f72ea7a7350613bddde0244136b",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/ee3bb2d73b633f72ea7a7350613bddde0244136b"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Bodies/BodyTemplate/body.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60320c0190526327858038493957b8d479931ca2",
+      "size": 106791,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/60320c0190526327858038493957b8d479931ca2"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Bodies/BodyTemplate/body.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21b06c7a184ab7025f354498785f992ed59961d8",
+      "size": 13488,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/21b06c7a184ab7025f354498785f992ed59961d8"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Bodies/BodyTemplate/eyes.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f26c77c7200e06321ce77b991832d7a173e22203",
+      "size": 207,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/f26c77c7200e06321ce77b991832d7a173e22203"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7869cb24b5675d7889a3360a3b4be38526c19acb",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/7869cb24b5675d7889a3360a3b4be38526c19acb"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/ColorableHair",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dabdf868767acf0262691fb26c92065098087111",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/dabdf868767acf0262691fb26c92065098087111"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/ColorableHair/hair.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43f85dfbdbefe958f1d2f9c33fb240352c4848ff",
+      "size": 2744,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/43f85dfbdbefe958f1d2f9c33fb240352c4848ff"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/ColorableHair/hair.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28e00fae4665f3e67fdf4619d7cabceb9a86f021",
+      "size": 1303,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/28e00fae4665f3e67fdf4619d7cabceb9a86f021"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/HairTemplate",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2b5be1b300ce543140a013aabcf21193acab2058",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/2b5be1b300ce543140a013aabcf21193acab2058"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/HairTemplate/hair.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e539ff8e1b2370ddfc8885394d936335e14bce4",
+      "size": 1642,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/9e539ff8e1b2370ddfc8885394d936335e14bce4"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/HairTemplate/hair.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0cfc4d11b5cd43eb9dc4cddb3cbf367f2c9c346",
+      "size": 805,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/d0cfc4d11b5cd43eb9dc4cddb3cbf367f2c9c346"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/LongHair",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1b6f21cc8fd0a3d95c8033f8b02f56464bab3e12",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/1b6f21cc8fd0a3d95c8033f8b02f56464bab3e12"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/LongHair/hair.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c6d082e0870002ab12fc85596c3da9f8f873cdb",
+      "size": 3927,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/7c6d082e0870002ab12fc85596c3da9f8f873cdb"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/LongHair/hair.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed08399d3f27483869188b9e6c525323c0a452e5",
+      "size": 1924,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/ed08399d3f27483869188b9e6c525323c0a452e5"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/Magic Sword",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c50561c992d1171ce78d0c5e928e208067dc8045",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/c50561c992d1171ce78d0c5e928e208067dc8045"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/Magic Sword/hair.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a8224b9bd50c8b146ccdc632635607e8ff43aa6",
+      "size": 1309,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/0a8224b9bd50c8b146ccdc632635607e8ff43aa6"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/Magic Sword/hair.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "548c037b410db79710b3ef97312fac94ef0b01c6",
+      "size": 2003,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/548c037b410db79710b3ef97312fac94ef0b01c6"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/MohawkBald",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d369cfcba1b3755ca7e5fa396d9c3fdfc021588e",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/d369cfcba1b3755ca7e5fa396d9c3fdfc021588e"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/MohawkBald/hair.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9faf3af02555a9bb4129bc8291ca0e9b2ac4388",
+      "size": 952,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/e9faf3af02555a9bb4129bc8291ca0e9b2ac4388"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/MohawkBald/hair.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35c1354d4d505d70eb449a235856399ad6b44f31",
+      "size": 566,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/35c1354d4d505d70eb449a235856399ad6b44f31"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/MohawkNormal",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8663c696a19730e7fb96ae1f76c5d532549d9af7",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/8663c696a19730e7fb96ae1f76c5d532549d9af7"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/MohawkNormal/hair.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7967d12d943f8ddbb48f5298b1c09cd8852c3b3",
+      "size": 845,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/e7967d12d943f8ddbb48f5298b1c09cd8852c3b3"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/MohawkNormal/hair.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35c1354d4d505d70eb449a235856399ad6b44f31",
+      "size": 566,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/35c1354d4d505d70eb449a235856399ad6b44f31"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/Priestess",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff48a2f07855cb93ed19d703f36aeb48d3de9710",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/ff48a2f07855cb93ed19d703f36aeb48d3de9710"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/Priestess/hair.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b02fbc08a0b4fee88391620d78773446717c0923",
+      "size": 896,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/b02fbc08a0b4fee88391620d78773446717c0923"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/Priestess/hair.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4999669d22a54ba8a2cecf15100a699f576be40b",
+      "size": 1097,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/4999669d22a54ba8a2cecf15100a699f576be40b"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/ShortHairWithCurl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4f205289f92984eaee1347dc8b90e1b808a7ad75",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/4f205289f92984eaee1347dc8b90e1b808a7ad75"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/ShortHairWithCurl/hair.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01cb387ef9b63dd74ee30c6ec437a48f9bc6cfd3",
+      "size": 597,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/01cb387ef9b63dd74ee30c6ec437a48f9bc6cfd3"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/ShortHairWithCurl/hair.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f6fb25385db49f0005e62887f80671324644738",
+      "size": 522,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/5f6fb25385db49f0005e62887f80671324644738"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/ShortHairWithCurlStatic",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4b74a4efe93c180915b51ab4b7470e3e8c672de3",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/4b74a4efe93c180915b51ab4b7470e3e8c672de3"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/ShortHairWithCurlStatic/hair.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91a8fc2c2f7e9cc9fdce6c1e4d27911722b50927",
+      "size": 246,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/91a8fc2c2f7e9cc9fdce6c1e4d27911722b50927"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/ShortHairWithCurlStatic/hair.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad80280821e00b1164c25c7aaa93b5bd12baa641",
+      "size": 363,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/ad80280821e00b1164c25c7aaa93b5bd12baa641"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/ShortHairWithFleas",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "87aae5dbfb868d50b5c7a16c80cde7ee4785be3b",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/87aae5dbfb868d50b5c7a16c80cde7ee4785be3b"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/ShortHairWithFleas/hair.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3893c465b3eb9a6fb5f19744162ba53a4b9a364",
+      "size": 1844,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a3893c465b3eb9a6fb5f19744162ba53a4b9a364"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hairs/ShortHairWithFleas/hair.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcdbe05d1085e0eaca5c72615e8f9522c89e5f48",
+      "size": 1683,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/bcdbe05d1085e0eaca5c72615e8f9522c89e5f48"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8f2eef7fa4f4feeb678e47d36baf35ad941b0dde",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/8f2eef7fa4f4feeb678e47d36baf35ad941b0dde"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/AnimatedPumpkinHead",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ead87fd244dfcd616d97d6bfa4b9bf0177e54fdf",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/ead87fd244dfcd616d97d6bfa4b9bf0177e54fdf"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/AnimatedPumpkinHead/hat.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0c69e3e8bc386e31cd991ee1cbcb635896e45b4",
+      "size": 2324,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/f0c69e3e8bc386e31cd991ee1cbcb635896e45b4"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/AnimatedPumpkinHead/hat.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f60f27e6ed2a8e680d4d0ad7620c1fd3266e5478",
+      "size": 1006,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/f60f27e6ed2a8e680d4d0ad7620c1fd3266e5478"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/ColorableMouseEars",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ad1052c269f15853e841267f37457fb44614029",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/7ad1052c269f15853e841267f37457fb44614029"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/ColorableMouseEars/hat.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd0206c76f0236f24a444d61b7af186f91230014",
+      "size": 286,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/fd0206c76f0236f24a444d61b7af186f91230014"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/ColorableMouseEars/hat.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e4a4d2da785094337b091194da002db1e2f7831",
+      "size": 226,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/4e4a4d2da785094337b091194da002db1e2f7831"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/HatTemplate",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "19f201490df24a6278570a5f454776db95fb7dc9",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/19f201490df24a6278570a5f454776db95fb7dc9"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/HatTemplate/hat.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f296b94795575be979eb1cdd25d687e04f37ab2a",
+      "size": 1514,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/f296b94795575be979eb1cdd25d687e04f37ab2a"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/HatTemplate/hat.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db4091b27d8b18a9ebb7abd45e8c416d51e9ed9d",
+      "size": 700,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/db4091b27d8b18a9ebb7abd45e8c416d51e9ed9d"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/HatThatAppearsInRain",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dc710a9f7c4510b65bb3d6bfa766f073c6b60ec9",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/dc710a9f7c4510b65bb3d6bfa766f073c6b60ec9"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/HatThatAppearsInRain/hat.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77e047505a5863c7911a69df8995f433f62598f1",
+      "size": 3110,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/77e047505a5863c7911a69df8995f433f62598f1"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/HatThatAppearsInRain/hat.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25199fb6eb858111faf7b53f86d6f2256f1c2911",
+      "size": 652,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/25199fb6eb858111faf7b53f86d6f2256f1c2911"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/HatThatHidesPlayer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "94f6761c44430e69dece95136e1f21edcb826750",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/94f6761c44430e69dece95136e1f21edcb826750"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/HatThatHidesPlayer/hat.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d9353d553c6a0184b2b90d7718b0744095d8e96",
+      "size": 1267,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/2d9353d553c6a0184b2b90d7718b0744095d8e96"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/HatThatHidesPlayer/hat.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40f234f6cb5bfb3449b2cb89019c8225a11202ce",
+      "size": 492,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/40f234f6cb5bfb3449b2cb89019c8225a11202ce"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/PrismaticDinoHead",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7321e7bba9ee70bedfa4725c4dc424254ecab6fe",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/7321e7bba9ee70bedfa4725c4dc424254ecab6fe"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/PrismaticDinoHead/hat.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d96ad96845317b6b20e8efe7733aa0a1b12bca70",
+      "size": 2978,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/d96ad96845317b6b20e8efe7733aa0a1b12bca70"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Hats/PrismaticDinoHead/hat.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6721b7c38c4093d8b96777d224c5e2572fc7334",
+      "size": 869,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/f6721b7c38c4093d8b96777d224c5e2572fc7334"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Pants",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "99cc8ae398cdfa6af30e7a52f9536b969bf83dd0",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/99cc8ae398cdfa6af30e7a52f9536b969bf83dd0"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Pants/PantsTemplate",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b70e20fdf3eaca3c70d74901c7c7f0df04874bce",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/b70e20fdf3eaca3c70d74901c7c7f0df04874bce"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Pants/PantsTemplate/pants.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfc6968fdb1f23ffd16dfe0037025d9a43e45b96",
+      "size": 89469,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/cfc6968fdb1f23ffd16dfe0037025d9a43e45b96"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Pants/PantsTemplate/pants.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "778d2b669d33688d332f7c77570a66b1744ca4d4",
+      "size": 6409,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/778d2b669d33688d332f7c77570a66b1744ca4d4"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Pants/PinkGrassSkirt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3ff11226ee74b8a0f1fd76d43283d32d88b952f5",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/3ff11226ee74b8a0f1fd76d43283d32d88b952f5"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Pants/PinkGrassSkirt/pants.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "645d8dde6f3396f0395e28e5c87b3abcdea2b1d7",
+      "size": 9131,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/645d8dde6f3396f0395e28e5c87b3abcdea2b1d7"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Pants/PinkGrassSkirt/pants.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3131af78ac941c869e4164ae68738ac30876754",
+      "size": 1144,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a3131af78ac941c869e4164ae68738ac30876754"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Pants/SimplePantsTemplate",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "881a0244f4663d42bdc73cd02063ec3948565b74",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/881a0244f4663d42bdc73cd02063ec3948565b74"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Pants/SimplePantsTemplate/pants.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "851d43e99659ece1fb4c95764afb035eeac8e6d0",
+      "size": 105076,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/851d43e99659ece1fb4c95764afb035eeac8e6d0"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Pants/SimplePantsTemplate/pants.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e41cd64acd0b95a42c3d240045f81897ec2e72bb",
+      "size": 4658,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/e41cd64acd0b95a42c3d240045f81897ec2e72bb"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Pants/Spirit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d2515c229583c612ebd497aa435fc2289b4f6e8c",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/d2515c229583c612ebd497aa435fc2289b4f6e8c"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Pants/Spirit/pants.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53344f4bcacabba5471b08f0f89f8cd360d75b89",
+      "size": 1437,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/53344f4bcacabba5471b08f0f89f8cd360d75b89"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Pants/Spirit/pants.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b016272c039e19f28b8af7b75eeca32ab8d8cf8",
+      "size": 401,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/2b016272c039e19f28b8af7b75eeca32ab8d8cf8"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c3cfaa7d4644ded0783b0878ceee986d11d0319b",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/c3cfaa7d4644ded0783b0878ceee986d11d0319b"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/Blinky",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "33479f182020d667b58e71b874d77085c4f2dcb8",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/33479f182020d667b58e71b874d77085c4f2dcb8"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/Blinky/shirt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aab2e50456a70c0f5596c96124fbd92291d715c9",
+      "size": 2101,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/aab2e50456a70c0f5596c96124fbd92291d715c9"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/Blinky/shirt.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e077e51f5a9cca57ef392cd6b25f978a1714243",
+      "size": 545,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/9e077e51f5a9cca57ef392cd6b25f978a1714243"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/ColorableSmiley",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2b95fd82b16b91414de389083eeb5a58b680acf2",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/2b95fd82b16b91414de389083eeb5a58b680acf2"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/ColorableSmiley/shirt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66fa175147046eaf289764192d39c854ce825fbc",
+      "size": 1234,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/66fa175147046eaf289764192d39c854ce825fbc"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/ColorableSmiley/shirt.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c56a0866ac4d42a39b8841d3bf899b2bde14f47",
+      "size": 516,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/9c56a0866ac4d42a39b8841d3bf899b2bde14f47"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/MageRobe",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eeece30c1c1418c416884abf97cd2c82461417bb",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/eeece30c1c1418c416884abf97cd2c82461417bb"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/MageRobe/shirt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73f28e9f3a47bdd04a0ad63b25e60d793ce5eef5",
+      "size": 1658,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/73f28e9f3a47bdd04a0ad63b25e60d793ce5eef5"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/MageRobe/shirt.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76bfa2934f4ba037dc2fc0c3cb122ce3e4303a71",
+      "size": 581,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/76bfa2934f4ba037dc2fc0c3cb122ce3e4303a71"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/MultipleColorLayersOveralls",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff68d9b1ec98c6f96a3c7c47c52b1d7318910d77",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/ff68d9b1ec98c6f96a3c7c47c52b1d7318910d77"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/MultipleColorLayersOveralls/shirt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac14905b0040e3c177f81c9e6bc437699cc77416",
+      "size": 2576,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/ac14905b0040e3c177f81c9e6bc437699cc77416"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/MultipleColorLayersOveralls/shirt.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebb266708a96c700f89e939234da6a21891dfb3d",
+      "size": 658,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/ebb266708a96c700f89e939234da6a21891dfb3d"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/ShirtTemplate",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7d154dd862962b49192eac32b9329fcfb79bbffb",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/7d154dd862962b49192eac32b9329fcfb79bbffb"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/ShirtTemplate/shirt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "972b11a0e254d85a04c521c3e4df40a5da078337",
+      "size": 1846,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/972b11a0e254d85a04c521c3e4df40a5da078337"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/ShirtTemplate/shirt.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a72e1e24c1663867e199de2739363d6e04e9a88",
+      "size": 558,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/6a72e1e24c1663867e199de2739363d6e04e9a88"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/TieDyeShirt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4d19aba5ce887727107bf4b70e04f09f97108fce",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/4d19aba5ce887727107bf4b70e04f09f97108fce"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/TieDyeShirt/shirt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54085fb7492dc9f4b6b5d5c64d6eda38754319dc",
+      "size": 3329,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/54085fb7492dc9f4b6b5d5c64d6eda38754319dc"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shirts/TieDyeShirt/shirt.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbd27099c1d5b9ad9cf80ecf4dd3e0c9d2182ca3",
+      "size": 446,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/cbd27099c1d5b9ad9cf80ecf4dd3e0c9d2182ca3"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shoes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4f2bd95f057a947c21a35b1325052838d01650f6",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/4f2bd95f057a947c21a35b1325052838d01650f6"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shoes/PunkBoots",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ffafbe46137b6ba2d88f47c3224a5995d0d7cbe4",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/ffafbe46137b6ba2d88f47c3224a5995d0d7cbe4"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shoes/PunkBoots/shoes.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb1bcf74a32f31a0698e3ed137a2d89821864c28",
+      "size": 2353,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/cb1bcf74a32f31a0698e3ed137a2d89821864c28"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shoes/PunkBoots/shoes.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41c730dd002e1fe7a53c7dedda0d224409a936fc",
+      "size": 583,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/41c730dd002e1fe7a53c7dedda0d224409a936fc"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shoes/Sandals",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6d6ca3539ae29782b691ae2946ebb0e84fe68387",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/6d6ca3539ae29782b691ae2946ebb0e84fe68387"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shoes/Sandals/shoes.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2403f1ea65243e5bffdbbe621eb1424effee3d09",
+      "size": 4122,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/2403f1ea65243e5bffdbbe621eb1424effee3d09"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shoes/Sandals/shoes.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4adc3de8f3fb657e80978d4880867c3ecff2f6a",
+      "size": 733,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a4adc3de8f3fb657e80978d4880867c3ecff2f6a"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shoes/ShoesTemplate",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "05cfad0079c71a0fb0bae42f804720009ff99f0c",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/05cfad0079c71a0fb0bae42f804720009ff99f0c"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shoes/ShoesTemplate/shoes.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5ad9be487002b5d5182eb032bcbbb1672654bd2",
+      "size": 34438,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/f5ad9be487002b5d5182eb032bcbbb1672654bd2"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Shoes/ShoesTemplate/shoes.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21d4dda851e706ca2e14f541fc8e6ad146ea7c25",
+      "size": 4530,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/21d4dda851e706ca2e14f541fc8e6ad146ea7c25"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Sleeves",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "44f1a07bac7898094975306d75c35b80450e3456",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/44f1a07bac7898094975306d75c35b80450e3456"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Sleeves/SleevesTemplate",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b62e54182ca86aac4c032932f86e165740b803b",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/0b62e54182ca86aac4c032932f86e165740b803b"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Sleeves/SleevesTemplate/sleeves.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdde73e5a5a9de326f4207a152accec7a7a33c72",
+      "size": 50093,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/cdde73e5a5a9de326f4207a152accec7a7a33c72"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Sleeves/SleevesTemplate/sleeves.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bbc375377f6c7787cc3586a20343bfb785532a9",
+      "size": 13744,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/0bbc375377f6c7787cc3586a20343bfb785532a9"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Sleeves/StripedSleeves",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1927f315dd7a054439089b8ac91f4473dd4b1f7e",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/1927f315dd7a054439089b8ac91f4473dd4b1f7e"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Sleeves/StripedSleeves/sleeves.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0ac8d4ea3e3a8319550655d144196adcf6c75cc",
+      "size": 13361,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/d0ac8d4ea3e3a8319550655d144196adcf6c75cc"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Sleeves/StripedSleeves/sleeves.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b85954972758119dcfcbc77709822e227180a71",
+      "size": 2068,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/8b85954972758119dcfcbc77709822e227180a71"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Sleeves/Tentacles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d6de05e8f7eef064be89853a6a07e2ac889cb133",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/d6de05e8f7eef064be89853a6a07e2ac889cb133"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Sleeves/Tentacles/sleeves.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a01e8d2b58c7db1ce7b75c138c1ffe42cb381297",
+      "size": 3627,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a01e8d2b58c7db1ce7b75c138c1ffe42cb381297"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/Sleeves/Tentacles/sleeves.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0d108edae9e196e091ebce592d4faedde5b053f",
+      "size": 901,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/e0d108edae9e196e091ebce592d4faedde5b053f"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/conditions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a452ee1b86431fbb365b4947972e033ed6fe9874",
+      "size": 1827,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a452ee1b86431fbb365b4947972e033ed6fe9874"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edba1a126fa0ff220f90561f7bf43dbed92c78be",
+      "size": 360,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/edba1a126fa0ff220f90561f7bf43dbed92c78be"
+    },
+    {
+      "path": "FashionSense/Examples/[FS] Example Pack/preset_outfits.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb24826d1cd411231dbe627e2ad66724165713da",
+      "size": 1703,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/eb24826d1cd411231dbe627e2ad66724165713da"
+    },
+    {
+      "path": "FashionSense/FashionSense.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c22f2a4c6dfbb41c88f094ede9842dd41dd325a9",
+      "size": 99184,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/c22f2a4c6dfbb41c88f094ede9842dd41dd325a9"
+    },
+    {
+      "path": "FashionSense/FashionSense.csproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cbb36d64865f855b02a818085f6ebaecb32f4b3",
+      "size": 5203,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/7cbb36d64865f855b02a818085f6ebaecb32f4b3"
+    },
+    {
+      "path": "FashionSense/FashionSense.sln",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5900560c334e85c91dd5d48d3e36b8868cd4ba37",
+      "size": 1104,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/5900560c334e85c91dd5d48d3e36b8868cd4ba37"
+    },
+    {
+      "path": "FashionSense/Framework",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "de617388d0001c233483c332b9df79bf9f8cd596",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/de617388d0001c233483c332b9df79bf9f8cd596"
+    },
+    {
+      "path": "FashionSense/Framework/Assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5076a8d76bfc90b8988d82017f8863bf9a91b7d",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/d5076a8d76bfc90b8988d82017f8863bf9a91b7d"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/HandMirror.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e721b6db75c217b4da0b4644324f9a66b1c12d98",
+      "size": 382,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/e721b6db75c217b4da0b4644324f9a66b1c12d98"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6ca55261f1cc939f312f654982734eceee217dd7",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/6ca55261f1cc939f312f654982734eceee217dd7"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6f441a0f8ab632c6ae4395242b3c689fdacbe7ca",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/6f441a0f8ab632c6ae4395242b3c689fdacbe7ca"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Short (Alt)",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3418bd19aa1be440366e7c4b2f18f6cf6297ab26",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/3418bd19aa1be440366e7c4b2f18f6cf6297ab26"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Short (Alt)/body.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d68949d43fb6c6acf90ff3a5221d891b91da3151",
+      "size": 107523,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/d68949d43fb6c6acf90ff3a5221d891b91da3151"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Short (Alt)/body.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb16aa47c757c8e8dade93d59c59a8f8b8592a8d",
+      "size": 12432,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/fb16aa47c757c8e8dade93d59c59a8f8b8592a8d"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Short (Alt)/eyes.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b7de310c99a26df55514d644202f5345d76798a",
+      "size": 200,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/2b7de310c99a26df55514d644202f5345d76798a"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Short",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f82bc2d7a7d36b67dda44468dc89828a68752d63",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/f82bc2d7a7d36b67dda44468dc89828a68752d63"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Short/body.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d85628d8620d372bcd95210cbca1d9d230e1554e",
+      "size": 107710,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/d85628d8620d372bcd95210cbca1d9d230e1554e"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Short/body.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce833560c5466cd850c8a3ba137c65e53f45b1ad",
+      "size": 12316,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/ce833560c5466cd850c8a3ba137c65e53f45b1ad"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Short/eyes.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b7de310c99a26df55514d644202f5345d76798a",
+      "size": 200,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/2b7de310c99a26df55514d644202f5345d76798a"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Tall (Alt)",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "36527e69eda0e9564ceea2231f5d2720dbdc469a",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/36527e69eda0e9564ceea2231f5d2720dbdc469a"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Tall (Alt)/body.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36ce7461e2a29aea12225dcf0ac96c9cbfb49ee2",
+      "size": 107531,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/36ce7461e2a29aea12225dcf0ac96c9cbfb49ee2"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Tall (Alt)/body.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72254040f34232be0286a2c32aac067f1cbb6dd3",
+      "size": 12560,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/72254040f34232be0286a2c32aac067f1cbb6dd3"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Tall (Alt)/eyes.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b7de310c99a26df55514d644202f5345d76798a",
+      "size": 200,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/2b7de310c99a26df55514d644202f5345d76798a"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Tall",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "462b5694670806b24bcf05dca71f3f97369a3da5",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/462b5694670806b24bcf05dca71f3f97369a3da5"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Tall/body.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53ce697e66e57811520dcb9af087dc4ba0efd83f",
+      "size": 107525,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/53ce697e66e57811520dcb9af087dc4ba0efd83f"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Tall/body.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e166a52d8e846be3a78c97c333906610d8818b6",
+      "size": 12458,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/6e166a52d8e846be3a78c97c333906610d8818b6"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Bodies/Default Tall/eyes.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b7de310c99a26df55514d644202f5345d76798a",
+      "size": 200,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/2b7de310c99a26df55514d644202f5345d76798a"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Shoes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2787ca28461109e49dcecc1b49a2a60fcd3d65ac",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/2787ca28461109e49dcecc1b49a2a60fcd3d65ac"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Shoes/Default Short",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a27ec32199b87f4b7597435bb95ce97d5e99f0d6",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/a27ec32199b87f4b7597435bb95ce97d5e99f0d6"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Shoes/Default Short/shoes.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d361a8a0c1fb9a3b9983fc3103405c2bb76779f0",
+      "size": 34439,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/d361a8a0c1fb9a3b9983fc3103405c2bb76779f0"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Shoes/Default Short/shoes.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a52709b2c22a6b265d94d2c7f231b756fe47cfdf",
+      "size": 4484,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a52709b2c22a6b265d94d2c7f231b756fe47cfdf"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Shoes/Default Tall",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "545647c800afe4558f50b7963e407947071ba56a",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/545647c800afe4558f50b7963e407947071ba56a"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Shoes/Default Tall/shoes.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4661959751567462e8093b418b3af46cf063c59",
+      "size": 34438,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/d4661959751567462e8093b418b3af46cf063c59"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Shoes/Default Tall/shoes.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e09bc58ffd08e67ea5ab27eff0139dc3d81607ab",
+      "size": 4876,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/e09bc58ffd08e67ea5ab27eff0139dc3d81607ab"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Sleeves",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1c8ebb4e0f9d5a3385508ec53a37c0cd11695c8a",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/1c8ebb4e0f9d5a3385508ec53a37c0cd11695c8a"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Sleeves/Default Short",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4d7f6e132f04cd9ea8a2b449b5b4cdb3f5d060d7",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/4d7f6e132f04cd9ea8a2b449b5b4cdb3f5d060d7"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Sleeves/Default Short/sleeves.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3fca33ad0723dc396ff97f36f780242c9cd0607",
+      "size": 50088,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a3fca33ad0723dc396ff97f36f780242c9cd0607"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Sleeves/Default Short/sleeves.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b6e3f883c3689c33c91872991624cf76d879e27",
+      "size": 13346,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/4b6e3f883c3689c33c91872991624cf76d879e27"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Sleeves/Default Tall",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "151d5e550c9c0c4ca7a19838d4e1ebf5bfbd1e06",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/151d5e550c9c0c4ca7a19838d4e1ebf5bfbd1e06"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Sleeves/Default Tall/sleeves.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db025b4c9afeebe064d43ab63a549de2575270a3",
+      "size": 50087,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/db025b4c9afeebe064d43ab63a549de2575270a3"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/Sleeves/Default Tall/sleeves.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9af78bb8259f34091bc9f6dfb7f9fb8f7fb12c0a",
+      "size": 14540,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/9af78bb8259f34091bc9f6dfb7f9fb8f7fb12c0a"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/conditions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a452ee1b86431fbb365b4947972e033ed6fe9874",
+      "size": 1827,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a452ee1b86431fbb365b4947972e033ed6fe9874"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/Local Pack/preset_outfits.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c62b0dc4569f1e5c307435a607ca4fc7514a63a",
+      "size": 3073,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/6c62b0dc4569f1e5c307435a607ca4fc7514a63a"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/UI",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22865338694acd6e481bb6e1481d2499b90ce5fc",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/22865338694acd6e481bb6e1481d2499b90ce5fc"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/UI/AccessoryButton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fa75b0d8180172ffb11d4f688a05050b987f58d",
+      "size": 234,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/5fa75b0d8180172ffb11d4f688a05050b987f58d"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/UI/BodyButton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f18194af3337e056b6a52f0c618d4de8d806ba6",
+      "size": 374,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/0f18194af3337e056b6a52f0c618d4de8d806ba6"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/UI/ExportButton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9984fab44ab8f3be37be311212bbecc7209a8056",
+      "size": 297,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/9984fab44ab8f3be37be311212bbecc7209a8056"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/UI/HairButton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ce98b5fc1e39d8d5b45480910b96502440399e6",
+      "size": 296,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/8ce98b5fc1e39d8d5b45480910b96502440399e6"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/UI/HatButton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adc14d51c59d29940385bc44a5c92ab1f733d632",
+      "size": 305,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/adc14d51c59d29940385bc44a5c92ab1f733d632"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/UI/OptionOneButton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4191aec33238f11e495c70aa96b42732f1255f02",
+      "size": 261,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/4191aec33238f11e495c70aa96b42732f1255f02"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/UI/OptionThreeButton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8640f69f9e4817aa099a73cd5430a9b2c697854",
+      "size": 288,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/f8640f69f9e4817aa099a73cd5430a9b2c697854"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/UI/OptionTwoButton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7ab5676c6cee28ea886f0e7c4f2e17f4129324b",
+      "size": 296,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/f7ab5676c6cee28ea886f0e7c4f2e17f4129324b"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/UI/PantsButton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0420dc07177d8b1780afacb6cbd2e16b54826261",
+      "size": 261,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/0420dc07177d8b1780afacb6cbd2e16b54826261"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/UI/ShirtButton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4da88d9b6e85412a0c7345263c4c50054c4c405b",
+      "size": 294,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/4da88d9b6e85412a0c7345263c4c50054c4c405b"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/UI/ShoesButton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86e1cdedf3478f0c1e422805d92d9f85af95a8b2",
+      "size": 292,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/86e1cdedf3478f0c1e422805d92d9f85af95a8b2"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/UI/SleevesButton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73568772af7a5c294e80540511df789e3b918350",
+      "size": 356,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/73568772af7a5c294e80540511df789e3b918350"
+    },
+    {
+      "path": "FashionSense/Framework/Assets/UI/SleevesShoesButton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "695d9334513c487b754abb124c7187d8ffa155fa",
+      "size": 364,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/695d9334513c487b754abb124c7187d8ffa155fa"
+    },
+    {
+      "path": "FashionSense/Framework/External",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ab3f32860355797ed7bd80129f6fd9284d73cde5",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/ab3f32860355797ed7bd80129f6fd9284d73cde5"
+    },
+    {
+      "path": "FashionSense/Framework/External/ContentPatcher",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8585f26fb3467923a74192bbd1237c8d1032daac",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/8585f26fb3467923a74192bbd1237c8d1032daac"
+    },
+    {
+      "path": "FashionSense/Framework/External/ContentPatcher/AppearanceToken.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29edcc82e24b0812c748d34bf2d98f92aad6086c",
+      "size": 4573,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/29edcc82e24b0812c748d34bf2d98f92aad6086c"
+    },
+    {
+      "path": "FashionSense/Framework/Interfaces",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e81ff643e2d7162d623863ce8e08c17ada15aabd",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/e81ff643e2d7162d623863ce8e08c17ada15aabd"
+    },
+    {
+      "path": "FashionSense/Framework/Interfaces/API",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e353c2f551d0a3d6a8b68e07836ef9ae79b80292",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/e353c2f551d0a3d6a8b68e07836ef9ae79b80292"
+    },
+    {
+      "path": "FashionSense/Framework/Interfaces/API/Api.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e1cb3fff518706c64559a58b0f8d6c199a0ed75",
+      "size": 39241,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/4e1cb3fff518706c64559a58b0f8d6c199a0ed75"
+    },
+    {
+      "path": "FashionSense/Framework/Interfaces/IContentPatcherApi.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "faf58c8bd8afae313fcfe081ccbb4bd6635f1525",
+      "size": 839,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/faf58c8bd8afae313fcfe081ccbb4bd6635f1525"
+    },
+    {
+      "path": "FashionSense/Framework/Interfaces/IGenericModConfigMenuApi.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59c90dcc9bf5fdd0785584d01b94caa81da0c7bb",
+      "size": 14959,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/59c90dcc9bf5fdd0785584d01b94caa81da0c7bb"
+    },
+    {
+      "path": "FashionSense/Framework/Managers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e35d30394e2688f107bb745ac8cc86e2f35e219b",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/e35d30394e2688f107bb745ac8cc86e2f35e219b"
+    },
+    {
+      "path": "FashionSense/Framework/Managers/AccessoryManager.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "275a1444e6352d23e08cd8bffb694872fab8ac26",
+      "size": 11708,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/275a1444e6352d23e08cd8bffb694872fab8ac26"
+    },
+    {
+      "path": "FashionSense/Framework/Managers/AnimationManager.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3e774ec6cef219b0538d21fd2c53916ae118a7e",
+      "size": 4182,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/c3e774ec6cef219b0538d21fd2c53916ae118a7e"
+    },
+    {
+      "path": "FashionSense/Framework/Managers/ApiManager.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da0591a3dd355f3f2c6f76361c1e7a9ff87157c5",
+      "size": 3458,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/da0591a3dd355f3f2c6f76361c1e7a9ff87157c5"
+    },
+    {
+      "path": "FashionSense/Framework/Managers/AssetManager.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8dfa49d103eaae4241fa74eb5b8da5b1990b90d",
+      "size": 4940,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a8dfa49d103eaae4241fa74eb5b8da5b1990b90d"
+    },
+    {
+      "path": "FashionSense/Framework/Managers/ColorManager.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "108f405ce3f2607844613bdfbdd058c369dc788e",
+      "size": 2851,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/108f405ce3f2607844613bdfbdd058c369dc788e"
+    },
+    {
+      "path": "FashionSense/Framework/Managers/DrawManager.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f8b8bfd2e082c55e002229daa8ca60bd630800a",
+      "size": 84702,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/3f8b8bfd2e082c55e002229daa8ca60bd630800a"
+    },
+    {
+      "path": "FashionSense/Framework/Managers/LayerManager.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7cfba5aa3ce0757cc588f2a2ab89b53a307a6b1",
+      "size": 17660,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/e7cfba5aa3ce0757cc588f2a2ab89b53a307a6b1"
+    },
+    {
+      "path": "FashionSense/Framework/Managers/MessageManager.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6db6ff32298f5ae31e2863419c4dea5a2268883",
+      "size": 3126,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/b6db6ff32298f5ae31e2863419c4dea5a2268883"
+    },
+    {
+      "path": "FashionSense/Framework/Managers/OutfitManager.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4d9888fb0314dc8d0fc630b87a12d02a786af27",
+      "size": 15696,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/d4d9888fb0314dc8d0fc630b87a12d02a786af27"
+    },
+    {
+      "path": "FashionSense/Framework/Managers/TextureManager.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4a92191dffcfc1b5e1e87c0086059f7c555281f",
+      "size": 14776,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a4a92191dffcfc1b5e1e87c0086059f7c555281f"
+    },
+    {
+      "path": "FashionSense/Framework/ModConfig.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82ea9d3013e9e966324a66ecfc59418b9b942a4c",
+      "size": 363,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/82ea9d3013e9e966324a66ecfc59418b9b942a4c"
+    },
+    {
+      "path": "FashionSense/Framework/Models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc1a32fb954a2a86ae2e08e7dfae9a6e27989d6b",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/fc1a32fb954a2a86ae2e08e7dfae9a6e27989d6b"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "97916d7cdf57d7ffe1c051806527797d19009290",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/97916d7cdf57d7ffe1c051806527797d19009290"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Accessory",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf5180e050bf1abf799422d74770ef4697c05a6e",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/bf5180e050bf1abf799422d74770ef4697c05a6e"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Accessory/AccessoryContentPack.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b022fb67b45565254a4b98157927c98305ce18a",
+      "size": 1971,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/9b022fb67b45565254a4b98157927c98305ce18a"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Accessory/AccessoryModel.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "646a01d78fbdda05997a72058452022cf15cb45d",
+      "size": 1203,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/646a01d78fbdda05997a72058452022cf15cb45d"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/AnimationModel.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89271f6fe47e5d09a3b33b1d405fa05fa4326fa5",
+      "size": 2958,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/89271f6fe47e5d09a3b33b1d405fa05fa4326fa5"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/AppearanceContentPack.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a290e5957aefb025917d77edd849c0404e12024",
+      "size": 3419,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/7a290e5957aefb025917d77edd849c0404e12024"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/AppearanceMetadata.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c0696d1a7633099c31b0d8e1b8722aa17906ecd",
+      "size": 575,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/0c0696d1a7633099c31b0d8e1b8722aa17906ecd"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/AppearanceModel.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bb3049a8fb3925cf6bc728bd05ce36255057852",
+      "size": 10268,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/7bb3049a8fb3925cf6bc728bd05ce36255057852"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/AppearanceSync.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49a798bf2c7e2e074b0e9456fe83ed0a68807251",
+      "size": 272,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/49a798bf2c7e2e074b0e9456fe83ed0a68807251"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Body",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ac3a0922b0cc18fa60bb62044d9986ce7a9f4306",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/ac3a0922b0cc18fa60bb62044d9986ce7a9f4306"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Body/BodyContentPack.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "325e37c042100d6582e708f90ed5f1153b2eed50",
+      "size": 2021,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/325e37c042100d6582e708f90ed5f1153b2eed50"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Body/BodyModel.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "997aa998b1aae57510085329871806f2f459e739",
+      "size": 1925,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/997aa998b1aae57510085329871806f2f459e739"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Body/PortraitModel.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f230495f7d925cb29e083fa4d02c047b70204a9b",
+      "size": 254,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/f230495f7d925cb29e083fa4d02c047b70204a9b"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Generic",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "42a417861e443bbc2bf4cda9f26eaf5a4fdf4314",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/42a417861e443bbc2bf4cda9f26eaf5a4fdf4314"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Generic/ColorMaskLayer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b8f031c308248947cca7f296ca777287186adad",
+      "size": 339,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/9b8f031c308248947cca7f296ca777287186adad"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Generic/Condition.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36cf8f8bd9dd1f77f474fc811e8bb17f6c96372a",
+      "size": 5706,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/36cf8f8bd9dd1f77f474fc811e8bb17f6c96372a"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Generic/ConditionGroup.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "039726ccf3e9f8ebff8590889c5009914e4e9b59",
+      "size": 202,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/039726ccf3e9f8ebff8590889c5009914e4e9b59"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Generic/DrawOrder.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbba5e89d527186e40a001de68f4b090b065e693",
+      "size": 506,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/dbba5e89d527186e40a001de68f4b090b065e693"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Generic/DrawTool.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "052e992d7e2d96bdb754e44963647aa1487f0501",
+      "size": 1938,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/052e992d7e2d96bdb754e44963647aa1487f0501"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Generic/Position.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "880b71367a183837c2f3818dd47876536cab30ec",
+      "size": 175,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/880b71367a183837c2f3818dd47876536cab30ec"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Generic/Random",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53a9b9ca41fad7b583c828ea96eb569dae2bfe4d",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/53a9b9ca41fad7b583c828ea96eb569dae2bfe4d"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Generic/Random/RandomRange.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60413344052568d03a42e118d80b5786de304e4b",
+      "size": 182,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/60413344052568d03a42e118d80b5786de304e4b"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Generic/Size.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4423b31e3a27a598f2cb5645b20097199daac978",
+      "size": 180,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/4423b31e3a27a598f2cb5645b20097199daac978"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Hair",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "638013f6767df2af8c41a372600815c2076accf4",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/638013f6767df2af8c41a372600815c2076accf4"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Hair/HairContentPack.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35820c5c615f61555624fa2375706300af2f6d8a",
+      "size": 1816,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/35820c5c615f61555624fa2375706300af2f6d8a"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Hair/HairModel.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd842b8cd4f51be804fde8bc7c6900f7306e79f0",
+      "size": 459,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/bd842b8cd4f51be804fde8bc7c6900f7306e79f0"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Hat",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "00742cd09168181f9d02dd4b8e1d9f8db18491a0",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/00742cd09168181f9d02dd4b8e1d9f8db18491a0"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Hat/HatContentPack.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ab30ccc8988d635a74534be4469b7cc5688f922",
+      "size": 1785,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/5ab30ccc8988d635a74534be4469b7cc5688f922"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Hat/HatModel.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "416a7c39afdd0da3ab04504f4a64db71952d4d17",
+      "size": 500,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/416a7c39afdd0da3ab04504f4a64db71952d4d17"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/ItemModel.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b7b42ab93fa536b597cf8f36ec7cb506d8d146a",
+      "size": 817,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/1b7b42ab93fa536b597cf8f36ec7cb506d8d146a"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/LightModel.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f299cfa226bc6dfe47e9b72dbcafffda0279136a",
+      "size": 2252,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/f299cfa226bc6dfe47e9b72dbcafffda0279136a"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Pants",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e98f2affced456ff847250c75c9645f3c844e0c9",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/e98f2affced456ff847250c75c9645f3c844e0c9"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Pants/PantsContentPack.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5660a9219267e5d8a91a593a2d6a5233ac12e341",
+      "size": 1847,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/5660a9219267e5d8a91a593a2d6a5233ac12e341"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Pants/PantsModel.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ce17412205f822cd19cc0fb6e8df6938a1348d7",
+      "size": 399,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/2ce17412205f822cd19cc0fb6e8df6938a1348d7"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Shirt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "caf1c94b56856a30ee4b14dd1a588dfb0ca9544a",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/caf1c94b56856a30ee4b14dd1a588dfb0ca9544a"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Shirt/ShirtContentPack.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89eac1415cfe3005e7ecc2d5f6dfd4e9139a5a1e",
+      "size": 1847,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/89eac1415cfe3005e7ecc2d5f6dfd4e9139a5a1e"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Shirt/ShirtModel.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec1188752d09971e2213108bef76544521fd2ef0",
+      "size": 1185,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/ec1188752d09971e2213108bef76544521fd2ef0"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Shoes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d755d28117bde30dc9af7466530b297b4d9caa01",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/d755d28117bde30dc9af7466530b297b4d9caa01"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Shoes/ShoesContentPack.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acd89f7bfe14fb80cd4e19811fc167b88e54abf7",
+      "size": 1847,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/acd89f7bfe14fb80cd4e19811fc167b88e54abf7"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Shoes/ShoesModel.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9a2d329faad46563f239f1ba1bcaa51e37a7dac",
+      "size": 361,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a9a2d329faad46563f239f1ba1bcaa51e37a7dac"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/SkinToneModel.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b446750be251732c3958bdbd6e379827ee5f73df",
+      "size": 827,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/b446750be251732c3958bdbd6e379827ee5f73df"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Sleeves",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1ae5802fa4db5c70bc23f16a3318ae55ba57ca2e",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/1ae5802fa4db5c70bc23f16a3318ae55ba57ca2e"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Sleeves/SleevesContentPack.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7faf03432783bf65af76fb5fd456d03fafbc1e4c",
+      "size": 2007,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/7faf03432783bf65af76fb5fd456d03fafbc1e4c"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/Sleeves/SleevesModel.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0390d06af7cd39a64fac8bf00a933ebc937b9edd",
+      "size": 1719,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/0390d06af7cd39a64fac8bf00a933ebc937b9edd"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Appearances/SubFrame.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dd49e7a844c15e9f05f56f95e06a78c4208ba2a",
+      "size": 342,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/5dd49e7a844c15e9f05f56f95e06a78c4208ba2a"
+    },
+    {
+      "path": "FashionSense/Framework/Models/General",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d44e94c35fb0ea71bfbb874dc13811c71e5386ef",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/d44e94c35fb0ea71bfbb874dc13811c71e5386ef"
+    },
+    {
+      "path": "FashionSense/Framework/Models/General/AnimationData.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "833ac6a634f39bce1ad9c93dd5190c9ff4e0fd1f",
+      "size": 938,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/833ac6a634f39bce1ad9c93dd5190c9ff4e0fd1f"
+    },
+    {
+      "path": "FashionSense/Framework/Models/General/LayerData.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bca973e6441ea63f0094a585a63ce60153b3acfb",
+      "size": 722,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/bca973e6441ea63f0094a585a63ce60153b3acfb"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Messages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9f1f87ac806f64601cd9722b8c7958a916853029",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/9f1f87ac806f64601cd9722b8c7958a916853029"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Messages/ColorKeyChangeMessage.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4c75f8bb3ea431747b5c57403271d4f42b9e8d7",
+      "size": 273,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/e4c75f8bb3ea431747b5c57403271d4f42b9e8d7"
+    },
+    {
+      "path": "FashionSense/Framework/Models/Messages/VanillaBootColorChangeMessage.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bcb4c3fcb9d9bd1b0847cbe98198fdfc8af6eab",
+      "size": 158,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/7bcb4c3fcb9d9bd1b0847cbe98198fdfc8af6eab"
+    },
+    {
+      "path": "FashionSense/Framework/Models/ModData",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bd6b9c65c8f521f90b73d104c6dc545dcc89759c",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/bd6b9c65c8f521f90b73d104c6dc545dcc89759c"
+    },
+    {
+      "path": "FashionSense/Framework/Models/ModData/Outfit.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39b2c3b72cb6162a51e1acadb9e0033679ebe3eb",
+      "size": 10953,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/39b2c3b72cb6162a51e1acadb9e0033679ebe3eb"
+    },
+    {
+      "path": "FashionSense/Framework/Patches",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c090dc96c64447065b83f7b5462fb742bc901a7b",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/c090dc96c64447065b83f7b5462fb742bc901a7b"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Core",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "931bd03e8151478f92742312a528599b664b7459",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/931bd03e8151478f92742312a528599b664b7459"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Core/GamePatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f891cdfb5087a643d20239119f00c6c29f066cb",
+      "size": 1647,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/9f891cdfb5087a643d20239119f00c6c29f066cb"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Entities",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "983143755e93488139bf2eb02a5e7544310733eb",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/983143755e93488139bf2eb02a5e7544310733eb"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Entities/FarmerPatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5387f2ca45f1db7eb7065b9df694095ef47004b",
+      "size": 1650,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/f5387f2ca45f1db7eb7065b9df694095ef47004b"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/GameLocations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "de5e9edc9daff1f4873e36ba232c4255d08fb4cd",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/de5e9edc9daff1f4873e36ba232c4255d08fb4cd"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/GameLocations/GameLocationPatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a8b91094ad3922f04e525af9e845bc91a3a3967",
+      "size": 1198,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/5a8b91094ad3922f04e525af9e845bc91a3a3967"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Menus",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9e50e702fdd996500cfd9ee8e80cd63242511b58",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/9e50e702fdd996500cfd9ee8e80cd63242511b58"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Menus/CharacterCustomizationPatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c60cfcf4fb1ce54e4ba0b8ea8f9916e2c46da12",
+      "size": 5519,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/1c60cfcf4fb1ce54e4ba0b8ea8f9916e2c46da12"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Menus/InventoryPagePatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8df53a3337b3e1355de79fbfb436a6dc6d931e4",
+      "size": 2809,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/d8df53a3337b3e1355de79fbfb436a6dc6d931e4"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Menus/LetterViewerMenuPatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca137b09ef705a10a50477986b42da81b2cc69cf",
+      "size": 2565,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/ca137b09ef705a10a50477986b42da81b2cc69cf"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Menus/SaveFileSlotPatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15f8ee86817f24b306edf994f13e68e2c96f73b8",
+      "size": 971,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/15f8ee86817f24b306edf994f13e68e2c96f73b8"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Objects",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be14965a02010d0686f1d6a5cac2348bf81d664c",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/be14965a02010d0686f1d6a5cac2348bf81d664c"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Objects/Clothing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ccab0b6468bd8d5600c5ff5bd2c275612965c2e6",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/ccab0b6468bd8d5600c5ff5bd2c275612965c2e6"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Objects/Clothing/ClothingPatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7698a5ddf747003fb2c4677272f06c3025a4682",
+      "size": 2318,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/c7698a5ddf747003fb2c4677272f06c3025a4682"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Objects/ColoredObjectPatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f235f3117a52e215cdb1dce0831d2f1c855f73b2",
+      "size": 3940,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/f235f3117a52e215cdb1dce0831d2f1c855f73b2"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Objects/FurniturePatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29ab6f7c393b19b2d5a5b923068a230324f12a53",
+      "size": 1357,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/29ab6f7c393b19b2d5a5b923068a230324f12a53"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Objects/ItemPatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbfcef68adc698d6d81f88dc3206bbc251485b2b",
+      "size": 3161,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/bbfcef68adc698d6d81f88dc3206bbc251485b2b"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Objects/MannequinPatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d9937bb85ea33d79c7a6b90764d463b5a4eb30c",
+      "size": 6246,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/2d9937bb85ea33d79c7a6b90764d463b5a4eb30c"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Objects/ObjectPatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40bdfce85b061518959218a288c7c31184190569",
+      "size": 3913,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/40bdfce85b061518959218a288c7c31184190569"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/PatchTemplate.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cd71a13aee67252669428fd9d1d6e578e09654e",
+      "size": 511,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/8cd71a13aee67252669428fd9d1d6e578e09654e"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Renderer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5f042daa8aa0d84bd5612abde4ea35d8b6d67839",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/5f042daa8aa0d84bd5612abde4ea35d8b6d67839"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Renderer/DrawPatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d8cf44bd932673e291d471f1b43ae080615f9bd",
+      "size": 32779,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/5d8cf44bd932673e291d471f1b43ae080615f9bd"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Renderer/FarmerRendererPatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "431f4f03aa80cf83b134fc314559605e3679c93e",
+      "size": 13659,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/431f4f03aa80cf83b134fc314559605e3679c93e"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad6ff742b5a7ecb4e739bd4f8693a10196beb7d9",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/ad6ff742b5a7ecb4e739bd4f8693a10196beb7d9"
+    },
+    {
+      "path": "FashionSense/Framework/Patches/Tools/ToolPatch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a63ee716714fb222cc49c4f5ca6d7fc050d2385e",
+      "size": 4679,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a63ee716714fb222cc49c4f5ca6d7fc050d2385e"
+    },
+    {
+      "path": "FashionSense/Framework/UI",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07a6abdc4876bc0ad1a8d3652178537aa35493e8",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/07a6abdc4876bc0ad1a8d3652178537aa35493e8"
+    },
+    {
+      "path": "FashionSense/Framework/UI/Components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d16d281dc6230bbb974fdf5fb373444973cb109d",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/d16d281dc6230bbb974fdf5fb373444973cb109d"
+    },
+    {
+      "path": "FashionSense/Framework/UI/Components/FilterDropDown.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6c3955238aa6387e62f4daf19387001893a50dc",
+      "size": 1618,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/e6c3955238aa6387e62f4daf19387001893a50dc"
+    },
+    {
+      "path": "FashionSense/Framework/UI/Components/SimpleColorPicker.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27d04a7f8e572061d7eba6ef0e57f31e9f02df3d",
+      "size": 6572,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/27d04a7f8e572061d7eba6ef0e57f31e9f02df3d"
+    },
+    {
+      "path": "FashionSense/Framework/UI/Components/SimpleSlider.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0c1521525bec771c54c670e48b1d85eb5137124",
+      "size": 4961,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/d0c1521525bec771c54c670e48b1d85eb5137124"
+    },
+    {
+      "path": "FashionSense/Framework/UI/HandMirrorMenu.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a003c089a0f7c89283f5c8d5f2e88d1aff86015b",
+      "size": 93257,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a003c089a0f7c89283f5c8d5f2e88d1aff86015b"
+    },
+    {
+      "path": "FashionSense/Framework/UI/NameMenu.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ef85ae586b7a0fbe34dc108a56dfed4b7bbd470",
+      "size": 6108,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/1ef85ae586b7a0fbe34dc108a56dfed4b7bbd470"
+    },
+    {
+      "path": "FashionSense/Framework/UI/OutfitsMenu.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60286d55cd8d1b7e95150a2af09e94f278cc2536",
+      "size": 29030,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/60286d55cd8d1b7e95150a2af09e94f278cc2536"
+    },
+    {
+      "path": "FashionSense/Framework/UI/SearchMenu.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c2b7d4326a9cd9171fd8929e1f8e5feb4736a48",
+      "size": 24530,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/7c2b7d4326a9cd9171fd8929e1f8e5feb4736a48"
+    },
+    {
+      "path": "FashionSense/Framework/Utilities",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bd3f7da2ace1e2d1ba6b1a0482da2b28555ce39c",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/bd3f7da2ace1e2d1ba6b1a0482da2b28555ce39c"
+    },
+    {
+      "path": "FashionSense/Framework/Utilities/AppearanceHelpers.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97c9c4b5ccea66269def099410c15a77b240ea8d",
+      "size": 58221,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/97c9c4b5ccea66269def099410c15a77b240ea8d"
+    },
+    {
+      "path": "FashionSense/Framework/Utilities/ConditionData.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fcdc1afc7ca3e0139afb4056db44f4e0880b23f",
+      "size": 4795,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/9fcdc1afc7ca3e0139afb4056db44f4e0880b23f"
+    },
+    {
+      "path": "FashionSense/Framework/Utilities/ModDataKeys.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a838fbf5c82ef26c3e09a3068e75dc39536a4f4",
+      "size": 3427,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/9a838fbf5c82ef26c3e09a3068e75dc39536a4f4"
+    },
+    {
+      "path": "FashionSense/i18n",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d7e872a49f0342bbd533b3205fc8043cbf361c37",
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/trees/d7e872a49f0342bbd533b3205fc8043cbf361c37"
+    },
+    {
+      "path": "FashionSense/i18n/default.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2727344624abaf39d0b330737bf2b01d6625bf9",
+      "size": 6399,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a2727344624abaf39d0b330737bf2b01d6625bf9"
+    },
+    {
+      "path": "FashionSense/i18n/fr.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "970632f4358d9d07fd56d3a2d4015eecd36a5772",
+      "size": 6773,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/970632f4358d9d07fd56d3a2d4015eecd36a5772"
+    },
+    {
+      "path": "FashionSense/i18n/ja.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7182bd8e764a39d48eab88d54b1cb76d19abb30",
+      "size": 5536,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/d7182bd8e764a39d48eab88d54b1cb76d19abb30"
+    },
+    {
+      "path": "FashionSense/i18n/ko.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fb0c218242a71a88bff2cd0edac1457ec4541f6",
+      "size": 3953,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/9fb0c218242a71a88bff2cd0edac1457ec4541f6"
+    },
+    {
+      "path": "FashionSense/i18n/ru.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b72d957c29ba2c23b536f7d9797c1e684ad2baeb",
+      "size": 8235,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/b72d957c29ba2c23b536f7d9797c1e684ad2baeb"
+    },
+    {
+      "path": "FashionSense/i18n/th.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5790c838924e5c347db189f3e4eec2d9f2dc119",
+      "size": 5772,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/a5790c838924e5c347db189f3e4eec2d9f2dc119"
+    },
+    {
+      "path": "FashionSense/i18n/tr.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa5b44d7ff59993f6fd6bd7af23754b87431df80",
+      "size": 3095,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/fa5b44d7ff59993f6fd6bd7af23754b87431df80"
+    },
+    {
+      "path": "FashionSense/i18n/uk.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddaa9b808079f7701f4b973af317e8484cc29170",
+      "size": 7016,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/ddaa9b808079f7701f4b973af317e8484cc29170"
+    },
+    {
+      "path": "FashionSense/i18n/zh.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6db8a3cdb441b03bf20b84e5fdf63e87c1387e5e",
+      "size": 5916,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/6db8a3cdb441b03bf20b84e5fdf63e87c1387e5e"
+    },
+    {
+      "path": "FashionSense/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5101c299cb1dde27e43e0b59255792ae62a1607e",
+      "size": 440,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/5101c299cb1dde27e43e0b59255792ae62a1607e"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e62ec04cdeece724caeeeeaeb6ae1f6af1bb6b9a",
+      "size": 35129,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/e62ec04cdeece724caeeeeaeb6ae1f6af1bb6b9a"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccc61c6309f699329c5f6b207bafb611e5949e72",
+      "size": 1117,
+      "url": "https://api.github.com/repos/Floogen/FashionSense/git/blobs/ccc61c6309f699329c5f6b207bafb611e5949e72"
+    }
+  ],
+  "truncated": false
+}

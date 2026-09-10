@@ -1,0 +1,21 @@
+{
+  "id": "SAILOR_TOP",
+  "description": "Compact everyday broad-collar top using disciplined front V and back-yoke logic without named uniform emblems.",
+  "validNecklines": ["shallow_v", "open"],
+  "validCollars": ["wide", "sailor"],
+  "validClosures": ["none"],
+  "validFits": ["fitted", "regular"],
+  "validDetails": ["none", "center_stripe", "chest_accent", "lower_trim"],
+  "validPatterns": ["none", "horizontal_stripe", "simple_border"],
+  "shoulderProfile": "disciplined_broad_collar",
+  "frontStructure": "broad contrast collar converging toward one centered chest landmark",
+  "backStructure": "large simplified collar/yoke; omit front ornament",
+  "sideStructure": "compressed collar band with the same hem and palette roles",
+  "allowedDetailLocations": ["collar_v", "center_chest", "upper_chest", "lower_hem"],
+  "allowedSecondaryRegions": ["broad_collar", "collar_border", "single_stripe", "lower_trim"],
+  "validMotifLocations": ["front_center_chest", "front_upper_chest"],
+  "baseShadingZones": ["shoulder_caps", "under_collar", "quiet_torso", "lower_edge"],
+  "maximumComplexity": "Common through Rare budgets; broad collar consumes the main structural budget",
+  "incompatibleFeatures": ["folded_collar", "button_closure", "center_opening", "inner_layer", "button_line", "vertical_trim"],
+  "renderProfile": "broad_collar_top"
+}

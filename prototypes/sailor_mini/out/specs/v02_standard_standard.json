@@ -1,0 +1,69 @@
+{
+  "id": "v02_standard_standard",
+  "seed": 5953565,
+  "attempt": 0,
+  "family": "SAILOR_TOP",
+  "architecture": "CLASSIC_SQUARE_FLAP",
+  "fit": "REGULAR",
+  "material": "WOVEN",
+  "collar_width": "STANDARD",
+  "rear_flap_depth": "STANDARD",
+  "neckline": "STANDARD_V",
+  "trim_style": "SINGLE",
+  "center_detail": "TIE",
+  "color_architecture": "DARK_BODY_LIGHT_COLLAR",
+  "palette_family": "HARBOUR_BLUE",
+  "palette": {
+    "body": {
+      "deep": "#111E2C",
+      "shadow": "#1E3A4F",
+      "base": "#2E5A78",
+      "light": "#4A7EA0"
+    },
+    "collar": {
+      "deep": "#8E9A9E",
+      "shadow": "#BFCACD",
+      "base": "#E8F0F2",
+      "light": "#FBFEFF"
+    },
+    "trim": {
+      "deep": "#111E2C",
+      "shadow": "#1E3A4F",
+      "base": "#2E5A78",
+      "light": "#4A7EA0"
+    },
+    "accent": {
+      "deep": "#6E1F2A",
+      "shadow": "#A0323F",
+      "base": "#CE5460",
+      "light": "#E68A92"
+    }
+  },
+  "derived": {
+    "collar_left": 3,
+    "collar_right": 12,
+    "collar_columns": 10,
+    "flap_depth_rows": 7,
+    "v_depth_row": 7,
+    "fit_taper": 0,
+    "relaxed_widening_applied": false,
+    "crisp_collar_edge": true,
+    "hem_rib": false,
+    "fold_density": 2,
+    "trim_lines": 1,
+    "has_center_detail": true,
+    "collar_body_contrast": 155.6,
+    "trim_collar_contrast": 155.6
+  },
+  "rejected": [],
+  "pinned": {
+    "collar_width": "STANDARD",
+    "rear_flap_depth": "STANDARD",
+    "trim_style": "SINGLE",
+    "center_detail": "TIE",
+    "neckline": "STANDARD_V",
+    "fit": "REGULAR",
+    "material": "WOVEN",
+    "color_architecture": "DARK_BODY_LIGHT_COLLAR"
+  }
+}

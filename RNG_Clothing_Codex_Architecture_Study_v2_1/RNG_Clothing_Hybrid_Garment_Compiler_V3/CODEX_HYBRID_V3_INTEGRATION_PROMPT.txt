@@ -1,0 +1,68 @@
+HYBRID GARMENT COMPILER V3 — STUDY AND INTEGRATION PLAN ONLY
+
+Project:
+/run/media/deck/USD00/RNG_clothing
+
+Read:
+- RNG_CLOTHING_HYBRID_STUDY_GUIDE_V3.md
+- RNG_CLOTHING_HYBRID_GENERATOR_SCHEMA_V3.json
+- REAL_TO_PIXEL_TRANSLATION_FLAT.png
+- real_to_pixel_translation_flat_schema.json
+- existing project garment/reference/palette/material research
+
+GOAL
+
+Adopt a TWO-MODE architecture:
+
+1. ARCHITECTURE AUTHORING MODE
+   real-world/technical references
+   → neutral flat
+   → versioned structured architecture data
+
+2. NORMAL GENERATION MODE
+   rarity
+   → family
+   → architecture definition
+   → design intent
+   → fit profile
+   → constrained components
+   → canonical garment model
+   → directional projection
+   → semantic flat debug preview
+   → pixel grammar
+   → material/palette/rarity polish
+   → frozen proven V5/HD renderer
+   → Farmer quality gate
+
+IMPORTANT
+
+Do NOT implement yet.
+Do NOT generate clothing yet.
+Do NOT modify the V5/HD renderer.
+Do NOT revive controlled/flat experimental rasterizers.
+Do NOT rely on model memory for garment anatomy.
+
+Inspect the current codebase and create:
+
+docs/architecture/HYBRID_GARMENT_COMPILER_V3_INTEGRATION_PLAN.md
+
+The plan MUST state:
+
+1. the current actual normal-generation path;
+2. exact files/functions that currently choose family/design/fit/material/palette;
+3. how the canonical garment model can be inserted without replacing the renderer;
+4. which current garment definitions already contain enough data;
+5. which components need explicit attachment/visibility rules;
+6. how front/right/back/left should be projected from one model;
+7. how the neutral flat becomes a debug visualization rather than production ground truth;
+8. how architecture-authoring mode would save versioned definitions;
+9. how rarity constrains architecture/design budget;
+10. how seed/determinism/provenance will be stored;
+11. how current anti-convergence checks can be reused;
+12. exact legacy experimental code that should remain outside production;
+13. a minimal implementation sequence with checkpoints;
+14. rollback boundaries so the current working V5/HD backend cannot be lost.
+
+STOP AFTER THE PLAN.
+
+Human review is required before implementation.

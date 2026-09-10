@@ -1,0 +1,39 @@
+{
+  "id": "SWEATER",
+  "identity": "A heavier uninterrupted cloth mass with a substantial neckline and a broad ribbed or structured lower termination.",
+  "allowedConstruction": {
+    "fit": ["regular", "relaxed"],
+    "neckline": ["round", "crew", "shallow_v"],
+    "collar": ["none", "wide"],
+    "closure": ["none"],
+    "layering": ["single_layer", "overlay_panel"],
+    "hem": ["ribbed", "structured", "contrast_band"],
+    "panelLayout": ["solid", "yoke", "upper_lower_split"]
+  },
+  "constructionRules": [
+    {"when": {"field": "collar", "values": ["wide"]}, "requiresAll": [{"field": "neckline", "values": ["shallow_v"]}]},
+    {"when": {"field": "layering", "values": ["overlay_panel"]}, "requiresAll": [{"field": "panelLayout", "values": ["yoke"]}]},
+    {"when": {"field": "panelLayout", "values": ["yoke"]}, "requiresAll": [{"field": "layering", "values": ["overlay_panel"]}]}
+  ],
+  "rarityConstruction": {
+    "Common": {
+      "collar": ["none"],
+      "layering": ["single_layer"],
+      "hem": ["ribbed", "structured"],
+      "panelLayout": ["solid"]
+    }
+  },
+  "constructionFeatureLinks": [
+    {"field": "hem", "values": ["ribbed"], "requiresAnyFeature": ["ribbed_hem"]},
+    {"field": "hem", "values": ["contrast_band"], "requiresAnyFeature": ["structured_lower_band"]},
+    {"field": "panelLayout", "values": ["yoke"], "requiresAnyFeature": ["yoke"]},
+    {"field": "panelLayout", "values": ["upper_lower_split"], "requiresAnyFeature": ["major_panel_contrast"]}
+  ],
+  "allowedSubstantialFeatures": ["broad_collar", "ribbed_hem", "major_panel_contrast", "wrapping_stripe", "yoke", "structured_lower_band"],
+  "allowedMicroDetails": ["small_chest_accent", "small_pin", "single_accent_pixel", "tiny_trim_mark"],
+  "coreRegions": ["BODY", "RIBBING"],
+  "availableColorRegions": ["body", "collar", "yoke", "hem", "ribbing", "stripe"],
+  "primaryRegions": ["body"],
+  "directionPolicy": "The lower band and neck weight wrap all directions; yokes remain broad on the back; no false center opening is permitted.",
+  "incompatibleFeatures": ["center_open", "buttons", "split_outer_panels", "visible_inner_layer"]
+}

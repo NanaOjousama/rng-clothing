@@ -1,0 +1,49 @@
+{
+  "formatVersion": 1,
+  "evidence": {
+    "vanillaSampleShirts": 34,
+    "vanillaSampleFrames": 136,
+    "observedMeaningfulColors": {"minimum": 3, "median": 6, "maximum": 11},
+    "observedDisconnectedOpaquePixels": {"minimum": 0, "median": 0, "maximum": 0},
+    "policy": "V1 caps are conservative within the observed range; they are rejection limits, not an aesthetic score."
+  },
+  "global": {
+    "minimumOccupiedPixelsPerDirection": 50,
+    "maximumOccupiedPixelsPerDirection": 64,
+    "maximumDisconnectedOpaquePixels": 0,
+    "maximumDyeChannels": 1,
+    "maximumMotifs": 1
+  },
+  "rarities": {
+    "Common": {
+      "maximumDetails": 1,
+      "maximumPatterns": 0,
+      "maximumSecondaryFeatures": 1,
+      "maximumAccentPixels": 2,
+      "maximumIsolatedDecorativePixels": 0,
+      "maximumColorRegions": 2,
+      "maximumMeaningfulRenderedColors": 6,
+      "maximumMotifs": 0
+    },
+    "Uncommon": {
+      "maximumDetails": 1,
+      "maximumPatterns": 1,
+      "maximumSecondaryFeatures": 2,
+      "maximumAccentPixels": 3,
+      "maximumIsolatedDecorativePixels": 1,
+      "maximumColorRegions": 3,
+      "maximumMeaningfulRenderedColors": 8,
+      "maximumMotifs": 1
+    },
+    "Rare": {
+      "maximumDetails": 2,
+      "maximumPatterns": 1,
+      "maximumSecondaryFeatures": 3,
+      "maximumAccentPixels": 4,
+      "maximumIsolatedDecorativePixels": 2,
+      "maximumColorRegions": 4,
+      "maximumMeaningfulRenderedColors": 9,
+      "maximumMotifs": 1
+    }
+  }
+}

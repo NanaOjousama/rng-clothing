@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "3.0.0-phase2",
+  "purpose": "Versioned capabilities for the isolated Hybrid V3 pixel-grammar proof; no production fallback.",
+  "carriers": [
+    {
+      "id": "V5B_TEE_HD_V1",
+      "families": ["T_SHIRT"],
+      "benchmarkRecipeIndex": 0,
+      "supportedComponents": ["BODY", "COLLAR", "SLEEVE", "HEM"],
+      "supportedSilhouetteChanges": ["fit_shading", "bounded_hem_shape"],
+      "nativeSleeves": "REQUIRED",
+      "directionOperations": {"front": ["crew_neck"], "right": ["neck_edge"], "back": ["rear_neck_band"], "left": ["neck_edge"]},
+      "safeRuntimeEnvelope": {"width": 16, "height": 16, "scale": 2, "bodyPosition": [0, 32], "upperBodyOnly": true},
+      "unsupported": ["custom_sleeves", "open_front", "long_lower_geometry"],
+      "backendRoute": ["render_fs_hd_v2", "render_fs_v3_surface", "render_fs_v4", "render_fs_v5b"]
+    },
+    {
+      "id": "V5B_POLO_HD_V1",
+      "families": ["POLO_SHIRT"],
+      "benchmarkRecipeIndex": 1,
+      "supportedComponents": ["BODY", "COLLAR", "SLEEVE", "OPENING", "PLACKET", "HEM"],
+      "supportedSilhouetteChanges": ["fit_shading", "bounded_hem_shape"],
+      "nativeSleeves": "REQUIRED",
+      "directionOperations": {"front": ["folded_collar", "short_placket"], "right": ["collar_depth"], "back": ["rear_collar_band"], "left": ["collar_depth"]},
+      "safeRuntimeEnvelope": {"width": 16, "height": 16, "scale": 2, "bodyPosition": [0, 32], "upperBodyOnly": true},
+      "unsupported": ["full_placket", "rear_placket", "custom_sleeves", "long_lower_geometry"],
+      "backendRoute": ["render_fs_hd_v2", "render_fs_v3_surface", "render_fs_v4", "render_fs_v5b"]
+    },
+    {
+      "id": "V5B_SWEATER_VEST_HD_V1",
+      "families": ["SWEATER_VEST"],
+      "benchmarkRecipeIndex": 4,
+      "supportedComponents": ["BODY", "COLLAR", "ARMHOLE", "INNER_LAYER", "HEM", "WAISTBAND", "RIBBING"],
+      "supportedSilhouetteChanges": ["cut_in_armhole", "bounded_hem_shape", "carrier_side_normalization"],
+      "nativeSleeves": "COLOR_INNER_SHIRT_ONLY",
+      "directionOperations": {"front": ["bound_v", "cut_in_armholes"], "right": ["compressed_armhole"], "back": ["rear_neck_band", "cut_in_armholes"], "left": ["compressed_armhole"]},
+      "safeRuntimeEnvelope": {"width": 16, "height": 16, "scale": 2, "bodyPosition": [0, 32], "upperBodyOnly": true},
+      "unsupported": ["sleeve_component", "custom_sleeves", "floating_side_band", "long_lower_geometry"],
+      "backendRoute": ["render_fs_hd_v2", "render_fs_v3_surface", "render_fs_v4", "render_fs_v5b"]
+    },
+    {
+      "id": "V5B_SAILOR_HD_V1",
+      "families": ["SAILOR_TOP"],
+      "benchmarkRecipeIndex": 10,
+      "supportedComponents": ["BODY", "COLLAR", "SLEEVE", "HEM", "REAR_PANEL"],
+      "supportedSilhouetteChanges": ["fit_shading", "bounded_hem_shape"],
+      "nativeSleeves": "REQUIRED",
+      "directionOperations": {"front": ["sailor_v"], "right": ["compressed_collar_wrap"], "back": ["rear_sailor_panel"], "left": ["compressed_collar_wrap"]},
+      "safeRuntimeEnvelope": {"width": 16, "height": 16, "scale": 2, "bodyPosition": [0, 32], "upperBodyOnly": true},
+      "unsupported": ["front_only_collar", "placket", "custom_sleeves", "long_lower_geometry"],
+      "backendRoute": ["render_fs_hd_v2", "render_fs_v3_surface", "render_fs_v4", "render_fs_v5b"]
+    }
+  ]
+}

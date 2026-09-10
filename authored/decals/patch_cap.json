@@ -1,0 +1,24 @@
+{
+  "name": "patch_cap",
+  "motif_class": "patch",
+  "pending": true,
+  "slot": "HEAD",
+  "zone": "front_panel",
+  "z": 2,
+  "style": [
+    "work",
+    "casual"
+  ],
+  "views": [
+    "front"
+  ],
+  "fits": [
+    "soft_cap"
+  ],
+  "description": "a small stitched patch on the front panel",
+  "per_view": false,
+  "size": [
+    4,
+    2
+  ]
+}

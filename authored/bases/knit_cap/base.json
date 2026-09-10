@@ -1,0 +1,150 @@
+{
+  "name": "knit_cap",
+  "slot": "HEAD",
+  "size": [
+    20,
+    20
+  ],
+  "style": [
+    "casual",
+    "work",
+    "cottagecore",
+    "festival"
+  ],
+  "derived_from": "vanilla hats.png #33",
+  "hand_adjusted": "hem widened and a lower edge row added, so the bottom keeps some volume at game scale",
+  "tone_profile": "vanilla_033",
+  "description": "knitted cap derived from ONE reference (vanilla hats.png #33): a soft lumpy crown that narrows at the top and draws back in at the hem, with the reference's own value structure restated as role/step.",
+  "anchors": {
+    "crown_top": {
+      "front": [
+        10,
+        4
+      ],
+      "left": [
+        11,
+        5
+      ],
+      "back": [
+        10,
+        6
+      ]
+    },
+    "cuff_line": {
+      "front": [
+        6,
+        10
+      ],
+      "left": [
+        5,
+        9
+      ],
+      "back": [
+        6,
+        13
+      ]
+    },
+    "crown_face": {
+      "front": [
+        9,
+        7
+      ],
+      "left": [
+        10,
+        8
+      ],
+      "back": [
+        9,
+        9
+      ]
+    }
+  },
+  "zones": {
+    "front": {
+      "crown_face": [
+        8,
+        5,
+        11,
+        6
+      ],
+      "crown_top": [
+        8,
+        4,
+        11,
+        5
+      ],
+      "cuff": [
+        6,
+        10,
+        13,
+        11
+      ],
+      "side": [
+        10,
+        5,
+        12,
+        6
+      ]
+    },
+    "left": {
+      "crown_face": [
+        7,
+        6,
+        13,
+        7
+      ],
+      "crown_top": [
+        9,
+        5,
+        13,
+        6
+      ],
+      "cuff": [
+        9,
+        10,
+        14,
+        10
+      ],
+      "side": [
+        12,
+        6,
+        14,
+        7
+      ]
+    },
+    "back": {
+      "crown_face": [
+        8,
+        7,
+        11,
+        8
+      ],
+      "crown_top": [
+        8,
+        6,
+        11,
+        7
+      ],
+      "cuff": [
+        7,
+        13,
+        12,
+        14
+      ],
+      "side": [
+        10,
+        7,
+        12,
+        8
+      ]
+    }
+  },
+  "views": [
+    "front",
+    "back",
+    "left"
+  ],
+  "mirror": {
+    "right": "left"
+  }
+}

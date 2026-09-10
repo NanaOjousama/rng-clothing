@@ -1,0 +1,32 @@
+{
+  "name": "pom_small",
+  "motif_class": "pom",
+  "slot": "HEAD",
+  "zone": "crown_top",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 5,
+  "anchor_cell": [
+    1,
+    1
+  ],
+  "anchor_point": "top_centre",
+  "style": [
+    "casual",
+    "work"
+  ],
+  "views": [
+    "front",
+    "left",
+    "back"
+  ],
+  "fits": [
+    "knit_cap"
+  ],
+  "description": "a small tight bobble",
+  "per_view": false,
+  "size": [
+    3,
+    2
+  ]
+}

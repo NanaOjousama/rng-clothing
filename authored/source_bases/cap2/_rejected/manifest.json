@@ -1,0 +1,229 @@
+{
+ "base": {
+  "name": "cap2",
+  "source": {
+   "pack": "More Accessories and Stuff",
+   "author": "plurffle",
+   "asset": "Cap 2",
+   "png": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/Cap2/hat.png",
+   "json": "/run/media/deck/USD00/RNG_clothing/generator conent/[FS] More Accessories and Stuff Pack/Hats/Cap2/hat.json"
+  },
+  "family": "SOFT_CAP",
+  "size": [
+   20,
+   20
+  ],
+  "directions": [
+   "Back",
+   "Front",
+   "Left",
+   "Right"
+  ],
+  "vocabulary": [
+   [
+    57,
+    57,
+    57
+   ],
+   [
+    81,
+    81,
+    81
+   ],
+   [
+    119,
+    119,
+    119
+   ],
+   [
+    165,
+    165,
+    165
+   ],
+   [
+    217,
+    217,
+    217
+   ],
+   [
+    254,
+    254,
+    254
+   ]
+  ],
+  "roles": {
+   "0": "outline",
+   "1": "shadow",
+   "2": "mid",
+   "3": "light",
+   "4": "highlight",
+   "5": "spec"
+  },
+  "tone": {
+   "levels": [
+    57.0,
+    81.0,
+    119.0,
+    165.0,
+    217.0,
+    254.0
+   ],
+   "span": 197.0,
+   "steps": 6,
+   "gaps": [
+    24.0,
+    38.0,
+    46.0,
+    52.0,
+    37.0
+   ]
+  },
+  "wear_properties": {
+   "Front": {
+    "StartingPosition": {
+     "X": 0,
+     "Y": 0
+    },
+    "HeadPosition": {
+     "X": 0,
+     "Y": 0
+    },
+    "HatSize": {
+     "Width": 20,
+     "Length": 20
+    },
+    "UniformAnimation": [
+     {
+      "Frame": 0,
+      "Duration": 5000
+     }
+    ]
+   },
+   "Right": {
+    "StartingPosition": {
+     "X": 0,
+     "Y": 20
+    },
+    "HeadPosition": {
+     "X": 0,
+     "Y": 0
+    },
+    "HatSize": {
+     "Width": 20,
+     "Length": 20
+    },
+    "UniformAnimation": [
+     {
+      "Frame": 0,
+      "Duration": 5000
+     }
+    ]
+   },
+   "Left": {
+    "Flipped": true,
+    "StartingPosition": {
+     "X": 0,
+     "Y": 20
+    },
+    "HeadPosition": {
+     "X": 0,
+     "Y": 0
+    },
+    "HatSize": {
+     "Width": 20,
+     "Length": 20
+    },
+    "UniformAnimation": [
+     {
+      "Frame": 0,
+      "Duration": 5000
+     }
+    ]
+   },
+   "Back": {
+    "StartingPosition": {
+     "X": 0,
+     "Y": 40
+    },
+    "HeadPosition": {
+     "X": 0,
+     "Y": 0
+    },
+    "HatSize": {
+     "Width": 20,
+     "Length": 20
+    },
+    "UniformAnimation": [
+     {
+      "Frame": 0,
+      "Duration": 5000
+     }
+    ]
+   }
+  }
+ },
+ "components": {
+  "front_emblem": {
+   "classification": "FAMILY-SPECIFIC",
+   "kind": "surface motif",
+   "zone": "visor_face",
+   "directions": [
+    "Front"
+   ],
+   "cells": {
+    "8,10": [
+     165,
+     165,
+     165,
+     255
+    ],
+    "9,10": [
+     254,
+     254,
+     254,
+     255
+    ],
+    "10,10": [
+     254,
+     254,
+     254,
+     255
+    ],
+    "11,10": [
+     165,
+     165,
+     165,
+     255
+    ]
+   },
+   "fill_value": [
+    81,
+    81,
+    81,
+    255
+   ],
+   "evidence": "the same element at the same cells (x8-11, y10) on Cap 1, a different construction by the same author"
+  }
+ },
+ "embedded": {
+  "crown_highlight": {
+   "direction": "Front",
+   "bbox": [
+    9,
+    11,
+    6,
+    7
+   ],
+   "why": "specular highlight of this dome; Cap 1's crown is shaded differently, so it does not travel"
+  }
+ },
+ "not_separable": {
+  "count": 67,
+  "classification": "REFERENCE-ONLY",
+  "why": "not enclosed: each candidate touches transparency or borders two or more authored values, so no single authored fill exists"
+ },
+ "reconstruction": {
+  "differing_pixels": 0,
+  "exact": true
+ }
+}

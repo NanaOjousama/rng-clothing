@@ -1,0 +1,21 @@
+{
+  "id": "SWEATER",
+  "description": "Soft pullover communicated through a broad fabric mass, knit-like hem rhythm, and restrained neckline construction.",
+  "validNecklines": ["round", "crew", "shallow_v"],
+  "validCollars": ["none", "wide"],
+  "validClosures": ["none"],
+  "validFits": ["regular", "relaxed"],
+  "validDetails": ["none", "center_stripe", "chest_accent", "lower_trim"],
+  "validPatterns": ["none", "horizontal_stripe", "simple_border"],
+  "shoulderProfile": "soft_broad",
+  "frontStructure": "single pullover field with a neck landmark and lower knit weight",
+  "backStructure": "quiet fabric field with neck edge and optional wrapping trim",
+  "sideStructure": "compressed soft column with matching neckline and hem weight",
+  "allowedDetailLocations": ["neck_edge", "center_front", "upper_chest", "lower_hem"],
+  "allowedSecondaryRegions": ["neck_band", "single_stripe", "lower_trim"],
+  "validMotifLocations": ["front_upper_chest"],
+  "baseShadingZones": ["upper_shoulders", "broad_center", "ribbed_lower_band"],
+  "maximumComplexity": "Common through Rare budgets; one quiet pattern or one focal accent",
+  "incompatibleFeatures": ["folded_collar", "sailor_collar", "center_opening", "button_closure", "inner_layer", "button_line"],
+  "renderProfile": "pullover_knit"
+}

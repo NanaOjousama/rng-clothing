@@ -1,0 +1,12 @@
+{
+  "Name": "RNG Clothing Fitting",
+  "Author": "RNG Clothing project",
+  "Version": "0.1.0",
+  "Description": "Adjust how a generated cap sits on your head, at any sewing machine.",
+  "UniqueID": "RNGClothing.Fitting",
+  "EntryDll": "RNGClothingFitting.dll",
+  "MinimumApiVersion": "4.0.0",
+  "Dependencies": [
+    { "UniqueID": "PeacefulEnd.FashionSense", "IsRequired": true }
+  ]
+}

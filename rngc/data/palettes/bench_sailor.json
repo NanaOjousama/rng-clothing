@@ -1,0 +1,24 @@
+{
+  "id": "bench_sailor",
+  "reference": "SAILOR_NAVY navy body, white collar, red tie",
+  "slots": {
+    "primary": {
+      "deep": "#121A2A",
+      "shadow": "#1F2E4A",
+      "base": "#2E4670",
+      "light": "#4A6592"
+    },
+    "trim": {
+      "deep": "#7A8494",
+      "shadow": "#B7BEC8",
+      "base": "#EEF1F4",
+      "light": "#FFFFFF"
+    },
+    "accent": {
+      "deep": "#5A1A1E",
+      "shadow": "#8C2A30",
+      "base": "#C93B42",
+      "light": "#E06C6B"
+    }
+  }
+}

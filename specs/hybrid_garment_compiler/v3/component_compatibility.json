@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "3.0.0",
+  "familyRules": {
+    "T_SHIRT": {"requiredTypes": ["BODY", "COLLAR", "SLEEVE", "HEM"], "forbiddenTypes": ["LAPEL", "ARMHOLE", "REAR_PANEL"]},
+    "POLO_SHIRT": {"requiredTypes": ["BODY", "COLLAR", "SLEEVE", "OPENING", "PLACKET", "HEM"], "forbiddenTypes": ["LAPEL", "ARMHOLE", "REAR_PANEL"], "rules": ["placket_must_be_short", "rear_opening_forbidden"]},
+    "SWEATER_VEST": {"requiredTypes": ["BODY", "COLLAR", "ARMHOLE", "HEM", "RIBBING", "INNER_LAYER"], "forbiddenTypes": ["SLEEVE", "LAPEL", "OPENING"]},
+    "CARDIGAN": {"requiredTypes": ["BODY", "COLLAR", "OPENING", "HEM", "RIBBING", "INNER_LAYER"], "forbiddenTypes": ["LAPEL", "ARMHOLE"], "rules": ["opening_must_remain_soft"]},
+    "BLAZER": {"requiredTypes": ["BODY", "COLLAR", "LAPEL", "SLEEVE", "OPENING", "HEM", "INNER_LAYER"], "forbiddenTypes": ["ARMHOLE", "RIBBING"], "rules": ["lapel_required", "rear_lapel_forbidden"]},
+    "SAILOR_TOP": {"requiredTypes": ["BODY", "COLLAR", "SLEEVE", "HEM", "REAR_PANEL"], "forbiddenTypes": ["LAPEL", "ARMHOLE", "PLACKET"], "rules": ["rear_sailor_panel_required"]}
+  },
+  "globalRules": [
+    "PLACKET requires OPENING parent.",
+    "LAPEL requires OPENING and COLLAR siblings.",
+    "ARMHOLE contradicts SLEEVE unless explicitly layered as inner-only.",
+    "Every non-root component requires a valid parent attachment.",
+    "WRAPAROUND_REQUIRED components require a continuity group."
+  ]
+}

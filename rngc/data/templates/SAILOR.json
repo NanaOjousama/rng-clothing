@@ -1,0 +1,16 @@
+{
+  "id": "SAILOR",
+  "blank": "torso_basic",
+  "identity": [
+    "collar_sailor"
+  ],
+  "allowed": [
+    "collar_sailor",
+    "tie_sailor",
+    "hem_plain"
+  ],
+  "sleeve_slot": "primary",
+  "hide_sleeves": false,
+  "max_colors": 10,
+  "note": "Primary ramp + trim ramp + accent: vanilla sailor 259 uses 9 colours across views; budget 10."
+}

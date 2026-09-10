@@ -1,0 +1,217 @@
+{
+  "formatVersion": 2,
+  "logicalFrame": [8, 8],
+  "purpose": "Canonical named-region ownership for V2 archetypes. These grids are renderer data; semantic recipes contain no coordinates.",
+  "regionLegend": {
+    ".": "TRANSPARENT",
+    "B": "BODY",
+    "N": "NECKLINE",
+    "C": "COLLAR",
+    "Y": "YOKE",
+    "P": "PLACKET",
+    "L": "OUTER_PANEL_LEFT",
+    "R": "OUTER_PANEL_RIGHT",
+    "I": "INNER_LAYER",
+    "H": "HEM",
+    "K": "RIBBING",
+    "S": "STRIPE"
+  },
+  "archetypeMasks": {
+    "T_SHIRT": {
+      "front": [
+        "BBB..BBB",
+        "BBBNNBBB",
+        "BBBNNBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB"
+      ],
+      "right": [
+        "BBB.NN..",
+        "BBBBNNB.",
+        "BBBBBBB.",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        ".BBBBBBB",
+        ".BBBBBBB",
+        ".BBBBBBB"
+      ],
+      "left": {"mirrorOf": "right"},
+      "back": [
+        "BBBNNBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        ".BBBBBB."
+      ]
+    },
+    "SWEATER": {
+      "front": [
+        "BBB..BBB",
+        "BBNNNNBB",
+        "BBBNNBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BKKKKKKB",
+        "KKKKKKKK"
+      ],
+      "right": [
+        "BBB.NN..",
+        "BBBNNNB.",
+        "BBBBBBB.",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        ".BBBBBBB",
+        ".BKKKKKK",
+        ".KKKKKKK"
+      ],
+      "left": {"mirrorOf": "right"},
+      "back": [
+        "BBNNNNBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BKKKKKKB",
+        ".KKKKKK."
+      ]
+    },
+    "BUTTON_SHIRT": {
+      "front": [
+        "BBB..BBB",
+        "BBCCCCBB",
+        "BBCPPCBB",
+        "BBBPPBBB",
+        "BBBPPBBB",
+        "BBBPPBBB",
+        "BBBPPBBB",
+        "BBBPPBBB"
+      ],
+      "right": [
+        "BBB.CC..",
+        "BBBBCCP.",
+        "BBBBBCP.",
+        "BBBBBBPP",
+        "BBBBBBPP",
+        ".BBBBBPP",
+        ".BBBBBPP",
+        ".BBBBBPP"
+      ],
+      "left": {"mirrorOf": "right"},
+      "back": [
+        "BBCCCCBB",
+        "BYYYYYYB",
+        "BBYYYYBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        ".BBBBBB."
+      ]
+    },
+    "JACKET": {
+      "front": [
+        "LLL..RRR",
+        "LLCIICRR",
+        "LLIIIIRR",
+        "LLIIIIRR",
+        "LLIIIIRR",
+        "LLIIIIRR",
+        "LLIIIIRR",
+        "HHIIIIHH"
+      ],
+      "right": [
+        "RRR.CC..",
+        "RRRRIIC.",
+        "RRRRIII.",
+        "RRRRRRII",
+        "RRRRRRII",
+        ".RRRRRII",
+        ".RRRRRII",
+        ".HHHHHII"
+      ],
+      "left": {"mirrorOf": "right", "swapRegions": {"R": "L"}},
+      "back": [
+        "LLLCCRRR",
+        "LLYYYYRR",
+        "LLLYYRRR",
+        "LLLLRRRR",
+        "LLLLRRRR",
+        "LLLLRRRR",
+        "LLLLRRRR",
+        ".HHHHHH."
+      ]
+    },
+    "SAILOR_TOP": {
+      "front": [
+        "BBB..BBB",
+        "YYYYYYYY",
+        "BYYYYYYB",
+        "BBYYYYBB",
+        "BBYCCYBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB"
+      ],
+      "right": [
+        "YYY.YY..",
+        "YYYYYYY.",
+        "BYYYYYY.",
+        "BBYYYYYY",
+        "BBBBBYYY",
+        ".BBBBBBB",
+        ".BBBBBBB",
+        ".BBBBBBB"
+      ],
+      "left": {"mirrorOf": "right"},
+      "back": [
+        "YYYYYYYY",
+        "YYYYYYYY",
+        "YYYYYYYY",
+        "BYYYYYYB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        ".BBBBBB."
+      ]
+    }
+  },
+  "twoColorGroups": {
+    "T_SHIRT": {
+      "primary": ["BODY"],
+      "secondary": ["NECKLINE"]
+    },
+    "SWEATER": {
+      "primary": ["BODY"],
+      "secondary": ["NECKLINE", "COLLAR", "RIBBING", "HEM"]
+    },
+    "BUTTON_SHIRT": {
+      "primary": ["BODY"],
+      "secondary": ["COLLAR", "PLACKET", "YOKE", "HEM"]
+    },
+    "JACKET": {
+      "primary": ["OUTER_PANEL_LEFT", "OUTER_PANEL_RIGHT", "BODY"],
+      "secondary": ["INNER_LAYER", "COLLAR", "YOKE", "HEM", "PLACKET"]
+    },
+    "SAILOR_TOP": {
+      "primary": ["BODY"],
+      "secondary": ["COLLAR", "YOKE", "HEM"]
+    }
+  },
+  "similarityGate": {
+    "directionsCompared": ["front", "back", "right"],
+    "rejectExactMajorRegionMatch": true,
+    "rejectTotalTwoColorDifferenceAtOrBelow": 8,
+    "rejectIfFewerThanDirectionsDiffer": 3,
+    "minimumDifferentCellsPerDirection": 3,
+    "warningTwoColorJaccardAtOrAbove": 0.9,
+    "meaning": "This catches obvious archetype collapse only; it is not an aesthetic score."
+  }
+}

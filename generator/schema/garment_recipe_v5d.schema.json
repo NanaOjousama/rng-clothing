@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rng-clothing.invalid/schema/garment_recipe_v5d.schema.json",
+  "title": "RNG Clothing V5D Masculine Art Grammar Recipe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["formatVersion", "id", "collection", "fashionFamily", "articleRole", "articleSubtype", "fitIntent", "sleeveIntent", "shoulderIntent", "necklineIntent", "collarIntent", "openingIntent", "layeringIntent", "hemIntent", "constructionFeatures", "surfacePlan", "paletteStory", "lightPalette", "benchmarkBasis", "baseUpperRecipe"],
+  "properties": {
+    "formatVersion": {"const": "5.4.0"},
+    "id": {"type": "string", "pattern": "^v5d-[0-9]{2}$"},
+    "collection": {"const": "V5DMasculineArtGrammar"},
+    "fashionFamily": {"enum": ["CASUAL", "WORKWEAR_FARMWEAR", "KNIT_CARDIGAN", "HOODIE_SWEATWEAR", "VEST_WAISTCOAT", "JACKET_OUTERWEAR", "FORMAL_SUIT", "PERIOD_GENTLEMAN", "MILITARY_FIELDWEAR", "FANTASY_ADVENTURER", "ARMOR_TUNIC_TABARD", "ALT_DARK_FASHION"]},
+    "articleRole": {"enum": ["CASUAL_SHIRT", "WORK_SHIRT", "KNIT_SWEATER", "STREET_HOODIE", "CARDIGAN", "FORMAL_WAISTCOAT", "UTILITY_VEST", "CROPPED_FIELD_JACKET", "FORMAL_BLAZER", "PERIOD_TOP", "MILITARY_TOP", "ADVENTURER_TUNIC", "ARMOR_TABARD", "ALT_STREET_TOP"]},
+    "articleSubtype": {"type": "string", "minLength": 3},
+    "fitIntent": {"enum": ["fitted", "regular", "relaxed", "cropped", "structured"]},
+    "sleeveIntent": {"enum": ["SHORT_SLEEVE", "FITTED_LONG_SLEEVE", "ROLLED_CUFFED_SLEEVE", "LAYERED_INNER_OUTER_SLEEVE"]},
+    "shoulderIntent": {"enum": ["standard", "narrow", "dropped", "reinforced", "armored"]},
+    "necklineIntent": {"enum": ["crew", "v_neck", "high", "open", "hooded", "layered_v"]},
+    "collarIntent": {"enum": ["none", "shirt_collar", "high_collar", "lapel", "utility", "shawl", "cravat", "guarded"]},
+    "openingIntent": {"enum": ["closed", "short_placket", "buttoned", "center_open", "partial_open", "double_breasted", "wrap", "cross_zip", "tabard_center"]},
+    "layeringIntent": {"enum": ["single_layer", "visible_inner_layer", "vest_over_inner", "tunic_over_inner", "armor_over_underlayer"]},
+    "hemIntent": {"enum": ["plain", "ribbed", "tailored", "cropped", "structured", "belted", "tabard"]},
+    "constructionFeatures": {"type": "array", "minItems": 2, "maxItems": 8, "uniqueItems": true, "items": {"type": "string", "minLength": 3}},
+    "surfacePlan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primaryGesture", "supportGestures", "focalArea", "panelSystem", "trimSystem", "patternSystem", "motifSystem", "topology"],
+      "properties": {
+        "primaryGesture": {"type": "string", "minLength": 3},
+        "supportGestures": {"type": "array", "maxItems": 3, "uniqueItems": true, "items": {"type": "string", "minLength": 3}},
+        "focalArea": {"enum": ["neck", "upper_chest", "center_chest", "side_chest", "pockets", "waist", "shoulder", "tabard"]},
+        "panelSystem": {"type": "string"},
+        "trimSystem": {"type": "string"},
+        "patternSystem": {"type": "string"},
+        "motifSystem": {"type": "string"},
+        "topology": {"type": "string"}
+      }
+    },
+    "paletteStory": {"type": "string", "minLength": 3},
+    "lightPalette": {"type": "boolean"},
+    "benchmarkBasis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primaryPacks", "generalizedTraits", "mixedEvidenceRole", "copiedPixels"],
+      "properties": {
+        "primaryPacks": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "generalizedTraits": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string"}},
+        "mixedEvidenceRole": {"enum": ["none", "neutral_construction_reviewed", "technique_only"]},
+        "copiedPixels": {"const": false}
+      }
+    },
+    "baseUpperRecipe": {"$ref": "garment_recipe_v5b.schema.json"}
+  }
+}

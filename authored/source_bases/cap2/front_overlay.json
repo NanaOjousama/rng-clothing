@@ -1,0 +1,46 @@
+{
+  "_comment": "CAP2_FRONT_OVERLAY — a GENERATOR-AUTHORED overlay system, kept strictly separate from source-derived components. Cap 2 contains no extractable decoration; this is a surface on which a mark may be drawn ON TOP of the intact source base. No author evidence is claimed for any motif.",
+  "id": "CAP2_FRONT_OVERLAY",
+  "provenance": "generator-authored",
+  "base": "cap2 (source art by plurffle, INTACT and unmodified)",
+  "not_source_derived": "the base carries no emblem; nothing here is extracted from the author's work",
+  "surface": {
+    "name": "front crown, above the visor",
+    "crown_rows": [4, 8],
+    "visor_begins_row": 9,
+    "interior_after_removing_outline_and_edge_cells": 28,
+    "usable_after_visor_margin": 20,
+    "usable_cells_by_row": {"5": [8, 11], "6": [6, 13], "7": [6, 13]},
+    "margins": {
+      "from_visor": "1 row — the overlay may not occupy row 8, which abuts the visor seam at row 9",
+      "from_outline": "outline cells (step 0) and any cell on the silhouette edge are excluded",
+      "from_crown_top": "row 4 is the crown's top edge and is excluded"
+    }
+  },
+  "zone": {
+    "primary": {"x0": 8, "x1": 11, "y0": 5, "y1": 7, "size": [4, 3],
+                "why": "the largest square-ish rectangle wholly inside the usable set; suits a crest, circle or glyph"},
+    "alternative_max_area": {"x0": 6, "x1": 13, "y0": 6, "y1": 7, "size": [8, 2],
+                             "why": "largest area, but 8x2 is a wide flat band and suits only a two-line or wordmark shape"},
+    "note": "the primary zone is 4x3, the same DIMENSIONS as the discredited 'front panel' but a different LOCATION — rows 5-7 on the crown, not rows 9-11 on the visor"
+  },
+  "shading_conflict": {
+    "finding": "the crown's specular highlight occupies 5 cells at (9,6) (10,6) (8,7) (10,7) (11,7), which sit inside every usable zone",
+    "largest_highlight_free_rectangle": [2, 2],
+    "consequence": "any overlay big enough to carry a mark WILL cover part of the crown highlight. A 2x2 is the largest mark that avoids it entirely, which is too small to read as a shape.",
+    "judgement": "this matches how real caps work — a printed graphic sits over the crown's lit face — but it is a real loss of source shading and is flagged rather than hidden"
+  },
+  "contrast_rule": {
+    "direction": "DARK mark on the light crown",
+    "why": "the crown carries the base's light steps (3-5, luminance 165-254); a mark in step 0-1 (57-81) gives 84-173 luminance separation, and this is also the direction the reference photographs use",
+    "note": "the opposite direction was used for the discredited visor 'emblem' and is wrong here"
+  },
+  "rules": {
+    "directions": ["Front"],
+    "sides_and_back": "EMPTY — the front crown is not visible in profile or from behind",
+    "occupancy": "single mark, one per cap",
+    "may_not": ["touch or alter the visor", "alter the crown silhouette",
+                "alter any source pixel outside the bounded overlay cells",
+                "extend outside the usable cell set"]
+  }
+}

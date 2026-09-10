@@ -1,0 +1,63 @@
+{
+  "formatVersion": 1,
+  "profile": "FS_HIGH_DETAIL",
+  "basis": "Installed Stardew Valley 1.6.15 Farmer and shirt pixels plus the Fashion Sense 7.5.0 Scale-2 jacket contract.",
+  "edgeRoles": [
+    "EXTERIOR_CONTOUR",
+    "DEEP_CREASE",
+    "STRUCTURAL_EDGE",
+    "SHADOW",
+    "BASE",
+    "LIGHT",
+    "OPTIONAL_HIGHLIGHT"
+  ],
+  "outerMaskRamp": {
+    "EXTERIOR_CONTOUR": 48,
+    "DEEP_CREASE": 68,
+    "STRUCTURAL_EDGE": 96,
+    "SHADOW": 128,
+    "BASE": 184,
+    "LIGHT": 220,
+    "OPTIONAL_HIGHLIGHT": 238
+  },
+  "sleeveMaskRoles": [
+    "DEEP_CREASE",
+    "BASE",
+    "LIGHT"
+  ],
+  "defaultPrimaryColor": [112, 130, 145],
+  "contrastRequirements": {
+    "minimumExteriorToBaseSrgbLuminanceDelta": 55.0,
+    "minimumShadowToBaseSrgbLuminanceDelta": 18.0,
+    "minimumBaseToLightSrgbLuminanceDelta": 15.0,
+    "minimumInnerToOuterBaseSrgbLuminanceDelta": 55.0,
+    "minimumExteriorToBaseWcagLuminanceDelta": 0.075,
+    "minimumAdjacentMajorRegionSrgbLuminanceDelta": 22.0
+  },
+  "clusterBudget": {
+    "maximumOptionalHighlightPixelsPerDirection": 4,
+    "maximumIsolatedNonContourPixelsPerDirection": 2,
+    "maximumOpaqueColorsAtDefaultTint": 10,
+    "preferredStructuralClusterSize": [2, 4]
+  },
+  "blendBudget": {
+    "rule": "Use extra cells for coverage, silhouette, construction, layering, and clustered shade transitions before seams or micro detail.",
+    "maximumOuterRampValues": 7,
+    "microDetailsAllowedInPoc": 0,
+    "textureNoiseAllowed": false,
+    "fractionalCoordinatesAllowed": false,
+    "resamplingAllowed": false
+  },
+  "benchmarkRefinement": {
+    "basis": "Recurring quality tendencies measured and visually inspected across the attached benchmark packs; no benchmark pixels, layouts, or designs are encoded.",
+    "rules": [
+      "Use darkest contour as silhouette anchors, not an automatic uniform ring.",
+      "Allow short lit shoulder-edge runs while keeping neck, side, underarm, and hem anchors dark.",
+      "Use one dominant construction gesture per view and subordinate secondary seams.",
+      "Bias light clusters consistently instead of lighting symmetric panels equally.",
+      "Avoid full-width lower shadow bands; terminate hem shadows in attached corner clusters.",
+      "Spend additional logical cells on diagonals, overlap depth, and controlled transitions rather than additional colors.",
+      "Evaluate shirt grammar separately from large animated accessory grammar."
+    ]
+  }
+}

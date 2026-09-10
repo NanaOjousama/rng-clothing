@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Semantic color roles for original RNG Clothing palettes. Roles describe function, not fixed rarity or hue.",
+  "colorSpaceGuidance": {
+    "workingModel": "perceptual lightness and hue relationships should be evaluated in OKLCH or an equivalent perceptual space during implementation",
+    "storage": "sRGB hex",
+    "warning": "Numeric ranges are validation guidance, not automatic palette generation rules. Worn-scale review remains authoritative."
+  },
+  "roles": {
+    "DeepShadow": {
+      "required": true,
+      "function": "deepest recess and selected contour anchor",
+      "typicalCoverage": "very low",
+      "lightnessGuidance": "very dark but not obligatorily black",
+      "hueGuidance": "may shift cooler, warmer, or more chromatic than the primary fabric according to story",
+      "allowedUses": ["collar recess", "underarm overlap", "deep opening", "hem overlap", "selected exterior anchors"],
+      "forbiddenUses": ["uniform tracing of every edge", "large unmodulated fabric field"]
+    },
+    "StructuralDark": {
+      "required": true,
+      "function": "construction-defining dark shared by seams, layer boundaries, cuffs, pockets, and controlled contours",
+      "typicalCoverage": "low to moderate",
+      "lightnessGuidance": "clearly separated from primary midtone while remaining less severe than DeepShadow",
+      "hueGuidance": "should harmonize across multiple fabrics; a small shared-dark library is encouraged",
+      "allowedUses": ["collar edge", "lapel edge", "placket boundary", "pocket opening", "cuff boundary", "hem corner", "side seam anchor"],
+      "forbiddenUses": ["automatic one-pixel outline around all opaque pixels"]
+    },
+    "PrimaryFabric": {
+      "required": true,
+      "function": "dominant garment fabric midtone",
+      "typicalCoverage": "high",
+      "lightnessGuidance": "may be light, middle, or dark; batch composition must vary",
+      "hueGuidance": "defines the story but never implies rarity",
+      "allowedUses": ["main torso", "main outer layer", "dominant sleeve field"],
+      "forbiddenUses": ["being selected only from masculine/military dark hues"]
+    },
+    "PrimaryFabricLight": {
+      "required": false,
+      "function": "light-facing plane or restrained highlight for the primary fabric",
+      "typicalCoverage": "low",
+      "lightnessGuidance": "material-dependent separation from PrimaryFabric",
+      "hueGuidance": "may shift warmer under warm light or cooler for icy/synthetic stories",
+      "allowedUses": ["upper-left shoulder plane", "lapel plane", "pocket-flap edge", "upper sleeve plane", "one knit ridge"],
+      "forbiddenUses": ["specular noise", "uniform edge highlighting"]
+    },
+    "SecondaryFabric": {
+      "required": false,
+      "function": "meaningful second fabric or inner/outer layer",
+      "typicalCoverage": "moderate when present",
+      "lightnessGuidance": "must separate from PrimaryFabric by value, hue, or both",
+      "hueGuidance": "supports construction topology rather than filling a default center stripe",
+      "allowedUses": ["inner shirt", "contrast sleeves", "yoke", "hood lining", "vest underlayer", "wrap panel"],
+      "forbiddenUses": ["thin central decoration falsely labeled as an inner layer"]
+    },
+    "SecondaryFabricLight": {
+      "required": false,
+      "function": "light-facing plane for a substantial second fabric",
+      "typicalCoverage": "very low to low",
+      "lightnessGuidance": "consistent with the second material's own ramp",
+      "hueGuidance": "need not share the primary highlight hue",
+      "allowedUses": ["inner collar plane", "contrast sleeve ridge", "lining edge"],
+      "forbiddenUses": ["creating an unnecessary second ramp for tiny accents"]
+    },
+    "Trim": {
+      "required": false,
+      "function": "repeated termination or edge treatment",
+      "typicalCoverage": "low",
+      "lightnessGuidance": "readable against adjacent fabric without becoming the dominant focal color",
+      "hueGuidance": "often neutral or closely related to one fabric",
+      "allowedUses": ["ribbing", "piping", "collar band", "cuff", "hem band", "sash edge"],
+      "forbiddenUses": ["outlining every panel", "competing with Accent at every edge"]
+    },
+    "Accent": {
+      "required": false,
+      "function": "localized high-attention color",
+      "typicalCoverage": "very low",
+      "lightnessGuidance": "must remain distinguishable at gameplay scale",
+      "hueGuidance": "may carry the highest saturation or strongest temperature contrast",
+      "allowedUses": ["one focal fastening", "small band echo", "pocket tab", "tie", "single graphic cluster"],
+      "forbiddenUses": ["occupying every semantic role", "uncontrolled scattering"]
+    },
+    "OptionalMotif": {
+      "required": false,
+      "function": "original motif or emblem-like cluster distinct from construction",
+      "typicalCoverage": "very low",
+      "lightnessGuidance": "must separate from its host field with a compact readable cluster",
+      "hueGuidance": "may reuse Accent, Trim, or a quieter dedicated tone",
+      "allowedUses": ["chest motif", "upper-back motif", "knit repeat focal", "original abstract patch"],
+      "forbiddenUses": ["copied logos", "motif used to rescue weak article identity"]
+    },
+    "OptionalMetal": {
+      "required": false,
+      "function": "small controlled hardware tone",
+      "typicalCoverage": "minimal",
+      "lightnessGuidance": "one dark/mid or mid/light relationship is enough",
+      "hueGuidance": "warm brass, cool silver, dark gunmetal, or story-specific metal",
+      "allowedUses": ["zipper pull", "button", "buckle", "small clasp"],
+      "forbiddenUses": ["metallic confetti", "automatic gold for premium rarity"]
+    }
+  },
+  "supportedRoleSets": {
+    "singleFabric": ["DeepShadow", "StructuralDark", "PrimaryFabric", "PrimaryFabricLight"],
+    "innerOuterLayering": ["DeepShadow", "StructuralDark", "PrimaryFabric", "PrimaryFabricLight", "SecondaryFabric", "SecondaryFabricLight", "Trim"],
+    "knitwear": ["DeepShadow", "StructuralDark", "PrimaryFabric", "PrimaryFabricLight", "Trim", "OptionalMotif"],
+    "sportBlocking": ["DeepShadow", "StructuralDark", "PrimaryFabric", "SecondaryFabric", "Trim", "Accent"],
+    "workwear": ["DeepShadow", "StructuralDark", "PrimaryFabric", "PrimaryFabricLight", "SecondaryFabric", "Trim"],
+    "formalLayering": ["DeepShadow", "StructuralDark", "PrimaryFabric", "PrimaryFabricLight", "SecondaryFabric", "SecondaryFabricLight", "Trim", "OptionalMetal"],
+    "accentOnly": ["DeepShadow", "StructuralDark", "PrimaryFabric", "PrimaryFabricLight", "Accent"],
+    "highContrastStatement": ["DeepShadow", "StructuralDark", "PrimaryFabric", "SecondaryFabric", "Trim", "Accent", "OptionalMotif"]
+  },
+  "globalConstraints": [
+    "Role count follows garment needs; unused roles must remain absent rather than filled artificially.",
+    "DeepShadow and StructuralDark may be shared across fabric ramps when this improves cohesion.",
+    "PrimaryFabric may occupy any dominant value band; light-primary is fully supported.",
+    "Accent and OptionalMetal are independent of rarity.",
+    "Color roles never override construction topology or body-coverage rules.",
+    "Final contrast is evaluated on the worn Farmer at gameplay scale."
+  ]
+}

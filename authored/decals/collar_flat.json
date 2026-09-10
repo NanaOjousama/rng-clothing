@@ -1,0 +1,23 @@
+{
+  "name": "collar_flat",
+  "slot": "TOP",
+  "attach": "neck",
+  "z": 2,
+  "style": [
+    "work",
+    "casual",
+    "smart",
+    "cottagecore"
+  ],
+  "views": [
+    "front",
+    "left",
+    "back"
+  ],
+  "description": "a flat collar sitting across the shoulders",
+  "per_view": false,
+  "size": [
+    4,
+    1
+  ]
+}

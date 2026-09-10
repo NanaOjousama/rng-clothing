@@ -1,0 +1,41 @@
+{
+  "id": "JACKET",
+  "identity": "An outer garment whose left and right panels visibly wrap an inner layer and terminate in a structured lower band.",
+  "allowedConstruction": {
+    "fit": ["regular", "relaxed"],
+    "neckline": ["open"],
+    "collar": ["small_folded", "wide"],
+    "closure": ["center_open", "buttons"],
+    "layering": ["visible_inner_layer", "overlay_panel"],
+    "hem": ["structured", "contrast_band"],
+    "panelLayout": ["split_outer_panels", "center_placket"]
+  },
+  "constructionRules": [
+    {"when": {"field": "closure", "values": ["center_open"]}, "requiresAll": [{"field": "layering", "values": ["visible_inner_layer"]}, {"field": "panelLayout", "values": ["split_outer_panels"]}]},
+    {"when": {"field": "closure", "values": ["buttons"]}, "requiresAll": [{"field": "layering", "values": ["overlay_panel"]}, {"field": "panelLayout", "values": ["center_placket"]}]},
+    {"when": {"field": "collar", "values": ["wide"]}, "requiresAll": [{"field": "closure", "values": ["center_open"]}]}
+  ],
+  "rarityConstruction": {
+    "Common": {
+      "collar": ["small_folded"],
+      "closure": ["center_open"],
+      "layering": ["visible_inner_layer"],
+      "hem": ["structured"],
+      "panelLayout": ["split_outer_panels"]
+    },
+    "Uncommon": {
+      "collar": ["small_folded"]
+    }
+  },
+  "constructionFeatureLinks": [
+    {"field": "panelLayout", "values": ["center_placket"], "requiresAnyFeature": ["center_placket"]},
+    {"field": "hem", "values": ["contrast_band"], "requiresAnyFeature": ["structured_lower_band"]}
+  ],
+  "allowedSubstantialFeatures": ["contrast_inner_layer", "broad_collar", "major_panel_contrast", "center_placket", "split_outer_panels", "structured_lower_band"],
+  "allowedMicroDetails": ["small_chest_accent", "tiny_button", "small_pin", "single_accent_pixel", "tiny_trim_mark"],
+  "coreRegions": ["OUTER_PANEL_LEFT", "OUTER_PANEL_RIGHT", "INNER_LAYER", "COLLAR", "HEM"],
+  "availableColorRegions": ["body", "outer_panels", "inner_layer", "collar", "placket", "hem"],
+  "primaryRegions": ["outer_panels"],
+  "directionPolicy": "The front keeps a broad inner layer between two outer panels; the side keeps a forward inner edge; the back keeps outerwear yoke and hem mass.",
+  "incompatibleFeatures": ["single_layer", "solid_panel", "sailor_collar", "pullover_neckline"]
+}

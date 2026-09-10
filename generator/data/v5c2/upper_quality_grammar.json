@@ -1,0 +1,180 @@
+{
+  "formatVersion": "5.3.0",
+  "profile": "VANILLA_DISCIPLINED_FS_HD",
+  "logicalFrame": [16, 16],
+  "scale": 2,
+  "bodyPosition": [0, 32],
+  "directionOrder": ["front", "right", "left", "back"],
+  "qualityPrinciples": [
+    "Article identity must survive without shading.",
+    "One dominant construction signal receives the strongest interior contrast.",
+    "Small marks must attach to a collar, opening, pocket, hem, yoke, or focal cluster.",
+    "Side and back views reconstruct the article and suppress front-only detail.",
+    "The 16x16 budget is spent on construction and clustered design before shading."
+  ],
+  "articles": {
+    "VEST_TOP": {
+      "subtypes": ["tailored_waistcoat"],
+      "dominantSignals": ["v_opening", "inner_shirt", "buttoned_placket", "tapered_waist"],
+      "allowedSleeves": ["FITTED_LONG_SLEEVE", "ROLLED_CUFFED_SLEEVE"],
+      "silhouette": "tailored_taper",
+      "frontGesture": "v_opening",
+      "backGesture": "quiet_back_panel",
+      "sideGesture": "vest_edge_over_inner"
+    },
+    "BLOUSE": {
+      "subtypes": ["bow_yoke_blouse"],
+      "dominantSignals": ["shaped_neckline", "soft_yoke", "bow_or_knot", "fitted_waist"],
+      "allowedSleeves": ["SHORT_SLEEVE", "ROLLED_CUFFED_SLEEVE", "FITTED_LONG_SLEEVE"],
+      "silhouette": "soft_fitted",
+      "frontGesture": "collar_and_knot",
+      "backGesture": "soft_yoke",
+      "sideGesture": "rounded_collar_termination"
+    },
+    "SWEATER": {
+      "subtypes": ["heritage_knit"],
+      "dominantSignals": ["continuous_cloth_mass", "substantial_neck", "knit_yoke", "ribbed_hem"],
+      "allowedSleeves": ["FITTED_LONG_SLEEVE", "LAYERED_INNER_OUTER_SLEEVE"],
+      "silhouette": "heavy_soft_mass",
+      "frontGesture": "knit_yoke",
+      "backGesture": "reduced_knit_yoke",
+      "sideGesture": "continuous_knit_mass"
+    },
+    "CROPPED_JACKET": {
+      "subtypes": ["compact_field_jacket"],
+      "dominantSignals": ["outer_panels", "inner_layer", "lapels", "short_waist", "paired_pockets"],
+      "allowedSleeves": ["FITTED_LONG_SLEEVE", "ROLLED_CUFFED_SLEEVE", "LAYERED_INNER_OUTER_SLEEVE"],
+      "silhouette": "cropped_structured",
+      "frontGesture": "lapel_opening",
+      "backGesture": "short_yoke",
+      "sideGesture": "outer_shell_opening"
+    },
+    "STANDARD_JACKET": {
+      "subtypes": ["field_jacket"],
+      "dominantSignals": ["structured_collar", "center_opening", "upper_panels", "utility_pockets", "finished_hem"],
+      "allowedSleeves": ["FITTED_LONG_SLEEVE", "ROLLED_CUFFED_SLEEVE", "LAYERED_INNER_OUTER_SLEEVE"],
+      "silhouette": "standard_outer_shell",
+      "frontGesture": "structured_opening",
+      "backGesture": "yoke_over_body",
+      "sideGesture": "panel_led_outerwear"
+    },
+    "HOODIE": {
+      "subtypes": ["pullover", "zip", "pouch_contrast", "cropped_charm", "baggy_crest"],
+      "dominantSignals": ["hood_ring", "drawstring_pair", "pouch_or_zip", "ribbed_termination", "sleeve_volume"],
+      "allowedSleeves": ["FITTED_LONG_SLEEVE", "LAYERED_INNER_OUTER_SLEEVE"],
+      "silhouettes": {
+        "pullover": "standard_soft",
+        "zip": "fitted_soft",
+        "pouch_contrast": "standard_soft",
+        "cropped_charm": "cropped_soft",
+        "baggy_crest": "baggy_soft"
+      },
+      "frontGesture": "hood_plus_opening_or_pouch",
+      "backGesture": "broad_hood_mass",
+      "sideGesture": "hood_depth_and_pocket_termination",
+      "hoodStates": {
+        "down": "SUPPORTED_NOW_IN_SHIRT_TOPOLOGY",
+        "up": "NEEDS_FS_HAT_COMPANION_NOT_USED_IN_V5C2"
+      }
+    }
+  },
+  "constructionFeatures": {
+    "v_opening": {"views": ["front"], "topology": "center_descending"},
+    "buttoned_placket": {"views": ["front"], "topology": "center_terminated"},
+    "soft_yoke": {"views": ["front", "right", "left", "back"], "topology": "shoulder_wrap"},
+    "bow_knot": {"views": ["front"], "topology": "front_focal"},
+    "knit_yoke": {"views": ["front", "right", "left", "back"], "topology": "upper_wrap"},
+    "ribbed_hem": {"views": ["front", "right", "left", "back"], "topology": "lower_wrap"},
+    "lapel_opening": {"views": ["front", "right", "left"], "topology": "front_to_side"},
+    "paired_pockets": {"views": ["front"], "topology": "front_pair"},
+    "field_yoke": {"views": ["front", "right", "left", "back"], "topology": "shoulder_wrap"},
+    "hood_ring": {"views": ["front", "right", "left", "back"], "topology": "neck_wrap"},
+    "drawstrings": {"views": ["front"], "topology": "front_only"},
+    "center_zip": {"views": ["front", "right", "left"], "topology": "front_terminates_at_side"},
+    "pouch_pocket": {"views": ["front", "right", "left"], "topology": "front_with_side_termination"},
+    "contrast_hood": {"views": ["front", "right", "left", "back"], "topology": "neck_wrap"}
+  },
+  "motifLegend": {
+    ".": null,
+    "d": "dark_accent",
+    "s": "secondary",
+    "a": "accent",
+    "l": "light_accent"
+  },
+  "motifs": {
+    "none": ["."],
+    "tailored_tab": [
+      "dsd",
+      ".s.",
+      "dsd"
+    ],
+    "ribbon_knot": [
+      "a...a",
+      ".ala.",
+      "..d.."
+    ],
+    "knit_leaf_band": [
+      ".s...s.",
+      "sls.sls",
+      ".s...s."
+    ],
+    "field_tabs": [
+      "ddd.ddd",
+      "dld.dld"
+    ],
+    "sproutwing_charm": [
+      "..l..",
+      ".lal.",
+      "aldla",
+      ".ada.",
+      "..d.."
+    ],
+    "nightgarden_crest": [
+      "...l...",
+      ".s.l.s.",
+      "sladals",
+      ".adsda.",
+      "..dad..",
+      ".s...s.",
+      "...d..."
+    ],
+    "small_arc": [
+      ".sss.",
+      "s...s",
+      ".d.d."
+    ],
+    "rain_tab": [
+      "s.s",
+      ".a.",
+      "d.d"
+    ]
+  },
+  "rarityBudgets": {
+    "Common": {
+      "minimumConstructionFeatures": 2,
+      "maximumConstructionFeatures": 4,
+      "maximumMotifCells": 7,
+      "maximumSurfaceSystems": 2,
+      "maximumFixedColorsPerView": 5
+    },
+    "Uncommon": {
+      "minimumConstructionFeatures": 3,
+      "maximumConstructionFeatures": 6,
+      "maximumMotifCells": 12,
+      "maximumSurfaceSystems": 3,
+      "maximumFixedColorsPerView": 6
+    },
+    "Rare": {
+      "minimumConstructionFeatures": 4,
+      "maximumConstructionFeatures": 7,
+      "maximumMotifCells": 22,
+      "maximumSurfaceSystems": 4,
+      "maximumFixedColorsPerView": 7
+    }
+  },
+  "referenceBoundary": {
+    "vanilla": "Installed sprites are studied by a separate audit tool and are never loaded by generation code.",
+    "community": "hoodie.zip and shirt packs are quality references only; no reference PNG is loaded by generation code.",
+    "targetImages": "hoodie_design1 and hoodie_design2 influence semantic appeal goals only; their pixels, logos, lettering, and layouts are not reproduced."
+  }
+}

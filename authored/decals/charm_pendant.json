@@ -1,0 +1,31 @@
+{
+  "name": "charm_pendant",
+  "slot": "HEAD",
+  "zone": "side",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 5,
+  "anchor_cell": [
+    0,
+    0
+  ],
+  "anchor_point": "top_right",
+  "style": [
+    "festival",
+    "formal"
+  ],
+  "views": [
+    "front",
+    "left"
+  ],
+  "fits": [
+    "wide_brim_hat",
+    "felt_hat"
+  ],
+  "description": "a charm on a visible chain, hanging clear of the brim",
+  "per_view": false,
+  "size": [
+    3,
+    4
+  ]
+}

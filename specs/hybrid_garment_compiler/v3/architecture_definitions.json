@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "3.0.0",
+  "architectures": [
+    {
+      "id": "T_SHIRT", "version": "3.0.0", "inherits": null,
+      "identityFormula": "KNIT_BODY + BOUND_NECKLINE + SHORT_NATIVE_SLEEVES + SIMPLE_HEM",
+      "componentSlots": [
+        {"slot": "body", "type": "BODY", "required": true, "candidates": ["BODY_TEE_KNIT"], "parentSlot": null},
+        {"slot": "collar", "type": "COLLAR", "required": true, "candidates": ["COLLAR_BOUND_CREW"], "parentSlot": "body"},
+        {"slot": "sleeves", "type": "SLEEVE", "required": true, "candidates": ["SLEEVE_NATIVE_SHORT"], "parentSlot": "body"},
+        {"slot": "hem", "type": "HEM", "required": true, "candidates": ["HEM_STRAIGHT_LIGHT"], "parentSlot": "body"}
+      ],
+      "fitRanges": {"shoulder": ["narrow", "medium", "broad"], "waistSuppression": ["none", "low", "medium"], "bodyLength": ["cropped", "normal", "long"], "volume": ["fitted", "regular", "relaxed"]},
+      "rearStructure": {"rearNeckBand": true, "rearOpening": false, "rearCarrier": "clean_knit_field"},
+      "mandatoryIdentitySlots": ["body", "collar", "sleeves", "hem"],
+      "runtimeEnvelope": {"safeUpperBodyOnly": true, "nativeSleeves": true, "customSleevesAllowed": false, "legOverlapAllowed": false}
+    },
+    {
+      "id": "POLO_SHIRT", "version": "3.0.0", "inherits": "T_SHIRT",
+      "identityFormula": "T_SHIRT + FOLDED_COLLAR + SHORT_CENTER_PLACKET",
+      "removeSlots": ["collar"],
+      "componentSlots": [
+        {"slot": "collar", "type": "COLLAR", "required": true, "candidates": ["COLLAR_FOLDED_POLO"], "parentSlot": "body"},
+        {"slot": "opening", "type": "OPENING", "required": true, "candidates": ["OPENING_SHORT_POLO"], "parentSlot": "body"},
+        {"slot": "placket", "type": "PLACKET", "required": true, "candidates": ["PLACKET_POLO_SHORT"], "parentSlot": "opening"}
+      ],
+      "fitRanges": {"shoulder": ["narrow", "medium", "broad"], "waistSuppression": ["none", "low", "medium"], "bodyLength": ["cropped", "normal", "long"], "volume": ["fitted", "regular", "relaxed"]},
+      "rearStructure": {"rearCollarBand": true, "rearOpening": false, "rearCarrier": "uninterrupted_knit_back"},
+      "mandatoryIdentitySlots": ["body", "collar", "opening", "placket", "sleeves", "hem"],
+      "hardRejects": ["full_length_placket", "rear_placket", "woven_shirt_default"],
+      "runtimeEnvelope": {"safeUpperBodyOnly": true, "nativeSleeves": true, "customSleevesAllowed": false, "legOverlapAllowed": false}
+    },
+    {
+      "id": "SWEATER_VEST", "version": "3.0.0", "inherits": null,
+      "knowledgeBase": "SWEATER_LIKE_KNIT_CONSTRUCTION",
+      "identityFormula": "KNIT_VEST_BODY + BOUND_NECK + CUT_IN_ARMHOLES + INNER_SHIRT + RIBBED_TERMINATIONS - SLEEVES",
+      "componentSlots": [
+        {"slot": "body", "type": "BODY", "required": true, "candidates": ["BODY_KNIT_VEST"], "parentSlot": null},
+        {"slot": "collar", "type": "COLLAR", "required": true, "candidates": ["COLLAR_VEST_DEEP_V"], "parentSlot": "body"},
+        {"slot": "armholes", "type": "ARMHOLE", "required": true, "candidates": ["ARMHOLE_BOUND_CUT_IN"], "parentSlot": "body"},
+        {"slot": "inner", "type": "INNER_LAYER", "required": true, "candidates": ["INNER_LAYER_WOVEN_SHIRT"], "parentSlot": "body"},
+        {"slot": "hem", "type": "HEM", "required": true, "candidates": ["HEM_KNIT_RIBBED"], "parentSlot": "body"},
+        {"slot": "waistband", "type": "WAISTBAND", "required": true, "candidates": ["WAISTBAND_VEST_RIB"], "parentSlot": "body"},
+        {"slot": "ribbing", "type": "RIBBING", "required": true, "candidates": ["RIBBING_KNIT_TERMINATIONS"], "parentSlot": "body"}
+      ],
+      "fitRanges": {"shoulder": ["narrow", "medium"], "waistSuppression": ["low", "medium"], "bodyLength": ["cropped", "normal"], "volume": ["fitted", "regular"]},
+      "rearStructure": {"rearNeckBand": true, "rearOpening": false, "rearCarrier": "bound_armholes_and_clean_knit_mass"},
+      "mandatoryIdentitySlots": ["body", "collar", "armholes", "inner", "hem", "waistband"],
+      "hardRejects": ["sleeve_component_present", "missing_armhole", "floating_side_band"],
+      "runtimeEnvelope": {"safeUpperBodyOnly": true, "nativeSleeves": true, "customSleevesAllowed": false, "legOverlapAllowed": false}
+    },
+    {
+      "id": "CARDIGAN", "version": "3.0.0", "inherits": null,
+      "identityFormula": "SOFT_KNIT_OUTER + OPEN_FRONT + BROAD_INNER_LAYER + RIBBED_TERMINATIONS",
+      "componentSlots": [
+        {"slot": "body", "type": "BODY", "required": true, "candidates": ["BODY_SOFT_CARDIGAN"], "parentSlot": null},
+        {"slot": "collar", "type": "COLLAR", "required": true, "candidates": ["COLLAR_CARDIGAN_OPEN_BAND"], "parentSlot": "body"},
+        {"slot": "opening", "type": "OPENING", "required": true, "candidates": ["OPENING_CARDIGAN_SOFT"], "parentSlot": "body"},
+        {"slot": "sleeves", "type": "SLEEVE", "required": true, "candidates": ["SLEEVE_NATIVE_LONG"], "parentSlot": "body"},
+        {"slot": "inner", "type": "INNER_LAYER", "required": true, "candidates": ["INNER_LAYER_CARDIGAN_TEE"], "parentSlot": "body"},
+        {"slot": "pockets", "type": "POCKET", "required": false, "candidates": ["POCKET_CARDIGAN_PATCH_PAIR"], "parentSlot": "body", "selection": "intent_controlled"},
+        {"slot": "hem", "type": "HEM", "required": true, "candidates": ["HEM_KNIT_RIBBED"], "parentSlot": "body"},
+        {"slot": "ribbing", "type": "RIBBING", "required": true, "candidates": ["RIBBING_KNIT_TERMINATIONS"], "parentSlot": "body"}
+      ],
+      "fitRanges": {"shoulder": ["narrow", "medium", "broad"], "waistSuppression": ["none", "low", "medium"], "bodyLength": ["cropped", "normal", "long"], "volume": ["regular", "relaxed", "boxy"]},
+      "rearStructure": {"rearNeckBand": true, "rearOpening": false, "rearCarrier": "coherent_knit_mass"},
+      "mandatoryIdentitySlots": ["body", "collar", "opening", "sleeves", "inner", "hem"],
+      "hardRejects": ["hard_blazer_lapel", "narrow_center_stripe_inner_layer"],
+      "runtimeEnvelope": {"safeUpperBodyOnly": true, "nativeSleeves": true, "customSleevesAllowed": false, "legOverlapAllowed": false}
+    },
+    {
+      "id": "BLAZER", "version": "3.0.0", "inherits": null,
+      "identityFormula": "TAILORED_BODY + COLLAR_BAND + LAPELS + SHAPED_OPENING + INNER_SHIRT + AUTHORED_REAR",
+      "componentSlots": [
+        {"slot": "body", "type": "BODY", "required": true, "candidates": ["BODY_TAILORED_BLAZER"], "parentSlot": null},
+        {"slot": "collar", "type": "COLLAR", "required": true, "candidates": ["COLLAR_BLAZER_REAR_BAND"], "parentSlot": "body"},
+        {"slot": "opening", "type": "OPENING", "required": true, "candidates": ["OPENING_BLAZER_TAILORED"], "parentSlot": "body"},
+        {"slot": "lapels", "type": "LAPEL", "required": true, "candidates": ["LAPEL_NOTCHED_TAILORED"], "parentSlot": "opening"},
+        {"slot": "sleeves", "type": "SLEEVE", "required": true, "candidates": ["SLEEVE_NATIVE_LONG"], "parentSlot": "body"},
+        {"slot": "inner", "type": "INNER_LAYER", "required": true, "candidates": ["INNER_LAYER_WOVEN_SHIRT"], "parentSlot": "body"},
+        {"slot": "pockets", "type": "POCKET", "required": false, "candidates": ["POCKET_BLAZER_WELT_PAIR"], "parentSlot": "body", "selection": "intent_controlled"},
+        {"slot": "hem", "type": "HEM", "required": true, "candidates": ["HEM_BLAZER_SHAPED"], "parentSlot": "body"},
+        {"slot": "rear", "type": "REAR_PANEL", "required": true, "candidates": ["REAR_PANEL_BLAZER_SEAM_VENT"], "parentSlot": "body"}
+      ],
+      "fitRanges": {"shoulder": ["medium", "broad"], "waistSuppression": ["low", "medium", "high"], "bodyLength": ["cropped", "normal", "long"], "volume": ["fitted", "regular", "tapered"]},
+      "rearStructure": {"rearCollarBand": true, "rearOpening": false, "rearCarrier": "tailored_seam_and_optional_shallow_vent"},
+      "mandatoryIdentitySlots": ["body", "collar", "opening", "lapels", "sleeves", "inner", "hem", "rear"],
+      "hardRejects": ["missing_lapel", "rear_lapel_face", "generic_work_jacket_read"],
+      "runtimeEnvelope": {"safeUpperBodyOnly": true, "nativeSleeves": true, "customSleevesAllowed": false, "legOverlapAllowed": false}
+    },
+    {
+      "id": "SAILOR_TOP", "version": "3.0.0", "inherits": null,
+      "identityFormula": "WOVEN_TOP + BROAD_SAILOR_COLLAR + FRONT_V + MANDATORY_REAR_PANEL",
+      "componentSlots": [
+        {"slot": "body", "type": "BODY", "required": true, "candidates": ["BODY_SAILOR_WOVEN"], "parentSlot": null},
+        {"slot": "collar", "type": "COLLAR", "required": true, "candidates": ["COLLAR_SAILOR_BROAD"], "parentSlot": "body"},
+        {"slot": "sleeves", "type": "SLEEVE", "required": true, "candidates": ["SLEEVE_NATIVE_SHORT"], "parentSlot": "body"},
+        {"slot": "hem", "type": "HEM", "required": true, "candidates": ["HEM_STRAIGHT_LIGHT"], "parentSlot": "body"},
+        {"slot": "rear", "type": "REAR_PANEL", "required": true, "candidates": ["REAR_PANEL_SAILOR_SQUARE"], "parentSlot": "body"}
+      ],
+      "fitRanges": {"shoulder": ["narrow", "medium", "broad"], "waistSuppression": ["none", "low", "medium"], "bodyLength": ["cropped", "normal"], "volume": ["fitted", "regular", "relaxed", "boxy"]},
+      "rearStructure": {"rearNeckBand": false, "rearOpening": false, "rearCarrier": "mandatory_square_or_tapered_sailor_panel"},
+      "mandatoryIdentitySlots": ["body", "collar", "sleeves", "hem", "rear"],
+      "hardRejects": ["missing_rear_sailor_panel", "front_only_collar_identity"],
+      "runtimeEnvelope": {"safeUpperBodyOnly": true, "nativeSleeves": true, "customSleevesAllowed": false, "legOverlapAllowed": false}
+    }
+  ]
+}

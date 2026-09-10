@@ -1,0 +1,25 @@
+{
+  "formatVersion": "4.6",
+  "article": "FOOTWEAR",
+  "frameContract": "lower_body_frame_contracts.json",
+  "zones": [
+    "toe",
+    "vamp",
+    "ankle",
+    "shaft",
+    "cuff",
+    "sole",
+    "strap",
+    "buckle_hint",
+    "trim",
+    "material_contrast"
+  ],
+  "motionRules": {
+    "sourceSelection": "UniformAnimation resolves current Farmer state/frame to a full 16x32 authored source frame",
+    "coverage": "all decoration is clipped to, or deterministically extended from, the per-frame coverage envelope",
+    "direction": "FS selects a facing model; each model retains its official condition map",
+    "water": "appearance hides while swimming and while bathing clothes are active",
+    "nativeOffset": "disabled because pose placement is already encoded in each full source frame"
+  },
+  "status": "EXPERIMENTAL"
+}

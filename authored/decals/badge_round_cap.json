@@ -1,0 +1,31 @@
+{
+  "name": "badge_round_cap",
+  "motif_class": "badge",
+  "pending": true,
+  "slot": "HEAD",
+  "zone": "front_panel",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 7,
+  "anchor_cell": [
+    1,
+    2
+  ],
+  "anchor_point": "top_right",
+  "style": [
+    "smart",
+    "work"
+  ],
+  "views": [
+    "front"
+  ],
+  "fits": [
+    "soft_cap"
+  ],
+  "description": "a round metal badge with a rimmed edge",
+  "per_view": false,
+  "size": [
+    3,
+    3
+  ]
+}

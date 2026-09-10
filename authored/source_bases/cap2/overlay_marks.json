@@ -1,0 +1,40 @@
+{
+  "_comment": "GENERATOR-AUTHORED crown marks for Cap 2. Defined as EXPLICIT CELLS in sprite coordinates, not as art on a rectangle — CAP2_FRONT_MOTIF_SAFE_MASK is authoritative and every cell below is checked against it. Thin strokes only: the previous filled star/heart/shield style read as blobs at gameplay scale. Value is step 1 (81), dark against the light crown.",
+  "step": 1,
+  "marks": {
+    "bar": {
+      "description": "short horizontal bar",
+      "cells": [[8,6],[9,6],[10,6],[11,6]]
+    },
+    "twin_bars": {
+      "description": "two short parallel vertical strokes",
+      "cells": [[8,6],[8,7],[11,6],[11,7]]
+    },
+    "angle_l": {
+      "description": "L / angle mark, in the spirit of the reference cap",
+      "cells": [[8,6],[8,7],[9,7],[10,7]]
+    },
+    "chevron": {
+      "description": "tiny chevron",
+      "cells": [[8,6],[11,6],[9,7],[10,7]]
+    },
+    "dot": {
+      "description": "tiny dot",
+      "cells": [[9,6],[10,6],[9,7],[10,7]]
+    },
+    "ring": {
+      "description": "tiny circle outline",
+      "cells": [[9,5],[10,5],[8,6],[11,6],[9,7],[10,7]]
+    },
+    "zigzag": {
+      "description": "small lightning-like dogleg",
+      "cells": [[10,5],[9,6],[10,7]]
+    }
+  },
+  "rejected": {
+    "angle": "crossed the safe mask at (8,5) and (11,5) — crown rim",
+    "glyph": "crossed the safe mask at (8,5) and (11,5) — crown rim",
+    "triangle": "legal, but a filled 8-cell wedge; reads as a blob, not a mark",
+    "note": "rejected rather than shifted or deformed to force a pass"
+  }
+}

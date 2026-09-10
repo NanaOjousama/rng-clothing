@@ -1,0 +1,24 @@
+{
+  "name": "brooch_round",
+  "motif_class": "badge",
+  "slot": "HEAD",
+  "zone": "side",
+  "z": 3,
+  "style": [
+    "formal",
+    "smart"
+  ],
+  "views": [
+    "front",
+    "left"
+  ],
+  "fits": [
+    "felt_hat"
+  ],
+  "description": "a round brooch, rimmed dark, on the side of the crown",
+  "per_view": false,
+  "size": [
+    3,
+    3
+  ]
+}

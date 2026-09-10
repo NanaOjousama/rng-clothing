@@ -1,0 +1,17 @@
+{
+  "id": "COLLARED_SHIRT",
+  "blank": "torso_basic",
+  "identity": [
+    "collar_shirt_folded",
+    "button_accent"
+  ],
+  "allowed": [
+    "collar_shirt_folded",
+    "placket_buttons",
+    "button_accent",
+    "hem_plain"
+  ],
+  "sleeve_slot": "primary",
+  "hide_sleeves": false,
+  "max_colors": 8
+}

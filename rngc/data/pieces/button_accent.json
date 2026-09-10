@@ -1,0 +1,26 @@
+{
+  "id": "button_accent",
+  "kind": "detail",
+  "layer": "DETAIL",
+  "slot": "accent",
+  "identity": true,
+  "wrap": false,
+  "note": "Three single-cell buttons in the accent slot. Vanilla 248's most readable identity cue is two single high-contrast pixels.",
+  "views": {
+    "front": {
+      "origin": [
+        8,
+        5
+      ],
+      "rows": [
+        "b",
+        ".",
+        ".",
+        "b",
+        ".",
+        ".",
+        "b"
+      ]
+    }
+  }
+}

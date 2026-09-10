@@ -1,0 +1,19 @@
+{
+  "id": "VEST",
+  "blank": "torso_basic",
+  "identity": [
+    "bands_inner_shirt"
+  ],
+  "allowed": [
+    "bands_inner_shirt",
+    "collar_shirt_folded",
+    "placket_buttons",
+    "button_accent",
+    "neck_crew",
+    "hem_plain"
+  ],
+  "sleeve_slot": "secondary",
+  "hide_sleeves": false,
+  "max_colors": 10,
+  "note": "Two full ramps (vest + inner shirt) plus one accent: vanilla vest 278 uses 8 colours; budget 10."
+}

@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rng-clothing.invalid/schema/garment_recipe_v2.schema.json",
+  "title": "RNG Clothing V2 Construction-First Vanilla Shirt Recipe",
+  "description": "A coordinate-free semantic recipe. Logical pixel coordinates belong only to V2 archetype mask data.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "generationIndex",
+    "seed",
+    "category",
+    "styleProfile",
+    "referenceTraits",
+    "archetype",
+    "rarity",
+    "construction",
+    "substantialFeatures",
+    "microDetails",
+    "colorBlocking",
+    "paletteFamily",
+    "accent",
+    "dyeable",
+    "itemName",
+    "itemDescription"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(?:lifestyle-v2-(?:[0-9]{2}|migrated-[0-9]{2}|control-(?:t-shirt|sweater|button-shirt|jacket|sailor-top))|aot-style-poc-[0-9]{2})$"
+    },
+    "generationIndex": {"type": "integer", "minimum": 1, "maximum": 20},
+    "seed": {"type": "integer", "minimum": 0},
+    "category": {"const": "Lifestyle"},
+    "styleProfile": {"enum": ["General", "AoTInspired"]},
+    "referenceTraits": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "compact_straight",
+          "clean_layering",
+          "localized_contrast",
+          "restrained_palette",
+          "practical_fit",
+          "disciplined_collar",
+          "simple_hem",
+          "structural_color_blocking",
+          "compact_cropped_outerwear",
+          "structured_military_collar",
+          "disciplined_paneling",
+          "utility_tailoring",
+          "waist_emphasis",
+          "dark_formal_outerwear",
+          "civilian_fieldwear"
+        ]
+      }
+    },
+    "archetype": {
+      "enum": ["T_SHIRT", "SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"]
+    },
+    "rarity": {"enum": ["Common", "Uncommon", "Rare"]},
+    "construction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fit",
+        "neckline",
+        "collar",
+        "closure",
+        "layering",
+        "hem",
+        "panelLayout"
+      ],
+      "properties": {
+        "fit": {"enum": ["fitted", "regular", "relaxed"]},
+        "neckline": {"enum": ["round", "crew", "shallow_v", "open"]},
+        "collar": {"enum": ["none", "small_folded", "wide", "sailor"]},
+        "closure": {"enum": ["none", "center_open", "buttons"]},
+        "layering": {
+          "enum": ["single_layer", "visible_inner_layer", "overlay_panel"]
+        },
+        "hem": {"enum": ["plain", "ribbed", "structured", "contrast_band"]},
+        "panelLayout": {
+          "enum": [
+            "solid",
+            "center_placket",
+            "split_outer_panels",
+            "yoke",
+            "upper_lower_split"
+          ]
+        }
+      }
+    },
+    "substantialFeatures": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "contrast_inner_layer",
+          "broad_collar",
+          "ribbed_hem",
+          "major_panel_contrast",
+          "center_placket",
+          "wrapping_stripe",
+          "yoke",
+          "split_outer_panels",
+          "structured_lower_band"
+        ]
+      }
+    },
+    "microDetails": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "small_chest_accent",
+          "tiny_button",
+          "small_pin",
+          "single_accent_pixel",
+          "tiny_trim_mark"
+        ]
+      }
+    },
+    "colorBlocking": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primaryRegion", "secondaryRegion", "accentRegion"],
+      "properties": {
+        "primaryRegion": {
+          "enum": ["body", "outer_panels"]
+        },
+        "secondaryRegion": {
+          "enum": [
+            "none",
+            "collar",
+            "yoke",
+            "placket",
+            "outer_panels",
+            "inner_layer",
+            "hem",
+            "ribbing",
+            "stripe"
+          ]
+        },
+        "accentRegion": {
+          "enum": ["none", "body", "collar", "yoke", "placket", "hem", "stripe"]
+        }
+      }
+    },
+    "paletteFamily": {
+      "enum": [
+        "forest_cream",
+        "navy_ivory",
+        "rust_brown",
+        "charcoal_burgundy",
+        "denim_cream",
+        "sage_tan",
+        "warm_neutral",
+        "cool_neutral",
+        "field_tan_olive",
+        "olive_warm_beige",
+        "ivory_black_brown",
+        "dusty_khaki_deep_gray",
+        "civilian_burgundy_charcoal"
+      ]
+    },
+    "accent": {
+      "enum": [
+        "none",
+        "rust",
+        "brass",
+        "deep_brown",
+        "ivory",
+        "burgundy",
+        "dusty_rose",
+        "navy"
+      ]
+    },
+    "dyeable": {"const": true},
+    "itemName": {"type": "string", "minLength": 3, "maxLength": 48},
+    "itemDescription": {"type": "string", "minLength": 8, "maxLength": 180}
+  }
+}

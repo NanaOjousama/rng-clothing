@@ -1,0 +1,41 @@
+{
+  "steps": 6,
+  "profiles": {
+    "vanilla_016": {
+      "name": "vanilla_016",
+      "source": "vanilla hats.png #16",
+      "levels": [
+        18.8,
+        26.4,
+        41.4,
+        62.2,
+        109.4,
+        146.5
+      ],
+      "span": 127.6,
+      "floor": 18.8,
+      "bias": 0.381,
+      "highlight_jump": 37.1,
+      "shadow_compression": 0.177,
+      "max_highlight_share": 0.057
+    },
+    "vanilla_033": {
+      "name": "vanilla_033",
+      "source": "vanilla hats.png #33",
+      "levels": [
+        24.3,
+        45.1,
+        56.9,
+        68.7,
+        101.6,
+        120.9
+      ],
+      "span": 96.6,
+      "floor": 24.3,
+      "bias": 0.469,
+      "highlight_jump": 19.3,
+      "shadow_compression": 0.337,
+      "max_highlight_share": 0.198
+    }
+  }
+}

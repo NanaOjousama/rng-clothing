@@ -1,0 +1,47 @@
+{
+  "name": "top_pom",
+  "motif_class": "pom",
+  "slot": "HEAD",
+  "zone": "crown_top",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 8,
+  "anchor_cell": [
+    1,
+    2
+  ],
+  "anchor_point": "top_centre",
+  "style": [
+    "casual",
+    "cottagecore",
+    "festival"
+  ],
+  "views": [
+    "front",
+    "left",
+    "back"
+  ],
+  "fits": [
+    "knit_cap"
+  ],
+  "description": "a soft pom sitting on the crown of a knitted cap",
+  "per_view": true,
+  "size": [
+    4,
+    3
+  ],
+  "sizes": {
+    "front": [
+      4,
+      3
+    ],
+    "left": [
+      4,
+      3
+    ],
+    "back": [
+      4,
+      3
+    ]
+  }
+}

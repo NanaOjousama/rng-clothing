@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "4.1.0-experimental",
+  "purpose": "Construction-aware Stardew-scale pixel art grammar. Geometry, semantic regions, form shading, surface design, and cleanup are separate ownership stages.",
+  "logicalFrame": [
+    16,
+    16
+  ],
+  "lighting": {
+    "key": "upper_left",
+    "rule": "directional lighting is stable across all garment families"
+  },
+  "ownershipStages": [
+    {
+      "id": "SILHOUETTE_TOPOLOGY",
+      "mayChangeAlpha": true,
+      "owns": [
+        "body_envelope",
+        "component_footprints",
+        "attachments",
+        "occlusion"
+      ]
+    },
+    {
+      "id": "SEMANTIC_REGIONS",
+      "mayChangeAlpha": false,
+      "owns": [
+        "component_region_labels"
+      ]
+    },
+    {
+      "id": "MATERIAL_FORM",
+      "mayChangeAlpha": false,
+      "owns": [
+        "shade_roles",
+        "form_planes"
+      ]
+    },
+    {
+      "id": "SURFACE_DESIGN",
+      "mayChangeAlpha": false,
+      "owns": [
+        "pattern",
+        "motif",
+        "decorative_trim"
+      ]
+    },
+    {
+      "id": "NON_DESTRUCTIVE_CLEANUP",
+      "mayChangeAlpha": false,
+      "owns": [
+        "cluster_cleanup"
+      ],
+      "forbidden": [
+        "structural_role_overwrite",
+        "component_geometry_change"
+      ]
+    }
+  ],
+  "universalClusterRules": {
+    "opaqueBodyNormallyConnected": true,
+    "detachedOpaqueIslandsForbidden": true,
+    "unsupportedTopRowCellsForbidden": true,
+    "singletonShadePixels": "forbidden unless tagged button/metal/motif",
+    "deepShadowRequiresReason": true,
+    "dominantFabricMustReadAsContinuousMass": true,
+    "fullWidthDeepDarkHem": "forbidden unless architecture explicitly requires it",
+    "frontDetailDominance": "side/back detail density must not exceed front unless identity is rear/side dominant",
+    "antiPatterns": [
+      "pillow_shading",
+      "banding",
+      "speckle_noise",
+      "uniform_black_outline",
+      "symmetric_light_on_both_sides"
+    ]
+  },
+  "shadeRoles": [
+    "EXTERIOR_CONTOUR",
+    "DEEP_CREASE",
+    "STRUCTURAL_EDGE",
+    "SHADOW",
+    "BASE",
+    "LIGHT",
+    "OPTIONAL_HIGHLIGHT"
+  ],
+  "materialFormRules": {
+    "COTTON_TEE": {
+      "midtoneMass": "very_high",
+      "edgeSharpness": "soft",
+      "highlight": "small upper plane",
+      "texture": "none",
+      "constructionContrast": "neck_binding_and_sleeve_edge"
+    },
+    "WOVEN_SHIRT": {
+      "midtoneMass": "high",
+      "edgeSharpness": "crisp_at_collar_placket_cuff",
+      "highlight": "short planar",
+      "texture": "ordered_only",
+      "constructionContrast": "stronger_than_body_folds"
+    },
+    "KNIT": {
+      "midtoneMass": "very_high",
+      "edgeSharpness": "soft",
+      "highlight": "sparse soft",
+      "texture": "clustered_rib_or_cable_only",
+      "constructionContrast": "termination_ribbing"
+    },
+    "SWEATSHIRT": {
+      "midtoneMass": "high",
+      "edgeSharpness": "soft",
+      "highlight": "broad low_contrast",
+      "texture": "none",
+      "constructionContrast": "ribbed_terminations"
+    },
+    "CARDIGAN": {
+      "midtoneMass": "high",
+      "edgeSharpness": "soft_hanging_edges",
+      "highlight": "soft",
+      "texture": "quiet_knit",
+      "constructionContrast": "open_edges_vs_inner_layer"
+    },
+    "DENIM_WORKWEAR": {
+      "midtoneMass": "high",
+      "edgeSharpness": "firm",
+      "highlight": "sparse_edge_wear",
+      "texture": "large_panels",
+      "constructionContrast": "yoke_pocket_placket"
+    },
+    "UTILITY_SHELL": {
+      "midtoneMass": "high",
+      "edgeSharpness": "firm",
+      "highlight": "small_planar",
+      "texture": "none",
+      "constructionContrast": "overlaps_pockets_opening"
+    },
+    "SPORT_SHELL": {
+      "midtoneMass": "high",
+      "edgeSharpness": "crisp",
+      "highlight": "small_clean",
+      "texture": "none",
+      "constructionContrast": "large_color_blocks"
+    },
+    "BOMBER_OUTERWEAR": {
+      "midtoneMass": "high",
+      "edgeSharpness": "rounded",
+      "highlight": "rounded_shoulder_plane",
+      "texture": "none",
+      "constructionContrast": "collar_cuff_waist_rib_triad"
+    },
+    "BLAZER_FORMAL": {
+      "midtoneMass": "high",
+      "edgeSharpness": "sharp_sparse",
+      "highlight": "lapel_shoulder_only",
+      "texture": "minimal",
+      "constructionContrast": "lapel_outer_inner_hierarchy"
+    },
+    "CEREMONIAL_FABRIC": {
+      "midtoneMass": "high",
+      "edgeSharpness": "controlled",
+      "highlight": "one_focal_material_plane",
+      "texture": "bounded_sparse",
+      "constructionContrast": "nested_layers_plus_one_focal"
+    }
+  },
+  "directionRules": {
+    "front": {
+      "role": "identity_and_opening_hierarchy",
+      "detailBudget": 1.0
+    },
+    "right": {
+      "role": "depth_reconstruction",
+      "detailBudget": 0.65,
+      "forbidden": [
+        "front_only_closure_copy"
+      ]
+    },
+    "back": {
+      "role": "rear_construction_and_quiet_mass",
+      "detailBudget": 0.6,
+      "exceptions": [
+        "sailor_rear_panel",
+        "hood",
+        "back_yoke",
+        "rear_belt"
+      ]
+    },
+    "left": {
+      "role": "depth_reconstruction",
+      "detailBudget": 0.65,
+      "forbidden": [
+        "front_only_closure_copy"
+      ]
+    }
+  },
+  "surfaceBudget": {
+    "SIMPLE": {
+      "dominantConstructionGestures": 1,
+      "supportingSurfaceSystemsMax": 1
+    },
+    "STANDARD": {
+      "dominantConstructionGestures": 1,
+      "supportingSurfaceSystemsMax": 2
+    }
+  },
+  "humanGate": "Farmer-scale visual review overrides static pass status",
+  "ownershipContract": "ownership_contract.json",
+  "safeEnvelopeContract": "safe_envelopes.json",
+  "componentShapeLibrary": "component_shape_variants.json",
+  "legacyPolishPolicy": {
+    "mode": "CLONE_MERGE_WRAPPER",
+    "rule": "frozen legacy polish may mutate only cells permitted by ownership ledger",
+    "illegalMutation": "REJECT_AND_TRACE"
+  },
+  "identitySalience": {
+    "rule": "every family defines 1-3 mandatory Farmer-scale visual anchors",
+    "examples": {
+      "POLO_SHIRT": [
+        "folded_collar",
+        "short_front_placket"
+      ],
+      "SWEATER_VEST": [
+        "v_binding",
+        "cutin_armhole",
+        "inner_layer_exposure"
+      ],
+      "SAILOR_TOP": [
+        "broad_sailor_collar",
+        "rear_sailor_panel"
+      ],
+      "BLAZER": [
+        "lapel",
+        "shaped_front_opening"
+      ],
+      "CARDIGAN": [
+        "open_front_band",
+        "inner_layer"
+      ]
+    },
+    "failure": "if anchors are not visually represented in required directions, compilation fails"
+  }
+}

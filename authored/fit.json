@@ -1,0 +1,92 @@
+{
+  "_comment": "Fit is baked into the Fashion Sense model at pack build time. FS reads HeadPosition ONCE when the content pack loads, so there is no live runtime offset: a change here needs a pack rebuild and a game restart. Values must be INTEGERS \u2014 a float, even 0.0, makes FS reject the whole model as invalid JSON and load no hats at all, silently. Units are SPRITE pixels; at Scale 4 one sprite pixel is four screen pixels. NEGATIVE Y moves the hat DOWN (measured, session 20260907-011855).",
+  "ranges": {
+    "HatOffsetX": [
+      -3,
+      3
+    ],
+    "HatOffsetY": [
+      -3,
+      3
+    ]
+  },
+  "defaults": {
+    "felt_hat": {
+      "HatOffsetX": 0,
+      "HatOffsetY": -2
+    },
+    "wide_brim_hat": {
+      "HatOffsetX": 0,
+      "HatOffsetY": -2
+    },
+    "soft_cap": {
+      "HatOffsetX": 0,
+      "HatOffsetY": -2
+    },
+    "knit_cap": {
+      "HatOffsetX": 0,
+      "HatOffsetY": -1
+    }
+  },
+  "player": {
+    "HatOffsetX": 0,
+    "HatOffsetY": 0
+  },
+  "measured_from": {
+    "sweep_session": "20260907-011855",
+    "hat_bottom_by_offset": {
+      "felt_hat": {
+        "+2": 23,
+        "0": 31,
+        "-2": 39
+      },
+      "wide_brim_hat": {
+        "+2": 23,
+        "0": 31,
+        "-2": 39
+      },
+      "soft_cap": {
+        "+2": 23,
+        "0": 31,
+        "-2": 39
+      },
+      "knit_cap": {
+        "+1": 31,
+        "0": 35,
+        "-1": 39
+      }
+    },
+    "targets": {
+      "hat_bottom": 39,
+      "note": "the four reference hats; vanilla median is 51"
+    }
+  },
+  "HatScale": {
+    "supported": "yes \u2014 our earlier finding was wrong",
+    "correction": "authored/fit.json previously recorded 'Fashion Sense ignored a top-level Scale field: soft_cap drawn at Scale 3, 4 and 5 rendered identically'. That experiment placed Scale at the TOP LEVEL of hat.json, where it is not a property of any model. Scale is a per-direction property of AppearanceModel (src/AppearanceModel.cs:35, 'public float Scale { get; set; } = 4f;') and is documented at wiki/Scale-Property. FS did not ignore it; we never set it.",
+    "status": "UNTESTED by us in-game. No official Example Pack file declares Scale, so the correction rests on the C# model field and the wiki, not on a working example. Re-test with Scale inside each direction block before relying on it.",
+    "where": "inside FrontHat / RightHat / LeftHat / BackHat, alongside HatSize",
+    "default": 4.0,
+    "note": "Scale 4 is 1:1 with the farmer's pixel grid. Non-integer ratios still risk resampling against a 4x farmer, so authoring size remains preferable where possible.",
+    "source": "https://github.com/Floogen/FashionSense/wiki/Scale-Property"
+  },
+  "soft_cap_refit": {
+    "why": "The cap base was redrawn (crown 10 -> 14 sprite px wide, envelope now rows 3-11 front / 4-12 back, identical to felt_hat). The old art measured 40x32 screen px with its top 4 px BELOW felt's, which is the 'too small, sitting on the forehead' complaint.",
+    "offset": "HatOffsetY -2 is unchanged and now correct by construction: fit is a property of the frame, and the cap's drawn rows are now the same rows as felt_hat, which seats correctly at -2.",
+    "predicted_in_game": {
+      "bbox_px": [
+        64,
+        36
+      ],
+      "head_top_delta_px": 4,
+      "was": {
+        "bbox_px": [
+          40,
+          32
+        ],
+        "head_top_delta_px": 8
+      }
+    },
+    "confirm_with": "one capture session after the next pack rebuild + restart; compare front_hatonly bbox against Dec01FeltPlain"
+  }
+}

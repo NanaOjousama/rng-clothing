@@ -1,0 +1,164 @@
+{
+  "_comment": "Locked policy. Two parts: how a source motif becomes 20x20 art, and what may sit where on a given base. Both are data so the rules can be checked rather than remembered.",
+  "conversion": {
+    "default": "nearest_neighbour_resize",
+    "rules": [
+      {
+        "when": "the motif's target footprint is at least 3x3 cells",
+        "method": "nearest_neighbour_resize",
+        "why": "measured A/B: at 3x3 and above a nearest-neighbour reduction and a hand redraw land within one cell of each other once the integration pass runs, so the cheaper path wins"
+      },
+      {
+        "when": "the target is smaller than 3x3, or carries a feature one cell wide",
+        "method": "native_remake",
+        "why": "below 3x3 point sampling starts MISSING the shape rather than simplifying it: the 2x3 gem lost a third of its cells to background sampling"
+      },
+      {
+        "when": "a resize drops cells the motif's identity depends on",
+        "method": "native_remake",
+        "why": "fidelity to the source is not the goal; recognisability at gameplay scale is"
+      }
+    ],
+    "resize_constraints": [
+      "nearest neighbour only",
+      "no blur",
+      "no anti-aliasing",
+      "no smoothing",
+      "background dropped before sampling"
+    ],
+    "always_after": "integration_pass",
+    "reject_if": "it still reads as pasted, speckled or foreign at gameplay scale"
+  },
+  "bases": {
+    "soft_cap": {
+      "_comment": "A cap is not a shallow fedora. Its zone vocabulary IS the policy: there is no band zone on a cap, so a hat band has nowhere to go and is banned by geometry rather than by a list.",
+      "zones": {
+        "front_panel": {
+          "carries": "exactly one primary emblem",
+          "classes": [
+            "emblem",
+            "patch",
+            "logo",
+            "crest",
+            "star",
+            "heart",
+            "flower",
+            "leaf",
+            "badge",
+            "gem",
+            "pin",
+            "stitched_symbol"
+          ],
+          "max": 1
+        },
+        "top": {
+          "carries": "the crown fastening only",
+          "classes": [
+            "button",
+            "pom"
+          ],
+          "max": 1
+        },
+        "side_panel": {
+          "carries": "small side dressing",
+          "classes": [
+            "tag",
+            "pin",
+            "flower",
+            "leaf",
+            "ribbon_tag"
+          ],
+          "max": 1
+        },
+        "visor": {
+          "carries": "an edge treatment only",
+          "classes": [
+            "stitch_accent",
+            "edge_accent"
+          ],
+          "max": 1
+        }
+      },
+      "banned_classes": [
+        "band",
+        "buckled_band",
+        "woven_trim",
+        "lace",
+        "long_feather",
+        "bow",
+        "tassel"
+      ],
+      "banned_why": "wide-brim and fedora dressing: a cap has no band to carry them and no brim to edge, and at this crown height they swamp the silhouette",
+      "cardinality": {
+        "primary_front_emblem": 1,
+        "note": "front_panel is its own occupancy region, so the existing one-motif-per-region rule already enforces this"
+      }
+    }
+  },
+  "soft_cap_front_emblem": {
+    "zone": "front_panel, derived from the widest CROWN row (never the visor row), inset 2 cells from the outline on each side and stopped 2 rows above the visor",
+    "seating": "centred horizontally in the panel; vertically centred with the integer-division bias, which lands upper-middle",
+    "margin": "at least one row of plain cloth between the emblem and the visor; an emblem may never touch or merge with the visor",
+    "directions": {
+      "front": "full emblem",
+      "left/right": "only where the foreshortened front crown is visible; the profile panel is 3 cells wide, so anything wider is dropped rather than squeezed \u2014 the compression is enforced by geometry, not by a per-view redraw",
+      "back": "none; the back view has no front_panel zone at all"
+    },
+    "enforced_by": "cap_zones() in tools/author_base_assets.py and _placement() in v5/authored.py"
+  },
+  "cap_visor_grammar": {
+    "derived_from": "29 cap-like hats in vanilla hats.png + the mod-author sheet, identified structurally (profile widest row projects off-centre forward over a shallow crown); see tools/analyze_cap_visor_corpus.py and output/softcap_foundation/visor_corpus.txt",
+    "width": {
+      "front": "NEVER wider than the crown. The canonical cluster (vanilla 16/18/43/77/94/102/109/113 and mod 44) is exactly 1.00 \u2014 a peak projects forward, and head-on you see it foreshortened, not spread. A front view wider than its crown reads as a brim.",
+      "profile": "1.10-1.56, median 1.25. The whole projection lives here.",
+      "note": "This corrects an earlier guard that applied a single <=1.15 brim_ratio to every view; vanilla's own baseball caps measure 1.56 in profile."
+    },
+    "value": {
+      "rule": "the visor breaks DARK from the crown above it",
+      "evidence": "front: 17/29 darker, 2/29 lighter, median break -12; the canonical cluster runs -19 to -60. profile: 14/29 darker, 2/29 lighter.",
+      "why": "the visor is a plane turning down and away from the light, so it takes the bottom of the ramp while the crown holds the top; that break, not the outline, is what makes a peak read at gameplay scale",
+      "range_use": "vanilla 16 draws its crown at L 109-146 and its visor at L 23-41 on a 15-146 span \u2014 the crown lives at the TOP of the ramp, which is also what keeps the cap from reading as a dark blob"
+    },
+    "rows": {
+      "front": "2 (median): a full-width dark band, then a narrower darkest edge",
+      "profile": "2-3, tapering to a thin tip"
+    }
+  },
+  "rejected_bases": {
+    "soft_cap": {
+      "status": "REJECTED \u2014 research / reference only",
+      "excluded_from": "generator promotion, remixing, motif work",
+      "why": "A procedurally authored cap that never read as naturally worn. Attempts: +1 cell per side, +1 crown row with a broadened apex, an aperture flare to head width, and a KEEP/HIDE/BALD hair-policy comparison. Metrics improved at each step; the in-game read did not.",
+      "evidence": [
+        "output/softcap_worn/",
+        "output/softcap_diag/",
+        "output/hairpolicy/",
+        "qc_bridge/captures/20260908-212207",
+        "qc_bridge/captures/20260909-004228"
+      ],
+      "superseded_by": "source-derived constructions from `generator conent`, used as actual source pixels rather than redrawn",
+      "rule": "do not modify this base again; do not regenerate a replacement for it"
+    }
+  },
+  "source_art_authority": {
+    "rule": "The source pixels are the construction authority.",
+    "do_not": [
+      "redraw a source base",
+      "generate a similar replacement",
+      "average a source with other references",
+      "reinterpret the silhouette",
+      "invent a new visor/crown/body shape",
+      "treat the source only as inspiration"
+    ],
+    "workflow": [
+      "ingest the actual source PNG/JSON",
+      "preserve the authored construction exactly",
+      "classify the item/family",
+      "identify only clearly separable reusable components",
+      "prove exact reconstruction of the original",
+      "use the real extracted pieces in the generator",
+      "only then make controlled remixes/recolours"
+    ],
+    "fallback": "a component that cannot be separated without damaging the source is marked BASE-SPECIFIC or REFERENCE-ONLY, never regenerated"
+  }
+}

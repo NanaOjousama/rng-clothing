@@ -1,0 +1,60 @@
+{
+  "formatVersion": 4,
+  "purpose": "Coordinate-free article compatibility and translation vocabulary.",
+  "articles": {
+    "FITTED_SHIRT": {
+      "status": "SAFE_NOW",
+      "compatibleArchetypes": ["BUTTON_SHIRT"],
+      "requiredFeatures": ["tailored_lower_taper"],
+      "validFocalAreas": ["collar", "shoulders", "upper_chest", "center_chest", "side_chest", "waist"],
+      "featureZones": ["collar", "yoke", "chest", "placket", "waist", "sleeves"],
+      "sleeveMaterial": "outer_fabric",
+      "rarityInterpretation": {"Common": "clean collar/placket idea", "Uncommon": "coordinated yoke or badge", "Rare": "premium tailored surface composition without outer-shell mass"}
+    },
+    "SWEATER_TOP": {
+      "status": "SAFE_NOW",
+      "compatibleArchetypes": ["SWEATER"],
+      "requiredFeatures": ["uninterrupted_cloth_mass"],
+      "validFocalAreas": ["collar", "shoulders", "upper_chest", "center_chest", "side_chest", "waist", "hem"],
+      "featureZones": ["collar", "yoke", "chest", "waist", "hem", "sleeves"],
+      "sleeveMaterial": "outer_fabric",
+      "rarityInterpretation": {"Common": "one mass/termination idea", "Uncommon": "surface focal plus termination support", "Rare": "premium motif or panel composition on a restrained soft silhouette"}
+    },
+    "VEST_TOP": {
+      "status": "SAFE_NOW_BOUNDED",
+      "compatibleArchetypes": ["BUTTON_SHIRT"],
+      "requiredFeatures": ["vest_body_frame", "inner_shirt_sleeves"],
+      "validFocalAreas": ["collar", "shoulders", "upper_chest", "center_chest", "side_chest", "waist"],
+      "featureZones": ["collar", "yoke", "chest", "placket", "waist", "sleeves", "back_yoke"],
+      "sleeveMaterial": "inner_shirt",
+      "rarityInterpretation": {"Common": "simple vest/under-shirt relationship", "Uncommon": "strong vest frame plus trim or badge", "Rare": "premium waistcoat composition with focal surface design"}
+    },
+    "CROPPED_JACKET": {
+      "status": "SAFE_NOW_BOUNDED",
+      "compatibleArchetypes": ["JACKET"],
+      "requiredFeatures": ["shortened_outer_shell", "cropped_termination", "split_outer_shell", "visible_inner_layer"],
+      "validFocalAreas": ["collar", "shoulders", "upper_chest", "side_chest", "waist"],
+      "featureZones": ["collar", "outer_panels", "inner_layer", "chest", "waist", "sleeves", "back_yoke"],
+      "sleeveMaterial": "outer_fabric",
+      "rarityInterpretation": {"Common": "not selected in V4", "Uncommon": "clear crop plus one themed support", "Rare": "hero crop, lapel, shell, focal badge, and controlled finishing"}
+    },
+    "SHORT_OUTERWEAR": {
+      "status": "SAFE_NOW",
+      "compatibleArchetypes": ["JACKET"],
+      "requiredFeatures": ["full_short_hem", "structured_back"],
+      "validFocalAreas": ["collar", "shoulders", "upper_chest", "center_chest", "side_chest", "waist", "hem", "upper_back"],
+      "featureZones": ["collar", "outer_panels", "inner_layer", "chest", "waist", "hem", "sleeves", "back_yoke"],
+      "sleeveMaterial": "outer_fabric",
+      "rarityInterpretation": {"Common": "not selected in V4", "Uncommon": "recognizable outer shell and full termination", "Rare": "premium full short shell with distinct closure/back treatment"}
+    },
+    "LONG_OUTERWEAR": {
+      "status": "EXPERIMENTAL_REJECTED_FOR_V4_OUTPUT",
+      "compatibleArchetypes": ["JACKET"],
+      "requiredFeatures": [],
+      "validFocalAreas": ["collar", "upper_chest", "waist", "hem", "upper_back"],
+      "featureZones": ["collar", "outer_panels", "inner_layer", "hem", "back_yoke"],
+      "sleeveMaterial": "outer_fabric",
+      "rarityInterpretation": {"Common": "unsupported", "Uncommon": "unsupported", "Rare": "unsupported until lower-body animation/layer proof"}
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "4.1.0-experimental",
+  "policy": "Normalize topology families separately from fit, design intent and surface/material variants.",
+  "mappings": {
+    "T_SHIRT": {"v4Family": "T_SHIRT", "fitVariants": ["FITTED", "REGULAR", "RELAXED", "BOXY", "CROPPED"]},
+    "POLO_SHIRT": {"v4Family": "POLO_SHIRT", "aliases": ["POLO_KNIT"]},
+    "SWEATER_VEST": {"v4Family": "SWEATER_VEST"},
+    "CARDIGAN": {"v4Family": "CARDIGAN", "openingVariants": ["OPEN", "BUTTONED"]},
+    "BLAZER": {"v4Family": "BLAZER", "fitVariants": ["FITTED", "RELAXED"]},
+    "SAILOR_TOP": {"v4Family": "SAILOR_TOP"}
+  },
+  "firstNewFamily": "BUTTON_SHIRT",
+  "deferredRuntimeSensitive": ["PULLOVER_HOODIE", "ZIP_HOODIE", "PERIOD_COAT_TOP", "LONG_COAT", "CUSTOM_SLEEVE_ARCHITECTURE"]
+}

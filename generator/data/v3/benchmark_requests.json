@@ -1,0 +1,19 @@
+{
+  "formatVersion": 3,
+  "seed": 2026082903,
+  "purpose": "Controlled twelve-garment V3 benchmark request set. These are concept requests, not pixel layouts.",
+  "requests": [
+    {"themeFamily": "beach_casual", "rarity": "Common", "archetype": "SAILOR_TOP", "itemName": "Tideglass Sail Top"},
+    {"themeFamily": "seasonal_soft", "rarity": "Common", "archetype": "SWEATER", "itemName": "Maple Hush Sweater"},
+    {"themeFamily": "formal_elegant", "rarity": "Common", "archetype": "BUTTON_SHIRT", "itemName": "Inkline Dress Shirt"},
+    {"themeFamily": "floral_romantic", "rarity": "Common", "archetype": "SAILOR_TOP", "itemName": "Meadowbud Top"},
+    {"themeFamily": "dessert_cute", "rarity": "Uncommon", "archetype": "SAILOR_TOP", "itemName": "Berry Parfait Top"},
+    {"themeFamily": "witchy_dark", "rarity": "Uncommon", "archetype": "SWEATER", "itemName": "Moonplum Crystal Knit"},
+    {"themeFamily": "cyber_tech", "rarity": "Uncommon", "archetype": "BUTTON_SHIRT", "itemName": "Circuit Tide Shirt"},
+    {"themeFamily": "military_structured", "rarity": "Uncommon", "archetype": "JACKET", "itemName": "Brassfield Short Jacket"},
+    {"themeFamily": "celestial_fantasy", "rarity": "Rare", "archetype": "SAILOR_TOP", "itemName": "Gilded Nightfall Top"},
+    {"themeFamily": "storybook_whimsical", "rarity": "Rare", "archetype": "BUTTON_SHIRT", "itemName": "Ribbonvale Story Shirt"},
+    {"themeFamily": "elemental", "rarity": "Rare", "archetype": "JACKET", "itemName": "Emberbolt Layer Jacket"},
+    {"themeFamily": "creature_inspired", "rarity": "Rare", "archetype": "SWEATER", "itemName": "Mosskin Familiar Knit"}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "xprod_sailor_vest",
+  "name": "XPROD Sailor Collar On Vest",
+  "template": null,
+  "blank": "torso_basic",
+  "pieces": [
+    "bands_inner_shirt",
+    "collar_sailor",
+    "tie_sailor",
+    "hem_plain"
+  ],
+  "palette": "xprod_navy_cream",
+  "sleeve_slot": "secondary",
+  "identity": [
+    "bands_inner_shirt",
+    "collar_sailor"
+  ],
+  "max_colors": 12,
+  "tags": [
+    "XPROD"
+  ],
+  "description": "Sailor collar piece on the vest partition."
+}

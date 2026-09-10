@@ -1,0 +1,35 @@
+{
+  "formatVersion": "5A",
+  "width": 16,
+  "scale": 2.0,
+  "bodyPosition": {"X": 0, "Y": 32},
+  "directionOrder": ["front", "right", "left", "back"],
+  "frameHeights": {
+    "DRESS": {"short": 20, "medium": 22, "bounded_long": 24},
+    "ONE_PIECE": {"short": 20, "medium": 22, "bounded_long": 24},
+    "BOUNDED_LONG_OUTERWEAR": {"hip": 19, "upper_thigh": 22, "bounded_long": 24}
+  },
+  "transitionRows": {"DRESS": 10, "ONE_PIECE": 10, "BOUNDED_LONG_OUTERWEAR": 12},
+  "roleRamp": {
+    "EXTERIOR_CONTOUR": 48,
+    "DEEP_CREASE": 72,
+    "STRUCTURAL_EDGE": 104,
+    "SHADOW": 136,
+    "BASE": 184,
+    "LIGHT": 224
+  },
+  "surfaceSystemsByRarity": {
+    "Common": {"minimum": 1, "maximum": 1},
+    "Uncommon": {"minimum": 2, "maximum": 2},
+    "Rare": {"minimum": 3, "maximum": 3}
+  },
+  "runtimeClaims": {
+    "standingDirections": "STATIC_ONLY",
+    "walking": "NOT_TESTED",
+    "running": "NOT_TESTED",
+    "tools": "NOT_TESTED",
+    "sitting": "NOT_TESTED_HIGH_RISK",
+    "horse": "NOT_TESTED_HIGH_RISK",
+    "swimming": "FRAMEWORK_HIDES_BY_DEFAULT"
+  }
+}

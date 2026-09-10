@@ -1,0 +1,163 @@
+{
+  "formatVersion": 1,
+  "backend": "FashionSense",
+  "frameworkVersion": "7.5.0",
+  "inspectedCommit": "39e9e9e13c9f9a78416172e73a229cf8703ddb59",
+  "logicalFrame": {
+    "width": 16,
+    "height": 16
+  },
+  "scale": 2.0,
+  "bodyPosition": {
+    "X": 0,
+    "Y": 32
+  },
+  "directionOrder": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ],
+  "regionLegend": {
+    ".": null,
+    "L": "OUTER_PANEL_LEFT",
+    "R": "OUTER_PANEL_RIGHT",
+    "I": "INNER_LAYER",
+    "C": "COLLAR",
+    "Y": "YOKE",
+    "H": "HEM",
+    "S": "SLEEVE",
+    "A": "SHOULDER_CAP"
+  },
+  "masks": {
+    "front": [
+      "..AACC....CCAA..",
+      "AALCCCIIIICCCRAA",
+      "ALLLCCIIIICCRRRA",
+      "SLLLLCIIIICRRRRS",
+      "SSLLLCIIIICRRRSS",
+      "SSLLLLIIIIRRRRSS",
+      "SSLLLLIIIIRRRRSS",
+      "SSLLLLIIIIRRRRSS",
+      "SSLLLLIIIIRRRRSS",
+      "SSLLLLIIIIRRRRSS",
+      "SSLLLLIIIIRRRRSS",
+      "SSLLLLIIIIRRRRSS",
+      ".SLLLLIIIIRRRRS.",
+      ".LLLLLIIIIRRRRR.",
+      ".HHHHHIIIIHHHHH.",
+      "..HHHHIIIIHHHH.."
+    ],
+    "right": [
+      "..AACCCCIIAA....",
+      "AASSSCCCCIII....",
+      "ASSSSSRRCCCIII..",
+      "SSSSSSRRRCCIIIR.",
+      "SSSSSRRRRRIIIIR.",
+      ".SSSSRRRRRIIII..",
+      ".SSSSRRRRRIIII..",
+      ".SSSSRRRRRIIII..",
+      "..SSSRRRRRIIII..",
+      "..SSSRRRRRIIII..",
+      "...SSRRRRRIIII..",
+      "...SSRRRRRIIII..",
+      "....RRRRRRIIII..",
+      "....RRRRRRIIII..",
+      "....HHHHHHIIII..",
+      ".....HHHHHIII..."
+    ],
+    "back": [
+      "..AAACCCCCCAAA..",
+      "AALLYYYYYYYYRRAA",
+      "ALLLYYYYYYYYRRRA",
+      "SLLLLYYYYYYRRRRS",
+      "SSLLLLYYYYRRRRSS",
+      "SSLLLLLYYRRRRRSS",
+      "SSLLLLLLRRRRRRSS",
+      "SSLLLLLLRRRRRRSS",
+      "SSLLLLLLRRRRRRSS",
+      "SSLLLLLLRRRRRRSS",
+      "SSLLLLLLRRRRRRSS",
+      "SSLLLLLLRRRRRRSS",
+      ".SLLLLLLRRRRRRS.",
+      ".LLLLLLLRRRRRRR.",
+      ".HHHHHHHHHHHHHH.",
+      "..HHHHHHHHHHHH.."
+    ]
+  },
+  "bodyCoverageEnvelope": {
+    "description": "Minimum opaque jacket cells needed across the Farmer upper torso and native-sleeve junction at 16x16 Scale 2. Hash cells are mandatory coverage; dots remain silhouette freedom.",
+    "front": [
+      "..####....####..",
+      "################",
+      "################",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................"
+    ],
+    "right": [
+      "..##########....",
+      "############....",
+      "##############..",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................"
+    ],
+    "back": [
+      "..############..",
+      "################",
+      "################",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  "primaryMaskRamp": {
+    "deep": 76,
+    "shadow": 120,
+    "base": 184,
+    "light": 224,
+    "highlight": 240
+  },
+  "sleeveMaskRamp": [
+    76,
+    184,
+    224
+  ],
+  "defaultPrimaryColor": [
+    112,
+    130,
+    145
+  ],
+  "paletteFamily": "cool_neutral"
+}

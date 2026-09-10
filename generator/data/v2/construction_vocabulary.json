@@ -1,0 +1,153 @@
+{
+  "formatVersion": 2,
+  "purpose": "Coordinate-free V2 construction and feature vocabulary. Tags drive compatibility; pixel placement is defined only by renderer masks.",
+  "construction": {
+    "fit": {
+      "fitted": {"tags": ["fit:fitted", "mass:tapered"]},
+      "regular": {"tags": ["fit:regular", "mass:balanced"]},
+      "relaxed": {"tags": ["fit:relaxed", "mass:broad"]}
+    },
+    "neckline": {
+      "round": {"tags": ["neckline:closed", "neckline:soft"]},
+      "crew": {"tags": ["neckline:closed", "neckline:banded"]},
+      "shallow_v": {"tags": ["neckline:v", "neckline:shallow"]},
+      "open": {"tags": ["neckline:open", "neckline:layer_space"]}
+    },
+    "collar": {
+      "none": {"tags": ["collar:none"]},
+      "small_folded": {"tags": ["collar:folded", "collar:tailored"]},
+      "wide": {"tags": ["collar:wide", "region:collar"]},
+      "sailor": {"tags": ["collar:sailor", "region:yoke", "direction:back_identity"]}
+    },
+    "closure": {
+      "none": {"tags": ["closure:none"]},
+      "center_open": {"tags": ["closure:center", "closure:open", "layer:outer"]},
+      "buttons": {"tags": ["closure:center", "closure:buttons", "region:placket"]}
+    },
+    "layering": {
+      "single_layer": {"tags": ["layer:single"]},
+      "visible_inner_layer": {"tags": ["layer:outer", "layer:inner_visible", "region:inner_layer"]},
+      "overlay_panel": {"tags": ["layer:overlay", "region:panel"]}
+    },
+    "hem": {
+      "plain": {"tags": ["hem:plain"]},
+      "ribbed": {"tags": ["hem:ribbed", "region:ribbing"]},
+      "structured": {"tags": ["hem:structured", "region:hem"]},
+      "contrast_band": {"tags": ["hem:contrast", "region:hem"]}
+    },
+    "panelLayout": {
+      "solid": {"tags": ["panel:solid"]},
+      "center_placket": {"tags": ["panel:center", "region:placket"]},
+      "split_outer_panels": {"tags": ["panel:split", "region:outer_panels", "region:inner_layer"]},
+      "yoke": {"tags": ["panel:yoke", "region:yoke", "direction:back_identity"]},
+      "upper_lower_split": {"tags": ["panel:upper_lower", "region:hem"]}
+    }
+  },
+  "substantialFeatures": {
+    "contrast_inner_layer": {
+      "tags": ["feature:substantial", "layer:inner_visible", "region:inner_layer"],
+      "allowedArchetypes": ["JACKET"],
+      "requiresAll": [{"field": "construction.layering", "values": ["visible_inner_layer"]}],
+      "colorRegion": "inner_layer"
+    },
+    "broad_collar": {
+      "tags": ["feature:substantial", "region:collar", "direction:back_identity"],
+      "allowedArchetypes": ["SWEATER", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [{"field": "construction.collar", "values": ["wide", "sailor"]}],
+      "colorRegion": "collar"
+    },
+    "ribbed_hem": {
+      "tags": ["feature:substantial", "region:ribbing", "material:heavy"],
+      "allowedArchetypes": ["SWEATER"],
+      "requiresAll": [{"field": "construction.hem", "values": ["ribbed"]}],
+      "colorRegion": "ribbing"
+    },
+    "major_panel_contrast": {
+      "tags": ["feature:substantial", "region:panel", "color:block"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [{"field": "construction.panelLayout", "values": ["center_placket", "split_outer_panels", "yoke", "upper_lower_split"]}],
+      "colorRegion": "derived_panel"
+    },
+    "center_placket": {
+      "tags": ["feature:substantial", "region:placket", "closure:center"],
+      "allowedArchetypes": ["BUTTON_SHIRT", "JACKET"],
+      "requiresAll": [{"field": "construction.closure", "values": ["buttons"]}],
+      "colorRegion": "placket"
+    },
+    "wrapping_stripe": {
+      "tags": ["feature:substantial", "region:stripe", "direction:wraps"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "SAILOR_TOP"],
+      "requiresAll": [{"field": "construction.closure", "values": ["none"]}],
+      "colorRegion": "stripe"
+    },
+    "yoke": {
+      "tags": ["feature:substantial", "region:yoke", "direction:back_identity"],
+      "allowedArchetypes": ["SWEATER", "BUTTON_SHIRT", "SAILOR_TOP"],
+      "requiresAll": [{"field": "construction.panelLayout", "values": ["yoke"]}],
+      "colorRegion": "yoke"
+    },
+    "split_outer_panels": {
+      "tags": ["feature:substantial", "region:outer_panels", "layer:outer"],
+      "allowedArchetypes": ["JACKET"],
+      "requiresAll": [{"field": "construction.panelLayout", "values": ["split_outer_panels"]}],
+      "colorRegion": "inner_layer"
+    },
+    "structured_lower_band": {
+      "tags": ["feature:substantial", "region:hem", "hem:defined"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [{"field": "construction.hem", "values": ["structured", "contrast_band"]}],
+      "colorRegion": "hem"
+    }
+  },
+  "microDetails": {
+    "small_chest_accent": {
+      "tags": ["feature:micro", "visibility:front_only", "accent:required"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [],
+      "colorRegion": "body"
+    },
+    "tiny_button": {
+      "tags": ["feature:micro", "closure:buttons", "accent:required"],
+      "allowedArchetypes": ["BUTTON_SHIRT", "JACKET"],
+      "requiresAll": [{"field": "construction.closure", "values": ["buttons"]}],
+      "colorRegion": "placket"
+    },
+    "small_pin": {
+      "tags": ["feature:micro", "visibility:front_only", "accent:required"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [],
+      "colorRegion": "body"
+    },
+    "single_accent_pixel": {
+      "tags": ["feature:micro", "visibility:front_only", "accent:required", "budget:single_pixel"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [],
+      "colorRegion": "body"
+    },
+    "tiny_trim_mark": {
+      "tags": ["feature:micro", "accent:required", "region:edge"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [],
+      "colorRegion": "hem"
+    }
+  },
+  "colorRegions": {
+    "body": "The dominant torso material.",
+    "collar": "The neckline-attached collar region.",
+    "yoke": "A broad upper construction area, especially legible on the back.",
+    "placket": "A continuous tailored center construction strip.",
+    "outer_panels": "The left and right portions of an outer layer.",
+    "inner_layer": "The garment visible between outer panels.",
+    "hem": "A defined lower construction band.",
+    "ribbing": "A heavy sweater-specific lower band.",
+    "stripe": "One continuous band which wraps across directions.",
+    "none": "No secondary or accent region is requested."
+  },
+  "globalRules": [
+    "Construction is resolved before substantial features, micro details, and color blocking.",
+    "A micro detail may finish a garment but may never be the sole identity of a Rare recipe.",
+    "Color blocking names structural regions and never pixel coordinates.",
+    "A feature must satisfy every compatibility tag and construction requirement or the recipe is rejected.",
+    "Left, right, front, and back are derived from one recipe; directions are never randomized independently."
+  ]
+}

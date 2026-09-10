@@ -1,0 +1,69 @@
+{
+  "id": "v11_low_contrast",
+  "seed": 8476088,
+  "attempt": 0,
+  "family": "SAILOR_TOP",
+  "architecture": "CLASSIC_SQUARE_FLAP",
+  "fit": "FITTED",
+  "material": "LIGHT_KNIT",
+  "collar_width": "NARROW",
+  "rear_flap_depth": "STANDARD",
+  "neckline": "STANDARD_V",
+  "trim_style": "SINGLE",
+  "center_detail": "TIE",
+  "color_architecture": "LOW_CONTRAST_WITH_ACCENT",
+  "palette_family": "SEA_GREEN",
+  "palette": {
+    "body": {
+      "deep": "#25382F",
+      "shadow": "#3D5648",
+      "base": "#5F7A68",
+      "light": "#89A08D"
+    },
+    "collar": {
+      "deep": "#0F1F1C",
+      "shadow": "#1B352F",
+      "base": "#2A5148",
+      "light": "#427167"
+    },
+    "trim": {
+      "deep": "#25382F",
+      "shadow": "#3D5648",
+      "base": "#5F7A68",
+      "light": "#89A08D"
+    },
+    "accent": {
+      "deep": "#7A4A12",
+      "shadow": "#B06F1F",
+      "base": "#E09A33",
+      "light": "#F2C069"
+    }
+  },
+  "derived": {
+    "collar_left": 4,
+    "collar_right": 11,
+    "collar_columns": 8,
+    "flap_depth_rows": 7,
+    "v_depth_row": 7,
+    "fit_taper": 1,
+    "relaxed_widening_applied": false,
+    "crisp_collar_edge": false,
+    "hem_rib": true,
+    "fold_density": 0,
+    "trim_lines": 1,
+    "has_center_detail": true,
+    "collar_body_contrast": 42.9,
+    "trim_collar_contrast": 42.9
+  },
+  "rejected": [],
+  "pinned": {
+    "collar_width": "NARROW",
+    "rear_flap_depth": "STANDARD",
+    "trim_style": "SINGLE",
+    "center_detail": "TIE",
+    "neckline": "STANDARD_V",
+    "fit": "FITTED",
+    "material": "LIGHT_KNIT",
+    "color_architecture": "LOW_CONTRAST_WITH_ACCENT"
+  }
+}

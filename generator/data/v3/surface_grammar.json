@@ -1,0 +1,39 @@
+{
+  "formatVersion": 3,
+  "logicalFrame": [16, 16],
+  "purpose": "Renderer-owned surface templates. Semantic recipes name a family and topology but never pixels.",
+  "motifLegend": {".": null, "s": "secondary", "a": "accent", "l": "light_accent", "d": "dark_accent"},
+  "motifs": {
+    "fruit": [".l...", "..s..", ".aaa.", "aadaa", ".aaa."],
+    "flower": [".a.a.", "..l..", "alsla", "..s..", "..d.."],
+    "star": ["..l..", "l.a.l", ".aaa.", "l.a.l", "..l.."],
+    "heart": [".a.a.", "aaaaa", ".aaa.", "..a.."],
+    "ribbon": ["aa.aa", ".ala.", "..d..", ".a.a."],
+    "leaf": ["...l", "..ss", ".ssd", "ssd."],
+    "crystal": ["..l..", ".sas.", "saaas", ".dad.", "..d.."],
+    "lightning": ["..ll", ".aa.", "..a.", ".ad.", "dd.."],
+    "military_geometry": ["d...d", ".s.s.", "..a..", ".s.s.", "d...d"],
+    "creature": ["d...d", "da.ad", ".sss.", ".a.a.", "..d.."],
+    "dessert": [".l.l.", ".aaa.", "sssss", ".s.s.", "ddddd"],
+    "cyber_glyph": ["s...l", ".s.l.", "..a..", ".d.s.", "d...s"],
+    "sun_wave": ["..l..", ".lal.", "..a..", "sssss", ".s.s."]
+  },
+  "focalAreas": {
+    "collar": {"frontTop": 2, "backTop": 2},
+    "shoulders": {"frontTop": 3, "backTop": 3},
+    "upper_chest": {"frontTop": 4, "backTop": 4},
+    "center_chest": {"frontTop": 5, "backTop": 5},
+    "side_chest": {"frontTop": 5, "backTop": 5},
+    "waist": {"frontTop": 8, "backTop": 8},
+    "hem": {"frontTop": 10, "backTop": 10},
+    "upper_back": {"frontTop": 5, "backTop": 3}
+  },
+  "surfaceRolePriority": ["darkAccent", "secondary", "accent", "lightAccent"],
+  "rules": [
+    "Surface systems may replace occupied garment cells only.",
+    "Exterior contour and deep-crease anchors are protected unless a construction-bound dark trim explicitly reinforces them.",
+    "Motif templates are clipped rather than shrinking or filtering.",
+    "All patterns are deterministic integer-cell constructions.",
+    "Benchmark images are never loaded by this renderer."
+  ]
+}

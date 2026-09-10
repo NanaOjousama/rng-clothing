@@ -1,0 +1,120 @@
+{
+ "id": "CAP2_FRONT_MOTIF_SAFE_MASK",
+ "authoritative": true,
+ "provenance": "generator-authored constraint over the intact source base",
+ "derivation": {
+  "included": "cells whose semantic role is crown or highlight",
+  "excluded": [
+   "transparent / background",
+   "outline cells (vocabulary step 0)",
+   "rim cells under 8-connectivity \u2014 a cell touching transparency even diagonally still reads as the outer edge",
+   "cells orthogonally adjacent to the visor, preserving the seam"
+  ],
+  "counts": {
+   "drawn": 76,
+   "crown": 38,
+   "outline": 10,
+   "rim_8conn": 36,
+   "visor_adjacent": 42,
+   "safe": 16
+  }
+ },
+ "safe_cells_by_row": {
+  "5": [
+   9,
+   10
+  ],
+  "6": [
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "7": [
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13
+  ]
+ },
+ "safe_cells": [
+  [
+   9,
+   5
+  ],
+  [
+   10,
+   5
+  ],
+  [
+   7,
+   6
+  ],
+  [
+   8,
+   6
+  ],
+  [
+   9,
+   6
+  ],
+  [
+   10,
+   6
+  ],
+  [
+   11,
+   6
+  ],
+  [
+   12,
+   6
+  ],
+  [
+   6,
+   7
+  ],
+  [
+   7,
+   7
+  ],
+  [
+   8,
+   7
+  ],
+  [
+   9,
+   7
+  ],
+  [
+   10,
+   7
+  ],
+  [
+   11,
+   7
+  ],
+  [
+   12,
+   7
+  ],
+  [
+   13,
+   7
+  ]
+ ],
+ "coarse_bounding_box": {
+  "x0": 6,
+  "x1": 13,
+  "y0": 5,
+  "y1": 7,
+  "note": "informational only; the cell list decides"
+ },
+ "rule": "a motif pixel is legal ONLY if that exact cell is in safe_cells"
+}

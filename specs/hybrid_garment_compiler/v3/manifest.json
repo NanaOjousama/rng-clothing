@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "3.0.0",
+  "systemName": "RNG Clothing Hybrid Garment Compiler",
+  "phase": "PHASE_1_CANONICAL_BRAIN",
+  "featureFlag": "HYBRID_GARMENT_COMPILER_V3_ENABLED",
+  "featureFlagDefault": false,
+  "rendererIntegration": false,
+  "normalGenerationGroundTruth": "CANONICAL_GARMENT_MODEL",
+  "neutralFlatRole": "AUTHORING_AND_DEBUG_ONLY",
+  "families": ["T_SHIRT", "POLO_SHIRT", "SWEATER_VEST", "CARDIGAN", "BLAZER", "SAILOR_TOP"],
+  "sourceStudy": {
+    "guide": "RNG_Clothing_Codex_Architecture_Study_v2_1/RNG_CLOTHING_HYBRID_STUDY_GUIDE_V3.md",
+    "schema": "RNG_Clothing_Codex_Architecture_Study_v2_1/RNG_CLOTHING_HYBRID_GENERATOR_SCHEMA_V3.json",
+    "neutralFlatSchemaVersion": "1.0",
+    "sha256": {
+      "guide": "d26ac716334b0386363468aaab1092736d93d239ff7f7c64cbd78de2e73d7b75",
+      "schema": "7c7b58829e524b69559d219250d6f360024d7b1794b96130f31754351108062a",
+      "neutralFlat": "307906145c100b6276f19f02c233ce18b80ed9b844ad3776cebfc87e9a697e1b",
+      "neutralFlatSchema": "753b8283bc7576ed249612824bb7e198eaa5700b87f6418857aa304457f1f5ef"
+    }
+  },
+  "policies": [
+    "No renderer coordinates in architecture or canonical recipes.",
+    "Normal generation does not load real-world references.",
+    "Directions are projections of one canonical component graph.",
+    "The V5/HD renderer and Fashion Sense runtime contracts remain untouched."
+  ]
+}

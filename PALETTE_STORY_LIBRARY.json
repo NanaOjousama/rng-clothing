@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "status": "PROJECT_OWNED_SEMANTIC_STORIES",
+  "policy": {
+    "sourcePixelsImported": false,
+    "exactExternalPalettesCopied": false,
+    "maximumActiveRolesPerGarment": 7,
+    "rules": [
+      "DeepShadow and StructuralDark must remain distinguishable on the Farmer composite.",
+      "PrimaryLight is a selective plane light, never an all-over outline.",
+      "Accent normally occupies under 12 percent of opaque garment cells.",
+      "OptionalMotif and OptionalMetal may be omitted; missing roles do not require substitutes.",
+      "A palette story cannot rescue a structurally duplicated garment."
+    ]
+  },
+  "researchReferences": [
+    {"name":"DawnBringer 16","creator":"DawnBringer","url":"https://lospec.com/palette-list/dawnbringer-16","lesson":"compact cross-hue value ladder and restrained light endpoint","usage":"relationship study only"},
+    {"name":"Sweetie 16","creator":"GrafxKid","url":"https://lospec.com/palette-list/sweetie-16","lesson":"bright accent families tied together by blue-violet darks","usage":"relationship study only"},
+    {"name":"Resurrect 64","creator":"Kerrie Lake","url":"https://lospec.com/palette-list/resurrect-64","lesson":"material-friendly warm/cool ramps and tinted neutrals","usage":"relationship study only"},
+    {"name":"Famicube","creator":"Arne","url":"https://lospec.com/palette-list/famicube","lesson":"broad hue coverage with explicit neutral and material ramps","usage":"relationship study only"},
+    {"name":"Endesga 32 / hept32","creator":"ENDESGA","url":"https://lospec.com/palette-list/hept32","lesson":"high-contrast saturated statements anchored by deep chromatic darks","usage":"relationship study only"},
+    {"name":"AAP-64","creator":"Adigun A. Polack","url":"https://lospec.com/palette-list/aap-64","lesson":"large-gamut source library from which a garment still selects a small role set","usage":"relationship study only"}
+  ],
+  "stories": [
+    {"id":"EVERYDAY_STONE_BLUE","identity":"everyday neutral","roles":{"DeepShadow":"#202534","StructuralDark":"#343E53","PrimaryFabric":"#64758D","PrimaryLight":"#94A7B8","SecondaryFabric":"#C8BDA9","Trim":"#4C596B","Accent":"#C98558","OptionalMotif":"#E4D8C4","OptionalMetal":"#A9B0B6"},"relationship":"cool blue-gray cloth warmed by a small clay accent","accentBudget":"low"},
+    {"id":"COASTAL_SEAFOAM_CORAL","identity":"coastal","roles":{"DeepShadow":"#17323A","StructuralDark":"#24515A","PrimaryFabric":"#4F9A98","PrimaryLight":"#91D1C3","SecondaryFabric":"#E8E0C5","Trim":"#2F6B72","Accent":"#E87861","OptionalMotif":"#F1B88F","OptionalMetal":"#B9D5D0"},"relationship":"seafoam ramp, warm sand neutral, coral focal","accentBudget":"medium"},
+    {"id":"AUTUMN_OCHRE_PLUM","identity":"cozy autumn","roles":{"DeepShadow":"#2B1D2D","StructuralDark":"#513044","PrimaryFabric":"#A6672F","PrimaryLight":"#D59A50","SecondaryFabric":"#6E4B56","Trim":"#3C2934","Accent":"#D7B66A","OptionalMotif":"#8E7B46","OptionalMetal":"#B78C55"},"relationship":"ochre fabric shaded through plum-brown rather than black","accentBudget":"low"},
+    {"id":"SPRING_SAGE_PETAL","identity":"spring floral","roles":{"DeepShadow":"#293741","StructuralDark":"#466052","PrimaryFabric":"#83A879","PrimaryLight":"#C1D6A8","SecondaryFabric":"#E8D7C8","Trim":"#5C7763","Accent":"#D98291","OptionalMotif":"#F1B6B8","OptionalMetal":"#C4B993"},"relationship":"sage cloth, cream air, bounded petal accent","accentBudget":"medium"},
+    {"id":"WINTER_FROST_INK","identity":"winter frost","roles":{"DeepShadow":"#161C2D","StructuralDark":"#27364D","PrimaryFabric":"#6987A8","PrimaryLight":"#B7D5E4","SecondaryFabric":"#E7EDF0","Trim":"#3F5872","Accent":"#88C6D6","OptionalMotif":"#D5F0F1","OptionalMetal":"#AEBBC8"},"relationship":"cold ink anchors pale blue-silver planes","accentBudget":"low"},
+    {"id":"FIELD_CANVAS_MOSS","identity":"field/workwear","roles":{"DeepShadow":"#252821","StructuralDark":"#3D4635","PrimaryFabric":"#9A8051","PrimaryLight":"#C6A96B","SecondaryFabric":"#66734C","Trim":"#4F3829","Accent":"#C9D0B0","OptionalMotif":"#7E5838","OptionalMetal":"#8E9385"},"relationship":"canvas tan and moss separated by leather dark","accentBudget":"low"},
+    {"id":"FORMAL_PEARL_MIDNIGHT","identity":"elegant formal","roles":{"DeepShadow":"#131827","StructuralDark":"#252D46","PrimaryFabric":"#E3DED3","PrimaryLight":"#F4F0E8","SecondaryFabric":"#3B4668","Trim":"#1E253A","Accent":"#B7954D","OptionalMotif":"#69749A","OptionalMetal":"#D3C38D"},"relationship":"pearl field framed by midnight with restrained gold","accentBudget":"very_low"},
+    {"id":"LUXURY_JADE_BRONZE","identity":"luxury","roles":{"DeepShadow":"#172A28","StructuralDark":"#25473F","PrimaryFabric":"#3E7D66","PrimaryLight":"#79B395","SecondaryFabric":"#E2D5B7","Trim":"#34594A","Accent":"#A8753F","OptionalMotif":"#D1A35F","OptionalMetal":"#C89254"},"relationship":"deep jade, cream relief, bronze signature","accentBudget":"low"},
+    {"id":"GOTHIC_WINE_ASH","identity":"gothic","roles":{"DeepShadow":"#17141D","StructuralDark":"#2D2633","PrimaryFabric":"#5C2942","PrimaryLight":"#8B4960","SecondaryFabric":"#77717A","Trim":"#241B29","Accent":"#B15A66","OptionalMotif":"#C6ADB2","OptionalMetal":"#92909A"},"relationship":"wine cloth rises from violet-black into ash contrast","accentBudget":"medium"},
+    {"id":"STREET_TEAL_GRAPHITE","identity":"streetwear","roles":{"DeepShadow":"#151C22","StructuralDark":"#29343B","PrimaryFabric":"#384B52","PrimaryLight":"#61777C","SecondaryFabric":"#E6E5DB","Trim":"#1E292F","Accent":"#20A9A1","OptionalMotif":"#75D1C3","OptionalMetal":"#A4B0AF"},"relationship":"graphite mass, white interruption, electric teal hook","accentBudget":"medium"},
+    {"id":"SAILOR_COBALT_CREAM","identity":"sailor","roles":{"DeepShadow":"#17213B","StructuralDark":"#263B67","PrimaryFabric":"#315D9A","PrimaryLight":"#668BC1","SecondaryFabric":"#F0E5C8","Trim":"#21345A","Accent":"#C84F4C","OptionalMotif":"#E9C86A","OptionalMetal":"#B9C2C9"},"relationship":"cobalt construction, cream collar, tiny signal red","accentBudget":"very_low"},
+    {"id":"CELESTIAL_INDIGO_STAR","identity":"celestial","roles":{"DeepShadow":"#17162A","StructuralDark":"#29284B","PrimaryFabric":"#4A4E8A","PrimaryLight":"#8588C6","SecondaryFabric":"#D9D4E7","Trim":"#34345F","Accent":"#E0B954","OptionalMotif":"#F3DE91","OptionalMetal":"#B9B8CB"},"relationship":"indigo-violet ramp with star-gold focal","accentBudget":"medium"},
+    {"id":"ARCANE_VIOLET_COPPER","identity":"arcane","roles":{"DeepShadow":"#21182D","StructuralDark":"#3B2852","PrimaryFabric":"#68458A","PrimaryLight":"#A57AC1","SecondaryFabric":"#394D58","Trim":"#49325F","Accent":"#BD7046","OptionalMotif":"#DE9C62","OptionalMetal":"#C98555"},"relationship":"violet cloth and cool slate punctuated by copper","accentBudget":"medium"},
+    {"id":"EMBER_SUN_CHARCOAL","identity":"ember/sun","roles":{"DeepShadow":"#211C20","StructuralDark":"#3B3031","PrimaryFabric":"#B9562F","PrimaryLight":"#E58B47","SecondaryFabric":"#504A52","Trim":"#32272A","Accent":"#F0C65B","OptionalMotif":"#FFE094","OptionalMetal":"#B78A52"},"relationship":"charcoal contains an orange-to-sun focal ramp","accentBudget":"medium"},
+    {"id":"CYBER_CYAN_MAGENTA","identity":"cyber/neon","roles":{"DeepShadow":"#121727","StructuralDark":"#222A43","PrimaryFabric":"#34405D","PrimaryLight":"#65728F","SecondaryFabric":"#1F6772","Trim":"#182033","Accent":"#20D2D0","OptionalMotif":"#E34E9D","OptionalMetal":"#A8B8C8"},"relationship":"dark technical neutral with cyan primary signal and tiny magenta counterpoint","accentBudget":"medium"},
+    {"id":"CEREMONIAL_CRIMSON_IVORY","identity":"ceremonial","roles":{"DeepShadow":"#261722","StructuralDark":"#4C2330","PrimaryFabric":"#9E3441","PrimaryLight":"#D36367","SecondaryFabric":"#F0E2C9","Trim":"#632736","Accent":"#D7AD58","OptionalMotif":"#F2CF79","OptionalMetal":"#B98E4D"},"relationship":"crimson authority, ivory relief, gold used as punctuation","accentBudget":"low"},
+    {"id":"PASTEL_PEACH_LILAC","identity":"soft pastel","roles":{"DeepShadow":"#3B3349","StructuralDark":"#625675","PrimaryFabric":"#D89180","PrimaryLight":"#F0B6A1","SecondaryFabric":"#B6A3D2","Trim":"#7B688D","Accent":"#7DB8AF","OptionalMotif":"#F5D4B7","OptionalMetal":"#C6B8C8"},"relationship":"pastels retain a strong violet structural anchor","accentBudget":"medium"},
+    {"id":"WORKWEAR_DENIM_RUST","identity":"workwear","roles":{"DeepShadow":"#202933","StructuralDark":"#334859","PrimaryFabric":"#4C7187","PrimaryLight":"#7FA2AE","SecondaryFabric":"#A66A42","Trim":"#3B3230","Accent":"#D0A45E","OptionalMotif":"#C8C0A6","OptionalMetal":"#929B9E"},"relationship":"denim blue, rust leather, brass utility punctuation","accentBudget":"low"},
+    {"id":"DESERT_CLAY_TURQUOISE","identity":"high-contrast statement","roles":{"DeepShadow":"#2B2428","StructuralDark":"#4B3636","PrimaryFabric":"#B66C4D","PrimaryLight":"#DF9B70","SecondaryFabric":"#E5D6B3","Trim":"#68443B","Accent":"#2B9B91","OptionalMotif":"#72C4B4","OptionalMetal":"#B98D54"},"relationship":"warm clay field balanced by a cool turquoise focal","accentBudget":"medium"}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "flower_tiny",
+  "motif_class": "flower",
+  "pending": true,
+  "slot": "HEAD",
+  "zone": "side_panel",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 6,
+  "anchor_cell": [
+    1,
+    2
+  ],
+  "anchor_point": "top_right",
+  "style": [
+    "cottagecore"
+  ],
+  "views": [
+    "front",
+    "left",
+    "back"
+  ],
+  "fits": [
+    "soft_cap"
+  ],
+  "description": "a single small blossom",
+  "per_view": false,
+  "size": [
+    3,
+    3
+  ]
+}

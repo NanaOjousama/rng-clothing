@@ -1,0 +1,25 @@
+{
+  "name": "patch_square",
+  "motif_class": "patch",
+  "slot": "HEAD",
+  "zone": "crown_face",
+  "z": 2,
+  "style": [
+    "work",
+    "casual"
+  ],
+  "views": [
+    "front",
+    "back"
+  ],
+  "fits": [
+    "felt_hat",
+    "wide_brim_hat"
+  ],
+  "description": "a bright patch inside a dark border, sewn to the crown",
+  "per_view": false,
+  "size": [
+    4,
+    3
+  ]
+}

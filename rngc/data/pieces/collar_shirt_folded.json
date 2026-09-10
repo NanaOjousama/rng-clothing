@@ -1,0 +1,44 @@
+{
+  "id": "collar_shirt_folded",
+  "kind": "collar",
+  "layer": "OVER",
+  "slot": null,
+  "identity": true,
+  "wrap": false,
+  "note": "Folded shirt collar: two light leaves beside the neck gap, deep where the leaves meet the opening (vanilla 248 collar is role-only in the same fabric; this version is more salient, allowed by the 'greater-or-equal salience' rule). Slot may be overridden by a plan (e.g. secondary for a shirt under a vest).",
+  "views": {
+    "front": {
+      "origin": [
+        3,
+        0
+      ],
+      "rows": [
+        "lll....lll",
+        "sll....lls",
+        ".sllddlls.",
+        "..slddls.."
+      ]
+    },
+    "side": {
+      "origin": [
+        2,
+        0
+      ],
+      "rows": [
+        "llll..llll",
+        "slll..llls",
+        "..slllls.."
+      ]
+    },
+    "back": {
+      "origin": [
+        3,
+        0
+      ],
+      "rows": [
+        "llllllllll",
+        "ssssssssss"
+      ]
+    }
+  }
+}

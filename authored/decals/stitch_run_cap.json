@@ -1,0 +1,25 @@
+{
+  "name": "stitch_run_cap",
+  "motif_class": "stitch_accent",
+  "pending": true,
+  "slot": "HEAD",
+  "zone": "visor",
+  "z": 2,
+  "style": [
+    "casual",
+    "work"
+  ],
+  "views": [
+    "front",
+    "left"
+  ],
+  "fits": [
+    "soft_cap"
+  ],
+  "description": "a run of contrast stitches along the band",
+  "per_view": false,
+  "size": [
+    8,
+    1
+  ]
+}

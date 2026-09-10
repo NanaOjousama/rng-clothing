@@ -1,0 +1,45 @@
+{
+  "formatVersion": 3,
+  "basis": "Aggregate design-variety study of Shirts.zip plus the permanent FS-HD art grammar. No benchmark coordinates, pixels, palettes, silhouettes, or outfits are encoded.",
+  "themeFamilies": {
+    "beach_casual": {"moods": ["bright"], "motifs": ["sun_wave"], "trims": ["hem_trim", "piping", "double_stripe"], "patterns": ["stripes"], "preferredArchetypes": ["SAILOR_TOP", "SWEATER"]},
+    "seasonal_soft": {"moods": ["cozy"], "motifs": ["leaf"], "trims": ["cuff_trim", "hem_trim"], "patterns": ["soft_repeat"], "preferredArchetypes": ["SWEATER"]},
+    "formal_elegant": {"moods": ["refined"], "motifs": ["ribbon"], "trims": ["collar_trim", "piping"], "patterns": ["stripes"], "preferredArchetypes": ["BUTTON_SHIRT", "JACKET"]},
+    "floral_romantic": {"moods": ["romantic"], "motifs": ["flower"], "trims": ["scalloped_trim", "lace_border"], "patterns": ["dots"], "preferredArchetypes": ["BUTTON_SHIRT", "SAILOR_TOP"]},
+    "dessert_cute": {"moods": ["playful"], "motifs": ["fruit", "dessert"], "trims": ["scalloped_trim", "hem_trim"], "patterns": ["dots"], "preferredArchetypes": ["SAILOR_TOP", "SWEATER"]},
+    "witchy_dark": {"moods": ["mysterious", "magical"], "motifs": ["crystal", "star"], "trims": ["collar_trim", "cuff_trim"], "patterns": ["diamonds"], "preferredArchetypes": ["SWEATER", "BUTTON_SHIRT"]},
+    "cyber_tech": {"moods": ["technical"], "motifs": ["cyber_glyph"], "trims": ["seam_emphasis", "piping"], "patterns": ["chevrons"], "preferredArchetypes": ["BUTTON_SHIRT", "JACKET"]},
+    "military_structured": {"moods": ["rugged"], "motifs": ["military_geometry"], "trims": ["lapel_trim", "seam_emphasis"], "patterns": ["military_repeat"], "preferredArchetypes": ["JACKET", "BUTTON_SHIRT"]},
+    "celestial_fantasy": {"moods": ["magical"], "motifs": ["star", "crystal"], "trims": ["piping", "decorative_edge_band"], "patterns": ["diamonds"], "preferredArchetypes": ["SAILOR_TOP", "SWEATER"]},
+    "storybook_whimsical": {"moods": ["whimsical"], "motifs": ["ribbon", "heart"], "trims": ["scalloped_trim", "decorative_edge_band"], "patterns": ["soft_repeat"], "preferredArchetypes": ["SAILOR_TOP", "BUTTON_SHIRT"]},
+    "elemental": {"moods": ["energetic"], "motifs": ["lightning"], "trims": ["piping", "seam_emphasis", "lapel_trim"], "patterns": ["chevrons"], "preferredArchetypes": ["JACKET", "SWEATER"]},
+    "creature_inspired": {"moods": ["playful", "whimsical"], "motifs": ["creature"], "trims": ["cuff_trim", "hem_trim"], "patterns": ["soft_repeat"], "preferredArchetypes": ["SWEATER", "SAILOR_TOP"]}
+  },
+  "compositionFamilies": {
+    "color_block_led": {"primary": "color_block", "compatibleSupports": ["trim", "detail_layout"]},
+    "trim_led": {"primary": "trim", "compatibleSupports": ["color_block", "motif"]},
+    "motif_led": {"primary": "motif", "compatibleSupports": ["trim", "color_block"]},
+    "pattern_led": {"primary": "pattern", "compatibleSupports": ["trim", "color_block"]},
+    "collar_led": {"primary": "trim", "compatibleSupports": ["motif", "color_block"]},
+    "hem_led": {"primary": "trim", "compatibleSupports": ["pattern", "color_block"]},
+    "asymmetric_accent_led": {"primary": "motif", "compatibleSupports": ["trim", "color_block"]}
+  },
+  "topologyRules": {
+    "front_only": "A focal motif or closure terminates at the front side seam.",
+    "front_back": "The system appears in front and back but simplifies on the back.",
+    "front_back_pair": "A front focal motif receives a smaller related back mark.",
+    "wrap": "A band continues through both sides and back without phase jumps.",
+    "shoulder_wrap": "The front shoulder gesture crosses the side cap into the upper back.",
+    "construction_bound": "Decoration follows an existing collar, lapel, yoke, placket, cuff, or hem region.",
+    "asymmetric_front": "The focal mark is intentionally front-only and offset; side visibility is limited to the matching side."
+  },
+  "compositionRules": [
+    "Exactly one surface system is dominant.",
+    "Supporting systems must reinforce the focal gesture rather than create a second focal point.",
+    "Large color regions resolve before trims, motifs, patterns, and micro details.",
+    "Motifs use connected clusters and a maximum of three role colors.",
+    "Back views reduce focal detail but retain a family cue when topology calls for it.",
+    "Side views carry wrapping systems or seam terminations; they do not copy the front motif.",
+    "Unused cells are preferable to filler texture."
+  ]
+}

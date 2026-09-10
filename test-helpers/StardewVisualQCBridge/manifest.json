@@ -1,0 +1,12 @@
+{
+  "Name": "Stardew Visual QC Bridge (DEV ONLY)",
+  "Author": "RNG Clothing project",
+  "Version": "0.1.0",
+  "Description": "Development-only QC bridge. Exposes the real in-game Fashion Sense render state and captures actual game output so generated headwear can be measured against what Stardew really draws. Not for release.",
+  "UniqueID": "RNGClothing.VisualQCBridge",
+  "EntryDll": "StardewVisualQCBridge.dll",
+  "MinimumApiVersion": "4.0.0",
+  "Dependencies": [
+    { "UniqueID": "PeacefulEnd.FashionSense", "IsRequired": false }
+  ]
+}

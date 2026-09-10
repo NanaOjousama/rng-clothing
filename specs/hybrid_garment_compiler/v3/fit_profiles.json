@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "3.0.0",
+  "profiles": [
+    {"id": "MASC_RELAXED", "version": "1.0.0", "tendencies": {"shoulder": "broad", "waistSuppression": "low", "bodyLength": "long", "volume": "relaxed"}, "selects": ["proportion_only"]},
+    {"id": "MASC_TAILORED", "version": "1.0.0", "tendencies": {"shoulder": "medium", "waistSuppression": "medium", "bodyLength": "normal", "volume": "tapered"}, "selects": ["proportion_only"]},
+    {"id": "FEM_FITTED", "version": "1.0.0", "tendencies": {"shoulder": "narrow", "waistSuppression": "high", "bodyLength": "cropped", "volume": "fitted"}, "selects": ["proportion_only"]},
+    {"id": "FEM_RELAXED", "version": "1.0.0", "tendencies": {"shoulder": "medium", "waistSuppression": "low", "bodyLength": "normal", "volume": "relaxed"}, "selects": ["proportion_only"]},
+    {"id": "UNISEX_REGULAR", "version": "1.0.0", "tendencies": {"shoulder": "medium", "waistSuppression": "low", "bodyLength": "normal", "volume": "regular"}, "selects": ["proportion_only"]},
+    {"id": "UNISEX_BOXY", "version": "1.0.0", "tendencies": {"shoulder": "medium", "waistSuppression": "none", "bodyLength": "normal", "volume": "boxy"}, "selects": ["proportion_only"]},
+    {"id": "UNISEX_CROPPED", "version": "1.0.0", "tendencies": {"shoulder": "medium", "waistSuppression": "low", "bodyLength": "cropped", "volume": "regular"}, "selects": ["proportion_only"]}
+  ],
+  "forbiddenSelections": ["palette", "rarity", "material_quality", "decoration"]
+}

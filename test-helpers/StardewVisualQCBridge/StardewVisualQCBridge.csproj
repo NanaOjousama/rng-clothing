@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- Steam Deck / Linux install path. Kept explicit so the build works
+         offline and does not depend on the package's auto-detection. -->
+    <GamePath>/run/media/deck/USD00/steamapps/common/Stardew Valley</GamePath>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>StardewVisualQCBridge</AssemblyName>
+    <RootNamespace>StardewVisualQCBridge</RootNamespace>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <EnableHarmony>true</EnableHarmony>
+    <!-- QC/dev tool: never ship this in a release build. -->
+    <CopyModToGameFolder>false</CopyModToGameFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
+    <!-- Not a new dependency: SMAPI already loads this at runtime, so the mod
+         only needs it to compile against. Never copied to the output. -->
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(GamePath)/smapi-internal/Newtonsoft.Json.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

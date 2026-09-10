@@ -1,0 +1,24 @@
+{
+  "id": "bench_vest",
+  "name": "V5 Bench Vest",
+  "template": "VEST",
+  "blank": "torso_basic",
+  "pieces": [
+    "bands_inner_shirt",
+    {
+      "id": "collar_shirt_folded",
+      "slot": "secondary"
+    },
+    "placket_buttons",
+    "button_accent",
+    "hem_plain"
+  ],
+  "palette": "bench_vest",
+  "sleeve_slot": "secondary",
+  "hide_sleeves": false,
+  "tags": [
+    "VEST",
+    "vanilla 278"
+  ],
+  "description": "Reconstruction of vanilla sprite 278 (Blue Buttoned Vest) garment type: vest over an inner shirt."
+}

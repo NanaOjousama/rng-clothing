@@ -1,0 +1,31 @@
+{
+  "name": "side_feather",
+  "motif_class": "long_feather",
+  "slot": "HEAD",
+  "zone": "side",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 7,
+  "anchor_cell": [
+    0,
+    3
+  ],
+  "anchor_point": "top_right",
+  "style": [
+    "festival",
+    "cottagecore"
+  ],
+  "views": [
+    "front",
+    "left"
+  ],
+  "fits": [
+    "wide_brim_hat"
+  ],
+  "description": "a quill rising out of the band, past the crown",
+  "per_view": false,
+  "size": [
+    4,
+    4
+  ]
+}

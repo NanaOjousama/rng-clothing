@@ -1,0 +1,69 @@
+{
+  "id": "v12_wide_relaxed_knit",
+  "seed": 7731476,
+  "attempt": 0,
+  "family": "SAILOR_TOP",
+  "architecture": "CLASSIC_SQUARE_FLAP",
+  "fit": "RELAXED",
+  "material": "LIGHT_KNIT",
+  "collar_width": "WIDE",
+  "rear_flap_depth": "STANDARD",
+  "neckline": "SHALLOW_V",
+  "trim_style": "SINGLE",
+  "center_detail": "NONE",
+  "color_architecture": "DARK_BODY_LIGHT_COLLAR",
+  "palette_family": "PORT_RED",
+  "palette": {
+    "body": {
+      "deep": "#25101A",
+      "shadow": "#451E28",
+      "base": "#6C2F3A",
+      "light": "#934B54"
+    },
+    "collar": {
+      "deep": "#9A8F8C",
+      "shadow": "#CBBFB9",
+      "base": "#F2E9E2",
+      "light": "#FFFAF4"
+    },
+    "trim": {
+      "deep": "#25101A",
+      "shadow": "#451E28",
+      "base": "#6C2F3A",
+      "light": "#934B54"
+    },
+    "accent": {
+      "deep": "#12293F",
+      "shadow": "#1F4364",
+      "base": "#2F638F",
+      "light": "#5386B3"
+    }
+  },
+  "derived": {
+    "collar_left": 2,
+    "collar_right": 13,
+    "collar_columns": 12,
+    "flap_depth_rows": 8,
+    "v_depth_row": 5,
+    "fit_taper": 0,
+    "relaxed_widening_applied": true,
+    "crisp_collar_edge": false,
+    "hem_rib": true,
+    "fold_density": 0,
+    "trim_lines": 1,
+    "has_center_detail": false,
+    "collar_body_contrast": 173.6,
+    "trim_collar_contrast": 173.6
+  },
+  "rejected": [],
+  "pinned": {
+    "collar_width": "WIDE",
+    "rear_flap_depth": "STANDARD",
+    "trim_style": "SINGLE",
+    "center_detail": "NONE",
+    "neckline": "SHALLOW_V",
+    "fit": "RELAXED",
+    "material": "LIGHT_KNIT",
+    "color_architecture": "DARK_BODY_LIGHT_COLLAR"
+  }
+}

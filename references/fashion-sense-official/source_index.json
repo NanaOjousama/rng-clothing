@@ -1,0 +1,484 @@
+{
+ "generated": "2026-09-08",
+ "entries": [
+  {
+   "appearance_category": "Hats",
+   "source_url": "https://github.com/Floogen/FashionSense/wiki/Hat-Model-Properties",
+   "version_context": "development branch @ 2026-03-12; latest release v7.5.0",
+   "model_properties": [
+    "ColorMaskLayers",
+    "ColorMasks",
+    "DisableGrayscale",
+    "DisableSkinGrayscale",
+    "DrawOrderOverride",
+    "Flipped",
+    "FromItemId",
+    "HatSize",
+    "HeadPosition",
+    "HideHair",
+    "HidePlayerBase",
+    "HideSleeves",
+    "HideWaterLine",
+    "HideWhileSwimming",
+    "HideWhileWearingBathingSuit",
+    "IdleAnimation",
+    "IsPrismatic",
+    "Item",
+    "MovementAnimation",
+    "PrismaticAnimationSpeedMultiplier",
+    "RequireAnimationToFinish",
+    "Scale",
+    "SkinToneMasks",
+    "StartingPosition",
+    "Tags",
+    "UniformAnimation",
+    "UseBaldHead"
+   ],
+   "required": [
+    "HatSize",
+    "HeadPosition",
+    "StartingPosition"
+   ],
+   "frame_layout": "StartingPosition + Size*Frame, frames advance on +X",
+   "direction_handling": "explicit per-direction models; missing direction draws nothing",
+   "size_position": {
+    "size_key": "HatSize",
+    "anchor_key": "HeadPosition",
+    "scale_default": "4.0"
+   },
+   "recolor": {
+    "grayscale_default_on": true,
+    "opt_out": "DisableGrayscale",
+    "masks": [
+     "ColorMasks",
+     "ColorMaskLayers",
+     "SkinToneMasks"
+    ]
+   },
+   "animation": [
+    "UniformAnimation",
+    "IdleAnimation",
+    "MovementAnimation"
+   ],
+   "draw_order": "DrawOrderOverride"
+  },
+  {
+   "appearance_category": "Shirts",
+   "source_url": "https://github.com/Floogen/FashionSense/wiki/Shirt-Model-Properties",
+   "version_context": "development branch @ 2026-03-12; latest release v7.5.0",
+   "model_properties": [
+    "BodyPosition",
+    "ColorMaskLayers",
+    "ColorMasks",
+    "DisableGrayscale",
+    "DisableSkinGrayscale",
+    "DrawOrderOverride",
+    "Flipped",
+    "FromItemId",
+    "HidePlayerBase",
+    "HideSleeves",
+    "HideWaterLine",
+    "HideWhileSwimming",
+    "HideWhileWearingBathingSuit",
+    "IdleAnimation",
+    "IsPrismatic",
+    "Item",
+    "MovementAnimation",
+    "PrismaticAnimationSpeedMultiplier",
+    "RequireAnimationToFinish",
+    "Scale",
+    "ShirtSize",
+    "SkinToneMasks",
+    "SleeveColors",
+    "StartingPosition",
+    "Tags",
+    "UniformAnimation"
+   ],
+   "required": [
+    "BodyPosition",
+    "ShirtSize",
+    "StartingPosition"
+   ],
+   "frame_layout": "StartingPosition + Size*Frame, frames advance on +X",
+   "direction_handling": "explicit per-direction models; missing direction draws nothing",
+   "size_position": {
+    "size_key": "ShirtSize",
+    "anchor_key": "BodyPosition",
+    "scale_default": "4.0"
+   },
+   "recolor": {
+    "grayscale_default_on": true,
+    "opt_out": "DisableGrayscale",
+    "masks": [
+     "ColorMasks",
+     "ColorMaskLayers",
+     "SkinToneMasks"
+    ]
+   },
+   "animation": [
+    "UniformAnimation",
+    "IdleAnimation",
+    "MovementAnimation"
+   ],
+   "draw_order": "DrawOrderOverride"
+  },
+  {
+   "appearance_category": "Pants",
+   "source_url": "https://github.com/Floogen/FashionSense/wiki/Pants-Model-Properties",
+   "version_context": "development branch @ 2026-03-12; latest release v7.5.0",
+   "model_properties": [
+    "BodyPosition",
+    "ColorMaskLayers",
+    "ColorMasks",
+    "DisableGrayscale",
+    "DisableSkinGrayscale",
+    "DrawOrderOverride",
+    "Flipped",
+    "HideLegs",
+    "HidePlayerBase",
+    "HideShadow",
+    "HideSleeves",
+    "HideWaterLine",
+    "HideWhileSwimming",
+    "HideWhileWearingBathingSuit",
+    "IdleAnimation",
+    "IsPrismatic",
+    "Item",
+    "MovementAnimation",
+    "PantsSize",
+    "PrismaticAnimationSpeedMultiplier",
+    "RequireAnimationToFinish",
+    "Scale",
+    "SkinToneMasks",
+    "StartingPosition",
+    "Tags",
+    "UniformAnimation"
+   ],
+   "required": [
+    "BodyPosition",
+    "PantsSize",
+    "StartingPosition"
+   ],
+   "frame_layout": "StartingPosition + Size*Frame, frames advance on +X",
+   "direction_handling": "explicit per-direction models; missing direction draws nothing",
+   "size_position": {
+    "size_key": "PantsSize",
+    "anchor_key": "BodyPosition",
+    "scale_default": "4.0"
+   },
+   "recolor": {
+    "grayscale_default_on": true,
+    "opt_out": "DisableGrayscale",
+    "masks": [
+     "ColorMasks",
+     "ColorMaskLayers",
+     "SkinToneMasks"
+    ]
+   },
+   "animation": [
+    "UniformAnimation",
+    "IdleAnimation",
+    "MovementAnimation"
+   ],
+   "draw_order": "DrawOrderOverride"
+  },
+  {
+   "appearance_category": "Sleeves",
+   "source_url": "https://github.com/Floogen/FashionSense/wiki/Sleeves-Model-Properties",
+   "version_context": "development branch @ 2026-03-12; latest release v7.5.0",
+   "model_properties": [
+    "BodyPosition",
+    "ColorMaskLayers",
+    "ColorMasks",
+    "DisableGrayscale",
+    "DisableNativeOffset",
+    "DisableSkinGrayscale",
+    "DrawOrderOverride",
+    "Flipped",
+    "HidePlayerBase",
+    "HideWaterLine",
+    "HideWhileSwimming",
+    "HideWhileWearingBathingSuit",
+    "IdleAnimation",
+    "IsPrismatic",
+    "MovementAnimation",
+    "PrismaticAnimationSpeedMultiplier",
+    "RequireAnimationToFinish",
+    "Scale",
+    "SkinToneMasks",
+    "SleevesSize",
+    "StartingPosition",
+    "Tags",
+    "UniformAnimation",
+    "UseShirtColors"
+   ],
+   "required": [
+    "BodyPosition",
+    "SleevesSize",
+    "StartingPosition"
+   ],
+   "frame_layout": "StartingPosition + Size*Frame, frames advance on +X",
+   "direction_handling": "explicit per-direction models; missing direction draws nothing",
+   "size_position": {
+    "size_key": "SleevesSize",
+    "anchor_key": "BodyPosition",
+    "scale_default": "4.0"
+   },
+   "recolor": {
+    "grayscale_default_on": true,
+    "opt_out": "DisableGrayscale",
+    "masks": [
+     "ColorMasks",
+     "ColorMaskLayers",
+     "SkinToneMasks"
+    ]
+   },
+   "animation": [
+    "UniformAnimation",
+    "IdleAnimation",
+    "MovementAnimation"
+   ],
+   "draw_order": "DrawOrderOverride"
+  },
+  {
+   "appearance_category": "Shoes",
+   "source_url": "https://github.com/Floogen/FashionSense/wiki/Shoes-Model-Properties",
+   "version_context": "development branch @ 2026-03-12; latest release v7.5.0",
+   "model_properties": [
+    "BodyPosition",
+    "ColorMaskLayers",
+    "ColorMasks",
+    "DisableGrayscale",
+    "DisableSkinGrayscale",
+    "DrawOrderOverride",
+    "Flipped",
+    "HidePlayerBase",
+    "HideSleeves",
+    "HideWaterLine",
+    "HideWhileSwimming",
+    "HideWhileWearingBathingSuit",
+    "IdleAnimation",
+    "IsPrismatic",
+    "Item",
+    "MovementAnimation",
+    "PrismaticAnimationSpeedMultiplier",
+    "RequireAnimationToFinish",
+    "Scale",
+    "ShoesSize",
+    "SkinToneMasks",
+    "StartingPosition",
+    "Tags",
+    "UniformAnimation"
+   ],
+   "required": [
+    "BodyPosition",
+    "ShoesSize",
+    "StartingPosition"
+   ],
+   "frame_layout": "StartingPosition + Size*Frame, frames advance on +X",
+   "direction_handling": "explicit per-direction models; missing direction draws nothing",
+   "size_position": {
+    "size_key": "ShoesSize",
+    "anchor_key": "BodyPosition",
+    "scale_default": "4.0"
+   },
+   "recolor": {
+    "grayscale_default_on": true,
+    "opt_out": "DisableGrayscale",
+    "masks": [
+     "ColorMasks",
+     "ColorMaskLayers",
+     "SkinToneMasks"
+    ]
+   },
+   "animation": [
+    "UniformAnimation",
+    "IdleAnimation",
+    "MovementAnimation"
+   ],
+   "draw_order": "DrawOrderOverride"
+  },
+  {
+   "appearance_category": "Accessories",
+   "source_url": "https://github.com/Floogen/FashionSense/wiki/Accessory-Model-Properties",
+   "version_context": "development branch @ 2026-03-12; latest release v7.5.0",
+   "model_properties": [
+    "AccessorySize",
+    "ColorMaskLayers",
+    "ColorMasks",
+    "DisableGrayscale",
+    "DisableSkinGrayscale",
+    "DrawOrderOverride",
+    "Flipped",
+    "HeadPosition",
+    "HidePlayerBase",
+    "HideSleeves",
+    "HideWaterLine",
+    "HideWhileSwimming",
+    "HideWhileWearingBathingSuit",
+    "IdleAnimation",
+    "IsPrismatic",
+    "MovementAnimation",
+    "PrismaticAnimationSpeedMultiplier",
+    "RequireAnimationToFinish",
+    "Scale",
+    "SkinToneMasks",
+    "StartingPosition",
+    "Tags",
+    "UniformAnimation"
+   ],
+   "required": [
+    "AccessorySize",
+    "HeadPosition",
+    "StartingPosition"
+   ],
+   "frame_layout": "StartingPosition + Size*Frame, frames advance on +X",
+   "direction_handling": "explicit per-direction models; missing direction draws nothing",
+   "size_position": {
+    "size_key": "AccessorySize",
+    "anchor_key": "HeadPosition",
+    "scale_default": "4.0"
+   },
+   "recolor": {
+    "grayscale_default_on": true,
+    "opt_out": "DisableGrayscale",
+    "masks": [
+     "ColorMasks",
+     "ColorMaskLayers",
+     "SkinToneMasks"
+    ]
+   },
+   "animation": [
+    "UniformAnimation",
+    "IdleAnimation",
+    "MovementAnimation"
+   ],
+   "draw_order": "DrawOrderOverride"
+  },
+  {
+   "appearance_category": "Hairs",
+   "source_url": "https://github.com/Floogen/FashionSense/wiki/Hair-Model-Properties",
+   "version_context": "development branch @ 2026-03-12; latest release v7.5.0",
+   "model_properties": [
+    "ColorMaskLayers",
+    "ColorMasks",
+    "DisableGrayscale",
+    "DisableSkinGrayscale",
+    "DrawOrderOverride",
+    "Flipped",
+    "HairSize",
+    "HeadPosition",
+    "HidePlayerBase",
+    "HideSleeves",
+    "HideWaterLine",
+    "HideWhileSwimming",
+    "HideWhileWearingBathingSuit",
+    "IdleAnimation",
+    "IsPrismatic",
+    "MovementAnimation",
+    "PrismaticAnimationSpeedMultiplier",
+    "RequireAnimationToFinish",
+    "Scale",
+    "SkinToneMasks",
+    "StartingPosition",
+    "Tags",
+    "UniformAnimation",
+    "UseBaldHead"
+   ],
+   "required": [
+    "HairSize",
+    "HeadPosition",
+    "StartingPosition"
+   ],
+   "frame_layout": "StartingPosition + Size*Frame, frames advance on +X",
+   "direction_handling": "explicit per-direction models; missing direction draws nothing",
+   "size_position": {
+    "size_key": "HairSize",
+    "anchor_key": "HeadPosition",
+    "scale_default": "4.0"
+   },
+   "recolor": {
+    "grayscale_default_on": true,
+    "opt_out": "DisableGrayscale",
+    "masks": [
+     "ColorMasks",
+     "ColorMaskLayers",
+     "SkinToneMasks"
+    ]
+   },
+   "animation": [
+    "UniformAnimation",
+    "IdleAnimation",
+    "MovementAnimation"
+   ],
+   "draw_order": "DrawOrderOverride"
+  },
+  {
+   "appearance_category": "Bodies",
+   "source_url": "https://github.com/Floogen/FashionSense/wiki/Body-Model-Properties",
+   "version_context": "development branch @ 2026-03-12; latest release v7.5.0",
+   "model_properties": [
+    "AccessoryOffset",
+    "ArmsOffset",
+    "BodyOffset",
+    "BodySize",
+    "ColorMaskLayers",
+    "ColorMasks",
+    "DisableGrayscale",
+    "DrawOrderOverride",
+    "EyeBackgroundPosition",
+    "EyeBaseSourceRectangle",
+    "EyePosition",
+    "Flipped",
+    "HeadOffset",
+    "HideHair",
+    "HideSleeves",
+    "HideWaterLine",
+    "HideWhileSwimming",
+    "HideWhileWearingBathingSuit",
+    "IdleAnimation",
+    "IsPrismatic",
+    "LegOffset",
+    "MovementAnimation",
+    "Offset",
+    "Portrait",
+    "PrismaticAnimationSpeedMultiplier",
+    "RequireAnimationToFinish",
+    "Scale",
+    "ShoeOffset",
+    "SkinTone",
+    "SourceRectangle",
+    "StartingPosition",
+    "Tags",
+    "UniformAnimation"
+   ],
+   "required": [
+    "BodySize",
+    "EyeBackgroundPosition",
+    "EyePosition",
+    "StartingPosition"
+   ],
+   "frame_layout": "StartingPosition + Size*Frame, frames advance on +X",
+   "direction_handling": "explicit per-direction models; missing direction draws nothing",
+   "size_position": {
+    "size_key": "BodySize",
+    "anchor_key": null,
+    "scale_default": "4.0"
+   },
+   "recolor": {
+    "grayscale_default_on": true,
+    "opt_out": "DisableGrayscale",
+    "masks": [
+     "ColorMasks",
+     "ColorMaskLayers"
+    ]
+   },
+   "animation": [
+    "UniformAnimation",
+    "IdleAnimation",
+    "MovementAnimation"
+   ],
+   "draw_order": "DrawOrderOverride"
+  }
+ ]
+}

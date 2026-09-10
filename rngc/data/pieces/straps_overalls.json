@@ -1,0 +1,39 @@
+{
+  "id": "straps_overalls",
+  "kind": "layer",
+  "layer": "OVER",
+  "slot": "secondary",
+  "identity": true,
+  "wrap": false,
+  "note": "Two shoulder straps over the shirt (vanilla 216: front cols 1,6 rows 0-2; side strap A (1,0)(1,1)(2,2), strap B (5,0)(6,1)(6,2) at 2x). No back view: the bib_overalls back region covers it.",
+  "views": {
+    "front": {
+      "origin": [
+        2,
+        0
+      ],
+      "rows": [
+        "==........==",
+        "==........==",
+        "==........==",
+        "==........==",
+        "==........==",
+        "==........=="
+      ]
+    },
+    "side": {
+      "origin": [
+        2,
+        0
+      ],
+      "rows": [
+        "==......==..",
+        "==......==..",
+        "==........==",
+        "==........==",
+        "..==......==",
+        "..==......=="
+      ]
+    }
+  }
+}

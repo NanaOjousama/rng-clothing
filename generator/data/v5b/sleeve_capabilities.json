@@ -1,0 +1,80 @@
+{
+  "formatVersion": "5.2.0",
+  "runtimeAuthority": "Fashion Sense 7.5.0",
+  "shirtFrame": [16, 16],
+  "shirtScale": 2,
+  "shirtBodyPosition": [0, 32],
+  "customSleeveFrame": [32, 64],
+  "customSleeveScale": 2,
+  "customSleeveBodyPosition": [0, 0],
+  "customSleeveAtlas": {
+    "columns": 12,
+    "rows": 21,
+    "frameCount": 252,
+    "directionOrder": ["FRONT", "RIGHT", "BACK", "LEFT"],
+    "sourceContract": "Fashion Sense 7.5.0 Default Short/Default Tall animation template",
+    "notes": "The framework template supplies pose topology only. V5B authors target-resolution mask, cuff, seam, and material pixels directly."
+  },
+  "families": {
+    "SLEEVELESS": {
+      "status": "NEEDS_FS_SLEEVES_LAYER",
+      "mechanism": "generated_full_motion_skin_tone_arm_atlas",
+      "runtimeClaim": "STATIC_PASS_RUNTIME_RETEST_REQUIRED",
+      "notes": "The previous HideSleeves approach hid the arm layer. V5C2 converts the complete Default Short garment mask into skin-tone masks and keeps HideSleeves false."
+    },
+    "SHORT_SLEEVE": {
+      "status": "SUPPORTED_NOW",
+      "mechanism": "native_animated_sleeves_plus_shirt_colors",
+      "runtimeClaim": "PROVEN_BASELINE",
+      "notes": "Uses the existing native Farmer sleeve animation and the shirt's three SleeveColors."
+    },
+    "FITTED_LONG_SLEEVE": {
+      "status": "NEEDS_FS_SLEEVES_LAYER",
+      "mechanism": "generated_full_motion_sleeves_atlas",
+      "runtimeClaim": "STATIC_PASS_RUNTIME_RETEST_REQUIRED",
+      "notes": "Uses the complete Fashion Sense 252-frame Tall pose topology at 32x64 logical pixels and Scale 2."
+    },
+    "LOOSE_LONG_SLEEVE": {
+      "status": "EXPERIMENTAL",
+      "mechanism": "requires_pose_safe_outward_silhouette_expansion",
+      "runtimeClaim": "NOT_GENERATED_IN_V5B",
+      "notes": "Fashion Sense can draw it, but an original expanded arm silhouette must be proven in tools, sitting, and horse poses."
+    },
+    "OVERSIZED_LONG_SLEEVE": {
+      "status": "EXPERIMENTAL",
+      "mechanism": "requires_pose_safe_outward_silhouette_expansion",
+      "runtimeClaim": "NOT_GENERATED_IN_V5B",
+      "notes": "Large cuffs and dropped mass risk hand/tool occlusion and are excluded from the diagnostic batch."
+    },
+    "PUFF_VOLUME_SLEEVE": {
+      "status": "EXPERIMENTAL",
+      "mechanism": "requires_custom_full_motion_sleeves_layer",
+      "runtimeClaim": "NOT_GENERATED_IN_V5B",
+      "notes": "Standing geometry is feasible; full arm rotation and side-pose volume remain unproven."
+    },
+    "OFF_SHOULDER": {
+      "status": "EXPERIMENTAL",
+      "mechanism": "shirt_skin_exposure_plus_optional_sleeves_layer",
+      "runtimeClaim": "NOT_GENERATED_IN_V5B",
+      "notes": "Requires an exposed-skin coverage envelope and body compatibility tests beyond the conservative default-Farmer envelope."
+    },
+    "ONE_SHOULDER_ASYMMETRIC": {
+      "status": "NOT_VIABLE",
+      "mechanism": "none_in_v5b",
+      "runtimeClaim": "REJECTED",
+      "notes": "Left/right flipping and tool subframes need a dedicated asymmetry contract; it is not a safe generic option yet."
+    },
+    "ROLLED_CUFFED_SLEEVE": {
+      "status": "NEEDS_FS_SLEEVES_LAYER",
+      "mechanism": "generated_full_motion_short_sleeves_atlas_with_cuff",
+      "runtimeClaim": "STATIC_PASS_RUNTIME_RETEST_REQUIRED",
+      "notes": "Uses Short pose topology with a target-resolution cuff termination at the garment/skin boundary."
+    },
+    "LAYERED_INNER_OUTER_SLEEVE": {
+      "status": "NEEDS_FS_SLEEVES_LAYER",
+      "mechanism": "generated_full_motion_tall_sleeves_atlas_with_layered_cuff",
+      "runtimeClaim": "STATIC_PASS_RUNTIME_RETEST_REQUIRED",
+      "notes": "One generated companion appearance carries coordinated outer cloth and inner/cuff treatment from the same semantic recipe."
+    }
+  }
+}

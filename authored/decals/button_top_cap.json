@@ -1,0 +1,27 @@
+{
+  "name": "button_top_cap",
+  "motif_class": "button",
+  "pending": true,
+  "slot": "HEAD",
+  "zone": "top",
+  "z": 3,
+  "style": [
+    "smart",
+    "work",
+    "casual"
+  ],
+  "views": [
+    "front",
+    "left",
+    "back"
+  ],
+  "fits": [
+    "soft_cap"
+  ],
+  "description": "the metal button at the crown seam",
+  "per_view": false,
+  "size": [
+    2,
+    2
+  ]
+}

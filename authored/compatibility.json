@@ -1,0 +1,279 @@
+{
+  "bases": {
+    "soft_cap": {
+      "session": "20260907-184444",
+      "motifs": {
+        "band_braided": {
+          "verdict": "KEEP",
+          "why": "4-6 cells, dL 50-98, <=2 fragments",
+          "per_view": {
+            "front": [
+              6,
+              76.40859999999999,
+              1
+            ],
+            "right": [
+              4,
+              50.2788,
+              2
+            ],
+            "left": [
+              4,
+              50.2788,
+              2
+            ],
+            "back": [
+              6,
+              98.48253333333332,
+              1
+            ]
+          },
+          "palette_swing": null
+        },
+        "band_plain": {
+          "verdict": "KEEP",
+          "why": "5-6 cells, dL 54-113, <=2 fragments",
+          "per_view": {
+            "front": [
+              6,
+              90.5662,
+              1
+            ],
+            "right": [
+              5,
+              53.84572000000001,
+              1
+            ],
+            "left": [
+              5,
+              53.84572000000001,
+              1
+            ],
+            "back": [
+              6,
+              112.52286666666664,
+              1
+            ]
+          },
+          "palette_swing": null
+        },
+        "band_striped": {
+          "verdict": "KEEP",
+          "why": "6-6 cells, dL 69-136, <=2 fragments",
+          "per_view": {
+            "front": [
+              6,
+              114.35486666666668,
+              1
+            ],
+            "right": [
+              6,
+              69.44406666666667,
+              1
+            ],
+            "left": [
+              6,
+              69.44406666666667,
+              1
+            ],
+            "back": [
+              6,
+              136.4288,
+              1
+            ]
+          },
+          "palette_swing": 1.7
+        },
+        "band_woven": {
+          "verdict": "KEEP",
+          "why": "5-6 cells, dL 52-109, <=2 fragments",
+          "per_view": {
+            "front": [
+              6,
+              87.40306666666667,
+              1
+            ],
+            "right": [
+              5,
+              52.203559999999996,
+              2
+            ],
+            "left": [
+              5,
+              52.203559999999996,
+              2
+            ],
+            "back": [
+              6,
+              109.47699999999999,
+              1
+            ]
+          },
+          "palette_swing": null
+        },
+        "bow_knot": {
+          "verdict": "KEEP",
+          "why": "7-7 cells, dL 137-169, <=2 fragments",
+          "per_view": {
+            "front": [
+              7,
+              159.54982857142858,
+              1
+            ],
+            "right": [
+              7,
+              169.39665714285715,
+              1
+            ],
+            "left": [
+              7,
+              169.39665714285715,
+              1
+            ],
+            "back": [
+              7,
+              137.07565714285712,
+              1
+            ]
+          },
+          "palette_swing": null
+        },
+        "crown_button": {
+          "verdict": "KEEP",
+          "why": "point accent: 1 cell at dL 192, visible in every view",
+          "per_view": {
+            "front": [
+              1,
+              191.77540000000002,
+              1
+            ],
+            "right": [
+              1,
+              191.77540000000002,
+              1
+            ],
+            "left": [
+              1,
+              191.77540000000002,
+              1
+            ],
+            "back": [
+              1,
+              191.77540000000002,
+              1
+            ]
+          },
+          "palette_swing": 9.2
+        },
+        "feather_short": {
+          "verdict": "KEEP BUT BASE-SPECIFIC",
+          "why": "invisible in back on this base",
+          "per_view": {
+            "front": [
+              6,
+              223.1860333333333,
+              1
+            ],
+            "right": [
+              6,
+              223.1860333333333,
+              1
+            ],
+            "left": [
+              6,
+              223.1860333333333,
+              1
+            ],
+            "back": [
+              0,
+              0.0,
+              0
+            ]
+          },
+          "palette_swing": null
+        },
+        "flower_daisy": {
+          "verdict": "KEEP",
+          "why": "9-9 cells, dL 225-239, <=2 fragments",
+          "per_view": {
+            "front": [
+              9,
+              238.64264444444447,
+              1
+            ],
+            "right": [
+              9,
+              236.98386666666667,
+              1
+            ],
+            "left": [
+              9,
+              236.98386666666667,
+              1
+            ],
+            "back": [
+              9,
+              225.01775555555554,
+              1
+            ]
+          },
+          "palette_swing": 3.0
+        },
+        "leaf_sprig": {
+          "verdict": "KEEP BUT BASE-SPECIFIC",
+          "why": "invisible in back on this base",
+          "per_view": {
+            "front": [
+              7,
+              237.3795142857143,
+              1
+            ],
+            "right": [
+              7,
+              237.3795142857143,
+              1
+            ],
+            "left": [
+              7,
+              237.3795142857143,
+              1
+            ],
+            "back": [
+              0,
+              0.0,
+              0
+            ]
+          },
+          "palette_swing": null
+        },
+        "pom_small": {
+          "verdict": "KEEP",
+          "why": "6-6 cells, dL 164-196, <=2 fragments",
+          "per_view": {
+            "front": [
+              6,
+              195.95606666666666,
+              1
+            ],
+            "right": [
+              6,
+              195.95606666666666,
+              1
+            ],
+            "left": [
+              6,
+              195.95606666666666,
+              1
+            ],
+            "back": [
+              6,
+              163.67306666666667,
+              1
+            ]
+          },
+          "palette_swing": 2.7
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "formatVersion": "5.2.0",
+  "logicalShirtFrame": [16, 16],
+  "shirtScale": 2,
+  "shirtBodyPosition": [0, 32],
+  "directionRows": {"front": 0, "right": 16, "left": 32, "back": 48},
+  "previewOrder": ["front", "right", "back", "left"],
+  "sleevelessRemovableRegions": ["SLEEVE"],
+  "shoulderTreatment": {
+    "standard": "preserve",
+    "narrow": "subordinate_outer_shoulder_edge",
+    "dropped": "secondary_outer_shoulder_plane"
+  },
+  "necklineTreatment": {
+    "crew": "compact_center_recess",
+    "v_neck": "descending_center_recess",
+    "square": "two_corner_recess",
+    "high": "raised_center_collar",
+    "open": "preserve_opening"
+  },
+  "customSleeves": {
+    "logicalFrame": [32, 64],
+    "scale": 2,
+    "bodyPosition": [0, 0],
+    "disableNativeOffset": true,
+    "drawBeforeShirt": true,
+    "maskValues": [36, 119, 158],
+    "families": {
+      "SLEEVELESS": {"template": "Default Short", "cuffDepth": 0, "seamStrength": 0, "bareArm": true},
+      "FITTED_LONG_SLEEVE": {"template": "Default Tall", "cuffDepth": 0, "seamStrength": 1},
+      "ROLLED_CUFFED_SLEEVE": {"template": "Default Short", "cuffDepth": 2, "seamStrength": 1},
+      "LAYERED_INNER_OUTER_SLEEVE": {"template": "Default Tall", "cuffDepth": 3, "seamStrength": 1}
+    }
+  }
+}

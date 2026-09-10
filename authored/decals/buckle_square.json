@@ -1,0 +1,25 @@
+{
+  "name": "buckle_square",
+  "motif_class": "buckled_band",
+  "slot": "HEAD",
+  "zone": "band",
+  "z": 2,
+  "style": [
+    "formal",
+    "smart"
+  ],
+  "views": [
+    "front",
+    "left",
+    "back"
+  ],
+  "fits": [
+    "felt_hat"
+  ],
+  "description": "a wide belt buckle seated on the band",
+  "per_view": false,
+  "size": [
+    6,
+    2
+  ]
+}

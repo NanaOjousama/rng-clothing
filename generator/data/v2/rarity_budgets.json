@@ -1,0 +1,52 @@
+{
+  "formatVersion": 2,
+  "purpose": "Rarity controls construction freedom and substantial composition, not decorative pixel count.",
+  "global": {
+    "maximumDyeChannels": 1,
+    "maximumMicroDetails": 1,
+    "maximumMotifs": 1,
+    "maximumAccentPixelsPerDirection": 2,
+    "maximumIsolatedDecorativePixelsPerDirection": 1,
+    "maximumMajorColorRegions": 3
+  },
+  "rarities": {
+    "Common": {
+      "intent": "Simple, clean everyday construction.",
+      "minimumSubstantialFeatures": 0,
+      "maximumSubstantialFeatures": 1,
+      "maximumMicroDetails": 0,
+      "maximumMajorColorRegions": 2,
+      "maximumAccentPixelsPerDirection": 0,
+      "maximumIsolatedDecorativePixelsPerDirection": 0,
+      "maximumMotifs": 0
+    },
+    "Uncommon": {
+      "intent": "One clearly visible styling decision beyond the base archetype.",
+      "minimumSubstantialFeatures": 1,
+      "maximumSubstantialFeatures": 1,
+      "maximumMicroDetails": 1,
+      "maximumMajorColorRegions": 3,
+      "maximumAccentPixelsPerDirection": 2,
+      "maximumIsolatedDecorativePixelsPerDirection": 1,
+      "maximumMotifs": 1
+    },
+    "Rare": {
+      "intent": "Strong construction and color-block composition without visual noise.",
+      "minimumSubstantialFeatures": 1,
+      "maximumSubstantialFeatures": 2,
+      "maximumMicroDetails": 1,
+      "maximumMajorColorRegions": 3,
+      "maximumAccentPixelsPerDirection": 2,
+      "maximumIsolatedDecorativePixelsPerDirection": 1,
+      "maximumMotifs": 1,
+      "requiresNonMicroIdentity": true
+    }
+  },
+  "evidence": {
+    "vanillaSampleShirts": 34,
+    "vanillaSampleFrames": 136,
+    "observedMeaningfulColors": {"minimum": 3, "median": 6, "maximum": 11},
+    "observedDisconnectedOpaquePixels": {"minimum": 0, "median": 0, "maximum": 0},
+    "policy": "V2 keeps V1's conservative color and accent limits while moving rarity expression into major connected regions. Numeric checks reject obvious failures and do not score beauty."
+  }
+}

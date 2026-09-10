@@ -1,0 +1,24 @@
+{
+  "id": "bench_vest",
+  "reference": "WARM_EVERYDAY brown vest over cream shirt, brass buttons",
+  "slots": {
+    "primary": {
+      "deep": "#2A2320",
+      "shadow": "#4A3B33",
+      "base": "#6E5646",
+      "light": "#8E7460"
+    },
+    "secondary": {
+      "deep": "#6B6355",
+      "shadow": "#A89E86",
+      "base": "#E8E0C8",
+      "light": "#F8F3E4"
+    },
+    "accent": {
+      "deep": "#6B4E1E",
+      "shadow": "#9C7A33",
+      "base": "#C9A24A",
+      "light": "#E6C877"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "BUTTON_SHIRT",
+  "identity": "A tailored garment organized around a continuous center placket and folded collar; buttons only finish the placket.",
+  "allowedConstruction": {
+    "fit": ["fitted", "regular"],
+    "neckline": ["open"],
+    "collar": ["small_folded"],
+    "closure": ["buttons"],
+    "layering": ["single_layer", "overlay_panel"],
+    "hem": ["plain", "structured", "contrast_band"],
+    "panelLayout": ["center_placket", "yoke"]
+  },
+  "constructionRules": [
+    {"when": {"field": "panelLayout", "values": ["yoke"]}, "requiresAll": [{"field": "layering", "values": ["overlay_panel"]}]},
+    {"when": {"field": "layering", "values": ["overlay_panel"]}, "requiresAll": [{"field": "panelLayout", "values": ["yoke"]}]}
+  ],
+  "rarityConstruction": {
+    "Common": {
+      "layering": ["single_layer"],
+      "hem": ["plain", "structured"],
+      "panelLayout": ["center_placket"]
+    }
+  },
+  "constructionFeatureLinks": [
+    {"field": "panelLayout", "values": ["yoke"], "requiresAnyFeature": ["yoke"]},
+    {"field": "hem", "values": ["structured", "contrast_band"], "requiresAnyFeature": ["structured_lower_band"]}
+  ],
+  "allowedSubstantialFeatures": ["major_panel_contrast", "center_placket", "yoke", "structured_lower_band"],
+  "allowedMicroDetails": ["small_chest_accent", "tiny_button", "small_pin", "single_accent_pixel", "tiny_trim_mark"],
+  "coreRegions": ["BODY", "COLLAR", "PLACKET"],
+  "availableColorRegions": ["body", "collar", "yoke", "placket", "hem"],
+  "primaryRegions": ["body"],
+  "directionPolicy": "The placket is a front structural strip, the folded collar survives on back and side, and buttons never replace the placket.",
+  "incompatibleFeatures": ["round_neck", "crew_neck", "center_open", "inner_layer", "sailor_collar"]
+}

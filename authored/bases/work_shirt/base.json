@@ -1,0 +1,148 @@
+{
+  "name": "work_shirt",
+  "slot": "TOP",
+  "size": [
+    8,
+    8
+  ],
+  "style": [
+    "work",
+    "casual",
+    "cottagecore"
+  ],
+  "description": "plain long-body work shirt with set sleeves",
+  "anchors": {
+    "neck": {
+      "front": [
+        2,
+        0
+      ],
+      "left": [
+        2,
+        0
+      ],
+      "back": [
+        2,
+        0
+      ]
+    },
+    "placket": {
+      "front": [
+        3,
+        1
+      ],
+      "left": null,
+      "back": null
+    },
+    "chest_left": {
+      "front": [
+        2,
+        2
+      ],
+      "left": null,
+      "back": null
+    },
+    "hem": {
+      "front": [
+        1,
+        6
+      ],
+      "left": [
+        2,
+        6
+      ],
+      "back": [
+        1,
+        6
+      ]
+    }
+  },
+  "zones": {
+    "front": {
+      "crown_face": [
+        2,
+        1,
+        5,
+        1
+      ],
+      "crown_top": [
+        1,
+        0,
+        6,
+        1
+      ],
+      "band": [
+        2,
+        6,
+        5,
+        6
+      ],
+      "side": [
+        4,
+        1,
+        6,
+        1
+      ]
+    },
+    "left": {
+      "crown_face": [
+        3,
+        1,
+        4,
+        1
+      ],
+      "crown_top": [
+        2,
+        0,
+        5,
+        1
+      ],
+      "band": [
+        3,
+        6,
+        4,
+        6
+      ],
+      "side": [
+        3,
+        1,
+        5,
+        1
+      ]
+    },
+    "back": {
+      "crown_face": [
+        2,
+        1,
+        5,
+        1
+      ],
+      "crown_top": [
+        1,
+        0,
+        6,
+        1
+      ],
+      "band": [
+        2,
+        6,
+        5,
+        6
+      ],
+      "side": [
+        4,
+        1,
+        6,
+        1
+      ]
+    }
+  },
+  "views": [
+    "front",
+    "back",
+    "left"
+  ],
+  "mirror": {
+    "right": "left"
+  }
+}

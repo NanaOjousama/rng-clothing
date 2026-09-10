@@ -1,0 +1,55 @@
+{
+  "formatVersion": "5.2.0",
+  "articles": {
+    "FITTED_SHIRT": {
+      "baseArticle": "FITTED_SHIRT",
+      "variants": ["plain_tee", "buttoned_tailored", "structured_shirt", "polo_like"],
+      "sleeves": ["SLEEVELESS", "SHORT_SLEEVE", "FITTED_LONG_SLEEVE", "ROLLED_CUFFED_SLEEVE"],
+      "shoulders": ["standard", "narrow"],
+      "necklines": ["crew", "v_neck", "high", "open"],
+      "collars": ["none", "shirt_collar", "high_collar", "utility"]
+    },
+    "SWEATER": {
+      "baseArticle": "SWEATER_TOP",
+      "variants": ["fitted_knit", "relaxed_knit", "high_neck_knit", "patterned_knit"],
+      "sleeves": ["FITTED_LONG_SLEEVE", "LAYERED_INNER_OUTER_SLEEVE"],
+      "shoulders": ["standard", "dropped"],
+      "necklines": ["crew", "v_neck", "high"],
+      "collars": ["none", "high_collar", "rounded"]
+    },
+    "VEST_TOP": {
+      "baseArticle": "FITTED_SHIRT",
+      "variants": ["fitted_vest", "waistcoat", "sweater_vest", "utility_vest", "cropped_vest"],
+      "sleeves": ["SLEEVELESS", "FITTED_LONG_SLEEVE", "ROLLED_CUFFED_SLEEVE"],
+      "shoulders": ["standard", "narrow"],
+      "necklines": ["v_neck", "high", "open"],
+      "collars": ["none", "shirt_collar", "high_collar", "utility"]
+    },
+    "CROPPED_JACKET": {
+      "baseArticle": "CROPPED_JACKET",
+      "variants": ["field_jacket", "moto_jacket", "military_jacket", "casual_zip_jacket"],
+      "sleeves": ["FITTED_LONG_SLEEVE", "ROLLED_CUFFED_SLEEVE", "LAYERED_INNER_OUTER_SLEEVE"],
+      "shoulders": ["standard", "dropped"],
+      "necklines": ["high", "open"],
+      "collars": ["shirt_collar", "high_collar", "lapel", "utility"]
+    },
+    "STANDARD_JACKET": {
+      "baseArticle": "SHORT_OUTERWEAR",
+      "variants": ["blazer", "field_jacket", "bomber_jacket", "cardigan", "utility_jacket"],
+      "sleeves": ["FITTED_LONG_SLEEVE", "ROLLED_CUFFED_SLEEVE", "LAYERED_INNER_OUTER_SLEEVE"],
+      "shoulders": ["standard", "dropped"],
+      "necklines": ["crew", "high", "open"],
+      "collars": ["none", "shirt_collar", "high_collar", "lapel", "utility"]
+    },
+    "BLOUSE": {
+      "baseArticle": "FITTED_SHIRT",
+      "variants": ["bow_blouse", "sailor_blouse", "layered_fashion_blouse", "square_neck_blouse"],
+      "sleeves": ["SLEEVELESS", "SHORT_SLEEVE", "FITTED_LONG_SLEEVE", "ROLLED_CUFFED_SLEEVE", "LAYERED_INNER_OUTER_SLEEVE"],
+      "shoulders": ["standard", "narrow", "dropped"],
+      "necklines": ["crew", "v_neck", "square", "high", "open"],
+      "collars": ["none", "sailor_like", "high_collar", "rounded"]
+    }
+  },
+  "layering": ["single_layer", "visible_inner_layer", "vest_over_inner", "collar_overlay"],
+  "openings": ["closed", "buttoned", "center_open", "partial_open", "wrap_suggestion"]
+}

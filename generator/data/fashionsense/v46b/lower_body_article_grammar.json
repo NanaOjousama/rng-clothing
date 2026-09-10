@@ -1,0 +1,54 @@
+{
+  "formatVersion": "4.6B",
+  "renderer": {
+    "frameSize": [32, 64],
+    "scale": 2,
+    "directionBlocks": ["front", "back", "right", "left"],
+    "bodyPosition": [0, -2],
+    "disableNativeOffset": true,
+    "sourceDensity": "2x each axis relative to the installed 16x32 Farmer frame; masks are re-resolved, not finished-art upscales"
+  },
+  "sharedRegions": ["waistband", "leftHip", "rightHip", "centerFront", "centerBack"],
+  "articles": {
+    "PANTS": {
+      "fields": {
+        "fit": ["fitted", "straight", "tapered", "relaxed"],
+        "length": ["cropped", "ankle", "full"],
+        "waist": ["standard", "high", "contrast"],
+        "construction": ["plain", "paneled", "reinforced", "cuffed", "tucked"]
+      },
+      "regions": ["leftUpperLeg", "rightUpperLeg", "inseam", "leftOuterLeg", "rightOuterLeg", "leftKnee", "rightKnee", "leftLowerLeg", "rightLowerLeg", "leftCuff", "rightCuff"],
+      "identity": ["two long leg channels", "continuous hip-to-lower-leg coverage", "center or overlap crease", "paired terminations"],
+      "forbid": ["unified full-width hem", "transparent crotch hole", "skirt-like lower mass"]
+    },
+    "SHORTS": {
+      "fields": {
+        "fit": ["fitted", "relaxed", "wide"],
+        "length": ["short", "mid", "knee"],
+        "hem": ["clean", "cuffed", "rolled", "contrast"],
+        "construction": ["plain", "paneled", "utility"]
+      },
+      "regions": ["leftUpperLeg", "rightUpperLeg", "inseam", "leftOuterLeg", "rightOuterLeg", "leftHem", "rightHem"],
+      "identity": ["two short leg channels", "paired high hems", "native exposed lower legs", "center split below crotch"],
+      "forbid": ["unified skirt hem", "full-length garment continuation"]
+    },
+    "SKIRT": {
+      "fields": {
+        "silhouette": ["straight", "a_line", "pleated", "soft_flare"],
+        "length": ["short", "medium"],
+        "waist": ["standard", "high", "contrast"],
+        "hem": ["clean", "layered", "contrast"]
+      },
+      "regions": ["skirtFrontMass", "skirtBackMass", "skirtLeftEdge", "skirtRightEdge", "skirtCenter", "skirtHem", "skirtFoldRegions"],
+      "identity": ["connected garment mass", "single intentional hem", "waist-to-flare transition", "native exposed legs below"],
+      "forbid": ["transparent inseam", "paired pant cuffs", "false leg channels"]
+    }
+  },
+  "rarity": {
+    "Common": {"primarySystems": 1, "supportSystems": 0, "focalFeatures": 0},
+    "Uncommon": {"primarySystems": 1, "supportSystems": 1, "focalFeatures": 0},
+    "Rare": {"primarySystems": 1, "supportSystems": 1, "focalFeatures": 1}
+  },
+  "priority": ["coverage", "article_identity", "silhouette", "construction", "surface_structure", "color_blocking", "small_details", "shading"],
+  "promotionState": "EXPERIMENTAL"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "buttons_placket",
+  "slot": "TOP",
+  "attach": "placket",
+  "z": 3,
+  "style": [
+    "work",
+    "smart",
+    "formal"
+  ],
+  "views": [
+    "front"
+  ],
+  "description": "a run of buttons down the centre front",
+  "per_view": false,
+  "size": [
+    1,
+    5
+  ]
+}

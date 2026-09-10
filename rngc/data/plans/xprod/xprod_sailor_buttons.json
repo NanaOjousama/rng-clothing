@@ -1,0 +1,23 @@
+{
+  "id": "xprod_sailor_buttons",
+  "name": "XPROD Sailor Collar With Placket",
+  "template": null,
+  "blank": "torso_basic",
+  "pieces": [
+    "collar_sailor",
+    "placket_buttons",
+    "button_accent",
+    "hem_plain"
+  ],
+  "palette": "bench_sailor",
+  "sleeve_slot": "primary",
+  "identity": [
+    "collar_sailor",
+    "button_accent"
+  ],
+  "max_colors": 10,
+  "tags": [
+    "XPROD"
+  ],
+  "description": "Sailor collar over a buttoned placket."
+}

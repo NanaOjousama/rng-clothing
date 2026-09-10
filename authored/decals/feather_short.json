@@ -1,0 +1,32 @@
+{
+  "name": "feather_short",
+  "motif_class": "long_feather",
+  "slot": "HEAD",
+  "zone": "side",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 5,
+  "anchor_cell": [
+    0,
+    2
+  ],
+  "anchor_point": "top_right",
+  "style": [
+    "casual",
+    "work",
+    "cottagecore"
+  ],
+  "views": [
+    "front",
+    "left"
+  ],
+  "fits": [
+    "knit_cap"
+  ],
+  "description": "a short quill with a two-cell vane, for a cap",
+  "per_view": false,
+  "size": [
+    4,
+    3
+  ]
+}

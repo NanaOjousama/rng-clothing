@@ -1,0 +1,152 @@
+{
+  "formatVersion": "1.0.0",
+  "fashionSenseVersion": "7.5.0",
+  "purpose": "Coordinate one semantic hoodie recipe across a Shirt with native animated sleeve colors, a Hat hood, and a Preset.",
+  "strategies": {
+    "shirt_sleeves_only": {
+      "status": "LIMITED",
+      "useWhen": [
+        "a hood is intentionally only implied at the neckline",
+        "runtime hoodie recognition is not the primary design requirement"
+      ],
+      "warning": "The V5C2 and V5D runtime review showed that torso-only hood masses often collapse into sweater collars."
+    },
+    "shirt_sleeves_hood": {
+      "status": "EXPERIMENTAL_REJECTED_FOR_HOODIE_RUNTIME",
+      "useWhen": [
+        "a custom sleeve silhouette has its own completed runtime calibration"
+      ],
+      "warning": "The uncalibrated 32x64 Scale-2 custom Sleeves atlas detached below the Farmer in live gameplay."
+    },
+    "shirt_sleeves_hood_accessory": {
+      "status": "NOT_USED",
+      "useWhen": [
+        "a body-relative detail cannot fit safely in Shirt art"
+      ],
+      "maximumAccessories": 0,
+      "warning": "Drawstrings fit inside the Shirt frame and do not justify a second head-relative anchor contract."
+    },
+    "shirt_native_sleeves_hood": {
+      "status": "SUPPORTED_NOW",
+      "useWhen": [
+        "the torso requires high-detail Shirt art",
+        "animated arms can use the Shirt SleeveColors contract",
+        "the hood must remain visible around or behind the head"
+      ],
+      "selectedForBatch": true
+    },
+    "preset_assembly": {
+      "status": "REQUIRED_FOR_TEST_BATCH",
+      "reason": "The player should equip one named outfit rather than manually match generated components."
+    }
+  },
+  "hoodStates": {
+    "down": {
+      "hairPolicy": "preserve",
+      "frontFrameSize": [24, 32],
+      "sideBackFrameSize": [16, 32],
+      "scale": 2,
+      "directionStartingY": {
+        "front": 0,
+        "right": 32,
+        "back": 64,
+        "left": 32
+      },
+      "leftFlipped": true,
+      "drawOrder": {
+        "front": "before_player",
+        "right": "before_player",
+        "back": "after_shirt",
+        "left": "before_player"
+      },
+      "headOriginsScale2": {
+        "front": [-8, 0],
+        "right": [-6, 0],
+        "back": [-12, -2],
+        "left": [-18, 0]
+      },
+      "referenceContract": "Side/back retain the doubled-density reconstruction of the visible 8x16 Scale-4 lowered topology. The reference front frame is empty, so the generated visible front uses the proven torso-level lowered Y origin and a centered wider original fold; no reference pixels are copied."
+    },
+    "up": {
+      "hairPolicy": "static pack hides; weather test supports PreserveHair, HideBackOnly, PreserveFrontOnly, HideHair; HideBackOnly is default with side hair visually masked by topmost Hat art",
+      "frameSize": [32, 32],
+      "scale": 2,
+      "directionFrames": {
+        "front": 0,
+        "back": 1,
+        "right": 2,
+        "left": 2
+      },
+      "leftFlipped": true,
+      "drawOrder": {
+        "front": "native",
+        "right": "native",
+        "back": "native",
+        "left": "native"
+      },
+      "headOriginsScale2": {
+        "front": [-4, 30],
+        "right": [-4, 26],
+        "back": [-4, 26],
+        "left": [-4, 26]
+      },
+      "referenceContract": "A 32x32 Scale-2 higher-density hood with the same approximate footprint as a 16x16 Scale-4 hood."
+    }
+  },
+  "pullstrings": {
+    "frameSize": [16, 16],
+    "scale": 2,
+    "directionFrames": {
+      "front": 0,
+      "right": 1,
+      "left": 2,
+      "back": 3
+    },
+    "runtimeUse": "INTEGRATED_INTO_SHIRT",
+    "hideWhileSwimming": true,
+    "hideWhileWearingBathingSuit": true
+  },
+  "shirtContract": {
+    "frameSize": [16, 16],
+    "scale": 2,
+    "bodyPosition": [0, 32],
+    "directionRows": {
+      "front": 0,
+      "right": 16,
+      "left": 32,
+      "back": 48
+    }
+  },
+  "rules": [
+    "The Shirt owns the torso shell, opening, pocket, hem, drawstrings, and a small neck-to-hood bridge.",
+    "The Hat owns visible hood volume around or behind the head.",
+    "Native animated Farmer sleeves use SleeveColors supplied by the generated Shirt.",
+    "No custom Sleeves or Accessory appearance is equipped by the corrected preset.",
+    "The static hood-up appearances hide hair; the weather-test appearance offers PreserveHair, HideBackOnly, PreserveFrontOnly, and HideHair. HideBackOnly is default because raised side Hat art now covers the lower/rear side-hair region while preserving upper/front hair.",
+    "Hood-down front art is a connected low folded silhouette drawn before Player; the Farmer masks its center and normal Hair remains untouched.",
+    "The visible lowered front uses a 24x32 frame at HeadPosition (-8,0); HeadPosition is a SpriteBatch origin, so this centers the wider fold over the 16x16 torso. Side/back remain 16x32 and keep their existing origins and pixels.",
+    "Raised-front HeadPosition is (-4,30), four display pixels above the earlier runtime position, and its face opening remains open through the lower rim.",
+    "Hood-up uses the native Fashion Sense Hat order in all directions. In 7.5.0 Hat is last in the default layer list and SortHat applies no directional move, so raised fabric stays above Player, Shirt, Hair, Sleeves, and accessories while the transparent opening reveals the face/hair beneath.",
+    "Hood-down keeps direction-specific ordering: front/sides Before Player and back After Shirt.",
+    "Scale-2 Hat HeadPosition uses farmerOrigin(0,32) + 2 * the equivalent Scale-4 HeadPosition; omitting the retained origin displaces the hood 64 display pixels downward.",
+    "Weather-reactive state switching uses Fashion Sense condition groups and per-animation frame offsets/draw-order overrides; the optional paired Content Patcher pack controls only PreserveHair/HideBackOnly/PreserveFrontOnly/HideHair policy."
+  ],
+  "rarePlusTemplate": {
+    "templateId": "RARE_PLUS_COMPLEX_LAYER_GARMENT_V1",
+    "architectureStatus": "LOCKED_PENDING_FINAL_RUNTIME_CONFIRMATION",
+    "promotionStatus": "EXPERIMENTAL",
+    "minimumRarity": "Rare",
+    "coordinatesRemainRendererOwned": true,
+    "vanillaHairV1Compatibility": {
+      "staticAudit": "COMPLETE",
+      "selectableStyleCount": 74,
+      "bodyOffsetBranches": 2,
+      "defaultPolicy": "HideBackOnly",
+      "fallbackPolicy": "PreserveFrontOnly",
+      "fallbackStyleIds": [17, 24, 26, 28, 29, 33, 34, 100, 101, 102, 103, 104, 115],
+      "singlePolicyPass": false,
+      "runtimeStatus": "PENDING",
+      "customHair": "EXPERIMENTAL_UNSUPPORTED_V1"
+    }
+  }
+}

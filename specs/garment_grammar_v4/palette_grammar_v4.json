@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "4.1.0-experimental",
+  "workingColorSpace": "OKLCH_or_equivalent_perceptual_space",
+  "storageColorSpace": "sRGB_hex",
+  "roleHierarchy": [
+    "DeepShadow",
+    "StructuralDark",
+    "PrimaryFabric",
+    "PrimaryFabricLight",
+    "SecondaryFabric",
+    "SecondaryFabricLight",
+    "Trim",
+    "Accent",
+    "OptionalMotif",
+    "OptionalMetal"
+  ],
+  "rules": [
+    "value readability is validated before hue harmony",
+    "secondary fabric owns its own highlight ramp",
+    "do not linearly interpolate raw sRGB channels for material ramps",
+    "deep shadow and structural dark may be shared when cohesion improves",
+    "accent is localized and never used to rescue weak architecture",
+    "palette does not encode gender or rarity"
+  ],
+  "coverageGuidance": {
+    "dominantFabricPercent": [
+      65,
+      85
+    ],
+    "secondaryFabricPercentWhenPresent": [
+      10,
+      30
+    ],
+    "trimPlusAccentPercentTypicalMax": 15,
+    "strongestAccentPercentTypicalMax": 8,
+    "mode": "GUIDANCE_NOT_HARD_UNIVERSAL_THRESHOLD"
+  },
+  "validation": [
+    "grayscale_major_regions",
+    "skin_hair_separation",
+    "dark_background",
+    "light_background",
+    "no_role_collision",
+    "material_specific_value_spacing"
+  ],
+  "phasePolicy": "Independent secondary ramps land before any OKLCH/OKLab migration; topology ownership must be proven first."
+}

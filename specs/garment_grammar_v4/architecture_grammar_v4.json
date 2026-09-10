@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "4.1.0-experimental",
+  "purpose": "Construction-led garment ontology for canonical garment models. Gender, formality, context and rarity are orthogonal axes.",
+  "orthogonalAxes": [
+    "constructionFamily",
+    "material",
+    "layerRole",
+    "fitProfile",
+    "formality",
+    "context",
+    "stylingTendency"
+  ],
+  "stylingPolicy": "MASC/FEM/UNISEX may bias proportions and component preferences only; never palette, rarity or baseline quality.",
+  "familyGroups": {
+    "JERSEY_BASICS": [
+      "FITTED_TEE",
+      "REGULAR_TEE",
+      "RELAXED_TEE",
+      "HENLEY",
+      "POLO_KNIT"
+    ],
+    "WOVEN_TOPS": [
+      "BUTTON_SHIRT",
+      "CAMP_SHIRT",
+      "OPEN_CASUAL_SHIRT",
+      "WORK_SHIRT",
+      "OVERSHIRT",
+      "SHAPED_BLOUSE",
+      "WRAP_TOP"
+    ],
+    "KNITWEAR": [
+      "CREWNECK_KNIT",
+      "TEXTURED_KNIT",
+      "TURTLENECK",
+      "SWEATER_VEST",
+      "OPEN_CARDIGAN",
+      "BUTTON_CARDIGAN"
+    ],
+    "SWEAT_SPORT_STREET": [
+      "CREWNECK_SWEATSHIRT",
+      "PULLOVER_HOODIE",
+      "ZIP_HOODIE",
+      "TRACK_JACKET",
+      "VARSITY_JACKET",
+      "CROPPED_BOMBER"
+    ],
+    "TAILORED_FORMAL": [
+      "FORMAL_WAISTCOAT",
+      "FITTED_BLAZER",
+      "RELAXED_BLAZER",
+      "DOUBLE_BREASTED_FORMAL_TOP",
+      "OFFICER_UNIFORM_TOP"
+    ],
+    "WORK_UTILITY_OUTER": [
+      "WORK_JACKET",
+      "FIELD_JACKET",
+      "MOTO_JACKET",
+      "CROPPED_FASHION_JACKET",
+      "PERIOD_COAT_TOP"
+    ],
+    "SPECIALTY": [
+      "SAILOR_TOP",
+      "BELTED_TUNIC",
+      "TABARD_TOP",
+      "TRADITIONAL_OFFSET_CLOSURE_TOP",
+      "CEREMONIAL_FORMAL_TOP"
+    ]
+  },
+  "componentTypes": [
+    "BODY",
+    "NECKLINE",
+    "COLLAR",
+    "LAPEL",
+    "OPENING",
+    "PLACKET",
+    "YOKE",
+    "SLEEVE",
+    "CUFF",
+    "ARMHOLE",
+    "INNER_LAYER",
+    "POCKET",
+    "HEM",
+    "RIBBING",
+    "WAISTBAND",
+    "BELT",
+    "REAR_PANEL",
+    "VENT",
+    "DART",
+    "PRINCESS_SEAM",
+    "GATHER",
+    "PEPLUM_FLARE",
+    "STORM_FLAP",
+    "EPAULET",
+    "SURFACE_ZONE"
+  ],
+  "relationTypes": [
+    "ATTACHED_TO",
+    "REQUIRES",
+    "EXCLUDES",
+    "WRAPS_WITH",
+    "TERMINATES_AT",
+    "OCCLUDES",
+    "MIRRORS",
+    "MATERIAL_DEPENDS_ON",
+    "SHAPES"
+  ],
+  "projectionIntentFields": [
+    "visibility",
+    "attachmentAnchor",
+    "extentClass",
+    "depthClass",
+    "orientation",
+    "occlusion",
+    "safeFootprintZone",
+    "clusterTopology",
+    "terminationRule"
+  ],
+  "tailoringCoupledProfile": [
+    "shoulderLine",
+    "lapelType",
+    "lapelWidth",
+    "gorgeHeight",
+    "buttoningPoint",
+    "waistSuppression",
+    "frontQuarters",
+    "backSeam",
+    "vent"
+  ],
+  "fitDimensions": [
+    "shoulder",
+    "torsoVolume",
+    "waistSuppression",
+    "chestBustShaping",
+    "bodyLength",
+    "necklineDepth",
+    "sleeveVolume",
+    "hemFlare"
+  ],
+  "runtimePolicy": {
+    "safe16x16UpperBody": true,
+    "longCoatGeometry": "REJECT_UNLESS_SEPARATELY_PROVEN",
+    "nativeSleevesPreferred": true,
+    "unsupportedFeature": "FAIL_CLOSED_NO_GENERIC_SUBSTITUTION"
+  },
+  "familyArchitectures": {
+    "SAILOR_TOP": {
+      "version": "4.2.0-technical-reference-experiment",
+      "rootBody": {"component": "BODY_SAILOR_WOVEN", "role": "woven upper-body shell"},
+      "frontCollar": {
+        "component": "COLLAR_SAILOR_BROAD",
+        "construction": "broad paired collar leaves lying over the upper chest and shoulders around an open V relationship",
+        "comparativeWidth": "clearly wider and more dominant than polo or crew grammar",
+        "attachment": "high front neckline and both shoulder-neck junctions"
+      },
+      "sideTransition": {
+        "construction": "compact collar-depth mass wrapping from the front shoulder toward the rear flap",
+        "attachment": "upper shoulder only",
+        "forbidden": ["detached_patch", "long_horizontal_stripe", "arbitrary_diagonal_slash", "side_torso_rail"]
+      },
+      "rearFlap": {
+        "component": "REAR_PANEL_SAILOR_SQUARE",
+        "attachment": "high rear neckline across the upper shoulder field",
+        "width": "broad shoulder-spanning",
+        "depth": "shallow upper-back only",
+        "supportedShapes": ["square", "tapered_square", "shallow_trapezoid"],
+        "lowerTermination": "clean straight or gently tapered edge",
+        "forbidden": ["tiny_central_rectangle", "deep_hanging_panel", "detached_border"]
+      },
+      "border": {
+        "optional": true,
+        "construction": "thin controlled inset perimeter following collar and flap",
+        "maximumLogicalWeight": 1,
+        "forbidden": ["full_garment_cage", "heavy_sticker_outline", "random_fringe"]
+      },
+      "frontTieOrInsert": {
+        "optional": true,
+        "attachment": "front V apex",
+        "priority": "subordinate_to_collar"
+      },
+      "directionalRule": "front, side, and back independently reconstruct one wrapped collar/flap component",
+      "referenceBasis": "docs/research/SAILOR_TECHNICAL_REFERENCE_STUDY.md"
+    }
+  },
+  "normalizationPolicy": "Construction topology is the family; fit/proportion, opening variants, design intent, material and surface systems are separate axes unless topology genuinely differs at Farmer scale.",
+  "migrationContract": "v3_v4_migration_map.json",
+  "identityContract": "Each family must define 1-3 mandatory visual anchors that survive projection and final Farmer rendering.",
+  "safeTopologyContract": "safe_envelopes.json"
+}

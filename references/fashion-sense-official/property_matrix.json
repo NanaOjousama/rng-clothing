@@ -1,0 +1,1611 @@
+{
+ "pages": {
+  "Hats": "https://github.com/Floogen/FashionSense/wiki/Hat-Model-Properties",
+  "Shirts": "https://github.com/Floogen/FashionSense/wiki/Shirt-Model-Properties",
+  "Pants": "https://github.com/Floogen/FashionSense/wiki/Pants-Model-Properties",
+  "Sleeves": "https://github.com/Floogen/FashionSense/wiki/Sleeves-Model-Properties",
+  "Shoes": "https://github.com/Floogen/FashionSense/wiki/Shoes-Model-Properties",
+  "Accessories": "https://github.com/Floogen/FashionSense/wiki/Accessory-Model-Properties",
+  "Hairs": "https://github.com/Floogen/FashionSense/wiki/Hair-Model-Properties",
+  "Bodies": "https://github.com/Floogen/FashionSense/wiki/Body-Model-Properties"
+ },
+ "by_type": {
+  "Hats": {
+   "Item": {
+    "required": false,
+    "default": "N/A",
+    "description": "Adds the hat as a wearable in-game item. See this page for more details."
+   },
+   "StartingPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Used to determine where the starting point is (top-left most pixel for the `HatModel`)"
+   },
+   "HeadPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Where the player's head would be in relation to the hats in `hat.png`"
+   },
+   "HatSize": {
+    "required": true,
+    "default": "N/A",
+    "description": "Specifies how width and long the hats sprite is in pixels"
+   },
+   "Flipped": {
+    "required": false,
+    "default": "false",
+    "description": "Flips the hats sprite if `true`, which is useful for `LeftHat` / `RightHat`"
+   },
+   "Scale": {
+    "required": false,
+    "default": "4.0",
+    "description": "Determines how the hat's size is scaled when drawn"
+   },
+   "DrawOrderOverride": {
+    "required": false,
+    "default": "false",
+    "description": "Overrides the default draw order for this appearance.  See this page for more details."
+   },
+   "UseBaldHead": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, the farmer's sprite will be replaced with the game's bald variation"
+   },
+   "HidePlayerBase": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, hides the player's base sprite"
+   },
+   "HideWhileSwimming": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is swimming, hides the hat sprite"
+   },
+   "HideWhileWearingBathingSuit": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is wearing a bathing suit, hides the hat sprite"
+   },
+   "HideWaterLine": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is swimming, hides water line sprite that appears while swimming"
+   },
+   "HideSleeves": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, hides the player's sleeves / arms"
+   },
+   "HideHair": {
+    "required": false,
+    "default": "false",
+    "description": "Hides the player's hair"
+   },
+   "RequireAnimationToFinish": {
+    "required": false,
+    "default": "false",
+    "description": "Prevents the movement animation from finishing early, even if the player has stopped moving"
+   },
+   "DisableGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "Disables the player's hat color choice and uses the sprite's native color instead"
+   },
+   "DisableSkinGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, prevents the hat's `SkinToneMasks` from being affected by the player's color choice"
+   },
+   "IsPrismatic": {
+    "required": false,
+    "default": "false",
+    "description": "Causes the sprite to change colors, similar to the prismatic slime"
+   },
+   "PrismaticAnimationSpeedMultiplier": {
+    "required": false,
+    "default": "1.0",
+    "description": "Determines how quickly the prismatic colors change"
+   },
+   "ColorMasks": {
+    "required": false,
+    "default": "null",
+    "description": "List of RGB colors to use as a color mask. Any color given will be replaced by the player's color choice or by a prismatic color (if `IsPrismatic` is set to true). See this page for more details."
+   },
+   "ColorMaskLayers": {
+    "required": false,
+    "default": "null",
+    "description": "List of color mask layers, which can be used to create multiple colorable sections. Any color given will be replaced by the player's color choice, unless `IgnoreUserColorChoice` is set to true). See this page for more details."
+   },
+   "SkinToneMasks": {
+    "required": false,
+    "default": "null",
+    "description": "Three RGB colors to use as a color mask for the player's skin.  The colors given will be replaced by the player's skin tone which consists of three shades (darkest, medium and lightest). See this page for more details."
+   },
+   "UniformAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to always play, regardless of player movement. This is ignored if `IdleAnimation` or `MovementAnimation` are given. See this page for more details."
+   },
+   "IdleAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is standing still. See this page for more details."
+   },
+   "MovementAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is moving. See this page for more details."
+   },
+   "Tags": {
+    "required": false,
+    "default": "[]",
+    "description": "A list of keywords that can be searched against in the appearance search menu"
+   },
+   "FromItemId": {
+    "required": false,
+    "default": "N/A",
+    "description": "Links this appearance to an existing in-game item, using vanilla dimensions to automatically populate the required Fashion Sense fields. Should only be used when adding appearances via Content Patcher. See this page for more details."
+   }
+  },
+  "Shirts": {
+   "Item": {
+    "required": false,
+    "default": "N/A",
+    "description": "Adds the shirt as a wearable in-game item. See this page for more details."
+   },
+   "StartingPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Used to determine where the starting point is (top-left most pixel for the `ShirtModel`)"
+   },
+   "BodyPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Where the player's body would be in relation to the shirts in `shirt.png`"
+   },
+   "ShirtSize": {
+    "required": true,
+    "default": "N/A",
+    "description": "Specifies how width and long the shirts sprite is in pixels"
+   },
+   "Flipped": {
+    "required": false,
+    "default": "false",
+    "description": "Flips the shirts sprite if `true`, which is useful for `LeftShirt` / `RightShirt`"
+   },
+   "Scale": {
+    "required": false,
+    "default": "4.0",
+    "description": "Determines how the shirt's size is scaled when drawn"
+   },
+   "DrawOrderOverride": {
+    "required": false,
+    "default": "false",
+    "description": "Overrides the default draw order for this appearance.  See this page for more details."
+   },
+   "HidePlayerBase": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, hides the player's base sprite"
+   },
+   "HideWhileSwimming": {
+    "required": false,
+    "default": "true",
+    "description": "If `true` and the player is swimming, hides the shirt sprite"
+   },
+   "HideWhileWearingBathingSuit": {
+    "required": false,
+    "default": "true",
+    "description": "If `true` and the player is wearing a bathing suit, hides the shirt sprite"
+   },
+   "HideWaterLine": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is swimming, hides water line sprite that appears while swimming"
+   },
+   "HideSleeves": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, hides the player's sleeves / arms"
+   },
+   "SleeveColors": {
+    "required": false,
+    "default": "null",
+    "description": "Accepts a list of up to three RGB colors, which will be used to color the player's sleeves. If not given, the player will be sleeveless. See this section for more details."
+   },
+   "RequireAnimationToFinish": {
+    "required": false,
+    "default": "false",
+    "description": "Prevents the movement animation from finishing early, even if the player has stopped moving"
+   },
+   "DisableGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "Disables the player's shirt color choice and uses the sprite's native color instead"
+   },
+   "DisableSkinGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, prevents the shirt's `SkinToneMasks` from being affected by the player's color choice"
+   },
+   "IsPrismatic": {
+    "required": false,
+    "default": "false",
+    "description": "Causes the sprite to change colors, similar to the prismatic slime"
+   },
+   "PrismaticAnimationSpeedMultiplier": {
+    "required": false,
+    "default": "1.0",
+    "description": "Determines how quickly the prismatic colors change"
+   },
+   "ColorMasks": {
+    "required": false,
+    "default": "null",
+    "description": "List of RGB colors to use as a color mask. Any color given will be replaced by the player's color choice or by a prismatic color (if `IsPrismatic` is set to true). See this page for more details."
+   },
+   "ColorMaskLayers": {
+    "required": false,
+    "default": "null",
+    "description": "List of color mask layers, which can be used to create multiple colorable sections. Any color given will be replaced by the player's color choice, unless `IgnoreUserColorChoice` is set to true). See this page for more details."
+   },
+   "SkinToneMasks": {
+    "required": false,
+    "default": "null",
+    "description": "Three RGB colors to use as a color mask for the player's skin.  The colors given will be replaced by the player's skin tone which consists of three shades (darkest, medium and lightest). See this page for more details."
+   },
+   "UniformAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to always play, regardless of player movement. This is ignored if `IdleAnimation` or `MovementAnimation` are given. See this page for more details."
+   },
+   "IdleAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is standing still. See this page for more details."
+   },
+   "MovementAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is moving. See this page for more details."
+   },
+   "Tags": {
+    "required": false,
+    "default": "[]",
+    "description": "A list of keywords that can be searched against in the appearance search menu"
+   },
+   "FromItemId": {
+    "required": false,
+    "default": "N/A",
+    "description": "Links this appearance to an existing in-game item, using vanilla dimensions to automatically populate the required Fashion Sense fields. Should only be used when adding appearances via Content Patcher. See this page for more details."
+   }
+  },
+  "Pants": {
+   "Item": {
+    "required": false,
+    "default": "N/A",
+    "description": "Adds the pants as a wearable in-game item. See this page for more details."
+   },
+   "StartingPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Used to determine where the starting point is (top-left most pixel for the `PantsModel`)"
+   },
+   "BodyPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Where the player's body would be in relation to the pants in `pants.png`"
+   },
+   "PantsSize": {
+    "required": true,
+    "default": "N/A",
+    "description": "Specifies how width and long the pants sprite is in pixels"
+   },
+   "Flipped": {
+    "required": false,
+    "default": "false",
+    "description": "Flips the pants sprite if `true`, which is useful for `LeftPants` / `RightPants`"
+   },
+   "Scale": {
+    "required": false,
+    "default": "4.0",
+    "description": "Determines how the pants' size is scaled when drawn"
+   },
+   "DrawOrderOverride": {
+    "required": false,
+    "default": "false",
+    "description": "Overrides the default draw order for this appearance.  See this page for more details."
+   },
+   "HidePlayerBase": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, hides the player's base sprite"
+   },
+   "HideWhileSwimming": {
+    "required": false,
+    "default": "true",
+    "description": "If `true` and the player is swimming, hides the pants sprite"
+   },
+   "HideWhileWearingBathingSuit": {
+    "required": false,
+    "default": "true",
+    "description": "If `true` and the player is wearing a bathing suit, hides the pants sprite"
+   },
+   "HideWaterLine": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is swimming, hides water line sprite that appears while swimming"
+   },
+   "HideSleeves": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, hides the player's sleeves / arms"
+   },
+   "HideLegs": {
+    "required": false,
+    "default": "false",
+    "description": "Hides the player's legs and shoes."
+   },
+   "HideShadow": {
+    "required": false,
+    "default": "false",
+    "description": "Hides the player's shadow."
+   },
+   "RequireAnimationToFinish": {
+    "required": false,
+    "default": "false",
+    "description": "Prevents the movement animation from finishing early, even if the player has stopped moving"
+   },
+   "DisableGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "Disables the player's pants color choice and uses the sprite's native color instead"
+   },
+   "DisableSkinGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, prevents the pants' `SkinToneMasks` from being affected by the player's color choice"
+   },
+   "IsPrismatic": {
+    "required": false,
+    "default": "false",
+    "description": "Causes the sprite to change colors, similar to the prismatic slime"
+   },
+   "PrismaticAnimationSpeedMultiplier": {
+    "required": false,
+    "default": "1.0",
+    "description": "Determines how quickly the prismatic colors change"
+   },
+   "ColorMasks": {
+    "required": false,
+    "default": "null",
+    "description": "List of RGB colors to use as a color mask. Any color given will be replaced by the player's color choice or by a prismatic color (if `IsPrismatic` is set to true). See this page for more details."
+   },
+   "ColorMaskLayers": {
+    "required": false,
+    "default": "null",
+    "description": "List of color mask layers, which can be used to create multiple colorable sections. Any color given will be replaced by the player's color choice, unless `IgnoreUserColorChoice` is set to true). See this page for more details."
+   },
+   "SkinToneMasks": {
+    "required": false,
+    "default": "null",
+    "description": "Three RGB colors to use as a color mask for the player's skin.  The colors given will be replaced by the player's skin tone which consists of three shades (darkest, medium and lightest). See this page for more details."
+   },
+   "UniformAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to always play, regardless of player movement. This is ignored if `IdleAnimation` or `MovementAnimation` are given. See this page for more details."
+   },
+   "IdleAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is standing still. See this page for more details."
+   },
+   "MovementAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is moving. See this page for more details."
+   },
+   "Tags": {
+    "required": false,
+    "default": "[]",
+    "description": "A list of keywords that can be searched against in the appearance search menu"
+   }
+  },
+  "Sleeves": {
+   "StartingPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Used to determine where the starting point is (top-left most pixel for the `SleevesModel`)"
+   },
+   "BodyPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Where the player's body would be in relation to the sleeves in `sleeves.png`"
+   },
+   "SleevesSize": {
+    "required": true,
+    "default": "N/A",
+    "description": "Specifies how width and long the sleeves sprite is in pixels"
+   },
+   "Flipped": {
+    "required": false,
+    "default": "false",
+    "description": "Flips the sleeves sprite if `true`, which is useful for `LeftSleeves` / `RightSleeves`"
+   },
+   "DisableNativeOffset": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, disables the framework's native offsets. This is useful when using modified vanilla tilesheets, as they are already properly offset for each frame."
+   },
+   "Scale": {
+    "required": false,
+    "default": "4.0",
+    "description": "Determines how the sleeve's size is scaled when drawn"
+   },
+   "DrawOrderOverride": {
+    "required": false,
+    "default": "false",
+    "description": "Overrides the default draw order for this appearance.  See this page for more details."
+   },
+   "HidePlayerBase": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, hides the player's base sprite"
+   },
+   "HideWhileSwimming": {
+    "required": false,
+    "default": "true",
+    "description": "If `true` and the player is swimming, hides the sleeves sprite"
+   },
+   "HideWhileWearingBathingSuit": {
+    "required": false,
+    "default": "true",
+    "description": "If `true` and the player is wearing a bathing suit, hides the sleeves sprite"
+   },
+   "HideWaterLine": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is swimming, hides water line sprite that appears while swimming"
+   },
+   "UseShirtColors": {
+    "required": false,
+    "default": "false",
+    "description": "Use the FS shirt's `SleeveColors` property to recolor the sleeves, based on the first three colors within sleeves's `ColorMasks`. Overrides the player's sleeve color choice."
+   },
+   "RequireAnimationToFinish": {
+    "required": false,
+    "default": "false",
+    "description": "Prevents the movement animation from finishing early, even if the player has stopped moving"
+   },
+   "DisableGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "Disables the player's sleeves color choice and uses the sprite's native color instead"
+   },
+   "DisableSkinGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, prevents the sleeve's `SkinToneMasks` from being affected by the player's color choice"
+   },
+   "IsPrismatic": {
+    "required": false,
+    "default": "false",
+    "description": "Causes the sprite to change colors, similar to the prismatic slime"
+   },
+   "PrismaticAnimationSpeedMultiplier": {
+    "required": false,
+    "default": "1.0",
+    "description": "Determines how quickly the prismatic colors change"
+   },
+   "ColorMasks": {
+    "required": false,
+    "default": "null",
+    "description": "List of RGB colors to use as a color mask. Any color given will be replaced by the player's color choice or by a prismatic color (if `IsPrismatic` is set to true). See this page for more details."
+   },
+   "ColorMaskLayers": {
+    "required": false,
+    "default": "null",
+    "description": "List of color mask layers, which can be used to create multiple colorable sections. Any color given will be replaced by the player's color choice, unless `IgnoreUserColorChoice` is set to true). See this page for more details."
+   },
+   "SkinToneMasks": {
+    "required": false,
+    "default": "null",
+    "description": "Three RGB colors to use as a color mask for the player's skin.  The colors given will be replaced by the player's skin tone which consists of three shades (darkest, medium and lightest). See this page for more details."
+   },
+   "UniformAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to always play, regardless of player movement. This is ignored if `IdleAnimation` or `MovementAnimation` are given. See this page for more details."
+   },
+   "IdleAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is standing still. See this page for more details."
+   },
+   "MovementAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is moving. See this page for more details."
+   },
+   "Tags": {
+    "required": false,
+    "default": "[]",
+    "description": "A list of keywords that can be searched against in the appearance search menu"
+   }
+  },
+  "Shoes": {
+   "Item": {
+    "required": false,
+    "default": "N/A",
+    "description": "Adds the shoes as a wearable in-game item. See this page for more details."
+   },
+   "StartingPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Used to determine where the starting point is (top-left most pixel for the `ShoesModel`)"
+   },
+   "BodyPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Where the player's body would be in relation to the shoes in `shoes.png`"
+   },
+   "ShoesSize": {
+    "required": true,
+    "default": "N/A",
+    "description": "Specifies how width and long the shoes sprite is in pixels"
+   },
+   "Flipped": {
+    "required": false,
+    "default": "false",
+    "description": "Flips the shoes sprite if `true`, which is useful for `LeftShoes` / `RightShoes`"
+   },
+   "Scale": {
+    "required": false,
+    "default": "4.0",
+    "description": "Determines how the shoes' size is scaled when drawn"
+   },
+   "DrawOrderOverride": {
+    "required": false,
+    "default": "false",
+    "description": "Overrides the default draw order for this appearance.  See this page for more details."
+   },
+   "HidePlayerBase": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, hides the player's base sprite"
+   },
+   "HideWhileSwimming": {
+    "required": false,
+    "default": "true",
+    "description": "If `true` and the player is swimming, hides the shoes sprite"
+   },
+   "HideWhileWearingBathingSuit": {
+    "required": false,
+    "default": "true",
+    "description": "If `true` and the player is wearing a bathing suit, hides the shoes sprite"
+   },
+   "HideWaterLine": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is swimming, hides water line sprite that appears while swimming"
+   },
+   "HideSleeves": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, hides the player's sleeves / arms"
+   },
+   "RequireAnimationToFinish": {
+    "required": false,
+    "default": "false",
+    "description": "Prevents the movement animation from finishing early, even if the player has stopped moving"
+   },
+   "DisableGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "Disables the player's shoes color choice and uses the sprite's native color instead"
+   },
+   "DisableSkinGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, prevents the shoes' `SkinToneMasks` from being affected by the player's color choice"
+   },
+   "IsPrismatic": {
+    "required": false,
+    "default": "false",
+    "description": "Causes the sprite to change colors, similar to the prismatic slime"
+   },
+   "PrismaticAnimationSpeedMultiplier": {
+    "required": false,
+    "default": "1.0",
+    "description": "Determines how quickly the prismatic colors change"
+   },
+   "ColorMasks": {
+    "required": false,
+    "default": "null",
+    "description": "List of RGB colors to use as a color mask. Any color given will be replaced by the player's color choice or by a prismatic color (if `IsPrismatic` is set to true). See this page for more details."
+   },
+   "ColorMaskLayers": {
+    "required": false,
+    "default": "null",
+    "description": "List of color mask layers, which can be used to create multiple colorable sections. Any color given will be replaced by the player's color choice, unless `IgnoreUserColorChoice` is set to true). See this page for more details."
+   },
+   "SkinToneMasks": {
+    "required": false,
+    "default": "null",
+    "description": "Three RGB colors to use as a color mask for the player's skin.  The colors given will be replaced by the player's skin tone which consists of three shades (darkest, medium and lightest). See this page for more details."
+   },
+   "UniformAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to always play, regardless of player movement. This is ignored if `IdleAnimation` or `MovementAnimation` are given. See this page for more details."
+   },
+   "IdleAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is standing still. See this page for more details."
+   },
+   "MovementAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is moving. See this page for more details."
+   },
+   "Tags": {
+    "required": false,
+    "default": "[]",
+    "description": "A list of keywords that can be searched against in the appearance search menu"
+   }
+  },
+  "Accessories": {
+   "StartingPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Used to determine where the starting point is (top-left most pixel for the `AccessoryModel`)"
+   },
+   "HeadPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Where the player's head would be in relation to the accessories in `accessory.png`"
+   },
+   "AccessorySize": {
+    "required": true,
+    "default": "N/A",
+    "description": "Specifies how width and long the accessories sprite is in pixels"
+   },
+   "Flipped": {
+    "required": false,
+    "default": "false",
+    "description": "Flips the accessories sprite if `true`, which is useful for `LeftAccessory` / `RightAccessory`"
+   },
+   "Scale": {
+    "required": false,
+    "default": "4.0",
+    "description": "Determines how the accessory's size is scaled when drawn"
+   },
+   "DrawOrderOverride": {
+    "required": false,
+    "default": "false",
+    "description": "Overrides the default draw order for this appearance.  See this page for more details."
+   },
+   "HidePlayerBase": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, hides the player's base sprite"
+   },
+   "HideWhileSwimming": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is swimming, hides the accessories sprite"
+   },
+   "HideWhileWearingBathingSuit": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is wearing a bathing suit, hides the accessories sprite"
+   },
+   "HideWaterLine": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is swimming, hides water line sprite that appears while swimming"
+   },
+   "HideSleeves": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, hides the player's sleeves / arms"
+   },
+   "RequireAnimationToFinish": {
+    "required": false,
+    "default": "false",
+    "description": "Prevents the movement animation from finishing early, even if the player has stopped moving"
+   },
+   "DisableGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "Disables the player's accessory color choice and uses the sprite's native color instead"
+   },
+   "DisableSkinGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, prevents the accessory's `SkinToneMasks` from being affected by the player's color choice"
+   },
+   "IsPrismatic": {
+    "required": false,
+    "default": "false",
+    "description": "Causes the sprite to change colors, similar to the prismatic slime"
+   },
+   "PrismaticAnimationSpeedMultiplier": {
+    "required": false,
+    "default": "1.0",
+    "description": "Determines how quickly the prismatic colors change"
+   },
+   "ColorMasks": {
+    "required": false,
+    "default": "null",
+    "description": "List of RGB colors to use as a color mask. Any color given will be replaced by the player's color choice or by a prismatic color (if `IsPrismatic` is set to true). See this page for more details."
+   },
+   "ColorMaskLayers": {
+    "required": false,
+    "default": "null",
+    "description": "List of color mask layers, which can be used to create multiple colorable sections. Any color given will be replaced by the player's color choice, unless `IgnoreUserColorChoice` is set to true). See this page for more details."
+   },
+   "SkinToneMasks": {
+    "required": false,
+    "default": "null",
+    "description": "Three RGB colors to use as a color mask for the player's skin.  The colors given will be replaced by the player's skin tone which consists of three shades (darkest, medium and lightest). See this page for more details."
+   },
+   "UniformAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to always play, regardless of player movement. This is ignored if `IdleAnimation` or `MovementAnimation` are given. See this page for more details."
+   },
+   "IdleAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is standing still. See this page for more details."
+   },
+   "MovementAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is moving. See this page for more details."
+   },
+   "Tags": {
+    "required": false,
+    "default": "[]",
+    "description": "A list of keywords that can be searched against in the appearance search menu"
+   }
+  },
+  "Hairs": {
+   "StartingPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Used to determine where the starting point is (top-left most pixel for the `HairModel`)"
+   },
+   "HeadPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Where the player's head would be in relation to the hairstyle in `hair.png`"
+   },
+   "HairSize": {
+    "required": true,
+    "default": "N/A",
+    "description": "Specifies how width and long the hairstyle sprite is in pixels"
+   },
+   "Flipped": {
+    "required": false,
+    "default": "false",
+    "description": "Flips the hairstyle sprite if `true`, which is useful for `LeftHair` / `RightHair`"
+   },
+   "Scale": {
+    "required": false,
+    "default": "4.0",
+    "description": "Determines how the hairstyle's size is scaled when drawn"
+   },
+   "DrawOrderOverride": {
+    "required": false,
+    "default": "false",
+    "description": "Overrides the default draw order for this appearance.  See this page for more details."
+   },
+   "UseBaldHead": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, the farmer's sprite will be replaced with the game's bald variation"
+   },
+   "HidePlayerBase": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, hides the player's base sprite"
+   },
+   "HideWhileSwimming": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is swimming, hides the hair sprite"
+   },
+   "HideWhileWearingBathingSuit": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is wearing a bathing suit, hides the hair sprite"
+   },
+   "HideWaterLine": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is swimming, hides water line sprite that appears while swimming"
+   },
+   "HideSleeves": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, hides the player's sleeves / arms"
+   },
+   "RequireAnimationToFinish": {
+    "required": false,
+    "default": "false",
+    "description": "Prevents the movement animation from finishing early, even if the player has stopped moving"
+   },
+   "DisableGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "Disables the player's hair color choice and uses the sprite's native color instead"
+   },
+   "DisableSkinGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, prevents the hair's `SkinToneMasks` from being affected by the player's color choice"
+   },
+   "IsPrismatic": {
+    "required": false,
+    "default": "false",
+    "description": "Causes the sprite to change colors, similar to the prismatic slime"
+   },
+   "PrismaticAnimationSpeedMultiplier": {
+    "required": false,
+    "default": "1.0",
+    "description": "Determines how quickly the prismatic colors change"
+   },
+   "ColorMasks": {
+    "required": false,
+    "default": "null",
+    "description": "List of RGB colors to use as a color mask. Any color given will be replaced by the player's color choice or by a prismatic color (if `IsPrismatic` is set to true). See this page for more details."
+   },
+   "ColorMaskLayers": {
+    "required": false,
+    "default": "null",
+    "description": "List of color mask layers, which can be used to create multiple colorable sections. Any color given will be replaced by the player's color choice, unless `IgnoreUserColorChoice` is set to true). See this page for more details."
+   },
+   "SkinToneMasks": {
+    "required": false,
+    "default": "null",
+    "description": "Three RGB colors to use as a color mask for the player's skin.  The colors given will be replaced by the player's skin tone which consists of three shades (darkest, medium and lightest). See this page for more details."
+   },
+   "UniformAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to always play, regardless of player movement. This is ignored if `IdleAnimation` or `MovementAnimation` are given. See this page for more details."
+   },
+   "IdleAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is standing still. See this page for more details."
+   },
+   "MovementAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is moving. See this page for more details."
+   },
+   "Tags": {
+    "required": false,
+    "default": "[]",
+    "description": "A list of keywords that can be searched against in the appearance search menu"
+   }
+  },
+  "Bodies": {
+   "StartingPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Used to determine where the starting point is (top-left most pixel for the `BodyModel`)"
+   },
+   "EyeBackgroundPosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Where the player's face / eye background (for blinking) would be in relation to the body in `body.png`. Given in pixels, relative to the game."
+   },
+   "EyePosition": {
+    "required": true,
+    "default": "N/A",
+    "description": "Where the player's eyes (for blinking) would be in relation to the body in `body.png`. Given in pixels, relative to the game."
+   },
+   "EyeBaseSourceRectangle": {
+    "required": false,
+    "default": "{\"X\": 5, \"Y\": 16, \"Width\": 2, \"Height\": 2 }",
+    "description": "Determines the background of the player's eye, based on the given rectangle against the `body.png`."
+   },
+   "BodySize": {
+    "required": true,
+    "default": "N/A",
+    "description": "Specifies how width and long the body sprite is in pixels"
+   },
+   "Flipped": {
+    "required": false,
+    "default": "false",
+    "description": "Flips the body sprite if `true`, which is useful for `LeftBody` / `RightBody`"
+   },
+   "Scale": {
+    "required": false,
+    "default": "4.0",
+    "description": "Determines how the body's size is scaled when drawn"
+   },
+   "DrawOrderOverride": {
+    "required": false,
+    "default": "false",
+    "description": "Overrides the default draw order for this appearance.  See this page for more details."
+   },
+   "Portrait": {
+    "required": false,
+    "default": "null",
+    "description": "Overrides the vanilla portrait constraints to allow for better control of the player's image drawn in menus and maps. Only applicable to `FrontBody`. See this section for more details."
+   },
+   "AccessoryOffset": {
+    "required": false,
+    "default": "0",
+    "description": "Given in pixels, this offset applies to all equipped accessories"
+   },
+   "HeadOffset": {
+    "required": false,
+    "default": "0",
+    "description": "Given in pixels, this offset applies to all equipped hairs and hats"
+   },
+   "LegOffset": {
+    "required": false,
+    "default": "0",
+    "description": "Given in pixels, this offset applies to all equipped pants and shoes"
+   },
+   "ShoeOffset": {
+    "required": false,
+    "default": "0",
+    "description": "Given in pixels, this offset applies to all just the equipped shoes"
+   },
+   "BodyOffset": {
+    "required": false,
+    "default": "0",
+    "description": "Given in pixels, this offset applies to all equipped shirts"
+   },
+   "ArmsOffset": {
+    "required": false,
+    "default": "0",
+    "description": "Given in pixels, this offset applies to all equipped sleeves"
+   },
+   "HideWhileSwimming": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is swimming, hides the body sprite"
+   },
+   "HideWhileWearingBathingSuit": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is wearing a bathing suit, hides the body sprite"
+   },
+   "HideWaterLine": {
+    "required": false,
+    "default": "false",
+    "description": "If `true` and the player is swimming, hides water line sprite that appears while swimming"
+   },
+   "HideSleeves": {
+    "required": false,
+    "default": "false",
+    "description": "If `true`, hides the player's sleeves / arms"
+   },
+   "HideHair": {
+    "required": false,
+    "default": "false",
+    "description": "Hides the player's hair"
+   },
+   "RequireAnimationToFinish": {
+    "required": false,
+    "default": "false",
+    "description": "Prevents the movement animation from finishing early, even if the player has stopped moving"
+   },
+   "DisableGrayscale": {
+    "required": false,
+    "default": "false",
+    "description": "Disables the player's body color choice and uses the sprite's native color instead"
+   },
+   "IsPrismatic": {
+    "required": false,
+    "default": "false",
+    "description": "Causes the sprite to change colors, similar to the prismatic slime"
+   },
+   "PrismaticAnimationSpeedMultiplier": {
+    "required": false,
+    "default": "1.0",
+    "description": "Determines how quickly the prismatic colors change"
+   },
+   "SkinTone": {
+    "required": false,
+    "default": "null",
+    "description": "Three RGB colors to use as the player's skin color, based on the `body.png`. These colors will be propagated to other appearances that use `SkinToneMasks`. See this page for more details."
+   },
+   "ColorMasks": {
+    "required": false,
+    "default": "null",
+    "description": "List of RGB colors to use as a color mask. Any color given will be replaced by the player's color choice or by a prismatic color (if `IsPrismatic` is set to true). See this page for more details."
+   },
+   "ColorMaskLayers": {
+    "required": false,
+    "default": "null",
+    "description": "List of color mask layers, which can be used to create multiple colorable sections. Any color given will be replaced by the player's color choice, unless `IgnoreUserColorChoice` is set to true). See this page for more details."
+   },
+   "UniformAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to always play, regardless of player movement. This is ignored if `IdleAnimation` or `MovementAnimation` are given. See this page for more details."
+   },
+   "IdleAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is standing still. See this page for more details."
+   },
+   "MovementAnimation": {
+    "required": false,
+    "default": "null",
+    "description": "Animation to play while the player is moving. See this page for more details."
+   },
+   "Tags": {
+    "required": false,
+    "default": "[]",
+    "description": "A list of keywords that can be searched against in the appearance search menu"
+   },
+   "SourceRectangle": {
+    "required": false,
+    "default": "{\"X\": 0, \"Y\": 0, \"Width\": 16, \"Height\": 16 }",
+    "description": "Determines the section of the `body.png` to use for the portrait image."
+   },
+   "Offset": {
+    "required": false,
+    "default": "{\"X\": 0, \"Y\": 0 }",
+    "description": "Adjusts the position of the portrait sprite."
+   }
+  }
+ },
+ "by_property": {
+  "Item": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Shoes"
+   ],
+   "default": "N/A",
+   "description": "Adds the hat as a wearable in-game item. See this page for more details."
+  },
+  "StartingPosition": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "N/A",
+   "description": "Used to determine where the starting point is (top-left most pixel for the `HatModel`)"
+  },
+  "HeadPosition": {
+   "types": [
+    "Hats",
+    "Accessories",
+    "Hairs"
+   ],
+   "default": "N/A",
+   "description": "Where the player's head would be in relation to the hats in `hat.png`"
+  },
+  "HatSize": {
+   "types": [
+    "Hats"
+   ],
+   "default": "N/A",
+   "description": "Specifies how width and long the hats sprite is in pixels"
+  },
+  "Flipped": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "false",
+   "description": "Flips the hats sprite if `true`, which is useful for `LeftHat` / `RightHat`"
+  },
+  "Scale": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "4.0",
+   "description": "Determines how the hat's size is scaled when drawn"
+  },
+  "DrawOrderOverride": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "false",
+   "description": "Overrides the default draw order for this appearance.  See this page for more details."
+  },
+  "UseBaldHead": {
+   "types": [
+    "Hats",
+    "Hairs"
+   ],
+   "default": "false",
+   "description": "If `true`, the farmer's sprite will be replaced with the game's bald variation"
+  },
+  "HidePlayerBase": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs"
+   ],
+   "default": "false",
+   "description": "If `true`, hides the player's base sprite"
+  },
+  "HideWhileSwimming": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "false",
+   "description": "If `true` and the player is swimming, hides the hat sprite"
+  },
+  "HideWhileWearingBathingSuit": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "false",
+   "description": "If `true` and the player is wearing a bathing suit, hides the hat sprite"
+  },
+  "HideWaterLine": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "false",
+   "description": "If `true` and the player is swimming, hides water line sprite that appears while swimming"
+  },
+  "HideSleeves": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "false",
+   "description": "If `true`, hides the player's sleeves / arms"
+  },
+  "HideHair": {
+   "types": [
+    "Hats",
+    "Bodies"
+   ],
+   "default": "false",
+   "description": "Hides the player's hair"
+  },
+  "RequireAnimationToFinish": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "false",
+   "description": "Prevents the movement animation from finishing early, even if the player has stopped moving"
+  },
+  "DisableGrayscale": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "false",
+   "description": "Disables the player's hat color choice and uses the sprite's native color instead"
+  },
+  "DisableSkinGrayscale": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs"
+   ],
+   "default": "false",
+   "description": "If `true`, prevents the hat's `SkinToneMasks` from being affected by the player's color choice"
+  },
+  "IsPrismatic": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "false",
+   "description": "Causes the sprite to change colors, similar to the prismatic slime"
+  },
+  "PrismaticAnimationSpeedMultiplier": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "1.0",
+   "description": "Determines how quickly the prismatic colors change"
+  },
+  "ColorMasks": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "null",
+   "description": "List of RGB colors to use as a color mask. Any color given will be replaced by the player's color choice or by a prismatic color (if `IsPrismatic` is set to true). See this page for more details."
+  },
+  "ColorMaskLayers": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "null",
+   "description": "List of color mask layers, which can be used to create multiple colorable sections. Any color given will be replaced by the player's color choice, unless `IgnoreUserColorChoice` is set to true). See this page for more details."
+  },
+  "SkinToneMasks": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs"
+   ],
+   "default": "null",
+   "description": "Three RGB colors to use as a color mask for the player's skin.  The colors given will be replaced by the player's skin tone which consists of three shades (darkest, medium and lightest). See this page for more details."
+  },
+  "UniformAnimation": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "null",
+   "description": "Animation to always play, regardless of player movement. This is ignored if `IdleAnimation` or `MovementAnimation` are given. See this page for more details."
+  },
+  "IdleAnimation": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "null",
+   "description": "Animation to play while the player is standing still. See this page for more details."
+  },
+  "MovementAnimation": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "null",
+   "description": "Animation to play while the player is moving. See this page for more details."
+  },
+  "Tags": {
+   "types": [
+    "Hats",
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes",
+    "Accessories",
+    "Hairs",
+    "Bodies"
+   ],
+   "default": "[]",
+   "description": "A list of keywords that can be searched against in the appearance search menu"
+  },
+  "FromItemId": {
+   "types": [
+    "Hats",
+    "Shirts"
+   ],
+   "default": "N/A",
+   "description": "Links this appearance to an existing in-game item, using vanilla dimensions to automatically populate the required Fashion Sense fields. Should only be used when adding appearances via Content Patcher. See this page for more details."
+  },
+  "BodyPosition": {
+   "types": [
+    "Shirts",
+    "Pants",
+    "Sleeves",
+    "Shoes"
+   ],
+   "default": "N/A",
+   "description": "Where the player's body would be in relation to the shirts in `shirt.png`"
+  },
+  "ShirtSize": {
+   "types": [
+    "Shirts"
+   ],
+   "default": "N/A",
+   "description": "Specifies how width and long the shirts sprite is in pixels"
+  },
+  "SleeveColors": {
+   "types": [
+    "Shirts"
+   ],
+   "default": "null",
+   "description": "Accepts a list of up to three RGB colors, which will be used to color the player's sleeves. If not given, the player will be sleeveless. See this section for more details."
+  },
+  "PantsSize": {
+   "types": [
+    "Pants"
+   ],
+   "default": "N/A",
+   "description": "Specifies how width and long the pants sprite is in pixels"
+  },
+  "HideLegs": {
+   "types": [
+    "Pants"
+   ],
+   "default": "false",
+   "description": "Hides the player's legs and shoes."
+  },
+  "HideShadow": {
+   "types": [
+    "Pants"
+   ],
+   "default": "false",
+   "description": "Hides the player's shadow."
+  },
+  "SleevesSize": {
+   "types": [
+    "Sleeves"
+   ],
+   "default": "N/A",
+   "description": "Specifies how width and long the sleeves sprite is in pixels"
+  },
+  "DisableNativeOffset": {
+   "types": [
+    "Sleeves"
+   ],
+   "default": "false",
+   "description": "If `true`, disables the framework's native offsets. This is useful when using modified vanilla tilesheets, as they are already properly offset for each frame."
+  },
+  "UseShirtColors": {
+   "types": [
+    "Sleeves"
+   ],
+   "default": "false",
+   "description": "Use the FS shirt's `SleeveColors` property to recolor the sleeves, based on the first three colors within sleeves's `ColorMasks`. Overrides the player's sleeve color choice."
+  },
+  "ShoesSize": {
+   "types": [
+    "Shoes"
+   ],
+   "default": "N/A",
+   "description": "Specifies how width and long the shoes sprite is in pixels"
+  },
+  "AccessorySize": {
+   "types": [
+    "Accessories"
+   ],
+   "default": "N/A",
+   "description": "Specifies how width and long the accessories sprite is in pixels"
+  },
+  "HairSize": {
+   "types": [
+    "Hairs"
+   ],
+   "default": "N/A",
+   "description": "Specifies how width and long the hairstyle sprite is in pixels"
+  },
+  "EyeBackgroundPosition": {
+   "types": [
+    "Bodies"
+   ],
+   "default": "N/A",
+   "description": "Where the player's face / eye background (for blinking) would be in relation to the body in `body.png`. Given in pixels, relative to the game."
+  },
+  "EyePosition": {
+   "types": [
+    "Bodies"
+   ],
+   "default": "N/A",
+   "description": "Where the player's eyes (for blinking) would be in relation to the body in `body.png`. Given in pixels, relative to the game."
+  },
+  "EyeBaseSourceRectangle": {
+   "types": [
+    "Bodies"
+   ],
+   "default": "{\"X\": 5, \"Y\": 16, \"Width\": 2, \"Height\": 2 }",
+   "description": "Determines the background of the player's eye, based on the given rectangle against the `body.png`."
+  },
+  "BodySize": {
+   "types": [
+    "Bodies"
+   ],
+   "default": "N/A",
+   "description": "Specifies how width and long the body sprite is in pixels"
+  },
+  "Portrait": {
+   "types": [
+    "Bodies"
+   ],
+   "default": "null",
+   "description": "Overrides the vanilla portrait constraints to allow for better control of the player's image drawn in menus and maps. Only applicable to `FrontBody`. See this section for more details."
+  },
+  "AccessoryOffset": {
+   "types": [
+    "Bodies"
+   ],
+   "default": "0",
+   "description": "Given in pixels, this offset applies to all equipped accessories"
+  },
+  "HeadOffset": {
+   "types": [
+    "Bodies"
+   ],
+   "default": "0",
+   "description": "Given in pixels, this offset applies to all equipped hairs and hats"
+  },
+  "LegOffset": {
+   "types": [
+    "Bodies"
+   ],
+   "default": "0",
+   "description": "Given in pixels, this offset applies to all equipped pants and shoes"
+  },
+  "ShoeOffset": {
+   "types": [
+    "Bodies"
+   ],
+   "default": "0",
+   "description": "Given in pixels, this offset applies to all just the equipped shoes"
+  },
+  "BodyOffset": {
+   "types": [
+    "Bodies"
+   ],
+   "default": "0",
+   "description": "Given in pixels, this offset applies to all equipped shirts"
+  },
+  "ArmsOffset": {
+   "types": [
+    "Bodies"
+   ],
+   "default": "0",
+   "description": "Given in pixels, this offset applies to all equipped sleeves"
+  },
+  "SkinTone": {
+   "types": [
+    "Bodies"
+   ],
+   "default": "null",
+   "description": "Three RGB colors to use as the player's skin color, based on the `body.png`. These colors will be propagated to other appearances that use `SkinToneMasks`. See this page for more details."
+  },
+  "SourceRectangle": {
+   "types": [
+    "Bodies"
+   ],
+   "default": "{\"X\": 0, \"Y\": 0, \"Width\": 16, \"Height\": 16 }",
+   "description": "Determines the section of the `body.png` to use for the portrait image."
+  },
+  "Offset": {
+   "types": [
+    "Bodies"
+   ],
+   "default": "{\"X\": 0, \"Y\": 0 }",
+   "description": "Adjusts the position of the portrait sprite."
+  }
+ },
+ "universal": [
+  "ColorMaskLayers",
+  "ColorMasks",
+  "DisableGrayscale",
+  "DrawOrderOverride",
+  "Flipped",
+  "HideWaterLine",
+  "HideWhileSwimming",
+  "HideWhileWearingBathingSuit",
+  "IdleAnimation",
+  "IsPrismatic",
+  "MovementAnimation",
+  "PrismaticAnimationSpeedMultiplier",
+  "RequireAnimationToFinish",
+  "Scale",
+  "StartingPosition",
+  "Tags",
+  "UniformAnimation"
+ ]
+}

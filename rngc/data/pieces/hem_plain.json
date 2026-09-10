@@ -1,0 +1,41 @@
+{
+  "id": "hem_plain",
+  "kind": "hem",
+  "layer": "OVER",
+  "slot": null,
+  "identity": false,
+  "wrap": true,
+  "note": "Plain hem termination: deep bottom row, shadow corners on the row above. Wrap piece (all four directions). Anchored to the blank's hem_row.",
+  "views": {
+    "front": {
+      "origin": [
+        0,
+        "hem_row-1"
+      ],
+      "rows": [
+        "s..............s",
+        "dddddddddddddddd"
+      ]
+    },
+    "side": {
+      "origin": [
+        2,
+        "hem_row-1"
+      ],
+      "rows": [
+        "s............s",
+        "dddddddddddddd"
+      ]
+    },
+    "back": {
+      "origin": [
+        1,
+        "hem_row-1"
+      ],
+      "rows": [
+        "s............s",
+        "dddddddddddddd"
+      ]
+    }
+  }
+}

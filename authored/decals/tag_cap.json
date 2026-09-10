@@ -1,0 +1,25 @@
+{
+  "name": "tag_cap",
+  "motif_class": "tag",
+  "pending": true,
+  "slot": "HEAD",
+  "zone": "side_panel",
+  "z": 2,
+  "style": [
+    "casual",
+    "smart"
+  ],
+  "views": [
+    "front",
+    "back"
+  ],
+  "fits": [
+    "soft_cap"
+  ],
+  "description": "a woven side tag stitched to the panel seam",
+  "per_view": false,
+  "size": [
+    3,
+    2
+  ]
+}

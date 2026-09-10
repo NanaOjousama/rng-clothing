@@ -1,0 +1,20 @@
+{
+  "name": "collar_pointed",
+  "slot": "TOP",
+  "attach": "neck",
+  "z": 2,
+  "style": [
+    "formal",
+    "smart"
+  ],
+  "views": [
+    "front",
+    "back"
+  ],
+  "description": "a pointed collar with a short fall",
+  "per_view": false,
+  "size": [
+    4,
+    2
+  ]
+}

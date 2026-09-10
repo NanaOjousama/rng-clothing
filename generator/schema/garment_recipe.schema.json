@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rng-clothing.invalid/schema/garment_recipe.schema.json",
+  "title": "RNG Clothing V1 Vanilla Shirt Recipe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "generationIndex",
+    "seed",
+    "category",
+    "styleProfile",
+    "referenceTraits",
+    "archetype",
+    "fit",
+    "neckline",
+    "collar",
+    "closure",
+    "detail",
+    "secondaryDetail",
+    "pattern",
+    "paletteFamily",
+    "accent",
+    "rarity",
+    "dyeable",
+    "itemName",
+    "itemDescription"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^lifestyle-v1-[0-9]{2}$"},
+    "generationIndex": {"type": "integer", "minimum": 1, "maximum": 20},
+    "seed": {"type": "integer", "minimum": 0},
+    "category": {"const": "Lifestyle"},
+    "styleProfile": {"const": "General"},
+    "referenceTraits": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "compact_straight",
+          "clean_layering",
+          "localized_contrast",
+          "restrained_palette",
+          "practical_fit",
+          "disciplined_collar",
+          "simple_hem"
+        ]
+      }
+    },
+    "archetype": {"enum": ["T_SHIRT", "SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"]},
+    "fit": {"enum": ["fitted", "regular", "relaxed"]},
+    "neckline": {"enum": ["round", "crew", "shallow_v", "open"]},
+    "collar": {"enum": ["none", "small_folded", "wide", "sailor"]},
+    "closure": {"enum": ["none", "center_open", "buttons"]},
+    "detail": {"enum": ["none", "center_stripe", "chest_accent", "lower_trim", "inner_layer", "button_line"]},
+    "secondaryDetail": {
+      "oneOf": [
+        {"type": "null"},
+        {"enum": ["center_stripe", "chest_accent", "lower_trim", "inner_layer", "button_line"]}
+      ]
+    },
+    "pattern": {"enum": ["none", "horizontal_stripe", "vertical_trim", "simple_border"]},
+    "paletteFamily": {
+      "enum": [
+        "forest_cream",
+        "navy_ivory",
+        "rust_brown",
+        "charcoal_burgundy",
+        "denim_cream",
+        "sage_tan",
+        "warm_neutral",
+        "cool_neutral"
+      ]
+    },
+    "accent": {"enum": ["none", "rust", "brass", "deep_brown", "ivory", "burgundy", "dusty_rose", "navy"]},
+    "rarity": {"enum": ["Common", "Uncommon", "Rare"]},
+    "dyeable": {"const": true},
+    "itemName": {"type": "string", "minLength": 3, "maxLength": 48},
+    "itemDescription": {"type": "string", "minLength": 8, "maxLength": 160}
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rng-clothing.invalid/schema/garment_recipe_v4.schema.json",
+  "title": "RNG Clothing V4 Multi-Garment Translation Recipe",
+  "description": "Coordinate-free article target wrapped around an unchanged V3 design recipe. Renderer masks remain backend-owned.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["formatVersion", "id", "collection", "articleType", "articleIntent", "articleFeatures", "designRecipe"],
+  "properties": {
+    "formatVersion": {"const": 4},
+    "id": {"type": "string", "pattern": "^v4-(?:aot-0[1-6]|neutral-0[1-8])$"},
+    "collection": {"enum": ["AoTInspired", "NeutralBenchmark"]},
+    "articleType": {"enum": ["FITTED_SHIRT", "SWEATER_TOP", "VEST_TOP", "CROPPED_JACKET", "SHORT_OUTERWEAR", "LONG_OUTERWEAR"]},
+    "articleIntent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lengthClass", "sleeveMaterial", "silhouetteGoal", "primaryArticleRead", "focalZones"],
+      "properties": {
+        "lengthClass": {"enum": ["fitted_standard", "soft_standard", "vest_standard", "cropped", "standard_outer", "extended"]},
+        "sleeveMaterial": {"enum": ["outer_fabric", "inner_shirt"]},
+        "silhouetteGoal": {"enum": ["tailored_taper", "soft_mass", "layered_vest_frame", "cropped_outer_shell", "full_short_shell", "extended_coat_fall"]},
+        "primaryArticleRead": {"type": "string", "minLength": 5, "maxLength": 100},
+        "focalZones": {"type": "array", "minItems": 1, "maxItems": 7, "uniqueItems": true, "items": {"enum": ["collar", "yoke", "chest", "placket", "outer_panels", "inner_layer", "waist", "hem", "sleeves", "back_yoke"]}}
+      }
+    },
+    "articleFeatures": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "uniqueItems": true,
+      "items": {"enum": ["tailored_lower_taper", "uninterrupted_cloth_mass", "ribbed_termination", "contrasting_under_shirt", "vest_body_frame", "inner_shirt_sleeves", "shortened_outer_shell", "cropped_termination", "split_outer_shell", "visible_inner_layer", "full_short_hem", "structured_back", "high_collar"]}
+    },
+    "designRecipe": {"$ref": "garment_recipe_v3.schema.json"}
+  }
+}

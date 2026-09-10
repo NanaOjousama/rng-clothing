@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "4.2.0-shape-proof",
+  "status": "EXPERIMENTAL_THREE_FAMILY_PROOF_DISABLED_BY_DEFAULT",
+  "thesis": "Keep the V3 garment brain and frozen V5/HD hand; replace the middle translation layer with ownership-aware topology, shape and pixel grammar.",
+  "authoritativeFiles": [
+    "architecture_grammar_v4.json",
+    "art_grammar_v4.json",
+    "palette_grammar_v4.json",
+    "ownership_contract.json",
+    "safe_envelopes.json",
+    "component_shape_variants.json",
+    "quality_gates.json",
+    "v3_v4_migration_map.json"
+  ],
+  "productionPolicy": "V4 may not become production-default until Farmer-scale human review and live Fashion Sense runtime proof pass.",
+  "frozenContracts": [
+    "Fashion Sense 7.5.0 Shirt runtime contract",
+    "16x16 logical directional shirt frames",
+    "Scale 2",
+    "BodyPosition (0,32)",
+    "native animated Farmer sleeves",
+    "binary alpha",
+    "frozen V5/HD renderer stages"
+  ]
+}

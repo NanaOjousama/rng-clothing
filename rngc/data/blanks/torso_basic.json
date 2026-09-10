@@ -1,0 +1,65 @@
+{
+  "id": "torso_basic",
+  "note": "Vanilla plain-tee (sprite 1) silhouette at 2x, hand-shaded once. Light from screen upper-left; deep only at silhouette turns and the hem corners. Rows 0-1 carry the neck gap.",
+  "rows": {
+    "neck_row": 1,
+    "waist_row": 11,
+    "hem_row": 15
+  },
+  "views": {
+    "front": [
+      "dsssss....sssssd",
+      "sllbbb....bbbbss",
+      "sllbbbbbbbbbbbss",
+      "slllbbbbbbbbbbss",
+      "slllbbbbbbbbbbss",
+      "slllbbbbbbbbbbss",
+      "sllbbbbbbbbbbbss",
+      "sbbbbbbbbbbbbbss",
+      "sbbbbbbbbbbbbbss",
+      "sbbbbbbbbbbbbbsd",
+      "sbbbbbbbbbbbbbsd",
+      "sbbbbbbbbbbbbbsd",
+      "sbbbbbbbbbbbbssd",
+      "sbbbbbbbbbbbsssd",
+      "sbbbbbbbbbbbbbss",
+      "ssssssssssssssss"
+    ],
+    "side": [
+      "dsssss..ssss....",
+      "sllbbs..bbbs....",
+      "sllbbbbbbbbbss..",
+      "slllbbbbbbbbss..",
+      "slllbbbbbbbbss..",
+      "sllbbbbbbbbbbs..",
+      "slbbbbbbbbbbbbss",
+      "sbbbbbbbbbbbbbss",
+      "sbbbbbbbbbbbbbsd",
+      "sbbbbbbbbbbbbbsd",
+      "..sbbbbbbbbbbbsd",
+      "..sbbbbbbbbbbbsd",
+      "..sbbbbbbbbbbssd",
+      "..sbbbbbbbbbsssd",
+      "..sbbbbbbbbbbbss",
+      "..ssssssssssssss"
+    ],
+    "back": [
+      "ddssssssssssssdd",
+      "sslbbbbbbbbbbsss",
+      "sllbbbbbbbbbbbss",
+      "slllbbbbbbbbbbss",
+      "slllbbbbbbbbbbss",
+      "sllbbbbbbbbbbbss",
+      "slbbbbbbbbbbbbss",
+      "sbbbbbbbbbbbbbss",
+      "sbbbbbbbbbbbbbsd",
+      "sbbbbbbbbbbbbbsd",
+      "sbbbbbbbbbbbbbsd",
+      "sbbbbbbbbbbbbbsd",
+      "sbbbbbbbbbbbbssd",
+      "sbbbbbbbbbbbsssd",
+      ".sbbbbbbbbbbbbs.",
+      ".ssssssssssssss."
+    ]
+  }
+}

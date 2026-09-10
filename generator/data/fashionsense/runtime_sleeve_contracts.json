@@ -1,0 +1,36 @@
+{
+  "formatVersion": "1.1.0",
+  "fashionSenseVersion": "7.5.0",
+  "knownGoodContract": "NATIVE_ANIMATED_SLEEVES_V1",
+  "contracts": {
+    "NATIVE_ANIMATED_SLEEVES_V1": {
+      "authority": "live-tested Rare+ hoodie and V5E Sunfield Pathfinder native arm attachment",
+      "status": "FROZEN_RUNTIME_PASS",
+      "runtimeEvidence": {
+        "hoodie": "native Farmer arms remained attached",
+        "v5eSunfieldPathfinder": ["front", "right", "back"],
+        "leftDirection": "contract-inherited; visual retest still requested"
+      },
+      "shirt": {
+        "HideSleeves": false,
+        "SleeveColorsCount": 3,
+        "Scale": 2.0,
+        "BodyPosition": {"X": 0, "Y": 32},
+        "nativeFeatureOffsets": true
+      },
+      "preset": {"SleevesId": "None"},
+      "pack": {"SleevesDirectoryAllowed": false},
+      "reason": "Fashion Sense and Stardew draw the native Farmer arms through the proven animated path and recolor them from the equipped Shirt SleeveColors. The rejected 32x64 Scale-2 custom atlas detached below the Farmer in both hoodie and V5E live tests."
+    }
+  },
+  "rejectedContracts": {
+    "CUSTOM_32X64_SCALE2_DISABLE_NATIVE_OFFSET": {
+      "Scale": 2.0,
+      "BodyPosition": {"X": 0, "Y": 0},
+      "DisableNativeOffset": true,
+      "atlas": [384, 1344],
+      "runtimeFailure": "detached arm geometry below Farmer",
+      "mayNotBeGeneratedForProductionOrRuntimeTestPacks": true
+    }
+  }
+}

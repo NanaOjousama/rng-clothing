@@ -1,0 +1,102 @@
+{
+  "formatVersion": 1,
+  "id": "AoTInspired",
+  "displayName": "AoT-Inspired Military Fieldwear",
+  "status": "external-style-profile-poc",
+  "purpose": "Coordinate-free style tendencies derived across the supplied reference corpus; never a character-costume or insignia template.",
+  "referenceCorpus": {
+    "directory": "references/style-profiles/AoTInspired/",
+    "inspectedFiles": [
+      {"file": "06a6c87d45d9159710cc6d1e466f5b7b.jpg", "role": "primary", "evidence": ["side collar and lapel construction", "compact brown field jacket", "upper sleeve paneling"]},
+      {"file": "36af5584c94ab46f564e4750b5f13de8.jpg", "role": "primary", "evidence": ["cropped tan field jacket", "dark inner shirt", "waist termination", "front utility panel rhythm"]},
+      {"file": "901bcdb7968fc2d1dc816e6d9f87371c.jpg", "role": "primary", "evidence": ["jacket and civilian outfit family", "fitted dark base layers", "long muted outerwear variation"]},
+      {"file": "aot.png", "role": "primary", "evidence": ["multi-outfit family", "tan jacket and olive inner layer", "vest and fitted shirt variants", "dark harness rhythm"]},
+      {"file": "aotfront.jpeg", "role": "primary", "evidence": ["front outerwear and vest construction", "formal military tailoring", "warm brown olive cream charcoal family"]},
+      {"file": "a0tside.jpeg", "role": "secondary", "evidence": ["dark long outerwear", "formal civilian branch", "side silhouette"]},
+      {"file": "images (1).jpeg", "role": "secondary", "evidence": ["alternate cloak and field-uniform family", "compact practical silhouettes"]},
+      {"file": "images.jpeg", "role": "secondary", "evidence": ["modern civilian reinterpretation", "muted layered casual tailoring"]}
+    ]
+  },
+  "preferredRenderer": {
+    "backend": "FashionSense",
+    "profile": "FS_HIGH_DETAIL_PERMANENT",
+    "reason": "Structured collars, split panels, yokes, and side-view layering need the existing 16x16 Scale-2 construction budget."
+  },
+  "styleStrength": {
+    "SUBTLE": {
+      "intent": "Ordinary Stardew clothing with one fieldwear cue.",
+      "requiredTendencies": 1,
+      "maximumSubstantialFeatures": 1
+    },
+    "MODERATE": {
+      "intent": "Clearly related military/civilian fieldwear through construction and palette.",
+      "requiredTendencies": 2,
+      "maximumSubstantialFeatures": 2
+    },
+    "STRONG": {
+      "intent": "The strongest legal cropped-field-jacket or fitted-uniform construction without insignia or costume replication.",
+      "requiredTendencies": 4,
+      "maximumSubstantialFeatures": 2,
+      "antiCosplayLimit": "Use corpus-level jacket grammar only; never reproduce emblems, exact pocket maps, or exact harness layouts."
+    }
+  },
+  "semanticTendencies": {
+    "preferredArchetypes": ["JACKET", "BUTTON_SHIRT", "SWEATER"],
+    "preferredFits": ["regular", "fitted", "relaxed"],
+    "preferredCollars": ["wide", "small_folded"],
+    "preferredClosures": ["center_open", "buttons"],
+    "preferredLayering": ["visible_inner_layer", "overlay_panel", "single_layer"],
+    "preferredPanelLayouts": ["split_outer_panels", "center_placket", "yoke"],
+    "preferredHems": ["structured", "contrast_band", "plain"],
+    "preferredSubstantialFeatures": [
+      "contrast_inner_layer",
+      "broad_collar",
+      "center_placket",
+      "yoke",
+      "structured_lower_band",
+      "split_outer_panels"
+    ],
+    "compatibleMicroDetails": ["tiny_button", "tiny_trim_mark"],
+    "contrast": "Dark outline and recesses; mid-value rugged outer cloth; clearly separated inner layer or yoke; restrained highlights.",
+    "silhouette": ["compact waist-emphasized outerwear", "fitted tailored torso", "structured collar mass", "practical uninterrupted sleeves"],
+    "largeColorBlocksFirst": ["outer_panels", "inner_layer", "collar", "yoke", "placket", "hem"]
+  },
+  "branches": {
+    "militaryCore": {
+      "weight": 0.6,
+      "traits": ["compact jacket", "structured collar", "split outer panels", "dark inner layer", "defined waist"]
+    },
+    "civilianUtility": {
+      "weight": 0.25,
+      "traits": ["fitted work shirt", "vest-like yoke", "muted practical palette", "restrained closure"]
+    },
+    "darkFormal": {
+      "weight": 0.15,
+      "traits": ["dark outerwear value", "formal folded collar", "long-coat influence simplified to standard supported torso length"]
+    }
+  },
+  "paletteFamilies": [
+    "field_tan_olive",
+    "olive_warm_beige",
+    "ivory_black_brown",
+    "dusty_khaki_deep_gray",
+    "civilian_burgundy_charcoal"
+  ],
+  "avoid": [
+    "logos or insignia",
+    "exact faction emblems",
+    "exact character costume layouts",
+    "dense harness spaghetti",
+    "multiple tiny buckles",
+    "photoreal military texture",
+    "micro-detail-led identity",
+    "five recolors of one jacket"
+  ],
+  "frozenVocabularySimplifications": {
+    "croppedJacket": "Use the compact JACKET archetype with a structured hem and strong waist termination; the frozen renderer has no separate cropped-length field.",
+    "pocketFlaps": "Represent only through existing major panel hierarchy; no unsupported pocket pixels are added.",
+    "harnessRhythm": "Reduce to one existing placket, yoke, or lower-band gesture; never draw freehand straps.",
+    "longCoat": "Translate to dark formal torso outerwear because the frozen shirt backend has no long-coat silhouette.",
+    "vest": "Translate to fitted BUTTON_SHIRT yoke/overlay construction with native sleeves preserved."
+  }
+}

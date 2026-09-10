@@ -1,0 +1,123 @@
+{
+  "formatVersion": 3,
+  "id": "AoTInspired",
+  "displayName": "AoT-Inspired Fieldwear / Military-Civilian",
+  "status": "Generator V3 integration test",
+  "referenceDirectory": "references/style-profiles/AoTInspired/",
+  "rendererContract": "Frozen FS-HD V3: 16x16, Scale 2, BodyPosition (0,32)",
+  "recognitionSource": "Construction, layering, disciplined utility geometry, cropped waist rhythm, color relationship, and modest original regiment-style insignia where rarity permits.",
+  "branches": {
+    "civilian_everyday": {
+      "roles": ["tailored work shirt", "muted fitted top", "waistcoat-adjacent shirt"],
+      "preferredArchetypes": ["BUTTON_SHIRT", "SWEATER"],
+      "recognitionRange": ["LOW", "MODERATE"]
+    },
+    "practical_fieldwear": {
+      "roles": ["field knit", "utility pullover", "high-collar underlayer"],
+      "preferredArchetypes": ["SWEATER", "BUTTON_SHIRT"],
+      "recognitionRange": ["LOW", "MODERATE"]
+    },
+    "military_core": {
+      "roles": ["cropped field jacket", "structured military shirt", "compact utility outer layer"],
+      "preferredArchetypes": ["JACKET", "BUTTON_SHIRT"],
+      "recognitionRange": ["MODERATE", "STRONG"]
+    },
+    "dark_formal": {
+      "roles": ["dark command jacket", "formal fitted shirt", "waistcoat-led tailoring"],
+      "preferredArchetypes": ["JACKET", "BUTTON_SHIRT"],
+      "recognitionRange": ["MODERATE", "STRONG"]
+    }
+  },
+  "constructionVocabulary": {
+    "fits": ["fitted", "regular"],
+    "collars": ["small_folded", "wide", "none"],
+    "closures": ["center_open", "buttons", "none"],
+    "layering": ["visible_inner_layer", "overlay_panel", "single_layer"],
+    "panels": ["split_outer_panels", "center_placket", "yoke", "solid"],
+    "hems": ["structured", "contrast_band", "ribbed", "plain"],
+    "requiredCoreCues": ["compact waist", "disciplined upper construction", "fitted or regular practical mass", "dark construction anchors"]
+  },
+  "surfaceVocabulary": {
+    "colorBlocks": ["shoulder_block", "yoke_block", "side_panels", "center_panel", "inner_layer_emphasis", "waist_block"],
+    "trims": ["lapel_trim", "collar_trim", "cuff_trim", "hem_trim", "piping", "seam_emphasis", "double_stripe"],
+    "patterns": ["military_repeat", "chevrons", "themed_band"],
+    "motifs": ["military_geometry", "star"],
+    "motifAliases": {
+      "angular_regiment_badge": "military_geometry",
+      "split_wing_crest": "star"
+    },
+    "detailLayouts": ["pocket_pair", "shoulder_accent", "coordinated_cuff_hem", "coordinated_directional", "front_back_pair"],
+    "interpretations": {
+      "paired pocket flaps": "military_repeat or a short upper-chest paired geometry",
+      "epaulettes": "shoulder_block or yoke continuation, never detached marks",
+      "harness rhythm": "one paired/diagonal or waist-level geometry, never a body-wide mesh",
+      "leather trim": "dark accent role on one construction-bound trim system",
+      "cropped waist": "structured or contrast hem plus compact jacket mass",
+      "split-wing crest": "a modest asymmetric star-derived badge used as original regiment homage, never an exact faction mark",
+      "shoulder patch": "a small asymmetric-front motif with a one/two-cell side continuation"
+    }
+  },
+  "paletteStories": {
+    "garrison_tan": "aot_garrison_tan",
+    "field_olive": "aot_field_olive",
+    "formal_charcoal": "aot_formal_charcoal",
+    "civilian_rust": "aot_civilian_rust",
+    "high_contrast_field": "aot_high_contrast_field"
+  },
+  "rarityTranslation": {
+    "Common": "One calm but visible field-world design idea; attractive everyday clothing with a low complexity ceiling.",
+    "Uncommon": "Two coordinated systems with a structured panel/utility identity and optional small badge; moderate ceiling and clear gameplay-size thematic read.",
+    "Rare": "Three controlled systems: one strong primary composition, one substantial secondary region, one modest focal/accent treatment, and coordinated finishing. Preserve unused space for future Legendary/Mythic tiers."
+  },
+  "rarityArtProfiles": {
+    "Common": {
+      "activeSystems": 1,
+      "maximumFrontSurfaceCells": 16,
+      "maximumSurfaceColors": 2,
+      "minimumFrontSurfaceCells": 5,
+      "insigniaPolicy": "absent or extremely small",
+      "intent": "nice clothing from this world"
+    },
+    "Uncommon": {
+      "activeSystems": 2,
+      "maximumFrontSurfaceCells": 32,
+      "maximumSurfaceColors": 3,
+      "minimumFrontSurfaceCells": 10,
+      "minimumThemedViews": 2,
+      "maximumMotifCellsPerFront": 8,
+      "insigniaPolicy": "small chest or shoulder badge permitted",
+      "intent": "definitely belongs to the AoT-inspired pool"
+    },
+    "Rare": {
+      "activeSystems": 3,
+      "minimumFrontSurfaceCells": 28,
+      "maximumFrontSurfaceCells": 42,
+      "minimumBackSurfaceCells": 20,
+      "maximumBackSurfaceCells": 40,
+      "minimumSideSurfaceCells": 8,
+      "maximumSurfaceColors": 3,
+      "maximumMotifCellsPerFront": 9,
+      "minimumVisibleFocalCells": 4,
+      "minimumVisibleSecondaryCells": 8,
+      "minimumFinishingCells": 2,
+      "insigniaPolicy": "modest original focal crest permitted; never oversized or multi-region dominant",
+      "intent": "premium AoT-style chase piece below future Legendary/Mythic complexity"
+    }
+  },
+  "futureTierReserve": {
+    "Legendary": ["larger coordinated emblems", "richer back motifs", "additional FS layers", "unusual asymmetric construction", "more ambitious silhouettes"],
+    "Mythic": ["bespoke chase composition", "maximum thematic recognition", "curated special layering", "subtle animation or VFX where appropriate", "intentional grammar exceptions"]
+  },
+  "avoid": [
+    "exact Survey Corps or other copied faction insignia",
+    "pixel-for-pixel copied winged logos",
+    "oversized Rare emblems that consume the garment",
+    "Rare compositions using every available region",
+    "exact character costumes or names",
+    "dense harness spaghetti",
+    "literal copied pocket maps",
+    "all-tan recolor pools",
+    "micro-detail-led Rare identity",
+    "renderer-specific coordinate exceptions"
+  ]
+}

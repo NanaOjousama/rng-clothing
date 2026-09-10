@@ -1,0 +1,43 @@
+{
+  "id": "neck_crew",
+  "kind": "neck",
+  "layer": "OVER",
+  "slot": null,
+  "identity": true,
+  "wrap": false,
+  "note": "Crew binding: deep ring immediately around the neck opening plus a shadow row below. Authored 2 rows deep because a 1-cell binding at 16x16 is proportionally half of vanilla's 1-cell binding at 8x8; the first version measured 53.2 contrast over 8 cells and failed the salience calibration. Role-only, inherits the garment slot.",
+  "views": {
+    "front": {
+      "origin": [
+        5,
+        1
+      ],
+      "rows": [
+        "d....d",
+        "dddddd",
+        ".ssss."
+      ]
+    },
+    "side": {
+      "origin": [
+        5,
+        1
+      ],
+      "rows": [
+        "d..d",
+        "dddd",
+        ".ss."
+      ]
+    },
+    "back": {
+      "origin": [
+        5,
+        1
+      ],
+      "rows": [
+        "dddddd",
+        ".ssss."
+      ]
+    }
+  }
+}

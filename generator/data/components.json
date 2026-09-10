@@ -1,0 +1,180 @@
+{
+  "formatVersion": 1,
+  "ruleSemantics": {
+    "allowedArchetypes": "The component may only appear on these archetypes.",
+    "requiresAll": "Every listed field must contain one of the listed values.",
+    "excludes": "The component is illegal if a listed field contains one of the listed values.",
+    "noneDetail": "detail=none and secondaryDetail=null represent no applied detail."
+  },
+  "neckline": {
+    "round": {
+      "tags": ["neckline:closed", "neckline:soft"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER"],
+      "requiresAll": [],
+      "excludes": [{"field": "collar", "values": ["small_folded", "wide", "sailor"]}]
+    },
+    "crew": {
+      "tags": ["neckline:closed", "neckline:banded"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER"],
+      "requiresAll": [],
+      "excludes": [{"field": "collar", "values": ["small_folded", "wide", "sailor"]}]
+    },
+    "shallow_v": {
+      "tags": ["neckline:v", "neckline:shallow"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "SAILOR_TOP"],
+      "requiresAll": [],
+      "excludes": [{"field": "collar", "values": ["small_folded"]}]
+    },
+    "open": {
+      "tags": ["neckline:open", "neckline:layer_space"],
+      "allowedArchetypes": ["BUTTON_SHIRT", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [],
+      "excludes": []
+    }
+  },
+  "collar": {
+    "none": {
+      "tags": ["collar:none"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "JACKET"],
+      "requiresAll": [],
+      "excludes": []
+    },
+    "small_folded": {
+      "tags": ["collar:folded", "collar:tailored"],
+      "allowedArchetypes": ["BUTTON_SHIRT", "JACKET"],
+      "requiresAll": [{"field": "neckline", "values": ["open"]}],
+      "excludes": []
+    },
+    "wide": {
+      "tags": ["collar:wide", "collar:secondary_region"],
+      "allowedArchetypes": ["SWEATER", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [{"field": "neckline", "values": ["shallow_v", "open"]}],
+      "excludes": []
+    },
+    "sailor": {
+      "tags": ["collar:sailor", "collar:broad_back_yoke"],
+      "allowedArchetypes": ["SAILOR_TOP"],
+      "requiresAll": [
+        {"field": "archetype", "values": ["SAILOR_TOP"]},
+        {"field": "neckline", "values": ["open"]}
+      ],
+      "excludes": []
+    }
+  },
+  "fit": {
+    "fitted": {
+      "tags": ["fit:fitted", "hem:tapered"],
+      "allowedArchetypes": ["T_SHIRT", "BUTTON_SHIRT", "SAILOR_TOP"],
+      "requiresAll": [],
+      "excludes": []
+    },
+    "regular": {
+      "tags": ["fit:regular", "hem:straight"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [],
+      "excludes": []
+    },
+    "relaxed": {
+      "tags": ["fit:relaxed", "mass:broad"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "JACKET"],
+      "requiresAll": [],
+      "excludes": []
+    }
+  },
+  "closure": {
+    "none": {
+      "tags": ["closure:none"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "SAILOR_TOP"],
+      "requiresAll": [],
+      "excludes": []
+    },
+    "center_open": {
+      "tags": ["closure:center", "closure:open", "layer:outer"],
+      "allowedArchetypes": ["JACKET"],
+      "requiresAll": [{"field": "neckline", "values": ["open"]}],
+      "excludes": [{"field": "detail", "values": ["button_line"]}]
+    },
+    "buttons": {
+      "tags": ["closure:center", "closure:buttons"],
+      "allowedArchetypes": ["BUTTON_SHIRT", "JACKET"],
+      "requiresAll": [
+        {"field": "neckline", "values": ["open"]},
+        {"field": "collar", "values": ["small_folded", "wide"]}
+      ],
+      "excludes": [{"field": "detail", "values": ["inner_layer"]}]
+    }
+  },
+  "detail": {
+    "none": {
+      "tags": ["detail:none"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [],
+      "excludes": []
+    },
+    "center_stripe": {
+      "tags": ["detail:center", "detail:continuous"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "SAILOR_TOP"],
+      "requiresAll": [{"field": "closure", "values": ["none"]}],
+      "excludes": [{"field": "pattern", "values": ["horizontal_stripe", "vertical_trim"]}]
+    },
+    "chest_accent": {
+      "tags": ["detail:front_only", "motif:one", "accent:required"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [],
+      "excludes": [{"field": "accent", "values": ["none"]}]
+    },
+    "lower_trim": {
+      "tags": ["detail:hem", "detail:wrapping"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [],
+      "excludes": [{"field": "pattern", "values": ["simple_border"]}]
+    },
+    "inner_layer": {
+      "tags": ["detail:layer", "region:secondary", "direction:front_edge"],
+      "allowedArchetypes": ["JACKET"],
+      "requiresAll": [{"field": "closure", "values": ["center_open"]}],
+      "excludes": [{"field": "pattern", "values": ["vertical_trim"]}]
+    },
+    "button_line": {
+      "tags": ["detail:center", "detail:buttons", "accent:optional"],
+      "allowedArchetypes": ["BUTTON_SHIRT", "JACKET"],
+      "requiresAll": [{"field": "closure", "values": ["buttons"]}],
+      "excludes": []
+    }
+  },
+  "pattern": {
+    "none": {
+      "tags": ["pattern:none"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [],
+      "excludes": []
+    },
+    "horizontal_stripe": {
+      "tags": ["pattern:horizontal", "pattern:wrapping", "motif:one"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "SAILOR_TOP"],
+      "requiresAll": [{"field": "closure", "values": ["none"]}],
+      "excludes": [{"field": "detail", "values": ["center_stripe"]}]
+    },
+    "vertical_trim": {
+      "tags": ["pattern:vertical", "pattern:panel_edge"],
+      "allowedArchetypes": ["BUTTON_SHIRT", "JACKET"],
+      "requiresAll": [{"field": "closure", "values": ["center_open", "buttons"]}],
+      "excludes": [{"field": "detail", "values": ["inner_layer", "center_stripe"]}]
+    },
+    "simple_border": {
+      "tags": ["pattern:border", "pattern:continuous"],
+      "allowedArchetypes": ["T_SHIRT", "SWEATER", "BUTTON_SHIRT", "JACKET", "SAILOR_TOP"],
+      "requiresAll": [],
+      "excludes": [{"field": "detail", "values": ["lower_trim"]}]
+    }
+  },
+  "crossRules": [
+    "secondaryDetail must be null or a non-none detail different from a non-none primary detail",
+    "secondaryDetail is allowed only for Rare recipes",
+    "chest_accent requires a non-none accent",
+    "recipes without chest_accent may still use an accent only through button_line",
+    "center_stripe and horizontal_stripe cannot be combined",
+    "lower_trim and simple_border cannot be combined",
+    "inner_layer and vertical_trim cannot be combined"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "BUTTON_SHIRT",
+  "description": "Tailored everyday shirt whose small folded collar and continuous center closure provide the primary identity.",
+  "validNecklines": ["open"],
+  "validCollars": ["small_folded"],
+  "validClosures": ["buttons"],
+  "validFits": ["fitted", "regular"],
+  "validDetails": ["none", "chest_accent", "lower_trim", "button_line"],
+  "validPatterns": ["none", "vertical_trim", "simple_border"],
+  "shoulderProfile": "tailored_compact",
+  "frontStructure": "folded collar over a continuous center seam or button line",
+  "backStructure": "collar back and restrained yoke; no front buttons",
+  "sideStructure": "compressed collar with closure implied only at the forward edge",
+  "allowedDetailLocations": ["collar_edge", "center_closure", "upper_chest", "lower_hem"],
+  "allowedSecondaryRegions": ["collar", "closure_trim", "cuff_or_hem"],
+  "validMotifLocations": ["front_upper_chest"],
+  "baseShadingZones": ["shoulders", "side_panels", "under_collar", "lower_edge"],
+  "maximumComplexity": "Common through Rare budgets; closure is core structure and not an extra motif",
+  "incompatibleFeatures": ["round_neck", "crew_neck", "sailor_collar", "center_opening", "inner_layer", "horizontal_stripe"],
+  "renderProfile": "tailored_button"
+}

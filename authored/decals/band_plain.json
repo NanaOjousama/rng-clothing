@@ -1,0 +1,27 @@
+{
+  "name": "band_plain",
+  "motif_class": "band",
+  "slot": "HEAD",
+  "zone": "band",
+  "z": 2,
+  "style": [
+    "formal",
+    "smart",
+    "work"
+  ],
+  "views": [
+    "front",
+    "left",
+    "back"
+  ],
+  "fits": [
+    "felt_hat",
+    "wide_brim_hat"
+  ],
+  "description": "a plain ribbon seated where the crown meets the brim",
+  "per_view": false,
+  "size": [
+    6,
+    1
+  ]
+}

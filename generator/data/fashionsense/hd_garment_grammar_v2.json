@@ -1,0 +1,269 @@
+{
+  "formatVersion": 2,
+  "profile": "FS_HIGH_DETAIL_PERMANENT",
+  "logicalFrame": [16, 16],
+  "scale": 2.0,
+  "bodyPosition": {"X": 0, "Y": 32},
+  "directionOrder": ["front", "right", "left", "back"],
+  "lightPolicy": {
+    "direction": "screen_upper_left",
+    "description": "Upper and screen-left-facing planes receive the dominant connected light mass in every view; mirrored anatomy does not mirror the implied screen light.",
+    "maximumHighlightClustersPerDirection": 1,
+    "maximumHighlightCellsPerDirection": 4,
+    "highlightsMustTouchLight": true
+  },
+  "edgeExposureRoles": [
+    "neck_anchor",
+    "outer_side_anchor",
+    "underarm_anchor",
+    "overlap_anchor",
+    "hem_corner_anchor",
+    "shadow_edge",
+    "lit_edge"
+  ],
+  "edgePolicy": {
+    "minimumDarkAnchorExteriorShare": 0.5,
+    "maximumDarkestExteriorShare": 0.9,
+    "selectiveInwardReinforcement": true,
+    "blanketTwoCellBorder": false
+  },
+  "gestureStrength": {
+    "PRIMARY": "deep_crease",
+    "SECONDARY": "structural_edge",
+    "SUBORDINATE": "shadow",
+    "MICRO": "base"
+  },
+  "constructionGestures": {
+    "JACKET": {
+      "front": {"primary": ["COLLAR", "INNER_LAYER"], "secondary": ["HEM", "SLEEVE"], "subordinate": ["YOKE"]},
+      "back": {"primary": ["YOKE"], "secondary": ["HEM"], "subordinate": ["COLLAR", "SLEEVE"]},
+      "side": {"primary": ["COLLAR", "INNER_LAYER"], "secondary": ["SLEEVE"], "subordinate": ["HEM"]}
+    },
+    "BUTTON_SHIRT": {
+      "front": {"primary": ["PLACKET"], "secondary": ["COLLAR"], "subordinate": ["HEM", "SLEEVE"]},
+      "back": {"primaryWhenYoke": ["YOKE"], "primaryOtherwise": ["COLLAR"], "secondary": ["COLLAR", "HEM"], "subordinate": ["SLEEVE"]},
+      "side": {"primary": ["COLLAR", "PLACKET"], "secondary": ["YOKE"], "subordinate": ["HEM", "SLEEVE"]}
+    },
+    "SAILOR_TOP": {
+      "front": {"primary": ["YOKE", "COLLAR"], "secondary": ["HEM"], "subordinate": ["SLEEVE"]},
+      "back": {"primary": ["YOKE"], "secondary": ["HEM"], "subordinate": ["COLLAR", "SLEEVE"]},
+      "side": {"primary": ["YOKE", "COLLAR"], "secondary": ["HEM"], "subordinate": ["SLEEVE"]}
+    },
+    "SWEATER": {
+      "front": {"primaryWhenYoke": ["YOKE"], "primaryOtherwise": ["NECKLINE"], "secondary": ["RIBBING", "HEM"], "subordinate": ["SLEEVE"]},
+      "back": {"primaryWhenYoke": ["YOKE"], "primaryOtherwise": ["NECKLINE"], "secondary": ["RIBBING", "HEM"], "subordinate": ["SLEEVE"]},
+      "side": {"primary": ["NECKLINE", "YOKE"], "secondary": ["RIBBING", "HEM"], "subordinate": ["SLEEVE"]}
+    }
+  },
+  "terminationTemplates": {
+    "plain": {"type": "corner_shadow", "fullWidthBand": false},
+    "structured": {"type": "overlap_termination", "fullWidthBand": false},
+    "contrast_band": {"type": "contrast_band_termination", "fullWidthBand": true},
+    "ribbed": {"type": "ribbed_termination", "fullWidthBand": true}
+  },
+  "cuffTemplates": {
+    "JACKET": "outerwear_cuff",
+    "BUTTON_SHIRT": "narrow_cuff_shadow",
+    "SAILOR_TOP": "simple_sleeve_termination",
+    "SWEATER": "soft_cuff_shadow"
+  },
+  "shadeActivation": {
+    "Common": ["EXTERIOR_CONTOUR", "DEEP_CREASE", "SHADOW", "BASE", "LIGHT"],
+    "Uncommon": ["EXTERIOR_CONTOUR", "DEEP_CREASE", "STRUCTURAL_EDGE", "SHADOW", "BASE", "LIGHT"],
+    "Rare": ["EXTERIOR_CONTOUR", "DEEP_CREASE", "STRUCTURAL_EDGE", "SHADOW", "BASE", "LIGHT", "OPTIONAL_HIGHLIGHT"]
+  },
+  "roleFallbacks": {
+    "OPTIONAL_HIGHLIGHT": "LIGHT",
+    "STRUCTURAL_EDGE": "SHADOW",
+    "DEEP_CREASE": "EXTERIOR_CONTOUR"
+  },
+  "outerMaskRamp": {
+    "EXTERIOR_CONTOUR": 48,
+    "DEEP_CREASE": 72,
+    "STRUCTURAL_EDGE": 104,
+    "SHADOW": 136,
+    "BASE": 184,
+    "LIGHT": 224,
+    "OPTIONAL_HIGHLIGHT": 244
+  },
+  "sleeveMaskRoles": ["DEEP_CREASE", "BASE", "LIGHT"],
+  "regionLegend": {
+    ".": null,
+    "B": "BODY",
+    "N": "NECKLINE",
+    "C": "COLLAR",
+    "Y": "YOKE",
+    "P": "PLACKET",
+    "L": "OUTER_PANEL_LEFT",
+    "R": "OUTER_PANEL_RIGHT",
+    "I": "INNER_LAYER",
+    "H": "HEM",
+    "K": "RIBBING",
+    "S": "SLEEVE",
+    "A": "SHOULDER_CAP",
+    "T": "TERMINATION_SLOT"
+  },
+  "bodyCoverageEnvelope": {
+    "front": ["..####....####..", "################", "################", "................", "................", "................", "................", "................", "................", "................", "................", "................", "................", "................", "................", "................"],
+    "right": ["..##########....", "############....", "##############..", "................", "................", "................", "................", "................", "................", "................", "................", "................", "................", "................", "................", "................"],
+    "back": ["..############..", "################", "################", "................", "................", "................", "................", "................", "................", "................", "................", "................", "................", "................", "................", "................"]
+  },
+  "archetypes": {
+    "JACKET": {
+      "front": [
+        "..AACC....CCAA..", "AALCCCIIIICCCRAA", "ALLLCCIIIICCRRRA", "SLLLLCIIIICRRRRS",
+        "SSLLLCIIIICRRRSS", "SSLLLLLIIRRRRRSS", "SSLLLLLIIRRRRRSS", "SSLLLLLIIRRRRRSS",
+        "SSLLLLLIIRRRRRSS", "SSLLLLLIIRRRRRSS", "SSLLLLLIIRRRRRSS", "SSLLLLLIIRRRRRSS",
+        ".SLLLLLIIRRRRRS.", ".LLLLLLIIRRRRRR.", ".LLLLLIIIIRRRRR.", "..TTTTIIIITTTT.."
+      ],
+      "back": [
+        "..AAACCCCCCAAA..", "AALLYYYYYYYYRRAA", "ALLLYYYYYYYYRRRA", "SLLLLYYYYYYRRRRS",
+        "SSLLLLYYYYRRRRSS", "SSLLLLLYYRRRRRSS", "SSLLLLLLRRRRRRSS", "SSLLLLLLRRRRRRSS",
+        "SSLLLLLLRRRRRRSS", "SSLLLLLLRRRRRRSS", "SSLLLLLLRRRRRRSS", "SSLLLLLLRRRRRRSS",
+        ".SLLLLLLRRRRRRS.", ".LLLLLLLRRRRRRR.", ".LLLLLLLRRRRRRR.", "..TTTTTTTTTTTT.."
+      ],
+      "sideTemplates": {
+        "lapel_led": {
+          "semantic": "One descending lapel/opening rhythm with a small inner layer and strong sleeve junction.",
+          "rows": [
+            "..AACCCCIIAA....", "AASSSCCCCIII....", "ASSSSSRRCCCIII..", "SSSSSSRRRCCIIIR.",
+            "SSSSSRRRRRIIIIR.", ".SSSSRRRRRRRII..", ".SSSSRRRRRRRII..", ".SSSSRRRRRRRII..",
+            "..SSSRRRRRRRII..", "..SSSRRRRRRRII..", "...SSRRRRRRRII..", "...SSRRRRRRRII..",
+            "....RRRRRRRRII..", "....RRRRRRRRII..", "....RRRRRRIIII..", ".....TTTTTIII..."
+          ]
+        },
+        "panel_led": {
+          "semantic": "Outer panel dominates; opening is subordinate and collar edge provides identity.",
+          "rows": [
+            "..AACCCCCCAA....", "AASSSCCCCRRR....", "ASSSSSRRRRRRI...", "SSSSSSRRRRRRII..",
+            "SSSSSRRRRRRRII..", ".SSSSRRRRRRRII..", ".SSSSRRRRRRRII..", ".SSSSRRRRRRRII..",
+            "..SSSRRRRRRRII..", "..SSSRRRRRRRII..", "...SSRRRRRRRII..", "...SSRRRRRRRII..",
+            "....RRRRRRRRII..", "....RRRRRRRRII..", "....RRRRRRRRII..", ".....TTTTTTII..."
+          ]
+        },
+        "layered_side": {
+          "semantic": "Clear outer/inner relationship with a restrained diagonal opening and simple termination.",
+          "rows": [
+            "..AACCCIIIAA....", "AASSSCCCIIII....", "ASSSSSRRCCIIII..", "SSSSSSRRRCCIII..",
+            "SSSSSRRRRRRIII..", ".SSSSRRRRRRIII..", ".SSSSRRRRRRIII..", ".SSSSRRRRRRIII..",
+            "..SSSRRRRRRRIII.", "..SSSRRRRRRRIII.", "...SSRRRRRRRIII.", "...SSRRRRRRRIII.",
+            "....RRRRRRRRIII.", "....RRRRRRRRIII.", "....RRRRRRRIIII.", ".....TTTTTTIIII."
+          ]
+        }
+      }
+    },
+    "BUTTON_SHIRT": {
+      "front": [
+        "..AACC....CCAA..", "AABCCCBPPBCCCBAA", "SBBBCCBPPBCCBBBS", "SSBBBBBPPBBBBBSS",
+        "SSBBBBBPPBBBBBSS", "SSBBBBBPPBBBBBSS", "SSBBBBBPPBBBBBSS", "SSBBBBBPPBBBBBSS",
+        "SSBBBBBPPBBBBBSS", "SSBBBBBPPBBBBBSS", "SSBBBBBPPBBBBBSS", "SSBBBBBPPBBBBBSS",
+        ".SBBBBBPPBBBBBS.", ".BBBBBBPPBBBBBB.", ".BBBBBBPPBBBBBB.", "..TTTTTPPTTTTT.."
+      ],
+      "back": [
+        "..AAACCCCCCAAA..", "AABYYYYYYYYYYBAA", "SBBYYYYYYYYYYBBS", "SSBBYYYYYYYYBBSS",
+        "SSBBBBYYYYBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS",
+        "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS",
+        ".SBBBBBBBBBBBBS.", ".BBBBBBBBBBBBBB.", ".BBBBBBBBBBBBBB.", "..TTTTTTTTTTTT.."
+      ],
+      "sideTemplates": {
+        "tailored_placket": {
+          "semantic": "Folded collar descends into a narrow structural placket.",
+          "rows": [
+            "..AACCCCCCAA....", "AASSSCCCCPPB....", "ASSSSSBBCCPPBB..", "SSSSSSBBBBPPBB..",
+            "SSSSSBBBBBPPBB..", ".SSSSBBBBBPPBB..", ".SSSSBBBBBPPBB..", ".SSSSBBBBBPPBB..",
+            "..SSSBBBBBPPBB..", "..SSSBBBBBPPBB..", "...SSBBBBBPPBB..", "...SSBBBBBPPBB..",
+            "....BBBBBBPPBB..", "....BBBBBBPPBB..", "....BBBBBBBBBB..", ".....TTTTTTTT..."
+          ]
+        },
+        "panel_dominant": {
+          "semantic": "Tailored body panel dominates and the closure survives only near the collar-facing edge.",
+          "rows": [
+            "..AACCCCCCAA....", "AASSSCCCCPPB....", "ASSSSSBBBCPPBB..", "SSSSSSBBBBPPBB..",
+            "SSSSSBBBBBBPBB..", ".SSSSBBBBBBPBB..", ".SSSSBBBBBBBBB..", ".SSSSBBBBBBBBB..",
+            "..SSSBBBBBBBBB..", "..SSSBBBBBBBBB..", "...SSBBBBBBBBB..", "...SSBBBBBBBBB..",
+            "....BBBBBBBBBB..", "....BBBBBBBBBB..", "....BBBBBBBBBB..", ".....TTTTTTTT..."
+          ]
+        },
+        "yoke_tailored": {
+          "requiresPanelLayout": ["yoke"],
+          "semantic": "A short side yoke leads into a subordinate front placket.",
+          "rows": [
+            "..AACCCCCCAA....", "AASSSYYYYPPB....", "ASSSSSYYYCPPBB..", "SSSSSSBYYYPPBB..",
+            "SSSSSBBBYYPPBB..", ".SSSSBBBBBPPBB..", ".SSSSBBBBBPPBB..", ".SSSSBBBBBPPBB..",
+            "..SSSBBBBBPPBB..", "..SSSBBBBBPPBB..", "...SSBBBBBPPBB..", "...SSBBBBBPPBB..",
+            "....BBBBBBPPBB..", "....BBBBBBPPBB..", "....BBBBBBBBBB..", ".....TTTTTTTT..."
+          ]
+        }
+      }
+    },
+    "SAILOR_TOP": {
+      "front": [
+        "..AAYY....YYAA..", "AAYYYYYCCYYYYYAA", "SYYYYYYYYYYYYYYS", "SSYYYYYYYYYYYYSS",
+        "SSBYYYYYYYYYYBSS", "SSBBYYYYYYYYBBSS", "SSBBBBYYYYBBBBSS", "SSBBBBBBBBBBBBSS",
+        "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS",
+        ".SBBBBBBBBBBBBS.", ".BBBBBBBBBBBBBB.", ".BBBBBBBBBBBBBB.", "..TTTTTTTTTTTT.."
+      ],
+      "back": [
+        "..AAYYYYYYYYAA..", "AAYYYYYYYYYYYYAA", "SYYYYYYYYYYYYYYS", "SSYYYYYYYYYYYYSS",
+        "SSBYYYYYYYYYYBSS", "SSBBYYYYYYYYBBSS", "SSBBBBYYYYBBBBSS", "SSBBBBBBBBBBBBSS",
+        "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS",
+        ".SBBBBBBBBBBBBS.", ".BBBBBBBBBBBBBB.", ".BBBBBBBBBBBBBB.", "..TTTTTTTTTTTT.."
+      ],
+      "sideTemplates": {
+        "collar_sweep": {
+          "semantic": "Broad collar sweeps diagonally into the body with one visible upper/lower break.",
+          "rows": [
+            "..AAYYYYYYAA....", "AASSSYYYYYYY....", "ASSSSSYYYYYYYY..", "SSSSSSBYYYYYYY..",
+            "SSSSSBBBYYYYYY..", ".SSSSBBBBYYYYY..", ".SSSSBBBBBYYYY..", ".SSSSBBBBBBYYY..",
+            "..SSSBBBBBBBYY..", "..SSSBBBBBBBBY..", "...SSBBBBBBBBB..", "...SSBBBBBBBBB..",
+            "....BBBBBBBBBB..", "....BBBBBBBBBB..", "....BBBBBBBBBB..", ".....TTTTTTTT..."
+          ]
+        },
+        "yoke_panel": {
+          "semantic": "Upper yoke is a compact panel and the collar edge provides the diagonal identity.",
+          "rows": [
+            "..AAYYYYYYAA....", "AASSSYYYYYYY....", "ASSSSSYYYYYYYY..", "SSSSSSYYYYYYYY..",
+            "SSSSSBBYYYYYYY..", ".SSSSBBBBYYYYY..", ".SSSSBBBBBBYYY..", ".SSSSBBBBBBBBY..",
+            "..SSSBBBBBBBBB..", "..SSSBBBBBBBBB..", "...SSBBBBBBBBB..", "...SSBBBBBBBBB..",
+            "....BBBBBBBBBB..", "....BBBBBBBBBB..", "....BBBBBBBBBB..", ".....TTTTTTTT..."
+          ]
+        }
+      }
+    },
+    "SWEATER": {
+      "front": [
+        "..AANN....NNAA..", "AABNNNNNNNNNNBAA", "SBBBBNNNNNNBBBBS", "SSBBBBBBBBBBBBSS",
+        "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS",
+        "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS",
+        ".SBBBBBBBBBBBBS.", ".BTTTTTTTTTTTTB.", ".TTTTTTTTTTTTTT.", "..TTTTTTTTTTTT.."
+      ],
+      "back": [
+        "..AANNNNNNNNAA..", "AABNNNNNNNNNNBAA", "SBBBBNNNNNNBBBBS", "SSBBBBBBBBBBBBSS",
+        "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS",
+        "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS", "SSBBBBBBBBBBBBSS",
+        ".SBBBBBBBBBBBBS.", ".BTTTTTTTTTTTTB.", ".TTTTTTTTTTTTTT.", "..TTTTTTTTTTTT.."
+      ],
+      "sideTemplates": {
+        "heavy_mass": {
+          "semantic": "Uninterrupted heavy cloth mass with substantial neck and wrapped lower termination.",
+          "rows": [
+            "..AANNNNNNAA....", "AASSSNNNNNNB....", "ASSSSSBNNNNBBB..", "SSSSSSBBBBBBBB..",
+            "SSSSSBBBBBBBBB..", ".SSSSBBBBBBBBB..", ".SSSSBBBBBBBBB..", ".SSSSBBBBBBBBB..",
+            "..SSSBBBBBBBBB..", "..SSSBBBBBBBBB..", "...SSBBBBBBBBB..", "...SSBBBBBBBBB..",
+            "....BBBBBBBBBB..", "....BTTTTTTTTB..", "....TTTTTTTTTT..", ".....TTTTTTTT..."
+          ]
+        },
+        "soft_yoke": {
+          "requiresPanelLayout": ["yoke"],
+          "semantic": "Soft upper yoke turns into a heavy lower cloth mass without a false opening.",
+          "rows": [
+            "..AANNNNNNAA....", "AASSSYYYYYYB....", "ASSSSSYYYYYBBB..", "SSSSSSBYYYYBBB..",
+            "SSSSSBBBYYBBBB..", ".SSSSBBBBBBBBB..", ".SSSSBBBBBBBBB..", ".SSSSBBBBBBBBB..",
+            "..SSSBBBBBBBBB..", "..SSSBBBBBBBBB..", "...SSBBBBBBBBB..", "...SSBBBBBBBBB..",
+            "....BBBBBBBBBB..", "....BTTTTTTTTB..", "....TTTTTTTTTT..", ".....TTTTTTTT..."
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "4.2.0-shape-proof",
+  "purpose": "Executable component-local directional shapes; never complete garment sprites.",
+  "coordinateSpace": "16x16 logical offsets resolved from directionGeometry anchors",
+  "variantContract": {"required": ["variantId", "compatibleFamilies", "compatibleComponentIds", "allowedDirections", "attachmentAnchor", "localFootprintBounds", "alphaOperations", "requiredSupportAdjacency", "semanticRegionRoles", "minimumIdentityCells", "protectedStructuralCells", "allowedDegradationOrder", "connectivityExpectations", "safeEnvelopeRequirements", "directionGeometry"]},
+  "variants": [
+    {
+      "variantId":"FOLDED_POLO_COLLAR_FRONT_V1", "compatibleFamilies":["POLO_SHIRT"], "compatibleComponentIds":["COLLAR_FOLDED_POLO"], "allowedDirections":["front"],
+      "attachmentAnchor":"neckline_front_center", "localFootprintBounds":{"min":[-3,0],"max":[3,2]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"body","mode":"existing_alpha"},
+      "semanticRegionRoles":["collar","left_folded_leaf","right_folded_leaf","under_collar_shadow"], "minimumIdentityCells":{"front":8}, "protectedStructuralCells":"all_emitted_cells",
+      "allowedDegradationOrder":["under_collar_shadow","outer_leaf_tip","never_both_leaf_masses"], "connectivityExpectations":{"mode":"two_leaves_join_neckline_and_placket","parent":"body"}, "safeEnvelopeRequirements":["POLO_SHIRT_UPPER_BODY_V1","no_deep_chest_v"],
+      "directionGeometry":{"front":{"anchor":[8,1],"semanticCells":[[-3,0,"LIGHT","Trim"],[-2,0,"BASE","Trim"],[-3,1,"STRUCTURAL_EDGE","Trim"],[-2,1,"BASE","Trim"],[2,0,"SHADOW","Trim"],[1,0,"BASE","Trim"],[2,1,"DEEP_CREASE","Trim"],[1,1,"SHADOW","Trim"]]}}
+    },
+    {
+      "variantId":"FOLDED_POLO_COLLAR_SIDE_V1", "compatibleFamilies":["POLO_SHIRT"], "compatibleComponentIds":["COLLAR_FOLDED_POLO"], "allowedDirections":["right","left"],
+      "attachmentAnchor":"side_neckline_shoulder_handoff", "localFootprintBounds":{"min":[-1,0],"max":[1,1]}, "alphaOperations":{"right":[["ADD",1,0]],"left":[["ADD",-1,0]]}, "requiredSupportAdjacency":{"parent":"body","mode":"adjacent_existing_alpha"},
+      "semanticRegionRoles":["collar","folded_side_depth","under_collar_shadow"], "minimumIdentityCells":{"right":5,"left":5}, "protectedStructuralCells":"all_emitted_and_added_cells",
+      "allowedDegradationOrder":["under_collar_shadow","rear_edge","never_folded_depth_addition"], "connectivityExpectations":{"mode":"single_cluster_attached_to_neckline","parent":"body"}, "safeEnvelopeRequirements":["POLO_SHIRT_UPPER_BODY_V1","one_cell_maximum_side_projection"],
+      "directionGeometry":{"right":{"anchor":[11,1],"semanticCells":[[-1,0,"LIGHT","Trim"],[0,0,"BASE","Trim"],[1,0,"SHADOW","Trim"],[0,1,"BASE","Trim"],[1,1,"SHADOW","Trim"]]},"left":{"anchor":[4,1],"semanticCells":[[1,0,"LIGHT","Trim"],[0,0,"BASE","Trim"],[-1,0,"STRUCTURAL_EDGE","Trim"],[0,1,"BASE","Trim"],[-1,1,"SHADOW","Trim"]]}}
+    },
+    {
+      "variantId":"FOLDED_POLO_COLLAR_BACK_V1", "compatibleFamilies":["POLO_SHIRT"], "compatibleComponentIds":["COLLAR_FOLDED_POLO"], "allowedDirections":["back"],
+      "attachmentAnchor":"rear_neckline_center", "localFootprintBounds":{"min":[-2,0],"max":[1,1]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"body","mode":"existing_alpha"},
+      "semanticRegionRoles":["collar","rear_collar_band","under_collar_shadow"], "minimumIdentityCells":{"back":6}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["one_under_collar_shadow_cell","never_rear_band"],
+      "connectivityExpectations":{"mode":"shallow_connected_band","parent":"body"}, "safeEnvelopeRequirements":["POLO_SHIRT_UPPER_BODY_V1","maximum_depth_two_rows"],
+      "directionGeometry":{"back":{"anchor":[8,1],"semanticCells":[[-2,0,"LIGHT","Trim"],[-1,0,"BASE","Trim"],[0,0,"BASE","Trim"],[1,0,"SHADOW","Trim"],[-1,1,"SHADOW","PrimaryFabric"],[0,1,"SHADOW","PrimaryFabric"]]}}
+    },
+    {
+      "variantId":"SHORT_POLO_PLACKET_FRONT_V1", "compatibleFamilies":["POLO_SHIRT"], "compatibleComponentIds":["PLACKET_POLO_SHORT"], "allowedDirections":["front"],
+      "attachmentAnchor":"front_neckline_center", "localFootprintBounds":{"min":[-1,2],"max":[0,3]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"opening","mode":"touches_collar_and_opening"},
+      "semanticRegionRoles":["placket","placket_edge","short_center_closure"], "minimumIdentityCells":{"front":4}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["lowest_shadow_cell","never_placket_edge_pair"],
+      "connectivityExpectations":{"mode":"short_cluster_joining_collar","parent":"opening"}, "safeEnvelopeRequirements":["POLO_SHIRT_UPPER_BODY_V1","front_only","maximum_end_row_four"],
+      "directionGeometry":{"front":{"anchor":[8,1],"semanticCells":[[-1,2,"STRUCTURAL_EDGE","Trim"],[0,2,"SHADOW","Trim"],[-1,3,"BASE","Trim"],[0,3,"BASE","Accent"]]}}
+    },
+    {
+      "variantId":"V_BINDING_FRONT_V1", "compatibleFamilies":["SWEATER_VEST"], "compatibleComponentIds":["COLLAR_VEST_DEEP_V"], "allowedDirections":["front"],
+      "attachmentAnchor":"front_neckline_center", "localFootprintBounds":{"min":[-3,0],"max":[2,2]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"body","mode":"existing_alpha"},
+      "semanticRegionRoles":["collar","v_binding","bounded_upper_chest_v"], "minimumIdentityCells":{"front":6}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["outer_shoulder_tip","never_v_apex","never_both_binding_arms"],
+      "connectivityExpectations":{"mode":"binding_arms_meet_at_upper_chest_apex","parent":"body"}, "safeEnvelopeRequirements":["SWEATER_VEST_UPPER_BODY_V1","maximum_v_depth_row_three"],
+      "directionGeometry":{"front":{"anchor":[8,1],"semanticCells":[[-3,0,"STRUCTURAL_EDGE","Trim"],[2,0,"STRUCTURAL_EDGE","Trim"],[-2,1,"BASE","Trim"],[1,1,"SHADOW","Trim"],[-1,2,"BASE","Trim"],[0,2,"SHADOW","Trim"]]}}
+    },
+    {
+      "variantId":"V_BINDING_SIDE_V1", "compatibleFamilies":["SWEATER_VEST"], "compatibleComponentIds":["COLLAR_VEST_DEEP_V"], "allowedDirections":["right","left"],
+      "attachmentAnchor":"side_neckline", "localFootprintBounds":{"min":[-1,0],"max":[1,1]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"body","mode":"existing_alpha"},
+      "semanticRegionRoles":["collar","compressed_v_binding"], "minimumIdentityCells":{"right":3,"left":3}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["lower_binding_cell","never_neckline_pair"],
+      "connectivityExpectations":{"mode":"single_cluster_attached_to_neckline","parent":"body"}, "safeEnvelopeRequirements":["SWEATER_VEST_UPPER_BODY_V1"],
+      "directionGeometry":{"right":{"anchor":[9,1],"semanticCells":[[-1,0,"BASE","Trim"],[0,0,"SHADOW","Trim"],[0,1,"BASE","Trim"]]},"left":{"anchor":[6,1],"semanticCells":[[1,0,"LIGHT","Trim"],[0,0,"BASE","Trim"],[0,1,"BASE","Trim"]]}}
+    },
+    {
+      "variantId":"V_BINDING_BACK_V1", "compatibleFamilies":["SWEATER_VEST"], "compatibleComponentIds":["COLLAR_VEST_DEEP_V"], "allowedDirections":["back"],
+      "attachmentAnchor":"rear_neckline_center", "localFootprintBounds":{"min":[-2,0],"max":[1,0]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"body","mode":"existing_alpha"},
+      "semanticRegionRoles":["collar","compact_rear_binding"], "minimumIdentityCells":{"back":4}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["outer_tip","never_center_pair"],
+      "connectivityExpectations":{"mode":"shallow_connected_band","parent":"body"}, "safeEnvelopeRequirements":["SWEATER_VEST_UPPER_BODY_V1","one_row_rear_binding"],
+      "directionGeometry":{"back":{"anchor":[8,1],"semanticCells":[[-2,0,"BASE","Trim"],[-1,0,"LIGHT","Trim"],[0,0,"BASE","Trim"],[1,0,"SHADOW","Trim"]]}}
+    },
+    {
+      "variantId":"CUTIN_ARMHOLE_SIDE_V1", "compatibleFamilies":["SWEATER_VEST"], "compatibleComponentIds":["ARMHOLE_BOUND_CUT_IN"], "allowedDirections":["right","left"],
+      "attachmentAnchor":"outer_armhole_edge", "localFootprintBounds":{"min":[-1,0],"max":[1,2]}, "alphaOperations":{"right":[["REMOVE",0,0],["REMOVE",0,1]],"left":[["REMOVE",0,0],["REMOVE",0,1]]}, "requiredSupportAdjacency":{"parent":"body","mode":"removal_preserves_connected_root_mass"},
+      "semanticRegionRoles":["armholes","cutin_edge","sleeveless_topology"], "minimumIdentityCells":{"right":4,"left":4}, "protectedStructuralCells":"removed_cells_and_emitted_binding", "allowedDegradationOrder":["lowest_binding_cell","never_topology_cutin"],
+      "connectivityExpectations":{"mode":"root_mass_connected_after_notch","parent":"body"}, "safeEnvelopeRequirements":["SWEATER_VEST_UPPER_BODY_V1","two_cell_maximum_cutin"],
+      "directionGeometry":{"right":{"anchor":[13,2],"semanticCells":[[-1,0,"SHADOW","Trim"],[-1,1,"SHADOW","Trim"],[0,2,"SHADOW","Trim"],[-1,2,"BASE","Trim"]]},"left":{"anchor":[2,2],"semanticCells":[[1,0,"LIGHT","Trim"],[1,1,"LIGHT","Trim"],[0,2,"BASE","Trim"],[1,2,"BASE","Trim"]]}}
+    },
+    {
+      "variantId":"INNER_SHIRT_EXPOSURE_SIDE_V1", "compatibleFamilies":["SWEATER_VEST"], "compatibleComponentIds":["INNER_LAYER_WOVEN_SHIRT"], "allowedDirections":["right","left"],
+      "attachmentAnchor":"side_armhole_inner_edge", "localFootprintBounds":{"min":[0,0],"max":[0,2]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"body","mode":"inside_armhole"},
+      "semanticRegionRoles":["inner_layer","shirt_exposure","native_arm_handoff"], "minimumIdentityCells":{"right":3,"left":3}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["lowest_exposure_cell","never_neck_and_arm_handoff"],
+      "connectivityExpectations":{"mode":"visual_handoff_to_native_sleeve","parent":"body"}, "safeEnvelopeRequirements":["SWEATER_VEST_UPPER_BODY_V1"],
+      "directionGeometry":{"right":{"anchor":[11,2],"semanticCells":[[0,0,"LIGHT","SecondaryFabric"],[0,1,"BASE","SecondaryFabric"],[0,2,"SHADOW","SecondaryFabric"]]},"left":{"anchor":[4,2],"semanticCells":[[0,0,"LIGHT","SecondaryFabric"],[0,1,"BASE","SecondaryFabric"],[0,2,"SHADOW","SecondaryFabric"]]}}
+    },
+    {
+      "variantId":"KNIT_HEM_TERMINATION_V1", "compatibleFamilies":["SWEATER_VEST"], "compatibleComponentIds":["HEM_KNIT_RIBBED"], "allowedDirections":["front","right","back","left"],
+      "attachmentAnchor":"torso_termination", "localFootprintBounds":{"min":[-5,0],"max":[5,0]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"body","mode":"existing_bottom_row_alpha"},
+      "semanticRegionRoles":["hem","knit_rib_termination"], "minimumIdentityCells":{"front":6,"right":4,"back":6,"left":4}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["alternating_rib_highlight","outer_rib","never_full_termination"],
+      "connectivityExpectations":{"mode":"one_row_wraparound_termination","parent":"body"}, "safeEnvelopeRequirements":["SWEATER_VEST_UPPER_BODY_V1","one_row_only","no_dark_waistband"], "directionGeometry":{}
+    },
+    {
+      "variantId":"SAILOR_COLLAR_FRONT_V1", "compatibleFamilies":["SAILOR_TOP"], "compatibleComponentIds":["COLLAR_SAILOR_BROAD"], "allowedDirections":["front"],
+      "attachmentAnchor":"front_shoulder_neckline", "localFootprintBounds":{"min":[-5,0],"max":[4,3]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"body","mode":"existing_alpha_across_shoulders"},
+      "semanticRegionRoles":["collar","broad_sailor_collar","front_lap"], "minimumIdentityCells":{"front":18}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["lowest_inner_tip","outer_highlight","never_broad_shoulder_mass"],
+      "connectivityExpectations":{"mode":"paired_broad_leaves_connected_at_shoulder_wrap","parent":"body"}, "safeEnvelopeRequirements":["SAILOR_TOP_UPPER_BODY_V1","broader_than_polo","no_scarf_tail"],
+      "directionGeometry":{"front":{"anchor":[8,1],"semanticCells":[[-5,0,"LIGHT","Trim"],[-4,0,"BASE","Trim"],[-3,0,"BASE","Trim"],[-4,1,"LIGHT","Trim"],[-3,1,"BASE","Trim"],[-2,1,"BASE","Trim"],[-3,2,"BASE","Trim"],[-2,2,"STRUCTURAL_EDGE","Trim"],[-2,3,"SHADOW","Trim"],[4,0,"SHADOW","Trim"],[3,0,"BASE","Trim"],[2,0,"BASE","Trim"],[3,1,"SHADOW","Trim"],[2,1,"BASE","Trim"],[1,1,"SHADOW","Trim"],[2,2,"SHADOW","Trim"],[1,2,"STRUCTURAL_EDGE","Trim"],[1,3,"SHADOW","Trim"]]}}
+    },
+    {
+      "variantId":"SAILOR_COLLAR_SIDE_V1", "compatibleFamilies":["SAILOR_TOP"], "compatibleComponentIds":["COLLAR_SAILOR_BROAD"], "allowedDirections":["right","left"],
+      "attachmentAnchor":"side_shoulder_neckline", "localFootprintBounds":{"min":[-2,0],"max":[2,2]}, "alphaOperations":{"right":[["ADD",2,1]],"left":[["ADD",-2,1]]}, "requiredSupportAdjacency":{"parent":"body","mode":"adjacent_existing_alpha"},
+      "semanticRegionRoles":["collar","side_collar_depth","shoulder_wrap"], "minimumIdentityCells":{"right":6,"left":6}, "protectedStructuralCells":"all_emitted_and_added_cells", "allowedDegradationOrder":["lowest_wrap_cell","rear_edge","never_projected_depth"],
+      "connectivityExpectations":{"mode":"flap_cluster_connecting_front_and_rear","parent":"body"}, "safeEnvelopeRequirements":["SAILOR_TOP_UPPER_BODY_V1","one_cell_maximum_side_projection"],
+      "directionGeometry":{"right":{"anchor":[12,1],"semanticCells":[[-1,0,"LIGHT","Trim"],[0,0,"BASE","Trim"],[1,0,"SHADOW","Trim"],[0,1,"BASE","Trim"],[1,1,"SHADOW","Trim"],[2,1,"STRUCTURAL_EDGE","Trim"],[0,2,"BASE","Trim"],[1,2,"SHADOW","Trim"]]},"left":{"anchor":[3,1],"semanticCells":[[1,0,"LIGHT","Trim"],[0,0,"BASE","Trim"],[-1,0,"SHADOW","Trim"],[0,1,"BASE","Trim"],[-1,1,"SHADOW","Trim"],[-2,1,"STRUCTURAL_EDGE","Trim"],[0,2,"BASE","Trim"],[-1,2,"SHADOW","Trim"]]}}
+    },
+    {
+      "variantId":"SAILOR_REAR_PANEL_V1", "compatibleFamilies":["SAILOR_TOP"], "compatibleComponentIds":["REAR_PANEL_SAILOR_SQUARE"], "allowedDirections":["right","back","left"],
+      "attachmentAnchor":"rear_neckline_shoulder_wrap", "localFootprintBounds":{"min":[-4,0],"max":[3,4]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"body","mode":"existing_alpha_and_collar_handoff"},
+      "semanticRegionRoles":["rear_panel","sailor_flap","shoulder_wrap"], "minimumIdentityCells":{"right":4,"back":24,"left":4}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["lowest_corner","side_depth_tail","never_back_panel_core"],
+      "connectivityExpectations":{"mode":"back_panel_touches_side_collar_handoffs","parent":"body"}, "safeEnvelopeRequirements":["SAILOR_TOP_UPPER_BODY_V1","back_dominant","front_forbidden"],
+      "directionGeometry":{"right":{"anchor":[11,3],"semanticCells":[[0,0,"BASE","Trim"],[0,1,"SHADOW","Trim"],[-1,1,"SHADOW","Trim"],[-1,2,"STRUCTURAL_EDGE","Trim"]]},"back":{"anchor":[8,1],"semanticCells":[],"rowProfiles":{"square":[[-4,3],[-4,3],[-3,2],[-3,2]],"tapered_square":[[-4,3],[-4,3],[-3,2],[-2,1]]}},"left":{"anchor":[4,3],"semanticCells":[[0,0,"BASE","Trim"],[0,1,"LIGHT","Trim"],[1,1,"BASE","Trim"],[1,2,"STRUCTURAL_EDGE","Trim"]]}}
+    },
+    {
+      "variantId":"SAILOR_FRONT_OPENING_OR_INSERT_V1", "compatibleFamilies":["SAILOR_TOP"], "compatibleComponentIds":["COLLAR_SAILOR_BROAD"], "allowedDirections":["front"],
+      "attachmentAnchor":"front_neckline_center", "localFootprintBounds":{"min":[-1,1],"max":[0,2]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"body","mode":"inside_collar_opening"},
+      "semanticRegionRoles":["inner_layer","sailor_front_insert"], "minimumIdentityCells":{"front":4}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["lowest_insert_cell","never_upper_insert_pair"],
+      "connectivityExpectations":{"mode":"insert_nested_between_collar_leaves","parent":"body"}, "safeEnvelopeRequirements":["SAILOR_TOP_UPPER_BODY_V1","front_only","no_long_stripe"],
+      "directionGeometry":{"front":{"anchor":[8,1],"semanticCells":[[-1,1,"LIGHT","SecondaryFabric"],[0,1,"BASE","SecondaryFabric"],[-1,2,"BASE","SecondaryFabric"],[0,2,"SHADOW","SecondaryFabric"]]}}
+    },
+    {
+      "variantId":"SAILOR_COLLAR_FRONT_TECHNICAL_V1", "compatibleFamilies":["SAILOR_TOP"], "compatibleComponentIds":["COLLAR_SAILOR_BROAD"], "allowedDirections":["front"],
+      "attachmentAnchor":"front_neckline_and_shoulder_junctions", "localFootprintBounds":{"min":[-4,0],"max":[3,2]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"body","mode":"existing_alpha_across_both_shoulders"},
+      "semanticRegionRoles":["collar","technical_front_collar_mass","open_v_relationship"], "minimumIdentityCells":{"front":12}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["lowest_inner_fill","outer_highlight","never_both_shoulder_masses"],
+      "connectivityExpectations":{"mode":"paired_broad_leaves_attached_high_and_open_at_center","parent":"body"}, "safeEnvelopeRequirements":["SAILOR_TOP_UPPER_BODY_V1","upper_chest_only","broader_than_polo"],
+      "ownership":{"componentOwner":"collar","system":"collar","protectionLevel":"STRUCTURAL"}, "allowedTrimOutlineCells":"allocated_to_SAILOR_COLLAR_BORDER_TECHNICAL_V1", "forbiddenShapes":["polo_leaf_pair","crew_neck_hint","deep_scarf_tail","closed_center_block"],
+      "directionGeometry":{"front":{"anchor":[8,1],"semanticCells":[[-4,0,"LIGHT","Trim"],[-3,0,"BASE","Trim"],[-2,0,"BASE","Trim"],[-3,1,"LIGHT","Trim"],[-2,1,"BASE","Trim"],[-2,2,"SHADOW","Trim"],[1,0,"BASE","Trim"],[2,0,"BASE","Trim"],[3,0,"SHADOW","Trim"],[1,1,"BASE","Trim"],[2,1,"SHADOW","Trim"],[1,2,"SHADOW","Trim"]]}}
+    },
+    {
+      "variantId":"SAILOR_COLLAR_SIDE_TECHNICAL_V1", "compatibleFamilies":["SAILOR_TOP"], "compatibleComponentIds":["COLLAR_SAILOR_BROAD"], "allowedDirections":["right","left"],
+      "attachmentAnchor":"upper_side_shoulder_wrap", "localFootprintBounds":{"min":[-2,0],"max":[2,1]}, "alphaOperations":{"right":[["ADD",0,0]],"left":[["ADD",0,0]]}, "requiredSupportAdjacency":{"parent":"body","mode":"adjacent_existing_shoulder_alpha"},
+      "semanticRegionRoles":["collar","technical_side_depth","front_to_rear_handoff"], "minimumIdentityCells":{"right":5,"left":5}, "protectedStructuralCells":"all_emitted_and_added_cells", "allowedDegradationOrder":["lower_rear_fill","front_highlight","never_shoulder_attachment"],
+      "connectivityExpectations":{"mode":"compact_connected_mass_touching_front_and_rear_handoffs","parent":"body"}, "safeEnvelopeRequirements":["SAILOR_TOP_UPPER_BODY_V1","shoulder_local","one_cell_topology_projection"],
+      "ownership":{"componentOwner":"collar","system":"collar","protectionLevel":"LOCKED_FOR_ADDITION"}, "allowedTrimOutlineCells":"outer two-cell handoff allocated to border variant", "forbiddenShapes":["floating_patch","long_horizontal_stripe","diagonal_slash","vertical_side_rail"],
+      "directionGeometry":{"right":{"anchor":[12,1],"semanticCells":[[0,0,"STRUCTURAL_EDGE","Trim"],[-1,0,"BASE","Trim"],[-2,0,"LIGHT","Trim"],[-2,1,"BASE","Trim"],[-1,1,"SHADOW","Trim"]]},"left":{"anchor":[3,1],"semanticCells":[[0,0,"STRUCTURAL_EDGE","Trim"],[1,0,"BASE","Trim"],[2,0,"LIGHT","Trim"],[1,1,"BASE","Trim"],[2,1,"SHADOW","Trim"]]}}
+    },
+    {
+      "variantId":"SAILOR_REAR_FLAP_TECHNICAL_V1", "compatibleFamilies":["SAILOR_TOP"], "compatibleComponentIds":["REAR_PANEL_SAILOR_SQUARE"], "allowedDirections":["right","back","left"],
+      "attachmentAnchor":"high_rear_neckline_and_shoulder_field", "localFootprintBounds":{"min":[-4,0],"max":[3,3]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"body","mode":"existing_alpha_with_collar_handoff"},
+      "semanticRegionRoles":["rear_panel","technical_rear_flap_fill","side_rear_handoff","lower_flap_termination"], "minimumIdentityCells":{"right":4,"back":14,"left":4}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["lower_side_fill","one_center_fill_pair","never_broad_upper_fill"],
+      "connectivityExpectations":{"mode":"broad_shallow_trapezoid_nested_inside_perimeter_border","parent":"body"}, "safeEnvelopeRequirements":["SAILOR_TOP_UPPER_BODY_V1","upper_back_only","front_forbidden"],
+      "ownership":{"componentOwner":"rear","system":"rear_panel","protectionLevel":"STRUCTURAL"}, "allowedTrimOutlineCells":"perimeter exclusively allocated to SAILOR_COLLAR_BORDER_TECHNICAL_V1", "forbiddenShapes":["tiny_central_rectangle","deep_hanging_panel","detached_lower_edge","full_torso_panel"],
+      "directionGeometry":{"right":{"anchor":[10,3],"semanticCells":[[-1,0,"BASE","Trim"],[0,0,"SHADOW","Trim"],[-1,1,"BASE","Trim"],[0,1,"SHADOW","Trim"]]},"back":{"anchor":[8,1],"semanticCells":[[-4,1,"LIGHT","Trim"],[-3,1,"BASE","Trim"],[-2,1,"BASE","Trim"],[-1,1,"BASE","Trim"],[0,1,"BASE","Trim"],[1,1,"BASE","Trim"],[2,1,"SHADOW","Trim"],[3,1,"SHADOW","Trim"],[-3,2,"BASE","Trim"],[-2,2,"BASE","Trim"],[-1,2,"BASE","Trim"],[0,2,"BASE","Trim"],[1,2,"SHADOW","Trim"],[2,2,"SHADOW","Trim"]]},"left":{"anchor":[5,3],"semanticCells":[[0,0,"LIGHT","Trim"],[1,0,"BASE","Trim"],[0,1,"BASE","Trim"],[1,1,"SHADOW","Trim"]]}}
+    },
+    {
+      "variantId":"SAILOR_COLLAR_BORDER_TECHNICAL_V1", "compatibleFamilies":["SAILOR_TOP"], "compatibleComponentIds":["COLLAR_SAILOR_BROAD"], "allowedDirections":["front","right","back","left"],
+      "attachmentAnchor":"collar_and_flap_inset_perimeter", "localFootprintBounds":{"min":[-5,0],"max":[4,3]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"body","mode":"every_border_cell_existing_alpha_and_adjacent_to_collar_or_flap_fill"},
+      "semanticRegionRoles":["collar_border","front_perimeter","side_handoff_edge","rear_flap_perimeter","lower_flap_termination"], "minimumIdentityCells":{"front":8,"right":2,"back":20,"left":2}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["one_front_lower_tip","one_rear_top_center_pair","never_rear_lower_termination","never_all_side_handoff"],
+      "connectivityExpectations":{"mode":"sparse_one_cell_perimeter_segments_supported_by_component_fill","parent":"collar_and_rear_panel"}, "safeEnvelopeRequirements":["SAILOR_TOP_UPPER_BODY_V1","one_logical_pixel_weight","component_perimeter_only"],
+      "ownership":{"componentOwner":"collar","system":"collar_border","protectionLevel":"STRUCTURAL"}, "allowedTrimOutlineCells":"only cells enumerated in directionGeometry", "forbiddenShapes":["full_garment_cage","heavy_sticker_outline","random_grey_fringe","detached_border_pixel","torso_outline"],
+      "directionGeometry":{"front":{"anchor":[8,1],"semanticCells":[[-5,0,"STRUCTURAL_EDGE","Trim"],[-4,1,"SHADOW","Trim"],[-3,2,"SHADOW","Trim"],[-2,3,"STRUCTURAL_EDGE","Trim"],[4,0,"STRUCTURAL_EDGE","Trim"],[3,1,"SHADOW","Trim"],[2,2,"SHADOW","Trim"],[1,3,"STRUCTURAL_EDGE","Trim"]]},"right":{"anchor":[12,1],"semanticCells":[[0,1,"STRUCTURAL_EDGE","Trim"],[-1,2,"SHADOW","Trim"]]},"back":{"anchor":[8,1],"semanticCells":[[-5,0,"STRUCTURAL_EDGE","Trim"],[-4,0,"STRUCTURAL_EDGE","Trim"],[-3,0,"STRUCTURAL_EDGE","Trim"],[-2,0,"STRUCTURAL_EDGE","Trim"],[-1,0,"STRUCTURAL_EDGE","Trim"],[0,0,"STRUCTURAL_EDGE","Trim"],[1,0,"STRUCTURAL_EDGE","Trim"],[2,0,"STRUCTURAL_EDGE","Trim"],[3,0,"STRUCTURAL_EDGE","Trim"],[4,0,"STRUCTURAL_EDGE","Trim"],[-5,1,"SHADOW","Trim"],[4,1,"SHADOW","Trim"],[-4,2,"SHADOW","Trim"],[3,2,"SHADOW","Trim"],[-3,3,"STRUCTURAL_EDGE","Trim"],[-2,3,"STRUCTURAL_EDGE","Trim"],[-1,3,"STRUCTURAL_EDGE","Trim"],[0,3,"STRUCTURAL_EDGE","Trim"],[1,3,"STRUCTURAL_EDGE","Trim"],[2,3,"STRUCTURAL_EDGE","Trim"]]},"left":{"anchor":[3,1],"semanticCells":[[0,1,"STRUCTURAL_EDGE","Trim"],[1,2,"SHADOW","Trim"]]}}
+    },
+    {
+      "variantId":"SAILOR_COLLAR_FLAP_OUTLINE_REFINED_V1", "compatibleFamilies":["SAILOR_TOP"], "compatibleComponentIds":["COLLAR_SAILOR_BROAD"], "allowedDirections":["front","right","back","left"],
+      "attachmentAnchor":"existing_technical_collar_and_flap_perimeter", "localFootprintBounds":{"min":[-5,0],"max":[4,3]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"collar_and_rear_panel","mode":"every_outline_cell_supported_by_existing_component_fill_or_connected_perimeter"},
+      "semanticRegionRoles":["collar_border","refined_structural_corner","under_collar_edge","rear_flap_perimeter","rear_lower_termination"], "minimumIdentityCells":{"front":8,"right":2,"back":20,"left":2}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["front_upper_mid_edge","rear_top_mid_pair","never_structural_corners","never_rear_lower_termination","never_side_underside"],
+      "connectivityExpectations":{"mode":"one_cell_component_perimeter_with_supported_diagonal_steps","parent":"collar_and_rear_panel"}, "safeEnvelopeRequirements":["SAILOR_TOP_UPPER_BODY_V1","same_footprint_as_technical_border","one_logical_pixel_weight","no_body_silhouette_edit"],
+      "ownership":{"componentOwner":"collar","system":"collar_border","protectionLevel":"STRUCTURAL"}, "allowedTrimOutlineCells":"only cells enumerated in directionGeometry; DEEP_CREASE restricted to corners and underside", "forbiddenShapes":["full_garment_cage","two_pixel_thick_edge","heavy_black_rectangle","grey_halo","detached_dark_pixel","torso_outline"],
+      "directionGeometry":{"front":{"anchor":[8,1],"semanticCells":[[-5,0,"SHADOW","Trim"],[-4,1,"SHADOW","Trim"],[-3,2,"DEEP_CREASE","Trim"],[-2,3,"DEEP_CREASE","Trim"],[4,0,"SHADOW","Trim"],[3,1,"SHADOW","Trim"],[2,2,"DEEP_CREASE","Trim"],[1,3,"DEEP_CREASE","Trim"]]},"right":{"anchor":[12,1],"semanticCells":[[0,1,"SHADOW","Trim"],[-1,2,"DEEP_CREASE","Trim"]]},"back":{"anchor":[8,1],"semanticCells":[[-5,0,"DEEP_CREASE","Trim"],[-4,0,"SHADOW","Trim"],[-3,0,"SHADOW","Trim"],[-2,0,"SHADOW","Trim"],[-1,0,"SHADOW","Trim"],[0,0,"SHADOW","Trim"],[1,0,"SHADOW","Trim"],[2,0,"SHADOW","Trim"],[3,0,"SHADOW","Trim"],[4,0,"DEEP_CREASE","Trim"],[-5,1,"DEEP_CREASE","Trim"],[4,1,"DEEP_CREASE","Trim"],[-4,2,"SHADOW","Trim"],[3,2,"SHADOW","Trim"],[-3,3,"DEEP_CREASE","Trim"],[-2,3,"DEEP_CREASE","Trim"],[-1,3,"DEEP_CREASE","Trim"],[0,3,"DEEP_CREASE","Trim"],[1,3,"DEEP_CREASE","Trim"],[2,3,"DEEP_CREASE","Trim"]]},"left":{"anchor":[3,1],"semanticCells":[[0,1,"SHADOW","Trim"],[1,2,"DEEP_CREASE","Trim"]]}}
+    },
+    {
+      "variantId":"SAILOR_FRONT_BOW_TIE_OUTLINE_REFINED_V1", "compatibleFamilies":["SAILOR_TOP"], "compatibleComponentIds":["COLLAR_SAILOR_BROAD"], "allowedDirections":["front"],
+      "attachmentAnchor":"front_v_apex", "localFootprintBounds":{"min":[-1,1],"max":[0,2]}, "alphaOperations":[], "requiredSupportAdjacency":{"parent":"collar","mode":"compact_cluster_inside_opening_with_one_cell_separation_from_collar_border"},
+      "semanticRegionRoles":["tie","center_knot","left_hanging_mass","right_hanging_mass","structural_edge"], "minimumIdentityCells":{"front":4}, "protectedStructuralCells":"all_emitted_cells", "allowedDegradationOrder":["right_hanging_shadow","left_hanging_highlight","never_center_knot","never_only_structural_edge"],
+      "connectivityExpectations":{"mode":"single_four_cell_cluster_on_top_of_front_opening","parent":"collar"}, "safeEnvelopeRequirements":["SAILOR_TOP_UPPER_BODY_V1","same_alpha_footprint_as_existing_insert","front_only","no_collar_border_overlap"],
+      "ownership":{"componentOwner":"sailor_bow_tie","system":"tie","protectionLevel":"STRUCTURAL"}, "allowedTrimOutlineCells":"one upper-right structural-dark cell only", "forbiddenShapes":["giant_neck_ribbon","detached_knot","detached_tail","collar_border_merge","vertical_torso_stripe"],
+      "directionGeometry":{"front":{"anchor":[8,1],"semanticCells":[[-1,1,"BASE","Accent"],[0,1,"DEEP_CREASE","Trim"],[-1,2,"LIGHT","Accent"],[0,2,"SHADOW","Accent"]]}}
+    }
+  ],
+  "forbidden":["named_garment_cleanup_branch","complete_sprite_definition","copied_front_projection","palette_modernization"]
+}

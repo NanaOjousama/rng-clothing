@@ -1,0 +1,54 @@
+{
+  "id": "collar_sailor",
+  "kind": "collar",
+  "layer": "OVER",
+  "slot": "trim",
+  "identity": true,
+  "wrap": false,
+  "note": "Broad sailor collar in the trim slot: paired front leaves + band + shallow V, side wrap, and the square rear flap with a stripe ring (vanilla 19/259 back rows 0-4 cols 1-6 at 2x).",
+  "views": {
+    "front": {
+      "origin": [
+        3,
+        0
+      ],
+      "rows": [
+        ".ll....ll.",
+        "lll....lls",
+        "slllllllls",
+        ".slllllls.",
+        "...slls..."
+      ]
+    },
+    "side": {
+      "origin": [
+        2,
+        1
+      ],
+      "rows": [
+        ".lll..llls.",
+        "slllllllls.",
+        ".slllllls..",
+        "...sllls..."
+      ]
+    },
+    "back": {
+      "origin": [
+        2,
+        0
+      ],
+      "rows": [
+        "llllllllllll",
+        "lssssssssssl",
+        "lsllllllllsl",
+        "lsllllllllsl",
+        "lsllllllllsl",
+        "lsllllllllsl",
+        "lsllllllllsl",
+        "lsllllllllsl",
+        "lssssssssssl",
+        "ssssssssssss"
+      ]
+    }
+  }
+}

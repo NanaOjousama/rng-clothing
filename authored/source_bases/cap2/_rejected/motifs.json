@@ -1,0 +1,96 @@
+{
+ "_comment": "Conservative starter motif set for the cap2 front panel. AUTHORED, not source-derived: a search of all 319 source appearances found no badge, star, heart, shield, letter or sport symbol usable in a 4x3 zone. The 1973 'motifs' the enclosure scan returned are shading artifacts (1729 in Sleeves alone); the only real extracted source motif is Beret (Leaf) at 15 cells, too large and semantically a beret's leaf. So these are drawn, under the grammar's constraints: within 4x3, in the base's own vocabulary steps, solid runs for readability.",
+ "vocabulary_note": "digits are STEP indices into the cap2 base vocabulary [57, 81, 119, 165, 217, 254]. '.' leaves the field value (step 1). Motifs recolour with the garment because they are expressed as base steps.",
+ "grid": "rows top-to-bottom of the 4x3 zone at x8-11, y9-11",
+ "motifs": {
+  "bar": {
+   "source": "AUTHORED BY plurffle \u2014 the original Cap 2 / Cap 1 emblem, extracted",
+   "category": "plain bar",
+   "art": [
+    "....",
+    "3553",
+    "...."
+   ],
+   "cells": 4,
+   "status": "APPROVED (pending in-game legibility)"
+  },
+  "badge_round": {
+   "category": "badge / round patch",
+   "art": [
+    ".55.",
+    "5555",
+    ".55."
+   ],
+   "cells": 10,
+   "status": "EXCLUDED \u2014 indistinguishable from star, heart and ball at this size"
+  },
+  "star": {
+   "category": "star",
+   "art": [
+    ".5..",
+    "5555",
+    ".5.."
+   ],
+   "cells": 6,
+   "note": "a four-point twinkle; a five-point star is not resolvable in 3 rows",
+   "status": "APPROVED (pending in-game legibility)"
+  },
+  "heart": {
+   "category": "heart",
+   "art": [
+    "5.5.",
+    "5555",
+    ".55."
+   ],
+   "cells": 9,
+   "status": "APPROVED (pending in-game legibility)"
+  },
+  "shield": {
+   "category": "shield",
+   "art": [
+    "5555",
+    "3553",
+    ".33."
+   ],
+   "cells": 10,
+   "status": "APPROVED (pending in-game legibility)"
+  },
+  "letter_a": {
+   "category": "letter / glyph",
+   "art": [
+    ".55.",
+    "5555",
+    "5..5"
+   ],
+   "cells": 8,
+   "status": "APPROVED (pending in-game legibility)"
+  },
+  "ball": {
+   "category": "simple sport symbol",
+   "art": [
+    ".55.",
+    "5335",
+    ".55."
+   ],
+   "cells": 10,
+   "note": "a ball: light rim, darker seam across the middle",
+   "status": "APPROVED (pending in-game legibility)"
+  }
+ },
+ "_distinctness_gate": {
+  "rule": "two motifs must differ by at least 4 of the zone's 12 cells, or they are the same mark",
+  "measured": "badge_round differs from star by 2, from heart by 2, and from ball by 2",
+  "excluded": [
+   "badge_round"
+  ],
+  "kept": [
+   "bar",
+   "star",
+   "heart",
+   "shield",
+   "letter_a",
+   "ball"
+  ],
+  "note": "pixel distinctness is necessary, not sufficient \u2014 legibility at 4x worn is the real gate and is judged in-game"
+ }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "leaf_pin",
+  "motif_class": "leaf",
+  "pending": true,
+  "slot": "HEAD",
+  "zone": "side_panel",
+  "z": 3,
+  "kind": "attachment",
+  "max_extent": 7,
+  "anchor_cell": [
+    0,
+    2
+  ],
+  "anchor_point": "top_right",
+  "style": [
+    "cottagecore",
+    "work"
+  ],
+  "views": [
+    "front",
+    "left"
+  ],
+  "fits": [
+    "soft_cap"
+  ],
+  "description": "a single leaf pinned to the panel",
+  "per_view": false,
+  "size": [
+    3,
+    3
+  ]
+}

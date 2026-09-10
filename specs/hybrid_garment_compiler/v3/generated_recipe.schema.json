@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rng-clothing.local/schema/hybrid-v3/generated-recipe.json",
+  "title": "Hybrid V3 Recipe-Only Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "mode", "canonicalModel", "projections", "validation", "provenance"],
+  "properties": {
+    "schemaVersion": {"const": "3.0.0"},
+    "mode": {"const": "RECIPE_ONLY_NO_RENDERER"},
+    "canonicalModel": {"$ref": "canonical_garment_model.schema.json"},
+    "projections": {"type": "object", "required": ["front", "right", "back", "left"]},
+    "validation": {"type": "object", "required": ["status", "issues"]},
+    "provenance": {"type": "object", "required": ["rendererInvoked", "featureFlagEnabled"]},
+    "semanticFlat": {"type": ["string", "null"]}
+  }
+}
