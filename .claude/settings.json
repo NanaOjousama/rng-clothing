@@ -1,0 +1,40 @@
+{
+  "$comment": "Project-local permissions. Read-only reference queries and the QC client are allowlisted so consulting an authority (CLAUDE.md section 4) is free rather than prompt-gated -- prompt friction is why references went unconsulted. Nothing here grants a write outside the repo, and no deploy, install, push or source-pack write is allowlisted. The deny list pins the source packs and third-party corpora read-only; references/stardew-official/ is our own generated mirror and stays writable so tools/index_stardew_reference.py can refresh it.",
+  "permissions": {
+    "allow": [
+      "Bash(rg:*)",
+      "Bash(jq:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git ls-files:*)",
+      "Bash(python3 tools/qc.py:*)",
+      "Bash(python3 tools/catalog.py:*)",
+      "Bash(python3 tools/palette.py:*)",
+      "Bash(python3 tools/validate_:*)",
+      "Read(references/**)",
+      "Read(docs/**)",
+      "Read(source_catalog/**)",
+      "Read(qc_bridge/**)",
+      "Read(//home/deck/.config/StardewValley/ErrorLogs/**)",
+      "Read(//run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/**)"
+    ],
+    "deny": [
+      "Write(generator conent/**)",
+      "Edit(generator conent/**)",
+      "Write(references/fashion-sense-official/**)",
+      "Edit(references/fashion-sense-official/**)",
+      "Write(references/benchmark/**)",
+      "Edit(references/benchmark/**)",
+      "Write(references/ref_codex/**)",
+      "Edit(references/ref_codex/**)",
+      "Write(references/style-profiles/**)",
+      "Edit(references/style-profiles/**)",
+      "Write(references/lifestyle/**)",
+      "Edit(references/lifestyle/**)",
+      "Write(references/hoodie/**)",
+      "Edit(references/hoodie/**)"
+    ]
+  }
+}

@@ -1,0 +1,969 @@
+{{../../header}}
+
+SMAPI provides several C# events which let your mod respond when something happens (like when the player places an object) or run code periodically (like once per update tick).
+
+==FAQs==
+===What are events?===
+Events let you run code when something happens. You can add any number of ''event handlers'' (methods to call) when an ''event'' (what happened) is raised. You can think of events and handlers as a ''when..then'' statement:
+<pre>
+WHEN the save is loaded,   <-- event
+THEN run my code           <-- event handler
+</pre>
+
+See [https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/ ''Events'' in the C# programming guide] for more info.
+
+===How do I use them?===
+Event handlers are usually added in your <samp>Entry</samp> method, though you can add and remove them anytime. For example, let's say you want to print a message when each day starts. First you would choose the appropriate event from the list below (<samp>[[#GameLoop.DayStarted|GameLoop.DayStarted]]</samp>), then add an event handler, and do something in your method code:
+<syntaxhighlight lang="c#">
+/// <summary>The main entry point for the mod.</summary>
+internal sealed class ModEntry : Mod
+{
+    /**********
+    ** Public methods
+    *********/
+    /// <summary>The mod entry point, called after the mod is first loaded.</summary>
+    /// <param name="helper">Provides simplified APIs for writing mods.</param>
+    public override void Entry(IModHelper helper)
+    {
+        // event += method to call
+        helper.Events.GameLoop.DayStarted += this.OnDayStarted;
+    }
+
+    /// <summary>The method called after a new day starts.</summary>
+    /// <param name="sender">The event sender.</param>
+    /// <param name="e">The event arguments.</param>
+    private void OnDayStarted(object? sender, DayStartedEventArgs e)
+    {
+       this.Monitor.Log("A new day dawns!", LogLevel.Info);
+    }
+}
+</syntaxhighlight>
+
+Tip: you don't need to memorise the method arguments. In Visual Studio, type <code>helper.Events.GameLoop.SaveLoaded +=</code> and press {{key|TAB}} to auto-create a method. (There doesn't seem to be an equivalent feature in MonoDevelop.)
+
+<samp>sender</samp> is part of the C# event pattern, and is unused by SMAPI.
+
+===How do events fit into the game?===
+Events are raised on each game tick (when the game updates its state and renders to the screen), which is 60 times per second. An event may be raised multiple times (''e.g.,'' if the player pressed two keys simultaneously), but most events won't be raised 60 times per second (''e.g.,'' players are unlikely to be pressing 60 buttons per second).
+
+Your event handlers are run ''synchronously'': the game is paused and no other mod's code will run simultaneously, so there's no risk of conflicting changes. Since code runs very quickly, players won't notice any delay unless your code is unusually slow. That said, when using frequent events like <samp>UpdateTicked</samp> or <samp>Rendered</samp>, you should cache expensive operations (like loading an asset) instead of repeating them in each tick to avoid impacting performance.
+
+===What if a mod changes what the event was raised for?===
+Events are raised based on a snapshot of the game state. That's usually ''but not necessarily'' the current game state.
+
+For example, consider this case:
+# The <samp>GameMenu</samp> opens.
+# SMAPI raises the <samp>MenuChanged</samp> event, which mods A and B listen to.
+# Mod A receives the event and closes the menu.
+# Mod B receives the event.
+
+Each mod is still handling the <samp>MenuChanged</samp> event for the opened menu, even though the first mod closed it. SMAPI will raise a new <samp>MenuChanged</samp> event for the closed menu on the next tick.
+
+This rarely affects mods, but it's something to keep in mind if you need the current state (''e.g.,'' check <samp>Game1.activeClickableMenu</samp> instead of <samp>e.NewMenu</samp>).
+
+==Events==
+The available events are documented below.
+
+===Content===
+<samp>this.Helper.Events.Content</samp> has events related to assets loaded from the content pipeline.
+
+{| class="wikitable"
+|-
+! event
+! summary
+{{/event
+ |group = Content
+ |name  = AssetRequested
+ |desc  = Raised when an asset is being requested from the content pipeline. The asset isn't necessarily being loaded yet (''e.g.'' the game may be checking if it exists).
+
+You can register the changes you want to apply using the event arguments below; they'll be applied when the asset is actually loaded. See the [[Modding:Modder Guide/APIs/Content|content API]] for more info.
+
+If the asset is requested multiple times in the same tick (e.g. once to check if it exists and once to load it), SMAPI might only raise the event once and reuse the cached result.
+
+ |arg name 1 = <samp>e.Name</samp>
+ |arg type 1 = <samp>IAssetName</samp>
+ |arg desc 1 = The name of the asset being requested, including the locale code if any (like the <samp>.fr-FR</samp> in <samp>Data/Bundles.fr-FR</samp>). This includes utility methods to parse the value, like <code>e.Name.IsEquivalentTo("Portraits/Abigail")</code> (which handles any differences in formatting for you).
+
+ |arg name 2 = <samp>e.NameWithoutLocale</samp>
+ |arg type 2 = <samp>IAssetName</samp>
+ |arg desc 2 = Equivalent to <samp>e.Name</samp> but without the locale code (if any). For example, if <samp>e.Name</samp> is <samp>Data/Bundles.fr-FR</samp>, this field will contain <samp>Data/Bundles</samp>.
+
+ |arg name 3 = <samp>e.LoadFrom(...)</samp>
+ |arg type 3 = ''method''
+ |arg desc 3 = Call this method to provide the initial instance for the asset, instead of trying to load it from the game's <samp>Content</samp> folder. For example:
+<syntaxhighlight lang="c#">
+e.LoadFrom(() => this.Helper.Content.Load<Texture2D>("assets/portraits.png"), AssetLoadPriority.Medium);
+</syntaxhighlight>
+
+Usage notes:
+* The asset doesn't need to exist in the game's <samp>Content</samp> folder. If any mod loads the asset, the game will see it as an existing asset as if it was in that folder.
+* Each asset can logically only have one initial instance. If multiple loads apply at the same time, SMAPI will raise an error and ignore all of them. If you're making changes to the existing asset instead of replacing it, you should use the <samp>Edit</samp> method instead to avoid those limitations and improve mod compatibility.
+
+ |arg name 4 = <samp>e.LoadFromModFile<T>(...)</samp>
+ |arg type 4 = ''method''
+ |arg desc 4 = Call this method to provide the initial instance for the asset by loading a file from your mod folder. For example:
+<syntaxhighlight lang="c#">
+e.LoadFromModFile<Texture2D>("assets/portraits.png", AssetLoadPriority.Medium);
+</syntaxhighlight>
+
+See usage notes on <samp>e.LoadFrom</samp>.
+
+ |arg name 5 = <samp>e.Edit(...)</samp>
+ |arg type 5 = ''method''
+ |arg desc 5 = Call this method to apply edits to the asset after it's loaded. For example:
+<syntaxhighlight lang="c#">
+e.Edit(asset =>
+{
+    Texture2D ribbon = this.Helper.Content.Load<Texture2D>("assets/ribbon.png");
+    asset.AsImage().PatchImage(source: overlay, patchMode: PatchMode.Overlay);
+});
+</syntaxhighlight>
+
+Usage notes:
+* Editing an asset which doesn't exist has no effect. This is applied after the asset is loaded from the game's <samp>Content</samp> folder, or from any mod's <samp>LoadFrom</samp> or <samp>LoadFromModFile</samp>.
+* You can apply any number of edits to the asset. Each edit will be applied on top of the previous one (i.e. it'll see the merged asset from all previous edits as its input).
+}}
+{{/event
+ |group = Content
+ |name  = AssetsInvalidated
+ |desc  = Raised after one or more assets were [[Modding:Modder Guide/APIs/Content#Cache invalidation|invalidated from the content cache]] by a mod, so they'll be reloaded next time they're requested. If the assets will be reloaded or propagated automatically, this event is raised before that happens.
+
+Next time the asset is loaded (including for asset propagation), the [[#Content.AssetRequested|<samp>AssetRequested</samp>]] event will be raised again.
+
+ |arg name 1 = <samp>e.Names</samp>
+ |arg type 1 = <samp>IReadOnlySet<IAssetName></samp>
+ |arg desc 1 = The asset names that were invalidated, including the locale code if any (like the <samp>.fr-FR</samp> in <samp>Data/Bundles.fr-FR</samp>). These include utility methods to parse the values, like <code>name.IsEquivalentTo("Portraits/Abigail")</code> (which handles any differences in formatting for you).
+
+ |arg name 2 = <samp>e.NamesWithoutLocale</samp>
+ |arg type 2 = <samp>IReadOnlySet<IAssetName></samp>
+ |arg desc 2 = Equivalent to <samp>e.Names</samp> but without the locale code (if any). For example, if <samp>e.Names</samp> contains <samp>Data/Bundles.fr-FR</samp>, this field will contain <samp>Data/Bundles</samp>.
+}}
+{{/event
+ |group = Content
+ |name  = AssetReady
+ |desc  = Raised after an asset is loaded by the content pipeline, after any mod edits specified via [[#Content.AssetRequested|<samp>AssetRequested</samp>]] have been applied.
+
+This event is only raised if something requested the asset from the content pipeline. Invalidating an asset from the content cache won't necessarily reload it automatically.
+
+ |arg name 1 = <samp>e.Name</samp>
+ |arg type 1 = <samp>IAssetName</samp>
+ |arg desc 1 = The name of the asset that was loaded, including the locale code if any (like the <samp>.fr-FR</samp> in <samp>Data/Bundles.fr-FR</samp>). This includes utility methods to parse the value, like <code>e.Name.IsEquivalentTo("Portraits/Abigail")</code> (which handles any differences in formatting for you).
+
+ |arg name 2 = <samp>e.NameWithoutLocale</samp>
+ |arg type 2 = <samp>IAssetName</samp>
+ |arg desc 2 = Equivalent to <samp>e.Name</samp> but without the locale code (if any). For example, if <samp>e.Name</samp> is <samp>Data/Bundles.fr-FR</samp>, this field will contain <samp>Data/Bundles</samp>.
+}}
+{{/event
+ |group = Content
+ |name  = LocaleChanged
+ |desc  = Raised after the game language changes. For non-English players, this may be raised during startup when the game switches to the previously selected language.
+
+ |arg name 1 = <samp>e.OldLanguage</samp>
+ |arg type 1 = <samp>LanguageCode</samp>
+ |arg desc 1 = The previous value for the game's language enum. For a custom language, this is always <samp>LanguageCode.mod</samp>.
+
+ |arg name 2 = <samp>e.OldLocale</samp>
+ |arg type 2 = <samp>string</samp>
+ |arg desc 2 = The previous value for the locale code. This is the locale code as it appears in asset names, like <samp>fr-FR</samp> in <samp>Maps/springobjects.fr-FR</samp>. The locale code for English is an empty string.
+
+ |arg name 3 = <samp>e.NewLanguage</samp>
+ |arg type 3 = <samp>LanguageCode</samp>
+ |arg desc 3 = The new value for the game's language enum. See notes on <samp>OldLanguage</samp>.
+
+ |arg name 4 = <samp>e.NewLocale</samp>
+ |arg type 4 = <samp>string</samp>
+ |arg desc 4 = The new value for the locale code. See notes on <samp>OldLocale</samp>.
+}}
+|}
+
+===Display===
+<samp>this.Helper.Events.Display</samp> has events linked to UI and drawing to the screen.
+
+{| class="wikitable"
+|-
+! event
+! summary
+{{/event
+ |group = Display
+ |name  = MenuChanged
+ |desc  = Raised after a game menu is opened, closed, or replaced.
+
+ |arg name 2 = <samp>e.OldMenu</samp>
+ |arg type 2 = <samp>IClickableMenu</samp>
+ |arg desc 2 = The old menu instance (or <samp>null</samp> if none).
+
+ |arg name 1 = <samp>e.NewMenu</samp>
+ |arg type 1 = <samp>IClickableMenu</samp>
+ |arg desc 1 = The new menu instance (or <samp>null</samp> if none).
+}}
+{{/event
+ |group = Display
+ |name  = Rendering
+ |desc  = Raised before the game draws anything to the screen in a draw tick, as soon as the sprite batch is opened. The sprite batch may be closed and reopened multiple times after this event is called, but it's only raised once per draw tick. This event isn't useful for drawing to the screen, since the game will draw over it.
+
+ |arg name 1 = <samp>e.SpriteBatch</samp>
+ |arg type 1 = <samp>SpriteBatch</samp>
+ |arg desc 1 = The sprite batch being drawn. Add anything you want to appear on-screen to this sprite batch.
+}}
+{{/event
+ |group = Display
+ |name  = Rendered
+ |desc  = Raised after the game draws to the sprite batch in a draw tick, just before the final sprite batch is rendered to the screen. Since the game may open/close the sprite batch multiple times in a draw tick, the sprite batch may not contain everything being drawn and some things may already be rendered to the screen. Content drawn to the sprite batch at this point will be drawn over all vanilla content (including menus, HUD, and cursor).
+
+ |arg name 1 = <samp>e.SpriteBatch</samp>
+ |arg type 1 = <samp>SpriteBatch</samp>
+ |arg desc 1 = The sprite batch being drawn. Add anything you want to appear on-screen to this sprite batch.
+}}
+{{/event
+ |group = Display
+ |name  = RenderingWorld
+ |desc  = Raised before the game world is drawn to the screen. This event isn't useful for drawing to the screen, since the game will draw over it.
+
+ |arg name 1 = <samp>e.SpriteBatch</samp>
+ |arg type 1 = <samp>SpriteBatch</samp>
+ |arg desc 1 = The sprite batch being drawn. Add anything you want to appear on-screen to this sprite batch.
+}}
+{{/event
+ |group = Display
+ |name  = RenderedWorld
+ |desc  = Raised after the game world is drawn to the sprite batch, before it's rendered to the screen. Content drawn to the sprite batch at this point will be drawn over the world, but under any active menu, HUD elements, or cursor.
+
+ |arg name 1 = <samp>e.SpriteBatch</samp>
+ |arg type 1 = <samp>SpriteBatch</samp>
+ |arg desc 1 = The sprite batch being drawn. Add anything you want to appear on-screen to this sprite batch.
+}}
+{{/event
+ |group = Display
+ |name  = RenderingActiveMenu
+ |desc  = When a menu is open (<samp>Game1.activeClickableMenu != null</samp>), raised before that menu is drawn to the screen. This includes the game's internal menus like the title screen. Content drawn to the sprite batch at this point will appear under the menu.
+
+ |arg name 1 = <samp>e.SpriteBatch</samp>
+ |arg type 1 = <samp>SpriteBatch</samp>
+ |arg desc 1 = The sprite batch being drawn. Add anything you want to appear on-screen to this sprite batch.
+}}
+{{/event
+ |group = Display
+ |name  = RenderedActiveMenu
+ |desc  = When a menu is open (<samp>Game1.activeClickableMenu != null</samp>), raised after that menu is drawn to the sprite batch but before it's rendered to the screen. Content drawn to the sprite batch at this point will appear over the menu and menu cursor.
+
+ |arg name 1 = <samp>e.SpriteBatch</samp>
+ |arg type 1 = <samp>SpriteBatch</samp>
+ |arg desc 1 = The sprite batch being drawn. Add anything you want to appear on-screen to this sprite batch.
+}}
+{{/event
+ |group = Display
+ |name  = RenderingHud
+ |desc  = Raised before drawing the HUD (item toolbar, clock, etc) to the screen. The vanilla HUD may be hidden at this point (''e.g.,'' because a menu is open). Content drawn to the sprite batch at this point will appear under the HUD.
+
+ |arg name 1 = <samp>e.SpriteBatch</samp>
+ |arg type 1 = <samp>SpriteBatch</samp>
+ |arg desc 1 = The sprite batch being drawn. Add anything you want to appear on-screen to this sprite batch.
+}}
+{{/event
+ |group = Display
+ |name  = RenderedHud
+ |desc  = Raised after drawing the HUD (item toolbar, clock, etc) to the sprite batch, but before it's rendered to the screen. The vanilla HUD may be hidden at this point (''e.g.,'' because a menu is open). Content drawn to the sprite batch at this point will appear over the HUD.
+
+ |arg name 1 = <samp>e.SpriteBatch</samp>
+ |arg type 1 = <samp>SpriteBatch</samp>
+ |arg desc 1 = The sprite batch being drawn. Add anything you want to appear on-screen to this sprite batch.
+}}
+{{/event
+ |group = Display
+ |name  = WindowResized
+ |desc  = Raised after the game window is resized.
+
+ |arg name 1 = <samp>e.OldSize</samp>
+ |arg type 1 = <samp>Point</samp>
+ |arg desc 1 = The previous window width (<samp>e.OldSize.X</samp>) and height (<samp>e.OldSize.Y</samp>).
+
+ |arg name 2 = <samp>e.NewSize</samp>
+ |arg type 2 = <samp>Point</samp>
+ |arg desc 2 = The new window width (<samp>e.NewSize.X</samp>) and height (<samp>e.NewSize.Y</samp>).
+}}
+{{/event
+ |group = Display
+ |name  = RenderingStep
+ |desc  = ''(Specialized)'' Raised before the game draws a specific step in the rendering cycle. This gives more granular control over render logic, but is more vulnerable to changes in game updates. Consider using one of the other render events if possible.
+
+ |arg name 1 = <samp>e.SpriteBatch</samp>
+ |arg type 1 = <samp>SpriteBatch</samp>
+ |arg desc 1 = The sprite batch being drawn. Add anything you want to appear on-screen to this sprite batch.
+
+ |arg name 2 = <samp>e.Step</samp>
+ |arg type 2 = <samp>RenderSteps</samp>
+ |arg desc 2 = The step being rendered in the draw cycle. 
+}}
+{{/event
+ |group = Display
+ |name  = RenderedStep
+ |desc  = ''(Specialized)'' Raised after the game draws a specific step in the rendering cycle.  This gives more granular control over render logic, but is more vulnerable to changes in game updates. Consider using one of the other render events if possible.
+
+ |arg name 1 = <samp>e.SpriteBatch</samp>
+ |arg type 1 = <samp>SpriteBatch</samp>
+ |arg desc 1 = The sprite batch being drawn. Add anything you want to appear on-screen to this sprite batch.
+
+ |arg name 2 = <samp>e.Step</samp>
+ |arg type 2 = <samp>RenderSteps</samp>
+ |arg desc 2 = The step being rendered in the draw cycle. 
+}}
+|}
+
+===Game loop===
+<samp>this.Helper.Events.GameLoop</samp> has events linked to the game's update loop. The update loop runs roughly ≈60 times/second to run game logic like state changes, action handling, etc. These are often useful, but you should consider semantic events like <samp>Input</samp> where applicable.
+
+{| class="wikitable"
+|-
+! event
+! summary
+{{/event
+ |group = GameLoop
+ |name  = GameLaunched
+ |desc  = Raised after the game is launched, right before the first update tick. This happens once per game session (unrelated to loading saves). All mods are loaded and initialised at this point, so this is a good time to set up mod integrations.
+}}
+{{/event
+ |group = GameLoop
+ |name  = UpdateTicking, UpdateTicked
+ |desc  = Raised before/after the game state is updated (≈60 times per second).
+
+ |arg name 1 = <samp>e.Ticks</samp>
+ |arg type 1 = <samp>int</samp>
+ |arg desc 1 = The number of ticks elapsed since the game started, including the current tick.
+
+ |arg name 2 = <samp>e.IsOneSecond</samp>
+ |arg type 2 = <samp>bool</samp>
+ |arg desc 2 = Whether <samp>e.TicksElapsed</samp> is a multiple of 60, which happens approximately once per second.
+
+ |arg name 3 = <samp>e.IsMultipleOf(int number)</samp>
+ |arg type 3 = ''method'' returns <samp>bool</samp>
+ |arg desc 3 = Whether <samp>e.TicksElapsed</samp> is a multiple of the given number. This is mainly useful if you want to run logic intermittently (''e.g.,'' <code>e.IsMultipleOf(30)</code> for every half-second).
+}}
+{{/event
+ |group = GameLoop
+ |name  = OneSecondUpdateTicking, OneSecondUpdateTicked
+ |desc  = Raised before/after the game state is updated, once per second. EventArgs subtype is OneSecondUpdateTickedEventArgs
+
+ |arg name 1 = <samp>e.Ticks</samp>
+ |arg type 1 = <samp>int</samp>
+ |arg desc 1 = The number of ticks elapsed since the game started, including the current tick.
+
+ |arg name 3 = <samp>e.IsMultipleOf(int number)</samp>
+ |arg type 3 = ''method'' returns <samp>bool</samp>
+ |arg desc 3 = Whether <samp>e.TicksElapsed</samp> is a multiple of the given number. This is mainly useful if you want to run logic intermittently (''e.g.,'' <code>e.IsMultipleOf(120)</code> for every two seconds).
+}}
+{{/event
+ |group = GameLoop
+ |name  = SaveCreating, SaveCreated
+ |desc  = Raised before/after the game creates the save file (after the new-game intro). The save won't be written until all mods have finished handling this event. This is a somewhat specialised event, since the world isn't fully initialised at this point; in most cases you should use [[#GameLoop.DayStarted|<samp>DayStarted</samp>]], [[#GameLoop.Saving|<samp>Saving</samp>]], or [[#GameLoop.Saved|<samp>Saved</samp>]] instead.
+}}
+{{/event
+ |group = GameLoop
+ |name = Saving, Saved
+ |desc = Raised before/after the game writes data to save file (except [[#GameLoop.SaveCreating|the initial save creation]]). The save won't be written until all mods have finished handling this event. This is also raised for farmhands in multiplayer.
+}}
+{{/event
+ |group = GameLoop
+ |name  = SaveLoaded
+ |desc  = Raised after loading a save (including the first day after creating a new save), or connecting to a multiplayer world. This happens right before <samp>DayStarted</samp>, but after the game's own day-start initialization process; at this point the save file is read and <samp>[[Modding:Modder Guide/APIs/Utilities#Context|Context.IsWorldReady]]</samp> is true.
+
+This event isn't raised after saving; if you want to do something at the start of each day, see [[#GameLoop.DayStarted|<samp>DayStarted</samp>]] instead. 
+}}
+{{/event
+ |group = GameLoop
+ |name  = DayStarted
+ |desc  = Raised after a new in-game day starts, or after connecting to a multiplayer world. Everything has already been initialised at this point. (To run code before the game sets up the day, see [[#GameLoop.DayEnding|<samp>DayEnding</samp>]] instead.)
+}}
+{{/event
+ |group = GameLoop
+ |name  = DayEnding
+ |desc  = Raised before the game ends the current day. This happens before it starts setting up the next day and before [[#GameLoop.Saving|<samp>Saving</samp>]].
+}}
+{{/event
+ |group = GameLoop
+ |name  = TimeChanged
+ |desc  = Raised after the in-game clock time changes, which happens in intervals of ten in-game minutes.
+
+ |arg name 1 = <samp>e.OldTime</samp>
+ |arg type 1 = <samp>int</samp>
+ |arg desc 1 = The previous time of day in 24-hour notation (like 1600 for 4pm). The clock time resets when the player sleeps, so 2am (before sleeping) is 2600.
+
+ |arg name 2 = <samp>e.NewTime</samp>
+ |arg type 2 = <samp>int</samp>
+ |arg desc 2 = The current time of day in 24-hour notation (like 1600 for 4pm). The clock time resets when the player sleeps, so 2am (before sleeping) is 2600.
+}}
+{{/event
+ |group = GameLoop
+ |name  = ReturnedToTitle
+ |desc  = Raised after the game returns to the title screen.
+}}
+|}
+
+===Input===
+<samp>this.Helper.Events.Input</samp> has events raised when the player uses a controller, keyboard, or mouse in some way. They can be used with the [[../Input|input API]] to access more info or suppress input.
+
+{| class="wikitable"
+|-
+! event
+! summary
+{{/event
+ |group = Input
+ |name  = ButtonsChanged
+ |desc  = Raised after the player pressed/released any buttons on the keyboard, mouse, or controller. This includes mouse clicks. If the player pressed/released multiple keys at once, this is only raised once.
+
+ |arg name 1 = <samp>e.Pressed</samp>
+ |arg type 1 = [[Modding:Modder Guide/APIs/Input#SButton|<samp>SButton[]</samp>]]
+ |arg desc 1 = The buttons that were pressed since the previous tick.
+
+ |arg name 2 = <samp>e.Held</samp>
+ |arg type 2 = [[Modding:Modder Guide/APIs/Input#SButton|<samp>SButton[]</samp>]]
+ |arg desc 2 = The buttons that were held since the previous tick.
+
+ |arg name 3 = <samp>e.Released</samp>
+ |arg type 3 = [[Modding:Modder Guide/APIs/Input#SButton|<samp>SButton[]</samp>]]
+ |arg desc 3 = The buttons that were released since the previous tick.
+
+ |arg name 4 = <samp>e.Cursor</samp>
+ |arg type 4 = [[Modding:Modder Guide/APIs/Input#Check cursor position|<samp>ICursorPosition</samp>]]
+ |arg desc 4 = The cursor position and grab tile.
+
+'''Note:''' mods won't receive input sent to the chatbox.
+}}
+{{/event
+ |group = Input
+ |name  = ButtonPressed, ButtonReleased
+ |desc  = Raised after the player pressed/released a keyboard, mouse, or controller button. This includes mouse clicks. If the player pressed/released multiple keys at once, this is raised for each button pressed.
+
+ |arg name 1 = <samp>e.Button</samp>
+ |arg type 1 = [[Modding:Modder Guide/APIs/Input#SButton|<samp>SButton</samp>]]
+ |arg desc 1 = The button pressed or released.
+
+ |arg name 2 = <samp>e.Cursor</samp>
+ |arg type 2 = [[Modding:Modder Guide/APIs/Input#Check cursor position|<samp>ICursorPosition</samp>]]
+ |arg desc 2 = The cursor position and grab tile.
+
+ |arg name 3 = <samp>e.IsDown</samp>
+ |arg type 3 = ''method'' returns <samp>bool</samp>
+ |arg desc 3 = Indicates whether a given button is currently pressed.
+
+ |arg name 4 = <samp>e.IsSuppressed</samp>
+ |arg type 4 = ''method'' returns <samp>bool</samp>
+ |arg desc 4 = A method which indicates whether a given button was suppressed by a mod, so the game itself won't see it.
+
+'''Note:''' mods won't receive input sent to the chatbox.
+}}
+{{/event
+ |group = Input
+ |name  = CursorMoved
+ |desc  = Raised after the player moves the in-game cursor.
+
+ |arg name 1 = <samp>e.OldPosition</samp>
+ |arg type 1 = [[Modding:Modder Guide/APIs/Input#Check cursor position|ICursorPosition]]
+ |arg desc 1 = The previous cursor position and grab tile.
+
+ |arg name 2 = <samp>e.NewPosition</samp>
+ |arg type 2 = [[Modding:Modder Guide/APIs/Input#Check cursor position|ICursorPosition]]
+ |arg desc 2 = The current cursor position and grab tile.
+}}
+{{/event
+ |group = Input
+ |name  = MouseWheelScrolled
+ |desc  = Raised after the player scrolls the mouse wheel.
+
+ |arg name 1 = <samp>e.Position</samp>
+ |arg type 1 = [[Modding:Modder Guide/APIs/Input#Check cursor position|ICursorPosition]]
+ |arg desc 1 = The current cursor position and grab tile.
+
+ |arg name 2 = <samp>e.Delta</samp>
+ |arg type 2 = <samp>int</samp>
+ |arg desc 2 = The amount by which the mouse wheel was scrolled since the last update.
+
+ |arg name 3 = <samp>e.OldValue</samp><br /><samp>e.NewValue</samp>
+ |arg type 3 = <samp>int</samp>
+ |arg desc 3 = The previous and current scroll value, cumulative since the game started. Mods should generally use <samp>e.Delta</samp> instead.
+}}
+|}
+
+===Multiplayer===
+<samp>this.Helper.Events.Multiplayer</samp> has events raised for multiplayer messages and connections.
+
+{| class="wikitable"
+|-
+! event
+! summary
+{{/event
+ |group = Multiplayer
+ |name  = PeerContextReceived
+ |desc  = Raised after the mod context for a player is received. The event is raised for any player (whether host or farmhand), including when the connecting player doesn't have SMAPI installed. This is the earliest point where messages can be sent to the player via SMAPI.
+
+This happens immediately before the game approves the connection, so the player doesn't exist in the game yet. When connecting to the host, contextual fields like <samp>Game1.IsMasterGame</samp> or <samp>Context.IsMultiplayer</samp> may not be set yet; you can check <samp>e.Peer.IsHost</samp> to know whether the current player is a farmhand, since the host context will always be received first. Assuming another mod doesn't block the connection, the connection will be approved on the next tick.
+
+ |arg name 1 = <samp>e.Peer</samp>
+ |arg type 1 = <samp>IMultiplayerPeer</samp>
+ |arg desc 1 = The peer whose context was received (see [[Modding:Modder Guide/APIs/Multiplayer#Get connected player info|Multiplayer#Get connected player info]]).
+}}
+{{/event
+ |group = Multiplayer
+ |name  = PeerConnected
+ |desc  = Raised after a connection from another player is approved by the game. The event is raised for any player (whether host or farmhand), including when the connecting player doesn't have SMAPI installed. This happens after <samp>PeerContextReceived</samp>.
+
+The player is connected to the game at this point, so methods like <samp>Game1.server.kick</samp> will work.
+
+ |arg name 1 = <samp>e.Peer</samp>
+ |arg type 1 = <samp>IMultiplayerPeer</samp>
+ |arg desc 1 = The peer who connected (see [[Modding:Modder Guide/APIs/Multiplayer#Get connected player info|Multiplayer#Get connected player info]]).
+}}
+{{/event
+ |group = Multiplayer
+ |name  = ModMessageReceived
+ |desc  = Raised after [[Modding:Modder Guide/APIs/Multiplayer#Send messages|a mod message]] is received over the network.
+
+ |arg name 1 = <samp>e.FromPlayerID</samp>
+ |arg type 1 = <samp>long</samp>
+ |arg desc 1 = The unique ID of the player from whose computer the message was sent.
+
+ |arg name 2 = <samp>e.FromModID</samp>
+ |arg type 2 = <samp>string</samp>
+ |arg desc 2 = The unique ID of the mod which sent the message.
+
+ |arg name 3 = <samp>e.Type</samp>
+ |arg type 3 = <samp>string</samp>
+ |arg desc 3 = A message type which you can use to decide whether it's the one you want to handle. This isn't necessarily globally unique, so you should also check the <samp>FromModID</samp> field.
+
+ |arg name 4 = <samp>e.ReadAs&lt;TModel&gt;()</samp>
+ |arg type 4 = ''method'' returns <samp>TModel</samp>
+ |arg desc 4 = Read the underlying message data into the given model type (like <code>e.ReadAs&lt;MyMessageClass&gt;()</code> or <code>e.ReadAs&lt;string&gt;()</code>). This will return a new instance each time.
+}}
+{{/event
+ |group = Multiplayer
+ |name  = PeerDisconnected
+ |desc  = Raised after the connection to a player is severed.
+
+ |arg name 1 = <samp>e.Peer</samp>
+ |arg type 1 = <samp>IMultiplayerPeer</samp>
+ |arg desc 1 = The peer whose connection was severed (see [[Modding:Modder Guide/APIs/Multiplayer#Get connected player info|Multiplayer#Get connected player info]]).
+}}
+|}
+
+===Player===
+<samp>this.Helper.Events.Player</samp> has events raised when the player data changes.
+
+'''Currently these events are only raised for the current player. That will likely change in a future version, so make sure to check <samp>e.IsLocalPlayer</samp> if you only want to handle the current player.'''
+
+{| class="wikitable"
+|-
+! event
+! summary
+{{/event
+ |group = Player
+ |name  = InventoryChanged
+ |desc  = Raised after items are added or removed from the player inventory.
+
+ |arg name 1 = <samp>e.Player</samp>
+ |arg type 1 = <samp>Farmer</samp>
+ |arg desc 1 = The player whose inventory changed.
+
+ |arg name 2 = <samp>e.Added</samp>
+ |arg type 2 = <samp>IEnumerable&lt;Item&gt;</samp>
+ |arg desc 2 = The added item stacks.
+
+ |arg name 3 = <samp>e.Removed</samp>
+ |arg type 3 = <samp>IEnumerable&lt;Item&gt;</samp>
+ |arg desc 3 = The removed item stacks.
+
+ |arg name 4 = <samp>e.QuantityChanged</samp>
+ |arg type 4 = <samp>IEnumerable&lt;ItemStackSizeChange&gt;</samp>
+ |arg desc 4 = The item stacks whose quantity changed. Each <samp>ItemStackSizeChange</samp> instance includes <samp>Item</samp> (the affected item stack), <samp>OldSize</samp> (the previous stack size), and <samp>NewSize</samp> (the new stack size).
+
+ |arg name 5 = <samp>e.IsLocalPlayer</samp>
+ |arg type 5 = <samp>bool</samp>
+ |arg desc 5 = Whether the affected player is the local one.
+}}
+{{/event
+ |group = Player
+ |name  = LevelChanged
+ |desc  = Raised after a player's skill level changes. When the player levels up normally, this is raised immediately (not when the game notifies the player after they go to bed).
+
+ |arg name 1 = <samp>e.Player</samp>
+ |arg type 1 = <samp>Farmer</samp>
+ |arg desc 1 = The player whose skill level changed.
+
+ |arg name 2 = <samp>e.Skill</samp>
+ |arg type 2 = <samp>SkillType</samp>
+ |arg desc 2 = The skill whose level changed. This is a constant like <code>SkillType.Combat</code>, which can be converted to the game's internal skill ID using <code>(int)e.Skill</code>.
+
+ |arg name 3 = <samp>e.OldLevel</samp>
+ |arg type 3 = <samp>int</samp>
+ |arg desc 3 = The player's previous level for that skill.
+
+ |arg name 4 = <samp>e.NewLevel</samp>
+ |arg type 4 = <samp>int</samp>
+ |arg desc 4 = The player's new level for that skill.
+
+ |arg name 5 = <samp>e.IsLocalPlayer</samp>
+ |arg type 5 = <samp>bool</samp>
+ |arg desc 5 = Whether the affected player is the local one.
+}}
+{{/event
+ |group = Player
+ |name  = Warped
+ |desc  = Raised after the current player moves to a new location.
+
+ |arg name 1 = <samp>e.Player</samp>
+ |arg type 1 = <samp>Farmer</samp>
+ |arg desc 1 = The player who warped to a new location.
+
+ |arg name 2 = <samp>e.OldLocation</samp>
+ |arg type 2 = <samp>GameLocation</samp>
+ |arg desc 2 = The player's previous location.
+
+ |arg name 3 = <samp>e.NewLocation</samp>
+ |arg type 3 = <samp>GameLocation</samp>
+ |arg desc 3 = The player's new location.
+
+ |arg name 4 = <samp>e.IsLocalPlayer</samp>
+ |arg type 4 = <samp>bool</samp>
+ |arg desc 4 = Whether the affected player is the local one.
+}}
+|}
+
+===World===
+<samp>this.Helper.Events.World</samp> has events raised when the in-game world changes in some way.
+
+{| class="wikitable"
+|-
+! event
+! summary
+{{/event
+ |group = World
+ |name  = LocationListChanged
+ |desc  = Raised after a game location is added or removed (including building interiors).
+
+ |arg name 1 = <samp>e.Added</samp>
+ |arg type 1 = <samp>IEnumerable&lt;GameLocation&gt;</samp>
+ |arg desc 1 = A list of locations added since the last update tick.
+
+ |arg name 2 = <samp>e.Removed</samp>
+ |arg type 2 = <samp>IEnumerable&lt;GameLocation&gt;</samp>
+ |arg desc 2 = A list of locations removed since the last update tick.
+}}
+{{/event
+ |group = World
+ |name  = BuildingListChanged
+ |desc  = Raised after buildings are added/removed in any location.
+
+This event isn't raised for buildings already present when a location is added. If you need to handle those too, use [[#World.LocationListChanged|<samp>LocationListChanged</samp>]] and check <samp>e.Added.OfType<BuildableGameLocation>()</samp> → <samp>buildings</samp>.
+
+ |arg name 1 = <samp>e.Location</samp>
+ |arg type 1 = <samp>GameLocation</samp>
+ |arg desc 1 = The location which changed.
+
+ |arg name 2 = <samp>e.Added</samp>
+ |arg type 2 = <samp>IEnumerable&lt;Building&gt;</samp>
+ |arg desc 2 = A list of buildings added since the last update tick.
+
+ |arg name 3 = <samp>e.Removed</samp>
+ |arg type 3 = <samp>IEnumerable&lt;Building&gt;</samp>
+ |arg desc 3 = A list of buildings removed since the last update tick.
+
+ |arg name 4 = <samp>e.IsCurrentLocation</samp>
+ |arg type 4 = <samp>bool</samp>
+ |arg desc 4 = Whether <samp>e.Location</samp> is the location containing the local player.
+}}
+{{/event
+ |group = World
+ |name  = ChestInventoryChanged
+ |desc  = Raised after items are added or removed from a chest's inventory.
+
+ |arg name 1 = <samp>e.Chest</samp>
+ |arg type 1 = <samp>Chest</samp>
+ |arg desc 1 = The chest whose inventory changed.
+
+ |arg name 2 = <samp>e.Location</samp>
+ |arg type 2 = <samp>Location</samp>
+ |arg desc 2 = The location containing the chest.
+
+ |arg name 3 = <samp>e.Added</samp>
+ |arg type 3 = <samp>IEnumerable&lt;Item&gt;</samp>
+ |arg desc 3 = The added item stacks.
+
+ |arg name 4 = <samp>e.Removed</samp>
+ |arg type 4 = <samp>IEnumerable&lt;Item&gt;</samp>
+ |arg desc 4 = The removed item stacks.
+
+ |arg name 5 = <samp>e.QuantityChanged</samp>
+ |arg type 5 = <samp>IEnumerable&lt;ItemStackSizeChange&gt;</samp>
+ |arg desc 5 = The item stacks whose quantity changed. Each <samp>ItemStackSizeChange</samp> instance includes <samp>Item</samp> (the affected item stack), <samp>OldSize</samp> (the previous stack size), and <samp>NewSize</samp> (the new stack size).
+}}
+{{/event
+ |group = World
+ |name  = DebrisListChanged
+ |desc  = Raised after debris is added/removed in any location (including dropped or spawned floating items).
+
+This event isn't raised for debris already present when a location is added. If you need to handle those too, use [[#World.LocationListChanged|<samp>LocationListChanged</samp>]] and check <samp>e.Added</samp> → <samp>debris</samp>.
+
+ |arg name 1 = <samp>e.Location</samp>
+ |arg type 1 = <samp>GameLocation</samp>
+ |arg desc 1 = The location which changed.
+
+ |arg name 2 = <samp>e.Added</samp>
+ |arg type 2 = <samp>IEnumerable&lt;Debris&gt;</samp>
+ |arg desc 2 = A list of debris added since the last update tick.
+
+ |arg name 3 = <samp>e.Removed</samp>
+ |arg type 3 = <samp>IEnumerable&lt;Debris&gt;</samp>
+ |arg desc 3 = A list of debris removed since the last update tick.
+
+ |arg name 4 = <samp>e.IsCurrentLocation</samp>
+ |arg type 4 = <samp>bool</samp>
+ |arg desc 4 = Whether <samp>e.Location</samp> is the location containing the local player.
+}}
+{{/event
+ |group = World
+ |name  = FurnitureListChanged
+ |desc  = Raised after furniture are added/removed in any location.
+
+This event isn't raised for furniture already present when a location is added. If you need to handle those too, use [[#World.LocationListChanged|<samp>LocationListChanged</samp>]] and check <samp>e.Added</samp> → <samp>furniture</samp>.
+
+ |arg name 1 = <samp>e.Location</samp>
+ |arg type 1 = <samp>GameLocation</samp>
+ |arg desc 1 = The location which changed.
+
+ |arg name 2 = <samp>e.Added</samp>
+ |arg type 2 = <samp>IEnumerable&lt;Furniture&gt;</samp>
+ |arg desc 2 = A list of furniture added since the last update tick.
+
+ |arg name 3 = <samp>e.Removed</samp>
+ |arg type 3 = <samp>IEnumerable&lt;Furniture&gt;</samp>
+ |arg desc 3 = A list of furniture removed since the last update tick.
+
+ |arg name 4 = <samp>e.IsCurrentLocation</samp>
+ |arg type 4 = <samp>bool</samp>
+ |arg desc 4 = Whether <samp>e.Location</samp> is the location containing the local player.
+}}
+{{/event
+ |group = World
+ |name  = LargeTerrainFeatureListChanged
+ |desc  = Raised after large terrain features (like bushes) are added/removed in any location.
+
+This event isn't raised for large terrain features already present when a location is added. If you need to handle those too, use [[#World.LocationListChanged|<samp>LocationListChanged</samp>]] and check <samp>e.Added</samp> → <samp>largeTerrainFeatures</samp>.
+
+ |arg name 1 = <samp>e.Location</samp>
+ |arg type 1 = <samp>GameLocation</samp>
+ |arg desc 1 = The location which changed.
+
+ |arg name 2 = <samp>e.Added</samp>
+ |arg type 2 = <samp>IEnumerable&lt;LargeTerrainFeature&gt;</samp>
+ |arg desc 2 = A list of large terrain features added since the last update tick.
+
+ |arg name 3 = <samp>e.Removed</samp>
+ |arg type 3 = <samp>IEnumerable&lt;LargeTerrainFeature&gt;</samp>
+ |arg desc 3 = A list of large terrain features removed since the last update tick.
+
+ |arg name 4 = <samp>e.IsCurrentLocation</samp>
+ |arg type 4 = <samp>bool</samp>
+ |arg desc 4 = Whether <samp>e.Location</samp> is the location containing the local player.
+}}
+{{/event
+ |group = World
+ |name  = NpcListChanged
+ |desc  = Raised after NPCs are added/removed in any location (including villagers, horses, Junimos, monsters, and pets).
+
+This event isn't raised for characters already present when a location is added. If you need to handle those too, use [[#World.LocationListChanged|<samp>LocationListChanged</samp>]] and check <samp>e.Added</samp> → <samp>characters</samp>.
+
+ |arg name 1 = <samp>e.Location</samp>
+ |arg type 1 = <samp>GameLocation</samp>
+ |arg desc 1 = The location which changed.
+
+ |arg name 2 = <samp>e.Added</samp>
+ |arg type 2 = <samp>IEnumerable&lt;NPC&gt;</samp>
+ |arg desc 2 = A list of NPCs added since the last update tick.
+
+ |arg name 3 = <samp>e.Removed</samp>
+ |arg type 3 = <samp>IEnumerable&lt;NPC&gt;</samp>
+ |arg desc 3 = A list of NPCs removed since the last update tick.
+
+ |arg name 4 = <samp>e.IsCurrentLocation</samp>
+ |arg type 4 = <samp>bool</samp>
+ |arg desc 4 = Whether <samp>e.Location</samp> is the location containing the local player.
+}}
+{{/event
+ |group = World
+ |name  = ObjectListChanged
+ |desc  = Raised after objects are added/removed in any location (including machines, fences, etc). This doesn't apply for floating items (see <samp>DebrisListChanged</samp>) or furniture (see <samp>FurnitureListChanged</samp>).
+
+This event isn't raised for objects already present when a location is added. If you need to handle those too, use [[#World.LocationListChanged|<samp>LocationListChanged</samp>]] and check <samp>e.Added</samp> → <samp>objects</samp>.
+
+ |arg name 1 = <samp>e.Location</samp>
+ |arg type 1 = <samp>GameLocation</samp>
+ |arg desc 1 = The location which changed.
+
+ |arg name 2 = <samp>e.Added</samp>
+ |arg type 2 = <samp>IEnumerable&lt;KeyValuePair&lt;Vector2, Object&gt;&gt;</samp>
+ |arg desc 2 = A list of [[Modding:Modder Guide/Game Fundamentals#Tiles|tile coordinate]] + object pairs added since the last update tick.
+
+ |arg name 3 = <samp>e.Removed</samp>
+ |arg type 3 = <samp>IEnumerable&lt;KeyValuePair&lt;Vector2, Object&gt;&gt;</samp>
+ |arg desc 3 = A list of [[Modding:Modder Guide/Game Fundamentals#Tiles|tile coordinate]] + object pairs removed since the last update tick.
+
+ |arg name 4 = <samp>e.IsCurrentLocation</samp>
+ |arg type 4 = <samp>bool</samp>
+ |arg desc 4 = Whether <samp>e.Location</samp> is the location containing the local player.
+}}
+{{/event
+ |group = World
+ |name  = TerrainFeatureListChanged
+ |desc  = Raised after terrain features are added/removed in any location (including trees, hoed dirt, and flooring). For bushes, see <samp>LargeTerrainFeatureListChanged</samp>.
+
+This event isn't raised for terrain features already present when a location is added. If you need to handle those too, use [[#World.LocationListChanged|<samp>LocationListChanged</samp>]] and check <samp>e.Added</samp> → <samp>terrainFeatures</samp>.
+
+ |arg name 1 = <samp>e.Location</samp>
+ |arg type 1 = <samp>GameLocation</samp>
+ |arg desc 1 = The location which changed.
+
+ |arg name 2 = <samp>e.Added</samp>
+ |arg type 2 = <samp>IEnumerable&lt;KeyValuePair&lt;Vector2, TerrainFeature&gt;&gt;</samp>
+ |arg desc 2 = A list of [[Modding:Modder Guide/Game Fundamentals#Tiles|tile coordinate]] + terrain feature pairs added since the last update tick.
+
+ |arg name 3 = <samp>e.Removed</samp>
+ |arg type 3 = <samp>IEnumerable&lt;KeyValuePair&lt;Vector2, TerrainFeature&gt;&gt;</samp>
+ |arg desc 3 = A list of [[Modding:Modder Guide/Game Fundamentals#Tiles|tile coordinate]] + terrain feature pairs removed since the last update tick.
+
+ |arg name 4 = <samp>e.IsCurrentLocation</samp>
+ |arg type 4 = <samp>bool</samp>
+ |arg desc 4 = Whether <samp>e.Location</samp> is the location containing the local player.
+}}
+|}
+
+===Specialised===
+<samp>this.Helper.Events.Specialised</samp> has events for specialised edge cases. These shouldn't be used by most mods.
+
+{| class="wikitable"
+|-
+! event
+! summary
+{{/event
+ |group = Specialised
+ |name  = LoadStageChanged
+ |desc  = Raised when the low-level stage in the game's loading process has changed, for mods which need to run code at specific points in the loading process. The available stages or when they happen might change without warning in future versions (''e.g.,'' due to changes in the game's load process), so '''mods using this event are more likely to break or have bugs'''. Most mods should use the [[#Game loop|game loop events]] instead.
+
+ |arg name 1 = <samp>e.NewStage</samp>
+ |arg type 1 = <samp>LoadStage</samp>
+ |arg desc 1 = The new load stage. The possible values are...
+
+* <code>None</code>: a save is not loaded or loading. (For example, the player is on the title screen.)
+* When creating a new save slot:
+** <code>CreatedBasicInfo</code>: the game has initialised the basic save info.
+** <code>CreatedInitialLocations</code>: the game has added the location instances, but hasn't fully initialized them yet.
+** <code>CreatedLocations</code>: the game has initialised the in-game locations.
+** <code>CreatedSaveFile</code>: the game has created the physical save files.
+* When loading an existing save slot:
+** <code>SaveParsed</code>: the game has read the raw save data into <samp>StardewValley.SaveGame.loaded</samp>. Not applicable when connecting to a multiplayer host. This is equivalent to <samp>StardewValley.SaveGame.getLoadEnumerator</samp> value 20.
+** <code>SaveLoadedBasicInfo</code>: the game has applied the basic save info (including player data). Not applicable when connecting to a multiplayer host. Note that some basic info (like daily luck) is not initialised at this point. This is equivalent to <samp>StardewValley.SaveGame.getLoadEnumerator</samp> value 36.
+** <code>SaveAddedLocations</code>: the game has added the location instances to the game, but hasn't restored their save data yet.
+** <code>SaveLoadedLocations</code>: the game has restored the in-game location data. Not applicable when connecting to a multiplayer host. This is equivalent to <samp>StardewValley.SaveGame.getLoadEnumerator</samp> value 50.
+* <code>Preloaded</code>: the final metadata has been loaded from the save file. This happens before the game applies problem fixes, checks for achievements, starts music, etc. Not applicable when connecting to a multiplayer host.
+* <code>Loaded</code>: the save is fully loaded, but the world may not be fully initialised yet.
+* <code>Ready</code>: the save is fully loaded, the world has been initialised, and [[Modding:Modder Guide/APIs/Utilities#Context|<samp>Context.IsWorldReady</samp>]] is now true.
+* <code>ReturningToTitle</code>: The game is exiting the loaded save and returning to the title screen. This happens before it returns to title; the stage ''after'' it returns to title is <code>None</code>.
+
+ |arg name 2 = <samp>e.OldStage</samp>
+ |arg type 2 = <samp>LoadStage</samp>
+ |arg desc 2 = The previous load stage. See comments for <samp>e.NewStage</samp>.
+}}
+{{/event
+ |group = Specialised
+ |name  = UnvalidatedUpdateTicking, UnvalidatedUpdateTicked
+ |desc  = Raised before/after the game updates its state (≈60 times per second), regardless of normal SMAPI validation. This event is not thread-safe and may be invoked while game logic is running asynchronously. Changes to game state in this method may crash the game or corrupt an in-progress save. '''Do not use this event unless you're fully aware of the context in which your code will be run. Using this event will trigger a warning in the SMAPI console.'''
+
+
+ |arg name 1 = <samp>e.Ticks</samp>
+ |arg type 1 = <samp>int</samp>
+ |arg desc 1 = The number of ticks elapsed since the game started, including the current tick.
+
+ |arg name 2 = <samp>e.IsOneSecond</samp>
+ |arg type 2 = <samp>bool</samp>
+ |arg desc 2 = Whether <samp>e.TicksElapsed</samp> is a multiple of 60, which happens approximately once per second.
+
+ |arg name 3 = <samp>e.IsMultipleOf(int number)</samp>
+ |arg type 3 = ''method'' returns <samp>bool</samp>
+ |arg desc 3 = Whether <samp>e.TicksElapsed</samp> is a multiple of the given number. This is mainly useful if you want to run logic intermittently (''e.g.,'' <code>e.IsMultipleOf(30)</code> for every half-second).
+}}
+|}
+
+==Advanced==
+===Change monitoring===
+You may want to handle a change that doesn't have its own event (''e.g.,'' an NPC's heart event ends, a letter is added to the mailbox, etc). You can usually do that by handling a general event like [[#GameLoop.UpdateTicked|<samp>UpdateTicked</samp>]], and detecting when the value(s) you're watching changed. For example, here's a complete mod which logs a message when an in-game event ends:
+<syntaxhighlight lang="c#">
+/// <summary>The main entry point for the mod.</summary>
+internal sealed class ModEntry : Mod
+{
+    /*********
+    ** Fields
+    *********/
+    /// <summary>The in-game event detected on the last update tick.</summary>
+    private Event LastEvent;
+
+
+    /*********
+    ** Public methods
+    *********/
+    /// <summary>The mod entry point, called after the mod is first loaded.</summary>
+    /// <param name="helper">Provides simplified APIs for writing mods.</param>
+    public override void Entry(IModHelper helper)
+    {
+        helper.Events.GameLoop.UpdateTicked += this.OnUpdateTicked;
+    }
+
+
+    /*********
+    ** Private methods
+    *********/
+    /// <summary>The method invoked when the game updates its state.</summary>
+    /// <param name="sender">The event sender.</param>
+    /// <param name="e">The event arguments.</param>
+    private void OnUpdateTicked(object sender, EventArgs e)
+    {
+        if (this.LastEvent != null && Game1.CurrentEvent == null)
+            this.Monitor.Log($"Event {this.LastEvent.id} just ended!");
+
+        this.LastEvent = Game1.CurrentEvent;
+    }
+}
+</syntaxhighlight>
+
+===Custom priority===
+SMAPI calls event handlers in the same order they're registered by default, so the first event handler registered is the first to receive the event each time. This isn't always predictable, since it depends on mod load order and when each mod registers their handlers. This order is also an implementation detail, so it's not guaranteed.
+
+If you need more control over the order, you can specify an event priority using the <code>[EventPriority]</code> attribute: <samp>Low</samp> (after most handlers), <samp>Default</samp>, <samp>High</samp> (before most handlers), or a custom value (''e.g.,'' <samp>High + 1</samp> is higher priority than <samp>High</samp>). '''You should only do this if strictly needed'''; depending on event handler order between mods is fragile (''e.g.,'' the other mod might change its priority too).
+
+<syntaxhighlight lang="c#">
+/// <summary>The main entry point for the mod.</summary>
+internal sealed class ModEntry : Mod
+{
+    /*********
+    ** Public methods
+    *********/
+    /// <summary>The mod entry point, called after the mod is first loaded.</summary>
+    /// <param name="helper">Provides simplified APIs for writing mods.</param>
+    public override void Entry(IModHelper helper)
+    {
+        helper.Events.GameLoop.UpdateTicked += this.OnUpdateTicked;
+    }
+
+
+    /*********
+    ** Private methods
+    *********/
+    /// <summary>The method invoked when the game updates its state.</summary>
+    /// <param name="sender">The event sender.</param>
+    /// <param name="e">The event arguments.</param>
+    [EventPriority(EventPriority.High)]
+    private void OnUpdateTicked(object sender, EventArgs e)
+    {
+        this.Monitor.Log("Update!");
+    }
+}
+</syntaxhighlight>
+
+[[ru:Модификации:Руководство мододела/API/События]]
+[[zh:模组:制作指南/APIs/Events]]

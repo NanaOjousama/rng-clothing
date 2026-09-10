@@ -63,3 +63,9 @@ Screenshot_*.png
 #   git clone https://github.com/Floogen/FashionSense.wiki.git \
 #             references/fashion-sense-official/wiki-git
 references/fashion-sense-official/wiki-git/
+
+# Embedded upstream clone: SMAPI docs + API-surface source (sparse, depth 1).
+# Not tracked (nested repo); regenerate with tools/index_stardew_reference.py
+references/stardew-official/smapi/
+tools/AssemblyIndex/bin/
+tools/AssemblyIndex/obj/

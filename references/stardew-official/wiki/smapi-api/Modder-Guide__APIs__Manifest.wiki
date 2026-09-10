@@ -1,0 +1,154 @@
+{{../../header}}
+
+Every SMAPI mod or content pack must have a <samp>manifest.json</samp> file in its folder. SMAPI uses this to identify and load the mod, perform update checks, etc. The manifest info is also available to any mod in code (using <samp>this.ModManifest</samp> for the current mod's manifest, or [[../Integrations#Mod registry|mod registry]] for other mods' manifests).
+
+==Basic examples==
+Here's the basic format (see below for details on each field):
+{| class="wikitable"
+|-
+! For a SMAPI mod
+! For a content pack
+|-
+| <syntaxhighlight lang="javascript">
+{
+    "Name": "Your Project Name",
+    "Author": "your name",
+    "Version": "1.0.0",
+    "Description": "One or two sentences about the mod.",
+    "UniqueID": "YourName.YourProjectName",
+    "EntryDll": "YourDllFileName.dll",
+    "UpdateKeys": []
+}
+</syntaxhighlight>
+| <syntaxhighlight lang="javascript">
+{
+    "Name": "Your Project Name",
+    "Author": "your name",
+    "Version": "1.0.0",
+    "Description": "One or two sentences about the mod.",
+    "UniqueID": "YourName.YourProjectName",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}
+</syntaxhighlight>
+|}
+
+==Fields==
+===Basic fields===
+All mods should specify the following fields.
+
+{| class="wikitable"
+|-
+! field
+! description
+|-
+| <samp>Name</samp>
+| The mod name. SMAPI uses this in player messages, logs, and errors. Example: <syntaxhighlight lang="javascript">"Name": "Lookup Anything"</syntaxhighlight>
+|-
+| <samp>Author</samp>
+| The name of the person who created the mod. Ideally this should include the username used to publish mods. Example: <syntaxhighlight lang="javascript">"Author": "Pathoschild"</syntaxhighlight>
+|-
+| <samp>Version</samp>
+| The mod's [http://semver.org/ semantic version]. Make sure you update this for each release! SMAPI uses this for update checks, mod dependencies, and compatibility blacklists (if the mod breaks in a future version of the game). For example:
+<syntaxhighlight lang="javascript">
+"Version": "1.0.0"
+</syntaxhighlight>
+
+If you set the <code>&lt;Version&gt;</code> in your <samp>.csproj</samp> project file, you can use the exact text <samp>%ProjectVersion%</samp> in the manifest file to set the same version automatically:
+<syntaxhighlight lang="javascript">
+"Version": "%ProjectVersion%"
+</syntaxhighlight>
+|-
+| <samp>Description</samp>
+| A short explanation of what your mod does (one or two sentences), shown in the SMAPI log. Example: <syntaxhighlight lang="javascript">"Description": "View metadata about anything by pressing a button."</syntaxhighlight>
+|-
+| <samp>UniqueID</samp>
+| A unique identifier for your mod. The recommended format is <samp>&lt;your name&gt;.&lt;mod name&gt;</samp>, with no spaces or special characters. SMAPI uses this for update checks, mod dependencies, and compatibility blacklists (if the mod breaks in a future version of the game). When another mod needs to reference this mod, it uses the unique ID. For this reason, once you've published your mod, do not change this unique ID in future versions of the same mod. Example: <syntaxhighlight lang="javascript">"UniqueID": "Pathoschild.LookupAnything"</syntaxhighlight>
+|-
+| <samp>EntryDll</samp> '''or''' <samp>ContentPackFor</samp>
+| <p>All mods must specify either <samp>EntryDll</samp> (for a SMAPI mod) or <samp>ContentPackFor</samp> (for a [[Modding:Content packs|content pack]]). These are mutually exclusive — you can't specify both.</p>
+
+For a SMAPI mod, <samp>EntryDll</samp> is the mod's compiled DLL filename in its mod folder. Example: <syntaxhighlight lang="javascript">"EntryDll": "LookupAnything.dll"</syntaxhighlight>
+
+For a content pack, <samp>ContentPackFor</samp> specifies which mod can read it. The <samp>MinimumVersion</samp> is optional. Example:
+<syntaxhighlight lang="javascript">
+"ContentPackFor": {
+   "UniqueID": "Pathoschild.ContentPatcher",
+   "MinimumVersion": "1.0.0"
+}
+</syntaxhighlight>
+|}
+
+===Minimum SMAPI or game version===
+The <samp>MinimumApiVersion</samp> and <samp>MinimumGameVersion</samp> field sets the minimum version of SMAPI or Stardew Valley needed to use this mod. If a player tries to use the mod with an older version, they'll see a friendly message saying they need to update it. 
+
+For example:
+<syntaxhighlight lang="javascript">"MinimumApiVersion": "4.0.0"</syntaxhighlight>
+
+===Dependencies===
+The <samp>Dependencies</samp> field specifies other mods required to use this mod. If a player tries to use the mod and the dependencies aren't installed, the mod won't be loaded and they'll see a friendly message saying they need to install those. For example:
+<syntaxhighlight lang="javascript">
+"Dependencies": [
+   {
+      "UniqueID": "SMAPI.ConsoleCommands",
+      "MinimumVersion": "3.8.0" // optional. If specified, older versions won't meet the requirement.
+   }
+]
+</syntaxhighlight>
+
+You can mark a dependency as optional. It will be loaded first if it's installed, otherwise it'll be ignored.
+<syntaxhighlight lang="javascript">
+"Dependencies": [
+   {
+      "UniqueID": "SMAPI.ConsoleCommands",
+      "IsRequired": false
+   }
+]
+</syntaxhighlight>
+
+===Update checks===
+SMAPI can detect new versions of your mod and alert the user with a link to your mod page. You can enable this by setting the <samp>UpdateKeys</samp> field in your <samp>manifest.json</samp>, which tells SMAPI where to check.
+
+See [[../Update checks|''update checks'']] for more information.
+
+==Specialized fields==
+'''⚠️ Most mods shouldn't need to use these fields.'''
+<!-- removed from SMAPI 4.1.0
+===Private assemblies===
+{{SMAPI upcoming|4.1.0|content=
+A ''private assembly'' is a DLL which only one mod can reference. This ensures that the mod has the exact version it was designed for, and lets different mods use different versions of the same assembly. You can use this even if another copy of the assembly was already loaded by SMAPI or another mod.
+
+Caveats:
+* Each private copy of a DLL has ''separate'' static values. Don't use this for assemblies that need to share global state (e.g. Harmony).
+* The DLL needs to be in your mod folder.
+
+You must specify the assembly name (without the version, culture, and private key). For example:
+<syntaxhighlight lang="javascript">
+"PrivateAssemblies": [
+   {
+      "Name": "Newtonsoft.Json"
+   }
+]
+</syntaxhighlight>
+
+SMAPI will log a warning if it doesn't detect a reference to the DLL, which is usually a mistake. If that's deliberate (e.g. you're accessing it through reflection), you can suppress that warning:
+<syntaxhighlight lang="javascript">
+"PrivateAssemblies": [
+   {
+      "Name": "Newtonsoft.Json",
+      "UsedDynamically": true // not recommended -- only set if DLL is accessed in a special way
+   }
+]
+</syntaxhighlight>
+}}
+-->
+
+===Anything else===
+Any other fields will be stored in the <samp>IManifest.ExtraFields</samp> dictionary, which is available through the [[../Integrations#Mod registry|mod registry]]. Extra fields are ignored by SMAPI, but may be useful for extended metadata intended for other mods.
+
+[[es:Modding:Guía del Modder/APIs/Manifest]]
+[[ru:Модификации:Руководство мододела/API/Манифест]]
+[[tr:Modlama:Mod Rehberi/API'ler/Manifest]]
+[[zh:模组:制作指南/APIs/Manifest]]

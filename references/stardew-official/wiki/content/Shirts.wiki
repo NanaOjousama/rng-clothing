@@ -1,0 +1,88 @@
+← [[Modding:Items|Items]]
+
+This page explains how the game stores and parses shirt-type item data. For items in general, see [[Modding:Items]].
+
+==Overview==
+Shirts are items that can be equipped in the player's [[Tailoring#Shirts|shirt]] slot. These change the player sprite.
+
+They have [[Modding:Items#Item types|item type]] <code>(S)</code> (or <code>ItemRegistry.type_shirt</code> in C# code), their data in <samp>Data/Shirts</samp>, their icon sprites in <samp>Characters/Farmer/shirts</samp> by default, and their code in <samp>StardewValley.Objects.Clothing</samp>.
+
+==Data format==
+The shirt data in <samp>Data/Shirts</samp> consists of a string → model lookup, where...
+* The key is the [[Modding:Common data field types#Item ID|unqualified item ID]].
+* The value is a model with the fields listed below.
+
+===Basic data===
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+| <samp>Name</samp>
+| ''(Optional)'' The internal name for the item. Default <samp>Shirt</samp>.
+|-
+| <samp>DisplayName</samp><br /><samp>Description</samp>
+| ''(Optional)'' A [[Modding:Tokenizable strings|tokenizable string]] for the item's in-game display name and description. Defaults to the generic shirt text (''Shirt'' and ''A wearable shirt'').
+|-
+| <samp>Price</samp>
+| ''(Optional)'' The default price when the item is sold to the player in a shop. Default 50.
+|}
+
+===Appearance===
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+| <samp>Texture</samp>
+| The asset name for the texture containing the shirt's sprite. Defaults to <samp>Characters/Farmer/shirts</samp>.
+
+Shirt textures must be exactly 256 pixels wide, divided into two halves: the left half for the shirt sprites, and the right half for any dye masks. The remaining space can be left blank if needed. They can have any number of rows.
+<pre>
+      sprites       dye masks
+   /-----------\  /-----------\
+┌────────────────────────────────┐
+│ ┌───┐┌───┐┌───┐┌───┐┌───┐┌───┐ │
+│ │ 0 ││ 1 ││ 2 ││ a ││ b ││ c │ │
+│ └───┘└───┘└───┘└───┘└───┘└───┘ │
+│ ┌───┐┌───┐┌───┐┌───┐┌───┐┌───┐ │
+│ │ 3 ││ 4 ││ 5 ││ d ││ e ││ f │ │
+│ └───┘└───┘└───┘└───┘└───┘└───┘ │
+└────────────────────────────────┘
+</pre>
+|-
+| <samp>SpriteIndex</samp>
+| The shirt's sprite index within the <samp>Texture</samp>, where 0 is the top-left set.
+|-
+| <samp>DefaultColor</samp>
+| ''(Optional)'' The dye color to apply to the sprite when the player hasn't [[dyeing|dyed]] it yet, if any. See [[Modding:Common_data_field_types#Color|color format]]. Default none.
+|-
+| <samp>CanBeDyed</samp>
+| ''(Optional)'' Whether the player can [[dyeing|dye]] this shirt. Default false.
+|-
+| <samp>IsPrismatic</samp>
+| ''(Optional)'' Whether the shirt continuously shifts colors. This overrides <samp>DefaultColor</samp> and <samp>CanBeDyed</samp> if set. Default false.
+|-
+| <samp>HasSleeves</samp>
+| ''(Optional)'' Whether to draw shirt sleeves. Default true.
+|}
+
+===Other===
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+| <samp>CanChooseDuringCharacterCustomization</samp>
+| ''(Optional)'' Whether this shirt can be selected on the character customization screen (e.g. when creating a character). Default false.
+|-
+| <samp>CustomFields</samp>
+| The [[Modding:Common_data_field_types#Custom_fields|custom fields]] for this entry.
+|}
+
+==See also==
+* [[Modding:Items]] for item data in general
+
+[[Category:Modding]]
+[[ru:Модификации:Топы]]
+[[zh:模组:上衣]]

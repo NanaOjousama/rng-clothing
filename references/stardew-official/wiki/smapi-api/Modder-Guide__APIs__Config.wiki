@@ -1,0 +1,108 @@
+{{../../header}}
+
+You can let users configure your mod through a standard <samp>config.json</samp> file. SMAPI will automatically create the file and take care of reading, normalising, and updating it.
+
+==Config model==
+===Creating a config model===
+The ''config model'' is a C# class you create, with properties representing the settings you want to store. It can contain almost anything from a few boolean fields to a complex object graph (though you should try to keep things simple for players). Here's a simple config model:
+<syntaxhighlight lang="c#">
+public sealed class ModConfig
+{
+   public bool ExampleBoolean { get; set; }
+   public int ExampleNumber { get; set; }
+}
+</syntaxhighlight>
+
+That model would be saved to <samp>config.json</samp> with this content:
+<syntaxhighlight lang="json">
+{
+   "ExampleBoolean": false,
+   "ExampleNumber": 0
+}
+</syntaxhighlight>
+
+These properties must be public.
+
+===Default values===
+You can set default values in your data model:
+<syntaxhighlight lang="c#">
+public sealed class ModConfig
+{
+   public bool ExampleBoolean { get; set; } = true;
+   public int ExampleNumber { get; set; } = 5;
+}
+</syntaxhighlight>
+
+...or set defaults with a constructor:
+
+<syntaxhighlight lang="c#">
+public sealed class ModConfig
+{
+   public bool ExampleBoolean { get; set; }
+   public int ExampleNumber { get; set; }
+
+   public ModConfig()
+   {
+      this.ExampleBoolean = true;
+      this.ExampleNumber = 5;
+   }
+}
+</syntaxhighlight>
+
+==Using the config file==
+To read the <samp>config.json</samp> (SMAPI will create it automatically):
+
+<ol>
+<li>Create your [[#Config model|config model]].</li>
+<li>Access the config values in your <samp>ModEntry</samp> class:
+<syntaxhighlight lang="c#">
+/// <summary>The main entry point for the mod.</summary>
+internal sealed class ModEntry : Mod
+{
+    /*********
+    ** Properties
+    *********/
+    /// <summary>The mod configuration from the player.</summary>
+    private ModConfig Config;
+
+
+    /*********
+    ** Public methods
+    *********/
+    /// <summary>The mod entry point, called after the mod is first loaded.</summary>
+    /// <param name="helper">Provides simplified APIs for writing mods.</param>
+    public override void Entry(IModHelper helper)
+    {
+        this.Config = this.Helper.ReadConfig<ModConfig>();
+        bool exampleBool = this.Config.ExampleBoolean;
+    }
+}
+</syntaxhighlight>
+</li>
+</ol>
+
+That's it! When the player launches the game, SMAPI will create the <samp>config.json</samp> file automatically if it doesn't exist yet, using the default config options you provided in your model. If you need to save some changes, you can use <samp>this.Helper.WriteConfig(this.Config)</samp>.
+
+Note that <samp>ReadConfig</samp> will raise an exception if the user does not provide a valid JSON.
+
+==Keybind settings==
+: {{main article|Modding:Modder Guide/APIs/Input}}
+
+You can use SMAPI's [[Modding:Modder Guide/APIs/Input#KeybindList|<samp>KeybindList</samp>]] in your model to let users configure keybinds. This automatically supports multi-key or alternative bindings (''e.g.,'' to support split-screen mode):
+
+<syntaxhighlight lang="c#">
+class ModConfig
+{
+   public KeybindList ToggleKey { get; set; } = KeybindList.Parse("LeftShift + F2, LeftTrigger");
+}
+</syntaxhighlight>
+
+The value is automatically written/parsed in the <samp>config.json</samp> file as a string:
+<syntaxhighlight lang="json">
+{
+   "ToggleKey": "LeftShift + F2, LeftTrigger"
+}
+</syntaxhighlight>
+
+[[ru:Модификации:Руководство мододела/API/Конфигурация]]
+[[zh:模组:制作指南/APIs/Config]]

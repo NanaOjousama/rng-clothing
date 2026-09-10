@@ -1,0 +1,89 @@
+{
+ "calibrated_against": "approved source packs in source_catalog (Front frames with >=3 colours)",
+ "appearances": 146,
+ "median_ramp_steps": 5.0,
+ "thresholds": {
+  "MIN_VALUE_STEP": 2.0,
+  "MIN_ROLE_DE": 7.0,
+  "COLLAPSE_DE": 4.0,
+  "MAX_HUE_SPREAD": 80.0,
+  "MIN_HUE_SHIFT": 12.0,
+  "MIN_CHROMA_STEP": 6.0
+ },
+ "corpus_flag_rate_percent": {
+  "value_order": 20.5,
+  "role_contrast": 12.3,
+  "role_collapse": 29.5,
+  "hue_distance": 0.7
+ },
+ "corpus_flag_rate_any_check_percent": 30.8,
+ "interpretation": "These rates are the tool's error bar. Approved source art trips these checks at the rates above, so a flag is a question, never a verdict, and never overrides how the garment reads in game. Near-duplicate colours in particular are common in approved source art at any useful threshold: treat role_collapse as informative for GENERATED palettes (a wasted slot) and not as a defect in source-derived work.",
+ "distributions": {
+  "L_step_between_adjacent": {
+   "p1": 0.3,
+   "p5": 0.9,
+   "p10": 2.0,
+   "p25": 6.7,
+   "p50": 11.3
+  },
+  "dE_roles": {
+   "outline-body": {
+    "p1": 1.04,
+    "p5": 7.0,
+    "p10": 8.03,
+    "p50": 15.03
+   },
+   "body-highlight": {
+    "p1": 0.2,
+    "p5": 3.47,
+    "p10": 7.88,
+    "p50": 21.26
+   },
+   "outline-highlight": {
+    "p1": 8.08,
+    "p5": 21.05,
+    "p10": 21.26,
+    "p50": 54.63
+   }
+  },
+  "dE_any_pair": {
+   "p1": 0.69,
+   "p5": 4.77,
+   "p10": 7.88,
+   "p50": 27.28
+  },
+  "hue_spread": {
+   "p50": 44.7,
+   "p75": 54.2,
+   "p90": 76.4,
+   "p95": 76.4,
+   "p99": 178.5
+  }
+ },
+ "examples_still_flagged": {
+  "value_order": [
+   "Beanie (Bunny) (Alt-Fashion Set)",
+   "Beanie (Cat) (Alt-Fashion Set)",
+   "Earmuffs (Angel Wings) (Alt-Fashion Set)",
+   "Earmuffs (Bat Wings) (Alt-Fashion Set)",
+   "Earmuffs (Horns) (Alt-Fashion Set)"
+  ],
+  "role_contrast": [
+   "Jacket (Alt-Fashion Set)",
+   "Jacket (Crop Top) (Alt-Fashion Set)",
+   "Jacket (Cropped) (Alt-Fashion Set)",
+   "Jacket (Oversized) (Alt-Fashion Set)",
+   "Top (Oversized, Layered) (Alt-Fashion Set)"
+  ],
+  "role_collapse": [
+   "Beanie (Bunny) (Alt-Fashion Set)",
+   "Beanie (Cat) (Alt-Fashion Set)",
+   "Earmuffs (Angel Wings) (Alt-Fashion Set)",
+   "Earmuffs (Bat Wings) (Alt-Fashion Set)",
+   "Earmuffs (Horns) (Alt-Fashion Set)"
+  ],
+  "hue_distance": [
+   "Flower Dance Crown (More Accessories and Stuff)"
+  ]
+ }
+}

@@ -1,0 +1,213 @@
+{
+ "gathered": "2026-09-10",
+ "stardew": "1.6.15",
+ "smapi": "4.5.2",
+ "wiki": {
+  "pages": {
+   "Modding:Common tasks": {
+    "group": "core",
+    "file": "wiki/core/Common-tasks.wiki",
+    "bytes": 26450,
+    "url": "https://stardewvalleywiki.com/Modding%3ACommon_tasks"
+   },
+   "Modding:Index": {
+    "group": "core",
+    "file": "wiki/core/Index.wiki",
+    "bytes": 7847,
+    "url": "https://stardewvalleywiki.com/Modding%3AIndex"
+   },
+   "Modding:Modder Guide/Game Fundamentals": {
+    "group": "core",
+    "file": "wiki/core/Modder-Guide__Game-Fundamentals.wiki",
+    "bytes": 14752,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/Game_Fundamentals"
+   },
+   "Modding:Modder Guide": {
+    "group": "core",
+    "file": "wiki/core/Modder-Guide.wiki",
+    "bytes": 20697,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide"
+   },
+   "Modding:Modder Guide/Test and Troubleshoot": {
+    "group": "core",
+    "file": "wiki/core/Modder-Guide__Test-and-Troubleshoot.wiki",
+    "bytes": 9422,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/Test_and_Troubleshoot"
+   },
+   "Modding:Modder Guide/APIs": {
+    "group": "smapi-api",
+    "file": "wiki/smapi-api/Modder-Guide__APIs.wiki",
+    "bytes": 1940,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/APIs"
+   },
+   "Modding:Modder Guide/APIs/Config": {
+    "group": "smapi-api",
+    "file": "wiki/smapi-api/Modder-Guide__APIs__Config.wiki",
+    "bytes": 3544,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/APIs/Config"
+   },
+   "Modding:Modder Guide/APIs/Content": {
+    "group": "smapi-api",
+    "file": "wiki/smapi-api/Modder-Guide__APIs__Content.wiki",
+    "bytes": 28431,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/APIs/Content"
+   },
+   "Modding:Modder Guide/APIs/Data": {
+    "group": "smapi-api",
+    "file": "wiki/smapi-api/Modder-Guide__APIs__Data.wiki",
+    "bytes": 6901,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/APIs/Data"
+   },
+   "Modding:Modder Guide/APIs/Events": {
+    "group": "smapi-api",
+    "file": "wiki/smapi-api/Modder-Guide__APIs__Events.wiki",
+    "bytes": 49596,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/APIs/Events"
+   },
+   "Modding:Modder Guide/APIs/Harmony": {
+    "group": "smapi-api",
+    "file": "wiki/smapi-api/Modder-Guide__APIs__Harmony.wiki",
+    "bytes": 6461,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/APIs/Harmony"
+   },
+   "Modding:Modder Guide/APIs/Input": {
+    "group": "smapi-api",
+    "file": "wiki/smapi-api/Modder-Guide__APIs__Input.wiki",
+    "bytes": 10474,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/APIs/Input"
+   },
+   "Modding:Modder Guide/APIs/Integrations": {
+    "group": "smapi-api",
+    "file": "wiki/smapi-api/Modder-Guide__APIs__Integrations.wiki",
+    "bytes": 7240,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/APIs/Integrations"
+   },
+   "Modding:Modder Guide/APIs/Logging": {
+    "group": "smapi-api",
+    "file": "wiki/smapi-api/Modder-Guide__APIs__Logging.wiki",
+    "bytes": 4408,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/APIs/Logging"
+   },
+   "Modding:Modder Guide/APIs/Manifest": {
+    "group": "smapi-api",
+    "file": "wiki/smapi-api/Modder-Guide__APIs__Manifest.wiki",
+    "bytes": 7208,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/APIs/Manifest"
+   },
+   "Modding:Modder Guide/APIs/Multiplayer": {
+    "group": "smapi-api",
+    "file": "wiki/smapi-api/Modder-Guide__APIs__Multiplayer.wiki",
+    "bytes": 10286,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/APIs/Multiplayer"
+   },
+   "Modding:Modder Guide/APIs/Reflection": {
+    "group": "smapi-api",
+    "file": "wiki/smapi-api/Modder-Guide__APIs__Reflection.wiki",
+    "bytes": 3766,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/APIs/Reflection"
+   },
+   "Modding:Modder Guide/APIs/Translation": {
+    "group": "smapi-api",
+    "file": "wiki/smapi-api/Modder-Guide__APIs__Translation.wiki",
+    "bytes": 5397,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/APIs/Translation"
+   },
+   "Modding:Modder Guide/APIs/Utilities": {
+    "group": "smapi-api",
+    "file": "wiki/smapi-api/Modder-Guide__APIs__Utilities.wiki",
+    "bytes": 9523,
+    "url": "https://stardewvalleywiki.com/Modding%3AModder_Guide/APIs/Utilities"
+   },
+   "Modding:Boots": {
+    "group": "content",
+    "file": "wiki/content/Boots.wiki",
+    "bytes": 2843,
+    "url": "https://stardewvalleywiki.com/Modding%3ABoots"
+   },
+   "Modding:Common data field types": {
+    "group": "content",
+    "file": "wiki/content/Common-data-field-types.wiki",
+    "bytes": 25893,
+    "url": "https://stardewvalleywiki.com/Modding%3ACommon_data_field_types"
+   },
+   "Modding:Content Patcher": {
+    "group": "content",
+    "file": "wiki/content/Content-Patcher.wiki",
+    "bytes": 7944,
+    "url": "https://stardewvalleywiki.com/Modding%3AContent_Patcher"
+   },
+   "Modding:Hats": {
+    "group": "content",
+    "file": "wiki/content/Hats.wiki",
+    "bytes": 2605,
+    "url": "https://stardewvalleywiki.com/Modding%3AHats"
+   },
+   "Modding:Items": {
+    "group": "content",
+    "file": "wiki/content/Items.wiki",
+    "bytes": 22556,
+    "url": "https://stardewvalleywiki.com/Modding%3AItems"
+   },
+   "Modding:Migrate to Stardew Valley 1.6": {
+    "group": "content",
+    "file": "wiki/content/Migrate-to-Stardew-Valley-1.6.wiki",
+    "bytes": 299854,
+    "url": "https://stardewvalleywiki.com/Modding%3AMigrate_to_Stardew_Valley_1.6"
+   },
+   "Modding:Pants": {
+    "group": "content",
+    "file": "wiki/content/Pants.wiki",
+    "bytes": 2736,
+    "url": "https://stardewvalleywiki.com/Modding%3APants"
+   },
+   "Modding:Recipe data": {
+    "group": "content",
+    "file": "wiki/content/Recipe-data.wiki",
+    "bytes": 19201,
+    "url": "https://stardewvalleywiki.com/Modding%3ARecipe_data"
+   },
+   "Modding:Shirts": {
+    "group": "content",
+    "file": "wiki/content/Shirts.wiki",
+    "bytes": 3347,
+    "url": "https://stardewvalleywiki.com/Modding%3AShirts"
+   },
+   "Modding:Tailoring": {
+    "group": "content",
+    "file": "wiki/content/Tailoring.wiki",
+    "bytes": 3770,
+    "url": "https://stardewvalleywiki.com/Modding%3ATailoring"
+   },
+   "Modding:Object data": {
+    "group": "content",
+    "file": "wiki/content/Object-data.wiki",
+    "bytes": 14018,
+    "url": "https://stardewvalleywiki.com/Modding%3AObject_data"
+   },
+   "Modding:Mod compatibility": {
+    "group": "compatibility",
+    "file": "wiki/compatibility/Mod-compatibility.wiki",
+    "bytes": 970,
+    "url": "https://stardewvalleywiki.com/Modding%3AMod_compatibility"
+   },
+   "Modding:Player Guide/Key Bindings": {
+    "group": "compatibility",
+    "file": "wiki/compatibility/Player-Guide__Key-Bindings.wiki",
+    "bytes": 10839,
+    "url": "https://stardewvalleywiki.com/Modding%3APlayer_Guide/Key_Bindings"
+   }
+  },
+  "missing": []
+ },
+ "smapi_clone": {
+  "repo": "https://github.com/Pathoschild/SMAPI.git",
+  "head": "79f9bbb",
+  "sparse": [
+   "docs",
+   "src/SMAPI/Events",
+   "src/SMAPI/Framework/Events",
+   "src/SMAPI.Toolkit"
+  ],
+  "files": 266
+ }
+}

@@ -1,0 +1,19 @@
+{{modding player guide header}}
+
+==For players==
+See the [https://smapi.io/mods mod compatibility list] to check your mods!
+
+To update your mods:
+# For each mod you have installed, check the [https://smapi.io/mods mod compatibility list] for instructions. If it's not listed, try updating to its latest version.
+# If a mod is still failing, see [[Modding:Help]] for general help or the [https://forums.stardewvalley.net/threads/unofficial-mod-updates.2096/ unofficial update thread] if it's marked incompatible.
+
+==For mod authors==
+The data for the [https://smapi.io/mods mod compatibility list] is maintained in the {{github|Pathoschild/SmapiCompatibilityList|Pathoschild/SmapiCompatibilityList repo}} on GitHub. Contributions are welcome if you notice something is outdated or missing!
+
+[[Category:Modding]]
+
+[[de:Modding:SMAPI Kompatibilität]]
+[[es:Modding:Compatibilidad de mods]]
+[[ru:Модификации:Совместимость модов]]
+[[tr:Modlama:Mod Uyumluluğu]]
+[[zh:模组:模组兼容性]]

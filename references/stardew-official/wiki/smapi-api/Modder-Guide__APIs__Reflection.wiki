@@ -1,0 +1,76 @@
+{{../../header}}
+
+The reflection API lets you access fields, properties, or methods you otherwise couldn't access. You can use it from <samp>helper.Reflection</samp> in your entry method, or <samp>this.Helper.Reflection</samp> elsewhere in your entry class.
+
+==Intro==
+[https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection ''Reflection''] is a powerful C# feature which lets code analyse and interact with code. SMAPI provides a simplified reflection API focused on accessing private game fields, properties, and methods. SMAPI will automatically handle validation, caching, and performance optimisation.
+
+==Basic reflection==
+===Overview===
+SMAPI provides three overloaded methods to access code: <samp>GetField</samp>, <samp>GetProperty</samp>, and <samp>GetMethod</samp>. Each one takes three arguments:
+{| class="wikitable"
+|-
+! argument
+! purpose
+|-
+| <samp>obj</samp> or <samp>type</samp>
+| The instance (or type if static) which has the private field/property/method you want to access.
+|-
+| <samp>name</samp>
+| The name of the private field/property/method.
+|-
+| <samp>required</samp>
+| Whether to throw a descriptive exception if the field/property/method isn't found. Default true. If set to false, it will return <samp>null</samp> instead and you should validate it yourself.
+|}
+
+Each method returns an object you can use to interact further with it — like getting or setting the field/property value, or invoking the method.
+
+===Fields and properties===
+<samp>GetField</samp> and <samp>GetProperty</samp> are used the same way. Both return an object with two methods: <samp>GetValue</samp> returns the current field/property value, and <samp>SetValue</samp> overrides their value.
+
+You can get the value directly:
+<syntaxhighlight lang="c#">
+// get value of instance field
+bool wasPet = this.Helper.Reflection.GetField<bool>(pet, "wasPetToday").GetValue();
+</syntaxhighlight>
+
+Or you can keep a reference to the reflection data, and change the value separately:
+<syntaxhighlight lang="c#">
+// set value of static field
+IReflectedField<int> soundTimer = this.Helper.Reflection.GetField<int>(typeof(Junimo), "soundTimer");
+soundTimer.SetValue(100);
+</syntaxhighlight>
+
+If you need to access the field/property repeatedly, keeping the reflection object will improve performance.
+
+===Methods===
+<samp>GetMethod</samp> returns an object with one overloaded method. The <samp>Invoke</samp> comes in two forms:
+* <samp>Invoke()</samp> calls a method with no return value.
+* <samp>Invoke&lt;T&gt;()</samp> calls a method which returns a value, where <samp>T</samp> is the expected return type.
+
+For example, this calls the private <samp>TV.getFortuneForecast</samp> method and stores the value it returns:
+<syntaxhighlight lang="c#">
+string forecast = this.Helper.Reflection
+   .GetMethod(new TV(), "getFortuneForecast")
+   .Invoke<string>();
+</syntaxhighlight>
+
+If the method expects arguments, you can just add those to the <samp>Invoke</samp> method:
+<syntaxhighlight lang="c#">
+Vector2 spawnTile = new Vector2(25, 25);
+this.helper.Reflection
+   .GetMethod(Game1.getFarm(), "doSpawnCrow")
+   .Invoke(spawnTile);
+</syntaxhighlight>
+
+==Advanced reflection==
+If you need to do more, you can access the underlying C# reflection types:
+<syntaxhighlight lang="c#">
+FieldInfo field = this.Helper.Reflection.GetField<string>(…).FieldInfo;
+MethodInfo method = this.Helper.Reflection.GetMethod(…).MethodInfo;
+</syntaxhighlight>
+
+Or even use [https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection C# reflection] directly. Note that SMAPI adds caching and optimisations which you'll need to handle yourself if you do this.
+
+[[ru:Модификации:Руководство мододела/API/Рефлексия]]
+[[zh:模组:制作指南/APIs/Reflection]]

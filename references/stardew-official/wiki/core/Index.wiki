@@ -1,0 +1,168 @@
+'''Mods''' are packages of files which change Stardew Valley in some way. Mods can add features (like showing NPCs on the map), change game mechanics (like making fences decay more slowly), make cosmetic changes (like making your house look like a hobbit home), and much more.
+
+==Using mods==
+{|
+|-
+|style="border: 2px solid rgb(0, 116, 72); background: rgba(3, 160, 7, 0.1); padding: 1em;"| <span style="font-size: larger;">'''[[Modding:Player Guide/Getting Started|Using mods]]'''</span><br />How to install SMAPI, use mods, and troubleshoot them. Includes the compatibility list.
+|}
+
+* [[Modding:Help|Get help or ask question]]
+* [[Modding:Community|Join the community]]
+* [[Modding:Using XNB mods|Using XNB mods]] (not recommended)
+
+==Creating mods==
+
+Making mods can be broadly divided into two categories: C# mods and content packs (formatted text files that rely on a framework C# mod). Content packs can make new NPCs, edit maps, add new items, add shops, and more, while C# mods can change fundamental game mechanics. Usually it’s easiest to start with making content packs, since you don't need to learn how to program in C#.
+
+{|
+|-
+|style="border: 2px solid rgb(0, 116, 72); background: rgba(3, 160, 7, 0.1); padding: 1em;"| <span style="font-size: larger;">'''[[Modding:Content pack frameworks|Creating content mods with JSON]]'''</span><br />How to create content packs for frameworks like Content Patcher.
+|-
+|style="border: 2px solid rgb(0, 116, 72); background: rgba(3, 160, 7, 0.1); padding: 1em;"| <span style="font-size: larger;">'''[[Modding:Modder Guide/Get Started|Creating SMAPI mods with C#]]'''</span><br />How to create SMAPI mods, with tutorials and documentation. This includes the full SMAPI API + event reference.
+|-
+|style="border: 2px solid rgb(0, 116, 72); background: rgba(3, 160, 7, 0.1); padding: 1em;"| <span style="font-size: larger;">'''[[Modding:Translations|Translating mods]]'''</span><br />How to contribute mod translations for any language supported by the game. (And for modders, how to enable and request translations.)
+|}
+
+* ''Looking for something specific? Try [{{fullurl:Special:Search|ns570=1}} searching the <samp>Modding</samp> namespace].''
+* [[Modding:Help|Get help or ask question]]
+* [[Modding:Community|Join the community]]
+* [[Modding:Open source|Open source]]
+
+===Specific topics===
+* '''[[Modding:Modder Guide/APIs|SMAPI API reference]]''' (also on the sidebar in the "Creating SMAPI mods" guide above)
+* '''[https://stardewmodding.wiki.gg Modding tutorials wiki]'''
+* [[Modding:Common tasks|Common tasks (SMAPI mods)]]
+* [[Modding:Editing XNB files|Editing XNB files]]
+* [[Modding:IDE reference|IDE reference]]
+
+* Game:
+** [[Modding:Modder Guide/Game Fundamentals|Game fundamentals]]
+** [[Modding:Achievement data|Achievements]]
+** [[Modding:Audio|Audio]]
+** [[Modding:Custom languages|Custom languages]]
+** [[Modding:Console commands|Console commands]]
+** [[Modding:Chat Commands|Chat commands]]
+** [[Modding:World map|World map]]
+** [[Modding:Game state queries|Game state queries]]
+** [[Modding:Stats|Stats]]
+** [[Modding:Trigger actions|Trigger actions]]
+** [[Modding:Tokenizable strings|Tokenizable strings]]
+
+* NPCs:
+** [[Modding:NPC data|Overview]]
+** [[Modding:Custom wedding events|Custom wedding events]]
+** [[Modding:Dialogue|Dialogue]]
+** [[Modding:Event data|Events]]
+** [[Modding:Gift taste data|Gift tastes]]
+** [[Modding:Quest data|Quests]]
+** [[Modding:Schedule data|Schedules]]
+
+* Item data:
+** [[Modding:Items|Items]] &nbsp;([[Modding:Big craftables|Big craftables]] • [[Modding:Boots|Boots]] • [[Modding:Furniture|Furniture]] • [[Modding:Hats|Hats]] • [[Modding:Mannequins|Mannequins]] • [[Modding:Objects|Objects]] • [[Modding:Pants|Pants]] • [[Modding:Shirts|Shirts]] • [[Modding:Tools|Tools]] • [[Modding:Trinkets|Trinkets]] • [[Modding:Wallpaper and flooring|Wallpaper & Flooring]] • [[Modding:Weapons|Weapons]])
+** [[Modding:Crop data|Crops]]
+** [[Modding:Fruit trees|Fruit trees]]
+** [[Modding:Giant crops|Giant crops]]
+** [[Modding:Item queries|Item queries]]
+** [[Modding:Machines|Machines]]
+** [[Modding:Recipe data|Recipes]]
+** [[Modding:Wild trees|Wild trees]]
+
+* Locations and maps:
+** [[Modding:Maps|Maps]]
+** [[Modding:Farm data|Farm data]]
+** [[Modding:Festival data|Festivals]]
+** [[Modding:Fish data|Fish]]
+** [[Modding:Location contexts|Location contexts]]
+** [[Modding:Location data|Locations]]
+** [[Modding:Movie theater data|Movie theater]]
+** [[Modding:Museum|Museum data]]
+** [[Modding:Passive Festival data|Passive festivals]]
+** [[Modding:Weather data|Weather]]
+
+* Other content:
+** [[Modding:Buffs|Buffs]]
+** [[Modding:Buildings|Buildings]]
+** [[Modding:Bundles|Bundles]]
+** [[Modding:Farmer sprite|Farmer sprite]]
+** [[Modding:Fences|Fences]]
+** [[Modding:Floors and Paths|Floors and paths]]
+** [[Modding:Fish ponds|Fish ponds]]
+** [[Modding:Garbage cans|Garbage cans]]
+** [[Modding:Jukebox tracks|Jukebox tracks]]
+** [[Modding:Lost items shop|Lost items shop]]
+** [[Modding:Mail data|Mail]]
+** [[Modding:Minecarts|Minecarts]]
+** [[Modding:Monster eradication goals|Monster eradication goals]]
+** [[Modding:Phone calls|Phone calls]]
+** [[Modding:Shops|Shops]]
+** [[Modding:Powers|Special Items and Powers]]
+** [[Modding:Special orders|Special orders]]
+** [[Modding:Tailoring|Tailoring]]
+
+* Other entities:
+** [[Modding:Animal data|Animals]]
+** [[Modding:Monster data|Monsters]]
+** [[Modding:Pets|Pets]]
+
+* Specialized (normally linked from other pages):
+** [[Modding:Common data field types|Common data field types]]
+
+===Migration guides===
+{| class="wikitable"
+|-
+! release
+! date released
+|-
+| [[Modding:Migrate to SMAPI 2.0|SMAPI 2.0]] || October 2017
+|-
+| [[Modding:Migrate to Stardew Valley 1.3|Stardew Valley 1.3]] || May 2018
+|-
+| [[Modding:Migrate XNB changes to Stardew Valley 1.3|Stardew Valley 1.3 (XNB changes)]] || May 2018
+|-
+| [[Modding:Migrate to Stardew Valley 1.3.36|Stardew Valley 1.3.36]] || March 2019
+|-
+| [[Modding:Migrate to Stardew Valley 1.4|Stardew Valley 1.4]] || November 2019
+|-
+| [[Modding:Migrate to SMAPI 3.0|SMAPI 3.0]] || November 2019
+|-
+| [[Modding:Migrate to Stardew Valley 1.5|Stardew Valley 1.5]] || December 2020
+|-
+| [[Modding:Migrate to Harmony 2.0|Harmony 2.0]] || July 2021
+|-
+| [[Modding:Migrate to Stardew Valley 1.5.5|Stardew Valley 1.5.5]] || November 2021
+|-
+| [[Modding:Migrate to SMAPI 4.0|SMAPI 4.0]] || March 2024
+|-
+| [[Modding:Migrate to Stardew Valley 1.6|Stardew Valley 1.6]] || March 2024
+|-
+| [[Modding:Migrate to Stardew Valley 1.6.9|Stardew Valley 1.6.9]] || November 2024
+|-
+| [[Modding:Migrate to Stardew Valley 1.6.16|Stardew Valley 1.6.16]] || ''upcoming''
+|-
+| [[Modding:Migrate to Stardew Valley 1.7|Stardew Valley 1.7]] || ''upcoming''
+|}
+
+===See also===
+* Pixel art resources:
+** [https://web.archive.org/web/20220204164234/https://sundrop.kvdk.net/files/SundropArtGuide.pdf Stardew Valley art style guide]
+** [https://pixeljoint.com/forum/forum_posts.asp?TID=11299&PID=139322 Pixel art tutorial on Pixel Joint]
+** [https://medium.com/pixel-grimoire/how-to-start-making-pixel-art-2d1e31a5ceab Pixel art guide on Medium]
+* Content pack resources:
+** [https://docs.google.com/spreadsheets/d/1CpDrw23peQiq-C7F2FjYOMePaYe0Rc9BwQsj3h6sjyo The great ID spreadsheet]
+** [https://stardewmodding.wiki.gg/wiki/Custom_NPC_Tiles Custom NPC festival tile positions]
+* Useful tools:
+** [https://smapi.io/mods SMAPI mod compatibility list]
+** [https://smapi.io/log SMAPI log parser]
+** [https://smapi.io/json JSON validator]
+* [[User:Kdau#Notes on Android SMAPI modding|Kdau's notes on Android SMAPI modding]]
+* [[User:Dem1se#Getting_Started_with_Making_UIs| Dem1se's getting started guide on mod UIs]]
+
+[[Category:Modding| ]]
+
+[[de:Modding:Index]]
+[[es:Modding:Índice]]
+[[fr:Modding:Index]]
+[[pt:Modificações:Índice]]
+[[ru:Модификации:Главная]]
+[[tr:Modlama:İndeks]]
+[[zh:使用模组:目录]]

@@ -1,0 +1,620 @@
+← [[Modding:Index|Index]]
+
+This page explains how the game stores and parses item data. This is an advanced guide for mod developers.
+
+==Overview==
+===Item IDs===
+Every item is identified in the game data using a unique item ID. This has two forms:
+
+* The ''unqualified item ID'' (<code>item.ItemId</code>) is a [[Modding:Common data field types#Unique string ID|unique string ID]] for the item, like <samp>128</samp> (vanilla item) or <samp>Example.ModId_Watermelon</samp> (custom item). For legacy reasons, the unqualified ID for vanilla items may not be globally unique; for example, Pufferfish (object 128) and Mushroom Box (bigcraftable 128) both have item ID <samp>128</samp>.
+* The ''qualified item ID'' (<code>item.QualifiedItemId</code>) is a globally unique identifier which combines the item's [[#Item types|type ID]] and unqualified item ID, like <samp>(O)128</samp> for [[Modding:Objects|object]] ID 128.
+
+With [[Modding:Player Guide/Getting Started|SMAPI installed]], you can [[Modding:Console commands#Console commands|run the <samp>list_items</samp> console command]] in-game to search item IDs.
+
+'''Note:''' mods created before Stardew Valley 1.6 may use the <samp>item.ParentSheetIndex</samp> field as an item identifier. This is ''not'' a valid identifier; multiple items of the same type may have the same sprite index for different textures.
+
+===Item types===
+Items are defined by ''item type data definitions'', which handle parsing data of a certain type. For example, the game's <samp>ObjectDataDefinition</samp> class handles producing [[Modding:Objects|object-type items]] by parsing the <samp>Data/Objects</samp> asset.
+
+Each definition has a unique ID like <code>(O)</code>, which is used to form globally unique [[#Item IDs|qualified item IDs]]. In C# code, this is tracked by the <code>item.TypeDefinitionId</code> field, which matches <code>ItemRegistry.type_*</code> constants for vanilla item types.
+
+These are the item types for which custom items can added/edited:
+
+{| class="wikitable"
+|-
+! item type
+! type identifier
+! data asset
+! brief summary
+|-
+| [[Modding:Objects|Objects]]
+| <samp>(O)</samp>
+| <samp>Data/Objects</samp>
+| The most common item type. Depending on their data, they can be placed in the world, picked up, eaten, sold to shops, etc.
+|-
+| [[Modding:Big craftables|Big craftables]]
+| <samp>(BC)</samp>
+| <samp>Data/BigCraftables</samp>
+| Items which can be placed in the world and are two tiles tall (instead of one like objects).
+|-
+| [[Modding:Boots|Boots]]
+| <samp>(B)</samp>
+| <samp>Data/Boots</samp>
+| Items which can be equipped in the player's [[boots]] slot. These change the player sprite and may provide buffs.
+|-
+| [[Modding:Furniture|Furniture]]
+| <samp>(F)</samp>
+| <samp>Data/Furniture</samp>
+| Decorative items which can be placed in the world. In some cases players can sit on them or place items on them.
+|-
+| [[Modding:Hats|Hats]]
+| <samp>(H)</samp>
+| <samp>Data/Hats</samp>
+| Items which can be equipped in the player's [[Hats|hat]] slot. These change the player sprite.
+|-
+| [[Modding:Mannequins|Mannequins]]
+| <samp>(M)</samp>
+| <samp>Data/Mannequins</samp>
+| Decorative items which can be placed in the world, and used to store and display clothing.
+|-
+| [[Modding:Pants|Pants]]
+| <samp>(P)</samp>
+| <samp>Data/Pants</samp>
+| Items which can be equipped in the player's [[Tailoring#Pants|pants]] slot. These change the player sprite.
+|-
+| [[Modding:Shirts|Shirts]]
+| <samp>(S)</samp>
+| <samp>Data/Shirts</samp>
+| Items which can be equipped in the player's [[Tailoring#Shirts|shirt]] slot. These change the player sprite.
+|-
+| [[Modding:Tools|Tools]]
+| <samp>(T)</samp>
+| <samp>Data/Tools</samp>
+| Items that can be swung or used by the player to perform some effect (e.g. dig dirt, chop trees, milk or shear animals, etc).
+|-
+| [[Modding:Trinkets|Trinkets]]
+| <samp>(TR)</samp>
+| <samp>Data/Trinkets</samp>
+| Items that can be equipped in the player's [[Trinkets|trinket]] slot to enable special effects.
+|-
+| [[Modding:Wallpaper and flooring|Wallpaper & flooring]]
+| <samp>(WP)</samp> and <samp>(FL)</samp>
+| <samp>Data/AdditionalWallpaperFlooring</samp>
+| Items which can be applied to a decoratable location (e.g. a [[farmhouse]] or [[shed]]) to visually change its floor or wall design. (These are separate from placeable items like [[Brick Floor|brick floor]].)
+|-
+| [[Modding:Weapons|Weapons]]
+| <samp>(W)</samp>
+| <samp>Data/Weapons</samp>
+| Items which can be swung or used by the player to damage monsters.
+|}
+
+When resolving an unqualified item ID like <samp>128</samp>, the game will get the first item type for which it exists in this order: object, big craftable, furniture, weapon, boots, hat, mannequin, pants, shirt, tool, trinket, wallpaper, and floorpaper.
+
+===Item sprites===
+For each item type, the game has two files in its <samp>Content</samp> folder (which can be [[Modding:Editing XNB files#unpacking|unpacked for editing]]):
+* a ''data asset'' for the text data for its items (names, descriptions, prices, etc);
+* and a ''spritesheet'' for the in-game item icons.
+
+Each item has a <samp>ParentSheetIndex</samp> field which is its position in the item type's spritesheet, starting at 0 in the top-left and incrementing by one as you move across and then down. For example, hat #0 is the first sprite in <samp>Characters/Farmer/hats</samp>.
+
+===Define a custom item===
+You can define custom items for most vanilla item types using only [[Modding:Content Patcher|Content Patcher]] or [[Modding:Modder Guide/APIs/Content|SMAPI's content API]].
+
+For example, this content pack adds a new Pufferchick item with a custom image, custom gift tastes, and a custom crop that produces it. Note that item references in other data assets like <samp>Data/Crops</samp> and <samp>Data/NPCGiftTastes</samp> use the item ID.
+
+{{Content Patcher example|<nowiki>
+    "Changes": [
+        // add item
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Pufferchick": {
+                    "Name": "{{ModId}}_Pufferchick", // best practice to match the ID, since it's sometimes used as an alternate ID (e.g. in Data/CraftingRecipes)
+                    "Displayname": "Pufferchick",
+                    "Description": "An example object.",
+                    "Type": "Seeds",
+                    "Category": -74,
+                    "Price": 1200,
+
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+
+        // add gift tastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Love"],
+                    "Value": "{{ModId}}_Pufferchick",
+                    "Delimiter": " " // if there are already values, add a space between them and the new one
+                }
+            ]
+        },
+
+        // add crop (Pufferchick is both seed and produce, like coffee beans)
+        {
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "{{ModId}}_Pufferchick": {
+                    "Seasons": [ "spring", "summer", "fall" ],
+                    "DaysInPhase": [ 1, 1, 1, 1, 1 ],
+                    "HarvestItemId": "{{ModId}}_Pufferchick",
+
+                    "Texture": "Mods/{{ModId}}/Crops",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+
+        // add item + crop images
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Crops, Mods/{{ModId}}/Objects",
+            "FromFile": "assets/{{TargetWithoutPath}}.png" // assets/Crops.png, assets/Objects.png
+        }
+    ]
+</nowiki>}}
+
+Most item data assets work just like <samp>Data/Objects</samp>. See also specific info for [[Modding:Fruit_trees|custom fruit trees]], [[Modding:Tools|custom tools]], and [[Modding:Weapons|melee weapons]].
+
+===Error items===
+When an item is broken (e.g. due to deleting the mod which adds it), it's represented in-game as a default [[Error Item]] with a <samp>🛇</samp> sprite. This keeps the previous item data in case the item data is re-added.
+
+==Common data==
+===Quality===
+Each item has a quality level which (depending on the item type) may affect its price, health boost, etc. The valid qualities are:
+
+{| class="wikitable"
+|-
+! quality
+! value
+! constant
+|-
+| normal
+| <samp>0</samp>
+| <samp>Object.lowQuality</samp>
+|-
+| silver
+| <samp>1</samp>
+| <samp>Object.medQuality</samp>
+|-
+| gold
+| <samp>2</samp>
+| <samp>Object.highQuality</samp>
+|-
+| iridium
+| <samp>4</samp>
+| <samp>Object.bestQuality</samp>
+|}
+
+===Categories===
+Each item also has a category (represented by a negative integer). In code, you can get an item's category value from <samp>item.Category</samp>, and its translated name from <samp>item.getCategoryName()</samp>. 0 can be used as a blank value. Here are the valid categories:
+
+{| class="wikitable sortable"
+|-
+! value
+! internal constant
+! [[Modding:Context tags|context tag]]
+! English translation
+! Color
+! Properties
+|-
+| -2
+| <samp>Object.GemCategory</samp>
+| <samp>category_gem</samp>
+| Mineral
+|style="background-color:#6E005A;color:#fff;text-align:center"|<samp>#6E005A</samp>
+| Affected by [[Skills#Mining|Gemologist]] profession
+|-
+| -4
+| <samp>Object.FishCategory</samp>
+| <samp>category_fish</samp>
+| Fish
+|style="background-color:#00008B;color:#fff;text-align:center"|<samp>#00008B</samp> (DarkBlue)
+| Affected by [[Skills#Fishing|Fisher]] and [[Skills#Fishing|Angler]] professions
+|-
+| -5
+| <samp>Object.EggCategory</samp>
+| <samp>category_egg</samp>
+| Animal Product
+|style="background-color:#FF0064;color:#000;text-align:center"|<samp>#FF0064</samp>
+| Affected by [[Skills#Farming|Rancher]] profession, can be used in a slingshot
+|-
+| -6
+| <samp>Object.MilkCategory</samp>
+| <samp>category_milk</samp>
+| Animal Product
+|style="background-color:#FF0064;color:#000;text-align:center"|<samp>#FF0064</samp>
+| Affected by [[Skills#Farming|Rancher]] profession
+|-
+| -7
+| <samp>Object.CookingCategory</samp>
+| <samp>category_cooking</samp>
+| Cooking
+|style="background-color:#DC3C00;color:#000;text-align:center"|<samp>#DC3C00</samp>
+|
+|-
+| -8
+| <samp>Object.CraftingCategory</samp>
+| <samp>category_crafting</samp>
+| Crafting
+|style="background-color:#943D28;color:#FFF;text-align:center">|<samp>#943D28</samp>
+| Is Placeable
+|-
+| -9
+| <samp>Object.BigCraftableCategory</samp>
+| <samp>category_big_craftable</samp>
+| 
+| 
+| Is Placeable
+|-
+| -12
+| <samp>Object.mineralsCategory</samp>
+| <samp>category_minerals</samp>
+| Mineral
+|style="background-color:#6E005A;color:#fff;text-align:center"|<samp>#6E005A</samp>
+| Affected by [[Skills#Mining|Gemologist]] profession
+|-
+| -14
+| <samp>Object.meatCategory</samp>
+| <samp>category_meat</samp>
+| Animal Product
+|style="background-color:#FF0064;color:#000;text-align:center"|<samp>#FF0064</samp>
+|
+|-
+| -15
+| <samp>Object.metalResources</samp>
+| <samp>category_metal_resources</samp>
+| Resource
+|style="background-color:#406672;color:#FFF;text-align:center"|<samp>#406672</samp>
+|
+|-
+| -16
+| <samp>Object.buildingResources</samp>
+| <samp>category_building_resources</samp>
+| Resource
+|style="background-color:#406672;color:#FFF;text-align:center"|<samp>#406672</samp>
+|
+|-
+| -17
+| <samp>Object.sellAtPierres</samp>
+| <samp>category_sell_at_pierres</samp>
+|
+| 
+|
+|-
+| -18
+| <samp>Object.sellAtPierresAndMarnies</samp>
+| <samp>category_sell_at_pierres_and_marnies</samp>
+| Animal Product
+|style="background-color:#FF0064;color:#000;text-align:center"|<samp>#FF0064</samp>
+| Affected by [[Skills#Farming|Rancher]] profession
+|-
+| -19
+| <samp>Object.fertilizerCategory</samp>
+| <samp>category_fertilizer</samp>
+| Fertilizer
+|style="background-color:#708090;color:#000;text-align:center"|<samp>#708090</samp> (SlateGray)
+| Is Placeable, is always passable
+|-
+| -20
+| <samp>Object.junkCategory</samp>
+| <samp>category_junk</samp>
+| Trash
+|style="background-color:#696969;color:#000;text-align:center"|<samp>#696969</samp> (DimGray)
+|
+|-
+| -21
+| <samp>Object.baitCategory</samp>
+| <samp>category_bait</samp>
+| Bait
+|style="background-color:#8b0000;color:#FFF;text-align:center"|<samp>#8B0000</samp> (DarkRed)
+| Can be attached to a fishing rod
+|-
+| -22
+| <samp>Object.tackleCategory</samp>
+| <samp>category_tackle</samp>
+| Fishing Tackle
+|style="background-color:#008b8b;color:#FFF;text-align:center"|<samp>#008B8B</samp> (DarkCyan)
+| Can be attached to a fishing rod, cannot stack
+|-
+| -23
+| <samp>Object.sellAtFishShopCategory</samp>
+| <samp>category_sell_at_fish_shop</samp>
+| 
+|
+|
+|-
+| -24
+| <samp>Object.furnitureCategory</samp>
+| <samp>category_furniture</samp>
+| Decor
+|style="background-color:#9650be;color:#FFF;text-align:center"|<samp>#9650BE</samp>
+|
+|-
+| -25
+| <samp>Object.ingredientsCategory</samp>
+| <samp>category_ingredients</samp>
+| Cooking
+|
+|
+|-
+| -26
+| <samp>Object.artisanGoodsCategory</samp>
+| <samp>category_artisan_goods</samp>
+| Artisan Goods
+|style="background-color:#009b6f;color:#000;text-align:center"|<samp>#009B6F</samp>
+| Affected by [[Skills#Farming|Artisan]] profession
+|-
+| -27
+| <samp>Object.syrupCategory</samp>
+| <samp>category_syrup</samp>
+| Artisan Goods
+|style="background-color:#009b6f;color:#000;text-align:center"|<samp>#009B6F</samp>
+| Affected by [[Skills#Foraging|Tapper]] profession
+|-
+| -28
+| <samp>Object.monsterLootCategory</samp>
+| <samp>category_monster_loot</samp>
+| Monster Loot
+|style="background-color:#320a46;color:#fff;text-align:center"|<samp>#320A46</samp>
+|
+|-
+| -29
+| <samp>Object.equipmentCategory</samp>
+| <samp>category_equipment</samp>
+| 
+|
+|
+|-
+| -74
+| <samp>Object.SeedsCategory</samp>
+| <samp>category_seeds</samp>
+| Seed
+|style="background-color:#a52a2a;color:#fff;text-align:center"|<samp>#A52A2A</samp> (Brown)
+| Is Placeable, is always passable
+|-
+| -75
+| <samp>Object.VegetableCategory</samp>
+| <samp>category_vegetable</samp>
+| Vegetable
+|style="background-color:#008000;color:#FFF;text-align:center"|<samp>#008000</samp> (Green)
+| Affected by [[Skills#Farming|Tiller]] profession, can be used in a slingshot
+|-
+| -79
+| <samp>Object.FruitsCategory</samp>
+| <samp>category_fruits</samp>
+| Fruit
+|style="background-color:#ff1493;color:#000;text-align:center"|<samp>#FF1493</samp> (DeepPink)
+| Affected by [[Skills#Farming|Tiller]] profession (if not foraged), can be used in a slingshot
+|-
+| -80
+| <samp>Object.flowersCategory</samp>
+| <samp>category_flowers</samp>
+| Flower
+|style="background-color:#db36d3;color:#000;text-align:center"|<samp>#DB36D3</samp>
+| Affected by [[Skills#Farming|Tiller]] profession
+|-
+| -81
+| <samp>Object.GreensCategory</samp>
+| <samp>category_greens</samp>
+| Forage
+|style="background-color:#0a8232;color:#FFF;text-align:center"|<samp>#0A8232</samp>
+|
+|-
+| -95
+| <samp>Object.hatCategory</samp>
+| <samp>category_hat</samp>
+| 
+|
+|
+|-
+| -96
+| <samp>Object.ringCategory</samp>
+| <samp>category_ring</samp>
+| 
+|
+|
+|-
+| -97
+| <samp>Object.bootsCategory</samp>
+| <samp>category_boots</samp>
+| 
+|
+|
+|-
+| -98
+| <samp>Object.weaponCategory</samp>
+| <samp>category_weapon</samp>
+| 
+|
+|
+|-
+| -99
+| <samp>Object.toolCategory</samp>
+| <samp>category_tool</samp>
+| 
+|
+|
+|-
+| -100
+| <samp>Object.clothingCategory</samp>
+| <samp>category_clothing</samp>
+| 
+|
+|
+|-
+| -101
+| <samp>Object.trinketCategory</samp>
+| <samp>category_trinket</samp>
+| 
+|
+|
+|-
+| -102
+| <samp>Object.booksCategory</samp>
+| 
+| 
+|style="background-color:#552f1b;color:#fff;text-align:center"|<samp>#552F1B</samp>
+|
+|-
+| -103
+| <samp>Object.skillBooksCategory</samp>
+| 
+| 
+|style="background-color:#7a5d27;color:#fff;text-align:center"|<samp>#7A5d27</samp>
+|
+|-
+| -999
+| <samp>Object.litterCategory</samp>
+| <samp>category_litter</samp>
+| 
+|
+|
+|}
+
+{{collapse|Console commands|content=
+With the {{nexus mod|3101|Console Code}} mod installed, you can run this command in the SMAPI console to see a list of objects by category:
+
+<pre>cs return string.Join(`\n`, Game1.objectData.Keys.Select(key => new StardewValley.Object(key, 1)).GroupBy(item => item.Category, item => item.Name).OrderByDescending(p => p.Key).Select(p => $`{p.Key}: {string.Join(`, `, p.OrderBy(name => name))}`));</pre>
+}}
+
+===Context tags===
+A ''context tag'' is an arbitrary data label like <code>category_gem</code> or <code>item_apple</code> attached to items. These provide metadata about items (''e.g.'' their color, quality, category, general groupings like alcohol or fish, etc), and may affect game logic (''e.g.'' machine processing).
+
+See [[Modding:Context tags]] for more info.
+
+==Specific item types==
+For docs about each item type (e.g. objects or weapons), see the [[#Item types|''item types'']] table above.
+
+==For C# mods==
+===Identify items===
+You can uniquely identify items by checking their [[#Item IDs|item ID]] fields. For example:
+
+<syntaxhighlight lang="c#">
+bool isPufferfish = item.QualifiedItemId == "(O)128";
+</syntaxhighlight>
+
+The <samp>ItemRegistry</samp> class also provides methods to work with items. For example:
+<syntaxhighlight lang="c#">
+// check if item would be matched by a qualified or unqualified item ID
+bool isPufferfish = ItemRegistry.HasItemId(item, "128");
+
+// qualify an item ID if needed
+string pufferfishQualifiedId = ItemRegistry.QualifyItemId("128"); // returns "(O)128"
+</syntaxhighlight>
+
+Note that flavored items like [[Jellies and Pickles|jellies]] and [[wine]] don't have their own ID. For example, Blueberry Wine and Wine are both <samp>(O)348</samp>. You can get the flavor item ID from the <samp>preservedParentSheetIndex</samp> field; for example, Blueberry Wine will have the item ID for blueberry. (Despite the name, it contains the item's ID rather than its <samp>ParentSheetIndex</samp>).
+
+===Create item instances===
+The <samp>ItemRegistry.Create</samp> method is the main way to construct items. For example:
+<syntaxhighlight lang="c#">
+Item pufferfish = ItemRegistry.Create("(O)128"); // can optionally specify count and quality
+</syntaxhighlight>
+
+If the ID doesn't match a real item, the <samp>ItemRegistry</samp> will return an [[Error Item]] by default. You can override that by setting <samp>allowNull: true</samp> when calling the method.
+
+You can also get a specific value type instead of <samp>Item</samp> if needed. This will throw a descriptive exception if the type isn't compatible (e.g. you try to convert furniture to boots).
+<syntaxhighlight lang="c#">
+Boots boots = ItemRegistry.Create<Boots>("(B)505"); // Rubber Boots
+</syntaxhighlight>
+
+When creating an item manually instead, make sure to pass its <samp>ItemId</samp> (''not'' <samp>QualifiedItemId</samp>) to the constructor. For example:
+<syntaxhighlight lang="c#">
+Item pufferfish = new Object("128", 1);
+</syntaxhighlight>
+
+===Work with item metadata===
+The <samp>ItemRegistry</samp> class provides several methods for working with item metadata. Some useful methods include:
+
+{| class="wikitable"
+|-
+! method
+! effect
+|-
+| <samp>ItemRegistry.Create</samp>
+| [[#Create item instances|Create an item instance]].
+|-
+| <samp>ItemRegistry.Exists</samp>
+| Get whether a qualified or unqualified item ID matches an existing item. For example:
+<syntaxhighlight lang="c#">
+bool pufferfishExists = ItemRegistry.Exists("(O)128");
+</syntaxhighlight>
+|-
+| <samp>ItemRegistry.IsQualifiedId</samp>
+| Get whether the given item ID is qualified with the type prefix (like <samp>(O)128</samp> instead of <samp>128</samp>).
+|-
+| <samp>ItemRegistry.QualifyItemId</samp>
+| Get the unique qualified item ID given an unqualified or qualified one. For example:
+<syntaxhighlight lang="c#">
+string qualifiedId = ItemRegistry.QualifyItemId("128"); // returns (O)128
+</syntaxhighlight>
+|-
+| <samp>ItemRegistry.GetMetadata</samp>
+| Get high-level info about an item:
+<syntaxhighlight lang="c#">
+// get info about Rubber Boots
+ItemMetadata metadata = ItemRegistry.GetMetadata("(B)505");
+
+// get item ID info
+$"The item has unqualified ID {metadata.LocalId}, qualified ID {metadata.QualifiedId}, and is defined by the {metadata.TypeIdentifier} item data definition.";
+
+// does the item exist in the data files?
+bool exists = metadata.Exists();
+</syntaxhighlight>
+
+And get common parsed item data:
+<syntaxhighlight lang="c#">
+// get parsed info
+ParsedItemData data = metadata.GetParsedData();
+$"The internal name is {data.InternalName}, translated name {data.DisplayName}, description {data.Description}, etc.";
+
+// draw an item sprite
+Texture2D texture = data.GetTexture();
+Rectangle sourceRect = data.GetSourceRect();
+spriteBatch.Draw(texture, Vector2.Zero, sourceRect, Color.White);
+</syntaxhighlight>
+
+And create an item:
+<syntaxhighlight lang="c#">
+Item item = metadata.CreateItem();
+</syntaxhighlight>
+
+And get the type definition (note that this is very specialized, and you should usually use <samp>ItemRegistry</samp> instead to benefit from its caching and optimizations):
+<syntaxhighlight lang="c#">
+IItemDataDefinition typeDefinition = info.GetTypeDefinition();
+</syntaxhighlight>
+|-
+| <samp>ItemRegistry.ResolveMetadata</samp>
+| Equivalent to <samp>ItemRegistry.GetMetadata</samp>, except that it'll return null if the item doesn't exist.
+|-
+| <samp>ItemRegistry.GetData</samp>
+| Get the parsed data about an item, or <samp>null</samp> if the item doesn't exist. This is a shortcut for <code>ItemRegistry.ResolveMetadata(id)?.GetParsedData()</code>; see the previous method for info on the parsed data.
+|-
+| <samp>ItemRegistry.GetDataOrErrorItem</samp>
+| Equivalent to <samp>ItemRegistry.GetData</samp>, except that it'll return info for an [[Error Item]] if the item doesn't exist (e.g. for drawing in inventory).
+|-
+| <samp>ItemRegistry.GetErrorItemName</samp>
+| Get a translated ''Error Item'' label.
+|}
+
+===Define custom item types===
+You can implement <samp>IItemDataDefinition</samp> for your own item type, and call <samp>ItemRegistry.AddTypeDefinition</samp> to register it. This provides all the logic needed by the game to handle the item type: where to get item data, how to draw them, etc.
+
+'''This is extremely specialized''', and multiplayer compatibility is unknown. Most mods should add custom items within the existing types instead.
+
+==See also==
+* For specific item types, see the [[#Item types|''item types'']] table above.
+* [[Modding:Index]] for related content like [[Modding:Crop data|crops]], [[Modding:Fish data|fish]], [[Modding:Gift taste data|gift tastes]], and [[Modding:Recipe data|recipes]]
+
+[[Category:Modding]]
+
+[[ru:Модификации:Предметы]]
+[[zh:模组:物品数据]]

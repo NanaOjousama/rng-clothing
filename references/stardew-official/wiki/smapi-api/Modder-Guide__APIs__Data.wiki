@@ -1,0 +1,142 @@
+{{../../header}}
+
+The data API lets you store arbitrary data and retrieve it later. For example, you can use this to store player progression, custom items that can't be saved by the game, etc.
+
+==Storage options==
+===JSON files===
+You can store data in arbitrary <samp>.json</samp> files in your mod folder. Note that these files will be lost if the player deletes them (''e.g.,'' when updating your mod), so this is mainly useful for bundled files, cache files, etc.
+
+<ol>
+<li>[[#Data model|Create your data model]].</li>
+<li>In your mod code, use the mod helper to read/write a named file. This example assumes you created a class named <samp>ModData</samp>, but you can use different names too.
+
+<syntaxhighlight lang="c#">
+// read file
+var model = this.Helper.Data.ReadJsonFile<ModData>("data.json") ?? new ModData();
+
+// save file (if needed)
+this.Helper.Data.WriteJsonFile("data.json", model);
+</syntaxhighlight>
+
+Note that <samp>ReadJsonFile</samp> will return <samp>null</samp> if the file doesn't exist. The above example will create a default instance if that happens; if you don't want to do that, just remove the <code>?? new ModData()</code> part.</li>
+</ol>
+
+By changing the file path you specify, you can...
+* store JSON files in a subfolder, by specifying a path relative to your mod folder (like <code>"data/some-file.json"</code>). SMAPI will create the folders automatically if needed.
+* create per-save JSON files by using the save ID in the name, like <code>$"data/{Constants.SaveFolderName}.json"</code>.
+
+===Save data===
+You can store arbitrary data in the current save file. This is mainly useful for save-specific data, like player progression and custom items. This is subject to some restrictions: the save file must be loaded (''e.g.,'' it won't work on the title screen), it can't be used by farmhands in multiplayer (you can [[Modding:Modder Guide/APIs/Utilities#Context|check <samp>Context.IsMainPlayer</samp>]]), and it'll be discarded if the player exits without saving. If the data needs to be prepared prior to saving, the [[Modding:Modder Guide/APIs/Events#GameLoop.Saving|<samp>GameLoop.Saving</samp> event]] is a good time to do it.
+
+<ol>
+<li>[[#Data model|Create your data model]].</li>
+<li>[[#Data key|Choose your data key]].</li>
+<li>In your mod code, use the data API to read/write a named entry. This example assumes your data model is <samp>ModData</samp> and your key is <samp>example-key</samp>, but you can use different values.
+
+<syntaxhighlight lang="c#">
+// read data
+var model = this.Helper.Data.ReadSaveData<ModData>("example-key");
+
+// save data (if needed)
+this.Helper.Data.WriteSaveData("example-key", model);
+</syntaxhighlight>
+
+Note that <samp>ReadSaveData</samp> will return <samp>null</samp> if the data doesn't exist. Additionally, <samp>ReadSaveData</samp> is scoped to your mod, so you do not need to prepend with your mod's uniqueID</li>
+</ol>
+
+===Global app data===
+You can store arbitrary data on the local computer, synchronised by GOG/Steam if applicable. This data is global (not per-save) and changes are saved immediately.
+
+<ol>
+<li>[[#Data model|Create your data model]].</li>
+<li>[[#Data key|Choose your data key]].</li>
+<li>In your mod code, use the data API to read/write a named entry. This example assumes your data model is <samp>ModData</samp> and your key is <samp>example-key</samp>, but you can use different values.
+
+<syntaxhighlight lang="c#">
+// read data
+var model = this.Helper.Data.ReadGlobalData<ModData>("example-key");
+
+// save data (if needed)
+this.Helper.Data.WriteGlobalData("example-key", model);
+</syntaxhighlight>
+
+Note that <samp>ReadGlobalData</samp> will return <samp>null</samp> if the data doesn't exist.</li>
+</ol>
+
+==Data model==
+===Creating a data model===
+The ''data model'' is a C# class you create, with properties representing the data you want to store. It can contain almost anything from a few boolean fields to a complex object graph. Here's a simple data model:
+<syntaxhighlight lang="c#">
+public sealed class ModData
+{
+   public bool ExampleBoolean { get; set; }
+   public int ExampleNumber { get; set; }
+}
+</syntaxhighlight>
+
+If you save that model to a JSON file, the file would look like this:
+<syntaxhighlight lang="json">
+{
+   "ExampleBoolean": false,
+   "ExampleNumber": 0
+}
+</syntaxhighlight>
+
+Only public properties and fields will be serialized, and your class needs a zero-parameter constructor. SMAPI uses NewtonSoft to serialize these models, so if you need finer-grained control over what gets serialized, use NewtonSoft annotations.
+
+===Default values===
+You can optionally set default values in your data model:
+<syntaxhighlight lang="c#">
+class ModData
+{
+   public bool ExampleBoolean { get; set; } = true;
+   public int ExampleNumber { get; set; } = 5;
+}
+</syntaxhighlight>
+
+...or set defaults with a constructor:
+
+<syntaxhighlight lang="c#">
+class ModData
+{
+   public bool ExampleBoolean { get; set; }
+   public int ExampleNumber { get; set; }
+
+   public ModData()
+   {
+      this.ExampleBoolean = true;
+      this.ExampleNumber = 5;
+   }
+}
+</syntaxhighlight>
+
+==Data key==
+A ''data key'' identifies your data, which lets you access the data again later. It should be unique within your mod, but there's no need to worry about conflicts with other mods (SMAPI will namespace the key internally). A data key can only contain letters, numbers, underscores, hyphens, or dots.
+
+==Deletion==
+To remove an entry or file, just pass <code>null</code> as the data model. This works with any of the <samp>Write*</samp> methods:
+<syntaxhighlight lang="c#">
+// delete entry (if present)
+this.Helper.Data.WriteSaveData<DataModel>("example-key", null);
+</syntaxhighlight>
+
+==See also==
+===Mod data===
+You can also store custom data for individual game entities which have a <samp>modData</samp> dictionary field. That includes NPCs and players (<samp>Character</samp>), <samp>GameLocation</samp>, <samp>Item</samp>, and <samp>TerrainFeature</samp>. This is persisted to the save file and synchronized in multiplayer.
+
+Usage notes:
+* To avoid mod conflicts, prefixing data fields with your mod ID is strongly recommended (see the example below).
+* When you split an item stack, the new stack copies the previous one's <samp>modData</samp> field; when merged into another stack, the merged items adopt the target stack's mod data. Otherwise mod data has no effect on item split/merge logic (''e.g.,'' you can still merge items with different mod data).</li>
+
+For example, this writes and then reads a custom 'age' value for an item:
+<syntaxhighlight lang="c#">
+// write a custom value
+item.modData[$"{this.ModManifest.UniqueID}/item-age"] = "30";
+
+// read it
+if (item.modData.TryGetValue($"{this.ModManifest.UniqueID}/item-age", out string rawAge) && int.TryParse(rawAge, int age))
+   ...
+</syntaxhighlight>
+
+[[ru:Модификации:Руководство мододела/API/Данные]]
+[[zh:模组:制作指南/APIs/Data]]

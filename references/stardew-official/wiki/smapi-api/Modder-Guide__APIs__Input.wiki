@@ -1,0 +1,242 @@
+{{../../header}}
+
+The input API lets you check and suppress controller/keyboard/mouse state.
+
+==APIs==
+===Check button state===
+<dl>
+<dt><samp>IsDown</samp></dt>
+<dd>
+You can check if any [[#SButton|controller/keyboard/mouse button]] is currently pressed by calling the <samp>IsDown(button)</samp> method. For example:
+<syntaxhighlight lang="c#">
+bool isShiftPressed = this.Helper.Input.IsDown(SButton.LeftShift) || this.Helper.Input.IsDown(SButton.RightShift);
+</syntaxhighlight>
+</dd>
+
+<dt><samp>GetState</samp></dt>
+<dd>
+For more finetuned control, you can check the [[#SButton|button]] state relative to the previous game tick:
+<syntaxhighlight lang="c#">
+SButtonState state = this.Helper.Input.GetState(SButton.LeftShift);
+bool isDown = (state == SButtonState.Pressed || state == SButtonState.Held);
+</syntaxhighlight>
+Available button states:
+{| class="wikitable"
+|-
+! previous tick
+! current tick
+! resulting state
+|-
+| up
+| up
+| <samp>None</samp>
+|-
+| up
+| down
+| <samp>Pressed</samp>
+|-
+| down
+| down
+| <samp>Held</samp>
+|-
+| down
+| up
+| <samp>Released</samp>
+|}
+</dd>
+</dl>
+
+===Check cursor position===
+The <samp>GetCursorPosition()</samp> method provides the [[#ICursorPosition|cursor position in three coordinate systems]].
+
+For example:
+<syntaxhighlight lang="c#">
+// draw text at the cursor position
+ICursorPosition cursorPos = this.Helper.Input.GetCursorPosition();
+Game1.spriteBatch.DrawString(Game1.smallFont, "some text", cursorPos.ScreenPixels, Color.Black);
+</syntaxhighlight>
+
+===Send input===
+You can send [[#SButton|controller/keyboard/mouse button input]] programmatically, which is equivalent to the player physically pressing the button.
+
+{| class="wikitable"
+|-
+! method
+! effect
+|-
+| <code>Press</code>
+| Mark a button as pressed.
+|}
+
+For example, this will make the player move left once:
+<syntaxhighlight lang="c#">
+SButton moveLeft = Game1.options.moveLeftButton[0].ToSButton();
+this.Helper.Input.Press(moveLeft);
+</syntaxhighlight>
+
+The button will be released on the next input tick by default; it can be 'pressed' again each tick to hold it down.
+
+===Suppress input===
+You can prevent the game from handling any [[#SButton|controller/keyboard/mouse button press]] (including clicks) by ''suppressing'' it. This suppression will remain in effect until the player releases the button. This won't prevent other mods from handling it.
+
+{| class="wikitable"
+|-
+! method
+! effect
+|-
+| <code>Suppress</code>
+| Suppress a specified [[#SButton|<samp>SButton</samp>]] value.
+|-
+| <code>SuppressActiveKeybinds</code>
+| Suppress every button that's part of a specified [[#KeybindList|<samp>KeybindList</samp>]]'s activated keybinds.
+|-
+| <code>SuppressScrollWheel</code>
+| Suppress a mouse wheel scroll.
+|-
+| <code>IsSuppressed</code>
+| Get whether a specified [[#SButton|<samp>SButton</samp>]] value is currently suppressed.
+|}
+
+For example:
+<syntaxhighlight lang="c#">
+// prevent game from seeing that LeftShift is pressed
+this.Helper.Input.Suppress(SButton.LeftShift);
+
+// that works for clicks too:
+this.Helper.Input.Suppress(SButton.MouseLeft);
+
+// check if a button is being suppressed:
+bool suppressed = this.Helper.Input.IsSuppressed(SButton.LeftShift);
+</syntaxhighlight>
+
+Side-effects:
+<ul>
+<li>The [[Modding:Modder Guide/APIs/Events#Input.ButtonReleased|<samp>ButtonReleased</samp> event]] will be raised on the next tick for the suppressed input.</li>
+<li>Methods like <samp>helper.Input.IsDown(button)</samp> and <samp>helper.Input.GetState(button)</samp> will show the button as released for the duration of the suppression, even if it's physically still pressed. You can use <samp>helper.Input.IsSuppressed(button)</samp> to check if that's the case (it will only be true until the button is physically released):
+<syntaxhighlight lang="c#">
+bool isPhysicallyDown = helper.Input.IsDown(button) || helper.Input.IsSuppressed(button);
+</syntaxhighlight></li>
+</ul>
+
+==Data structures==
+===SButton===
+SMAPI's <samp>SButton</samp> is a constant which includes every [https://docs.microsoft.com/en-us/previous-versions/windows/xna/bb975202(v%3dxnagamestudio.40) controller], [https://docs.microsoft.com/en-us/previous-versions/windows/xna/bb197781(v%3dxnagamestudio.40) keyboard], and [https://docs.microsoft.com/en-us/previous-versions/windows/xna/bb198097(v%3dxnagamestudio.40) mouse] button. SMAPI events use this to let you handle button presses without needing separate code for each. See [[Modding:Player Guide/Key Bindings]] for a list of values.
+
+SMAPI provides extensions to convert any of the other constants to <samp>SButton</samp>:
+<syntaxhighlight lang="c#">
+SButton key = Keys.A.ToSButton(); // SButton.A
+SButton button = Buttons.A.ToSButton(); // SButton.ControllerA
+SButton input = new InputButton(true).ToSButton(); // SButton.MouseLeft
+</syntaxhighlight>
+
+You can also convert <samp>SButton</samp> to the other constants. This uses a <samp>TryGet</samp> approach since <samp>SButton</samp> is a superset of the others (''e.g.,'' you can't convert <samp>SButton.ControllerA</samp> to a keyboard value):
+<syntaxhighlight lang="c#">
+SButton value = SButton.A;
+if (value.TryGetKeyboard(out Keys key))
+   ...;
+if (value.TryGetController(out Buttons button))
+   ...;
+if (value.TryGetStardewInput(out InputButton input))
+   ...;
+</syntaxhighlight>
+
+Two last extensions let you check how the button is mapped in the game:
+<syntaxhighlight lang="c#">
+SButton button = SButton.MouseLeft;
+if (button.IsUseToolButton())
+   // use tool
+else if (button.IsActionButton())
+   // perform action
+</syntaxhighlight>
+
+You can use <samp>SButton</samp> values directly in your [[../Config|config model]], but <samp>[[#KeybindList|KeybindList]]</samp> is recommended instead in most cases.
+
+===KeybindList===
+SMAPI's <samp>KeybindList</samp> utility lets you manage an arbitrary set of keybindings. A ''keybind list'' has any number of ''keybinds'', each of which has any number of [[#SButton|button codes]]. For example, the keybind list <code>"F2, LeftShift + S"</code> would be pressed if (a) <samp>F2</samp> is pressed, ''or'' (b) both <samp>LeftShift</samp> and <samp>S</samp> are pressed.
+
+You can use a <samp>KeybindList</samp> directly in [[../Config|your <samp>config.json</samp> model]]:
+
+{| class="wikitable"
+|-
+! C# model
+! &nbsp;
+! JSON file
+|-
+| <syntaxhighlight lang="c#">
+class ModConfig
+{
+   public KeybindList ToggleKey { get; set; } = KeybindList.Parse("LeftShift + F2");
+}
+</syntaxhighlight>
+| &rarr;
+| <syntaxhighlight lang="json">
+{
+   "ToggleKey": "LeftShift + F2"
+}
+</syntaxhighlight>
+|}
+
+And you can then check whether it's pressed directly in your code. For example, in a [[../Events|<samp>ButtonsChanged</samp> event handler]]:
+
+<syntaxhighlight lang="c#">
+private void OnButtonsChanged(object sender, ButtonsChangedEventArgs e)
+{
+   if (this.Config.ToggleKey.JustPressed())
+   {
+      // perform desired action
+   }
+}
+</syntaxhighlight>
+
+The <samp>KeybindList</samp> provides a number of methods depending on your use case:
+
+{| class="wikitable"
+|-
+! member
+! description
+|-
+| <code>KeybindList.Parse(…)</code><br /><code>KeybindList.TryParse(…)</code>
+| Parse a keybind string like <code>"F2, LeftShift + S"</code> into a keybind list.
+|-
+| <code>IsBound</code>
+| Whether the keybind list has any keys bound. For example, this would be false for the strings <code>"None"</code> or <code>""</code>.
+|-
+| <code>Keybinds</code>
+| The individual keybinds. In most cases you shouldn't use these directly.
+|-
+| <code>GetState()</code>
+| Get the overall [[#Check button state|keybind state relative to the previous tick]]. This state is transitive across keybinds; ''e.g.,'' if the player releases one keybind and immediately presses another within the list, the overall state is <samp>Held</samp>.
+|-
+| <code>IsDown()</code>
+| Get whether any keybind in the list is currently down (''i.e.,'' the player pressed or is holding down the keys).
+|-
+| <code>JustPressed()</code>
+| Get whether the player just activated the keybind during the current tick (''i.e.,'' <code>GetState()</code> returns <samp>Pressed</samp> instead of <samp>Held</samp>).
+|-
+| <code>GetKeybindCurrentlyDown()</code>
+| Get the individual <samp>Keybind</samp> in the list which is currently down, if any. If there are multiple keybinds down, the first one is returned.
+|-
+| <code>ToString()</code>
+| Get a string representation of the input binding (''e.g.,'' <code>"F2, LeftShift + S"</code>).
+|}
+
+Caveats:
+* '''Don't use the <samp>ButtonPressed</samp> [[../Events|event]] to check keybinds''', since it's raised once for each button pressed. If the player presses two keys at once, your keybind would be activated twice. Use <samp>ButtonsChanged</samp> instead.
+
+===ICursorPosition===
+SMAPI's <samp>ICursorPosition</samp> provides the cursor position in four coordinate systems:
+* <samp>AbsolutePixels</samp> is the pixel position relative to the top-left corner of the in-game map, adjusted for [[Modding:Modder Guide/Game Fundamentals#Zoom level|zoom]] but not [[Modding:Modder Guide/Game Fundamentals#UI scaling|UI scaling]].
+* <samp>ScreenPixels</samp> is the pixel position relative to the top-left corner of the visible screen, adjusted for [[Modding:Modder Guide/Game Fundamentals#Zoom level|zoom]] but not [[Modding:Modder Guide/Game Fundamentals#UI scaling|UI scaling]].
+* <samp>Tile</samp> is the [[Modding:Modder Guide/Game Fundamentals#Tiles|tile position]] under the cursor.
+* <samp>GrabTile</samp> is the tile position that the game considers under the cursor for the purposes of clicking actions. This automatically accounts for controller mode. This may be different than <samp>Tile</samp> if that's too far from the player.
+
+This is returned by the <samp>this.Helper.Input.GetCursorPosition()</samp> method and in the event args for some input events.
+
+'''The pixel positions are ''not'' adjusted for [[Modding:Modder Guide/Game Fundamentals#UI scaling|UI scaling]]''' (''i.e.,'' they're non-UI mode). Whether you need UI or non-UI positions depends how you're using them, so you can use <samp>cursorPos.GetScaledAbsolutePixels()</samp> or <samp>cursorPos.GetScaledScreenPixels()</samp> to adjust them automatically for the current mode or <samp>Utility.ModifyCoordinatesForUIScale</samp> to always get UI mode coordinates.
+
+==See also==
+* [[../Events#Input|Input events]]
+* [[Modding:Player Guide/Key Bindings]] for a list of valid <samp>SButton</samp> values
+
+[[ru:Модификации:Руководство мододела/API/Ввод]]
+[[zh:模组:制作指南/APIs/Input]]

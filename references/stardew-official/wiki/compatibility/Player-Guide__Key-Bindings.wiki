@@ -1,0 +1,425 @@
+{{modding player guide header}}
+
+Some mods let you edit key bindings, which are controller/keyboard/mouse buttons which do something in-game. This page explains how to configure them. (This works for any mod using SMAPI's standard APIs.)
+
+==How to…==
+===Configure a mod's bindings===
+# Install the mod ([[Modding:Player Guide/Getting Started|see player guide]]).
+# Run SMAPI at least once with the mod to let it generate its config file.
+# Edit <samp>config.json</samp> in the mod's folder with a text editor.
+# Change the key options using [[#Button codes|the values below]]. (On macOS, make sure it doesn't change to curly quotes.)
+
+Note that some mods may not be configurable.
+
+===Disable a mod's key binding===
+You can use <samp>"None"</samp> to disable a key binding.
+
+===Find the code for a key===
+[[#Button codes|''Button codes'']] below shows all available codes, but sometimes it's not clear which one applies (''e.g.,'' for non-English keyboards). Here's how to check:
+
+# Launch the game.
+# In the SMAPI console window, enter the <samp>log_context</samp> command.
+# In the game, press the keys you want to test.
+# The SMAPI console will list the codes for the keys it received.
+
+===Use key bindings on Android===
+* You can [[#Mobile|bind physical mobile buttons]], but there aren't many available.
+* Otherwise you can use the {{Nexus mod|29884|Virtual Keyboard}} mod to add on-screen buttons you can tap to send them to installed mods. See the mod page for how to use it.
+* Additionally, if you use a controller on mobile, controller assignments will still work, both with vanilla controls, as well as with mods. Just use the normal controller keys.
+
+==Button codes==
+===Keyboard===
+; common keys
+: {| class="wikitable"
+|-
+! value
+! description
+|-
+| <samp>A</samp> through <samp>Z</samp>
+| The letter keys.
+|-
+| <samp>D0</samp> through <samp>D9</samp>
+| The number keys.
+|-
+| <samp>Down</samp>, <samp>Left</samp>,<br /><samp>Right</samp>, <samp>Up</samp>
+| The arrow keys.
+|-
+| <samp>F1</samp> through <samp>F24</samp>
+| The function keys.
+|-
+| <samp>Apps</samp>
+| The applications or menu ({{key|▤}}) key, typically located next to your right {{key|CTRL}} key.
+|-
+| <samp>Back</samp>
+| The backspace ({{key|⌫}} or {{key|⟵}}) key.
+|-
+| <samp>CapsLock</samp>
+| The {{key|CAPS LOCK}} or {{key|⇪}} key.
+|-
+| <samp>Enter</samp>
+| The {{key|ENTER}} or {{key|↵}} key.
+|-
+| <samp>Escape</samp>
+| The {{key|ESC}} key.
+|-
+| <samp>LeftAlt</samp>, <samp>RightAlt</samp>
+| The {{key|ALT}} keys.
+|-
+| <samp>LeftControl</samp>, <samp>RightControl</samp>
+| The {{key|CTRL}} keys.
+|-
+| <samp>LeftShift</samp>, <samp>RightShift</samp>
+| The {{key|SHIFT}} or {{key|⇧}} keys.
+|-
+| <samp>LeftWindows</samp>, <samp>RightWindows</samp>
+| The Windows keys.
+|-
+| <samp>OemCloseBrackets</samp>
+| The {{key|]}} key.
+|-
+| <samp>OemComma</samp>
+| The {{key|,}}	key.
+|-
+| <samp>OemMinus</samp>
+| The {{key|-}} key.
+|-
+| <samp>OemOpenBrackets</samp>
+| The {{key|[}} key.
+|-
+| <samp>OemPeriod</samp>
+| The {{key|.}} key.
+|-
+| <samp>OemPipe</samp>
+| The {{key|&#124;}} key.
+|-
+| <samp>OemPlus</samp>
+| The {{key|+}} key.
+|-
+| <samp>OemQuestion</samp>
+| The {{key|?}} key on a US standard keyboard.
+|-
+| <samp>OemQuotes</samp>
+| The {{key|'}} or {{key|"}} key on a US standard keyboard.
+|-
+| <samp>OemSemicolon</samp>
+| The {{key|;}} key on a US standard keyboard.
+|-
+| <samp>OemTilde</samp>
+| The {{key|~}} key on a US standard keyboard.
+|-
+| <samp>Space</samp>
+| The space bar.
+|-
+| <samp>Tab</samp>
+| The {{key|TAB}} key.
+|}
+
+; numeric pad
+:{| class="wikitable"
+|-
+! value
+! description
+|-
+| <samp>Numpad0</samp> through <samp>Numpad9</samp>
+| The numpad number keys.
+|-
+| <samp>Add</samp>
+| The {{key|+}} numpad key.
+|-
+| <samp>Subtract</samp>
+| The {{key|-}} numpad key.
+|-
+| <samp>Divide</samp>
+| The {{key|/}} numpad key.
+|-
+| <samp>Multiply</samp>
+| The {{key|*}} numpad key.
+|-
+| <samp>NumLock</samp>
+| The numeric lock, {{key|NUMLOCK}}, {{key|NUMLK}}, or {{key|NUM}} key.
+|}
+
+; control keys (above arrow keys)
+:{| class="wikitable"
+|-
+! value
+! description
+|-
+| <samp>Delete</samp>
+| The {{key|DEL}} key.
+|-
+| <samp>End</samp>
+| The {{key|END}} key.
+|-
+| <samp>Insert</samp>
+| The {{key|INS}} key.
+|-
+| <samp>PageDown</samp>, <samp>PageUp</samp>
+| The {{key|PAGE UP}} and {{key|PAGE DOWN}} keys.
+|-
+| <samp>Pause</samp>
+| The {{key|PAUSE}} key.
+|-
+| <samp>PrintScreen</samp>
+| The {{key|PRT SCR}} key.
+|-
+| <samp>Scroll</samp>
+| The {{key|SCR LK}} key.
+|}
+
+; uncommon keys
+:{| class="mw-collapsible mw-collapsed wikitable"
+|-
+!
+|-
+! value
+! description
+|-
+| <samp>BrowserBack</samp>
+| The browser back key.
+|-
+| <samp>BrowserFavorites</samp>
+| The browser favorites key.
+|-
+| <samp>BrowserForward</samp>
+| The browser forward key.
+|-
+| <samp>BrowserHome</samp>
+| The browser start and home key.
+|-
+| <samp>BrowserRefresh</samp>
+| The browser refresh key.
+|-
+| <samp>BrowserSearch</samp>
+| The browser search key.
+|-
+| <samp>BrowserStop</samp>
+| The browser stop key.
+|-
+| <samp>ChatPadGreen</samp>
+| The green ChatPad key.
+|-
+| <samp>ChatPadOrange</samp>
+| The orange ChatPad key.
+|-
+| <samp>Crsel</samp>
+| The cursor select key.
+|-
+| <samp>Decimal</samp>
+| The decimal key.
+|-
+| <samp>EraseEof</samp>
+| The erase EOF key.
+|-
+| <samp>Execute</samp>
+| The execute key.
+|-
+| <samp>Exsel</samp>
+| The execute selection key.
+|-
+| <samp>Help</samp>
+| The help key.
+|-
+| <samp>Home</samp>
+| The home key.
+|-
+| <samp>ImeConvert</samp>
+| The IME convert key.
+|-
+| <samp>ImeNoConvert</samp>
+| The IME no-convert key.
+|-
+| <samp>Kana</samp>
+| The Kana key on Japanese keyboards.
+|-
+| <samp>Kanji</samp>
+| The Kanji key on Japanese keyboards.
+|-
+| <samp>LaunchApplication1</samp>
+| The Start Application 1 key.
+|-
+| <samp>LaunchApplication2</samp>
+| The Start Application 2 key.
+|- 
+| <samp>LaunchMail</samp>
+| The Start Mail key.
+|-
+| <samp>MediaNextTrack</samp>
+| The Next Track key.
+|-
+| <samp>MediaPlayPause</samp>
+| The Play/Pause Media key.
+|-
+| <samp>MediaPreviousTrack</samp>
+| The Previous Track key.
+|-
+| <samp>MediaStop</samp>
+| The Stop Media key.
+|-
+| <samp>Oem8</samp>
+| Varies by keyboard.
+|-
+| <samp>OemAuto</samp>
+| OEM Auto key.
+|-
+| <samp>OemBackslash</samp>
+| The The OEM angle bracket or backslash key on the RT 102 key keyboard.
+|-
+| <samp>OemClear</samp>
+| The OEM clear key.
+|-
+| <samp>OemCopy</samp>
+| The OEM copy key.
+|-
+| <samp>OemEnlW</samp>
+| The OEM Enlarge Window key.
+|-
+| <samp>PA1</samp>
+| The PA1 key.
+|-
+| <samp>Play</samp>
+| The play key.
+|-
+| <samp>Print</samp>
+| The {{key|PRINT}} key.
+|-
+| <samp>ProcessKey</samp>
+| The IME process key.
+|-
+| <samp>Select</samp>
+| The select key.
+|-
+| <samp>SelectMedia</samp>
+| The select media key.
+|-
+| <samp>Separator</samp>
+| The separator key.
+|-
+| <samp>Sleep</samp>
+| The computer sleep key.
+|-
+| <samp>VolumeDown</samp>, <samp>VolumeUp</samp>
+| The volume down/up keys.
+|-
+| <samp>VolumeMute</samp>
+| The volume mute keys.
+|-
+| <samp>Zoom</samp>
+| The zoom key.
+|}
+
+===Controller===
+{| class="wikitable"
+|-
+! value
+! description
+|-
+| <samp>ControllerA</samp>, <samp>ControllerB</samp>,<br /><samp>ControllerX</samp>, <samp>ControllerY</samp>
+| The main buttons.
+|-
+| <samp>ControllerBack</samp>
+| The 'BACK' button on an XBox controller.
+|-
+| <samp>ControllerStart</samp>
+| The 'START' button.
+|-
+| <samp>BigButton</samp>
+| The 'big button' on the XBox Big Button controller.
+|-
+| <samp>DPadDown</samp>, <samp>DPadLeft</samp><br /><samp>DPadRight</samp>, <samp>DPadUp</samp>
+| The directional pad buttons.
+|-
+| <samp>LeftShoulder</samp>, <samp>RightShoulder</samp>
+| The bumper (shoulder) buttons. 
+|-
+| <samp>LeftTrigger</samp>, <samp>RightTrigger</samp>
+| The trigger buttons.
+|-
+| <samp>LeftStick</samp>, <samp>RightStick</samp>
+| The left/right thumbsticks when clicked or pressed as a button.
+|-
+| <samp>LeftThumbstickDown</samp>, <samp>LeftThumbstickLeft</samp>,<br /><samp>LeftThumbstickRight</samp>, <samp>LeftThumbstickUp</samp>
+| The left thumbstick when pushed in a direction.
+|-
+| <samp>RightThumbstickDown</samp>, <samp>RightThumbstickLeft</samp>,<br /><samp>RightThumbstickRight</samp>, <samp>RightThumbstickUp</samp>
+| The right thumbstick when pushed in a direction.
+|}
+
+===Mouse===
+{| class="wikitable"
+|-
+! value
+! description
+|-
+| <samp>MouseLeft</samp>
+| The left mouse button.
+|-
+| <samp>MouseRight</samp>
+| The right mouse button.
+|-
+| <samp>MouseMiddle</samp>
+| The middle mouse button.
+|-
+| <samp>MouseX1</samp>, <samp>MouseX2</samp>
+| The extended mouse buttons (varies by mouse).
+|}
+
+===Mobile===
+{| class="wikitable"
+|-
+! value
+! description
+|-
+| <samp>VolumeUp</samp>, <samp>VolumeDown</samp>
+| The volume up/down buttons.
+|}
+
+==Device mappings==
+===Steam Deck===
+The Steam deck is mapped as a controller (see [[#Controller|controller codes]]), and you can remap buttons using Steam Input. Here's how the different Steam Deck buttons are mapped by default:
+
+{| class="wikitable"
+|-
+! button
+! mapped as
+|-
+| A, B, X, Y<br />left/right shoulder<br />left/right trigger buttons<br />left/right thumbstick<br />D-Pad<br />Start<br />Select
+| Sends the equivalent controller codes.
+|-
+| left touchpad
+| Sends equivalent D-Pad codes when touching the edges (e.g. left edge is <samp>DPadLeft</samp>).
+|-
+| right touchpad
+| Sends right thumbstick codes.
+|-
+| 'Back grip' buttons (L4, L5, R4, R5)
+| Not sent to the game by default, unless mapped to a key in Steam Input.
+|-
+| {{key|Steam}}<br />{{key|...}}
+| Not sent to the game.
+|}
+
+You can also rebind physical keys in the Steam Deck settings:
+# Go to ''Controller Settings > Edit Layout''.
+# Choose the button to rebind.
+# Choose ''Command Page > Keyboard''.
+# Choose the keyboard button to bind it to.
+# Now when you press that physical button in-game, it'll send the new keyboard code instead.
+
+==Multi-key bindings==
+Mods using SMAPI 3.9+ features can support multi-key bindings. That lets you combine multiple [[#Button codes|button codes]] into a combo keybind, and list alternate keybinds. For example, <code>"LeftShoulder, LeftControl + S"</code> will apply if <samp>LeftShoulder</samp> is pressed, ''or'' if both <samp>LeftControl</samp> and <samp>S</samp> are pressed. 
+
+Some things to keep in mind:
+* The order doesn't matter, so <code>"LeftControl + S"</code> and <code>"S + LeftControl"</code> are equivalent.
+* SMAPI doesn't prevent mods from using overlapping hotkeys. For example, if one mod uses <code>"S"</code> and the other mod uses <code>"LeftControl + S"</code>, pressing <samp>LeftControl</samp> and <samp>S</samp> will activate both.
+
+==See also==
+* [[Controls]] for the game's default bindings
+* [[Modding:Modder Guide/APIs/Input|SMAPI input events]] for mod authors
+
+[[Category:Modding]]
+
+[[de:Modding:Spieleranleitung/Tastenbelegung]]
+[[es:Modding:Guía del jugador/Enlaces de teclas]]
+[[ru:Модификации:Руководство по использованию модификаций/Привязка клавиш]]
+[[zh:模组:使用指南/按键绑定]]

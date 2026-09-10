@@ -1,0 +1,72 @@
+← [[Modding:Items|Items]]
+
+This page explains how the game stores and parses pants-type item data. For items in general, see [[Modding:Items]].
+
+==Overview==
+Pants are items that can be equipped in the player's [[Tailoring#Pants|pants]] slot. These change the player sprite.
+
+They have [[Modding:Items#Item types|item type]] <code>(P)</code> (or <code>ItemRegistry.type_pants</code> in C# code), their data in <samp>Data/Pants</samp>, their icon sprites in <samp>Characters/Farmer/pants</samp> by default, and their code in <samp>StardewValley.Objects.Clothing</samp>.
+
+==Data format==
+The pants data in <samp>Data/Pants</samp> consists of a string → model lookup, where...
+* The key is the [[Modding:Common data field types#Item ID|unqualified item ID]].
+* The value is a model with the fields listed below.
+
+===Basic data===
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+| <samp>Name</samp>
+| ''(Optional)'' The internal name for the item. Default <samp>Pants</samp>.
+|-
+| <samp>DisplayName</samp><br /><samp>Description</samp>
+| ''(Optional)'' A [[Modding:Tokenizable strings|tokenizable string]] for the item's in-game display name and description. Defaults to the generic pants text (''Pants'' and ''A wearable pair of pants'').
+|-
+| <samp>Price</samp>
+| ''(Optional)'' The default price when the item is sold to the player in a shop. Default 50.
+|}
+
+===Appearance===
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+| <samp>Texture</samp>
+| The asset name for the texture containing the pants' sprite. Defaults to <samp>Characters/Farmer/pants</samp>.
+|-
+| <samp>SpriteIndex</samp>
+| The pants' sprite index within the <samp>Texture</samp>, where 0 is the top-left set.
+|-
+| <samp>DefaultColor</samp>
+| ''(Optional)'' The dye color to apply to the sprite when the player hasn't [[dyeing|dyed]] it yet, if any. See [[Modding:Common_data_field_types#Color|color format]]. Default <samp>255 235 203</samp> (which matches the color of the cloth item).
+|-
+| <samp>CanBeDyed</samp>
+| ''(Optional)'' Whether the player can [[dyeing|dye]] these pants. Default false.
+|-
+| <samp>IsPrismatic</samp>
+| ''(Optional)'' Whether the pants continuously shift colors. This overrides <samp>DefaultColor</samp> and <samp>CanBeDyed</samp> if set. Default false.
+|}
+
+===Other===
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+| <samp>CanChooseDuringCharacterCustomization</samp>
+| ''(Optional)'' Whether these pants can be selected on the character customization screen (e.g. when creating a character). Default false.
+|-
+| <samp>CustomFields</samp>
+| The [[Modding:Common_data_field_types#Custom_fields|custom fields]] for this entry.
+|}
+
+==See also==
+* [[Modding:Items]] for item data in general
+
+[[Category:Modding]]
+
+[[ru:Модификации:Штаны]]
+[[zh:模组:裤子]]

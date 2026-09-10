@@ -1,0 +1,402 @@
+← [[Modding:Index|Index]]
+
+This page documents common field types which appear in [[Modding:Editing XNB files|the game's data files]].
+
+You normally don't need to read through this page directly; specific sections are linked from field docs on other pages.
+
+==String formats==
+These formats can only be used in fields that specifically support them. The field docs will link to this page if applicable.
+
+===Unique string ID===
+The game identifies data using unique string IDs. For example, <code>Town</code> is the unique ID for the [[Pelican Town]] location; no other location can use that ID. The IDs are used for a wide range of purposes, from internal game logic to [[Modding:Content Patcher|content pack edits]].
+
+Best practices for mods:
+# '''Use namespaced IDs prefixed with your [[Modding:Modder Guide/APIs/Manifest#Basic fields|mod's unique ID]].''' For example, if your mod ID is <code>Example.PufferchickMod</code> and you're adding a pufferchick plushy, your item ID would look like <code>Example.PufferchickMod_PufferchickPlushy</code>. Prefer that ''exact'' format; it's the one expected by the game code and parsed by other mods.
+# '''Only use alphanumeric, underscore, and dot characters''' in string IDs (<code>a–z A–Z 0–9 _ .</code>). This is important because they're often used in places where some characters have special meaning (like file names or [[#Game state query|game state queries]]).
+# '''Insert the mod ID automatically''' to avoid typos and inconsistent capitalization (so it's compatible with mods which parse it):
+#* In a [[Modding:Content Patcher|Content Patcher pack]], use <code><nowiki>{{ModId}}_PufferchickPlushy</nowiki></code>. (Type the exact string <code><nowiki>{{ModId}}</nowiki></code>; it's a token recognized by Content Patcher.)
+#* In a C# mod, use <code><nowiki>$"{this.ModManifest.UniqueID}_PufferchickPlushy"</nowiki></code>.
+
+You're strongly encouraged to use this exact format to maintain good mod compatibility, eliminate ID conflicts, and make it easy (for both troubleshooters and mod code) to identify which mod added custom content.
+
+===Asset name===
+An ''asset name'' uniquely identifies a [[Modding:Editing XNB files|game asset]]. These usually match files in the game's <samp>Content</samp> folder, but mods can add custom assets using [[Modding:Content Patcher|Content Patcher]] or the [[Modding:Modder Guide/APIs/Content|C# content API]].
+
+For example, <samp>Portraits/Abigail</samp> contains [[Abigail]]'s portraits.
+
+Asset names '''do not''' include the <code>Content/</code> prefix, file extension, or locale code. For example, the <samp>Content/Data/Achievements.de-DE.xnb</samp> file has asset name <samp>Data/Achievements</samp>.
+
+===Color===
+Data assets can define colors using a standard format. For example:
+<syntaxhighlight lang="js">
+"DebrisColor": "White"
+</syntaxhighlight>
+
+The supported color formats are:
+{| class="wikitable"
+|-
+! format
+! example
+|-
+| A [https://learn.microsoft.com/en-us/dotnet/api/system.drawing.color?view=netframework-4.8.1#properties <samp>Color</samp> property name].
+
+{{collapse|show color names|content=&#32;
+<div style="border: 1px solid #0000; border-left-width:1.5em; padding: 2px;">Transparent</div>
+<div style="border: 1px solid #696969; border-left-width:1.5em; padding: 2px;">DimGray</div>
+<div style="border: 1px solid #808080; border-left-width:1.5em; padding: 2px;">Gray</div>
+<div style="border: 1px solid #A9A9A9; border-left-width:1.5em; padding: 2px;">DarkGray</div>
+<div style="border: 1px solid #C0C0C0; border-left-width:1.5em; padding: 2px;">Silver</div>
+<div style="border: 1px solid #D3D3D3; border-left-width:1.5em; padding: 2px;">LightGray</div>
+<div style="border: 1px solid #DCDCDC; border-left-width:1.5em; padding: 2px;">Gainsboro</div>
+<div style="border: 1px solid #F5F5F5; border-left-width:1.5em; padding: 2px;">WhiteSmoke</div>
+<div style="border: 1px solid #FFF; border-left-width:1.5em; padding: 2px;">White</div>
+<div style="border: 1px solid #000; border-left-width:1.5em; padding: 2px;">Black</div>
+<div style="border: 1px solid #FFFAFA; border-left-width:1.5em; padding: 2px;">Snow</div>
+<div style="border: 1px solid #BC8F8F; border-left-width:1.5em; padding: 2px;">RosyBrown</div>
+<div style="border: 1px solid #F08080; border-left-width:1.5em; padding: 2px;">LightCoral</div>
+<div style="border: 1px solid #CD5C5C; border-left-width:1.5em; padding: 2px;">IndianRed</div>
+<div style="border: 1px solid #A52A2A; border-left-width:1.5em; padding: 2px;">Brown</div>
+<div style="border: 1px solid #B22222; border-left-width:1.5em; padding: 2px;">Firebrick</div>
+<div style="border: 1px solid #800000; border-left-width:1.5em; padding: 2px;">Maroon</div>
+<div style="border: 1px solid #8B0000; border-left-width:1.5em; padding: 2px;">DarkRed</div>
+<div style="border: 1px solid #F00; border-left-width:1.5em; padding: 2px;">Red</div>
+<div style="border: 1px solid #FFE4E1; border-left-width:1.5em; padding: 2px;">MistyRose</div>
+<div style="border: 1px solid #FA8072; border-left-width:1.5em; padding: 2px;">Salmon</div>
+<div style="border: 1px solid #FF6347; border-left-width:1.5em; padding: 2px;">Tomato</div>
+<div style="border: 1px solid #E9967A; border-left-width:1.5em; padding: 2px;">DarkSalmon</div>
+<div style="border: 1px solid #E73C00; border-left-width:1.5em; padding: 2px;">MonoGameOrange</div>
+<div style="border: 1px solid #FF7F50; border-left-width:1.5em; padding: 2px;">Coral</div>
+<div style="border: 1px solid #FF4500; border-left-width:1.5em; padding: 2px;">OrangeRed</div>
+<div style="border: 1px solid #FFA07A; border-left-width:1.5em; padding: 2px;">LightSalmon</div>
+<div style="border: 1px solid #A0522D; border-left-width:1.5em; padding: 2px;">Sienna</div>
+<div style="border: 1px solid #FFF5EE; border-left-width:1.5em; padding: 2px;">SeaShell</div>
+<div style="border: 1px solid #D2691E; border-left-width:1.5em; padding: 2px;">Chocolate</div>
+<div style="border: 1px solid #8B4513; border-left-width:1.5em; padding: 2px;">SaddleBrown</div>
+<div style="border: 1px solid #F4A460; border-left-width:1.5em; padding: 2px;">SandyBrown</div>
+<div style="border: 1px solid #FFDAB9; border-left-width:1.5em; padding: 2px;">PeachPuff</div>
+<div style="border: 1px solid #CD853F; border-left-width:1.5em; padding: 2px;">Peru</div>
+<div style="border: 1px solid #FAF0E6; border-left-width:1.5em; padding: 2px;">Linen</div>
+<div style="border: 1px solid #FFE4C4; border-left-width:1.5em; padding: 2px;">Bisque</div>
+<div style="border: 1px solid #FF8C00; border-left-width:1.5em; padding: 2px;">DarkOrange</div>
+<div style="border: 1px solid #DEB887; border-left-width:1.5em; padding: 2px;">BurlyWood</div>
+<div style="border: 1px solid #FAEBD7; border-left-width:1.5em; padding: 2px;">AntiqueWhite</div>
+<div style="border: 1px solid #D2B48C; border-left-width:1.5em; padding: 2px;">Tan</div>
+<div style="border: 1px solid #FFDEAD; border-left-width:1.5em; padding: 2px;">NavajoWhite</div>
+<div style="border: 1px solid #FFEBCD; border-left-width:1.5em; padding: 2px;">BlanchedAlmond</div>
+<div style="border: 1px solid #FFEFD5; border-left-width:1.5em; padding: 2px;">PapayaWhip</div>
+<div style="border: 1px solid #FFE4B5; border-left-width:1.5em; padding: 2px;">Moccasin</div>
+<div style="border: 1px solid #FFA500; border-left-width:1.5em; padding: 2px;">Orange</div>
+<div style="border: 1px solid #F5DEB3; border-left-width:1.5em; padding: 2px;">Wheat</div>
+<div style="border: 1px solid #FDF5E6; border-left-width:1.5em; padding: 2px;">OldLace</div>
+<div style="border: 1px solid #FFFAF0; border-left-width:1.5em; padding: 2px;">FloralWhite</div>
+<div style="border: 1px solid #B8860B; border-left-width:1.5em; padding: 2px;">DarkGoldenrod</div>
+<div style="border: 1px solid #DAA520; border-left-width:1.5em; padding: 2px;">Goldenrod</div>
+<div style="border: 1px solid #FFF8DC; border-left-width:1.5em; padding: 2px;">Cornsilk</div>
+<div style="border: 1px solid #FFD700; border-left-width:1.5em; padding: 2px;">Gold</div>
+<div style="border: 1px solid #FFFACD; border-left-width:1.5em; padding: 2px;">LemonChiffon</div>
+<div style="border: 1px solid #F0E68C; border-left-width:1.5em; padding: 2px;">Khaki</div>
+<div style="border: 1px solid #EEE8AA; border-left-width:1.5em; padding: 2px;">PaleGoldenrod</div>
+<div style="border: 1px solid #BDB76B; border-left-width:1.5em; padding: 2px;">DarkKhaki</div>
+<div style="border: 1px solid #FFFFF0; border-left-width:1.5em; padding: 2px;">Ivory</div>
+<div style="border: 1px solid #F5F5DC; border-left-width:1.5em; padding: 2px;">Beige</div>
+<div style="border: 1px solid #FFFFE0; border-left-width:1.5em; padding: 2px;">LightYellow</div>
+<div style="border: 1px solid #FAFAD2; border-left-width:1.5em; padding: 2px;">LightGoldenrodYellow</div>
+<div style="border: 1px solid #808000; border-left-width:1.5em; padding: 2px;">Olive</div>
+<div style="border: 1px solid #FF0; border-left-width:1.5em; padding: 2px;">Yellow</div>
+<div style="border: 1px solid #6B8E23; border-left-width:1.5em; padding: 2px;">OliveDrab</div>
+<div style="border: 1px solid #9ACD32; border-left-width:1.5em; padding: 2px;">YellowGreen</div>
+<div style="border: 1px solid #556B2F; border-left-width:1.5em; padding: 2px;">DarkOliveGreen</div>
+<div style="border: 1px solid #ADFF2F; border-left-width:1.5em; padding: 2px;">GreenYellow</div>
+<div style="border: 1px solid #7FFF00; border-left-width:1.5em; padding: 2px;">Chartreuse</div>
+<div style="border: 1px solid #7CFC00; border-left-width:1.5em; padding: 2px;">LawnGreen</div>
+<div style="border: 1px solid #8FBC8B; border-left-width:1.5em; padding: 2px;">DarkSeaGreen</div>
+<div style="border: 1px solid #F0FFF0; border-left-width:1.5em; padding: 2px;">Honeydew</div>
+<div style="border: 1px solid #98FB98; border-left-width:1.5em; padding: 2px;">PaleGreen</div>
+<div style="border: 1px solid #90EE90; border-left-width:1.5em; padding: 2px;">LightGreen</div>
+<div style="border: 1px solid #228B22; border-left-width:1.5em; padding: 2px;">ForestGreen</div>
+<div style="border: 1px solid #32CD32; border-left-width:1.5em; padding: 2px;">LimeGreen</div>
+<div style="border: 1px solid #006400; border-left-width:1.5em; padding: 2px;">DarkGreen</div>
+<div style="border: 1px solid #008000; border-left-width:1.5em; padding: 2px;">Green</div>
+<div style="border: 1px solid #0F0; border-left-width:1.5em; padding: 2px;">Lime</div>
+<div style="border: 1px solid #2E8B57; border-left-width:1.5em; padding: 2px;">SeaGreen</div>
+<div style="border: 1px solid #3CB371; border-left-width:1.5em; padding: 2px;">MediumSeaGreen</div>
+<div style="border: 1px solid #00FF7F; border-left-width:1.5em; padding: 2px;">SpringGreen</div>
+<div style="border: 1px solid #F5FFFA; border-left-width:1.5em; padding: 2px;">MintCream</div>
+<div style="border: 1px solid #00FA9A; border-left-width:1.5em; padding: 2px;">MediumSpringGreen</div>
+<div style="border: 1px solid #66CDAA; border-left-width:1.5em; padding: 2px;">MediumAquamarine</div>
+<div style="border: 1px solid #7FFFD4; border-left-width:1.5em; padding: 2px;">Aquamarine</div>
+<div style="border: 1px solid #40E0D0; border-left-width:1.5em; padding: 2px;">Turquoise</div>
+<div style="border: 1px solid #20B2AA; border-left-width:1.5em; padding: 2px;">LightSeaGreen</div>
+<div style="border: 1px solid #48D1CC; border-left-width:1.5em; padding: 2px;">MediumTurquoise</div>
+<div style="border: 1px solid #F0FFFF; border-left-width:1.5em; padding: 2px;">Azure</div>
+<div style="border: 1px solid #E0FFFF; border-left-width:1.5em; padding: 2px;">LightCyan</div>
+<div style="border: 1px solid #AFEEEE; border-left-width:1.5em; padding: 2px;">PaleTurquoise</div>
+<div style="border: 1px solid #2F4F4F; border-left-width:1.5em; padding: 2px;">DarkSlateGray</div>
+<div style="border: 1px solid #008080; border-left-width:1.5em; padding: 2px;">Teal</div>
+<div style="border: 1px solid #008B8B; border-left-width:1.5em; padding: 2px;">DarkCyan</div>
+<div style="border: 1px solid #0FF; border-left-width:1.5em; padding: 2px;">Aqua</div>
+<div style="border: 1px solid #0FF; border-left-width:1.5em; padding: 2px;">Cyan</div>
+<div style="border: 1px solid #00CED1; border-left-width:1.5em; padding: 2px;">DarkTurquoise</div>
+<div style="border: 1px solid #5F9EA0; border-left-width:1.5em; padding: 2px;">CadetBlue</div>
+<div style="border: 1px solid #B0E0E6; border-left-width:1.5em; padding: 2px;">PowderBlue</div>
+<div style="border: 1px solid #ADD8E6; border-left-width:1.5em; padding: 2px;">LightBlue</div>
+<div style="border: 1px solid #00BFFF; border-left-width:1.5em; padding: 2px;">DeepSkyBlue</div>
+<div style="border: 1px solid #87CEEB; border-left-width:1.5em; padding: 2px;">SkyBlue</div>
+<div style="border: 1px solid #87CEFA; border-left-width:1.5em; padding: 2px;">LightSkyBlue</div>
+<div style="border: 1px solid #4682B4; border-left-width:1.5em; padding: 2px;">SteelBlue</div>
+<div style="border: 1px solid #F0F8FF; border-left-width:1.5em; padding: 2px;">AliceBlue</div>
+<div style="border: 1px solid #1E90FF; border-left-width:1.5em; padding: 2px;">DodgerBlue</div>
+<div style="border: 1px solid #708090; border-left-width:1.5em; padding: 2px;">SlateGray</div>
+<div style="border: 1px solid #789; border-left-width:1.5em; padding: 2px;">LightSlateGray</div>
+<div style="border: 1px solid #B0C4DE; border-left-width:1.5em; padding: 2px;">LightSteelBlue</div>
+<div style="border: 1px solid #6495ED; border-left-width:1.5em; padding: 2px;">CornflowerBlue</div>
+<div style="border: 1px solid #4169E1; border-left-width:1.5em; padding: 2px;">RoyalBlue</div>
+<div style="border: 1px solid #F8F8FF; border-left-width:1.5em; padding: 2px;">GhostWhite</div>
+<div style="border: 1px solid #E6E6FA; border-left-width:1.5em; padding: 2px;">Lavender</div>
+<div style="border: 1px solid #191970; border-left-width:1.5em; padding: 2px;">MidnightBlue</div>
+<div style="border: 1px solid #000080; border-left-width:1.5em; padding: 2px;">Navy</div>
+<div style="border: 1px solid #00008B; border-left-width:1.5em; padding: 2px;">DarkBlue</div>
+<div style="border: 1px solid #0000CD; border-left-width:1.5em; padding: 2px;">MediumBlue</div>
+<div style="border: 1px solid #00F; border-left-width:1.5em; padding: 2px;">Blue</div>
+<div style="border: 1px solid #6A5ACD; border-left-width:1.5em; padding: 2px;">SlateBlue</div>
+<div style="border: 1px solid #483D8B; border-left-width:1.5em; padding: 2px;">DarkSlateBlue</div>
+<div style="border: 1px solid #7B68EE; border-left-width:1.5em; padding: 2px;">MediumSlateBlue</div>
+<div style="border: 1px solid #9370DB; border-left-width:1.5em; padding: 2px;">MediumPurple</div>
+<div style="border: 1px solid #8A2BE2; border-left-width:1.5em; padding: 2px;">BlueViolet</div>
+<div style="border: 1px solid #4B0082; border-left-width:1.5em; padding: 2px;">Indigo</div>
+<div style="border: 1px solid #9932CC; border-left-width:1.5em; padding: 2px;">DarkOrchid</div>
+<div style="border: 1px solid #9400D3; border-left-width:1.5em; padding: 2px;">DarkViolet</div>
+<div style="border: 1px solid #BA55D3; border-left-width:1.5em; padding: 2px;">MediumOrchid</div>
+<div style="border: 1px solid #D8BFD8; border-left-width:1.5em; padding: 2px;">Thistle</div>
+<div style="border: 1px solid #DDA0DD; border-left-width:1.5em; padding: 2px;">Plum</div>
+<div style="border: 1px solid #EE82EE; border-left-width:1.5em; padding: 2px;">Violet</div>
+<div style="border: 1px solid #800080; border-left-width:1.5em; padding: 2px;">Purple</div>
+<div style="border: 1px solid #8B008B; border-left-width:1.5em; padding: 2px;">DarkMagenta</div>
+<div style="border: 1px solid #F0F; border-left-width:1.5em; padding: 2px;">Fuchsia</div>
+<div style="border: 1px solid #F0F; border-left-width:1.5em; padding: 2px;">Magenta</div>
+<div style="border: 1px solid #DA70D6; border-left-width:1.5em; padding: 2px;">Orchid</div>
+<div style="border: 1px solid #C71585; border-left-width:1.5em; padding: 2px;">MediumVioletRed</div>
+<div style="border: 1px solid #FF1493; border-left-width:1.5em; padding: 2px;">DeepPink</div>
+<div style="border: 1px solid #FF69B4; border-left-width:1.5em; padding: 2px;">HotPink</div>
+<div style="border: 1px solid #FFF0F5; border-left-width:1.5em; padding: 2px;">LavenderBlush</div>
+<div style="border: 1px solid #DB7093; border-left-width:1.5em; padding: 2px;">PaleVioletRed</div>
+<div style="border: 1px solid #DC143C; border-left-width:1.5em; padding: 2px;">Crimson</div>
+<div style="border: 1px solid #FFC0CB; border-left-width:1.5em; padding: 2px;">Pink</div>
+<div style="border: 1px solid #FFB6C1; border-left-width:1.5em; padding: 2px;">LightPink</div>
+}}
+| <samp>ForestGreen</samp>
+|-
+| A [https://en.wikipedia.org/wiki/Web_colors#Hex_triplet hexadecimal color code]. The optional alpha is a value between <samp>00</samp> (transparent) and <samp>FF</samp> (opaque).
+| <samp>#228B22</samp><br /><samp>#228B22FF</samp>
+|-
+| An [https://en.wikipedia.org/wiki/RGB_color_model#Numeric_representations 8-bit RGB color code]. The optional alpha is a value between <samp>0</samp> (transparent) and <samp>255</samp> (opaque).
+| <samp>34 139 34</samp><br /><samp>34 139 34 255</samp>
+|}
+
+C# mods can parse a color like <code>Utility.StringToColor("White")</code>.
+
+===Context tag===
+A ''context tag'' is an arbitrary data label attached to items. The game auto-generates some context tags, while others can be added through the item data.
+
+These can produce various effects in-game, be queried in various asset fields or using the <samp>ITEM_CONTEXT_TAG</samp> [[#Game state query|game state query]], or may be informational only. 
+
+See [[Modding:Context tags]] for more info.
+
+===Custom fields===
+Many data assets have a <samp>CustomFields</samp> field. This is ignored by the game, but can be read by mod frameworks to enable custom features.
+
+For example, a content pack can [[Modding:Crop data|add a crop]] with custom fields:
+<syntaxhighlight lang="js">
+"CustomFields": {
+    "Example.FrameworkMod/WetTexture": "{{InternalAssetKey: assets/crops-wet.png}}"
+}
+</syntaxhighlight>
+
+And then a C# mod could handle the custom field if it's set:
+<syntaxhighlight lang="c#">
+CropData data = crop.GetData();
+if (data != null && data.CustomFields.TryGetValue("Example.FrameworkMod/WetTexture", out string textureName))
+{
+    // do magic
+}
+</syntaxhighlight>
+
+===Game state query===
+A ''game state query'' defines a condition using a special command syntax. For example, this checks if today is spring or summer:
+<syntaxhighlight lang="js">
+"Condition": "SEASON Spring Summer"
+</syntaxhighlight>
+
+See [[Modding:Game state queries]] for more info.
+
+===Item ID===
+Every item is identified by two strings:
+* An ''unqualified item ID'' (<code>item.ItemId</code>) is a [[#Unique string ID|unique string ID]] for the item. This should generally be unique, but older vanilla items have non-unique numeric IDs for legacy reasons.
+* A ''qualified item ID'' (<code>item.QualifiedItemId</code>) prefixes the unqualified ID with the type identifier to guarantee uniqueness.
+
+For example, [[pufferfish]] has two item IDs: <code>128</code> (unqualified) and <code>(O)128</code> (qualified).
+
+See [[Modding:Items]] for more info.
+
+===Item query===
+An ''item query'' creates any number of items dynamically using either an [[#Item ID|item ID]] or a special command syntax. For example, you can select random [[House Plant|house plants]]:
+<syntaxhighlight lang="js">
+"ItemId": "RANDOM_ITEMS (F) 1376 1390"
+</syntaxhighlight>
+
+See [[Modding:Item queries]] for more info.
+
+===Tokenizable string===
+A ''tokenizable string'' is text which can contain special tokens. For example, this shows a message like "It's a beautiful spring day":
+<syntaxhighlight lang="js">
+"Message": "It's a beautiful [Season] day"
+</syntaxhighlight>
+
+See [[Modding:Tokenizable strings]] for more info.
+
+===Translation key===
+A ''translation key'' uniquely identifies where to find translatable text, in the form <samp>{{t|asset name}}:{{t|key}}</samp>. For example, <code>Strings\\StringsFromCSFiles:spring</code> will look for a <samp>spring</samp> key in the <samp>Strings\StringsFromCSFiles</samp> asset file in the content folder.
+
+This is often used in game code (''e.g.'' via <code>Game1.content.LoadString</code>) and in data assets (''e.g.'' via the <samp>LocalizedText</samp> [[#Tokenizable string|tokenizable string]] token).
+
+===Trigger action===
+A ''trigger action'' performs an action when something happens, with support for a wide range of actions (like sending mail, changing friendship, starting a quest, etc).
+
+For example, you can give the player an item from dialogue:
+<syntaxhighlight lang="js">
+"Message": "Hi there! Here's a pufferfish.#%action AddItem (O)128"
+</syntaxhighlight>
+
+See [[Modding:Trigger actions]] for more info.
+
+==Data structures==
+===Item spawn fields===
+''Item spawn fields'' are a common set of fields used to create items using [[#Item query|item queries]] in many data assets.
+
+For example, you can create an iridium-quality strawberry juice:
+<syntaxhighlight lang="js">
+"ItemId": "FLAVORED_ITEM Juice (O)400",
+"Quality": 4
+</syntaxhighlight>
+
+See [[Modding:Item queries#Item spawn fields]] for more info.
+
+===Mod data===
+<samp>modData</samp> dictionary fields store custom data about instances. These are synchronized in multiplayer, persisted in the save file, and accessible from both C# and [[#Game state query|game state queries]] like <samp>PLAYER_MOD_DATA</samp>.
+
+When you split an item stack, the new stack copies the previous one's mod data; when merged into another stack, the merged items adopt the target stack's mod data. Otherwise mod data has no effect on item split/merge logic (''e.g.'' you can still merge items with different mod data).
+
+In C#, these are available on these types: <samp>Character</samp> (including monsters, NPCs, and players), <samp>GameLocation</samp>, <samp>Item</samp>, <samp>Projectile</samp>, <samp>Quest</samp>, and <samp>TerrainFeature</samp>.
+
+To avoid mod conflicts, mod data keys should be [[#Unique string ID|unique string IDs]]:
+<syntaxhighlight lang="C#">
+item.modData[$"{this.ModManifest.UniqueID}/item-age"] = "30";
+</syntaxhighlight>
+
+===Point===
+A point represents an integer coordinate or size, usually measured in pixels or tiles. This is formatted as an object with an X/Y position. For example:
+<syntaxhighlight lang="js">
+"Position": {
+    "X": 0,
+    "Y": 0
+}
+</syntaxhighlight>
+
+===Quantity modifiers===
+
+''Quantity modifiers'' apply dynamic changes to a numeric field in a data asset like [[Modding:Shops|<samp>Data/Shops</samp>]] or [[Modding:Machines|<samp>Data/Machines</samp>]]. For example, you can multiply a shop item's price or increase a machine output's quality. You can specify any number of modifiers for the same field.
+
+====Modifier format====
+These consist of a list of models with these fields:
+{| class="wikitable"
+|-
+! field
+! effect
+|-
+| <samp>Id</samp>
+| The [[Modding:Common data field types#Unique string ID|unique string ID]] for this modifier within the current list.
+|-
+| <samp>Modification</samp>
+| The type of change to apply. The possible values are <samp>Add</samp>, <samp>Subtract</samp>, <samp>Multiply</samp>, <samp>Divide</samp>, and <samp>Set</samp>.
+|-
+| <samp>Amount</samp>
+| ''(Optional if <samp>RandomAmount</samp> specified)'' The operand applied to the target value (e.g. the multiplier if used with <samp>Multiply</samp>).
+|-
+| <samp>RandomAmount</samp>
+| ''(Optional)'' A list of possible amounts to randomly choose from. If set, <samp>Amount</samp> is optional and ignored. Each entry in the list has an equal probability of being chosen, and the choice is persisted for the current day. For example:
+<syntaxhighlight lang="js">
+"RandomAmount": [ 1, 2, 3.5, 4 ]
+</syntaxhighlight>
+|-
+| <samp>Condition</samp>
+| ''(Optional)'' A [[Modding:Game state queries|game state query]] which indicates whether this change should be applied. Defaults to always true.
+|}
+
+====Modifier mode====
+Quality modifier fields are often accompanied by a ''mode'' field (like <samp>PriceModifiers</samp> and <samp>PriceModifierMode</samp>), which indicate what to do when multiple modifiers apply to the same value. Available modes:
+
+{| class="wikitable"
+|-
+! value
+! effect
+|-
+| <samp>Stack</samp>
+| Apply each modifier to the result of the previous one. For example, two modifiers which double a value will quadruple it.
+|-
+| <samp>Minimum</samp>
+| Apply the modifier which results in the lowest value.
+|-
+| <samp>Maximum</samp>
+| Apply the modifier which results in the highest value.
+|}
+
+====Examples====
+For example, this will double the price of a shop item in <samp>Data/Shops</samp>:
+<syntaxhighlight lang="js">
+"PriceModifiers": [
+    {
+        "Modification": "Multiply",
+        "Amount": 2.0
+    }
+]
+</syntaxhighlight>
+
+This will set the price to a random value between 100–1000, ''or'' 3–5 times the item's normal sell price, whichever is higher (like the [[Traveling Cart]]):
+<syntaxhighlight lang="js">
+"PriceModifierMode": "Maximum",
+"PriceModifiers": [
+    {
+        "Modification": "Set",
+        "RandomAmount": [ 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000 ]
+    },
+    {
+        "Modification": "Multiply",
+        "RandomAmount": [ 3, 4, 5 ]
+    }
+]
+</syntaxhighlight>
+
+===Rectangle===
+A rectangle represents a square area, usually measured in pixels or tiles. This is formatted as an object with an X/Y position (for the top-left corner) and width/height size, where all values are integers. For example:
+<syntaxhighlight lang="js">
+"Rectangle": {
+    "X": 0,
+    "Y": 0,
+    "Width": 16,
+    "Height": 32
+}
+</syntaxhighlight>
+
+===Vector2===
+A Vector2 represents a non-integer coordinate or size, usually measured in pixels or tiles. This is formatted as an object with an X/Y position. For example:
+<syntaxhighlight lang="js">
+"Position": {
+    "X": 10.5,
+    "Y": 12.0
+}
+</syntaxhighlight>
+
+[[Category:Modding]]
+
+[[ru:Модификации:Типы распространенных полей данных]]
+[[zh:模组:公共数据字段]]

@@ -1,0 +1,131 @@
+{{../../header}}
+
+The translation API lets you translate your mod, and include all languages in one release package for SMAPI to use automatically based on the game language.
+
+==Overview==
+SMAPI reads translations from files in your mod folder. When you request a translation, it will automatically handle locale fallback (''e.g.,'' if a translation isn't available in <samp>pt-BR.json</samp>, SMAPI will check <samp>pt.json</samp> and <samp>default.json</samp>). Translations can be a simple string, or they can include tokens to inject values into the translation.
+
+==i18n folder==
+===File structure===
+SMAPI reads translations from JSON files in an <samp>i18n</samp> subfolder in your mod folder:
+<pre>
+YourMod/
+   i18n/
+      default.json
+      es.json
+      fr.json
+   manifest.json
+   YourMod.dll
+</pre>
+
+The <samp>default.json</samp> file has the default text shown if a more specific translation isn't available, and you create a separate file for each language. Each translation file should have one of these file names:
+
+{| class="wikitable"
+|-
+! Language
+! File name
+|-
+| Chinese
+| <samp>zh.json</samp>
+|-
+| French
+| <samp>fr.json</samp>
+|-
+| German
+| <samp>de.json</samp>
+|-
+| Hungarian
+| <samp>hu.json</samp>
+|-
+| Italian
+| <samp>it.json</samp>
+|-
+| Japanese
+| <samp>ja.json</samp>
+|-
+| Korean
+| <samp>ko.json</samp>
+|-
+| Portuguese
+| <samp>pt.json</samp>
+|-
+| Russian
+| <samp>ru.json</samp>
+|-
+| Spanish
+| <samp>es.json</samp>
+|-
+| Turkish
+| <samp>tr.json</samp>
+|}
+
+For large mods, you can optionally have a folder for each language containing any number of <samp>.json</samp> files. This isn't recommended for most mods though, since it's harder to keep in sync between languages and is less supported by translation tools. For example:
+<pre>
+YourMod/
+   i18n/
+      default/
+         dialogue.json
+         events.json
+      fr/
+         dialogue.json
+         events.json
+   manifest.json
+   YourMod.dll
+</pre>
+
+You can't have both top-level files (like <samp>fr.json</samp>) and folders (like <samp>fr/dialogue.json</samp>), so you'll need to use one pattern consistently.
+
+For a [[Modding:Custom languages|custom language]], use its <samp>LanguageCode</samp> value in the filename.
+
+===File format===
+Each <samp>.json</samp> file should contain a flat key→value lookup with your default text. Each key is case-insensitive, and can contain alphanumeric, underscore, hyphen, and dot characters. Feel free to add JavaScript comments to organise or document your translations. For example:
+<syntaxhighlight lang="javascript">
+{
+    // example translations
+    "item-type.label": "Item type",
+    "item-type.fruit-tree": "{{fruitName}} tree",
+}
+</syntaxhighlight>
+
+The <code><nowiki>{{fruitName}}</nowiki></code> in the above example is a token. You can add any tokens you want (each having only letters in the name), and replace them with a different value in code (see [[#Reading translations|''reading translations'']] below).
+
+===Tips for translators===
+* Save i18n files with UTF-8 encoding to avoid broken symbols in-game.
+* Type <code>reload_i18n</code> into the SMAPI console and hit enter to reload translations without exiting the game. (If a mod internally cached a translation, it may not be updated.)
+
+==Reading translations==
+===Built-in API===
+Once your i18n files are set up, you can read translations for the current locale:
+<syntaxhighlight lang="c#">
+// read a simple translation
+string label = helper.Translation.Get("item-type.label");
+
+// read a translation which uses tokens (accepts an anonymous object, dictionary, or model)
+string text = helper.Translation.Get("item-type.fruit-tree", new { fruitName = "apple" });
+</syntaxhighlight>
+
+The <samp>helper.Translate(…)</samp> method returns a fluent interface — you can keep calling methods on its return value to customise the translation. (See IntelliSense for a description of the available methods.) To get the text, just assign it to a string:
+<syntaxhighlight lang="c#">
+// use fluent chain
+string text = helper.Translation.Get(key).Tokens(tokens).Tokens(moreTokens).Default("missing translation?");
+</syntaxhighlight>
+
+All translations can use [[Modding:Dialogue#Gender switch|gender switch blocks]]. They'll be formatted based on the player's gender each time you fetch the translation.
+
+===Strongly-typed API===
+The built-in API doesn't have build-time validation. For example, if you set a <code>fruitName</code> argument but the translation actually uses <code><nowiki>{{fruit}}</nowiki></code>, you won't know until you test each translation in-game and see the broken message. That's fine for most mods, but can be an issue with larger mods that have hundreds of translations across many different UI flows.
+
+The optional [https://github.com/Pathoschild/SMAPI-ModTranslationClassBuilder#readme SMAPI mod translation class builder] package lets you generate a strongly-typed class to read translations like this instead:
+<syntaxhighlight lang="c#">
+string label = I18n.ItemType_Label();
+string text = I18n.ItemType_FruitTree(fruitName: "apple");
+</syntaxhighlight>
+
+If a translation breaks, you'll know immediately since it won't compile.
+
+==See also==
+[https://gist.github.com/Pathoschild/4e0af42158583983a4206d4d734bfc0b LINQ script] to format an event for translations
+
+[[ru:Модификации:Руководство мододела/API/Перевод]]
+[[tr:Modlama:Mod Rehberi/API'ler/Çeviri]]
+[[zh:模组:制作指南/APIs/Translation]]

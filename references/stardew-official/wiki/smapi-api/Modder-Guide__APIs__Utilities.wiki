@@ -1,0 +1,237 @@
+{{../../header}}
+
+SMAPI provides some C# objects you can use to simplify your code.
+
+==Metadata==
+===Mod path===
+Before handling mod folder paths, be aware that:
+* The '''mod's folder path is not consistent'''. The game is installed to different folders, Nexus mods are often unzipped into a folder like <samp>Mods/Your Mod Name 1.27.5-541-1-27-5-1598664794/YourModFolder</samp> by default, and players can organize their mod folders like <samp>Mods/For single-player/YourModFolder</samp>.
+* Paths are formatted differently on Linux/Mac/Android vs Windows.
+
+You don't need to worry about that when using SMAPI APIs, which take relative paths and automatically fix the format if needed:
+<syntaxhighlight lang="c#">
+var data = this.Helper.Data.ReadJsonFile<SomeDataModel>("assets/data.json");
+</syntaxhighlight>
+
+If you really need a full path, you should use <samp>this.Helper.DirectoryPath</samp> and <samp>Path.Combine</samp> to get it:
+<syntaxhighlight lang="c#">
+string path = Path.Combine(this.Helper.DirectoryPath, "assets", "data.json"); // "assets/data.json" in the current mod's folder
+var file = new FileInfo(path);
+</syntaxhighlight>
+
+See ''[[#Constants|Constants]]'' for other paths like the game folder.
+
+===Constants===
+The <samp>Constants</samp> class provides metadata about SMAPI and the game.
+
+{| class="wikitable"
+|-
+! value
+! meaning
+|-
+| <samp>Constants.ApiVersion</samp>
+| The version of the running SMAPI instance.
+|-
+| <samp>Constants.MinimumGameVersion</samp><br /><samp>Constants.MaximumGameVersion</samp>
+| The game versions supported by the running SMAPI instance.
+|-
+| <samp>Constants.TargetPlatform</samp>
+| The current operating system (one of <samp>Android</samp>, <samp>Linux</samp>, <samp>Mac</samp>, or <samp>Windows</samp>).
+|-
+| <samp>Constants.GameFramework</samp>
+| The game framework running the game (one of <samp>Xna</samp> or <samp>MonoGame</samp>).
+|-
+| <samp>Constants.GamePath</samp>
+| The absolute path to the <samp>Stardew Valley</samp> folder.
+|-
+| <samp>Constants.ContentPath</samp>
+| The absolute path to the game's <samp>Content</samp> folder.
+|-
+| <samp>Constants.DataPath</samp>
+| The absolute path to the game's data folder (which contains the [[Saves|save folder]]).
+|-
+| <samp>Constants.LogDir</samp>
+| The absolute path to the folder containing the game and SMAPI logs.
+|-
+| <samp>Constants.SavesPath</samp>
+| The absolute path to the [[Saves|save folder]].
+|-
+| <samp>Constants.CurrentSavePath</samp>
+| The absolute path to the current save folder, if a save is loaded.
+|-
+| <samp>Constants.SaveFolderName</samp>
+| The name of the current save folder (like <samp>Name_012345789</samp>), if a save is loaded.
+|}
+
+===Context===
+The <samp>Context</samp> class provides information about the game state and player control.
+
+; Game/player state&#58;
+: {| class="wikitable"
+|-
+! value
+! meaning
+|-
+| <samp>Context.IsGameLaunched</samp>
+| Whether the game has been launched and initialised. This becomes true immediately before the first update tick.
+|-
+| <samp>Context.IsWorldReady</samp>
+| Whether the player has loaded a save and the world has finished initialising. Useful for ignoring events before the save is loaded.
+|-
+| <samp>Context.IsPlayerFree</samp>
+| Whether <samp>Context.IsWorldReady</samp> and the player is free to act on the world (no menu is displayed, no cutscene is in progress, etc).
+|-
+| <samp>Context.CanPlayerMove</samp>
+| Whether <samp>Context.IsPlayerFree</samp> and the player is free to move (''e.g.,'' not using a tool).
+|-
+| <samp>Context.IsInDrawLoop</samp>
+| Whether the game is currently running the draw loop. This isn't relevant to most mods, since you should use [[Modding:Modder Guide/APIs/Events|display events]] to draw to the screen.
+|}
+
+; [[Multiplayer]]&#58;
+: {| class="wikitable"
+|-
+! value
+! meaning
+|-
+| <samp>Context.IsMultiplayer</samp>
+| Whether <samp>Context.IsWorldReady</samp>, and the world was loaded in multiplayer mode (regardless of whether any other players are connected) or is currently in split-screen mode.
+|-
+| <samp>Context.IsSplitScreen</samp>
+| Whether <samp>Context.IsMultiplayer</samp> and the ''current player'' is in split-screen mode. This doesn't apply for remote players.
+|-
+| <samp>Context.HasRemotePlayers</samp>
+| Whether <samp>Context.IsMultiplayer</samp> and any players are connected over the network.
+|-
+| <samp>Context.IsMainPlayer</samp>
+| Whether <samp>Context.IsWorldReady</samp>, and the player is the main player. This is always true in single-player, and true when hosting in multiplayer.
+|-
+| <samp>Context.IsOnHostComputer</samp>
+| Whether the current player is on the host computer. This is true when <samp>Context.IsMainPlayer</samp>, or for farmhands in split-screen mode.
+|-
+| <samp>Context.ScreenId</samp>
+| The unique ID of the current screen in split-screen mode. The main player always has ID 0. A screen is always assigned a new ID when it's opened (so a player who quits and rejoins will get a new screen ID).
+|}
+
+==Helpers==
+===Dates===
+Use <samp>SDate</samp> for calculating in-game dates. You start by creating a date:
+<syntaxhighlight lang="c#">
+var date = SDate.Now(); // current date
+var date = new SDate(28, "spring"); // date in the current year
+var date = new SDate(28, "spring", 2); // date in the given year
+var date = SDate.From(Game1.Date); // from a game date
+</syntaxhighlight>
+
+Then you can calculate offsets from any date:
+<syntaxhighlight lang="c#">
+// add days
+new SDate(28, "spring", 1).AddDays(370); // 06 fall in year 4
+
+// subtract days
+new SDate(01, "spring", 2).AddDays(-1); // 28 winter in year 1
+</syntaxhighlight>
+
+...and compare dates:
+<syntaxhighlight lang="c#">
+var a = new SDate(01, "spring");
+var b = new SDate(02, "spring");
+if (a < b) // true
+  ...
+</syntaxhighlight>
+
+...and get a translated date string:
+<syntaxhighlight lang="c#">
+var date = new SDate(15, "summer");
+string message = $"See you on {date.ToLocaleString(withYear: false)}!"; // See you on Summer 15!
+</syntaxhighlight>
+
+Note that <samp>SDate</samp> won't let you create invalid dates:
+<syntaxhighlight lang="C#">
+// ArgumentException: Invalid day '30', must be a value from 1 to 28.
+new SDate(30, "spring");
+
+// ArithmeticException: Adding -1 days to 01 spring Y1 would result in invalid date 28 winter Y0.
+new SDate(01, "spring", 1).AddDays(-1);
+</syntaxhighlight>
+
+Once created, dates have a few properties you can use:
+{| class="wikitable"
+|-
+! property
+! meaning
+|-
+| <samp>Day</samp>
+| The day of month.
+|-
+| <samp>Season</samp>
+| The normalised season name.
+|-
+| <samp>SeasonIndex</samp>
+| The zero-based season index recognised by game methods like <samp>Utility.getSeasonNameFromNumber</samp>.
+|-
+| <samp>Year</samp>
+| The year number.
+|-
+| <samp>DayOfWeek</samp>
+| The day of week (like <samp>Monday</samp>).
+|-
+| <samp>DaysSinceStart</samp>
+| The number of days since the first day, inclusively (''i.e.,'' 01 spring Y1 = 1).
+|}
+
+===File paths===
+<samp>PathUtilities</samp> provides utility methods for working with file paths and [[Modding:Modder Guide/APIs/Content|asset names]], complementing the <samp>Path</samp> class provided by .NET:
+
+{| class="wikitable"
+|-
+! method
+! usage
+|-
+| <code>GetSegments</code>
+| Split a path into its delimited segments, like <code>/usr/bin/example</code> &rarr; <code>usr</code>, <code>bin</code>, and <code>example</code>. For example:
+
+<syntaxhighlight lang="c#">
+string[] segments = PathUtilities.GetSegments(Constants.ExecutionPath);
+</syntaxhighlight>
+|-
+| <code>IsSafeRelativePath</code>
+| Get whether a path is relative and doesn't contain directory climbing (<code>../</code>), so it's guaranteed to be within the parent folder.
+|-
+| <code>IsSlug</code>
+| Get whether a string can be used as a 'slug', containing only basic characters that are safe in all contexts (''e.g.,'' filenames, URLs, SMAPI IDs, etc).
+|-
+| <code>NormalizePath</code>
+| Normalize file paths or asset names to match the format used by the current OS. For example:
+
+<syntaxhighlight lang="c#">string path = PathUtilities.NormalizePathSeparators(@"Characters\Dialogue//Abigail");
+// Linux/Mac: "Characters/Dialogue/Abigail"
+// Windows: "Characters\Dialogue\Abigail"
+</syntaxhighlight>
+|}
+
+===Per-screen data===
+SMAPI's <code>PerScreen&lt;T&gt;</code> utility manages a separate value for each local screen in split-screen mode. See [[Modding:Modder Guide/APIs/Multiplayer#Per-screen data|<samp>PerScreen&lt;T&gt;</samp> in the multiplayer API]] for details.
+
+===Semantic versions===
+Use <samp>SemanticVersion</samp> to manipulate and compare versions per the [http://semver.org/ Semantic Versioning 2.0 standard]. Example usage:
+<syntaxhighlight lang="c#">
+// build version from parts
+ISemanticVersion version = new SemanticVersion(5, 1, 0, "beta");
+
+// build version from string
+ISemanticVersion version = new SemanticVersion("5.1.0-beta");
+
+// compare versions (also works with SemanticVersion instances instead of strings)
+new SemanticVersion("5.2").IsOlderThan("5.10"); // true
+new SemanticVersion("5.10").IsNewerThan("5.10-beta"); // true
+new SemanticVersion("5.1").IsBetween("5.0", "5.2"); // true
+</syntaxhighlight>
+
+Note that game versions before 1.2.0 and some mod versions are non-standard (''e.g.,'' Stardew Valley 1.11 comes ''before'' 1.2). All SMAPI versions are standard.
+
+==Input==
+SMAPI's <samp>SButton</samp> constants uniquely represent controller, keyboard, and mouse button presses or clicks. See the [[../Input|Input]] page for more info.
+
+[[ru:Модификации:Руководство мододела/API/Утилиты]]
+[[zh:模组:制作指南/APIs/Utilities]]

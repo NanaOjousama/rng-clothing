@@ -1,0 +1,276 @@
+← [[Modding:Items|Items]]
+
+This page explains how the game stores and parses object-type item data. For items in general, see [[Modding:Items]].
+
+==Overview==
+Objects are the default type for items in inventories or in the world. Depending on their data, they can be placed, picked up, eaten, sold to shops, etc.
+
+They have [[Modding:Items#Item types|item type]] <code>(O)</code> (or <code>ItemRegistry.type_object</code> in C# code), their data in <samp>Data/Objects</samp>, their icon sprites in <samp>Maps/springobjects</samp> or <samp>TileSheets/Objects_2</samp> by default, and their code in <samp>StardewValley.Object</samp>. See [[/Object sprites|a table of sprites and their corresponding indexes]].
+
+==Data format==
+The object data in <samp>Data/Objects</samp> consists of a string → model lookup, where...
+* The key is the unqualified [[Modding:Common data field types#Item ID|item ID]].
+* The value is a model with the fields listed below.
+
+===Basic info===
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+| <samp>Name</samp>
+| The internal item name.
+|-
+| <samp>DisplayName</samp><br /><samp>Description</samp>
+| A [[Modding:Tokenizable strings|tokenizable string]] for the item's in-game display name and description.
+|-
+| <samp>Type</samp>
+| The item's general type, like Arch (artifact) or Minerals. The vanilla types are: <samp>Basic</samp>, <samp>Arch</samp> (artifact), <samp>Litter</samp> (e.g. debris), <samp>Minerals</samp>, <samp>Quest</samp>, <samp>Crafting</samp>, <samp>Fish</samp>, <samp>Cooking</samp>, <samp>Seeds</samp>, <samp>Ring</samp>, <samp>interactive</samp>, and some placeholder values like <samp>asdf</samp>.
+
+'''Caution:''' adding custom items with the <samp>Arch</samp> type is inadvisable as it often leads to [[Artifact Spot|artifact spot]]s becoming broken and not giving any items.
+
+'''Note:''' The "Type" affects whether an item shows up in the collections menu. For example, items with <samp>Type: Cooking</samp> will show up as silhouettes in the cooked items collection menu, items with <samp>Type: Minerals</samp> will show up as silhouettes in the mineral collection menu, etc. However, the [[Modding:Items#Categories|Category]] of the item must also be the correct number or the item will not count toward Perfection/Achievements. For example, if an item has Type: Cooking, it must also be "Category": -7 in order to count toward the "Gourmet Chef" achievement and Perfection. 
+|-
+| <samp>Category</samp>
+| The [[Modding:Items#Categories|item category]].
+|-
+| <samp>Price</samp>
+| ''(Optional)'' The price when sold by the player. This is not the price when bought from a shop. Default 0.
+|}
+
+===Appearance===
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+| <samp>Texture</samp>
+| The asset name for the texture containing the item's sprite. Defaults to <samp>Maps/springobjects</samp>.
+|-
+| <samp>SpriteIndex</samp>
+| The sprite's index within the <samp>Texture</samp>, where 0 is the top-left sprite.
+|-
+| <samp>ColorOverlayFromNextIndex</samp>
+| ''(Optional)'' When drawn as a colored object, whether to apply the color to the next sprite in the spritesheet and draw that over the main sprite. If false, the color is applied to the main sprite instead. Default false.
+|}
+
+===Edibility===
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+| <samp>Edibility</samp>
+| ''(Optional)'' A numeric value that determines how much energy (edibility × 2.5) and health (edibility × 1.125) is restored when this item is eaten. An item with an edibility of -300 can't be eaten, values from -299 to -1 reduce health and energy, and zero can be eaten but doesn't change health/energy. Default -300.
+|-
+| <samp>IsDrink</samp>
+| ''(Optional)'' Whether to drink the item instead of eating it. Default false.
+|-
+| <samp>Buffs</samp>
+| ''(Optional)'' The buffs to apply to the player when this item is eaten, if any. Default none.
+
+This consists of a list of models with these fields:
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+| <samp>Id</samp>
+| The [[Modding:Common data field types#Unique string ID|unique string ID]] for this entry within the list.
+|-
+| <samp>Duration</samp>
+| ''(Optional if <samp>BuffId</samp> is set)'' The buff duration measured in in-game minutes. This can be set to <samp>-2</samp> for a buff that should last for the rest of the day.
+|-
+| <samp>BuffId</samp>
+| ''(Optional)'' The unique ID of a buff from <samp>Data/Buffs</samp> to apply, or <samp>null</samp> to ignore <samp>Data/Buffs</samp> and set the ID to <samp>food</samp> or <samp>drink</samp> depending on the item's <samp>IsDrink</samp> field.
+
+If a buff from <samp>Data/Buffs</samp> is applied and you also specify other fields, here's how the buff data is combined:
+{| class="wikitable"
+|-
+! field
+! result
+|-
+| <samp>Duration</samp><br /><samp>IconTexture</samp><br /><samp>IconSpriteIndex</samp><br /><samp>GlowColor</samp>
+| If specified, the value in <samp>Data/Objects</samp> is used instead of the one in <samp>Data/Buffs</samp>. If omitted, defaults to the value from <samp>Data/Buffs</samp>.
+|-
+| <samp>CustomAttributes</samp>
+| The values from both entries are combined (e.g. +1 speed in <samp>Data/Objects</samp> and +1 speed in <samp>Data/Buffs</samp> results in +2 speed).
+|-
+| <samp>IsDebuff</samp>
+| The value in <samp>Data/Objects</samp> is used.
+|}
+|-
+| <samp>IsDebuff</samp>
+| ''(Optional)'' Whether this buff counts as a debuff, so its duration should be halved when wearing a Sturdy Ring. Default false.
+|-
+| <samp>IconTexture</samp>
+| ''(Optional)'' The asset name for the icon texture to load. This must contain one or more 16x16 icons in a grid of any size. If omitted, the game will draw a default icon based on the <samp>BuffId</samp> and <samp>CustomAttributes</samp> fields.
+|-
+| <samp>IconSpriteIndex</samp>
+| ''(Optional)'' The buff's icon index within the <samp>IconTexture</samp>, where 0 is the top-left icon. Default 0.
+|-
+| <samp>GlowColor</samp>
+| ''(Optional)'' The glow color to apply to the player. See [[Modding:Common data field types#Color|color format]]. Default none.
+|-
+| <samp>CustomAttributes</samp>
+| The custom buff attributes to apply, if any.
+
+This consists of a model with any combination of these fields:
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+| <samp>CombatLevel</samp><br /><samp>FarmingLevel</samp><br /><samp>FishingLevel</samp><br /><samp>ForagingLevel</samp><br /><samp>LuckLevel</samp><br /><samp>MiningLevel</samp>
+| ''(Optional)'' An amount applied to the matching [[Skills|skill level]] while the buff is active. This can be negative for a debuff. Default 0.
+|-
+| <samp>Attack</samp><br /><samp>AttackMultiplier</samp><br /><samp>CriticalChanceMultiplier</samp><br /><samp>CriticalPowerMultiplier</samp><br /><samp>Defense</samp><br /><samp>Immunity</samp><br /><samp>KnockbackMultiplier</samp><br /><samp>MagneticRadius</samp><br /><samp>MaxStamina</samp><br /><samp>Speed</samp><br /><samp>WeaponPrecisionMultiplier</samp><br /><samp>WeaponSpeedMultiplier</samp>
+| ''(Optional)'' An amount applied to the player's [[attack]], [[Crit. Chance|critical chance]] and  [[Crit. Power|critical power]], [[defense]], [[immunity]], knockback (i.e. [[weight]]), [[Magnetism|magnetic radius]], maximum [[Energy|stamina]], [[speed]], or weapon precision/[[speed|speed]] while the buff is active. This can be negative for a debuff. Default 0.
+|}
+|-
+| <samp>CustomFields</samp>
+| ''(Optional)'' The [[Modding:Common data field types#Custom fields|custom fields]] for this entry. 
+|}
+|}
+
+===Geodes & artifact spots===
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+| <samp>GeodeDrops</samp><br /><samp><samp>GeodeDropsDefaultItems</samp>
+| ''(Optional)'' The items that can be dropped when breaking open this item as a [[Minerals#Geodes|geode]]. Specifying either or both fields automatically enables geode behavior for this item.
+
+You can specify one or both fields:
+<ul>
+<li><samp>GeodeDrops</samp> can be set to the specific items to drop. Default none. This consists of a list of models with these fields:
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+|-
+| ''common fields''
+| See [[Modding:Item queries#Item spawn fields|item spawn fields]] for the generic item fields supported by geode drops.
+
+If set to an [[Modding:Item queries|item query]] which returns multiple items, one of them will be selected at random.
+|-
+| <samp>Chance</samp>
+| ''(Optional)'' The probability that the item will be dropped if the other fields match, as a decimal value between 0 (never) and 1 (always). Default 1.
+|-
+| <samp>SetFlagOnPickup</samp>
+| ''(Optional)'' The mail flag to set for the current player when this drop is picked up.
+|-
+| <samp>Precedence</samp>
+| ''(Optional)'' The order in which this entry should be checked, where lower values are checked first. This can be a negative value. Geode drops with the same precedence are checked in the order listed. Default 0.
+
+For consistency, vanilla drops mostly use these values:
+* <samp>-1000</samp>: special overrides like the [[Golden Helmet|golden helmet]];
+* <samp>0</samp>: normal items.
+|}</li>
+<li><samp>GeodeDropsDefaultItems</samp> chooses a predefined list of possible geode drops like [[clay]], [[coal]], [[Copper Ore|copper]], [[Iridium Ore|iridium]], etc. Default false.</li>
+</ul>
+
+If both fields are specified, each geode will choose between them with an equal 50% chance. If <samp>GeodeDrops</samp> is specified but no entries match, the geode will use the <samp>GeodeDropsDefaultItems</samp> regardless of whether it's true.
+|-
+| <samp>ArtifactSpotChances</samp>
+| ''(Optional)'' If this is an artifact (i.e. the <samp>Type</samp> field is <samp>Arch</samp>), the chance that it can be found by digging [[Artifact Spot|artifact spots]] in each location.
+
+This consists of a string → model lookup, where:
+* the key is the internal location name;
+* the value is the probability the item will spawn if checked, as a decimal value between 0 (never) and 1 (always).
+|}
+
+===Context tags & exclusions===
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+| <samp>ContextTags</samp>
+| ''(Optional)'' The custom [[Modding:Context tags|context tags]] to add for this item (in addition to the tags added automatically based on the other object data). This is formatted as a list; for example:
+<syntaxhighlight lang="json">
+"ContextTags": [ "color_yellow", "fish_ocean", "fish_upright", "season_summer" ]
+</syntaxhighlight>
+|-
+| <samp>CanBeGivenAsGift</samp>
+| ''(Optional)'' Whether this item can be gifted to NPCs. Default true.
+|-
+| <samp>CanBeTrashed</samp>
+| ''(Optional)'' Whether this item can be trashed from the player's inventory. Also affects whether the item can be shipped but not whether it can be sold to shops. Default true.
+|-
+| <samp>ExcludeFromRandomSale</samp>
+| ''(Optional)'' Whether to exclude this item from shops when selecting random items to sell. Default false.
+|-
+| <samp>ExcludeFromFishingCollection</samp><br /><samp>ExcludeFromShippingCollection</samp>
+| ''(Optional)'' Whether to exclude this item from the fishing/shipping collection and their respective effect on the [[perfection|perfection score]]. Default false, in which case the normal requirements apply (e.g., artifacts are always excluded from the shipping collection).
+|}
+
+===Advanced===
+{| class="wikitable"
+|-
+! field
+! purpose
+|-
+| <samp>CustomFields</samp>
+| ''(Optional)'' The [[Modding:Common data field types#Custom fields|custom fields]] for this entry. 
+|}
+
+==Unobtainable items==
+The spritesheet and data have items that can't normally be found in the player inventory (like twigs and lumber), and some sprites have no corresponding item data. There are also multiple entries for ''weeds'' and ''stone'' corresponding to different sprites, but the player can only normally obtain one ''stone'' item (index 390) and no ''weeds'' items.
+
+==For C# mods==
+Object-type items are represented by the <samp>StardewValley.Object</samp> type.
+
+This provides many methods to simplify common logic. Some notable examples:
+
+{| class="wikitable"
+|-
+! method
+! effect
+|-
+| <samp>Object.GetRadiusForScarecrow()</samp>
+| The tile radius that Object protects as a scarecrow. Default behavior: Checks for the value in the <samp>crow_scare_radius_{{t|radius}}</samp> [[Modding:Context tags|context tag]] if applicable, then defaults to 17 if the internal name contains "Deluxe" and 9 otherwise. Can be patched to support custom scarecrows.
+|-
+| <samp>Object.IsBar()</samp>
+| Whether the item is a [[Copper Bar|copper bar]], [[Iron Bar|iron bar]], [[Gold Bar|gold bar]], [[Iridium Bar|iridium bar]], or [[Radioactive Bar|radioactive bar]].
+|-
+| <samp>Object.IsBreakableStone()</samp>
+| Whether the item is a stone debris item which can be broken by a pickaxe.
+|-
+| <samp>Object.IsFence()</samp>
+| Whether the item is a [[Crafting#Fences|fence]].
+|-
+| <samp>Object.IsFruitTreeSapling()</samp>
+| Whether the item is a [[Fruit Trees|fruit tree]] sapling. This checks the <samp>Data\fruitTrees</samp> keys, so it works with custom fruit trees too.
+|-
+| <samp>Object.IsHeldOverHead()</samp>
+| Whether the player is shown holding up the item when it's selected in their toolbar. Default true (except for furniture).
+|-
+| <samp>Object.IsIncubator()</samp>
+| Whether the item can incubate [[Animals|farm animal]] eggs when placed in a building.
+|-
+| <samp>Object.IsScarecrow()</samp>
+| Whether the item is a scarecrow. Default: <samp>true</samp> if the object has the <samp>crow_scare</samp> [[Modding:Context_tags|context tag]]. Otherwise, returns whether the object's internal name contains "arecrow". Can be patched to support custom scarecrows.
+|-
+| <samp>Object.IsTapper()</samp>
+| Whether the item is a [[Tapper|tapper]] or [[Heavy Tapper|heavy tapper]].
+|-
+| <samp>Object.IsTeaSapling()</samp>
+| Whether the item is a [[Tea Sapling|tea sapling]].
+|-
+| <samp>Object.IsTwig()</samp>
+| Whether the item is a twig debris item.
+|-
+| <samp>Object.IsWeeds()</samp>
+| Whether the item is a weed debris item.
+|}
+
+==See also==
+* [[Modding:Items]] for item data in general
+
+[[Category:Modding]]
+
+[[ru:Модификации:Объекты]]
+[[zh:模组:物体]]

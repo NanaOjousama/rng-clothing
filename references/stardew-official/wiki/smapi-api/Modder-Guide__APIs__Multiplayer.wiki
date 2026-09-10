@@ -1,0 +1,216 @@
+{{../../header}}
+
+The multiplayer API provides methods to support modding in a multiplayer context. This API is still minimal, but much more will be added in later versions of SMAPI.
+
+__TOC__
+==Methods==
+===Get new ID===
+In some cases the game expects a 'multiplayer ID' value, which is a unique 64-bit number. This is mainly intended for cases where the game expects a multiplayer ID for data sync, such as when creating farm animals:
+<syntaxhighlight lang="c#">
+int animalID = this.Helper.Multiplayer.GetNewID();
+var animal = new FarmAnimal("Cow", animalID, ownerID);
+</syntaxhighlight>
+
+===Get active locations===
+In multiplayer mode, the game doesn't sync all locations to other players. Each farmhand will receive data for their current location, the farm, farmhouse, and farm buildings. You can get a list of the locations being sync'd:
+<syntaxhighlight lang="C#">
+foreach (GameLocation location in this.Helper.Multiplayer.GetActiveLocations())
+{
+   // do stuff
+}
+</syntaxhighlight>
+
+===Get connected player info===
+You can see basic info about other players connected to the same server using the <samp>GetConnectedPlayer(playerID)</samp> and <samp>GetConnectedPlayers()</samp> methods. This is available immediately when the player connects (before the game even approves the connection). Most of the information is only available for players who are running SMAPI too. You can access these fields for each player:
+{| class="wikitable"
+|-
+! field
+! type
+! description
+|-
+| <samp>PlayerID</samp>
+| <samp>long</samp>
+| The player's unique multiplayer ID, which you can pass to game methods and fields that expect a unique player ID.
+|-
+| <samp>IsHost</samp>
+| <samp>bool</samp>
+| True if this player is hosting the server; false if they're a farmhand.
+|-
+| <samp>IsSplitScreen</samp>
+| <samp>bool</samp>
+| True if the player is running on the same computer in split-screen mode.
+|-
+| <samp>HasSmapi</samp>
+| <samp>bool</samp>
+| Whether this player has SMAPI installed.
+|-
+| <samp>Platform</samp>
+| <samp>GamePlatform</samp>
+| (Requires SMAPI.) The player's operating system as a <samp>GamePlatform</samp> enum (one of <samp>Linux</samp>, <samp>Mac</samp>, or <samp>Windows</samp>).
+|-
+| <samp>GameVersion</samp>
+| <samp>ISemanticVersion</samp>
+| (Requires SMAPI.) The version of the game they have installed (like {{#tag:tt|{{version|link=0}}}}).
+|-
+| <samp>ApiVersion</samp>
+| <samp>ISemanticVersion</samp>
+| (Requires SMAPI.) The version of SMAPI they have installed (like <samp>2.11</samp>).
+|-
+| <samp>Mods</samp>
+| <samp>IEnumerable&lt;IMultiplayerPeerMod&gt;</samp>
+| (Requires SMAPI.) The mods they have installed. Each mod includes the name, unique ID, and version. This is null if the other player doesn't have SMAPI, or an empty list if they have SMAPI but no mods.
+|-
+| <samp>ScreenID</samp>
+| <samp>int?</samp>
+| The player's screen ID in split-screen mode, if <samp>IsSplitScreen</samp> is true.
+|-
+| <samp>GetMod(id)</samp>
+| ''method'' returns <samp>IMultiplayerPeerMod</samp>
+| (Requires SMAPI.) A method which returns the mod with the given mod ID using the same case-insensitivity rules as SMAPI, if available. For example, this can be used to check if a mod is installed: <code>if (peer.GetMod("Pathoschild.ContentPatcher") != null)</code>.
+|}
+
+For example, this will log information about the currently connected players:
+<syntaxhighlight lang="C#">
+foreach (IMultiplayerPeer peer in this.Helper.Multiplayer.GetConnectedPlayers())
+{
+    if (peer.HasSmapi)
+    {
+        // prints something like: "Found player -1634555469947451666 running Stardew Valley 1.5.2 and SMAPI 3.9.0 on Windows with 41 mods."
+        this.Monitor.Log($"Found player {peer.PlayerID} running Stardew Valley {peer.GameVersion} and SMAPI {peer.ApiVersion} on {peer.Platform} with {peer.Mods.Count()} mods.");
+    }
+    else
+    {
+        // most info not available if they don't have SMAPI
+        this.Monitor.Log($"Found player {peer.PlayerID} running Stardew Valley without SMAPI.");
+    }
+}
+</syntaxhighlight>
+
+'''Note:''' players whose connections haven't been approved by the game yet are returned too. Although you can send/receive messages through SMAPI's APIs, the game itself may not know about them yet. If you only want players who are fully connected, you can do something like this instead:
+<syntaxhighlight lang="C#">
+foreach (Farmer farmer in Game1.getOnlineFarmers())
+{
+   IMultiplayerPeer peer = this.Helper.Multiplayer.GetConnectedPlayer(farmer.UniqueMultiplayerID);
+}
+</syntaxhighlight>
+
+===Send messages===
+You can send a message to mods on all connected computers (including the current one) using the <samp>SendMessage</samp> method. The destination can range from very narrow (''e.g.,'' one mod on one connected computer) to very broad (all mods on all computers). The message won't be sent back to the mod instance that sent it, but it can be sent to the same mod on other computers.
+
+When sending a message, you must specify three things:
+* The data you want to send. This can be a simple value (like a number or string), or a class instance. When using a class instance with custom constructors, make sure it has a default constructor too.
+* A message type, so the destination mods can know which message it is. This doesn't need to be globally unique, since mods should check the originating mod ID.
+* Who should receive the message. You can specify any combination of player IDs and/or mod IDs. By default, the message is sent to all mods and players.
+
+For example:
+<syntaxhighlight lang="C#">
+// broadcast a message to all mods on all computers
+MyMessage message = new MyMessage(...); // create your own class with the data to send
+this.Helper.Multiplayer.SendMessage(message, "MyMessageType");
+</syntaxhighlight>
+<syntaxhighlight lang="C#">
+// send a message to a specific mod on all computers
+MyMessage message = new MyMessage(...);
+this.Helper.Multiplayer.SendMessage(message, "MyMessageType", modIDs: new[] { this.ModManifest.UniqueID });
+</syntaxhighlight>
+
+===Receive messages===
+You can receive messages by listening to the <samp>helper.Events.Multiplayer.ModMessageReceived</samp> [[Modding:Modder Guide/APIs/Events|event]]. The event arguments specify who sent the message, and let you read the message into a matching data model.
+
+For example:
+
+<syntaxhighlight lang="C#">
+public override void Entry(IModHelper helper)
+{
+   helper.Events.Multiplayer.ModMessageReceived += this.OnModMessageReceived;
+}
+
+public void OnModMessageReceived(object sender, ModMessageReceivedEventArgs e)
+{
+   if (e.FromModID == this.ModManifest.UniqueID && e.Type == "ExampleMessageType")
+   {
+      MyMessageClass message = e.ReadAs<MyMessageClass>();
+      // handle message fields here
+   }
+}
+</syntaxhighlight>
+
+==Per-screen data==
+[[Multiplayer|Split-screen multiplayer]] swaps the entire game state between each player, so each mod runs across every player. For example, with four local players the [[Modding:Modder Guide/APIs/Events#GameLoop.UpdateTicked|<samp>UpdateTicked</samp>]] event would be raised four times per tick. The game manages its own state automatically (''e.g.,'' <samp>Game1.activeClickableMenu</samp>), but if your mod stores info in its own fields you may need to handle those yourself.
+
+SMAPI provides <code>PerScreen&lt;T&gt;</code> to make that easy. You use it by creating '''readonly''' fields for your values (which can be any value from <samp>int</samp> to entire class instances):
+<syntaxhighlight lang="C#">
+private readonly PerScreen<int> LastPlayerId = new PerScreen<int>(); // defaults to 0
+private readonly PerScreen<SButton> LastButtonPressed = new PerScreen<SButton>(createNewState: () => SButton.None); // defaults to the given value
+</syntaxhighlight>
+
+Then you can just use its properties and methods:
+
+{| class="wikitable"
+|-
+! member
+! description
+|-
+| <code>Value</code>
+| Get or set the value for the current screen. If needed, this creates the value automatically.
+|-
+| <code>GetActiveValues()</code>
+| Get the screen IDs and values for every active screen which has a value.
+|-
+| <code>GetValueForScreen(screenId)</code><br /><code>SetValueForScreen(screenId, value)</code>
+| Get or set the value for a specific screen ID, creating it if needed.
+|-
+| <code>ResetAllScreens</code>
+| Clear the values saved for every screen.
+|}
+
+===Example===
+For example, this mod plays a simple game: the main player presses a key, and farmhands need to guess which key was pressed.
+
+<syntaxhighlight lang="C#">
+internal class ModEntry : Mod
+{
+    private readonly PerScreen<SButton> LastButtonPressed = new PerScreen<SButton>();
+    private readonly PerScreen<int> Score = new PerScreen<int>();
+
+    public override void Entry(IModHelper helper)
+    {
+        helper.Events.Input.ButtonPressed += this.OnButtonPressed;
+    }
+
+    private void OnButtonPressed(object sender, ButtonPressedEventArgs e)
+    {
+        // main player changes key
+        if (Context.IsMainPlayer)
+        {
+            this.LastButtonPressed.Value = e.Button;
+            this.Monitor.Log("The main player changed the key. Can you guess it?", LogLevel.Info);
+        }
+
+        // farmhands try to guess the key
+        else
+        {
+            SButton correctButton = this.LastButtonPressed.GetValueForScreen(0);
+            if (correctButton != SButton.None)
+            {
+                if (e.Button == correctButton)
+                {
+                    this.Score.Value++;
+                    this.LastButtonPressed.SetValueForScreen(0, SButton.None);
+                    this.Monitor.Log($"Player #{Context.ScreenId + 1} correctly guessed the key: {e.Button}! Their score is now {this.Score.Value}.", LogLevel.Info);
+                }
+                else
+                    this.Monitor.Log($"Player #{Context.ScreenId + 1} guessed incorrectly: {e.Button}.", LogLevel.Debug);
+            }
+        }
+    }
+}
+</syntaxhighlight>
+
+'''Tip:''' you should almost always mark a per-screen field <code>readonly</code>. Overwriting the entire field (instead of setting the <samp>Value</samp> property) will clear the data for all players, instead of setting it for the current one.
+
+==See also==
+* [[Modding:Modder Guide/APIs/Events#Multiplayer|Multiplayer events]]
+
+[[ru:Модификации:Руководство мододела/API/Мультиплеер]]
+[[zh:模组:制作指南/APIs/Multiplayer]]

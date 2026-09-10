@@ -1,0 +1,87 @@
+{{../../header}}
+
+The monitor API, available through <samp>this.Monitor</samp> in your mod class, mainly lets you write messages to the console window and log file.
+
+==Logging==
+===Overview===
+You can log messages by calling <samp>this.Monitor.Log</samp> with a string message and a log level. These messages will appear in the SMAPI console and log file.
+
+For example, this code:
+
+<syntaxhighlight lang="c#">
+this.Monitor.Log("a trace message", LogLevel.Trace);
+this.Monitor.Log("a debug message", LogLevel.Debug);
+this.Monitor.Log("an info message", LogLevel.Info);
+this.Monitor.Log("a warning message", LogLevel.Warn);
+this.Monitor.Log("an error message", LogLevel.Error);
+</syntaxhighlight>
+
+...will produce log entries with a timestamp, log level, mod name, and message:
+
+<div style="font-family: monospace;">
+<span style="color:#666;">[18:00:00 TRACE NameOfMod] a trace message</span><br />
+<span style="color:#666;">[18:00:00 DEBUG NameOfMod] a debug message</span><br />
+<span style="color:black;">[18:00:00 INFO  NameOfMod] an info message</span><br />
+<span style="color:darkorange;">[18:00:00 WARN  NameOfMod] a warning message</span><br />
+<span style="color:red;">[18:00:00 ERROR NameOfMod] an error message</span>
+</div>
+
+The text won't appear in color in the log file, but will appear in color in SMAPI console window as the game runs.
+
+===Log levels===
+The log level is ''semantic'', meaning that the level itself conveys information (a <samp>Trace</samp> message means something different from an <samp>Error</samp> message). You should use the log level that's closest to your message's purpose:
+
+{| class="wikitable"
+|-
+! level
+! purpose
+|-
+| <samp>Trace</samp>
+| Tracing info intended for developers, usually low-level troubleshooting details that are useful when someone sends you their error log. Trace messages won't appear in the console window by default (unless you have the "SMAPI for developers" version), though they're always written to the log file.
+|-
+| <samp>Debug</samp>
+| Troubleshooting details that may be relevant to the player.
+|-
+| <samp>Info</samp>
+| Info relevant to the player. This should be used judiciously.
+|-
+| <samp>Warn</samp>
+| Potential problems that the player should be aware of. This should be used rarely.
+|-
+| <samp>Error</samp>
+| A message indicating something went wrong.
+|-
+| <samp>Alert</samp>
+| Important information to highlight for the player when player action is needed (''e.g.,'' new version available). This is mainly meant for SMAPI itself, and should almost never be used by mods.
+|}
+
+===Log once===
+The <samp>LogOnce</samp> method lets you log a message just [[#Overview|like the above]], but only once per game launch. For example, you can use it to show a compatibility warning for an API call:
+<syntaxhighlight lang="c#">
+this.Monitor.LogOnce("Some Mod Name used the deprecated X API.", LogLevel.Warn);
+</syntaxhighlight>
+
+===Verbose logging===
+You can have messages appear in the log (and console in the ''for developers'' version) only if SMAPI's verbose logging option is enabled. This is meant for diagnostic information that's sometimes needed to troubleshoot, but doesn't need to be logged in most cases.
+
+There are two ways to use it:
+<syntaxhighlight lang="c#">
+// log a TRACE message if verbose logging is enabled
+this.Monitor.VerboseLog("This will only appear if verbose logging is enabled.");
+
+// check the verbose option
+if (this.Monitor.IsVerbose)
+   this.Monitor("This will only appear if verbose logging is enabled.", LogLevel.Trace);
+</syntaxhighlight>
+
+Players can enable verbose logging by adding your mod ID to the <samp>VerboseLogging</samp> field in the <samp>smapi-internal/StardewModdingAPI.config.json</samp> (or  <samp>smapi-internal/config.user.json</samp> file. For example, this enables it for SMAPI and Content Patcher:
+<syntaxhighlight lang="js">
+"VerboseLogging": [ "SMAPI", "Pathoschild.ContentPatcher" ],
+</syntaxhighlight>
+
+==FAQs==
+===Where is the log file created?===
+It's output to the game's <samp>ErrorLogs</samp> data folder. See [https://smapi.io/log/ smapi.io/log] for help finding the log file, and you can also upload your log there to see what it looks like. The log file is always created (even if there are no errors) and it's written continuously (so you don't need to exit the game to see the log so far).
+
+[[ru:Модификации:Руководство мододела/API/Журнал]]
+[[zh:模组:制作指南/APIs/Logging]]

@@ -1,0 +1,166 @@
+{{/header}}
+
+Do you want to create Content Patcher packs for Stardew Valley? This page is for you! '''For using mods, see [[Modding:Player Guide/Getting Started|Modding:Player Guide]]. For creating other mod types, see [[Modding:Index#Creating mods]].'''
+
+==Quick start==
+This page is meant as a gentle introduction to creating Content Patcher packs. If you don't need an introduction, see the [https://github.com/Pathoschild/StardewMods/tree/develop/ContentPatcher#readme full Content Patcher readme].
+
+==Basic concepts==
+===What is Content Patcher?===
+{{nexus mod|1915|Content Patcher}} is a SMAPI mod which lets you change the game assets (images, dialogue, data, and maps) without replacing game files or writing code. You use it by creating a content pack (basically a folder) with a couple of JSON files (basically text). Just by editing a JSON file, you can...
+
+* replace one image file;
+* make seasonal changes;
+* make dialogue that changes based on the weather, date, your relationships with other NPCs, etc;
+* make very specific changes (like coffee is more expensive on winter weekends when it's snowing after you've completed the JojaMart);
+* and much more.
+
+===Assets===
+An ''asset'' is essentially a file in the game's <samp>Content</samp> folder with a unique ''asset name''. The asset name never includes the <samp>Content</samp> path, language, or file extension (you can use tokens to target specific languages). For example:
+
+{| class="wikitable"
+|-
+! file
+! asset name
+|-
+| <samp>Content/Portraits/Abigail.xnb</samp>
+| <samp>Portraits/Abigail</samp>
+|-
+| <samp>Content/Maps/spring_beach.xnb</samp><br /><samp>Content/Maps/spring_beach.es-ES.xnb</samp><br /><samp>Content/Maps/spring_beach.fr-FR.xnb</samp>
+| <samp>Maps/spring_beach</samp>
+|}
+
+An asset may contain multiple sprites or data entries. For example, here's what <samp>Portraits/Abigail</samp> contains if you unpack it:
+
+[[File:Modding - creating an XNB mod - example portraits.png]]
+
+So if you wanted to change Abigail's portraits, you would use Content Patcher to load or edit <samp>Portraits/Abigail</samp>.
+
+===Load vs edits===
+There are two conceptual ways you can change an asset:
+
+* ''Load'' the initial version of an asset. Each asset can only be loaded by one mod at the same time. This is mainly useful for total replacement mods (like a mod that completely changes an NPC's portraits), or to provide files that don't exist in the <samp>Content</samp> folder.
+* ''Edit'' an asset after it's loaded. Any number of edits can be applied to the same asset.
+
+For example, let's say the game needs Abigail's portraits. This is how changes are applied:
+<pre>
+                                           ┌────────────┐
+                                           │ edit asset │
+                         ┌────────────┐    ├────────────┤
+get Portraits/Abigail ──>│ load asset │───>│ edit asset │──> portrait asset
+                         └────────────┘    ├────────────┤
+                                           │ edit asset │
+                                           └────────────┘
+</pre>
+
+This is divided into four main action types (<samp>Load</samp>, <samp>EditData</samp>, <samp>EditImage</samp>, <samp>EditMap</samp>), which are explained in more detail in the Content Patcher readme (see below).
+
+==Get started==
+===Intro to JSON===
+You'll notice a lot of files with <samp>.json</samp> at the end of the name when creating mods for Stardew Valley. That means they're formatted as JSON, which is just a way of writing text that's readable to code. If you haven't used JSON before, reading ''[https://towardsdatascience.com/an-introduction-to-json-c9acb464f43e An Introduction to JSON]'' first will be very helpful to understand what the files are doing.
+
+===Create example mod===
+First let's get our basic content pack up and running:
+<ol>
+<li>Install [https://smapi.io/ SMAPI] and {{nexus mod|1915|Content Patcher}}.</li>
+<li>Unpack the game's <samp>Content</samp> folder so you can see what each asset contains (see [[Modding:Editing XNB files#Unpack game files]]).</li>
+<li>[[Modding:Content packs#Create a content pack|Create a SMAPI content pack per step 3 of the general Create a Content Pack page]].</li>
+<li>Create a <samp>content.json</samp> file in the same folder with this content:
+{{Content Patcher example|<nowiki>
+    "Changes": [
+    ]
+</nowiki>}}
+</li>
+<li>Launch the game.</li>
+</ol>
+
+If you did everything correctly so far, you should see the new mod under "Loaded X content packs" in the SMAPI console. (If not, review the above steps or [[Modding:Community|ask for help]].)
+
+===Content format===
+The <samp>content.json</samp> file you created above is what tells Content Patcher what to change. This has two main fields:
+
+* <samp>Format</samp>: the format version. You should always use the latest version (currently {{Content Patcher version}}) to enable the latest features and avoid obsolete behavior.
+* <samp>Changes</samp>: the changes you want to make. Each entry is called a ''patch'', and describes a specific action to perform: replace this file, copy this image into the file, etc. You can list any number of patches.
+
+You can list any number of patches in the <samp>Changes</samp> field, each surrounded by <code>{</code> and <code>}</code>. See the next section for more info, but here's a quick example:
+{{Content Patcher example|<nowiki>
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Animals/Dinosaur",
+            "FromFile": "assets/dinosaur.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/fish-object.png"
+        }
+    ]
+</nowiki>}}
+
+(There are other fields like <samp>ConfigSchema</samp> and <samp>DynamicTokens</samp> for more advanced usage; these are covered in the full readme.)
+
+==Next steps==
+You've created a Content Patcher pack! <!--Next we'll make it do something. This tutorial will walk you through creating Blueberries Everywhere, a mod which just turns various things into blueberries.
+
+When you're ready to continue, see the navigation at the bottom of the page to continue.-->
+
+For help making it do something, see...
+* [https://github.com/Pathoschild/StardewMods/tree/develop/ContentPatcher#readme Content Patcher readme] for the full reference;
+* [https://www.youtube.com/watch?v=uqRTgjWvDYs video intro to Content Patcher] (unofficial);
+* [https://docs.google.com/presentation/d/1OBIJSNOwEA2sdBzNbUiVUQni-ajABGFmL-FUanhuLvk intro to converting XNB mods] (unofficial).
+
+==Examples==
+(We'll have a guided tutorial here soon.)
+
+===Change horse/pet icons===
+For edits to replace the look of horses and/or pets (cats and dogs), you can add these to your content.json in order to also replace the little head icon in the inventory menu:
+
+For horses:
+<syntaxhighlight lang="javascript">
+//horse head in inventory
+{
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "yourfile.png",
+    "FromArea": { insert values here }, 
+    "ToArea": { "X": 192, "Y": 192, "Width": 16, "Height": 16 }
+}
+</syntaxhighlight>
+
+For dogs:
+<syntaxhighlight lang="javascript">
+//dog head in inventory
+
+"ToArea": { "X": 208, "Y": 208, "Width": 16, "Height": 16 }, //Dog 1
+
+"ToArea": { "X": 224, "Y": 208, "Width": 16, "Height": 16 }, //Dog 2
+
+"ToArea": { "X": 240, "Y": 208, "Width": 16, "Height": 16 }, //Dog 3
+
+</syntaxhighlight>
+
+For cats:
+<syntaxhighlight lang="javascript">
+//cat head in inventory
+
+"ToArea": { "X": 160, "Y": 208, "Width": 16, "Height": 16 }, //Cat 1 
+
+"ToArea": { "X": 176, "Y": 208, "Width": 16, "Height": 16 }, //Cat 2 
+
+"ToArea": { "X": 192, "Y": 208, "Width": 16, "Height": 16 }, //Cat 3 
+
+</syntaxhighlight>
+
+<!--
+{{modding guide footer
+ |prev = 
+ |next = [[/Load|Load assets]]
+}}
+-->
+
+[[es:Modding:Content Patcher]]
+[[fr:Modding:Content Patcher]]
+[[pt:Modificações:Content Patcher]]
+[[ru:Модификации:Content Patcher]]
+[[zh:模组:Content Patcher]]
