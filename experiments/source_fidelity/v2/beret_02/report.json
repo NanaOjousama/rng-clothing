@@ -41,8 +41,12 @@
    "unexpected_px": 0,
    "unexpected": [],
    "notes": {
-    "rule": "refused, not re-fitted",
-    "incompatible": "beret_02 has no authored 'plaid' mask (procedural treatments need experimental_procedural=True)"
+    "rule": "only mask cells change, by a value ratio",
+    "mask_cells": 67,
+    "shading": {
+     "order_inversions": 0,
+     "max_abs_dL": 21.0
+    }
    }
   },
   {
@@ -264,7 +268,20 @@
   "S5_material": {
    "alpha_changed": 0,
    "rgb_changed": 333,
-   "splits": {},
+   "splits": {
+    "#a5a5a5": {
+     "#5a5f63": 6,
+     "#7d848a": 33
+    },
+    "#d6d6d6": {
+     "#a2abb4": 61,
+     "#757b82": 27
+    },
+    "#fefefe": {
+     "#c0cbd5": 39,
+     "#8a9299": 34
+    }
+   },
    "merges": {},
    "value_order_inversions": [],
    "ramp": [
@@ -329,25 +346,34 @@
      "#5a6064": 2
     },
     "#a5a5a5": {
-     "#7d848a": 30,
+     "#5a5f63": 3,
      "#aaa9a5": 3,
+     "#7d848a": 27,
      "#5e6877": 2,
      "#828991": 4
     },
     "#d6d6d6": {
-     "#a2abb4": 78,
-     "#c2ccd7": 2,
+     "#a2abb4": 54,
+     "#c2ccd7": 1,
+     "#757b82": 24,
+     "#8c939b": 1,
      "#aaa9a5": 6,
      "#d2c9b9": 2
     },
     "#fefefe": {
-     "#c0cbd5": 62,
+     "#c0cbd5": 30,
      "#d2c9b9": 10,
+     "#8a9299": 32,
      "#aaa9a5": 1
     }
    },
    "merges": {},
-   "value_order_inversions": [],
+   "value_order_inversions": [
+    [
+     "#d6d6d6",
+     "#fefefe"
+    ]
+   ],
    "ramp": [
     {
      "from": "#393939",
@@ -387,8 +413,8 @@
     {
      "from": "#fefefe",
      "L_from": 99.7,
-     "to": "#c0cbd5",
-     "L_to": 81.1,
+     "to": "#8a9299",
+     "L_to": 60.1,
      "px": 73
     }
    ],
@@ -410,25 +436,34 @@
      "#5a6064": 2
     },
     "#a5a5a5": {
-     "#7d848a": 30,
+     "#5a5f63": 3,
      "#aaa9a5": 3,
+     "#7d848a": 27,
      "#5e6877": 2,
      "#828991": 4
     },
     "#d6d6d6": {
-     "#a2abb4": 78,
-     "#c2ccd7": 2,
+     "#a2abb4": 54,
+     "#c2ccd7": 1,
+     "#757b82": 24,
+     "#8c939b": 1,
      "#aaa9a5": 6,
      "#d2c9b9": 2
     },
     "#fefefe": {
-     "#c0cbd5": 62,
+     "#c0cbd5": 30,
      "#d2c9b9": 10,
+     "#8a9299": 32,
      "#aaa9a5": 1
     }
    },
    "merges": {},
-   "value_order_inversions": [],
+   "value_order_inversions": [
+    [
+     "#d6d6d6",
+     "#fefefe"
+    ]
+   ],
    "ramp": [
     {
      "from": "#393939",
@@ -468,8 +503,8 @@
     {
      "from": "#fefefe",
      "L_from": 99.7,
-     "to": "#c0cbd5",
-     "L_to": 81.1,
+     "to": "#8a9299",
+     "L_to": 60.1,
      "px": 73
     }
    ],

@@ -1,10 +1,13 @@
-"""Build the Source-Backed V2 comparison pack: NEUTRAL renders only.
+"""Build the Source-Backed V2 validation pack.
 
-The point is the in-game comparison against the untouched source packs, so each
-item here must be the source's own pixels AND its own rendering semantics:
-source HeadPosition, grayscale/tint left exactly as the source declares it, no
-palette, no material, no decals. Layout is the only change (four stacked
-frames; a Flipped view materialised as a mirrored frame).
+Neutral items are the source's own pixels AND rendering semantics: source
+HeadPosition, grayscale/tint exactly as the source declares it, no palette, no
+material, no decals. They are the in-game comparison against the untouched
+source packs and must not change.
+
+Plaid items are the first real authored material (beret_02 only): the same mask
+unbaked (still tinted in game by the player's hat colour) and baked through a
+few palettes. Layout is the only change from the source in every item.
 
     python3 tools/build_source_backed_pack.py
 """
@@ -18,12 +21,19 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
+from v5 import authored  # noqa: E402
 from v5 import source_backed as sbm  # noqa: E402
 from v5.pngio import write_rgba_png  # noqa: E402
 
 PACK = os.path.join(ROOT, "test-packs", "fashionsense", "RNG-SourceBacked-V2")
 UNIQUE_ID = "RNGClothing.FashionSense.SourceBackedV2"
-ITEMS = [("beret_02", "SB2Beret02Neutral"), ("beret_01", "SB2Beret01Neutral")]
+# (appearance, base, palette id or None, material or None)
+ITEMS = [("SB2Beret02Neutral", "beret_02", None, None),
+         ("SB2Beret01Neutral", "beret_01", None, None),
+         ("SB2Beret02Plaid", "beret_02", None, "plaid"),
+         ("SB2Beret02PlaidStoneBlue", "beret_02", "EVERYDAY_STONE_BLUE", "plaid"),
+         ("SB2Beret02PlaidCocoaGold", "beret_02", "CUTE_COCOA_GOLD", "plaid"),
+         ("SB2Beret02PlaidRoseCream", "beret_02", "CUTE_ROSE_CREAM", "plaid")]
 
 
 def main():
@@ -39,21 +49,27 @@ def main():
                    "ContentPackFor": {"UniqueID": "PeacefulEnd.FashionSense", "MinimumVersion": "7.5.0"}},
                   fh, indent=2)
         fh.write("\n")
+    lib = authored.load()
     trace = []
-    for name, app in ITEMS:
+    for app, name, pid, material in ITEMS:
         b = sbm.load_one(name)
-        r = sbm.render(b)
+        pal = next(p for p in lib.palettes if p.id == pid) if pid else None
+        r = sbm.render(b, pal, material)
         d = os.path.join(PACK, "Hats", app)
         os.makedirs(d, exist_ok=True)
         write_rgba_png(os.path.join(d, "hat.png"), sbm.sheet(r))
+        tags = ["RNG Clothing", "Source-Backed V2", name, pid or "unbaked", material or "no material",
+                f"{b.classification}-ONLY source"]
         with open(os.path.join(d, "hat.json"), "w") as fh:
-            json.dump(sbm.hat_json(r, app, ["RNG Clothing", "Source-Backed V2", name, "neutral",
-                                            f"{b.classification}-ONLY source"]), fh, indent=2)
+            json.dump(sbm.hat_json(r, app, tags), fh, indent=2)
             fh.write("\n")
-        trace.append({"appearance": app, "base": name, "source": b.source_png, "source_md5": b.source_md5,
-                      "baked": r.baked, "placement": {v: b.placement(v) for v in sbm.MODEL_OF},
+        trace.append({"appearance": app, "base": name, "palette": pid, "material": material,
+                      "source": b.source_png, "source_md5": b.source_md5, "baked": r.baked,
+                      "material_cells": sum(len(r.changes[v]["material"]) for v in r.changes),
+                      "placement": {v: b.placement(v) for v in sbm.MODEL_OF},
                       "placement_origin": "override" if b.placement_override else "source hat.json"})
-        print(f"  {app:20} {name}  baked={r.baked}  HeadPosition {b.placement('front')}")
+        print(f"  {app:26} {name}  palette={pid}  material={material}  baked={r.baked}  "
+              f"HeadPosition {b.placement('front')}")
     with open(os.path.join(PACK, "TRACEABILITY.json"), "w") as fh:
         json.dump(trace, fh, indent=2)
         fh.write("\n")

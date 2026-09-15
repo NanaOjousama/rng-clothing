@@ -7,7 +7,9 @@ a failure names WHERE fidelity is lost.
 
 Two paths are covered:
 
-  SourceBackedV2        v5/source_backed.py. Must be green.
+  SourceBackedV2        v5/source_backed.py. Must be green. Its material proof
+                        is the REAL authored plaid mask for beret_02
+                        (authored/source_backed/beret_02/materials/plaid.json).
   LegacySixStepPath     authored.py's ingest-to-six-steps path, kept for legacy
                         bases. Its source losses were diagnosed in the
                         2026-09-14 audit and are pinned as expectedFailure: if
@@ -36,11 +38,15 @@ import extract_material_mask  # noqa: E402
 from trace_source_fidelity import (  # noqa: E402
     FS, ORDER, base_of, changed_cells, first_unexpected_stage, index_palette, lstar,
     pick_decals, provenance, render, restack, s1_source, s2_ingested, shading_report, v2_stages)
+from validate_material_mask import Sheet, describe, mask_from_diff, violations  # noqa: E402
 
 # Bases whose PIXELS come from a source sheet. beret_03 is excluded on purpose:
 # its provenance takes only outline and silhouette from the user's drawing.
 SOURCE_BACKED = ("beret_02", "beret_01")
 PALETTE = "EVERYDAY_STONE_BLUE"
+# The authored-material proof: one real mask, one shape, a spread of tints.
+PLAID_BASE = "beret_02"
+PLAID_PALETTES = (None, "EVERYDAY_STONE_BLUE", "CUTE_COCOA_GOLD", "CUTE_ROSE_CREAM")
 
 DOCUMENTED = (
     "frames restacked to Fashion Sense order front/right/left/back",
@@ -60,16 +66,12 @@ def _first(a, b, limit=5):
     return f"{len(bad)} px differ, e.g. {bad[:limit]}"
 
 
-def column_mask(sb, x=None):
-    """MECHANISM FIXTURE, not library content: one authored-style 1px vertical
-    line down the back view's body cells. It exists only so the material rules
-    can be tested on a real V2 base that has no authored mask of its own."""
-    cells = sb.semantic.view("back")
-    xs = sorted({c[0] for c in cells})
-    x = x if x is not None else xs[len(xs) // 2]
-    col = frozenset(c for c in cells if c[0] == x and all(
-        (c[0] + dx, c[1] + dy) in cells for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1))))
-    return sbm.MaterialMask("fixture_line", sb.name, {"back": col}, 0.85, "test fixture")
+def _allowed(r, kinds):
+    out = set()
+    for i, v in enumerate(ORDER):
+        for k in kinds:
+            out |= {(x, y + i * FS) for x, y in r.changes[v][k]}
+    return out
 
 
 class SourceBackedV2(unittest.TestCase):
@@ -78,6 +80,8 @@ class SourceBackedV2(unittest.TestCase):
         cls.lib = authored.load()
         cls.bases = {n: sbm.load_one(n) for n in SOURCE_BACKED}
         cls.pal = next(p for p in cls.lib.palettes if p.id == PALETTE)
+        cls.plaid_pals = [None if p is None else next(x for x in cls.lib.palettes if x.id == p)
+                          for p in PLAID_PALETTES]
 
     # -- source_pixels ----------------------------------------------------------
     def test_stored_source_pixels_are_the_source(self):
@@ -153,47 +157,86 @@ class SourceBackedV2(unittest.TestCase):
                                 "palette bake inverted the source's value order")
                 self.assertTrue(sbm.hat_json(r, n)["FrontHat"]["DisableGrayscale"])
 
-    # -- material --------------------------------------------------------------------
+    # -- material: the real authored plaid -------------------------------------------
+    def test_authored_plaid_exists_for_beret_02_only(self):
+        m = self.bases[PLAID_BASE].materials.get("plaid")
+        self.assertIsNotNone(m)
+        self.assertEqual(m.authored_for, PLAID_BASE)
+        self.assertEqual(set(m.views), {"front", "right", "back"})
+        self.assertNotIn("plaid", self.bases["beret_01"].materials)
+
     def test_material_changes_only_mask_cells_and_keeps_form_shading(self):
-        for n, b0 in self.bases.items():
-            with self.subTest(base=n):
-                mask = column_mask(b0)
-                b = dataclasses.replace(b0, materials={"fixture_line": mask})
-                before, r = sbm.sheet(sbm.render(b, self.pal)), sbm.render(b, self.pal, "fixture_line")
+        b = self.bases[PLAID_BASE]
+        m = b.materials["plaid"]
+        for p in self.plaid_pals:
+            with self.subTest(palette=p.id if p else "neutral"):
+                before = sbm.sheet(sbm.render(b, p))
+                r = sbm.render(b, p, "plaid")
                 after = sbm.sheet(r)
-                allowed = {(x, y + ORDER.index("back") * FS) for x, y in mask.views["back"]}
-                self.assertTrue(allowed)
-                self.assertEqual(changed_cells(before, after) - allowed, set())
+                allowed = _allowed(r, ("material",))
+                want = set()
+                for i, v in enumerate(ORDER):
+                    src_v = v if v in m.views else b.mirrored[v]
+                    cells = m.views[src_v]
+                    if v in b.mirrored:
+                        cells = {(FS - 1 - x, y) for x, y in cells}
+                    want |= {(x, y + i * FS) for x, y in cells}
+                self.assertEqual(allowed, want)
                 self.assertEqual(changed_cells(before, after), allowed)
                 rep = shading_report(before, after, allowed)
                 self.assertEqual(rep["order_inversions"], 0, rep)
                 for x, y in allowed:     # a value ratio, never an absolute ramp step
-                    self.assertEqual(after[y][x], sbm._scale(before[y][x], 0.85))
+                    self.assertEqual(after[y][x], sbm._scale(before[y][x], m.factor))
+
+    def test_authored_plaid_is_one_logical_pixel_thick(self):
+        b = self.bases[PLAID_BASE]
+        for p in self.plaid_pals:
+            with self.subTest(palette=p.id if p else "neutral"):
+                s = Sheet(sbm.sheet(sbm.render(b, p, "plaid")))
+                mask, pol = mask_from_diff(s, Sheet(sbm.sheet(sbm.render(b, p))))
+                v = violations(s, mask, pol)
+                self.assertFalse(v, [describe(s, x) for x in v])
+
+    def test_material_keeps_alpha_placement_and_render_semantics(self):
+        b = self.bases[PLAID_BASE]
+        for p in self.plaid_pals:
+            with self.subTest(palette=p.id if p else "neutral"):
+                r0, r1 = sbm.render(b, p), sbm.render(b, p, "plaid")
+                self.assertEqual(set(_cells(sbm.sheet(r0))), set(_cells(sbm.sheet(r1))))
+                self.assertEqual(r0.baked, r1.baked)
+                self.assertEqual(sbm.hat_json(r0, "x"), sbm.hat_json(r1, "x"))
+        neutral = sbm.hat_json(sbm.render(b, None, "plaid"), "x")
+        self.assertNotIn("DisableGrayscale", neutral["FrontHat"])
+        self.assertEqual(neutral["FrontHat"]["HeadPosition"], {"X": 0, "Y": 1})
 
     def test_no_authored_mask_means_refused_not_procedural(self):
-        for n, b in self.bases.items():
-            with self.subTest(base=n):
+        cases = (("beret_01", "plaid"), ("beret_02", "knit"))
+        for n, t in cases:
+            with self.subTest(base=n, treatment=t):
                 with self.assertRaises(sbm.Incompatible):
-                    sbm.render(b, self.pal, "plaid")
+                    sbm.render(self.bases[n], self.pal, t)
 
     def test_authored_mask_overrides_procedural(self):
-        b0 = self.bases["beret_02"]
-        mask = dataclasses.replace(column_mask(b0), treatment="plaid")
-        b = dataclasses.replace(b0, materials={"plaid": mask})
-        a = sbm.render(b, self.pal, "plaid", lib=self.lib, experimental_procedural=True)
-        self.assertEqual(a.changes["back"]["material"], set(mask.views["back"]))
-        self.assertEqual(sum(len(a.changes[v]["material"]) for v in ("front", "right", "left")), 0)
+        b = self.bases[PLAID_BASE]
+        authored_r = sbm.render(b, self.pal, "plaid")
+        opted = sbm.render(b, self.pal, "plaid", lib=self.lib, experimental_procedural=True)
+        self.assertEqual(sbm.sheet(opted), sbm.sheet(authored_r))
+        self.assertEqual(opted.changes, authored_r.changes)
 
     def test_experimental_procedural_is_opt_in_and_a_value_ratio(self):
-        b = self.bases["beret_02"]
+        b = self.bases[PLAID_BASE]
         before = sbm.sheet(sbm.render(b, self.pal))
-        r = sbm.render(b, self.pal, "plaid", lib=self.lib, experimental_procedural=True)
+        r = sbm.render(b, self.pal, "knit", lib=self.lib, experimental_procedural=True)
         after = sbm.sheet(r)
-        allowed = set()
-        for i, v in enumerate(ORDER):
-            allowed |= {(x, y + i * FS) for x, y in r.changes[v]["material"]}
+        allowed = _allowed(r, ("material",))
         self.assertEqual(changed_cells(before, after) - allowed, set())
         self.assertEqual(shading_report(before, after, allowed)["order_inversions"], 0)
+
+    def test_beret_02_plaid_is_refused_on_another_shape(self):
+        b1 = dataclasses.replace(self.bases["beret_01"],
+                                 materials={"plaid": self.bases[PLAID_BASE].materials["plaid"]})
+        with self.assertRaises(sbm.Incompatible):
+            sbm.render(b1, self.pal, "plaid")
 
     def test_a_reference_mask_for_another_shape_is_refused_not_refitted(self):
         _, mask = extract_material_mask.extract(extract_material_mask.REFERENCE, "plaid")
@@ -222,9 +265,7 @@ class SourceBackedV2(unittest.TestCase):
                 before = sbm.sheet(sbm.render(b, self.pal))
                 r = sbm.render(b, self.pal, None, decals)
                 after = sbm.sheet(r)
-                allowed = set()
-                for i, v in enumerate(ORDER):
-                    allowed |= {(x, y + i * FS) for x, y in r.changes[v]["decal"] | r.changes[v]["occlusion"]}
+                allowed = _allowed(r, ("decal", "occlusion"))
                 self.assertTrue(changed_cells(before, after))
                 self.assertEqual(changed_cells(before, after) - allowed, set())
 
@@ -244,27 +285,30 @@ class SourceBackedV2(unittest.TestCase):
 
     # -- pack --------------------------------------------------------------------------
     def test_render_to_pack_is_exact(self):
-        for n, b in self.bases.items():
-            with self.subTest(base=n):
-                r = sbm.render(b, self.pal, None, pick_decals(self.lib, b))
+        cases = [(n, None, pick_decals(self.lib, b)) for n, b in self.bases.items()]
+        cases.append((PLAID_BASE, "plaid", ()))
+        for n, mat, decals in cases:
+            with self.subTest(base=n, material=mat):
+                r = sbm.render(self.bases[n], self.pal, mat, decals)
                 with tempfile.TemporaryDirectory() as tmp:
                     write_rgba_png(os.path.join(tmp, "hat.png"), sbm.sheet(r))
                     self.assertTrue(read_rgba_png(os.path.join(tmp, "hat.png")) == sbm.sheet(r))
 
     # -- the trace itself --------------------------------------------------------------
     def test_trace_finds_no_unexpected_stage(self):
-        for n, b in self.bases.items():
+        for n in SOURCE_BACKED:
             with self.subTest(base=n):
-                stages = v2_stages(n, PALETTE, "fixture_line", material_mask=column_mask(b))
+                stages = v2_stages(n, PALETTE, "plaid")
                 self.assertEqual([s["name"] for s in stages],
                                  ["S1_source", "S2_ingest", "S3_neutral", "S4_palette",
                                   "S5_material", "S6_motif", "S7_pack"])
                 self.assertIsNone(first_unexpected_stage(stages),
                                   {s["name"]: sorted(s["unexpected"])[:5] for s in stages})
+                applied = "incompatible" not in stages[4]["notes"]
+                self.assertEqual(applied, n == PLAID_BASE)
 
     def test_trace_names_the_first_bad_stage(self):
-        stages = v2_stages("beret_02", PALETTE, "fixture_line",
-                           material_mask=column_mask(self.bases["beret_02"]))
+        stages = v2_stages(PLAID_BASE, PALETTE, "plaid")
         stages[4]["unexpected"] = {(0, 0)}
         stages[6]["unexpected"] = {(1, 1)}
         self.assertEqual(first_unexpected_stage(stages), "S5_material")

@@ -1,0 +1,230 @@
+{
+ "SB2Beret02Neutral": {
+  "front": {
+   "exact_matches": 59,
+   "pack_opaque": 69,
+   "pack_px_not_visible": 10,
+   "offset": [
+    3,
+    4
+   ]
+  },
+  "right": {
+   "exact_matches": 73,
+   "pack_opaque": 78,
+   "pack_px_not_visible": 5,
+   "offset": [
+    2,
+    5
+   ]
+  },
+  "back": {
+   "exact_matches": 102,
+   "pack_opaque": 108,
+   "pack_px_not_visible": 6,
+   "offset": [
+    3,
+    6
+   ]
+  },
+  "left": {
+   "exact_matches": 73,
+   "pack_opaque": 78,
+   "pack_px_not_visible": 5,
+   "offset": [
+    4,
+    5
+   ]
+  }
+ },
+ "SB2Beret02Plaid": {
+  "front": {
+   "exact_matches": 56,
+   "pack_opaque": 69,
+   "pack_px_not_visible": 13,
+   "offset": [
+    3,
+    4
+   ]
+  },
+  "right": {
+   "exact_matches": 73,
+   "pack_opaque": 78,
+   "pack_px_not_visible": 5,
+   "offset": [
+    2,
+    5
+   ]
+  },
+  "back": {
+   "exact_matches": 101,
+   "pack_opaque": 108,
+   "pack_px_not_visible": 7,
+   "offset": [
+    3,
+    6
+   ]
+  },
+  "left": {
+   "exact_matches": 73,
+   "pack_opaque": 78,
+   "pack_px_not_visible": 5,
+   "offset": [
+    4,
+    5
+   ]
+  }
+ },
+ "SB2Beret02PlaidStoneBlue": {
+  "front": {
+   "exact_matches": 69,
+   "pack_opaque": 69,
+   "pack_px_not_visible": 0,
+   "offset": [
+    3,
+    4
+   ]
+  },
+  "right": {
+   "exact_matches": 78,
+   "pack_opaque": 78,
+   "pack_px_not_visible": 0,
+   "offset": [
+    2,
+    5
+   ]
+  },
+  "back": {
+   "exact_matches": 108,
+   "pack_opaque": 108,
+   "pack_px_not_visible": 0,
+   "offset": [
+    3,
+    6
+   ]
+  },
+  "left": {
+   "exact_matches": 78,
+   "pack_opaque": 78,
+   "pack_px_not_visible": 0,
+   "offset": [
+    4,
+    5
+   ]
+  }
+ },
+ "SB2Beret02PlaidCocoaGold": {
+  "front": {
+   "exact_matches": 69,
+   "pack_opaque": 69,
+   "pack_px_not_visible": 0,
+   "offset": [
+    3,
+    4
+   ]
+  },
+  "right": {
+   "exact_matches": 78,
+   "pack_opaque": 78,
+   "pack_px_not_visible": 0,
+   "offset": [
+    2,
+    5
+   ]
+  },
+  "back": {
+   "exact_matches": 108,
+   "pack_opaque": 108,
+   "pack_px_not_visible": 0,
+   "offset": [
+    3,
+    6
+   ]
+  },
+  "left": {
+   "exact_matches": 78,
+   "pack_opaque": 78,
+   "pack_px_not_visible": 0,
+   "offset": [
+    4,
+    5
+   ]
+  }
+ },
+ "SB2Beret02PlaidRoseCream": {
+  "front": {
+   "exact_matches": 69,
+   "pack_opaque": 69,
+   "pack_px_not_visible": 0,
+   "offset": [
+    3,
+    4
+   ]
+  },
+  "right": {
+   "exact_matches": 78,
+   "pack_opaque": 78,
+   "pack_px_not_visible": 0,
+   "offset": [
+    2,
+    5
+   ]
+  },
+  "back": {
+   "exact_matches": 108,
+   "pack_opaque": 108,
+   "pack_px_not_visible": 0,
+   "offset": [
+    3,
+    6
+   ]
+  },
+  "left": {
+   "exact_matches": 78,
+   "pack_opaque": 78,
+   "pack_px_not_visible": 0,
+   "offset": [
+    4,
+    5
+   ]
+  }
+ },
+ "SB2Beret01Neutral": {
+  "front": {
+   "exact_matches": 60,
+   "pack_opaque": 62,
+   "pack_px_not_visible": 2,
+   "offset": [
+    3,
+    4
+   ]
+  },
+  "right": {
+   "exact_matches": 62,
+   "pack_opaque": 62,
+   "pack_px_not_visible": 0,
+   "offset": [
+    2,
+    3
+   ]
+  },
+  "back": {
+   "exact_matches": 121,
+   "pack_opaque": 121,
+   "pack_px_not_visible": 0,
+   "offset": [
+    4,
+    4
+   ]
+  },
+  "left": {
+   "exact_matches": 62,
+   "pack_opaque": 62,
+   "pack_px_not_visible": 0,
+   "offset": [
+    4,
+    3
+   ]
+  }
+ }
+}

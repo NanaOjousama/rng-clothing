@@ -44,8 +44,50 @@ direction is what the source-authority rule formalises.
 
 ## SOURCE-BACKED V2 (2026-09-14) — ACCEPTED BY USER
 
-**Status: ACCEPTED and frozen. Do not redesign V2. No library expansion without
-approval. Next: one real authored plaid mask for beret_02 only.**
+**Status: ACCEPTED and frozen at commit `57b0410`. Do not redesign V2. No library
+expansion without approval.**
+
+**Beret library audit (2026-09-14, inspection only, nothing changed):** evidence
+`experiments/beret_audit/` (contact sheets, session `20260914-233333`). The
+"old green beret" is `BeretPlain SpringOrchard #2095153943` (atelier
+RNG-Beret-V2, captures `20260910-195048|201919/Cap02`) = **beret_02 geometry**
+at source HeadPosition 0,1, recoloured; its pack texture was overwritten when
+that pack was rebuilt at 09-10 20:32, and its pixels survive only in the capture.
+Proposed: beret_02 KEEP; beret_01 visually good but licence-blocked; beret_03
+TUNE; beret_04 + atelier procedural shapes ARCHIVE; plurffle's approved
+`More Accessories` Beret 1/2 and the root `Beret/` pack never captured. Awaiting
+user decision.
+
+**User decision after the audit:** beret_02 KEEP · beret_01 HOLD · beret_03
+TUNE/optional oversized variant · everything else archived/unevaluated. Nothing
+renamed or deleted. Next: evaluate plurffle's More Accessories Beret 1/2 worn,
+untouched, before any ingest.
+
+**First real authored material — beret_02 plaid: VISUALLY APPROVED by the user
+and committed as its own milestone.** The TUNE notes below were a proposal and
+were not applied; the approved mask is the one in the file.
+`authored/source_backed/beret_02/materials/plaid.json` (52 cells: front 12,
+right 15, back 25; left mirrored), authored in Pixelsmith
+(`beret02_plaid_mask`), exported by `tools/export_pixelsmith_mask.py`, factor
+0.72. Offline: only mask cells change, alpha/placement/render fields unchanged,
+0 shading inversions, 0 thickness violations on neutral + 3 palettes, refused on
+beret_01, legacy guard 0 moved; 30 tests OK (3 expected failures). Validation
+pack `RNG-SourceBacked-V2` now has 6 items (2 accepted neutrals unchanged + 4
+plaid).
+
+**In game, session `20260914-233333`: verdict TUNE (not committed).** All 6
+appearances drawn exactly as shipped (0 hat px differ from the pack; the few
+unbaked px missing from hat-only are grey hat = grey hair, a known blind spot of
+worn-minus-nohat). Back view reads as a thin secondary grid: good. Needs, before
+any change is made (awaiting user):
+1. front horizontal y8 x5-14 (10 cells) reads as a brim band, not plaid;
+2. right-view brim-tip line (3,11),(4,11),(5,11) (left mirror 14-16,11) melts
+   into the edge shading;
+3. line contrast measures Weber 0.20 on every palette vs hat_8's 0.16 -- one
+   notch strong, uniformly. Cocoa Gold is NOT measurably more contrasty (smallest
+   dL, same Weber); it only reads muddier. Raising factor toward 0.78 must be
+   re-checked against the 2px-merge validator (0.823 merged).
+Evidence: `experiments/source_fidelity/v2_plaid/worn_20260914-233333/`.
 
 - `v5/source_backed.py`: a separate base type. Source pixels (md5-pinned preserved
   copy) are canonical; the (role, step) semantic map is stored separately under

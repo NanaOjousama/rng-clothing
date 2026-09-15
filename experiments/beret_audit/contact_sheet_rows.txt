@@ -1,0 +1,13 @@
+1 beret_01 V2 neutral (hyoung_hats_24)  <- qc_bridge/captures/20260914-233333/SB2Beret01Neutral
+2 beret_02 V2 neutral (Cottagecore Beret)  <- qc_bridge/captures/20260914-233333/SB2Beret02Neutral
+3 beret_03 legacy felt IvoryBlossom  <- qc_bridge/captures/20260914-233333/C1CurrentFelt
+4 beret_04 worktree felt IvoryBlossom  <- qc_bridge/captures/20260914-233333/B1CompactFelt
+5 Cute beret hat_1 reference (source of beret_04)  <- qc_bridge/captures/20260914-233333/A1RefFelt
+6 atelier Classic (beret_02 lineage, recolour)  <- qc_bridge/captures/20260914-233333/Cap01
+7 atelier Slouchy  <- qc_bridge/captures/20260914-233333/Cap02
+8 atelier Flatter  <- qc_bridge/captures/20260914-233333/Cap03
+9 atelier Tilted  <- qc_bridge/captures/20260914-233333/Cap04
+10 BeretV2 Leaf SpringOrchard (green)  <- qc_bridge/captures/20260914-233333/Cap07
+11 BeretV2 Dotted ForestLibrary (green)  <- qc_bridge/captures/20260914-233333/Cap09
+12 BeretV2 Leaf SeaGlass (green)  <- qc_bridge/captures/20260914-233333/Cap06
+13 SourcePoC Leaf spring floral (green)  <- qc_bridge/captures/20260914-233333/Src04BeretLeaf
