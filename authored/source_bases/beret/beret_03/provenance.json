@@ -1,0 +1,51 @@
+{
+  "id": "beret_03",
+  "family": "beret",
+  "classification": "REFERENCE",
+  "classification_reason": "Drawn by the user and supplied directly as the shape target. Held at REFERENCE with the rest of the beret family until the family is cleared for shipping; it is not third-party art and carries no licence question of its own.",
+  "attribution": "drawn by the user; ingested to index colours here",
+  "source": {
+    "path": "BERET_MATERIAL\u2044PATTERN REFERENCE/Hats/hat_4/",
+    "files": [
+      "beret_back.png",
+      "beret_front.png",
+      "beret_side.png"
+    ],
+    "read_only": true
+  },
+  "construction": {
+    "ingested": "pixels read from the source PNGs; no ASCII transcription and no resampling",
+    "taken_from_source": "outline and silhouette only",
+    "source_tones": [
+      "3e0000",
+      "660000",
+      "9e0000",
+      "b60000"
+    ],
+    "outline_tone": "3e0000",
+    "geometry": "ACCEPTED AND FROZEN by the user as one beret shape variant. A fit refinement that narrowed it toward beret_01's proportions was written and reverted: the silhouette is not to be tuned further. Wear quality is addressed through shading and material instead.",
+    "interior_detail": {
+      "cells_per_view": {
+        "front": 0,
+        "right": 0,
+        "back": 6
+      },
+      "rule": "an 8-connected blob of non-lightest cells touching neither the outline nor the exterior; found geometrically, not by colour name"
+    },
+    "shading": "NOT taken from the source. The sheet's four reds are its own shading; the project has its own. Outline -> rim step 2, everything it encloses -> flat body step 4, with interior form left to the palette ramp, the material treatment axis and decals.",
+    "front": "an ARCH -- the hat has a head opening cut through it, outlined along the underside, with a short leg each side. Four earlier passes drew it as a closed dome.",
+    "back": "a full disc; nothing occludes it from behind",
+    "side": "deliberately asymmetric -- high at the front, draping down and back. `left` is mirrored from it at render time.",
+    "vertical_registration": "each view at its own drawn offset -- front 3, side 2, back 0. Top-aligning all three instead was tried and rejected by the in-game capture: it hung the back disc 2.5 rows below the head."
+  },
+  "directions": {
+    "authored": [
+      "front",
+      "right",
+      "back"
+    ],
+    "mirrored": [
+      "left"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "_comment": "The quality-tier ladder: decoration richness, and NOTHING else. It is a separate axis from the generator's renderer `rarity` (generator/data/rarity_renderer_architecture.json), which selects a rendering route. The two share their value names and mean different things; neither reads the other.",
+  "axis": "quality_tier",
+  "order": [
+    "Common",
+    "Uncommon",
+    "Rare",
+    "RarePlus"
+  ],
+  "tiers": {
+    "Common": {
+      "intent": "Plain by construction, not by luck. The pools are empty, so a Common roll cannot produce decoration even if it wants to.",
+      "max_attachments": 0,
+      "max_motifs": 0,
+      "max_decor_cells": 0,
+      "min_decor_pieces": 0,
+      "pick_chance": 0.0
+    },
+    "Uncommon": {
+      "intent": "Introduces shape and cleaner materials, not ornament. At most one very small surface mark.",
+      "max_attachments": 0,
+      "max_motifs": 1,
+      "max_decor_cells": 4,
+      "min_decor_pieces": 0,
+      "pick_chance": 0.62
+    },
+    "Rare": {
+      "intent": "Nicer material plus one small readable accent and a subtle motif.",
+      "max_attachments": 1,
+      "max_motifs": 1,
+      "max_decor_cells": 12,
+      "min_decor_pieces": 1,
+      "pick_chance": 0.85
+    },
+    "RarePlus": {
+      "intent": "The premium presentation: best palettes, a special trim and one strong readable decoration.",
+      "max_attachments": 1,
+      "max_motifs": 1,
+      "max_decor_cells": 20,
+      "min_decor_pieces": 2,
+      "pick_chance": 1.0
+    }
+  },
+  "budget_note": "max_decor_cells is per view and was measured against the real decal footprints, not chosen round: a band is 6 cells and a small attachment 6-7, so a Rare hat carrying both needs 12. A tighter number would have silently refused the combination the tier is meant to describe.",
+  "floor_note": "min_decor_pieces is a floor, not a target. The chance roll supplies variety; without a floor a RarePlus beret could roll empty and come out plainer than an Uncommon one, which the M2 batch caught twice. Common and Uncommon keep a floor of 0 on purpose: plain is a legitimate result there.",
+  "pick_chance_note": "Used only by the weighted (profile) path: the chance that a tier reaches for a piece of a given kind at all, before the floor tops it up. The unweighted path keeps its original per-decal 0.62 gate untouched."
+}

@@ -1,0 +1,252 @@
+{
+  "schema": "source_backed/v2",
+  "name": "beret_01",
+  "family": "beret",
+  "shape_variant": "beret_01",
+  "slot": "HEAD",
+  "classification": "REFERENCE",
+  "style": [
+    "casual",
+    "cottagecore",
+    "cute",
+    "formal",
+    "smart"
+  ],
+  "source": {
+    "png": "authored/source_bases/beret/beret_01/source/hat.png",
+    "md5": "c63ad8801541e29bc61e5952a189726e",
+    "json": "authored/source_bases/beret/beret_01/source/hat.json",
+    "json_md5": "36d8a01a52871e350477c934062bfc99",
+    "frame_size": [
+      20,
+      20
+    ],
+    "origin": "beret_variant1/hat.png"
+  },
+  "views_note": "read from the source hat.json at load: authored ['back', 'front', 'left', 'right'], mirrored {}",
+  "semantic_map": {
+    "dir": "semantic",
+    "policy": "equal_width",
+    "ramp": [
+      "#202020",
+      "#404040",
+      "#606060",
+      "#808080",
+      "#B0B0B0",
+      "#E0E0E0"
+    ],
+    "source_grey_to_step": {
+      "#2c2c2c": 0,
+      "#2d2d2d": 0,
+      "#313131": 0,
+      "#323232": 0,
+      "#333333": 0,
+      "#343434": 0,
+      "#353535": 1,
+      "#363636": 1,
+      "#373737": 1,
+      "#383838": 1,
+      "#393939": 1,
+      "#3b3b3b": 1,
+      "#3c3c3c": 1,
+      "#3d3d3d": 2,
+      "#3e3e3e": 2,
+      "#3f3f3f": 2,
+      "#404040": 2,
+      "#414141": 2,
+      "#424242": 2,
+      "#434343": 2,
+      "#444444": 2,
+      "#454545": 3,
+      "#464646": 3,
+      "#474747": 3,
+      "#484848": 3,
+      "#494949": 3,
+      "#4a4a4a": 3,
+      "#4b4b4b": 3,
+      "#4c4c4c": 3,
+      "#4d4d4d": 3,
+      "#4e4e4e": 4,
+      "#4f4f4f": 4,
+      "#505050": 4,
+      "#515151": 4,
+      "#525252": 4,
+      "#535353": 4,
+      "#545454": 4,
+      "#555555": 4,
+      "#565656": 5,
+      "#575757": 5,
+      "#595959": 5,
+      "#5a5a5a": 5,
+      "#5b5b5b": 5,
+      "#5c5c5c": 5,
+      "#5e5e5e": 5
+    },
+    "role": "describes the source for recolouring/composition; never replaces it"
+  },
+  "anchors": {
+    "crown_top": {
+      "front": [
+        7,
+        4
+      ],
+      "right": [
+        6,
+        4
+      ],
+      "left": [
+        7,
+        4
+      ],
+      "back": [
+        7,
+        4
+      ]
+    },
+    "side": {
+      "front": [
+        12,
+        5
+      ],
+      "right": [
+        10,
+        4
+      ],
+      "left": [
+        12,
+        4
+      ],
+      "back": [
+        13,
+        5
+      ]
+    },
+    "band": {
+      "front": [
+        3,
+        8
+      ],
+      "right": [
+        3,
+        8
+      ],
+      "left": [
+        11,
+        8
+      ],
+      "back": [
+        6,
+        10
+      ]
+    }
+  },
+  "zones": {
+    "front": {
+      "crown_top": [
+        7,
+        4,
+        12,
+        5
+      ],
+      "crown_face": [
+        7,
+        4,
+        12,
+        7
+      ],
+      "band": [
+        3,
+        8,
+        15,
+        8
+      ],
+      "side": [
+        12,
+        5,
+        15,
+        8
+      ]
+    },
+    "right": {
+      "crown_top": [
+        6,
+        4,
+        12,
+        4
+      ],
+      "crown_face": [
+        6,
+        4,
+        11,
+        7
+      ],
+      "band": [
+        3,
+        8,
+        8,
+        9
+      ],
+      "side": [
+        10,
+        4,
+        13,
+        8
+      ]
+    },
+    "left": {
+      "crown_top": [
+        7,
+        4,
+        13,
+        4
+      ],
+      "crown_face": [
+        8,
+        4,
+        13,
+        7
+      ],
+      "band": [
+        11,
+        8,
+        16,
+        9
+      ],
+      "side": [
+        12,
+        4,
+        15,
+        8
+      ]
+    },
+    "back": {
+      "crown_top": [
+        7,
+        4,
+        12,
+        5
+      ],
+      "crown_face": [
+        6,
+        5,
+        14,
+        9
+      ],
+      "band": [
+        6,
+        10,
+        15,
+        13
+      ],
+      "side": [
+        13,
+        5,
+        16,
+        10
+      ]
+    }
+  },
+  "placement_override": {},
+  "placement_note": "empty: the source hat.json HeadPosition is the default. An override must name its in-game QC evidence.",
+  "provenance": "REFERENCE-ONLY: h young \u2014 [FS] h young's hats (hyoung_hats.fs), hat 24 (beret_variant1/hat.png). See authored/source_bases/beret/beret_01/provenance.json"
+}

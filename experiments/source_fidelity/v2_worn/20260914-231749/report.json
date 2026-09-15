@@ -1,0 +1,233 @@
+{
+ "session": "qc_bridge/captures/20260914-231749",
+ "pairs": {
+  "beret_02": {
+   "front": {
+    "worn_px_diff": 0,
+    "nohat_px_diff": 0,
+    "hatonly_px_diff": 0,
+    "hat_bounds_source": {
+     "x": 100,
+     "y": 56,
+     "width": 56,
+     "height": 60,
+     "pixels": 1728
+    },
+    "hat_bounds_v2": {
+     "x": 100,
+     "y": 56,
+     "width": 56,
+     "height": 60,
+     "pixels": 1728
+    },
+    "placement_offset_screen_px": [
+     0,
+     0
+    ],
+    "placement_offset_logical_px": [
+     0.0,
+     0.0
+    ],
+    "identical": true
+   },
+   "right": {
+    "worn_px_diff": 0,
+    "nohat_px_diff": 0,
+    "hatonly_px_diff": 0,
+    "hat_bounds_source": {
+     "x": 96,
+     "y": 60,
+     "width": 56,
+     "height": 64,
+     "pixels": 1808
+    },
+    "hat_bounds_v2": {
+     "x": 96,
+     "y": 60,
+     "width": 56,
+     "height": 64,
+     "pixels": 1808
+    },
+    "placement_offset_screen_px": [
+     0,
+     0
+    ],
+    "placement_offset_logical_px": [
+     0.0,
+     0.0
+    ],
+    "identical": true
+   },
+   "back": {
+    "worn_px_diff": 0,
+    "nohat_px_diff": 0,
+    "hatonly_px_diff": 0,
+    "hat_bounds_source": {
+     "x": 100,
+     "y": 60,
+     "width": 56,
+     "height": 56,
+     "pixels": 2224
+    },
+    "hat_bounds_v2": {
+     "x": 100,
+     "y": 60,
+     "width": 56,
+     "height": 56,
+     "pixels": 2224
+    },
+    "placement_offset_screen_px": [
+     0,
+     0
+    ],
+    "placement_offset_logical_px": [
+     0.0,
+     0.0
+    ],
+    "identical": true
+   },
+   "left": {
+    "worn_px_diff": 0,
+    "nohat_px_diff": 0,
+    "hatonly_px_diff": 0,
+    "hat_bounds_source": {
+     "x": 104,
+     "y": 60,
+     "width": 56,
+     "height": 64,
+     "pixels": 1808
+    },
+    "hat_bounds_v2": {
+     "x": 104,
+     "y": 60,
+     "width": 56,
+     "height": 64,
+     "pixels": 1808
+    },
+    "placement_offset_screen_px": [
+     0,
+     0
+    ],
+    "placement_offset_logical_px": [
+     0.0,
+     0.0
+    ],
+    "identical": true
+   }
+  },
+  "beret_01": {
+   "front": {
+    "worn_px_diff": 0,
+    "nohat_px_diff": 0,
+    "hatonly_px_diff": 0,
+    "hat_bounds_source": {
+     "x": 100,
+     "y": 60,
+     "width": 56,
+     "height": 56,
+     "pixels": 1872
+    },
+    "hat_bounds_v2": {
+     "x": 100,
+     "y": 60,
+     "width": 56,
+     "height": 56,
+     "pixels": 1872
+    },
+    "placement_offset_screen_px": [
+     0,
+     0
+    ],
+    "placement_offset_logical_px": [
+     0.0,
+     0.0
+    ],
+    "identical": true
+   },
+   "right": {
+    "worn_px_diff": 0,
+    "nohat_px_diff": 0,
+    "hatonly_px_diff": 0,
+    "hat_bounds_source": {
+     "x": 96,
+     "y": 56,
+     "width": 56,
+     "height": 68,
+     "pixels": 1808
+    },
+    "hat_bounds_v2": {
+     "x": 96,
+     "y": 56,
+     "width": 56,
+     "height": 68,
+     "pixels": 1808
+    },
+    "placement_offset_screen_px": [
+     0,
+     0
+    ],
+    "placement_offset_logical_px": [
+     0.0,
+     0.0
+    ],
+    "identical": true
+   },
+   "back": {
+    "worn_px_diff": 0,
+    "nohat_px_diff": 0,
+    "hatonly_px_diff": 0,
+    "hat_bounds_source": {
+     "x": 104,
+     "y": 56,
+     "width": 52,
+     "height": 60,
+     "pixels": 2576
+    },
+    "hat_bounds_v2": {
+     "x": 104,
+     "y": 56,
+     "width": 52,
+     "height": 60,
+     "pixels": 2576
+    },
+    "placement_offset_screen_px": [
+     0,
+     0
+    ],
+    "placement_offset_logical_px": [
+     0.0,
+     0.0
+    ],
+    "identical": true
+   },
+   "left": {
+    "worn_px_diff": 0,
+    "nohat_px_diff": 0,
+    "hatonly_px_diff": 0,
+    "hat_bounds_source": {
+     "x": 104,
+     "y": 56,
+     "width": 56,
+     "height": 68,
+     "pixels": 1808
+    },
+    "hat_bounds_v2": {
+     "x": 104,
+     "y": 56,
+     "width": 56,
+     "height": 68,
+     "pixels": 1808
+    },
+    "placement_offset_screen_px": [
+     0,
+     0
+    ],
+    "placement_offset_logical_px": [
+     0.0,
+     0.0
+    ],
+    "identical": true
+   }
+  }
+ }
+}

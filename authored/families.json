@@ -1,0 +1,229 @@
+{
+  "_comment": "Garment families. A family groups SHAPES of the same garment so the combinator can be asked for one and never return a different garment that shares the slot. Generic: a new family is a new entry here plus bases that name it, with no engine change.",
+  "families": {
+    "beret": {
+      "id": "beret",
+      "display": "Beret",
+      "slot": "HEAD",
+      "classification": "REFERENCE",
+      "classification_reason": "The only ingested shape, beret_01, comes from hyoung_hats_24, whose provenance and licence are unestablished. Architecture, conversion and testing only; not shippable until the source is identified.",
+      "shape_variants": [
+        "beret_01",
+        "beret_02",
+        "beret_03"
+      ],
+      "materials": {
+        "plain_wool": [
+          "FIELD_CANVAS_MOSS",
+          "EVERYDAY_STONE_BLUE",
+          "WORKWEAR_DENIM_RUST"
+        ],
+        "fine_wool": [
+          "AUTUMN_OCHRE_PLUM",
+          "SPRING_SAGE_PETAL",
+          "PASTEL_PEACH_LILAC"
+        ],
+        "refined": [
+          "WINTER_FROST_INK",
+          "FORMAL_PEARL_MIDNIGHT",
+          "SAILOR_COBALT_CREAM"
+        ],
+        "premium": [
+          "LUXURY_JADE_BRONZE",
+          "CELESTIAL_INDIGO_STAR",
+          "ARCANE_VIOLET_COPPER"
+        ]
+      },
+      "quality_tiers": {
+        "Common": {
+          "shape_variants": [
+            "beret_01"
+          ],
+          "materials": [
+            "plain_wool"
+          ]
+        },
+        "Uncommon": {
+          "shape_variants": "any",
+          "materials": [
+            "plain_wool",
+            "fine_wool"
+          ]
+        },
+        "Rare": {
+          "shape_variants": "any",
+          "materials": [
+            "fine_wool",
+            "refined"
+          ]
+        },
+        "RarePlus": {
+          "shape_variants": "any",
+          "materials": [
+            "refined",
+            "premium"
+          ]
+        }
+      },
+      "pools": {
+        "_comment": "Gated on motif_class, not on decal name. A flower authored next month is legal wherever `flower` already is, with nobody editing this file. RarePlus keeps `pin` from Rare because the formal/smart styles have no flower, bow or feather in the pool at all; without it a formal RarePlus beret would carry LESS decoration than a formal Rare one, which the batch caught.",
+        "surface_motif": {
+          "Common": [],
+          "Uncommon": [
+            "stitch_accent",
+            "seam"
+          ],
+          "Rare": [
+            "stitch_accent",
+            "seam",
+            "band",
+            "button",
+            "dot_cluster"
+          ],
+          "RarePlus": [
+            "woven_trim",
+            "band",
+            "badge",
+            "dot_cluster",
+            "seam"
+          ]
+        },
+        "attachment": {
+          "Common": [],
+          "Uncommon": [],
+          "Rare": [
+            "pin",
+            "leaf",
+            "heart",
+            "star",
+            "bow"
+          ],
+          "RarePlus": [
+            "flower",
+            "bow",
+            "long_feather",
+            "pin",
+            "moon",
+            "swirl",
+            "heart",
+            "star",
+            "pom"
+          ]
+        }
+      },
+      "refused": {
+        "_comment": "Recorded with reasons, the way authored/source_bases/cap2/overlay_marks.json records why a mark was dropped. A refusal nobody wrote down gets re-proposed six weeks later.",
+        "letters": "unreadable below ~6px per glyph; a beret crown gives 3",
+        "text": "same, and it dates the asset",
+        "logos": "detail density cannot survive the 20x20 frame",
+        "crests": "same, and it implies a fiction the pack does not have",
+        "faces": "reads as noise at gameplay scale",
+        "animal_faces": "only legible if it fills the crown, which stops it being a motif",
+        "_overturned": "`pom` and `tassel` were refused in Milestone 1 on the grounds that a pom reads as a knit cap. The user's reference batch shows a white pom on a beret, so the reference wins: pom is allowed at RarePlus. Tassel stays refused -- nothing in the reference shows one."
+      },
+      "optional_pending_review": {
+        "_comment": "On the approved list but not enabled: each needs art that survives the integration pass before it may be rolled.",
+        "star_pin": "no beret-scoped art yet",
+        "heart_pin": "no beret-scoped art yet",
+        "moon_pin": "no art in the pool at all",
+        "gem_brooch": "gem_oval is crown_face-only; needs a side variant",
+        "tag_clip": "tag_cap is soft_cap-shaped",
+        "dot_cluster": "not authored",
+        "patch": "patch_square is 12 cells, which eats a whole Rare budget"
+      },
+      "known_gaps": {
+        "_comment": "Found by tools/build_beret_batch.py in Milestone 2. Recorded rather than papered over: the fix is a new decal, which is library expansion, not architecture.",
+        "beret_02_RarePlus_surface": {
+          "shape": "beret_02",
+          "tier": "RarePlus",
+          "stories": [
+            "cottagecore",
+            "formal",
+            "smart"
+          ],
+          "effect": "RarePlus carries one piece where Rare carries two, so richness dips at the top tier for this shape.",
+          "cause": "The RarePlus surface classes are woven_trim, band and badge. Both band pieces are 6 wide and beret_02's side band zone is 5, so they fail the all-views rule; brooch_round is a surface motif zoned to `side`, which overhangs the crown edge, so it fails containment.",
+          "fix_belongs_to": "library expansion \u2014 a premium surface trim shaped for beret_02's shallow crown and narrow side band",
+          "do_not": "widen the RarePlus pool with a Rare-grade class to make the number go up; that flattens the ladder instead of filling the gap"
+        }
+      },
+      "profiles": {
+        "cute_beret": {
+          "label": "cute beret",
+          "reference": "pixellab-CREATE-DIFFERENT-VARIANT-OF-ST-1789257040523.png",
+          "intent": "Reproduce the design language of the user's reference batch: soft puffy domes, muted pastel bodies with a darker band of their own colour, visible material differences, and one small warm accent.",
+          "styles": [
+            "cute"
+          ],
+          "shape_variants": {
+            "beret_03": 10,
+            "beret_02": 1
+          },
+          "palettes": [
+            "CUTE_IVORY_BLOSSOM",
+            "CUTE_ROSE_CREAM",
+            "CUTE_COCOA_GOLD",
+            "CUTE_SKY_PLAID",
+            "CUTE_TAN_RIBBON",
+            "CUTE_PERIWINKLE_HEART",
+            "CUTE_BLUSH_POM",
+            "CUTE_OLIVE_GOLD",
+            "CUTE_POWDER_STAR",
+            "CUTE_NAVY_MOON",
+            "CUTE_CREAM_PLAIN",
+            "CUTE_CARAMEL_SWIRL"
+          ],
+          "treatment_by_tier": {
+            "Common": {
+              "felt": 1
+            },
+            "Uncommon": {
+              "felt": 3,
+              "wool": 3,
+              "knit": 2,
+              "stitched": 2
+            },
+            "Rare": {
+              "felt": 2,
+              "wool": 3,
+              "knit": 2,
+              "plaid": 2,
+              "stitched": 2
+            },
+            "RarePlus": {
+              "felt": 1,
+              "wool": 3,
+              "knit": 2,
+              "plaid": 3,
+              "stitched": 2
+            }
+          },
+          "class_weights": {
+            "heart": 3,
+            "star": 3,
+            "moon": 2,
+            "swirl": 2,
+            "bow": 4,
+            "flower": 3,
+            "pom": 2,
+            "dot_cluster": 3,
+            "seam": 3,
+            "pin": 1,
+            "leaf": 1,
+            "long_feather": 1
+          },
+          "weighting_note": "Weights bias the roll toward the reference; they never restrict. Anything legal for the tier can still appear, which is what keeps a batch from collapsing into twelve copies of the reference.",
+          "class_deny": [
+            "band",
+            "woven_trim",
+            "stitch_accent",
+            "badge",
+            "button"
+          ],
+          "class_deny_reason": "beret_03 carries its band and rim in its own art, exactly as the reference does -- there the band is a darker shade of the hat's own colour, not a separate piece. An overlay band on top of that draws a second, brighter bar across the crown and is the one thing that made an early batch stop looking like the reference. Denied for this profile only; the classes stay available to every other profile and family.",
+          "shape_note": "The reference shows ONE silhouette across all twelve cells: its variation is material, palette and decoration, not shape. So the profile is dominated by beret_03, with beret_02 at low weight for occasional relief. beret_01 is not in this profile at all -- it is a flatter, harder-edged beret that belongs to a different look. Neither is restricted: both remain fully available to any other profile."
+        }
+      }
+    }
+  }
+}

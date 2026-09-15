@@ -1,0 +1,6 @@
+# Pixelsmith MCP workspace (development tool only, never shipped).
+# Everything here is transient: documents, references, previews, exports.
+# An approved result leaves by being COPIED into authored/ -- that copy is
+# tracked there; nothing in this folder is.
+*
+!.gitignore

@@ -1,0 +1,152 @@
+{
+  "name": "beret_03",
+  "family": "beret",
+  "shape_variant": "beret_03",
+  "slot": "HEAD",
+  "classification": "REFERENCE",
+  "size": [
+    20,
+    20
+  ],
+  "views": [
+    "front",
+    "right",
+    "back"
+  ],
+  "mirrored_at_render": [
+    "left"
+  ],
+  "style": [
+    "cute",
+    "cottagecore",
+    "casual",
+    "smart",
+    "formal"
+  ],
+  "provenance": "REFERENCE-ONLY: ingested from the user's own drawn directional sheet at BERET_MATERIAL\u2044PATTERN REFERENCE/Hats/hat_4/beret_{front,side,back}.png, supplied as the shape target. Pixels read, not transcribed. See authored/source_bases/beret/beret_03/provenance.json",
+  "derived_from": "BERET_MATERIAL\u2044PATTERN REFERENCE/Hats/hat_4/",
+  "anchors": {
+    "crown_top": {
+      "front": [
+        6,
+        3
+      ],
+      "right": [
+        7,
+        2
+      ],
+      "back": [
+        6,
+        0
+      ]
+    },
+    "side": {
+      "front": [
+        13,
+        4
+      ],
+      "right": [
+        10,
+        3
+      ],
+      "back": [
+        13,
+        1
+      ]
+    },
+    "band": {
+      "front": [
+        3,
+        7
+      ],
+      "right": [
+        1,
+        7
+      ],
+      "back": [
+        5,
+        6
+      ]
+    }
+  },
+  "zones": {
+    "front": {
+      "crown_top": [
+        6,
+        3,
+        13,
+        4
+      ],
+      "crown_face": [
+        6,
+        3,
+        13,
+        6
+      ],
+      "band": [
+        3,
+        7,
+        16,
+        7
+      ],
+      "side": [
+        13,
+        4,
+        16,
+        7
+      ]
+    },
+    "right": {
+      "crown_top": [
+        7,
+        2,
+        13,
+        3
+      ],
+      "crown_face": [
+        5,
+        3,
+        13,
+        6
+      ],
+      "band": [
+        1,
+        7,
+        5,
+        10
+      ],
+      "side": [
+        10,
+        3,
+        13,
+        7
+      ]
+    },
+    "back": {
+      "crown_top": [
+        6,
+        0,
+        13,
+        1
+      ],
+      "crown_face": [
+        5,
+        1,
+        14,
+        5
+      ],
+      "band": [
+        5,
+        6,
+        14,
+        9
+      ],
+      "side": [
+        13,
+        1,
+        16,
+        6
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "charm_heart",
+  "slot": "HEAD",
+  "z": 3,
+  "kind": "attachment",
+  "motif_class": "heart",
+  "zone": "side",
+  "style": [
+    "cute",
+    "cottagecore",
+    "casual",
+    "smart",
+    "formal"
+  ],
+  "views": [
+    "front",
+    "right",
+    "left"
+  ],
+  "size": [
+    3,
+    3
+  ],
+  "max_extent": 5,
+  "families": [
+    "beret"
+  ],
+  "_comment": "6 cells: the smallest shape that still reads as a heart at 16px"
+}

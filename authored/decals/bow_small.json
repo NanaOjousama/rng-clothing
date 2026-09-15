@@ -1,0 +1,29 @@
+{
+  "name": "bow_small",
+  "slot": "HEAD",
+  "z": 3,
+  "kind": "attachment",
+  "motif_class": "bow",
+  "zone": "side",
+  "style": [
+    "cute",
+    "cottagecore",
+    "casual",
+    "smart",
+    "formal"
+  ],
+  "views": [
+    "front",
+    "right",
+    "left"
+  ],
+  "size": [
+    5,
+    2
+  ],
+  "max_extent": 5,
+  "families": [
+    "beret"
+  ],
+  "_comment": "7 cells against bow_knot's 7 but two rows shorter, so it sits on a shallow crown without overhanging the eye"
+}

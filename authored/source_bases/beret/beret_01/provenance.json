@@ -1,0 +1,154 @@
+{
+  "id": "beret_01",
+  "family": "beret",
+  "classification": "REFERENCE",
+  "classification_reason": "Byte-identical to hyoung_hats_24 in the third-party pack '[FS] h young's hats' (author: h young, FS code by Mychocolate, v1.0.0), which declares no licence. Usable for architecture, conversion and testing; not a shippable production asset.",
+  "attribution": "h young \u2014 [FS] h young's hats (hyoung_hats.fs), hat 24",
+  "source": {
+    "path": "beret_variant1/hat.png",
+    "internal_name": "hyoung_hats_24",
+    "md5": "c63ad8801541e29bc61e5952a189726e",
+    "json_md5": "36d8a01a52871e350477c934062bfc99",
+    "size": [
+      20,
+      80
+    ],
+    "layout": {
+      "front": 0,
+      "right": 20,
+      "left": 40,
+      "back": 60
+    },
+    "read_only": true,
+    "preserved_copy": "authored/source_bases/beret/beret_01/source/hat.png",
+    "preserved_copy_md5": "c63ad8801541e29bc61e5952a189726e"
+  },
+  "normalisation": {
+    "what": "greyscale ramp only",
+    "from_shades": 45,
+    "to_steps": 6,
+    "policy": "equal_width",
+    "role": "body",
+    "step_colours": [
+      "#202020",
+      "#404040",
+      "#606060",
+      "#808080",
+      "#B0B0B0",
+      "#E0E0E0"
+    ],
+    "step_pixel_counts": {
+      "0": 47,
+      "1": 86,
+      "2": 63,
+      "3": 66,
+      "4": 34,
+      "5": 11
+    },
+    "source_grey_to_step": {
+      "#2c2c2c": 0,
+      "#2d2d2d": 0,
+      "#313131": 0,
+      "#323232": 0,
+      "#333333": 0,
+      "#343434": 0,
+      "#353535": 1,
+      "#363636": 1,
+      "#373737": 1,
+      "#383838": 1,
+      "#393939": 1,
+      "#3b3b3b": 1,
+      "#3c3c3c": 1,
+      "#3d3d3d": 2,
+      "#3e3e3e": 2,
+      "#3f3f3f": 2,
+      "#404040": 2,
+      "#414141": 2,
+      "#424242": 2,
+      "#434343": 2,
+      "#444444": 2,
+      "#454545": 3,
+      "#464646": 3,
+      "#474747": 3,
+      "#484848": 3,
+      "#494949": 3,
+      "#4a4a4a": 3,
+      "#4b4b4b": 3,
+      "#4c4c4c": 3,
+      "#4d4d4d": 3,
+      "#4e4e4e": 4,
+      "#4f4f4f": 4,
+      "#505050": 4,
+      "#515151": 4,
+      "#525252": 4,
+      "#535353": 4,
+      "#545454": 4,
+      "#555555": 4,
+      "#565656": 5,
+      "#575757": 5,
+      "#595959": 5,
+      "#5a5a5a": 5,
+      "#5b5b5b": 5,
+      "#5c5c5c": 5,
+      "#5e5e5e": 5
+    },
+    "preserved_exactly": [
+      "alpha",
+      "silhouette",
+      "bounding box",
+      "per-direction geometry",
+      "direction layout"
+    ],
+    "changed": [
+      "shading resolution within the silhouette"
+    ]
+  },
+  "directions": {
+    "authored": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "mirrored": [],
+    "note": "authored views are carried through unchanged; a mirrored view is produced at render time from its opposite, which is what the source's own hat.json specifies"
+  },
+  "geometry_check": {
+    "front": {
+      "bbox": [
+        3,
+        4,
+        15,
+        11
+      ],
+      "opaque": 62
+    },
+    "right": {
+      "bbox": [
+        2,
+        3,
+        13,
+        12
+      ],
+      "opaque": 62
+    },
+    "left": {
+      "bbox": [
+        6,
+        3,
+        17,
+        12
+      ],
+      "opaque": 62
+    },
+    "back": {
+      "bbox": [
+        4,
+        4,
+        16,
+        14
+      ],
+      "opaque": 121
+    }
+  }
+}

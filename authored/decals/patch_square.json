@@ -5,8 +5,9 @@
   "zone": "crown_face",
   "z": 2,
   "style": [
-    "work",
-    "casual"
+    "casual",
+    "cute",
+    "work"
   ],
   "views": [
     "front",
@@ -21,5 +22,8 @@
   "size": [
     4,
     3
+  ],
+  "families": [
+    "beret"
   ]
 }

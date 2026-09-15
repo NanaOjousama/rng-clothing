@@ -1,0 +1,29 @@
+{
+  "name": "charm_star",
+  "slot": "HEAD",
+  "z": 3,
+  "kind": "attachment",
+  "motif_class": "star",
+  "zone": "side",
+  "style": [
+    "cute",
+    "cottagecore",
+    "casual",
+    "smart",
+    "formal"
+  ],
+  "views": [
+    "front",
+    "right",
+    "left"
+  ],
+  "size": [
+    3,
+    3
+  ],
+  "max_extent": 5,
+  "families": [
+    "beret"
+  ],
+  "_comment": "a four-point star; five points cost two more rows and blur"
+}

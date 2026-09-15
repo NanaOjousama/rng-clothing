@@ -13,6 +13,7 @@
   "anchor_point": "top_centre",
   "style": [
     "casual",
+    "cute",
     "work"
   ],
   "views": [
@@ -28,5 +29,8 @@
   "size": [
     3,
     2
+  ],
+  "families": [
+    "beret"
   ]
 }

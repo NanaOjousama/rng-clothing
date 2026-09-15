@@ -69,3 +69,19 @@ references/fashion-sense-official/wiki-git/
 references/stardew-official/smapi/
 tools/AssemblyIndex/bin/
 tools/AssemblyIndex/obj/
+
+# PixelLab experiment outputs (experiments/pixellab/).  Deliberately NOT a
+# blanket ignore of the folder: selected candidates, style-reference crops and
+# chosen comparison assets stay committable for reproducibility.  Only the bulk
+# candidate grids and generated metrics are disposable.
+experiments/pixellab/pro_*_candidates/
+experiments/pixellab/*_metrics.json
+
+# Third-party source packs under the names they actually have on disk (the
+# `generator conent/` entry above never matched `generator content/`).
+generator content/
+BERET_MATERIAL⁄PATTERN REFERENCE/
+# Byte-identical third-party source copies kept beside provenance. Their md5 is
+# recorded in provenance.json and source_backed.json, so any machine can prove it
+# holds the same art; `tools/ingest_hat_base.py` recreates them from the corpus.
+authored/source_bases/*/*/source/

@@ -12,12 +12,14 @@
   ],
   "anchor_point": "top_right",
   "style": [
+    "casual",
     "cottagecore",
-    "festival",
-    "casual"
+    "cute",
+    "festival"
   ],
   "views": [
     "front",
+    "right",
     "left",
     "back"
   ],
@@ -30,5 +32,8 @@
   "size": [
     3,
     3
+  ],
+  "families": [
+    "beret"
   ]
 }

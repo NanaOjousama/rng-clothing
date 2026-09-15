@@ -5,11 +5,13 @@
   "zone": "side",
   "z": 3,
   "style": [
+    "cute",
     "formal",
     "smart"
   ],
   "views": [
     "front",
+    "right",
     "left"
   ],
   "fits": [
@@ -20,5 +22,8 @@
   "size": [
     3,
     3
+  ],
+  "families": [
+    "beret"
   ]
 }

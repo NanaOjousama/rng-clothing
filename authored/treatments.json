@@ -1,0 +1,58 @@
+{
+  "_comment": "Material / surface treatments. A treatment re-steps a base's OWN body cells by a deterministic rule -- it adds no geometry and invents no colour, so it composes freely with every palette and every shape. That is why it is a separate axis from the decal system rather than a kind of decal: a plaid covers the whole crown, which no zone-bounded piece can express.",
+  "axis": "treatment",
+  "rules": {
+    "plain": "identity",
+    "speckle": "a deterministic hash of (x,y) lifts `density` of eligible cells by `delta` steps",
+    "rib": "every `period`-th column drops by `delta` steps",
+    "check": "every `period`-th column and every `row_period`-th row lift by `delta`; crossings lift twice",
+    "panel": "one horizontal seam row and one vertical centre seam drop by `delta`"
+  },
+  "treatments": {
+    "felt": {
+      "label": "felt",
+      "rule": "plain",
+      "params": {},
+      "note": "the plain material, and the commonest in the reference"
+    },
+    "wool": {
+      "label": "brushed wool",
+      "rule": "speckle",
+      "params": {
+        "density": 0.18,
+        "delta": 1,
+        "min_step": 4
+      },
+      "note": "scattered lighter flecks, as on the tan and dusty-pink references"
+    },
+    "knit": {
+      "label": "knit rib",
+      "rule": "rib",
+      "params": {
+        "period": 3,
+        "delta": 1,
+        "min_step": 4
+      }
+    },
+    "plaid": {
+      "label": "plaid check",
+      "rule": "check",
+      "params": {
+        "period": 4,
+        "row_period": 3,
+        "delta": 1,
+        "min_step": 4
+      },
+      "note": "the pale cross-hatch on the light blue reference"
+    },
+    "stitched": {
+      "label": "stitched panel",
+      "rule": "panel",
+      "params": {
+        "delta": 1,
+        "min_step": 4
+      }
+    }
+  },
+  "min_step_note": "min_step keeps a treatment off the rim and shade steps (2 and 3). Those carry the hat's construction -- its edge and its round -- and texturing them turns a readable silhouette into noise at 16px. With a flat step-4 body the material has the whole crown to work on and needs nothing below it."
+}

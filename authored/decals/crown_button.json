@@ -6,15 +6,18 @@
   "z": 3,
   "style": [
     "casual",
-    "work",
-    "smart"
+    "cute",
+    "smart",
+    "work"
   ],
   "views": [
     "front",
+    "right",
     "left",
     "back"
   ],
   "fits": [
+    "beret_02",
     "knit_cap"
   ],
   "description": "the metal button at the centre of a cap's crown",
@@ -22,5 +25,6 @@
   "size": [
     1,
     1
-  ]
+  ],
+  "_comment": "Restricted to beret_02 within the beret family: it authors a nub on the crown (its front crown_top zone is 1x2, the stalk itself), and a bead reads as sitting on that. beret_01 has no nub, so the same piece would float on a bare crown."
 }

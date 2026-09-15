@@ -1,0 +1,175 @@
+{
+  "schema": "source_backed/v2",
+  "name": "beret_02",
+  "family": "beret",
+  "shape_variant": "beret_02",
+  "slot": "HEAD",
+  "classification": "REFERENCE",
+  "style": [
+    "casual",
+    "cottagecore",
+    "cute",
+    "formal",
+    "smart"
+  ],
+  "source": {
+    "png": "authored/source_bases/beret/beret_02/source/hat.png",
+    "md5": "55c7f8fa33cc72e2745a78ace474761b",
+    "json": "authored/source_bases/beret/beret_02/source/hat.json",
+    "json_md5": "c44c3372f2215aec7df02da5a15dcf8f",
+    "frame_size": [
+      20,
+      20
+    ],
+    "origin": "generator content/[FS] Cottagecore Set/Hats/Beret/hat.png"
+  },
+  "views_note": "read from the source hat.json at load: authored ['back', 'front', 'right'], mirrored {'left': 'right'}",
+  "semantic_map": {
+    "dir": "semantic",
+    "policy": "rank",
+    "ramp": [
+      "#202020",
+      "#404040",
+      "#606060",
+      "#808080",
+      "#B0B0B0",
+      "#E0E0E0"
+    ],
+    "source_grey_to_step": {
+      "#393939": 0,
+      "#515151": 1,
+      "#a4a4a4": 3,
+      "#a5a5a5": 3,
+      "#d6d6d6": 4,
+      "#fefefe": 5
+    },
+    "role": "describes the source for recolouring/composition; never replaces it"
+  },
+  "anchors": {
+    "crown_top": {
+      "front": [
+        10,
+        4
+      ],
+      "right": [
+        3,
+        6
+      ],
+      "back": [
+        8,
+        6
+      ]
+    },
+    "side": {
+      "front": [
+        11,
+        5
+      ],
+      "right": [
+        11,
+        6
+      ],
+      "back": [
+        12,
+        7
+      ]
+    },
+    "band": {
+      "front": [
+        4,
+        8
+      ],
+      "right": [
+        3,
+        10
+      ],
+      "back": [
+        4,
+        11
+      ]
+    }
+  },
+  "zones": {
+    "front": {
+      "crown_top": [
+        10,
+        4,
+        10,
+        5
+      ],
+      "crown_face": [
+        6,
+        6,
+        13,
+        7
+      ],
+      "band": [
+        4,
+        8,
+        15,
+        10
+      ],
+      "side": [
+        11,
+        5,
+        14,
+        8
+      ]
+    },
+    "right": {
+      "crown_top": [
+        3,
+        6,
+        13,
+        6
+      ],
+      "crown_face": [
+        4,
+        6,
+        12,
+        9
+      ],
+      "band": [
+        3,
+        10,
+        7,
+        12
+      ],
+      "side": [
+        11,
+        6,
+        14,
+        10
+      ]
+    },
+    "back": {
+      "crown_top": [
+        8,
+        6,
+        11,
+        7
+      ],
+      "crown_face": [
+        6,
+        7,
+        13,
+        10
+      ],
+      "band": [
+        4,
+        11,
+        15,
+        14
+      ],
+      "side": [
+        12,
+        7,
+        15,
+        11
+      ]
+    }
+  },
+  "placement_override": {},
+  "placement_note": "empty: the source hat.json HeadPosition is the default. An override must name its in-game QC evidence.",
+  "provenance": "REFERENCE-ONLY: plurffle \u2014 [FS] Cottagecore Set (SmolHooman.CottagecoreSet), Beret (generator content/[FS] Cottagecore Set/Hats/Beret/hat.png). See authored/source_bases/beret/beret_02/provenance.json"
+}

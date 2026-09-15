@@ -1,0 +1,29 @@
+{
+  "name": "beret_stitch_mark",
+  "slot": "HEAD",
+  "z": 2,
+  "kind": "surface",
+  "motif_class": "stitch_accent",
+  "zone": "band",
+  "style": [
+    "casual",
+    "cottagecore",
+    "cute",
+    "formal",
+    "smart"
+  ],
+  "views": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ],
+  "size": [
+    5,
+    1
+  ],
+  "families": [
+    "beret"
+  ],
+  "_comment": "Three dashes with gaps, not a solid line: at Stardew scale a continuous run reads as a stripe and stops saying 'stitching'. Authored for the beret family because the pool had no surface motif small enough for the Uncommon cell budget."
+}

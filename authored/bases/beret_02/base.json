@@ -1,0 +1,153 @@
+{
+  "name": "beret_02",
+  "family": "beret",
+  "shape_variant": "beret_02",
+  "slot": "HEAD",
+  "classification": "REFERENCE",
+  "size": [
+    20,
+    20
+  ],
+  "views": [
+    "front",
+    "right",
+    "back"
+  ],
+  "mirrored_at_render": [
+    "left"
+  ],
+  "style": [
+    "casual",
+    "cottagecore",
+    "cute",
+    "formal",
+    "smart"
+  ],
+  "provenance": "REFERENCE-ONLY: plurffle \u2014 [FS] Cottagecore Set (SmolHooman.CottagecoreSet), Beret (generator content/[FS] Cottagecore Set/Hats/Beret/hat.png). See authored/source_bases/beret/beret_02/provenance.json",
+  "derived_from": "generator content/[FS] Cottagecore Set/Hats/Beret/hat.png",
+  "normalised": "6 source greys -> 6 body steps, rank",
+  "anchors": {
+    "crown_top": {
+      "front": [
+        10,
+        4
+      ],
+      "right": [
+        3,
+        6
+      ],
+      "back": [
+        8,
+        6
+      ]
+    },
+    "side": {
+      "front": [
+        11,
+        5
+      ],
+      "right": [
+        11,
+        6
+      ],
+      "back": [
+        12,
+        7
+      ]
+    },
+    "band": {
+      "front": [
+        4,
+        8
+      ],
+      "right": [
+        3,
+        10
+      ],
+      "back": [
+        4,
+        11
+      ]
+    }
+  },
+  "zones": {
+    "front": {
+      "crown_top": [
+        10,
+        4,
+        10,
+        5
+      ],
+      "crown_face": [
+        6,
+        6,
+        13,
+        7
+      ],
+      "band": [
+        4,
+        8,
+        15,
+        10
+      ],
+      "side": [
+        11,
+        5,
+        14,
+        8
+      ]
+    },
+    "right": {
+      "crown_top": [
+        3,
+        6,
+        13,
+        6
+      ],
+      "crown_face": [
+        4,
+        6,
+        12,
+        9
+      ],
+      "band": [
+        3,
+        10,
+        7,
+        12
+      ],
+      "side": [
+        11,
+        6,
+        14,
+        10
+      ]
+    },
+    "back": {
+      "crown_top": [
+        8,
+        6,
+        11,
+        7
+      ],
+      "crown_face": [
+        6,
+        7,
+        13,
+        10
+      ],
+      "band": [
+        4,
+        11,
+        15,
+        14
+      ],
+      "side": [
+        12,
+        7,
+        15,
+        11
+      ]
+    }
+  }
+}

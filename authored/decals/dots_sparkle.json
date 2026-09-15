@@ -1,0 +1,30 @@
+{
+  "name": "dots_sparkle",
+  "slot": "HEAD",
+  "z": 2,
+  "kind": "surface",
+  "motif_class": "dot_cluster",
+  "zone": "crown_face",
+  "style": [
+    "cute",
+    "cottagecore",
+    "casual",
+    "smart",
+    "formal"
+  ],
+  "views": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ],
+  "size": [
+    5,
+    3
+  ],
+  "max_extent": 0,
+  "families": [
+    "beret"
+  ],
+  "_comment": "five scattered dots; a denser cluster reads as noise"
+}

@@ -13,10 +13,12 @@
   "anchor_point": "top_right",
   "style": [
     "cottagecore",
+    "cute",
     "work"
   ],
   "views": [
     "front",
+    "right",
     "left"
   ],
   "fits": [
@@ -28,5 +30,8 @@
   "size": [
     3,
     4
+  ],
+  "families": [
+    "beret"
   ]
 }

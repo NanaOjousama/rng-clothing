@@ -5,12 +5,14 @@
   "zone": "band",
   "z": 2,
   "style": [
-    "work",
     "casual",
-    "cottagecore"
+    "cottagecore",
+    "cute",
+    "work"
   ],
   "views": [
     "front",
+    "right",
     "left",
     "back"
   ],
@@ -23,5 +25,8 @@
   "size": [
     6,
     1
+  ],
+  "families": [
+    "beret"
   ]
 }

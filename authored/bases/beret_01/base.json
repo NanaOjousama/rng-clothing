@@ -1,0 +1,190 @@
+{
+  "name": "beret_01",
+  "family": "beret",
+  "shape_variant": "beret_01",
+  "slot": "HEAD",
+  "classification": "REFERENCE",
+  "size": [
+    20,
+    20
+  ],
+  "views": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ],
+  "mirrored_at_render": [],
+  "style": [
+    "casual",
+    "cottagecore",
+    "cute",
+    "formal",
+    "smart"
+  ],
+  "provenance": "REFERENCE-ONLY: h young \u2014 [FS] h young's hats (hyoung_hats.fs), hat 24 (beret_variant1/hat.png). See authored/source_bases/beret/beret_01/provenance.json",
+  "derived_from": "beret_variant1/hat.png",
+  "normalised": "45 source greys -> 6 body steps, equal_width",
+  "anchors": {
+    "crown_top": {
+      "front": [
+        7,
+        4
+      ],
+      "right": [
+        6,
+        4
+      ],
+      "left": [
+        7,
+        4
+      ],
+      "back": [
+        7,
+        4
+      ]
+    },
+    "side": {
+      "front": [
+        12,
+        5
+      ],
+      "right": [
+        10,
+        4
+      ],
+      "left": [
+        12,
+        4
+      ],
+      "back": [
+        13,
+        5
+      ]
+    },
+    "band": {
+      "front": [
+        3,
+        8
+      ],
+      "right": [
+        3,
+        8
+      ],
+      "left": [
+        11,
+        8
+      ],
+      "back": [
+        6,
+        10
+      ]
+    }
+  },
+  "zones": {
+    "front": {
+      "crown_top": [
+        7,
+        4,
+        12,
+        5
+      ],
+      "crown_face": [
+        7,
+        4,
+        12,
+        7
+      ],
+      "band": [
+        3,
+        8,
+        15,
+        8
+      ],
+      "side": [
+        12,
+        5,
+        15,
+        8
+      ]
+    },
+    "right": {
+      "crown_top": [
+        6,
+        4,
+        12,
+        4
+      ],
+      "crown_face": [
+        6,
+        4,
+        11,
+        7
+      ],
+      "band": [
+        3,
+        8,
+        8,
+        9
+      ],
+      "side": [
+        10,
+        4,
+        13,
+        8
+      ]
+    },
+    "left": {
+      "crown_top": [
+        7,
+        4,
+        13,
+        4
+      ],
+      "crown_face": [
+        8,
+        4,
+        13,
+        7
+      ],
+      "band": [
+        11,
+        8,
+        16,
+        9
+      ],
+      "side": [
+        12,
+        4,
+        15,
+        8
+      ]
+    },
+    "back": {
+      "crown_top": [
+        7,
+        4,
+        12,
+        5
+      ],
+      "crown_face": [
+        6,
+        5,
+        14,
+        9
+      ],
+      "band": [
+        6,
+        10,
+        15,
+        13
+      ],
+      "side": [
+        13,
+        5,
+        16,
+        10
+      ]
+    }
+  }
+}

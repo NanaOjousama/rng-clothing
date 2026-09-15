@@ -3,25 +3,158 @@
 Concise current-milestone state. Not a log — see `PROJECT_MEMORY.md` for
 history and `CLAUDE.md` for standing rules.
 
-**Last updated:** 2026-09-10 (setup/audit session)
+**Last updated:** 2026-09-14 (Source-Backed V2 built beside legacy — awaiting user approval + in-game source comparison)
 **Live stack:** Stardew Valley 1.6.15 · SMAPI 4.5.2 · Fashion Sense 7.5.0
 
 ---
 
 ## CURRENT MILESTONE
 
-**Generator V2 setup — not started.** This session prepared tooling, references,
-authority rules and workflow only. V2 design and implementation begin next
-session.
+**Beret family Milestone 2 — two shapes, verified in game. Complete.**
+
+Milestone 1 landed the generic family axis, `quality_tier`, optional authored
+right views and a `classification` gate. Milestone 2 added a second shape and
+put the whole thing under a 48-appearance batch, which found five real defects
+(all fixed) and one library gap (recorded, not papered over).
+
+- **`beret_02`** is ingested from the **approved** Cottagecore Set beret
+  (plurffle) — better provenance than `beret_01`, and a genuinely different
+  shape: 14x9 with a crown nub against 13x8 without one.
+- **Ingest is now generic.** `tools/ingest_hat_base.py` drives every shape from
+  one spec table; nothing in it knows what a beret is.
+- **The mirror fallback is symmetric.** A base may author either profile view
+  and have the other mirrored. `beret_02` authors Front/Right/Back and flips
+  Left, which is the Fashion Sense `Flipped` convention its own source uses.
+- **`can_place()`** is one shared predicate applied by both the combinator and
+  the reporting tools, so pool coverage asks exactly the question selection asks.
+- **Per-shape restrictions are data.** `crown_button` is restricted to
+  `beret_02`'s nub through `fits`; the band motifs are refused on `beret_02` by
+  geometry alone. No shape name appears anywhere in `v5/authored.py`.
+
+Packs: `test-packs/fashionsense/RNG-Beret-Family-M1/` (4) and
+`RNG-Beret-Batch-M2/` (48). Both are installed under the game's `Mods/` and
+need a game restart before they register.
 
 Immediately prior work (through 2026-09-09) was **Cap 2**: deriving a hat family
 directly from approved source pixels rather than procedurally inventing one —
 `tools/cap2_*.py`, packs `RNG-Cap2Fit/Full/Overlay/Rarity/Rolls/Row8`. That
-direction is what the new source-authority rule formalises.
+direction is what the source-authority rule formalises.
+
+---
+
+## SOURCE-BACKED V2 (2026-09-14) — ACCEPTED BY USER
+
+**Status: ACCEPTED and frozen. Do not redesign V2. No library expansion without
+approval. Next: one real authored plaid mask for beret_02 only.**
+
+- `v5/source_backed.py`: a separate base type. Source pixels (md5-pinned preserved
+  copy) are canonical; the (role, step) semantic map is stored separately under
+  `authored/source_backed/<name>/semantic/`; placement, views and Fashion Sense
+  colouring fields are read from the source hat.json. `authored.py` is untouched.
+- Ingested: `beret_02`, `beret_01` (`tools/ingest_source_backed.py`).
+- **Proven offline:** neutral render == source pixel-exact for both; neutral pack
+  keeps every non-layout source model field verbatim (HeadPosition 0,1 / 0,0; no
+  DisableGrayscale -> still tinted in game); palette bake = source x tint, alpha
+  and value order kept; material changes only mask cells by a value ratio; decals
+  change only seated/shaded cells; render == pack. `trace_source_fidelity.py`
+  (v2 default) reports **no unexpected stage** for either base.
+- Semantic map, zones and anchors equal the legacy base's exactly.
+- **Legacy unchanged:** `tools/legacy_render_guard.py` — 1996 renders captured
+  before V2, 0 moved. `validate_beret_family.py` 81/81, material-mask 14/14.
+- Materials: no authored plaid mask exists for either shape, so plaid is
+  **refused**, not procedurally fitted. The hat_8 reference plaid extracts cleanly
+  (back: v-lines x4/7/12/15, h-lines y5/8/11/14, 1 component) and is
+  INCOMPATIBLE with both shapes (`tools/extract_material_mask.py`).
+- **In game, session `20260914-231749`: source pack vs V2 neutral IDENTICAL.**
+  `tools/compare_source_v2_worn.py`: beret_02 (Cottagecore `Beret`) and beret_01
+  (`hyoung_hats_24`) vs `SB2Beret02Neutral` / `SB2Beret01Neutral`, all four
+  directions: worn diff 0 px, hat-only diff 0 px, scene diff 0 px, hat bounds
+  offset 0. Non-vacuous: 1728-2576 hat px per direction. Source HeadPosition
+  reproduces the author's placement; the explicit mirrored left frame renders
+  identically to FS `Flipped` (HeadPosition X=0). Evidence:
+  `experiments/source_fidelity/v2_worn/20260914-231749/`.
+  Limit: the farmer's FS hat tint was white, so non-white tinting was not
+  exercised in game (identical pixels + identical render fields imply it).
+  SMAPI errors in that session are a vanilla FarmAnimal NullReference at save
+  load, unrelated to Fashion Sense.
+- Pre-existing, unrelated: `validate_generator_v6.py` crashes on missing
+  `output/v6-production-batch/design-rarity-table.json`.
+
+## SOURCE-FIDELITY AUDIT (2026-09-14) — DIAGNOSIS ONLY, NOTHING FIXED
+
+Art tuning is paused. Question: where does a good source stop looking like
+itself? `tools/trace_source_fidelity.py` walks a base through S1 source → S2
+ingested → S3 neutral render → S4 palette → S5 material → S6 pack → S7 worn;
+evidence in `experiments/source_fidelity/<base>/` (stage PNGs, x8 strips, diffs,
+`report.json`). Regression test: `tests/test_source_fidelity.py`; it is **red on
+purpose** (6 failures, 3 stage tests x 2 bases).
+
+- **First pixel-level break is S2, ingest, for both source-backed berets.**
+  `tools/ingest_hat_base.py` rewrites every source grey onto the index's fixed
+  `#202020..#E0E0E0` ramp. Alpha and geometry are exact.
+  - `beret_02` (approved Cottagecore): 333/333 px change value, the 5 source
+    levels keep their order, one 1-px `#a4a4a4` stray merges into `#a5a5a5`.
+    Visually it stays itself: S4 with EVERYDAY_STONE_BLUE lands close to the
+    simulated Fashion Sense tint of the untouched source (L* 15/30/57/69/82 vs
+    19/27/54/70/81).
+  - `beret_01`: 45 near-flat dark greys (edge-contrast median 2.5 L*) are
+    bucketed `equal_width` into 6 steps spread over the whole ramp (12.9 L*).
+    A subtle dark hat becomes a high-contrast shaded one with a bright back
+    highlight. **This is the first stage where a source visibly stops looking
+    like itself.**
+- **S2→S3 is exact** (render path adds nothing). **S4→S6 pack is exact** at
+  Common. **S6→S7 is exact**: every hat pixel is drawn as shipped, 0 hidden.
+- **S5 material is destructive to source shading**: plaid lifts 49 of
+  `beret_02`'s 88 `#d6d6d6` cells onto the `#fefefe` highlight step.
+- **Placement is not the source's.** The source `beret_02` hat.json has
+  `HeadPosition Y=1`; every pack ships `Y=-2`. In FS source HeadPosition is the
+  draw origin offset, so ours draws **3 logical px lower** than the author
+  placed it — likely the cause of "beret_02 reads lower and bulkier" below.
+  Inferred from DrawManager.cs, **not yet captured in game**.
+- The source is a greyscale **tint mask** (no `DisableGrayscale`); our packs
+  bake colour with `DisableGrayscale: true`. No capture of the source itself
+  worn exists — the Cottagecore Set is not installed in `Mods/`.
+- `beret_03` is out of scope by its own provenance: shading not taken from source.
+
+Next test (not run): capture the untouched Cottagecore beret worn (needs the pack
+installed before game start) against a `beret_02` pack at `HeadPosition Y=1`.
 
 ---
 
 ## PROVEN
+
+- **The family/quality/right-view changes are inert for existing assets.**
+  133 pre-change renders (every legacy base x compatible palette, plus 12
+  `compose()` rolls) hash byte-identical afterwards —
+  `tests/fixtures/authored_legacy_baseline.json`, captured before the edit.
+- **`beret_01`'s four authored directions survive the ingest**: alpha identical
+  to the source sheet in all four frames, bounding boxes unmoved, and the
+  rendered right view provably not a mirror of left.
+- **`quality_tier` is a real independent axis**: with family, shape, palette and
+  style pinned, the four tiers still produce four distinct renders with
+  monotonically increasing decoration.
+- **The shape axis does something.** Across the 48-appearance batch the two
+  shapes wear different decoration sets, there are **0 placement drops**, and no
+  two different inputs render identically.
+- **`tools/validate_beret_family.py` is 81 checks** and covers legacy
+  byte-identity, both mirror directions, per-shape restrictions, tier budgets
+  and the batch statistics.
+- **In game, 2026-09-13, session `20260913-220258`: 52 appearances x 4
+  directions = 208 frames, all drawing.** For every one of the 8 shape x
+  direction combinations, **0 px of the shipped art is missing** — the renderer
+  draws the pack frames pixel for pixel.
+- **Seating is uniform and correct**: centre +0.0, hat_top +4, contact band 5 on
+  all 52. `HeadPosition 0,-2` is verified and was **not changed**.
+- **The authored right view survives into the game.** `beret_01`'s left differs
+  from its mirrored right by 112 px (its authored right is genuinely used);
+  `beret_02`'s left is an exact 0-px mirror of its right, which is the
+  `Flipped` fallback behaving correctly. Both are what the design intends.
+- **The axes are live, not just static**: same shape and palette across tiers
+  changes the drawn hat (Common vs RarePlus 240-288 px), and the same shape and
+  tier across palettes recolours it (992-1936 px).
+- **Face intrusion and hair-above-hat are within or better than the accepted
+  authored-base baseline** (`20260910-013851`): face_pixels mean 913 vs 952,
+  hair-above mean 244 vs 288 in profile and 356 vs 448 at the back.
 
 - **QC Bridge works end to end.** Real game, real Fashion-Sense-patched
   renderer, file-based JSON protocol. `qc_bridge/latest_state.json` holds a
@@ -54,6 +187,25 @@ direction is what the new source-authority rule formalises.
   `VEST_TOP`, `CROPPED_JACKET`, `SHORT_OUTERWEAR` proven at runtime.
 
 ## NOT YET PROVEN
+
+- **`beret_02` reads lower and bulkier than `beret_01` when worn.** Its profile
+  edge sits just above the eye where `beret_01` clears it comfortably. Every
+  metric is inside the accepted baseline and no art is missing, so this is a
+  design judgement for the user, not a defect. The dark notch in its back view
+  is faithful to the approved Cottagecore source, not an artefact.
+- **4 floating columns in every profile view**, a 1-logical-pixel gap under the
+  beret's trailing edge. 5 of the 20 already-accepted authored bases show the
+  same signature, so it is within tolerance rather than clean.
+- **`beret_02` has no premium surface motif.** At RarePlus its allowed surface
+  classes are woven_trim, band and badge; both bands are 6 wide against its
+  5-wide side band zone, and `brooch_round` is a surface piece in the
+  overhanging `side` zone. So RarePlus carries one piece where Rare carries two.
+  Recorded in `authored/families.json` under `known_gaps`; the fix is a new
+  decal, which is library expansion.
+- `beret_variant1` / `hyoung_hats_24` has **no established provenance**; it is
+  REFERENCE, and the engine enforces that by excluding it from the slot-wide
+  roll. It must not be promoted without an origin.
+- Only **two** beret shapes exist, both REFERENCE. Neither has been seen worn.
 
 - Highlight share of authored bases is 1–4% against corpus families' 6–16%.
 - `wide_brim_hat` carries 93 cells against its family's 108.

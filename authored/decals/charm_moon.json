@@ -1,0 +1,29 @@
+{
+  "name": "charm_moon",
+  "slot": "HEAD",
+  "z": 3,
+  "kind": "attachment",
+  "motif_class": "moon",
+  "zone": "side",
+  "style": [
+    "cute",
+    "cottagecore",
+    "casual",
+    "smart",
+    "formal"
+  ],
+  "views": [
+    "front",
+    "right",
+    "left"
+  ],
+  "size": [
+    3,
+    4
+  ],
+  "max_extent": 6,
+  "families": [
+    "beret"
+  ],
+  "_comment": "crescent opening right, matching the navy reference"
+}

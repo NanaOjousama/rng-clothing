@@ -1,0 +1,483 @@
+{
+ "path": "source_backed_v2",
+ "base": "beret_02",
+ "first_unexpected_stage": null,
+ "stages": [
+  {
+   "name": "S1_source",
+   "unexpected_px": 0,
+   "unexpected": [],
+   "notes": {}
+  },
+  {
+   "name": "S2_ingest",
+   "unexpected_px": 0,
+   "unexpected": [],
+   "notes": {
+    "rule": "stored source pixels == source"
+   }
+  },
+  {
+   "name": "S3_neutral",
+   "unexpected_px": 0,
+   "unexpected": [],
+   "notes": {
+    "rule": "neutral render == source",
+    "baked": false
+   }
+  },
+  {
+   "name": "S4_palette",
+   "unexpected_px": 0,
+   "unexpected": [],
+   "notes": {
+    "rule": "alpha unchanged; pixel = source x tint",
+    "tint": "#c1ccd6",
+    "alpha_changed": 0
+   }
+  },
+  {
+   "name": "S5_material",
+   "unexpected_px": 0,
+   "unexpected": [],
+   "notes": {
+    "rule": "refused, not re-fitted",
+    "incompatible": "beret_02 has no authored 'plaid' mask (procedural treatments need experimental_procedural=True)"
+   }
+  },
+  {
+   "name": "S6_motif",
+   "unexpected_px": 0,
+   "unexpected": [],
+   "notes": {
+    "rule": "only seated/shaded decal cells change",
+    "decals": [
+     "beret_stitch_mark",
+     "bow_knot"
+    ],
+    "dropped": [],
+    "allowed_cells": 48
+   }
+  },
+  {
+   "name": "S7_pack",
+   "unexpected_px": 0,
+   "unexpected": [],
+   "notes": {
+    "rule": "pack sheet == render",
+    "HeadPosition": {
+     "FrontHat": {
+      "X": 0,
+      "Y": 1
+     },
+     "RightHat": {
+      "X": 0,
+      "Y": 1
+     },
+     "LeftHat": {
+      "X": 0,
+      "Y": 1
+     },
+     "BackHat": {
+      "X": 0,
+      "Y": 1
+     }
+    },
+    "DisableGrayscale": {
+     "FrontHat": true,
+     "RightHat": true,
+     "LeftHat": true,
+     "BackHat": true
+    }
+   }
+  }
+ ],
+ "vs_source": {
+  "S2_ingest": {
+   "alpha_changed": 0,
+   "rgb_changed": 0,
+   "splits": {},
+   "merges": {},
+   "value_order_inversions": [],
+   "ramp": [
+    {
+     "from": "#393939",
+     "L_from": 24.0,
+     "to": "#393939",
+     "L_to": 24.0,
+     "px": 54
+    },
+    {
+     "from": "#515151",
+     "L_from": 34.5,
+     "to": "#515151",
+     "L_to": 34.5,
+     "px": 78
+    },
+    {
+     "from": "#a4a4a4",
+     "L_from": 67.4,
+     "to": "#a4a4a4",
+     "L_to": 67.4,
+     "px": 1
+    },
+    {
+     "from": "#a5a5a5",
+     "L_from": 67.7,
+     "to": "#a5a5a5",
+     "L_to": 67.7,
+     "px": 39
+    },
+    {
+     "from": "#d6d6d6",
+     "L_from": 85.6,
+     "to": "#d6d6d6",
+     "L_to": 85.6,
+     "px": 88
+    },
+    {
+     "from": "#fefefe",
+     "L_from": 99.7,
+     "to": "#fefefe",
+     "L_to": 99.7,
+     "px": 73
+    }
+   ],
+   "edge_contrast_median": [
+    17.9,
+    17.9
+   ],
+   "edge_pairs": 373
+  },
+  "S3_neutral": {
+   "alpha_changed": 0,
+   "rgb_changed": 0,
+   "splits": {},
+   "merges": {},
+   "value_order_inversions": [],
+   "ramp": [
+    {
+     "from": "#393939",
+     "L_from": 24.0,
+     "to": "#393939",
+     "L_to": 24.0,
+     "px": 54
+    },
+    {
+     "from": "#515151",
+     "L_from": 34.5,
+     "to": "#515151",
+     "L_to": 34.5,
+     "px": 78
+    },
+    {
+     "from": "#a4a4a4",
+     "L_from": 67.4,
+     "to": "#a4a4a4",
+     "L_to": 67.4,
+     "px": 1
+    },
+    {
+     "from": "#a5a5a5",
+     "L_from": 67.7,
+     "to": "#a5a5a5",
+     "L_to": 67.7,
+     "px": 39
+    },
+    {
+     "from": "#d6d6d6",
+     "L_from": 85.6,
+     "to": "#d6d6d6",
+     "L_to": 85.6,
+     "px": 88
+    },
+    {
+     "from": "#fefefe",
+     "L_from": 99.7,
+     "to": "#fefefe",
+     "L_to": 99.7,
+     "px": 73
+    }
+   ],
+   "edge_contrast_median": [
+    17.9,
+    17.9
+   ],
+   "edge_pairs": 373
+  },
+  "S4_palette": {
+   "alpha_changed": 0,
+   "rgb_changed": 333,
+   "splits": {},
+   "merges": {},
+   "value_order_inversions": [],
+   "ramp": [
+    {
+     "from": "#393939",
+     "L_from": 24.0,
+     "to": "#2b2e30",
+     "L_to": 18.7,
+     "px": 54
+    },
+    {
+     "from": "#515151",
+     "L_from": 34.5,
+     "to": "#3d4144",
+     "L_to": 27.3,
+     "px": 78
+    },
+    {
+     "from": "#a4a4a4",
+     "L_from": 67.4,
+     "to": "#7c838a",
+     "L_to": 54.4,
+     "px": 1
+    },
+    {
+     "from": "#a5a5a5",
+     "L_from": 67.7,
+     "to": "#7d848a",
+     "L_to": 54.8,
+     "px": 39
+    },
+    {
+     "from": "#d6d6d6",
+     "L_from": 85.6,
+     "to": "#a2abb4",
+     "L_to": 69.5,
+     "px": 88
+    },
+    {
+     "from": "#fefefe",
+     "L_from": 99.7,
+     "to": "#c0cbd5",
+     "L_to": 81.1,
+     "px": 73
+    }
+   ],
+   "edge_contrast_median": [
+    17.9,
+    14.8
+   ],
+   "edge_pairs": 373
+  },
+  "S5_material": {
+   "alpha_changed": 0,
+   "rgb_changed": 333,
+   "splits": {},
+   "merges": {},
+   "value_order_inversions": [],
+   "ramp": [
+    {
+     "from": "#393939",
+     "L_from": 24.0,
+     "to": "#2b2e30",
+     "L_to": 18.7,
+     "px": 54
+    },
+    {
+     "from": "#515151",
+     "L_from": 34.5,
+     "to": "#3d4144",
+     "L_to": 27.3,
+     "px": 78
+    },
+    {
+     "from": "#a4a4a4",
+     "L_from": 67.4,
+     "to": "#7c838a",
+     "L_to": 54.4,
+     "px": 1
+    },
+    {
+     "from": "#a5a5a5",
+     "L_from": 67.7,
+     "to": "#7d848a",
+     "L_to": 54.8,
+     "px": 39
+    },
+    {
+     "from": "#d6d6d6",
+     "L_from": 85.6,
+     "to": "#a2abb4",
+     "L_to": 69.5,
+     "px": 88
+    },
+    {
+     "from": "#fefefe",
+     "L_from": 99.7,
+     "to": "#c0cbd5",
+     "L_to": 81.1,
+     "px": 73
+    }
+   ],
+   "edge_contrast_median": [
+    17.9,
+    14.8
+   ],
+   "edge_pairs": 373
+  },
+  "S6_motif": {
+   "alpha_changed": 4,
+   "rgb_changed": 333,
+   "splits": {
+    "#515151": {
+     "#3d4144": 68,
+     "#3f4756": 4,
+     "#202534": 1,
+     "#5e6877": 3,
+     "#5a6064": 2
+    },
+    "#a5a5a5": {
+     "#7d848a": 30,
+     "#aaa9a5": 3,
+     "#5e6877": 2,
+     "#828991": 4
+    },
+    "#d6d6d6": {
+     "#a2abb4": 78,
+     "#c2ccd7": 2,
+     "#aaa9a5": 6,
+     "#d2c9b9": 2
+    },
+    "#fefefe": {
+     "#c0cbd5": 62,
+     "#d2c9b9": 10,
+     "#aaa9a5": 1
+    }
+   },
+   "merges": {},
+   "value_order_inversions": [],
+   "ramp": [
+    {
+     "from": "#393939",
+     "L_from": 24.0,
+     "to": "#2b2e30",
+     "L_to": 18.7,
+     "px": 54
+    },
+    {
+     "from": "#515151",
+     "L_from": 34.5,
+     "to": "#3d4144",
+     "L_to": 27.3,
+     "px": 78
+    },
+    {
+     "from": "#a4a4a4",
+     "L_from": 67.4,
+     "to": "#7c838a",
+     "L_to": 54.4,
+     "px": 1
+    },
+    {
+     "from": "#a5a5a5",
+     "L_from": 67.7,
+     "to": "#7d848a",
+     "L_to": 54.8,
+     "px": 39
+    },
+    {
+     "from": "#d6d6d6",
+     "L_from": 85.6,
+     "to": "#a2abb4",
+     "L_to": 69.5,
+     "px": 88
+    },
+    {
+     "from": "#fefefe",
+     "L_from": 99.7,
+     "to": "#c0cbd5",
+     "L_to": 81.1,
+     "px": 73
+    }
+   ],
+   "edge_contrast_median": [
+    17.9,
+    14.8
+   ],
+   "edge_pairs": 373
+  },
+  "S7_pack": {
+   "alpha_changed": 4,
+   "rgb_changed": 333,
+   "splits": {
+    "#515151": {
+     "#3d4144": 68,
+     "#3f4756": 4,
+     "#202534": 1,
+     "#5e6877": 3,
+     "#5a6064": 2
+    },
+    "#a5a5a5": {
+     "#7d848a": 30,
+     "#aaa9a5": 3,
+     "#5e6877": 2,
+     "#828991": 4
+    },
+    "#d6d6d6": {
+     "#a2abb4": 78,
+     "#c2ccd7": 2,
+     "#aaa9a5": 6,
+     "#d2c9b9": 2
+    },
+    "#fefefe": {
+     "#c0cbd5": 62,
+     "#d2c9b9": 10,
+     "#aaa9a5": 1
+    }
+   },
+   "merges": {},
+   "value_order_inversions": [],
+   "ramp": [
+    {
+     "from": "#393939",
+     "L_from": 24.0,
+     "to": "#2b2e30",
+     "L_to": 18.7,
+     "px": 54
+    },
+    {
+     "from": "#515151",
+     "L_from": 34.5,
+     "to": "#3d4144",
+     "L_to": 27.3,
+     "px": 78
+    },
+    {
+     "from": "#a4a4a4",
+     "L_from": 67.4,
+     "to": "#7c838a",
+     "L_to": 54.4,
+     "px": 1
+    },
+    {
+     "from": "#a5a5a5",
+     "L_from": 67.7,
+     "to": "#7d848a",
+     "L_to": 54.8,
+     "px": 39
+    },
+    {
+     "from": "#d6d6d6",
+     "L_from": 85.6,
+     "to": "#a2abb4",
+     "L_to": 69.5,
+     "px": 88
+    },
+    {
+     "from": "#fefefe",
+     "L_from": 99.7,
+     "to": "#c0cbd5",
+     "L_to": 81.1,
+     "px": 73
+    }
+   ],
+   "edge_contrast_median": [
+    17.9,
+    14.8
+   ],
+   "edge_pairs": 373
+  }
+ }
+}

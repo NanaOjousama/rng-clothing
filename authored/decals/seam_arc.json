@@ -1,0 +1,30 @@
+{
+  "name": "seam_arc",
+  "slot": "HEAD",
+  "z": 2,
+  "kind": "surface",
+  "motif_class": "seam",
+  "zone": "crown_face",
+  "style": [
+    "cute",
+    "cottagecore",
+    "casual",
+    "smart",
+    "formal"
+  ],
+  "views": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ],
+  "size": [
+    5,
+    1
+  ],
+  "max_extent": 0,
+  "families": [
+    "beret"
+  ],
+  "_comment": "a single construction seam across the crown, as on the periwinkle and powder-blue references"
+}

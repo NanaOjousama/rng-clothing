@@ -1,0 +1,105 @@
+{
+  "id": "beret_02",
+  "family": "beret",
+  "classification": "REFERENCE",
+  "classification_reason": "Approved source pack (Cottagecore Set, plurffle, SmolHooman.CottagecoreSet) and composable per tools/catalog.py, so its standing is materially better than beret_01's. Held at REFERENCE only until the family as a whole is cleared for shipping.",
+  "attribution": "plurffle \u2014 [FS] Cottagecore Set (SmolHooman.CottagecoreSet), Beret",
+  "source": {
+    "path": "generator content/[FS] Cottagecore Set/Hats/Beret/hat.png",
+    "internal_name": "Cottagecore Set / Beret",
+    "md5": "55c7f8fa33cc72e2745a78ace474761b",
+    "json_md5": "c44c3372f2215aec7df02da5a15dcf8f",
+    "size": [
+      20,
+      60
+    ],
+    "layout": {
+      "front": 0,
+      "right": 20,
+      "back": 40
+    },
+    "read_only": true,
+    "preserved_copy": "authored/source_bases/beret/beret_02/source/hat.png",
+    "preserved_copy_md5": "55c7f8fa33cc72e2745a78ace474761b"
+  },
+  "normalisation": {
+    "what": "greyscale ramp only",
+    "from_shades": 6,
+    "to_steps": 6,
+    "policy": "rank",
+    "role": "body",
+    "step_colours": [
+      "#202020",
+      "#404040",
+      "#606060",
+      "#808080",
+      "#B0B0B0",
+      "#E0E0E0"
+    ],
+    "step_pixel_counts": {
+      "0": 41,
+      "1": 59,
+      "3": 30,
+      "4": 67,
+      "5": 58
+    },
+    "source_grey_to_step": {
+      "#393939": 0,
+      "#515151": 1,
+      "#a4a4a4": 3,
+      "#a5a5a5": 3,
+      "#d6d6d6": 4,
+      "#fefefe": 5
+    },
+    "preserved_exactly": [
+      "alpha",
+      "silhouette",
+      "bounding box",
+      "per-direction geometry",
+      "direction layout"
+    ],
+    "changed": [
+      "shading resolution within the silhouette"
+    ]
+  },
+  "directions": {
+    "authored": [
+      "front",
+      "right",
+      "back"
+    ],
+    "mirrored": [
+      "left"
+    ],
+    "note": "authored views are carried through unchanged; a mirrored view is produced at render time from its opposite, which is what the source's own hat.json specifies"
+  },
+  "geometry_check": {
+    "front": {
+      "bbox": [
+        3,
+        4,
+        16,
+        12
+      ],
+      "opaque": 69
+    },
+    "right": {
+      "bbox": [
+        2,
+        5,
+        14,
+        14
+      ],
+      "opaque": 78
+    },
+    "back": {
+      "bbox": [
+        3,
+        6,
+        16,
+        15
+      ],
+      "opaque": 108
+    }
+  }
+}

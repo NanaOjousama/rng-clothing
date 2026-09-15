@@ -1,0 +1,28 @@
+{
+  "name": "charm_swirl",
+  "slot": "HEAD",
+  "z": 3,
+  "kind": "attachment",
+  "motif_class": "swirl",
+  "zone": "side",
+  "style": [
+    "cute",
+    "cottagecore",
+    "casual",
+    "smart",
+    "formal"
+  ],
+  "views": [
+    "front",
+    "right",
+    "left"
+  ],
+  "size": [
+    4,
+    3
+  ],
+  "max_extent": 5,
+  "families": [
+    "beret"
+  ]
+}
