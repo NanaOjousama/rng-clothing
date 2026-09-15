@@ -63,8 +63,18 @@ TUNE/optional oversized variant · everything else archived/unevaluated. Nothing
 renamed or deleted. Next: evaluate plurffle's More Accessories Beret 1/2 worn,
 untouched, before any ingest.
 
+**More Accessories Beret 1/2 evaluated worn, untouched (session
+`20260915-001821`, evidence `experiments/beret_audit/more_accessories_*`):**
+Beret 2 is Beret 1 mirrored pixel for pixel (one design, tilt on the other
+side). Small snug tilted beret, sits on the head without floating, genuinely
+different from beret_02 -- but the back view reads as hair rather than a hat
+and the profiles read as a flat cap top. Verdict: neither is KEEP; beret_02
+stays the only active shape. Caveat: the test farmer has grey hair and the
+untinted grey hat sits in the same values, so a re-check with a darker hair
+colour is the only thing that could change this. Not ingested.
+
 **First real authored material — beret_02 plaid: VISUALLY APPROVED by the user
-and committed as its own milestone.** The TUNE notes below were a proposal and
+and committed as its own milestone (`350e8a3`).** The TUNE notes below were a proposal and
 were not applied; the approved mask is the one in the file.
 `authored/source_backed/beret_02/materials/plaid.json` (52 cells: front 12,
 right 15, back 25; left mirrored), authored in Pixelsmith
