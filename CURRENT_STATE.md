@@ -3,12 +3,23 @@
 Concise current-milestone state. Not a log — see `PROJECT_MEMORY.md` for
 history and `CLAUDE.md` for standing rules.
 
-**Last updated:** 2026-09-14 (Source-Backed V2 built beside legacy — awaiting user approval + in-game source comparison)
+**Last updated:** 2026-09-16 (Beret closeout: Plain + Decorated player variants implemented; Cap family next)
 **Live stack:** Stardew Valley 1.6.15 · SMAPI 4.5.2 · Fashion Sense 7.5.0
 
 ---
 
 ## CURRENT MILESTONE
+
+**Beret family closeout — active player-facing plan is one approved shape with two variants.**
+
+- **Plain Beret** = approved `beret_02` shape, no decoration.
+- **Decorated Beret** = same `beret_02` shape with exactly one readable decoration outcome: ribbon/bow, leaf, or dotted. `BeretRibbon`, `BeretWhiteRibbon`, `BeretLeaf`, and `BeretDotted` are treated as one decorated variant bucket, not four shape variants.
+- `beret_01` remains HOLD/reference-only; `beret_03` remains optional/TUNE; More Accessories Beret1/2 stay rejected as active shapes.
+- Generic `variant=` selection is implemented in `v5/authored.py` without changing historical rolls. Variant-only art is isolated from normal pools; legacy guard remains 0 moved.
+- Source-backed proof appearances for Ribbon / Leaf / Dotted were added to `RNG-SourceBacked-V2` for visual QC.
+- **Next family after beret: Cap**, starting with popular/readable subtypes rather than every technical cap taxonomy.
+
+The older Milestone 2 notes below remain as history of the family-axis validation.
 
 **Beret family Milestone 2 — two shapes, verified in game. Complete.**
 
@@ -72,6 +83,9 @@ and the profiles read as a flat cap top. Verdict: neither is KEEP; beret_02
 stays the only active shape. Caveat: the test farmer has grey hair and the
 untinted grey hat sits in the same values, so a re-check with a darker hair
 colour is the only thing that could change this. Not ingested.
+
+**Second authored material — beret_02 knit rib: restored to the version that was actually validated and captured.**
+The BERET_MATERIAL reference folder has felt and plaid only, so the target remains plurffle's approved knit rib from More Accessories Beanie / Beanie (Floppy) cuffs and Cottagecore Sweater Vests. Mask `authored/source_backed/beret_02/materials/knit.json` is 23 cells (front 5, right 8, back 10; left mirrored), factor 0.72. The successful in-game capture (`20260915-184129`) used front cells y8 x6/8/10/12 plus (14,9). A later experimental lift to y7 was found to create a 2px merge at (10,7)/(10,6), so it was reverted. Current offline result: 30 source-fidelity tests OK with 3 expected legacy failures; one-pixel topology green; legacy guard 0 moved. The captured visual read remains: back/profile rib read is good; front is the weakest but valid. Textile/material expansion is deferred until the textile ingredient system; beret family completion does not depend on adding more materials now.
 
 **First real authored material — beret_02 plaid: VISUALLY APPROVED by the user
 and committed as its own milestone (`350e8a3`).** The TUNE notes below were a proposal and

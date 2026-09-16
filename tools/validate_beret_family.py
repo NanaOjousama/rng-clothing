@@ -275,6 +275,29 @@ def main():
           can(beret, "band_plain") and not can(b2, "band_plain"),
           "its side band zone is 5 wide; the band is 6")
 
+    print("\n[5d] player-facing beret variants")
+    variants = lib.family("beret").get("variants", {})
+    check("beret exposes exactly Plain + Decorated player variants",
+          set(variants) == {"plain", "decorated"}, sorted(variants))
+    plain = [authored.compose(seed, family="beret", variant="plain", lib=lib)
+             for seed in range(40)]
+    deco = [authored.compose(seed, family="beret", variant="decorated", lib=lib)
+            for seed in range(120)]
+    check("Plain always uses the approved beret_02 shape",
+          {g.base.shape_variant for g in plain} == {"beret_02"})
+    check("Plain carries no decoration", all(not g.decals for g in plain))
+    check("Decorated always uses the approved beret_02 shape",
+          {g.base.shape_variant for g in deco} == {"beret_02"})
+    check("Decorated carries exactly one readable decoration",
+          all(len(g.decals) == 1 for g in deco))
+    classes = {g.decals[0].motif_class for g in deco}
+    check("Decorated bucket reaches ribbon/bow, leaf and dotted outcomes",
+          classes == {"bow", "leaf", "dot_cluster"}, sorted(classes))
+    check("Decorated variant has no placement drops", all(not g.dropped for g in deco))
+    dots = next(x for x in lib.decals if x.name == "beret_dots_small")
+    check("beret_dots_small is isolated to the Decorated variant",
+          dots.variants == ("decorated",))
+
     # -- 6. the two rarity axes stay separate ----------------------------------
     print("\n[6] quality_tier does not touch the renderer rarity model")
     arch = json.load(open(os.path.join(ROOT, "generator", "data",

@@ -1,0 +1,33 @@
+{
+  "name": "beret_dots_small",
+  "slot": "HEAD",
+  "z": 2,
+  "kind": "surface",
+  "motif_class": "dot_cluster",
+  "zone": "crown_face",
+  "style": [
+    "cute",
+    "cottagecore",
+    "casual",
+    "smart",
+    "formal"
+  ],
+  "views": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ],
+  "size": [
+    5,
+    2
+  ],
+  "max_extent": 0,
+  "families": [
+    "beret"
+  ],
+  "_comment": "Three sparse dots sized specifically for the shallow beret_02 crown. Added for the single Decorated Beret variant bucket; source inspiration: Cottagecore BeretDotted.",
+  "variants": [
+    "decorated"
+  ]
+}

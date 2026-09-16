@@ -6,7 +6,7 @@
       "display": "Beret",
       "slot": "HEAD",
       "classification": "REFERENCE",
-      "classification_reason": "The only ingested shape, beret_01, comes from hyoung_hats_24, whose provenance and licence are unestablished. Architecture, conversion and testing only; not shippable until the source is identified.",
+      "classification_reason": "REFERENCE family: active player-facing variants use beret_02 from plurffle's Cottagecore Set, preserved under source authority; beret_01 remains licence/provenance-blocked and beret_03 remains optional/tune. Reference-only art is valid for testing/personal generation but is not promoted to redistributable production.",
       "shape_variants": [
         "beret_01",
         "beret_02",
@@ -222,6 +222,52 @@
           ],
           "class_deny_reason": "beret_03 carries its band and rim in its own art, exactly as the reference does -- there the band is a darker shade of the hat's own colour, not a separate piece. An overlay band on top of that draws a second, brighter bar across the crown and is the one thing that made an early batch stop looking like the reference. Denied for this profile only; the classes stay available to every other profile and family.",
           "shape_note": "The reference shows ONE silhouette across all twelve cells: its variation is material, palette and decoration, not shape. So the profile is dominated by beret_03, with beret_02 at low weight for occasional relief. beret_01 is not in this profile at all -- it is a flatter, harder-edged beret that belongs to a different look. Neither is restricted: both remain fully available to any other profile."
+        }
+      },
+      "variants": {
+        "plain": {
+          "label": "Plain Beret",
+          "shape_variants": [
+            "beret_02"
+          ],
+          "default_quality_tier": "Common",
+          "decoration_mode": "none",
+          "source_examples": [
+            "Beret"
+          ],
+          "styles": [
+            "casual",
+            "cottagecore",
+            "smart"
+          ]
+        },
+        "decorated": {
+          "label": "Decorated Beret",
+          "shape_variants": [
+            "beret_02"
+          ],
+          "default_quality_tier": "Rare",
+          "decoration_mode": "one_of",
+          "allowed_motif_classes": [
+            "bow",
+            "leaf",
+            "dot_cluster"
+          ],
+          "min_decor_pieces": 1,
+          "max_decor_pieces": 1,
+          "source_examples": [
+            "BeretRibbon",
+            "BeretWhiteRibbon",
+            "BeretLeaf",
+            "BeretDotted"
+          ],
+          "_comment": "One player-facing decorated variant bucket. Ribbon/white-ribbon share bow construction; leaf and dotted are sibling outcomes, not separate shape variants.",
+          "styles": [
+            "casual",
+            "cottagecore",
+            "formal",
+            "smart"
+          ]
         }
       }
     }

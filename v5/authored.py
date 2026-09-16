@@ -218,6 +218,10 @@ class Decal:
     # beret_03 the day they are ingested without anyone editing this file.
     # Empty means "not family-scoped" and `fits` alone decides.
     families: tuple = ()
+    # Optional player-facing family variants this piece belongs to.  Empty means
+    # it participates in the normal pools; non-empty pieces are variant-only and
+    # are invisible to legacy/tier/profile rolls unless that variant is named.
+    variants: tuple = ()
 
     def fits_base(self, base) -> bool:
         # Declaring a family CONSTRAINS: a piece scoped to the beret family and
@@ -360,6 +364,12 @@ class Library:
             raise ValueError(f"family {family!r} has no profile {name!r}")
         return p
 
+    def variant(self, family: str, name: str) -> dict:
+        v = (self.family(family).get("variants") or {}).get(name)
+        if v is None:
+            raise ValueError(f"family {family!r} has no variant {name!r}")
+        return v
+
 
 def _decode(path, index):
     im = read_rgba_png(path)
@@ -425,7 +435,8 @@ def load(root=ROOT) -> Library:
                             tuple(man.get("anchor_cell", (0, 0))),
                             man.get("anchor_point", "top_centre"),
                             tuple(man.get("fits", ())),
-                            tuple(man.get("families", ()))))
+                            tuple(man.get("families", ())),
+                            tuple(man.get("variants", ()))))
     pals = _read_json(os.path.join(root, "palettes.json"))["palettes"]
     palettes = []
     for p in pals:
@@ -475,6 +486,7 @@ class Garment:
     material: str = ""
     treatment: str = ""
     profile: str = ""
+    variant: str = ""
 
 
 MAX_DECALS = 3          # busyness ceiling; regions are exclusive besides
@@ -555,7 +567,7 @@ def _weighted_decals(rng, lib, fam, tier_name, base, story, palette_id, weights,
     chance = float(tier.get("pick_chance", 0.62))
 
     legal = [d for d in lib.decals
-             if d.slot == base.slot and not d.pending
+             if d.slot == base.slot and not d.pending and not d.variants
              and story in d.style and d.fits_base(base)
              and d.motif_class in allowed.get(d.kind, set())
              and d.motif_class not in deny
@@ -619,7 +631,7 @@ def _tier_decals(rng, lib, fam, tier_name, base, story, palette_id=""):
     budget = int(tier.get("max_decor_cells", 0))
 
     legal = [d for d in lib.decals
-             if d.slot == base.slot and not d.pending
+             if d.slot == base.slot and not d.pending and not d.variants
              and story in d.style and d.fits_base(base)
              and d.motif_class in allowed.get(d.kind, set())
              and can_place(base, d)]
@@ -664,12 +676,56 @@ def _tier_decals(rng, lib, fam, tier_name, base, story, palette_id=""):
     return chosen
 
 
+def _apply_family_variant(rng, lib, variant_name, spec, base, story, palette_id, chosen, tier_name):
+    """Apply a family-defined player-facing variant without changing base art.
+
+    Variants are intentionally shallow: they may constrain shape selection and
+    decoration, but they do not introduce a second renderer or duplicate bases.
+    "plain" can suppress decoration; "one_of" picks exactly one legal motif
+    from a small family-owned class list. With no variant, this function is not
+    called, so historical rolls remain byte-identical.
+    """
+    mode = spec.get("decoration_mode", "inherit")
+    if mode == "none":
+        return []
+    if mode != "one_of":
+        return chosen
+
+    allowed = set(spec.get("allowed_motif_classes", ()))
+    minimum = int(spec.get("min_decor_pieces", 1))
+    maximum = int(spec.get("max_decor_pieces", 1))
+    kept = [d for d in chosen if d.motif_class in allowed][:maximum]
+    if len(kept) >= minimum:
+        return kept
+
+    legal = [d for d in lib.decals
+             if d.slot == base.slot and not d.pending
+             and (not d.variants or variant_name in d.variants)
+             and story in d.style and d.fits_base(base)
+             and d.motif_class in allowed and can_place(base, d)]
+    if tier_name:
+        tier = lib.tier(tier_name)
+        caps = {"attachment": int(tier.get("max_attachments", 0)),
+                "surface": int(tier.get("max_motifs", 0))}
+        budget = int(tier.get("max_decor_cells", 0))
+        legal = [d for d in legal
+                 if caps.get(d.kind, 0) > 0
+                 and max(len(d.view_cells(v)) for v in d.views) <= budget]
+    if not legal:
+        raise ValueError("family variant cannot satisfy its decoration requirement "
+                         f"for {base.name}/{story}/{tier_name or 'legacy'}")
+    pick = rng(f"variant:{base.name}:{palette_id}:{spec.get('label','variant')}").choice(
+        sorted(legal, key=lambda d: d.name))
+    return [pick]
+
+
 def compose(seed: int, slot: str | None = None, lib: Library | None = None,
             style: str | None = None, family: str | None = None,
             quality_tier: str | None = None,
             shape_variant: str | None = None,
             profile: str | None = None,
-            treatment: str | None = None) -> Garment:
+            treatment: str | None = None,
+            variant: str | None = None) -> Garment:
     """One roll: a base, a style, a curated palette, and legal decals.
 
     Naming a `family` restricts the shape pool to that family's own bases, so
@@ -684,8 +740,17 @@ def compose(seed: int, slot: str | None = None, lib: Library | None = None,
         fam = lib.family(family)
         slot = slot or fam.get("slot")
         bases = lib.family_bases(family)
+        var = lib.variant(family, variant) if variant else None
+        if var is not None:
+            allowed = var.get("shape_variants", "any")
+            if allowed not in (None, "any"):
+                bases = [b for b in bases if b.shape_variant in allowed]
+            if quality_tier is None:
+                quality_tier = var.get("default_quality_tier")
         prof = lib.profile(family, profile) if profile else None
         if prof is not None:
+            if var is not None:
+                raise ValueError("profile= and variant= are separate selectors; choose one")
             return _compose_profile(rng, lib, family, fam, prof, profile,
                                     quality_tier, shape_variant, treatment, seed)
         if shape_variant is not None:
@@ -700,9 +765,13 @@ def compose(seed: int, slot: str | None = None, lib: Library | None = None,
             if pick not in (None, "any"):
                 bases = [b for b in bases if b.shape_variant in pick] or bases
         base = rng("base").choice(sorted(bases, key=lambda b: b.name))
-        choices = [s for s in base.style if style is None or s == style]
+        variant_styles = set(var.get("styles", ())) if var is not None else None
+        choices = [s for s in base.style
+                   if (style is None or s == style)
+                   and (not variant_styles or s in variant_styles)]
         if not choices:
-            raise ValueError(f"{base.name} cannot be {style}")
+            raise ValueError(f"{base.name} cannot be {style}"
+                             + (f" in variant {variant!r}" if variant else ""))
         story = rng("style").choice(sorted(choices))
 
         material = ""
@@ -724,9 +793,13 @@ def compose(seed: int, slot: str | None = None, lib: Library | None = None,
             palette = rng("palette").choice(sorted(pals, key=lambda p: p.id))
             chosen = _legacy_decals(rng, lib, base, story)
 
+        if var is not None:
+            chosen = _apply_family_variant(rng, lib, variant or "", var, base, story, palette.id,
+                                           chosen, quality_tier)
         directions, dropped = _render(base, chosen, palette, lib.tone_for(base))
         return Garment(seed, base, story, palette, tuple(chosen), dropped, directions,
-                       family, base.shape_variant, quality_tier or "", material)
+                       family, base.shape_variant, quality_tier or "", material,
+                       variant=variant or "")
 
     bases = [b for b in lib.bases
              if b.slot == slot and b.classification == "PRODUCTION"]
@@ -842,7 +915,7 @@ def build_profile(family: str, profile: str, shape_variant: str, palette_id: str
 def _legacy_decals(rng, lib, base, story):
     """The pre-family decal roll, unchanged and still the path with no tier."""
     legal = [d for d in lib.decals
-             if d.slot == base.slot and not d.pending
+             if d.slot == base.slot and not d.pending and not d.variants
              and story in d.style and d.fits_base(base)
              and any(_placement(base, d, v) for v in d.views)]
     chosen, used = [], set()

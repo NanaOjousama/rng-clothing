@@ -1,0 +1,110 @@
+{
+ "treatment": "knit",
+ "authored_for": "beret_02",
+ "factor": 0.72,
+ "views": {
+  "back": [
+   [
+    6,
+    12
+   ],
+   [
+    6,
+    13
+   ],
+   [
+    8,
+    12
+   ],
+   [
+    8,
+    13
+   ],
+   [
+    10,
+    12
+   ],
+   [
+    10,
+    13
+   ],
+   [
+    12,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    14,
+    11
+   ],
+   [
+    14,
+    12
+   ]
+  ],
+  "front": [
+   [
+    6,
+    8
+   ],
+   [
+    8,
+    8
+   ],
+   [
+    10,
+    8
+   ],
+   [
+    12,
+    8
+   ],
+   [
+    14,
+    9
+   ]
+  ],
+  "right": [
+   [
+    4,
+    11
+   ],
+   [
+    4,
+    12
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    6,
+    10
+   ],
+   [
+    8,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    10,
+    8
+   ]
+  ]
+ },
+ "mirrored_views": {
+  "left": "mirrored from right at render, as the source draws it"
+ },
+ "authoring_document": "tools/pixelsmith-workspace/library/beret02_knit_mask.chr.json#layer_mu24135y_2",
+ "provenance": "AUTHORED for beret_02, cell by cell in Pixelsmith. No knit exists in BERET_MATERIAL/PATTERN REFERENCE (felt + plaid only), so the visual target is plurffle's approved knit rib: More Accessories Beanie / Beanie (Floppy) cuffs and Cottagecore Sweater Vests -- a short band directly above the garment's lower edge, alternating 1px columns between two adjacent greys. Current front mask is the validated/captured 2026-09-15 version: y8 at x6/8/10/12 plus (14,9); the later experimental lift to y7 was rejected because it merged with the source shading at (10,6) and failed the one-logical-pixel topology gate. Back and right remain unchanged. factor 0.72 = plurffle's measured beanie-cuff ratio #777777/#a5a5a5 (0.721); the sweater's #d9d9d9/#fefefe is 0.854."
+}

@@ -44,9 +44,11 @@ from validate_material_mask import Sheet, describe, mask_from_diff, violations  
 # its provenance takes only outline and silhouette from the user's drawing.
 SOURCE_BACKED = ("beret_02", "beret_01")
 PALETTE = "EVERYDAY_STONE_BLUE"
-# The authored-material proof: one real mask, one shape, a spread of tints.
+# The authored-material proofs: real masks, one shape, a spread of tints.
 PLAID_BASE = "beret_02"
 PLAID_PALETTES = (None, "EVERYDAY_STONE_BLUE", "CUTE_COCOA_GOLD", "CUTE_ROSE_CREAM")
+# Every authored material on PLAID_BASE is held to the same rules.
+AUTHORED_MATERIALS = ("plaid", "knit")
 
 DOCUMENTED = (
     "frames restacked to Fashion Sense order front/right/left/back",
@@ -158,20 +160,22 @@ class SourceBackedV2(unittest.TestCase):
                 self.assertTrue(sbm.hat_json(r, n)["FrontHat"]["DisableGrayscale"])
 
     # -- material: the real authored plaid -------------------------------------------
-    def test_authored_plaid_exists_for_beret_02_only(self):
-        m = self.bases[PLAID_BASE].materials.get("plaid")
-        self.assertIsNotNone(m)
-        self.assertEqual(m.authored_for, PLAID_BASE)
-        self.assertEqual(set(m.views), {"front", "right", "back"})
-        self.assertNotIn("plaid", self.bases["beret_01"].materials)
+    def test_authored_materials_exist_for_beret_02_only(self):
+        for t in AUTHORED_MATERIALS:
+            with self.subTest(material=t):
+                m = self.bases[PLAID_BASE].materials.get(t)
+                self.assertIsNotNone(m)
+                self.assertEqual(m.authored_for, PLAID_BASE)
+                self.assertEqual(set(m.views), {"front", "right", "back"})
+                self.assertNotIn(t, self.bases["beret_01"].materials)
 
     def test_material_changes_only_mask_cells_and_keeps_form_shading(self):
         b = self.bases[PLAID_BASE]
-        m = b.materials["plaid"]
-        for p in self.plaid_pals:
-            with self.subTest(palette=p.id if p else "neutral"):
+        for t, p in [(t, p) for t in AUTHORED_MATERIALS for p in self.plaid_pals]:
+            m = b.materials[t]
+            with self.subTest(material=t, palette=p.id if p else "neutral"):
                 before = sbm.sheet(sbm.render(b, p))
-                r = sbm.render(b, p, "plaid")
+                r = sbm.render(b, p, t)
                 after = sbm.sheet(r)
                 allowed = _allowed(r, ("material",))
                 want = set()
@@ -188,29 +192,42 @@ class SourceBackedV2(unittest.TestCase):
                 for x, y in allowed:     # a value ratio, never an absolute ramp step
                     self.assertEqual(after[y][x], sbm._scale(before[y][x], m.factor))
 
-    def test_authored_plaid_is_one_logical_pixel_thick(self):
+    def test_authored_materials_are_one_logical_pixel_thick(self):
         b = self.bases[PLAID_BASE]
-        for p in self.plaid_pals:
-            with self.subTest(palette=p.id if p else "neutral"):
-                s = Sheet(sbm.sheet(sbm.render(b, p, "plaid")))
+        for t, p in [(t, p) for t in AUTHORED_MATERIALS for p in self.plaid_pals]:
+            with self.subTest(material=t, palette=p.id if p else "neutral"):
+                s = Sheet(sbm.sheet(sbm.render(b, p, t)))
                 mask, pol = mask_from_diff(s, Sheet(sbm.sheet(sbm.render(b, p))))
                 v = violations(s, mask, pol)
                 self.assertFalse(v, [describe(s, x) for x in v])
 
     def test_material_keeps_alpha_placement_and_render_semantics(self):
         b = self.bases[PLAID_BASE]
-        for p in self.plaid_pals:
-            with self.subTest(palette=p.id if p else "neutral"):
-                r0, r1 = sbm.render(b, p), sbm.render(b, p, "plaid")
+        for t, p in [(t, p) for t in AUTHORED_MATERIALS for p in self.plaid_pals]:
+            with self.subTest(material=t, palette=p.id if p else "neutral"):
+                r0, r1 = sbm.render(b, p), sbm.render(b, p, t)
                 self.assertEqual(set(_cells(sbm.sheet(r0))), set(_cells(sbm.sheet(r1))))
                 self.assertEqual(r0.baked, r1.baked)
                 self.assertEqual(sbm.hat_json(r0, "x"), sbm.hat_json(r1, "x"))
-        neutral = sbm.hat_json(sbm.render(b, None, "plaid"), "x")
-        self.assertNotIn("DisableGrayscale", neutral["FrontHat"])
-        self.assertEqual(neutral["FrontHat"]["HeadPosition"], {"X": 0, "Y": 1})
+        for t in AUTHORED_MATERIALS:
+            neutral = sbm.hat_json(sbm.render(b, None, t), "x")
+            self.assertNotIn("DisableGrayscale", neutral["FrontHat"])
+            self.assertEqual(neutral["FrontHat"]["HeadPosition"], {"X": 0, "Y": 1})
+
+    def test_knit_never_touches_outline_or_contact_cells(self):
+        """The rib band sits above the underside: no outline cell, no contact cell."""
+        b = self.bases[PLAID_BASE]
+        n4 = ((1, 0), (-1, 0), (0, 1), (0, -1))
+        for v, cells in b.materials["knit"].views.items():
+            sem = b.semantic.view(v)
+            inner = lambda p: p in sem and all((p[0] + dx, p[1] + dy) in sem for dx, dy in n4)
+            for c in cells:
+                with self.subTest(view=v, cell=c):
+                    self.assertTrue(inner(c), "on the outline")
+                    self.assertTrue(inner((c[0], c[1] + 1)), "on the underside contact row")
 
     def test_no_authored_mask_means_refused_not_procedural(self):
-        cases = (("beret_01", "plaid"), ("beret_02", "knit"))
+        cases = (("beret_01", "plaid"), ("beret_01", "knit"), ("beret_02", "wool"))
         for n, t in cases:
             with self.subTest(base=n, treatment=t):
                 with self.assertRaises(sbm.Incompatible):
@@ -226,7 +243,7 @@ class SourceBackedV2(unittest.TestCase):
     def test_experimental_procedural_is_opt_in_and_a_value_ratio(self):
         b = self.bases[PLAID_BASE]
         before = sbm.sheet(sbm.render(b, self.pal))
-        r = sbm.render(b, self.pal, "knit", lib=self.lib, experimental_procedural=True)
+        r = sbm.render(b, self.pal, "wool", lib=self.lib, experimental_procedural=True)
         after = sbm.sheet(r)
         allowed = _allowed(r, ("material",))
         self.assertEqual(changed_cells(before, after) - allowed, set())
