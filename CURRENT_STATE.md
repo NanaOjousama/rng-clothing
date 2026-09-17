@@ -3,7 +3,7 @@
 Concise current-milestone state. Not a log — see `PROJECT_MEMORY.md` for
 history and `CLAUDE.md` for standing rules.
 
-**Last updated:** 2026-09-16 (Cap Baseball + Snapback Source-Backed V2 foundation verified in game)
+**Last updated:** 2026-09-16 (Baseball Cap Decorated bucket live-approved: Bar / Twin Bars / Dot / Ring)
 **Live stack:** Stardew Valley 1.6.15 · SMAPI 4.5.2 · Fashion Sense 7.5.0
 
 ---
@@ -18,6 +18,8 @@ history and `CLAUDE.md` for standing rules.
 - Neutral proofs: `RNG-Cap-SourceBacked-V2` with `SB2CapBaseballNeutral` and `SB2CapSnapbackNeutral`. Offline comparison is **0 differing pixels** against the source view contract for both.
 - Cap-specific regression suite: `tests/test_source_backed_caps.py` — 5/5 passing. Existing source fidelity 30 tests OK (3 expected legacy failures), beret validator 89/89, legacy guard 1996/0 moved.
 - **Live fidelity gate PASSED, session `20260916-204732`:** source-audit Baseball/Snapback vs Source-Backed V2 are **0 differing pixels** in worn, hat-only and head crops for all four directions. Full-screen scene diffs are ignored because world/cursor animation advances between captures. The cap foundation is cleared for variation work.
+- **Baseball Cap Decorated bucket LIVE-APPROVED, session `20260916-213415`.** Decoration is on the generic Decal axis (not material), with source-backed `cap_baseball` construction unchanged. Six live candidates were captured at normal scale; final KEEP = `bar`, `twin_bars`, `dot`, `ring`. `angle_l` was rejected because it reads as an irregular highlight/broken stripe; `chevron` was rejected as visually redundant with Ring (only 2 logical pixels different in the worn front, with Ring clearer); `zigzag` remains rejected from offline audit. Final player-facing model is Plain Baseball + one Decorated Baseball bucket choosing exactly one of the four approved front marks. All candidate captures remained centred (+0.0), top +0, contact 1, with 0 floating columns. Evidence: `qc_bridge/captures/20260916-213415/`.
+- **Validation after live verdict:** Baseball decoration suite 15/15, source-backed Cap suite 5/5, source fidelity 30 OK with 3 expected legacy failures, Beret validator 89/89, legacy guard 1996 checked / 0 moved. Proof pack `RNG-Cap-SourceBacked-V2` now contains only the two neutral anchors plus the four approved decorated Baseball proofs; stale rejected appearances are removed in-place by `sync_install` without recreating the registered pack folder.
 
 **Beret family closeout — frozen.** Plain + Decorated both use approved `beret_02`; Ribbon / Leaf / Dotted are one decorated bucket.
 

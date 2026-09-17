@@ -1,0 +1,77 @@
+{
+  "_comment": "Native-scale readability audit of the ported CAP2_FRONT_OVERLAY marks on cap_baseball (same plurffle Cap 2 source, md5 3033d10d5570d5c376e53602bfa37390). Offline geometry/safe-mask evidence was followed by the project hard gate: live worn Fashion Sense QC in session 20260916-213415. Final production bucket keeps only marks that still read as intentional and distinct at normal gameplay scale.",
+  "date": "2026-09-16",
+  "architecture_correction": "The first pass of this audit implemented the six kept marks as SourceBacked MaterialMasks (absolute value darkening). That is the wrong axis: a front logo is decoration, not material, and material is reserved/deferred for this milestone. Corrected to the existing generic DECAL axis (v5/authored.py Decal + v5/integration.py's surface-motif integration pass), the same mechanism authored/decals/beret_stitch_mark.json and badge_star.json already use, composed through v5/source_backed.py's existing render(palette=, decals=(...), lib=...) path. No changes were made to v5/source_backed.py or v5/integration.py.",
+  "safe_mask_source": "authored/source_bases/cap2/motif_safe_mask.json (16 cells; the experimental row-8 extension was NOT used)",
+  "decal_technique": {
+    "mechanism": "Each mark is an authored surface Decal (authored/decals/cap_baseball_front_*.json + .png), zone='crown_face', fits=['cap_baseball'], views=['front'] only. Every populated cell is drawn at a single uniform (role, step) -- role='accent', step is arbitrary because it is never read: v5/integration.py's surface pass computes relief = step - mean(all placed steps), which is 0 for every cell of a uniform decal, so the final step is exactly the crown's own local step at that cell (shifted = base_step + 0). What actually changes is the semantic ROLE used for the final palette lookup (accent's ramp instead of body's), which is the same role-swap technique authored/decals/beret_stitch_mark.json uses (role 'trim' there) and it is what gives the mark a different hue from the fabric without touching the crown's own light/shadow modelling.",
+    "geometry": "Each decal's local art cells are authored as (old_cap2_absolute_cell - (8,5)), i.e. as if the decal's own canvas were the CAP2_FRONT_OVERLAY 'primary' 4x3 zone (x8..11,y5..7) already anchored at its own origin. Verified by direct computation (not assumed) that v5.authored._placement()'s zone-centring math -- centred in crown_face's 8-wide x3-tall box (x6..13,y5..7) -- reproduces exactly the old absolute cells for all six live-QC candidates: the bounding box of each mark's populated cells is either 4 or 3 cells wide and either 2 or 3 cells tall, and for this specific zone width (8) and height (3) both possible widths floor-divide to the same centring offset (2,0), so every mark lands at origin (8,5) regardless of its own sparse bounding box.",
+    "role_and_palette_choice": "Rejected EVERYDAY_STONE_BLUE + hardware/trim (cap_baseball's own listed style palette family): body and hardware/trim ramps in that palette are both cool near-neutral greys of similar lightness at the crown's own steps (3-5), so the mark was nearly invisible in an x24 contact-sheet render -- rejected on the CLAUDE.md visual-output-over-metric rule despite passing the geometry/mask checks. Selected EMBER_SUN_CHARCOAL (style ['work','festival'], overlapping cap_baseball's own 'work' tag) with role 'accent': its accent ramp is a warm gold/cream against the body ramp's reddish-tan, giving real hue+lightness separation at the crown's own steps. This is the ONE fixed test palette used for all six live-QC candidate proofs, per the task's instruction that palette variation must not be what distinguishes the marks."
+  },
+  "factor_rationale_note": "The earlier (superseded) MaterialMask implementation used an absolute darkening factor; that is no longer applicable now that this is a decal.",
+  "outcomes": {
+    "bar": {
+      "verdict": "KEEP",
+      "reason": "Live worn QC: reads clearly as an intentional horizontal cap accent at normal gameplay scale."
+    },
+    "twin_bars": {
+      "verdict": "KEEP",
+      "reason": "Live worn QC: two-stripe mark remains deliberate and visually distinct from the bar and dot."
+    },
+    "angle_l": {
+      "verdict": "REJECT",
+      "reason": "Live worn QC: reads like an irregular highlight/broken stripe rather than a purposeful emblem."
+    },
+    "chevron": {
+      "verdict": "REJECT",
+      "reason": "Live worn QC: too visually redundant with Ring; worn front differs from Ring by only 2 logical pixels, while Ring reads more clearly."
+    },
+    "dot": {
+      "verdict": "KEEP",
+      "reason": "Live worn QC: compact square badge/button is immediately readable and not confused with crown shading."
+    },
+    "ring": {
+      "verdict": "KEEP",
+      "reason": "Live worn QC: strongest emblem-like option; closed outline reads clearly at gameplay scale."
+    },
+    "zigzag": {
+      "verdict": "REJECT",
+      "reason": "Only 3 cells, diagonal and disconnected from the mask's other geometry. At native scale it is not reliably distinguishable from a stray dark pixel or shading noise -- it fails criterion 2 (reads as noise, not intentional decoration) even though it is safe-mask legal and passes contrast. This holds regardless of the decal role/palette choice, since a 3-cell diagonal has no legible silhouette at any hue."
+    }
+  },
+  "player_facing_bucket": {
+    "label": "Decorated Baseball Cap",
+    "decoration_mode": "one_of",
+    "max_decor_pieces": 1,
+    "outcomes": [
+      "cap_baseball_front_bar",
+      "cap_baseball_front_twin_bars",
+      "cap_baseball_front_dot",
+      "cap_baseball_front_ring"
+    ],
+    "note": "One player-facing Decorated bucket. These four approved decals are RNG outcomes inside that bucket, not separate player-facing variants. Family/generator routing is a later integration step; this file records the approved Source-Backed Baseball art pool."
+  },
+  "back_closure": {
+    "status": "HOLD, not ported in this task",
+    "reason": "Front decoration is enough for this milestone per task scope. authored/source_bases/cap2/back_closure.json remains disabled (BACK_CLOSURE_ENABLED = False in the legacy generator) and is not evaluated here."
+  },
+  "live_qc": {
+    "session": "20260916-213415",
+    "pack": "RNGClothing.FashionSense.CapSourceBackedV2",
+    "result": "PASS",
+    "fit": "All six candidate decorated Baseball proofs: centre +0.0, top +0, contact 1, 0 floating columns; construction unchanged.",
+    "neutral_anchor": "SB2CapBaseballNeutral remained the source-faithful control; previous source-vs-V2 live fidelity remains 0 differing hat pixels in all four directions.",
+    "final_keep": [
+      "bar",
+      "twin_bars",
+      "dot",
+      "ring"
+    ],
+    "final_reject": [
+      "angle_l",
+      "chevron",
+      "zigzag"
+    ],
+    "evidence": "qc_bridge/captures/20260916-213415/"
+  }
+}
