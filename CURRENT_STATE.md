@@ -3,8 +3,21 @@
 Concise current-milestone state. Not a log — see `PROJECT_MEMORY.md` for
 history and `CLAUDE.md` for standing rules.
 
-**Last updated:** 2026-09-16 (Baseball Cap Decorated bucket live-approved: Bar / Twin Bars / Dot / Ring)
+**Last updated:** 2026-09-16 (Snapback V1 Plain + Decorated live-approved; Bar / Twin Bars / Dot locked)
 **Live stack:** Stardew Valley 1.6.15 · SMAPI 4.5.2 · Fashion Sense 7.5.0
+
+---
+
+## SNAPBACK DECORATION MILESTONE — COMPLETE
+
+Started from the finished Baseball Decorated bucket (`024441b`). Baseball stayed untouched.
+
+- **Construction:** `cap_snapback` remains the approved plurffle source construction. Player-facing variant label is **Snapback V1**. The source art does not clearly show a rear plastic snap closure; V1 intentionally preserves the source author's construction unchanged rather than retrofitting one. Future genuinely distinct approved Snapback sources may become V2/V3 and may include a visible closure if their own art has one.
+- **Independent geometry audit:** Snapback's narrower crown leaves a 10-cell safe front interior on rows 6-7. `Ring` is rejected specifically because its top cells land in the Snapback-only row-5 taper zone; this was not copied from the Baseball verdict.
+- **Final Decorated Snapback V1 outcomes:** `Bar`, `Twin Bars`, `Dot`. No extra motif was invented just to match Baseball's count. Decorations stay on the generic DECAL axis; materials remain independent/deferred.
+- **Live QC PASSED — session `20260916-220411`:** Bar / Twin Bars / Dot all read as intentional and distinct at native worn scale. Every decorated proof measured centre `+0.0`, top `+0`, contact `1`, **0 floating columns**, crown-drift `0.0`, bbox-drift `0.0`. No tuning required.
+- **Proof pack:** `RNG-Cap-SourceBacked-V2` contains both neutral anchors, the four approved Baseball decorated proofs, and the three approved Snapback V1 decorated proofs (9 appearances total).
+- **Regression:** Snapback decoration 21/21, Baseball decoration 15/15, source-backed caps 5/5, source fidelity 30 OK / 3 expected legacy failures, Beret validator 89/89, legacy guard 1996 checked / 0 moved.
 
 ---
 

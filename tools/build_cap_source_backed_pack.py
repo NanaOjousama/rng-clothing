@@ -49,6 +49,13 @@ ITEMS = (
     ("SB2CapBaseballDecorTwinBars", "cap_baseball", "cap_baseball_front_twin_bars"),
     ("SB2CapBaseballDecorDot", "cap_baseball", "cap_baseball_front_dot"),
     ("SB2CapBaseballDecorRing", "cap_baseball", "cap_baseball_front_ring"),
+    # Snapback V1 live-approved decorated outcomes -- see
+    # authored/source_backed/cap_snapback/decoration_evaluation.json. Ring did
+    # not survive the Snapback-specific safe-mask audit (its top row lands in
+    # the crown-top taper) so it has no Snapback proof appearance.
+    ("SB2CapSnapbackDecorBar", "cap_snapback", "cap_snapback_front_bar"),
+    ("SB2CapSnapbackDecorTwinBars", "cap_snapback", "cap_snapback_front_twin_bars"),
+    ("SB2CapSnapbackDecorDot", "cap_snapback", "cap_snapback_front_dot"),
 )
 
 
@@ -89,7 +96,7 @@ def main():
         "Name": "RNG Clothing - Cap Source-Backed V2",
         "Author": "RNG Clothing",
         "Version": "0.1.0",
-        "Description": "Source-backed proofs for Baseball and Snapback construction masters, plus the Decorated Baseball front-crown decal bucket.",
+        "Description": "Source-backed proofs for Baseball and Snapback V1 construction masters plus their live-approved Decorated front-crown decal buckets.",
         "UniqueID": UNIQUE_ID,
         "UpdateKeys": [],
         "ContentPackFor": {"UniqueID": "PeacefulEnd.FashionSense", "MinimumVersion": "7.5.0"},

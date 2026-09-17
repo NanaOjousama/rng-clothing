@@ -1,0 +1,73 @@
+{
+  "_comment": "Snapback Cap front-decoration milestone. Uses the same generic DECAL axis as authored/source_backed/cap_baseball/decoration_evaluation.json (v5/authored.py Decal + v5/integration.py surface integration, composed through v5/source_backed.py's existing render(palette=, decals=(...), lib=...) path). No changes were made to v5/source_backed.py or v5/integration.py. The Baseball four-mark pool was NOT assumed to transfer: cap_snapback's front geometry was independently audited (authored/source_bases/cap/cap_snapback/motif_safe_mask.json) and found to be genuinely narrower at the crown top than cap_baseball's.",
+  "date": "2026-09-16",
+  "geometry_audit": {
+    "crown_face_zone": "front [7,5,12,7] -- 6 wide x 3 tall, narrower than cap_baseball's 8 wide x 3 tall",
+    "finding": "cap_snapback's crown top narrows to 2 cells (x9,10) at row 4, tighter than cap_baseball. Every crown_face row-5 cell is diagonally adjacent to that taper's missing corners, so the entire top row of the zone fails the same 8-connectivity safe-mask test that kept 2 cells safe in row 5 on cap_baseball. The Snapback safe interior is therefore rows 6-7 only (10 cells), not rows 5-7 (16 cells) as on Baseball.",
+    "band_notch": "front row 10 has a genuine transparent gap at x8-11 (the underside of the bill/visor, not visible from the front) -- excluded from the safe mask as a seam/contact boundary, consistent with the task's 'no seam/contact cells' rule. It does not overlap crown_face (rows 5-7) so it does not constrain any of the three kept candidates.",
+    "safe_mask": "authored/source_bases/cap/cap_snapback/motif_safe_mask.json (10 cells: row 6 x8-11, row 7 x7-12)"
+  },
+  "decal_technique": {
+    "mechanism": "Each candidate is an authored surface Decal (authored/decals/cap_snapback_front_*.json + .png), zone='crown_face', fits=['cap_snapback'], views=['front'] only -- base-scoped exactly like the Baseball decals, not family-scoped, because the two caps' front geometry differs. Same uniform-step 'accent' role technique as Baseball: relief is 0 for every cell so the shifted step equals the crown's own local step, and only the semantic role (hence palette ramp) changes.",
+    "geometry": "The three surviving candidates (bar, twin_bars, dot) reuse the exact same local art/PNG as their Baseball counterparts -- the motif's identity is the same, only its base-scoped decal record differs. Verified by direct placement computation, not assumed: cap_snapback's crown_face zone (6 wide) happens to centre a <=4-wide motif at the same x-origin (8) as cap_baseball's 8-wide zone did, so bar/twin_bars/dot land on the SAME absolute cells on both caps ((8,6)-(11,6) etc.). Ring does not transfer: its 4x3 bbox's top row lands on (9,5)/(10,5), both outside the Snapback safe mask (row 5 unsafe), so it is an offline geometric reject on this base even though the same shape was Baseball's strongest live keep.",
+    "role_and_palette_choice": "Tested body-vs-accent Weber contrast at crown_face's own steps (3/4/5) across every palette overlapping cap_snapback's style tags (casual/festival/smart) plus the Baseball incumbent: EMBER_SUN_CHARCOAL scored highest (0.20-0.27) despite sharing only 'festival' with cap_snapback's style list, ahead of STREET_TEAL_GRAPHITE (0.13-0.19, shares casual+smart) and every other candidate (EVERYDAY_STONE_BLUE, SAILOR_COBALT_CREAM, COASTAL_SEAFOAM_CORAL, DESERT_CLAY_TURQUOISE all <=0.13). Chosen for this QC pass because it is both style-valid and measurably the most readable, not assumed from Baseball precedent -- this is only a fixed test palette per the milestone task, not a permanent Snapback requirement."
+  },
+  "candidates": {
+    "bar": {
+      "offline_verdict": "CANDIDATE",
+      "reason": "4x2 local bbox centres onto crown_face at (8,6)-(11,6); every cell inside the Snapback safe mask (row 6). Reads as a short horizontal accent, same silhouette family as the Baseball keep.",
+      "live_verdict": "LIVE KEEP",
+      "live_reason": "LIVE KEEP \u2014 reads as a deliberate horizontal front accent at native worn scale; distinct from Twin Bars and Dot."
+    },
+    "twin_bars": {
+      "offline_verdict": "CANDIDATE",
+      "reason": "4x3 local bbox centres onto crown_face at (8,6),(8,7),(11,6),(11,7); every cell inside the Snapback safe mask (rows 6-7). Two-stroke mark stays clear of the row-5 taper.",
+      "live_verdict": "LIVE KEEP",
+      "live_reason": "LIVE KEEP \u2014 paired vertical mark remains clearly intentional and distinct at native worn scale."
+    },
+    "dot": {
+      "offline_verdict": "CANDIDATE",
+      "reason": "3x3 local bbox centres onto crown_face at (9,6),(10,6),(9,7),(10,7); every cell inside the Snapback safe mask. Compact badge sits well clear of both the taper and the band notch.",
+      "live_verdict": "LIVE KEEP",
+      "live_reason": "LIVE KEEP \u2014 compact badge/logo-like mark is the simplest and clearest Snapback front decoration at native worn scale."
+    },
+    "ring": {
+      "offline_verdict": "REJECT",
+      "reason": "4x3 local bbox centres onto crown_face at (9,5),(10,5),(8,6),(11,6),(9,7),(10,7). The top row (9,5)/(10,5) falls in cap_snapback's row-5 taper zone, which the Snapback-specific safe mask excludes (unlike cap_baseball, where the same shape's top row was safe). Rejected on offline geometry before live QC -- do not force parity with Baseball; this is a genuine silhouette difference, not a re-run of the Baseball verdict."
+    }
+  },
+  "new_candidate_considered": {
+    "considered": false,
+    "reason": "The Snapback front geometry does not strongly suggest a distinct simple motif beyond the three ported ones; the task scope explicitly warns against inventing decoration to pad the count. No new motif was authored this milestone."
+  },
+  "player_facing_bucket": {
+    "label": "Decorated Snapback Cap",
+    "decoration_mode": "one_of",
+    "max_decor_pieces": 1,
+    "note": "Final live-approved Decorated Snapback V1 bucket. Exactly one of the three front motifs is selected; the motifs are RNG outcomes, not separate player-facing variants.",
+    "outcomes": [
+      "cap_snapback_front_bar",
+      "cap_snapback_front_twin_bars",
+      "cap_snapback_front_dot"
+    ]
+  },
+  "live_qc": {
+    "session": "20260916-220411",
+    "result": "PASSED \u2014 Bar, Twin Bars and Dot all read as intentional and distinct at native worn scale. Ring remains the earlier offline geometric reject because its top cells touch the Snapback-specific taper zone.",
+    "final_keep": [
+      "bar",
+      "twin_bars",
+      "dot"
+    ],
+    "final_reject": [
+      "ring"
+    ],
+    "final_tune": [],
+    "fit": "all three decorated proofs: centre +0.0, top +0, contact 1, 0 floating columns, crown-drift 0.0, bbox-drift 0.0"
+  },
+  "source_variant_policy": {
+    "player_label": "Snapback V1",
+    "source": "plurffle More Accessories and Stuff \u2014 Cap (Snapback)",
+    "closure_note": "The source author art has no clearly visible rear plastic snap closure. V1 intentionally preserves that source construction unchanged rather than retrofitting a closure. Future genuinely different approved Snapback constructions may be V2/V3 and may include a visible closure if present in their own source art."
+  }
+}

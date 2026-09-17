@@ -1,0 +1,53 @@
+{
+ "id": "CAP_SNAPBACK_FRONT_MOTIF_SAFE_MASK",
+ "authoritative": true,
+ "provenance": "generator-authored constraint over the intact cap_snapback source base (plurffle More Accessories and Stuff, Cap (Snapback), md5 6eb6cbb52e5cc3d1daa242430b5c7b22). Computed, not eyeballed: authored/source_bases/cap/cap_snapback/derive_safe_mask.py-equivalent one-off audit, same derivation rule as authored/source_bases/cap2/motif_safe_mask.json, applied to this base's own front silhouette -- NOT copied from cap_baseball.",
+ "derivation": {
+  "scope": "the crown_face zone declared in authored/source_backed/cap_snapback/source_backed.json (front: [7,5,12,7], 6 wide x 3 tall)",
+  "included": "cells inside the crown_face zone that are on the front silhouette",
+  "excluded": [
+   "transparent / background",
+   "outline cells (vocabulary step 0)",
+   "rim cells under 8-connectivity -- a cell touching transparency even diagonally still reads as the outer edge",
+   "cells orthogonally adjacent to the band/visor notch (the row-10 gap between the crown and the bill, front x8-11)"
+  ],
+  "finding": "cap_snapback's crown top tapers to only 2 cells wide at row 4 (x9,10), narrower than cap_baseball's row 4. Every cell in crown_face row 5 (the row directly below that taper) is diagonally adjacent to the missing corners of the taper, so the WHOLE of row 5 fails the 8-connectivity rim test -- unlike cap_baseball, whose row 5 keeps 2 safe cells (x9,10). This is a genuine silhouette difference, not a copy error: cap_snapback's crown reads visually narrower/more peaked at the top than cap_baseball's, so nothing may sit that high on its front without touching the taper.",
+  "counts": {
+   "crown_face_box": 18,
+   "outline": 0,
+   "rim_8conn_in_box": 8,
+   "safe": 10
+  }
+ },
+ "safe_cells_by_row": {
+  "6": [
+   8,
+   9,
+   10,
+   11
+  ],
+  "7": [
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ]
+ },
+ "safe_cells": [
+  [8, 6], [9, 6], [10, 6], [11, 6],
+  [7, 7], [8, 7], [9, 7], [10, 7], [11, 7], [12, 7]
+ ],
+ "unsafe_crown_face_cells": [
+  [7, 5], [8, 5], [9, 5], [10, 5], [11, 5], [12, 5]
+ ],
+ "coarse_bounding_box": {
+  "x0": 7,
+  "x1": 12,
+  "y0": 6,
+  "y1": 7,
+  "note": "informational only, and NOTE row 5 of the declared crown_face zone box is entirely excluded -- the cell list decides, not the box"
+ },
+ "rule": "a motif pixel is legal ONLY if that exact cell is in safe_cells"
+}

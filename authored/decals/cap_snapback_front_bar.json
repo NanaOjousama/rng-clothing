@@ -1,0 +1,27 @@
+{
+  "name": "cap_snapback_front_bar",
+  "slot": "HEAD",
+  "z": 2,
+  "kind": "surface",
+  "motif_class": "cap_front_bar",
+  "zone": "crown_face",
+  "style": [
+    "casual",
+    "festival",
+    "smart"
+  ],
+  "views": [
+    "front"
+  ],
+  "size": [
+    4,
+    3
+  ],
+  "fits": [
+    "cap_snapback"
+  ],
+  "variants": [
+    "decorated"
+  ],
+  "_comment": "short horizontal bar. Same local art/shape as cap_baseball_front_bar (identical PNG, cells (0,1),(1,1),(2,1),(3,1) in a 4x2 bbox), authored as its own base-scoped Decal per CLAUDE.md §3 (do not assume the Baseball pool transfers) and the Snapback-specific milestone task. cap_snapback's crown_face zone is [7,5,12,7] (6 wide x 3 tall, narrower than cap_baseball's 8 wide), and the generic zone-centring math in v5.authored._placement lands this decal's 4x2 bbox at origin (8,5) here too -- same absolute cells (8,6),(9,6),(10,6),(11,6) as on cap_baseball, verified by direct computation, not assumed. This decal was checked against the Snapback-specific safe mask authored/source_bases/cap/cap_snapback/motif_safe_mask.json (row 6, cols 8-11): fully inside. OFFLINE CANDIDATE pending live worn QC -- see authored/source_backed/cap_snapback/decoration_evaluation.json."
+}

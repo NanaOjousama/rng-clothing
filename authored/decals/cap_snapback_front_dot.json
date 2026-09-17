@@ -1,0 +1,27 @@
+{
+  "name": "cap_snapback_front_dot",
+  "slot": "HEAD",
+  "z": 2,
+  "kind": "surface",
+  "motif_class": "cap_front_dot",
+  "zone": "crown_face",
+  "style": [
+    "casual",
+    "festival",
+    "smart"
+  ],
+  "views": [
+    "front"
+  ],
+  "size": [
+    4,
+    3
+  ],
+  "fits": [
+    "cap_snapback"
+  ],
+  "variants": [
+    "decorated"
+  ],
+  "_comment": "tiny dot / compact square badge. Same local art/shape as cap_baseball_front_dot (identical PNG, cells (1,1),(2,1),(1,2),(2,2) in a 3x3 bbox), authored as its own base-scoped Decal per CLAUDE.md §3 (do not assume the Baseball pool transfers). cap_snapback's crown_face zone is [7,5,12,7] (6 wide x 3 tall); the generic zone-centring math lands this decal's 3x3 bbox at origin (8,5), giving absolute cells (9,6),(10,6),(9,7),(10,7) -- verified by direct computation. Checked against the Snapback-specific safe mask authored/source_bases/cap/cap_snapback/motif_safe_mask.json (row 6 cols 8-11, row 7 cols 7-12): fully inside. OFFLINE CANDIDATE pending live worn QC -- see authored/source_backed/cap_snapback/decoration_evaluation.json."
+}
