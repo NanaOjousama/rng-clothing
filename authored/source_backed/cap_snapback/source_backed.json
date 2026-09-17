@@ -1,0 +1,173 @@
+{
+  "schema": "source_backed/v2",
+  "name": "cap_snapback",
+  "family": "cap",
+  "shape_variant": "cap_snapback",
+  "slot": "HEAD",
+  "classification": "REFERENCE",
+  "style": [
+    "casual",
+    "festival",
+    "smart"
+  ],
+  "source": {
+    "png": "authored/source_bases/cap/cap_snapback/source/hat.png",
+    "md5": "6eb6cbb52e5cc3d1daa242430b5c7b22",
+    "json": "authored/source_bases/cap/cap_snapback/source/hat.json",
+    "json_md5": "19a2598c9843543e8bebd9f16411d685",
+    "frame_size": [
+      20,
+      20
+    ],
+    "origin": "generator content/[FS] More Accessories and Stuff Pack/Hats/CapSnapback/hat.png"
+  },
+  "views_note": "read from the source hat.json at load: authored ['back', 'front', 'right'], mirrored {'left': 'right'}",
+  "semantic_map": {
+    "dir": "semantic",
+    "policy": "rank",
+    "ramp": [
+      "#202020",
+      "#404040",
+      "#606060",
+      "#808080",
+      "#B0B0B0",
+      "#E0E0E0"
+    ],
+    "source_grey_to_step": {
+      "#393939": 0,
+      "#515151": 1,
+      "#777777": 2,
+      "#a5a5a5": 3,
+      "#d9d9d9": 4,
+      "#fefefe": 5
+    },
+    "role": "describes the source for recolouring/composition; never replaces it"
+  },
+  "anchors": {
+    "crown_top": {
+      "front": [
+        7,
+        5
+      ],
+      "right": [
+        7,
+        5
+      ],
+      "back": [
+        7,
+        6
+      ]
+    },
+    "side": {
+      "front": [
+        11,
+        5
+      ],
+      "right": [
+        11,
+        5
+      ],
+      "back": [
+        11,
+        7
+      ]
+    },
+    "band": {
+      "front": [
+        5,
+        8
+      ],
+      "right": [
+        2,
+        8
+      ],
+      "back": [
+        6,
+        12
+      ]
+    }
+  },
+  "zones": {
+    "front": {
+      "crown_top": [
+        7,
+        5,
+        12,
+        5
+      ],
+      "crown_face": [
+        7,
+        5,
+        12,
+        7
+      ],
+      "band": [
+        5,
+        8,
+        14,
+        9
+      ],
+      "side": [
+        11,
+        5,
+        14,
+        8
+      ]
+    },
+    "right": {
+      "crown_top": [
+        7,
+        5,
+        12,
+        5
+      ],
+      "crown_face": [
+        7,
+        5,
+        12,
+        7
+      ],
+      "band": [
+        2,
+        8,
+        14,
+        10
+      ],
+      "side": [
+        11,
+        5,
+        14,
+        8
+      ]
+    },
+    "back": {
+      "crown_top": [
+        7,
+        6,
+        12,
+        7
+      ],
+      "crown_face": [
+        6,
+        7,
+        13,
+        11
+      ],
+      "band": [
+        6,
+        12,
+        13,
+        16
+      ],
+      "side": [
+        11,
+        7,
+        14,
+        12
+      ]
+    }
+  },
+  "placement_override": {},
+  "placement_note": "empty: the source hat.json HeadPosition is the default. An override must name its in-game QC evidence.",
+  "provenance": "REFERENCE-ONLY: plurffle \u2014 [FS] More Accessories and Stuff, Cap (Snapback) (generator content/[FS] More Accessories and Stuff Pack/Hats/CapSnapback/hat.png). See authored/source_bases/cap/cap_snapback/provenance.json"
+}

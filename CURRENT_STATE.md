@@ -3,21 +3,23 @@
 Concise current-milestone state. Not a log — see `PROJECT_MEMORY.md` for
 history and `CLAUDE.md` for standing rules.
 
-**Last updated:** 2026-09-16 (Beret closeout: Plain + Decorated player variants implemented; Cap family next)
+**Last updated:** 2026-09-16 (Cap Baseball + Snapback Source-Backed V2 foundation verified in game)
 **Live stack:** Stardew Valley 1.6.15 · SMAPI 4.5.2 · Fashion Sense 7.5.0
 
 ---
 
 ## CURRENT MILESTONE
 
-**Beret family closeout — active player-facing plan is one approved shape with two variants.**
+**Cap family — Source-Backed V2 foundation. Beret is frozen at commit `513f586`.**
 
-- **Plain Beret** = approved `beret_02` shape, no decoration.
-- **Decorated Beret** = same `beret_02` shape with exactly one readable decoration outcome: ribbon/bow, leaf, or dotted. `BeretRibbon`, `BeretWhiteRibbon`, `BeretLeaf`, and `BeretDotted` are treated as one decorated variant bucket, not four shape variants.
-- `beret_01` remains HOLD/reference-only; `beret_03` remains optional/TUNE; More Accessories Beret1/2 stay rejected as active shapes.
-- Generic `variant=` selection is implemented in `v5/authored.py` without changing historical rolls. Variant-only art is isolated from normal pools; legacy guard remains 0 moved.
-- Source-backed proof appearances for Ribbon / Leaf / Dotted were added to `RNG-SourceBacked-V2` for visual QC.
-- **Next family after beret: Cap**, starting with popular/readable subtypes rather than every technical cap taxonomy.
+- Live source audit session `20260916-203154`: plurffle **Cap 2** is the provisional **Baseball** master; plurffle **Cap (Snapback)** is a genuinely distinct **Snapback** construction. Both seat cleanly in game.
+- `BoysCap` remains visual guidance for a future Dad Cap only; its provenance is unresolved, so its pixels are not promoted. Trucker and optional 5-panel remain missing rather than invented.
+- Source-Backed V2 ingest now accepts source-backed-only targets without creating a legacy six-step authored base. `cap_baseball` and `cap_snapback` preserve the source pixels, Fashion Sense placement and mirrored-left contract.
+- Neutral proofs: `RNG-Cap-SourceBacked-V2` with `SB2CapBaseballNeutral` and `SB2CapSnapbackNeutral`. Offline comparison is **0 differing pixels** against the source view contract for both.
+- Cap-specific regression suite: `tests/test_source_backed_caps.py` — 5/5 passing. Existing source fidelity 30 tests OK (3 expected legacy failures), beret validator 89/89, legacy guard 1996/0 moved.
+- **Live fidelity gate PASSED, session `20260916-204732`:** source-audit Baseball/Snapback vs Source-Backed V2 are **0 differing pixels** in worn, hat-only and head crops for all four directions. Full-screen scene diffs are ignored because world/cursor animation advances between captures. The cap foundation is cleared for variation work.
+
+**Beret family closeout — frozen.** Plain + Decorated both use approved `beret_02`; Ribbon / Leaf / Dotted are one decorated bucket.
 
 The older Milestone 2 notes below remain as history of the family-axis validation.
 

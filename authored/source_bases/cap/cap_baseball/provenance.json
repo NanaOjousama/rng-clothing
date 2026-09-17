@@ -1,0 +1,41 @@
+{
+  "id": "cap_baseball",
+  "family": "cap",
+  "classification": "REFERENCE",
+  "classification_reason": "plurffle source selected as the provisional Baseball master after live worn audit session 20260916-203154. Source pixels are construction authority; held at REFERENCE until redistribution/shipping clearance is explicit.",
+  "attribution": "plurffle \u2014 [FS] More Accessories and Stuff, Cap 2",
+  "source": {
+    "path": "generator content/[FS] More Accessories and Stuff Pack/Hats/Cap2/hat.png",
+    "internal_name": "More Accessories and Stuff / Cap 2",
+    "md5": "3033d10d5570d5c376e53602bfa37390",
+    "json_md5": "5598c868087aaf3a54b8b9fc269af962",
+    "size": [
+      20,
+      60
+    ],
+    "layout": {
+      "front": 0,
+      "right": 20,
+      "back": 40
+    },
+    "read_only": true,
+    "preserved_copy": "authored/source_bases/cap/cap_baseball/source/hat.png",
+    "preserved_copy_md5": "3033d10d5570d5c376e53602bfa37390"
+  },
+  "directions": {
+    "authored": [
+      "back",
+      "front",
+      "right"
+    ],
+    "mirrored": {
+      "left": "right"
+    },
+    "note": "read directly from the source Fashion Sense model blocks"
+  },
+  "source_backed": {
+    "neutral_pixels": "canonical source pixels; semantic map never replaces them",
+    "normalisation_policy": "rank",
+    "semantic_only": true
+  }
+}

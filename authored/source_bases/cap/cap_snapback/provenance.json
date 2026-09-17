@@ -1,0 +1,41 @@
+{
+  "id": "cap_snapback",
+  "family": "cap",
+  "classification": "REFERENCE",
+  "classification_reason": "plurffle source selected as a distinct Snapback construction after live worn audit session 20260916-203154. Source pixels are construction authority; held at REFERENCE until redistribution/shipping clearance is explicit.",
+  "attribution": "plurffle \u2014 [FS] More Accessories and Stuff, Cap (Snapback)",
+  "source": {
+    "path": "generator content/[FS] More Accessories and Stuff Pack/Hats/CapSnapback/hat.png",
+    "internal_name": "More Accessories and Stuff / Cap (Snapback)",
+    "md5": "6eb6cbb52e5cc3d1daa242430b5c7b22",
+    "json_md5": "19a2598c9843543e8bebd9f16411d685",
+    "size": [
+      20,
+      60
+    ],
+    "layout": {
+      "front": 0,
+      "right": 20,
+      "back": 40
+    },
+    "read_only": true,
+    "preserved_copy": "authored/source_bases/cap/cap_snapback/source/hat.png",
+    "preserved_copy_md5": "6eb6cbb52e5cc3d1daa242430b5c7b22"
+  },
+  "directions": {
+    "authored": [
+      "back",
+      "front",
+      "right"
+    ],
+    "mirrored": {
+      "left": "right"
+    },
+    "note": "read directly from the source Fashion Sense model blocks"
+  },
+  "source_backed": {
+    "neutral_pixels": "canonical source pixels; semantic map never replaces them",
+    "normalisation_policy": "rank",
+    "semantic_only": true
+  }
+}
