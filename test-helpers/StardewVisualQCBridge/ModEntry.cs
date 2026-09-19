@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.Json;
 using Microsoft.Xna.Framework;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
@@ -129,6 +130,10 @@ namespace StardewVisualQCBridge
 
                 case "give_item":
                     this.GiveItem(req);
+                    return;
+
+                case "equip_garment":
+                    this.EquipGeneratedGarment(req);
                     return;
 
                 case "fitting_probe":
@@ -715,6 +720,141 @@ namespace StardewVisualQCBridge
         /// Fashion Sense appearances that declare `Item` become real hats with
         /// an id of the form `&lt;PackId&gt;/Hat/&lt;Name&gt;/Item`; this accepts that
         /// bare form as well as the qualified `(H)` one.</summary>
+        private void EquipGeneratedGarment(Request req)
+        {
+            if (!Context.IsWorldReady)
+            {
+                this.bridge.Respond(req.Id, false, "world not ready");
+                return;
+            }
+            if (Game1.activeClickableMenu != null)
+            {
+                this.bridge.Respond(req.Id, false, "close the current menu first");
+                return;
+            }
+
+            string wanted = req.Arg("id");
+            if (string.IsNullOrWhiteSpace(wanted))
+            {
+                this.bridge.Respond(req.Id, false, "equip_garment needs args.id");
+                return;
+            }
+
+            string modsPath = Directory.GetParent(this.Helper.DirectoryPath)?.FullName
+                ?? throw new InvalidOperationException("could not resolve Mods folder");
+            string garmentRoot = Path.Combine(
+                modsPath,
+                "EnhancedSewingMachine",
+                "assets",
+                "garments");
+            if (!Directory.Exists(garmentRoot))
+            {
+                this.bridge.Respond(req.Id, false, "EnhancedSewingMachine garment registry folder not found");
+                return;
+            }
+
+            string hitPath = null;
+            JsonElement hit = default;
+            foreach (string path in Directory.GetFiles(garmentRoot, "*.json", SearchOption.AllDirectories))
+            {
+                if (Path.GetFileName(path).Equals("index.json", StringComparison.OrdinalIgnoreCase))
+                    continue;
+                try
+                {
+                    using JsonDocument doc = JsonDocument.Parse(File.ReadAllText(path));
+                    JsonElement root = doc.RootElement;
+                    if (root.TryGetProperty("Id", out JsonElement id)
+                        && string.Equals(id.GetString(), wanted, StringComparison.Ordinal))
+                    {
+                        hitPath = path;
+                        hit = root.Clone();
+                        break;
+                    }
+                }
+                catch
+                {
+                    // Ignore malformed unrelated lab/dev files; ESM owns registry validation.
+                }
+            }
+
+            if (hitPath == null)
+            {
+                this.bridge.Respond(req.Id, false, $"unknown garment '{wanted}'");
+                return;
+            }
+
+            string Str(JsonElement obj, string name, string fallback = "")
+                => obj.TryGetProperty(name, out JsonElement v) && v.ValueKind == JsonValueKind.String
+                    ? v.GetString() ?? fallback
+                    : fallback;
+            int Int(JsonElement obj, string name, int fallback = 0)
+                => obj.TryGetProperty(name, out JsonElement v) && v.TryGetInt32(out int n) ? n : fallback;
+
+            JsonElement metadata = hit.TryGetProperty("Metadata", out JsonElement meta)
+                ? meta
+                : default;
+
+            var render = new Dictionary<string, object>
+            {
+                ["DefinitionVersion"] = Int(hit, "DefinitionVersion", 1),
+                ["WornTexture"] = Str(hit, "WornTexture"),
+                ["FrameWidth"] = Int(hit, "FrameWidth"),
+                ["FrameHeight"] = Int(hit, "FrameHeight"),
+                ["RenderScale"] = hit.TryGetProperty("RenderScale", out JsonElement rs) ? rs.GetSingle() : 1f,
+                ["VanillaReferenceAnchor"] = hit.GetProperty("VanillaReferenceAnchor").Clone(),
+                ["Directions"] = hit.GetProperty("Directions").Clone(),
+                ["AppearanceDigest"] = ""
+            };
+
+            var payload = new Dictionary<string, object>
+            {
+                ["SchemaVersion"] = 1,
+                ["GarmentId"] = Str(hit, "Id"),
+                ["GenerationVersion"] = Int(hit, "DefinitionVersion", 1),
+                ["Seed"] = 0L,
+                ["Category"] = Str(hit, "Category", "Hat"),
+                ["Family"] = metadata.ValueKind == JsonValueKind.Object ? Str(metadata, "Family") : "",
+                ["Construction"] = metadata.ValueKind == JsonValueKind.Object ? Str(metadata, "Construction") : "",
+                ["Material"] = metadata.ValueKind == JsonValueKind.Object ? Str(metadata, "Material") : "",
+                ["Palette"] = metadata.ValueKind == JsonValueKind.Object ? Str(metadata, "Palette") : "",
+                ["Motif"] = metadata.ValueKind == JsonValueKind.Object ? Str(metadata, "Motif") : "",
+                ["GeneratorId"] = metadata.ValueKind == JsonValueKind.Object ? Str(metadata, "GeneratorId") : "",
+                ["GeneratorVersion"] = metadata.ValueKind == JsonValueKind.Object ? Int(metadata, "GeneratorVersion", 1) : 1,
+                ["GeneratorSeed"] = metadata.ValueKind == JsonValueKind.Object && metadata.TryGetProperty("GeneratorSeed", out JsonElement gs) && gs.TryGetInt64(out long gsv) ? gsv : 0L,
+                ["Style"] = metadata.ValueKind == JsonValueKind.Object ? Str(metadata, "Style") : "",
+                ["QualityTier"] = metadata.ValueKind == JsonValueKind.Object ? Str(metadata, "QualityTier") : "",
+                ["Decals"] = metadata.ValueKind == JsonValueKind.Object ? Str(metadata, "Decals") : "",
+                ["Classification"] = metadata.ValueKind == JsonValueKind.Object ? Str(metadata, "Classification") : "",
+                ["FitOffsetX"] = 0,
+                ["FitOffsetY"] = 0,
+                ["FitScale"] = 1f,
+                ["Render"] = render
+            };
+
+            var hat = ItemRegistry.Create<StardewValley.Objects.Hat>("(H)RNGClothing.ESM.GeneratedHat");
+            hat.modData["RNGClothing.ESM/Instance"] = JsonSerializer.Serialize(payload);
+            hat.modData["RNGClothing.ESM/GarmentId"] = wanted;
+            hat.modData["RNGClothing.ESM/AppearanceDigest"] = "";
+            hat.modData["RNGClothing.ESM/GenerationVersion"] = Int(hit, "DefinitionVersion", 1).ToString();
+
+            StardewValley.Objects.Hat previous = Game1.player.hat.Value;
+            if (previous != null && !Game1.player.addItemToInventoryBool(previous))
+            {
+                this.bridge.Respond(req.Id, false, "inventory is full; current hat left equipped");
+                return;
+            }
+
+            Game1.player.hat.Value = hat;
+            this.SetDirty();
+            this.bridge.Respond(req.Id, true, $"equipped generated garment {wanted}",
+                new Dictionary<string, object>
+                {
+                    ["garment_id"] = wanted,
+                    ["definition"] = hitPath,
+                    ["qualified_item_id"] = hat.QualifiedItemId
+                });
+        }
+
         private void GiveItem(Request req)
         {
             if (!Context.IsWorldReady)
