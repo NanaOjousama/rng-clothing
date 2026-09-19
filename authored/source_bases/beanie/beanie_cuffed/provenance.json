@@ -1,0 +1,41 @@
+{
+  "id": "beanie_cuffed",
+  "family": "beanie",
+  "classification": "REFERENCE",
+  "classification_reason": "Rural Outfitters Beanie selected as the Beanie V1 primary cuffed construction after catalog and silhouette review on 2026-09-19. Full four-direction authored source; source pixels remain construction authority.",
+  "attribution": "billi \u2014 Rural Outfitters, Beanie",
+  "source": {
+    "path": "generator content/Rural Outfitters/Rural Outfitters/Hats/Beanie/hat.png",
+    "internal_name": "Rural Outfitters / Beanie",
+    "md5": "80530cf3d077859fbb66cf3cb9d6ffe4",
+    "json_md5": "c1eb213251e6e8cd6e6337e08850f87b",
+    "size": [
+      20,
+      80
+    ],
+    "layout": {
+      "front": 0,
+      "right": 20,
+      "left": 40,
+      "back": 60
+    },
+    "read_only": true,
+    "preserved_copy": "authored/source_bases/beanie/beanie_cuffed/source/hat.png",
+    "preserved_copy_md5": "80530cf3d077859fbb66cf3cb9d6ffe4"
+  },
+  "directions": {
+    "authored": [
+      "back",
+      "front",
+      "left",
+      "right"
+    ],
+    "mirrored": {},
+    "note": "read directly from the source Fashion Sense model blocks"
+  },
+  "source_backed": {
+    "neutral_pixels": "canonical source pixels; semantic map never replaces them",
+    "normalisation_policy": "rank",
+    "semantic_only": true
+  }
+}

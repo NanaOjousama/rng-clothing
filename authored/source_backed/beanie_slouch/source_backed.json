@@ -1,0 +1,206 @@
+{
+  "schema": "source_backed/v2",
+  "name": "beanie_slouch",
+  "family": "beanie",
+  "shape_variant": "beanie_slouch",
+  "slot": "HEAD",
+  "classification": "REFERENCE",
+  "style": [
+    "casual",
+    "cozy",
+    "streetwear",
+    "winter"
+  ],
+  "source": {
+    "png": "authored/source_bases/beanie/beanie_slouch/source/hat.png",
+    "md5": "aaa3d8e3a443c38b4fb5295893e46ace",
+    "json": "authored/source_bases/beanie/beanie_slouch/source/hat.json",
+    "json_md5": "7059d553b0da8b66272fe547dd521464",
+    "frame_size": [
+      16,
+      16
+    ],
+    "origin": "generator content/[FS] More Accessories and Stuff Pack/Hats/BeanieFloppy/hat.png"
+  },
+  "views_note": "read from the source hat.json at load: authored ['back', 'front', 'right'], mirrored {'left': 'right'}",
+  "semantic_map": {
+    "dir": "semantic",
+    "policy": "rank",
+    "ramp": [
+      "#202020",
+      "#404040",
+      "#606060",
+      "#808080",
+      "#B0B0B0",
+      "#E0E0E0"
+    ],
+    "source_grey_to_step": {
+      "#393939": 0,
+      "#515151": 1,
+      "#777777": 3,
+      "#a5a5a5": 4,
+      "#d9d9d9": 5
+    },
+    "role": "describes the source for recolouring/composition; never replaces it"
+  },
+  "anchors": {
+    "crown_top": {
+      "front": [
+        7,
+        0
+      ],
+      "right": [
+        3,
+        1
+      ],
+      "back": [
+        6,
+        3
+      ]
+    },
+    "side": {
+      "front": [
+        10,
+        1
+      ],
+      "right": [
+        10,
+        2
+      ],
+      "back": [
+        9,
+        4
+      ]
+    },
+    "band": {
+      "front": [
+        2,
+        6
+      ],
+      "right": [
+        3,
+        7
+      ],
+      "back": [
+        3,
+        9
+      ]
+    },
+    "cuff": {
+      "front": [
+        2,
+        6
+      ],
+      "right": [
+        3,
+        7
+      ],
+      "back": [
+        3,
+        9
+      ]
+    }
+  },
+  "zones": {
+    "front": {
+      "crown_top": [
+        7,
+        0,
+        9,
+        1
+      ],
+      "crown_face": [
+        4,
+        2,
+        11,
+        5
+      ],
+      "band": [
+        2,
+        6,
+        13,
+        8
+      ],
+      "side": [
+        10,
+        1,
+        13,
+        6
+      ],
+      "cuff": [
+        2,
+        6,
+        13,
+        8
+      ]
+    },
+    "right": {
+      "crown_top": [
+        3,
+        1,
+        7,
+        2
+      ],
+      "crown_face": [
+        1,
+        2,
+        10,
+        6
+      ],
+      "band": [
+        3,
+        7,
+        6,
+        10
+      ],
+      "side": [
+        10,
+        2,
+        13,
+        7
+      ],
+      "cuff": [
+        3,
+        7,
+        6,
+        10
+      ]
+    },
+    "back": {
+      "crown_top": [
+        6,
+        3,
+        9,
+        4
+      ],
+      "crown_face": [
+        4,
+        5,
+        11,
+        8
+      ],
+      "band": [
+        3,
+        9,
+        12,
+        12
+      ],
+      "side": [
+        9,
+        4,
+        12,
+        9
+      ],
+      "cuff": [
+        3,
+        9,
+        12,
+        12
+      ]
+    }
+  },
+  "placement_override": {},
+  "placement_note": "empty: the source hat.json HeadPosition is the default. An override must name its in-game QC evidence.",
+  "provenance": "REFERENCE-ONLY: plurffle \u2014 [FS] More Accessories and Stuff, Beanie (Floppy) (generator content/[FS] More Accessories and Stuff Pack/Hats/BeanieFloppy/hat.png). See authored/source_bases/beanie/beanie_slouch/provenance.json",
+  "zone_note": "Beanie construction zones: cuff is an explicit alias of the lower solid band for beanie-specific motif placement."
+}

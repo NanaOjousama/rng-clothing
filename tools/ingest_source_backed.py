@@ -29,6 +29,34 @@ from v5.pngio import read_rgba_png, write_rgba_png  # noqa: E402
 
 # Source-Backed-only targets. These intentionally do not enter authored/bases/.
 DIRECT_SPECS = {
+    "beanie_cuffed": {
+        "family": "beanie",
+        "source": "generator content/Rural Outfitters/Rural Outfitters/Hats/Beanie/hat.png",
+        "source_json": "generator content/Rural Outfitters/Rural Outfitters/Hats/Beanie/hat.json",
+        "internal_name": "Rural Outfitters / Beanie",
+        "normalise": "rank",
+        "style": ["casual", "cozy", "streetwear", "winter"],
+        "classification": "REFERENCE",
+        "classification_reason":
+            "Rural Outfitters Beanie selected as the Beanie V1 primary cuffed construction after "
+            "catalog and silhouette review on 2026-09-19. Full four-direction authored source; "
+            "source pixels remain construction authority.",
+        "attribution": "billi — Rural Outfitters, Beanie",
+    },
+    "beanie_slouch": {
+        "family": "beanie",
+        "source": "generator content/[FS] More Accessories and Stuff Pack/Hats/BeanieFloppy/hat.png",
+        "source_json": "generator content/[FS] More Accessories and Stuff Pack/Hats/BeanieFloppy/hat.json",
+        "internal_name": "More Accessories and Stuff / Beanie (Floppy)",
+        "normalise": "rank",
+        "style": ["casual", "cozy", "streetwear", "winter"],
+        "classification": "REFERENCE",
+        "classification_reason":
+            "More Accessories and Stuff Beanie (Floppy) selected as the Beanie V1 secondary slouch "
+            "construction after catalog and silhouette review on 2026-09-19. Source pixels remain "
+            "construction authority.",
+        "attribution": "plurffle — [FS] More Accessories and Stuff, Beanie (Floppy)",
+    },
     "cap_baseball": {
         "family": "cap",
         "source": "generator content/[FS] More Accessories and Stuff Pack/Hats/Cap2/hat.png",
@@ -59,7 +87,7 @@ DIRECT_SPECS = {
     },
 }
 
-TARGETS = ("beret_02", "beret_01", "cap_baseball", "cap_snapback")
+TARGETS = ("beret_02", "beret_01", "cap_baseball", "cap_snapback", "beanie_cuffed", "beanie_slouch")
 
 
 def _md5(path):

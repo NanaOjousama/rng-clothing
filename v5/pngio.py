@@ -44,39 +44,95 @@ def _paeth(a: int, b: int, c: int) -> int:
 
 
 def read_rgba_png(path: Path) -> list[list[RGBA]]:
-    """Read a non-interlaced 8-bit RGB or RGBA PNG into rows of RGBA tuples."""
+    """Read a non-interlaced RGB/RGBA or indexed PNG into RGBA rows.
+
+    RGB/RGBA inputs must be 8-bit. Indexed PNGs may use 1/2/4/8-bit palette
+    indices, matching ordinary PNG encoders used by third-party pixel-art packs.
+    """
     data = Path(path).read_bytes()
     if data[:8] != b"\x89PNG\r\n\x1a\n":
         raise ValueError(f"{path}: not a PNG")
-    cursor, idat, width, height, channels = 8, bytearray(), None, None, 4
+    cursor, idat = 8, bytearray()
+    width = height = ctype = depth = None
+    palette = None
+    alpha_table = None
     while cursor < len(data):
         length = struct.unpack(">I", data[cursor:cursor + 4])[0]
-        kind = data[cursor + 4:cursor + 8]; payload = data[cursor + 8:cursor + 8 + length]
+        kind = data[cursor + 4:cursor + 8]
+        payload = data[cursor + 8:cursor + 8 + length]
         cursor += 12 + length
         if kind == b"IHDR":
             width, height, depth, ctype, _, _, interlace = struct.unpack(">IIBBBBB", payload)
-            if depth != 8 or interlace != 0 or ctype not in (2, 6):
-                raise ValueError(f"{path}: expected non-interlaced 8-bit RGB/RGBA")
-            channels = 4 if ctype == 6 else 3
+            valid = ((ctype in (2, 6) and depth == 8)
+                     or (ctype == 3 and depth in (1, 2, 4, 8)))
+            if interlace != 0 or not valid:
+                raise ValueError(
+                    f"{path}: expected non-interlaced 8-bit RGB/RGBA "
+                    f"or 1/2/4/8-bit indexed PNG"
+                )
+        elif kind == b"PLTE":
+            palette = [tuple(payload[i:i + 3]) for i in range(0, len(payload), 3)]
+        elif kind == b"tRNS":
+            alpha_table = bytes(payload)
         elif kind == b"IDAT":
             idat.extend(payload)
         elif kind == b"IEND":
             break
-    raw = zlib.decompress(bytes(idat)); stride = width * channels
-    rows: list[list[RGBA]] = []; prev = bytearray(stride); off = 0
+    if width is None or height is None or ctype is None:
+        raise ValueError(f"{path}: missing IHDR")
+    if ctype == 3 and palette is None:
+        raise ValueError(f"{path}: indexed PNG is missing PLTE")
+
+    if ctype == 6:
+        filter_bpp, stride = 4, width * 4
+    elif ctype == 2:
+        filter_bpp, stride = 3, width * 3
+    else:
+        filter_bpp = 1
+        stride = (width * depth + 7) // 8
+
+    raw = zlib.decompress(bytes(idat))
+    rows: list[list[RGBA]] = []
+    prev = bytearray(stride)
+    off = 0
     for _ in range(height):
-        ftype = raw[off]; off += 1
-        enc = raw[off:off + stride]; off += stride
+        ftype = raw[off]
+        off += 1
+        if ftype not in (0, 1, 2, 3, 4):
+            raise ValueError(f"{path}: unsupported PNG filter {ftype}")
+        enc = raw[off:off + stride]
+        off += stride
         dec = bytearray(stride)
         for i, v in enumerate(enc):
-            left = dec[i - channels] if i >= channels else 0
-            up = prev[i]; ul = prev[i - channels] if i >= channels else 0
+            left = dec[i - filter_bpp] if i >= filter_bpp else 0
+            up = prev[i]
+            ul = prev[i - filter_bpp] if i >= filter_bpp else 0
             pred = (0, left, up, (left + up) // 2, _paeth(left, up, ul))[ftype]
             dec[i] = (v + pred) & 0xFF
-        if channels == 4:
+
+        if ctype == 6:
             rows.append([tuple(dec[x:x + 4]) for x in range(0, stride, 4)])
+        elif ctype == 2:
+            rows.append([(dec[x], dec[x + 1], dec[x + 2], 255)
+                         for x in range(0, stride, 3)])
         else:
-            rows.append([(dec[x], dec[x + 1], dec[x + 2], 255) for x in range(0, stride, 3)])
+            mask = (1 << depth) - 1
+            indices = []
+            for byte in dec:
+                for shift in range(8 - depth, -1, -depth):
+                    indices.append((byte >> shift) & mask)
+                    if len(indices) == width:
+                        break
+                if len(indices) == width:
+                    break
+            row = []
+            for idx in indices:
+                if idx >= len(palette):
+                    raise ValueError(f"{path}: palette index {idx} outside PLTE")
+                r, g, b = palette[idx]
+                a = alpha_table[idx] if alpha_table is not None and idx < len(alpha_table) else 255
+                row.append((r, g, b, a))
+            rows.append(row)
         prev = dec
     return rows
 

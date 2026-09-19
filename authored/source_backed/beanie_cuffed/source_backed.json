@@ -1,0 +1,256 @@
+{
+  "schema": "source_backed/v2",
+  "name": "beanie_cuffed",
+  "family": "beanie",
+  "shape_variant": "beanie_cuffed",
+  "slot": "HEAD",
+  "classification": "REFERENCE",
+  "style": [
+    "casual",
+    "cozy",
+    "streetwear",
+    "winter"
+  ],
+  "source": {
+    "png": "authored/source_bases/beanie/beanie_cuffed/source/hat.png",
+    "md5": "80530cf3d077859fbb66cf3cb9d6ffe4",
+    "json": "authored/source_bases/beanie/beanie_cuffed/source/hat.json",
+    "json_md5": "c1eb213251e6e8cd6e6337e08850f87b",
+    "frame_size": [
+      20,
+      20
+    ],
+    "origin": "generator content/Rural Outfitters/Rural Outfitters/Hats/Beanie/hat.png"
+  },
+  "views_note": "read from the source hat.json at load: authored ['back', 'front', 'left', 'right'], mirrored {}",
+  "semantic_map": {
+    "dir": "semantic",
+    "policy": "rank",
+    "ramp": [
+      "#202020",
+      "#404040",
+      "#606060",
+      "#808080",
+      "#B0B0B0",
+      "#E0E0E0"
+    ],
+    "source_grey_to_step": {
+      "#999999": 0,
+      "#bcbcbc": 1,
+      "#c2c2c2": 2,
+      "#c6c6c6": 3,
+      "#d8d8d8": 3,
+      "#ebebeb": 4,
+      "#fafafa": 5
+    },
+    "role": "describes the source for recolouring/composition; never replaces it"
+  },
+  "anchors": {
+    "crown_top": {
+      "front": [
+        3,
+        2
+      ],
+      "right": [
+        3,
+        3
+      ],
+      "left": [
+        9,
+        3
+      ],
+      "back": [
+        3,
+        1
+      ]
+    },
+    "side": {
+      "front": [
+        13,
+        3
+      ],
+      "right": [
+        12,
+        3
+      ],
+      "left": [
+        13,
+        3
+      ],
+      "back": [
+        13,
+        2
+      ]
+    },
+    "band": {
+      "front": [
+        3,
+        8
+      ],
+      "right": [
+        3,
+        8
+      ],
+      "left": [
+        8,
+        8
+      ],
+      "back": [
+        3,
+        9
+      ]
+    },
+    "cuff": {
+      "front": [
+        3,
+        8
+      ],
+      "right": [
+        3,
+        8
+      ],
+      "left": [
+        8,
+        8
+      ],
+      "back": [
+        3,
+        9
+      ]
+    }
+  },
+  "zones": {
+    "front": {
+      "crown_top": [
+        3,
+        2,
+        6,
+        3
+      ],
+      "crown_face": [
+        4,
+        4,
+        15,
+        7
+      ],
+      "band": [
+        3,
+        8,
+        16,
+        9
+      ],
+      "side": [
+        13,
+        3,
+        16,
+        8
+      ],
+      "cuff": [
+        3,
+        8,
+        16,
+        9
+      ]
+    },
+    "right": {
+      "crown_top": [
+        3,
+        3,
+        10,
+        3
+      ],
+      "crown_face": [
+        4,
+        4,
+        12,
+        7
+      ],
+      "band": [
+        3,
+        8,
+        11,
+        9
+      ],
+      "side": [
+        12,
+        3,
+        15,
+        8
+      ],
+      "cuff": [
+        3,
+        8,
+        11,
+        9
+      ]
+    },
+    "left": {
+      "crown_top": [
+        9,
+        3,
+        16,
+        3
+      ],
+      "crown_face": [
+        7,
+        4,
+        15,
+        7
+      ],
+      "band": [
+        8,
+        8,
+        16,
+        9
+      ],
+      "side": [
+        13,
+        3,
+        16,
+        8
+      ],
+      "cuff": [
+        8,
+        8,
+        16,
+        9
+      ]
+    },
+    "back": {
+      "crown_top": [
+        3,
+        1,
+        6,
+        2
+      ],
+      "crown_face": [
+        4,
+        4,
+        15,
+        8
+      ],
+      "band": [
+        3,
+        9,
+        16,
+        14
+      ],
+      "side": [
+        13,
+        2,
+        16,
+        9
+      ],
+      "cuff": [
+        3,
+        9,
+        16,
+        14
+      ]
+    }
+  },
+  "placement_override": {},
+  "placement_note": "empty: the source hat.json HeadPosition is the default. An override must name its in-game QC evidence.",
+  "provenance": "REFERENCE-ONLY: billi \u2014 Rural Outfitters, Beanie (generator content/Rural Outfitters/Rural Outfitters/Hats/Beanie/hat.png). See authored/source_bases/beanie/beanie_cuffed/provenance.json",
+  "zone_note": "Beanie construction zones: cuff is an explicit alias of the lower solid band for beanie-specific motif placement."
+}

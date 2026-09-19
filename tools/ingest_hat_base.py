@@ -99,13 +99,15 @@ def rgb(hx):
     return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
 
 
-def frames(sheet, layout):
-    return {name: [row[:] for row in sheet[y:y + 20]] for name, y in layout}
+def frames(sheet, layout, frame_height=20):
+    return {name: [row[:] for row in sheet[y:y + frame_height]] for name, y in layout}
 
 
 def bbox(f):
-    xs = [x for y in range(20) for x in range(20) if f[y][x][3]]
-    ys = [y for y in range(20) for x in range(20) if f[y][x][3]]
+    height = len(f)
+    width = len(f[0]) if height else 0
+    xs = [x for y in range(height) for x in range(width) if f[y][x][3]]
+    ys = [y for y in range(height) for x in range(width) if f[y][x][3]]
     return (min(xs), min(ys), max(xs), max(ys)) if xs else None
 
 
@@ -118,13 +120,14 @@ def solid_rect(f, ya, yb):
     zone is guaranteed to sit on the base.
     """
     best = None
-    heights = [0] * 20
+    width = len(f[0]) if f else 0
+    heights = [0] * width
     for y in range(ya, yb + 1):
-        for x in range(20):
+        for x in range(width):
             heights[x] = heights[x] + 1 if f[y][x][3] else 0
         stack = []
-        for x in range(21):
-            h = heights[x] if x < 20 else 0
+        for x in range(width + 1):
+            h = heights[x] if x < width else 0
             start = x
             while stack and stack[-1][1] >= h:
                 sx, sh = stack.pop()
@@ -165,7 +168,8 @@ def derive_zones(f):
         band = solid_rect(f, crown_end + 1, y1)
         if band:
             zones["band"] = band
-    rows = {y: [x for x in range(20) if f[y][x][3]] for y in range(y0, y1 + 1)}
+    width = len(f[0]) if f else 0
+    rows = {y: [x for x in range(width) if f[y][x][3]] for y in range(y0, y1 + 1)}
     wide = max(range(y0, crown_end + 1), key=lambda y: len(rows.get(y, [])))
     wx = rows.get(wide, [])
     if wx:

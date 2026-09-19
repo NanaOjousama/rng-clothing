@@ -1,0 +1,41 @@
+{
+  "id": "beanie_slouch",
+  "family": "beanie",
+  "classification": "REFERENCE",
+  "classification_reason": "More Accessories and Stuff Beanie (Floppy) selected as the Beanie V1 secondary slouch construction after catalog and silhouette review on 2026-09-19. Source pixels remain construction authority.",
+  "attribution": "plurffle \u2014 [FS] More Accessories and Stuff, Beanie (Floppy)",
+  "source": {
+    "path": "generator content/[FS] More Accessories and Stuff Pack/Hats/BeanieFloppy/hat.png",
+    "internal_name": "More Accessories and Stuff / Beanie (Floppy)",
+    "md5": "aaa3d8e3a443c38b4fb5295893e46ace",
+    "json_md5": "7059d553b0da8b66272fe547dd521464",
+    "size": [
+      16,
+      48
+    ],
+    "layout": {
+      "front": 0,
+      "right": 16,
+      "back": 32
+    },
+    "read_only": true,
+    "preserved_copy": "authored/source_bases/beanie/beanie_slouch/source/hat.png",
+    "preserved_copy_md5": "aaa3d8e3a443c38b4fb5295893e46ace"
+  },
+  "directions": {
+    "authored": [
+      "back",
+      "front",
+      "right"
+    ],
+    "mirrored": {
+      "left": "right"
+    },
+    "note": "read directly from the source Fashion Sense model blocks"
+  },
+  "source_backed": {
+    "neutral_pixels": "canonical source pixels; semantic map never replaces them",
+    "normalisation_policy": "rank",
+    "semantic_only": true
+  }
+}
