@@ -1,421 +1,131 @@
 # CURRENT_STATE.md
 
-Concise current-milestone state. Not a log — see `PROJECT_MEMORY.md` for
-history and `CLAUDE.md` for standing rules.
+Recovered authoritative state — 2026-09-19
 
-**Last updated:** 2026-09-16 (Snapback V1 Plain + Decorated live-approved; Bar / Twin Bars / Dot locked)
-**Live stack:** Stardew Valley 1.6.15 · SMAPI 4.5.2 · Fashion Sense 7.5.0
+Detailed recovery evidence:
+docs/recovery/PROJECT_RECOVERY_2026-09-19.md
 
----
+Do not reconstruct project state from chat memory.
 
-## SNAPBACK DECORATION MILESTONE — COMPLETE
+## Git-backed recovery anchors
 
-Started from the finished Baseball Decorated bucket (`024441b`). Baseball stayed untouched.
+- Recovery authority + continuity safeguards:
+  9e3f0ea588bbc96dd1169c5bbbf7b35dc7234501
+- Enhanced Sewing Machine runtime + tailoring pipeline:
+  d1d5a8dde3b041e1e97a854527827883f543e080
+- Source-backed Beanie V1 constructions:
+  1ef67fa745a56356c73f34e7cb1e1b97e3e8b7a8
+- Recovery commit hashes recorded:
+  f8cbb64f446cce06da36afd556eef81e2e3d61d3
+- Safe ESM garment-equip QC action:
+  fa81e9d0f40186c11ea7e2316facd8bf7302325c
+- Deterministic source-backed cap-family compositor:
+  f61ecac791d5b0867af11fe4efe07ae0f9b9c0f2
+- Source corpus/catalog path repair + verified manifest:
+  7e214b7775909afc38f00faac5c58e6854b08649
 
-- **Construction:** `cap_snapback` remains the approved plurffle source construction. Player-facing variant label is **Snapback V1**. The source art does not clearly show a rear plastic snap closure; V1 intentionally preserves the source author's construction unchanged rather than retrofitting one. Future genuinely distinct approved Snapback sources may become V2/V3 and may include a visible closure if their own art has one.
-- **Independent geometry audit:** Snapback's narrower crown leaves a 10-cell safe front interior on rows 6-7. `Ring` is rejected specifically because its top cells land in the Snapback-only row-5 taper zone; this was not copied from the Baseball verdict.
-- **Final Decorated Snapback V1 outcomes:** `Bar`, `Twin Bars`, `Dot`. No extra motif was invented just to match Baseball's count. Decorations stay on the generic DECAL axis; materials remain independent/deferred.
-- **Live QC PASSED — session `20260916-220411`:** Bar / Twin Bars / Dot all read as intentional and distinct at native worn scale. Every decorated proof measured centre `+0.0`, top `+0`, contact `1`, **0 floating columns**, crown-drift `0.0`, bbox-drift `0.0`. No tuning required.
-- **Proof pack:** `RNG-Cap-SourceBacked-V2` contains both neutral anchors, the four approved Baseball decorated proofs, and the three approved Snapback V1 decorated proofs (9 appearances total).
-- **Regression:** Snapback decoration 21/21, Baseball decoration 15/15, source-backed caps 5/5, source fidelity 30 OK / 3 expected legacy failures, Beret validator 89/89, legacy guard 1996 checked / 0 moved.
+## Enhanced Sewing Machine
 
----
+Status: RECOVERED, GIT-BACKED, VERIFIED.
 
-## CURRENT MILESTONE
+Architecture:
+- custom SMAPI/Harmony runtime; no Fashion Sense runtime dependency;
+- real Stardew Hat carrier (H)RNGClothing.ESM.GeneratedHat;
+- immutable per-item render snapshot in modData;
+- custom worn rendering;
+- offline generator -> compiled PNG/JSON bridge;
+- deterministic Textile + Inspiration + sewing seed selection;
+- additive Enhanced shell around vanilla TailoringMenu;
+- fitting via FitOffsetX, FitOffsetY, FitScale;
+- controller/Steam Deck + i18n + fail-open compatibility are first-class.
 
-**Cap family — Source-Backed V2 foundation. Beret is frozen at commit `513f586`.**
+32x32 support is already solved. Do not invent another rendering path.
 
-- Live source audit session `20260916-203154`: plurffle **Cap 2** is the provisional **Baseball** master; plurffle **Cap (Snapback)** is a genuinely distinct **Snapback** construction. Both seat cleanly in game.
-- `BoysCap` remains visual guidance for a future Dad Cap only; its provenance is unresolved, so its pixels are not promoted. Trucker and optional 5-panel remain missing rather than invented.
-- Source-Backed V2 ingest now accepts source-backed-only targets without creating a legacy six-step authored base. `cap_baseball` and `cap_snapback` preserve the source pixels, Fashion Sense placement and mirrored-left contract.
-- Neutral proofs: `RNG-Cap-SourceBacked-V2` with `SB2CapBaseballNeutral` and `SB2CapSnapbackNeutral`. Offline comparison is **0 differing pixels** against the source view contract for both.
-- Cap-specific regression suite: `tests/test_source_backed_caps.py` — 5/5 passing. Existing source fidelity 30 tests OK (3 expected legacy failures), beret validator 89/89, legacy guard 1996/0 moved.
-- **Live fidelity gate PASSED, session `20260916-204732`:** source-audit Baseball/Snapback vs Source-Backed V2 are **0 differing pixels** in worn, hat-only and head crops for all four directions. Full-screen scene diffs are ignored because world/cursor animation advances between captures. The cap foundation is cleared for variation work.
-- **Baseball Cap Decorated bucket LIVE-APPROVED, session `20260916-213415`.** Decoration is on the generic Decal axis (not material), with source-backed `cap_baseball` construction unchanged. Six live candidates were captured at normal scale; final KEEP = `bar`, `twin_bars`, `dot`, `ring`. `angle_l` was rejected because it reads as an irregular highlight/broken stripe; `chevron` was rejected as visually redundant with Ring (only 2 logical pixels different in the worn front, with Ring clearer); `zigzag` remains rejected from offline audit. Final player-facing model is Plain Baseball + one Decorated Baseball bucket choosing exactly one of the four approved front marks. All candidate captures remained centred (+0.0), top +0, contact 1, with 0 floating columns. Evidence: `qc_bridge/captures/20260916-213415/`.
-- **Validation after live verdict:** Baseball decoration suite 15/15, source-backed Cap suite 5/5, source fidelity 30 OK with 3 expected legacy failures, Beret validator 89/89, legacy guard 1996 checked / 0 moved. Proof pack `RNG-Cap-SourceBacked-V2` now contains only the two neutral anchors plus the four approved decorated Baseball proofs; stale rejected appearances are removed in-place by `sync_install` without recreating the registered pack folder.
+Fresh recovered verification:
+- ESM Release build: PASS, 0 warnings, 0 errors
+- C# tests: 23/23 PASS
+- active garment definitions: 19/19 valid
+- tailoring biases: PASS
+- generator bridge: 8/8 exact
 
-**Beret family closeout — frozen.** Plain + Decorated both use approved `beret_02`; Ribbon / Leaf / Dotted are one decorated bucket.
+V4BEANIE remains a dev/runtime QC asset only.
 
-The older Milestone 2 notes below remain as history of the family-axis validation.
+BEANIE8_QC is REJECTED and is not in the active garment index.
 
-**Beret family Milestone 2 — two shapes, verified in game. Complete.**
+## Generator / source-backed hats
 
-Milestone 1 landed the generic family axis, `quality_tier`, optional authored
-right views and a `classification` gate. Milestone 2 added a second shape and
-put the whole thing under a 48-appearance batch, which found five real defects
-(all fixed) and one library gap (recorded, not papered over).
+Last clean pre-recovery generator baseline:
+bf4c0a5a41ba097a7d5f16e516fc79687cd33654
 
-- **`beret_02`** is ingested from the **approved** Cottagecore Set beret
-  (plurffle) — better provenance than `beret_01`, and a genuinely different
-  shape: 14x9 with a crown nub against 13x8 without one.
-- **Ingest is now generic.** `tools/ingest_hat_base.py` drives every shape from
-  one spec table; nothing in it knows what a beret is.
-- **The mirror fallback is symmetric.** A base may author either profile view
-  and have the other mirrored. `beret_02` authors Front/Right/Back and flips
-  Left, which is the Fashion Sense `Flipped` convention its own source uses.
-- **`can_place()`** is one shared predicate applied by both the combinator and
-  the reporting tools, so pool coverage asks exactly the question selection asks.
-- **Per-shape restrictions are data.** `crown_button` is restricted to
-  `beret_02`'s nub through `fits`; the band motifs are refused on `beret_02` by
-  geometry alone. No shape name appears anywhere in `v5/authored.py`.
+Recovered source-backed Beanie V1:
+- beanie_cuffed
+  - Rural Outfitters / Beanie
+  - 20x20
+  - authored Front/Right/Left/Back
+- beanie_slouch
+  - More Accessories and Stuff / Beanie (Floppy)
+  - 16x16
+  - authored Front/Right/Back; mirrored Left
 
-Packs: `test-packs/fashionsense/RNG-Beret-Family-M1/` (4) and
-`RNG-Beret-Batch-M2/` (48). Both are installed under the game's `Mods/` and
-need a game restart before they register.
+Beanie family tests: 4/4 PASS.
 
-Immediately prior work (through 2026-09-09) was **Cap 2**: deriving a hat family
-directly from approved source pixels rather than procedurally inventing one —
-`tools/cap2_*.py`, packs `RNG-Cap2Fit/Full/Overlay/Rarity/Rolls/Row8`. That
-direction is what the source-authority rule formalises.
+The previously generated RuralBeanie V2 batch remains important evidence that wearable beanie geometry had already been promoted into generator output. Do not restart beanie work from the rejected 8-direction sprite.
 
----
+Round Trip is recovered and lives at:
+- builder: tools/build_roundtrip_pack.py
+- pipeline: v5/source/roundtrip.py
+- proof pack: test-packs/fashionsense/RNG-RoundTrip
 
-## SOURCE-BACKED V2 (2026-09-14) — ACCEPTED BY USER
+The current Round Trip subject is plurffle's More Accessories and Stuff / Beanie. Its exported B copy preserves the source wear properties with zero property differences.
 
-**Status: ACCEPTED and frozen at commit `57b0410`. Do not redesign V2. No library
-expansion without approval.**
+## Cap / beret recovered verification
 
-**Beret library audit (2026-09-14, inspection only, nothing changed):** evidence
-`experiments/beret_audit/` (contact sheets, session `20260914-233333`). The
-"old green beret" is `BeretPlain SpringOrchard #2095153943` (atelier
-RNG-Beret-V2, captures `20260910-195048|201919/Cap02`) = **beret_02 geometry**
-at source HeadPosition 0,1, recoloured; its pack texture was overwritten when
-that pack was rebuilt at 09-10 20:32, and its pixels survive only in the capture.
-Proposed: beret_02 KEEP; beret_01 visually good but licence-blocked; beret_03
-TUNE; beret_04 + atelier procedural shapes ARCHIVE; plurffle's approved
-`More Accessories` Beret 1/2 and the root `Beret/` pack never captured. Awaiting
-user decision.
+- source-backed caps: 5/5 PASS
+- Baseball decoration: 15/15 PASS
+- Snapback decoration: 21/21 PASS
+- source-backed cap-family compositor: 4/4 PASS
+- legacy render guard: 1996 checked, 0 moved
+- beret validator: 89/89 PASS
 
-**User decision after the audit:** beret_02 KEEP · beret_01 HOLD · beret_03
-TUNE/optional oversized variant · everything else archived/unevaluated. Nothing
-renamed or deleted. Next: evaluate plurffle's More Accessories Beret 1/2 worn,
-untouched, before any ingest.
+## Soft Cap experiment
 
-**More Accessories Beret 1/2 evaluated worn, untouched (session
-`20260915-001821`, evidence `experiments/beret_audit/more_accessories_*`):**
-Beret 2 is Beret 1 mirrored pixel for pixel (one design, tilt on the other
-side). Small snug tilted beret, sits on the head without floating, genuinely
-different from beret_02 -- but the back view reads as hair rather than a hat
-and the profiles read as a flat cap top. Verdict: neither is KEEP; beret_02
-stays the only active shape. Caveat: the test farmer has grey hair and the
-untinted grey hat sits in the same values, so a re-check with a darker hair
-colour is the only thing that could change this. Not ingested.
+The uncommitted Soft Cap expansion was the cause of:
+- 6 legacy render drifts;
+- beret validator 88/89;
+- ESM bridge 6/8 exact.
 
-**Second authored material — beret_02 knit rib: restored to the version that was actually validated and captured.**
-The BERET_MATERIAL reference folder has felt and plaid only, so the target remains plurffle's approved knit rib from More Accessories Beanie / Beanie (Floppy) cuffs and Cottagecore Sweater Vests. Mask `authored/source_backed/beret_02/materials/knit.json` is 23 cells (front 5, right 8, back 10; left mirrored), factor 0.72. The successful in-game capture (`20260915-184129`) used front cells y8 x6/8/10/12 plus (14,9). A later experimental lift to y7 was found to create a 2px merge at (10,7)/(10,6), so it was reverted. Current offline result: 30 source-fidelity tests OK with 3 expected legacy failures; one-pixel topology green; legacy guard 0 moved. The captured visual read remains: back/profile rib read is good; front is the weakest but valid. Textile/material expansion is deferred until the textile ingredient system; beret family completion does not depend on adding more materials now.
+It has been quarantined, not deleted:
+archive/project-recovery/softcap-quarantine/softcap_unfinished_20260919.patch
 
-**First real authored material — beret_02 plaid: VISUALLY APPROVED by the user
-and committed as its own milestone (`350e8a3`).** The TUNE notes below were a proposal and
-were not applied; the approved mask is the one in the file.
-`authored/source_backed/beret_02/materials/plaid.json` (52 cells: front 12,
-right 15, back 25; left mirrored), authored in Pixelsmith
-(`beret02_plaid_mask`), exported by `tools/export_pixelsmith_mask.py`, factor
-0.72. Offline: only mask cells change, alpha/placement/render fields unchanged,
-0 shading inversions, 0 thickness violations on neutral + 3 palettes, refused on
-beret_01, legacy guard 0 moved; 30 tests OK (3 expected failures). Validation
-pack `RNG-SourceBacked-V2` now has 6 items (2 accepted neutrals unchanged + 4
-plaid).
+Patch SHA-256:
+5f4b4c19939b3d5ceb999f9207311e543c21ac68a48f1231267afb54df77531e
 
-**In game, session `20260914-233333`: verdict TUNE (not committed).** All 6
-appearances drawn exactly as shipped (0 hat px differ from the pack; the few
-unbaked px missing from hat-only are grey hat = grey hair, a known blind spot of
-worn-minus-nohat). Back view reads as a thin secondary grid: good. Needs, before
-any change is made (awaiting user):
-1. front horizontal y8 x5-14 (10 cells) reads as a brim band, not plaid;
-2. right-view brim-tip line (3,11),(4,11),(5,11) (left mirror 14-16,11) melts
-   into the edge shading;
-3. line contrast measures Weber 0.20 on every palette vs hat_8's 0.16 -- one
-   notch strong, uniformly. Cocoa Gold is NOT measurably more contrasty (smallest
-   dL, same Weber); it only reads muddier. Raising factor toward 0.78 must be
-   re-checked against the 2px-merge validator (0.823 merged).
-Evidence: `experiments/source_fidelity/v2_plaid/worn_20260914-233333/`.
+After restoring the committed Soft Cap baseline:
+- legacy guard returned to 0 moved;
+- beret returned to 89/89;
+- ESM bridge returned to 8/8 exact.
 
-- `v5/source_backed.py`: a separate base type. Source pixels (md5-pinned preserved
-  copy) are canonical; the (role, step) semantic map is stored separately under
-  `authored/source_backed/<name>/semantic/`; placement, views and Fashion Sense
-  colouring fields are read from the source hat.json. `authored.py` is untouched.
-- Ingested: `beret_02`, `beret_01` (`tools/ingest_source_backed.py`).
-- **Proven offline:** neutral render == source pixel-exact for both; neutral pack
-  keeps every non-layout source model field verbatim (HeadPosition 0,1 / 0,0; no
-  DisableGrayscale -> still tinted in game); palette bake = source x tint, alpha
-  and value order kept; material changes only mask cells by a value ratio; decals
-  change only seated/shaded cells; render == pack. `trace_source_fidelity.py`
-  (v2 default) reports **no unexpected stage** for either base.
-- Semantic map, zones and anchors equal the legacy base's exactly.
-- **Legacy unchanged:** `tools/legacy_render_guard.py` — 1996 renders captured
-  before V2, 0 moved. `validate_beret_family.py` 81/81, material-mask 14/14.
-- Materials: no authored plaid mask exists for either shape, so plaid is
-  **refused**, not procedurally fitted. The hat_8 reference plaid extracts cleanly
-  (back: v-lines x4/7/12/15, h-lines y5/8/11/14, 1 component) and is
-  INCOMPATIBLE with both shapes (`tools/extract_material_mask.py`).
-- **In game, session `20260914-231749`: source pack vs V2 neutral IDENTICAL.**
-  `tools/compare_source_v2_worn.py`: beret_02 (Cottagecore `Beret`) and beret_01
-  (`hyoung_hats_24`) vs `SB2Beret02Neutral` / `SB2Beret01Neutral`, all four
-  directions: worn diff 0 px, hat-only diff 0 px, scene diff 0 px, hat bounds
-  offset 0. Non-vacuous: 1728-2576 hat px per direction. Source HeadPosition
-  reproduces the author's placement; the explicit mirrored left frame renders
-  identically to FS `Flipped` (HeadPosition X=0). Evidence:
-  `experiments/source_fidelity/v2_worn/20260914-231749/`.
-  Limit: the farmer's FS hat tint was white, so non-white tinting was not
-  exercised in game (identical pixels + identical render fields imply it).
-  SMAPI errors in that session are a vanilla FarmAnimal NullReference at save
-  load, unrelated to Fashion Sense.
-- Pre-existing, unrelated: `validate_generator_v6.py` crashes on missing
-  `output/v6-production-batch/design-rarity-table.json`.
+Do not reapply or bless that Soft Cap patch without intentional review and live QC.
 
-## SOURCE-FIDELITY AUDIT (2026-09-14) — DIAGNOSIS ONLY, NOTHING FIXED
+## Source corpus
 
-Art tuning is paused. Question: where does a good source stop looking like
-itself? `tools/trace_source_fidelity.py` walks a base through S1 source → S2
-ingested → S3 neutral render → S4 palette → S5 material → S6 pack → S7 worn;
-evidence in `experiments/source_fidelity/<base>/` (stage PNGs, x8 strips, diffs,
-`report.json`). Regression test: `tests/test_source_fidelity.py`; it is **red on
-purpose** (6 failures, 3 stage tests x 2 bases).
+Canonical source corpus directory:
+generator content/
 
-- **First pixel-level break is S2, ingest, for both source-backed berets.**
-  `tools/ingest_hat_base.py` rewrites every source grey onto the index's fixed
-  `#202020..#E0E0E0` ramp. Alpha and geometry are exact.
-  - `beret_02` (approved Cottagecore): 333/333 px change value, the 5 source
-    levels keep their order, one 1-px `#a4a4a4` stray merges into `#a5a5a5`.
-    Visually it stays itself: S4 with EVERYDAY_STONE_BLUE lands close to the
-    simulated Fashion Sense tint of the untouched source (L* 15/30/57/69/82 vs
-    19/27/54/70/81).
-  - `beret_01`: 45 near-flat dark greys (edge-contrast median 2.5 L*) are
-    bucketed `equal_width` into 6 steps spread over the whole ramp (12.9 L*).
-    A subtle dark hat becomes a high-contrast shaded one with a bright back
-    highlight. **This is the first stage where a source visibly stops looking
-    like itself.**
-- **S2→S3 is exact** (render path adds nothing). **S4→S6 pack is exact** at
-  Common. **S6→S7 is exact**: every hat pixel is drawn as shipped, 0 hidden.
-- **S5 material is destructive to source shading**: plaid lifts 49 of
-  `beret_02`'s 88 `#d6d6d6` cells onto the `#fefefe` highlight step.
-- **Placement is not the source's.** The source `beret_02` hat.json has
-  `HeadPosition Y=1`; every pack ships `Y=-2`. In FS source HeadPosition is the
-  draw origin offset, so ours draws **3 logical px lower** than the author
-  placed it — likely the cause of "beret_02 reads lower and bulkier" below.
-  Inferred from DrawManager.cs, **not yet captured in game**.
-- The source is a greyscale **tint mask** (no `DisableGrayscale`); our packs
-  bake colour with `DisableGrayscale: true`. No capture of the source itself
-  worn exists — the Cottagecore Set is not installed in `Mods/`.
-- `beret_03` is out of scope by its own provenance: shading not taken from source.
+The old typo generator conent/ no longer exists.
 
-Next test (not run): capture the untouched Cottagecore beret worn (needs the pack
-installed before game start) against a `beret_02` pack at `HeadPosition Y=1`.
+python3 tools/corpus_manifest.py verify currently passes all seven corpora.
 
----
+## Remote / workflow rule
 
-## PROVEN
+When the Steam Deck remote is connected, repository inspection, editing, builds, validators, installs, and safe QC-bridge actions are performed remotely by the assistant.
 
-- **The family/quality/right-view changes are inert for existing assets.**
-  133 pre-change renders (every legacy base x compatible palette, plus 12
-  `compose()` rolls) hash byte-identical afterwards —
-  `tests/fixtures/authored_legacy_baseline.json`, captured before the edit.
-- **`beret_01`'s four authored directions survive the ingest**: alpha identical
-  to the source sheet in all four frames, bounding boxes unmoved, and the
-  rendered right view provably not a mirror of left.
-- **`quality_tier` is a real independent axis**: with family, shape, palette and
-  style pinned, the four tiers still produce four distinct renders with
-  monotonically increasing decoration.
-- **The shape axis does something.** Across the 48-appearance batch the two
-  shapes wear different decoration sets, there are **0 placement drops**, and no
-  two different inputs render identically.
-- **`tools/validate_beret_family.py` is 81 checks** and covers legacy
-  byte-identity, both mirror directions, per-shape restrictions, tier budgets
-  and the batch statistics.
-- **In game, 2026-09-13, session `20260913-220258`: 52 appearances x 4
-  directions = 208 frames, all drawing.** For every one of the 8 shape x
-  direction combinations, **0 px of the shipped art is missing** — the renderer
-  draws the pack frames pixel for pixel.
-- **Seating is uniform and correct**: centre +0.0, hat_top +4, contact band 5 on
-  all 52. `HeadPosition 0,-2` is verified and was **not changed**.
-- **The authored right view survives into the game.** `beret_01`'s left differs
-  from its mirrored right by 112 px (its authored right is genuinely used);
-  `beret_02`'s left is an exact 0-px mirror of its right, which is the
-  `Flipped` fallback behaving correctly. Both are what the design intends.
-- **The axes are live, not just static**: same shape and palette across tiers
-  changes the drawn hat (Common vs RarePlus 240-288 px), and the same shape and
-  tier across palettes recolours it (992-1936 px).
-- **Face intrusion and hair-above-hat are within or better than the accepted
-  authored-base baseline** (`20260910-013851`): face_pixels mean 913 vs 952,
-  hair-above mean 244 vs 288 in profile and 356 vs 448 at the back.
+Only ask the user for actions that genuinely require their visual judgment or physical interaction.
 
-- **QC Bridge works end to end.** Real game, real Fashion-Sense-patched
-  renderer, file-based JSON protocol. `qc_bridge/latest_state.json` holds a
-  genuine session (2026-09-09 21:29) with a Cap2 appearance equipped and full
-  farmer/view/hat state resolved, including FS id and texture path.
-- **Worn-fit measurement from real captures.** The worn / nohat / hatonly
-  capture triple makes hat seating measurable; an isolated sprite cannot.
-- **All four authored bases captured live** (2026-09-10, session
-  `20260910-013851`): 20 appearances x 4 directions = **80 frames, every one
-  drawing real pixels**. All seated — centre +0.0, top +4, contact 5, 0 floating
-  columns. Closes the long-standing "no in-game capture of any authored output
-  yet". Evidence: `qc_bridge/captures/20260910-013851/`, `fit_metrics.json`.
-- **The QC bridge CLI is verified against a live game**, including both guards
-  tested for failure: a wrong `--expect` refuses, and a pack installed
-  mid-session is caught before any capture runs.
-- **Fashion Sense technical reference is complete and machine-readable**
-  (`references/fashion-sense-official/`, gathered 2026-09-08 from the official
-  `development` branch): 39 wiki pages, C# appearance models, 45 Example Pack
-  JSONs, 30 releases with changelogs, `property_matrix.json`, `exporter_gap.json`.
-- **The generator is dependency-free and runs.** `validate_generator_v6.py`
-  passes all gates on a bare `python3` (verified this session).
-- **Authored art beat procedural output visually** (user decision, headwear
-  phase). Four bases (`felt_hat`, `wide_brim_hat`, `soft_cap`, `knit_cap`) each
-  classify as their own corpus family. Note: that visual judgement is **not**
-  approval for V2 — `authored/bases|decals|measurements` are REFERENCE pending
-  per-asset provenance under `PORT_CLASSIFICATION.md`.
-- **Sailor clothing family is frozen / good enough.** Do not reopen without a
-  demonstrated regression.
-- Vanilla shirt/clothing FS structures: `FITTED_SHIRT`, `SWEATER_TOP`,
-  `VEST_TOP`, `CROPPED_JACKET`, `SHORT_OUTERWEAR` proven at runtime.
+After every accepted live milestone:
+1. update authoritative state;
+2. run relevant verification;
+3. make a scoped Git commit;
+4. report the actual commit hash.
 
-## NOT YET PROVEN
-
-- **`beret_02` reads lower and bulkier than `beret_01` when worn.** Its profile
-  edge sits just above the eye where `beret_01` clears it comfortably. Every
-  metric is inside the accepted baseline and no art is missing, so this is a
-  design judgement for the user, not a defect. The dark notch in its back view
-  is faithful to the approved Cottagecore source, not an artefact.
-- **4 floating columns in every profile view**, a 1-logical-pixel gap under the
-  beret's trailing edge. 5 of the 20 already-accepted authored bases show the
-  same signature, so it is within tolerance rather than clean.
-- **`beret_02` has no premium surface motif.** At RarePlus its allowed surface
-  classes are woven_trim, band and badge; both bands are 6 wide against its
-  5-wide side band zone, and `brooch_round` is a surface piece in the
-  overhanging `side` zone. So RarePlus carries one piece where Rare carries two.
-  Recorded in `authored/families.json` under `known_gaps`; the fix is a new
-  decal, which is library expansion.
-- `beret_variant1` / `hyoung_hats_24` has **no established provenance**; it is
-  REFERENCE, and the engine enforces that by excluding it from the slot-wide
-  roll. It must not be promoted without an origin.
-- Only **two** beret shapes exist, both REFERENCE. Neither has been seen worn.
-
-- Highlight share of authored bases is 1–4% against corpus families' 6–16%.
-- `wide_brim_hat` carries 93 cells against its family's 108.
-- True long coats / long outerwear: rejected from output, lower-body
-  animation and layering unproven.
-- V4.5 Pants / Skirt / Footwear / Mantle: fixtures exist, all runtime-EXPERIMENTAL.
-- **Everything the older reports call "proven" is unverified by me.** I have not
-  re-run the V4/V5/V6 validators beyond V6, and none of it has been visually
-  re-checked in game this session.
-
-## LOCKED DECISIONS
-
-- **Two authority hierarchies** (technical behaviour vs. visual/construction) —
-  `CLAUDE.md` §1. Not one combined list.
-- **Approved source pixels are the construction authority.** No redrawing,
-  procedural silhouette invention, source averaging, reinterpretation, or
-  regenerating a "similar" version. Generator scope is palette, approved
-  overlays, source-derived components, rarity weighting, deterministic
-  composition, player fitting. `CLAUDE.md` §2.
-- **Nothing from V1 is canonical because it exists.** Everything carried toward
-  V2 is tagged KEEP/PORT/REFERENCE/REBUILD/REJECT in `PORT_CLASSIFICATION.md`.
-- **In-game normal-scale visual QC is the hard gate.** Metrics are supporting
-  evidence and never override obviously wrong output.
-- Semantic labels require the six-point verification in `CLAUDE.md` §3.
-- Player-facing UX must feel vanilla and be controller/Steam-Deck-first;
-  Hand Mirror and QC tooling are development-only.
-- Generator stays dependency-free; `.venv` is for analysis tools only.
-- Canonical: V5 Decision / Construction / AA / AG. Not canonical: old renderer,
-  old AA/AG, old Sailor renderer, old `rngc`, old 16×16 clothing assumptions.
-- Clothing default is native 8×8 at Scale 4 unless a family has evidence otherwise.
-
-## KNOWN FAILURES
-
-Each cost real time. Do not re-enter them.
-
-- **A metric optimised for three headwear phases could not see the defect the
-  user actually reported.** Cause of the QC-authority rule.
-- **The visor's lit surface was labelled a decorative "emblem"** from pixel
-  separability alone. Cause of the semantic verification rule; the corrected
-  method is documented in `tools/cap2_semantic_map.py`.
-- **Fashion Sense loads pack textures once at startup.** Three capture runs lost
-  before `fs_reload` existed. A pack *folder* created after game start is not
-  registered with SMAPI at all — FS lists its appearances but draws nothing,
-  which looks exactly like broken art. Requires a restart.
-- **A float in any `Position` field makes FS reject the whole model silently.**
-- **Two false root causes** came from comparing captures across game sessions.
-- Fashion Sense caches `HeadPosition` at pack load.
-- `compose(style=…)` picked a base before honouring the requested style.
-- Rims drawn one step up from the ramp bottom measured wrong; so did an interior
-  as dark as its rim. The *delta* is what reads.
-- Coastal Polo microfix failure — see `docs/quality/`.
-
-## SETUP COMPLETED 2026-09-10
-
-- `.venv` + `tools/env.sh` — Pillow 12.3.0, NumPy 2.5.3, for **analysis only**.
-  Correction to an earlier belief: the generator is pure-stdlib and always was,
-  so `validate_*.py` never needed a venv. SciPy not installed; nothing needs it.
-- `CLAUDE.md`, `CURRENT_STATE.md`, `PORT_CLASSIFICATION.md` at root;
-  `.claude/settings.json` allowlists read-only reference queries and pins the
-  source packs + third-party corpora read-only.
-- `references/stardew-official/` — the gap that mattered. 32 official `Modding:`
-  wiki pages, SMAPI docs + API source (266 files, sparse depth-1), and a
-  metadata index of the installed 1.6.15 assembly (1093 types).
-  Built by `tools/index_stardew_reference.py` + `tools/AssemblyIndex`.
-- `tools/catalog.py` — read-only source-catalogue queries that surface approval
-  state: 12 REUSABLE / 43 BASE-SPECIFIC / 108 REFERENCE-ONLY variants across
-  53 families, 319 appearances, 5 packs.
-- `tools/palette.py` + `tools/palette_calibrate.py` — offline colour analysis,
-  thresholds calibrated against 146 approved source appearances, and every flag
-  prints its corpus error bar.
-- `tools/qc.py` — subcommands (`ping`/`state`/`packs`/`refresh`/`worn`/
-  `compare`/`menu-probe`/`smapi-log`/`raw`) that make the reload and new-pack
-  guards unskippable. `qc_run.py` and friends still import cleanly.
-- `tools/corpus_manifest.py` — hashes the 3181 out-of-band corpus files so a
-  second machine can prove it holds the same source authority.
-- No MCP server was built. Not needed for any capability so far.
-
-## NEXT TEST
-
-1. **Decide on decal back-view coverage.** Live capture confirmed
-   `brim_edge` contributes **nothing to the back frame** on `wide_brim_hat` —
-   it declares `views: ['front','left']`, so the render matches the data and
-   this is an authoring gap, not a bug. **21 of 44 decals have no back view.**
-   For a wide brim, which is fully visible from behind, that may read as an
-   inconsistency in game. Your art call; capture evidence is in
-   `qc_bridge/captures/20260910-013851/Auth07WideFCMDecal/`.
-2. **Explain the seating difference between sessions.** Authored bases measure
-   top +4 / contact 5 / face 914-994px; the SourceCap set in the same scene
-   measured top +0 / contact 1 / face 742-790px. Same hairstyle and scene, so
-   the difference is real and unexplained. Not yet a defect — a question.
-3. Only then begin Generator V2 design.
-
-Unrelated, noted not fixed: the SMAPI log shows repeated vanilla
-`FarmAnimal`/`GameLocation.IsOutOfBounds` NullReferenceExceptions — an orphan
-building in the save, not our mods. `tools/repair_save_orphan_buildings.py`
-already exists for it.
-
-## DO NOT REDO
-
-- Do not rebuild the QC Bridge. It works; wrap it.
-- Do not re-clone or re-derive the Fashion Sense reference. It is complete.
-- Do not add PIL/NumPy/SciPy to any generation or validation path.
-- Do not reopen Sailor, or headwear geometry/Architecture from phases 1–3,
-  without new in-game evidence.
-- Do not re-run settled investigations without contradicting evidence.
-- Do not optimise a metric against a defect that was reported visually.
-
----
-
-## Deferred: git and PC ↔ Steam Deck sync
-
-**State as of this session.** The project had **no version control** — `.git/`
-existed but was an empty directory. There were no remotes, no branches, no
-upstream, no unpushed commits, and **no partial PC/Deck sync setup of any kind**.
-
-Done now (minimal, local only): `git init` on `main`, a `.gitignore`, and one
-initial commit — 1404 files, ~19 MB.
-
-**Deliberately not tracked:** regenerable `output/` and `test-packs/`, QC
-captures, and the third-party art corpora (`generator conent/`,
-`references/benchmark|ref_codex|style-profiles|lifestyle|hoodie`, `motif/`).
-Those corpora are the source-construction authority but are other authors'
-Fashion Sense packs — kept out on size and redistribution grounds, and
-verifiable across machines via `tools/corpus_manifest.py`.
-
-**Deferred, needs a decision:** no remote exists. PC ↔ Steam Deck sync needs
-(a) a private remote — `gh` is **not installed** on this Deck, so that means
-installing it or using a token — and (b) a decision on how the untracked
-source-pack corpora reach the other machine (rsync/Syncthing, not git).
-Nothing will be pushed without explicit approval.
+No commit hash = not safely preserved.
