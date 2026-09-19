@@ -206,6 +206,13 @@ Fresh ESM checkpoint:
 - SHA-256:
   ac63e025780de880e00dbf85a73d8729a06302943bc31b8415b23695135e02f8
 
+## 10b. Recovery commits created
+- Recovery authority + ESM continuity safeguards: 9e3f0ea588bbc96dd1169c5bbbf7b35dc7234501
+- Enhanced Sewing Machine runtime + tailoring pipeline: d1d5a8dde3b041e1e97a854527827883f543e080
+- Source-backed Beanie V1 constructions: 1ef67fa745a56356c73f34e7cb1e1b97e3e8b7a8
+
+These hashes are the recovered Git anchors.
+
 ## 11. Recovery order
 1. Commit this recovery authority + project safeguards.
 2. Reconstruct and commit ESM core/runtime/tests/docs as a coherent milestone, excluding rejected BEANIE8 as an authoritative construction.
