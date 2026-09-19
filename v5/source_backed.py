@@ -39,6 +39,7 @@ from . import authored
 from .authored import ATLAS_ORDER, Base, _attachment_ok, _mirror, _placement
 from .integration import integrate
 from .pngio import blank_image, blit, read_rgba_png
+from .rng import StreamBank
 
 AUTHORED = authored.ROOT
 PROJECT = os.path.dirname(AUTHORED)
@@ -355,6 +356,107 @@ def render(sb: SourceBackedBase, palette=None, material: str | None = None, deca
         out[v] = _mirror(out[src])
         changes[v] = {k: {(sb.size[0] - 1 - x, y) for x, y in s} for k, s in changes[src].items()}
     return SourceBackedRender(sb, palette, material or "", decals, tuple(dropped), out, baked, changes)
+
+
+CAP_DECOR_PALETTE = "EMBER_SUN_CHARCOAL"
+CAP_SHAPES = ("cap_baseball", "cap_snapback")
+CAP_DECALS = {
+    "cap_baseball": (
+        "cap_baseball_front_bar",
+        "cap_baseball_front_twin_bars",
+        "cap_baseball_front_dot",
+        "cap_baseball_front_ring",
+    ),
+    "cap_snapback": (
+        "cap_snapback_front_bar",
+        "cap_snapback_front_twin_bars",
+        "cap_snapback_front_dot",
+    ),
+}
+
+
+@dataclass(frozen=True)
+class SourceBackedCapRoll:
+    """One deterministic player-facing cap-family result."""
+
+    seed: int
+    family: str
+    shape_variant: str
+    variant: str
+    decal_name: str | None
+    palette_id: str | None
+    render: SourceBackedRender
+
+
+def compose_cap(seed: int, lib=None, shape_variant: str | None = None,
+                variant: str | None = None, palette_id: str | None = None) -> SourceBackedCapRoll:
+    """Resolve one Baseball/Snapback family roll without duplicating renderer logic.
+
+    V1 intentionally stays conservative:
+    * shape is Baseball or Snapback;
+    * variant is Plain or Decorated;
+    * Plain preserves the source pixels and source Fashion Sense semantics;
+    * Decorated picks exactly one live-approved front motif for that shape;
+    * Decorated uses the fixed palette that already passed live worn QC unless
+      the caller explicitly names another palette for controlled validation.
+
+    The result is deterministic by named RNG streams, so adding another axis
+    later won't shift shape/variant/motif choices.
+    """
+    lib = lib or authored.load()
+    bank = StreamBank(seed)
+
+    if shape_variant is None:
+        shape_variant = bank("cap:shape").choice(CAP_SHAPES)
+    if shape_variant not in CAP_SHAPES:
+        raise ValueError(f"unknown cap shape {shape_variant!r}")
+
+    if variant is None:
+        variant = bank("cap:variant").choice(("plain", "decorated"))
+    variant = variant.lower()
+    if variant not in ("plain", "decorated"):
+        raise ValueError("cap variant must be 'plain' or 'decorated'")
+
+    sb = load_one(shape_variant)
+    decal_name = None
+    palette = None
+    resolved_palette_id = None
+
+    if variant == "decorated":
+        pool = CAP_DECALS[shape_variant]
+        decal_name = bank(f"cap:motif:{shape_variant}").choice(pool)
+        decal = next((d for d in lib.decals if d.name == decal_name), None)
+        if decal is None:
+            raise ValueError(f"approved cap decal {decal_name!r} is missing from the library")
+
+        resolved_palette_id = palette_id or CAP_DECOR_PALETTE
+        palette = next((p for p in lib.palettes if p.id == resolved_palette_id), None)
+        if palette is None:
+            raise ValueError(f"unknown cap palette {resolved_palette_id!r}")
+        if not (set(sb.semantic.style) & set(palette.style)):
+            raise ValueError(
+                f"palette {resolved_palette_id!r} shares no style tag with {shape_variant}"
+            )
+        rendered = render(sb, palette=palette, decals=(decal,), lib=lib)
+    else:
+        if palette_id is not None:
+            raise ValueError("plain cap keeps source rendering; palette_id is only valid for decorated")
+        rendered = render(sb)
+
+    if rendered.dropped:
+        raise Incompatible(
+            f"{shape_variant}/{variant}: approved composition dropped cells: {rendered.dropped}"
+        )
+
+    return SourceBackedCapRoll(
+        seed=seed,
+        family="cap",
+        shape_variant=shape_variant,
+        variant=variant,
+        decal_name=decal_name,
+        palette_id=resolved_palette_id,
+        render=rendered,
+    )
 
 
 def _procedural_mask(sb, treatment, palette):
