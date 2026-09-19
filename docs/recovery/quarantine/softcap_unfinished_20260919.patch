@@ -1,0 +1,356 @@
+diff --git a/authored/bases/soft_cap/base.json b/authored/bases/soft_cap/base.json
+index fe3d5f7..7a34e91 100644
+--- a/authored/bases/soft_cap/base.json
++++ b/authored/bases/soft_cap/base.json
+@@ -89,6 +89,24 @@
+         10,
+         16,
+         10
++      ],
++      "crown_top": [
++        8,
++        3,
++        11,
++        4
++      ],
++      "side": [
++        13,
++        6,
++        15,
++        8
++      ],
++      "band": [
++        7,
++        8,
++        12,
++        8
+       ]
+     },
+     "left": {
+@@ -109,6 +127,24 @@
+         5,
+         14,
+         7
++      ],
++      "crown_top": [
++        8,
++        3,
++        11,
++        4
++      ],
++      "side": [
++        11,
++        5,
++        14,
++        7
++      ],
++      "band": [
++        9,
++        7,
++        14,
++        7
+       ]
+     },
+     "back": {
+@@ -123,6 +159,24 @@
+         7,
+         14,
+         8
++      ],
++      "crown_top": [
++        6,
++        4,
++        13,
++        5
++      ],
++      "side": [
++        12,
++        7,
++        14,
++        8
++      ],
++      "band": [
++        7,
++        9,
++        12,
++        9
+       ]
+     }
+   },
+@@ -134,4 +188,4 @@
+   "mirror": {
+     "right": "left"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/authored/decals/band_braided.json b/authored/decals/band_braided.json
+index 445319f..3dccb2e 100644
+--- a/authored/decals/band_braided.json
++++ b/authored/decals/band_braided.json
+@@ -18,7 +18,8 @@
+   ],
+   "fits": [
+     "felt_hat",
+-    "wide_brim_hat"
++    "wide_brim_hat",
++    "soft_cap"
+   ],
+   "description": "a braided cord: paired strands, light against shadow",
+   "per_view": false,
+@@ -29,4 +30,4 @@
+   "families": [
+     "beret"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/authored/decals/band_plain.json b/authored/decals/band_plain.json
+index ef44509..b6dedc5 100644
+--- a/authored/decals/band_plain.json
++++ b/authored/decals/band_plain.json
+@@ -18,7 +18,8 @@
+   ],
+   "fits": [
+     "felt_hat",
+-    "wide_brim_hat"
++    "wide_brim_hat",
++    "soft_cap"
+   ],
+   "description": "a plain ribbon seated where the crown meets the brim",
+   "per_view": false,
+@@ -29,4 +30,4 @@
+   "families": [
+     "beret"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/authored/decals/band_striped.json b/authored/decals/band_striped.json
+index e276384..c6a5bd3 100644
+--- a/authored/decals/band_striped.json
++++ b/authored/decals/band_striped.json
+@@ -15,7 +15,8 @@
+     "back"
+   ],
+   "fits": [
+-    "wide_brim_hat"
++    "wide_brim_hat",
++    "soft_cap"
+   ],
+   "description": "a ribbon striped in the accent colour",
+   "per_view": false,
+@@ -23,4 +24,4 @@
+     6,
+     1
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/authored/decals/bow_knot.json b/authored/decals/bow_knot.json
+index 354f381..ac4f5cb 100644
+--- a/authored/decals/bow_knot.json
++++ b/authored/decals/bow_knot.json
+@@ -25,7 +25,8 @@
+   ],
+   "fits": [
+     "wide_brim_hat",
+-    "knit_cap"
++    "knit_cap",
++    "soft_cap"
+   ],
+   "description": "a ribbon bow tied at the side of the crown",
+   "per_view": false,
+@@ -36,4 +37,4 @@
+   "families": [
+     "beret"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/authored/decals/crown_button.json b/authored/decals/crown_button.json
+index ea945c5..320b6ce 100644
+--- a/authored/decals/crown_button.json
++++ b/authored/decals/crown_button.json
+@@ -18,7 +18,8 @@
+   ],
+   "fits": [
+     "beret_02",
+-    "knit_cap"
++    "knit_cap",
++    "soft_cap"
+   ],
+   "description": "the metal button at the centre of a cap's crown",
+   "per_view": false,
+@@ -27,4 +28,4 @@
+     1
+   ],
+   "_comment": "Restricted to beret_02 within the beret family: it authors a nub on the crown (its front crown_top zone is 1x2, the stalk itself), and a bead reads as sitting on that. beret_01 has no nub, so the same piece would float on a bare crown."
+-}
+\ No newline at end of file
++}
+diff --git a/authored/decals/flower_daisy.json b/authored/decals/flower_daisy.json
+index 3771cd2..0880d1f 100644
+--- a/authored/decals/flower_daisy.json
++++ b/authored/decals/flower_daisy.json
+@@ -24,7 +24,8 @@
+   ],
+   "fits": [
+     "wide_brim_hat",
+-    "knit_cap"
++    "knit_cap",
++    "soft_cap"
+   ],
+   "description": "a round flower head, petals alternating around a bright centre",
+   "per_view": false,
+@@ -35,4 +36,4 @@
+   "families": [
+     "beret"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/authored/decals/pom_small.json b/authored/decals/pom_small.json
+index 55c240a..8f4fc8c 100644
+--- a/authored/decals/pom_small.json
++++ b/authored/decals/pom_small.json
+@@ -22,7 +22,8 @@
+     "back"
+   ],
+   "fits": [
+-    "knit_cap"
++    "knit_cap",
++    "soft_cap"
+   ],
+   "description": "a small tight bobble",
+   "per_view": false,
+@@ -33,4 +34,4 @@
+   "families": [
+     "beret"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/authored/families.json b/authored/families.json
+index 369f94e..a271bec 100644
+--- a/authored/families.json
++++ b/authored/families.json
+@@ -270,6 +270,118 @@
+           ]
+         }
+       }
++    },
++    "soft_cap": {
++      "id": "soft_cap",
++      "display": "Soft Cap",
++      "slot": "HEAD",
++      "classification": "PRODUCTION",
++      "classification_reason": "Production family using the existing soft_cap base and only motifs with a full KEEP verdict in authored/compatibility.json. KEEP-BUT-BASE-SPECIFIC feather/leaf remain excluded from automatic rolls.",
++      "shape_variants": [
++        "soft_cap"
++      ],
++      "materials": {
++        "cloth": [
++          "EVERYDAY_STONE_BLUE",
++          "COASTAL_SEAFOAM_CORAL",
++          "AUTUMN_OCHRE_PLUM",
++          "SPRING_SAGE_PETAL",
++          "FIELD_CANVAS_MOSS",
++          "STREET_TEAL_GRAPHITE",
++          "SAILOR_COBALT_CREAM",
++          "PASTEL_PEACH_LILAC",
++          "WORKWEAR_DENIM_RUST",
++          "DESERT_CLAY_TURQUOISE"
++        ]
++      },
++      "quality_tiers": {
++        "Common": {
++          "shape_variants": "any",
++          "materials": [
++            "cloth"
++          ]
++        },
++        "Uncommon": {
++          "shape_variants": "any",
++          "materials": [
++            "cloth"
++          ]
++        },
++        "Rare": {
++          "shape_variants": "any",
++          "materials": [
++            "cloth"
++          ]
++        },
++        "RarePlus": {
++          "shape_variants": "any",
++          "materials": [
++            "cloth"
++          ]
++        }
++      },
++      "pools": {
++        "surface_motif": {
++          "Common": [],
++          "Uncommon": [
++            "button"
++          ],
++          "Rare": [
++            "button",
++            "band",
++            "woven_trim"
++          ],
++          "RarePlus": [
++            "button",
++            "band",
++            "woven_trim"
++          ]
++        },
++        "attachment": {
++          "Common": [],
++          "Uncommon": [],
++          "Rare": [
++            "bow",
++            "flower",
++            "pom"
++          ],
++          "RarePlus": [
++            "bow",
++            "flower",
++            "pom"
++          ]
++        }
++      },
++      "variants": {
++        "plain": {
++          "label": "Plain Soft Cap",
++          "shape_variants": [
++            "soft_cap"
++          ],
++          "default_quality_tier": "Common",
++          "decoration_mode": "none",
++          "styles": [
++            "casual",
++            "work",
++            "cottagecore",
++            "smart"
++          ]
++        },
++        "decorated": {
++          "label": "Decorated Soft Cap",
++          "shape_variants": [
++            "soft_cap"
++          ],
++          "default_quality_tier": "Rare",
++          "decoration_mode": "inherit",
++          "styles": [
++            "casual",
++            "work",
++            "cottagecore",
++            "smart"
++          ]
++        }
++      }
+     }
+   }
+ }

@@ -213,6 +213,12 @@ Fresh ESM checkpoint:
 
 These hashes are the recovered Git anchors.
 
+Additional recovered Git anchors:
+- Safe ESM garment-equip QC action: fa81e9d0f40186c11ea7e2316facd8bf7302325c
+- Deterministic source-backed cap-family compositor: f61ecac791d5b0867af11fe4efe07ae0f9b9c0f2
+- Source corpus/catalog repair: 7e214b7775909afc38f00faac5c58e6854b08649
+- Recovered CURRENT_STATE authority: 8a3cf7e79547d8a59bfc63bc2ab4f22ca95b6b4a
+
 ## 11. Recovery order
 1. Commit this recovery authority + project safeguards.
 2. Reconstruct and commit ESM core/runtime/tests/docs as a coherent milestone, excluding rejected BEANIE8 as an authoritative construction.
