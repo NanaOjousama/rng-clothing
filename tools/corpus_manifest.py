@@ -25,7 +25,7 @@ MANIFEST = ROOT / "source_catalog" / "corpus_manifest.json"
 
 # Exactly the paths .gitignore excludes as third-party art.  Keep the two in step.
 CORPORA = [
-    "generator conent",                 # approved source packs -- the authority
+    "generator content",                 # approved source packs -- the authority
     "references/benchmark",
     "references/ref_codex",
     "references/style-profiles",

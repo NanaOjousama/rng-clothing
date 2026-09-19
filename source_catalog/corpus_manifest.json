@@ -1,11 +1,15 @@
 {
  "note": "Third-party art corpora, synced out of band and not in git. Regenerate with tools/corpus_manifest.py write.",
  "corpora": {
-  "generator conent": {
+  "generator content": {
    "present": true,
-   "files": 644,
-   "bytes": 2576649,
+   "files": 647,
+   "bytes": 2578015,
    "hashes": {
+    "0.png": {
+     "sha256": "c3fecf323b8e230e9053730d99b8e04f8f3abcf96505bb3a232a3c5c1e464824",
+     "bytes": 308
+    },
     "Rural Outfitters/Rural Cosmetics/Accessories/Cool Blush/accessory.json": {
      "sha256": "b8b3a46e60699ece938796a561bc993be11008e05469f22defec7b7c224d1d95",
      "bytes": 822
@@ -2581,6 +2585,14 @@
     "[FS] More Accessories and Stuff Pack/manifest.json": {
      "sha256": "e6ae6fe87f3bd590a80f1c80e9c13e519cf41ef6c294878f4b8cd9fe95e1feb1",
      "bytes": 365
+    },
+    "back_beret.png": {
+     "sha256": "0a57603ac9313b381bb7fb2bfbb83b1934baab1fa56038e35f15841216bdbd8e",
+     "bytes": 455
+    },
+    "motif/sprite-fusion-pixel-art-generator-17x17.png": {
+     "sha256": "7006413afb3a993a888f05097055239d9ab571447ee3ca0cf4d24a8ff186922a",
+     "bytes": 603
     }
    }
   },
