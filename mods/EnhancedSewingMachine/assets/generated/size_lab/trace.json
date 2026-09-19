@@ -1,0 +1,218 @@
+[
+  {
+    "garment_id": "lab.size.soft_cap.16.41f6ddade8b5",
+    "definition_rel": "lab/lab.size.soft_cap.16.41f6ddade8b5.json",
+    "texture_rel": "assets/generated/size_lab/lab.size.soft_cap.16.41f6ddade8b5.png",
+    "base": "soft_cap",
+    "frame_size": [
+      16,
+      16
+    ],
+    "source_size": [
+      20,
+      20
+    ],
+    "sprite_anchor": [
+      8,
+      13
+    ],
+    "vanilla_reference_anchor": [
+      10,
+      16
+    ],
+    "render_scale": 1.25,
+    "runtime_offset": [
+      0,
+      2
+    ]
+  },
+  {
+    "garment_id": "lab.size.soft_cap.20.467ba4e84c9b",
+    "definition_rel": "lab/lab.size.soft_cap.20.467ba4e84c9b.json",
+    "texture_rel": "assets/generated/size_lab/lab.size.soft_cap.20.467ba4e84c9b.png",
+    "base": "soft_cap",
+    "frame_size": [
+      20,
+      20
+    ],
+    "source_size": [
+      20,
+      20
+    ],
+    "sprite_anchor": [
+      10,
+      16
+    ],
+    "vanilla_reference_anchor": [
+      10,
+      16
+    ],
+    "render_scale": 1.0,
+    "runtime_offset": [
+      0,
+      2
+    ]
+  },
+  {
+    "garment_id": "lab.size.soft_cap.24.21d54b6e8aba",
+    "definition_rel": "lab/lab.size.soft_cap.24.21d54b6e8aba.json",
+    "texture_rel": "assets/generated/size_lab/lab.size.soft_cap.24.21d54b6e8aba.png",
+    "base": "soft_cap",
+    "frame_size": [
+      24,
+      24
+    ],
+    "source_size": [
+      20,
+      20
+    ],
+    "sprite_anchor": [
+      12,
+      19
+    ],
+    "vanilla_reference_anchor": [
+      10,
+      16
+    ],
+    "render_scale": 0.8333333333333334,
+    "runtime_offset": [
+      0,
+      2
+    ]
+  },
+  {
+    "garment_id": "lab.size.soft_cap.32.2cdbb0f493ed",
+    "definition_rel": "lab/lab.size.soft_cap.32.2cdbb0f493ed.json",
+    "texture_rel": "assets/generated/size_lab/lab.size.soft_cap.32.2cdbb0f493ed.png",
+    "base": "soft_cap",
+    "frame_size": [
+      32,
+      32
+    ],
+    "source_size": [
+      20,
+      20
+    ],
+    "sprite_anchor": [
+      16,
+      26
+    ],
+    "vanilla_reference_anchor": [
+      10,
+      16
+    ],
+    "render_scale": 0.625,
+    "runtime_offset": [
+      0,
+      2
+    ]
+  },
+  {
+    "garment_id": "lab.size.wide_brim_hat.16.22af52c9bfc3",
+    "definition_rel": "lab/lab.size.wide_brim_hat.16.22af52c9bfc3.json",
+    "texture_rel": "assets/generated/size_lab/lab.size.wide_brim_hat.16.22af52c9bfc3.png",
+    "base": "wide_brim_hat",
+    "frame_size": [
+      16,
+      16
+    ],
+    "source_size": [
+      20,
+      20
+    ],
+    "sprite_anchor": [
+      8,
+      13
+    ],
+    "vanilla_reference_anchor": [
+      10,
+      16
+    ],
+    "render_scale": 1.25,
+    "runtime_offset": [
+      0,
+      2
+    ]
+  },
+  {
+    "garment_id": "lab.size.wide_brim_hat.20.851b17ef7409",
+    "definition_rel": "lab/lab.size.wide_brim_hat.20.851b17ef7409.json",
+    "texture_rel": "assets/generated/size_lab/lab.size.wide_brim_hat.20.851b17ef7409.png",
+    "base": "wide_brim_hat",
+    "frame_size": [
+      20,
+      20
+    ],
+    "source_size": [
+      20,
+      20
+    ],
+    "sprite_anchor": [
+      10,
+      16
+    ],
+    "vanilla_reference_anchor": [
+      10,
+      16
+    ],
+    "render_scale": 1.0,
+    "runtime_offset": [
+      0,
+      2
+    ]
+  },
+  {
+    "garment_id": "lab.size.wide_brim_hat.24.bb099f15b6be",
+    "definition_rel": "lab/lab.size.wide_brim_hat.24.bb099f15b6be.json",
+    "texture_rel": "assets/generated/size_lab/lab.size.wide_brim_hat.24.bb099f15b6be.png",
+    "base": "wide_brim_hat",
+    "frame_size": [
+      24,
+      24
+    ],
+    "source_size": [
+      20,
+      20
+    ],
+    "sprite_anchor": [
+      12,
+      19
+    ],
+    "vanilla_reference_anchor": [
+      10,
+      16
+    ],
+    "render_scale": 0.8333333333333334,
+    "runtime_offset": [
+      0,
+      2
+    ]
+  },
+  {
+    "garment_id": "lab.size.wide_brim_hat.32.59341b2306ab",
+    "definition_rel": "lab/lab.size.wide_brim_hat.32.59341b2306ab.json",
+    "texture_rel": "assets/generated/size_lab/lab.size.wide_brim_hat.32.59341b2306ab.png",
+    "base": "wide_brim_hat",
+    "frame_size": [
+      32,
+      32
+    ],
+    "source_size": [
+      20,
+      20
+    ],
+    "sprite_anchor": [
+      16,
+      26
+    ],
+    "vanilla_reference_anchor": [
+      10,
+      16
+    ],
+    "render_scale": 0.625,
+    "runtime_offset": [
+      0,
+      2
+    ]
+  }
+]

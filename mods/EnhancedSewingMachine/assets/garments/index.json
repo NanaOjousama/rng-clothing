@@ -1,0 +1,23 @@
+{
+  "Garments": [
+    "dev_proof32.json",
+    "dev_proof16.json",
+    "generated/gen.v5.1000.soft-cap.0f03eba41693.json",
+    "generated/gen.v5.1007.soft-cap.467ba4e84c9b.json",
+    "generated/gen.v5.1003.knit-cap.91040e663c58.json",
+    "generated/gen.v5.1004.knit-cap.9ec77e7b6c4e.json",
+    "generated/gen.v5.1002.wide-brim-hat.417c37bc48dd.json",
+    "generated/gen.v5.1016.wide-brim-hat.3457b96930de.json",
+    "generated/gen.v5.1005.felt-hat.59148d4576f9.json",
+    "generated/gen.v5.1014.felt-hat.841e3590edde.json",
+    "lab/lab.size.soft_cap.16.41f6ddade8b5.json",
+    "lab/lab.size.soft_cap.20.467ba4e84c9b.json",
+    "lab/lab.size.soft_cap.24.21d54b6e8aba.json",
+    "lab/lab.size.soft_cap.32.2cdbb0f493ed.json",
+    "lab/lab.size.wide_brim_hat.16.22af52c9bfc3.json",
+    "lab/lab.size.wide_brim_hat.20.851b17ef7409.json",
+    "lab/lab.size.wide_brim_hat.24.bb099f15b6be.json",
+    "lab/lab.size.wide_brim_hat.32.59341b2306ab.json",
+    "V4BEANIE.json"
+  ]
+}

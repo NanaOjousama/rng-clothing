@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GamePath>/run/media/deck/USD00/steamapps/common/Stardew Valley</GamePath>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>EnhancedSewingMachine</AssemblyName>
+    <RootNamespace>EnhancedSewingMachine</RootNamespace>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <EnableHarmony>true</EnableHarmony>
+    <CopyModToGameFolder>false</CopyModToGameFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets/**" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="i18n/**" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,54 @@
+{
+  "Id": "V4BEANIE",
+  "Category": "Hat",
+  "DefinitionVersion": 1,
+  "WornTexture": "assets/V4BEANIE_wornpass1.png",
+  "FrameWidth": 32,
+  "FrameHeight": 32,
+  "RenderScale": 0.5,
+  "VanillaReferenceAnchor": {
+    "X": 10,
+    "Y": 16
+  },
+  "Directions": {
+    "Front": {
+      "SourceX": 0,
+      "SourceY": 0,
+      "AnchorX": 16,
+      "AnchorY": 25,
+      "OffsetX": 0,
+      "OffsetY": -4
+    },
+    "Right": {
+      "SourceX": 0,
+      "SourceY": 32,
+      "AnchorX": 12,
+      "AnchorY": 25,
+      "OffsetX": 0,
+      "OffsetY": -4
+    },
+    "Back": {
+      "SourceX": 0,
+      "SourceY": 64,
+      "AnchorX": 16,
+      "AnchorY": 25,
+      "OffsetX": 0,
+      "OffsetY": -4
+    },
+    "Left": {
+      "MirrorOf": "Right",
+      "AnchorX": 20,
+      "AnchorY": 25,
+      "OffsetX": 0,
+      "OffsetY": -4,
+      "FlipX": true
+    }
+  },
+  "Metadata": {
+    "Family": "V4BEANIE",
+    "Construction": "V4BEANIE",
+    "Material": "V4BEANIE",
+    "Palette": "original-upload",
+    "Motif": "none"
+  }
+}

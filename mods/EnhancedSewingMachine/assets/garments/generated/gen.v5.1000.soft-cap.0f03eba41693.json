@@ -1,0 +1,61 @@
+{
+  "Id": "gen.v5.1000.soft-cap.0f03eba41693",
+  "Category": "Hat",
+  "DefinitionVersion": 1,
+  "WornTexture": "assets/generated/authored_v5/gen.v5.1000.soft-cap.0f03eba41693.png",
+  "FrameWidth": 20,
+  "FrameHeight": 20,
+  "RenderScale": 1.0,
+  "VanillaReferenceAnchor": {
+    "X": 10,
+    "Y": 16
+  },
+  "Directions": {
+    "Front": {
+      "SourceX": 0,
+      "SourceY": 0,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 2
+    },
+    "Right": {
+      "SourceX": 0,
+      "SourceY": 20,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 2
+    },
+    "Left": {
+      "SourceX": 0,
+      "SourceY": 40,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 2
+    },
+    "Back": {
+      "SourceX": 0,
+      "SourceY": 60,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 2
+    }
+  },
+  "Metadata": {
+    "Family": "soft_cap",
+    "Construction": "soft_cap",
+    "Material": "",
+    "Palette": "COASTAL_SEAFOAM_CORAL",
+    "Motif": "",
+    "GeneratorId": "v5.authored",
+    "GeneratorVersion": 1,
+    "GeneratorSeed": 1000,
+    "Style": "casual",
+    "QualityTier": "",
+    "Decals": "",
+    "Classification": "PRODUCTION"
+  }
+}

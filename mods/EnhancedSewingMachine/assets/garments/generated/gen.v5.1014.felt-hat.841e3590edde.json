@@ -1,0 +1,61 @@
+{
+  "Id": "gen.v5.1014.felt-hat.841e3590edde",
+  "Category": "Hat",
+  "DefinitionVersion": 1,
+  "WornTexture": "assets/generated/authored_v5/gen.v5.1014.felt-hat.841e3590edde.png",
+  "FrameWidth": 20,
+  "FrameHeight": 20,
+  "RenderScale": 1.0,
+  "VanillaReferenceAnchor": {
+    "X": 10,
+    "Y": 16
+  },
+  "Directions": {
+    "Front": {
+      "SourceX": 0,
+      "SourceY": 0,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 2
+    },
+    "Right": {
+      "SourceX": 0,
+      "SourceY": 20,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 2
+    },
+    "Left": {
+      "SourceX": 0,
+      "SourceY": 40,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 2
+    },
+    "Back": {
+      "SourceX": 0,
+      "SourceY": 60,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 2
+    }
+  },
+  "Metadata": {
+    "Family": "felt_hat",
+    "Construction": "felt_hat",
+    "Material": "",
+    "Palette": "ARCANE_VIOLET_COPPER",
+    "Motif": "badge,band,edge_accent",
+    "GeneratorId": "v5.authored",
+    "GeneratorVersion": 1,
+    "GeneratorSeed": 1014,
+    "Style": "formal",
+    "QualityTier": "",
+    "Decals": "badge_star,band_laced,brim_band",
+    "Classification": "PRODUCTION"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "Id": "lab.size.wide_brim_hat.32.59341b2306ab",
+  "Category": "Hat",
+  "DefinitionVersion": 1,
+  "WornTexture": "assets/generated/size_lab/lab.size.wide_brim_hat.32.59341b2306ab.png",
+  "FrameWidth": 32,
+  "FrameHeight": 32,
+  "RenderScale": 0.625,
+  "VanillaReferenceAnchor": {
+    "X": 10,
+    "Y": 16
+  },
+  "Directions": {
+    "Front": {
+      "SourceX": 0,
+      "SourceY": 0,
+      "AnchorX": 16,
+      "AnchorY": 26,
+      "OffsetX": 0,
+      "OffsetY": 2
+    },
+    "Right": {
+      "SourceX": 0,
+      "SourceY": 32,
+      "AnchorX": 16,
+      "AnchorY": 26,
+      "OffsetX": 0,
+      "OffsetY": 2
+    },
+    "Left": {
+      "SourceX": 0,
+      "SourceY": 64,
+      "AnchorX": 16,
+      "AnchorY": 26,
+      "OffsetX": 0,
+      "OffsetY": 2
+    },
+    "Back": {
+      "SourceX": 0,
+      "SourceY": 96,
+      "AnchorX": 16,
+      "AnchorY": 26,
+      "OffsetX": 0,
+      "OffsetY": 2
+    }
+  },
+  "Metadata": {
+    "Family": "wide_brim_hat",
+    "Construction": "wide_brim_hat",
+    "Material": "",
+    "Palette": "EVERYDAY_STONE_BLUE",
+    "Motif": "",
+    "GeneratorId": "lab.variable_hat_size",
+    "GeneratorVersion": 1,
+    "GeneratorSeed": 32,
+    "Style": "casual",
+    "QualityTier": "LAB",
+    "Decals": "",
+    "Classification": "REFERENCE_ONLY"
+  }
+}

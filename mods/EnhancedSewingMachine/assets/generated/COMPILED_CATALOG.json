@@ -1,0 +1,286 @@
+{
+  "schema": "esm-compiled-catalog/v1",
+  "generator_id": "v5.authored",
+  "generator_version": 1,
+  "engine_digest": "57ca9c9d762844c90d0d7b071116eb4e149b9ce417d16ff8289f62ae0f93e1e6",
+  "slot": "HEAD",
+  "count": 8,
+  "items": [
+    {
+      "seed": 1000,
+      "garment_id": "gen.v5.1000.soft-cap.0f03eba41693",
+      "definition_rel": "generated/gen.v5.1000.soft-cap.0f03eba41693.json",
+      "texture_rel": "assets/generated/authored_v5/gen.v5.1000.soft-cap.0f03eba41693.png",
+      "pixel_digest": "0f03eba4169333374584b6bd4961952e6d2041699a66a3ab42e0ee6b98689a82",
+      "base": "soft_cap",
+      "family": "soft_cap",
+      "construction": "soft_cap",
+      "style": "casual",
+      "palette": "COASTAL_SEAFOAM_CORAL",
+      "material": "",
+      "quality_tier": "",
+      "decals": [],
+      "motif_classes": [],
+      "classification": "PRODUCTION",
+      "frame_size": [
+        20,
+        20
+      ],
+      "render_scale": 1.0,
+      "runtime_offset": [
+        0,
+        2
+      ],
+      "source_fs_fit": {
+        "HatOffsetX": 0,
+        "HatOffsetY": -2
+      }
+    },
+    {
+      "seed": 1007,
+      "garment_id": "gen.v5.1007.soft-cap.467ba4e84c9b",
+      "definition_rel": "generated/gen.v5.1007.soft-cap.467ba4e84c9b.json",
+      "texture_rel": "assets/generated/authored_v5/gen.v5.1007.soft-cap.467ba4e84c9b.png",
+      "pixel_digest": "467ba4e84c9b13b7123bf32834944b83612a6e7b2a9ebcf1f46fd88ab2a624d2",
+      "base": "soft_cap",
+      "family": "soft_cap",
+      "construction": "soft_cap",
+      "style": "smart",
+      "palette": "EVERYDAY_STONE_BLUE",
+      "material": "",
+      "quality_tier": "",
+      "decals": [],
+      "motif_classes": [],
+      "classification": "PRODUCTION",
+      "frame_size": [
+        20,
+        20
+      ],
+      "render_scale": 1.0,
+      "runtime_offset": [
+        0,
+        2
+      ],
+      "source_fs_fit": {
+        "HatOffsetX": 0,
+        "HatOffsetY": -2
+      }
+    },
+    {
+      "seed": 1003,
+      "garment_id": "gen.v5.1003.knit-cap.91040e663c58",
+      "definition_rel": "generated/gen.v5.1003.knit-cap.91040e663c58.json",
+      "texture_rel": "assets/generated/authored_v5/gen.v5.1003.knit-cap.91040e663c58.png",
+      "pixel_digest": "91040e663c58d894a30b889d3ddeb5d08fd4e0dd7f6442224bf367f2fe1b957a",
+      "base": "knit_cap",
+      "family": "knit_cap",
+      "construction": "knit_cap",
+      "style": "casual",
+      "palette": "STREET_TEAL_GRAPHITE",
+      "material": "",
+      "quality_tier": "",
+      "decals": [
+        "bow_knot",
+        "cuff_stripe"
+      ],
+      "motif_classes": [
+        "bow",
+        "band"
+      ],
+      "classification": "PRODUCTION",
+      "frame_size": [
+        20,
+        20
+      ],
+      "render_scale": 1.0,
+      "runtime_offset": [
+        0,
+        1
+      ],
+      "source_fs_fit": {
+        "HatOffsetX": 0,
+        "HatOffsetY": -1
+      }
+    },
+    {
+      "seed": 1004,
+      "garment_id": "gen.v5.1004.knit-cap.9ec77e7b6c4e",
+      "definition_rel": "generated/gen.v5.1004.knit-cap.9ec77e7b6c4e.json",
+      "texture_rel": "assets/generated/authored_v5/gen.v5.1004.knit-cap.9ec77e7b6c4e.png",
+      "pixel_digest": "9ec77e7b6c4e9b9c2a0806f5cbdabc6f5594b7deef7e989fada2083f48fb5460",
+      "base": "knit_cap",
+      "family": "knit_cap",
+      "construction": "knit_cap",
+      "style": "festival",
+      "palette": "DESERT_CLAY_TURQUOISE",
+      "material": "",
+      "quality_tier": "",
+      "decals": [
+        "flower_daisy"
+      ],
+      "motif_classes": [
+        "flower"
+      ],
+      "classification": "PRODUCTION",
+      "frame_size": [
+        20,
+        20
+      ],
+      "render_scale": 1.0,
+      "runtime_offset": [
+        0,
+        1
+      ],
+      "source_fs_fit": {
+        "HatOffsetX": 0,
+        "HatOffsetY": -1
+      }
+    },
+    {
+      "seed": 1002,
+      "garment_id": "gen.v5.1002.wide-brim-hat.417c37bc48dd",
+      "definition_rel": "generated/gen.v5.1002.wide-brim-hat.417c37bc48dd.json",
+      "texture_rel": "assets/generated/authored_v5/gen.v5.1002.wide-brim-hat.417c37bc48dd.png",
+      "pixel_digest": "417c37bc48dd3d4a32df35f523eb03fd62e20d5fddc606cb46600d66e0331e66",
+      "base": "wide_brim_hat",
+      "family": "wide_brim_hat",
+      "construction": "wide_brim_hat",
+      "style": "festival",
+      "palette": "CYBER_CYAN_MAGENTA",
+      "material": "",
+      "quality_tier": "",
+      "decals": [
+        "badge_star",
+        "brim_edge"
+      ],
+      "motif_classes": [
+        "badge",
+        "edge_accent"
+      ],
+      "classification": "PRODUCTION",
+      "frame_size": [
+        20,
+        20
+      ],
+      "render_scale": 1.0,
+      "runtime_offset": [
+        0,
+        2
+      ],
+      "source_fs_fit": {
+        "HatOffsetX": 0,
+        "HatOffsetY": -2
+      }
+    },
+    {
+      "seed": 1016,
+      "garment_id": "gen.v5.1016.wide-brim-hat.3457b96930de",
+      "definition_rel": "generated/gen.v5.1016.wide-brim-hat.3457b96930de.json",
+      "texture_rel": "assets/generated/authored_v5/gen.v5.1016.wide-brim-hat.3457b96930de.png",
+      "pixel_digest": "3457b96930ded315d5a8cce9967858fc465ba9cd57ca085bd5afd628f86f2ebf",
+      "base": "wide_brim_hat",
+      "family": "wide_brim_hat",
+      "construction": "wide_brim_hat",
+      "style": "cottagecore",
+      "palette": "AUTUMN_OCHRE_PLUM",
+      "material": "",
+      "quality_tier": "",
+      "decals": [
+        "band_braided",
+        "bow_knot"
+      ],
+      "motif_classes": [
+        "woven_trim",
+        "bow"
+      ],
+      "classification": "PRODUCTION",
+      "frame_size": [
+        20,
+        20
+      ],
+      "render_scale": 1.0,
+      "runtime_offset": [
+        0,
+        2
+      ],
+      "source_fs_fit": {
+        "HatOffsetX": 0,
+        "HatOffsetY": -2
+      }
+    },
+    {
+      "seed": 1005,
+      "garment_id": "gen.v5.1005.felt-hat.59148d4576f9",
+      "definition_rel": "generated/gen.v5.1005.felt-hat.59148d4576f9.json",
+      "texture_rel": "assets/generated/authored_v5/gen.v5.1005.felt-hat.59148d4576f9.png",
+      "pixel_digest": "59148d4576f99fee22620ab0f0c65fa4f08a76ca16c78713da417f779d01a60e",
+      "base": "felt_hat",
+      "family": "felt_hat",
+      "construction": "felt_hat",
+      "style": "smart",
+      "palette": "WINTER_FROST_INK",
+      "material": "",
+      "quality_tier": "",
+      "decals": [
+        "band_laced",
+        "side_pin"
+      ],
+      "motif_classes": [
+        "band",
+        "pin"
+      ],
+      "classification": "PRODUCTION",
+      "frame_size": [
+        20,
+        20
+      ],
+      "render_scale": 1.0,
+      "runtime_offset": [
+        0,
+        2
+      ],
+      "source_fs_fit": {
+        "HatOffsetX": 0,
+        "HatOffsetY": -2
+      }
+    },
+    {
+      "seed": 1014,
+      "garment_id": "gen.v5.1014.felt-hat.841e3590edde",
+      "definition_rel": "generated/gen.v5.1014.felt-hat.841e3590edde.json",
+      "texture_rel": "assets/generated/authored_v5/gen.v5.1014.felt-hat.841e3590edde.png",
+      "pixel_digest": "841e3590eddeac26bbd6ceb8eb82703a56b8a1645dce86afc57104ce2f6d32f5",
+      "base": "felt_hat",
+      "family": "felt_hat",
+      "construction": "felt_hat",
+      "style": "formal",
+      "palette": "ARCANE_VIOLET_COPPER",
+      "material": "",
+      "quality_tier": "",
+      "decals": [
+        "badge_star",
+        "band_laced",
+        "brim_band"
+      ],
+      "motif_classes": [
+        "badge",
+        "band",
+        "edge_accent"
+      ],
+      "classification": "PRODUCTION",
+      "frame_size": [
+        20,
+        20
+      ],
+      "render_scale": 1.0,
+      "runtime_offset": [
+        0,
+        2
+      ],
+      "source_fs_fit": {
+        "HatOffsetX": 0,
+        "HatOffsetY": -2
+      }
+    }
+  ]
+}

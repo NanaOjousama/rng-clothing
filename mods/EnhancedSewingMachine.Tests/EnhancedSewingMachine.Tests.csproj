@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GamePath>/run/media/deck/USD00/steamapps/common/Stardew Valley</GamePath>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>EnhancedSewingMachine.Tests</AssemblyName>
+    <RootNamespace>EnhancedSewingMachine.Tests</RootNamespace>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../EnhancedSewingMachine/GarmentRuntime/GarmentDefinition.cs" />
+    <Compile Include="../EnhancedSewingMachine/GarmentRuntime/PlacementMath.cs" />
+    <Compile Include="../EnhancedSewingMachine/GarmentRuntime/GarmentInstanceData.cs" />
+    <Compile Include="../EnhancedSewingMachine/GarmentRuntime/GarmentInstanceCodec.cs" />
+    <Compile Include="../EnhancedSewingMachine/TailoringSelection/TailoringBiasCatalog.cs" />
+    <Compile Include="../EnhancedSewingMachine/TailoringSelection/TailoringSelector.cs" />
+    <Compile Include="Tests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(GamePath)/MonoGame.Framework.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

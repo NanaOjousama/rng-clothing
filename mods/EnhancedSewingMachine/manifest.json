@@ -1,0 +1,9 @@
+{
+  "Name": "Enhanced Sewing Machine",
+  "Author": "RNG Clothing project",
+  "Version": "0.0.1",
+  "Description": "Vanilla-first generated clothing runtime proof.",
+  "UniqueID": "RNGClothing.EnhancedSewingMachine",
+  "EntryDll": "EnhancedSewingMachine.dll",
+  "MinimumApiVersion": "4.0.0"
+}

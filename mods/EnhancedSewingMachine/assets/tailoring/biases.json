@@ -1,0 +1,116 @@
+{
+  "SchemaVersion": 1,
+  "Textiles": {
+    "cotton": {
+      "Label": "Cotton",
+      "BaseWeight": 100,
+      "ConstructionWeights": {
+        "soft_cap": 80,
+        "wide_brim_hat": 35,
+        "felt_hat": 10,
+        "knit_cap": -35
+      },
+      "StyleWeights": {
+        "casual": 25,
+        "work": 15,
+        "cottagecore": 10
+      }
+    },
+    "wool": {
+      "Label": "Wool",
+      "BaseWeight": 100,
+      "ConstructionWeights": {
+        "knit_cap": 90,
+        "felt_hat": 65,
+        "soft_cap": 10,
+        "wide_brim_hat": -25
+      },
+      "StyleWeights": {
+        "cottagecore": 20,
+        "smart": 15,
+        "formal": 10
+      }
+    },
+    "canvas": {
+      "Label": "Canvas",
+      "BaseWeight": 100,
+      "ConstructionWeights": {
+        "wide_brim_hat": 75,
+        "soft_cap": 60,
+        "felt_hat": 5,
+        "knit_cap": -30
+      },
+      "StyleWeights": {
+        "work": 30,
+        "casual": 20,
+        "festival": 10
+      }
+    }
+  },
+  "Inspirations": {
+    "sunflower": {
+      "Label": "Sunflower",
+      "BaseWeight": 100,
+      "StyleWeights": {
+        "cottagecore": 65,
+        "festival": 35,
+        "casual": 15
+      },
+      "PaletteWeights": {
+        "AUTUMN_OCHRE_PLUM": 45,
+        "DESERT_CLAY_TURQUOISE": 25,
+        "COASTAL_SEAFOAM_CORAL": 20
+      },
+      "MotifWeights": {
+        "flower": 90,
+        "bow": 25,
+        "woven_trim": 15
+      },
+      "DecalWeights": {
+        "flower_daisy": 80
+      }
+    },
+    "frozen-tear": {
+      "Label": "Frozen Tear",
+      "BaseWeight": 100,
+      "StyleWeights": {
+        "smart": 55,
+        "formal": 45
+      },
+      "PaletteWeights": {
+        "WINTER_FROST_INK": 100,
+        "EVERYDAY_STONE_BLUE": 35,
+        "ARCANE_VIOLET_COPPER": 10
+      },
+      "MotifWeights": {
+        "pin": 25,
+        "band": 10
+      }
+    },
+    "ancient-doll": {
+      "Label": "Ancient Doll",
+      "BaseWeight": 100,
+      "StyleWeights": {
+        "formal": 65,
+        "cottagecore": 35,
+        "smart": 20
+      },
+      "PaletteWeights": {
+        "ARCANE_VIOLET_COPPER": 80,
+        "AUTUMN_OCHRE_PLUM": 35,
+        "WINTER_FROST_INK": 20
+      },
+      "MotifWeights": {
+        "bow": 45,
+        "pin": 35,
+        "badge": 25,
+        "woven_trim": 15
+      },
+      "DecalWeights": {
+        "bow_knot": 30,
+        "side_pin": 25,
+        "badge_star": 15
+      }
+    }
+  }
+}
