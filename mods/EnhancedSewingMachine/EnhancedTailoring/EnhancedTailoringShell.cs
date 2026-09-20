@@ -947,13 +947,16 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                     box.Center.Y - 92);
                 who.FarmerRenderer.draw(
                     b,
-                    who.FarmerSprite,
+                    who.FarmerSprite.CurrentAnimationFrame,
+                    who.FarmerSprite.CurrentFrame,
                     who.FarmerSprite.SourceRect,
                     pos,
                     Vector2.Zero,
                     0.8f,
+                    facingDirection,
                     Color.White,
                     0f,
+                    1f,
                     who);
             }
             catch
