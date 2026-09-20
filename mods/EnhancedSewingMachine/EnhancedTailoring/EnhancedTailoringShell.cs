@@ -916,7 +916,7 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 _ => 0
             };
 
-        private static void DrawFarmerFitPreview(SpriteBatch b, TailoringMenu menu, int facingDirection)
+        private void DrawFarmerFitPreview(SpriteBatch b, TailoringMenu menu, int facingDirection)
         {
             var box = new Rectangle(
                 menu.xPositionOnScreen + 40,
@@ -933,18 +933,23 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 Color.White);
 
             Farmer who = Game1.player;
+            Hat previewHat = who.hat.Value;
             int oldFacing = who.FacingDirection;
             int oldFrame = who.FarmerSprite?.CurrentFrame ?? 0;
             try
             {
-                // Preview the selected orthographic direction. The real
-                // farmer's direction/animation is restored immediately.
+                // Draw a stable farmer pose without the carrier hat first, then
+                // draw the ESM garment explicitly for the selected fitting view.
+                // This avoids Stardew's side-animation facing rewrite causing
+                // the preview to ignore per-direction fit offsets.
                 who.FacingDirection = facingDirection;
                 who.FarmerSprite?.setCurrentFrame(FitPreviewFrame(facingDirection));
 
                 Vector2 pos = new(
                     box.Center.X - 32,
                     box.Center.Y - 92);
+
+                who.hat.Value = null;
                 who.FarmerRenderer.draw(
                     b,
                     who.FarmerSprite.CurrentAnimationFrame,
@@ -958,6 +963,24 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                     0f,
                     1f,
                     who);
+
+                who.hat.Value = previewHat;
+                if (previewHat != null && this.runtime.TryReadInstance(previewHat, out _))
+                {
+                    this.runtime.Draw(
+                        b,
+                        facingDirection,
+                        who,
+                        pos,
+                        Vector2.Zero,
+                        1f,
+                        who.FarmerSprite.CurrentFrame,
+                        0f,
+                        Color.White,
+                        0.8f,
+                        Vector2.Zero,
+                        0);
+                }
             }
             catch
             {
@@ -965,6 +988,7 @@ namespace EnhancedSewingMachine.EnhancedTailoring
             }
             finally
             {
+                who.hat.Value = previewHat;
                 who.FacingDirection = oldFacing;
                 who.FarmerSprite?.setCurrentFrame(oldFrame);
             }
