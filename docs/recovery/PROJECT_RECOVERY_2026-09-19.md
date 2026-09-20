@@ -252,3 +252,11 @@ Result:
 - The fitting preview now reflects the selected direction's live offsets.
 - Build 0 warnings / 0 errors; tests 26/26 PASS.
 - User accepted the live behavior.
+
+
+## Post-recovery production milestone — ESM Beanie V1
+The accepted RuralBeanie EarthMoss source-backed construction was promoted from temporary QC registration to production as `beanie.v1.rural.earth-moss`.
+
+The production definition preserves the accepted 20x20 four-direction source-backed geometry and RNG-RuralBeanie-V2 lineage. Personal directional fitting remains instance-local rather than being baked into the production asset.
+
+Verification: garment definitions 20/20, ESM build 0 warnings / 0 errors, ESM tests 26/26, tailoring bias PASS, generator bridge 8/8 exact, source-beanie family 4/4.

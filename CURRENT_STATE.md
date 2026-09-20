@@ -153,3 +153,31 @@ Verification at acceptance:
 - ESM build: 0 warnings / 0 errors
 - ESM tests: 26/26 PASS
 - live user QC: accepted; side scaling and side X/Y both work and preview matches
+
+
+## Accepted milestone — ESM Beanie V1 production promotion
+
+Promoted on 2026-09-19 after live QC acceptance of the source-backed RuralBeanie EarthMoss construction.
+
+Production garment:
+- Id: `beanie.v1.rural.earth-moss`
+- Frame: 20x20, four authored directions
+- Palette: `EARTH_MOSS`
+- Generator lineage: `RNG-RuralBeanie-V2` v2, seed `2024493570`
+- Family / construction: `knit_cap`
+- Classification: `PRODUCTION`
+- Texture: `assets/source_backed/beanie_v1_rural_earth_moss.png`
+- Definition: `assets/garments/source_backed/beanie_v1_rural_earth_moss.json`
+
+The temporary `qc.beanie.rural.earth-moss` registry entry was removed. User X/Y/scale fitting remains per garment instance and is intentionally not baked into the production geometry.
+
+Verification:
+- ESM garment validator: 20/20
+- ESM build: 0 warnings / 0 errors
+- ESM tests: 26/26 PASS
+- tailoring bias validator: PASS
+- generator bridge: 8/8 exact
+- source-backed beanie tests: 4/4 PASS
+- live QC of the same source-backed construction: accepted
+
+The production registry entry requires the next game restart to be loaded into the live ESM registry.

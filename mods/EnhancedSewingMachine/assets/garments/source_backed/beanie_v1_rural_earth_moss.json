@@ -1,0 +1,61 @@
+{
+  "Id": "beanie.v1.rural.earth-moss",
+  "Category": "Hat",
+  "DefinitionVersion": 1,
+  "WornTexture": "assets/source_backed/beanie_v1_rural_earth_moss.png",
+  "FrameWidth": 20,
+  "FrameHeight": 20,
+  "RenderScale": 1.0,
+  "VanillaReferenceAnchor": {
+    "X": 10,
+    "Y": 16
+  },
+  "Directions": {
+    "Front": {
+      "SourceX": 0,
+      "SourceY": 0,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    "Right": {
+      "SourceX": 0,
+      "SourceY": 20,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    "Left": {
+      "SourceX": 0,
+      "SourceY": 40,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    "Back": {
+      "SourceX": 0,
+      "SourceY": 60,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 0
+    }
+  },
+  "Metadata": {
+    "Family": "knit_cap",
+    "Construction": "knit_cap",
+    "Material": "",
+    "Palette": "EARTH_MOSS",
+    "Motif": "",
+    "GeneratorId": "RNG-RuralBeanie-V2",
+    "GeneratorVersion": 2,
+    "GeneratorSeed": 2024493570,
+    "Style": "casual,cozy,winter,cuffed",
+    "QualityTier": "Approved",
+    "Decals": "",
+    "Classification": "PRODUCTION"
+  }
+}
