@@ -34,6 +34,7 @@ namespace EnhancedSewingMachine
             helper.Events.Content.AssetRequested += this.OnAssetRequested;
             helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
             helper.Events.Display.MenuChanged += this.tailoringShell.OnMenuChanged;
+            helper.Events.Input.ButtonPressed += this.OnButtonPressed;
             helper.Events.Input.ButtonPressed += this.tailoringShell.OnButtonPressed;
             helper.Events.GameLoop.UpdateTicked += this.tailoringShell.OnUpdateTicked;
             helper.Events.Display.RenderedActiveMenu += this.tailoringShell.OnRenderedActiveMenu;
@@ -63,6 +64,32 @@ namespace EnhancedSewingMachine
             {
                 this.Monitor.Log($"Could not patch FarmerRenderer; Enhanced Sewing Machine will fail open. {ex}", LogLevel.Error);
                 FarmerRendererPatch.Host = null;
+            }
+        }
+
+
+
+        private void OnButtonPressed(object sender, ButtonPressedEventArgs e)
+        {
+            if (e.Button != SButton.K)
+                return;
+            if (!Context.IsWorldReady || Game1.activeClickableMenu != null)
+                return;
+            if (!Context.IsPlayerFree)
+                return;
+
+            try
+            {
+                var machine = ItemRegistry.Create<StardewValley.Object>("(BC)247");
+                machine.Location = Game1.currentLocation;
+                machine.checkForAction(Game1.player);
+                this.Helper.Input.Suppress(e.Button);
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log(
+                    $"Could not open Enhanced Sewing Machine from K hotkey; vanilla behavior is unchanged. {ex.Message}",
+                    LogLevel.Warn);
             }
         }
 
