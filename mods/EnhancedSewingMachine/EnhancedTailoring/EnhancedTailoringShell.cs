@@ -936,14 +936,19 @@ namespace EnhancedSewingMachine.EnhancedTailoring
             Hat previewHat = who.hat.Value;
             int oldFacing = who.FacingDirection;
             int oldFrame = who.FarmerSprite?.CurrentFrame ?? 0;
+            bool oldFlip = who.FarmerSprite?.CurrentAnimationFrame.flip ?? false;
             try
             {
                 // Draw a stable farmer pose without the carrier hat first, then
                 // draw the ESM garment explicitly for the selected fitting view.
-                // This avoids Stardew's side-animation facing rewrite causing
-                // the preview to ignore per-direction fit offsets.
+                // Stardew uses the right-facing side frame for both side views
+                // and distinguishes Left by setting animationFrame.flip = true.
                 who.FacingDirection = facingDirection;
-                who.FarmerSprite?.setCurrentFrame(FitPreviewFrame(facingDirection));
+                who.FarmerSprite?.setCurrentSingleFrame(
+                    FitPreviewFrame(facingDirection),
+                    32000,
+                    secondaryArm: false,
+                    flip: facingDirection == 3);
 
                 Vector2 pos = new(
                     box.Center.X - 32,
@@ -990,7 +995,11 @@ namespace EnhancedSewingMachine.EnhancedTailoring
             {
                 who.hat.Value = previewHat;
                 who.FacingDirection = oldFacing;
-                who.FarmerSprite?.setCurrentFrame(oldFrame);
+                who.FarmerSprite?.setCurrentSingleFrame(
+                    oldFrame,
+                    32000,
+                    secondaryArm: false,
+                    flip: oldFlip);
             }
         }
 
