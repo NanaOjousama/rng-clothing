@@ -28,6 +28,8 @@ namespace EnhancedSewingMachine.EnhancedTailoring
         private const int FitScaleUpId = 1216;
         private const int FitResetScaleId = 1217;
         private const int FitResetAllId = 1218;
+        private const int FitViewPrevId = 1219;
+        private const int FitViewNextId = 1220;
         private const int FitRange = 8;
         private const float FitScaleMin = 0.85f;
         private const float FitScaleMax = 1.25f;
@@ -49,6 +51,8 @@ namespace EnhancedSewingMachine.EnhancedTailoring
             public ClickableComponent FitUp, FitDown, FitLeft, FitRight;
             public ClickableComponent FitScaleDown, FitScaleUp;
             public ClickableComponent FitResetPos, FitResetScale, FitResetAll;
+            public ClickableComponent FitViewPrev, FitViewNext;
+            public int FitFacingDirection = 2;
             public bool Enhanced;
             public string StatusKey;
         }
@@ -146,12 +150,15 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                     else if (s.FitResetPos.containsPoint(x, y)) fitId = FitResetPosId;
                     else if (s.FitResetScale.containsPoint(x, y)) fitId = FitResetScaleId;
                     else if (s.FitResetAll.containsPoint(x, y)) fitId = FitResetAllId;
+                    else if (s.FitViewPrev.containsPoint(x, y)) fitId = FitViewPrevId;
+                    else if (s.FitViewNext.containsPoint(x, y)) fitId = FitViewNextId;
                 }
                 else
                     fitId = snappedId;
 
                 int dx = 0, dy = 0;
                 bool changed = false;
+                bool viewChanged = false;
                 if (fitId == FitUpId) dy = -1;
                 else if (fitId == FitDownId) dy = 1;
                 else if (fitId == FitLeftId) dx = -1;
@@ -176,8 +183,7 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 }
                 else if (fitId == FitResetPosId)
                 {
-                    fitInstance.FitOffsetX = 0;
-                    fitInstance.FitOffsetY = 0;
+                    fitInstance.SetFitOffset(s.FitFacingDirection, 0, 0);
                     changed = true;
                 }
                 else if (fitId == FitResetScaleId)
@@ -187,17 +193,37 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 }
                 else if (fitId == FitResetAllId)
                 {
-                    fitInstance.FitOffsetX = 0;
-                    fitInstance.FitOffsetY = 0;
+                    fitInstance.ResetAllFitOffsets();
                     fitInstance.FitScale = 1f;
                     changed = true;
+                }
+                else if (fitId == FitViewPrevId)
+                {
+                    s.FitFacingDirection = PreviousFitDirection(s.FitFacingDirection);
+                    viewChanged = true;
+                }
+                else if (fitId == FitViewNextId)
+                {
+                    s.FitFacingDirection = NextFitDirection(s.FitFacingDirection);
+                    viewChanged = true;
                 }
 
                 if (dx != 0 || dy != 0)
                 {
-                    fitInstance.FitOffsetX = Math.Clamp(fitInstance.FitOffsetX + dx, -FitRange, FitRange);
-                    fitInstance.FitOffsetY = Math.Clamp(fitInstance.FitOffsetY + dy, -FitRange, FitRange);
+                    int currentX = fitInstance.GetFitOffsetX(s.FitFacingDirection);
+                    int currentY = fitInstance.GetFitOffsetY(s.FitFacingDirection);
+                    fitInstance.SetFitOffset(
+                        s.FitFacingDirection,
+                        Math.Clamp(currentX + dx, -FitRange, FitRange),
+                        Math.Clamp(currentY + dy, -FitRange, FitRange));
                     changed = true;
+                }
+
+                if (viewChanged)
+                {
+                    this.helper.Input.Suppress(e.Button);
+                    Game1.playSound("shiny4");
+                    return;
                 }
 
                 if (changed)
@@ -322,9 +348,17 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 && this.runtime.TryReadInstance(fitHat, out GarmentInstanceData fitInstance))
             {
                 float displayScale = fitInstance.FitScale <= 0f ? 1f : fitInstance.FitScale;
+                int fitX = fitInstance.GetFitOffsetX(s.FitFacingDirection);
+                int fitY = fitInstance.GetFitOffsetY(s.FitFacingDirection);
                 string fitLabel = this.helper.Translation.Get(
                     "tailoring.fit.label",
-                    new { x = fitInstance.FitOffsetX, y = fitInstance.FitOffsetY, scale = MathF.Round(displayScale * 100f) });
+                    new
+                    {
+                        view = FitDirectionName(s.FitFacingDirection),
+                        x = fitX,
+                        y = fitY,
+                        scale = MathF.Round(displayScale * 100f)
+                    });
                 Utility.drawTextWithShadow(b, fitLabel, Game1.smallFont,
                     new Vector2(s.FitLeft.bounds.X, s.FitUp.bounds.Y - 28), Game1.textColor);
                 DrawFitButton(b, s.FitUp);
@@ -333,10 +367,12 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 DrawFitButton(b, s.FitRight);
                 DrawFitButton(b, s.FitScaleDown);
                 DrawFitButton(b, s.FitScaleUp);
+                DrawFitButton(b, s.FitViewPrev);
+                DrawFitButton(b, s.FitViewNext);
                 DrawFitButton(b, s.FitResetPos);
                 DrawFitButton(b, s.FitResetScale);
                 DrawFitButton(b, s.FitResetAll);
-                DrawFarmerFitPreview(b, s.Menu);
+                DrawFarmerFitPreview(b, s.Menu, s.FitFacingDirection);
             }
 
             if (!s.Enhanced)
@@ -381,7 +417,9 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 FitRightId => FitDownId,
                 FitDownId => FitScaleDownId,
                 FitScaleDownId => FitScaleUpId,
-                FitScaleUpId => FitResetPosId,
+                FitScaleUpId => FitViewPrevId,
+                FitViewPrevId => FitViewNextId,
+                FitViewNextId => FitResetPosId,
                 FitResetPosId => FitResetScaleId,
                 FitResetScaleId => FitResetAllId,
                 FitResetAllId => TailoringMenu.region_leftIngredient,
@@ -450,42 +488,72 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 leftNeighborID = FitLeftId,
                 rightNeighborID = FitRightId
             };
-            var fitScaleDown = new ClickableComponent(new Rectangle(fitX + 4, fitY + 120, 108, 36), "Scale -")
+            var fitScaleDown = new ClickableComponent(
+                new Rectangle(fitX + 4, fitY + 120, 108, 36),
+                this.helper.Translation.Get("tailoring.fit.scale-down"))
             {
                 myID = FitScaleDownId,
                 upNeighborID = FitDownId,
-                downNeighborID = FitResetPosId,
+                downNeighborID = FitViewPrevId,
                 leftNeighborID = TailoringMenu.region_startButton,
                 rightNeighborID = FitScaleUpId
             };
-            var fitScaleUp = new ClickableComponent(new Rectangle(fitX + 116, fitY + 120, 108, 36), "Scale +")
+            var fitScaleUp = new ClickableComponent(
+                new Rectangle(fitX + 116, fitY + 120, 108, 36),
+                this.helper.Translation.Get("tailoring.fit.scale-up"))
             {
                 myID = FitScaleUpId,
                 upNeighborID = FitDownId,
-                downNeighborID = FitResetScaleId,
+                downNeighborID = FitViewNextId,
                 leftNeighborID = FitScaleDownId,
                 rightNeighborID = -99998
             };
-            var fitResetPos = new ClickableComponent(new Rectangle(fitX + 4, fitY + 160, 72, 36), "Pos")
+            var fitViewPrev = new ClickableComponent(
+                new Rectangle(fitX + 4, fitY + 160, 108, 36),
+                this.helper.Translation.Get("tailoring.fit.view-prev"))
+            {
+                myID = FitViewPrevId,
+                upNeighborID = FitScaleDownId,
+                downNeighborID = FitResetPosId,
+                leftNeighborID = TailoringMenu.region_startButton,
+                rightNeighborID = FitViewNextId
+            };
+            var fitViewNext = new ClickableComponent(
+                new Rectangle(fitX + 116, fitY + 160, 108, 36),
+                this.helper.Translation.Get("tailoring.fit.view-next"))
+            {
+                myID = FitViewNextId,
+                upNeighborID = FitScaleUpId,
+                downNeighborID = FitResetScaleId,
+                leftNeighborID = FitViewPrevId,
+                rightNeighborID = -99998
+            };
+            var fitResetPos = new ClickableComponent(
+                new Rectangle(fitX + 4, fitY + 200, 72, 36),
+                this.helper.Translation.Get("tailoring.fit.reset-pos"))
             {
                 myID = FitResetPosId,
-                upNeighborID = FitScaleDownId,
+                upNeighborID = FitViewPrevId,
                 downNeighborID = TailoringMenu.region_resultItem,
                 leftNeighborID = TailoringMenu.region_startButton,
                 rightNeighborID = FitResetScaleId
             };
-            var fitResetScale = new ClickableComponent(new Rectangle(fitX + 80, fitY + 160, 72, 36), "Scale")
+            var fitResetScale = new ClickableComponent(
+                new Rectangle(fitX + 80, fitY + 200, 72, 36),
+                this.helper.Translation.Get("tailoring.fit.reset-scale"))
             {
                 myID = FitResetScaleId,
-                upNeighborID = FitScaleUpId,
+                upNeighborID = FitViewNextId,
                 downNeighborID = TailoringMenu.region_resultItem,
                 leftNeighborID = FitResetPosId,
                 rightNeighborID = FitResetAllId
             };
-            var fitResetAll = new ClickableComponent(new Rectangle(fitX + 156, fitY + 160, 68, 36), "All")
+            var fitResetAll = new ClickableComponent(
+                new Rectangle(fitX + 156, fitY + 200, 68, 36),
+                this.helper.Translation.Get("tailoring.fit.reset-all"))
             {
                 myID = FitResetAllId,
-                upNeighborID = FitScaleUpId,
+                upNeighborID = FitViewNextId,
                 downNeighborID = TailoringMenu.region_resultItem,
                 leftNeighborID = FitResetScaleId,
                 rightNeighborID = -99998
@@ -520,6 +588,8 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 FitRight = fitRight,
                 FitScaleDown = fitScaleDown,
                 FitScaleUp = fitScaleUp,
+                FitViewPrev = fitViewPrev,
+                FitViewNext = fitViewNext,
                 FitResetPos = fitResetPos,
                 FitResetScale = fitResetScale,
                 FitResetAll = fitResetAll,
@@ -550,6 +620,7 @@ namespace EnhancedSewingMachine.EnhancedTailoring
             {
                 s.FitUp, s.FitDown, s.FitLeft, s.FitRight,
                 s.FitScaleDown, s.FitScaleUp,
+                s.FitViewPrev, s.FitViewNext,
                 s.FitResetPos, s.FitResetScale, s.FitResetAll
             })
             {
@@ -806,7 +877,46 @@ namespace EnhancedSewingMachine.EnhancedTailoring
             s.FragmentSpot.item = null;
         }
 
-        private static void DrawFarmerFitPreview(SpriteBatch b, TailoringMenu menu)
+        private static int PreviousFitDirection(int direction)
+            => direction switch
+            {
+                2 => 3,
+                3 => 0,
+                0 => 1,
+                _ => 2
+            };
+
+        private static int NextFitDirection(int direction)
+            => direction switch
+            {
+                2 => 1,
+                1 => 0,
+                0 => 3,
+                _ => 2
+            };
+
+        private string FitDirectionName(int direction)
+        {
+            string key = direction switch
+            {
+                0 => "tailoring.fit.view.back",
+                1 => "tailoring.fit.view.right",
+                3 => "tailoring.fit.view.left",
+                _ => "tailoring.fit.view.front"
+            };
+            return this.helper.Translation.Get(key);
+        }
+
+        private static int FitPreviewFrame(int direction)
+            => direction switch
+            {
+                0 => 12,
+                1 => 6,
+                3 => 6,
+                _ => 0
+            };
+
+        private static void DrawFarmerFitPreview(SpriteBatch b, TailoringMenu menu, int facingDirection)
         {
             var box = new Rectangle(
                 menu.xPositionOnScreen + 40,
@@ -827,10 +937,10 @@ namespace EnhancedSewingMachine.EnhancedTailoring
             int oldFrame = who.FarmerSprite?.CurrentFrame ?? 0;
             try
             {
-                // The fitting preview is a stable orthographic front view. The
-                // real farmer's direction/animation is restored immediately.
-                who.FacingDirection = 2;
-                who.FarmerSprite?.setCurrentFrame(0);
+                // Preview the selected orthographic direction. The real
+                // farmer's direction/animation is restored immediately.
+                who.FacingDirection = facingDirection;
+                who.FarmerSprite?.setCurrentFrame(FitPreviewFrame(facingDirection));
 
                 Vector2 pos = new(
                     box.Center.X - 32,

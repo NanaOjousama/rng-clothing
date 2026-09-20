@@ -248,6 +248,15 @@ namespace EnhancedSewingMachine.Tests
                 QualityTier = "Rare",
                 Decals = "bow_knot,cuff_stripe",
                 Classification = "PRODUCTION",
+                FitOffsetX = 1,
+                FitOffsetY = -2,
+                FitRightOffsetX = 3,
+                FitRightOffsetY = -4,
+                FitLeftOffsetX = -5,
+                FitLeftOffsetY = 6,
+                FitBackOffsetX = 7,
+                FitBackOffsetY = -8,
+                FitScale = 1.1f,
                 Render = snapshot
             };
             string encoded = GarmentInstanceCodec.Encode(instance);
@@ -277,6 +286,39 @@ namespace EnhancedSewingMachine.Tests
                 && decoded.Render.FrameWidth == 32
                 && decoded.Render.Resolve(3).FlipX
                 && decoded.Render.AppearanceDigest == "abc123");
+
+            Check("garment fit offsets remain independent per direction",
+                decodedOk
+                && decoded.GetFitOffsetX(2) == 1
+                && decoded.GetFitOffsetY(2) == -2
+                && decoded.GetFitOffsetX(1) == 3
+                && decoded.GetFitOffsetY(1) == -4
+                && decoded.GetFitOffsetX(3) == -5
+                && decoded.GetFitOffsetY(3) == 6
+                && decoded.GetFitOffsetX(0) == 7
+                && decoded.GetFitOffsetY(0) == -8
+                && Near(decoded.FitScale, 1.1f));
+
+            GarmentInstanceData directionalFit = decoded.Clone();
+            directionalFit.SetFitOffset(1, -2, 4);
+            Check("editing right fit does not move front/left/back",
+                directionalFit.GetFitOffsetX(1) == -2
+                && directionalFit.GetFitOffsetY(1) == 4
+                && directionalFit.GetFitOffsetX(2) == 1
+                && directionalFit.GetFitOffsetY(2) == -2
+                && directionalFit.GetFitOffsetX(3) == -5
+                && directionalFit.GetFitOffsetY(0) == -8);
+
+            directionalFit.ResetAllFitOffsets();
+            Check("reset all clears every directional fit offset",
+                directionalFit.GetFitOffsetX(2) == 0
+                && directionalFit.GetFitOffsetY(2) == 0
+                && directionalFit.GetFitOffsetX(1) == 0
+                && directionalFit.GetFitOffsetY(1) == 0
+                && directionalFit.GetFitOffsetX(3) == 0
+                && directionalFit.GetFitOffsetY(3) == 0
+                && directionalFit.GetFitOffsetX(0) == 0
+                && directionalFit.GetFitOffsetY(0) == 0);
 
             Check("invalid instance JSON fails closed",
                 !GarmentInstanceCodec.TryDecode("{bad json", out _, out _));

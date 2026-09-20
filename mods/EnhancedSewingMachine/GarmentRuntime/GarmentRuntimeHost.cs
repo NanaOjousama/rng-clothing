@@ -157,8 +157,8 @@ namespace EnhancedSewingMachine.GarmentRuntime
             float fitScale = 1f;
             if (this.Items.TryRead(hat, out GarmentInstanceData liveInstance))
             {
-                fitX = liveInstance.FitOffsetX;
-                fitY = liveInstance.FitOffsetY;
+                fitX = liveInstance.GetFitOffsetX(facingDirection);
+                fitY = liveInstance.GetFitOffsetY(facingDirection);
                 fitScale = Math.Clamp(liveInstance.FitScale <= 0f ? 1f : liveInstance.FitScale, 0.85f, 1.25f);
             }
 

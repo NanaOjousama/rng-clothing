@@ -27,5 +27,16 @@
   "garment.family.knit_cap": "Knit Cap",
   "garment.family.soft_cap": "Soft Cap",
   "garment.family.wide_brim_hat": "Wide-Brim Hat",
-  "tailoring.fit.label": "Hat Fit  X {{x}}  Y {{y}}  Size {{scale}}%"
+  "tailoring.fit.label": "Hat Fit  {{view}}  X {{x}}  Y {{y}}  Size {{scale}}%",
+  "tailoring.fit.view.front": "Front",
+  "tailoring.fit.view.right": "Right",
+  "tailoring.fit.view.left": "Left",
+  "tailoring.fit.view.back": "Back",
+  "tailoring.fit.view-prev": "View ◀",
+  "tailoring.fit.view-next": "View ▶",
+  "tailoring.fit.scale-down": "Scale -",
+  "tailoring.fit.scale-up": "Scale +",
+  "tailoring.fit.reset-pos": "Pos",
+  "tailoring.fit.reset-scale": "Scale",
+  "tailoring.fit.reset-all": "All"
 }
