@@ -236,3 +236,19 @@ Every accepted live milestone must immediately produce:
 - commit hash recorded in the authority document.
 
 No multi-day accepted milestone should remain only in chat or an uncommitted working tree.
+
+
+## Accepted post-recovery milestone — directional fitting
+Accepted live 2026-09-19.
+
+Commits:
+- 9f0a79cdb2cf860db4bef8d487805a2bb18d63cd
+- c85c75c1a50f3a37e4755c512bfcc897fe702940
+- 23352273b6add2f263a5e1fe829d41ea11181e6d
+
+Result:
+- Front / Right / Left / Back X/Y adjustments are independent.
+- Scale is global.
+- The fitting preview now reflects the selected direction's live offsets.
+- Build 0 warnings / 0 errors; tests 26/26 PASS.
+- User accepted the live behavior.

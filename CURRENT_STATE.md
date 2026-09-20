@@ -129,3 +129,27 @@ After every accepted live milestone:
 4. report the actual commit hash.
 
 No commit hash = not safely preserved.
+
+
+## Accepted milestone — per-direction ESM fitting
+
+Accepted live in-game on 2026-09-19.
+
+Implemented and verified:
+- independent Front / Right / Left / Back X/Y fitting offsets;
+- global scale remains shared;
+- View previous/next controls in the tailoring fitting UI;
+- per-view position reset;
+- reset-all clears all directional offsets and scale;
+- preview now reflects the selected direction's live X/Y fit values;
+- old front-only saved fit fields remain backward-compatible.
+
+Implementation commits:
+- 9f0a79cdb2cf860db4bef8d487805a2bb18d63cd — per-direction fitting controls/state
+- c85c75c1a50f3a37e4755c512bfcc897fe702940 — explicit side-view preview direction
+- 23352273b6add2f263a5e1fe829d41ea11181e6d — preview honors directional offsets
+
+Verification at acceptance:
+- ESM build: 0 warnings / 0 errors
+- ESM tests: 26/26 PASS
+- live user QC: accepted; side scaling and side X/Y both work and preview matches
