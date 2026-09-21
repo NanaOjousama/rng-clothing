@@ -30,6 +30,13 @@
     "left": "authored/templates/slouch_pl24/left.png",
     "back": "authored/templates/slouch_pl24/back.png"
   },
-  "status": "PLANNER_PROOF_NOT_RENDERED",
-  "note": "Proves template + source style donor + cross-template reusable motif can be legally planned without altering template geometry."
+  "status": "RENDERED_PROOF",
+  "note": "Rendered from locked PL24 construction, More Accessories and Stuff Beanie value-role vocabulary, and source-reconstructed Cottagecore Beret Leaf motif ink. Geometry remains locked.",
+  "renderReport": "experiments/source_template_recipe_proof/render_report.json",
+  "renderedFrames": {
+    "front": "experiments/source_template_recipe_proof/rendered/front.png",
+    "right": "experiments/source_template_recipe_proof/rendered/right.png",
+    "left": "experiments/source_template_recipe_proof/rendered/left.png",
+    "back": "experiments/source_template_recipe_proof/rendered/back.png"
+  }
 }

@@ -255,3 +255,29 @@ Validation:
 - `python3 tools/validate_source_template_generator.py` — PASS
 - `python3 tools/validate_slouch_beanie_roll_matrix.py` — PASS
 - `python3 -m unittest v5.tests.test_template_transfer` — 5/5 PASS
+
+## First rendered source-backed recipe proof — 2026-09-21
+
+The planner proof is now rendered end-to-end.
+
+Recipe:
+- construction: locked `slouch_pl24`
+- style donor: `More Accessories and Stuff::Hats::Beanie`
+- motif donor: `Cottagecore Set::Beret (Leaf)`
+- geometry policy: `LOCKED_TEMPLATE_ALPHA`
+
+Implementation:
+- renderer: `v5/source/source_backed_renderer.py`
+- proof runner: `tools/render_source_template_recipe_proof.py`
+- rendered frames: `experiments/source_template_recipe_proof/rendered/{front,right,left,back}.png`
+- report: `experiments/source_template_recipe_proof/render_report.json`
+- QC strip: `experiments/source_template_recipe_proof/rendered_strip_x8.png`
+
+Important correction discovered during proof rendering: raw source-family diffs were too broad because the Cottagecore Leaf variant also nudges an ordinary base shade (214 -> 217). The renderer now reconstructs motif ink from sparse variant-only colours, which isolates a 3x3 / 7-pixel leaf mark in every direction. Palette drift is therefore not misclassified as a transferable motif.
+
+The donor style profile changes only value-role treatment. Motif placement is mapped through the target crown/surface anchor and must fit entirely inside existing locked alpha. Every rendered view is checked against the original template alpha and rejected if any silhouette cell is added or removed.
+
+Validation:
+- `python3 tools/render_source_template_recipe_proof.py` — PASS
+- combined renderer/template/beanie/cap tests — 16/16 PASS
+- all four rendered directions preserve exact PL24 alpha geometry

@@ -1,0 +1,64 @@
+{
+  "template": "slouch_pl24",
+  "views": {
+    "front": {
+      "path": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_recipe_proof/rendered/front.png",
+      "motif": {
+        "offset": [
+          10,
+          10
+        ],
+        "cells": 7,
+        "size": [
+          3,
+          3
+        ]
+      }
+    },
+    "right": {
+      "path": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_recipe_proof/rendered/right.png",
+      "motif": {
+        "offset": [
+          11,
+          10
+        ],
+        "cells": 7,
+        "size": [
+          3,
+          3
+        ]
+      }
+    },
+    "left": {
+      "path": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_recipe_proof/rendered/left.png",
+      "motif": {
+        "offset": [
+          10,
+          10
+        ],
+        "cells": 7,
+        "size": [
+          3,
+          3
+        ]
+      }
+    },
+    "back": {
+      "path": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_recipe_proof/rendered/back.png",
+      "motif": {
+        "offset": [
+          10,
+          11
+        ],
+        "cells": 7,
+        "size": [
+          3,
+          3
+        ]
+      }
+    }
+  },
+  "styleDonor": "More Accessories and Stuff::Hats::Beanie",
+  "motifDonor": "Cottagecore Set::Beret (Leaf)",
+  "geometryPolicy": "LOCKED_TEMPLATE_ALPHA"
+}
