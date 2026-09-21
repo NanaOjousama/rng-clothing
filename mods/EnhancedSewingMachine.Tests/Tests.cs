@@ -257,6 +257,9 @@ namespace EnhancedSewingMachine.Tests
                 FitBackOffsetX = 7,
                 FitBackOffsetY = -8,
                 FitScale = 1.1f,
+                FitRightScale = 0.95f,
+                FitLeftScale = 1.2f,
+                FitBackScale = 0.9f,
                 Render = snapshot
             };
             string encoded = GarmentInstanceCodec.Encode(instance);
@@ -297,10 +300,26 @@ namespace EnhancedSewingMachine.Tests
                 && decoded.GetFitOffsetY(3) == 6
                 && decoded.GetFitOffsetX(0) == 7
                 && decoded.GetFitOffsetY(0) == -8
-                && Near(decoded.FitScale, 1.1f));
+                && Near(decoded.GetFitScale(2), 1.1f)
+                && Near(decoded.GetFitScale(1), 0.95f)
+                && Near(decoded.GetFitScale(3), 1.2f)
+                && Near(decoded.GetFitScale(0), 0.9f));
 
             GarmentInstanceData directionalFit = decoded.Clone();
             directionalFit.SetFitOffset(1, -2, 4);
+            directionalFit.SetFitScale(2, 1.25f);
+            Check("editing front scale does not change right/left/back",
+                Near(directionalFit.GetFitScale(2), 1.25f)
+                && Near(directionalFit.GetFitScale(1), 0.95f)
+                && Near(directionalFit.GetFitScale(3), 1.2f)
+                && Near(directionalFit.GetFitScale(0), 0.9f));
+            directionalFit.SetFitScale(0, 0.85f);
+            Check("editing back scale does not change front/right/left",
+                Near(directionalFit.GetFitScale(0), 0.85f)
+                && Near(directionalFit.GetFitScale(2), 1.25f)
+                && Near(directionalFit.GetFitScale(1), 0.95f)
+                && Near(directionalFit.GetFitScale(3), 1.2f));
+
             Check("editing right fit does not move front/left/back",
                 directionalFit.GetFitOffsetX(1) == -2
                 && directionalFit.GetFitOffsetY(1) == 4
@@ -310,6 +329,7 @@ namespace EnhancedSewingMachine.Tests
                 && directionalFit.GetFitOffsetY(0) == -8);
 
             directionalFit.ResetAllFitOffsets();
+            directionalFit.ResetAllFitScales();
             Check("reset all clears every directional fit offset",
                 directionalFit.GetFitOffsetX(2) == 0
                 && directionalFit.GetFitOffsetY(2) == 0
@@ -318,7 +338,11 @@ namespace EnhancedSewingMachine.Tests
                 && directionalFit.GetFitOffsetX(3) == 0
                 && directionalFit.GetFitOffsetY(3) == 0
                 && directionalFit.GetFitOffsetX(0) == 0
-                && directionalFit.GetFitOffsetY(0) == 0);
+                && directionalFit.GetFitOffsetY(0) == 0
+                && Near(directionalFit.GetFitScale(2), 1f)
+                && Near(directionalFit.GetFitScale(1), 1f)
+                && Near(directionalFit.GetFitScale(3), 1f)
+                && Near(directionalFit.GetFitScale(0), 1f));
 
             Check("invalid instance JSON fails closed",
                 !GarmentInstanceCodec.TryDecode("{bad json", out _, out _));

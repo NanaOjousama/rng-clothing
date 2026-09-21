@@ -1,0 +1,74 @@
+[
+  {
+    "appearance": "ZZ SLOUCH QC COMMON C01",
+    "tier": "Common",
+    "palette": "earth",
+    "pattern": "solid",
+    "motif": null,
+    "attachment": null,
+    "tag": "ZZ_SLOUCH_RARITY_QC_260920"
+  },
+  {
+    "appearance": "ZZ SLOUCH QC COMMON C02",
+    "tier": "Common",
+    "palette": "sage",
+    "pattern": "fine_rib",
+    "motif": null,
+    "attachment": null,
+    "tag": "ZZ_SLOUCH_RARITY_QC_260920"
+  },
+  {
+    "appearance": "ZZ SLOUCH QC UNCOMMON U01",
+    "tier": "Uncommon",
+    "palette": "navy",
+    "pattern": "twin_stripe",
+    "motif": "side_label",
+    "attachment": null,
+    "tag": "ZZ_SLOUCH_RARITY_QC_260920"
+  },
+  {
+    "appearance": "ZZ SLOUCH QC UNCOMMON U02",
+    "tier": "Uncommon",
+    "palette": "berry",
+    "pattern": "contrast_cuff",
+    "motif": "star",
+    "attachment": null,
+    "tag": "ZZ_SLOUCH_RARITY_QC_260920"
+  },
+  {
+    "appearance": "ZZ SLOUCH QC RARE R01",
+    "tier": "Rare",
+    "palette": "gold",
+    "pattern": "cable_hint",
+    "motif": "leaf_sprig",
+    "attachment": "pom_small",
+    "tag": "ZZ_SLOUCH_RARITY_QC_260920"
+  },
+  {
+    "appearance": "ZZ SLOUCH QC RARE R02",
+    "tier": "Rare",
+    "palette": "teal",
+    "pattern": "simple_jacquard",
+    "motif": "mushroom_tiny",
+    "attachment": null,
+    "tag": "ZZ_SLOUCH_RARITY_QC_260920"
+  },
+  {
+    "appearance": "ZZ SLOUCH QC EPIC E01",
+    "tier": "Epic",
+    "palette": "plum",
+    "pattern": "two_tone_block",
+    "motif": "flower_cluster_small",
+    "attachment": "pom_large",
+    "tag": "ZZ_SLOUCH_RARITY_QC_260920"
+  },
+  {
+    "appearance": "ZZ SLOUCH QC EPIC E02",
+    "tier": "Epic",
+    "palette": "frost",
+    "pattern": "simple_jacquard",
+    "motif": "moon",
+    "attachment": "pom_small",
+    "tag": "ZZ_SLOUCH_RARITY_QC_260920"
+  }
+]

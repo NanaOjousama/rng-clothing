@@ -220,3 +220,27 @@ Validation:
 - `python3 -m unittest v5.tests.test_source_beanie_family` — 4/4 PASS
 
 This proof is generator-ready but remains QC, not production, until the user accepts its in-game silhouette/fit and the construction variants are expanded from the baseline template.
+
+## ESM per-direction fit scale fix + Slouch rarity FS QC — 2026-09-20
+
+The deferred fitting coupling bug is fixed. Root cause: X/Y offsets were already stored per facing direction, but scale still used one global `FitScale`, so changing Front scale also changed Back/Right/Left. ESM now stores and renders scale independently for Front, Right, Left and Back. The legacy `FitScale` field remains the Front/down value for save compatibility; new directional scale fields default to 1.0 when absent in older saves.
+
+Affected source:
+- `mods/EnhancedSewingMachine/GarmentRuntime/GarmentInstanceData.cs`
+- `mods/EnhancedSewingMachine/GarmentRuntime/GarmentRuntimeHost.cs`
+- `mods/EnhancedSewingMachine/EnhancedTailoring/EnhancedTailoringShell.cs`
+- `mods/EnhancedSewingMachine.Tests/Tests.cs`
+
+Verification after rebuilding both projects:
+- ESM Release build: 0 warnings / 0 errors; ModBuildConfig redeployed it to the live Mods folder.
+- ESM tests: ALL PASS, including explicit Front-scale isolation and Back-scale isolation plus existing X/Y independence.
+
+A temporary Fashion Sense rarity-scope pack is built and installed at `Mods/RNG-Slouch-Rarity-QC-260920`. Canonical rebuild script: `tools/build_slouch_rarity_fs_qc.py`. Unique search tag: `ZZ_SLOUCH_RARITY_QC_260920`.
+
+The QC pack contains 8 generator-styled slouch beanies, two per tier:
+- Common C01 solid earth; Common C02 sage fine-rib
+- Uncommon U01 twin-stripe + side label; Uncommon U02 contrast cuff + star
+- Rare R01 cable hint + leaf sprig + small pom; Rare R02 simple jacquard + mushroom
+- Epic E01 two-tone + floral cluster + large pom; Epic E02 simple jacquard + moon + small pom
+
+All eight use the V5-translated slouch construction base and 20x20 Front/Right/Left/Back Fashion Sense frames. Pack validation confirms exactly 2 Common / 2 Uncommon / 2 Rare / 2 Epic and the unique QC tag on every appearance. `rarity_contact_sheet_x8.png` is included for quick review. The running-game QC bridge was offline when built, so Fashion Sense will discover the newly installed pack on next launch rather than via hot reload.

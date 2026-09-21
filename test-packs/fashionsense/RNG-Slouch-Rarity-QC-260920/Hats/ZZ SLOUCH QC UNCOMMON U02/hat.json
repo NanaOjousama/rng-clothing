@@ -1,0 +1,76 @@
+{
+  "Name": "ZZ SLOUCH QC UNCOMMON U02",
+  "Tags": [
+    "ZZ_SLOUCH_RARITY_QC_260920",
+    "SLOUCH",
+    "RARITY QC",
+    "Uncommon",
+    "contrast_cuff",
+    "berry",
+    "star"
+  ],
+  "FrontHat": {
+    "DisableGrayscale": true,
+    "HideHair": false,
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": -2
+    }
+  },
+  "RightHat": {
+    "DisableGrayscale": true,
+    "HideHair": false,
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 20
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": -2
+    }
+  },
+  "LeftHat": {
+    "DisableGrayscale": true,
+    "HideHair": false,
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 40
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": -2
+    }
+  },
+  "BackHat": {
+    "DisableGrayscale": true,
+    "HideHair": false,
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 60
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": -2
+    }
+  }
+}

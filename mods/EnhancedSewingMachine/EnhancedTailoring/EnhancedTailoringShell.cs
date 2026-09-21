@@ -165,20 +165,24 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 else if (fitId == FitRightId) dx = 1;
                 else if (fitId == FitScaleDownId)
                 {
-                    float currentScale = fitInstance.FitScale <= 0f ? 1f : fitInstance.FitScale;
-                    fitInstance.FitScale = Math.Clamp(
-                        MathF.Round((currentScale - FitScaleStep) * 100f) / 100f,
-                        FitScaleMin,
-                        FitScaleMax);
+                    float currentScale = fitInstance.GetFitScale(s.FitFacingDirection);
+                    fitInstance.SetFitScale(
+                        s.FitFacingDirection,
+                        Math.Clamp(
+                            MathF.Round((currentScale - FitScaleStep) * 100f) / 100f,
+                            FitScaleMin,
+                            FitScaleMax));
                     changed = true;
                 }
                 else if (fitId == FitScaleUpId)
                 {
-                    float currentScale = fitInstance.FitScale <= 0f ? 1f : fitInstance.FitScale;
-                    fitInstance.FitScale = Math.Clamp(
-                        MathF.Round((currentScale + FitScaleStep) * 100f) / 100f,
-                        FitScaleMin,
-                        FitScaleMax);
+                    float currentScale = fitInstance.GetFitScale(s.FitFacingDirection);
+                    fitInstance.SetFitScale(
+                        s.FitFacingDirection,
+                        Math.Clamp(
+                            MathF.Round((currentScale + FitScaleStep) * 100f) / 100f,
+                            FitScaleMin,
+                            FitScaleMax));
                     changed = true;
                 }
                 else if (fitId == FitResetPosId)
@@ -188,13 +192,13 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 }
                 else if (fitId == FitResetScaleId)
                 {
-                    fitInstance.FitScale = 1f;
+                    fitInstance.SetFitScale(s.FitFacingDirection, 1f);
                     changed = true;
                 }
                 else if (fitId == FitResetAllId)
                 {
                     fitInstance.ResetAllFitOffsets();
-                    fitInstance.FitScale = 1f;
+                    fitInstance.ResetAllFitScales();
                     changed = true;
                 }
                 else if (fitId == FitViewPrevId)
@@ -347,7 +351,7 @@ namespace EnhancedSewingMachine.EnhancedTailoring
             if (Game1.player.hat.Value is Hat fitHat
                 && this.runtime.TryReadInstance(fitHat, out GarmentInstanceData fitInstance))
             {
-                float displayScale = fitInstance.FitScale <= 0f ? 1f : fitInstance.FitScale;
+                float displayScale = fitInstance.GetFitScale(s.FitFacingDirection);
                 int fitX = fitInstance.GetFitOffsetX(s.FitFacingDirection);
                 int fitY = fitInstance.GetFitOffsetY(s.FitFacingDirection);
                 string fitLabel = this.helper.Translation.Get(

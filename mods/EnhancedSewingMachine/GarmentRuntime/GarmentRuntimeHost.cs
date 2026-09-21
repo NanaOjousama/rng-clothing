@@ -159,7 +159,7 @@ namespace EnhancedSewingMachine.GarmentRuntime
             {
                 fitX = liveInstance.GetFitOffsetX(facingDirection);
                 fitY = liveInstance.GetFitOffsetY(facingDirection);
-                fitScale = Math.Clamp(liveInstance.FitScale <= 0f ? 1f : liveInstance.FitScale, 0.85f, 1.25f);
+                fitScale = Math.Clamp(liveInstance.GetFitScale(facingDirection), 0.85f, 1.25f);
             }
 
             Vector2 drawPosition = PlacementMath.GetCustomDrawPosition(

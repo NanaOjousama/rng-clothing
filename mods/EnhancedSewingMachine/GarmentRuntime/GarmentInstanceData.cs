@@ -30,7 +30,39 @@ namespace EnhancedSewingMachine.GarmentRuntime
         public int FitLeftOffsetY { get; set; }
         public int FitBackOffsetX { get; set; }
         public int FitBackOffsetY { get; set; }
+        // Front/down view keeps FitScale for save compatibility; other views own their scale.
         public float FitScale { get; set; } = 1f;
+        public float FitRightScale { get; set; } = 1f;
+        public float FitLeftScale { get; set; } = 1f;
+        public float FitBackScale { get; set; } = 1f;
+
+        public float GetFitScale(int facingDirection)
+            => facingDirection switch
+            {
+                0 => this.FitBackScale <= 0f ? 1f : this.FitBackScale,
+                1 => this.FitRightScale <= 0f ? 1f : this.FitRightScale,
+                3 => this.FitLeftScale <= 0f ? 1f : this.FitLeftScale,
+                _ => this.FitScale <= 0f ? 1f : this.FitScale
+            };
+
+        public void SetFitScale(int facingDirection, float scale)
+        {
+            switch (facingDirection)
+            {
+                case 0: this.FitBackScale = scale; break;
+                case 1: this.FitRightScale = scale; break;
+                case 3: this.FitLeftScale = scale; break;
+                default: this.FitScale = scale; break;
+            }
+        }
+
+        public void ResetAllFitScales()
+        {
+            this.FitScale = 1f;
+            this.FitRightScale = 1f;
+            this.FitLeftScale = 1f;
+            this.FitBackScale = 1f;
+        }
 
         public int GetFitOffsetX(int facingDirection)
             => facingDirection switch
@@ -122,6 +154,9 @@ namespace EnhancedSewingMachine.GarmentRuntime
                 FitBackOffsetX = this.FitBackOffsetX,
                 FitBackOffsetY = this.FitBackOffsetY,
                 FitScale = this.FitScale,
+                FitRightScale = this.FitRightScale,
+                FitLeftScale = this.FitLeftScale,
+                FitBackScale = this.FitBackScale,
                 Render = this.Render?.Clone()
             };
     }

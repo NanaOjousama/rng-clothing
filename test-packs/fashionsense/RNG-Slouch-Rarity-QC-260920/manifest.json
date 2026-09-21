@@ -1,0 +1,12 @@
+{
+  "Name": "ZZ Slouch Rarity QC 260920",
+  "Author": "RNG Clothing QC",
+  "Version": "1.0.0",
+  "Description": "Temporary rarity-scope QC for generator-styled slouch beanies.",
+  "UniqueID": "RNGClothing.FashionSense.SlouchRarityQC260920",
+  "UpdateKeys": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "7.5.0"
+  }
+}
