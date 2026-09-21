@@ -335,3 +335,38 @@ Entries:
 - SLB3 E2 Jade Jacquard Botanical
 
 All 8 entries contain the `SLB3` Fashion Sense tag. Frames are 24x24 and use the locked PL24 rarity-batch art. Initial HeadPosition follows the previously tested slouch-family directional convention; in-game QC remains authority for final fit.
+
+## SLB4 round-trip slouch QC — 2026-09-21
+
+SLB3 exposed two Fashion Sense-only presentation bugs:
+- direct 24x24 FS export drew larger than the ESM presentation because the FS pack had no matching scale contract;
+- surface/motif placement was not direction-aware enough, so front-owned motifs appeared like stickers that persisted on side/back views.
+
+SLB4 is an A/B round-trip QC pack with one pair per rarity:
+- C2 Common
+- U1 Uncommon
+- R1 Rare
+- E1 Epic
+
+For each pair:
+- A = direct SLB3 behavior
+- B = corrected round-trip behavior
+
+Corrected B contract:
+- Fashion Sense Scale = 3.3333333333333335, matching ESM 0.833333 presentation against FS base scale 4;
+- exact locked PL24 alpha is preserved;
+- decorative pattern/motif pixels may only modify interior alpha cells, never the silhouette boundary;
+- front-owned motifs are authored only on the Front frame for this diagnostic batch, and are absent on Right/Left/Back instead of persisting like a screen-space sticker.
+
+Validation:
+- 16/16 corrected B directional frames preserve exact PL24 alpha;
+- zero decorative changes touch the alpha boundary;
+- motif placement reports contain Front only for motif-bearing variants;
+- live Fashion Sense pack contains 8 searchable SLB4 A/B hats.
+
+Source:
+- tools/build_slb4_roundtrip_qc.py
+- experiments/source_template_roundtrip_slb4/
+
+Live pack:
+/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/RNG-SLB4-RoundTrip-QC/

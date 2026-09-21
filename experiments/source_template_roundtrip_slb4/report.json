@@ -1,0 +1,110 @@
+{
+  "tag": "SLB4",
+  "pairs": [
+    {
+      "id": "C2_STONE_FINE_RIB",
+      "rarity": "Common",
+      "A": "direct SLB3 export",
+      "B": "roundtrip fixed",
+      "B_scale": 3.3333333333333335,
+      "motif_contract": "front-owned; absent on side/back",
+      "surface_contract": "pattern/motif interior-safe; outline alpha cells untouched",
+      "placements": {}
+    },
+    {
+      "id": "U1_SAGE_SEED_LEAF",
+      "rarity": "Uncommon",
+      "A": "direct SLB3 export",
+      "B": "roundtrip fixed",
+      "B_scale": 3.3333333333333335,
+      "motif_contract": "front-owned; absent on side/back",
+      "surface_contract": "pattern/motif interior-safe; outline alpha cells untouched",
+      "placements": {
+        "front": [
+          {
+            "asset": "leaf_sprig",
+            "offset": [
+              9,
+              9
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          }
+        ]
+      }
+    },
+    {
+      "id": "R1_AUTUMN_JACQUARD_FLOWER",
+      "rarity": "Rare",
+      "A": "direct SLB3 export",
+      "B": "roundtrip fixed",
+      "B_scale": 3.3333333333333335,
+      "motif_contract": "front-owned; absent on side/back",
+      "surface_contract": "pattern/motif interior-safe; outline alpha cells untouched",
+      "placements": {
+        "front": [
+          {
+            "asset": "flower_cluster_small",
+            "offset": [
+              8,
+              10
+            ],
+            "size": [
+              7,
+              5
+            ],
+            "cells": 13
+          }
+        ]
+      }
+    },
+    {
+      "id": "E1_ARCANE_CABLE_STRIPE_BOTANICAL",
+      "rarity": "Epic",
+      "A": "direct SLB3 export",
+      "B": "roundtrip fixed",
+      "B_scale": 3.3333333333333335,
+      "motif_contract": "front-owned; absent on side/back",
+      "surface_contract": "pattern/motif interior-safe; outline alpha cells untouched",
+      "placements": {
+        "front": [
+          {
+            "asset": "leaf_sprig",
+            "offset": [
+              7,
+              9
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          },
+          {
+            "asset": "flower_tiny",
+            "offset": [
+              12,
+              9
+            ],
+            "size": [
+              5,
+              5
+            ],
+            "cells": 13
+          }
+        ]
+      }
+    }
+  ],
+  "fsScale": 3.3333333333333335,
+  "whyScale": "24px PL24 construction matched to ESM 0.833333 presentation: Fashion Sense base scale 4 x 0.833333 = 3.333333",
+  "directions": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ]
+}
