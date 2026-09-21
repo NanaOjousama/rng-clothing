@@ -223,3 +223,35 @@ Verification after rebuilding both projects:
 The slouch-specific generic V5/`BRIMLESS_HAT` style-translation proof and every rarity-QC asset built from it were deleted after visual regression. The roll matrix, 24 exclusions, motif library, and ESM per-direction fitting fix are retained.
 
 Hard guard: **do not use generic `BRIMLESS_HAT` normalization or the removed generic V5 headwear style-translation path for slouch beanies.** Slouch construction is authoritative; future outline/shading work must preserve that geometry and be QC-approved before generation uses it.
+
+## Source-backed template generator — 2026-09-20
+
+New generator architecture is now defined and implemented around **template-owned geometry + deconstructed source-owned variation**.
+
+Authoritative pieces:
+- contract/planner: `v5/source/template_transfer.py`
+- transfer catalog builder: `tools/build_source_transfer_library.py`
+- transfer catalog: `source_catalog/SOURCE_TRANSFER_LIBRARY.json`
+- human-readable transfer inventory: `source_catalog/SOURCE_TRANSFER_LIBRARY.md`
+- validator: `tools/validate_source_template_generator.py`
+- architecture doc: `docs/source_backed/SOURCE_BACKED_TEMPLATE_GENERATOR.md`
+- template registry: `generator/data/templates/index.json`
+
+Current source reclassification covers all 319 catalogued Fashion Sense appearances and 53 deconstructed source families. It exposes 53 family style donors, 12 reconstruction-proven FAMILY_REUSABLE parts, 43 SAME_BASE_ONLY parts, and 108 ALTERNATE_CONSTRUCTION/reference-only variants. Cross-template reuse now requires an explicit semantic zone/anchor on the target template; REUSABLE no longer means “paint these source coordinates anywhere.”
+
+### First registered construction template: slouch_pl24
+
+The approved coherent PixelLab 24px slouch construction is now copied into tracked template authority at `authored/templates/slouch_pl24/`: Front=0, Right=2, Left=6, Back=4.
+
+Contract: `generator/data/templates/slouch_pl24.json`.
+
+All four files are SHA-256 pinned and their alpha geometry is independently hashed. The hand-edited curved front band, head contact, rear slouch mass and directional silhouette are locked. The contract forbids resampling and generic normalization. Base styling may not change alpha; only contract-approved attachments/hardware may add alpha, and never remove locked base cells.
+
+The slouch roll matrix now points to this template contract plus `SOURCE_TRANSFER_LIBRARY.json`. Palette/tone, material/pattern, motif, attachment and hardware variation are intended to come from approved deconstructed source vocabulary or the existing slouch motif library, filtered by template compatibility and the 24 slouch exclusions.
+
+The temporary RD-based/resampled `SLB2` QC builder and live pack were deleted; they are not authoritative evidence.
+
+Validation:
+- `python3 tools/validate_source_template_generator.py` — PASS
+- `python3 tools/validate_slouch_beanie_roll_matrix.py` — PASS
+- `python3 -m unittest v5.tests.test_template_transfer` — 5/5 PASS

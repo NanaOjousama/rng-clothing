@@ -1,0 +1,13 @@
+{
+  "schema": "source-backed-template-registry/v1",
+  "policy": "swap construction by template contract; generator transfer logic stays shared",
+  "templates": {
+    "slouch_pl24": {
+      "contract": "generator/data/templates/slouch_pl24.json",
+      "family": "slouch_beanie",
+      "slot": "HEAD",
+      "status": "QC_READY",
+      "constructionAuthority": "approved PixelLab coherent frames 0/2/6/4"
+    }
+  }
+}

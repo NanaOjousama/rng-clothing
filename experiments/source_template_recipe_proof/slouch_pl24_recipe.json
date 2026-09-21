@@ -1,0 +1,35 @@
+{
+  "schema": "source-backed-generation-recipe/v1",
+  "template": "slouch_pl24",
+  "styleDonor": "More Accessories and Stuff::Hats::Beanie",
+  "parts": [
+    {
+      "name": "Beret (Leaf)",
+      "kind": "MOTIF",
+      "pack": "Cottagecore Set",
+      "family": "Beret",
+      "requiresZone": "surface"
+    }
+  ],
+  "credits": [
+    {
+      "author": "plurffle",
+      "pack": "More Accessories and Stuff",
+      "asset": "Beanie style profile"
+    },
+    {
+      "author": "plurffle",
+      "pack": "Cottagecore Set",
+      "asset": "Beret (Leaf)"
+    }
+  ],
+  "geometryPolicy": "LOCKED_TEMPLATE_ALPHA",
+  "neutralSource": {
+    "front": "authored/templates/slouch_pl24/front.png",
+    "right": "authored/templates/slouch_pl24/right.png",
+    "left": "authored/templates/slouch_pl24/left.png",
+    "back": "authored/templates/slouch_pl24/back.png"
+  },
+  "status": "PLANNER_PROOF_NOT_RENDERED",
+  "note": "Proves template + source style donor + cross-template reusable motif can be legally planned without altering template geometry."
+}

@@ -635,7 +635,7 @@
   ],
   "renderPolicy": {
     "status": "SLOUCH_SPECIFIC_RENDERER_REQUIRED",
-    "constructionAuthority": "slouch reference + slouch roll matrix",
+    "constructionAuthority": "generator/data/templates/slouch_pl24.json (approved PL frames 0/2/6/4)",
     "forbidGenericNormalization": [
       "BRIMLESS_HAT",
       "generic V5 headwear style translation"
@@ -647,6 +647,9 @@
       "side-view rear droop",
       "construction-defined asymmetry"
     ],
-    "styleRule": "Outline/shading must be slouch-specific and QC-approved; styling may not rewrite the locked slouch silhouette."
-  }
+    "styleRule": "Outline/shading must be slouch-specific and QC-approved; styling may not rewrite the locked slouch silhouette.",
+    "styleAuthority": "approved deconstructed mod-author source through source transfer library; target template alpha remains locked"
+  },
+  "templateContract": "generator/data/templates/slouch_pl24.json",
+  "sourceTransferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
 }

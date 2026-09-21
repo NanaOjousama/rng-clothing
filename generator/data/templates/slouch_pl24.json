@@ -1,0 +1,67 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "slouch_pl24",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "slouch_beanie",
+  "frameSize": [24, 24],
+  "sourceIdentity": {
+    "kind": "USER_APPROVED_CONSTRUCTION_TEMPLATE",
+    "name": "PixelLab coherent slouch 24 hand-edited",
+    "cardinalFrames": {"front": 0, "right": 2, "left": 6, "back": 4}
+  },
+  "requiredInputs": [
+    "four approved cardinal construction frames",
+    "exact frame hashes and alpha-geometry hashes",
+    "semantic zones and placement anchors",
+    "source transfer library built from approved mod-author sources",
+    "roll matrix plus incompatibility/exclusion rules",
+    "wear/export contract for the target runtime"
+  ],
+  "frames": {
+    "front": {"path": "authored/templates/slouch_pl24/front.png", "sha256": "aec66acace1610f448a5b8f7dec89e46d60e42ac1813d8df1ce915438828a34a", "alphaSha256": "7b3a8d4bc85d85656420a3e340d8c0a31cf6294cbf1f70c856b069b347c45450"},
+    "right": {"path": "authored/templates/slouch_pl24/right.png", "sha256": "cb321636a3694125c1e8e0b92a53b296dac9a4f11143f3e6b835c4916a8580ec", "alphaSha256": "919abc8451bf124a6c528d8cb2865a528104a2b41f9e9a3085215304853e69b5"},
+    "left": {"path": "authored/templates/slouch_pl24/left.png", "sha256": "4f6d65a8974c3085671e688baf868b4a7ab8752ed3b838e413d5f54f2795222f", "alphaSha256": "2ac132c24ecd25665df87a05a2d8c84323e6e4cbfeac63811996dbce8f80a216"},
+    "back": {"path": "authored/templates/slouch_pl24/back.png", "sha256": "d7cb2e51bde209cf80a486ac6ccb3f195cc80631f78a4736f091eb344b35463c", "alphaSha256": "8b19627ed153dc589437a559ccddcdf28d0e23a3ee00fae6dbf538399f72af4f"}
+  },
+  "geometryLock": {
+    "authority": "template frames above",
+    "requiredViews": ["front", "right", "left", "back"],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT or HARDWARE only, after explicit edge-fit validation",
+    "notes": "The hand-edited curved front band, backward slouch mass, contact edge and directional silhouette are locked construction."
+  },
+  "zones": {
+    "surface": {"purpose": "palette/material/pattern and in-silhouette motifs", "geometry": "opaque template cells only"},
+    "band": {"purpose": "cuff/band motifs and labels", "geometry": "lower authored band region; follow source pixels, never flatten the curve"},
+    "crown": {"purpose": "small body/crown motifs and pattern treatment", "geometry": "opaque crown cells above band"},
+    "rear_slouch": {"purpose": "slouch-sensitive region; decorations restricted", "geometry": "rear/top mass defined by each authored view"},
+    "attachment_edge": {"purpose": "pom, label, hardware or other explicitly additive pieces", "geometry": "edge anchors only; locked base alpha may not be removed"}
+  },
+  "anchors": {
+    "front": {"band_center": [11, 19], "crown_center": [11, 11], "attachment_edge": [15, 5]},
+    "right": {"band_center": [11, 20], "crown_center": [12, 11], "attachment_edge": [17, 5]},
+    "left": {"band_center": [12, 20], "crown_center": [11, 11], "attachment_edge": [7, 5]},
+    "back": {"band_center": [11, 21], "crown_center": [11, 12], "attachment_edge": [15, 6]}
+  },
+  "allowedPartKinds": ["STYLE_PROFILE", "MATERIAL_PATTERN", "MOTIF", "ATTACHMENT", "HARDWARE", "REUSABLE_COMPONENT"],
+  "safeTransferRules": [
+    "construction template owns alpha/silhouette and direction-specific shape",
+    "style donors may change colour/value treatment but never alpha",
+    "surface patterns and motifs must land only on declared opaque zones",
+    "attachments/hardware may add alpha only at declared attachment edges",
+    "all reusable source components require a target semantic zone/anchor",
+    "every neutral render must round-trip to the construction template before variation is accepted"
+  ],
+  "incompatibilities": [
+    {"scope": "ALTERNATE_CONSTRUCTION", "deny": true, "reason": "different source geometry must become its own template"},
+    {"scope": "SAME_BASE_ONLY", "deny": true, "reason": "base-specific authored delta cannot transfer to PL slouch construction"},
+    {"feature": "generic_normalization", "deny": true, "reason": "generic brimless/V5 normalization previously regressed approved geometry"},
+    {"feature": "resample_to_fit", "deny": true, "reason": "resampling can flatten the hand-edited curved band and slouch silhouette"},
+    {"feature": "blind_source_coordinates", "deny": true, "reason": "cross-template parts must map through semantic zones/anchors"}
+  ],
+  "rollMatrix": "generator/data/headwear/slouch_beanie_roll_matrix.json",
+  "motifLibrary": "authored/motifs/slouch_beanie_v1/manifest.json"
+}
