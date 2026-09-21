@@ -181,3 +181,15 @@ Verification:
 - live QC of the same source-backed construction: accepted
 
 The production registry entry requires the next game restart to be loaded into the live ESM registry.
+
+## Slouch Beanie generator matrix — 2026-09-20
+
+PixelLab 24px multi-direction slouch (`experiments/slouch_beanie_compare/pixellab/pl_24_sheet.png`) is now frozen as **CONSTRUCTION-ONLY** reference. Cardinal source frames are Front=0, Right=2, Back=4, Left=6. It is useful for coherent slouch geometry, angle, backward drape, and band placement, but its outline/shading and current live-QC size are explicitly not production targets.
+
+Canonical generator data now lives at `generator/data/headwear/slouch_beanie_roll_matrix.json`. It defines weighted rolls for presentation lean (soft preference, never a hard gender lock), slouch depth, band/cuff type, drape, crown shape, opening fit, knit structure, pattern, motif, decoration style, and motif placement, plus rarity guidance and 17 compatibility/exclusion rules. Final production art must inherit the accepted generator beanie outline and shading language.
+
+Validation command: `python3 tools/validate_slouch_beanie_roll_matrix.py`.
+
+### Open ESM fitting regression
+
+During 2026-09-20 slouch QC, adjusting the Front fitting view was observed to affect Back. Treat this as an open directional-fit persistence/mapping regression even though the 2026-09-19 per-direction fitting milestone had previously passed live QC. Do not assume all four fit buckets are independent again until Front/Right/Left/Back save/load isolation is re-verified.

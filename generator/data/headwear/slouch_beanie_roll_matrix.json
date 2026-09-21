@@ -1,0 +1,482 @@
+{
+  "schemaVersion": 1,
+  "id": "slouch_beanie_v1",
+  "family": "beanie",
+  "construction": "slouch_beanie",
+  "status": "ROLL_MATRIX_READY_CONSTRUCTION_ART_PENDING",
+  "reference": {
+    "role": "CONSTRUCTION_ONLY",
+    "pixellab24": "experiments/slouch_beanie_compare/pixellab/pl_24_sheet.png",
+    "cardinalFrames": {
+      "front": 0,
+      "right": 2,
+      "back": 4,
+      "left": 6
+    },
+    "rule": "Use PixelLab only for silhouette/drape/angle reference. Final outline, shading and polish inherit from the accepted generator beanie style."
+  },
+  "rollOrder": [
+    "presentationLean",
+    "slouchDepth",
+    "bandType",
+    "drapeDirection",
+    "crownShape",
+    "openingFit",
+    "knitStructure",
+    "pattern",
+    "motif",
+    "decorationStyle",
+    "motifPlacement",
+    "palette"
+  ],
+  "axes": {
+    "presentationLean": {
+      "neutral": 60,
+      "masculine_lean": 20,
+      "feminine_lean": 20
+    },
+    "slouchDepth": {
+      "micro": 10,
+      "relaxed": 28,
+      "medium": 32,
+      "deep": 20,
+      "extra": 10
+    },
+    "bandType": {
+      "none": 10,
+      "narrow_cuff": 18,
+      "standard_cuff": 36,
+      "deep_cuff": 18,
+      "rolled_cuff": 12,
+      "double_roll": 6
+    },
+    "drapeDirection": {
+      "back_center": 56,
+      "soft_back_left": 12,
+      "soft_back_right": 12,
+      "deep_back": 20
+    },
+    "crownShape": {
+      "rounded": 34,
+      "tapered": 18,
+      "elongated": 18,
+      "pouch": 18,
+      "gathered": 12
+    },
+    "openingFit": {
+      "snug": 30,
+      "normal": 50,
+      "relaxed": 20
+    },
+    "knitStructure": {
+      "plain": 18,
+      "fine_rib": 18,
+      "wide_rib": 14,
+      "seed": 10,
+      "cable": 10,
+      "waffle": 8,
+      "chunky": 10,
+      "jersey": 6,
+      "brushed": 6
+    },
+    "pattern": {
+      "solid": 34,
+      "single_stripe": 14,
+      "twin_stripe": 12,
+      "contrast_cuff": 12,
+      "two_tone_block": 8,
+      "twist_stripe": 6,
+      "simple_jacquard": 6,
+      "cable_plus_stripe": 3,
+      "heather": 5
+    },
+    "motif": {
+      "none": 34,
+      "flower_tiny": 8,
+      "flower_cluster_small": 4,
+      "leaf": 8,
+      "star": 6,
+      "moon": 4,
+      "heart": 5,
+      "snowflake": 4,
+      "geom_simple": 6,
+      "animal_tiny": 3,
+      "mushroom_tiny": 3,
+      "badge_small": 5,
+      "patch_rect": 4,
+      "patch_square": 2,
+      "tag_side": 4,
+      "initial_rune": 4
+    },
+    "decorationStyle": {
+      "none": 34,
+      "direct_stitch": 28,
+      "woven_patch": 10,
+      "leather_patch": 6,
+      "side_label": 8,
+      "knit_in": 7,
+      "contrast_stitch": 7
+    },
+    "motifPlacement": {
+      "none": 34,
+      "cuff_front_center": 18,
+      "cuff_front_offset_left": 5,
+      "cuff_front_offset_right": 5,
+      "cuff_side_left": 6,
+      "cuff_side_right": 6,
+      "cuff_back_center": 2,
+      "body_lower_front": 8,
+      "body_front_offset_left": 4,
+      "body_front_offset_right": 4,
+      "body_side_left": 3,
+      "body_side_right": 3,
+      "crown_front": 2
+    }
+  },
+  "presentationModifiers": {
+    "neutral": {
+      "prefer": [
+        "solid",
+        "fine_rib",
+        "standard_cuff",
+        "back_center"
+      ],
+      "avoidHardLocks": true
+    },
+    "masculine_lean": {
+      "prefer": [
+        "solid",
+        "plain",
+        "fine_rib",
+        "wide_rib",
+        "seed",
+        "badge_small",
+        "tag_side",
+        "leather_patch"
+      ],
+      "avoidHardLocks": true
+    },
+    "feminine_lean": {
+      "prefer": [
+        "cable",
+        "seed",
+        "flower_tiny",
+        "flower_cluster_small",
+        "leaf",
+        "heart",
+        "direct_stitch"
+      ],
+      "avoidHardLocks": true
+    }
+  },
+  "exclusions": [
+    {
+      "when": {
+        "bandType": "none"
+      },
+      "disallow": {
+        "motifPlacement": [
+          "cuff_front_center",
+          "cuff_front_offset_left",
+          "cuff_front_offset_right",
+          "cuff_side_left",
+          "cuff_side_right",
+          "cuff_back_center"
+        ],
+        "pattern": [
+          "contrast_cuff"
+        ]
+      }
+    },
+    {
+      "when": {
+        "motif": "none"
+      },
+      "force": {
+        "decorationStyle": "none",
+        "motifPlacement": "none"
+      }
+    },
+    {
+      "whenNot": {
+        "motif": "none"
+      },
+      "disallow": {
+        "decorationStyle": [
+          "none"
+        ],
+        "motifPlacement": [
+          "none"
+        ]
+      }
+    },
+    {
+      "when": {
+        "decorationStyle": "side_label"
+      },
+      "allowOnly": {
+        "motifPlacement": [
+          "cuff_side_left",
+          "cuff_side_right",
+          "body_side_left",
+          "body_side_right"
+        ]
+      }
+    },
+    {
+      "when": {
+        "decorationStyle": "leather_patch"
+      },
+      "allowOnly": {
+        "motifPlacement": [
+          "cuff_front_center",
+          "cuff_front_offset_left",
+          "cuff_front_offset_right",
+          "body_lower_front"
+        ]
+      }
+    },
+    {
+      "when": {
+        "motif": [
+          "flower_cluster_small",
+          "patch_rect",
+          "patch_square",
+          "badge_small"
+        ]
+      },
+      "disallow": {
+        "motifPlacement": [
+          "crown_front",
+          "body_side_left",
+          "body_side_right"
+        ]
+      }
+    },
+    {
+      "when": {
+        "slouchDepth": "extra"
+      },
+      "disallow": {
+        "motifPlacement": [
+          "crown_front",
+          "body_side_left",
+          "body_side_right"
+        ],
+        "pattern": [
+          "simple_jacquard",
+          "cable_plus_stripe"
+        ]
+      },
+      "reduce": [
+        "large_patch",
+        "busy_surface"
+      ]
+    },
+    {
+      "when": {
+        "slouchDepth": "micro"
+      },
+      "disallow": {
+        "drapeDirection": [
+          "deep_back"
+        ],
+        "crownShape": [
+          "pouch"
+        ]
+      }
+    },
+    {
+      "when": {
+        "crownShape": "pouch"
+      },
+      "disallow": {
+        "bandType": [
+          "double_roll"
+        ],
+        "pattern": [
+          "cable_plus_stripe"
+        ],
+        "knitStructure": [
+          "chunky"
+        ]
+      }
+    },
+    {
+      "when": {
+        "crownShape": "gathered"
+      },
+      "disallow": {
+        "pattern": [
+          "twist_stripe"
+        ],
+        "motifPlacement": [
+          "crown_front"
+        ]
+      }
+    },
+    {
+      "when": {
+        "knitStructure": "cable"
+      },
+      "disallow": {
+        "pattern": [
+          "simple_jacquard",
+          "twist_stripe"
+        ]
+      }
+    },
+    {
+      "when": {
+        "knitStructure": "chunky"
+      },
+      "disallow": {
+        "pattern": [
+          "simple_jacquard",
+          "twist_stripe"
+        ],
+        "motif": [
+          "flower_cluster_small"
+        ]
+      }
+    },
+    {
+      "when": {
+        "knitStructure": "jersey"
+      },
+      "disallow": {
+        "bandType": [
+          "double_roll"
+        ],
+        "decorationStyle": [
+          "leather_patch"
+        ]
+      }
+    },
+    {
+      "when": {
+        "pattern": "simple_jacquard"
+      },
+      "disallow": {
+        "slouchDepth": [
+          "extra"
+        ],
+        "knitStructure": [
+          "cable",
+          "chunky"
+        ],
+        "motifPlacement": [
+          "crown_front"
+        ]
+      }
+    },
+    {
+      "when": {
+        "pattern": "cable_plus_stripe"
+      },
+      "allowOnly": {
+        "slouchDepth": [
+          "relaxed",
+          "medium"
+        ],
+        "bandType": [
+          "standard_cuff",
+          "deep_cuff"
+        ],
+        "motif": [
+          "none",
+          "star",
+          "moon",
+          "leaf",
+          "initial_rune"
+        ]
+      }
+    },
+    {
+      "when": {
+        "openingFit": "relaxed"
+      },
+      "disallow": {
+        "bandType": [
+          "double_roll"
+        ],
+        "slouchDepth": [
+          "extra"
+        ]
+      }
+    },
+    {
+      "when": {
+        "openingFit": "snug",
+        "slouchDepth": "extra"
+      },
+      "disallow": {
+        "drapeDirection": [
+          "deep_back"
+        ]
+      }
+    }
+  ],
+  "rarityGuidance": {
+    "common": [
+      "solid",
+      "plain",
+      "fine_rib",
+      "wide_rib",
+      "standard_cuff",
+      "narrow_cuff",
+      "none",
+      "relaxed",
+      "medium"
+    ],
+    "uncommon": [
+      "seed",
+      "waffle",
+      "twin_stripe",
+      "two_tone_block",
+      "deep_cuff",
+      "rolled_cuff",
+      "leaf",
+      "star",
+      "badge_small"
+    ],
+    "rare": [
+      "cable",
+      "simple_jacquard",
+      "flower_cluster_small",
+      "leather_patch",
+      "gathered",
+      "extra"
+    ],
+    "epic": [
+      "cable_plus_stripe",
+      "curated_extra_slouch",
+      "extended_botanical"
+    ]
+  },
+  "placementRules": {
+    "stable": [
+      "cuff_front_center",
+      "cuff_front_offset_left",
+      "cuff_front_offset_right",
+      "cuff_side_left",
+      "cuff_side_right",
+      "body_lower_front"
+    ],
+    "unstable": [
+      "crown_front",
+      "deep_rear_slouch_fold"
+    ],
+    "never": [
+      "deep_rear_slouch_fold",
+      "across_fold_line"
+    ],
+    "note": "Large or detailed motifs require stable cuff/lower-front zones. Rear slouch folds remain undecorated."
+  },
+  "artRules": {
+    "outline": "Use accepted generator beanie outline language, not raw PixelLab outline.",
+    "shading": "Use accepted generator beanie shading: readable band/contact shadow, clear body/slouch separation, limited hard pixel ramps.",
+    "scale": "PixelLab reference is oversized in live QC; final construction must be reduced before promotion.",
+    "views": "All four views must save independent fitting offsets in ESM; construction art itself remains direction-coherent."
+  }
+}
