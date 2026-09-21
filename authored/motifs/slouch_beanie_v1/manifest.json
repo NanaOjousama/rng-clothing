@@ -1,0 +1,262 @@
+{
+  "schema": "slouch_beanie_motif/v1",
+  "nativePixelArt": true,
+  "assets": {
+    "flower_tiny": {
+      "category": "SYMBOL",
+      "path": "authored/motifs/slouch_beanie_v1/assets/flower_tiny.png",
+      "size": [
+        5,
+        5
+      ]
+    },
+    "flower_cluster_small": {
+      "category": "SYMBOL",
+      "path": "authored/motifs/slouch_beanie_v1/assets/flower_cluster_small.png",
+      "size": [
+        7,
+        5
+      ]
+    },
+    "leaf_sprig": {
+      "category": "SYMBOL",
+      "path": "authored/motifs/slouch_beanie_v1/assets/leaf_sprig.png",
+      "size": [
+        6,
+        6
+      ]
+    },
+    "star": {
+      "category": "SYMBOL",
+      "path": "authored/motifs/slouch_beanie_v1/assets/star.png",
+      "size": [
+        5,
+        5
+      ]
+    },
+    "moon": {
+      "category": "SYMBOL",
+      "path": "authored/motifs/slouch_beanie_v1/assets/moon.png",
+      "size": [
+        5,
+        5
+      ]
+    },
+    "heart": {
+      "category": "SYMBOL",
+      "path": "authored/motifs/slouch_beanie_v1/assets/heart.png",
+      "size": [
+        5,
+        5
+      ]
+    },
+    "snowflake": {
+      "category": "SYMBOL",
+      "path": "authored/motifs/slouch_beanie_v1/assets/snowflake.png",
+      "size": [
+        5,
+        5
+      ]
+    },
+    "mushroom_tiny": {
+      "category": "SYMBOL",
+      "path": "authored/motifs/slouch_beanie_v1/assets/mushroom_tiny.png",
+      "size": [
+        5,
+        5
+      ]
+    },
+    "geom_diamond": {
+      "category": "SYMBOL",
+      "path": "authored/motifs/slouch_beanie_v1/assets/geom_diamond.png",
+      "size": [
+        5,
+        5
+      ]
+    },
+    "animal_paw": {
+      "category": "SYMBOL",
+      "path": "authored/motifs/slouch_beanie_v1/assets/animal_paw.png",
+      "size": [
+        5,
+        5
+      ]
+    },
+    "rune_mark": {
+      "category": "SYMBOL",
+      "path": "authored/motifs/slouch_beanie_v1/assets/rune_mark.png",
+      "size": [
+        5,
+        5
+      ]
+    },
+    "patch_rect": {
+      "category": "CARRIER",
+      "path": "authored/motifs/slouch_beanie_v1/assets/patch_rect.png",
+      "size": [
+        7,
+        4
+      ]
+    },
+    "patch_square": {
+      "category": "CARRIER",
+      "path": "authored/motifs/slouch_beanie_v1/assets/patch_square.png",
+      "size": [
+        5,
+        5
+      ]
+    },
+    "stitched_badge": {
+      "category": "CARRIER",
+      "path": "authored/motifs/slouch_beanie_v1/assets/stitched_badge.png",
+      "size": [
+        7,
+        5
+      ]
+    },
+    "side_label": {
+      "category": "CARRIER",
+      "path": "authored/motifs/slouch_beanie_v1/assets/side_label.png",
+      "size": [
+        3,
+        4
+      ]
+    },
+    "woven_tag": {
+      "category": "CARRIER",
+      "path": "authored/motifs/slouch_beanie_v1/assets/woven_tag.png",
+      "size": [
+        4,
+        5
+      ]
+    },
+    "button_accent": {
+      "category": "HARDWARE",
+      "path": "authored/motifs/slouch_beanie_v1/assets/button_accent.png",
+      "size": [
+        3,
+        3
+      ]
+    },
+    "pom_small": {
+      "category": "ATTACHMENT",
+      "path": "authored/motifs/slouch_beanie_v1/assets/pom_small.png",
+      "size": [
+        4,
+        4
+      ]
+    },
+    "pom_large": {
+      "category": "ATTACHMENT",
+      "path": "authored/motifs/slouch_beanie_v1/assets/pom_large.png",
+      "size": [
+        6,
+        6
+      ]
+    },
+    "contrast_stitch": {
+      "category": "STITCH",
+      "path": "authored/motifs/slouch_beanie_v1/assets/contrast_stitch.png",
+      "size": [
+        7,
+        1
+      ]
+    },
+    "single_stripe": {
+      "category": "PATTERN",
+      "path": "authored/motifs/slouch_beanie_v1/assets/single_stripe.png",
+      "size": [
+        7,
+        4
+      ]
+    },
+    "twin_stripe": {
+      "category": "PATTERN",
+      "path": "authored/motifs/slouch_beanie_v1/assets/twin_stripe.png",
+      "size": [
+        7,
+        5
+      ]
+    },
+    "contrast_cuff": {
+      "category": "PATTERN",
+      "path": "authored/motifs/slouch_beanie_v1/assets/contrast_cuff.png",
+      "size": [
+        7,
+        4
+      ]
+    },
+    "two_tone_block": {
+      "category": "PATTERN",
+      "path": "authored/motifs/slouch_beanie_v1/assets/two_tone_block.png",
+      "size": [
+        7,
+        4
+      ]
+    },
+    "simple_jacquard": {
+      "category": "PATTERN",
+      "path": "authored/motifs/slouch_beanie_v1/assets/simple_jacquard.png",
+      "size": [
+        7,
+        5
+      ]
+    },
+    "heather_fleck": {
+      "category": "PATTERN",
+      "path": "authored/motifs/slouch_beanie_v1/assets/heather_fleck.png",
+      "size": [
+        7,
+        4
+      ]
+    },
+    "fine_rib": {
+      "category": "TEXTURE",
+      "path": "authored/motifs/slouch_beanie_v1/assets/fine_rib.png",
+      "size": [
+        7,
+        4
+      ]
+    },
+    "wide_rib": {
+      "category": "TEXTURE",
+      "path": "authored/motifs/slouch_beanie_v1/assets/wide_rib.png",
+      "size": [
+        7,
+        4
+      ]
+    },
+    "seed_stitch": {
+      "category": "TEXTURE",
+      "path": "authored/motifs/slouch_beanie_v1/assets/seed_stitch.png",
+      "size": [
+        7,
+        4
+      ]
+    },
+    "cable_hint": {
+      "category": "TEXTURE",
+      "path": "authored/motifs/slouch_beanie_v1/assets/cable_hint.png",
+      "size": [
+        7,
+        5
+      ]
+    },
+    "waffle_hint": {
+      "category": "TEXTURE",
+      "path": "authored/motifs/slouch_beanie_v1/assets/waffle_hint.png",
+      "size": [
+        7,
+        4
+      ]
+    }
+  },
+  "sheet": "authored/motifs/slouch_beanie_v1/slouch_beanie_motif_sheet.png",
+  "notes": {
+    "symbols": "Recolourable icon primitives; may be direct stitch, knit-in, or placed on carriers.",
+    "carriers": "Patch/label shapes are independent of symbols so combinations multiply without duplicate art.",
+    "attachments": "Pom assets are silhouette attachments, not motifs; roll separately.",
+    "patterns": "Surface swatches are references/primitives, not placed motif sprites.",
+    "sourcePolicy": "User photos and online research are reference-only; no photo pixels were copied."
+  }
+}

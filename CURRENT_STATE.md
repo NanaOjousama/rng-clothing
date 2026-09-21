@@ -193,3 +193,13 @@ Validation command: `python3 tools/validate_slouch_beanie_roll_matrix.py`.
 ### Open ESM fitting regression
 
 During 2026-09-20 slouch QC, adjusting the Front fitting view was observed to affect Back. Treat this as an open directional-fit persistence/mapping regression even though the 2026-09-19 per-direction fitting milestone had previously passed live QC. Do not assume all four fit buckets are independent again until Front/Right/Left/Back save/load isolation is re-verified.
+
+## Slouch Beanie Motif Library V1 — 2026-09-20
+
+Created a native-pixel modular motif library at `authored/motifs/slouch_beanie_v1/` from the user-provided slouch-beanie reference examples plus prior online research. The photos are reference-only; no photo pixels are copied.
+
+Library contents: 31 reusable assets — 11 symbol motifs, 5 patch/label carriers, 2 pom attachments, 1 button hardware accent, 1 contrast-stitch accent, 6 surface-pattern swatches, and 5 knit-texture swatches. Canonical preview: `authored/motifs/slouch_beanie_v1/slouch_beanie_motif_sheet.png`; manifest: `authored/motifs/slouch_beanie_v1/manifest.json`.
+
+The generator roll matrix now binds these assets directly and adds modular `carrierStyle`, `attachment`, and `hardwareAccent` rolls. New supported composition possibilities include pattern + side label, pattern + small label + pom, symbol + patch carrier, direct-stitch symbol, cuffless body motif, extra-slouch + minimal label, and button accent without pom. Exclusions increased from 17 to 24 so unstable/busy combinations are rejected.
+
+Validation: `python3 tools/validate_slouch_beanie_roll_matrix.py` checks all 14 axes, every bound asset path, required pom/carrier assets, and exclusion invariants. Source-backed beanie family remains 4/4 PASS.

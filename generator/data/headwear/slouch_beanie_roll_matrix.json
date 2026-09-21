@@ -25,8 +25,11 @@
     "knitStructure",
     "pattern",
     "motif",
+    "carrierStyle",
     "decorationStyle",
     "motifPlacement",
+    "attachment",
+    "hardwareAccent",
     "palette"
   ],
   "axes": {
@@ -131,6 +134,23 @@
       "body_side_left": 3,
       "body_side_right": 3,
       "crown_front": 2
+    },
+    "carrierStyle": {
+      "none": 55,
+      "patch_rect": 12,
+      "patch_square": 6,
+      "stitched_badge": 10,
+      "side_label": 10,
+      "woven_tag": 7
+    },
+    "attachment": {
+      "none": 78,
+      "pom_small": 15,
+      "pom_large": 7
+    },
+    "hardwareAccent": {
+      "none": 88,
+      "button_accent": 12
     }
   },
   "presentationModifiers": {
@@ -415,6 +435,105 @@
           "deep_back"
         ]
       }
+    },
+    {
+      "when": {
+        "carrierStyle": "side_label"
+      },
+      "allowOnly": {
+        "motifPlacement": [
+          "cuff_side_left",
+          "cuff_side_right",
+          "body_side_left",
+          "body_side_right"
+        ]
+      }
+    },
+    {
+      "when": {
+        "carrierStyle": [
+          "patch_rect",
+          "patch_square",
+          "stitched_badge"
+        ]
+      },
+      "disallow": {
+        "motifPlacement": [
+          "crown_front",
+          "body_side_left",
+          "body_side_right"
+        ]
+      }
+    },
+    {
+      "when": {
+        "bandType": "none",
+        "carrierStyle": [
+          "patch_rect",
+          "patch_square",
+          "stitched_badge"
+        ]
+      },
+      "allowOnly": {
+        "motifPlacement": [
+          "body_lower_front",
+          "body_front_offset_left",
+          "body_front_offset_right"
+        ]
+      }
+    },
+    {
+      "when": {
+        "attachment": "pom_large"
+      },
+      "disallow": {
+        "slouchDepth": [
+          "extra"
+        ],
+        "crownShape": [
+          "pouch",
+          "elongated"
+        ]
+      }
+    },
+    {
+      "when": {
+        "attachment": "pom_small",
+        "slouchDepth": "extra"
+      },
+      "disallow": {
+        "drapeDirection": [
+          "deep_back"
+        ]
+      }
+    },
+    {
+      "when": {
+        "hardwareAccent": "button_accent"
+      },
+      "disallow": {
+        "attachment": [
+          "pom_large"
+        ],
+        "crownShape": [
+          "gathered"
+        ]
+      }
+    },
+    {
+      "when": {
+        "pattern": [
+          "simple_jacquard",
+          "cable_plus_stripe"
+        ],
+        "carrierStyle": [
+          "patch_rect",
+          "patch_square"
+        ]
+      },
+      "reduce": [
+        "motif_complexity"
+      ]
     }
   ],
   "rarityGuidance": {
@@ -478,5 +597,40 @@
     "shading": "Use accepted generator beanie shading: readable band/contact shadow, clear body/slouch separation, limited hard pixel ramps.",
     "scale": "PixelLab reference is oversized in live QC; final construction must be reduced before promotion.",
     "views": "All four views must save independent fitting offsets in ESM; construction art itself remains direction-coherent."
-  }
+  },
+  "assetLibrary": "authored/motifs/slouch_beanie_v1/manifest.json",
+  "assetBindings": {
+    "flower_tiny": "flower_tiny",
+    "flower_cluster_small": "flower_cluster_small",
+    "leaf": "leaf_sprig",
+    "star": "star",
+    "moon": "moon",
+    "heart": "heart",
+    "snowflake": "snowflake",
+    "geom_simple": "geom_diamond",
+    "animal_tiny": "animal_paw",
+    "mushroom_tiny": "mushroom_tiny",
+    "initial_rune": "rune_mark",
+    "badge_small": "stitched_badge",
+    "patch_rect": "patch_rect",
+    "patch_square": "patch_square",
+    "tag_side": "side_label",
+    "carrier.patch_rect": "patch_rect",
+    "carrier.patch_square": "patch_square",
+    "carrier.stitched_badge": "stitched_badge",
+    "carrier.side_label": "side_label",
+    "carrier.woven_tag": "woven_tag",
+    "attachment.pom_small": "pom_small",
+    "attachment.pom_large": "pom_large",
+    "hardware.button_accent": "button_accent"
+  },
+  "combinationExamples": [
+    "pattern + side label",
+    "pattern + small label + pom",
+    "symbol + patch carrier",
+    "direct stitched symbol without carrier",
+    "cuffless body motif",
+    "extra slouch + minimal label",
+    "button accent without pom"
+  ]
 }
