@@ -311,3 +311,27 @@ Validation:
 - rarity distribution: 2/2/2/2 PASS
 - 8 unique variants PASS
 - 32/32 frames preserve locked PL24 alpha PASS
+
+## SLB3 Fashion Sense live QC pack — 2026-09-21
+
+The 8-hat slouch rarity QC batch is packaged for Fashion Sense and installed in the live Stardew Mods directory.
+
+Search tag/name prefix: `SLB3`
+
+Source pack:
+`test-packs/fashionsense/RNG-SLB3-Rarity-QC/`
+
+Live installed pack:
+`/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/RNG-SLB3-Rarity-QC/`
+
+Entries:
+- SLB3 C1 Cocoa Solid
+- SLB3 C2 Stone Fine Rib
+- SLB3 U1 Sage Seed Leaf
+- SLB3 U2 Indigo Twin Star
+- SLB3 R1 Autumn Jacquard Flower
+- SLB3 R2 Wine Cable Badge
+- SLB3 E1 Arcane Cable Stripe Botanical
+- SLB3 E2 Jade Jacquard Botanical
+
+All 8 entries contain the `SLB3` Fashion Sense tag. Frames are 24x24 and use the locked PL24 rarity-batch art. Initial HeadPosition follows the previously tested slouch-family directional convention; in-game QC remains authority for final fit.
