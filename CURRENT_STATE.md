@@ -281,3 +281,33 @@ Validation:
 - `python3 tools/render_source_template_recipe_proof.py` — PASS
 - combined renderer/template/beanie/cap tests — 16/16 PASS
 - all four rendered directions preserve exact PL24 alpha geometry
+
+## Slouch rarity QC batch 01 — 2026-09-21
+
+Created a controlled 8-variant / 32-frame QC batch on the locked `slouch_pl24` construction so rarity quality can be reviewed without silhouette changes confounding the result.
+
+Distribution:
+- Common: 2
+- Uncommon: 2
+- Rare: 2
+- Epic: 2
+
+Batch:
+- Common: cocoa solid; stone fine rib
+- Uncommon: sage seed + leaf; indigo twin stripe + star
+- Rare: autumn jacquard + flower cluster; wine cable + stitched badge
+- Epic: arcane cable + twin stripe + extended botanical; jade jacquard + contrast finish + extended botanical
+
+Authority/policy:
+- all 32 rendered views preserve exact PL24 alpha geometry
+- no attachments/poms in this batch; alpha-growth is intentionally deferred so this test isolates rarity/surface quality
+- palettes come from `authored/palettes.json`
+- motif/pattern primitives come from `authored/motifs/slouch_beanie_v1/`
+- batch manifest: `experiments/source_template_rarity_batch_01/batch_manifest.json`
+- contact sheet: `experiments/source_template_rarity_batch_01/rarity_contact_sheet.png`
+- builder: `tools/build_slouch_rarity_qc_batch.py`
+
+Validation:
+- rarity distribution: 2/2/2/2 PASS
+- 8 unique variants PASS
+- 32/32 frames preserve locked PL24 alpha PASS

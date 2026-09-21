@@ -1,0 +1,601 @@
+{
+  "schema": "slouch-rarity-qc/v1",
+  "template": "slouch_pl24",
+  "count": 8,
+  "variants": [
+    {
+      "id": "C1_COCOA_SOLID",
+      "rarity": "Common",
+      "palette": "CUTE_COCOA_GOLD",
+      "pattern": null,
+      "motif": null,
+      "systems": [
+        "solid body"
+      ],
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/C1_COCOA_SOLID/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/C1_COCOA_SOLID/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/C1_COCOA_SOLID/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/C1_COCOA_SOLID/back.png"
+      },
+      "placements": {},
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    },
+    {
+      "id": "C2_STONE_FINE_RIB",
+      "rarity": "Common",
+      "palette": "EVERYDAY_STONE_BLUE",
+      "pattern": "fine_rib",
+      "motif": null,
+      "systems": [
+        "fine rib"
+      ],
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/C2_STONE_FINE_RIB/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/C2_STONE_FINE_RIB/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/C2_STONE_FINE_RIB/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/C2_STONE_FINE_RIB/back.png"
+      },
+      "placements": {},
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    },
+    {
+      "id": "U1_SAGE_SEED_LEAF",
+      "rarity": "Uncommon",
+      "palette": "SPRING_SAGE_PETAL",
+      "pattern": "seed_stitch",
+      "motif": "leaf_sprig",
+      "systems": [
+        "seed texture",
+        "leaf focal"
+      ],
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/U1_SAGE_SEED_LEAF/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/U1_SAGE_SEED_LEAF/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/U1_SAGE_SEED_LEAF/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/U1_SAGE_SEED_LEAF/back.png"
+      },
+      "placements": {
+        "front": [
+          {
+            "asset": "leaf_sprig",
+            "offset": [
+              9,
+              9
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          }
+        ],
+        "right": [
+          {
+            "asset": "leaf_sprig",
+            "offset": [
+              10,
+              9
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          }
+        ],
+        "left": [
+          {
+            "asset": "leaf_sprig",
+            "offset": [
+              9,
+              9
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          }
+        ],
+        "back": [
+          {
+            "asset": "leaf_sprig",
+            "offset": [
+              9,
+              10
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          }
+        ]
+      },
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    },
+    {
+      "id": "U2_INDIGO_TWIN_STAR",
+      "rarity": "Uncommon",
+      "palette": "CELESTIAL_INDIGO_STAR",
+      "pattern": "twin_stripe",
+      "motif": "star",
+      "systems": [
+        "twin stripe",
+        "star focal"
+      ],
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/U2_INDIGO_TWIN_STAR/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/U2_INDIGO_TWIN_STAR/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/U2_INDIGO_TWIN_STAR/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/U2_INDIGO_TWIN_STAR/back.png"
+      },
+      "placements": {
+        "front": [
+          {
+            "asset": "star",
+            "offset": [
+              9,
+              10
+            ],
+            "size": [
+              5,
+              5
+            ],
+            "cells": 14
+          }
+        ],
+        "right": [
+          {
+            "asset": "star",
+            "offset": [
+              10,
+              10
+            ],
+            "size": [
+              5,
+              5
+            ],
+            "cells": 14
+          }
+        ],
+        "left": [
+          {
+            "asset": "star",
+            "offset": [
+              9,
+              10
+            ],
+            "size": [
+              5,
+              5
+            ],
+            "cells": 14
+          }
+        ],
+        "back": [
+          {
+            "asset": "star",
+            "offset": [
+              9,
+              11
+            ],
+            "size": [
+              5,
+              5
+            ],
+            "cells": 14
+          }
+        ]
+      },
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    },
+    {
+      "id": "R1_AUTUMN_JACQUARD_FLOWER",
+      "rarity": "Rare",
+      "palette": "AUTUMN_OCHRE_PLUM",
+      "pattern": "simple_jacquard",
+      "motif": "flower_cluster_small",
+      "systems": [
+        "jacquard",
+        "flower cluster"
+      ],
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/R1_AUTUMN_JACQUARD_FLOWER/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/R1_AUTUMN_JACQUARD_FLOWER/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/R1_AUTUMN_JACQUARD_FLOWER/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/R1_AUTUMN_JACQUARD_FLOWER/back.png"
+      },
+      "placements": {
+        "front": [
+          {
+            "asset": "flower_cluster_small",
+            "offset": [
+              8,
+              10
+            ],
+            "size": [
+              7,
+              5
+            ],
+            "cells": 13
+          }
+        ],
+        "right": [
+          {
+            "asset": "flower_cluster_small",
+            "offset": [
+              9,
+              10
+            ],
+            "size": [
+              7,
+              5
+            ],
+            "cells": 13
+          }
+        ],
+        "left": [
+          {
+            "asset": "flower_cluster_small",
+            "offset": [
+              8,
+              10
+            ],
+            "size": [
+              7,
+              5
+            ],
+            "cells": 13
+          }
+        ],
+        "back": [
+          {
+            "asset": "flower_cluster_small",
+            "offset": [
+              8,
+              11
+            ],
+            "size": [
+              7,
+              5
+            ],
+            "cells": 13
+          }
+        ]
+      },
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    },
+    {
+      "id": "R2_WINE_CABLE_BADGE",
+      "rarity": "Rare",
+      "palette": "GOTHIC_WINE_ASH",
+      "pattern": "cable_hint",
+      "motif": "stitched_badge",
+      "systems": [
+        "cable texture",
+        "stitched badge"
+      ],
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/R2_WINE_CABLE_BADGE/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/R2_WINE_CABLE_BADGE/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/R2_WINE_CABLE_BADGE/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/R2_WINE_CABLE_BADGE/back.png"
+      },
+      "placements": {
+        "front": [
+          {
+            "asset": "stitched_badge",
+            "offset": [
+              8,
+              10
+            ],
+            "size": [
+              7,
+              5
+            ],
+            "cells": 31
+          }
+        ],
+        "right": [
+          {
+            "asset": "stitched_badge",
+            "offset": [
+              9,
+              10
+            ],
+            "size": [
+              7,
+              5
+            ],
+            "cells": 31
+          }
+        ],
+        "left": [
+          {
+            "asset": "stitched_badge",
+            "offset": [
+              8,
+              10
+            ],
+            "size": [
+              7,
+              5
+            ],
+            "cells": 31
+          }
+        ],
+        "back": [
+          {
+            "asset": "stitched_badge",
+            "offset": [
+              8,
+              11
+            ],
+            "size": [
+              7,
+              5
+            ],
+            "cells": 31
+          }
+        ]
+      },
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    },
+    {
+      "id": "E1_ARCANE_CABLE_STRIPE_BOTANICAL",
+      "rarity": "Epic",
+      "palette": "ARCANE_VIOLET_COPPER",
+      "pattern": "cable_hint",
+      "band_pattern": "twin_stripe",
+      "motif": "leaf_sprig",
+      "motif2": "flower_tiny",
+      "systems": [
+        "cable",
+        "twin stripe",
+        "extended botanical"
+      ],
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/E1_ARCANE_CABLE_STRIPE_BOTANICAL/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/E1_ARCANE_CABLE_STRIPE_BOTANICAL/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/E1_ARCANE_CABLE_STRIPE_BOTANICAL/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/E1_ARCANE_CABLE_STRIPE_BOTANICAL/back.png"
+      },
+      "placements": {
+        "front": [
+          {
+            "asset": "leaf_sprig",
+            "offset": [
+              7,
+              9
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          },
+          {
+            "asset": "flower_tiny",
+            "offset": [
+              12,
+              9
+            ],
+            "size": [
+              5,
+              5
+            ],
+            "cells": 13
+          }
+        ],
+        "right": [
+          {
+            "asset": "leaf_sprig",
+            "offset": [
+              8,
+              9
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          },
+          {
+            "asset": "flower_tiny",
+            "offset": [
+              13,
+              9
+            ],
+            "size": [
+              5,
+              5
+            ],
+            "cells": 13
+          }
+        ],
+        "left": [
+          {
+            "asset": "leaf_sprig",
+            "offset": [
+              7,
+              9
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          },
+          {
+            "asset": "flower_tiny",
+            "offset": [
+              12,
+              9
+            ],
+            "size": [
+              5,
+              5
+            ],
+            "cells": 13
+          }
+        ],
+        "back": [
+          {
+            "asset": "leaf_sprig",
+            "offset": [
+              7,
+              10
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          },
+          {
+            "asset": "flower_tiny",
+            "offset": [
+              12,
+              10
+            ],
+            "size": [
+              5,
+              5
+            ],
+            "cells": 13
+          }
+        ]
+      },
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    },
+    {
+      "id": "E2_JADE_JACQUARD_BOTANICAL",
+      "rarity": "Epic",
+      "palette": "LUXURY_JADE_BRONZE",
+      "pattern": "simple_jacquard",
+      "band_pattern": "contrast_stitch",
+      "motif": "flower_cluster_small",
+      "motif2": "leaf_sprig",
+      "systems": [
+        "jacquard",
+        "contrast finish",
+        "extended botanical"
+      ],
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/E2_JADE_JACQUARD_BOTANICAL/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/E2_JADE_JACQUARD_BOTANICAL/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/E2_JADE_JACQUARD_BOTANICAL/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/source_template_rarity_batch_01/E2_JADE_JACQUARD_BOTANICAL/back.png"
+      },
+      "placements": {
+        "front": [
+          {
+            "asset": "flower_cluster_small",
+            "offset": [
+              6,
+              10
+            ],
+            "size": [
+              7,
+              5
+            ],
+            "cells": 13
+          },
+          {
+            "asset": "leaf_sprig",
+            "offset": [
+              12,
+              8
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          }
+        ],
+        "right": [
+          {
+            "asset": "flower_cluster_small",
+            "offset": [
+              7,
+              10
+            ],
+            "size": [
+              7,
+              5
+            ],
+            "cells": 13
+          },
+          {
+            "asset": "leaf_sprig",
+            "offset": [
+              13,
+              8
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          }
+        ],
+        "left": [
+          {
+            "asset": "flower_cluster_small",
+            "offset": [
+              6,
+              10
+            ],
+            "size": [
+              7,
+              5
+            ],
+            "cells": 13
+          },
+          {
+            "asset": "leaf_sprig",
+            "offset": [
+              12,
+              8
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          }
+        ],
+        "back": [
+          {
+            "asset": "flower_cluster_small",
+            "offset": [
+              6,
+              11
+            ],
+            "size": [
+              7,
+              5
+            ],
+            "cells": 13
+          },
+          {
+            "asset": "leaf_sprig",
+            "offset": [
+              12,
+              9
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          }
+        ]
+      },
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    }
+  ]
+}
