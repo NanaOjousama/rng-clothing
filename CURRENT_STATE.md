@@ -400,3 +400,26 @@ Validation:
 
 Live pack:
 /run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/RNG-SLB5-Beret-RoundTrip-QC/
+
+## B16QC live in-game 16px beanie comparison — 2026-09-21
+
+Built and installed a live Fashion Sense QC pack from the matched 16px comparison batch.
+
+Pack contents:
+- 8 PixelLab 16px variants tagged B16PL
+- 8 RoundTrip-source 16px variants tagged B16RT
+- all 16 entries share B16QC
+
+Wear contract for comparison:
+- HatSize 16x16
+- HeadPosition -2,-3 for both template families
+- same eight rarity concepts on both sides
+- explicit Front/Right/Left/Back frames in each sheet
+
+Live pack:
+/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/RNG-B16QC/
+
+Search tags:
+- B16QC = all 16
+- B16PL = PixelLab 16 only
+- B16RT = RoundTrip-source 16 only
