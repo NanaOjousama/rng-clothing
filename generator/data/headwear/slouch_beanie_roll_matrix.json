@@ -13,7 +13,7 @@
       "back": 4,
       "left": 6
     },
-    "rule": "Use PixelLab only for silhouette/drape/angle reference. Final outline, shading and polish inherit from the accepted generator beanie style."
+    "rule": "Use PixelLab/RD only as construction, silhouette, drape, angle and wear reference. Never route slouch geometry through generic BRIMLESS_HAT normalization or the removed generic V5 headwear style-translation path."
   },
   "rollOrder": [
     "presentationLean",
@@ -593,8 +593,8 @@
     "note": "Large or detailed motifs require stable cuff/lower-front zones. Rear slouch folds remain undecorated."
   },
   "artRules": {
-    "outline": "Use accepted generator beanie outline language, not raw PixelLab outline.",
-    "shading": "Use accepted generator beanie shading: readable band/contact shadow, clear body/slouch separation, limited hard pixel ramps.",
+    "outline": "Slouch-specific outline treatment only; do not inherit generic V5/BRIMLESS_HAT tuning or raw PixelLab/RD outline.",
+    "shading": "Slouch-specific shading treatment only; preserve locked construction and require QC approval before production.",
     "scale": "PixelLab reference is oversized in live QC; final construction must be reduced before promotion.",
     "views": "All four views must save independent fitting offsets in ESM; construction art itself remains direction-coherent."
   },
@@ -633,6 +633,20 @@
     "extra slouch + minimal label",
     "button accent without pom"
   ],
-  "constructionTemplate": "generator/data/headwear/slouch_beanie_construction_template.json",
-  "constructionProof": "experiments/slouch_beanie_generator_proof/proof.json"
+  "renderPolicy": {
+    "status": "SLOUCH_SPECIFIC_RENDERER_REQUIRED",
+    "constructionAuthority": "slouch reference + slouch roll matrix",
+    "forbidGenericNormalization": [
+      "BRIMLESS_HAT",
+      "generic V5 headwear style translation"
+    ],
+    "preserveBeforeStyling": [
+      "head contact",
+      "band/opening relationship",
+      "backward slouch mass",
+      "side-view rear droop",
+      "construction-defined asymmetry"
+    ],
+    "styleRule": "Outline/shading must be slouch-specific and QC-approved; styling may not rewrite the locked slouch silhouette."
+  }
 }

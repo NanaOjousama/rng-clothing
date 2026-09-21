@@ -10,7 +10,7 @@ PixelLab 24px multi-direction object is frozen as **construction reference only*
 Cardinal source frames: Front 0, Right 2, Back 4, Left 6.
 Use it for slouch angle, backward drape, band placement, silhouette family, and view coherence. Do not inherit its final outline, shading, polish, or current live-QC size.
 
-Final art must use the accepted generator beanie outline/shading language and a slightly smaller wearable construction.
+Final art must use a slouch-specific outline/shading treatment that preserves the approved construction. Do not route slouch geometry through generic `BRIMLESS_HAT` normalization or the removed generic V5 style-translation path.
 
 ## Generator matrix
 

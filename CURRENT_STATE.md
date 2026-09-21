@@ -186,13 +186,13 @@ The production registry entry requires the next game restart to be loaded into t
 
 PixelLab 24px multi-direction slouch (`experiments/slouch_beanie_compare/pixellab/pl_24_sheet.png`) is now frozen as **CONSTRUCTION-ONLY** reference. Cardinal source frames are Front=0, Right=2, Back=4, Left=6. It is useful for coherent slouch geometry, angle, backward drape, and band placement, but its outline/shading and current live-QC size are explicitly not production targets.
 
-Canonical generator data now lives at `generator/data/headwear/slouch_beanie_roll_matrix.json`. It defines weighted rolls for presentation lean (soft preference, never a hard gender lock), slouch depth, band/cuff type, drape, crown shape, opening fit, knit structure, pattern, motif, decoration style, and motif placement, plus rarity guidance and 17 compatibility/exclusion rules. Final production art must inherit the accepted generator beanie outline and shading language.
+Canonical generator data now lives at `generator/data/headwear/slouch_beanie_roll_matrix.json`. It defines weighted rolls for presentation lean (soft preference, never a hard gender lock), slouch depth, band/cuff type, drape, crown shape, opening fit, knit structure, pattern, motif, decoration style, and motif placement, plus rarity guidance and 17 compatibility/exclusion rules. Final production art must preserve the slouch construction first. Generic `BRIMLESS_HAT` / generic V5 headwear normalization is explicitly forbidden for this family; outline/shading must be slouch-specific and QC-approved.
 
 Validation command: `python3 tools/validate_slouch_beanie_roll_matrix.py`.
 
-### Open ESM fitting regression
+### ESM fitting regression resolved
 
-During 2026-09-20 slouch QC, adjusting the Front fitting view was observed to affect Back. Treat this as an open directional-fit persistence/mapping regression even though the 2026-09-19 per-direction fitting milestone had previously passed live QC. Do not assume all four fit buckets are independent again until Front/Right/Left/Back save/load isolation is re-verified.
+The 2026-09-20 Front/Back coupling was traced to one global `FitScale` shared by all directions. X/Y offsets were already independent. ESM now stores scale independently for Front/Right/Left/Back, and tests explicitly verify Front-scale and Back-scale isolation plus all existing X/Y isolation.
 
 ## Slouch Beanie Motif Library V1 — 2026-09-20
 
@@ -204,24 +204,7 @@ The generator roll matrix now binds these assets directly and adds modular `carr
 
 Validation: `python3 tools/validate_slouch_beanie_roll_matrix.py` checks all 14 axes, every bound asset path, required pom/carrier assets, and exclusion invariants. Source-backed beanie family remains 4/4 PASS.
 
-## Slouch Beanie construction -> V5 style translation proof — 2026-09-20
-
-Implemented the intended slouch workflow directly in the generator: the PixelLab/RD-derived slouch reference supplies **construction geometry only**, while V5 owns the production art language. Canonical construction template: `generator/data/headwear/slouch_beanie_construction_template.json`.
-
-The template explicitly discards reference RGB/shading, normalizes the oversized 24px reference into the 20x20 HEAD envelope, preserves the lower contact anchor, separates crown vs cuff, and feeds that Construction through `v5.aa` + `v5.ag` with render class `head_20x20`. This means the generator applies its existing vanilla-leaning headwear outline, form shading, material-aware highlights, palette and role treatment instead of copying the AI/reference outline or shading.
-
-Proof builder: `tools/build_slouch_beanie_generator_proof.py`. It uses Front frame 0, Right frame 2, Back frame 4 (Left exported as the mirrored profile for the centered baseline), uses a resolved `wool_melton` HEAD palette/material, and writes native 20x20 Front/Right/Left/Back plus a review sheet under `experiments/slouch_beanie_generator_proof/`.
-
-The slouch roll matrix now points to the construction template and proof, while retaining the 14 roll axes, 24 exclusion rules, and modular motif/carrier/attachment library. Baseline construction rolls are Medium Slouch + Standard Cuff + Back-Center Drape + Rounded Crown + Normal Opening + Fine Rib + Solid + no motif/attachment.
-
-Validation:
-- `python3 tools/validate_slouch_beanie_construction.py` — PASS; reference colour ignored and V5 owns outline/shading
-- `python3 tools/validate_slouch_beanie_roll_matrix.py` — PASS; 14 axes / 24 exclusions
-- `python3 -m unittest v5.tests.test_source_beanie_family` — 4/4 PASS
-
-This proof is generator-ready but remains QC, not production, until the user accepts its in-game silhouette/fit and the construction variants are expanded from the baseline template.
-
-## ESM per-direction fit scale fix + Slouch rarity FS QC — 2026-09-20
+## ESM per-direction fit scale fix — 2026-09-20
 
 The deferred fitting coupling bug is fixed. Root cause: X/Y offsets were already stored per facing direction, but scale still used one global `FitScale`, so changing Front scale also changed Back/Right/Left. ESM now stores and renders scale independently for Front, Right, Left and Back. The legacy `FitScale` field remains the Front/down value for save compatibility; new directional scale fields default to 1.0 when absent in older saves.
 
@@ -235,12 +218,8 @@ Verification after rebuilding both projects:
 - ESM Release build: 0 warnings / 0 errors; ModBuildConfig redeployed it to the live Mods folder.
 - ESM tests: ALL PASS, including explicit Front-scale isolation and Back-scale isolation plus existing X/Y independence.
 
-A temporary Fashion Sense rarity-scope pack is built and installed at `Mods/RNG-Slouch-Rarity-QC-260920`. Canonical rebuild script: `tools/build_slouch_rarity_fs_qc.py`. Unique search tag: `ZZ_SLOUCH_RARITY_QC_260920`.
+### Slouch generic-tuning rollback — 2026-09-20
 
-The QC pack contains 8 generator-styled slouch beanies, two per tier:
-- Common C01 solid earth; Common C02 sage fine-rib
-- Uncommon U01 twin-stripe + side label; Uncommon U02 contrast cuff + star
-- Rare R01 cable hint + leaf sprig + small pom; Rare R02 simple jacquard + mushroom
-- Epic E01 two-tone + floral cluster + large pom; Epic E02 simple jacquard + moon + small pom
+The slouch-specific generic V5/`BRIMLESS_HAT` style-translation proof and every rarity-QC asset built from it were deleted after visual regression. The roll matrix, 24 exclusions, motif library, and ESM per-direction fitting fix are retained.
 
-All eight use the V5-translated slouch construction base and 20x20 Front/Right/Left/Back Fashion Sense frames. Pack validation confirms exactly 2 Common / 2 Uncommon / 2 Rare / 2 Epic and the unique QC tag on every appearance. `rarity_contact_sheet_x8.png` is included for quick review. The running-game QC bridge was offline when built, so Fashion Sense will discover the newly installed pack on next launch rather than via hot reload.
+Hard guard: **do not use generic `BRIMLESS_HAT` normalization or the removed generic V5 headwear style-translation path for slouch beanies.** Slouch construction is authoritative; future outline/shading work must preserve that geometry and be QC-approved before generation uses it.

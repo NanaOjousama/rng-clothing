@@ -15,6 +15,13 @@ def main():
         assert vals and all(isinstance(v,int) and v>0 for v in vals.values()), f'bad weights in {name}'
     assert data['reference']['role']=='CONSTRUCTION_ONLY'
     assert data['reference']['cardinalFrames']=={'front':0,'right':2,'back':4,'left':6}
+    assert 'constructionTemplate' not in data
+    assert 'constructionProof' not in data
+    policy=data.get('renderPolicy',{})
+    assert policy.get('status')=='SLOUCH_SPECIFIC_RENDERER_REQUIRED'
+    forbidden=set(policy.get('forbidGenericNormalization',[]))
+    assert 'BRIMLESS_HAT' in forbidden
+    assert any('generic V5' in x for x in forbidden)
     assert data['exclusions'], 'no exclusions defined'
     asset_path=Path(data['assetLibrary'])
     assert asset_path.exists(), f'missing asset library {asset_path}'
