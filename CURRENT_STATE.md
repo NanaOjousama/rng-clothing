@@ -203,3 +203,20 @@ Library contents: 31 reusable assets — 11 symbol motifs, 5 patch/label carrier
 The generator roll matrix now binds these assets directly and adds modular `carrierStyle`, `attachment`, and `hardwareAccent` rolls. New supported composition possibilities include pattern + side label, pattern + small label + pom, symbol + patch carrier, direct-stitch symbol, cuffless body motif, extra-slouch + minimal label, and button accent without pom. Exclusions increased from 17 to 24 so unstable/busy combinations are rejected.
 
 Validation: `python3 tools/validate_slouch_beanie_roll_matrix.py` checks all 14 axes, every bound asset path, required pom/carrier assets, and exclusion invariants. Source-backed beanie family remains 4/4 PASS.
+
+## Slouch Beanie construction -> V5 style translation proof — 2026-09-20
+
+Implemented the intended slouch workflow directly in the generator: the PixelLab/RD-derived slouch reference supplies **construction geometry only**, while V5 owns the production art language. Canonical construction template: `generator/data/headwear/slouch_beanie_construction_template.json`.
+
+The template explicitly discards reference RGB/shading, normalizes the oversized 24px reference into the 20x20 HEAD envelope, preserves the lower contact anchor, separates crown vs cuff, and feeds that Construction through `v5.aa` + `v5.ag` with render class `head_20x20`. This means the generator applies its existing vanilla-leaning headwear outline, form shading, material-aware highlights, palette and role treatment instead of copying the AI/reference outline or shading.
+
+Proof builder: `tools/build_slouch_beanie_generator_proof.py`. It uses Front frame 0, Right frame 2, Back frame 4 (Left exported as the mirrored profile for the centered baseline), uses a resolved `wool_melton` HEAD palette/material, and writes native 20x20 Front/Right/Left/Back plus a review sheet under `experiments/slouch_beanie_generator_proof/`.
+
+The slouch roll matrix now points to the construction template and proof, while retaining the 14 roll axes, 24 exclusion rules, and modular motif/carrier/attachment library. Baseline construction rolls are Medium Slouch + Standard Cuff + Back-Center Drape + Rounded Crown + Normal Opening + Fine Rib + Solid + no motif/attachment.
+
+Validation:
+- `python3 tools/validate_slouch_beanie_construction.py` — PASS; reference colour ignored and V5 owns outline/shading
+- `python3 tools/validate_slouch_beanie_roll_matrix.py` — PASS; 14 axes / 24 exclusions
+- `python3 -m unittest v5.tests.test_source_beanie_family` — 4/4 PASS
+
+This proof is generator-ready but remains QC, not production, until the user accepts its in-game silhouette/fit and the construction variants are expanded from the baseline template.

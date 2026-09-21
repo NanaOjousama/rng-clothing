@@ -632,5 +632,7 @@
     "cuffless body motif",
     "extra slouch + minimal label",
     "button accent without pom"
-  ]
+  ],
+  "constructionTemplate": "generator/data/headwear/slouch_beanie_construction_template.json",
+  "constructionProof": "experiments/slouch_beanie_generator_proof/proof.json"
 }

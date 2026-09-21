@@ -1,0 +1,14 @@
+{
+  "constructionTemplate": "generator/data/headwear/slouch_beanie_construction_template.json",
+  "sourceColourCopied": false,
+  "styleRenderer": "v5.ag/head_20x20",
+  "paletteSeed": 2,
+  "material": "wool_melton",
+  "views": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ],
+  "output": "experiments/slouch_beanie_generator_proof/slouch_v1_sheet.png"
+}
