@@ -1,0 +1,409 @@
+{
+  "tag": "SLB5",
+  "template": "beret_02",
+  "size": [
+    20,
+    20
+  ],
+  "size_policy": "source-derived/default; no forced 20px export rule",
+  "pairs": [
+    {
+      "id": "P0_PLAIN",
+      "palette": null,
+      "decal": null,
+      "A_png_sha": "ce67e7f81325dc7c",
+      "B_png_sha": "ce67e7f81325dc7c",
+      "property_compare": {
+        "identical_properties": 12,
+        "differences": []
+      },
+      "roundtrip": {
+        "source": {
+          "pack": "SLB5 Direct",
+          "author": "RNG Clothing",
+          "asset": "SLB5 P0_PLAIN A DIRECT",
+          "json": "/run/media/deck/USD00/RNG_clothing/test-packs/fashionsense/RNG-SLB5-Beret-RoundTrip-QC/Hats/P0_PLAIN_A_DIRECT/hat.json",
+          "png": "/run/media/deck/USD00/RNG_clothing/test-packs/fashionsense/RNG-SLB5-Beret-RoundTrip-QC/Hats/P0_PLAIN_A_DIRECT/hat.png"
+        },
+        "size": [
+          20,
+          20
+        ],
+        "directions_declared": [
+          "Back",
+          "Front",
+          "Left",
+          "Right"
+        ],
+        "properties_carried": {
+          "HeadPosition": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ],
+          "HatSize": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ],
+          "UniformAnimation": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ]
+        },
+        "properties_dropped": {},
+        "properties_unrecognised": {},
+        "starting_position_rewritten": {
+          "Front": {
+            "from": {
+              "X": 0,
+              "Y": 0
+            },
+            "to": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          "Right": {
+            "from": {
+              "X": 0,
+              "Y": 20
+            },
+            "to": {
+              "X": 0,
+              "Y": 20
+            }
+          },
+          "Left": {
+            "from": {
+              "X": 0,
+              "Y": 40
+            },
+            "to": {
+              "X": 0,
+              "Y": 40
+            }
+          },
+          "Back": {
+            "from": {
+              "X": 0,
+              "Y": 60
+            },
+            "to": {
+              "X": 0,
+              "Y": 60
+            }
+          }
+        }
+      },
+      "expected_visibility": "plain/no motif"
+    },
+    {
+      "id": "M1_LEAF",
+      "palette": "CUTE_ROSE_CREAM",
+      "decal": "leaf_sprig",
+      "A_png_sha": "3a8132e74ec9dd94",
+      "B_png_sha": "3a8132e74ec9dd94",
+      "property_compare": {
+        "identical_properties": 16,
+        "differences": []
+      },
+      "roundtrip": {
+        "source": {
+          "pack": "SLB5 Direct",
+          "author": "RNG Clothing",
+          "asset": "SLB5 M1_LEAF A DIRECT",
+          "json": "/run/media/deck/USD00/RNG_clothing/test-packs/fashionsense/RNG-SLB5-Beret-RoundTrip-QC/Hats/M1_LEAF_A_DIRECT/hat.json",
+          "png": "/run/media/deck/USD00/RNG_clothing/test-packs/fashionsense/RNG-SLB5-Beret-RoundTrip-QC/Hats/M1_LEAF_A_DIRECT/hat.png"
+        },
+        "size": [
+          20,
+          20
+        ],
+        "directions_declared": [
+          "Back",
+          "Front",
+          "Left",
+          "Right"
+        ],
+        "properties_carried": {
+          "HeadPosition": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ],
+          "HatSize": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ],
+          "UniformAnimation": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ],
+          "DisableGrayscale": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ]
+        },
+        "properties_dropped": {},
+        "properties_unrecognised": {},
+        "starting_position_rewritten": {
+          "Front": {
+            "from": {
+              "X": 0,
+              "Y": 0
+            },
+            "to": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          "Right": {
+            "from": {
+              "X": 0,
+              "Y": 20
+            },
+            "to": {
+              "X": 0,
+              "Y": 20
+            }
+          },
+          "Left": {
+            "from": {
+              "X": 0,
+              "Y": 40
+            },
+            "to": {
+              "X": 0,
+              "Y": 40
+            }
+          },
+          "Back": {
+            "from": {
+              "X": 0,
+              "Y": 60
+            },
+            "to": {
+              "X": 0,
+              "Y": 60
+            }
+          }
+        }
+      },
+      "expected_visibility": "front+right+left; absent on back"
+    },
+    {
+      "id": "M2_DOTS",
+      "palette": "CUTE_COCOA_GOLD",
+      "decal": "beret_dots_small",
+      "A_png_sha": "8f2476124b57c787",
+      "B_png_sha": "8f2476124b57c787",
+      "property_compare": {
+        "identical_properties": 16,
+        "differences": []
+      },
+      "roundtrip": {
+        "source": {
+          "pack": "SLB5 Direct",
+          "author": "RNG Clothing",
+          "asset": "SLB5 M2_DOTS A DIRECT",
+          "json": "/run/media/deck/USD00/RNG_clothing/test-packs/fashionsense/RNG-SLB5-Beret-RoundTrip-QC/Hats/M2_DOTS_A_DIRECT/hat.json",
+          "png": "/run/media/deck/USD00/RNG_clothing/test-packs/fashionsense/RNG-SLB5-Beret-RoundTrip-QC/Hats/M2_DOTS_A_DIRECT/hat.png"
+        },
+        "size": [
+          20,
+          20
+        ],
+        "directions_declared": [
+          "Back",
+          "Front",
+          "Left",
+          "Right"
+        ],
+        "properties_carried": {
+          "HeadPosition": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ],
+          "HatSize": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ],
+          "UniformAnimation": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ],
+          "DisableGrayscale": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ]
+        },
+        "properties_dropped": {},
+        "properties_unrecognised": {},
+        "starting_position_rewritten": {
+          "Front": {
+            "from": {
+              "X": 0,
+              "Y": 0
+            },
+            "to": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          "Right": {
+            "from": {
+              "X": 0,
+              "Y": 20
+            },
+            "to": {
+              "X": 0,
+              "Y": 20
+            }
+          },
+          "Left": {
+            "from": {
+              "X": 0,
+              "Y": 40
+            },
+            "to": {
+              "X": 0,
+              "Y": 40
+            }
+          },
+          "Back": {
+            "from": {
+              "X": 0,
+              "Y": 60
+            },
+            "to": {
+              "X": 0,
+              "Y": 60
+            }
+          }
+        }
+      },
+      "expected_visibility": "declared on all views; independently seated per view"
+    },
+    {
+      "id": "M3_BOW",
+      "palette": "PASTEL_PEACH_LILAC",
+      "decal": "bow_knot",
+      "A_png_sha": "c0899a2868084abe",
+      "B_png_sha": "c0899a2868084abe",
+      "property_compare": {
+        "identical_properties": 16,
+        "differences": []
+      },
+      "roundtrip": {
+        "source": {
+          "pack": "SLB5 Direct",
+          "author": "RNG Clothing",
+          "asset": "SLB5 M3_BOW A DIRECT",
+          "json": "/run/media/deck/USD00/RNG_clothing/test-packs/fashionsense/RNG-SLB5-Beret-RoundTrip-QC/Hats/M3_BOW_A_DIRECT/hat.json",
+          "png": "/run/media/deck/USD00/RNG_clothing/test-packs/fashionsense/RNG-SLB5-Beret-RoundTrip-QC/Hats/M3_BOW_A_DIRECT/hat.png"
+        },
+        "size": [
+          20,
+          20
+        ],
+        "directions_declared": [
+          "Back",
+          "Front",
+          "Left",
+          "Right"
+        ],
+        "properties_carried": {
+          "HeadPosition": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ],
+          "HatSize": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ],
+          "UniformAnimation": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ],
+          "DisableGrayscale": [
+            "Back",
+            "Front",
+            "Left",
+            "Right"
+          ]
+        },
+        "properties_dropped": {},
+        "properties_unrecognised": {},
+        "starting_position_rewritten": {
+          "Front": {
+            "from": {
+              "X": 0,
+              "Y": 0
+            },
+            "to": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          "Right": {
+            "from": {
+              "X": 0,
+              "Y": 20
+            },
+            "to": {
+              "X": 0,
+              "Y": 20
+            }
+          },
+          "Left": {
+            "from": {
+              "X": 0,
+              "Y": 40
+            },
+            "to": {
+              "X": 0,
+              "Y": 40
+            }
+          },
+          "Back": {
+            "from": {
+              "X": 0,
+              "Y": 60
+            },
+            "to": {
+              "X": 0,
+              "Y": 60
+            }
+          }
+        }
+      },
+      "expected_visibility": "declared on all views; independently seated per view"
+    }
+  ]
+}

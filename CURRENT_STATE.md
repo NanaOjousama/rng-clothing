@@ -370,3 +370,33 @@ Source:
 
 Live pack:
 /run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/RNG-SLB4-RoundTrip-QC/
+
+## SLB5 different-template round-trip QC — 2026-09-21
+
+User confirmed in-game that SLB4 round-trip motif behavior was correct, while the SLB3-style direct prototype kept the motif at one apparent screen-space location across facing changes.
+
+SLB5 retests the rule on a different approved source-backed construction: beret_02 from the Cottagecore source corpus.
+
+Important correction:
+- no fixed 20px policy is imposed by the builder;
+- frame width/height are derived from the source-backed base and its Fashion Sense model;
+- beret_02 naturally resolves to 20x20 because that is what its source declares.
+
+SLB5 cases:
+- P0 plain baseline
+- M1 leaf: decal declares Front + Right + Left only, so Back has no leaf
+- M2 dots: decal declares all four facings and is independently seated per view
+- M3 bow: decal declares all four facings and is independently seated per view
+
+For each case:
+- A DIRECT is rendered through the real v5/source_backed.py renderer
+- B ROUNDTRIP is then re-ingested and re-exported through v5/source/roundtrip.py
+
+Validation:
+- 4/4 A->B wear-property comparisons have zero differences
+- all motif-bearing A and B sheets contain four distinct directional frames
+- leaf visibility contract is inherited from decal views, not forced front-only
+- live Fashion Sense pack contains 8 searchable SLB5 entries
+
+Live pack:
+/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/RNG-SLB5-Beret-RoundTrip-QC/
