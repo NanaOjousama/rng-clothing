@@ -1,0 +1,9 @@
+{
+  "operation": "style-reference",
+  "prompt": "Create a varied batch of wearable slouch beanies for a cozy farming RPG. Use the references for the compact hat proportions, curved forehead contact, soft backward slouch, simple readable outline, and restrained Stardew-like value steps. Each result should be an isolated hat asset only, with no person, face, hair, mannequin, head, ears, text, UI, or background scene. Vary the slouch shape, cuff treatment, knit suggestion, color blocking, and small tasteful decoration while keeping the silhouette readable at tiny scale. Avoid realistic fabric texture and excessive tiny detail.",
+  "size": 16,
+  "references": [
+    "authored/templates/slouch_pl24/front.png",
+    "authored/source_backed/beanie_slouch/semantic/front.png"
+  ]
+}

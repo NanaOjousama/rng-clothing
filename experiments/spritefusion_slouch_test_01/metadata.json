@@ -1,0 +1,57 @@
+{
+  "operation": "style-reference",
+  "prompt": "Create a varied batch of wearable slouch beanies for a cozy farming RPG. Use the references for the compact hat proportions, curved forehead contact, soft backward slouch, simple readable outline, and restrained Stardew-like value steps. Each result should be an isolated hat asset only, with no person, face, hair, mannequin, head, ears, text, UI, or background scene. Vary the slouch shape, cuff treatment, knit suggestion, color blocking, and small tasteful decoration while keeping the silhouette readable at tiny scale. Avoid realistic fabric texture and excessive tiny detail.",
+  "size": 16,
+  "references": [
+    "authored/templates/slouch_pl24/front.png",
+    "authored/source_backed/beanie_slouch/semantic/front.png"
+  ],
+  "request_id": "req_fb263c9f-a647-4bda-b931-c1cbd3d07299",
+  "outputs": [
+    {
+      "index": 0,
+      "asset_id": "7aa9bb01-09d3-40c4-b7a7-f102b07bb4f6",
+      "local_path": "experiments/spritefusion_slouch_test_01/native/slouch_00.png"
+    },
+    {
+      "index": 1,
+      "asset_id": "a81929cf-dc58-4a0e-8aad-cf837c696ba8",
+      "local_path": "experiments/spritefusion_slouch_test_01/native/slouch_01.png"
+    },
+    {
+      "index": 2,
+      "asset_id": "98ff46f4-c518-47e9-bcfc-b394e59a8e91",
+      "local_path": "experiments/spritefusion_slouch_test_01/native/slouch_02.png"
+    },
+    {
+      "index": 3,
+      "asset_id": "a915190b-7900-4760-8290-ba0b108da1f8",
+      "local_path": "experiments/spritefusion_slouch_test_01/native/slouch_03.png"
+    },
+    {
+      "index": 4,
+      "asset_id": "833d846b-265e-4c09-9a8e-e2f36f4b6634",
+      "local_path": "experiments/spritefusion_slouch_test_01/native/slouch_04.png"
+    },
+    {
+      "index": 5,
+      "asset_id": "b21e2795-f263-4c9c-8880-383c600b4a30",
+      "local_path": "experiments/spritefusion_slouch_test_01/native/slouch_05.png"
+    },
+    {
+      "index": 6,
+      "asset_id": "1b5c4883-6346-444a-8df4-dca083949d55",
+      "local_path": "experiments/spritefusion_slouch_test_01/native/slouch_06.png"
+    },
+    {
+      "index": 7,
+      "asset_id": "25578672-ed43-48ef-aa83-15c271dee981",
+      "local_path": "experiments/spritefusion_slouch_test_01/native/slouch_07.png"
+    },
+    {
+      "index": 8,
+      "asset_id": "b477029a-ea78-4667-a68c-ff4699634d8d",
+      "local_path": "experiments/spritefusion_slouch_test_01/native/slouch_08.png"
+    }
+  ]
+}

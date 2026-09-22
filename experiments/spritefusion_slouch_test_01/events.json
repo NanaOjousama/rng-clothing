@@ -1,0 +1,225 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_fb263c9f-a647-4bda-b931-c1cbd3d07299",
+    "operation": "style-reference",
+    "credits": {
+      "reserved": 15,
+      "remaining": 990
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "7aa9bb01-09d3-40c4-b7a7-f102b07bb4f6",
+      "type": "image",
+      "createdAt": "2026-09-22T00:27:19.076Z",
+      "updatedAt": "2026-09-22T00:27:19.076Z",
+      "prompt": "Create a varied batch of wearable slouch beanies for a cozy farming RPG. Use the references for the compact hat proportions, curved forehead contact, soft backward slouch, simple readable outline, and restrained Stardew-like value steps. Each result should be an isolated hat asset only, with no person, face, hair, mannequin, head, ears, text, UI, or background scene. Vary the slouch shape, cuff treatment, knit suggestion, color blocking, and small tasteful decoration while keeping the silhouette readable at tiny scale. Avoid realistic fabric texture and excessive tiny detail.",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/7aa9bb01-09d3-40c4-b7a7-f102b07bb4f6/image.png?v=1790036839076",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "037b7792-fba9-4fd3-a5e5-68b130081496",
+      "batchIndex": 0,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "a81929cf-dc58-4a0e-8aad-cf837c696ba8",
+      "type": "image",
+      "createdAt": "2026-09-22T00:27:19.675Z",
+      "updatedAt": "2026-09-22T00:27:19.675Z",
+      "prompt": "Create a varied batch of wearable slouch beanies for a cozy farming RPG. Use the references for the compact hat proportions, curved forehead contact, soft backward slouch, simple readable outline, and restrained Stardew-like value steps. Each result should be an isolated hat asset only, with no person, face, hair, mannequin, head, ears, text, UI, or background scene. Vary the slouch shape, cuff treatment, knit suggestion, color blocking, and small tasteful decoration while keeping the silhouette readable at tiny scale. Avoid realistic fabric texture and excessive tiny detail.",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/a81929cf-dc58-4a0e-8aad-cf837c696ba8/image.png?v=1790036839675",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "037b7792-fba9-4fd3-a5e5-68b130081496",
+      "batchIndex": 1,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 2,
+    "asset": {
+      "id": "98ff46f4-c518-47e9-bcfc-b394e59a8e91",
+      "type": "image",
+      "createdAt": "2026-09-22T00:27:20.234Z",
+      "updatedAt": "2026-09-22T00:27:20.234Z",
+      "prompt": "Create a varied batch of wearable slouch beanies for a cozy farming RPG. Use the references for the compact hat proportions, curved forehead contact, soft backward slouch, simple readable outline, and restrained Stardew-like value steps. Each result should be an isolated hat asset only, with no person, face, hair, mannequin, head, ears, text, UI, or background scene. Vary the slouch shape, cuff treatment, knit suggestion, color blocking, and small tasteful decoration while keeping the silhouette readable at tiny scale. Avoid realistic fabric texture and excessive tiny detail.",
+      "width": 20,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/98ff46f4-c518-47e9-bcfc-b394e59a8e91/image.png?v=1790036840234",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "037b7792-fba9-4fd3-a5e5-68b130081496",
+      "batchIndex": 2,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 3,
+    "asset": {
+      "id": "a915190b-7900-4760-8290-ba0b108da1f8",
+      "type": "image",
+      "createdAt": "2026-09-22T00:27:20.877Z",
+      "updatedAt": "2026-09-22T00:27:20.877Z",
+      "prompt": "Create a varied batch of wearable slouch beanies for a cozy farming RPG. Use the references for the compact hat proportions, curved forehead contact, soft backward slouch, simple readable outline, and restrained Stardew-like value steps. Each result should be an isolated hat asset only, with no person, face, hair, mannequin, head, ears, text, UI, or background scene. Vary the slouch shape, cuff treatment, knit suggestion, color blocking, and small tasteful decoration while keeping the silhouette readable at tiny scale. Avoid realistic fabric texture and excessive tiny detail.",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/a915190b-7900-4760-8290-ba0b108da1f8/image.png?v=1790036840877",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "037b7792-fba9-4fd3-a5e5-68b130081496",
+      "batchIndex": 3,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 4,
+    "asset": {
+      "id": "833d846b-265e-4c09-9a8e-e2f36f4b6634",
+      "type": "image",
+      "createdAt": "2026-09-22T00:27:21.391Z",
+      "updatedAt": "2026-09-22T00:27:21.391Z",
+      "prompt": "Create a varied batch of wearable slouch beanies for a cozy farming RPG. Use the references for the compact hat proportions, curved forehead contact, soft backward slouch, simple readable outline, and restrained Stardew-like value steps. Each result should be an isolated hat asset only, with no person, face, hair, mannequin, head, ears, text, UI, or background scene. Vary the slouch shape, cuff treatment, knit suggestion, color blocking, and small tasteful decoration while keeping the silhouette readable at tiny scale. Avoid realistic fabric texture and excessive tiny detail.",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/833d846b-265e-4c09-9a8e-e2f36f4b6634/image.png?v=1790036841391",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "037b7792-fba9-4fd3-a5e5-68b130081496",
+      "batchIndex": 4,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 5,
+    "asset": {
+      "id": "b21e2795-f263-4c9c-8880-383c600b4a30",
+      "type": "image",
+      "createdAt": "2026-09-22T00:27:21.914Z",
+      "updatedAt": "2026-09-22T00:27:21.914Z",
+      "prompt": "Create a varied batch of wearable slouch beanies for a cozy farming RPG. Use the references for the compact hat proportions, curved forehead contact, soft backward slouch, simple readable outline, and restrained Stardew-like value steps. Each result should be an isolated hat asset only, with no person, face, hair, mannequin, head, ears, text, UI, or background scene. Vary the slouch shape, cuff treatment, knit suggestion, color blocking, and small tasteful decoration while keeping the silhouette readable at tiny scale. Avoid realistic fabric texture and excessive tiny detail.",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/b21e2795-f263-4c9c-8880-383c600b4a30/image.png?v=1790036841914",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "037b7792-fba9-4fd3-a5e5-68b130081496",
+      "batchIndex": 5,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 6,
+    "asset": {
+      "id": "1b5c4883-6346-444a-8df4-dca083949d55",
+      "type": "image",
+      "createdAt": "2026-09-22T00:27:22.495Z",
+      "updatedAt": "2026-09-22T00:27:22.495Z",
+      "prompt": "Create a varied batch of wearable slouch beanies for a cozy farming RPG. Use the references for the compact hat proportions, curved forehead contact, soft backward slouch, simple readable outline, and restrained Stardew-like value steps. Each result should be an isolated hat asset only, with no person, face, hair, mannequin, head, ears, text, UI, or background scene. Vary the slouch shape, cuff treatment, knit suggestion, color blocking, and small tasteful decoration while keeping the silhouette readable at tiny scale. Avoid realistic fabric texture and excessive tiny detail.",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/1b5c4883-6346-444a-8df4-dca083949d55/image.png?v=1790036842495",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "037b7792-fba9-4fd3-a5e5-68b130081496",
+      "batchIndex": 6,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 7,
+    "asset": {
+      "id": "25578672-ed43-48ef-aa83-15c271dee981",
+      "type": "image",
+      "createdAt": "2026-09-22T00:27:23.029Z",
+      "updatedAt": "2026-09-22T00:27:23.029Z",
+      "prompt": "Create a varied batch of wearable slouch beanies for a cozy farming RPG. Use the references for the compact hat proportions, curved forehead contact, soft backward slouch, simple readable outline, and restrained Stardew-like value steps. Each result should be an isolated hat asset only, with no person, face, hair, mannequin, head, ears, text, UI, or background scene. Vary the slouch shape, cuff treatment, knit suggestion, color blocking, and small tasteful decoration while keeping the silhouette readable at tiny scale. Avoid realistic fabric texture and excessive tiny detail.",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/25578672-ed43-48ef-aa83-15c271dee981/image.png?v=1790036843029",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "037b7792-fba9-4fd3-a5e5-68b130081496",
+      "batchIndex": 7,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 8,
+    "asset": {
+      "id": "b477029a-ea78-4667-a68c-ff4699634d8d",
+      "type": "image",
+      "createdAt": "2026-09-22T00:27:23.575Z",
+      "updatedAt": "2026-09-22T00:27:23.575Z",
+      "prompt": "Create a varied batch of wearable slouch beanies for a cozy farming RPG. Use the references for the compact hat proportions, curved forehead contact, soft backward slouch, simple readable outline, and restrained Stardew-like value steps. Each result should be an isolated hat asset only, with no person, face, hair, mannequin, head, ears, text, UI, or background scene. Vary the slouch shape, cuff treatment, knit suggestion, color blocking, and small tasteful decoration while keeping the silhouette readable at tiny scale. Avoid realistic fabric texture and excessive tiny detail.",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/b477029a-ea78-4667-a68c-ff4699634d8d/image.png?v=1790036843575",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "037b7792-fba9-4fd3-a5e5-68b130081496",
+      "batchIndex": 8,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 9,
+    "credits": {
+      "remaining": 990
+    }
+  }
+]

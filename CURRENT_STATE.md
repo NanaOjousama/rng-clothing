@@ -449,3 +449,19 @@ Validated smoke test:
 - adapter restored a 16x16 canvas
 - unapproved geometry drift exited 3 and did not publish output
 - explicit approval accepted the changed silhouette
+
+## Sprite Fusion remote API slouch test — 2026-09-21
+
+Verified Sprite Fusion API can be driven through Remote Desktop Commander from the Steam Deck.
+
+Test:
+- operation: style-reference
+- target size request: 16
+- references:
+  - authored/templates/slouch_pl24/front.png
+  - authored/source_backed/beanie_slouch/semantic/front.png
+- generated 9 slouch-beanie candidates
+- request consumed 15 credits (1005 -> 990)
+- originals preserved under experiments/spritefusion_slouch_test_01/native/
+- contact: experiments/spritefusion_slouch_test_01/contact_slouch_spritefusion_native_x9.png
+- observed returned PNG canvases ranged from 20x20 to 23x23 despite size=16 request; originals intentionally left untouched for evaluation
