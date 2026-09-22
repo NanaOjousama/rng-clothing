@@ -5,13 +5,14 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
 from v5.pngio import read_rgba_png
-from .model import CandidateOutput, DirectionSetManifest, PromotionStatus
+from .model import CandidateOutput, DirectionMethod, DirectionSetManifest, PromotionStatus
 
 
 MAX_ACCEPTED_DIMENSION = 32
 PREFERRED_MIN = 16
 PREFERRED_MAX = 24
 REQUIRED_SF_DIRECTIONS = {"N", "NE", "E", "SE", "S", "SW", "W", "NW"}
+REQUIRED_CARDINAL_DIRECTIONS = {"front", "right", "back", "left"}
 
 
 def _alpha_cells(path: str) -> Tuple[int, int, set[tuple[int, int]]]:
@@ -87,9 +88,16 @@ def direction_qc(manifest: DirectionSetManifest) -> Dict[str, object]:
     warnings: List[str] = []
     present = set(manifest.directions)
 
-    missing = sorted(REQUIRED_SF_DIRECTIONS - present)
-    if missing:
-        issues.append("missing_directions:" + ",".join(missing))
+    if manifest.method == DirectionMethod.EDIT_CARDINAL:
+        missing = sorted(REQUIRED_CARDINAL_DIRECTIONS - present)
+        if missing:
+            issues.append("missing_cardinals:" + ",".join(missing))
+        if manifest.garment_category.lower() in {"hat", "headwear"} and present != REQUIRED_CARDINAL_DIRECTIONS:
+            warnings.append("headwear_edit_cardinal_should_only_package_cardinals")
+    else:
+        missing = sorted(REQUIRED_SF_DIRECTIONS - present)
+        if missing:
+            issues.append("missing_directions:" + ",".join(missing))
     size_reports = {}
     for direction, asset in manifest.directions.items():
         report = candidate_qc(
@@ -110,13 +118,19 @@ def direction_qc(manifest: DirectionSetManifest) -> Dict[str, object]:
         "passMechanical": not issues,
         "issues": issues,
         "warnings": warnings,
-        "cardinalMap": {"front": "S", "right": "E", "back": "N", "left": "W"},
+        "cardinalMap": (
+            {"front": "front", "right": "right", "back": "back", "left": "left"}
+            if manifest.method == DirectionMethod.EDIT_CARDINAL
+            else {"front": "S", "right": "E", "back": "N", "left": "W"}
+        ),
+        "method": manifest.method.value,
         "assetReports": size_reports,
         "semanticHumanReviewRequired": True,
         "consistencyChecklist": [
             "WHOLE_HAT identity consistent across cardinal views",
             "WRAPAROUND_REGION treatment continues on same semantic region",
-            "LOCALIZED motifs only appear where physically intended",
+            "LOCALIZED motifs are generator-controlled after base cardinals and only appear where physically intended",
+            "left base matches a deterministic mirror of the selected right base unless construction explicitly forbids mirroring",
             "no new person/mannequin/head/face/background contamination",
             "side/back remain the same garment, not a redesigned garment",
         ],

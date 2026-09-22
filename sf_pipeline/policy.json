@@ -1,22 +1,37 @@
 {
-  "schema": "rng-clothing-sf-pipeline/v1",
+  "schema": "rng-clothing-sf-pipeline/v2",
   "docs": "docs/SPRITE_FUSION_WORKFLOW.md",
   "requestedSize": 16,
-  "preferredSizeRange": [16, 24],
+  "preferredSizeRange": [
+    16,
+    24
+  ],
   "maximumCandidateDimension": 32,
-  "referenceCountPreferred": [4, 8],
+  "referenceCountPreferred": [
+    4,
+    8
+  ],
   "operations": {
     "newCandidate": "style-reference",
     "targetedRepair": "edit",
-    "directions": "direction-set"
+    "directions": "edit-cardinal"
   },
   "cardinalMap": {
-    "front": "S",
-    "right": "E",
-    "back": "N",
-    "left": "W"
+    "front": "front",
+    "right": "right",
+    "back": "back",
+    "left": "left"
   },
   "pixelSnapperNativeSpriteFusionDefault": false,
   "humanArtApprovalRequired": true,
-  "esmWearApprovalRequired": true
+  "esmWearApprovalRequired": true,
+  "headwearDirectionalPolicy": {
+    "productionMethod": "edit-cardinal",
+    "front": "approved candidate",
+    "right": "Sprite Fusion edit from approved front",
+    "back": "Sprite Fusion edit from approved front",
+    "left": "deterministic mirror of approved right base",
+    "localizedPlacementAuthority": "generator semantic zones/anchors",
+    "legacyDirectionSet": "research/evidence only; not production authority for hats"
+  }
 }

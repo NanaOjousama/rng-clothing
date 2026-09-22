@@ -734,3 +734,25 @@ ESM QC:
 - presentation scale is normalized from native generated frame width, not opaque bounding-box width.
 - Release build: PASS, 0 warnings / 0 errors.
 - EnhancedSewingMachine.Tests executable: ALL TESTS PASSED.
+
+## Headwear directional workflow locked — 2026-09-22
+
+SFP1 follow-up proved Sprite Fusion direction-set is unreliable for isolated hats: repeated runs hallucinated wearer/body contamination. The successful production method is now EDIT-CARDINAL.
+
+Production headwear direction construction:
+- Front = approved Sprite Fusion candidate.
+- Right = Sprite Fusion edit from the approved Front; select compact hat-only result.
+- Back = Sprite Fusion edit from the approved Front; select compact hat-only result.
+- Left base = deterministic horizontal mirror of the approved Right base for mirror-safe construction.
+- Do not spend a separate AI edit on Left unless construction explicitly forbids mirroring and Nana approves an exception.
+- LOCALIZED motifs/tags/patches are applied after base cardinal construction by generator semantic zones/anchors/visibility rules.
+- direction-set remains only for legacy research/evidence; it is not production authority for hats.
+- WHOLE_HAT and WRAPAROUND_REGION tests passed visually with this edit-based method.
+- LOCALIZED test showed independent Left AI edit drift; this is why Left is now mirrored and localized decoration remains deterministic.
+
+Implementation:
+- sf_pipeline now has DirectionMethod with legacy-direction-set and edit-cardinal.
+- direction_qc accepts 4-cardinal edit manifests and preserves legacy 8-direction evidence support.
+- sf_pipeline/headwear_directional.py owns deterministic Right->Left mirroring.
+- policy/docs/roll-matrix/AI-assisted config all point to edit-cardinal for headwear production.
+- validator now explicitly tests both legacy evidence and edit-cardinal production.

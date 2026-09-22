@@ -15,6 +15,11 @@ class PromotionStatus(str, Enum):
     REJECTED = "REJECTED"
 
 
+class DirectionMethod(str, Enum):
+    LEGACY_DIRECTION_SET = "legacy-direction-set"
+    EDIT_CARDINAL = "edit-cardinal"
+
+
 class ReferenceRole(str, Enum):
     CONSTRUCTION = "construction"
     MATERIAL = "material"
@@ -79,9 +84,18 @@ class DirectionSetManifest:
     status: PromotionStatus = PromotionStatus.CANDIDATE_DIRECTIONAL
     consistency_classes: Dict[str, str] = field(default_factory=dict)
     qc_notes: List[str] = field(default_factory=list)
+    method: DirectionMethod = DirectionMethod.LEGACY_DIRECTION_SET
+    garment_category: str = ""
 
     @property
     def cardinal(self) -> Dict[str, Optional[DirectionAsset]]:
+        if self.method == DirectionMethod.EDIT_CARDINAL:
+            return {
+                "front": self.directions.get("front"),
+                "right": self.directions.get("right"),
+                "back": self.directions.get("back"),
+                "left": self.directions.get("left"),
+            }
         return {
             "front": self.directions.get("S"),
             "right": self.directions.get("E"),

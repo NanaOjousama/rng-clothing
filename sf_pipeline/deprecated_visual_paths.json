@@ -18,6 +18,10 @@
     {
       "path": "v5/grammar.py",
       "reason": "Semantic planning may remain useful, but procedural visual synthesis is not authoritative for SF-backed production art."
+    },
+    {
+      "path": "Sprite Fusion direction-set for headwear production",
+      "reason": "Repeated hat-only tests hallucinated wearer/body contamination; retain only for legacy research/evidence, not production headwear direction generation."
     }
   ]
 }

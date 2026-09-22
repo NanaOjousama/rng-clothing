@@ -35,23 +35,26 @@ Use this file as the source of truth for GPT/Claude/Codex when working on the AI
 - Reject >32 px on either dimension for the current Stardew candidate path.
 - Reject obvious non-hat contamination: mannequin/person/head/face, extra object, background, UI/text, or disconnected junk.
 - Mechanical checks may flag stray components/oversize/canvas issues, but semantic contamination still requires human review.
-- Review/cleanup happens BEFORE direction-set.
+- Review/cleanup happens BEFORE any directional edit.
 - Produce a zoomed front-candidate contact sheet; human marks ACCEPT / REWORK / REJECT.
 - REWORK uses targeted edit or manual editor cleanup; do not regenerate blindly if the candidate is already close.
 
 ## Direction workflow
-- Run direction-set ONLY on an approved clean primary sprite.
-- Preserve all 8 returned directions and their asset IDs.
-- Stardew cardinal mapping: S=Front, E=Right, N=Back, W=Left.
-- Diagonals remain provenance/source evidence even if ESM only uses four cardinals.
-- Do not project one front image into side/back as production art.
-- A single bad direction can be individually reworked; do not throw away the whole design automatically.
+- **Headwear production uses EDIT-CARDINAL, not direction-set.**
+- Front = approved candidate.
+- Right = Sprite Fusion edit from the approved Front; choose the compact hat-only result.
+- Back = Sprite Fusion edit from the approved Front; choose the compact hat-only result.
+- Left base = deterministic horizontal mirror of the approved Right base for mirror-safe hat construction.
+- Do not spend a separate AI edit on Left unless construction explicitly forbids mirroring and Nana approves that exception.
+- LOCALIZED motifs/tags/patches are applied after the base cardinal views by the generator using declared placement/visibility rules.
+- direction-set is retained only for legacy research/evidence because repeated hat-only tests hallucinated wearer/body contamination.
+- Do not project the Front into side/back as production art.
 ## Direction consistency QC
 - WHOLE_HAT: all-over material/pattern identity must remain consistent across Front/Right/Back/Left.
 - WRAPAROUND_REGION: continuous cuff/headband/crown treatment must remain on that semantic region in every visible view.
 - LOCALIZED: motif/emblem/tag/patch appears only where physically/intentionally visible; it does NOT need to appear in every view.
 - Edge labels stay attached to the physical edge/side; never duplicate as a fixed screen-space sticker.
-- Reject a direction set if a whole-hat/wraparound feature disappears, changes category, jumps regions, or contamination appears.
+- Reject a cardinal set if a whole-hat/wraparound feature disappears, changes category, jumps regions, or contamination appears.
 - Produce a 4-cardinal contact sheet before ESM.
 
 ## ESM / promotion

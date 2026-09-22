@@ -17,5 +17,13 @@
     "trustedSourceBacked": "existing source-backed renderer paths",
     "aiAssisted": "Sprite Fusion workflow"
   },
-  "productionRequirement": "Only PRODUCTION_APPROVED assets may enter the live production pool."
+  "productionRequirement": "Only PRODUCTION_APPROVED assets may enter the live production pool.",
+  "headwearDirectionalProduction": {
+    "method": "edit-cardinal",
+    "right": "Sprite Fusion edit",
+    "back": "Sprite Fusion edit",
+    "left": "mirror approved right base",
+    "localized": "generator-controlled after base cardinal construction",
+    "directionSet": "deprecated for hat production"
+  }
 }
