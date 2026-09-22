@@ -25,3 +25,14 @@ Before generator, Fashion Sense QC, source-backed, or ESM work:
 6. Never claim work was committed without an observed commit hash.
 7. Quarantine rejected experiments from authoritative constructions. BEANIE8_QC is rejected and must not replace the recovered source-backed beanie path.
 8. Do not bless the current Soft Cap working-tree changes by updating fixtures until the Soft Cap expansion is intentionally reviewed and accepted.
+
+## Sprite Fusion assisted generator safeguard
+
+Before modifying the Sprite Fusion / AI-assisted clothing generator path:
+1. Read docs/SPRITE_FUSION_WORKFLOW.md.
+2. Treat sf_pipeline/policy.json as executable policy and sf_pipeline/deprecated_visual_paths.json as the legacy-path quarantine list.
+3. Do not send unreviewed generated art directly to direction-set, ESM, Fashion Sense, or a production pool.
+4. Do not fabricate side/back production frames from a front-only AI candidate.
+5. Native Sprite Fusion output does not receive Pixel Snapper by default.
+6. Only PRODUCTION_APPROVED assets may enter the production generator pool.
+7. Preserve template/silhouette authority unless Nana explicitly approves a silhouette change.

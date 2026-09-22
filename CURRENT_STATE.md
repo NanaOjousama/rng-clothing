@@ -665,3 +665,43 @@ Verification:
 - EnhancedSewingMachine Release build: 0 warnings / 0 errors; auto-deployed to live Mods folder.
 - EnhancedSewingMachine.Tests executable: ALL TESTS PASSED.
 - SFB3 ESM QC registry: 8/8 definitions validated; all textures 24x96; normalized scale confirmed.
+
+## Sprite Fusion workflow rebuild / generator pipeline v2 — 2026-09-21
+
+Canonical handoff:
+- docs/SPRITE_FUSION_WORKFLOW.md is the source of truth for GPT/Claude/Codex.
+- AGENTS.md now requires future agents to read that file before AI-assisted generator work.
+
+Preserved:
+- template/silhouette contracts
+- source deconstruction/provenance
+- roll matrices, rarity guidance, exclusions, placement, view-consistency semantics
+- trusted source-backed render paths
+- ESM runtime/fitting/QC preview
+- QC/contact-sheet infrastructure
+
+Deprecated for finished SF-backed art:
+- SFB1-style generic procedural redraw of donor materials/trim/micro accents
+- SFB2-style front-only projection into side/back
+- automatic Pixel Snapper pass on clean native Sprite Fusion output
+
+New SF-assisted pipeline:
+- sf_pipeline/policy.json defines size/reference/API-operation policy.
+- sf_pipeline/model.py defines candidate/direction manifests and promotion states.
+- sf_pipeline/reference_bundle.py validates role-based reference sets and builds style-reference request specs.
+- sf_pipeline/client.py is a reusable API client; it does not auto-retry charged requests.
+- tools/sf_run_request.py executes checked request specs and downloads outputs/provenance locally.
+- sf_pipeline/qc.py provides candidate + direction mechanical gates and mandatory semantic human-review checklists.
+- sf_pipeline/promotion.py enforces legal lifecycle transitions.
+- sf_pipeline/registry.json + tools/sf_pipeline_cli.py provide persistent promotion history.
+- generator/data/ai_assisted_visual_pipeline.json connects this pipeline to generator policy.
+- slouch_beanie_roll_matrix now requires PRODUCTION_APPROVED plus candidate mechanical QC, direction mechanical QC, human art approval, and ESM wear approval.
+
+Smoke verification:
+- PASS SF pipeline policy
+- PASS candidate mechanical gate
+- PASS 8-direction mechanical gate
+- PASS production fail-closed gate
+- PASS slouch beanie roll matrix
+- PASS dependency-free SF pipeline unit assertions
+- PASS SF request runner CLI load

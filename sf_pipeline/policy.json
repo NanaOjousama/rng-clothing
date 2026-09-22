@@ -1,0 +1,22 @@
+{
+  "schema": "rng-clothing-sf-pipeline/v1",
+  "docs": "docs/SPRITE_FUSION_WORKFLOW.md",
+  "requestedSize": 16,
+  "preferredSizeRange": [16, 24],
+  "maximumCandidateDimension": 32,
+  "referenceCountPreferred": [4, 8],
+  "operations": {
+    "newCandidate": "style-reference",
+    "targetedRepair": "edit",
+    "directions": "direction-set"
+  },
+  "cardinalMap": {
+    "front": "S",
+    "right": "E",
+    "back": "N",
+    "left": "W"
+  },
+  "pixelSnapperNativeSpriteFusionDefault": false,
+  "humanArtApprovalRequired": true,
+  "esmWearApprovalRequired": true
+}

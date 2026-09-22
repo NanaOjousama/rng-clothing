@@ -1,0 +1,19 @@
+{
+  "schema": "rng-clothing-sf-candidate/v1",
+  "id": "smoke.sf01",
+  "operation": "style-reference",
+  "requestedSize": 16,
+  "status": "GENERATED_UNREVIEWED",
+  "requestId": "req_85d1a922-08de-43f0-bead-23db4d39720c",
+  "prompt": "fixture from existing approved-size Sprite Fusion material batch",
+  "sourceFamily": "slouch_beanie",
+  "constructionTemplate": "generator/data/templates/slouch_pl24.json",
+  "output": {
+    "index": 0,
+    "asset_id": "c999e097-4fa0-414c-bf63-7f55e920bbb7",
+    "width": 20,
+    "height": 20,
+    "accepted": true,
+    "local_path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_00.png"
+  }
+}

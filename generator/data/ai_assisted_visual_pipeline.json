@@ -1,0 +1,21 @@
+{
+  "schema": "rng-clothing-ai-assisted-visual-pipeline/v1",
+  "primaryWorkflow": "docs/SPRITE_FUSION_WORKFLOW.md",
+  "policy": "sf_pipeline/policy.json",
+  "registry": "sf_pipeline/registry.json",
+  "deprecatedVisualPaths": "sf_pipeline/deprecated_visual_paths.json",
+  "plannerAuthority": [
+    "template contracts",
+    "source roles",
+    "roll matrix",
+    "rarity guidance",
+    "exclusions",
+    "placement rules",
+    "view-consistency policy"
+  ],
+  "visualSynthesisAuthority": {
+    "trustedSourceBacked": "existing source-backed renderer paths",
+    "aiAssisted": "Sprite Fusion workflow"
+  },
+  "productionRequirement": "Only PRODUCTION_APPROVED assets may enter the live production pool."
+}

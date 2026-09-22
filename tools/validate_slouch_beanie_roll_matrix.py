@@ -85,6 +85,17 @@ def main():
     fleece=next(r for r in data['exclusions'] if r.get('when')=={'knitStructure':'fleece_wool'})
     assert 'cable_plus_stripe' in fleece['disallow']['pattern']
 
+    # AI-assisted production path is fail-closed and must remain wired.
+    pipeline=Path(data['aiAssistedVisualPipeline'])
+    assert pipeline.exists(), f'missing AI-assisted visual pipeline {pipeline}'
+    promotion=data['productionPromotionPolicy']
+    assert promotion['requiredStatus']=='PRODUCTION_APPROVED'
+    assert promotion['candidateMechanicalQC'] is True
+    assert promotion['directionMechanicalQC'] is True
+    assert promotion['humanArtApproval'] is True
+    assert promotion['esmWearApproval'] is True
+    assert 'procedural redraw' in data['renderPolicy']['sfAssistedRule']
+
     # Presentation is a soft preference only, never a gender lock.
     assert all(v.get('avoidHardLocks') is True for v in data['presentationModifiers'].values())
     print('PASS slouch beanie roll matrix')

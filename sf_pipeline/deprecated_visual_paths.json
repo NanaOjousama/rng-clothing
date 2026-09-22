@@ -1,0 +1,23 @@
+{
+  "schema": "rng-clothing-deprecated-visual-paths/v1",
+  "status": "SUPPORT_RESEARCH_ONLY",
+  "rule": "Do not use these as production visual authority for Sprite-Fusion-backed garments.",
+  "entries": [
+    {
+      "path": "tools/build_sfb1_accent_rarity_qc.py",
+      "reason": "Procedural redraw approximated donor art with generic tiles/straight-line trim/hard-coded micro accents."
+    },
+    {
+      "path": "tools/build_sfb2_source_fidelity_qc.py",
+      "reason": "Front donor structure was projected into non-front directions; useful only as a failed diagnostic."
+    },
+    {
+      "path": "v5/ag.py",
+      "reason": "Procedural art generation remains research/support; not primary finished visual authority when approved source/SF art exists."
+    },
+    {
+      "path": "v5/grammar.py",
+      "reason": "Semantic planning may remain useful, but procedural visual synthesis is not authoritative for SF-backed production art."
+    }
+  ]
+}

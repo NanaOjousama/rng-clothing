@@ -1,0 +1,78 @@
+{
+  "schema": "rng-clothing-sf-direction-set/v1",
+  "id": "smoke.sf01.directions",
+  "sourceCandidateId": "smoke.sf01",
+  "sourceAssetId": "c999e097-4fa0-414c-bf63-7f55e920bbb7",
+  "requestedSize": 16,
+  "status": "CANDIDATE_DIRECTIONAL",
+  "cardinalMap": {
+    "front": "S",
+    "right": "E",
+    "back": "N",
+    "left": "W"
+  },
+  "directions": {
+    "SE": {
+      "direction": "SE",
+      "asset_id": "8515af48-3c90-4537-a8be-1445ceea075a",
+      "width": 21,
+      "height": 21,
+      "path": "experiments/spritefusion_direction_test_01/directions/SE.png"
+    },
+    "S": {
+      "direction": "S",
+      "asset_id": "73bbd732-7afc-46f3-9952-6d079eb8e854",
+      "width": 21,
+      "height": 21,
+      "path": "experiments/spritefusion_direction_test_01/directions/S.png"
+    },
+    "SW": {
+      "direction": "SW",
+      "asset_id": "b12a56ed-2bb0-4f47-87cf-5660117d2540",
+      "width": 21,
+      "height": 21,
+      "path": "experiments/spritefusion_direction_test_01/directions/SW.png"
+    },
+    "E": {
+      "direction": "E",
+      "asset_id": "a978ea94-7755-4553-b4d5-3837ed81ae9d",
+      "width": 21,
+      "height": 21,
+      "path": "experiments/spritefusion_direction_test_01/directions/E.png"
+    },
+    "W": {
+      "direction": "W",
+      "asset_id": "a1509e34-6879-468c-942e-56074e7114ad",
+      "width": 22,
+      "height": 22,
+      "path": "experiments/spritefusion_direction_test_01/directions/W.png"
+    },
+    "NE": {
+      "direction": "NE",
+      "asset_id": "66ee9cd5-0ff6-45cb-abff-d0d702ee6c6c",
+      "width": 21,
+      "height": 21,
+      "path": "experiments/spritefusion_direction_test_01/directions/NE.png"
+    },
+    "N": {
+      "direction": "N",
+      "asset_id": "e40e4dbf-8320-434d-b345-2735f0d9a030",
+      "width": 20,
+      "height": 20,
+      "path": "experiments/spritefusion_direction_test_01/directions/N.png"
+    },
+    "NW": {
+      "direction": "NW",
+      "asset_id": "26731efc-59ce-45bb-8908-63d02a29902e",
+      "width": 21,
+      "height": 21,
+      "path": "experiments/spritefusion_direction_test_01/directions/NW.png"
+    }
+  },
+  "consistencyClasses": {
+    "knitStructure": "WHOLE_HAT",
+    "pattern": "WHOLE_HAT",
+    "trimAccent": "WRAPAROUND_REGION",
+    "motif": "LOCALIZED"
+  }
+}

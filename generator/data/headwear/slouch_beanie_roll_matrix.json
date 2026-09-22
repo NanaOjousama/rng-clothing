@@ -809,7 +809,8 @@
       "construction-defined asymmetry"
     ],
     "styleRule": "Outline/shading must be slouch-specific and QC-approved; styling may not rewrite the locked slouch silhouette.",
-    "styleAuthority": "approved deconstructed mod-author source through source transfer library; target template alpha remains locked"
+    "styleAuthority": "approved deconstructed mod-author source through source transfer library; target template alpha remains locked",
+    "sfAssistedRule": "When Sprite Fusion is used, generator semantics plan the request but approved SF/source art owns visual synthesis; do not replace it with generic procedural redraw."
   },
   "templateContract": "generator/data/templates/slouch_pl24.json",
   "sourceTransferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json",
@@ -981,5 +982,14 @@
       "frontMotifs": "Front-only is valid unless the motif definition explicitly declares additional visible views."
     },
     "consistencyCheck": "Directional generation/QC must reject recipes where WHOLE_HAT or WRAPAROUND_REGION identity disappears, changes category, or jumps to the wrong semantic region between cardinal views."
+  },
+  "aiAssistedVisualPipeline": "generator/data/ai_assisted_visual_pipeline.json",
+  "productionPromotionPolicy": {
+    "requiredStatus": "PRODUCTION_APPROVED",
+    "candidateMechanicalQC": true,
+    "directionMechanicalQC": true,
+    "humanArtApproval": true,
+    "esmWearApproval": true,
+    "rule": "Roll planning may happen before art exists; production pool admission may not."
   }
 }
