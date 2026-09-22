@@ -249,6 +249,38 @@
         7,
         4
       ]
+    },
+    "cuff_patch_small": {
+      "category": "MICRO_ACCENT",
+      "path": "authored/motifs/slouch_beanie_v1/assets/cuff_patch_small.png",
+      "size": [
+        3,
+        2
+      ]
+    },
+    "side_bow_small": {
+      "category": "MICRO_ACCENT",
+      "path": "authored/motifs/slouch_beanie_v1/assets/side_bow_small.png",
+      "size": [
+        5,
+        3
+      ]
+    },
+    "diagonal_wrap_band": {
+      "category": "MICRO_ACCENT",
+      "path": "authored/motifs/slouch_beanie_v1/assets/diagonal_wrap_band.png",
+      "size": [
+        7,
+        3
+      ]
+    },
+    "tiny_label_tag": {
+      "category": "MICRO_ACCENT",
+      "path": "authored/motifs/slouch_beanie_v1/assets/tiny_label_tag.png",
+      "size": [
+        2,
+        3
+      ]
     }
   },
   "sheet": "authored/motifs/slouch_beanie_v1/slouch_beanie_motif_sheet.png",
@@ -257,6 +289,7 @@
     "carriers": "Patch/label shapes are independent of symbols so combinations multiply without duplicate art.",
     "attachments": "Pom assets are silhouette attachments, not motifs; roll separately.",
     "patterns": "Surface swatches are references/primitives, not placed motif sprites.",
-    "sourcePolicy": "User photos and online research are reference-only; no photo pixels were copied."
+    "sourcePolicy": "User photos and online research are reference-only; no photo pixels were copied.",
+    "microAccents": "Low-complexity beanie accents inspired by approved visual examples; fit inside locked alpha unless explicitly promoted to an attachment."
   }
 }

@@ -515,3 +515,41 @@ Exclusions:
 Validation:
 - PASS slouch beanie roll matrix
 - PASS source-backed template generator
+
+## SFB1 slouch accent generator + rarity QC — 2026-09-21
+
+Implemented approved beanie design ideas into the slouch-beanie generator contract.
+
+New roll axes:
+- trimAccent: none, band_trim_line, crown_trim_line, double_trim_lines
+- microAccent: none, cuff_patch_small, side_bow_small, diagonal_wrap_band, tiny_label_tag
+
+Hard placement rule:
+- tiny_label_tag is edge-only
+- allowed only at cuff_side_left/right or body_side_left/right
+- never center-front, crown-center, or floating in the middle of the beanie
+
+New reusable micro-accent assets:
+- cuff_patch_small
+- side_bow_small
+- diagonal_wrap_band
+- tiny_label_tag
+
+New exclusions:
+- double trim avoids plaid/jacquard/cable+stripe and diagonal wrap
+- side bow avoids plaid plus dense cable/chunky surfaces
+- diagonal wrap avoids stripe/color-block/plaid and conflicting trim lines
+- label tag has hard side-edge placement-only rule
+
+Validation:
+- PASS slouch beanie roll matrix
+- 16 roll axes
+- 32 exclusions
+- existing material/pattern donor profiles remain intact
+
+SFB1 in-game QC:
+- live Fashion Sense pack: /run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/RNG-SFB1-Accent-Rarity-QC
+- searchable tag: SFB1
+- 8 hats total
+- Common 2 / Uncommon 2 / Rare 2 / Epic 2
+- all frames preserve locked PL24 alpha geometry

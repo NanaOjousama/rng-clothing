@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 PATH=Path('generator/data/headwear/slouch_beanie_roll_matrix.json')
-required_axes=['presentationLean','slouchDepth','bandType','drapeDirection','crownShape','openingFit','knitStructure','pattern','motif','carrierStyle','decorationStyle','motifPlacement','attachment','hardwareAccent']
+required_axes=['presentationLean','slouchDepth','bandType','drapeDirection','crownShape','openingFit','knitStructure','pattern','trimAccent','microAccent','motif','carrierStyle','decorationStyle','motifPlacement','attachment','hardwareAccent']
 
 def main():
     data=json.loads(PATH.read_text())
@@ -52,6 +52,13 @@ def main():
                 assert value in axes[axis], f'{name}: {axis}.{value} not rollable'
     assert 'fleece_wool' in axes['knitStructure']
     assert 'plaid_woven' in axes['pattern']
+    assert {'none','band_trim_line','crown_trim_line','double_trim_lines'}.issubset(axes['trimAccent'])
+    assert {'none','cuff_patch_small','side_bow_small','diagonal_wrap_band','tiny_label_tag'}.issubset(axes['microAccent'])
+    label=data['microAccentPlacementRules']['tiny_label_tag']
+    assert label.get('edgeOnly') is True
+    assert set(label['allowedPlacements'])=={'cuff_side_left','cuff_side_right','body_side_left','body_side_right'}
+    label_rule=next(r for r in data['exclusions'] if r.get('when')=={'microAccent':'tiny_label_tag'})
+    assert set(label_rule['allowOnly']['motifPlacement'])==set(label['allowedPlacements'])
 
     # Hard guard: no-band results may not use cuff-only placements.
     no_band=next(r for r in data['exclusions'] if r.get('when')=={'bandType':'none'})
