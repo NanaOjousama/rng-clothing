@@ -1,0 +1,225 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_3ab172a6-015c-468b-829b-0bd786a16cfb",
+    "operation": "style-reference",
+    "credits": {
+      "reserved": 15,
+      "remaining": 255
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "0ea6e0a8-16e8-4d53-b791-240a54b18fda",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:54.835Z",
+      "updatedAt": "2026-09-22T23:23:54.835Z",
+      "prompt": "slouch beanie, cable knit, twin stripe, standard cuff, extra slouch, back center, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 26,
+      "height": 26,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/0ea6e0a8-16e8-4d53-b791-240a54b18fda/image.png?v=1790119434835",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "2cca44f9-677d-4b99-a338-30fb614c2912",
+      "batchIndex": 0,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "14e4437f-02d3-4016-a459-d4833cc86e05",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:55.509Z",
+      "updatedAt": "2026-09-22T23:23:55.509Z",
+      "prompt": "slouch beanie, cable knit, twin stripe, standard cuff, extra slouch, back center, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 26,
+      "height": 26,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/14e4437f-02d3-4016-a459-d4833cc86e05/image.png?v=1790119435509",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "2cca44f9-677d-4b99-a338-30fb614c2912",
+      "batchIndex": 1,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 2,
+    "asset": {
+      "id": "f2f48986-0596-4b09-a7c8-eee19eb820a5",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:56.168Z",
+      "updatedAt": "2026-09-22T23:23:56.168Z",
+      "prompt": "slouch beanie, cable knit, twin stripe, standard cuff, extra slouch, back center, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 27,
+      "height": 27,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/f2f48986-0596-4b09-a7c8-eee19eb820a5/image.png?v=1790119436168",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "2cca44f9-677d-4b99-a338-30fb614c2912",
+      "batchIndex": 2,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 3,
+    "asset": {
+      "id": "b4e4698a-ea65-4c93-9bbe-292ae16b0d2d",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:56.732Z",
+      "updatedAt": "2026-09-22T23:23:56.732Z",
+      "prompt": "slouch beanie, cable knit, twin stripe, standard cuff, extra slouch, back center, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 25,
+      "height": 25,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/b4e4698a-ea65-4c93-9bbe-292ae16b0d2d/image.png?v=1790119436732",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "2cca44f9-677d-4b99-a338-30fb614c2912",
+      "batchIndex": 3,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 4,
+    "asset": {
+      "id": "f85f3447-8f8a-44a2-926c-6b5de0d5d1cc",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:57.287Z",
+      "updatedAt": "2026-09-22T23:23:57.287Z",
+      "prompt": "slouch beanie, cable knit, twin stripe, standard cuff, extra slouch, back center, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 25,
+      "height": 25,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/f85f3447-8f8a-44a2-926c-6b5de0d5d1cc/image.png?v=1790119437287",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "2cca44f9-677d-4b99-a338-30fb614c2912",
+      "batchIndex": 4,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 5,
+    "asset": {
+      "id": "b812942f-aaf7-4559-84aa-c4ef61255b3e",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:57.941Z",
+      "updatedAt": "2026-09-22T23:23:57.941Z",
+      "prompt": "slouch beanie, cable knit, twin stripe, standard cuff, extra slouch, back center, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 26,
+      "height": 26,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/b812942f-aaf7-4559-84aa-c4ef61255b3e/image.png?v=1790119437941",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "2cca44f9-677d-4b99-a338-30fb614c2912",
+      "batchIndex": 5,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 6,
+    "asset": {
+      "id": "6ffb389d-ce0d-4785-a176-dae465f34b02",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:58.533Z",
+      "updatedAt": "2026-09-22T23:23:58.533Z",
+      "prompt": "slouch beanie, cable knit, twin stripe, standard cuff, extra slouch, back center, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 25,
+      "height": 25,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/6ffb389d-ce0d-4785-a176-dae465f34b02/image.png?v=1790119438533",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "2cca44f9-677d-4b99-a338-30fb614c2912",
+      "batchIndex": 6,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 7,
+    "asset": {
+      "id": "80dbc36e-5549-423e-b536-9b379ca07a6f",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:59.098Z",
+      "updatedAt": "2026-09-22T23:23:59.098Z",
+      "prompt": "slouch beanie, cable knit, twin stripe, standard cuff, extra slouch, back center, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 25,
+      "height": 25,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/80dbc36e-5549-423e-b536-9b379ca07a6f/image.png?v=1790119439098",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "2cca44f9-677d-4b99-a338-30fb614c2912",
+      "batchIndex": 7,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 8,
+    "asset": {
+      "id": "236193bf-c91b-4d6f-baad-0d2743da76e0",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:59.707Z",
+      "updatedAt": "2026-09-22T23:23:59.707Z",
+      "prompt": "slouch beanie, cable knit, twin stripe, standard cuff, extra slouch, back center, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 26,
+      "height": 26,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/236193bf-c91b-4d6f-baad-0d2743da76e0/image.png?v=1790119439707",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "2cca44f9-677d-4b99-a338-30fb614c2912",
+      "batchIndex": 8,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 9,
+    "credits": {
+      "remaining": 255
+    }
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_278ce297-6c29-4bb3-b6fe-6b3334b5dbb0",
+    "operation": "edit",
+    "credits": {
+      "reserved": 15,
+      "remaining": 105
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "6391f5a5-564b-4b6e-80bc-3885d8756129",
+      "type": "image",
+      "createdAt": "2026-09-22T23:34:25.604Z",
+      "updatedAt": "2026-09-22T23:34:25.604Z",
+      "prompt": "Rotate this exact beanie to a right-facing side profile. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged. Keep this as the clean base hat; do not invent or add localized motifs, patches, labels, bows, badges, or symbols.",
+      "width": 21,
+      "height": 19,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/6391f5a5-564b-4b6e-80bc-3885d8756129/image.png?v=1790120065604",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "3d6376bb-77f7-417a-81c7-15fa88096cb7",
+      "batchIndex": 0,
+      "batchSize": 2,
+      "action": {
+        "kind": "edit"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "3ea70aef-83cf-48e6-89d7-d3f0375a6bec",
+      "type": "image",
+      "createdAt": "2026-09-22T23:34:26.806Z",
+      "updatedAt": "2026-09-22T23:34:26.806Z",
+      "prompt": "Rotate this exact beanie to a right-facing side profile. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged. Keep this as the clean base hat; do not invent or add localized motifs, patches, labels, bows, badges, or symbols.",
+      "width": 120,
+      "height": 116,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/3ea70aef-83cf-48e6-89d7-d3f0375a6bec/image.png?v=1790120066806",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "3d6376bb-77f7-417a-81c7-15fa88096cb7",
+      "batchIndex": 1,
+      "batchSize": 2,
+      "action": {
+        "kind": "edit"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 2,
+    "credits": {
+      "remaining": 105
+    }
+  }
+]

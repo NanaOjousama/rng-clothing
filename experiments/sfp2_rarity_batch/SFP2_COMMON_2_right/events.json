@@ -1,0 +1,71 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_7ce44601-7ca0-4e11-bbb3-26239d0c8249",
+    "operation": "edit",
+    "credits": {
+      "reserved": 15,
+      "remaining": 165
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "e22d318c-c289-4199-a013-c383efb7fc07",
+      "type": "image",
+      "createdAt": "2026-09-22T23:31:31.741Z",
+      "updatedAt": "2026-09-22T23:31:31.741Z",
+      "prompt": "Rotate this exact beanie to a right-facing side profile. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged. Preserve the same band trim line treatment on the same physical region.",
+      "width": 118,
+      "height": 114,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/e22d318c-c289-4199-a013-c383efb7fc07/image.png?v=1790119891741",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "2bee6ed2-ddea-43cd-9d20-ef048891c2a6",
+      "batchIndex": 0,
+      "batchSize": 2,
+      "action": {
+        "kind": "edit"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "449153d6-7bf0-4188-8035-8be7243ff04f",
+      "type": "image",
+      "createdAt": "2026-09-22T23:31:32.854Z",
+      "updatedAt": "2026-09-22T23:31:32.854Z",
+      "prompt": "Rotate this exact beanie to a right-facing side profile. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged. Preserve the same band trim line treatment on the same physical region.",
+      "width": 80,
+      "height": 55,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/449153d6-7bf0-4188-8035-8be7243ff04f/image.png?v=1790119892854",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "2bee6ed2-ddea-43cd-9d20-ef048891c2a6",
+      "batchIndex": 1,
+      "batchSize": 2,
+      "action": {
+        "kind": "edit"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 2,
+    "credits": {
+      "remaining": 165
+    }
+  }
+]

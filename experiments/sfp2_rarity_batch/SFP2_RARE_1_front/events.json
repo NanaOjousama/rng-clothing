@@ -1,0 +1,225 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_aa4c77c2-cdb6-48b1-90fe-0903c6b856fb",
+    "operation": "style-reference",
+    "credits": {
+      "reserved": 15,
+      "remaining": 270
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "1ce074ba-90d0-4c1f-93bf-b8dc6b1a2f9d",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:10.028Z",
+      "updatedAt": "2026-09-22T23:23:10.028Z",
+      "prompt": "slouch beanie, plain knit, simple jacquard, standard cuff, deep slouch, soft back left. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 20,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/1ce074ba-90d0-4c1f-93bf-b8dc6b1a2f9d/image.png?v=1790119390028",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "1dc1f159-d28a-4f50-8c59-835bff08ca33",
+      "batchIndex": 0,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "612f10b9-a084-43df-a125-2a4bfc50c64a",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:10.555Z",
+      "updatedAt": "2026-09-22T23:23:10.555Z",
+      "prompt": "slouch beanie, plain knit, simple jacquard, standard cuff, deep slouch, soft back left. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/612f10b9-a084-43df-a125-2a4bfc50c64a/image.png?v=1790119390555",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "1dc1f159-d28a-4f50-8c59-835bff08ca33",
+      "batchIndex": 1,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 2,
+    "asset": {
+      "id": "6357d099-abb6-4af4-8be6-fab31557f3be",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:11.072Z",
+      "updatedAt": "2026-09-22T23:23:11.072Z",
+      "prompt": "slouch beanie, plain knit, simple jacquard, standard cuff, deep slouch, soft back left. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 20,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/6357d099-abb6-4af4-8be6-fab31557f3be/image.png?v=1790119391072",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "1dc1f159-d28a-4f50-8c59-835bff08ca33",
+      "batchIndex": 2,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 3,
+    "asset": {
+      "id": "93d62e26-00a1-4adf-998b-ccbe953816f2",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:11.585Z",
+      "updatedAt": "2026-09-22T23:23:11.585Z",
+      "prompt": "slouch beanie, plain knit, simple jacquard, standard cuff, deep slouch, soft back left. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/93d62e26-00a1-4adf-998b-ccbe953816f2/image.png?v=1790119391585",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "1dc1f159-d28a-4f50-8c59-835bff08ca33",
+      "batchIndex": 3,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 4,
+    "asset": {
+      "id": "1e1344c7-013c-4059-89f5-f246fafb162e",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:12.253Z",
+      "updatedAt": "2026-09-22T23:23:12.253Z",
+      "prompt": "slouch beanie, plain knit, simple jacquard, standard cuff, deep slouch, soft back left. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/1e1344c7-013c-4059-89f5-f246fafb162e/image.png?v=1790119392253",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "1dc1f159-d28a-4f50-8c59-835bff08ca33",
+      "batchIndex": 4,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 5,
+    "asset": {
+      "id": "a47a1a9b-5473-4faf-9c91-962eb71ed4d3",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:12.851Z",
+      "updatedAt": "2026-09-22T23:23:12.851Z",
+      "prompt": "slouch beanie, plain knit, simple jacquard, standard cuff, deep slouch, soft back left. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/a47a1a9b-5473-4faf-9c91-962eb71ed4d3/image.png?v=1790119392851",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "1dc1f159-d28a-4f50-8c59-835bff08ca33",
+      "batchIndex": 5,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 6,
+    "asset": {
+      "id": "2ade36c9-7e81-4d01-8cd0-4b2670ec9534",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:13.380Z",
+      "updatedAt": "2026-09-22T23:23:13.380Z",
+      "prompt": "slouch beanie, plain knit, simple jacquard, standard cuff, deep slouch, soft back left. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 24,
+      "height": 24,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/2ade36c9-7e81-4d01-8cd0-4b2670ec9534/image.png?v=1790119393380",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "1dc1f159-d28a-4f50-8c59-835bff08ca33",
+      "batchIndex": 6,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 7,
+    "asset": {
+      "id": "1549561c-2d52-463e-938e-47c2377b9275",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:13.955Z",
+      "updatedAt": "2026-09-22T23:23:13.955Z",
+      "prompt": "slouch beanie, plain knit, simple jacquard, standard cuff, deep slouch, soft back left. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 26,
+      "height": 26,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/1549561c-2d52-463e-938e-47c2377b9275/image.png?v=1790119393955",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "1dc1f159-d28a-4f50-8c59-835bff08ca33",
+      "batchIndex": 7,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 8,
+    "asset": {
+      "id": "328256ca-0d48-416c-ad65-8763af77d0ba",
+      "type": "image",
+      "createdAt": "2026-09-22T23:23:14.551Z",
+      "updatedAt": "2026-09-22T23:23:14.551Z",
+      "prompt": "slouch beanie, plain knit, simple jacquard, standard cuff, deep slouch, soft back left. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/328256ca-0d48-416c-ad65-8763af77d0ba/image.png?v=1790119394551",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "1dc1f159-d28a-4f50-8c59-835bff08ca33",
+      "batchIndex": 8,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 9,
+    "credits": {
+      "remaining": 270
+    }
+  }
+]

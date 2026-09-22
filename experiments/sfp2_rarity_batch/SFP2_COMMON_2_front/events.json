@@ -1,0 +1,225 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_771e79a8-e14f-4286-aeb5-a655fe958273",
+    "operation": "style-reference",
+    "credits": {
+      "reserved": 15,
+      "remaining": 315
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "d43da06f-a3ad-4ed4-9897-72094f9a08eb",
+      "type": "image",
+      "createdAt": "2026-09-22T23:20:58.836Z",
+      "updatedAt": "2026-09-22T23:20:58.836Z",
+      "prompt": "slouch beanie, plain knit, narrow cuff, band trim line, medium slouch, back center. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/d43da06f-a3ad-4ed4-9897-72094f9a08eb/image.png?v=1790119258836",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "55e6bb69-76a6-4ead-8fca-9dd635d7d613",
+      "batchIndex": 0,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "9809f0b3-43fd-4cb2-82a2-64d85cccc1e8",
+      "type": "image",
+      "createdAt": "2026-09-22T23:20:59.455Z",
+      "updatedAt": "2026-09-22T23:20:59.455Z",
+      "prompt": "slouch beanie, plain knit, narrow cuff, band trim line, medium slouch, back center. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 20,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/9809f0b3-43fd-4cb2-82a2-64d85cccc1e8/image.png?v=1790119259455",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "55e6bb69-76a6-4ead-8fca-9dd635d7d613",
+      "batchIndex": 1,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 2,
+    "asset": {
+      "id": "8f7869e0-113a-4557-90f7-5fa299519b12",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:00.039Z",
+      "updatedAt": "2026-09-22T23:21:00.039Z",
+      "prompt": "slouch beanie, plain knit, narrow cuff, band trim line, medium slouch, back center. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/8f7869e0-113a-4557-90f7-5fa299519b12/image.png?v=1790119260039",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "55e6bb69-76a6-4ead-8fca-9dd635d7d613",
+      "batchIndex": 2,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 3,
+    "asset": {
+      "id": "14301caf-29a8-4378-a88b-d2764cb86c99",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:00.614Z",
+      "updatedAt": "2026-09-22T23:21:00.614Z",
+      "prompt": "slouch beanie, plain knit, narrow cuff, band trim line, medium slouch, back center. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 20,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/14301caf-29a8-4378-a88b-d2764cb86c99/image.png?v=1790119260614",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "55e6bb69-76a6-4ead-8fca-9dd635d7d613",
+      "batchIndex": 3,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 4,
+    "asset": {
+      "id": "1f33b912-6146-4206-91f4-0569f4f6a6f7",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:01.101Z",
+      "updatedAt": "2026-09-22T23:21:01.101Z",
+      "prompt": "slouch beanie, plain knit, narrow cuff, band trim line, medium slouch, back center. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/1f33b912-6146-4206-91f4-0569f4f6a6f7/image.png?v=1790119261101",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "55e6bb69-76a6-4ead-8fca-9dd635d7d613",
+      "batchIndex": 4,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 5,
+    "asset": {
+      "id": "8d487df2-887c-46a5-91e0-8a8ba952a9d0",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:01.613Z",
+      "updatedAt": "2026-09-22T23:21:01.613Z",
+      "prompt": "slouch beanie, plain knit, narrow cuff, band trim line, medium slouch, back center. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/8d487df2-887c-46a5-91e0-8a8ba952a9d0/image.png?v=1790119261613",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "55e6bb69-76a6-4ead-8fca-9dd635d7d613",
+      "batchIndex": 5,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 6,
+    "asset": {
+      "id": "0887a845-58b6-44d3-8c32-5c7f389f906e",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:02.191Z",
+      "updatedAt": "2026-09-22T23:21:02.191Z",
+      "prompt": "slouch beanie, plain knit, narrow cuff, band trim line, medium slouch, back center. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 18,
+      "height": 18,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/0887a845-58b6-44d3-8c32-5c7f389f906e/image.png?v=1790119262191",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "55e6bb69-76a6-4ead-8fca-9dd635d7d613",
+      "batchIndex": 6,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 7,
+    "asset": {
+      "id": "563d7c63-6a99-4615-9aa6-4bcc73a694e2",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:02.772Z",
+      "updatedAt": "2026-09-22T23:21:02.772Z",
+      "prompt": "slouch beanie, plain knit, narrow cuff, band trim line, medium slouch, back center. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 20,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/563d7c63-6a99-4615-9aa6-4bcc73a694e2/image.png?v=1790119262772",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "55e6bb69-76a6-4ead-8fca-9dd635d7d613",
+      "batchIndex": 7,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 8,
+    "asset": {
+      "id": "b47cc8d2-64a7-4db1-815f-09c7ed58ed6e",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:03.285Z",
+      "updatedAt": "2026-09-22T23:21:03.285Z",
+      "prompt": "slouch beanie, plain knit, narrow cuff, band trim line, medium slouch, back center. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/b47cc8d2-64a7-4db1-815f-09c7ed58ed6e/image.png?v=1790119263285",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "55e6bb69-76a6-4ead-8fca-9dd635d7d613",
+      "batchIndex": 8,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 9,
+    "credits": {
+      "remaining": 315
+    }
+  }
+]

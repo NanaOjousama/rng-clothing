@@ -1,0 +1,71 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_cf3ec8d5-3b81-401c-a70a-46b655be75c7",
+    "operation": "edit",
+    "credits": {
+      "reserved": 15,
+      "remaining": 120
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "f219f4a2-5cb1-4c6f-ac85-22f4248ccaed",
+      "type": "image",
+      "createdAt": "2026-09-22T23:33:42.930Z",
+      "updatedAt": "2026-09-22T23:33:42.930Z",
+      "prompt": "Rotate this exact beanie to a back view. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged. Preserve the same crown trim line treatment on the same physical region.",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/f219f4a2-5cb1-4c6f-ac85-22f4248ccaed/image.png?v=1790120022930",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "5f6eb484-3ac2-4b46-8f38-298522a42620",
+      "batchIndex": 0,
+      "batchSize": 2,
+      "action": {
+        "kind": "edit"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "fb3ff516-2faa-4855-872c-a95807affe5c",
+      "type": "image",
+      "createdAt": "2026-09-22T23:33:43.995Z",
+      "updatedAt": "2026-09-22T23:33:43.995Z",
+      "prompt": "Rotate this exact beanie to a back view. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged. Preserve the same crown trim line treatment on the same physical region.",
+      "width": 50,
+      "height": 50,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/fb3ff516-2faa-4855-872c-a95807affe5c/image.png?v=1790120023995",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "5f6eb484-3ac2-4b46-8f38-298522a42620",
+      "batchIndex": 1,
+      "batchSize": 2,
+      "action": {
+        "kind": "edit"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 2,
+    "credits": {
+      "remaining": 120
+    }
+  }
+]

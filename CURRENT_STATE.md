@@ -756,3 +756,24 @@ Implementation:
 - sf_pipeline/headwear_directional.py owns deterministic Right->Left mirroring.
 - policy/docs/roll-matrix/AI-assisted config all point to edit-cardinal for headwear production.
 - validator now explicitly tests both legacy evidence and edit-cardinal production.
+
+
+## 2026-09-22 — SFP2 8-hat rarity proof batch
+- Generated 8 seeded slouch-beanie recipes: 2 Common / 2 Uncommon / 2 Rare / 2 Epic.
+- Coverage deliberately spans WHOLE_HAT, WRAPAROUND_REGION, and LOCALIZED consistency classes.
+- Generated 72 Sprite Fusion front candidates (9 per recipe); all passed front mechanical size/alpha QC.
+- Model-curated one front per recipe for direction testing; humanArtApproved remains false for every candidate.
+- Ran EDIT-CARDINAL Right + Back from the selected Fronts. Sprite Fusion returned 2 outputs per edit.
+- Provider returned HTTP 402 Payment Required at SFP2_EPIC_1 right; no blind retry was attempted.
+- Mechanical directional status:
+  - complete: COMMON_1, UNCOMMON_1, UNCOMMON_2, RARE_2
+  - replacement Right required: COMMON_2, RARE_1
+  - Epic directional edits pending credits: EPIC_1, EPIC_2
+- Added tools/apply_sfp2_localized_accents.py: post-cardinal LOCALIZED compositor using authored motif assets, semantic visibility rules, and a hard source-alpha preservation assertion.
+- LOCALIZED proof:
+  - UNCOMMON_2 flower/woven-patch appears Front + Left for cuff_side_left.
+  - RARE_2 leaf/direct-stitch + cuff patch appears Front-only for body_lower_front.
+  - EPIC_2 flower/patch Front proof created; remaining base directions are pending credits.
+- Built per-rarity candidate pool, raw directional QC, localized, and final-cardinal contact sheets under experiments/sfp2_rarity_batch/.
+- Final cardinal manifests remain fail-closed: human art approval and ESM wear approval are still pending.
+- Validation: py_compile PASS; slouch roll-matrix validator PASS; scoped git diff --check PASS.

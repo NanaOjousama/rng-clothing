@@ -1,0 +1,74 @@
+[
+  {
+    "index": 0,
+    "direction": null,
+    "asset_id": "1ce074ba-90d0-4c1f-93bf-b8dc6b1a2f9d",
+    "width": 20,
+    "height": 20,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_00.png"
+  },
+  {
+    "index": 1,
+    "direction": null,
+    "asset_id": "612f10b9-a084-43df-a125-2a4bfc50c64a",
+    "width": 21,
+    "height": 21,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_01.png"
+  },
+  {
+    "index": 2,
+    "direction": null,
+    "asset_id": "6357d099-abb6-4af4-8be6-fab31557f3be",
+    "width": 20,
+    "height": 20,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_02.png"
+  },
+  {
+    "index": 3,
+    "direction": null,
+    "asset_id": "93d62e26-00a1-4adf-998b-ccbe953816f2",
+    "width": 23,
+    "height": 23,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_03.png"
+  },
+  {
+    "index": 4,
+    "direction": null,
+    "asset_id": "1e1344c7-013c-4059-89f5-f246fafb162e",
+    "width": 21,
+    "height": 21,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_04.png"
+  },
+  {
+    "index": 5,
+    "direction": null,
+    "asset_id": "a47a1a9b-5473-4faf-9c91-962eb71ed4d3",
+    "width": 23,
+    "height": 23,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_05.png"
+  },
+  {
+    "index": 6,
+    "direction": null,
+    "asset_id": "2ade36c9-7e81-4d01-8cd0-4b2670ec9534",
+    "width": 24,
+    "height": 24,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_06.png"
+  },
+  {
+    "index": 7,
+    "direction": null,
+    "asset_id": "1549561c-2d52-463e-938e-47c2377b9275",
+    "width": 26,
+    "height": 26,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_07.png"
+  },
+  {
+    "index": 8,
+    "direction": null,
+    "asset_id": "328256ca-0d48-416c-ad65-8763af77d0ba",
+    "width": 23,
+    "height": 23,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_08.png"
+  }
+]

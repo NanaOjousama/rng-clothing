@@ -1,0 +1,225 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_42d6cef7-e754-4402-86cb-dfe837f5ec2c",
+    "operation": "style-reference",
+    "credits": {
+      "reserved": 15,
+      "remaining": 225
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "164abd2f-6f0d-43ef-875f-b85da6c61a64",
+      "type": "image",
+      "createdAt": "2026-09-22T23:25:20.015Z",
+      "updatedAt": "2026-09-22T23:25:20.015Z",
+      "prompt": "slouch beanie, fine rib knit, contrast cuff, double roll, medium slouch, deep back, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/164abd2f-6f0d-43ef-875f-b85da6c61a64/image.png?v=1790119520015",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d24dc441-ce68-4ddc-ba75-81c19ad295b8",
+      "batchIndex": 0,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "533636ba-b60d-4475-a87b-ee4ed6b32c8f",
+      "type": "image",
+      "createdAt": "2026-09-22T23:25:20.589Z",
+      "updatedAt": "2026-09-22T23:25:20.589Z",
+      "prompt": "slouch beanie, fine rib knit, contrast cuff, double roll, medium slouch, deep back, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/533636ba-b60d-4475-a87b-ee4ed6b32c8f/image.png?v=1790119520589",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d24dc441-ce68-4ddc-ba75-81c19ad295b8",
+      "batchIndex": 1,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 2,
+    "asset": {
+      "id": "a625ee6a-3c6a-4af8-a231-bcd8ac8e6387",
+      "type": "image",
+      "createdAt": "2026-09-22T23:25:21.158Z",
+      "updatedAt": "2026-09-22T23:25:21.158Z",
+      "prompt": "slouch beanie, fine rib knit, contrast cuff, double roll, medium slouch, deep back, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/a625ee6a-3c6a-4af8-a231-bcd8ac8e6387/image.png?v=1790119521158",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d24dc441-ce68-4ddc-ba75-81c19ad295b8",
+      "batchIndex": 2,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 3,
+    "asset": {
+      "id": "ccdbf77f-49fa-4010-8603-ce720ae84837",
+      "type": "image",
+      "createdAt": "2026-09-22T23:25:21.714Z",
+      "updatedAt": "2026-09-22T23:25:21.714Z",
+      "prompt": "slouch beanie, fine rib knit, contrast cuff, double roll, medium slouch, deep back, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/ccdbf77f-49fa-4010-8603-ce720ae84837/image.png?v=1790119521714",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d24dc441-ce68-4ddc-ba75-81c19ad295b8",
+      "batchIndex": 3,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 4,
+    "asset": {
+      "id": "28e46d02-b87e-42a8-ae52-de50e0051076",
+      "type": "image",
+      "createdAt": "2026-09-22T23:25:22.244Z",
+      "updatedAt": "2026-09-22T23:25:22.244Z",
+      "prompt": "slouch beanie, fine rib knit, contrast cuff, double roll, medium slouch, deep back, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/28e46d02-b87e-42a8-ae52-de50e0051076/image.png?v=1790119522244",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d24dc441-ce68-4ddc-ba75-81c19ad295b8",
+      "batchIndex": 4,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 5,
+    "asset": {
+      "id": "5fbeb7d0-c47a-4cfc-b269-1403fd708b15",
+      "type": "image",
+      "createdAt": "2026-09-22T23:25:22.847Z",
+      "updatedAt": "2026-09-22T23:25:22.847Z",
+      "prompt": "slouch beanie, fine rib knit, contrast cuff, double roll, medium slouch, deep back, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/5fbeb7d0-c47a-4cfc-b269-1403fd708b15/image.png?v=1790119522847",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d24dc441-ce68-4ddc-ba75-81c19ad295b8",
+      "batchIndex": 5,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 6,
+    "asset": {
+      "id": "99d52fbd-1bab-4a86-9723-4f7bb3bb8a7b",
+      "type": "image",
+      "createdAt": "2026-09-22T23:25:23.391Z",
+      "updatedAt": "2026-09-22T23:25:23.391Z",
+      "prompt": "slouch beanie, fine rib knit, contrast cuff, double roll, medium slouch, deep back, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/99d52fbd-1bab-4a86-9723-4f7bb3bb8a7b/image.png?v=1790119523391",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d24dc441-ce68-4ddc-ba75-81c19ad295b8",
+      "batchIndex": 6,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 7,
+    "asset": {
+      "id": "d49e01d1-963f-432b-a7ee-d8c0b4cbaae6",
+      "type": "image",
+      "createdAt": "2026-09-22T23:25:23.985Z",
+      "updatedAt": "2026-09-22T23:25:23.985Z",
+      "prompt": "slouch beanie, fine rib knit, contrast cuff, double roll, medium slouch, deep back, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/d49e01d1-963f-432b-a7ee-d8c0b4cbaae6/image.png?v=1790119523985",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d24dc441-ce68-4ddc-ba75-81c19ad295b8",
+      "batchIndex": 7,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 8,
+    "asset": {
+      "id": "312e6227-a8b4-4d5b-b9d8-65280fe69e5e",
+      "type": "image",
+      "createdAt": "2026-09-22T23:25:24.592Z",
+      "updatedAt": "2026-09-22T23:25:24.592Z",
+      "prompt": "slouch beanie, fine rib knit, contrast cuff, double roll, medium slouch, deep back, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/312e6227-a8b4-4d5b-b9d8-65280fe69e5e/image.png?v=1790119524592",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d24dc441-ce68-4ddc-ba75-81c19ad295b8",
+      "batchIndex": 8,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 9,
+    "credits": {
+      "remaining": 225
+    }
+  }
+]

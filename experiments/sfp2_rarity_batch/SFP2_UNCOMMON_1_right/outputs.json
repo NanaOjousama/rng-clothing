@@ -1,0 +1,18 @@
+[
+  {
+    "index": 0,
+    "direction": null,
+    "asset_id": "926ff9d2-344c-4b91-b2bc-f13c23da9fdb",
+    "width": 22,
+    "height": 22,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_right/output_00.png"
+  },
+  {
+    "index": 1,
+    "direction": null,
+    "asset_id": "08b07b03-88e2-409c-beac-ba4ed3898b59",
+    "width": 24,
+    "height": 22,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_right/output_01.png"
+  }
+]

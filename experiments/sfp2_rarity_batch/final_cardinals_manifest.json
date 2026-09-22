@@ -1,0 +1,99 @@
+{
+  "schema": "sfp2-final-cardinals/v1",
+  "variants": {
+    "SFP2_COMMON_1": {
+      "rarity": "common",
+      "consistencyClass": "WHOLE_HAT",
+      "frames": {
+        "front": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_00.png",
+        "right": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_right/output_00.png",
+        "back": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_back/output_00.png",
+        "left": "experiments/sfp2_rarity_batch/final_cardinals/SFP2_COMMON_1/left.png"
+      },
+      "status": "DIRECTION_MECHANICAL_COMPLETE",
+      "humanArtApproved": false,
+      "esmWearApproved": false
+    },
+    "SFP2_COMMON_2": {
+      "rarity": "common",
+      "consistencyClass": "WRAPAROUND_REGION",
+      "frames": {
+        "front": "experiments/sfp2_rarity_batch/SFP2_COMMON_2_front/output_01.png",
+        "back": "experiments/sfp2_rarity_batch/SFP2_COMMON_2_back/output_00.png"
+      },
+      "status": "REWORK_REQUIRED",
+      "humanArtApproved": false,
+      "esmWearApproved": false
+    },
+    "SFP2_UNCOMMON_1": {
+      "rarity": "uncommon",
+      "consistencyClass": "WRAPAROUND_REGION",
+      "frames": {
+        "front": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_front/output_04.png",
+        "right": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_right/output_00.png",
+        "back": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_back/output_00.png",
+        "left": "experiments/sfp2_rarity_batch/final_cardinals/SFP2_UNCOMMON_1/left.png"
+      },
+      "status": "DIRECTION_MECHANICAL_COMPLETE",
+      "humanArtApproved": false,
+      "esmWearApproved": false
+    },
+    "SFP2_UNCOMMON_2": {
+      "rarity": "uncommon",
+      "consistencyClass": "LOCALIZED",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_UNCOMMON_2/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_UNCOMMON_2/right.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_UNCOMMON_2/back.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_UNCOMMON_2/left.png"
+      },
+      "status": "DIRECTION_MECHANICAL_COMPLETE",
+      "humanArtApproved": false,
+      "esmWearApproved": false
+    },
+    "SFP2_RARE_1": {
+      "rarity": "rare",
+      "consistencyClass": "WHOLE_HAT",
+      "frames": {
+        "front": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_04.png",
+        "back": "experiments/sfp2_rarity_batch/SFP2_RARE_1_back/output_00.png"
+      },
+      "status": "REWORK_REQUIRED",
+      "humanArtApproved": false,
+      "esmWearApproved": false
+    },
+    "SFP2_RARE_2": {
+      "rarity": "rare",
+      "consistencyClass": "LOCALIZED",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_RARE_2/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_RARE_2/right.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_RARE_2/back.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_RARE_2/left.png"
+      },
+      "status": "DIRECTION_MECHANICAL_COMPLETE",
+      "humanArtApproved": false,
+      "esmWearApproved": false
+    },
+    "SFP2_EPIC_1": {
+      "rarity": "epic",
+      "consistencyClass": "WRAPAROUND_REGION",
+      "frames": {
+        "front": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_04.png"
+      },
+      "status": "REWORK_REQUIRED",
+      "humanArtApproved": false,
+      "esmWearApproved": false
+    },
+    "SFP2_EPIC_2": {
+      "rarity": "epic",
+      "consistencyClass": "LOCALIZED",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_EPIC_2/front.png"
+      },
+      "status": "REWORK_REQUIRED",
+      "humanArtApproved": false,
+      "esmWearApproved": false
+    }
+  }
+}

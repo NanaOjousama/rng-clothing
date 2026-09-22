@@ -1,0 +1,71 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_297f0ca4-31e0-44e9-aaaf-9f60be80ff5e",
+    "operation": "edit",
+    "credits": {
+      "reserved": 15,
+      "remaining": 75
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "486f9d37-5864-4157-8bf7-0cb242583c02",
+      "type": "image",
+      "createdAt": "2026-09-22T23:35:53.237Z",
+      "updatedAt": "2026-09-22T23:35:53.237Z",
+      "prompt": "Rotate this exact beanie to a right-facing side profile. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged.",
+      "width": 42,
+      "height": 38,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/486f9d37-5864-4157-8bf7-0cb242583c02/image.png?v=1790120153237",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "1f9a84db-dda0-4daf-8029-6824e1ba17c1",
+      "batchIndex": 0,
+      "batchSize": 2,
+      "action": {
+        "kind": "edit"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "91d324aa-66d9-4576-97f9-a386befab2dc",
+      "type": "image",
+      "createdAt": "2026-09-22T23:35:54.318Z",
+      "updatedAt": "2026-09-22T23:35:54.318Z",
+      "prompt": "Rotate this exact beanie to a right-facing side profile. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged.",
+      "width": 49,
+      "height": 48,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/91d324aa-66d9-4576-97f9-a386befab2dc/image.png?v=1790120154318",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "1f9a84db-dda0-4daf-8029-6824e1ba17c1",
+      "batchIndex": 1,
+      "batchSize": 2,
+      "action": {
+        "kind": "edit"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 2,
+    "credits": {
+      "remaining": 75
+    }
+  }
+]

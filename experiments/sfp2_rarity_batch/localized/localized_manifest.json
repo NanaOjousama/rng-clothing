@@ -1,0 +1,240 @@
+{
+  "schema": "sfp2-localized/v1",
+  "variants": [
+    {
+      "id": "SFP2_UNCOMMON_2",
+      "rarity": "uncommon",
+      "recipe": {
+        "presentationLean": "neutral",
+        "slouchDepth": "micro",
+        "bandType": "rolled_cuff",
+        "drapeDirection": "back_center",
+        "crownShape": "tapered",
+        "openingFit": "snug",
+        "knitStructure": "fine_rib",
+        "pattern": "twist_stripe",
+        "trimAccent": "none",
+        "microAccent": "none",
+        "motif": "flower_tiny",
+        "carrierStyle": "none",
+        "decorationStyle": "woven_patch",
+        "motifPlacement": "cuff_side_left",
+        "attachment": "none",
+        "hardwareAccent": "none"
+      },
+      "visibleViews": [
+        "front",
+        "left"
+      ],
+      "availableViews": [
+        "back",
+        "front",
+        "left",
+        "right"
+      ],
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_UNCOMMON_2/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_UNCOMMON_2/right.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_UNCOMMON_2/back.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_UNCOMMON_2/left.png"
+      },
+      "placements": {
+        "front": [
+          {
+            "role": "carrier",
+            "asset": "patch_rect",
+            "offset": [
+              1,
+              15
+            ],
+            "size": [
+              7,
+              4
+            ],
+            "cells": 28
+          },
+          {
+            "role": "motif",
+            "asset": "flower_tiny",
+            "offset": [
+              2,
+              15
+            ],
+            "size": [
+              5,
+              5
+            ],
+            "cells": 13
+          }
+        ],
+        "right": [],
+        "back": [],
+        "left": [
+          {
+            "role": "carrier",
+            "asset": "patch_rect",
+            "offset": [
+              2,
+              14
+            ],
+            "size": [
+              7,
+              4
+            ],
+            "cells": 28
+          },
+          {
+            "role": "motif",
+            "asset": "flower_tiny",
+            "offset": [
+              3,
+              14
+            ],
+            "size": [
+              5,
+              5
+            ],
+            "cells": 13
+          }
+        ]
+      },
+      "geometry": "SOURCE_ALPHA_PRESERVED",
+      "humanArtApproved": false
+    },
+    {
+      "id": "SFP2_RARE_2",
+      "rarity": "rare",
+      "recipe": {
+        "presentationLean": "neutral",
+        "slouchDepth": "extra",
+        "bandType": "standard_cuff",
+        "drapeDirection": "back_center",
+        "crownShape": "rounded",
+        "openingFit": "snug",
+        "knitStructure": "cable",
+        "pattern": "twin_stripe",
+        "trimAccent": "none",
+        "microAccent": "cuff_patch_small",
+        "motif": "leaf",
+        "carrierStyle": "none",
+        "decorationStyle": "direct_stitch",
+        "motifPlacement": "body_lower_front",
+        "attachment": "none",
+        "hardwareAccent": "none"
+      },
+      "visibleViews": [
+        "front"
+      ],
+      "availableViews": [
+        "back",
+        "front",
+        "left",
+        "right"
+      ],
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_RARE_2/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_RARE_2/right.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_RARE_2/back.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_RARE_2/left.png"
+      },
+      "placements": {
+        "front": [
+          {
+            "role": "motif",
+            "asset": "leaf_sprig",
+            "offset": [
+              10,
+              13
+            ],
+            "size": [
+              5,
+              6
+            ],
+            "cells": 12
+          },
+          {
+            "role": "microAccent",
+            "asset": "cuff_patch_small",
+            "offset": [
+              11,
+              20
+            ],
+            "size": [
+              3,
+              2
+            ],
+            "cells": 6
+          }
+        ],
+        "right": [],
+        "back": [],
+        "left": []
+      },
+      "geometry": "SOURCE_ALPHA_PRESERVED",
+      "humanArtApproved": false
+    },
+    {
+      "id": "SFP2_EPIC_2",
+      "rarity": "epic",
+      "recipe": {
+        "presentationLean": "neutral",
+        "slouchDepth": "medium",
+        "bandType": "double_roll",
+        "drapeDirection": "deep_back",
+        "crownShape": "gathered",
+        "openingFit": "snug",
+        "knitStructure": "fine_rib",
+        "pattern": "contrast_cuff",
+        "trimAccent": "none",
+        "microAccent": "none",
+        "motif": "flower_tiny",
+        "carrierStyle": "patch_rect",
+        "decorationStyle": "direct_stitch",
+        "motifPlacement": "body_front_offset_left",
+        "attachment": "none",
+        "hardwareAccent": "none"
+      },
+      "visibleViews": [
+        "front"
+      ],
+      "availableViews": [
+        "front"
+      ],
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfp2_rarity_batch/localized/SFP2_EPIC_2/front.png"
+      },
+      "placements": {
+        "front": [
+          {
+            "role": "carrier",
+            "asset": "patch_rect",
+            "offset": [
+              2,
+              8
+            ],
+            "size": [
+              7,
+              4
+            ],
+            "cells": 28
+          },
+          {
+            "role": "motif",
+            "asset": "flower_tiny",
+            "offset": [
+              3,
+              8
+            ],
+            "size": [
+              5,
+              5
+            ],
+            "cells": 13
+          }
+        ]
+      },
+      "geometry": "SOURCE_ALPHA_PRESERVED",
+      "humanArtApproved": false
+    }
+  ]
+}

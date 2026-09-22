@@ -1,0 +1,12 @@
+{
+  "operation": "edit",
+  "size": 16,
+  "prompt": "Rotate this exact beanie to a right-facing side profile. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged. Keep this as the clean base hat; do not invent or add localized motifs, patches, labels, bows, badges, or symbols.",
+  "referenceRoles": [
+    {
+      "role": "primary",
+      "localPath": "experiments/sfp2_rarity_batch/SFP2_RARE_2_front/output_04.png",
+      "note": "SFP2_RARE_2 approved front candidate"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_41281b51-26e0-4e45-9e0f-0aa4392d6528",
+    "operation": "edit",
+    "credits": {
+      "reserved": 15,
+      "remaining": 150
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "3297ea9e-571e-4474-8fa5-4567a6c5ae18",
+      "type": "image",
+      "createdAt": "2026-09-22T23:32:14.559Z",
+      "updatedAt": "2026-09-22T23:32:14.559Z",
+      "prompt": "Rotate this exact beanie to a back view. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged. Preserve the same band trim line treatment on the same physical region.",
+      "width": 20,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/3297ea9e-571e-4474-8fa5-4567a6c5ae18/image.png?v=1790119934559",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "b2c47a40-dda9-4eca-b06e-8d71110509e9",
+      "batchIndex": 0,
+      "batchSize": 2,
+      "action": {
+        "kind": "edit"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "746d56dd-9eb8-44af-af84-433962e8a824",
+      "type": "image",
+      "createdAt": "2026-09-22T23:32:15.583Z",
+      "updatedAt": "2026-09-22T23:32:15.583Z",
+      "prompt": "Rotate this exact beanie to a back view. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged. Preserve the same band trim line treatment on the same physical region.",
+      "width": 20,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/746d56dd-9eb8-44af-af84-433962e8a824/image.png?v=1790119935583",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "b2c47a40-dda9-4eca-b06e-8d71110509e9",
+      "batchIndex": 1,
+      "batchSize": 2,
+      "action": {
+        "kind": "edit"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 2,
+    "credits": {
+      "remaining": 150
+    }
+  }
+]

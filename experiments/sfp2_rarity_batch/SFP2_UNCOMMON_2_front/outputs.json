@@ -1,0 +1,74 @@
+[
+  {
+    "index": 0,
+    "direction": null,
+    "asset_id": "57b440ca-8cfc-4090-8029-0edacf2beb9f",
+    "width": 22,
+    "height": 22,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_00.png"
+  },
+  {
+    "index": 1,
+    "direction": null,
+    "asset_id": "92498017-1b40-4256-adf0-d7b5585397d7",
+    "width": 21,
+    "height": 21,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_01.png"
+  },
+  {
+    "index": 2,
+    "direction": null,
+    "asset_id": "692efe64-93a5-4429-a72f-0d6aa30639ae",
+    "width": 21,
+    "height": 21,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_02.png"
+  },
+  {
+    "index": 3,
+    "direction": null,
+    "asset_id": "5f254e85-3976-457f-b39d-058796387c81",
+    "width": 21,
+    "height": 21,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_03.png"
+  },
+  {
+    "index": 4,
+    "direction": null,
+    "asset_id": "038290e4-20ae-463c-86dd-448790f621ec",
+    "width": 21,
+    "height": 21,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_04.png"
+  },
+  {
+    "index": 5,
+    "direction": null,
+    "asset_id": "314cd7a8-8d31-4160-9e80-b5870465da4b",
+    "width": 22,
+    "height": 22,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_05.png"
+  },
+  {
+    "index": 6,
+    "direction": null,
+    "asset_id": "a24d9e0c-dd6b-4f52-b646-a52e08728b15",
+    "width": 21,
+    "height": 21,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_06.png"
+  },
+  {
+    "index": 7,
+    "direction": null,
+    "asset_id": "1d8831f8-b389-4f42-977b-b11a2a1836a4",
+    "width": 22,
+    "height": 22,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_07.png"
+  },
+  {
+    "index": 8,
+    "direction": null,
+    "asset_id": "fc0874a8-c227-4400-82d7-f6d9dafcb886",
+    "width": 22,
+    "height": 22,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_08.png"
+  }
+]

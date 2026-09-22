@@ -1,0 +1,352 @@
+{
+  "SFP2_COMMON_1": {
+    "front": {
+      "index": 0,
+      "direction": null,
+      "asset_id": "8d25c9e6-39ae-44ea-a493-f89b47cabcd0",
+      "width": 24,
+      "height": 24,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_00.png",
+      "rarity": "common",
+      "consistencyClass": "WHOLE_HAT",
+      "recipe": {
+        "presentationLean": "masculine_lean",
+        "slouchDepth": "relaxed",
+        "bandType": "standard_cuff",
+        "drapeDirection": "back_center",
+        "crownShape": "rounded",
+        "openingFit": "relaxed",
+        "knitStructure": "plain",
+        "pattern": "solid",
+        "trimAccent": "none",
+        "microAccent": "none",
+        "motif": "none",
+        "carrierStyle": "none",
+        "decorationStyle": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardwareAccent": "none"
+      },
+      "review": "MODEL_CURATED_FOR_DIRECTION_TEST",
+      "humanArtApproved": false
+    },
+    "right": {
+      "index": 0,
+      "direction": null,
+      "asset_id": "70b0a9ad-cb87-4aa1-b992-b488d466a5fd",
+      "width": 24,
+      "height": 20,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_right/output_00.png"
+    },
+    "back": {
+      "index": 0,
+      "direction": null,
+      "asset_id": "291998d7-bb8d-4d2e-aa8b-5f5e7240532a",
+      "width": 24,
+      "height": 20,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_back/output_00.png"
+    },
+    "status": "DIRECTION_MECHANICAL_COMPLETE"
+  },
+  "SFP2_COMMON_2": {
+    "front": {
+      "index": 1,
+      "direction": null,
+      "asset_id": "9809f0b3-43fd-4cb2-82a2-64d85cccc1e8",
+      "width": 20,
+      "height": 20,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_2_front/output_01.png",
+      "rarity": "common",
+      "consistencyClass": "WRAPAROUND_REGION",
+      "recipe": {
+        "presentationLean": "neutral",
+        "slouchDepth": "medium",
+        "bandType": "narrow_cuff",
+        "drapeDirection": "back_center",
+        "crownShape": "rounded",
+        "openingFit": "relaxed",
+        "knitStructure": "plain",
+        "pattern": "solid",
+        "trimAccent": "band_trim_line",
+        "microAccent": "none",
+        "motif": "none",
+        "carrierStyle": "none",
+        "decorationStyle": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardwareAccent": "none"
+      },
+      "review": "MODEL_CURATED_FOR_DIRECTION_TEST",
+      "humanArtApproved": false
+    },
+    "right": null,
+    "back": {
+      "index": 0,
+      "direction": null,
+      "asset_id": "3297ea9e-571e-4474-8fa5-4567a6c5ae18",
+      "width": 20,
+      "height": 20,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_2_back/output_00.png"
+    },
+    "status": "REWORK_REQUIRED"
+  },
+  "SFP2_UNCOMMON_1": {
+    "front": {
+      "index": 4,
+      "direction": null,
+      "asset_id": "5304607b-7c0a-450d-ac22-e00feb0c6d75",
+      "width": 22,
+      "height": 22,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_front/output_04.png",
+      "rarity": "uncommon",
+      "consistencyClass": "WRAPAROUND_REGION",
+      "recipe": {
+        "presentationLean": "neutral",
+        "slouchDepth": "medium",
+        "bandType": "deep_cuff",
+        "drapeDirection": "deep_back",
+        "crownShape": "rounded",
+        "openingFit": "normal",
+        "knitStructure": "waffle",
+        "pattern": "solid",
+        "trimAccent": "crown_trim_line",
+        "microAccent": "none",
+        "motif": "none",
+        "carrierStyle": "none",
+        "decorationStyle": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardwareAccent": "none"
+      },
+      "review": "MODEL_CURATED_FOR_DIRECTION_TEST",
+      "humanArtApproved": false
+    },
+    "right": {
+      "index": 0,
+      "direction": null,
+      "asset_id": "926ff9d2-344c-4b91-b2bc-f13c23da9fdb",
+      "width": 22,
+      "height": 22,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_right/output_00.png"
+    },
+    "back": {
+      "index": 0,
+      "direction": null,
+      "asset_id": "f219f4a2-5cb1-4c6f-ac85-22f4248ccaed",
+      "width": 22,
+      "height": 22,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_back/output_00.png"
+    },
+    "status": "DIRECTION_MECHANICAL_COMPLETE"
+  },
+  "SFP2_UNCOMMON_2": {
+    "front": {
+      "index": 4,
+      "direction": null,
+      "asset_id": "038290e4-20ae-463c-86dd-448790f621ec",
+      "width": 21,
+      "height": 21,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_04.png",
+      "rarity": "uncommon",
+      "consistencyClass": "LOCALIZED",
+      "recipe": {
+        "presentationLean": "neutral",
+        "slouchDepth": "micro",
+        "bandType": "rolled_cuff",
+        "drapeDirection": "back_center",
+        "crownShape": "tapered",
+        "openingFit": "snug",
+        "knitStructure": "fine_rib",
+        "pattern": "twist_stripe",
+        "trimAccent": "none",
+        "microAccent": "none",
+        "motif": "flower_tiny",
+        "carrierStyle": "none",
+        "decorationStyle": "woven_patch",
+        "motifPlacement": "cuff_side_left",
+        "attachment": "none",
+        "hardwareAccent": "none"
+      },
+      "review": "MODEL_CURATED_FOR_DIRECTION_TEST",
+      "humanArtApproved": false
+    },
+    "right": {
+      "index": 0,
+      "direction": null,
+      "asset_id": "6391f5a5-564b-4b6e-80bc-3885d8756129",
+      "width": 21,
+      "height": 19,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_right/output_00.png"
+    },
+    "back": {
+      "index": 0,
+      "direction": null,
+      "asset_id": "9bc04620-61ac-4fcc-bcbd-42094b080652",
+      "width": 21,
+      "height": 21,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_back/output_00.png"
+    },
+    "status": "DIRECTION_MECHANICAL_COMPLETE"
+  },
+  "SFP2_RARE_1": {
+    "front": {
+      "index": 4,
+      "direction": null,
+      "asset_id": "1e1344c7-013c-4059-89f5-f246fafb162e",
+      "width": 21,
+      "height": 21,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_04.png",
+      "rarity": "rare",
+      "consistencyClass": "WHOLE_HAT",
+      "recipe": {
+        "presentationLean": "neutral",
+        "slouchDepth": "deep",
+        "bandType": "standard_cuff",
+        "drapeDirection": "soft_back_left",
+        "crownShape": "tapered",
+        "openingFit": "normal",
+        "knitStructure": "plain",
+        "pattern": "simple_jacquard",
+        "trimAccent": "none",
+        "microAccent": "none",
+        "motif": "none",
+        "carrierStyle": "none",
+        "decorationStyle": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardwareAccent": "none"
+      },
+      "review": "MODEL_CURATED_FOR_DIRECTION_TEST",
+      "humanArtApproved": false
+    },
+    "right": null,
+    "back": {
+      "index": 0,
+      "direction": null,
+      "asset_id": "04a18080-9f67-42d9-95ca-338534ea0fd6",
+      "width": 21,
+      "height": 20,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_back/output_00.png"
+    },
+    "status": "REWORK_REQUIRED"
+  },
+  "SFP2_RARE_2": {
+    "front": {
+      "index": 4,
+      "direction": null,
+      "asset_id": "f85f3447-8f8a-44a2-926c-6b5de0d5d1cc",
+      "width": 25,
+      "height": 25,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_2_front/output_04.png",
+      "rarity": "rare",
+      "consistencyClass": "LOCALIZED",
+      "recipe": {
+        "presentationLean": "neutral",
+        "slouchDepth": "extra",
+        "bandType": "standard_cuff",
+        "drapeDirection": "back_center",
+        "crownShape": "rounded",
+        "openingFit": "snug",
+        "knitStructure": "cable",
+        "pattern": "twin_stripe",
+        "trimAccent": "none",
+        "microAccent": "cuff_patch_small",
+        "motif": "leaf",
+        "carrierStyle": "none",
+        "decorationStyle": "direct_stitch",
+        "motifPlacement": "body_lower_front",
+        "attachment": "none",
+        "hardwareAccent": "none"
+      },
+      "review": "MODEL_CURATED_FOR_DIRECTION_TEST",
+      "humanArtApproved": false
+    },
+    "right": {
+      "index": 0,
+      "direction": null,
+      "asset_id": "eaae1a85-240b-4c55-9979-e56ad75f8c28",
+      "width": 25,
+      "height": 24,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_2_right/output_00.png"
+    },
+    "back": {
+      "index": 0,
+      "direction": null,
+      "asset_id": "9b89c6bd-fe9f-4659-9056-83227d9430fd",
+      "width": 25,
+      "height": 23,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_2_back/output_00.png"
+    },
+    "status": "DIRECTION_MECHANICAL_COMPLETE"
+  },
+  "SFP2_EPIC_1": {
+    "front": {
+      "index": 4,
+      "direction": null,
+      "asset_id": "c4084886-e899-44ce-a2d6-802dfda771d8",
+      "width": 21,
+      "height": 21,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_04.png",
+      "rarity": "epic",
+      "consistencyClass": "WRAPAROUND_REGION",
+      "recipe": {
+        "presentationLean": "masculine_lean",
+        "slouchDepth": "medium",
+        "bandType": "narrow_cuff",
+        "drapeDirection": "back_center",
+        "crownShape": "elongated",
+        "openingFit": "relaxed",
+        "knitStructure": "chunky",
+        "pattern": "contrast_cuff",
+        "trimAccent": "none",
+        "microAccent": "none",
+        "motif": "none",
+        "carrierStyle": "none",
+        "decorationStyle": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardwareAccent": "button_accent"
+      },
+      "review": "MODEL_CURATED_FOR_DIRECTION_TEST",
+      "humanArtApproved": false
+    },
+    "right": null,
+    "back": null,
+    "status": "REWORK_REQUIRED"
+  },
+  "SFP2_EPIC_2": {
+    "front": {
+      "index": 4,
+      "direction": null,
+      "asset_id": "28e46d02-b87e-42a8-ae52-de50e0051076",
+      "width": 21,
+      "height": 21,
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_2_front/output_04.png",
+      "rarity": "epic",
+      "consistencyClass": "LOCALIZED",
+      "recipe": {
+        "presentationLean": "neutral",
+        "slouchDepth": "medium",
+        "bandType": "double_roll",
+        "drapeDirection": "deep_back",
+        "crownShape": "gathered",
+        "openingFit": "snug",
+        "knitStructure": "fine_rib",
+        "pattern": "contrast_cuff",
+        "trimAccent": "none",
+        "microAccent": "none",
+        "motif": "flower_tiny",
+        "carrierStyle": "patch_rect",
+        "decorationStyle": "direct_stitch",
+        "motifPlacement": "body_front_offset_left",
+        "attachment": "none",
+        "hardwareAccent": "none"
+      },
+      "review": "MODEL_CURATED_FOR_DIRECTION_TEST",
+      "humanArtApproved": false
+    },
+    "right": null,
+    "back": null,
+    "status": "REWORK_REQUIRED"
+  }
+}

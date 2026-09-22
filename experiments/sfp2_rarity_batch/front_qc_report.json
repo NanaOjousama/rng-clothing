@@ -1,0 +1,1566 @@
+{
+  "SFP2_COMMON_1": [
+    {
+      "index": 0,
+      "asset_id": "8d25c9e6-39ae-44ea-a493-f89b47cabcd0",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_00.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 24,
+      "height": 24,
+      "opaqueCells": 378,
+      "componentSizes": [
+        378
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 1,
+      "asset_id": "358769b0-7b05-49e0-9ad0-486d4fcd814a",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_01.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 25,
+      "height": 25,
+      "opaqueCells": 396,
+      "componentSizes": [
+        396
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 2,
+      "asset_id": "ee992284-707a-4efa-b843-2a8489af7524",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_02.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 24,
+      "height": 24,
+      "opaqueCells": 370,
+      "componentSizes": [
+        370
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 3,
+      "asset_id": "d3f17d62-c2ae-4438-9652-2fbd374e57ef",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_03.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 24,
+      "height": 24,
+      "opaqueCells": 402,
+      "componentSizes": [
+        402
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 4,
+      "asset_id": "148312cb-1588-4230-a90a-84ed9bb5a035",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_04.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 25,
+      "height": 25,
+      "opaqueCells": 404,
+      "componentSizes": [
+        404
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 5,
+      "asset_id": "9a8393ef-c573-408e-bb0e-3a588eb7db4b",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_05.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 25,
+      "height": 25,
+      "opaqueCells": 411,
+      "componentSizes": [
+        411
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 6,
+      "asset_id": "142346c4-8111-449f-8ebd-5629144d73be",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_06.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 24,
+      "height": 24,
+      "opaqueCells": 422,
+      "componentSizes": [
+        422
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 7,
+      "asset_id": "188bd3f0-d9dc-4359-b3f5-6e96ce140bec",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_07.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 26,
+      "height": 26,
+      "opaqueCells": 445,
+      "componentSizes": [
+        445
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 8,
+      "asset_id": "5f792eba-5a98-457a-8f50-c2907ac3e9a2",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_08.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 24,
+      "height": 24,
+      "opaqueCells": 412,
+      "componentSizes": [
+        412
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    }
+  ],
+  "SFP2_COMMON_2": [
+    {
+      "index": 0,
+      "asset_id": "d43da06f-a3ad-4ed4-9897-72094f9a08eb",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_2_front/output_00.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 299,
+      "componentSizes": [
+        299
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 1,
+      "asset_id": "9809f0b3-43fd-4cb2-82a2-64d85cccc1e8",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_2_front/output_01.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 20,
+      "height": 20,
+      "opaqueCells": 309,
+      "componentSizes": [
+        309
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 2,
+      "asset_id": "8f7869e0-113a-4557-90f7-5fa299519b12",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_2_front/output_02.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 23,
+      "height": 23,
+      "opaqueCells": 373,
+      "componentSizes": [
+        373
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 3,
+      "asset_id": "14301caf-29a8-4378-a88b-d2764cb86c99",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_2_front/output_03.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 20,
+      "height": 20,
+      "opaqueCells": 294,
+      "componentSizes": [
+        294
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 4,
+      "asset_id": "1f33b912-6146-4206-91f4-0569f4f6a6f7",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_2_front/output_04.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 23,
+      "height": 23,
+      "opaqueCells": 363,
+      "componentSizes": [
+        363
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 5,
+      "asset_id": "8d487df2-887c-46a5-91e0-8a8ba952a9d0",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_2_front/output_05.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 23,
+      "height": 23,
+      "opaqueCells": 348,
+      "componentSizes": [
+        348
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 6,
+      "asset_id": "0887a845-58b6-44d3-8c32-5c7f389f906e",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_2_front/output_06.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 18,
+      "height": 18,
+      "opaqueCells": 247,
+      "componentSizes": [
+        247
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 7,
+      "asset_id": "563d7c63-6a99-4615-9aa6-4bcc73a694e2",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_2_front/output_07.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 20,
+      "height": 20,
+      "opaqueCells": 256,
+      "componentSizes": [
+        256
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 8,
+      "asset_id": "b47cc8d2-64a7-4db1-815f-09c7ed58ed6e",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_2_front/output_08.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 23,
+      "height": 23,
+      "opaqueCells": 374,
+      "componentSizes": [
+        374
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    }
+  ],
+  "SFP2_UNCOMMON_1": [
+    {
+      "index": 0,
+      "asset_id": "1780607b-70fc-49dc-967f-e22058b97bbc",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_front/output_00.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 24,
+      "height": 24,
+      "opaqueCells": 398,
+      "componentSizes": [
+        398
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 1,
+      "asset_id": "1fd7e9f8-f6c0-42e5-a203-ea67fd1f09f3",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_front/output_01.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 383,
+      "componentSizes": [
+        383
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 2,
+      "asset_id": "e203e084-3452-4ffe-a2ef-c8835a7c54a8",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_front/output_02.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 26,
+      "height": 26,
+      "opaqueCells": 423,
+      "componentSizes": [
+        423
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 3,
+      "asset_id": "193da424-7e64-4abc-9367-1664d6d376de",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_front/output_03.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 25,
+      "height": 25,
+      "opaqueCells": 408,
+      "componentSizes": [
+        408
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 4,
+      "asset_id": "5304607b-7c0a-450d-ac22-e00feb0c6d75",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_front/output_04.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 384,
+      "componentSizes": [
+        384
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 5,
+      "asset_id": "9a30bebc-a630-41e8-af7f-88373449acb5",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_front/output_05.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 25,
+      "height": 25,
+      "opaqueCells": 436,
+      "componentSizes": [
+        436
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 6,
+      "asset_id": "d1a0cc7b-043c-4cd6-bec4-8a9b542b0241",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_front/output_06.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 379,
+      "componentSizes": [
+        379
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 7,
+      "asset_id": "5a1c865c-db00-4c1b-8f07-8ca55c83a310",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_front/output_07.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 24,
+      "height": 24,
+      "opaqueCells": 414,
+      "componentSizes": [
+        414
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 8,
+      "asset_id": "97d2db26-95e4-480a-8146-f8217860c5cf",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_front/output_08.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 25,
+      "height": 25,
+      "opaqueCells": 427,
+      "componentSizes": [
+        427
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    }
+  ],
+  "SFP2_UNCOMMON_2": [
+    {
+      "index": 0,
+      "asset_id": "57b440ca-8cfc-4090-8029-0edacf2beb9f",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_00.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 323,
+      "componentSizes": [
+        323
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 1,
+      "asset_id": "92498017-1b40-4256-adf0-d7b5585397d7",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_01.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 297,
+      "componentSizes": [
+        297
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 2,
+      "asset_id": "692efe64-93a5-4429-a72f-0d6aa30639ae",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_02.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 335,
+      "componentSizes": [
+        335
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 3,
+      "asset_id": "5f254e85-3976-457f-b39d-058796387c81",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_03.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 331,
+      "componentSizes": [
+        331
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 4,
+      "asset_id": "038290e4-20ae-463c-86dd-448790f621ec",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_04.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 334,
+      "componentSizes": [
+        334
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 5,
+      "asset_id": "314cd7a8-8d31-4160-9e80-b5870465da4b",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_05.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 353,
+      "componentSizes": [
+        353
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 6,
+      "asset_id": "a24d9e0c-dd6b-4f52-b646-a52e08728b15",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_06.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 347,
+      "componentSizes": [
+        347
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 7,
+      "asset_id": "1d8831f8-b389-4f42-977b-b11a2a1836a4",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_07.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 361,
+      "componentSizes": [
+        361
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 8,
+      "asset_id": "fc0874a8-c227-4400-82d7-f6d9dafcb886",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_2_front/output_08.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 345,
+      "componentSizes": [
+        345
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    }
+  ],
+  "SFP2_RARE_1": [
+    {
+      "index": 0,
+      "asset_id": "1ce074ba-90d0-4c1f-93bf-b8dc6b1a2f9d",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_00.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 20,
+      "height": 20,
+      "opaqueCells": 283,
+      "componentSizes": [
+        283
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 1,
+      "asset_id": "612f10b9-a084-43df-a125-2a4bfc50c64a",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_01.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 295,
+      "componentSizes": [
+        295
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 2,
+      "asset_id": "6357d099-abb6-4af4-8be6-fab31557f3be",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_02.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 20,
+      "height": 20,
+      "opaqueCells": 281,
+      "componentSizes": [
+        281
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 3,
+      "asset_id": "93d62e26-00a1-4adf-998b-ccbe953816f2",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_03.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 23,
+      "height": 23,
+      "opaqueCells": 379,
+      "componentSizes": [
+        379
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 4,
+      "asset_id": "1e1344c7-013c-4059-89f5-f246fafb162e",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_04.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 333,
+      "componentSizes": [
+        333
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 5,
+      "asset_id": "a47a1a9b-5473-4faf-9c91-962eb71ed4d3",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_05.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 23,
+      "height": 23,
+      "opaqueCells": 381,
+      "componentSizes": [
+        381
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 6,
+      "asset_id": "2ade36c9-7e81-4d01-8cd0-4b2670ec9534",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_06.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 24,
+      "height": 24,
+      "opaqueCells": 377,
+      "componentSizes": [
+        377
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 7,
+      "asset_id": "1549561c-2d52-463e-938e-47c2377b9275",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_07.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 26,
+      "height": 26,
+      "opaqueCells": 416,
+      "componentSizes": [
+        416
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 8,
+      "asset_id": "328256ca-0d48-416c-ad65-8763af77d0ba",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_1_front/output_08.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 23,
+      "height": 23,
+      "opaqueCells": 335,
+      "componentSizes": [
+        335
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    }
+  ],
+  "SFP2_RARE_2": [
+    {
+      "index": 0,
+      "asset_id": "0ea6e0a8-16e8-4d53-b791-240a54b18fda",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_2_front/output_00.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 26,
+      "height": 26,
+      "opaqueCells": 452,
+      "componentSizes": [
+        452
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 1,
+      "asset_id": "14e4437f-02d3-4016-a459-d4833cc86e05",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_2_front/output_01.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 26,
+      "height": 26,
+      "opaqueCells": 439,
+      "componentSizes": [
+        439
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 2,
+      "asset_id": "f2f48986-0596-4b09-a7c8-eee19eb820a5",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_2_front/output_02.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 27,
+      "height": 27,
+      "opaqueCells": 454,
+      "componentSizes": [
+        454
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 3,
+      "asset_id": "b4e4698a-ea65-4c93-9bbe-292ae16b0d2d",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_2_front/output_03.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 25,
+      "height": 25,
+      "opaqueCells": 425,
+      "componentSizes": [
+        425
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 4,
+      "asset_id": "f85f3447-8f8a-44a2-926c-6b5de0d5d1cc",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_2_front/output_04.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 25,
+      "height": 25,
+      "opaqueCells": 451,
+      "componentSizes": [
+        451
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 5,
+      "asset_id": "b812942f-aaf7-4559-84aa-c4ef61255b3e",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_2_front/output_05.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 26,
+      "height": 26,
+      "opaqueCells": 463,
+      "componentSizes": [
+        463
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 6,
+      "asset_id": "6ffb389d-ce0d-4785-a176-dae465f34b02",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_2_front/output_06.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 25,
+      "height": 25,
+      "opaqueCells": 468,
+      "componentSizes": [
+        468
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 7,
+      "asset_id": "80dbc36e-5549-423e-b536-9b379ca07a6f",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_2_front/output_07.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 25,
+      "height": 25,
+      "opaqueCells": 461,
+      "componentSizes": [
+        461
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 8,
+      "asset_id": "236193bf-c91b-4d6f-baad-0d2743da76e0",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_RARE_2_front/output_08.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [
+        "above_preferred_size"
+      ],
+      "width": 26,
+      "height": 26,
+      "opaqueCells": 489,
+      "componentSizes": [
+        489
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    }
+  ],
+  "SFP2_EPIC_1": [
+    {
+      "index": 0,
+      "asset_id": "5ffee207-a76f-4033-9574-46f0e85e7aa0",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_00.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 338,
+      "componentSizes": [
+        338
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 1,
+      "asset_id": "2b013a17-05ec-416d-9f62-61c18580201e",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_01.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 330,
+      "componentSizes": [
+        330
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 2,
+      "asset_id": "0ff3170d-c484-4779-8707-bb8eb45198d7",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_02.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 338,
+      "componentSizes": [
+        338
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 3,
+      "asset_id": "5906980e-1828-46b8-9539-4d2297f40d04",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_03.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 23,
+      "height": 23,
+      "opaqueCells": 382,
+      "componentSizes": [
+        382
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 4,
+      "asset_id": "c4084886-e899-44ce-a2d6-802dfda771d8",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_04.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 360,
+      "componentSizes": [
+        360
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 5,
+      "asset_id": "ecbf4abd-306a-413e-9c09-c3a29ca6b48b",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_05.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 362,
+      "componentSizes": [
+        362
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 6,
+      "asset_id": "f9b939ef-3c98-4d09-babf-f88f5f3369b0",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_06.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 23,
+      "height": 23,
+      "opaqueCells": 399,
+      "componentSizes": [
+        399
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 7,
+      "asset_id": "e074ff49-8fd6-4ef9-93fc-2556fb94f4e5",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_07.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 386,
+      "componentSizes": [
+        386
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 8,
+      "asset_id": "f9772a4d-ca53-4b69-a010-ad6ea88f0964",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_08.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 384,
+      "componentSizes": [
+        384
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    }
+  ],
+  "SFP2_EPIC_2": [
+    {
+      "index": 0,
+      "asset_id": "164abd2f-6f0d-43ef-875f-b85da6c61a64",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_2_front/output_00.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 318,
+      "componentSizes": [
+        318
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 1,
+      "asset_id": "533636ba-b60d-4475-a87b-ee4ed6b32c8f",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_2_front/output_01.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 337,
+      "componentSizes": [
+        337
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 2,
+      "asset_id": "a625ee6a-3c6a-4af8-a231-bcd8ac8e6387",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_2_front/output_02.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 319,
+      "componentSizes": [
+        319
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 3,
+      "asset_id": "ccdbf77f-49fa-4010-8603-ce720ae84837",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_2_front/output_03.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 317,
+      "componentSizes": [
+        317
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 4,
+      "asset_id": "28e46d02-b87e-42a8-ae52-de50e0051076",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_2_front/output_04.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 322,
+      "componentSizes": [
+        322
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 5,
+      "asset_id": "5fbeb7d0-c47a-4cfc-b269-1403fd708b15",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_2_front/output_05.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 346,
+      "componentSizes": [
+        346
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 6,
+      "asset_id": "99d52fbd-1bab-4a86-9723-4f7bb3bb8a7b",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_2_front/output_06.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 344,
+      "componentSizes": [
+        344
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 7,
+      "asset_id": "d49e01d1-963f-432b-a7ee-d8c0b4cbaae6",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_2_front/output_07.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 377,
+      "componentSizes": [
+        377
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    },
+    {
+      "index": 8,
+      "asset_id": "312e6227-a8b4-4d5b-b9d8-65280fe69e5e",
+      "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_2_front/output_08.png",
+      "passMechanical": true,
+      "issues": [],
+      "warnings": [],
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 348,
+      "componentSizes": [
+        348
+      ],
+      "semanticHumanReviewRequired": true,
+      "semanticChecklist": [
+        "isolated garment only",
+        "no person/mannequin/head/face",
+        "no extra object/background/UI/text",
+        "silhouette/design readable at Stardew scale"
+      ]
+    }
+  ]
+}

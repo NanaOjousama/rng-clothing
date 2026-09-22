@@ -1,0 +1,71 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_ac7cf3ee-5baa-4e6a-bf91-97435f2c7961",
+    "operation": "edit",
+    "credits": {
+      "reserved": 15,
+      "remaining": 180
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "291998d7-bb8d-4d2e-aa8b-5f5e7240532a",
+      "type": "image",
+      "createdAt": "2026-09-22T23:30:43.346Z",
+      "updatedAt": "2026-09-22T23:30:43.346Z",
+      "prompt": "Rotate this exact beanie to a back view. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged.",
+      "width": 24,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/291998d7-bb8d-4d2e-aa8b-5f5e7240532a/image.png?v=1790119843346",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "280100b3-a717-4a5b-b2d2-80d2fb961f19",
+      "batchIndex": 0,
+      "batchSize": 2,
+      "action": {
+        "kind": "edit"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "9de89001-7da8-4f3d-8a0a-fddc83adf91f",
+      "type": "image",
+      "createdAt": "2026-09-22T23:30:44.501Z",
+      "updatedAt": "2026-09-22T23:30:44.501Z",
+      "prompt": "Rotate this exact beanie to a back view. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged.",
+      "width": 45,
+      "height": 39,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/9de89001-7da8-4f3d-8a0a-fddc83adf91f/image.png?v=1790119844501",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "280100b3-a717-4a5b-b2d2-80d2fb961f19",
+      "batchIndex": 1,
+      "batchSize": 2,
+      "action": {
+        "kind": "edit"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 2,
+    "credits": {
+      "remaining": 180
+    }
+  }
+]

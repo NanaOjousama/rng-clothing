@@ -1,0 +1,74 @@
+[
+  {
+    "index": 0,
+    "direction": null,
+    "asset_id": "8d25c9e6-39ae-44ea-a493-f89b47cabcd0",
+    "width": 24,
+    "height": 24,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_00.png"
+  },
+  {
+    "index": 1,
+    "direction": null,
+    "asset_id": "358769b0-7b05-49e0-9ad0-486d4fcd814a",
+    "width": 25,
+    "height": 25,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_01.png"
+  },
+  {
+    "index": 2,
+    "direction": null,
+    "asset_id": "ee992284-707a-4efa-b843-2a8489af7524",
+    "width": 24,
+    "height": 24,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_02.png"
+  },
+  {
+    "index": 3,
+    "direction": null,
+    "asset_id": "d3f17d62-c2ae-4438-9652-2fbd374e57ef",
+    "width": 24,
+    "height": 24,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_03.png"
+  },
+  {
+    "index": 4,
+    "direction": null,
+    "asset_id": "148312cb-1588-4230-a90a-84ed9bb5a035",
+    "width": 25,
+    "height": 25,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_04.png"
+  },
+  {
+    "index": 5,
+    "direction": null,
+    "asset_id": "9a8393ef-c573-408e-bb0e-3a588eb7db4b",
+    "width": 25,
+    "height": 25,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_05.png"
+  },
+  {
+    "index": 6,
+    "direction": null,
+    "asset_id": "142346c4-8111-449f-8ebd-5629144d73be",
+    "width": 24,
+    "height": 24,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_06.png"
+  },
+  {
+    "index": 7,
+    "direction": null,
+    "asset_id": "188bd3f0-d9dc-4359-b3f5-6e96ce140bec",
+    "width": 26,
+    "height": 26,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_07.png"
+  },
+  {
+    "index": 8,
+    "direction": null,
+    "asset_id": "5f792eba-5a98-457a-8f50-c2907ac3e9a2",
+    "width": 24,
+    "height": 24,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_COMMON_1_front/output_08.png"
+  }
+]

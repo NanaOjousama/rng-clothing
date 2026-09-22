@@ -1,0 +1,225 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_05e8d29b-15ea-48d2-9002-dc43f7931d6a",
+    "operation": "style-reference",
+    "credits": {
+      "reserved": 15,
+      "remaining": 300
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "1780607b-70fc-49dc-967f-e22058b97bbc",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:40.469Z",
+      "updatedAt": "2026-09-22T23:21:40.469Z",
+      "prompt": "slouch beanie, waffle knit, deep cuff, crown trim line, medium slouch, deep back. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 24,
+      "height": 24,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/1780607b-70fc-49dc-967f-e22058b97bbc/image.png?v=1790119300469",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "48e88b6b-83d9-4eea-8a29-4aab4f53723f",
+      "batchIndex": 0,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "1fd7e9f8-f6c0-42e5-a203-ea67fd1f09f3",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:41.018Z",
+      "updatedAt": "2026-09-22T23:21:41.018Z",
+      "prompt": "slouch beanie, waffle knit, deep cuff, crown trim line, medium slouch, deep back. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/1fd7e9f8-f6c0-42e5-a203-ea67fd1f09f3/image.png?v=1790119301018",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "48e88b6b-83d9-4eea-8a29-4aab4f53723f",
+      "batchIndex": 1,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 2,
+    "asset": {
+      "id": "e203e084-3452-4ffe-a2ef-c8835a7c54a8",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:41.600Z",
+      "updatedAt": "2026-09-22T23:21:41.600Z",
+      "prompt": "slouch beanie, waffle knit, deep cuff, crown trim line, medium slouch, deep back. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 26,
+      "height": 26,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/e203e084-3452-4ffe-a2ef-c8835a7c54a8/image.png?v=1790119301600",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "48e88b6b-83d9-4eea-8a29-4aab4f53723f",
+      "batchIndex": 2,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 3,
+    "asset": {
+      "id": "193da424-7e64-4abc-9367-1664d6d376de",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:42.156Z",
+      "updatedAt": "2026-09-22T23:21:42.156Z",
+      "prompt": "slouch beanie, waffle knit, deep cuff, crown trim line, medium slouch, deep back. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 25,
+      "height": 25,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/193da424-7e64-4abc-9367-1664d6d376de/image.png?v=1790119302156",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "48e88b6b-83d9-4eea-8a29-4aab4f53723f",
+      "batchIndex": 3,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 4,
+    "asset": {
+      "id": "5304607b-7c0a-450d-ac22-e00feb0c6d75",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:42.750Z",
+      "updatedAt": "2026-09-22T23:21:42.750Z",
+      "prompt": "slouch beanie, waffle knit, deep cuff, crown trim line, medium slouch, deep back. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/5304607b-7c0a-450d-ac22-e00feb0c6d75/image.png?v=1790119302750",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "48e88b6b-83d9-4eea-8a29-4aab4f53723f",
+      "batchIndex": 4,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 5,
+    "asset": {
+      "id": "9a30bebc-a630-41e8-af7f-88373449acb5",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:43.250Z",
+      "updatedAt": "2026-09-22T23:21:43.250Z",
+      "prompt": "slouch beanie, waffle knit, deep cuff, crown trim line, medium slouch, deep back. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 25,
+      "height": 25,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/9a30bebc-a630-41e8-af7f-88373449acb5/image.png?v=1790119303250",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "48e88b6b-83d9-4eea-8a29-4aab4f53723f",
+      "batchIndex": 5,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 6,
+    "asset": {
+      "id": "d1a0cc7b-043c-4cd6-bec4-8a9b542b0241",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:43.784Z",
+      "updatedAt": "2026-09-22T23:21:43.784Z",
+      "prompt": "slouch beanie, waffle knit, deep cuff, crown trim line, medium slouch, deep back. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/d1a0cc7b-043c-4cd6-bec4-8a9b542b0241/image.png?v=1790119303784",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "48e88b6b-83d9-4eea-8a29-4aab4f53723f",
+      "batchIndex": 6,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 7,
+    "asset": {
+      "id": "5a1c865c-db00-4c1b-8f07-8ca55c83a310",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:44.304Z",
+      "updatedAt": "2026-09-22T23:21:44.304Z",
+      "prompt": "slouch beanie, waffle knit, deep cuff, crown trim line, medium slouch, deep back. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 24,
+      "height": 24,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/5a1c865c-db00-4c1b-8f07-8ca55c83a310/image.png?v=1790119304304",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "48e88b6b-83d9-4eea-8a29-4aab4f53723f",
+      "batchIndex": 7,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 8,
+    "asset": {
+      "id": "97d2db26-95e4-480a-8146-f8217860c5cf",
+      "type": "image",
+      "createdAt": "2026-09-22T23:21:44.860Z",
+      "updatedAt": "2026-09-22T23:21:44.860Z",
+      "prompt": "slouch beanie, waffle knit, deep cuff, crown trim line, medium slouch, deep back. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+      "width": 25,
+      "height": 25,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/97d2db26-95e4-480a-8146-f8217860c5cf/image.png?v=1790119304860",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "48e88b6b-83d9-4eea-8a29-4aab4f53723f",
+      "batchIndex": 8,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 9,
+    "credits": {
+      "remaining": 300
+    }
+  }
+]

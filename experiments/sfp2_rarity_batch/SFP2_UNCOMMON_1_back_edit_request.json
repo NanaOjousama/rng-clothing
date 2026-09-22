@@ -1,0 +1,12 @@
+{
+  "operation": "edit",
+  "size": 16,
+  "prompt": "Rotate this exact beanie to a back view. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged. Preserve the same crown trim line treatment on the same physical region.",
+  "referenceRoles": [
+    {
+      "role": "primary",
+      "localPath": "experiments/sfp2_rarity_batch/SFP2_UNCOMMON_1_front/output_04.png",
+      "note": "SFP2_UNCOMMON_1 approved front candidate"
+    }
+  ]
+}

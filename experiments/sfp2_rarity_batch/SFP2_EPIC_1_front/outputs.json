@@ -1,0 +1,74 @@
+[
+  {
+    "index": 0,
+    "direction": null,
+    "asset_id": "5ffee207-a76f-4033-9574-46f0e85e7aa0",
+    "width": 22,
+    "height": 22,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_00.png"
+  },
+  {
+    "index": 1,
+    "direction": null,
+    "asset_id": "2b013a17-05ec-416d-9f62-61c18580201e",
+    "width": 21,
+    "height": 21,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_01.png"
+  },
+  {
+    "index": 2,
+    "direction": null,
+    "asset_id": "0ff3170d-c484-4779-8707-bb8eb45198d7",
+    "width": 22,
+    "height": 22,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_02.png"
+  },
+  {
+    "index": 3,
+    "direction": null,
+    "asset_id": "5906980e-1828-46b8-9539-4d2297f40d04",
+    "width": 23,
+    "height": 23,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_03.png"
+  },
+  {
+    "index": 4,
+    "direction": null,
+    "asset_id": "c4084886-e899-44ce-a2d6-802dfda771d8",
+    "width": 21,
+    "height": 21,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_04.png"
+  },
+  {
+    "index": 5,
+    "direction": null,
+    "asset_id": "ecbf4abd-306a-413e-9c09-c3a29ca6b48b",
+    "width": 22,
+    "height": 22,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_05.png"
+  },
+  {
+    "index": 6,
+    "direction": null,
+    "asset_id": "f9b939ef-3c98-4d09-babf-f88f5f3369b0",
+    "width": 23,
+    "height": 23,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_06.png"
+  },
+  {
+    "index": 7,
+    "direction": null,
+    "asset_id": "e074ff49-8fd6-4ef9-93fc-2556fb94f4e5",
+    "width": 22,
+    "height": 22,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_07.png"
+  },
+  {
+    "index": 8,
+    "direction": null,
+    "asset_id": "f9772a4d-ca53-4b69-a010-ad6ea88f0964",
+    "width": 22,
+    "height": 22,
+    "local_path": "experiments/sfp2_rarity_batch/SFP2_EPIC_1_front/output_08.png"
+  }
+]

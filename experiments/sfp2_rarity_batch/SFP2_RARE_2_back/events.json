@@ -1,0 +1,71 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_09af616b-036a-4180-a427-cbf4f82a8db5",
+    "operation": "edit",
+    "credits": {
+      "reserved": 15,
+      "remaining": 0
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "9b89c6bd-fe9f-4659-9056-83227d9430fd",
+      "type": "image",
+      "createdAt": "2026-09-22T23:38:18.751Z",
+      "updatedAt": "2026-09-22T23:38:18.751Z",
+      "prompt": "Rotate this exact beanie to a back view. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged. Keep this as the clean base hat; do not invent or add localized motifs, patches, labels, bows, badges, or symbols.",
+      "width": 25,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/9b89c6bd-fe9f-4659-9056-83227d9430fd/image.png?v=1790120298751",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "4cff56fd-b804-431f-a3c4-41030c9e32ac",
+      "batchIndex": 0,
+      "batchSize": 2,
+      "action": {
+        "kind": "edit"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "d2bae026-8a45-4558-882c-d0163705fa56",
+      "type": "image",
+      "createdAt": "2026-09-22T23:38:19.924Z",
+      "updatedAt": "2026-09-22T23:38:19.924Z",
+      "prompt": "Rotate this exact beanie to a back view. Keep the beanie design, colors, knit texture, cuff, proportions, and isolated-hat composition unchanged. Keep this as the clean base hat; do not invent or add localized motifs, patches, labels, bows, badges, or symbols.",
+      "width": 25,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/d2bae026-8a45-4558-882c-d0163705fa56/image.png?v=1790120299924",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "4cff56fd-b804-431f-a3c4-41030c9e32ac",
+      "batchIndex": 1,
+      "batchSize": 2,
+      "action": {
+        "kind": "edit"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 2,
+    "credits": {
+      "remaining": 0
+    }
+  }
+]
