@@ -33,6 +33,9 @@
     "qc/sfb3/sf05.json",
     "qc/sfb3/sf06.json",
     "qc/sfb3/sf07.json",
-    "qc/sfb3/sf08.json"
+    "qc/sfb3/sf08.json",
+    "qc/sfp1/wholehat.json",
+    "qc/sfp1/wraparound.json",
+    "qc/sfp1/localized.json"
   ]
 }

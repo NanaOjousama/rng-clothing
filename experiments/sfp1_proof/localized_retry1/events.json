@@ -1,0 +1,225 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_dd978396-83a0-4b72-9177-586f46227912",
+    "operation": "style-reference",
+    "credits": {
+      "reserved": 15,
+      "remaining": 645
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "30882546-b5d4-4af1-8287-f7a49210af5b",
+      "type": "image",
+      "createdAt": "2026-09-22T03:53:42.533Z",
+      "updatedAt": "2026-09-22T03:53:42.533Z",
+      "prompt": "slouch beanie with one tiny edge label attached to the side or cuff edge, otherwise simple and wearable, the label is localized and should not read like an all-over pattern",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/30882546-b5d4-4af1-8287-f7a49210af5b/image.png?v=1790049222533",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "fae70c2e-f8e3-425b-a573-dee9abbd2a7f",
+      "batchIndex": 0,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "bec909c3-be88-41ab-9b97-6c391c745537",
+      "type": "image",
+      "createdAt": "2026-09-22T03:53:43.094Z",
+      "updatedAt": "2026-09-22T03:53:43.094Z",
+      "prompt": "slouch beanie with one tiny edge label attached to the side or cuff edge, otherwise simple and wearable, the label is localized and should not read like an all-over pattern",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/bec909c3-be88-41ab-9b97-6c391c745537/image.png?v=1790049223094",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "fae70c2e-f8e3-425b-a573-dee9abbd2a7f",
+      "batchIndex": 1,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 2,
+    "asset": {
+      "id": "e8e4e1d6-a864-440f-8350-6ba5c872ad8e",
+      "type": "image",
+      "createdAt": "2026-09-22T03:53:43.592Z",
+      "updatedAt": "2026-09-22T03:53:43.592Z",
+      "prompt": "slouch beanie with one tiny edge label attached to the side or cuff edge, otherwise simple and wearable, the label is localized and should not read like an all-over pattern",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/e8e4e1d6-a864-440f-8350-6ba5c872ad8e/image.png?v=1790049223592",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "fae70c2e-f8e3-425b-a573-dee9abbd2a7f",
+      "batchIndex": 2,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 3,
+    "asset": {
+      "id": "4cdcf044-0b73-45c1-88c8-1f8d97da8e1c",
+      "type": "image",
+      "createdAt": "2026-09-22T03:53:44.127Z",
+      "updatedAt": "2026-09-22T03:53:44.127Z",
+      "prompt": "slouch beanie with one tiny edge label attached to the side or cuff edge, otherwise simple and wearable, the label is localized and should not read like an all-over pattern",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/4cdcf044-0b73-45c1-88c8-1f8d97da8e1c/image.png?v=1790049224127",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "fae70c2e-f8e3-425b-a573-dee9abbd2a7f",
+      "batchIndex": 3,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 4,
+    "asset": {
+      "id": "5cd0e781-aeff-4fd9-ae54-a6d91b1fb9d4",
+      "type": "image",
+      "createdAt": "2026-09-22T03:53:44.609Z",
+      "updatedAt": "2026-09-22T03:53:44.609Z",
+      "prompt": "slouch beanie with one tiny edge label attached to the side or cuff edge, otherwise simple and wearable, the label is localized and should not read like an all-over pattern",
+      "width": 20,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/5cd0e781-aeff-4fd9-ae54-a6d91b1fb9d4/image.png?v=1790049224609",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "fae70c2e-f8e3-425b-a573-dee9abbd2a7f",
+      "batchIndex": 4,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 5,
+    "asset": {
+      "id": "fbed4800-923f-44f2-b98a-f60690f88ff2",
+      "type": "image",
+      "createdAt": "2026-09-22T03:53:45.101Z",
+      "updatedAt": "2026-09-22T03:53:45.101Z",
+      "prompt": "slouch beanie with one tiny edge label attached to the side or cuff edge, otherwise simple and wearable, the label is localized and should not read like an all-over pattern",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/fbed4800-923f-44f2-b98a-f60690f88ff2/image.png?v=1790049225101",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "fae70c2e-f8e3-425b-a573-dee9abbd2a7f",
+      "batchIndex": 5,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 6,
+    "asset": {
+      "id": "00efc57b-b875-4695-9d69-413199362f87",
+      "type": "image",
+      "createdAt": "2026-09-22T03:53:45.615Z",
+      "updatedAt": "2026-09-22T03:53:45.615Z",
+      "prompt": "slouch beanie with one tiny edge label attached to the side or cuff edge, otherwise simple and wearable, the label is localized and should not read like an all-over pattern",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/00efc57b-b875-4695-9d69-413199362f87/image.png?v=1790049225615",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "fae70c2e-f8e3-425b-a573-dee9abbd2a7f",
+      "batchIndex": 6,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 7,
+    "asset": {
+      "id": "5cd366c7-cb32-439a-949e-1af816623eb4",
+      "type": "image",
+      "createdAt": "2026-09-22T03:53:46.092Z",
+      "updatedAt": "2026-09-22T03:53:46.092Z",
+      "prompt": "slouch beanie with one tiny edge label attached to the side or cuff edge, otherwise simple and wearable, the label is localized and should not read like an all-over pattern",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/5cd366c7-cb32-439a-949e-1af816623eb4/image.png?v=1790049226092",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "fae70c2e-f8e3-425b-a573-dee9abbd2a7f",
+      "batchIndex": 7,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 8,
+    "asset": {
+      "id": "459f417f-91b3-4cdb-8a58-37be88fce032",
+      "type": "image",
+      "createdAt": "2026-09-22T03:53:46.692Z",
+      "updatedAt": "2026-09-22T03:53:46.692Z",
+      "prompt": "slouch beanie with one tiny edge label attached to the side or cuff edge, otherwise simple and wearable, the label is localized and should not read like an all-over pattern",
+      "width": 25,
+      "height": 25,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/459f417f-91b3-4cdb-8a58-37be88fce032/image.png?v=1790049226692",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "fae70c2e-f8e3-425b-a573-dee9abbd2a7f",
+      "batchIndex": 8,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 9,
+    "credits": {
+      "remaining": 645
+    }
+  }
+]

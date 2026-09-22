@@ -1,0 +1,31 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_9bcb188b-07d7-4b78-b5e1-e65361f4d444",
+    "operation": "style-reference",
+    "credits": {
+      "reserved": 15,
+      "remaining": 660
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "completed",
+    "status": "failed",
+    "output_count": 0,
+    "error": {
+      "code": "generation_failed",
+      "message": "The generation could not be completed."
+    },
+    "credits": {
+      "remaining": 675
+    }
+  }
+]

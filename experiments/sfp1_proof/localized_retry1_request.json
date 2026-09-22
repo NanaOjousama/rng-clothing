@@ -1,0 +1,27 @@
+{
+  "operation": "style-reference",
+  "size": 16,
+  "prompt": "slouch beanie with one tiny edge label attached to the side or cuff edge, otherwise simple and wearable, the label is localized and should not read like an all-over pattern",
+  "referenceRoles": [
+    {
+      "role": "construction",
+      "localPath": "authored/templates/slouch_pl24/front.png",
+      "note": "clean approved slouch construction"
+    },
+    {
+      "role": "material",
+      "localPath": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_00.png",
+      "note": "approved small-scale knit reference"
+    },
+    {
+      "role": "motif",
+      "localPath": "experiments/sfp1_proof/reference_cards/tiny_label_card.png",
+      "note": "16x16 card preserving tiny edge-label pixels"
+    },
+    {
+      "role": "overall_style",
+      "localPath": "experiments/sfp1_proof/reference_cards/side_label_card.png",
+      "note": "16x16 card preserving side-label placement vocabulary"
+    }
+  ]
+}

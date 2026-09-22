@@ -1,0 +1,29 @@
+{
+  "sfp1.wholehat": {
+    "folder": "whole_hat",
+    "index": 4,
+    "direction": null,
+    "asset_id": "74f928e6-677f-440c-b6e9-b8eaf05d4910",
+    "width": 22,
+    "height": 22,
+    "local_path": "experiments/sfp1_proof/whole_hat/output_04.png"
+  },
+  "sfp1.wraparound": {
+    "folder": "wraparound_retry1",
+    "index": 1,
+    "direction": null,
+    "asset_id": "224e0b90-7023-4ca5-bbf5-e38746231c3a",
+    "width": 20,
+    "height": 20,
+    "local_path": "experiments/sfp1_proof/wraparound_retry1/output_01.png"
+  },
+  "sfp1.localized": {
+    "folder": "localized_retry1",
+    "index": 4,
+    "direction": null,
+    "asset_id": "5cd0e781-aeff-4fd9-ae54-a6d91b1fb9d4",
+    "width": 20,
+    "height": 20,
+    "local_path": "experiments/sfp1_proof/localized_retry1/output_04.png"
+  }
+}

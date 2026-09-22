@@ -1,0 +1,225 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_510dd60a-a52e-40ef-a3d0-f0acd93000b3",
+    "operation": "style-reference",
+    "credits": {
+      "reserved": 15,
+      "remaining": 660
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "a85230f7-e4f5-47d5-aee3-76e469ee7176",
+      "type": "image",
+      "createdAt": "2026-09-22T03:52:39.530Z",
+      "updatedAt": "2026-09-22T03:52:39.530Z",
+      "prompt": "simple slouch beanie with one clean contrast trim line running along the cuff or headband, no large motif, keep the trim visually continuous around the hat construction",
+      "width": 19,
+      "height": 19,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/a85230f7-e4f5-47d5-aee3-76e469ee7176/image.png?v=1790049159530",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a529242a-d6d3-445d-890e-27b3ac13057e",
+      "batchIndex": 0,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "224e0b90-7023-4ca5-bbf5-e38746231c3a",
+      "type": "image",
+      "createdAt": "2026-09-22T03:52:40.014Z",
+      "updatedAt": "2026-09-22T03:52:40.014Z",
+      "prompt": "simple slouch beanie with one clean contrast trim line running along the cuff or headband, no large motif, keep the trim visually continuous around the hat construction",
+      "width": 20,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/224e0b90-7023-4ca5-bbf5-e38746231c3a/image.png?v=1790049160014",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a529242a-d6d3-445d-890e-27b3ac13057e",
+      "batchIndex": 1,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 2,
+    "asset": {
+      "id": "e5496d66-7932-4f99-bea8-7390693e93c4",
+      "type": "image",
+      "createdAt": "2026-09-22T03:52:40.489Z",
+      "updatedAt": "2026-09-22T03:52:40.489Z",
+      "prompt": "simple slouch beanie with one clean contrast trim line running along the cuff or headband, no large motif, keep the trim visually continuous around the hat construction",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/e5496d66-7932-4f99-bea8-7390693e93c4/image.png?v=1790049160489",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a529242a-d6d3-445d-890e-27b3ac13057e",
+      "batchIndex": 2,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 3,
+    "asset": {
+      "id": "afa62db8-a379-43b5-9322-fd75deefee8f",
+      "type": "image",
+      "createdAt": "2026-09-22T03:52:40.960Z",
+      "updatedAt": "2026-09-22T03:52:40.960Z",
+      "prompt": "simple slouch beanie with one clean contrast trim line running along the cuff or headband, no large motif, keep the trim visually continuous around the hat construction",
+      "width": 20,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/afa62db8-a379-43b5-9322-fd75deefee8f/image.png?v=1790049160960",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a529242a-d6d3-445d-890e-27b3ac13057e",
+      "batchIndex": 3,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 4,
+    "asset": {
+      "id": "8b3cb5f5-1cb9-4442-aae2-e3a3573736da",
+      "type": "image",
+      "createdAt": "2026-09-22T03:52:41.563Z",
+      "updatedAt": "2026-09-22T03:52:41.563Z",
+      "prompt": "simple slouch beanie with one clean contrast trim line running along the cuff or headband, no large motif, keep the trim visually continuous around the hat construction",
+      "width": 19,
+      "height": 19,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/8b3cb5f5-1cb9-4442-aae2-e3a3573736da/image.png?v=1790049161563",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a529242a-d6d3-445d-890e-27b3ac13057e",
+      "batchIndex": 4,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 5,
+    "asset": {
+      "id": "be09cf2f-7b81-455e-9511-a737d03908a6",
+      "type": "image",
+      "createdAt": "2026-09-22T03:52:42.145Z",
+      "updatedAt": "2026-09-22T03:52:42.145Z",
+      "prompt": "simple slouch beanie with one clean contrast trim line running along the cuff or headband, no large motif, keep the trim visually continuous around the hat construction",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/be09cf2f-7b81-455e-9511-a737d03908a6/image.png?v=1790049162145",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a529242a-d6d3-445d-890e-27b3ac13057e",
+      "batchIndex": 5,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 6,
+    "asset": {
+      "id": "8eb01f43-5ffb-4286-bcb7-26e89d5d1b1e",
+      "type": "image",
+      "createdAt": "2026-09-22T03:52:42.652Z",
+      "updatedAt": "2026-09-22T03:52:42.652Z",
+      "prompt": "simple slouch beanie with one clean contrast trim line running along the cuff or headband, no large motif, keep the trim visually continuous around the hat construction",
+      "width": 18,
+      "height": 18,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/8eb01f43-5ffb-4286-bcb7-26e89d5d1b1e/image.png?v=1790049162652",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a529242a-d6d3-445d-890e-27b3ac13057e",
+      "batchIndex": 6,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 7,
+    "asset": {
+      "id": "a8dbeb84-1d5a-4f89-b3b1-05057114b062",
+      "type": "image",
+      "createdAt": "2026-09-22T03:52:43.204Z",
+      "updatedAt": "2026-09-22T03:52:43.204Z",
+      "prompt": "simple slouch beanie with one clean contrast trim line running along the cuff or headband, no large motif, keep the trim visually continuous around the hat construction",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/a8dbeb84-1d5a-4f89-b3b1-05057114b062/image.png?v=1790049163204",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a529242a-d6d3-445d-890e-27b3ac13057e",
+      "batchIndex": 7,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 8,
+    "asset": {
+      "id": "73c7689e-36fc-4266-818c-0bc1b49f3be4",
+      "type": "image",
+      "createdAt": "2026-09-22T03:52:43.751Z",
+      "updatedAt": "2026-09-22T03:52:43.751Z",
+      "prompt": "simple slouch beanie with one clean contrast trim line running along the cuff or headband, no large motif, keep the trim visually continuous around the hat construction",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/73c7689e-36fc-4266-818c-0bc1b49f3be4/image.png?v=1790049163751",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a529242a-d6d3-445d-890e-27b3ac13057e",
+      "batchIndex": 8,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 9,
+    "credits": {
+      "remaining": 660
+    }
+  }
+]

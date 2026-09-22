@@ -1,0 +1,18 @@
+{
+  "schema": "rng-clothing-sf-candidate/v1",
+  "id": "sfp1.localized",
+  "operation": "style-reference",
+  "status": "CANDIDATE_FRONT_APPROVED",
+  "selectedOutput": {
+    "folder": "localized_retry1",
+    "index": 4,
+    "direction": null,
+    "asset_id": "5cd0e781-aeff-4fd9-ae54-a6d91b1fb9d4",
+    "width": 20,
+    "height": 20,
+    "local_path": "experiments/sfp1_proof/localized_retry1/output_04.png"
+  },
+  "candidateMechanicalPassed": true,
+  "humanFrontReview": "APPROVED_FOR_DIRECTION_TEST",
+  "productionApproved": false
+}

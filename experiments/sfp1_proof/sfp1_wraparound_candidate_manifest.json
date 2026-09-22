@@ -1,0 +1,18 @@
+{
+  "schema": "rng-clothing-sf-candidate/v1",
+  "id": "sfp1.wraparound",
+  "operation": "style-reference",
+  "status": "CANDIDATE_FRONT_APPROVED",
+  "selectedOutput": {
+    "folder": "wraparound_retry1",
+    "index": 1,
+    "direction": null,
+    "asset_id": "224e0b90-7023-4ca5-bbf5-e38746231c3a",
+    "width": 20,
+    "height": 20,
+    "local_path": "experiments/sfp1_proof/wraparound_retry1/output_01.png"
+  },
+  "candidateMechanicalPassed": true,
+  "humanFrontReview": "APPROVED_FOR_DIRECTION_TEST",
+  "productionApproved": false
+}

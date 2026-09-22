@@ -1,0 +1,18 @@
+{
+  "schema": "rng-clothing-sf-candidate/v1",
+  "id": "sfp1.wholehat",
+  "operation": "style-reference",
+  "status": "CANDIDATE_FRONT_APPROVED",
+  "selectedOutput": {
+    "folder": "whole_hat",
+    "index": 4,
+    "direction": null,
+    "asset_id": "74f928e6-677f-440c-b6e9-b8eaf05d4910",
+    "width": 22,
+    "height": 22,
+    "local_path": "experiments/sfp1_proof/whole_hat/output_04.png"
+  },
+  "candidateMechanicalPassed": true,
+  "humanFrontReview": "APPROVED_FOR_DIRECTION_TEST",
+  "productionApproved": false
+}

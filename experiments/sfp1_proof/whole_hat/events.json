@@ -1,0 +1,225 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_58ad5e98-4dcf-49f7-9a21-d041a234209d",
+    "operation": "style-reference",
+    "credits": {
+      "reserved": 15,
+      "remaining": 675
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "84107db3-9472-4e28-b109-e7b2757c2edb",
+      "type": "image",
+      "createdAt": "2026-09-22T03:50:21.449Z",
+      "updatedAt": "2026-09-22T03:50:21.449Z",
+      "prompt": "slouch beanie with a clean readable ribbed or heathered knit surface, no motif, no patch, no emblem, simple wearable design, material identity is the focus",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/84107db3-9472-4e28-b109-e7b2757c2edb/image.png?v=1790049021449",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a06a1a07-a92d-4581-8c26-73b2920534b4",
+      "batchIndex": 0,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "6794b706-13d4-464b-8b68-09f607d8a901",
+      "type": "image",
+      "createdAt": "2026-09-22T03:50:21.977Z",
+      "updatedAt": "2026-09-22T03:50:21.977Z",
+      "prompt": "slouch beanie with a clean readable ribbed or heathered knit surface, no motif, no patch, no emblem, simple wearable design, material identity is the focus",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/6794b706-13d4-464b-8b68-09f607d8a901/image.png?v=1790049021977",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a06a1a07-a92d-4581-8c26-73b2920534b4",
+      "batchIndex": 1,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 2,
+    "asset": {
+      "id": "78ba26a8-eb3c-4347-bbe8-e3b071f8bd62",
+      "type": "image",
+      "createdAt": "2026-09-22T03:50:22.514Z",
+      "updatedAt": "2026-09-22T03:50:22.514Z",
+      "prompt": "slouch beanie with a clean readable ribbed or heathered knit surface, no motif, no patch, no emblem, simple wearable design, material identity is the focus",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/78ba26a8-eb3c-4347-bbe8-e3b071f8bd62/image.png?v=1790049022514",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a06a1a07-a92d-4581-8c26-73b2920534b4",
+      "batchIndex": 2,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 3,
+    "asset": {
+      "id": "aa8ecc79-3c58-4c76-819e-8beb2930119d",
+      "type": "image",
+      "createdAt": "2026-09-22T03:50:23.046Z",
+      "updatedAt": "2026-09-22T03:50:23.046Z",
+      "prompt": "slouch beanie with a clean readable ribbed or heathered knit surface, no motif, no patch, no emblem, simple wearable design, material identity is the focus",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/aa8ecc79-3c58-4c76-819e-8beb2930119d/image.png?v=1790049023046",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a06a1a07-a92d-4581-8c26-73b2920534b4",
+      "batchIndex": 3,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 4,
+    "asset": {
+      "id": "74f928e6-677f-440c-b6e9-b8eaf05d4910",
+      "type": "image",
+      "createdAt": "2026-09-22T03:50:23.599Z",
+      "updatedAt": "2026-09-22T03:50:23.599Z",
+      "prompt": "slouch beanie with a clean readable ribbed or heathered knit surface, no motif, no patch, no emblem, simple wearable design, material identity is the focus",
+      "width": 22,
+      "height": 22,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/74f928e6-677f-440c-b6e9-b8eaf05d4910/image.png?v=1790049023599",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a06a1a07-a92d-4581-8c26-73b2920534b4",
+      "batchIndex": 4,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 5,
+    "asset": {
+      "id": "4c0e75d8-e4d9-43bd-9ee6-f040c978d181",
+      "type": "image",
+      "createdAt": "2026-09-22T03:50:24.145Z",
+      "updatedAt": "2026-09-22T03:50:24.145Z",
+      "prompt": "slouch beanie with a clean readable ribbed or heathered knit surface, no motif, no patch, no emblem, simple wearable design, material identity is the focus",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/4c0e75d8-e4d9-43bd-9ee6-f040c978d181/image.png?v=1790049024145",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a06a1a07-a92d-4581-8c26-73b2920534b4",
+      "batchIndex": 5,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 6,
+    "asset": {
+      "id": "231b64d3-d4e7-4606-a5e0-f01f8ab70de5",
+      "type": "image",
+      "createdAt": "2026-09-22T03:50:24.671Z",
+      "updatedAt": "2026-09-22T03:50:24.671Z",
+      "prompt": "slouch beanie with a clean readable ribbed or heathered knit surface, no motif, no patch, no emblem, simple wearable design, material identity is the focus",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/231b64d3-d4e7-4606-a5e0-f01f8ab70de5/image.png?v=1790049024671",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a06a1a07-a92d-4581-8c26-73b2920534b4",
+      "batchIndex": 6,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 7,
+    "asset": {
+      "id": "bb9a9fc4-e78e-4c10-a2db-c704d9ca110f",
+      "type": "image",
+      "createdAt": "2026-09-22T03:50:25.179Z",
+      "updatedAt": "2026-09-22T03:50:25.179Z",
+      "prompt": "slouch beanie with a clean readable ribbed or heathered knit surface, no motif, no patch, no emblem, simple wearable design, material identity is the focus",
+      "width": 26,
+      "height": 26,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/bb9a9fc4-e78e-4c10-a2db-c704d9ca110f/image.png?v=1790049025179",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a06a1a07-a92d-4581-8c26-73b2920534b4",
+      "batchIndex": 7,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 8,
+    "asset": {
+      "id": "3d046c50-bf0e-4026-a42c-dbfcc5090839",
+      "type": "image",
+      "createdAt": "2026-09-22T03:50:25.642Z",
+      "updatedAt": "2026-09-22T03:50:25.642Z",
+      "prompt": "slouch beanie with a clean readable ribbed or heathered knit surface, no motif, no patch, no emblem, simple wearable design, material identity is the focus",
+      "width": 23,
+      "height": 23,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/3d046c50-bf0e-4026-a42c-dbfcc5090839/image.png?v=1790049025642",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a06a1a07-a92d-4581-8c26-73b2920534b4",
+      "batchIndex": 8,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style"
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 9,
+    "credits": {
+      "remaining": 675
+    }
+  }
+]

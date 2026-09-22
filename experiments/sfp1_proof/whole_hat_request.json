@@ -1,0 +1,27 @@
+{
+  "operation": "style-reference",
+  "size": 16,
+  "prompt": "slouch beanie with a clean readable ribbed or heathered knit surface, no motif, no patch, no emblem, simple wearable design, material identity is the focus",
+  "referenceRoles": [
+    {
+      "role": "construction",
+      "localPath": "authored/templates/slouch_pl24/front.png",
+      "note": "clean approved slouch construction"
+    },
+    {
+      "role": "material",
+      "localPath": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_00.png",
+      "note": "approved small-scale knit reference"
+    },
+    {
+      "role": "material",
+      "localPath": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_03.png",
+      "note": "approved small-scale surface reference"
+    },
+    {
+      "role": "overall_style",
+      "localPath": "experiments/spritefusion_beanie_material_test_01/rib_knit/native/rib_knit_00.png",
+      "note": "rib-knit style vocabulary"
+    }
+  ]
+}

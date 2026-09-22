@@ -1,0 +1,497 @@
+{
+  "wholehat": {
+    "passMechanical": true,
+    "issues": [],
+    "warnings": [],
+    "cardinalMap": {
+      "front": "S",
+      "right": "E",
+      "back": "N",
+      "left": "W"
+    },
+    "assetReports": {
+      "SE": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 22,
+        "height": 22,
+        "opaqueCells": 229,
+        "componentSizes": [
+          229
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "S": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 22,
+        "height": 22,
+        "opaqueCells": 232,
+        "componentSizes": [
+          232
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "SW": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 22,
+        "height": 22,
+        "opaqueCells": 230,
+        "componentSizes": [
+          230
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "E": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 21,
+        "height": 21,
+        "opaqueCells": 204,
+        "componentSizes": [
+          204
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "W": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 21,
+        "height": 21,
+        "opaqueCells": 204,
+        "componentSizes": [
+          204
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "NE": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 22,
+        "height": 22,
+        "opaqueCells": 228,
+        "componentSizes": [
+          228
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "N": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 22,
+        "height": 22,
+        "opaqueCells": 247,
+        "componentSizes": [
+          247
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "NW": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 22,
+        "height": 22,
+        "opaqueCells": 207,
+        "componentSizes": [
+          207
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      }
+    },
+    "semanticHumanReviewRequired": true,
+    "consistencyChecklist": [
+      "WHOLE_HAT identity consistent across cardinal views",
+      "WRAPAROUND_REGION treatment continues on same semantic region",
+      "LOCALIZED motifs only appear where physically intended",
+      "no new person/mannequin/head/face/background contamination",
+      "side/back remain the same garment, not a redesigned garment"
+    ]
+  },
+  "wraparound": {
+    "passMechanical": true,
+    "issues": [],
+    "warnings": [],
+    "cardinalMap": {
+      "front": "S",
+      "right": "E",
+      "back": "N",
+      "left": "W"
+    },
+    "assetReports": {
+      "SE": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 16,
+        "height": 16,
+        "opaqueCells": 142,
+        "componentSizes": [
+          142
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "S": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 16,
+        "height": 16,
+        "opaqueCells": 153,
+        "componentSizes": [
+          153
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "SW": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 16,
+        "height": 16,
+        "opaqueCells": 131,
+        "componentSizes": [
+          131
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "E": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 16,
+        "height": 16,
+        "opaqueCells": 134,
+        "componentSizes": [
+          134
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "W": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 16,
+        "height": 16,
+        "opaqueCells": 129,
+        "componentSizes": [
+          129
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "NE": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 16,
+        "height": 16,
+        "opaqueCells": 152,
+        "componentSizes": [
+          152
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "N": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 16,
+        "height": 16,
+        "opaqueCells": 201,
+        "componentSizes": [
+          201
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "NW": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 16,
+        "height": 16,
+        "opaqueCells": 153,
+        "componentSizes": [
+          153
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      }
+    },
+    "semanticHumanReviewRequired": true,
+    "consistencyChecklist": [
+      "WHOLE_HAT identity consistent across cardinal views",
+      "WRAPAROUND_REGION treatment continues on same semantic region",
+      "LOCALIZED motifs only appear where physically intended",
+      "no new person/mannequin/head/face/background contamination",
+      "side/back remain the same garment, not a redesigned garment"
+    ]
+  },
+  "localized": {
+    "passMechanical": true,
+    "issues": [],
+    "warnings": [],
+    "cardinalMap": {
+      "front": "S",
+      "right": "E",
+      "back": "N",
+      "left": "W"
+    },
+    "assetReports": {
+      "SE": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 20,
+        "height": 20,
+        "opaqueCells": 200,
+        "componentSizes": [
+          200
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "S": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 21,
+        "height": 21,
+        "opaqueCells": 241,
+        "componentSizes": [
+          241
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "SW": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 21,
+        "height": 21,
+        "opaqueCells": 237,
+        "componentSizes": [
+          237
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "E": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 20,
+        "height": 20,
+        "opaqueCells": 176,
+        "componentSizes": [
+          176
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "W": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 20,
+        "height": 20,
+        "opaqueCells": 176,
+        "componentSizes": [
+          176
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "NE": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 20,
+        "height": 20,
+        "opaqueCells": 202,
+        "componentSizes": [
+          202
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "N": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 22,
+        "height": 22,
+        "opaqueCells": 236,
+        "componentSizes": [
+          236
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      },
+      "NW": {
+        "passMechanical": true,
+        "issues": [],
+        "warnings": [],
+        "width": 20,
+        "height": 20,
+        "opaqueCells": 212,
+        "componentSizes": [
+          212
+        ],
+        "semanticHumanReviewRequired": true,
+        "semanticChecklist": [
+          "isolated garment only",
+          "no person/mannequin/head/face",
+          "no extra object/background/UI/text",
+          "silhouette/design readable at Stardew scale"
+        ]
+      }
+    },
+    "semanticHumanReviewRequired": true,
+    "consistencyChecklist": [
+      "WHOLE_HAT identity consistent across cardinal views",
+      "WRAPAROUND_REGION treatment continues on same semantic region",
+      "LOCALIZED motifs only appear where physically intended",
+      "no new person/mannequin/head/face/background contamination",
+      "side/back remain the same garment, not a redesigned garment"
+    ]
+  }
+}

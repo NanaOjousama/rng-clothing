@@ -1,0 +1,74 @@
+[
+  {
+    "index": 0,
+    "direction": null,
+    "asset_id": "30882546-b5d4-4af1-8287-f7a49210af5b",
+    "width": 21,
+    "height": 21,
+    "local_path": "experiments/sfp1_proof/localized_retry1/output_00.png"
+  },
+  {
+    "index": 1,
+    "direction": null,
+    "asset_id": "bec909c3-be88-41ab-9b97-6c391c745537",
+    "width": 23,
+    "height": 23,
+    "local_path": "experiments/sfp1_proof/localized_retry1/output_01.png"
+  },
+  {
+    "index": 2,
+    "direction": null,
+    "asset_id": "e8e4e1d6-a864-440f-8350-6ba5c872ad8e",
+    "width": 23,
+    "height": 23,
+    "local_path": "experiments/sfp1_proof/localized_retry1/output_02.png"
+  },
+  {
+    "index": 3,
+    "direction": null,
+    "asset_id": "4cdcf044-0b73-45c1-88c8-1f8d97da8e1c",
+    "width": 21,
+    "height": 21,
+    "local_path": "experiments/sfp1_proof/localized_retry1/output_03.png"
+  },
+  {
+    "index": 4,
+    "direction": null,
+    "asset_id": "5cd0e781-aeff-4fd9-ae54-a6d91b1fb9d4",
+    "width": 20,
+    "height": 20,
+    "local_path": "experiments/sfp1_proof/localized_retry1/output_04.png"
+  },
+  {
+    "index": 5,
+    "direction": null,
+    "asset_id": "fbed4800-923f-44f2-b98a-f60690f88ff2",
+    "width": 23,
+    "height": 23,
+    "local_path": "experiments/sfp1_proof/localized_retry1/output_05.png"
+  },
+  {
+    "index": 6,
+    "direction": null,
+    "asset_id": "00efc57b-b875-4695-9d69-413199362f87",
+    "width": 22,
+    "height": 22,
+    "local_path": "experiments/sfp1_proof/localized_retry1/output_06.png"
+  },
+  {
+    "index": 7,
+    "direction": null,
+    "asset_id": "5cd366c7-cb32-439a-949e-1af816623eb4",
+    "width": 23,
+    "height": 23,
+    "local_path": "experiments/sfp1_proof/localized_retry1/output_07.png"
+  },
+  {
+    "index": 8,
+    "direction": null,
+    "asset_id": "459f417f-91b3-4cdb-8a58-37be88fce032",
+    "width": 25,
+    "height": 25,
+    "local_path": "experiments/sfp1_proof/localized_retry1/output_08.png"
+  }
+]

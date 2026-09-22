@@ -1,4 +1,74 @@
 {
   "schema": "rng-clothing-sf-registry/v1",
-  "assets": {}
+  "assets": {
+    "sfp1.wholehat": {
+      "status": "CANDIDATE_DIRECTIONAL",
+      "candidateManifest": "experiments/sfp1_proof/sfp1_wholehat_candidate_manifest.json",
+      "directionManifest": "experiments/sfp1_proof/sfp1_wholehat_direction_manifest.json",
+      "candidateMechanicalPassed": true,
+      "directionMechanicalPassed": true,
+      "humanArtApproved": false,
+      "esmWearApproved": false,
+      "history": [
+        {
+          "status": "GENERATED_UNREVIEWED",
+          "note": "SFP1 proof generation"
+        },
+        {
+          "status": "CANDIDATE_FRONT_APPROVED",
+          "note": "clean front selected for direction-set"
+        },
+        {
+          "status": "CANDIDATE_DIRECTIONAL",
+          "note": "8-direction set passed mechanical + semantic pre-ESM review"
+        }
+      ]
+    },
+    "sfp1.wraparound": {
+      "status": "CANDIDATE_DIRECTIONAL",
+      "candidateManifest": "experiments/sfp1_proof/sfp1_wraparound_candidate_manifest.json",
+      "directionManifest": "experiments/sfp1_proof/sfp1_wraparound_direction_manifest.json",
+      "candidateMechanicalPassed": true,
+      "directionMechanicalPassed": true,
+      "humanArtApproved": false,
+      "esmWearApproved": false,
+      "history": [
+        {
+          "status": "GENERATED_UNREVIEWED",
+          "note": "SFP1 proof generation"
+        },
+        {
+          "status": "CANDIDATE_FRONT_APPROVED",
+          "note": "clean front selected for direction-set"
+        },
+        {
+          "status": "CANDIDATE_DIRECTIONAL",
+          "note": "8-direction set passed mechanical + semantic pre-ESM review"
+        }
+      ]
+    },
+    "sfp1.localized": {
+      "status": "CANDIDATE_DIRECTIONAL",
+      "candidateManifest": "experiments/sfp1_proof/sfp1_localized_candidate_manifest.json",
+      "directionManifest": "experiments/sfp1_proof/sfp1_localized_direction_manifest.json",
+      "candidateMechanicalPassed": true,
+      "directionMechanicalPassed": true,
+      "humanArtApproved": false,
+      "esmWearApproved": false,
+      "history": [
+        {
+          "status": "GENERATED_UNREVIEWED",
+          "note": "SFP1 proof generation"
+        },
+        {
+          "status": "CANDIDATE_FRONT_APPROVED",
+          "note": "clean front selected for direction-set"
+        },
+        {
+          "status": "CANDIDATE_DIRECTIONAL",
+          "note": "8-direction set passed mechanical + semantic pre-ESM review"
+        }
+      ]
+    }
+  }
 }

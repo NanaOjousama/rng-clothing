@@ -1,0 +1,84 @@
+{
+  "schema": "rng-clothing-sf-direction-set/v1",
+  "id": "sfp1.localized.directions",
+  "sourceCandidateId": "sfp1.localized",
+  "sourceAssetId": "5cd0e781-aeff-4fd9-ae54-a6d91b1fb9d4",
+  "status": "CANDIDATE_DIRECTIONAL",
+  "consistencyClass": "LOCALIZED",
+  "semanticFeature": "edge label",
+  "cardinalMap": {
+    "front": "S",
+    "right": "E",
+    "back": "N",
+    "left": "W"
+  },
+  "directions": {
+    "SE": {
+      "index": 0,
+      "direction": "SE",
+      "asset_id": "d76fea4d-8290-4522-a811-f980c285c4c4",
+      "width": 20,
+      "height": 20,
+      "local_path": "experiments/sfp1_proof/localized_directions/SE.png"
+    },
+    "S": {
+      "index": 1,
+      "direction": "S",
+      "asset_id": "83e7a0ff-7b74-4c68-ae89-ed2b0d0da43c",
+      "width": 21,
+      "height": 21,
+      "local_path": "experiments/sfp1_proof/localized_directions/S.png"
+    },
+    "SW": {
+      "index": 2,
+      "direction": "SW",
+      "asset_id": "60766f6c-a098-41cc-aa2c-e167a4c78827",
+      "width": 21,
+      "height": 21,
+      "local_path": "experiments/sfp1_proof/localized_directions/SW.png"
+    },
+    "E": {
+      "index": 3,
+      "direction": "E",
+      "asset_id": "2c04d873-94f4-4fa8-a145-e5b43aa8824f",
+      "width": 20,
+      "height": 20,
+      "local_path": "experiments/sfp1_proof/localized_directions/E.png"
+    },
+    "W": {
+      "index": 4,
+      "direction": "W",
+      "asset_id": "5f8d3d7f-f41b-4e5f-b5a2-59ee0a7d912b",
+      "width": 20,
+      "height": 20,
+      "local_path": "experiments/sfp1_proof/localized_directions/W.png"
+    },
+    "NE": {
+      "index": 5,
+      "direction": "NE",
+      "asset_id": "d5b256af-8bd7-4e43-933a-f0c8b26f5f5f",
+      "width": 20,
+      "height": 20,
+      "local_path": "experiments/sfp1_proof/localized_directions/NE.png"
+    },
+    "N": {
+      "index": 6,
+      "direction": "N",
+      "asset_id": "406f0cfb-b2a7-44a1-a225-92657a8abbbf",
+      "width": 22,
+      "height": 22,
+      "local_path": "experiments/sfp1_proof/localized_directions/N.png"
+    },
+    "NW": {
+      "index": 7,
+      "direction": "NW",
+      "asset_id": "f06a5a00-e686-462a-97c8-75c5d0eb957c",
+      "width": 20,
+      "height": 20,
+      "local_path": "experiments/sfp1_proof/localized_directions/NW.png"
+    }
+  },
+  "directionMechanicalPassed": true,
+  "semanticDirectionalReview": "PASS_FOR_ESM_QC",
+  "productionApproved": false
+}

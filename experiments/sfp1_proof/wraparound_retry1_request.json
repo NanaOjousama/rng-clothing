@@ -1,0 +1,27 @@
+{
+  "operation": "style-reference",
+  "size": 16,
+  "prompt": "simple slouch beanie with one clean contrast trim line running along the cuff or headband, no large motif, keep the trim visually continuous around the hat construction",
+  "referenceRoles": [
+    {
+      "role": "construction",
+      "localPath": "authored/templates/slouch_pl24/front.png",
+      "note": "clean approved slouch construction"
+    },
+    {
+      "role": "material",
+      "localPath": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_00.png",
+      "note": "approved small-scale knit reference"
+    },
+    {
+      "role": "trim",
+      "localPath": "experiments/sfp1_proof/reference_cards/contrast_cuff_card.png",
+      "note": "16x16 card preserving original cuff-trim pixels"
+    },
+    {
+      "role": "overall_style",
+      "localPath": "experiments/spritefusion_beanie_material_test_01/stripe_colorblock/native/stripe_colorblock_00.png",
+      "note": "simple band/stripe style vocabulary"
+    }
+  ]
+}

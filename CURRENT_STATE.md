@@ -705,3 +705,32 @@ Smoke verification:
 - PASS slouch beanie roll matrix
 - PASS dependency-free SF pipeline unit assertions
 - PASS SF request runner CLI load
+
+## SFP1 three-rule Sprite Fusion proof — 2026-09-22
+
+Purpose:
+- prove the rebuilt SF-assisted generator on WHOLE_HAT, WRAPAROUND_REGION, and LOCALIZED behavior before any rarity batch.
+
+Front generation:
+- SFP1 WHOLE_HAT: 9 style-reference outputs; selected output #4, asset 74f928e6-677f-440c-b6e9-b8eaf05d4910, 22x22.
+- SFP1 WRAPAROUND: initial request failed and was fully refunded; retry used a 16x16 reference card preserving the original tiny cuff-trim pixels; selected retry output #1, asset 224e0b90-7023-4ca5-bbf5-e38746231c3a, 20x20.
+- SFP1 LOCALIZED: initial request failed and was fully refunded; retry used 16x16 reference cards preserving the tiny edge-label pixels; selected retry output #4, asset 5cd0e781-aeff-4fd9-ae54-a6d91b1fb9d4, 20x20.
+- All 27 generated front candidates passed the mechanical candidate gate.
+- Front selections were visually clean and approved only for direction testing, not production.
+Direction proof:
+- Each selected front was sent through Sprite Fusion direction-set.
+- Each returned all 8 labeled directions and passed the mechanical direction gate.
+- Stardew cardinal review uses S=Front, E=Right, N=Back, W=Left.
+- WHOLE_HAT pre-ESM semantic review: PASS; knit/material identity remains the same garment across cardinals.
+- WRAPAROUND_REGION pre-ESM semantic review: PASS; cuff/headband treatment continues across the visible cardinal views.
+- LOCALIZED pre-ESM semantic review: PASS; edge accent behaves as a localized feature rather than an all-over repeated treatment.
+- Registry status for all three: CANDIDATE_DIRECTIONAL. Human final art approval and ESM wear approval remain false.
+- Combined art sheet: experiments/sfp1_proof/SFP1_cardinal_proof.png.
+
+ESM QC:
+- required ESM checkpoint created: archive/esm-checkpoints/ESM_20260922-000240.tar.gz.
+- three SFP1 candidates registered into ingredient-free ESM QC Preview.
+- native cardinal art is not resized; it is padded/bottom-centered into 24x24 frames.
+- presentation scale is normalized from native generated frame width, not opaque bounding-box width.
+- Release build: PASS, 0 warnings / 0 errors.
+- EnhancedSewingMachine.Tests executable: ALL TESTS PASSED.
