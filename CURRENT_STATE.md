@@ -472,3 +472,46 @@ Test:
 - All 9 accepted outputs are 19x19 or 20x20 and fit the preferred 16-24 px Stardew-scale range.
 - User decided the separate 40px+ -> 24px material-transfer path is not needed for this batch because the direct Sprite Fusion retry already preserves the material look well enough at native small scale.
 - Keep the transfer experiment only as a fallback/research technique, not the normal generator path.
+
+## Slouch beanie Sprite Fusion deconstruction + roll integration — 2026-09-21
+
+Integrated the approved Sprite Fusion slouch/material work into generator data.
+
+Construction candidates:
+- 9 prior Sprite Fusion slouch beanies are cataloged in generator/data/headwear/slouch_beanie_spritefusion_deconstruction.json
+- each is ALTERNATE_CONSTRUCTION, status CANDIDATE_FRONT_ONLY
+- they are NOT live rollable constructions yet
+- require approved directional template frames + wear QC before promotion
+- no front-only AI silhouette can silently become production geometry
+
+Material/pattern donors:
+- authored/materials/slouch_beanie_v1/manifest.json
+- six semantic donor profiles:
+  - rib_knit
+  - cable_knit
+  - heather_knit
+  - stripe_colorblock
+  - plaid_woven
+  - fleece_wool
+- oversized labeled Sprite Fusion material tests provide semantic evidence
+- approved 19-20px retry batch provides small-scale Stardew readability evidence
+- raw Sprite Fusion RGB is evidence only; palette remains a separate roll
+- source alpha/silhouette and blind source coordinates never transfer
+
+Roll integration:
+- existing knitStructure and pattern axes remain the authoritative material/pattern rolls
+- added knitStructure.fleece_wool
+- added pattern.plaid_woven
+- added materialPatternLibrary + materialPatternBindings
+- roll semantics now explicitly separate construction, material structure, pattern overlay, motif, attachment, hardware, and palette
+
+Exclusions:
+- plaid_woven blocks cable/chunky/waffle and busy motif combinations
+- cable blocks plaid_woven plus existing dense pattern conflicts
+- fleece_wool blocks dense jacquard/twist/cable-plus-stripe and knit-in decoration
+- heather avoids contrast-stitch stacking
+- exclusions are validated as hard guards
+
+Validation:
+- PASS slouch beanie roll matrix
+- PASS source-backed template generator

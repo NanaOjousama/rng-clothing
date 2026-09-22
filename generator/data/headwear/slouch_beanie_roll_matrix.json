@@ -80,7 +80,8 @@
       "waffle": 8,
       "chunky": 10,
       "jersey": 6,
-      "brushed": 6
+      "brushed": 6,
+      "fleece_wool": 6
     },
     "pattern": {
       "solid": 34,
@@ -91,7 +92,8 @@
       "twist_stripe": 6,
       "simple_jacquard": 6,
       "cable_plus_stripe": 3,
-      "heather": 5
+      "heather": 5,
+      "plaid_woven": 4
     },
     "motif": {
       "none": 34,
@@ -534,6 +536,77 @@
       "reduce": [
         "motif_complexity"
       ]
+    },
+    {
+      "when": {
+        "pattern": "plaid_woven"
+      },
+      "disallow": {
+        "knitStructure": [
+          "cable",
+          "chunky",
+          "waffle"
+        ],
+        "motif": [
+          "flower_cluster_small",
+          "animal_tiny",
+          "mushroom_tiny"
+        ],
+        "decorationStyle": [
+          "knit_in"
+        ]
+      },
+      "reduce": [
+        "busy_surface",
+        "motif_complexity"
+      ],
+      "reason": "Plaid/woven already carries medium surface complexity; avoid stacking dense texture and busy motifs."
+    },
+    {
+      "when": {
+        "knitStructure": "fleece_wool"
+      },
+      "disallow": {
+        "pattern": [
+          "simple_jacquard",
+          "cable_plus_stripe",
+          "twist_stripe"
+        ],
+        "decorationStyle": [
+          "knit_in"
+        ]
+      },
+      "reduce": [
+        "fine_surface_detail"
+      ],
+      "reason": "Fleece/boiled-wool reads through clustered soft value blocks; dense knit-in patterning conflicts at Stardew scale."
+    },
+    {
+      "when": {
+        "knitStructure": "cable"
+      },
+      "disallow": {
+        "pattern": [
+          "simple_jacquard",
+          "twist_stripe",
+          "plaid_woven"
+        ]
+      },
+      "reason": "Cable is already a strong structural surface rhythm; dense plaid/jacquard/twist overlays are excluded."
+    },
+    {
+      "when": {
+        "pattern": "heather"
+      },
+      "disallow": {
+        "decorationStyle": [
+          "contrast_stitch"
+        ]
+      },
+      "reduce": [
+        "micro_fleck_density"
+      ],
+      "reason": "Heather uses sparse fleck value rhythm; extra contrast-stitch noise is avoided."
     }
   ],
   "rarityGuidance": {
@@ -651,5 +724,57 @@
     "styleAuthority": "approved deconstructed mod-author source through source transfer library; target template alpha remains locked"
   },
   "templateContract": "generator/data/templates/slouch_pl24.json",
-  "sourceTransferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  "sourceTransferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json",
+  "materialPatternLibrary": "authored/materials/slouch_beanie_v1/manifest.json",
+  "materialPatternBindings": {
+    "rib_knit": {
+      "knitStructure": [
+        "fine_rib",
+        "wide_rib"
+      ]
+    },
+    "cable_knit": {
+      "knitStructure": [
+        "cable"
+      ]
+    },
+    "heather_knit": {
+      "knitStructure": [
+        "plain",
+        "fine_rib",
+        "brushed"
+      ],
+      "pattern": [
+        "heather"
+      ]
+    },
+    "stripe_colorblock": {
+      "pattern": [
+        "single_stripe",
+        "twin_stripe",
+        "contrast_cuff",
+        "two_tone_block"
+      ]
+    },
+    "plaid_woven": {
+      "pattern": [
+        "plaid_woven"
+      ]
+    },
+    "fleece_wool": {
+      "knitStructure": [
+        "fleece_wool",
+        "brushed"
+      ]
+    }
+  },
+  "rollSemantics": {
+    "construction": "template/construction selection; geometry authority",
+    "knitStructure": "material/surface structure",
+    "pattern": "surface overlay/colour rhythm",
+    "motif": "small semantic decoration",
+    "attachment": "approved alpha-adding component",
+    "hardwareAccent": "small rigid accent",
+    "palette": "independent recolour/value family"
+  }
 }

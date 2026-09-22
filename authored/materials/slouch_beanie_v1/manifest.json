@@ -1,0 +1,131 @@
+{
+  "schema": "slouch-beanie-material-pattern-library/v1",
+  "family": "slouch_beanie",
+  "status": "CANDIDATE_APPROVED",
+  "source": "Sprite Fusion tests approved by user",
+  "policy": {
+    "constructionAuthority": "target template owns alpha/silhouette and directional geometry",
+    "paletteAuthority": "palette is rolled separately; raw Sprite Fusion RGB is evidence only",
+    "transfer": "donate material/pattern rhythm into declared surface/band/crown zones",
+    "neverTransfer": [
+      "source silhouette",
+      "source alpha",
+      "blind source coordinates",
+      "raw high-colour palette"
+    ],
+    "sizeEvidence": "semantic references may be oversized; approved small-scale evidence is 19-20px"
+  },
+  "profiles": {
+    "rib_knit": {
+      "partKind": "MATERIAL_PATTERN",
+      "role": "MATERIAL",
+      "rollBindings": {
+        "knitStructure": [
+          "fine_rib",
+          "wide_rib"
+        ]
+      },
+      "semanticEvidence": [
+        "experiments/spritefusion_beanie_material_test_01/rib_knit/native/rib_knit_00.png",
+        "experiments/spritefusion_beanie_material_test_01/rib_knit/native/rib_knit_01.png"
+      ],
+      "transfer": "vertical rib rhythm only; map through target surface zone; palette stays independent",
+      "complexity": "low"
+    },
+    "cable_knit": {
+      "partKind": "MATERIAL_PATTERN",
+      "role": "MATERIAL",
+      "rollBindings": {
+        "knitStructure": [
+          "cable"
+        ]
+      },
+      "semanticEvidence": [
+        "experiments/spritefusion_beanie_material_test_01/cable_knit/native/cable_knit_00.png",
+        "experiments/spritefusion_beanie_material_test_01/cable_knit/native/cable_knit_01.png"
+      ],
+      "transfer": "broad simplified cable rhythm only; never source coordinates or silhouette",
+      "complexity": "medium"
+    },
+    "heather_knit": {
+      "partKind": "MATERIAL_PATTERN",
+      "role": "MATERIAL_PATTERN",
+      "rollBindings": {
+        "knitStructure": [
+          "plain",
+          "fine_rib",
+          "brushed"
+        ],
+        "pattern": [
+          "heather"
+        ]
+      },
+      "semanticEvidence": [
+        "experiments/spritefusion_beanie_material_test_01/heather_knit/native/heather_knit_00.png",
+        "experiments/spritefusion_beanie_material_test_01/heather_knit/native/heather_knit_01.png"
+      ],
+      "transfer": "sparse fleck/value rhythm; one-step local value variation; no alpha change",
+      "complexity": "low"
+    },
+    "stripe_colorblock": {
+      "partKind": "MATERIAL_PATTERN",
+      "role": "PATTERN",
+      "rollBindings": {
+        "pattern": [
+          "single_stripe",
+          "twin_stripe",
+          "contrast_cuff",
+          "two_tone_block"
+        ]
+      },
+      "semanticEvidence": [
+        "experiments/spritefusion_beanie_material_test_01/stripe_colorblock/native/stripe_colorblock_00.png",
+        "experiments/spritefusion_beanie_material_test_01/stripe_colorblock/native/stripe_colorblock_01.png"
+      ],
+      "transfer": "simple one- or two-band colour blocking; follow semantic band/body zones",
+      "complexity": "low"
+    },
+    "plaid_woven": {
+      "partKind": "MATERIAL_PATTERN",
+      "role": "PATTERN",
+      "rollBindings": {
+        "pattern": [
+          "plaid_woven"
+        ]
+      },
+      "semanticEvidence": [
+        "experiments/spritefusion_beanie_material_test_01/plaid_woven/native/plaid_woven_00.png",
+        "experiments/spritefusion_beanie_material_test_01/plaid_woven/native/plaid_woven_01.png"
+      ],
+      "transfer": "sparse 1px check rhythm; no full-width/full-height heavy grid; do not overwrite highlight structure",
+      "complexity": "medium"
+    },
+    "fleece_wool": {
+      "partKind": "MATERIAL_PATTERN",
+      "role": "MATERIAL",
+      "rollBindings": {
+        "knitStructure": [
+          "fleece_wool",
+          "brushed"
+        ]
+      },
+      "semanticEvidence": [
+        "experiments/spritefusion_beanie_material_test_01/fleece_wool/native/fleece_wool_00.png",
+        "experiments/spritefusion_beanie_material_test_01/fleece_wool/native/fleece_wool_01.png"
+      ],
+      "transfer": "soft clustered value blocks; hard pixel edges; no anti-aliasing or realistic fuzz",
+      "complexity": "low"
+    }
+  },
+  "smallScaleEvidencePool": [
+    "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_00.png",
+    "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_01.png",
+    "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_02.png",
+    "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_03.png",
+    "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_04.png",
+    "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_05.png",
+    "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_06.png",
+    "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_07.png",
+    "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_08.png"
+  ]
+}

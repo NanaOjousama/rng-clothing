@@ -23,6 +23,7 @@ def main():
     assert 'BRIMLESS_HAT' in forbidden
     assert any('generic V5' in x for x in forbidden)
     assert data['exclusions'], 'no exclusions defined'
+
     asset_path=Path(data['assetLibrary'])
     assert asset_path.exists(), f'missing asset library {asset_path}'
     lib=json.loads(asset_path.read_text())
@@ -33,14 +34,42 @@ def main():
         assert asset_key in assets, f'asset binding {roll_key} -> {asset_key} missing'
     assert {'pom_small','pom_large'}.issubset(assets), 'pom attachments missing'
     assert {'patch_rect','side_label','stitched_badge'}.issubset(assets), 'carrier assets missing'
+
+    # Source-backed material/pattern library must exist and every binding must resolve.
+    material_path=Path(data['materialPatternLibrary'])
+    assert material_path.exists(), f'missing material library {material_path}'
+    materials=json.loads(material_path.read_text())
+    profiles=materials['profiles']
+    assert materials['family']=='slouch_beanie'
+    assert materials['status']=='CANDIDATE_APPROVED'
+    assert {'rib_knit','cable_knit','heather_knit','stripe_colorblock','plaid_woven','fleece_wool'}.issubset(profiles)
+    for name,binding in data['materialPatternBindings'].items():
+        assert name in profiles, f'material binding missing profile {name}'
+        assert binding==profiles[name]['rollBindings'], f'material binding drift: {name}'
+        for axis,values in binding.items():
+            assert axis in axes, f'unknown material axis {axis}'
+            for value in values:
+                assert value in axes[axis], f'{name}: {axis}.{value} not rollable'
+    assert 'fleece_wool' in axes['knitStructure']
+    assert 'plaid_woven' in axes['pattern']
+
     # Hard guard: no-band results may not use cuff-only placements.
     no_band=next(r for r in data['exclusions'] if r.get('when')=={'bandType':'none'})
     cuff_places={'cuff_front_center','cuff_front_offset_left','cuff_front_offset_right','cuff_side_left','cuff_side_right','cuff_back_center'}
     assert cuff_places.issubset(set(no_band['disallow']['motifPlacement']))
+
+    # New complexity exclusions must remain explicit.
+    plaid=next(r for r in data['exclusions'] if r.get('when')=={'pattern':'plaid_woven'})
+    assert 'cable' in plaid['disallow']['knitStructure']
+    cable_rules=[r for r in data['exclusions'] if r.get('when')=={'knitStructure':'cable'}]
+    assert any('plaid_woven' in r.get('disallow',{}).get('pattern',[]) for r in cable_rules)
+    fleece=next(r for r in data['exclusions'] if r.get('when')=={'knitStructure':'fleece_wool'})
+    assert 'cable_plus_stripe' in fleece['disallow']['pattern']
+
     # Presentation is a soft preference only, never a gender lock.
     assert all(v.get('avoidHardLocks') is True for v in data['presentationModifiers'].values())
     print('PASS slouch beanie roll matrix')
-    print(f"axes={len(required_axes)} exclusions={len(data['exclusions'])}")
+    print(f"axes={len(required_axes)} exclusions={len(data['exclusions'])} material_profiles={len(profiles)}")
 
 if __name__=='__main__':
     main()

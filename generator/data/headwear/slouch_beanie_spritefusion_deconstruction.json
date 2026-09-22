@@ -1,0 +1,363 @@
+{
+  "schema": "slouch-beanie-spritefusion-deconstruction/v1",
+  "policy": {
+    "construction": "shape candidates are front-only alternate constructions; do not roll live until directional template + wear QC exists",
+    "material": "approved material outputs are surface donors; never donate alpha/silhouette",
+    "size": "prompt 16px; preferred 16-24px; accept <=32px"
+  },
+  "constructionCandidates": [
+    {
+      "id": "sf_slouch_00",
+      "path": "experiments/spritefusion_slouch_test_01/native/slouch_00.png",
+      "sourceAssetId": "7aa9bb01-09d3-40c4-b7a7-f102b07bb4f6",
+      "partKind": "ALTERNATE_CONSTRUCTION",
+      "status": "CANDIDATE_FRONT_ONLY",
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 299,
+      "bbox": [
+        0,
+        1,
+        20,
+        19
+      ],
+      "uniqueOpaqueColors": 166,
+      "sha256": "eeec0c245ced1cdf9b0f39344b8acd01036d73769f1f96f5877acff3e4682a87",
+      "alphaSha256": "3152cb078115e62d6648e44423891a55ced9d0431f847561be35e71581e21107"
+    },
+    {
+      "id": "sf_slouch_01",
+      "path": "experiments/spritefusion_slouch_test_01/native/slouch_01.png",
+      "sourceAssetId": "a81929cf-dc58-4a0e-8aad-cf837c696ba8",
+      "partKind": "ALTERNATE_CONSTRUCTION",
+      "status": "CANDIDATE_FRONT_ONLY",
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 298,
+      "bbox": [
+        0,
+        1,
+        20,
+        19
+      ],
+      "uniqueOpaqueColors": 192,
+      "sha256": "a83230bd2f7cc93c74c2be1c8ca84c19e1ac9ae72459057c206993d994ac1b31",
+      "alphaSha256": "6db53d7a99585917cbd9decff7452898a467053870543e0f206dfc01e65c6062"
+    },
+    {
+      "id": "sf_slouch_02",
+      "path": "experiments/spritefusion_slouch_test_01/native/slouch_02.png",
+      "sourceAssetId": "98ff46f4-c518-47e9-bcfc-b394e59a8e91",
+      "partKind": "ALTERNATE_CONSTRUCTION",
+      "status": "CANDIDATE_FRONT_ONLY",
+      "width": 20,
+      "height": 20,
+      "opaqueCells": 279,
+      "bbox": [
+        0,
+        1,
+        19,
+        18
+      ],
+      "uniqueOpaqueColors": 159,
+      "sha256": "c7ad8b44d4e6c7e70372ab8cbbb0907c322be0b39a889478f05c6c607dd6b1b5",
+      "alphaSha256": "28d3e14fe2f72d374647305458d0c7ee5c74234b384ea807e3e658be1f6e0900"
+    },
+    {
+      "id": "sf_slouch_03",
+      "path": "experiments/spritefusion_slouch_test_01/native/slouch_03.png",
+      "sourceAssetId": "a915190b-7900-4760-8290-ba0b108da1f8",
+      "partKind": "ALTERNATE_CONSTRUCTION",
+      "status": "CANDIDATE_FRONT_ONLY",
+      "width": 23,
+      "height": 23,
+      "opaqueCells": 324,
+      "bbox": [
+        1,
+        0,
+        21,
+        22
+      ],
+      "uniqueOpaqueColors": 225,
+      "sha256": "2f5bb59c94d7740fe90e60aab990d7518ff1dde9dbcd5476fd18179b69d73896",
+      "alphaSha256": "bb4f67625da837f9b7b2a038abb1c654128b8174388cacb99ece864663357474"
+    },
+    {
+      "id": "sf_slouch_04",
+      "path": "experiments/spritefusion_slouch_test_01/native/slouch_04.png",
+      "sourceAssetId": "833d846b-265e-4c09-9a8e-e2f36f4b6634",
+      "partKind": "ALTERNATE_CONSTRUCTION",
+      "status": "CANDIDATE_FRONT_ONLY",
+      "width": 21,
+      "height": 21,
+      "opaqueCells": 289,
+      "bbox": [
+        0,
+        1,
+        20,
+        18
+      ],
+      "uniqueOpaqueColors": 178,
+      "sha256": "ae52900ee0edab584c3c209eef427da44593acf4f7a6b9c13b6afad3c48c7955",
+      "alphaSha256": "33660eb8d11b3f99f0016f3085fc08302d37e3b73d2b5249075568d6fe547b93"
+    },
+    {
+      "id": "sf_slouch_05",
+      "path": "experiments/spritefusion_slouch_test_01/native/slouch_05.png",
+      "sourceAssetId": "b21e2795-f263-4c9c-8880-383c600b4a30",
+      "partKind": "ALTERNATE_CONSTRUCTION",
+      "status": "CANDIDATE_FRONT_ONLY",
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 312,
+      "bbox": [
+        0,
+        1,
+        21,
+        19
+      ],
+      "uniqueOpaqueColors": 125,
+      "sha256": "0d557260375769b92a18c4fc9cd4d29044b20b64ce94e5093690fe0c84bc7066",
+      "alphaSha256": "60061f39a658f95fe7deed9538f6fa85e4a80c738a627768c1252ae2199fee92"
+    },
+    {
+      "id": "sf_slouch_06",
+      "path": "experiments/spritefusion_slouch_test_01/native/slouch_06.png",
+      "sourceAssetId": "1b5c4883-6346-444a-8df4-dca083949d55",
+      "partKind": "ALTERNATE_CONSTRUCTION",
+      "status": "CANDIDATE_FRONT_ONLY",
+      "width": 23,
+      "height": 23,
+      "opaqueCells": 365,
+      "bbox": [
+        0,
+        1,
+        22,
+        21
+      ],
+      "uniqueOpaqueColors": 228,
+      "sha256": "509c8990b627fe8165bc252db8da4df5272af1c66b2e2a4581c78d13d8a98758",
+      "alphaSha256": "b7902230f0353398bc696a6dc82b0873b44f5e885401f8742d619ff26bd5bb84"
+    },
+    {
+      "id": "sf_slouch_07",
+      "path": "experiments/spritefusion_slouch_test_01/native/slouch_07.png",
+      "sourceAssetId": "25578672-ed43-48ef-aa83-15c271dee981",
+      "partKind": "ALTERNATE_CONSTRUCTION",
+      "status": "CANDIDATE_FRONT_ONLY",
+      "width": 22,
+      "height": 22,
+      "opaqueCells": 339,
+      "bbox": [
+        0,
+        1,
+        21,
+        20
+      ],
+      "uniqueOpaqueColors": 232,
+      "sha256": "60f34e2f84f193abb13d3ab8ddd8ac0ae74baf1fdf612dcd305ba51ffc16cbeb",
+      "alphaSha256": "2ba41cd0502c4d1cf5f9cf96838b9737a617fc5c5192f68c62c325173b20f78d"
+    },
+    {
+      "id": "sf_slouch_08",
+      "path": "experiments/spritefusion_slouch_test_01/native/slouch_08.png",
+      "sourceAssetId": "b477029a-ea78-4667-a68c-ff4699634d8d",
+      "partKind": "ALTERNATE_CONSTRUCTION",
+      "status": "CANDIDATE_FRONT_ONLY",
+      "width": 23,
+      "height": 23,
+      "opaqueCells": 357,
+      "bbox": [
+        0,
+        1,
+        22,
+        20
+      ],
+      "uniqueOpaqueColors": 239,
+      "sha256": "d31d68cd366568a03bbaecca3fb459e3518de5f0a813b3e448c395e50b72344a",
+      "alphaSha256": "3e0f5cf2a7def992673746c80955187d935c1348f1c12eb3d8cb6e646988a012"
+    }
+  ],
+  "materialPatternDonors": [
+    {
+      "id": "sf_beanie_material_00",
+      "path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_00.png",
+      "sourceAssetId": "c999e097-4fa0-414c-bf63-7f55e920bbb7",
+      "partKind": "MATERIAL_PATTERN",
+      "status": "APPROVED_DONOR",
+      "targetZone": "surface",
+      "width": 20,
+      "height": 20,
+      "opaqueCells": 287,
+      "bbox": [
+        0,
+        0,
+        19,
+        18
+      ],
+      "uniqueOpaqueColors": 213,
+      "sha256": "1d94a5723e12f29ef08bcd17a5414e80dfb712c133b9d9b26dfaf69c7ea6978c",
+      "alphaSha256": "1ab029a250210290f562bfb2eebb8849161cd17cfe19c6e4902092eb14439f5d"
+    },
+    {
+      "id": "sf_beanie_material_01",
+      "path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_01.png",
+      "sourceAssetId": "de1da3eb-ca6d-4071-bdb1-be2d86682f31",
+      "partKind": "MATERIAL_PATTERN",
+      "status": "APPROVED_DONOR",
+      "targetZone": "surface",
+      "width": 19,
+      "height": 19,
+      "opaqueCells": 276,
+      "bbox": [
+        0,
+        0,
+        18,
+        18
+      ],
+      "uniqueOpaqueColors": 152,
+      "sha256": "133d2773a7c97eed0710e98ff3e5fc5093adaca3768db8156de262a77d0fddcd",
+      "alphaSha256": "87ccfaee9aa89f0c8bccadd95eb4872ca800b92e0ae6e68cae3f2b95f9afa0a5"
+    },
+    {
+      "id": "sf_beanie_material_02",
+      "path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_02.png",
+      "sourceAssetId": "f2fe80af-a9e8-402e-b335-946528ac0922",
+      "partKind": "MATERIAL_PATTERN",
+      "status": "APPROVED_DONOR",
+      "targetZone": "surface",
+      "width": 20,
+      "height": 20,
+      "opaqueCells": 291,
+      "bbox": [
+        0,
+        0,
+        19,
+        18
+      ],
+      "uniqueOpaqueColors": 187,
+      "sha256": "67b2eb6868508ec4b4f838f404795f7b583898e8fd52d701b7a37f74eabb03d0",
+      "alphaSha256": "e2a583ba62581fbb0e0c11aba717b5a35767448d9d0c67f741a5be942fce04ad"
+    },
+    {
+      "id": "sf_beanie_material_03",
+      "path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_03.png",
+      "sourceAssetId": "44654741-5bc1-4db4-9f37-32e28eb6e0ba",
+      "partKind": "MATERIAL_PATTERN",
+      "status": "APPROVED_DONOR",
+      "targetZone": "surface",
+      "width": 20,
+      "height": 20,
+      "opaqueCells": 292,
+      "bbox": [
+        1,
+        0,
+        18,
+        19
+      ],
+      "uniqueOpaqueColors": 208,
+      "sha256": "b1747586a3b399bd3a41ff1c49b3663c8858493318b14d9cdd201e10dd5ad332",
+      "alphaSha256": "3dd622c57481dcd8a7df0e85cad28218e2a68cd4e9ff811202d14938c753794e"
+    },
+    {
+      "id": "sf_beanie_material_04",
+      "path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_04.png",
+      "sourceAssetId": "14cf81c6-dc53-46ee-b53e-c0fdfca7724a",
+      "partKind": "MATERIAL_PATTERN",
+      "status": "APPROVED_DONOR",
+      "targetZone": "surface",
+      "width": 19,
+      "height": 19,
+      "opaqueCells": 269,
+      "bbox": [
+        0,
+        0,
+        18,
+        17
+      ],
+      "uniqueOpaqueColors": 200,
+      "sha256": "5bc0f07ab21f7018120df028c4db8e76c920a8c397eadd5f3bb2b61f5b9d0bea",
+      "alphaSha256": "a8236ea23994d0c19b811e91577527806147f8b6cd2642cf99151deffe3cc8fb"
+    },
+    {
+      "id": "sf_beanie_material_05",
+      "path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_05.png",
+      "sourceAssetId": "9699670c-e17f-40c3-a9a5-0f39fd7c7952",
+      "partKind": "MATERIAL_PATTERN",
+      "status": "APPROVED_DONOR",
+      "targetZone": "surface",
+      "width": 20,
+      "height": 20,
+      "opaqueCells": 292,
+      "bbox": [
+        0,
+        0,
+        19,
+        18
+      ],
+      "uniqueOpaqueColors": 195,
+      "sha256": "c43edc8d955416f6d7300a5c214afc874cc527f5fc07142d26649cf28ff8043d",
+      "alphaSha256": "e500887ef4ece7d15c6b764a86ca97472f8e57c6913076f37cdac9b002a83c84"
+    },
+    {
+      "id": "sf_beanie_material_06",
+      "path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_06.png",
+      "sourceAssetId": "4e14fc12-5101-46f6-89d7-b07f5e7dcf62",
+      "partKind": "MATERIAL_PATTERN",
+      "status": "APPROVED_DONOR",
+      "targetZone": "surface",
+      "width": 20,
+      "height": 20,
+      "opaqueCells": 300,
+      "bbox": [
+        0,
+        0,
+        19,
+        18
+      ],
+      "uniqueOpaqueColors": 186,
+      "sha256": "8819df8596ac0a99ea34d9a308eb996c4b111f6bfc57401e0a449eafed765c6a",
+      "alphaSha256": "f498653bb55ab77faddb87865be4c55a5873a5e92571989d36a61f00acd25206"
+    },
+    {
+      "id": "sf_beanie_material_07",
+      "path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_07.png",
+      "sourceAssetId": "db395157-9c30-4a81-93f0-4440d026708e",
+      "partKind": "MATERIAL_PATTERN",
+      "status": "APPROVED_DONOR",
+      "targetZone": "surface",
+      "width": 19,
+      "height": 19,
+      "opaqueCells": 274,
+      "bbox": [
+        0,
+        0,
+        18,
+        18
+      ],
+      "uniqueOpaqueColors": 204,
+      "sha256": "6f15c48f3fad0ea8a3cf28e078cb16629f57b8380eea4ba6a5195ea6996a1a15",
+      "alphaSha256": "d4cfab1c7530585811a049b036e343953c7cd91c62a7c52f870e0f33954425f0"
+    },
+    {
+      "id": "sf_beanie_material_08",
+      "path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_08.png",
+      "sourceAssetId": "fec4f256-cae7-4f1b-82cd-52b0b84525ca",
+      "partKind": "MATERIAL_PATTERN",
+      "status": "APPROVED_DONOR",
+      "targetZone": "surface",
+      "width": 19,
+      "height": 19,
+      "opaqueCells": 251,
+      "bbox": [
+        0,
+        1,
+        18,
+        16
+      ],
+      "uniqueOpaqueColors": 184,
+      "sha256": "f60b9cd988680ee9c1952d8f8e091276792ca431b7b41e5421fe6aa51858a2c2",
+      "alphaSha256": "3c09e1b70c49b077333991bff4fa885f77fad8a1b517ef5f8762be81ec096b1e"
+    }
+  ]
+}
