@@ -1,0 +1,104 @@
+{
+  "schema": "sf-structural-transfer-test/v1",
+  "records": [
+    {
+      "index": 0,
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_00.png",
+      "palette": "EVERYDAY_STONE_BLUE",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_00_front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_00_right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_00_left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_00_back.png"
+      }
+    },
+    {
+      "index": 1,
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_01.png",
+      "palette": "CUTE_COCOA_GOLD",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_01_front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_01_right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_01_left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_01_back.png"
+      }
+    },
+    {
+      "index": 2,
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_02.png",
+      "palette": "SPRING_SAGE_PETAL",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_02_front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_02_right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_02_left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_02_back.png"
+      }
+    },
+    {
+      "index": 3,
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_03.png",
+      "palette": "CELESTIAL_INDIGO_STAR",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_03_front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_03_right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_03_left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_03_back.png"
+      }
+    },
+    {
+      "index": 4,
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_04.png",
+      "palette": "GOTHIC_WINE_ASH",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_04_front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_04_right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_04_left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_04_back.png"
+      }
+    },
+    {
+      "index": 5,
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_05.png",
+      "palette": "AUTUMN_OCHRE_PLUM",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_05_front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_05_right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_05_left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_05_back.png"
+      }
+    },
+    {
+      "index": 6,
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_06.png",
+      "palette": "ARCANE_VIOLET_COPPER",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_06_front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_06_right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_06_left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_06_back.png"
+      }
+    },
+    {
+      "index": 7,
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_07.png",
+      "palette": "LUXURY_JADE_BRONZE",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_07_front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_07_right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_07_left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_07_back.png"
+      }
+    },
+    {
+      "index": 8,
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_08.png",
+      "palette": "EVERYDAY_STONE_BLUE",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_08_front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_08_right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_08_left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sf_structural_transfer_test_01/material_08_back.png"
+      }
+    }
+  ]
+}

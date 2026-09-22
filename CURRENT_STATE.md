@@ -553,3 +553,24 @@ SFB1 in-game QC:
 - 8 hats total
 - Common 2 / Uncommon 2 / Rare 2 / Epic 2
 - all frames preserve locked PL24 alpha geometry
+
+## SFB1 visual failure diagnosis + SFB2 source-fidelity test — 2026-09-21
+
+- SFB1 was rejected for visual fidelity.
+- Root cause: the SFB1 QC builder did not transfer Sprite Fusion source art; it approximated source categories with generic authored tile swatches, straight procedural trim rows, and hard-coded micro-accent pixels.
+- Therefore Sprite Fusion was source/evidence in metadata, but not actual rendering authority.
+- SFB1 live QC pack was removed after rejection.
+
+Corrective test:
+- tools/test_sf_structural_transfer.py tests row-relative source structure transfer onto locked PL24 geometry.
+- tools/build_sfb2_source_fidelity_qc.py builds SFB2 using actual approved 19-20px Sprite Fusion donor RGB/value structure mapped row-by-row onto PL24.
+- no procedural texture tiles, trim synthesis, or micro-accent synthesis are used in SFB2.
+- target PL24 alpha/silhouette remains locked in all four directions.
+- live pack: /run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/RNG-SFB2-Source-Fidelity-QC
+- search tag: SFB2
+- 8 hats: 2 Common / 2 Uncommon / 2 Rare / 2 Epic.
+
+Production direction pending QC:
+- prefer real source-structure transfer from approved source donors;
+- do not silently fall back to generic procedural approximations when a source-backed donor exists;
+- palette separation can be reintroduced after source-structure fidelity is proven.

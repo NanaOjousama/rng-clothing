@@ -1,0 +1,111 @@
+{
+  "schema": "sfb2-source-fidelity-qc/v1",
+  "tag": "SFB2",
+  "template": "slouch_pl24",
+  "variants": [
+    {
+      "id": "SF01",
+      "rarity": "Common",
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_00.png",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF01/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF01/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF01/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF01/back.png"
+      },
+      "transfer": "DIRECT_SOURCE_RGB_ROW_MAP",
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    },
+    {
+      "id": "SF02",
+      "rarity": "Common",
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_01.png",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF02/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF02/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF02/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF02/back.png"
+      },
+      "transfer": "DIRECT_SOURCE_RGB_ROW_MAP",
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    },
+    {
+      "id": "SF03",
+      "rarity": "Uncommon",
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_02.png",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF03/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF03/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF03/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF03/back.png"
+      },
+      "transfer": "DIRECT_SOURCE_RGB_ROW_MAP",
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    },
+    {
+      "id": "SF04",
+      "rarity": "Uncommon",
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_03.png",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF04/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF04/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF04/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF04/back.png"
+      },
+      "transfer": "DIRECT_SOURCE_RGB_ROW_MAP",
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    },
+    {
+      "id": "SF05",
+      "rarity": "Rare",
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_04.png",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF05/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF05/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF05/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF05/back.png"
+      },
+      "transfer": "DIRECT_SOURCE_RGB_ROW_MAP",
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    },
+    {
+      "id": "SF06",
+      "rarity": "Rare",
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_05.png",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF06/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF06/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF06/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF06/back.png"
+      },
+      "transfer": "DIRECT_SOURCE_RGB_ROW_MAP",
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    },
+    {
+      "id": "SF07",
+      "rarity": "Epic",
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_06.png",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF07/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF07/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF07/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF07/back.png"
+      },
+      "transfer": "DIRECT_SOURCE_RGB_ROW_MAP",
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    },
+    {
+      "id": "SF08",
+      "rarity": "Epic",
+      "donor": "/run/media/deck/USD00/RNG_clothing/experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_07.png",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF08/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF08/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF08/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb2_source_fidelity_qc/SF08/back.png"
+      },
+      "transfer": "DIRECT_SOURCE_RGB_ROW_MAP",
+      "geometry": "LOCKED_TEMPLATE_ALPHA"
+    }
+  ]
+}
