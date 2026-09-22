@@ -423,3 +423,29 @@ Search tags:
 - B16QC = all 16
 - B16PL = PixelLab 16 only
 - B16RT = RoundTrip-source 16 only
+
+## Sprite Fusion Pixel Snapper integration — 2026-09-21
+
+Added Sprite Fusion Pixel Snapper as an optional local cleanup/QC stage.
+
+Installed locally:
+- official source clone: tools/vendor/spritefusion-pixel-snapper (revision ae20461)
+- native binary: tools/bin/spritefusion-pixel-snapper
+- Rust + portable Zig build toolchains live on USD00 under tools/toolchains/
+- home Rust/Cargo locations are compatibility symlinks to the SD-card copies
+- no SteamOS package-manager/system modification was required
+
+Project adapter:
+- tools/pixel_snapper_adapter.py
+- default behavior preserves original canvas metadata
+- Pixel Snapper raw transparent-padding crop is reseated onto the original canvas
+- alpha/silhouette geometry is compared after reseating
+- any silhouette change is REJECTED by default and marked approvalRequired
+- only explicit --approve-silhouette-change accepts changed geometry
+- custom palette, color-count, pixel-size, and reseating anchor are supported
+
+Validated smoke test:
+- clean 16x16 beanie was cropped by raw Pixel Snapper to 12x13
+- adapter restored a 16x16 canvas
+- unapproved geometry drift exited 3 and did not publish output
+- explicit approval accepted the changed silhouette

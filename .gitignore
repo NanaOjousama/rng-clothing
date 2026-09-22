@@ -85,3 +85,11 @@ BERET_MATERIAL⁄PATTERN REFERENCE/
 # recorded in provenance.json and source_backed.json, so any machine can prove it
 # holds the same art; `tools/ingest_hat_base.py` recreates them from the corpus.
 authored/source_bases/*/*/source/
+
+# Local third-party/native toolchains for Pixel Snapper integration.
+tools/vendor/
+tools/toolchains/
+tools/bin/spritefusion-pixel-snapper
+tools/bin/cc
+experiments/pixel_snapper_smoke_*.png
+experiments/pixel_snapper_smoke_*.json
