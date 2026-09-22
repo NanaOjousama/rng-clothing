@@ -19,6 +19,20 @@
     "lab/lab.size.wide_brim_hat.24.bb099f15b6be.json",
     "lab/lab.size.wide_brim_hat.32.59341b2306ab.json",
     "V4BEANIE.json",
-    "source_backed/beanie_v1_rural_earth_moss.json"
+    "source_backed/beanie_v1_rural_earth_moss.json",
+    "qc/slouch_compare/ours_16.json",
+    "qc/slouch_compare/ours_24.json",
+    "qc/slouch_compare/ours_32.json",
+    "qc/slouch_compare/pixellab_16.json",
+    "qc/slouch_compare/pixellab_24.json",
+    "qc/slouch_compare/pixellab_32.json",
+    "qc/sfb3/sf01.json",
+    "qc/sfb3/sf02.json",
+    "qc/sfb3/sf03.json",
+    "qc/sfb3/sf04.json",
+    "qc/sfb3/sf05.json",
+    "qc/sfb3/sf06.json",
+    "qc/sfb3/sf07.json",
+    "qc/sfb3/sf08.json"
   ]
 }

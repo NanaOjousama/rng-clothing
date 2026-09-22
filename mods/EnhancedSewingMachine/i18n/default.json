@@ -32,11 +32,16 @@
   "tailoring.fit.view.right": "Right",
   "tailoring.fit.view.left": "Left",
   "tailoring.fit.view.back": "Back",
-  "tailoring.fit.view-prev": "View ◀",
-  "tailoring.fit.view-next": "View ▶",
+  "tailoring.fit.view-prev": "View \u25c0",
+  "tailoring.fit.view-next": "View \u25b6",
   "tailoring.fit.scale-down": "Scale -",
   "tailoring.fit.scale-up": "Scale +",
   "tailoring.fit.reset-pos": "Pos",
   "tailoring.fit.reset-scale": "Scale",
-  "tailoring.fit.reset-all": "All"
+  "tailoring.fit.reset-all": "All",
+  "tailoring.qc.toggle": "QC Preview",
+  "tailoring.qc.prev": "\u25c0 Hat",
+  "tailoring.qc.next": "Hat \u25b6",
+  "tailoring.qc.off": "QC Preview: OFF",
+  "tailoring.qc.label": "QC {{index}}/{{count}}  {{id}}"
 }

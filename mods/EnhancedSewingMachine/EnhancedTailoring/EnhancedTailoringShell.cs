@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
@@ -30,6 +32,9 @@ namespace EnhancedSewingMachine.EnhancedTailoring
         private const int FitResetAllId = 1218;
         private const int FitViewPrevId = 1219;
         private const int FitViewNextId = 1220;
+        private const int QcToggleId = 1221;
+        private const int QcPrevId = 1222;
+        private const int QcNextId = 1223;
         private const int FitRange = 8;
         private const float FitScaleMin = 0.85f;
         private const float FitScaleMax = 1.25f;
@@ -52,6 +57,11 @@ namespace EnhancedSewingMachine.EnhancedTailoring
             public ClickableComponent FitScaleDown, FitScaleUp;
             public ClickableComponent FitResetPos, FitResetScale, FitResetAll;
             public ClickableComponent FitViewPrev, FitViewNext;
+            public ClickableComponent QcToggle, QcPrev, QcNext;
+            public List<string> QcGarmentIds = new();
+            public int QcIndex;
+            public bool QcMode;
+            public Hat QcHat;
             public int FitFacingDirection = 2;
             public bool Enhanced;
             public string StatusKey;
@@ -135,8 +145,7 @@ namespace EnhancedSewingMachine.EnhancedTailoring
             int y = Game1.getMouseY(ui_scale: true);
             int snappedId = s.Menu.currentlySnappedComponent?.myID ?? -1;
 
-            if (Game1.player.hat.Value is Hat fitHat
-                && this.runtime.TryReadInstance(fitHat, out GarmentInstanceData fitInstance))
+            if (this.TryGetActiveFitHat(out Hat fitHat, out GarmentInstanceData fitInstance))
             {
                 int fitId = -1;
                 if (isMouse)
@@ -251,6 +260,34 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 return;
             }
 
+            bool qcTogglePressed = isMouse
+                ? s.QcToggle.containsPoint(x, y)
+                : snappedId == QcToggleId;
+            if (qcTogglePressed)
+            {
+                this.helper.Input.Suppress(e.Button);
+                this.SetQcMode(!s.QcMode);
+                Game1.playSound("smallSelect");
+                return;
+            }
+
+            if (s.QcMode)
+            {
+                bool qcPrevPressed = isMouse
+                    ? s.QcPrev.containsPoint(x, y)
+                    : snappedId == QcPrevId;
+                bool qcNextPressed = isMouse
+                    ? s.QcNext.containsPoint(x, y)
+                    : snappedId == QcNextId;
+                if (qcPrevPressed || qcNextPressed)
+                {
+                    this.helper.Input.Suppress(e.Button);
+                    this.CycleQcCandidate(qcPrevPressed ? -1 : 1);
+                    Game1.playSound("shiny4");
+                    return;
+                }
+            }
+
             if (!s.Enhanced)
                 return;
 
@@ -348,8 +385,20 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                     button.Center.Y - modeSize.Y / 2f),
                 Game1.textColor);
 
-            if (Game1.player.hat.Value is Hat fitHat
-                && this.runtime.TryReadInstance(fitHat, out GarmentInstanceData fitInstance))
+            DrawFitButton(b, s.QcToggle);
+            if (s.QcMode)
+            {
+                DrawFitButton(b, s.QcPrev);
+                DrawFitButton(b, s.QcNext);
+                Utility.drawTextWithShadow(
+                    b,
+                    this.CurrentQcLabel(),
+                    Game1.smallFont,
+                    new Vector2(s.QcToggle.bounds.X, s.QcToggle.bounds.Y - 24),
+                    Game1.textColor);
+            }
+
+            if (this.TryGetActiveFitHat(out Hat fitHat, out GarmentInstanceData fitInstance))
             {
                 float displayScale = fitInstance.GetFitScale(s.FitFacingDirection);
                 int fitX = fitInstance.GetFitOffsetX(s.FitFacingDirection);
@@ -412,11 +461,15 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 return;
 
             int current = s.Menu.currentlySnappedComponent?.myID ?? -1;
-            bool hasGeneratedHat = Game1.player.hat.Value is Hat fitHat
-                && this.runtime.TryReadInstance(fitHat, out _);
+            bool hasGeneratedHat = this.TryGetActiveFitHat(out _, out _);
             int next = current switch
             {
-                ModeButtonId => hasGeneratedHat ? FitUpId : TailoringMenu.region_leftIngredient,
+                ModeButtonId => QcToggleId,
+                QcToggleId => s.QcMode
+                    ? QcPrevId
+                    : (hasGeneratedHat ? FitUpId : TailoringMenu.region_leftIngredient),
+                QcPrevId => QcNextId,
+                QcNextId => hasGeneratedHat ? FitUpId : TailoringMenu.region_leftIngredient,
                 FitUpId => FitRightId,
                 FitRightId => FitDownId,
                 FitDownId => FitScaleDownId,
@@ -563,6 +616,37 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 rightNeighborID = -99998
             };
 
+            var qcToggle = new ClickableComponent(
+                new Rectangle(menu.xPositionOnScreen + 40, menu.yPositionOnScreen + 300, 180, 36),
+                this.helper.Translation.Get("tailoring.qc.toggle"))
+            {
+                myID = QcToggleId,
+                upNeighborID = -99998,
+                downNeighborID = QcPrevId,
+                leftNeighborID = -99998,
+                rightNeighborID = -99998
+            };
+            var qcPrev = new ClickableComponent(
+                new Rectangle(menu.xPositionOnScreen + 40, menu.yPositionOnScreen + 340, 86, 36),
+                this.helper.Translation.Get("tailoring.qc.prev"))
+            {
+                myID = QcPrevId,
+                upNeighborID = QcToggleId,
+                downNeighborID = -99998,
+                leftNeighborID = -99998,
+                rightNeighborID = QcNextId
+            };
+            var qcNext = new ClickableComponent(
+                new Rectangle(menu.xPositionOnScreen + 134, menu.yPositionOnScreen + 340, 86, 36),
+                this.helper.Translation.Get("tailoring.qc.next"))
+            {
+                myID = QcNextId,
+                upNeighborID = QcToggleId,
+                downNeighborID = -99998,
+                leftNeighborID = QcPrevId,
+                rightNeighborID = -99998
+            };
+
             var fragment = new ClickableTextureComponent(
                 new Rectangle(
                     menu.rightIngredientSpot.bounds.X,
@@ -597,11 +681,119 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 FitResetPos = fitResetPos,
                 FitResetScale = fitResetScale,
                 FitResetAll = fitResetAll,
+                QcToggle = qcToggle,
+                QcPrev = qcPrev,
+                QcNext = qcNext,
                 Enhanced = false,
                 StatusKey = "tailoring.status.off"
             };
 
             this.EnsureClickablesPresent();
+        }
+
+        private bool TryGetActiveFitHat(out Hat hat, out GarmentInstanceData instance)
+        {
+            hat = null;
+            instance = null;
+            State s = this.state;
+            if (s?.QcMode == true)
+            {
+                if (s.QcHat != null
+                    && this.runtime.TryReadInstance(s.QcHat, out instance))
+                {
+                    hat = s.QcHat;
+                    return true;
+                }
+                return false;
+            }
+
+            if (Game1.player.hat.Value is Hat equipped
+                && this.runtime.TryReadInstance(equipped, out instance))
+            {
+                hat = equipped;
+                return true;
+            }
+
+            return false;
+        }
+
+        private void SetQcMode(bool enabled)
+        {
+            State s = this.state;
+            if (s == null)
+                return;
+
+            if (!enabled)
+            {
+                s.QcMode = false;
+                s.QcHat = null;
+                return;
+            }
+
+            s.QcGarmentIds = this.runtime.Registry.All
+                .Where(g =>
+                    string.Equals(g.Definition.Metadata?.QualityTier, "QC", StringComparison.OrdinalIgnoreCase)
+                    || (g.Definition.Metadata?.Classification?.IndexOf("QC", StringComparison.OrdinalIgnoreCase) ?? -1) >= 0
+                    || g.Definition.Id.StartsWith("qc.", StringComparison.OrdinalIgnoreCase))
+                .Select(g => g.Definition.Id)
+                .OrderBy(id => id, StringComparer.OrdinalIgnoreCase)
+                .ToList();
+
+            if (s.QcGarmentIds.Count == 0)
+            {
+                s.QcMode = false;
+                s.QcHat = null;
+                return;
+            }
+
+            s.QcIndex = Math.Clamp(s.QcIndex, 0, s.QcGarmentIds.Count - 1);
+            s.QcMode = true;
+            this.LoadQcCandidate();
+        }
+
+        private void CycleQcCandidate(int delta)
+        {
+            State s = this.state;
+            if (s == null || !s.QcMode || s.QcGarmentIds.Count == 0)
+                return;
+
+            s.QcIndex = (s.QcIndex + delta) % s.QcGarmentIds.Count;
+            if (s.QcIndex < 0)
+                s.QcIndex += s.QcGarmentIds.Count;
+            this.LoadQcCandidate();
+        }
+
+        private void LoadQcCandidate()
+        {
+            State s = this.state;
+            if (s == null || s.QcGarmentIds.Count == 0)
+                return;
+
+            string id = s.QcGarmentIds[s.QcIndex];
+            try
+            {
+                s.QcHat = this.runtime.CreateHat(id, 0);
+                s.FitFacingDirection = 2;
+            }
+            catch (Exception ex)
+            {
+                s.QcHat = null;
+                this.monitor.Log($"QC preview could not load '{id}': {ex.Message}", LogLevel.Warn);
+            }
+        }
+
+        private string CurrentQcLabel()
+        {
+            State s = this.state;
+            if (s == null || !s.QcMode || s.QcGarmentIds.Count == 0)
+                return this.helper.Translation.Get("tailoring.qc.off");
+
+            return this.helper.Translation.Get("tailoring.qc.label", new
+            {
+                index = s.QcIndex + 1,
+                count = s.QcGarmentIds.Count,
+                id = s.QcGarmentIds[s.QcIndex]
+            });
         }
 
         private void EnsureClickablesPresent()
@@ -617,9 +809,22 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 s.Menu.allClickableComponents.Add(s.ModeButton);
             if (!s.Menu.allClickableComponents.Contains(s.FragmentSpot))
                 s.Menu.allClickableComponents.Add(s.FragmentSpot);
+            if (!s.Menu.allClickableComponents.Contains(s.QcToggle))
+                s.Menu.allClickableComponents.Add(s.QcToggle);
+            if (s.QcMode && s.QcGarmentIds.Count > 0)
+            {
+                if (!s.Menu.allClickableComponents.Contains(s.QcPrev))
+                    s.Menu.allClickableComponents.Add(s.QcPrev);
+                if (!s.Menu.allClickableComponents.Contains(s.QcNext))
+                    s.Menu.allClickableComponents.Add(s.QcNext);
+            }
+            else
+            {
+                s.Menu.allClickableComponents.Remove(s.QcPrev);
+                s.Menu.allClickableComponents.Remove(s.QcNext);
+            }
 
-            bool hasGeneratedHat = Game1.player.hat.Value is Hat fitHat
-                && this.runtime.TryReadInstance(fitHat, out _);
+            bool hasGeneratedHat = this.TryGetActiveFitHat(out _, out _);
             foreach (ClickableComponent c in new[]
             {
                 s.FitUp, s.FitDown, s.FitLeft, s.FitRight,
@@ -637,9 +842,12 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                     s.Menu.allClickableComponents.Remove(c);
             }
 
-            s.ModeButton.downNeighborID = hasGeneratedHat
-                ? FitUpId
-                : TailoringMenu.region_resultItem;
+            s.ModeButton.downNeighborID = QcToggleId;
+            s.QcToggle.downNeighborID = s.QcMode && s.QcGarmentIds.Count > 0
+                ? QcPrevId
+                : (hasGeneratedHat ? FitUpId : TailoringMenu.region_resultItem);
+            s.QcPrev.rightNeighborID = QcNextId;
+            s.QcNext.leftNeighborID = QcPrevId;
             s.Menu.startTailoringButton.rightNeighborID = ModeButtonId;
             s.Menu.rightIngredientSpot.downNeighborID = s.Enhanced
                 ? FragmentSlotId
@@ -937,7 +1145,10 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 Color.White);
 
             Farmer who = Game1.player;
-            Hat previewHat = who.hat.Value;
+            Hat realHat = who.hat.Value;
+            Hat previewHat = this.state?.QcMode == true && this.state.QcHat != null
+                ? this.state.QcHat
+                : realHat;
             int oldFacing = who.FacingDirection;
             int oldFrame = who.FarmerSprite?.CurrentFrame ?? 0;
             bool oldFlip = who.FarmerSprite?.CurrentAnimationFrame.flip ?? false;
@@ -997,7 +1208,7 @@ namespace EnhancedSewingMachine.EnhancedTailoring
             }
             finally
             {
-                who.hat.Value = previewHat;
+                who.hat.Value = realHat;
                 who.FacingDirection = oldFacing;
                 who.FarmerSprite?.setCurrentSingleFrame(
                     oldFrame,

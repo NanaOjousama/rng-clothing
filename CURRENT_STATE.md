@@ -632,3 +632,36 @@ Examples now enforced by contract:
 
 Validator now checks the view-consistency classes/defaults/critical overrides.
 SFB3 batch manifest references this policy for directional QC.
+
+## ESM ingredient-free QC Preview mode — 2026-09-21
+
+Added a non-crafting QC browser directly to Enhanced Sewing Machine.
+
+Behavior:
+- QC Preview is available from the ESM/Tailoring UI without inserting ingredients or Fashion Fragments.
+- QC Preview cycles registered garments tagged as QC candidates.
+- Preview garments are temporary menu state only:
+  - no inventory item is created
+  - no ingredients are consumed
+  - the player's real equipped hat is not replaced
+  - the real equipped hat is restored after every preview draw
+- existing ESM fitting controls are reused for QC garments:
+  - Front / Right / Back / Left
+  - X/Y offset
+  - per-direction scale
+  - reset position / scale / all
+- controller/keyboard focus includes QC Preview, Previous Hat, and Next Hat.
+- if a QC garment fails to load while QC mode is active, fit controls fail closed instead of falling back to editing the player's real generated hat.
+
+SFB3 integration:
+- 8 SFB3 true-direction candidates are registered under assets/garments/qc/sfb3/.
+- each uses direct Sprite Fusion cardinal art.
+- each is packed as 24x96 (Front, Right, Back, Left).
+- RenderScale = 0.8333333333333334, matching the previously validated PL24 ESM normalization.
+- Metadata QualityTier=QC and Classification=QC_CANDIDATE, so they appear in the QC browser.
+- helper builder: tools/register_sfb3_esm_qc.py
+
+Verification:
+- EnhancedSewingMachine Release build: 0 warnings / 0 errors; auto-deployed to live Mods folder.
+- EnhancedSewingMachine.Tests executable: ALL TESTS PASSED.
+- SFB3 ESM QC registry: 8/8 definitions validated; all textures 24x96; normalized scale confirmed.

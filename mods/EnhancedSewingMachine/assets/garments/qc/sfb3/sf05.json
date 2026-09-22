@@ -1,0 +1,62 @@
+{
+  "Id": "qc.sfb3.sf05",
+  "Category": "Hat",
+  "DefinitionVersion": 1,
+  "WornTexture": "assets/qc/sfb3/sf05.png",
+  "FrameWidth": 24,
+  "FrameHeight": 24,
+  "RenderScale": 0.8333333333333334,
+  "VanillaReferenceAnchor": {
+    "X": 10,
+    "Y": 16
+  },
+  "Directions": {
+    "Front": {
+      "SourceX": 0,
+      "SourceY": 0,
+      "AnchorX": 12,
+      "AnchorY": 20,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    "Right": {
+      "SourceX": 0,
+      "SourceY": 24,
+      "AnchorX": 12,
+      "AnchorY": 20,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    "Back": {
+      "SourceX": 0,
+      "SourceY": 48,
+      "AnchorX": 12,
+      "AnchorY": 20,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    "Left": {
+      "SourceX": 0,
+      "SourceY": 72,
+      "AnchorX": 12,
+      "AnchorY": 20,
+      "OffsetX": 0,
+      "OffsetY": 0
+    }
+  },
+  "Metadata": {
+    "Family": "knit_cap",
+    "Construction": "slouch_beanie",
+    "Material": "spritefusion_directional",
+    "Palette": "source",
+    "Motif": "",
+    "GeneratorId": "SFB3",
+    "GeneratorVersion": 1,
+    "GeneratorSeed": 5,
+    "Style": "source-fidelity,directional,qc",
+    "QualityTier": "QC",
+    "Decals": "",
+    "Classification": "QC_CANDIDATE",
+    "Label": "SFB3 Rare SF05"
+  }
+}
