@@ -464,5 +464,12 @@
       },
       "geometry": "SPRITE_FUSION_DIRECTIONAL_SOURCE_PADDED_ONLY"
     }
+  ],
+  "viewConsistencyPolicyRef": "generator/data/headwear/slouch_beanie_roll_matrix.json#viewConsistencyPolicy",
+  "qcRequirements": [
+    "WHOLE_HAT features retain the same design identity across front/right/back/left.",
+    "WRAPAROUND_REGION features continue on the same semantic region wherever visible.",
+    "LOCALIZED motifs/emblems render only in intended/physically visible views and need not appear in every view.",
+    "Localized labels/tags may not float or duplicate as screen-space stickers."
   ]
 }

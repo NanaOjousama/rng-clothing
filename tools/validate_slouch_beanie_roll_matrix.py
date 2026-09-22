@@ -54,6 +54,18 @@ def main():
     assert 'plaid_woven' in axes['pattern']
     assert {'none','band_trim_line','crown_trim_line','double_trim_lines'}.issubset(axes['trimAccent'])
     assert {'none','cuff_patch_small','side_bow_small','diagonal_wrap_band','tiny_label_tag'}.issubset(axes['microAccent'])
+    vc=data['viewConsistencyPolicy']
+    assert set(vc['classes'])=={'WHOLE_HAT','WRAPAROUND_REGION','LOCALIZED'}
+    assert vc['axisDefaults']['pattern']=='WHOLE_HAT'
+    assert vc['axisDefaults']['trimAccent']=='WRAPAROUND_REGION'
+    assert vc['axisDefaults']['motif']=='LOCALIZED'
+    assert vc['axisDefaults']['microAccent']=='LOCALIZED'
+    assert vc['overrides']['trimAccent.band_trim_line']=='WRAPAROUND_REGION'
+    assert vc['overrides']['pattern.contrast_cuff']=='WRAPAROUND_REGION'
+    assert vc['overrides']['microAccent.tiny_label_tag']=='LOCALIZED'
+    assert vc['overrides']['microAccent.diagonal_wrap_band']=='WRAPAROUND_REGION'
+    assert set(vc['classes']['WHOLE_HAT']['requiredViews'])=={'front','right','back','left'}
+    assert set(vc['classes']['WRAPAROUND_REGION']['requiredViews'])=={'front','right','back','left'}
     label=data['microAccentPlacementRules']['tiny_label_tag']
     assert label.get('edgeOnly') is True
     assert set(label['allowedPlacements'])=={'cuff_side_left','cuff_side_right','body_side_left','body_side_right'}

@@ -606,3 +606,29 @@ SFB3 QC:
 Production rule:
 - front-only AI/source art may be a candidate or material donor, but may not become production directional output by projection alone.
 - for AI-generated candidates, obtain approved directional source frames (Sprite Fusion direction-set is the current preferred method) before directional wear QC.
+
+## Directional design-consistency contract — 2026-09-21
+
+Added explicit cross-view propagation semantics to the slouch-beanie generator.
+
+Three classes:
+- WHOLE_HAT: material/all-over pattern identity remains consistent across Front/Right/Back/Left.
+- WRAPAROUND_REGION: a design on a continuous semantic region (especially cuff/headband/crown trim) must continue on that same region in every view where the region is visible.
+- LOCALIZED: motif/emblem/tag/patch is placement-specific and does not need to appear in every view unless its definition declares that visibility.
+
+Defaults:
+- knitStructure + pattern = WHOLE_HAT
+- trimAccent = WRAPAROUND_REGION
+- motif + microAccent + carrier/decoration = LOCALIZED
+- diagonal_wrap_band is explicitly WRAPAROUND_REGION
+- tiny_label_tag / side_bow / cuff_patch are explicitly LOCALIZED
+- contrast_cuff is WRAPAROUND_REGION
+
+Examples now enforced by contract:
+- a line on the headband may not exist only on Front and disappear on side/back;
+- all-over heather/plaid/rib treatment must remain the same hat design across cardinal views;
+- a front emblem can legitimately disappear on side/back;
+- an edge label remains physically attached to its intended edge/side and may not be duplicated as a fixed screen-space sticker.
+
+Validator now checks the view-consistency classes/defaults/critical overrides.
+SFB3 batch manifest references this policy for directional QC.

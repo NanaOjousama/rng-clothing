@@ -865,7 +865,8 @@
     "hardwareAccent": "small rigid accent",
     "palette": "independent recolour/value family",
     "trimAccent": "low-complexity line accents on band/cuff and/or crown",
-    "microAccent": "small wearable beanie accents such as patch, side bow, wrap band, or edge label"
+    "microAccent": "small wearable beanie accents such as patch, side bow, wrap band, or edge label",
+    "viewConsistency": "WHOLE_HAT and WRAPAROUND_REGION features propagate semantically across cardinal views; LOCALIZED features obey placement-specific visibility and do not need to appear in every view."
   },
   "microAccentPlacementRules": {
     "cuff_patch_small": {
@@ -921,5 +922,64 @@
       ],
       "reason": "Label/tag motifs are edge-attached design accents and may not float in the middle of the beanie."
     }
+  },
+  "viewConsistencyPolicy": {
+    "classes": {
+      "WHOLE_HAT": {
+        "description": "Design belongs to the overall hat surface/material and must remain semantically consistent in every visible direction.",
+        "requiredViews": [
+          "front",
+          "right",
+          "back",
+          "left"
+        ],
+        "rule": "Preserve the same material/pattern identity and region behavior across all cardinal views; directional geometry may differ."
+      },
+      "WRAPAROUND_REGION": {
+        "description": "Design belongs to a continuous semantic region such as the cuff/headband and must continue around that region in every visible direction.",
+        "requiredViews": [
+          "front",
+          "right",
+          "back",
+          "left"
+        ],
+        "rule": "If the region is visible in a view, the same design treatment must be present on that same region. Do not let a front band stripe disappear on side/back."
+      },
+      "LOCALIZED": {
+        "description": "Design is a localized motif/emblem/tag/patch and appears only in views where that placement is intended and physically visible.",
+        "rule": "Do not replicate localized art into every direction by default. Visibility is controlled by placement and declared views."
+      }
+    },
+    "axisDefaults": {
+      "knitStructure": "WHOLE_HAT",
+      "pattern": "WHOLE_HAT",
+      "trimAccent": "WRAPAROUND_REGION",
+      "microAccent": "LOCALIZED",
+      "motif": "LOCALIZED",
+      "carrierStyle": "LOCALIZED",
+      "decorationStyle": "LOCALIZED",
+      "attachment": "LOCALIZED",
+      "hardwareAccent": "LOCALIZED"
+    },
+    "overrides": {
+      "trimAccent.band_trim_line": "WRAPAROUND_REGION",
+      "trimAccent.crown_trim_line": "WRAPAROUND_REGION",
+      "trimAccent.double_trim_lines": "WRAPAROUND_REGION",
+      "pattern.contrast_cuff": "WRAPAROUND_REGION",
+      "pattern.single_stripe": "WHOLE_HAT",
+      "pattern.twin_stripe": "WHOLE_HAT",
+      "pattern.plaid_woven": "WHOLE_HAT",
+      "pattern.heather": "WHOLE_HAT",
+      "microAccent.diagonal_wrap_band": "WRAPAROUND_REGION",
+      "microAccent.cuff_patch_small": "LOCALIZED",
+      "microAccent.side_bow_small": "LOCALIZED",
+      "microAccent.tiny_label_tag": "LOCALIZED"
+    },
+    "localizedVisibility": {
+      "default": "Only render in declared/intended views; absence in other directions is valid.",
+      "sideLabels": "Must remain attached to the physical side/edge region and may move between visible side/front/back frames according to actual placement; never duplicate as a screen-space sticker.",
+      "frontMotifs": "Front-only is valid unless the motif definition explicitly declares additional visible views."
+    },
+    "consistencyCheck": "Directional generation/QC must reject recipes where WHOLE_HAT or WRAPAROUND_REGION identity disappears, changes category, or jumps to the wrong semantic region between cardinal views."
   }
 }
