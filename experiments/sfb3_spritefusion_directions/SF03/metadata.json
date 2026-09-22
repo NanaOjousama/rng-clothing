@@ -1,0 +1,66 @@
+{
+  "cardinalMap": {
+    "front": "S",
+    "right": "E",
+    "left": "W",
+    "back": "N"
+  },
+  "items": [
+    {
+      "direction": "SE",
+      "asset_id": "26ed5d3e-7419-48b4-9d18-df17a44798e5",
+      "width": 21,
+      "height": 21,
+      "path": "experiments/sfb3_spritefusion_directions/SF03/SE.png"
+    },
+    {
+      "direction": "S",
+      "asset_id": "c47e308d-e0f9-42e6-9265-b7de5970bfc1",
+      "width": 20,
+      "height": 20,
+      "path": "experiments/sfb3_spritefusion_directions/SF03/S.png"
+    },
+    {
+      "direction": "SW",
+      "asset_id": "59e5aa16-c569-45a5-a1c8-af55c34e6d42",
+      "width": 22,
+      "height": 22,
+      "path": "experiments/sfb3_spritefusion_directions/SF03/SW.png"
+    },
+    {
+      "direction": "E",
+      "asset_id": "ac59a8a7-db57-4d90-a905-deca50e01d6e",
+      "width": 22,
+      "height": 22,
+      "path": "experiments/sfb3_spritefusion_directions/SF03/E.png"
+    },
+    {
+      "direction": "W",
+      "asset_id": "2c5b6902-1519-48d7-bcf9-37edf697a6a3",
+      "width": 22,
+      "height": 22,
+      "path": "experiments/sfb3_spritefusion_directions/SF03/W.png"
+    },
+    {
+      "direction": "NE",
+      "asset_id": "5e80f115-4363-434c-bcb4-588627f32bbb",
+      "width": 23,
+      "height": 23,
+      "path": "experiments/sfb3_spritefusion_directions/SF03/NE.png"
+    },
+    {
+      "direction": "N",
+      "asset_id": "93ddb724-5321-42fc-bfa1-bfc249dee6bf",
+      "width": 22,
+      "height": 22,
+      "path": "experiments/sfb3_spritefusion_directions/SF03/N.png"
+    },
+    {
+      "direction": "NW",
+      "asset_id": "b25c1dba-cd9b-4acf-ae76-fe484510220c",
+      "width": 23,
+      "height": 23,
+      "path": "experiments/sfb3_spritefusion_directions/SF03/NW.png"
+    }
+  ]
+}

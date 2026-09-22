@@ -574,3 +574,35 @@ Production direction pending QC:
 - prefer real source-structure transfer from approved source donors;
 - do not silently fall back to generic procedural approximations when a source-backed donor exists;
 - palette separation can be reintroduced after source-structure fidelity is proven.
+
+## SFB3 true Sprite Fusion directions — 2026-09-21
+
+Directional rendering fix after SFB2 QC:
+- Sprite Fusion officially supports direction-set through POST /api/v1/generate.
+- direction-set accepts exactly one source image, no prompt, optional size 16/32/64, and returns exactly 8 labeled directions.
+- Generated true direction sets for all 8 current SFB source hats.
+- Reused the already-paid SF01 direction set; generated SF02-SF08 as seven new requests.
+- Total direction-set generation cost for all 8 hats: 120 credits including the first test request.
+- All returned directional sprites were 16-23 px, within the accepted <=32 px range.
+
+Stardew cardinal mapping:
+- S -> front
+- E -> right
+- W -> left
+- N -> back
+- diagonal outputs remain preserved as source evidence but are not used by Fashion Sense.
+
+SFB3 QC:
+- source: experiments/sfb3_spritefusion_directions/
+- rendered QC: experiments/sfb3_directional_qc/
+- live pack: /run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/RNG-SFB3-Directional-QC
+- search tag: SFB3
+- 8 hats total: Common 2 / Uncommon 2 / Rare 2 / Epic 2
+- direct Sprite Fusion cardinal art is used.
+- each directional sprite is transparent-padded/bottom-centered to 24x24 only.
+- no scale, no row remap, no silhouette rewrite, no procedural side/back generation.
+- obsolete SFB2 live pack removed.
+
+Production rule:
+- front-only AI/source art may be a candidate or material donor, but may not become production directional output by projection alone.
+- for AI-generated candidates, obtain approved directional source frames (Sprite Fusion direction-set is the current preferred method) before directional wear QC.

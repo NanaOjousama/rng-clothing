@@ -1,0 +1,509 @@
+{
+  "schema": "sfb3-spritefusion-direction-sets/v1",
+  "operation": "direction-set",
+  "requested_size": 16,
+  "cardinalMap": {
+    "front": "S",
+    "right": "E",
+    "left": "W",
+    "back": "N"
+  },
+  "sets": [
+    {
+      "id": "SF01",
+      "source_asset_id": "c999e097-4fa0-414c-bf63-7f55e920bbb7",
+      "items": [
+        {
+          "direction": "SE",
+          "asset_id": "8515af48-3c90-4537-a8be-1445ceea075a",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/spritefusion_direction_test_01/directions/SE.png"
+        },
+        {
+          "direction": "S",
+          "asset_id": "73bbd732-7afc-46f3-9952-6d079eb8e854",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/spritefusion_direction_test_01/directions/S.png"
+        },
+        {
+          "direction": "SW",
+          "asset_id": "b12a56ed-2bb0-4f47-87cf-5660117d2540",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/spritefusion_direction_test_01/directions/SW.png"
+        },
+        {
+          "direction": "E",
+          "asset_id": "a978ea94-7755-4553-b4d5-3837ed81ae9d",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/spritefusion_direction_test_01/directions/E.png"
+        },
+        {
+          "direction": "W",
+          "asset_id": "a1509e34-6879-468c-942e-56074e7114ad",
+          "width": 22,
+          "height": 22,
+          "path": "experiments/spritefusion_direction_test_01/directions/W.png"
+        },
+        {
+          "direction": "NE",
+          "asset_id": "66ee9cd5-0ff6-45cb-abff-d0d702ee6c6c",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/spritefusion_direction_test_01/directions/NE.png"
+        },
+        {
+          "direction": "N",
+          "asset_id": "e40e4dbf-8320-434d-b345-2735f0d9a030",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/spritefusion_direction_test_01/directions/N.png"
+        },
+        {
+          "direction": "NW",
+          "asset_id": "26731efc-59ce-45bb-8908-63d02a29902e",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/spritefusion_direction_test_01/directions/NW.png"
+        }
+      ]
+    },
+    {
+      "id": "SF02",
+      "source_asset_id": "de1da3eb-ca6d-4071-bdb1-be2d86682f31",
+      "items": [
+        {
+          "direction": "SE",
+          "asset_id": "dd36e451-b9c9-4d6c-90e3-bff034cddd77",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/sfb3_spritefusion_directions/SF02/SE.png"
+        },
+        {
+          "direction": "S",
+          "asset_id": "9bf232c9-fcf1-4081-a42c-32256146809a",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/sfb3_spritefusion_directions/SF02/S.png"
+        },
+        {
+          "direction": "SW",
+          "asset_id": "27fa7c37-17cc-4443-8a89-5b83d9369181",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/sfb3_spritefusion_directions/SF02/SW.png"
+        },
+        {
+          "direction": "E",
+          "asset_id": "426026b4-dcf6-4a10-9e5c-cdd2938d6b0d",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/sfb3_spritefusion_directions/SF02/E.png"
+        },
+        {
+          "direction": "W",
+          "asset_id": "d4ab87ed-fd92-416b-8736-8acfad5dcb1c",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/sfb3_spritefusion_directions/SF02/W.png"
+        },
+        {
+          "direction": "NE",
+          "asset_id": "cf4cb7a7-f4b7-4d8d-a024-e305d9de44a3",
+          "width": 19,
+          "height": 19,
+          "path": "experiments/sfb3_spritefusion_directions/SF02/NE.png"
+        },
+        {
+          "direction": "N",
+          "asset_id": "806bca3a-1c11-4fe8-8313-9a007e171454",
+          "width": 19,
+          "height": 19,
+          "path": "experiments/sfb3_spritefusion_directions/SF02/N.png"
+        },
+        {
+          "direction": "NW",
+          "asset_id": "c48f8cae-b340-4d65-bc3e-25c8dd3c1e6e",
+          "width": 19,
+          "height": 19,
+          "path": "experiments/sfb3_spritefusion_directions/SF02/NW.png"
+        }
+      ]
+    },
+    {
+      "id": "SF03",
+      "source_asset_id": "f2fe80af-a9e8-402e-b335-946528ac0922",
+      "items": [
+        {
+          "direction": "SE",
+          "asset_id": "26ed5d3e-7419-48b4-9d18-df17a44798e5",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/sfb3_spritefusion_directions/SF03/SE.png"
+        },
+        {
+          "direction": "S",
+          "asset_id": "c47e308d-e0f9-42e6-9265-b7de5970bfc1",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/sfb3_spritefusion_directions/SF03/S.png"
+        },
+        {
+          "direction": "SW",
+          "asset_id": "59e5aa16-c569-45a5-a1c8-af55c34e6d42",
+          "width": 22,
+          "height": 22,
+          "path": "experiments/sfb3_spritefusion_directions/SF03/SW.png"
+        },
+        {
+          "direction": "E",
+          "asset_id": "ac59a8a7-db57-4d90-a905-deca50e01d6e",
+          "width": 22,
+          "height": 22,
+          "path": "experiments/sfb3_spritefusion_directions/SF03/E.png"
+        },
+        {
+          "direction": "W",
+          "asset_id": "2c5b6902-1519-48d7-bcf9-37edf697a6a3",
+          "width": 22,
+          "height": 22,
+          "path": "experiments/sfb3_spritefusion_directions/SF03/W.png"
+        },
+        {
+          "direction": "NE",
+          "asset_id": "5e80f115-4363-434c-bcb4-588627f32bbb",
+          "width": 23,
+          "height": 23,
+          "path": "experiments/sfb3_spritefusion_directions/SF03/NE.png"
+        },
+        {
+          "direction": "N",
+          "asset_id": "93ddb724-5321-42fc-bfa1-bfc249dee6bf",
+          "width": 22,
+          "height": 22,
+          "path": "experiments/sfb3_spritefusion_directions/SF03/N.png"
+        },
+        {
+          "direction": "NW",
+          "asset_id": "b25c1dba-cd9b-4acf-ae76-fe484510220c",
+          "width": 23,
+          "height": 23,
+          "path": "experiments/sfb3_spritefusion_directions/SF03/NW.png"
+        }
+      ]
+    },
+    {
+      "id": "SF04",
+      "source_asset_id": "44654741-5bc1-4db4-9f37-32e28eb6e0ba",
+      "items": [
+        {
+          "direction": "SE",
+          "asset_id": "63babe0d-accd-4ded-8f61-d7e1ef0cfa62",
+          "width": 19,
+          "height": 19,
+          "path": "experiments/sfb3_spritefusion_directions/SF04/SE.png"
+        },
+        {
+          "direction": "S",
+          "asset_id": "793cc525-95bd-4336-a532-e17357f5728d",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/sfb3_spritefusion_directions/SF04/S.png"
+        },
+        {
+          "direction": "SW",
+          "asset_id": "718ba189-75d9-421d-9383-a04ead2c2826",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/sfb3_spritefusion_directions/SF04/SW.png"
+        },
+        {
+          "direction": "E",
+          "asset_id": "732b40cc-ba47-40a1-8167-d732688a3d4f",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/sfb3_spritefusion_directions/SF04/E.png"
+        },
+        {
+          "direction": "W",
+          "asset_id": "89a1c1fd-cdea-4a1a-8adc-cf89bd1acb2b",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/sfb3_spritefusion_directions/SF04/W.png"
+        },
+        {
+          "direction": "NE",
+          "asset_id": "69cfdd77-e1ee-4382-91c9-19a6d4996e83",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/sfb3_spritefusion_directions/SF04/NE.png"
+        },
+        {
+          "direction": "N",
+          "asset_id": "95316815-f3f2-4435-9b20-280f9d7da712",
+          "width": 19,
+          "height": 19,
+          "path": "experiments/sfb3_spritefusion_directions/SF04/N.png"
+        },
+        {
+          "direction": "NW",
+          "asset_id": "7550c548-790f-445a-a543-309d39dfdcd3",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/sfb3_spritefusion_directions/SF04/NW.png"
+        }
+      ]
+    },
+    {
+      "id": "SF05",
+      "source_asset_id": "14cf81c6-dc53-46ee-b53e-c0fdfca7724a",
+      "items": [
+        {
+          "direction": "SE",
+          "asset_id": "b438b302-a5bc-48d2-80cc-8236fb6620d2",
+          "width": 16,
+          "height": 16,
+          "path": "experiments/sfb3_spritefusion_directions/SF05/SE.png"
+        },
+        {
+          "direction": "S",
+          "asset_id": "f0ab1258-c9c5-4cc9-88fd-b8d4dfb3cff6",
+          "width": 16,
+          "height": 16,
+          "path": "experiments/sfb3_spritefusion_directions/SF05/S.png"
+        },
+        {
+          "direction": "SW",
+          "asset_id": "3b4af1b0-56b5-4cfe-b98f-bc070f4e5272",
+          "width": 16,
+          "height": 16,
+          "path": "experiments/sfb3_spritefusion_directions/SF05/SW.png"
+        },
+        {
+          "direction": "E",
+          "asset_id": "f369dad1-67b2-4050-b734-1e9dd604ff8d",
+          "width": 16,
+          "height": 16,
+          "path": "experiments/sfb3_spritefusion_directions/SF05/E.png"
+        },
+        {
+          "direction": "W",
+          "asset_id": "986df88c-c853-4755-95b0-ea45455e48c5",
+          "width": 16,
+          "height": 16,
+          "path": "experiments/sfb3_spritefusion_directions/SF05/W.png"
+        },
+        {
+          "direction": "NE",
+          "asset_id": "7960a136-0c2a-4c6b-98dc-5bb614fc77fe",
+          "width": 17,
+          "height": 17,
+          "path": "experiments/sfb3_spritefusion_directions/SF05/NE.png"
+        },
+        {
+          "direction": "N",
+          "asset_id": "60d8353c-dbcd-423d-94c0-f40e1ec6d529",
+          "width": 17,
+          "height": 17,
+          "path": "experiments/sfb3_spritefusion_directions/SF05/N.png"
+        },
+        {
+          "direction": "NW",
+          "asset_id": "212e9f7e-e448-45e4-ad13-5fc77b5b2e91",
+          "width": 17,
+          "height": 17,
+          "path": "experiments/sfb3_spritefusion_directions/SF05/NW.png"
+        }
+      ]
+    },
+    {
+      "id": "SF06",
+      "source_asset_id": "9699670c-e17f-40c3-a9a5-0f39fd7c7952",
+      "items": [
+        {
+          "direction": "SE",
+          "asset_id": "95e0d86e-f05f-44d6-85a7-fad64ce6dca5",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/sfb3_spritefusion_directions/SF06/SE.png"
+        },
+        {
+          "direction": "S",
+          "asset_id": "aac0e987-b435-47f3-a9fc-d3cdd2fd8de1",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/sfb3_spritefusion_directions/SF06/S.png"
+        },
+        {
+          "direction": "SW",
+          "asset_id": "4b91f461-fd04-4dfd-add5-fd92f1ca11dc",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/sfb3_spritefusion_directions/SF06/SW.png"
+        },
+        {
+          "direction": "E",
+          "asset_id": "ba7bc0b4-2850-4113-b609-a75769242198",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/sfb3_spritefusion_directions/SF06/E.png"
+        },
+        {
+          "direction": "W",
+          "asset_id": "e84e7187-eb49-4b25-a1d1-c37c6fb39018",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/sfb3_spritefusion_directions/SF06/W.png"
+        },
+        {
+          "direction": "NE",
+          "asset_id": "d6e3ee67-c980-4797-9d61-c7d1a6135b81",
+          "width": 19,
+          "height": 19,
+          "path": "experiments/sfb3_spritefusion_directions/SF06/NE.png"
+        },
+        {
+          "direction": "N",
+          "asset_id": "1d669d82-b194-447b-a055-8c9b9645283a",
+          "width": 18,
+          "height": 18,
+          "path": "experiments/sfb3_spritefusion_directions/SF06/N.png"
+        },
+        {
+          "direction": "NW",
+          "asset_id": "1ec7053f-6e76-4c25-8c17-695f67aaa2fa",
+          "width": 19,
+          "height": 19,
+          "path": "experiments/sfb3_spritefusion_directions/SF06/NW.png"
+        }
+      ]
+    },
+    {
+      "id": "SF07",
+      "source_asset_id": "4e14fc12-5101-46f6-89d7-b07f5e7dcf62",
+      "items": [
+        {
+          "direction": "SE",
+          "asset_id": "691d8021-922e-42cb-a8dd-acbf21dd5c55",
+          "width": 23,
+          "height": 23,
+          "path": "experiments/sfb3_spritefusion_directions/SF07/SE.png"
+        },
+        {
+          "direction": "S",
+          "asset_id": "039505d2-1a3d-449a-b5fd-a625357fa9a2",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/sfb3_spritefusion_directions/SF07/S.png"
+        },
+        {
+          "direction": "SW",
+          "asset_id": "ac2ab156-c0b1-496d-ac8d-26c5df771071",
+          "width": 23,
+          "height": 23,
+          "path": "experiments/sfb3_spritefusion_directions/SF07/SW.png"
+        },
+        {
+          "direction": "E",
+          "asset_id": "33befd84-f0b5-4582-8080-5dc858c9aa39",
+          "width": 22,
+          "height": 22,
+          "path": "experiments/sfb3_spritefusion_directions/SF07/E.png"
+        },
+        {
+          "direction": "W",
+          "asset_id": "dd051db1-f95d-4db7-8421-14d70ca1b14d",
+          "width": 22,
+          "height": 22,
+          "path": "experiments/sfb3_spritefusion_directions/SF07/W.png"
+        },
+        {
+          "direction": "NE",
+          "asset_id": "79c205e6-a1d7-42e3-a093-b7370dc3091f",
+          "width": 23,
+          "height": 23,
+          "path": "experiments/sfb3_spritefusion_directions/SF07/NE.png"
+        },
+        {
+          "direction": "N",
+          "asset_id": "c675dd43-d5c3-44e4-ae7a-89375f396c6c",
+          "width": 19,
+          "height": 19,
+          "path": "experiments/sfb3_spritefusion_directions/SF07/N.png"
+        },
+        {
+          "direction": "NW",
+          "asset_id": "d69a7ca9-1bee-49b5-8398-782461ba2f34",
+          "width": 23,
+          "height": 23,
+          "path": "experiments/sfb3_spritefusion_directions/SF07/NW.png"
+        }
+      ]
+    },
+    {
+      "id": "SF08",
+      "source_asset_id": "db395157-9c30-4a81-93f0-4440d026708e",
+      "items": [
+        {
+          "direction": "SE",
+          "asset_id": "45189865-6c72-4cfd-95b3-b0ce55b31803",
+          "width": 22,
+          "height": 22,
+          "path": "experiments/sfb3_spritefusion_directions/SF08/SE.png"
+        },
+        {
+          "direction": "S",
+          "asset_id": "448becf4-1c22-4140-a393-65ec393d514b",
+          "width": 20,
+          "height": 20,
+          "path": "experiments/sfb3_spritefusion_directions/SF08/S.png"
+        },
+        {
+          "direction": "SW",
+          "asset_id": "9f3fb771-d778-4387-9a3d-4b3bd646e115",
+          "width": 22,
+          "height": 22,
+          "path": "experiments/sfb3_spritefusion_directions/SF08/SW.png"
+        },
+        {
+          "direction": "E",
+          "asset_id": "86efd0b3-ebfe-40a4-ba5e-f570b3b13df5",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/sfb3_spritefusion_directions/SF08/E.png"
+        },
+        {
+          "direction": "W",
+          "asset_id": "e655af13-3e23-404f-bd97-58a11b590c53",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/sfb3_spritefusion_directions/SF08/W.png"
+        },
+        {
+          "direction": "NE",
+          "asset_id": "991ef3ae-e5e8-4dc9-af80-b07ee43f36ca",
+          "width": 22,
+          "height": 22,
+          "path": "experiments/sfb3_spritefusion_directions/SF08/NE.png"
+        },
+        {
+          "direction": "N",
+          "asset_id": "e0d93af8-d8d2-4125-96f7-02cd20d4bd7c",
+          "width": 21,
+          "height": 21,
+          "path": "experiments/sfb3_spritefusion_directions/SF08/N.png"
+        },
+        {
+          "direction": "NW",
+          "asset_id": "b1c74196-648e-4710-a558-1897bf922db9",
+          "width": 22,
+          "height": 22,
+          "path": "experiments/sfb3_spritefusion_directions/SF08/NW.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_af89dec0-6307-487c-85c9-80fcf4de91b4",
+    "operation": "direction-set",
+    "credits": {
+      "reserved": 15,
+      "remaining": 795
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "63babe0d-accd-4ded-8f61-d7e1ef0cfa62",
+      "type": "image",
+      "createdAt": "2026-09-22T02:09:48.006Z",
+      "updatedAt": "2026-09-22T02:09:48.006Z",
+      "prompt": "8 directions",
+      "width": 19,
+      "height": 19,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/63babe0d-accd-4ded-8f61-d7e1ef0cfa62/image.png?v=1790042988006",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "29fde4e4-a90f-4690-8b81-b7a109189c14",
+      "batchIndex": 0,
+      "batchSize": 8,
+      "action": {
+        "kind": "directions",
+        "direction": "SE",
+        "sourceImageAssetId": "44654741-5bc1-4db4-9f37-32e28eb6e0ba",
+        "sourceImageAssetIds": [
+          "44654741-5bc1-4db4-9f37-32e28eb6e0ba"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "793cc525-95bd-4336-a532-e17357f5728d",
+      "type": "image",
+      "createdAt": "2026-09-22T02:09:48.526Z",
+      "updatedAt": "2026-09-22T02:09:48.526Z",
+      "prompt": "8 directions",
+      "width": 20,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/793cc525-95bd-4336-a532-e17357f5728d/image.png?v=1790042988526",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "29fde4e4-a90f-4690-8b81-b7a109189c14",
+      "batchIndex": 1,
+      "batchSize": 8,
+      "action": {
+        "kind": "directions",
+        "direction": "S",
+        "sourceImageAssetId": "44654741-5bc1-4db4-9f37-32e28eb6e0ba",
+        "sourceImageAssetIds": [
+          "44654741-5bc1-4db4-9f37-32e28eb6e0ba"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 2,
+    "asset": {
+      "id": "718ba189-75d9-421d-9383-a04ead2c2826",
+      "type": "image",
+      "createdAt": "2026-09-22T02:09:49.017Z",
+      "updatedAt": "2026-09-22T02:09:49.017Z",
+      "prompt": "8 directions",
+      "width": 20,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/718ba189-75d9-421d-9383-a04ead2c2826/image.png?v=1790042989017",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "29fde4e4-a90f-4690-8b81-b7a109189c14",
+      "batchIndex": 2,
+      "batchSize": 8,
+      "action": {
+        "kind": "directions",
+        "direction": "SW",
+        "sourceImageAssetId": "44654741-5bc1-4db4-9f37-32e28eb6e0ba",
+        "sourceImageAssetIds": [
+          "44654741-5bc1-4db4-9f37-32e28eb6e0ba"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 3,
+    "asset": {
+      "id": "732b40cc-ba47-40a1-8167-d732688a3d4f",
+      "type": "image",
+      "createdAt": "2026-09-22T02:09:49.502Z",
+      "updatedAt": "2026-09-22T02:09:49.502Z",
+      "prompt": "8 directions",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/732b40cc-ba47-40a1-8167-d732688a3d4f/image.png?v=1790042989502",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "29fde4e4-a90f-4690-8b81-b7a109189c14",
+      "batchIndex": 3,
+      "batchSize": 8,
+      "action": {
+        "kind": "directions",
+        "direction": "E",
+        "sourceImageAssetId": "44654741-5bc1-4db4-9f37-32e28eb6e0ba",
+        "sourceImageAssetIds": [
+          "44654741-5bc1-4db4-9f37-32e28eb6e0ba"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 4,
+    "asset": {
+      "id": "89a1c1fd-cdea-4a1a-8adc-cf89bd1acb2b",
+      "type": "image",
+      "createdAt": "2026-09-22T02:09:50.021Z",
+      "updatedAt": "2026-09-22T02:09:50.021Z",
+      "prompt": "8 directions",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/89a1c1fd-cdea-4a1a-8adc-cf89bd1acb2b/image.png?v=1790042990021",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "29fde4e4-a90f-4690-8b81-b7a109189c14",
+      "batchIndex": 4,
+      "batchSize": 8,
+      "action": {
+        "kind": "directions",
+        "direction": "W",
+        "sourceImageAssetId": "44654741-5bc1-4db4-9f37-32e28eb6e0ba",
+        "sourceImageAssetIds": [
+          "44654741-5bc1-4db4-9f37-32e28eb6e0ba"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 5,
+    "asset": {
+      "id": "69cfdd77-e1ee-4382-91c9-19a6d4996e83",
+      "type": "image",
+      "createdAt": "2026-09-22T02:09:50.508Z",
+      "updatedAt": "2026-09-22T02:09:50.508Z",
+      "prompt": "8 directions",
+      "width": 20,
+      "height": 20,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/69cfdd77-e1ee-4382-91c9-19a6d4996e83/image.png?v=1790042990508",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "29fde4e4-a90f-4690-8b81-b7a109189c14",
+      "batchIndex": 5,
+      "batchSize": 8,
+      "action": {
+        "kind": "directions",
+        "direction": "NE",
+        "sourceImageAssetId": "44654741-5bc1-4db4-9f37-32e28eb6e0ba",
+        "sourceImageAssetIds": [
+          "44654741-5bc1-4db4-9f37-32e28eb6e0ba"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 6,
+    "asset": {
+      "id": "95316815-f3f2-4435-9b20-280f9d7da712",
+      "type": "image",
+      "createdAt": "2026-09-22T02:09:51.021Z",
+      "updatedAt": "2026-09-22T02:09:51.021Z",
+      "prompt": "8 directions",
+      "width": 19,
+      "height": 19,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/95316815-f3f2-4435-9b20-280f9d7da712/image.png?v=1790042991021",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "29fde4e4-a90f-4690-8b81-b7a109189c14",
+      "batchIndex": 6,
+      "batchSize": 8,
+      "action": {
+        "kind": "directions",
+        "direction": "N",
+        "sourceImageAssetId": "44654741-5bc1-4db4-9f37-32e28eb6e0ba",
+        "sourceImageAssetIds": [
+          "44654741-5bc1-4db4-9f37-32e28eb6e0ba"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 7,
+    "asset": {
+      "id": "7550c548-790f-445a-a543-309d39dfdcd3",
+      "type": "image",
+      "createdAt": "2026-09-22T02:09:51.531Z",
+      "updatedAt": "2026-09-22T02:09:51.531Z",
+      "prompt": "8 directions",
+      "width": 21,
+      "height": 21,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/7550c548-790f-445a-a543-309d39dfdcd3/image.png?v=1790042991531",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "29fde4e4-a90f-4690-8b81-b7a109189c14",
+      "batchIndex": 7,
+      "batchSize": 8,
+      "action": {
+        "kind": "directions",
+        "direction": "NW",
+        "sourceImageAssetId": "44654741-5bc1-4db4-9f37-32e28eb6e0ba",
+        "sourceImageAssetIds": [
+          "44654741-5bc1-4db4-9f37-32e28eb6e0ba"
+        ]
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 8,
+    "credits": {
+      "remaining": 795
+    }
+  }
+]

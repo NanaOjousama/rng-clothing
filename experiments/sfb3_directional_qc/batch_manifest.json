@@ -1,0 +1,468 @@
+{
+  "schema": "sfb3-directional-qc/v1",
+  "tag": "SFB3",
+  "cardinalMap": {
+    "front": "S",
+    "right": "E",
+    "left": "W",
+    "back": "N"
+  },
+  "variants": [
+    {
+      "id": "SF01",
+      "rarity": "Common",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF01/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF01/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF01/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF01/back.png"
+      },
+      "sourceMeta": {
+        "front": {
+          "sourceSize": [
+            21,
+            21
+          ],
+          "offset": [
+            1,
+            3
+          ],
+          "spriteFusionDirection": "S"
+        },
+        "right": {
+          "sourceSize": [
+            21,
+            21
+          ],
+          "offset": [
+            1,
+            3
+          ],
+          "spriteFusionDirection": "E"
+        },
+        "left": {
+          "sourceSize": [
+            22,
+            22
+          ],
+          "offset": [
+            1,
+            2
+          ],
+          "spriteFusionDirection": "W"
+        },
+        "back": {
+          "sourceSize": [
+            20,
+            20
+          ],
+          "offset": [
+            2,
+            4
+          ],
+          "spriteFusionDirection": "N"
+        }
+      },
+      "geometry": "SPRITE_FUSION_DIRECTIONAL_SOURCE_PADDED_ONLY"
+    },
+    {
+      "id": "SF02",
+      "rarity": "Common",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF02/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF02/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF02/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF02/back.png"
+      },
+      "sourceMeta": {
+        "front": {
+          "sourceSize": [
+            21,
+            21
+          ],
+          "offset": [
+            1,
+            3
+          ],
+          "spriteFusionDirection": "S"
+        },
+        "right": {
+          "sourceSize": [
+            20,
+            20
+          ],
+          "offset": [
+            2,
+            4
+          ],
+          "spriteFusionDirection": "E"
+        },
+        "left": {
+          "sourceSize": [
+            20,
+            20
+          ],
+          "offset": [
+            2,
+            4
+          ],
+          "spriteFusionDirection": "W"
+        },
+        "back": {
+          "sourceSize": [
+            19,
+            19
+          ],
+          "offset": [
+            2,
+            5
+          ],
+          "spriteFusionDirection": "N"
+        }
+      },
+      "geometry": "SPRITE_FUSION_DIRECTIONAL_SOURCE_PADDED_ONLY"
+    },
+    {
+      "id": "SF03",
+      "rarity": "Uncommon",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF03/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF03/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF03/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF03/back.png"
+      },
+      "sourceMeta": {
+        "front": {
+          "sourceSize": [
+            20,
+            20
+          ],
+          "offset": [
+            2,
+            4
+          ],
+          "spriteFusionDirection": "S"
+        },
+        "right": {
+          "sourceSize": [
+            22,
+            22
+          ],
+          "offset": [
+            1,
+            2
+          ],
+          "spriteFusionDirection": "E"
+        },
+        "left": {
+          "sourceSize": [
+            22,
+            22
+          ],
+          "offset": [
+            1,
+            2
+          ],
+          "spriteFusionDirection": "W"
+        },
+        "back": {
+          "sourceSize": [
+            22,
+            22
+          ],
+          "offset": [
+            1,
+            2
+          ],
+          "spriteFusionDirection": "N"
+        }
+      },
+      "geometry": "SPRITE_FUSION_DIRECTIONAL_SOURCE_PADDED_ONLY"
+    },
+    {
+      "id": "SF04",
+      "rarity": "Uncommon",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF04/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF04/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF04/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF04/back.png"
+      },
+      "sourceMeta": {
+        "front": {
+          "sourceSize": [
+            20,
+            20
+          ],
+          "offset": [
+            2,
+            4
+          ],
+          "spriteFusionDirection": "S"
+        },
+        "right": {
+          "sourceSize": [
+            21,
+            21
+          ],
+          "offset": [
+            1,
+            3
+          ],
+          "spriteFusionDirection": "E"
+        },
+        "left": {
+          "sourceSize": [
+            21,
+            21
+          ],
+          "offset": [
+            1,
+            3
+          ],
+          "spriteFusionDirection": "W"
+        },
+        "back": {
+          "sourceSize": [
+            19,
+            19
+          ],
+          "offset": [
+            2,
+            5
+          ],
+          "spriteFusionDirection": "N"
+        }
+      },
+      "geometry": "SPRITE_FUSION_DIRECTIONAL_SOURCE_PADDED_ONLY"
+    },
+    {
+      "id": "SF05",
+      "rarity": "Rare",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF05/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF05/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF05/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF05/back.png"
+      },
+      "sourceMeta": {
+        "front": {
+          "sourceSize": [
+            16,
+            16
+          ],
+          "offset": [
+            4,
+            8
+          ],
+          "spriteFusionDirection": "S"
+        },
+        "right": {
+          "sourceSize": [
+            16,
+            16
+          ],
+          "offset": [
+            4,
+            8
+          ],
+          "spriteFusionDirection": "E"
+        },
+        "left": {
+          "sourceSize": [
+            16,
+            16
+          ],
+          "offset": [
+            4,
+            8
+          ],
+          "spriteFusionDirection": "W"
+        },
+        "back": {
+          "sourceSize": [
+            17,
+            17
+          ],
+          "offset": [
+            3,
+            7
+          ],
+          "spriteFusionDirection": "N"
+        }
+      },
+      "geometry": "SPRITE_FUSION_DIRECTIONAL_SOURCE_PADDED_ONLY"
+    },
+    {
+      "id": "SF06",
+      "rarity": "Rare",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF06/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF06/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF06/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF06/back.png"
+      },
+      "sourceMeta": {
+        "front": {
+          "sourceSize": [
+            20,
+            20
+          ],
+          "offset": [
+            2,
+            4
+          ],
+          "spriteFusionDirection": "S"
+        },
+        "right": {
+          "sourceSize": [
+            20,
+            20
+          ],
+          "offset": [
+            2,
+            4
+          ],
+          "spriteFusionDirection": "E"
+        },
+        "left": {
+          "sourceSize": [
+            20,
+            20
+          ],
+          "offset": [
+            2,
+            4
+          ],
+          "spriteFusionDirection": "W"
+        },
+        "back": {
+          "sourceSize": [
+            18,
+            18
+          ],
+          "offset": [
+            3,
+            6
+          ],
+          "spriteFusionDirection": "N"
+        }
+      },
+      "geometry": "SPRITE_FUSION_DIRECTIONAL_SOURCE_PADDED_ONLY"
+    },
+    {
+      "id": "SF07",
+      "rarity": "Epic",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF07/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF07/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF07/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF07/back.png"
+      },
+      "sourceMeta": {
+        "front": {
+          "sourceSize": [
+            21,
+            21
+          ],
+          "offset": [
+            1,
+            3
+          ],
+          "spriteFusionDirection": "S"
+        },
+        "right": {
+          "sourceSize": [
+            22,
+            22
+          ],
+          "offset": [
+            1,
+            2
+          ],
+          "spriteFusionDirection": "E"
+        },
+        "left": {
+          "sourceSize": [
+            22,
+            22
+          ],
+          "offset": [
+            1,
+            2
+          ],
+          "spriteFusionDirection": "W"
+        },
+        "back": {
+          "sourceSize": [
+            19,
+            19
+          ],
+          "offset": [
+            2,
+            5
+          ],
+          "spriteFusionDirection": "N"
+        }
+      },
+      "geometry": "SPRITE_FUSION_DIRECTIONAL_SOURCE_PADDED_ONLY"
+    },
+    {
+      "id": "SF08",
+      "rarity": "Epic",
+      "frames": {
+        "front": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF08/front.png",
+        "right": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF08/right.png",
+        "left": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF08/left.png",
+        "back": "/run/media/deck/USD00/RNG_clothing/experiments/sfb3_directional_qc/SF08/back.png"
+      },
+      "sourceMeta": {
+        "front": {
+          "sourceSize": [
+            20,
+            20
+          ],
+          "offset": [
+            2,
+            4
+          ],
+          "spriteFusionDirection": "S"
+        },
+        "right": {
+          "sourceSize": [
+            21,
+            21
+          ],
+          "offset": [
+            1,
+            3
+          ],
+          "spriteFusionDirection": "E"
+        },
+        "left": {
+          "sourceSize": [
+            21,
+            21
+          ],
+          "offset": [
+            1,
+            3
+          ],
+          "spriteFusionDirection": "W"
+        },
+        "back": {
+          "sourceSize": [
+            21,
+            21
+          ],
+          "offset": [
+            1,
+            3
+          ],
+          "spriteFusionDirection": "N"
+        }
+      },
+      "geometry": "SPRITE_FUSION_DIRECTIONAL_SOURCE_PADDED_ONLY"
+    }
+  ]
+}
