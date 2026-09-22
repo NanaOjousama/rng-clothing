@@ -1,0 +1,81 @@
+{
+  "request_id": "req_85d1a922-08de-43f0-bead-23db4d39720c",
+  "acceptance_rule": "width <= 32 and height <= 32",
+  "preferred_range": "16-24 px",
+  "records": [
+    {
+      "index": 0,
+      "asset_id": "c999e097-4fa0-414c-bf63-7f55e920bbb7",
+      "width": 20,
+      "height": 20,
+      "accepted": true,
+      "local_path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_00.png"
+    },
+    {
+      "index": 1,
+      "asset_id": "de1da3eb-ca6d-4071-bdb1-be2d86682f31",
+      "width": 19,
+      "height": 19,
+      "accepted": true,
+      "local_path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_01.png"
+    },
+    {
+      "index": 2,
+      "asset_id": "f2fe80af-a9e8-402e-b335-946528ac0922",
+      "width": 20,
+      "height": 20,
+      "accepted": true,
+      "local_path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_02.png"
+    },
+    {
+      "index": 3,
+      "asset_id": "44654741-5bc1-4db4-9f37-32e28eb6e0ba",
+      "width": 20,
+      "height": 20,
+      "accepted": true,
+      "local_path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_03.png"
+    },
+    {
+      "index": 4,
+      "asset_id": "14cf81c6-dc53-46ee-b53e-c0fdfca7724a",
+      "width": 19,
+      "height": 19,
+      "accepted": true,
+      "local_path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_04.png"
+    },
+    {
+      "index": 5,
+      "asset_id": "9699670c-e17f-40c3-a9a5-0f39fd7c7952",
+      "width": 20,
+      "height": 20,
+      "accepted": true,
+      "local_path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_05.png"
+    },
+    {
+      "index": 6,
+      "asset_id": "4e14fc12-5101-46f6-89d7-b07f5e7dcf62",
+      "width": 20,
+      "height": 20,
+      "accepted": true,
+      "local_path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_06.png"
+    },
+    {
+      "index": 7,
+      "asset_id": "db395157-9c30-4a81-93f0-4440d026708e",
+      "width": 19,
+      "height": 19,
+      "accepted": true,
+      "local_path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_07.png"
+    },
+    {
+      "index": 8,
+      "asset_id": "fec4f256-cae7-4f1b-82cd-52b0b84525ca",
+      "width": 19,
+      "height": 19,
+      "accepted": true,
+      "local_path": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_08.png"
+    }
+  ],
+  "candidate_status": "CANDIDATE",
+  "candidate_note": "User approved this 19-20px Sprite Fusion material batch as the preferred material-pattern test result; no 40px-to-24px transfer is needed for this batch."
+}

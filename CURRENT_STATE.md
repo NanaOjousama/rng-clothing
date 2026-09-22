@@ -465,3 +465,10 @@ Test:
 - originals preserved under experiments/spritefusion_slouch_test_01/native/
 - contact: experiments/spritefusion_slouch_test_01/contact_slouch_spritefusion_native_x9.png
 - observed returned PNG canvases ranged from 20x20 to 23x23 despite size=16 request; originals intentionally left untouched for evaluation
+
+## Material batch decision — 2026-09-21
+
+- experiments/spritefusion_beanie_material_rescale_test_01 is now approved as a CANDIDATE material/pattern batch.
+- All 9 accepted outputs are 19x19 or 20x20 and fit the preferred 16-24 px Stardew-scale range.
+- User decided the separate 40px+ -> 24px material-transfer path is not needed for this batch because the direct Sprite Fusion retry already preserves the material look well enough at native small scale.
+- Keep the transfer experiment only as a fallback/research technique, not the normal generator path.
