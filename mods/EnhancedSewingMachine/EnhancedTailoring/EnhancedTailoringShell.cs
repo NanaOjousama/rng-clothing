@@ -730,11 +730,11 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 return;
             }
 
+            // Preview should reflect the ACTIVE ESM registry, not a historical
+            // QC-tag convention. The registry itself is now the curated list of
+            // garments exposed for fitting/preview, so filtering by QualityTier
+            // == QC can incorrectly leave Preview with zero candidates.
             s.QcGarmentIds = this.runtime.Registry.All
-                .Where(g =>
-                    string.Equals(g.Definition.Metadata?.QualityTier, "QC", StringComparison.OrdinalIgnoreCase)
-                    || (g.Definition.Metadata?.Classification?.IndexOf("QC", StringComparison.OrdinalIgnoreCase) ?? -1) >= 0
-                    || g.Definition.Id.StartsWith("qc.", StringComparison.OrdinalIgnoreCase))
                 .Select(g => g.Definition.Id)
                 .OrderBy(id => id, StringComparer.OrdinalIgnoreCase)
                 .ToList();
