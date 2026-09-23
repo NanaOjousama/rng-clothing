@@ -1,0 +1,65 @@
+{
+  "Id": "qc.crossfamily.rare.medium.11",
+  "Category": "Hat",
+  "DefinitionVersion": 1,
+  "WornTexture": "assets/qc/cross_family_rarity/qc.crossfamily.rare.medium.11.png",
+  "FrameWidth": 20,
+  "FrameHeight": 20,
+  "RenderScale": 0.8,
+  "VanillaReferenceAnchor": {
+    "X": 10,
+    "Y": 16
+  },
+  "Directions": {
+    "Front": {
+      "SourceX": 0,
+      "SourceY": 0,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": -1,
+      "FlipX": false
+    },
+    "Right": {
+      "SourceX": 0,
+      "SourceY": 20,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": -1,
+      "FlipX": false
+    },
+    "Left": {
+      "SourceX": 0,
+      "SourceY": 40,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": -1,
+      "FlipX": false
+    },
+    "Back": {
+      "SourceX": 0,
+      "SourceY": 60,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": -1,
+      "FlipX": false
+    }
+  },
+  "Metadata": {
+    "Family": "catalog_hats_cottagecore_set_beret",
+    "Construction": "Beret (Leaf)",
+    "Material": "",
+    "Palette": "source-backed",
+    "Motif": "",
+    "GeneratorId": "cross-family-rarity-qc",
+    "GeneratorVersion": 1,
+    "GeneratorSeed": 11,
+    "Style": "medium",
+    "QualityTier": "QC",
+    "Decals": "",
+    "Classification": "QC_ONLY"
+  }
+}

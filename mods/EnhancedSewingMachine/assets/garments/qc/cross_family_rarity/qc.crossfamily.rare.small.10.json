@@ -1,0 +1,65 @@
+{
+  "Id": "qc.crossfamily.rare.small.10",
+  "Category": "Hat",
+  "DefinitionVersion": 1,
+  "WornTexture": "assets/qc/cross_family_rarity/qc.crossfamily.rare.small.10.png",
+  "FrameWidth": 16,
+  "FrameHeight": 16,
+  "RenderScale": 1.0,
+  "VanillaReferenceAnchor": {
+    "X": 10,
+    "Y": 16
+  },
+  "Directions": {
+    "Front": {
+      "SourceX": 0,
+      "SourceY": 0,
+      "AnchorX": 8,
+      "AnchorY": 12,
+      "OffsetX": 2,
+      "OffsetY": 2,
+      "FlipX": false
+    },
+    "Right": {
+      "SourceX": 0,
+      "SourceY": 16,
+      "AnchorX": 8,
+      "AnchorY": 12,
+      "OffsetX": 3,
+      "OffsetY": 2,
+      "FlipX": false
+    },
+    "Left": {
+      "SourceX": 0,
+      "SourceY": 32,
+      "AnchorX": 8,
+      "AnchorY": 12,
+      "OffsetX": 1,
+      "OffsetY": 2,
+      "FlipX": false
+    },
+    "Back": {
+      "SourceX": 0,
+      "SourceY": 48,
+      "AnchorX": 8,
+      "AnchorY": 12,
+      "OffsetX": 2,
+      "OffsetY": 2,
+      "FlipX": false
+    }
+  },
+  "Metadata": {
+    "Family": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+    "Construction": "Garland (Dried 1)",
+    "Material": "",
+    "Palette": "source-backed",
+    "Motif": "",
+    "GeneratorId": "cross-family-rarity-qc",
+    "GeneratorVersion": 1,
+    "GeneratorSeed": 10,
+    "Style": "small",
+    "QualityTier": "QC",
+    "Decals": "",
+    "Classification": "QC_ONLY"
+  }
+}
