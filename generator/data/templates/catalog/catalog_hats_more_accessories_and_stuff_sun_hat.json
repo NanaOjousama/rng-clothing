@@ -1,0 +1,334 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_hats_more_accessories_and_stuff_sun_hat",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "catalog_hats_more_accessories_and_stuff_sun_hat",
+  "sourceIdentity": {
+    "pack": "More Accessories and Stuff",
+    "category": "Hats",
+    "family": "SunHat",
+    "base": "Sun Hat"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Sun Hat",
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] More Accessories and Stuff Pack/Hats/SunHat/hat.png",
+    "sourceJson": "generator content/[FS] More Accessories and Stuff Pack/Hats/SunHat/hat.json",
+    "sourcePngSha256": "d371ad45fe37a5cb8f8671625322d1e6a027a91a42841a43460079358deaea56",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/SunHat/hat.png",
+      "sourceRect": [
+        0,
+        0,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "f6fc43d7f8f174b64e1c98bce5e6d1f434354e2a35c42080509cedea43073377",
+      "alphaSha256": "de5d308bebed7bd7e8072b0fb14fbaa68a780f44995f645b3fe0a07e06fb5456"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/SunHat/hat.png",
+      "sourceRect": [
+        0,
+        20,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "898a3df3f62ac391d12e39665be61e3341f243776ca3b4d13b9b7dfc8b5984c8",
+      "alphaSha256": "cb09e637fe693a80e67fc02f7cf999687325336cbcb7a28a1a3a1e6a620b60b5"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/SunHat/hat.png",
+      "sourceRect": [
+        0,
+        20,
+        20,
+        20
+      ],
+      "flipX": true,
+      "pixelSha256": "ae46282e99cb7d861266ddb449a108d01987bfcc592fb7ab9fb37e6bc6b48838",
+      "alphaSha256": "40bc1e266b9a97d5c905c345dbcdef384013fb6edb0de23a222c5758a3cb04cf"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/SunHat/hat.png",
+      "sourceRect": [
+        0,
+        40,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "a0f6fe0b1cf85fce1d2dabdb47ad95283da84d9e79ed2df5b2e7af5ff30942cd",
+      "alphaSha256": "f74c6d56d3d8e3eab5061736ed66f0c952f513540ef1177c4c94f7685062d36d"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "crown": {
+      "purpose": "upper hat treatment"
+    },
+    "band": {
+      "purpose": "lower/cuff treatment"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        9,
+        7
+      ],
+      "top_center": [
+        9,
+        4
+      ],
+      "bottom_center": [
+        9,
+        11
+      ],
+      "left_edge": [
+        1,
+        7
+      ],
+      "right_edge": [
+        18,
+        7
+      ],
+      "crown_center": [
+        9,
+        6
+      ],
+      "band_center": [
+        9,
+        9
+      ],
+      "attachment_edge": [
+        18,
+        4
+      ]
+    },
+    "right": {
+      "center": [
+        8,
+        8
+      ],
+      "top_center": [
+        8,
+        4
+      ],
+      "bottom_center": [
+        8,
+        12
+      ],
+      "left_edge": [
+        0,
+        8
+      ],
+      "right_edge": [
+        17,
+        8
+      ],
+      "crown_center": [
+        8,
+        7
+      ],
+      "band_center": [
+        8,
+        10
+      ],
+      "attachment_edge": [
+        17,
+        4
+      ]
+    },
+    "left": {
+      "center": [
+        10,
+        8
+      ],
+      "top_center": [
+        10,
+        4
+      ],
+      "bottom_center": [
+        10,
+        12
+      ],
+      "left_edge": [
+        2,
+        8
+      ],
+      "right_edge": [
+        19,
+        8
+      ],
+      "crown_center": [
+        10,
+        7
+      ],
+      "band_center": [
+        10,
+        10
+      ],
+      "attachment_edge": [
+        19,
+        4
+      ]
+    },
+    "back": {
+      "center": [
+        9,
+        9
+      ],
+      "top_center": [
+        9,
+        4
+      ],
+      "bottom_center": [
+        9,
+        14
+      ],
+      "left_edge": [
+        1,
+        9
+      ],
+      "right_edge": [
+        18,
+        9
+      ],
+      "crown_center": [
+        9,
+        8
+      ],
+      "band_center": [
+        9,
+        12
+      ],
+      "attachment_edge": [
+        18,
+        4
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "More Accessories and Stuff",
+    "sourceName": "Sun Hat",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    20,
+    20
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_shirts_alt_fashion_set_bustier_crop",
+  "slot": "SHIRT",
+  "category": "Shirts",
+  "family": "catalog_shirts_alt_fashion_set_bustier_crop",
+  "sourceIdentity": {
+    "pack": "Alt-Fashion Set",
+    "category": "Shirts",
+    "family": "Bustier",
+    "base": "Bustier (Crop)"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Bustier (Crop)",
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Alt-Fashion Set/Shirts/BustierCrop/shirt.png",
+    "sourceJson": "generator content/[FS] Alt-Fashion Set/Shirts/BustierCrop/shirt.json",
+    "sourcePngSha256": "1b944a6f3cc5d143703212cd0c1c0204ad504f21912985ef34c7f0e37bcb255d",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/BustierCrop/shirt.png",
+      "sourceRect": [
+        0,
+        0,
+        8,
+        8
+      ],
+      "flipX": false,
+      "pixelSha256": "5066749c2b368f3a4ddd192a6a6b45660d3ab148ba0d7c2e7a5472b4f5fcc684",
+      "alphaSha256": "a429c6df2e3f2f84ca916fcf02e24d0105627f4cae976256fdd7ba63cb0c28e8"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/BustierCrop/shirt.png",
+      "sourceRect": [
+        0,
+        8,
+        8,
+        8
+      ],
+      "flipX": false,
+      "pixelSha256": "9d182b71d00dfa0a05de6fb08386f4c623a5eef5192737b709c8363245b36d2e",
+      "alphaSha256": "6225ecec3b449217024cc28bfff11a932ae7565d453dc320ebee0e73661b8bea"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/BustierCrop/shirt.png",
+      "sourceRect": [
+        0,
+        8,
+        8,
+        8
+      ],
+      "flipX": true,
+      "pixelSha256": "3f85f4ba13f7d744e2bf5437ba1272aeaf3e9871129c7b706bb660648d67301f",
+      "alphaSha256": "889e35f5f1d290aa4f107d126ea4a01a7934baa9c40adc2add87e43db89f0746"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/BustierCrop/shirt.png",
+      "sourceRect": [
+        0,
+        16,
+        8,
+        8
+      ],
+      "flipX": false,
+      "pixelSha256": "20f9bc55d8d6811b00872702907dddba29712237c52c24a1254a5cd1f16d89f7",
+      "alphaSha256": "6f22bfa14c7ea752b3124ab41373e4fe5d19fd786fac262d4e3da88ba690cad1"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "neck/chest treatment"
+    },
+    "lower": {
+      "purpose": "hem/lower-body treatment"
+    },
+    "center": {
+      "purpose": "front/back focal design zone"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        3,
+        2
+      ],
+      "top_center": [
+        3,
+        0
+      ],
+      "bottom_center": [
+        3,
+        5
+      ],
+      "left_edge": [
+        0,
+        2
+      ],
+      "right_edge": [
+        7,
+        2
+      ]
+    },
+    "right": {
+      "center": [
+        4,
+        2
+      ],
+      "top_center": [
+        4,
+        0
+      ],
+      "bottom_center": [
+        4,
+        5
+      ],
+      "left_edge": [
+        1,
+        2
+      ],
+      "right_edge": [
+        7,
+        2
+      ]
+    },
+    "left": {
+      "center": [
+        3,
+        2
+      ],
+      "top_center": [
+        3,
+        0
+      ],
+      "bottom_center": [
+        3,
+        5
+      ],
+      "left_edge": [
+        0,
+        2
+      ],
+      "right_edge": [
+        6,
+        2
+      ]
+    },
+    "back": {
+      "center": [
+        3,
+        2
+      ],
+      "top_center": [
+        3,
+        0
+      ],
+      "bottom_center": [
+        3,
+        5
+      ],
+      "left_edge": [
+        0,
+        2
+      ],
+      "right_edge": [
+        7,
+        2
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Alt-Fashion Set",
+    "sourceName": "Bustier (Crop)",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    8,
+    8
+  ]
+}

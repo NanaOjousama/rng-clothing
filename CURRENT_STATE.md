@@ -831,3 +831,46 @@ Verification:
 - chaotic Epic recipe correctly rejected for conflicts, complexity 14>5, 6 visual channels, excessive supports, and competing dominant features.
 - slouch roll-matrix validator PASS.
 - scoped git diff --check PASS.
+
+## 2026-09-22 — Catalog FAMILY_BASE promotion into formal templates
+Systematic source-catalog promotion is now implemented for the new source-backed/template generator.
+
+Coverage:
+- Audited all 53 `FAMILY_BASE` entries in `source_catalog/MASTER_CATALOG.json`.
+- Promoted 47 suitable static families into formal `source-backed-template/v1` contracts:
+  - 20 Hats
+  - 7 Shirts
+  - 20 Accessories
+- Deferred 6 specialized sources:
+  - Bow (Side 1): intentionally missing Left cardinal construction
+  - Decorative Bells (Singles): animated/stateful
+  - Veil: animated/stateful
+  - Puffy Sleeves: full sleeves state/animation contract requires specialized adapter
+  - Cape: animated/stateful
+  - Plumbob (Animated): animated/stateful
+
+Contract behavior:
+- Formal contracts reference exact rectangles from local `generator content` source sheets; third-party source PNGs are not copied into Git.
+- Exact extracted-frame pixel hashes and alpha-geometry hashes are locked.
+- Source-declared Left mirroring, wear offsets, draw/hide fields, and per-view frame sizes are preserved.
+- Contract loader now supports source-sheet rectangles and legitimate per-view frame sizes without padding/resampling.
+- Every promoted template remains `CANDIDATE_READY` and requires human art/wear approval before production.
+
+Taste / generator integration:
+- Every promoted family has its own registered taste policy under `generator/data/taste_policies/catalog/`.
+- `generator/catalog_templates.py` provides template discovery/loading, family taste evaluation, source-family lookup, and compatible-donor discovery.
+- Promoted templates are linked to `source_catalog/SOURCE_TRANSFER_LIBRARY.json`:
+  - 53 source style profiles
+  - 216 deconstructed parts
+- Donor selection uses existing `template_transfer.decision()` semantics.
+- Same-base-only parts work only for the exact canonical source base.
+- Alternate constructions remain denied and must become their own template rather than overlaying another construction.
+- Example regression: Alt-Fashion Belt template accepts its 5 SAME_BASE_ONLY parts while accepting zero ALTERNATE_CONSTRUCTION parts.
+
+Validation:
+- generator-wide taste policy: PASS
+- slouch-beanie taste/roll matrix: PASS
+- catalog promotion validator: PASS
+- all 47 promoted contracts verify source pixel/alpha hashes
+- all 47 family taste policies validate a default Common recipe
+- no copied PNGs exist under `generator/data/templates/catalog/`

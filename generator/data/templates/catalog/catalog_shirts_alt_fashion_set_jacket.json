@@ -1,0 +1,285 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_shirts_alt_fashion_set_jacket",
+  "slot": "SHIRT",
+  "category": "Shirts",
+  "family": "catalog_shirts_alt_fashion_set_jacket",
+  "sourceIdentity": {
+    "pack": "Alt-Fashion Set",
+    "category": "Shirts",
+    "family": "Jacket",
+    "base": "Jacket"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Jacket",
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Alt-Fashion Set/Shirts/Jacket/shirt.png",
+    "sourceJson": "generator content/[FS] Alt-Fashion Set/Shirts/Jacket/shirt.json",
+    "sourcePngSha256": "577197df8b17ff60b12b6a66226dcc21fea002420bf29b068fadade12d015bb6",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/Jacket/shirt.png",
+      "sourceRect": [
+        0,
+        0,
+        8,
+        8
+      ],
+      "flipX": false,
+      "pixelSha256": "23326f25666c62ddb8e76136a3648fc7e8e959e27d35bdc072795f7963df5036",
+      "alphaSha256": "de08269545a7423dafad63510e4bcf281a0d305735ae828984c3e2df9110cd35"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/Jacket/shirt.png",
+      "sourceRect": [
+        0,
+        8,
+        8,
+        8
+      ],
+      "flipX": false,
+      "pixelSha256": "71b87d1ed680540dc3d3611dd8bb63f36567e72c2123cda6a876c05d37815992",
+      "alphaSha256": "4adffb635ed233420cf825306bc951b09bc08fb67a393124197ed9f4ac0c06cc"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/Jacket/shirt.png",
+      "sourceRect": [
+        0,
+        8,
+        8,
+        8
+      ],
+      "flipX": true,
+      "pixelSha256": "a222ee3af4d1e1d54b11cb102e7db43c9cae2233763a73565a26140b103b005d",
+      "alphaSha256": "8ad50cabc12b195a6551bf1e4f68b762f26c7610117ca1d022a609de86cac98c"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/Jacket/shirt.png",
+      "sourceRect": [
+        0,
+        16,
+        8,
+        8
+      ],
+      "flipX": false,
+      "pixelSha256": "783f72ac259be50a5ddfdcc1a8b3100eebf538c094c5f139ae61e57bb5dc3ba1",
+      "alphaSha256": "d854b0d670af82cc15571f1d12a8ab8071907d3c19685f2f73fae5d13d3f4a81"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "neck/chest treatment"
+    },
+    "lower": {
+      "purpose": "hem/lower-body treatment"
+    },
+    "center": {
+      "purpose": "front/back focal design zone"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        3,
+        3
+      ],
+      "top_center": [
+        3,
+        0
+      ],
+      "bottom_center": [
+        3,
+        7
+      ],
+      "left_edge": [
+        0,
+        3
+      ],
+      "right_edge": [
+        7,
+        3
+      ]
+    },
+    "right": {
+      "center": [
+        3,
+        3
+      ],
+      "top_center": [
+        3,
+        0
+      ],
+      "bottom_center": [
+        3,
+        7
+      ],
+      "left_edge": [
+        0,
+        3
+      ],
+      "right_edge": [
+        7,
+        3
+      ]
+    },
+    "left": {
+      "center": [
+        3,
+        3
+      ],
+      "top_center": [
+        3,
+        0
+      ],
+      "bottom_center": [
+        3,
+        7
+      ],
+      "left_edge": [
+        0,
+        3
+      ],
+      "right_edge": [
+        7,
+        3
+      ]
+    },
+    "back": {
+      "center": [
+        3,
+        3
+      ],
+      "top_center": [
+        3,
+        0
+      ],
+      "bottom_center": [
+        3,
+        7
+      ],
+      "left_edge": [
+        0,
+        3
+      ],
+      "right_edge": [
+        7,
+        3
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Alt-Fashion Set",
+    "sourceName": "Jacket",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    8,
+    8
+  ]
+}

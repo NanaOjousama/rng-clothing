@@ -1,0 +1,323 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_accessories_more_accessories_and_stuff_collar",
+  "slot": "ACCESSORY",
+  "category": "Accessories",
+  "family": "catalog_accessories_more_accessories_and_stuff_collar",
+  "sourceIdentity": {
+    "pack": "More Accessories and Stuff",
+    "category": "Accessories",
+    "family": "Collar",
+    "base": "Collar"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Collar",
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] More Accessories and Stuff Pack/Accessories/Collar/accessory.png",
+    "sourceJson": "generator content/[FS] More Accessories and Stuff Pack/Accessories/Collar/accessory.json",
+    "sourcePngSha256": "34209e717cee2aef93a17f3a2f2ac70d0ce3ce639884fbb7c1a59d37f950530a",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/Collar/accessory.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "44e4abd3717e8fa9249a528444aa435d0569ebe5ae2d59339b5805659e6bb04c",
+      "alphaSha256": "38466c91e97a046537f87183e2fe15546a4438bded48e482702a8c4c41d9a8d9"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/Collar/accessory.png",
+      "sourceRect": [
+        0,
+        64,
+        32,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "7d6e88aa0e2c4853090fbd49860b250cd32bb5b0e014b28ff5156b055743d15d",
+      "alphaSha256": "d9e6a861c884d5c28beb5527f1e7431136e03d1373e2af3f327cc2e18ffc4f72"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/Collar/accessory.png",
+      "sourceRect": [
+        0,
+        64,
+        32,
+        32
+      ],
+      "flipX": true,
+      "pixelSha256": "fcf428ef558c03fa8e95aab713ff9cbf3cdde56af705900df8135ba55cb760ba",
+      "alphaSha256": "5ae8791cf28387f345c1863eb7bcbcbeaee32a8f68d565de15eee178f7b60655"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/Collar/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "4f79dc387dca921b291667ed4cb66fcc1f4f8c6141641f5a4496f28d5e383189",
+      "alphaSha256": "3b88698c5610f3d1b0af1261dc1527f5db2e5dca29d187fbba92c166d05d3d77"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "upper accessory zone"
+    },
+    "lower": {
+      "purpose": "lower accessory zone"
+    },
+    "side": {
+      "purpose": "side-localized accessory zone"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        17
+      ],
+      "top_center": [
+        7,
+        16
+      ],
+      "bottom_center": [
+        7,
+        18
+      ],
+      "left_edge": [
+        3,
+        17
+      ],
+      "right_edge": [
+        12,
+        17
+      ]
+    },
+    "right": {
+      "center": [
+        23,
+        14
+      ],
+      "top_center": [
+        23,
+        13
+      ],
+      "bottom_center": [
+        23,
+        15
+      ],
+      "left_edge": [
+        20,
+        14
+      ],
+      "right_edge": [
+        26,
+        14
+      ]
+    },
+    "left": {
+      "center": [
+        8,
+        14
+      ],
+      "top_center": [
+        8,
+        13
+      ],
+      "bottom_center": [
+        8,
+        15
+      ],
+      "left_edge": [
+        5,
+        14
+      ],
+      "right_edge": [
+        11,
+        14
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        16
+      ],
+      "top_center": [
+        7,
+        15
+      ],
+      "bottom_center": [
+        7,
+        17
+      ],
+      "left_edge": [
+        3,
+        16
+      ],
+      "right_edge": [
+        12,
+        16
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "DrawOrderOverride": {
+          "Preposition": "After",
+          "AppearanceType": "Accessory"
+        },
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "DrawOrderOverride": {
+          "Preposition": "After",
+          "AppearanceType": "Accessory"
+        },
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true,
+        "DrawOrderOverride": {
+          "Preposition": "After",
+          "AppearanceType": "Accessory"
+        },
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "More Accessories and Stuff",
+    "sourceName": "Collar",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSizes": {
+    "front": [
+      16,
+      32
+    ],
+    "right": [
+      32,
+      32
+    ],
+    "left": [
+      32,
+      32
+    ],
+    "back": [
+      16,
+      32
+    ]
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_accessories_alt_fashion_set_belt",
+  "slot": "ACCESSORY",
+  "category": "Accessories",
+  "family": "catalog_accessories_alt_fashion_set_belt",
+  "sourceIdentity": {
+    "pack": "Alt-Fashion Set",
+    "category": "Accessories",
+    "family": "Belt",
+    "base": "Belt"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Belt",
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Alt-Fashion Set/Accessories/Belt/accessory.png",
+    "sourceJson": "generator content/[FS] Alt-Fashion Set/Accessories/Belt/accessory.json",
+    "sourcePngSha256": "c0d31f81c20b980624464a42a92f70181c897f5cdbb59e2ab98144031256242c",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/Belt/accessory.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "7bb115c08a5c2d7a31658acfa076db8d7deabc1e45841d5d4d181053fcab5b64",
+      "alphaSha256": "4ac4c016df9f97299788eaf05c0cd8748fdc287eb093c3dcd894ac2dfcec44ab"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/Belt/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "7abc5142deefd7dbbeab239e79eb3c980747f9a3b5098008bbb5e6fc2bbc8f6a",
+      "alphaSha256": "f27cfefdaa1ee63dbab3acd0e477ba4a3826fa5972c7715f7603387b6bb2cd41"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/Belt/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        32
+      ],
+      "flipX": true,
+      "pixelSha256": "9a4d0a4750cc478a644cf3fdf7a8ffc51cd17451a14223b76dc8ee8abf9c46cf",
+      "alphaSha256": "f27cfefdaa1ee63dbab3acd0e477ba4a3826fa5972c7715f7603387b6bb2cd41"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/Belt/accessory.png",
+      "sourceRect": [
+        0,
+        64,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "d1732138ee35c586d0bf6810bf24c8c2eaa95393b96c5c9f3834c9359a4a7db2",
+      "alphaSha256": "2553361ea9fb731e71a6cea9de65e1e7d46e990faba37c5abb8b337f939fd80f"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "upper accessory zone"
+    },
+    "lower": {
+      "purpose": "lower accessory zone"
+    },
+    "side": {
+      "purpose": "side-localized accessory zone"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        23
+      ],
+      "top_center": [
+        7,
+        23
+      ],
+      "bottom_center": [
+        7,
+        23
+      ],
+      "left_edge": [
+        4,
+        23
+      ],
+      "right_edge": [
+        11,
+        23
+      ]
+    },
+    "right": {
+      "center": [
+        7,
+        20
+      ],
+      "top_center": [
+        7,
+        20
+      ],
+      "bottom_center": [
+        7,
+        20
+      ],
+      "left_edge": [
+        4,
+        20
+      ],
+      "right_edge": [
+        11,
+        20
+      ]
+    },
+    "left": {
+      "center": [
+        7,
+        20
+      ],
+      "top_center": [
+        7,
+        20
+      ],
+      "bottom_center": [
+        7,
+        20
+      ],
+      "left_edge": [
+        4,
+        20
+      ],
+      "right_edge": [
+        11,
+        20
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        21
+      ],
+      "top_center": [
+        7,
+        21
+      ],
+      "bottom_center": [
+        7,
+        21
+      ],
+      "left_edge": [
+        4,
+        21
+      ],
+      "right_edge": [
+        11,
+        21
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Alt-Fashion Set",
+    "sourceName": "Belt",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    16,
+    32
+  ]
+}

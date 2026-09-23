@@ -1,0 +1,289 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_accessories_alt_fashion_set_choker",
+  "slot": "ACCESSORY",
+  "category": "Accessories",
+  "family": "catalog_accessories_alt_fashion_set_choker",
+  "sourceIdentity": {
+    "pack": "Alt-Fashion Set",
+    "category": "Accessories",
+    "family": "Choker",
+    "base": "Choker"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Choker",
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Alt-Fashion Set/Accessories/Choker/accessory.png",
+    "sourceJson": "generator content/[FS] Alt-Fashion Set/Accessories/Choker/accessory.json",
+    "sourcePngSha256": "065d31a18a2e064d5eeea20dec086b4a93b7387aa23e5af2b94fc618885b9a52",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/Choker/accessory.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "94da1c71e2c2cc189c74dde5874d05149ca323846c15e6810e1bca9aca7a0322",
+      "alphaSha256": "a7780fa59454c753aff167edf760d78571d0ac202b0bae68bb74bce8a69dc8a9"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/Choker/accessory.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "29fb3e0562cb2d41168df6b1c42b02c9bb5a2ee3a44a39afdc8d5cb8730e0039",
+      "alphaSha256": "f162139fdc6c8dc1c1c00bbd2375744b88ced3eb361257847e15298c470c00a1"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/Choker/accessory.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": true,
+      "pixelSha256": "1dc23a390ff5581bcd662fb6ed4e0341e1c7a847c58e8adac901ef5ebb5da699",
+      "alphaSha256": "07d54fcc203991f3d12be11d101c92f4890a3f63cfaa752e492b1e2d4a1b3fba"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/Choker/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "94da1c71e2c2cc189c74dde5874d05149ca323846c15e6810e1bca9aca7a0322",
+      "alphaSha256": "a7780fa59454c753aff167edf760d78571d0ac202b0bae68bb74bce8a69dc8a9"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "upper accessory zone"
+    },
+    "lower": {
+      "purpose": "lower accessory zone"
+    },
+    "side": {
+      "purpose": "side-localized accessory zone"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        14
+      ],
+      "top_center": [
+        7,
+        14
+      ],
+      "bottom_center": [
+        7,
+        14
+      ],
+      "left_edge": [
+        6,
+        14
+      ],
+      "right_edge": [
+        9,
+        14
+      ]
+    },
+    "right": {
+      "center": [
+        7,
+        14
+      ],
+      "top_center": [
+        7,
+        14
+      ],
+      "bottom_center": [
+        7,
+        14
+      ],
+      "left_edge": [
+        6,
+        14
+      ],
+      "right_edge": [
+        8,
+        14
+      ]
+    },
+    "left": {
+      "center": [
+        8,
+        14
+      ],
+      "top_center": [
+        8,
+        14
+      ],
+      "bottom_center": [
+        8,
+        14
+      ],
+      "left_edge": [
+        7,
+        14
+      ],
+      "right_edge": [
+        9,
+        14
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        14
+      ],
+      "top_center": [
+        7,
+        14
+      ],
+      "bottom_center": [
+        7,
+        14
+      ],
+      "left_edge": [
+        6,
+        14
+      ],
+      "right_edge": [
+        9,
+        14
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Alt-Fashion Set",
+    "sourceName": "Choker",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    16,
+    16
+  ]
+}

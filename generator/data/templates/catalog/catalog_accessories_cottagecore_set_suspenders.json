@@ -1,0 +1,301 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_accessories_cottagecore_set_suspenders",
+  "slot": "ACCESSORY",
+  "category": "Accessories",
+  "family": "catalog_accessories_cottagecore_set_suspenders",
+  "sourceIdentity": {
+    "pack": "Cottagecore Set",
+    "category": "Accessories",
+    "family": "Suspenders",
+    "base": "Suspenders"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Suspenders",
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Cottagecore Set/Accessories/Suspenders/accessory.png",
+    "sourceJson": "generator content/[FS] Cottagecore Set/Accessories/Suspenders/accessory.json",
+    "sourcePngSha256": "6561d56fbed7ecf7d3617b78c88b518563ba65f573904e01bd889b90752f8051",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Suspenders/accessory.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "703ee1bbb8f90bfe214778da5a2548a8a4a1bdc0fa6ffb102a9fa64edc8e68d2",
+      "alphaSha256": "e333a3e4ae12526c701cf9f7543d35e96da171fdb5a6ee6609d3c72eabd8f8cb"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Suspenders/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "7b2494933528b30ab62f003ffc5c5f54ec56437ecadb0a37b638070515790c8c",
+      "alphaSha256": "57d7f72862149b531e80e724b7ba7ac1d8efa03464930ef360087d3cb0123131"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Suspenders/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        32
+      ],
+      "flipX": true,
+      "pixelSha256": "b9f14583f944a9f425ea389adf97148daff75ce783491347e7316a5cb3fab4a0",
+      "alphaSha256": "b9de9a39859fc973721a6c28a015611b80eda5ffe7cec7e359a4b1461a35b7f6"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Suspenders/accessory.png",
+      "sourceRect": [
+        0,
+        64,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "5b007989ac20fae706f74dc2e4d22894cba6341d82e07043f5bafa9414947512",
+      "alphaSha256": "af6c716a8ef565ae8f6913cf4ab140c0bfee5cb72b9a34d3c82f879f0a39bc7f"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "upper accessory zone"
+    },
+    "lower": {
+      "purpose": "lower accessory zone"
+    },
+    "side": {
+      "purpose": "side-localized accessory zone"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        16
+      ],
+      "top_center": [
+        7,
+        13
+      ],
+      "bottom_center": [
+        7,
+        20
+      ],
+      "left_edge": [
+        6,
+        16
+      ],
+      "right_edge": [
+        9,
+        16
+      ]
+    },
+    "right": {
+      "center": [
+        7,
+        16
+      ],
+      "top_center": [
+        7,
+        13
+      ],
+      "bottom_center": [
+        7,
+        20
+      ],
+      "left_edge": [
+        5,
+        16
+      ],
+      "right_edge": [
+        10,
+        16
+      ]
+    },
+    "left": {
+      "center": [
+        7,
+        16
+      ],
+      "top_center": [
+        7,
+        13
+      ],
+      "bottom_center": [
+        7,
+        20
+      ],
+      "left_edge": [
+        5,
+        16
+      ],
+      "right_edge": [
+        10,
+        16
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        17
+      ],
+      "top_center": [
+        7,
+        14
+      ],
+      "bottom_center": [
+        7,
+        21
+      ],
+      "left_edge": [
+        6,
+        17
+      ],
+      "right_edge": [
+        9,
+        17
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "DrawAfterSleeves": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "DrawAfterSleeves": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": -1
+        },
+        "flipped": true,
+        "DrawAfterSleeves": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "DrawAfterSleeves": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Cottagecore Set",
+    "sourceName": "Suspenders",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    16,
+    32
+  ]
+}

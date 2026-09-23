@@ -1,0 +1,297 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_accessories_alt_fashion_set_harness_chest",
+  "slot": "ACCESSORY",
+  "category": "Accessories",
+  "family": "catalog_accessories_alt_fashion_set_harness_chest",
+  "sourceIdentity": {
+    "pack": "Alt-Fashion Set",
+    "category": "Accessories",
+    "family": "Harness",
+    "base": "Harness (Chest)"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Harness (Chest)",
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Alt-Fashion Set/Accessories/HarnessChest/accessory.png",
+    "sourceJson": "generator content/[FS] Alt-Fashion Set/Accessories/HarnessChest/accessory.json",
+    "sourcePngSha256": "fd2131e7bd48c9695a48828594f0c72e3734c8bdd2785281590e0aec5f70bdbc",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/HarnessChest/accessory.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "106b984a8544703a2ec4e26c7113f81398f637ca85eaee50184d4beae43adb74",
+      "alphaSha256": "90050772eac24227119edfdc90ee44096502bb91c1739ef85802547a0aaa2f7c"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/HarnessChest/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "f0a9d9d8ba02967899a6a9e8182cf60b1b85b3ca525f4ba6c9ee74a39443a3d3",
+      "alphaSha256": "d0bf37150e106861b17b8251fb34239af86c64626de21271b1917aa293827503"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/HarnessChest/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        32
+      ],
+      "flipX": true,
+      "pixelSha256": "c6ec84f497060d4312893579f85cdf6967becb7ac9bc55741f48ba509597c6e0",
+      "alphaSha256": "6195474a8b65336208f74ecca604a31c5e731d0899893ecd6ec4b09ec5b1a908"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/HarnessChest/accessory.png",
+      "sourceRect": [
+        0,
+        64,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "a803268da3e21756de4621c3dee4880aca3d63bfdd44090d43caa8c4bae1e7ea",
+      "alphaSha256": "50a2ba7b692002c293002ff20fb93b012063ebd1c6cb1dd23851950b55444b21"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "upper accessory zone"
+    },
+    "lower": {
+      "purpose": "lower accessory zone"
+    },
+    "side": {
+      "purpose": "side-localized accessory zone"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        18
+      ],
+      "top_center": [
+        7,
+        16
+      ],
+      "bottom_center": [
+        7,
+        20
+      ],
+      "left_edge": [
+        4,
+        18
+      ],
+      "right_edge": [
+        11,
+        18
+      ]
+    },
+    "right": {
+      "center": [
+        7,
+        15
+      ],
+      "top_center": [
+        7,
+        13
+      ],
+      "bottom_center": [
+        7,
+        17
+      ],
+      "left_edge": [
+        4,
+        15
+      ],
+      "right_edge": [
+        11,
+        15
+      ]
+    },
+    "left": {
+      "center": [
+        7,
+        15
+      ],
+      "top_center": [
+        7,
+        13
+      ],
+      "bottom_center": [
+        7,
+        17
+      ],
+      "left_edge": [
+        4,
+        15
+      ],
+      "right_edge": [
+        11,
+        15
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        16
+      ],
+      "top_center": [
+        7,
+        14
+      ],
+      "bottom_center": [
+        7,
+        18
+      ],
+      "left_edge": [
+        4,
+        16
+      ],
+      "right_edge": [
+        11,
+        16
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Alt-Fashion Set",
+    "sourceName": "Harness (Chest)",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    16,
+    32
+  ]
+}

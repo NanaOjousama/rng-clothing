@@ -1,0 +1,334 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_hats_alt_fashion_set_headband_studded",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "catalog_hats_alt_fashion_set_headband_studded",
+  "sourceIdentity": {
+    "pack": "Alt-Fashion Set",
+    "category": "Hats",
+    "family": "Headband",
+    "base": "Headband (Studded)"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Headband (Studded)",
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Alt-Fashion Set/Hats/HeadbandStudded/hat.png",
+    "sourceJson": "generator content/[FS] Alt-Fashion Set/Hats/HeadbandStudded/hat.json",
+    "sourcePngSha256": "90b310793e3c2d78c6698821e280a6a2b5e29c13eee93a3fa80746088524ff0f",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Hats/HeadbandStudded/hat.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "0e2a89d7af0e03ddd6e5b78b01930164c613c3117b33de1ab363202a5ff06c8e",
+      "alphaSha256": "d7bb093583fe2308836997bf416ad7e112864eb14e44e895fcb4d9edcc8eaccd"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Hats/HeadbandStudded/hat.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "671487dea645e2d385b63a6dfd6f5945fa550bea09b320c2ad268d600ef1841d",
+      "alphaSha256": "11c0723f7347ba9a6b2e16d7e9880dfc5b425ef934e9e8c9e5d85810f275e28f"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Hats/HeadbandStudded/hat.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": true,
+      "pixelSha256": "b4d8a75c12eed202a8d1a91de59f68d6a43ceb840cdeab0ec44bda0e072c71a5",
+      "alphaSha256": "8671df3d5c458c43e216fcd7c8d5904f052b2d5ddde61e32425f2aa6e815552b"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Hats/HeadbandStudded/hat.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "alphaSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "crown": {
+      "purpose": "upper hat treatment"
+    },
+    "band": {
+      "purpose": "lower/cuff treatment"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        6
+      ],
+      "top_center": [
+        7,
+        4
+      ],
+      "bottom_center": [
+        7,
+        8
+      ],
+      "left_edge": [
+        3,
+        6
+      ],
+      "right_edge": [
+        12,
+        6
+      ],
+      "crown_center": [
+        7,
+        5
+      ],
+      "band_center": [
+        7,
+        7
+      ],
+      "attachment_edge": [
+        12,
+        4
+      ]
+    },
+    "right": {
+      "center": [
+        7,
+        6
+      ],
+      "top_center": [
+        7,
+        3
+      ],
+      "bottom_center": [
+        7,
+        10
+      ],
+      "left_edge": [
+        5,
+        6
+      ],
+      "right_edge": [
+        10,
+        6
+      ],
+      "crown_center": [
+        7,
+        5
+      ],
+      "band_center": [
+        7,
+        8
+      ],
+      "attachment_edge": [
+        10,
+        3
+      ]
+    },
+    "left": {
+      "center": [
+        7,
+        6
+      ],
+      "top_center": [
+        7,
+        3
+      ],
+      "bottom_center": [
+        7,
+        10
+      ],
+      "left_edge": [
+        5,
+        6
+      ],
+      "right_edge": [
+        10,
+        6
+      ],
+      "crown_center": [
+        7,
+        5
+      ],
+      "band_center": [
+        7,
+        8
+      ],
+      "attachment_edge": [
+        10,
+        3
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        7
+      ],
+      "top_center": [
+        7,
+        0
+      ],
+      "bottom_center": [
+        7,
+        15
+      ],
+      "left_edge": [
+        0,
+        7
+      ],
+      "right_edge": [
+        15,
+        7
+      ],
+      "crown_center": [
+        7,
+        6
+      ],
+      "band_center": [
+        7,
+        12
+      ],
+      "attachment_edge": [
+        15,
+        0
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": -2,
+          "Y": -3
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": -2,
+          "Y": -3
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": -2,
+          "Y": -3
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": -2,
+          "Y": -3
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Alt-Fashion Set",
+    "sourceName": "Headband (Studded)",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    16,
+    16
+  ]
+}

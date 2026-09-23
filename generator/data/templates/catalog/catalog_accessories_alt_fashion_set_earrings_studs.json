@@ -1,0 +1,289 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_accessories_alt_fashion_set_earrings_studs",
+  "slot": "ACCESSORY",
+  "category": "Accessories",
+  "family": "catalog_accessories_alt_fashion_set_earrings_studs",
+  "sourceIdentity": {
+    "pack": "Alt-Fashion Set",
+    "category": "Accessories",
+    "family": "Earrings",
+    "base": "Earrings (Studs)"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Earrings (Studs)",
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Alt-Fashion Set/Accessories/EarringsStuds/accessory.png",
+    "sourceJson": "generator content/[FS] Alt-Fashion Set/Accessories/EarringsStuds/accessory.json",
+    "sourcePngSha256": "97b516de9449666353d5d6d69fd8d825ce8499455fcb324cae534fbe54a1d631",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/EarringsStuds/accessory.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "3884d979110f841ee6c941a19ad666230fcd68ecca54a367c3657df11829c5c8",
+      "alphaSha256": "14aaa6d214a978628d0fa62968c40243a28396aa84afc0246d3686dab72fbc0e"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/EarringsStuds/accessory.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "f385700a0f07d777cd7eec4a3e46206078b54e353fa65e869b596aaa9869bde8",
+      "alphaSha256": "8c01ab0efc35d47f2de5d6bcb8cf7b17a81ec4b7bf01dccf1edfa4e2d61b3190"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/EarringsStuds/accessory.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": true,
+      "pixelSha256": "be72f443186c247517e70a153967592d4d1d4a988619f424b583cdc9cf92747e",
+      "alphaSha256": "0f1c15b1314cc25262b6fa01d8a24b65ccf0f2829e985be134bd9d9415898c84"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/EarringsStuds/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "3884d979110f841ee6c941a19ad666230fcd68ecca54a367c3657df11829c5c8",
+      "alphaSha256": "14aaa6d214a978628d0fa62968c40243a28396aa84afc0246d3686dab72fbc0e"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "upper accessory zone"
+    },
+    "lower": {
+      "purpose": "lower accessory zone"
+    },
+    "side": {
+      "purpose": "side-localized accessory zone"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        12
+      ],
+      "top_center": [
+        7,
+        12
+      ],
+      "bottom_center": [
+        7,
+        12
+      ],
+      "left_edge": [
+        4,
+        12
+      ],
+      "right_edge": [
+        11,
+        12
+      ]
+    },
+    "right": {
+      "center": [
+        5,
+        10
+      ],
+      "top_center": [
+        5,
+        10
+      ],
+      "bottom_center": [
+        5,
+        10
+      ],
+      "left_edge": [
+        5,
+        10
+      ],
+      "right_edge": [
+        5,
+        10
+      ]
+    },
+    "left": {
+      "center": [
+        10,
+        10
+      ],
+      "top_center": [
+        10,
+        10
+      ],
+      "bottom_center": [
+        10,
+        10
+      ],
+      "left_edge": [
+        10,
+        10
+      ],
+      "right_edge": [
+        10,
+        10
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        12
+      ],
+      "top_center": [
+        7,
+        12
+      ],
+      "bottom_center": [
+        7,
+        12
+      ],
+      "left_edge": [
+        4,
+        12
+      ],
+      "right_edge": [
+        11,
+        12
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Alt-Fashion Set",
+    "sourceName": "Earrings (Studs)",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    16,
+    16
+  ]
+}

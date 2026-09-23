@@ -1,0 +1,354 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_hats_more_accessories_and_stuff_hood",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "catalog_hats_more_accessories_and_stuff_hood",
+  "sourceIdentity": {
+    "pack": "More Accessories and Stuff",
+    "category": "Hats",
+    "family": "Hood",
+    "base": "Hood"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Hood",
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] More Accessories and Stuff Pack/Hats/Hood/hat.png",
+    "sourceJson": "generator content/[FS] More Accessories and Stuff Pack/Hats/Hood/hat.json",
+    "sourcePngSha256": "3743c4cc2a98492f900baee7100acffdc2f3fca1348d94ed7a05c9dc117626a7",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/Hood/hat.png",
+      "sourceRect": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "6978ea8a5e0b91f69eda99c617e2f5e8a2492dd54c2c13da55c778beaf398e81",
+      "alphaSha256": "2b7671945e3ede7d3683fc8d17d5c510f8c7d856d49d4ac904f72f5e1ba57a65"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/Hood/hat.png",
+      "sourceRect": [
+        0,
+        64,
+        32,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "30e3761c1810ae093dd7d3392a6f3baa84b2150621f3b3663337156f3662a0da",
+      "alphaSha256": "6bcdeebf20f01a44362a140df59e810dadda73f0a72deb6b8f93268e5cfdcd9d"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/Hood/hat.png",
+      "sourceRect": [
+        0,
+        64,
+        32,
+        32
+      ],
+      "flipX": true,
+      "pixelSha256": "edc64f3fea47923ff44ec13e5fa0c1f5b9609560aaed3f9eebd3ef55e0cf2d78",
+      "alphaSha256": "a303d2104f6624de2dfe30f645a5cb61f6c2d439415b41cb99dd1e2124a13880"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/Hood/hat.png",
+      "sourceRect": [
+        0,
+        32,
+        32,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "53bfb707ba270684a260252e02bf62a486b614e833d93dfbc20ae8ada16b4243",
+      "alphaSha256": "241395cebe42ace20ebec6e617a2d958ab337cbf14ce2a2d8dec45ea5b40a94f"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "crown": {
+      "purpose": "upper hat treatment"
+    },
+    "band": {
+      "purpose": "lower/cuff treatment"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        15,
+        10
+      ],
+      "top_center": [
+        15,
+        4
+      ],
+      "bottom_center": [
+        15,
+        16
+      ],
+      "left_edge": [
+        7,
+        10
+      ],
+      "right_edge": [
+        24,
+        10
+      ],
+      "crown_center": [
+        15,
+        8
+      ],
+      "band_center": [
+        15,
+        13
+      ],
+      "attachment_edge": [
+        24,
+        4
+      ]
+    },
+    "right": {
+      "center": [
+        21,
+        7
+      ],
+      "top_center": [
+        21,
+        0
+      ],
+      "bottom_center": [
+        21,
+        14
+      ],
+      "left_edge": [
+        14,
+        7
+      ],
+      "right_edge": [
+        29,
+        7
+      ],
+      "crown_center": [
+        21,
+        5
+      ],
+      "band_center": [
+        21,
+        11
+      ],
+      "attachment_edge": [
+        29,
+        0
+      ]
+    },
+    "left": {
+      "center": [
+        9,
+        7
+      ],
+      "top_center": [
+        9,
+        0
+      ],
+      "bottom_center": [
+        9,
+        14
+      ],
+      "left_edge": [
+        2,
+        7
+      ],
+      "right_edge": [
+        17,
+        7
+      ],
+      "crown_center": [
+        9,
+        5
+      ],
+      "band_center": [
+        9,
+        11
+      ],
+      "attachment_edge": [
+        17,
+        0
+      ]
+    },
+    "back": {
+      "center": [
+        15,
+        9
+      ],
+      "top_center": [
+        15,
+        3
+      ],
+      "bottom_center": [
+        15,
+        15
+      ],
+      "left_edge": [
+        7,
+        9
+      ],
+      "right_edge": [
+        24,
+        9
+      ],
+      "crown_center": [
+        15,
+        7
+      ],
+      "band_center": [
+        15,
+        12
+      ],
+      "attachment_edge": [
+        24,
+        3
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 6,
+          "Y": -1
+        },
+        "flipped": false,
+        "DrawOrderOverride": {
+          "Preposition": "Before",
+          "AppearanceType": "Sleeves"
+        },
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "right": {
+        "position": {
+          "X": 13,
+          "Y": -4
+        },
+        "flipped": false,
+        "DrawOrderOverride": {
+          "Preposition": "Before",
+          "AppearanceType": "Sleeves"
+        },
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "left": {
+        "position": {
+          "X": -2,
+          "Y": -4
+        },
+        "flipped": true,
+        "DrawOrderOverride": {
+          "Preposition": "Before",
+          "AppearanceType": "Sleeves"
+        },
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "back": {
+        "position": {
+          "X": 6,
+          "Y": -3
+        },
+        "flipped": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "More Accessories and Stuff",
+    "sourceName": "Hood",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    32,
+    32
+  ]
+}

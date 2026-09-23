@@ -29,7 +29,8 @@ class TemplateContract:
     slot: str
     category: str
     family: str
-    frame_size: tuple[int, int]
+    frame_size: tuple[int, int] | None
+    frame_sizes: dict
     frames: dict
     geometry_lock: dict
     zones: dict
@@ -42,6 +43,13 @@ class TemplateContract:
     def views(self):
         return tuple(self.frames)
 
+    def size_for(self, view):
+        if view in self.frame_sizes:
+            return tuple(self.frame_sizes[view])
+        if self.frame_size is None:
+            raise ContractError(f'{self.id}: no size declared for {view}')
+        return self.frame_size
+
 
 def _sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -51,6 +59,31 @@ def alpha_cells(rows):
     return {(x, y) for y, row in enumerate(rows) for x, p in enumerate(row) if p[3]}
 
 
+def _pixel_sha256(rows):
+    payload=bytearray()
+    for row in rows:
+        for p in row:
+            payload.extend(bytes(p))
+    return hashlib.sha256(payload).hexdigest()
+
+
+def _load_frame_spec(spec):
+    if spec.get('path'):
+        return read_rgba_png(PROJECT / spec['path'])
+    sheet=spec.get('sheetPath')
+    rect=spec.get('sourceRect')
+    if not sheet or not rect or len(rect)!=4:
+        raise ContractError('frame spec requires path or sheetPath+sourceRect')
+    rows=read_rgba_png(PROJECT / sheet)
+    x,y,w,h=map(int,rect)
+    if x<0 or y<0 or w<=0 or h<=0 or y+h>len(rows) or x+w>len(rows[0]):
+        raise ContractError(f'invalid sourceRect {rect} for {sheet}')
+    out=[r[x:x+w] for r in rows[y:y+h]]
+    if spec.get('flipX'):
+        out=[list(reversed(r)) for r in out]
+    return out
+
+
 def load_contract(path) -> TemplateContract:
     p = Path(path)
     if not p.is_absolute():
@@ -58,8 +91,9 @@ def load_contract(path) -> TemplateContract:
     d = json.loads(p.read_text())
     if d.get("schema") != "source-backed-template/v1":
         raise ContractError(f"{p}: unsupported schema {d.get('schema')!r}")
+    fs=tuple(d['frameSize']) if d.get('frameSize') else None
     return TemplateContract(
-        d["id"], d["slot"], d["category"], d["family"], tuple(d["frameSize"]),
+        d["id"], d["slot"], d["category"], d["family"], fs, d.get('frameSizes', {}),
         d["frames"], d["geometryLock"], d.get("zones", {}), d.get("anchors", {}),
         frozenset(d.get("allowedPartKinds", [])), tuple(d.get("incompatibilities", [])),
         d.get("sourceIdentity", {}),
@@ -67,19 +101,27 @@ def load_contract(path) -> TemplateContract:
 
 
 def verify_contract(contract: TemplateContract) -> dict:
-    w, h = contract.frame_size
     report = {"template": contract.id, "views": {}, "ok": True}
     expected_views = set(contract.geometry_lock.get("requiredViews", ()))
     if expected_views and expected_views != set(contract.frames):
         raise ContractError(f"{contract.id}: required views {sorted(expected_views)} != frames {sorted(contract.frames)}")
     for view, spec in contract.frames.items():
-        p = PROJECT / spec["path"]
-        if not p.exists():
-            raise ContractError(f"{contract.id}/{view}: missing frame {p}")
-        got_hash = _sha256(p)
-        if got_hash != spec["sha256"]:
-            raise ContractError(f"{contract.id}/{view}: frame hash drift {got_hash} != {spec['sha256']}")
-        rows = read_rgba_png(p)
+        rows = _load_frame_spec(spec)
+        if spec.get('path'):
+            p = PROJECT / spec['path']
+            if not p.exists():
+                raise ContractError(f"{contract.id}/{view}: missing frame {p}")
+            got_hash = _sha256(p)
+            expected = spec.get('sha256')
+        else:
+            sheet = PROJECT / spec['sheetPath']
+            if not sheet.exists():
+                raise ContractError(f"{contract.id}/{view}: missing source sheet {sheet}")
+            got_hash = _pixel_sha256(rows)
+            expected = spec.get('pixelSha256')
+        if expected and got_hash != expected:
+            raise ContractError(f"{contract.id}/{view}: frame hash drift {got_hash} != {expected}")
+        w,h=contract.size_for(view)
         if len(rows) != h or len(rows[0]) != w:
             raise ContractError(f"{contract.id}/{view}: size {(len(rows[0]), len(rows))} != {(w,h)}")
         cells = alpha_cells(rows)
@@ -151,7 +193,7 @@ def plan(template: TemplateContract, parts: list[dict]) -> dict:
 def template_frames(template: TemplateContract) -> dict:
     """Load the locked construction frames without transforming a pixel."""
     verify_contract(template)
-    return {view: read_rgba_png(PROJECT / spec['path'])
+    return {view: _load_frame_spec(spec)
             for view, spec in template.frames.items()}
 
 
@@ -190,5 +232,5 @@ def compile_recipe(template: TemplateContract, style_profile: dict, parts=()) ->
         'parts': chosen,
         'credits': credits,
         'geometryPolicy': 'LOCKED_TEMPLATE_ALPHA',
-        'neutralSource': {v: s['path'] for v,s in template.frames.items()},
+        'neutralSource': {v: (s.get('path') or {'sheetPath':s.get('sheetPath'),'sourceRect':s.get('sourceRect'),'flipX':bool(s.get('flipX'))}) for v,s in template.frames.items()},
     }

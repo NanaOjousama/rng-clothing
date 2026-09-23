@@ -1,0 +1,334 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_hats_more_accessories_and_stuff_hair_buns",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "catalog_hats_more_accessories_and_stuff_hair_buns",
+  "sourceIdentity": {
+    "pack": "More Accessories and Stuff",
+    "category": "Hats",
+    "family": "HairBuns",
+    "base": "Hair Buns"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Hair Buns",
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] More Accessories and Stuff Pack/Hats/HairBuns/hat.png",
+    "sourceJson": "generator content/[FS] More Accessories and Stuff Pack/Hats/HairBuns/hat.json",
+    "sourcePngSha256": "bd4bea38255a73716f4ce24d41a4de5c51bcde36eb93c6c30c5ec65be3a024dd",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/HairBuns/hat.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "9dc6529fa738f5ceb2b18b8974613cde042a6fbac599d37ae8601fa39f90fe4d",
+      "alphaSha256": "c60b7563f4c581f8c1006ff4856f9d7940689d747fd033c8296c090e30cf2a4d"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/HairBuns/hat.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "8d13a9d2b1dc232d6bb443ff3abffdcf839be1ab03fc8de0ede5457c37811021",
+      "alphaSha256": "67cb911dcd9b4513098d13dfc3cf1736ece881802c47e2339fa42fa769deb070"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/HairBuns/hat.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": true,
+      "pixelSha256": "2ce318911f5484829eefc6aae9036ff300b8121d14452286a8454902779eee35",
+      "alphaSha256": "4575c5478328f1da7660fa1e09a9aa97d69ee41011b16a0902ba0ba71cd9afa9"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/HairBuns/hat.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "c6b660e94c8be0b31894c7e5324c2ca9221f14b188b3b4077cec9d5f254a107d",
+      "alphaSha256": "c60b7563f4c581f8c1006ff4856f9d7940689d747fd033c8296c090e30cf2a4d"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "crown": {
+      "purpose": "upper hat treatment"
+    },
+    "band": {
+      "purpose": "lower/cuff treatment"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        4
+      ],
+      "top_center": [
+        7,
+        2
+      ],
+      "bottom_center": [
+        7,
+        7
+      ],
+      "left_edge": [
+        1,
+        4
+      ],
+      "right_edge": [
+        14,
+        4
+      ],
+      "crown_center": [
+        7,
+        4
+      ],
+      "band_center": [
+        7,
+        6
+      ],
+      "attachment_edge": [
+        14,
+        2
+      ]
+    },
+    "right": {
+      "center": [
+        3,
+        3
+      ],
+      "top_center": [
+        3,
+        1
+      ],
+      "bottom_center": [
+        3,
+        6
+      ],
+      "left_edge": [
+        1,
+        3
+      ],
+      "right_edge": [
+        6,
+        3
+      ],
+      "crown_center": [
+        3,
+        3
+      ],
+      "band_center": [
+        3,
+        5
+      ],
+      "attachment_edge": [
+        6,
+        1
+      ]
+    },
+    "left": {
+      "center": [
+        11,
+        3
+      ],
+      "top_center": [
+        11,
+        1
+      ],
+      "bottom_center": [
+        11,
+        6
+      ],
+      "left_edge": [
+        9,
+        3
+      ],
+      "right_edge": [
+        14,
+        3
+      ],
+      "crown_center": [
+        11,
+        3
+      ],
+      "band_center": [
+        11,
+        5
+      ],
+      "attachment_edge": [
+        14,
+        1
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        4
+      ],
+      "top_center": [
+        7,
+        2
+      ],
+      "bottom_center": [
+        7,
+        7
+      ],
+      "left_edge": [
+        1,
+        4
+      ],
+      "right_edge": [
+        14,
+        4
+      ],
+      "crown_center": [
+        7,
+        4
+      ],
+      "band_center": [
+        7,
+        6
+      ],
+      "attachment_edge": [
+        14,
+        2
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": -2,
+          "Y": -3
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": -3,
+          "Y": -4
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": -1,
+          "Y": -4
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": -2,
+          "Y": -4
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "More Accessories and Stuff",
+    "sourceName": "Hair Buns",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    16,
+    16
+  ]
+}

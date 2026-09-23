@@ -1,0 +1,297 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_accessories_alt_fashion_set_corset_waist",
+  "slot": "ACCESSORY",
+  "category": "Accessories",
+  "family": "catalog_accessories_alt_fashion_set_corset_waist",
+  "sourceIdentity": {
+    "pack": "Alt-Fashion Set",
+    "category": "Accessories",
+    "family": "Corset",
+    "base": "Corset (Waist)"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Corset (Waist)",
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Alt-Fashion Set/Accessories/CorsetWaist/accessory.png",
+    "sourceJson": "generator content/[FS] Alt-Fashion Set/Accessories/CorsetWaist/accessory.json",
+    "sourcePngSha256": "930e33b7195c9a75424ec3a3faaa7e7c080e92796d904dcc1c93165b1479d1b3",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/CorsetWaist/accessory.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "d28c8f52e9a229e827639bccdf268c62cfb3af98a331f44f33faac2661fe6177",
+      "alphaSha256": "c2a29939a686dff1cedd292479e7371a95c7244ba91bf8bc8f8094338322f891"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/CorsetWaist/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "c5b7709f7a98c66bada50ba582a9783bf85e1da4e18060ee4f559b4e71b248e0",
+      "alphaSha256": "e521638bdb58c5569bc555b392b8bd263c446c98b9c395be015ca06d2db41abe"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/CorsetWaist/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        32
+      ],
+      "flipX": true,
+      "pixelSha256": "99577e41722a28d76a4c08cdae68e74c2f4c97f35cc45365e8be0d18a0e863f8",
+      "alphaSha256": "297cc595224f9f738a1b86d16d2781e4365e40a5b332f1960560a9deaa50f23f"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/CorsetWaist/accessory.png",
+      "sourceRect": [
+        0,
+        64,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "589cf55970ad25482fc8198a4b954b035aa69d3e32f74d1bc73aa71ffa2d0093",
+      "alphaSha256": "b51ed5663981d2b2c59ff249530a8d67a2cd1af7893b7ba5098e0ed245c57e32"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "upper accessory zone"
+    },
+    "lower": {
+      "purpose": "lower accessory zone"
+    },
+    "side": {
+      "purpose": "side-localized accessory zone"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        21
+      ],
+      "top_center": [
+        7,
+        20
+      ],
+      "bottom_center": [
+        7,
+        23
+      ],
+      "left_edge": [
+        4,
+        21
+      ],
+      "right_edge": [
+        11,
+        21
+      ]
+    },
+    "right": {
+      "center": [
+        8,
+        18
+      ],
+      "top_center": [
+        8,
+        17
+      ],
+      "bottom_center": [
+        8,
+        20
+      ],
+      "left_edge": [
+        5,
+        18
+      ],
+      "right_edge": [
+        11,
+        18
+      ]
+    },
+    "left": {
+      "center": [
+        7,
+        18
+      ],
+      "top_center": [
+        7,
+        17
+      ],
+      "bottom_center": [
+        7,
+        20
+      ],
+      "left_edge": [
+        4,
+        18
+      ],
+      "right_edge": [
+        10,
+        18
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        20
+      ],
+      "top_center": [
+        7,
+        19
+      ],
+      "bottom_center": [
+        7,
+        21
+      ],
+      "left_edge": [
+        4,
+        20
+      ],
+      "right_edge": [
+        11,
+        20
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true,
+        "HideWhileWearingBathingSuit": true
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Alt-Fashion Set",
+    "sourceName": "Corset (Waist)",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    16,
+    32
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+  "sourceIdentity": {
+    "pack": "More Accessories and Stuff",
+    "category": "Hats",
+    "family": "Bows",
+    "base": "Bows (Double, Small 1)"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Bows (Double, Small 1)",
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSmall1/hat.png",
+    "sourceJson": "generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSmall1/hat.json",
+    "sourcePngSha256": "b0cc4846127746969d84ec1b758c3bdfc02c2d5a5233e31a3fa918654e9291b1",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSmall1/hat.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "6b740e671eba7b94975011670a8b44ba7fdf3685758027a7f0d6e1eabfc9a879",
+      "alphaSha256": "2151e229e1f60c4ce3e636aa7082ecc8033172c085b08d2e546e6977f75e4052"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSmall1/hat.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "0141e3f9ea32739535b060a85e71de038b01c0ebb8dcf2297bbb00954be07b0e",
+      "alphaSha256": "2cea80ac79c76254a5c9b701872ce173740121f10ea712f0cc9ab11bdab83816"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSmall1/hat.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": true,
+      "pixelSha256": "ae35d63407112fd0e19986c02bd95fc587dbc12de4a8df4015cb0c01c209339e",
+      "alphaSha256": "f588164b4ec0cd93d21cf2b6091bb66506f1f2172ffbb39584b98ccacafd0d81"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSmall1/hat.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "f4a76bc998c05e0714f8ea20aae611f623c24b0d66e33ca4a3919760a0b209b0",
+      "alphaSha256": "6724dfc7c53864b80a39ed8ccda021b12aecfba1e7b3fd73ea2eae0a19da5713"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "crown": {
+      "purpose": "upper hat treatment"
+    },
+    "band": {
+      "purpose": "lower/cuff treatment"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        5
+      ],
+      "top_center": [
+        7,
+        4
+      ],
+      "bottom_center": [
+        7,
+        7
+      ],
+      "left_edge": [
+        1,
+        5
+      ],
+      "right_edge": [
+        14,
+        5
+      ],
+      "crown_center": [
+        7,
+        5
+      ],
+      "band_center": [
+        7,
+        6
+      ],
+      "attachment_edge": [
+        14,
+        4
+      ]
+    },
+    "right": {
+      "center": [
+        5,
+        5
+      ],
+      "top_center": [
+        5,
+        4
+      ],
+      "bottom_center": [
+        5,
+        7
+      ],
+      "left_edge": [
+        4,
+        5
+      ],
+      "right_edge": [
+        7,
+        5
+      ],
+      "crown_center": [
+        5,
+        5
+      ],
+      "band_center": [
+        5,
+        6
+      ],
+      "attachment_edge": [
+        7,
+        4
+      ]
+    },
+    "left": {
+      "center": [
+        9,
+        5
+      ],
+      "top_center": [
+        9,
+        4
+      ],
+      "bottom_center": [
+        9,
+        7
+      ],
+      "left_edge": [
+        8,
+        5
+      ],
+      "right_edge": [
+        11,
+        5
+      ],
+      "crown_center": [
+        9,
+        5
+      ],
+      "band_center": [
+        9,
+        6
+      ],
+      "attachment_edge": [
+        11,
+        4
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        6
+      ],
+      "top_center": [
+        7,
+        5
+      ],
+      "bottom_center": [
+        7,
+        8
+      ],
+      "left_edge": [
+        1,
+        6
+      ],
+      "right_edge": [
+        14,
+        6
+      ],
+      "crown_center": [
+        7,
+        6
+      ],
+      "band_center": [
+        7,
+        7
+      ],
+      "attachment_edge": [
+        14,
+        5
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": -2,
+          "Y": -4
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": -2,
+          "Y": -3
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": -2,
+          "Y": -3
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": -2,
+          "Y": -4
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "More Accessories and Stuff",
+    "sourceName": "Bows (Double, Small 1)",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    16,
+    16
+  ]
+}

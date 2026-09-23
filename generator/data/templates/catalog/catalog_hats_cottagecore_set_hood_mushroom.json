@@ -1,0 +1,334 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_hats_cottagecore_set_hood_mushroom",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "catalog_hats_cottagecore_set_hood_mushroom",
+  "sourceIdentity": {
+    "pack": "Cottagecore Set",
+    "category": "Hats",
+    "family": "Hood",
+    "base": "Hood (Mushroom)"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Hood (Mushroom)",
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Cottagecore Set/Hats/HoodMushroom/hat.png",
+    "sourceJson": "generator content/[FS] Cottagecore Set/Hats/HoodMushroom/hat.json",
+    "sourcePngSha256": "d20ff2b2efcef44cb98236cdfcc783bf00bbe2b8e1b7501b544d5cb76f89aaf7",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/HoodMushroom/hat.png",
+      "sourceRect": [
+        0,
+        0,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "c365baa3c7bea11d0ce74aba9907f270c06fd337d49f445c58070f87ca85034b",
+      "alphaSha256": "30831dd7071935305f79fa2f185bdcbda8aa05fde062d163a454da2db05dcf90"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/HoodMushroom/hat.png",
+      "sourceRect": [
+        0,
+        20,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "0afebeaa3d542b02f8e680b04c3aeda2d26661d00337896a7b0930a827708614",
+      "alphaSha256": "0b396833fe6f49018b8f6c27a18d0af398617a082554507f008e59d7972b9be8"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/HoodMushroom/hat.png",
+      "sourceRect": [
+        0,
+        20,
+        20,
+        20
+      ],
+      "flipX": true,
+      "pixelSha256": "f953986418b9cc2898fa410ab2dd202035d365b8e4a6ce1e9ba637b1b94322b1",
+      "alphaSha256": "adc59c5cb974899c9401e2677044f11851ddba07b310495b0ef9497b85b912bb"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/HoodMushroom/hat.png",
+      "sourceRect": [
+        0,
+        40,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "4a7738305823490669c146ce76c49d25a37c7351fc0c5a4e5cd0572189aac7e2",
+      "alphaSha256": "fbf455c4f7aafc0933195d8a7a88ca52d153ca19e2df975e9b70849aefac56c3"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "crown": {
+      "purpose": "upper hat treatment"
+    },
+    "band": {
+      "purpose": "lower/cuff treatment"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        9,
+        11
+      ],
+      "top_center": [
+        9,
+        3
+      ],
+      "bottom_center": [
+        9,
+        19
+      ],
+      "left_edge": [
+        1,
+        11
+      ],
+      "right_edge": [
+        18,
+        11
+      ],
+      "crown_center": [
+        9,
+        9
+      ],
+      "band_center": [
+        9,
+        15
+      ],
+      "attachment_edge": [
+        18,
+        3
+      ]
+    },
+    "right": {
+      "center": [
+        7,
+        11
+      ],
+      "top_center": [
+        7,
+        3
+      ],
+      "bottom_center": [
+        7,
+        19
+      ],
+      "left_edge": [
+        0,
+        11
+      ],
+      "right_edge": [
+        15,
+        11
+      ],
+      "crown_center": [
+        7,
+        9
+      ],
+      "band_center": [
+        7,
+        15
+      ],
+      "attachment_edge": [
+        15,
+        3
+      ]
+    },
+    "left": {
+      "center": [
+        11,
+        11
+      ],
+      "top_center": [
+        11,
+        3
+      ],
+      "bottom_center": [
+        11,
+        19
+      ],
+      "left_edge": [
+        4,
+        11
+      ],
+      "right_edge": [
+        19,
+        11
+      ],
+      "crown_center": [
+        11,
+        9
+      ],
+      "band_center": [
+        11,
+        15
+      ],
+      "attachment_edge": [
+        19,
+        3
+      ]
+    },
+    "back": {
+      "center": [
+        9,
+        12
+      ],
+      "top_center": [
+        9,
+        5
+      ],
+      "bottom_center": [
+        9,
+        19
+      ],
+      "left_edge": [
+        1,
+        12
+      ],
+      "right_edge": [
+        18,
+        12
+      ],
+      "crown_center": [
+        9,
+        10
+      ],
+      "band_center": [
+        9,
+        16
+      ],
+      "attachment_edge": [
+        18,
+        5
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Cottagecore Set",
+    "sourceName": "Hood (Mushroom)",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    20,
+    20
+  ]
+}

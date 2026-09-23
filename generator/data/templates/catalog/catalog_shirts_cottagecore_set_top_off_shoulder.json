@@ -1,0 +1,285 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_shirts_cottagecore_set_top_off_shoulder",
+  "slot": "SHIRT",
+  "category": "Shirts",
+  "family": "catalog_shirts_cottagecore_set_top_off_shoulder",
+  "sourceIdentity": {
+    "pack": "Cottagecore Set",
+    "category": "Shirts",
+    "family": "Top",
+    "base": "Top (Off Shoulder)"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Top (Off Shoulder)",
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Cottagecore Set/Shirts/TopOffShoulder/shirt.png",
+    "sourceJson": "generator content/[FS] Cottagecore Set/Shirts/TopOffShoulder/shirt.json",
+    "sourcePngSha256": "d439091781e65ba2cd141257535b77e34123192636c1ebbea3ff184522d9e478",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Shirts/TopOffShoulder/shirt.png",
+      "sourceRect": [
+        0,
+        0,
+        8,
+        8
+      ],
+      "flipX": false,
+      "pixelSha256": "e93c15319949a9afba89510f721122391f5ddb9e850eaf6185c29ee9c35b99e7",
+      "alphaSha256": "7661b74a4dde11767c6223d37e9ccb8ea98c6c971c2ef2b6d6a3338b88fe75f7"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Shirts/TopOffShoulder/shirt.png",
+      "sourceRect": [
+        0,
+        8,
+        8,
+        8
+      ],
+      "flipX": false,
+      "pixelSha256": "3ccbdd0090e34b6588896482e0853f2015dcf43ef60694b8b353600eb7c079fa",
+      "alphaSha256": "b251f0ac2ecf4dc5c2b0761ba84bb242fa827be908b74b033a64511fefe5600e"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Shirts/TopOffShoulder/shirt.png",
+      "sourceRect": [
+        0,
+        8,
+        8,
+        8
+      ],
+      "flipX": true,
+      "pixelSha256": "62e4985afe848908f7bbe428df980de038ba42fd47d0f6540379713c107a2170",
+      "alphaSha256": "f62cde59ef795a5ae51c58890de4cb4eea1b197dd59f11a7358c4ef4f26b6033"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Shirts/TopOffShoulder/shirt.png",
+      "sourceRect": [
+        0,
+        16,
+        8,
+        8
+      ],
+      "flipX": false,
+      "pixelSha256": "03d948931f180a93840aca47b754c2070f197e697b4a61e8acf22a73b7083d6e",
+      "alphaSha256": "ea40c667aa8ec86c0ed1b0fe483e7fbf53a26e69334c58700b6b5ce4aa1bde28"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "neck/chest treatment"
+    },
+    "lower": {
+      "purpose": "hem/lower-body treatment"
+    },
+    "center": {
+      "purpose": "front/back focal design zone"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        3,
+        4
+      ],
+      "top_center": [
+        3,
+        2
+      ],
+      "bottom_center": [
+        3,
+        7
+      ],
+      "left_edge": [
+        0,
+        4
+      ],
+      "right_edge": [
+        7,
+        4
+      ]
+    },
+    "right": {
+      "center": [
+        4,
+        4
+      ],
+      "top_center": [
+        4,
+        2
+      ],
+      "bottom_center": [
+        4,
+        7
+      ],
+      "left_edge": [
+        1,
+        4
+      ],
+      "right_edge": [
+        7,
+        4
+      ]
+    },
+    "left": {
+      "center": [
+        3,
+        4
+      ],
+      "top_center": [
+        3,
+        2
+      ],
+      "bottom_center": [
+        3,
+        7
+      ],
+      "left_edge": [
+        0,
+        4
+      ],
+      "right_edge": [
+        6,
+        4
+      ]
+    },
+    "back": {
+      "center": [
+        3,
+        4
+      ],
+      "top_center": [
+        3,
+        2
+      ],
+      "bottom_center": [
+        3,
+        7
+      ],
+      "left_edge": [
+        0,
+        4
+      ],
+      "right_edge": [
+        7,
+        4
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Cottagecore Set",
+    "sourceName": "Top (Off Shoulder)",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    8,
+    8
+  ]
+}

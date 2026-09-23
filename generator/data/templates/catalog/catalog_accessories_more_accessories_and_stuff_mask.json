@@ -1,0 +1,289 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_accessories_more_accessories_and_stuff_mask",
+  "slot": "ACCESSORY",
+  "category": "Accessories",
+  "family": "catalog_accessories_more_accessories_and_stuff_mask",
+  "sourceIdentity": {
+    "pack": "More Accessories and Stuff",
+    "category": "Accessories",
+    "family": "Mask",
+    "base": "Mask"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Mask",
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] More Accessories and Stuff Pack/Accessories/Mask/accessory.png",
+    "sourceJson": "generator content/[FS] More Accessories and Stuff Pack/Accessories/Mask/accessory.json",
+    "sourcePngSha256": "18f6d26d0d75130d9f676915e063d490c513616484c0c8a6c9fe1adf4189209f",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/Mask/accessory.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "5533e1c82b78201703c1e48f3b3b7c5177d4c73c390df7a0fd8b6efbb9ea9c26",
+      "alphaSha256": "d9f10618657b0fbe9dd4c24fb9be1d288ca2321e5e7f983547d513a756fa47df"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/Mask/accessory.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "04c01c652516ebfbb4649e02e73939a13f1ec2dac1f926b734de8a7b6aa8770a",
+      "alphaSha256": "e296f6b0f69afcf62fb79f9a468a0bbf6563a933bc2a668790f8d746515ecae5"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/Mask/accessory.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": true,
+      "pixelSha256": "c7994710566003c663b5155aafb4c31927db3a67324a5286739c495b5201358a",
+      "alphaSha256": "f0005fb580932e3a6fb2b4bdf04f433e4f70d0b9c2483ec50f7c1734270bedca"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/Mask/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "347f55c196aa2d8b82036c82690abd473793a1277ba9f1dd68fbf1b459f3c925",
+      "alphaSha256": "832dfce6e15f226126b2daf9cf1b1876423f1b12372863963ab4fcb60b25f481"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "upper accessory zone"
+    },
+    "lower": {
+      "purpose": "lower accessory zone"
+    },
+    "side": {
+      "purpose": "side-localized accessory zone"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        13
+      ],
+      "top_center": [
+        7,
+        12
+      ],
+      "bottom_center": [
+        7,
+        14
+      ],
+      "left_edge": [
+        4,
+        13
+      ],
+      "right_edge": [
+        11,
+        13
+      ]
+    },
+    "right": {
+      "center": [
+        8,
+        11
+      ],
+      "top_center": [
+        8,
+        10
+      ],
+      "bottom_center": [
+        8,
+        13
+      ],
+      "left_edge": [
+        4,
+        11
+      ],
+      "right_edge": [
+        12,
+        11
+      ]
+    },
+    "left": {
+      "center": [
+        7,
+        11
+      ],
+      "top_center": [
+        7,
+        10
+      ],
+      "bottom_center": [
+        7,
+        13
+      ],
+      "left_edge": [
+        3,
+        11
+      ],
+      "right_edge": [
+        11,
+        11
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        13
+      ],
+      "top_center": [
+        7,
+        12
+      ],
+      "bottom_center": [
+        7,
+        14
+      ],
+      "left_edge": [
+        3,
+        13
+      ],
+      "right_edge": [
+        12,
+        13
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "More Accessories and Stuff",
+    "sourceName": "Mask",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    16,
+    16
+  ]
+}

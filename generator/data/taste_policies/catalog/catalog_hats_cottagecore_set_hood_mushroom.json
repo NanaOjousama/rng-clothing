@@ -1,0 +1,369 @@
+{
+  "schema": "rng-family-taste-policy/v1",
+  "family": "catalog_hats_cottagecore_set_hood_mushroom",
+  "template": "catalog_hats_cottagecore_set_hood_mushroom",
+  "category": "Hats",
+  "rarityRules": {
+    "order": [
+      "common",
+      "uncommon",
+      "rare",
+      "epic"
+    ],
+    "common": {
+      "forced": {
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "allowedValues": {
+        "materialTreatment": [
+          "plain",
+          "subtle"
+        ],
+        "pattern": [
+          "solid",
+          "subtle"
+        ],
+        "trim": [
+          "none",
+          "subtle"
+        ]
+      }
+    },
+    "uncommon": {
+      "forced": {
+        "motif": "none",
+        "motifPlacement": "none"
+      },
+      "allowedValues": {
+        "materialTreatment": [
+          "plain",
+          "subtle",
+          "textured",
+          "statement"
+        ],
+        "pattern": [
+          "solid",
+          "subtle",
+          "stripe",
+          "colorblock"
+        ],
+        "trim": [
+          "none",
+          "subtle",
+          "contrast",
+          "wrap"
+        ],
+        "attachment": [
+          "none",
+          "small",
+          "large"
+        ],
+        "hardware": [
+          "none",
+          "small"
+        ]
+      },
+      "distinctiveFeatureRule": {
+        "requireAny": {
+          "materialTreatment": [
+            "textured",
+            "statement"
+          ],
+          "pattern": [
+            "stripe",
+            "colorblock"
+          ],
+          "trim": [
+            "contrast",
+            "wrap"
+          ],
+          "attachment": [
+            "small"
+          ],
+          "hardware": [
+            "small"
+          ]
+        }
+      }
+    },
+    "rare": {
+      "allowedValues": {
+        "attachment": [
+          "none",
+          "small",
+          "large"
+        ]
+      }
+    },
+    "epic": {
+      "allowedValues": {
+        "attachment": [
+          "none",
+          "small",
+          "large"
+        ]
+      }
+    },
+    "minimumRarityRules": [
+      {
+        "axis": "motif",
+        "nonNone": true,
+        "minimum": "rare"
+      },
+      {
+        "axis": "pattern",
+        "values": [
+          "dense"
+        ],
+        "minimum": "rare"
+      },
+      {
+        "axis": "attachment",
+        "values": [
+          "large"
+        ],
+        "minimum": "rare"
+      }
+    ],
+    "minimumRarityByFeature": {}
+  },
+  "tastePolicy": {
+    "version": 1,
+    "principle": "Rarity increases distinctiveness, not clutter. One dominant visual idea with bounded support.",
+    "complexityBudgets": {
+      "common": {
+        "min": 0,
+        "max": 1,
+        "maxVisualChannels": 1,
+        "maxSecondary": 0,
+        "maxAccents": 1
+      },
+      "uncommon": {
+        "min": 1,
+        "max": 2,
+        "maxVisualChannels": 2,
+        "maxSecondary": 1,
+        "maxAccents": 1
+      },
+      "rare": {
+        "min": 2,
+        "max": 4,
+        "maxVisualChannels": 3,
+        "maxSecondary": 1,
+        "maxAccents": 2
+      },
+      "epic": {
+        "min": 3,
+        "max": 5,
+        "maxVisualChannels": 3,
+        "maxSecondary": 2,
+        "maxAccents": 2
+      }
+    },
+    "channels": {
+      "SURFACE": [
+        "materialTreatment"
+      ],
+      "PATTERN": [
+        "pattern"
+      ],
+      "REGION": [
+        "trim"
+      ],
+      "GRAPHIC": [
+        "motif"
+      ],
+      "ATTACHMENT": [
+        "attachment"
+      ],
+      "HARDWARE": [
+        "hardware"
+      ]
+    },
+    "featureCosts": {
+      "materialTreatment": {
+        "plain": 0,
+        "subtle": 0,
+        "textured": 1,
+        "statement": 2
+      },
+      "pattern": {
+        "solid": 0,
+        "subtle": 0,
+        "stripe": 1,
+        "colorblock": 1,
+        "dense": 2
+      },
+      "trim": {
+        "none": 0,
+        "subtle": 1,
+        "contrast": 1,
+        "wrap": 2
+      },
+      "motif": {
+        "none": 0,
+        "small": 2,
+        "emblem": 2,
+        "large": 3
+      },
+      "attachment": {
+        "none": 0,
+        "small": 1,
+        "large": 2
+      },
+      "hardware": {
+        "none": 0,
+        "small": 1
+      }
+    },
+    "impact": {
+      "high": [
+        "materialTreatment.statement",
+        "pattern.dense",
+        "trim.wrap",
+        "motif.large",
+        "attachment.large"
+      ],
+      "medium": [
+        "materialTreatment.textured",
+        "pattern.stripe",
+        "pattern.colorblock",
+        "trim.contrast",
+        "motif.small",
+        "motif.emblem",
+        "attachment.small"
+      ],
+      "mediumPrefixes": []
+    },
+    "dominantPriority": [
+      "GRAPHIC",
+      "PATTERN",
+      "SURFACE",
+      "REGION",
+      "ATTACHMENT",
+      "HARDWARE"
+    ],
+    "strongConflictRules": [
+      {
+        "id": "dense_pattern_vs_large_motif",
+        "when": {
+          "pattern": "dense"
+        },
+        "disallow": {
+          "motif": [
+            "large"
+          ]
+        },
+        "reason": "two dominant visual systems compete"
+      },
+      {
+        "id": "statement_surface_vs_dense_pattern",
+        "when": {
+          "materialTreatment": "statement"
+        },
+        "disallow": {
+          "pattern": [
+            "dense"
+          ]
+        },
+        "reason": "statement surface needs quieter pattern"
+      },
+      {
+        "id": "large_attachment_vs_large_motif",
+        "when": {
+          "attachment": "large"
+        },
+        "disallow": {
+          "motif": [
+            "large"
+          ]
+        },
+        "reason": "two large focal points compete"
+      },
+      {
+        "id": "wrap_vs_dense_pattern",
+        "when": {
+          "trim": "wrap"
+        },
+        "disallow": {
+          "pattern": [
+            "dense"
+          ]
+        },
+        "reason": "wrap and dense pattern compete for region hierarchy"
+      }
+    ],
+    "semanticRequirements": [
+      {
+        "id": "motif_needs_placement",
+        "axis": "motif",
+        "whenNonNone": true,
+        "requiresNonNone": [
+          "motifPlacement"
+        ]
+      }
+    ],
+    "roleRules": {
+      "BASE": "construction/template geometry and zero-impact treatments",
+      "PRIMARY": "single strongest visual identity",
+      "SECONDARY": "supporting medium/high-impact feature",
+      "ACCENT": "low-impact finishing detail",
+      "rule": "Exactly zero or one PRIMARY; reject competing focal points before visual generation."
+    }
+  },
+  "defaultRecipe": {
+    "materialTreatment": "plain",
+    "pattern": "solid",
+    "trim": "none",
+    "motif": "none",
+    "motifPlacement": "none",
+    "attachment": "none",
+    "hardware": "none"
+  },
+  "vocabulary": {
+    "materialTreatment": [
+      "plain",
+      "subtle",
+      "textured",
+      "statement"
+    ],
+    "pattern": [
+      "solid",
+      "subtle",
+      "stripe",
+      "colorblock",
+      "dense"
+    ],
+    "trim": [
+      "none",
+      "subtle",
+      "contrast",
+      "wrap"
+    ],
+    "motif": [
+      "none",
+      "small",
+      "emblem",
+      "large"
+    ],
+    "motifPlacement": [
+      "none",
+      "front_center",
+      "front_offset",
+      "side",
+      "back_center"
+    ],
+    "attachment": [
+      "none",
+      "small",
+      "large"
+    ],
+    "hardware": [
+      "none",
+      "small"
+    ]
+  }
+}

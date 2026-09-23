@@ -1,0 +1,285 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_shirts_cottagecore_set_turtleneck",
+  "slot": "SHIRT",
+  "category": "Shirts",
+  "family": "catalog_shirts_cottagecore_set_turtleneck",
+  "sourceIdentity": {
+    "pack": "Cottagecore Set",
+    "category": "Shirts",
+    "family": "Turtleneck",
+    "base": "Turtleneck"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Turtleneck",
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Cottagecore Set/Shirts/Turtleneck/shirt.png",
+    "sourceJson": "generator content/[FS] Cottagecore Set/Shirts/Turtleneck/shirt.json",
+    "sourcePngSha256": "a58c36e81a7f9e89d39bb64711e2510695eb2d0718d93c9ccb889cd3fec49c74",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Shirts/Turtleneck/shirt.png",
+      "sourceRect": [
+        0,
+        0,
+        8,
+        8
+      ],
+      "flipX": false,
+      "pixelSha256": "76615a7fa4c204ce3eb8f46c0e2851cd27af8dcceada62ae90203131e97556dd",
+      "alphaSha256": "60857c3843041080ec7e02e45bf3353caabb47c22cbb20f224ffebe1cccf1ac7"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Shirts/Turtleneck/shirt.png",
+      "sourceRect": [
+        0,
+        8,
+        8,
+        8
+      ],
+      "flipX": false,
+      "pixelSha256": "684cb7de744301c80003f74bf23e66e62f4e8671e737f2d5573272ab45d37010",
+      "alphaSha256": "c0b888f7e1901fdd6ef1ce64fc311ef5d97931e7411c7ba576d5e751e1352ea4"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Shirts/Turtleneck/shirt.png",
+      "sourceRect": [
+        0,
+        8,
+        8,
+        8
+      ],
+      "flipX": true,
+      "pixelSha256": "2d8fb0499e605be71ff77ebd2950693714e19728c6e28d5ebb3e9a673c61c0d0",
+      "alphaSha256": "1bc765572681e9b00f8c4ff9f2c709446746911b954ec437c720a94d477334e4"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Shirts/Turtleneck/shirt.png",
+      "sourceRect": [
+        0,
+        16,
+        8,
+        8
+      ],
+      "flipX": false,
+      "pixelSha256": "aa8e767e66b9a99c06eb109da4f1f0c10865fde1f1bbfc3676347c712bc0212d",
+      "alphaSha256": "c36cfb52b7b678f20b210c6a0dfd520067506871cddf260e35d4e07b177c1836"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "neck/chest treatment"
+    },
+    "lower": {
+      "purpose": "hem/lower-body treatment"
+    },
+    "center": {
+      "purpose": "front/back focal design zone"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        3,
+        3
+      ],
+      "top_center": [
+        3,
+        0
+      ],
+      "bottom_center": [
+        3,
+        7
+      ],
+      "left_edge": [
+        0,
+        3
+      ],
+      "right_edge": [
+        7,
+        3
+      ]
+    },
+    "right": {
+      "center": [
+        3,
+        3
+      ],
+      "top_center": [
+        3,
+        0
+      ],
+      "bottom_center": [
+        3,
+        7
+      ],
+      "left_edge": [
+        0,
+        3
+      ],
+      "right_edge": [
+        7,
+        3
+      ]
+    },
+    "left": {
+      "center": [
+        3,
+        3
+      ],
+      "top_center": [
+        3,
+        0
+      ],
+      "bottom_center": [
+        3,
+        7
+      ],
+      "left_edge": [
+        0,
+        3
+      ],
+      "right_edge": [
+        7,
+        3
+      ]
+    },
+    "back": {
+      "center": [
+        3,
+        3
+      ],
+      "top_center": [
+        3,
+        0
+      ],
+      "bottom_center": [
+        3,
+        7
+      ],
+      "left_edge": [
+        0,
+        3
+      ],
+      "right_edge": [
+        7,
+        3
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Cottagecore Set",
+    "sourceName": "Turtleneck",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    8,
+    8
+  ]
+}

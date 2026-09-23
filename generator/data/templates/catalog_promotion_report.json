@@ -1,0 +1,873 @@
+{
+  "schema": "catalog-family-promotion/v1",
+  "sourceCatalog": "source_catalog/MASTER_CATALOG.json",
+  "familyBaseCount": 53,
+  "promotedCount": 47,
+  "deferredCount": 6,
+  "promoted": [
+    {
+      "category": "Hats",
+      "pack": "Alt-Fashion Set",
+      "name": "Beanie",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/Beanie/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/Beanie/hat.json",
+      "family": "catalog_hats_alt_fashion_set_beanie",
+      "template": "catalog_hats_alt_fashion_set_beanie",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "Alt-Fashion Set",
+      "name": "Earmuffs (Horns)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/EarmuffsHorns/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/EarmuffsHorns/hat.json",
+      "family": "catalog_hats_alt_fashion_set_earmuffs_horns",
+      "template": "catalog_hats_alt_fashion_set_earmuffs_horns",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "Alt-Fashion Set",
+      "name": "Headband (Studded)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/HeadbandStudded/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/HeadbandStudded/hat.json",
+      "family": "catalog_hats_alt_fashion_set_headband_studded",
+      "template": "catalog_hats_alt_fashion_set_headband_studded",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "Cottagecore Set",
+      "name": "Beret",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/Beret/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/Beret/hat.json",
+      "family": "catalog_hats_cottagecore_set_beret",
+      "template": "catalog_hats_cottagecore_set_beret",
+      "frameSize": [
+        20,
+        20
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "Cottagecore Set",
+      "name": "Boater Hat",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BoaterHat/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BoaterHat/hat.json",
+      "family": "catalog_hats_cottagecore_set_boater_hat",
+      "template": "catalog_hats_cottagecore_set_boater_hat",
+      "frameSize": [
+        20,
+        20
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "Cottagecore Set",
+      "name": "Headband (Daisies)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HeadbandDaisies/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HeadbandDaisies/hat.json",
+      "family": "catalog_hats_cottagecore_set_headband_daisies",
+      "template": "catalog_hats_cottagecore_set_headband_daisies",
+      "frameSize": [
+        20,
+        20
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "Cottagecore Set",
+      "name": "Headscarf",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/Headscarf/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/Headscarf/hat.json",
+      "family": "catalog_hats_cottagecore_set_headscarf",
+      "template": "catalog_hats_cottagecore_set_headscarf",
+      "frameSize": [
+        20,
+        20
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "Cottagecore Set",
+      "name": "Hood (Mushroom)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HoodMushroom/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HoodMushroom/hat.json",
+      "family": "catalog_hats_cottagecore_set_hood_mushroom",
+      "template": "catalog_hats_cottagecore_set_hood_mushroom",
+      "frameSize": [
+        20,
+        20
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "Cottagecore Set",
+      "name": "Mushroom Hat",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/MushroomHat/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/MushroomHat/hat.json",
+      "family": "catalog_hats_cottagecore_set_mushroom_hat",
+      "template": "catalog_hats_cottagecore_set_mushroom_hat",
+      "frameSize": [
+        20,
+        20
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Beanie",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Beanie/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Beanie/hat.json",
+      "family": "catalog_hats_more_accessories_and_stuff_beanie",
+      "template": "catalog_hats_more_accessories_and_stuff_beanie",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Bows (Double, Small 1)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSmall1/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSmall1/hat.json",
+      "family": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+      "template": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Crown (Diadem 1)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem1/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem1/hat.json",
+      "family": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+      "template": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Earmuffs",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Earmuffs/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Earmuffs/hat.json",
+      "family": "catalog_hats_more_accessories_and_stuff_earmuffs",
+      "template": "catalog_hats_more_accessories_and_stuff_earmuffs",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Garland (Dried 1)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandDried1/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandDried1/hat.json",
+      "family": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+      "template": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Hair Buns",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HairBuns/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HairBuns/hat.json",
+      "family": "catalog_hats_more_accessories_and_stuff_hair_buns",
+      "template": "catalog_hats_more_accessories_and_stuff_hair_buns",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Headband",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Headband/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Headband/hat.json",
+      "family": "catalog_hats_more_accessories_and_stuff_headband",
+      "template": "catalog_hats_more_accessories_and_stuff_headband",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Hood",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Hood/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Hood/hat.json",
+      "family": "catalog_hats_more_accessories_and_stuff_hood",
+      "template": "catalog_hats_more_accessories_and_stuff_hood",
+      "frameSize": [
+        32,
+        32
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Straw Hat",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.json",
+      "family": "catalog_hats_more_accessories_and_stuff_straw_hat",
+      "template": "catalog_hats_more_accessories_and_stuff_straw_hat",
+      "frameSize": [
+        20,
+        20
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Sun Hat",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/SunHat/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/SunHat/hat.json",
+      "family": "catalog_hats_more_accessories_and_stuff_sun_hat",
+      "template": "catalog_hats_more_accessories_and_stuff_sun_hat",
+      "frameSize": [
+        20,
+        20
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Tulip Hat",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHat/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHat/hat.json",
+      "family": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+      "template": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+      "frameSize": [
+        20,
+        20
+      ],
+      "frameSizes": null,
+      "slot": "HEAD"
+    },
+    {
+      "category": "Shirts",
+      "pack": "Alt-Fashion Set",
+      "name": "Bra",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Shirts/Bra/shirt.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Shirts/Bra/shirt.json",
+      "family": "catalog_shirts_alt_fashion_set_bra",
+      "template": "catalog_shirts_alt_fashion_set_bra",
+      "frameSize": [
+        8,
+        8
+      ],
+      "frameSizes": null,
+      "slot": "SHIRT"
+    },
+    {
+      "category": "Shirts",
+      "pack": "Alt-Fashion Set",
+      "name": "Bustier (Crop)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Shirts/BustierCrop/shirt.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Shirts/BustierCrop/shirt.json",
+      "family": "catalog_shirts_alt_fashion_set_bustier_crop",
+      "template": "catalog_shirts_alt_fashion_set_bustier_crop",
+      "frameSize": [
+        8,
+        8
+      ],
+      "frameSizes": null,
+      "slot": "SHIRT"
+    },
+    {
+      "category": "Shirts",
+      "pack": "Alt-Fashion Set",
+      "name": "Jacket",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Shirts/Jacket/shirt.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Shirts/Jacket/shirt.json",
+      "family": "catalog_shirts_alt_fashion_set_jacket",
+      "template": "catalog_shirts_alt_fashion_set_jacket",
+      "frameSize": [
+        8,
+        8
+      ],
+      "frameSizes": null,
+      "slot": "SHIRT"
+    },
+    {
+      "category": "Shirts",
+      "pack": "Alt-Fashion Set",
+      "name": "Top",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Shirts/Top/shirt.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Shirts/Top/shirt.json",
+      "family": "catalog_shirts_alt_fashion_set_top",
+      "template": "catalog_shirts_alt_fashion_set_top",
+      "frameSize": [
+        8,
+        8
+      ],
+      "frameSizes": null,
+      "slot": "SHIRT"
+    },
+    {
+      "category": "Shirts",
+      "pack": "Cottagecore Set",
+      "name": "Blouse",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Shirts/Blouse/shirt.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Shirts/Blouse/shirt.json",
+      "family": "catalog_shirts_cottagecore_set_blouse",
+      "template": "catalog_shirts_cottagecore_set_blouse",
+      "frameSize": [
+        8,
+        8
+      ],
+      "frameSizes": null,
+      "slot": "SHIRT"
+    },
+    {
+      "category": "Shirts",
+      "pack": "Cottagecore Set",
+      "name": "Top (Off Shoulder)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Shirts/TopOffShoulder/shirt.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Shirts/TopOffShoulder/shirt.json",
+      "family": "catalog_shirts_cottagecore_set_top_off_shoulder",
+      "template": "catalog_shirts_cottagecore_set_top_off_shoulder",
+      "frameSize": [
+        8,
+        8
+      ],
+      "frameSizes": null,
+      "slot": "SHIRT"
+    },
+    {
+      "category": "Shirts",
+      "pack": "Cottagecore Set",
+      "name": "Turtleneck",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Shirts/Turtleneck/shirt.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Shirts/Turtleneck/shirt.json",
+      "family": "catalog_shirts_cottagecore_set_turtleneck",
+      "template": "catalog_shirts_cottagecore_set_turtleneck",
+      "frameSize": [
+        8,
+        8
+      ],
+      "frameSizes": null,
+      "slot": "SHIRT"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Alt-Fashion Set",
+      "name": "Bag (Backpack, Heart)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Accessories/BagBackpackHeart/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Accessories/BagBackpackHeart/accessory.json",
+      "family": "catalog_accessories_alt_fashion_set_bag_backpack_heart",
+      "template": "catalog_accessories_alt_fashion_set_bag_backpack_heart",
+      "frameSize": null,
+      "frameSizes": {
+        "front": [
+          16,
+          32
+        ],
+        "right": [
+          32,
+          32
+        ],
+        "left": [
+          32,
+          32
+        ],
+        "back": [
+          16,
+          32
+        ]
+      },
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Alt-Fashion Set",
+      "name": "Belt",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Accessories/Belt/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Accessories/Belt/accessory.json",
+      "family": "catalog_accessories_alt_fashion_set_belt",
+      "template": "catalog_accessories_alt_fashion_set_belt",
+      "frameSize": [
+        16,
+        32
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Alt-Fashion Set",
+      "name": "Choker",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Accessories/Choker/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Accessories/Choker/accessory.json",
+      "family": "catalog_accessories_alt_fashion_set_choker",
+      "template": "catalog_accessories_alt_fashion_set_choker",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Alt-Fashion Set",
+      "name": "Corset (Waist)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Accessories/CorsetWaist/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Accessories/CorsetWaist/accessory.json",
+      "family": "catalog_accessories_alt_fashion_set_corset_waist",
+      "template": "catalog_accessories_alt_fashion_set_corset_waist",
+      "frameSize": [
+        16,
+        32
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Alt-Fashion Set",
+      "name": "Earrings (Studs)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Accessories/EarringsStuds/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Accessories/EarringsStuds/accessory.json",
+      "family": "catalog_accessories_alt_fashion_set_earrings_studs",
+      "template": "catalog_accessories_alt_fashion_set_earrings_studs",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Alt-Fashion Set",
+      "name": "Harness (Chest)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Accessories/HarnessChest/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Accessories/HarnessChest/accessory.json",
+      "family": "catalog_accessories_alt_fashion_set_harness_chest",
+      "template": "catalog_accessories_alt_fashion_set_harness_chest",
+      "frameSize": [
+        16,
+        32
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Alt-Fashion Set",
+      "name": "Make-Up (Lipgloss)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Accessories/MakeUpLipgloss/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Accessories/MakeUpLipgloss/accessory.json",
+      "family": "catalog_accessories_alt_fashion_set_make_up_lipgloss",
+      "template": "catalog_accessories_alt_fashion_set_make_up_lipgloss",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Cottagecore Set",
+      "name": "Bag (Shoulder 1)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/BagShoulder1/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/BagShoulder1/accessory.json",
+      "family": "catalog_accessories_cottagecore_set_bag_shoulder_1",
+      "template": "catalog_accessories_cottagecore_set_bag_shoulder_1",
+      "frameSize": null,
+      "frameSizes": {
+        "front": [
+          16,
+          32
+        ],
+        "right": [
+          32,
+          32
+        ],
+        "left": [
+          32,
+          32
+        ],
+        "back": [
+          16,
+          32
+        ]
+      },
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Cottagecore Set",
+      "name": "Corset (Under Bust)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/CorsetUnderBust/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/CorsetUnderBust/accessory.json",
+      "family": "catalog_accessories_cottagecore_set_corset_under_bust",
+      "template": "catalog_accessories_cottagecore_set_corset_under_bust",
+      "frameSize": [
+        16,
+        32
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Cottagecore Set",
+      "name": "Neckerchief (2)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/Neckerchief2/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/Neckerchief2/accessory.json",
+      "family": "catalog_accessories_cottagecore_set_neckerchief_2",
+      "template": "catalog_accessories_cottagecore_set_neckerchief_2",
+      "frameSize": null,
+      "frameSizes": {
+        "front": [
+          16,
+          32
+        ],
+        "right": [
+          32,
+          32
+        ],
+        "left": [
+          32,
+          32
+        ],
+        "back": [
+          16,
+          32
+        ]
+      },
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Cottagecore Set",
+      "name": "Overalls",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/Overalls/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/Overalls/accessory.json",
+      "family": "catalog_accessories_cottagecore_set_overalls",
+      "template": "catalog_accessories_cottagecore_set_overalls",
+      "frameSize": [
+        16,
+        32
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Cottagecore Set",
+      "name": "Shawl (3)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/Shawl3/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/Shawl3/accessory.json",
+      "family": "catalog_accessories_cottagecore_set_shawl_3",
+      "template": "catalog_accessories_cottagecore_set_shawl_3",
+      "frameSize": [
+        16,
+        32
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Cottagecore Set",
+      "name": "Suspenders",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/Suspenders/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/Suspenders/accessory.json",
+      "family": "catalog_accessories_cottagecore_set_suspenders",
+      "template": "catalog_accessories_cottagecore_set_suspenders",
+      "frameSize": [
+        16,
+        32
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Cottagecore Set",
+      "name": "Vest",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/Vest/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/Vest/accessory.json",
+      "family": "catalog_accessories_cottagecore_set_vest",
+      "template": "catalog_accessories_cottagecore_set_vest",
+      "frameSize": [
+        16,
+        32
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "Cottagecore Set",
+      "name": "Waistband",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/Waistband/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Accessories/Waistband/accessory.json",
+      "family": "catalog_accessories_cottagecore_set_waistband",
+      "template": "catalog_accessories_cottagecore_set_waistband",
+      "frameSize": [
+        16,
+        32
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "More Accessories and Stuff",
+      "name": "Collar",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/Collar/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/Collar/accessory.json",
+      "family": "catalog_accessories_more_accessories_and_stuff_collar",
+      "template": "catalog_accessories_more_accessories_and_stuff_collar",
+      "frameSize": null,
+      "frameSizes": {
+        "front": [
+          16,
+          32
+        ],
+        "right": [
+          32,
+          32
+        ],
+        "left": [
+          32,
+          32
+        ],
+        "back": [
+          16,
+          32
+        ]
+      },
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "More Accessories and Stuff",
+      "name": "Earrings (Studs)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/EarringsStuds/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/EarringsStuds/accessory.json",
+      "family": "catalog_accessories_more_accessories_and_stuff_earrings_studs",
+      "template": "catalog_accessories_more_accessories_and_stuff_earrings_studs",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "More Accessories and Stuff",
+      "name": "Glasses (Half)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/GlassesHalf/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/GlassesHalf/accessory.json",
+      "family": "catalog_accessories_more_accessories_and_stuff_glasses_half",
+      "template": "catalog_accessories_more_accessories_and_stuff_glasses_half",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "More Accessories and Stuff",
+      "name": "Make-Up (Lipgloss)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/MakeUpLipgloss/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/MakeUpLipgloss/accessory.json",
+      "family": "catalog_accessories_more_accessories_and_stuff_make_up_lipgloss",
+      "template": "catalog_accessories_more_accessories_and_stuff_make_up_lipgloss",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    },
+    {
+      "category": "Accessories",
+      "pack": "More Accessories and Stuff",
+      "name": "Mask",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/Mask/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/Mask/accessory.json",
+      "family": "catalog_accessories_more_accessories_and_stuff_mask",
+      "template": "catalog_accessories_more_accessories_and_stuff_mask",
+      "frameSize": [
+        16,
+        16
+      ],
+      "frameSizes": null,
+      "slot": "ACCESSORY"
+    }
+  ],
+  "deferred": [
+    {
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Bow (Side 1)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowSide1/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowSide1/hat.json",
+      "reason": "missing_cardinal:left"
+    },
+    {
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Decorative Bells (Singles)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/DecorativeBellsSingles/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/DecorativeBellsSingles/hat.json",
+      "reason": "animated_or_stateful"
+    },
+    {
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Veil",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Veil/hat.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Veil/hat.json",
+      "reason": "animated_or_stateful"
+    },
+    {
+      "category": "Sleeves",
+      "pack": "Cottagecore Set",
+      "name": "Puffy Sleeves",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Sleeves/PuffySleeves/sleeves.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Sleeves/PuffySleeves/sleeves.json",
+      "reason": "category_requires_specialized_adapter"
+    },
+    {
+      "category": "Accessories",
+      "pack": "More Accessories and Stuff",
+      "name": "Cape",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/Cape/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/Cape/accessory.json",
+      "reason": "animated_or_stateful"
+    },
+    {
+      "category": "Accessories",
+      "pack": "More Accessories and Stuff",
+      "name": "Plumbob (Animated)",
+      "author": "plurffle",
+      "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/PlumbobAnimated/accessory.png",
+      "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/PlumbobAnimated/accessory.json",
+      "reason": "animated_or_stateful"
+    }
+  ]
+}

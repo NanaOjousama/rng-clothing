@@ -1,0 +1,334 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_hats_cottagecore_set_headband_daisies",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "catalog_hats_cottagecore_set_headband_daisies",
+  "sourceIdentity": {
+    "pack": "Cottagecore Set",
+    "category": "Hats",
+    "family": "Headband",
+    "base": "Headband (Daisies)"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Headband (Daisies)",
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Cottagecore Set/Hats/HeadbandDaisies/hat.png",
+    "sourceJson": "generator content/[FS] Cottagecore Set/Hats/HeadbandDaisies/hat.json",
+    "sourcePngSha256": "d357394011c0672cd74b4904044cb65c5c5199ea9402642f8db903bc9cb61d9d",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/HeadbandDaisies/hat.png",
+      "sourceRect": [
+        0,
+        0,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "d7dcaa0c8eb1b050a0ca31535eaaf68401d6dd0091b71b20abe34ce3c9f26331",
+      "alphaSha256": "81ec4dfc3b3c8fb9e14221fb6e2e816b90da5b90f52cc4f1b7bdf897dcc02268"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/HeadbandDaisies/hat.png",
+      "sourceRect": [
+        0,
+        20,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "3b55bcdcdd0484b901b4a3f87941bc4d3fb362fb2c0c620aabecbb280f9f33ed",
+      "alphaSha256": "ba737cb01def2505c9c50916dce7d42ff56c9e059e752db5c33842a7d8941d23"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/HeadbandDaisies/hat.png",
+      "sourceRect": [
+        0,
+        20,
+        20,
+        20
+      ],
+      "flipX": true,
+      "pixelSha256": "5de798a5f934991ec27fb7efec50a90deec2ea6649fe66a5ae8eafd366b91384",
+      "alphaSha256": "ee143560ea5a5fc27b75fcc0f5256a11ba0eb2415d9a5c6e5834b9d59640714b"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/HeadbandDaisies/hat.png",
+      "sourceRect": [
+        0,
+        40,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "e61f41d57db208c5f92a35c4ce7198570924a3fc87eeba83441fceee5d6a2865",
+      "alphaSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "crown": {
+      "purpose": "upper hat treatment"
+    },
+    "band": {
+      "purpose": "lower/cuff treatment"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        9,
+        9
+      ],
+      "top_center": [
+        9,
+        7
+      ],
+      "bottom_center": [
+        9,
+        12
+      ],
+      "left_edge": [
+        4,
+        9
+      ],
+      "right_edge": [
+        15,
+        9
+      ],
+      "crown_center": [
+        9,
+        9
+      ],
+      "band_center": [
+        9,
+        11
+      ],
+      "attachment_edge": [
+        15,
+        7
+      ]
+    },
+    "right": {
+      "center": [
+        9,
+        9
+      ],
+      "top_center": [
+        9,
+        5
+      ],
+      "bottom_center": [
+        9,
+        13
+      ],
+      "left_edge": [
+        6,
+        9
+      ],
+      "right_edge": [
+        12,
+        9
+      ],
+      "crown_center": [
+        9,
+        8
+      ],
+      "band_center": [
+        9,
+        11
+      ],
+      "attachment_edge": [
+        12,
+        5
+      ]
+    },
+    "left": {
+      "center": [
+        10,
+        9
+      ],
+      "top_center": [
+        10,
+        5
+      ],
+      "bottom_center": [
+        10,
+        13
+      ],
+      "left_edge": [
+        7,
+        9
+      ],
+      "right_edge": [
+        13,
+        9
+      ],
+      "crown_center": [
+        10,
+        8
+      ],
+      "band_center": [
+        10,
+        11
+      ],
+      "attachment_edge": [
+        13,
+        5
+      ]
+    },
+    "back": {
+      "center": [
+        9,
+        9
+      ],
+      "top_center": [
+        9,
+        0
+      ],
+      "bottom_center": [
+        9,
+        19
+      ],
+      "left_edge": [
+        0,
+        9
+      ],
+      "right_edge": [
+        19,
+        9
+      ],
+      "crown_center": [
+        9,
+        7
+      ],
+      "band_center": [
+        9,
+        15
+      ],
+      "attachment_edge": [
+        19,
+        0
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Cottagecore Set",
+    "sourceName": "Headband (Daisies)",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    20,
+    20
+  ]
+}

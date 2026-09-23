@@ -7,6 +7,335 @@
       "policyFile": "generator/data/headwear/slouch_beanie_roll_matrix.json",
       "status": "ACTIVE",
       "axes": 16
+    },
+    "catalog_hats_alt_fashion_set_beanie": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_alt_fashion_set_beanie.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_alt_fashion_set_beanie",
+      "category": "Hats"
+    },
+    "catalog_hats_alt_fashion_set_earmuffs_horns": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_alt_fashion_set_earmuffs_horns.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_alt_fashion_set_earmuffs_horns",
+      "category": "Hats"
+    },
+    "catalog_hats_alt_fashion_set_headband_studded": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_alt_fashion_set_headband_studded.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_alt_fashion_set_headband_studded",
+      "category": "Hats"
+    },
+    "catalog_hats_cottagecore_set_beret": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_cottagecore_set_beret.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_cottagecore_set_beret",
+      "category": "Hats"
+    },
+    "catalog_hats_cottagecore_set_boater_hat": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_cottagecore_set_boater_hat.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_cottagecore_set_boater_hat",
+      "category": "Hats"
+    },
+    "catalog_hats_cottagecore_set_headband_daisies": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_cottagecore_set_headband_daisies.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_cottagecore_set_headband_daisies",
+      "category": "Hats"
+    },
+    "catalog_hats_cottagecore_set_headscarf": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_cottagecore_set_headscarf.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_cottagecore_set_headscarf",
+      "category": "Hats"
+    },
+    "catalog_hats_cottagecore_set_hood_mushroom": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_cottagecore_set_hood_mushroom.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_cottagecore_set_hood_mushroom",
+      "category": "Hats"
+    },
+    "catalog_hats_cottagecore_set_mushroom_hat": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_cottagecore_set_mushroom_hat.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_cottagecore_set_mushroom_hat",
+      "category": "Hats"
+    },
+    "catalog_hats_more_accessories_and_stuff_beanie": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_more_accessories_and_stuff_beanie.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_more_accessories_and_stuff_beanie",
+      "category": "Hats"
+    },
+    "catalog_hats_more_accessories_and_stuff_bows_double_small_1": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_more_accessories_and_stuff_bows_double_small_1.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+      "category": "Hats"
+    },
+    "catalog_hats_more_accessories_and_stuff_crown_diadem_1": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_more_accessories_and_stuff_crown_diadem_1.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+      "category": "Hats"
+    },
+    "catalog_hats_more_accessories_and_stuff_earmuffs": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_more_accessories_and_stuff_earmuffs.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_more_accessories_and_stuff_earmuffs",
+      "category": "Hats"
+    },
+    "catalog_hats_more_accessories_and_stuff_garland_dried_1": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_more_accessories_and_stuff_garland_dried_1.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+      "category": "Hats"
+    },
+    "catalog_hats_more_accessories_and_stuff_hair_buns": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_more_accessories_and_stuff_hair_buns.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_more_accessories_and_stuff_hair_buns",
+      "category": "Hats"
+    },
+    "catalog_hats_more_accessories_and_stuff_headband": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_more_accessories_and_stuff_headband.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_more_accessories_and_stuff_headband",
+      "category": "Hats"
+    },
+    "catalog_hats_more_accessories_and_stuff_hood": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_more_accessories_and_stuff_hood.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_more_accessories_and_stuff_hood",
+      "category": "Hats"
+    },
+    "catalog_hats_more_accessories_and_stuff_straw_hat": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_more_accessories_and_stuff_straw_hat.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_more_accessories_and_stuff_straw_hat",
+      "category": "Hats"
+    },
+    "catalog_hats_more_accessories_and_stuff_sun_hat": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_more_accessories_and_stuff_sun_hat.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_more_accessories_and_stuff_sun_hat",
+      "category": "Hats"
+    },
+    "catalog_hats_more_accessories_and_stuff_tulip_hat": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_hats_more_accessories_and_stuff_tulip_hat.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+      "category": "Hats"
+    },
+    "catalog_shirts_alt_fashion_set_bra": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_shirts_alt_fashion_set_bra.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_shirts_alt_fashion_set_bra",
+      "category": "Shirts"
+    },
+    "catalog_shirts_alt_fashion_set_bustier_crop": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_shirts_alt_fashion_set_bustier_crop.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_shirts_alt_fashion_set_bustier_crop",
+      "category": "Shirts"
+    },
+    "catalog_shirts_alt_fashion_set_jacket": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_shirts_alt_fashion_set_jacket.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_shirts_alt_fashion_set_jacket",
+      "category": "Shirts"
+    },
+    "catalog_shirts_alt_fashion_set_top": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_shirts_alt_fashion_set_top.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_shirts_alt_fashion_set_top",
+      "category": "Shirts"
+    },
+    "catalog_shirts_cottagecore_set_blouse": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_shirts_cottagecore_set_blouse.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_shirts_cottagecore_set_blouse",
+      "category": "Shirts"
+    },
+    "catalog_shirts_cottagecore_set_top_off_shoulder": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_shirts_cottagecore_set_top_off_shoulder.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_shirts_cottagecore_set_top_off_shoulder",
+      "category": "Shirts"
+    },
+    "catalog_shirts_cottagecore_set_turtleneck": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_shirts_cottagecore_set_turtleneck.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_shirts_cottagecore_set_turtleneck",
+      "category": "Shirts"
+    },
+    "catalog_accessories_alt_fashion_set_bag_backpack_heart": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_alt_fashion_set_bag_backpack_heart.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_alt_fashion_set_bag_backpack_heart",
+      "category": "Accessories"
+    },
+    "catalog_accessories_alt_fashion_set_belt": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_alt_fashion_set_belt.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_alt_fashion_set_belt",
+      "category": "Accessories"
+    },
+    "catalog_accessories_alt_fashion_set_choker": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_alt_fashion_set_choker.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_alt_fashion_set_choker",
+      "category": "Accessories"
+    },
+    "catalog_accessories_alt_fashion_set_corset_waist": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_alt_fashion_set_corset_waist.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_alt_fashion_set_corset_waist",
+      "category": "Accessories"
+    },
+    "catalog_accessories_alt_fashion_set_earrings_studs": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_alt_fashion_set_earrings_studs.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_alt_fashion_set_earrings_studs",
+      "category": "Accessories"
+    },
+    "catalog_accessories_alt_fashion_set_harness_chest": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_alt_fashion_set_harness_chest.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_alt_fashion_set_harness_chest",
+      "category": "Accessories"
+    },
+    "catalog_accessories_alt_fashion_set_make_up_lipgloss": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_alt_fashion_set_make_up_lipgloss.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_alt_fashion_set_make_up_lipgloss",
+      "category": "Accessories"
+    },
+    "catalog_accessories_cottagecore_set_bag_shoulder_1": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_cottagecore_set_bag_shoulder_1.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_cottagecore_set_bag_shoulder_1",
+      "category": "Accessories"
+    },
+    "catalog_accessories_cottagecore_set_corset_under_bust": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_cottagecore_set_corset_under_bust.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_cottagecore_set_corset_under_bust",
+      "category": "Accessories"
+    },
+    "catalog_accessories_cottagecore_set_neckerchief_2": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_cottagecore_set_neckerchief_2.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_cottagecore_set_neckerchief_2",
+      "category": "Accessories"
+    },
+    "catalog_accessories_cottagecore_set_overalls": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_cottagecore_set_overalls.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_cottagecore_set_overalls",
+      "category": "Accessories"
+    },
+    "catalog_accessories_cottagecore_set_shawl_3": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_cottagecore_set_shawl_3.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_cottagecore_set_shawl_3",
+      "category": "Accessories"
+    },
+    "catalog_accessories_cottagecore_set_suspenders": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_cottagecore_set_suspenders.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_cottagecore_set_suspenders",
+      "category": "Accessories"
+    },
+    "catalog_accessories_cottagecore_set_vest": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_cottagecore_set_vest.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_cottagecore_set_vest",
+      "category": "Accessories"
+    },
+    "catalog_accessories_cottagecore_set_waistband": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_cottagecore_set_waistband.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_cottagecore_set_waistband",
+      "category": "Accessories"
+    },
+    "catalog_accessories_more_accessories_and_stuff_collar": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_more_accessories_and_stuff_collar.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_more_accessories_and_stuff_collar",
+      "category": "Accessories"
+    },
+    "catalog_accessories_more_accessories_and_stuff_earrings_studs": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_more_accessories_and_stuff_earrings_studs.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_more_accessories_and_stuff_earrings_studs",
+      "category": "Accessories"
+    },
+    "catalog_accessories_more_accessories_and_stuff_glasses_half": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_more_accessories_and_stuff_glasses_half.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_more_accessories_and_stuff_glasses_half",
+      "category": "Accessories"
+    },
+    "catalog_accessories_more_accessories_and_stuff_make_up_lipgloss": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_more_accessories_and_stuff_make_up_lipgloss.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_more_accessories_and_stuff_make_up_lipgloss",
+      "category": "Accessories"
+    },
+    "catalog_accessories_more_accessories_and_stuff_mask": {
+      "policyFile": "generator/data/taste_policies/catalog/catalog_accessories_more_accessories_and_stuff_mask.json",
+      "status": "ACTIVE",
+      "origin": "catalog-promoter",
+      "template": "catalog_accessories_more_accessories_and_stuff_mask",
+      "category": "Accessories"
     }
   },
   "futureFamilyContract": {

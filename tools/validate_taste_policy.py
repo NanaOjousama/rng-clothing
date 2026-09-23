@@ -50,7 +50,7 @@ def main():
     templates=json.loads((ROOT/registry["templateRegistry"]).read_text())
     active_families=set()
     for entry in templates["templates"].values():
-        if entry.get("status") in {"QC_READY","ACTIVE","PRODUCTION"}:
+        if entry.get("status") in {"CANDIDATE_READY","QC_READY","ACTIVE","PRODUCTION"}:
             active_families.add(entry["family"])
     registered=set()
     for name,entry in registry["families"].items():

@@ -4,6 +4,10 @@
 
 `generator/taste_policy.py` is the generator-wide semantic taste gate. Garment families opt in through `generator/data/taste_policy_registry.json` and provide family-specific `rarityRules` + `tastePolicy` data. The shared engine enforces four layers before visual generation: hard rarity floors, complexity budgets, incompatibility/conflict rules, and design-role/visual-channel control. Rarity means more distinctive, not more cluttered. Validate with `python3 tools/validate_taste_policy.py`.
 
+## Catalog-backed template promotion
+
+`tools/promote_catalog_families.py` promotes suitable `FAMILY_BASE` entries from `source_catalog/MASTER_CATALOG.json` into formal source-backed template contracts. Contracts reference exact rectangles in the local `generator content` source sheets, preserve source-declared mirroring/per-view sizes/wear offsets, and hash extracted pixels/alpha without copying third-party PNGs into Git. Each promoted family receives its own registered taste policy. `generator/catalog_templates.py` exposes template loading, family taste evaluation, and donor discovery through `SOURCE_TRANSFER_LIBRARY.json`. Validate with `python3 tools/validate_catalog_template_promotions.py`.
+
 The project contains deterministic, dependency-free Python generation tools. V1/V2 export native Stardew shirts. V3 is an optional Fashion Sense 7.5.0 content-pack backend and does not replace them.
 
 ## Rarity renderer routing

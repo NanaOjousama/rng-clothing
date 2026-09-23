@@ -1,0 +1,301 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_accessories_more_accessories_and_stuff_glasses_half",
+  "slot": "ACCESSORY",
+  "category": "Accessories",
+  "family": "catalog_accessories_more_accessories_and_stuff_glasses_half",
+  "sourceIdentity": {
+    "pack": "More Accessories and Stuff",
+    "category": "Accessories",
+    "family": "Glasses",
+    "base": "Glasses (Half)"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Glasses (Half)",
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] More Accessories and Stuff Pack/Accessories/GlassesHalf/accessory.png",
+    "sourceJson": "generator content/[FS] More Accessories and Stuff Pack/Accessories/GlassesHalf/accessory.json",
+    "sourcePngSha256": "5711aad75a0480a64dab14d1cf88b54a5a9a9f288988370a0a389b6607ae027a",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/GlassesHalf/accessory.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "21871ed685355dd203446142c42d0043a0329d4b07d6a8bae6dc896f300dd5af",
+      "alphaSha256": "2f064aeede8ddd9c5871485c5624f17709a7e8313521c121aa12882c71f7d48a"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/GlassesHalf/accessory.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "f0396e1fb5c4f3b728c956b07fe7fb191422f3f4aecef6edcaf86858057f8f99",
+      "alphaSha256": "291b81d36775e142ddc240624b8132973ce95c57cb0e5944ccb49e46787c93ee"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/GlassesHalf/accessory.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": true,
+      "pixelSha256": "f9579da2aa7040a877b2a532dab8877ac3fd633c1eea280b07e902dee751391c",
+      "alphaSha256": "e3ae383ac187b98274accabd99dd76808b5e9ce4b1b583a7c57f151dab33cce5"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/GlassesHalf/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "alphaSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "upper accessory zone"
+    },
+    "lower": {
+      "purpose": "lower accessory zone"
+    },
+    "side": {
+      "purpose": "side-localized accessory zone"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        11
+      ],
+      "top_center": [
+        7,
+        10
+      ],
+      "bottom_center": [
+        7,
+        12
+      ],
+      "left_edge": [
+        3,
+        11
+      ],
+      "right_edge": [
+        12,
+        11
+      ]
+    },
+    "right": {
+      "center": [
+        7,
+        10
+      ],
+      "top_center": [
+        7,
+        9
+      ],
+      "bottom_center": [
+        7,
+        11
+      ],
+      "left_edge": [
+        3,
+        10
+      ],
+      "right_edge": [
+        11,
+        10
+      ]
+    },
+    "left": {
+      "center": [
+        8,
+        10
+      ],
+      "top_center": [
+        8,
+        9
+      ],
+      "bottom_center": [
+        8,
+        11
+      ],
+      "left_edge": [
+        4,
+        10
+      ],
+      "right_edge": [
+        12,
+        10
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        7
+      ],
+      "top_center": [
+        7,
+        0
+      ],
+      "bottom_center": [
+        7,
+        15
+      ],
+      "left_edge": [
+        0,
+        7
+      ],
+      "right_edge": [
+        15,
+        7
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "DrawOrderOverride": {
+          "Preposition": "After",
+          "AppearanceType": "Player"
+        }
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "DrawOrderOverride": {
+          "Preposition": "After",
+          "AppearanceType": "Player"
+        }
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true,
+        "DrawOrderOverride": {
+          "Preposition": "After",
+          "AppearanceType": "Player"
+        }
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "More Accessories and Stuff",
+    "sourceName": "Glasses (Half)",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    16,
+    16
+  ]
+}

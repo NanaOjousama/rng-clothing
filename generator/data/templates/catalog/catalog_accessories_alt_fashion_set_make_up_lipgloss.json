@@ -1,0 +1,289 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_accessories_alt_fashion_set_make_up_lipgloss",
+  "slot": "ACCESSORY",
+  "category": "Accessories",
+  "family": "catalog_accessories_alt_fashion_set_make_up_lipgloss",
+  "sourceIdentity": {
+    "pack": "Alt-Fashion Set",
+    "category": "Accessories",
+    "family": "MakeUp",
+    "base": "Make-Up (Lipgloss)"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Make-Up (Lipgloss)",
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Alt-Fashion Set/Accessories/MakeUpLipgloss/accessory.png",
+    "sourceJson": "generator content/[FS] Alt-Fashion Set/Accessories/MakeUpLipgloss/accessory.json",
+    "sourcePngSha256": "4fd734b9f2c43a119718c5d1fceaee7c70ed69e4bcf3191da69835cd201bc482",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/MakeUpLipgloss/accessory.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "829a1f409392d8d50715470252619f49325910d3770454eb93ad034f861141d8",
+      "alphaSha256": "62697c212fb06a9b7d3ef225d44e3fca0b8c886988c0fce5e9fdb54d417c575b"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/MakeUpLipgloss/accessory.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "ee7f223326ca6db8699454e6896c706481685bd383fec468c7a1893ac741a73c",
+      "alphaSha256": "ae8032101af3a15606a42646b06e8d8f2bc4e742b9cbd86c57e17c9be066b0ee"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/MakeUpLipgloss/accessory.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": true,
+      "pixelSha256": "5931e06bb4f8bdeb2dcd18a9cf09e506ce8e6d3f45b0b9ad349d2337e9b2e9ed",
+      "alphaSha256": "9e14d947fc0f268b67f7d32e7dd03ce51fa8a3b944feeb8a1fb2510f110deb48"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/MakeUpLipgloss/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "alphaSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "upper accessory zone"
+    },
+    "lower": {
+      "purpose": "lower accessory zone"
+    },
+    "side": {
+      "purpose": "side-localized accessory zone"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        12
+      ],
+      "top_center": [
+        7,
+        12
+      ],
+      "bottom_center": [
+        7,
+        12
+      ],
+      "left_edge": [
+        7,
+        12
+      ],
+      "right_edge": [
+        8,
+        12
+      ]
+    },
+    "right": {
+      "center": [
+        9,
+        12
+      ],
+      "top_center": [
+        9,
+        12
+      ],
+      "bottom_center": [
+        9,
+        12
+      ],
+      "left_edge": [
+        9,
+        12
+      ],
+      "right_edge": [
+        10,
+        12
+      ]
+    },
+    "left": {
+      "center": [
+        5,
+        12
+      ],
+      "top_center": [
+        5,
+        12
+      ],
+      "bottom_center": [
+        5,
+        12
+      ],
+      "left_edge": [
+        5,
+        12
+      ],
+      "right_edge": [
+        6,
+        12
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        7
+      ],
+      "top_center": [
+        7,
+        0
+      ],
+      "bottom_center": [
+        7,
+        15
+      ],
+      "left_edge": [
+        0,
+        7
+      ],
+      "right_edge": [
+        15,
+        7
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Alt-Fashion Set",
+    "sourceName": "Make-Up (Lipgloss)",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    16,
+    16
+  ]
+}

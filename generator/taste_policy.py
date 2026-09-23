@@ -88,6 +88,9 @@ def _rarity_floor_errors(
         allowed = rules.get(field)
         if allowed is not None and recipe.get(axis) not in allowed:
             errors.append(f"rarity_disallows:{axis}={recipe.get(axis)}")
+    for axis, allowed in rules.get('allowedValues', {}).items():
+        if recipe.get(axis) not in allowed:
+            errors.append(f"rarity_disallows:{axis}={recipe.get(axis)}")
 
     rank = RARITY_RANK[rarity]
     motif_floor = floors.get("motif_non_none")
@@ -109,6 +112,14 @@ def _rarity_floor_errors(
     if pattern in floors and isinstance(floors[pattern], str):
         if rank < RARITY_RANK[floors[pattern]]:
             errors.append(f"rarity_floor:pattern.{pattern}")
+    for rule in family_policy['rarityRules'].get('minimumRarityRules', []):
+        axis=rule['axis']; value=recipe.get(axis); active=False
+        if rule.get('nonNone'):
+            active=value not in (None,'none')
+        if 'values' in rule:
+            active=value in rule['values']
+        if active and rank < RARITY_RANK[rule['minimum']]:
+            errors.append(f"rarity_floor:{axis}.{value}")
 
     distinctive = rules.get("distinctiveFeatureRule", {}).get("requireAny", {})
     if distinctive and not any(recipe.get(a) in values for a, values in distinctive.items()):

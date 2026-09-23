@@ -1,0 +1,346 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+  "sourceIdentity": {
+    "pack": "More Accessories and Stuff",
+    "category": "Hats",
+    "family": "TulipHat",
+    "base": "Tulip Hat"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Tulip Hat",
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHat/hat.png",
+    "sourceJson": "generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHat/hat.json",
+    "sourcePngSha256": "d3b293c4f98f03bf05c3c189ba090d5234ebf878c2745e47be9213b72e734b0b",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHat/hat.png",
+      "sourceRect": [
+        0,
+        0,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "504ac6b13243d98bb70c5b5e0d997196889fa31e67466f50b252f795b3f5570e",
+      "alphaSha256": "aba660ea620ac30918e43ddb9591fb43105d8e16f97ec1c128aed5c178282c8a"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHat/hat.png",
+      "sourceRect": [
+        0,
+        20,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "c2612be846697708d52f30bb76ad78ae354c4b170ac63543dd760e1614ef073e",
+      "alphaSha256": "3beb7e9af77b81040c8980a6b6df2746e80553a49b9733ec169db97c016e69c8"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHat/hat.png",
+      "sourceRect": [
+        0,
+        20,
+        20,
+        20
+      ],
+      "flipX": true,
+      "pixelSha256": "913f5045df0e27f09ffb239743d49b91d5f163dc0493920836fb8cac9b72950e",
+      "alphaSha256": "0d4c61a57112035e47d731ab447f0e1450918032e91a6722d0390c12e110f1ff"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHat/hat.png",
+      "sourceRect": [
+        0,
+        40,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "245b8cc9f985b6d03ee3faa4ea712f91018c0d5029e11c81665819778066d3ed",
+      "alphaSha256": "607093dc95e1aff48559fb1d8d0b3658a6540f353680d3b92b7bad8ccbf9ef4b"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "crown": {
+      "purpose": "upper hat treatment"
+    },
+    "band": {
+      "purpose": "lower/cuff treatment"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        9,
+        8
+      ],
+      "top_center": [
+        9,
+        4
+      ],
+      "bottom_center": [
+        9,
+        13
+      ],
+      "left_edge": [
+        2,
+        8
+      ],
+      "right_edge": [
+        17,
+        8
+      ],
+      "crown_center": [
+        9,
+        7
+      ],
+      "band_center": [
+        9,
+        11
+      ],
+      "attachment_edge": [
+        17,
+        4
+      ]
+    },
+    "right": {
+      "center": [
+        8,
+        9
+      ],
+      "top_center": [
+        8,
+        4
+      ],
+      "bottom_center": [
+        8,
+        14
+      ],
+      "left_edge": [
+        1,
+        9
+      ],
+      "right_edge": [
+        15,
+        9
+      ],
+      "crown_center": [
+        8,
+        8
+      ],
+      "band_center": [
+        8,
+        12
+      ],
+      "attachment_edge": [
+        15,
+        4
+      ]
+    },
+    "left": {
+      "center": [
+        11,
+        9
+      ],
+      "top_center": [
+        11,
+        4
+      ],
+      "bottom_center": [
+        11,
+        14
+      ],
+      "left_edge": [
+        4,
+        9
+      ],
+      "right_edge": [
+        18,
+        9
+      ],
+      "crown_center": [
+        11,
+        8
+      ],
+      "band_center": [
+        11,
+        12
+      ],
+      "attachment_edge": [
+        18,
+        4
+      ]
+    },
+    "back": {
+      "center": [
+        9,
+        10
+      ],
+      "top_center": [
+        9,
+        5
+      ],
+      "bottom_center": [
+        9,
+        15
+      ],
+      "left_edge": [
+        2,
+        10
+      ],
+      "right_edge": [
+        17,
+        10
+      ],
+      "crown_center": [
+        9,
+        9
+      ],
+      "band_center": [
+        9,
+        13
+      ],
+      "attachment_edge": [
+        17,
+        5
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "DrawOrderOverride": {
+          "Preposition": "Before",
+          "AppearanceType": "Sleeves"
+        }
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "DrawOrderOverride": {
+          "Preposition": "Before",
+          "AppearanceType": "Sleeves"
+        }
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true,
+        "DrawOrderOverride": {
+          "Preposition": "Before",
+          "AppearanceType": "Sleeves"
+        }
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "More Accessories and Stuff",
+    "sourceName": "Tulip Hat",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    20,
+    20
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_hats_cottagecore_set_headscarf",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "catalog_hats_cottagecore_set_headscarf",
+  "sourceIdentity": {
+    "pack": "Cottagecore Set",
+    "category": "Hats",
+    "family": "Headscarf",
+    "base": "Headscarf"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Headscarf",
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Cottagecore Set/Hats/Headscarf/hat.png",
+    "sourceJson": "generator content/[FS] Cottagecore Set/Hats/Headscarf/hat.json",
+    "sourcePngSha256": "ab1fa8cc2e43ae88eabf54ff183e03f30cee95aa4e2f3ae632e6f0201d18e8af",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/Headscarf/hat.png",
+      "sourceRect": [
+        0,
+        0,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "82df2c2a7b4399b2acd196ace9a68a9728db586d50f1363ad6452807040fb0be",
+      "alphaSha256": "cb622ce8103e8370a711afbd8ca1c0285475f898526ce3486b351fb65970a1ed"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/Headscarf/hat.png",
+      "sourceRect": [
+        0,
+        20,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "fae70703f5e96df7533b90071bcc47d0cbb05b7d9d4c9aaebb8e9dbafe19f975",
+      "alphaSha256": "215a17bdab612736c3c8f7b8a423685f1c1685e44e30e046440e2becc09bf60e"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/Headscarf/hat.png",
+      "sourceRect": [
+        0,
+        20,
+        20,
+        20
+      ],
+      "flipX": true,
+      "pixelSha256": "d854572fe4cbc70475787b870f5b52fea7f461e8cd17688bc0f7988443570320",
+      "alphaSha256": "55074dc9ea0716434be7eb56a746f0db7975a320746826cbe129822311a6412b"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/Headscarf/hat.png",
+      "sourceRect": [
+        0,
+        40,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "d85be384602bbe6a44fb814ca6057decbbfc71ed1a8e5218288c5ea982bae360",
+      "alphaSha256": "438178f91a317df0076d5dd243261f5f9e15c02d4a5c66b1f644b89438dbf35c"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "crown": {
+      "purpose": "upper hat treatment"
+    },
+    "band": {
+      "purpose": "lower/cuff treatment"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        9,
+        7
+      ],
+      "top_center": [
+        9,
+        4
+      ],
+      "bottom_center": [
+        9,
+        10
+      ],
+      "left_edge": [
+        3,
+        7
+      ],
+      "right_edge": [
+        16,
+        7
+      ],
+      "crown_center": [
+        9,
+        6
+      ],
+      "band_center": [
+        9,
+        8
+      ],
+      "attachment_edge": [
+        16,
+        4
+      ]
+    },
+    "right": {
+      "center": [
+        7,
+        8
+      ],
+      "top_center": [
+        7,
+        4
+      ],
+      "bottom_center": [
+        7,
+        12
+      ],
+      "left_edge": [
+        1,
+        8
+      ],
+      "right_edge": [
+        14,
+        8
+      ],
+      "crown_center": [
+        7,
+        7
+      ],
+      "band_center": [
+        7,
+        10
+      ],
+      "attachment_edge": [
+        14,
+        4
+      ]
+    },
+    "left": {
+      "center": [
+        11,
+        8
+      ],
+      "top_center": [
+        11,
+        4
+      ],
+      "bottom_center": [
+        11,
+        12
+      ],
+      "left_edge": [
+        5,
+        8
+      ],
+      "right_edge": [
+        18,
+        8
+      ],
+      "crown_center": [
+        11,
+        7
+      ],
+      "band_center": [
+        11,
+        10
+      ],
+      "attachment_edge": [
+        18,
+        4
+      ]
+    },
+    "back": {
+      "center": [
+        9,
+        9
+      ],
+      "top_center": [
+        9,
+        5
+      ],
+      "bottom_center": [
+        9,
+        13
+      ],
+      "left_edge": [
+        3,
+        9
+      ],
+      "right_edge": [
+        16,
+        9
+      ],
+      "crown_center": [
+        9,
+        8
+      ],
+      "band_center": [
+        9,
+        11
+      ],
+      "attachment_edge": [
+        16,
+        5
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Cottagecore Set",
+    "sourceName": "Headscarf",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    20,
+    20
+  ]
+}

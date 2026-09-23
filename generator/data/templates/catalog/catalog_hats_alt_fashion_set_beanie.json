@@ -1,0 +1,346 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_hats_alt_fashion_set_beanie",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "catalog_hats_alt_fashion_set_beanie",
+  "sourceIdentity": {
+    "pack": "Alt-Fashion Set",
+    "category": "Hats",
+    "family": "Beanie",
+    "base": "Beanie"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Beanie",
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Alt-Fashion Set/Hats/Beanie/hat.png",
+    "sourceJson": "generator content/[FS] Alt-Fashion Set/Hats/Beanie/hat.json",
+    "sourcePngSha256": "fcdaa52f28518aab93e1b00ffdf7eaf863f323021d967b29c279c3ba4e31b6f6",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Hats/Beanie/hat.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "a7c3f6a750142d43f25d251b7ce77a32cf5f705266aaf385a0cb5dd5e103186b",
+      "alphaSha256": "36bf33f215b4ce7bdc46d854435bd2cd0d32a293533e7cc38989a51feab485c5"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Hats/Beanie/hat.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "b3444b66a46cb3e415591696c3a491f8895989a0ea803a18126b7ca314ee5e11",
+      "alphaSha256": "f0e7aae73a75ce2e7e5f522725920f1ad34613f00ceaf6e639a2e40388a1769d"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Hats/Beanie/hat.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": true,
+      "pixelSha256": "081996cb1102c645fc0ff6bc49e022e11e9539f9f7322bb1d6a7c3ff1588bae0",
+      "alphaSha256": "cc7b3d36a698a3e8e88d3d7cd7c9fd3063cfea23cfa7ce231d7469e46460b75b"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Hats/Beanie/hat.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "95df6d86bc3a2c5e08562c0ace8dbfb861cd6131176798fe2fc080a005766602",
+      "alphaSha256": "ef1cd7e92ce983d60bd6c8154844bdb0625f9a2a63c486c2b59b3668b3a6f659"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "crown": {
+      "purpose": "upper hat treatment"
+    },
+    "band": {
+      "purpose": "lower/cuff treatment"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        6
+      ],
+      "top_center": [
+        7,
+        2
+      ],
+      "bottom_center": [
+        7,
+        10
+      ],
+      "left_edge": [
+        2,
+        6
+      ],
+      "right_edge": [
+        13,
+        6
+      ],
+      "crown_center": [
+        7,
+        5
+      ],
+      "band_center": [
+        7,
+        8
+      ],
+      "attachment_edge": [
+        13,
+        2
+      ]
+    },
+    "right": {
+      "center": [
+        7,
+        6
+      ],
+      "top_center": [
+        7,
+        2
+      ],
+      "bottom_center": [
+        7,
+        10
+      ],
+      "left_edge": [
+        1,
+        6
+      ],
+      "right_edge": [
+        13,
+        6
+      ],
+      "crown_center": [
+        7,
+        5
+      ],
+      "band_center": [
+        7,
+        8
+      ],
+      "attachment_edge": [
+        13,
+        2
+      ]
+    },
+    "left": {
+      "center": [
+        8,
+        6
+      ],
+      "top_center": [
+        8,
+        2
+      ],
+      "bottom_center": [
+        8,
+        10
+      ],
+      "left_edge": [
+        2,
+        6
+      ],
+      "right_edge": [
+        14,
+        6
+      ],
+      "crown_center": [
+        8,
+        5
+      ],
+      "band_center": [
+        8,
+        8
+      ],
+      "attachment_edge": [
+        14,
+        2
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        8
+      ],
+      "top_center": [
+        7,
+        3
+      ],
+      "bottom_center": [
+        7,
+        13
+      ],
+      "left_edge": [
+        2,
+        8
+      ],
+      "right_edge": [
+        13,
+        8
+      ],
+      "crown_center": [
+        7,
+        7
+      ],
+      "band_center": [
+        7,
+        11
+      ],
+      "attachment_edge": [
+        13,
+        3
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": -2,
+          "Y": -2
+        },
+        "flipped": false,
+        "DrawOrderOverride": {
+          "Preposition": "Before",
+          "AppearanceType": "Sleeves"
+        }
+      },
+      "right": {
+        "position": {
+          "X": -2,
+          "Y": -2
+        },
+        "flipped": false,
+        "DrawOrderOverride": {
+          "Preposition": "Before",
+          "AppearanceType": "Sleeves"
+        }
+      },
+      "left": {
+        "position": {
+          "X": -2,
+          "Y": -2
+        },
+        "flipped": true,
+        "DrawOrderOverride": {
+          "Preposition": "Before",
+          "AppearanceType": "Sleeves"
+        }
+      },
+      "back": {
+        "position": {
+          "X": -2,
+          "Y": -2
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Alt-Fashion Set",
+    "sourceName": "Beanie",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    16,
+    16
+  ]
+}

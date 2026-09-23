@@ -1,0 +1,307 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_accessories_cottagecore_set_neckerchief_2",
+  "slot": "ACCESSORY",
+  "category": "Accessories",
+  "family": "catalog_accessories_cottagecore_set_neckerchief_2",
+  "sourceIdentity": {
+    "pack": "Cottagecore Set",
+    "category": "Accessories",
+    "family": "Neckerchief",
+    "base": "Neckerchief (2)"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Neckerchief (2)",
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Cottagecore Set/Accessories/Neckerchief2/accessory.png",
+    "sourceJson": "generator content/[FS] Cottagecore Set/Accessories/Neckerchief2/accessory.json",
+    "sourcePngSha256": "14220f0560d70e698e6e9f420be16ed242164b3e233db4462d9bff501576bc0e",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Neckerchief2/accessory.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "9c68c2290120a5b44b0a0fd48f842734ddbd21cc9163853f77b913b86273e5c4",
+      "alphaSha256": "9e3533f919e04e8ffe33f2aabf22f4cb2a5af970d82a5b708e13f5e52034ddcb"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Neckerchief2/accessory.png",
+      "sourceRect": [
+        0,
+        64,
+        32,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "fe79158848541c752a557088489aaee45df70e220053706a9cfe1041ba05d733",
+      "alphaSha256": "a626193e5aad47291f772f64545f178eaa1756b9a93736ad80f80efd190323ea"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Neckerchief2/accessory.png",
+      "sourceRect": [
+        0,
+        64,
+        32,
+        32
+      ],
+      "flipX": true,
+      "pixelSha256": "36f59eeeb143976f6b0c7eb9ab173b8c54a9521f4ba10d41c3bbd3b711fd9f86",
+      "alphaSha256": "44918686649310306e2d15b60fa0342ceece532bffe8823cc0d8ef18d5167687"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Neckerchief2/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "8db7f93ccd1094abb4b88be8f4272b305d3b990ce9a88160a109ef09dd187dd8",
+      "alphaSha256": "cf97500d44d89915226bd1c5c0cdccb1b91b56fef455871d66828c114d5b2ed6"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "upper accessory zone"
+    },
+    "lower": {
+      "purpose": "lower accessory zone"
+    },
+    "side": {
+      "purpose": "side-localized accessory zone"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        17
+      ],
+      "top_center": [
+        7,
+        16
+      ],
+      "bottom_center": [
+        7,
+        18
+      ],
+      "left_edge": [
+        4,
+        17
+      ],
+      "right_edge": [
+        11,
+        17
+      ]
+    },
+    "right": {
+      "center": [
+        22,
+        14
+      ],
+      "top_center": [
+        22,
+        12
+      ],
+      "bottom_center": [
+        22,
+        16
+      ],
+      "left_edge": [
+        18,
+        14
+      ],
+      "right_edge": [
+        27,
+        14
+      ]
+    },
+    "left": {
+      "center": [
+        8,
+        14
+      ],
+      "top_center": [
+        8,
+        12
+      ],
+      "bottom_center": [
+        8,
+        16
+      ],
+      "left_edge": [
+        4,
+        14
+      ],
+      "right_edge": [
+        13,
+        14
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        16
+      ],
+      "top_center": [
+        7,
+        14
+      ],
+      "bottom_center": [
+        7,
+        18
+      ],
+      "left_edge": [
+        4,
+        16
+      ],
+      "right_edge": [
+        11,
+        16
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true,
+        "HideWhileSwimming": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Cottagecore Set",
+    "sourceName": "Neckerchief (2)",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSizes": {
+    "front": [
+      16,
+      32
+    ],
+    "right": [
+      32,
+      32
+    ],
+    "left": [
+      32,
+      32
+    ],
+    "back": [
+      16,
+      32
+    ]
+  }
+}

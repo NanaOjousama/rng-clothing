@@ -1,0 +1,334 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+  "sourceIdentity": {
+    "pack": "More Accessories and Stuff",
+    "category": "Hats",
+    "family": "Crown",
+    "base": "Crown (Diadem 1)"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Crown (Diadem 1)",
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem1/hat.png",
+    "sourceJson": "generator content/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem1/hat.json",
+    "sourcePngSha256": "38348d55280a27566328a64697013202561a6a3792afe1531bc786606fab6b0e",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem1/hat.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "28ffc75e2ff829cc0c4fd1286f3d4ec4bc1f2da9bfb872e7fa25aa923f00f54f",
+      "alphaSha256": "9d55c61fd74ef6b4c92bc432b51ea1411ff6f711ef77d3c4dfdd6477da0f209c"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem1/hat.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "272c076d9e281e34580f6e9dda042b10a46c901d2845eabff090b1b1dcc7f875",
+      "alphaSha256": "6c7be648b961e5654f948d122ec9c82569a2da06c8c4190f4f989e3dc37d6103"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem1/hat.png",
+      "sourceRect": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "flipX": true,
+      "pixelSha256": "a8839cd4fd1309c40a3a4ecc9050c2477f784625704e37555ab4444c9dada3a5",
+      "alphaSha256": "0d59ccb5ee3962d58cfdf32d9f0613001a0b128bb84ec54e1edff337273839fc"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem1/hat.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "flipX": false,
+      "pixelSha256": "5dbbffb35902711ce0adbdf936eb75328109ba3efd62b7442efc67814df42b4e",
+      "alphaSha256": "6e1ddcc743def94ee9c67b9f41e2f789b547fe0b5007d79cc61c36709295762b"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "crown": {
+      "purpose": "upper hat treatment"
+    },
+    "band": {
+      "purpose": "lower/cuff treatment"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        4
+      ],
+      "top_center": [
+        7,
+        2
+      ],
+      "bottom_center": [
+        7,
+        7
+      ],
+      "left_edge": [
+        4,
+        4
+      ],
+      "right_edge": [
+        11,
+        4
+      ],
+      "crown_center": [
+        7,
+        4
+      ],
+      "band_center": [
+        7,
+        6
+      ],
+      "attachment_edge": [
+        11,
+        2
+      ]
+    },
+    "right": {
+      "center": [
+        6,
+        4
+      ],
+      "top_center": [
+        6,
+        2
+      ],
+      "bottom_center": [
+        6,
+        6
+      ],
+      "left_edge": [
+        3,
+        4
+      ],
+      "right_edge": [
+        10,
+        4
+      ],
+      "crown_center": [
+        6,
+        3
+      ],
+      "band_center": [
+        6,
+        5
+      ],
+      "attachment_edge": [
+        10,
+        2
+      ]
+    },
+    "left": {
+      "center": [
+        8,
+        4
+      ],
+      "top_center": [
+        8,
+        2
+      ],
+      "bottom_center": [
+        8,
+        6
+      ],
+      "left_edge": [
+        5,
+        4
+      ],
+      "right_edge": [
+        12,
+        4
+      ],
+      "crown_center": [
+        8,
+        3
+      ],
+      "band_center": [
+        8,
+        5
+      ],
+      "attachment_edge": [
+        12,
+        2
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        5
+      ],
+      "top_center": [
+        7,
+        3
+      ],
+      "bottom_center": [
+        7,
+        8
+      ],
+      "left_edge": [
+        4,
+        5
+      ],
+      "right_edge": [
+        11,
+        5
+      ],
+      "crown_center": [
+        7,
+        5
+      ],
+      "band_center": [
+        7,
+        7
+      ],
+      "attachment_edge": [
+        11,
+        3
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": -2,
+          "Y": -3
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": -2,
+          "Y": -2
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": -2,
+          "Y": -2
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": -2,
+          "Y": -3
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "More Accessories and Stuff",
+    "sourceName": "Crown (Diadem 1)",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    16,
+    16
+  ]
+}

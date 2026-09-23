@@ -1,0 +1,307 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_accessories_alt_fashion_set_bag_backpack_heart",
+  "slot": "ACCESSORY",
+  "category": "Accessories",
+  "family": "catalog_accessories_alt_fashion_set_bag_backpack_heart",
+  "sourceIdentity": {
+    "pack": "Alt-Fashion Set",
+    "category": "Accessories",
+    "family": "Bag",
+    "base": "Bag (Backpack, Heart)"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Bag (Backpack, Heart)",
+    "pack": "Alt-Fashion Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Alt-Fashion Set/Accessories/BagBackpackHeart/accessory.png",
+    "sourceJson": "generator content/[FS] Alt-Fashion Set/Accessories/BagBackpackHeart/accessory.json",
+    "sourcePngSha256": "05dae25e4cfabde0e0fc6d27b612ff08c1e8839015be2948937bafd60282085f",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/BagBackpackHeart/accessory.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "c2d1df3e56a80dca6b470955a69e0932a13ea81cd28ebb80df24cf94e9c2e933",
+      "alphaSha256": "492dbd4a2f96bd26fabb8b74c495e5aa02e5353e1313060f62e50b464df254b1"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/BagBackpackHeart/accessory.png",
+      "sourceRect": [
+        0,
+        64,
+        32,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "2eaa02a3ec5c6b3d7e5c813329fe355d68488845645c12a7eb828a6ce0735247",
+      "alphaSha256": "9e5d591d4d3d4e73127e9ef97bc92ef79637ab7303a597063c6ec2a6ad77b9ea"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/BagBackpackHeart/accessory.png",
+      "sourceRect": [
+        0,
+        64,
+        32,
+        32
+      ],
+      "flipX": true,
+      "pixelSha256": "91a13f61cadd4f04a05199c35cbc601f092140cfd0e25494c051669a2b29c93c",
+      "alphaSha256": "91849b819120ccedbe292abcd1daaa4fbf65b146984696427a976ebba7214455"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/BagBackpackHeart/accessory.png",
+      "sourceRect": [
+        0,
+        32,
+        16,
+        32
+      ],
+      "flipX": false,
+      "pixelSha256": "4f6cf409e4ca57ffe4046f2a52762a598d65c4732343ec4ec33a1465356e43cf",
+      "alphaSha256": "99a9135108170b8facf791671d23aa3255282525331943a1823277d64f6bebbc"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "upper": {
+      "purpose": "upper accessory zone"
+    },
+    "lower": {
+      "purpose": "lower accessory zone"
+    },
+    "side": {
+      "purpose": "side-localized accessory zone"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        7,
+        18
+      ],
+      "top_center": [
+        7,
+        16
+      ],
+      "bottom_center": [
+        7,
+        21
+      ],
+      "left_edge": [
+        4,
+        18
+      ],
+      "right_edge": [
+        11,
+        18
+      ]
+    },
+    "right": {
+      "center": [
+        21,
+        16
+      ],
+      "top_center": [
+        21,
+        13
+      ],
+      "bottom_center": [
+        21,
+        19
+      ],
+      "left_edge": [
+        17,
+        16
+      ],
+      "right_edge": [
+        26,
+        16
+      ]
+    },
+    "left": {
+      "center": [
+        9,
+        16
+      ],
+      "top_center": [
+        9,
+        13
+      ],
+      "bottom_center": [
+        9,
+        19
+      ],
+      "left_edge": [
+        5,
+        16
+      ],
+      "right_edge": [
+        14,
+        16
+      ]
+    },
+    "back": {
+      "center": [
+        7,
+        18
+      ],
+      "top_center": [
+        7,
+        15
+      ],
+      "bottom_center": [
+        7,
+        22
+      ],
+      "left_edge": [
+        4,
+        18
+      ],
+      "right_edge": [
+        11,
+        18
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true,
+        "HideWhileSwimming": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false,
+        "HideWhileSwimming": true
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Alt-Fashion Set",
+    "sourceName": "Bag (Backpack, Heart)",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSizes": {
+    "front": [
+      16,
+      32
+    ],
+    "right": [
+      32,
+      32
+    ],
+    "left": [
+      32,
+      32
+    ],
+    "back": [
+      16,
+      32
+    ]
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_hats_cottagecore_set_beret",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "catalog_hats_cottagecore_set_beret",
+  "sourceIdentity": {
+    "pack": "Cottagecore Set",
+    "category": "Hats",
+    "family": "Beret",
+    "base": "Beret"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Beret",
+    "pack": "Cottagecore Set",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] Cottagecore Set/Hats/Beret/hat.png",
+    "sourceJson": "generator content/[FS] Cottagecore Set/Hats/Beret/hat.json",
+    "sourcePngSha256": "cc06e69aa4baa5d49fc728081463b1d4c027030423a625c126845dc83511fbe9",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/Beret/hat.png",
+      "sourceRect": [
+        0,
+        0,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "0b7025e7eb1eff4598721911954b3f5711384154db486063b8a91f0d274d89ed",
+      "alphaSha256": "972c29c625c67c7b3b716b6605ce666373ce6c4f2ed90a73a46ab0c15c694c2b"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/Beret/hat.png",
+      "sourceRect": [
+        0,
+        20,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "f6c4a9aef70715bc6b2dc31bdfaa50e3c4d6c1fb5ab27190b9cf74f128cb6b31",
+      "alphaSha256": "77525cf2da5c3b9bf7e8a499d68086ecba6aaf9b8cc140f18b97490a3cd2120c"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/Beret/hat.png",
+      "sourceRect": [
+        0,
+        20,
+        20,
+        20
+      ],
+      "flipX": true,
+      "pixelSha256": "bbbbf5ed28c387ded612dc0b11036a262e4a3121f1511e59fa225d6f54a63092",
+      "alphaSha256": "e71056dc7ccb0fdb49b7f4859dc5d64b94e43e58f2d144282c42be83471dce0b"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] Cottagecore Set/Hats/Beret/hat.png",
+      "sourceRect": [
+        0,
+        40,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "efc42b600b8150c0a07f9db2a5f7a4067f3c35f83962461ccf24a8f50f9aaef5",
+      "alphaSha256": "c3b649a8eb85c43bb2e6e0d57cd0bed441e80bb9517863a57336cd7c241ecb32"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "crown": {
+      "purpose": "upper hat treatment"
+    },
+    "band": {
+      "purpose": "lower/cuff treatment"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        9,
+        8
+      ],
+      "top_center": [
+        9,
+        4
+      ],
+      "bottom_center": [
+        9,
+        12
+      ],
+      "left_edge": [
+        3,
+        8
+      ],
+      "right_edge": [
+        16,
+        8
+      ],
+      "crown_center": [
+        9,
+        7
+      ],
+      "band_center": [
+        9,
+        10
+      ],
+      "attachment_edge": [
+        16,
+        4
+      ]
+    },
+    "right": {
+      "center": [
+        8,
+        9
+      ],
+      "top_center": [
+        8,
+        5
+      ],
+      "bottom_center": [
+        8,
+        14
+      ],
+      "left_edge": [
+        2,
+        9
+      ],
+      "right_edge": [
+        14,
+        9
+      ],
+      "crown_center": [
+        8,
+        8
+      ],
+      "band_center": [
+        8,
+        12
+      ],
+      "attachment_edge": [
+        14,
+        5
+      ]
+    },
+    "left": {
+      "center": [
+        11,
+        9
+      ],
+      "top_center": [
+        11,
+        5
+      ],
+      "bottom_center": [
+        11,
+        14
+      ],
+      "left_edge": [
+        5,
+        9
+      ],
+      "right_edge": [
+        17,
+        9
+      ],
+      "crown_center": [
+        11,
+        8
+      ],
+      "band_center": [
+        11,
+        12
+      ],
+      "attachment_edge": [
+        17,
+        5
+      ]
+    },
+    "back": {
+      "center": [
+        9,
+        10
+      ],
+      "top_center": [
+        9,
+        6
+      ],
+      "bottom_center": [
+        9,
+        15
+      ],
+      "left_edge": [
+        3,
+        10
+      ],
+      "right_edge": [
+        16,
+        10
+      ],
+      "crown_center": [
+        9,
+        9
+      ],
+      "band_center": [
+        9,
+        13
+      ],
+      "attachment_edge": [
+        16,
+        6
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 1
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 1
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 1
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 1
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "Cottagecore Set",
+    "sourceName": "Beret",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    20,
+    20
+  ]
+}

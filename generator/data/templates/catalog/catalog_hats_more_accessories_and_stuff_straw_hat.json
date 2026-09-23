@@ -1,0 +1,334 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "catalog_hats_more_accessories_and_stuff_straw_hat",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "catalog_hats_more_accessories_and_stuff_straw_hat",
+  "sourceIdentity": {
+    "pack": "More Accessories and Stuff",
+    "category": "Hats",
+    "family": "StrawHat",
+    "base": "Straw Hat"
+  },
+  "sourceCatalog": {
+    "kind": "CATALOG_FAMILY_BASE",
+    "name": "Straw Hat",
+    "pack": "More Accessories and Stuff",
+    "author": "plurffle",
+    "sourcePng": "generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.png",
+    "sourceJson": "generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.json",
+    "sourcePngSha256": "2c355eaa7f5b43ab93128850d1379bd8f8fafd6bbc24df60fc26dbcd5b872def",
+    "transferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json"
+  },
+  "requiredInputs": [
+    "catalog FAMILY_BASE source",
+    "four stable cardinal source blocks",
+    "locked extracted-frame hashes",
+    "semantic zones and anchors",
+    "registered family taste policy"
+  ],
+  "frames": {
+    "front": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.png",
+      "sourceRect": [
+        0,
+        0,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "33e5b7692dd6bb5714467c2db23c3e4936a5e395a931ece0a1ceab4d12c0c14a",
+      "alphaSha256": "2282c634b04cdcf5a8baf61d86129b02754f1e357516ffc595fcf736338139f5"
+    },
+    "right": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.png",
+      "sourceRect": [
+        0,
+        20,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "12c26ee87f8427ee4c32c9118776279afd4ad8f8216cef8934d2139fe96f308f",
+      "alphaSha256": "9663cb06aefbe69993a704dd39080d095444366a38044f44475e9426b19f8ad2"
+    },
+    "left": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.png",
+      "sourceRect": [
+        0,
+        20,
+        20,
+        20
+      ],
+      "flipX": true,
+      "pixelSha256": "4c9200ea2c6305b72fd601176dc0ae06f9f3d2bf88fd7c050069292f1c86219e",
+      "alphaSha256": "10f05432f65fcad6d0c7cf6dcd94f7a33b07735490136e0e5696caf5fe097693"
+    },
+    "back": {
+      "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.png",
+      "sourceRect": [
+        0,
+        40,
+        20,
+        20
+      ],
+      "flipX": false,
+      "pixelSha256": "c667bf89a0a8b3f3909d2c54e1213bff51a5009eb89a0d520811e6210dbebce5",
+      "alphaSha256": "c64e06885b44879626b57ba420428fb15a249dd57f783e9b7d4094bccb099228"
+    }
+  },
+  "geometryLock": {
+    "authority": "source-sheet rectangles above",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "ATTACHMENT/HARDWARE only when family policy and target anchor permit it",
+    "humanArtApprovalRequiredBeforeProduction": true
+  },
+  "zones": {
+    "surface": {
+      "purpose": "palette/material/pattern inside locked opaque cells",
+      "geometry": "opaque source-template cells only"
+    },
+    "crown": {
+      "purpose": "upper hat treatment"
+    },
+    "band": {
+      "purpose": "lower/cuff treatment"
+    },
+    "attachment_edge": {
+      "purpose": "approved additive edge parts"
+    }
+  },
+  "anchors": {
+    "front": {
+      "center": [
+        9,
+        7
+      ],
+      "top_center": [
+        9,
+        4
+      ],
+      "bottom_center": [
+        9,
+        11
+      ],
+      "left_edge": [
+        1,
+        7
+      ],
+      "right_edge": [
+        18,
+        7
+      ],
+      "crown_center": [
+        9,
+        6
+      ],
+      "band_center": [
+        9,
+        9
+      ],
+      "attachment_edge": [
+        18,
+        4
+      ]
+    },
+    "right": {
+      "center": [
+        8,
+        7
+      ],
+      "top_center": [
+        8,
+        4
+      ],
+      "bottom_center": [
+        8,
+        11
+      ],
+      "left_edge": [
+        0,
+        7
+      ],
+      "right_edge": [
+        17,
+        7
+      ],
+      "crown_center": [
+        8,
+        6
+      ],
+      "band_center": [
+        8,
+        9
+      ],
+      "attachment_edge": [
+        17,
+        4
+      ]
+    },
+    "left": {
+      "center": [
+        10,
+        7
+      ],
+      "top_center": [
+        10,
+        4
+      ],
+      "bottom_center": [
+        10,
+        11
+      ],
+      "left_edge": [
+        2,
+        7
+      ],
+      "right_edge": [
+        19,
+        7
+      ],
+      "crown_center": [
+        10,
+        6
+      ],
+      "band_center": [
+        10,
+        9
+      ],
+      "attachment_edge": [
+        19,
+        4
+      ]
+    },
+    "back": {
+      "center": [
+        9,
+        9
+      ],
+      "top_center": [
+        9,
+        4
+      ],
+      "bottom_center": [
+        9,
+        14
+      ],
+      "left_edge": [
+        1,
+        9
+      ],
+      "right_edge": [
+        18,
+        9
+      ],
+      "crown_center": [
+        9,
+        8
+      ],
+      "band_center": [
+        9,
+        12
+      ],
+      "attachment_edge": [
+        18,
+        4
+      ]
+    }
+  },
+  "wearContract": {
+    "sourceRuntime": "Fashion Sense",
+    "views": {
+      "front": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "right": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      },
+      "left": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": true
+      },
+      "back": {
+        "position": {
+          "X": 0,
+          "Y": 0
+        },
+        "flipped": false
+      }
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "REUSABLE_COMPONENT",
+    "BASE_SPECIFIC",
+    "ATTACHMENT",
+    "HARDWARE"
+  ],
+  "safeTransferRules": [
+    "source family base owns geometry and directional silhouette",
+    "palette/material/pattern changes may not alter locked base alpha",
+    "motifs map through semantic zones instead of source coordinates",
+    "alternate constructions become separate templates rather than silent silhouette mutations",
+    "production still requires human visual/wear approval"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "different geometry requires its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific deltas cannot cross construction templates"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "source construction geometry is authoritative"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resampling is not a construction transfer operation"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "cross-template parts require semantic mapping"
+    }
+  ],
+  "catalogProvenance": {
+    "generatorRole": "FAMILY_BASE",
+    "pack": "More Accessories and Stuff",
+    "sourceName": "Straw Hat",
+    "approval": "CANDIDATE_TEMPLATE"
+  },
+  "frameSize": [
+    20,
+    20
+  ]
+}
