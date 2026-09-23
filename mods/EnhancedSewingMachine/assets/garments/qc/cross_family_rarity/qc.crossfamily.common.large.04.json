@@ -5,7 +5,7 @@
   "WornTexture": "assets/qc/cross_family_rarity/qc.crossfamily.common.large.04.png",
   "FrameWidth": 20,
   "FrameHeight": 20,
-  "RenderScale": 0.8,
+  "RenderScale": 0.9,
   "VanillaReferenceAnchor": {
     "X": 10,
     "Y": 16
