@@ -978,3 +978,17 @@ Capacity-aware cross-family hat contact sheet:
 - Visuals remain real source-backed front candidates; recipe/capacity proof is recorded in experiments/catalog_hat_rarity_test/selection_manifest.json.
 - Contact sheet: experiments/catalog_hat_rarity_test/CROSS_FAMILY_HAT_ALL_RARITIES_CONTACT.png.
 - humanArtApproved remains false. No ESM/QC promotion performed.
+
+## 2026-09-23 — First full multi-family hat production candidate batch
+- Added tools/build_hat_production_batch.py.
+- Generated 80 source-backed hat candidates: 20 promoted hat families × Common/Uncommon/Rare/Epic.
+- Output lives in experiments/hat_production_batch_01/ with manifest.json, 320 directional frames, and two review contact sheets.
+- Recipe selection stays capacity-aware and taste-policy valid for every candidate.
+- Rendering uses locked template geometry, source-backed style profiles, semantic trim treatment, and permitted MATERIAL_PATTERN / MOTIF / ATTACHMENT / HARDWARE donors.
+- Hat candidates now prefer hat-category donors when a compatible hat donor exists.
+- Additive attachment/hardware pixels are connectivity-filtered so detached floating pixels are discarded.
+- Validation PASS: 80 candidates, 20 families, 4 rarities each; all recipes valid; base alpha preserved; additive alpha only for permitted attachment/hardware paths.
+- Transfer usage in batch: MATERIAL_PATTERN 51, MOTIF 23, ATTACHMENT 16, HARDWARE 12.
+- Capacity coverage: medium 32, large 20, tiny 16, small 12 candidates.
+- humanArtApproved remains false; these are production candidates for visual curation, not promoted shipping assets.
+- Review sheets: experiments/hat_production_batch_01/HAT_PRODUCTION_BATCH_01_1.png and HAT_PRODUCTION_BATCH_01_2.png.

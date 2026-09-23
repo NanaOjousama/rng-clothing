@@ -1,0 +1,6456 @@
+{
+  "schema": "hat-production-batch/v1",
+  "batch": "01",
+  "families": 20,
+  "humanArtApproved": false,
+  "candidates": [
+    {
+      "family": "catalog_hats_alt_fashion_set_beanie",
+      "rarity": "common",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": [
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "Alt-Fashion Set::Hats::Headband",
+        "pack": "Alt-Fashion Set",
+        "family": "Headband"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/001_common_catalog_hats_alt_fashion_set_beanie/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/001_common_catalog_hats_alt_fashion_set_beanie/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/001_common_catalog_hats_alt_fashion_set_beanie/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/001_common_catalog_hats_alt_fashion_set_beanie/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ]
+      },
+      "template": "catalog_hats_alt_fashion_set_beanie",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_alt_fashion_set_beanie",
+      "rarity": "uncommon",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "wrap",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::SunHat",
+        "pack": "More Accessories and Stuff",
+        "family": "SunHat"
+      },
+      "parts": [],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/002_uncommon_catalog_hats_alt_fashion_set_beanie/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/002_uncommon_catalog_hats_alt_fashion_set_beanie/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/002_uncommon_catalog_hats_alt_fashion_set_beanie/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/002_uncommon_catalog_hats_alt_fashion_set_beanie/back.png"
+      },
+      "renderLog": {
+        "front": [],
+        "right": [],
+        "left": [],
+        "back": []
+      },
+      "template": "catalog_hats_alt_fashion_set_beanie",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_alt_fashion_set_beanie",
+      "rarity": "rare",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "wrap",
+        "motif": "emblem",
+        "motifPlacement": "front_offset",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          2,
+          4
+        ],
+        "channels": [
+          "GRAPHIC",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::HairBuns",
+        "pack": "More Accessories and Stuff",
+        "family": "HairBuns"
+      },
+      "parts": [
+        {
+          "kind": "MOTIF",
+          "name": "Beret (Leaf)",
+          "pack": "Cottagecore Set"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/003_rare_catalog_hats_alt_fashion_set_beanie/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/003_rare_catalog_hats_alt_fashion_set_beanie/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/003_rare_catalog_hats_alt_fashion_set_beanie/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/003_rare_catalog_hats_alt_fashion_set_beanie/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "right": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ]
+      },
+      "template": "catalog_hats_alt_fashion_set_beanie",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_alt_fashion_set_beanie",
+      "rarity": "epic",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "colorblock",
+        "trim": "wrap",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 3,
+        "budget": [
+          3,
+          4
+        ],
+        "channels": [
+          "PATTERN",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::Headband",
+        "pack": "Cottagecore Set",
+        "family": "Headband"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/004_epic_catalog_hats_alt_fashion_set_beanie/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/004_epic_catalog_hats_alt_fashion_set_beanie/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/004_epic_catalog_hats_alt_fashion_set_beanie/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/004_epic_catalog_hats_alt_fashion_set_beanie/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ]
+      },
+      "template": "catalog_hats_alt_fashion_set_beanie",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_alt_fashion_set_earmuffs_horns",
+      "rarity": "common",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": [
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::MushroomHat",
+        "pack": "Cottagecore Set",
+        "family": "MushroomHat"
+      },
+      "parts": [],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/005_common_catalog_hats_alt_fashion_set_earmuffs_horns/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/005_common_catalog_hats_alt_fashion_set_earmuffs_horns/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/005_common_catalog_hats_alt_fashion_set_earmuffs_horns/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/005_common_catalog_hats_alt_fashion_set_earmuffs_horns/back.png"
+      },
+      "renderLog": {
+        "front": [],
+        "right": [],
+        "left": [],
+        "back": []
+      },
+      "template": "catalog_hats_alt_fashion_set_earmuffs_horns",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_alt_fashion_set_earmuffs_horns",
+      "rarity": "uncommon",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "subtle",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "REGION",
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Beanie",
+        "pack": "More Accessories and Stuff",
+        "family": "Beanie"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/006_uncommon_catalog_hats_alt_fashion_set_earmuffs_horns/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/006_uncommon_catalog_hats_alt_fashion_set_earmuffs_horns/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/006_uncommon_catalog_hats_alt_fashion_set_earmuffs_horns/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/006_uncommon_catalog_hats_alt_fashion_set_earmuffs_horns/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ]
+      },
+      "template": "catalog_hats_alt_fashion_set_earmuffs_horns",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_alt_fashion_set_earmuffs_horns",
+      "rarity": "rare",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "side",
+        "attachment": "large",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 3,
+        "budget": [
+          2,
+          4
+        ],
+        "channels": [
+          "ATTACHMENT",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::HairBuns",
+        "pack": "More Accessories and Stuff",
+        "family": "HairBuns"
+      },
+      "parts": [
+        {
+          "kind": "ATTACHMENT",
+          "name": "Bows (Double, Small 2)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/007_rare_catalog_hats_alt_fashion_set_earmuffs_horns/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/007_rare_catalog_hats_alt_fashion_set_earmuffs_horns/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/007_rare_catalog_hats_alt_fashion_set_earmuffs_horns/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/007_rare_catalog_hats_alt_fashion_set_earmuffs_horns/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "right": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 2
+          }
+        ],
+        "back": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 4
+          }
+        ]
+      },
+      "template": "catalog_hats_alt_fashion_set_earmuffs_horns",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_alt_fashion_set_earmuffs_horns",
+      "rarity": "epic",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "colorblock",
+        "trim": "none",
+        "motif": "emblem",
+        "motifPlacement": "front_offset",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 3,
+        "budget": [
+          3,
+          4
+        ],
+        "channels": [
+          "GRAPHIC",
+          "PATTERN"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::SunHat",
+        "pack": "More Accessories and Stuff",
+        "family": "SunHat"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Beret (Leaf)",
+          "pack": "Cottagecore Set"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/008_epic_catalog_hats_alt_fashion_set_earmuffs_horns/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/008_epic_catalog_hats_alt_fashion_set_earmuffs_horns/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/008_epic_catalog_hats_alt_fashion_set_earmuffs_horns/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/008_epic_catalog_hats_alt_fashion_set_earmuffs_horns/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 2
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ]
+      },
+      "template": "catalog_hats_alt_fashion_set_earmuffs_horns",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_alt_fashion_set_headband_studded",
+      "rarity": "common",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 0,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": []
+      },
+      "styleDonor": {
+        "id": "Alt-Fashion Set::Hats::Headband",
+        "pack": "Alt-Fashion Set",
+        "family": "Headband"
+      },
+      "parts": [],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/009_common_catalog_hats_alt_fashion_set_headband_studded/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/009_common_catalog_hats_alt_fashion_set_headband_studded/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/009_common_catalog_hats_alt_fashion_set_headband_studded/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/009_common_catalog_hats_alt_fashion_set_headband_studded/back.png"
+      },
+      "renderLog": {
+        "front": [],
+        "right": [],
+        "left": [],
+        "back": []
+      },
+      "template": "catalog_hats_alt_fashion_set_headband_studded",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_alt_fashion_set_headband_studded",
+      "rarity": "uncommon",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "small"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "HARDWARE"
+        ]
+      },
+      "styleDonor": {
+        "id": "Alt-Fashion Set::Hats::Beanie",
+        "pack": "Alt-Fashion Set",
+        "family": "Beanie"
+      },
+      "parts": [
+        {
+          "kind": "HARDWARE",
+          "name": "Decorative Bells (Doubles)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/010_uncommon_catalog_hats_alt_fashion_set_headband_studded/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/010_uncommon_catalog_hats_alt_fashion_set_headband_studded/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/010_uncommon_catalog_hats_alt_fashion_set_headband_studded/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/010_uncommon_catalog_hats_alt_fashion_set_headband_studded/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 1
+          }
+        ],
+        "left": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_alt_fashion_set_headband_studded",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_alt_fashion_set_headband_studded",
+      "rarity": "rare",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "statement",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "side",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          2,
+          2
+        ],
+        "channels": [
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::BoaterHat",
+        "pack": "Cottagecore Set",
+        "family": "BoaterHat"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/011_rare_catalog_hats_alt_fashion_set_headband_studded/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/011_rare_catalog_hats_alt_fashion_set_headband_studded/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/011_rare_catalog_hats_alt_fashion_set_headband_studded/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/011_rare_catalog_hats_alt_fashion_set_headband_studded/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 2
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_alt_fashion_set_headband_studded",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_alt_fashion_set_headband_studded",
+      "rarity": "epic",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "emblem",
+        "motifPlacement": "front_offset",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          2,
+          2
+        ],
+        "channels": [
+          "GRAPHIC"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Bows",
+        "pack": "More Accessories and Stuff",
+        "family": "Bows"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Beret (Leaf)",
+          "pack": "Cottagecore Set"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/012_epic_catalog_hats_alt_fashion_set_headband_studded/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/012_epic_catalog_hats_alt_fashion_set_headband_studded/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/012_epic_catalog_hats_alt_fashion_set_headband_studded/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/012_epic_catalog_hats_alt_fashion_set_headband_studded/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 2
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 2
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 2
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_alt_fashion_set_headband_studded",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_beret",
+      "rarity": "common",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "subtle",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": [
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Bows",
+        "pack": "More Accessories and Stuff",
+        "family": "Bows"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/013_common_catalog_hats_cottagecore_set_beret/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/013_common_catalog_hats_cottagecore_set_beret/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/013_common_catalog_hats_cottagecore_set_beret/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/013_common_catalog_hats_cottagecore_set_beret/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_beret",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_beret",
+      "rarity": "uncommon",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "colorblock",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "PATTERN",
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::Beret",
+        "pack": "Cottagecore Set",
+        "family": "Beret"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/014_uncommon_catalog_hats_cottagecore_set_beret/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/014_uncommon_catalog_hats_cottagecore_set_beret/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/014_uncommon_catalog_hats_cottagecore_set_beret/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/014_uncommon_catalog_hats_cottagecore_set_beret/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_beret",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_beret",
+      "rarity": "rare",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "back_center",
+        "attachment": "large",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 3,
+        "budget": [
+          2,
+          4
+        ],
+        "channels": [
+          "ATTACHMENT",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::Beret",
+        "pack": "Cottagecore Set",
+        "family": "Beret"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "ATTACHMENT",
+          "name": "Bows (Double, Small 2)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/015_rare_catalog_hats_cottagecore_set_beret/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/015_rare_catalog_hats_cottagecore_set_beret/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/015_rare_catalog_hats_cottagecore_set_beret/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/015_rare_catalog_hats_cottagecore_set_beret/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 6
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 5
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 4
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_beret",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_beret",
+      "rarity": "epic",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "dense",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "small",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          3,
+          4
+        ],
+        "channels": [
+          "ATTACHMENT",
+          "PATTERN",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::StrawHat",
+        "pack": "More Accessories and Stuff",
+        "family": "StrawHat"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "ATTACHMENT",
+          "name": "Earmuffs (Cat)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/016_epic_catalog_hats_cottagecore_set_beret/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/016_epic_catalog_hats_cottagecore_set_beret/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/016_epic_catalog_hats_cottagecore_set_beret/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/016_epic_catalog_hats_cottagecore_set_beret/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 5
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_beret",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_boater_hat",
+      "rarity": "common",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 0,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": []
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Beanie",
+        "pack": "More Accessories and Stuff",
+        "family": "Beanie"
+      },
+      "parts": [],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/017_common_catalog_hats_cottagecore_set_boater_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/017_common_catalog_hats_cottagecore_set_boater_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/017_common_catalog_hats_cottagecore_set_boater_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/017_common_catalog_hats_cottagecore_set_boater_hat/back.png"
+      },
+      "renderLog": {
+        "front": [],
+        "right": [],
+        "left": [],
+        "back": []
+      },
+      "template": "catalog_hats_cottagecore_set_boater_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_boater_hat",
+      "rarity": "uncommon",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "small",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "ATTACHMENT",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::Headband",
+        "pack": "Cottagecore Set",
+        "family": "Headband"
+      },
+      "parts": [
+        {
+          "kind": "ATTACHMENT",
+          "name": "Bows (Double, Small 2)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/018_uncommon_catalog_hats_cottagecore_set_boater_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/018_uncommon_catalog_hats_cottagecore_set_boater_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/018_uncommon_catalog_hats_cottagecore_set_boater_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/018_uncommon_catalog_hats_cottagecore_set_boater_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "right": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 6
+          }
+        ],
+        "left": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 6
+          }
+        ],
+        "back": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_boater_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_boater_hat",
+      "rarity": "rare",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "contrast",
+        "motif": "small",
+        "motifPlacement": "back_center",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 3,
+        "budget": [
+          2,
+          4
+        ],
+        "channels": [
+          "GRAPHIC",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Headband",
+        "pack": "More Accessories and Stuff",
+        "family": "Headband"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Beret (Leaf)",
+          "pack": "Cottagecore Set"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/019_rare_catalog_hats_cottagecore_set_boater_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/019_rare_catalog_hats_cottagecore_set_boater_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/019_rare_catalog_hats_cottagecore_set_boater_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/019_rare_catalog_hats_cottagecore_set_boater_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_boater_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_boater_hat",
+      "rarity": "epic",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "colorblock",
+        "trim": "subtle",
+        "motif": "emblem",
+        "motifPlacement": "front_center",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          3,
+          4
+        ],
+        "channels": [
+          "GRAPHIC",
+          "PATTERN",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Hood",
+        "pack": "More Accessories and Stuff",
+        "family": "Hood"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Garland (Dried 2)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/020_epic_catalog_hats_cottagecore_set_boater_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/020_epic_catalog_hats_cottagecore_set_boater_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/020_epic_catalog_hats_cottagecore_set_boater_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/020_epic_catalog_hats_cottagecore_set_boater_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_boater_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_headband_daisies",
+      "rarity": "common",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": [
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::Headband",
+        "pack": "Cottagecore Set",
+        "family": "Headband"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/021_common_catalog_hats_cottagecore_set_headband_daisies/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/021_common_catalog_hats_cottagecore_set_headband_daisies/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/021_common_catalog_hats_cottagecore_set_headband_daisies/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/021_common_catalog_hats_cottagecore_set_headband_daisies/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 1
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 1
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_headband_daisies",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_headband_daisies",
+      "rarity": "uncommon",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Bow",
+        "pack": "More Accessories and Stuff",
+        "family": "Bow"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/022_uncommon_catalog_hats_cottagecore_set_headband_daisies/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/022_uncommon_catalog_hats_cottagecore_set_headband_daisies/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/022_uncommon_catalog_hats_cottagecore_set_headband_daisies/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/022_uncommon_catalog_hats_cottagecore_set_headband_daisies/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 1
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 1
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_headband_daisies",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_headband_daisies",
+      "rarity": "rare",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "emblem",
+        "motifPlacement": "front_offset",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          2,
+          2
+        ],
+        "channels": [
+          "GRAPHIC"
+        ]
+      },
+      "styleDonor": {
+        "id": "Alt-Fashion Set::Hats::Headband",
+        "pack": "Alt-Fashion Set",
+        "family": "Headband"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Garland (Dried 2)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/023_rare_catalog_hats_cottagecore_set_headband_daisies/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/023_rare_catalog_hats_cottagecore_set_headband_daisies/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/023_rare_catalog_hats_cottagecore_set_headband_daisies/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/023_rare_catalog_hats_cottagecore_set_headband_daisies/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 1
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 1
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 2
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 1
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 2
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_headband_daisies",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_headband_daisies",
+      "rarity": "epic",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "statement",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "front_offset",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          2,
+          2
+        ],
+        "channels": [
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "Alt-Fashion Set::Hats::Earmuffs",
+        "pack": "Alt-Fashion Set",
+        "family": "Earmuffs"
+      },
+      "parts": [],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/024_epic_catalog_hats_cottagecore_set_headband_daisies/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/024_epic_catalog_hats_cottagecore_set_headband_daisies/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/024_epic_catalog_hats_cottagecore_set_headband_daisies/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/024_epic_catalog_hats_cottagecore_set_headband_daisies/back.png"
+      },
+      "renderLog": {
+        "front": [],
+        "right": [],
+        "left": [],
+        "back": []
+      },
+      "template": "catalog_hats_cottagecore_set_headband_daisies",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_headscarf",
+      "rarity": "common",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": [
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Hood",
+        "pack": "More Accessories and Stuff",
+        "family": "Hood"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/025_common_catalog_hats_cottagecore_set_headscarf/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/025_common_catalog_hats_cottagecore_set_headscarf/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/025_common_catalog_hats_cottagecore_set_headscarf/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/025_common_catalog_hats_cottagecore_set_headscarf/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_headscarf",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_headscarf",
+      "rarity": "uncommon",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "small",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "ATTACHMENT"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::Headscarf",
+        "pack": "Cottagecore Set",
+        "family": "Headscarf"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "ATTACHMENT",
+          "name": "Bows (Double, Small 2)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/026_uncommon_catalog_hats_cottagecore_set_headscarf/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/026_uncommon_catalog_hats_cottagecore_set_headscarf/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/026_uncommon_catalog_hats_cottagecore_set_headscarf/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/026_uncommon_catalog_hats_cottagecore_set_headscarf/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 6
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 6
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Bows (Double, Small 2)",
+            "cellsApplied": 4
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_headscarf",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_headscarf",
+      "rarity": "rare",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "emblem",
+        "motifPlacement": "front_offset",
+        "attachment": "large",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          2,
+          4
+        ],
+        "channels": [
+          "ATTACHMENT",
+          "GRAPHIC"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Earmuffs",
+        "pack": "More Accessories and Stuff",
+        "family": "Earmuffs"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Garland (Dried 2)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "ATTACHMENT",
+          "name": "Earmuffs (Cat)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/027_rare_catalog_hats_cottagecore_set_headscarf/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/027_rare_catalog_hats_cottagecore_set_headscarf/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/027_rare_catalog_hats_cottagecore_set_headscarf/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/027_rare_catalog_hats_cottagecore_set_headscarf/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 1
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 5
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_headscarf",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_headscarf",
+      "rarity": "epic",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "statement",
+        "pattern": "stripe",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "side",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          3,
+          4
+        ],
+        "channels": [
+          "PATTERN",
+          "REGION",
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Headband",
+        "pack": "More Accessories and Stuff",
+        "family": "Headband"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/028_epic_catalog_hats_cottagecore_set_headscarf/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/028_epic_catalog_hats_cottagecore_set_headscarf/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/028_epic_catalog_hats_cottagecore_set_headscarf/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/028_epic_catalog_hats_cottagecore_set_headscarf/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_headscarf",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_hood_mushroom",
+      "rarity": "common",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": [
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Veil",
+        "pack": "More Accessories and Stuff",
+        "family": "Veil"
+      },
+      "parts": [],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/029_common_catalog_hats_cottagecore_set_hood_mushroom/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/029_common_catalog_hats_cottagecore_set_hood_mushroom/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/029_common_catalog_hats_cottagecore_set_hood_mushroom/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/029_common_catalog_hats_cottagecore_set_hood_mushroom/back.png"
+      },
+      "renderLog": {
+        "front": [],
+        "right": [],
+        "left": [],
+        "back": []
+      },
+      "template": "catalog_hats_cottagecore_set_hood_mushroom",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_hood_mushroom",
+      "rarity": "uncommon",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "stripe",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "small",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "ATTACHMENT",
+          "PATTERN"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::TulipHat",
+        "pack": "More Accessories and Stuff",
+        "family": "TulipHat"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "ATTACHMENT",
+          "name": "Veil (Tiara)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/030_uncommon_catalog_hats_cottagecore_set_hood_mushroom/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/030_uncommon_catalog_hats_cottagecore_set_hood_mushroom/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/030_uncommon_catalog_hats_cottagecore_set_hood_mushroom/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/030_uncommon_catalog_hats_cottagecore_set_hood_mushroom/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Veil (Tiara)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Veil (Tiara)",
+            "cellsApplied": 0
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Veil (Tiara)",
+            "cellsApplied": 1
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Veil (Tiara)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_hood_mushroom",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_hood_mushroom",
+      "rarity": "rare",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "subtle",
+        "trim": "wrap",
+        "motif": "emblem",
+        "motifPlacement": "front_center",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          2,
+          4
+        ],
+        "channels": [
+          "GRAPHIC",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::MushroomHat",
+        "pack": "Cottagecore Set",
+        "family": "MushroomHat"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Garland (Dried 2)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/031_rare_catalog_hats_cottagecore_set_hood_mushroom/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/031_rare_catalog_hats_cottagecore_set_hood_mushroom/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/031_rare_catalog_hats_cottagecore_set_hood_mushroom/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/031_rare_catalog_hats_cottagecore_set_hood_mushroom/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 3
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 3
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_hood_mushroom",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_hood_mushroom",
+      "rarity": "epic",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "dense",
+        "trim": "none",
+        "motif": "small",
+        "motifPlacement": "front_center",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          3,
+          5
+        ],
+        "channels": [
+          "GRAPHIC",
+          "PATTERN"
+        ]
+      },
+      "styleDonor": {
+        "id": "Alt-Fashion Set::Hats::Earmuffs",
+        "pack": "Alt-Fashion Set",
+        "family": "Earmuffs"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Beret (Leaf)",
+          "pack": "Cottagecore Set"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/032_epic_catalog_hats_cottagecore_set_hood_mushroom/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/032_epic_catalog_hats_cottagecore_set_hood_mushroom/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/032_epic_catalog_hats_cottagecore_set_hood_mushroom/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/032_epic_catalog_hats_cottagecore_set_hood_mushroom/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 3
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_hood_mushroom",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_mushroom_hat",
+      "rarity": "common",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 0,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": []
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::StrawHat",
+        "pack": "More Accessories and Stuff",
+        "family": "StrawHat"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/033_common_catalog_hats_cottagecore_set_mushroom_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/033_common_catalog_hats_cottagecore_set_mushroom_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/033_common_catalog_hats_cottagecore_set_mushroom_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/033_common_catalog_hats_cottagecore_set_mushroom_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_mushroom_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_mushroom_hat",
+      "rarity": "uncommon",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "small",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "ATTACHMENT"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Bows",
+        "pack": "More Accessories and Stuff",
+        "family": "Bows"
+      },
+      "parts": [
+        {
+          "kind": "ATTACHMENT",
+          "name": "Earmuffs (Cat)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/034_uncommon_catalog_hats_cottagecore_set_mushroom_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/034_uncommon_catalog_hats_cottagecore_set_mushroom_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/034_uncommon_catalog_hats_cottagecore_set_mushroom_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/034_uncommon_catalog_hats_cottagecore_set_mushroom_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_mushroom_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_mushroom_hat",
+      "rarity": "rare",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "stripe",
+        "trim": "none",
+        "motif": "small",
+        "motifPlacement": "side",
+        "attachment": "none",
+        "hardware": "small"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          2,
+          4
+        ],
+        "channels": [
+          "GRAPHIC",
+          "HARDWARE",
+          "PATTERN"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Bow",
+        "pack": "More Accessories and Stuff",
+        "family": "Bow"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Garland (Dried 2)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "HARDWARE",
+          "name": "Decorative Bells (Doubles)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/035_rare_catalog_hats_cottagecore_set_mushroom_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/035_rare_catalog_hats_cottagecore_set_mushroom_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/035_rare_catalog_hats_cottagecore_set_mushroom_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/035_rare_catalog_hats_cottagecore_set_mushroom_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 3
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 3
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_mushroom_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_cottagecore_set_mushroom_hat",
+      "rarity": "epic",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "dense",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "side",
+        "attachment": "small",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          3,
+          5
+        ],
+        "channels": [
+          "ATTACHMENT",
+          "PATTERN",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Garland",
+        "pack": "More Accessories and Stuff",
+        "family": "Garland"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "ATTACHMENT",
+          "name": "Earmuffs (Cat)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/036_epic_catalog_hats_cottagecore_set_mushroom_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/036_epic_catalog_hats_cottagecore_set_mushroom_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/036_epic_catalog_hats_cottagecore_set_mushroom_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/036_epic_catalog_hats_cottagecore_set_mushroom_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_cottagecore_set_mushroom_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_beanie",
+      "rarity": "common",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": [
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::DecorativeBells",
+        "pack": "More Accessories and Stuff",
+        "family": "DecorativeBells"
+      },
+      "parts": [],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/037_common_catalog_hats_more_accessories_and_stuff_beanie/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/037_common_catalog_hats_more_accessories_and_stuff_beanie/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/037_common_catalog_hats_more_accessories_and_stuff_beanie/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/037_common_catalog_hats_more_accessories_and_stuff_beanie/back.png"
+      },
+      "renderLog": {
+        "front": [],
+        "right": [],
+        "left": [],
+        "back": []
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_beanie",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_beanie",
+      "rarity": "uncommon",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::DecorativeBells",
+        "pack": "More Accessories and Stuff",
+        "family": "DecorativeBells"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/038_uncommon_catalog_hats_more_accessories_and_stuff_beanie/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/038_uncommon_catalog_hats_more_accessories_and_stuff_beanie/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/038_uncommon_catalog_hats_more_accessories_and_stuff_beanie/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/038_uncommon_catalog_hats_more_accessories_and_stuff_beanie/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_beanie",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_beanie",
+      "rarity": "rare",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "subtle",
+        "trim": "wrap",
+        "motif": "emblem",
+        "motifPlacement": "front_offset",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          2,
+          4
+        ],
+        "channels": [
+          "GRAPHIC",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Veil",
+        "pack": "More Accessories and Stuff",
+        "family": "Veil"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Beret (Leaf)",
+          "pack": "Cottagecore Set"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/039_rare_catalog_hats_more_accessories_and_stuff_beanie/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/039_rare_catalog_hats_more_accessories_and_stuff_beanie/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/039_rare_catalog_hats_more_accessories_and_stuff_beanie/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/039_rare_catalog_hats_more_accessories_and_stuff_beanie/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_beanie",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_beanie",
+      "rarity": "epic",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "statement",
+        "pattern": "colorblock",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "back_center",
+        "attachment": "none",
+        "hardware": "small"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          3,
+          4
+        ],
+        "channels": [
+          "HARDWARE",
+          "PATTERN",
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Garland",
+        "pack": "More Accessories and Stuff",
+        "family": "Garland"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "HARDWARE",
+          "name": "Decorative Bells (Doubles)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/040_epic_catalog_hats_more_accessories_and_stuff_beanie/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/040_epic_catalog_hats_more_accessories_and_stuff_beanie/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/040_epic_catalog_hats_more_accessories_and_stuff_beanie/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/040_epic_catalog_hats_more_accessories_and_stuff_beanie/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 3
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 5
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 3
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_beanie",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+      "rarity": "common",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 0,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": []
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Hood",
+        "pack": "More Accessories and Stuff",
+        "family": "Hood"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/041_common_catalog_hats_more_accessories_and_stuff_bows_double_small_1/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/041_common_catalog_hats_more_accessories_and_stuff_bows_double_small_1/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/041_common_catalog_hats_more_accessories_and_stuff_bows_double_small_1/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/041_common_catalog_hats_more_accessories_and_stuff_bows_double_small_1/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 2
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 1
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+      "rarity": "uncommon",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "small",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "ATTACHMENT"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::BoaterHat",
+        "pack": "Cottagecore Set",
+        "family": "BoaterHat"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "ATTACHMENT",
+          "name": "Earmuffs (Cat)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/042_uncommon_catalog_hats_more_accessories_and_stuff_bows_double_small_1/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/042_uncommon_catalog_hats_more_accessories_and_stuff_bows_double_small_1/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/042_uncommon_catalog_hats_more_accessories_and_stuff_bows_double_small_1/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/042_uncommon_catalog_hats_more_accessories_and_stuff_bows_double_small_1/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 2
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 2
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 2
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 1
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 1
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+      "rarity": "rare",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "small",
+        "motifPlacement": "front_center",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          2,
+          2
+        ],
+        "channels": [
+          "GRAPHIC"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::Hood",
+        "pack": "Cottagecore Set",
+        "family": "Hood"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Beret (Leaf)",
+          "pack": "Cottagecore Set"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/043_rare_catalog_hats_more_accessories_and_stuff_bows_double_small_1/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/043_rare_catalog_hats_more_accessories_and_stuff_bows_double_small_1/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/043_rare_catalog_hats_more_accessories_and_stuff_bows_double_small_1/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/043_rare_catalog_hats_more_accessories_and_stuff_bows_double_small_1/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 2
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 0
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 1
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 3
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+      "rarity": "epic",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "small",
+        "motifPlacement": "side",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          2,
+          2
+        ],
+        "channels": [
+          "GRAPHIC"
+        ]
+      },
+      "styleDonor": {
+        "id": "Alt-Fashion Set::Hats::Earmuffs",
+        "pack": "Alt-Fashion Set",
+        "family": "Earmuffs"
+      },
+      "parts": [
+        {
+          "kind": "MOTIF",
+          "name": "Garland (Dried 2)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/044_epic_catalog_hats_more_accessories_and_stuff_bows_double_small_1/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/044_epic_catalog_hats_more_accessories_and_stuff_bows_double_small_1/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/044_epic_catalog_hats_more_accessories_and_stuff_bows_double_small_1/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/044_epic_catalog_hats_more_accessories_and_stuff_bows_double_small_1/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 2
+          }
+        ],
+        "left": [
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 2
+          }
+        ],
+        "back": [
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+      "rarity": "common",
+      "capacity": "small",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": [
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::Headscarf",
+        "pack": "Cottagecore Set",
+        "family": "Headscarf"
+      },
+      "parts": [],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/045_common_catalog_hats_more_accessories_and_stuff_crown_diadem_1/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/045_common_catalog_hats_more_accessories_and_stuff_crown_diadem_1/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/045_common_catalog_hats_more_accessories_and_stuff_crown_diadem_1/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/045_common_catalog_hats_more_accessories_and_stuff_crown_diadem_1/back.png"
+      },
+      "renderLog": {
+        "front": [],
+        "right": [],
+        "left": [],
+        "back": []
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+      "rarity": "uncommon",
+      "capacity": "small",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "stripe",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "PATTERN",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "Alt-Fashion Set::Hats::Headband",
+        "pack": "Alt-Fashion Set",
+        "family": "Headband"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/046_uncommon_catalog_hats_more_accessories_and_stuff_crown_diadem_1/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/046_uncommon_catalog_hats_more_accessories_and_stuff_crown_diadem_1/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/046_uncommon_catalog_hats_more_accessories_and_stuff_crown_diadem_1/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/046_uncommon_catalog_hats_more_accessories_and_stuff_crown_diadem_1/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+      "rarity": "rare",
+      "capacity": "small",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "subtle",
+        "motif": "small",
+        "motifPlacement": "front_offset",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 3,
+        "budget": [
+          2,
+          3
+        ],
+        "channels": [
+          "GRAPHIC",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Bow",
+        "pack": "More Accessories and Stuff",
+        "family": "Bow"
+      },
+      "parts": [
+        {
+          "kind": "MOTIF",
+          "name": "Garland (Dried 2)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/047_rare_catalog_hats_more_accessories_and_stuff_crown_diadem_1/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/047_rare_catalog_hats_more_accessories_and_stuff_crown_diadem_1/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/047_rare_catalog_hats_more_accessories_and_stuff_crown_diadem_1/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/047_rare_catalog_hats_more_accessories_and_stuff_crown_diadem_1/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "right": [
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+      "rarity": "epic",
+      "capacity": "small",
+      "recipe": {
+        "materialTreatment": "statement",
+        "pattern": "colorblock",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 3,
+        "budget": [
+          3,
+          3
+        ],
+        "channels": [
+          "PATTERN",
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Bows",
+        "pack": "More Accessories and Stuff",
+        "family": "Bows"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/048_epic_catalog_hats_more_accessories_and_stuff_crown_diadem_1/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/048_epic_catalog_hats_more_accessories_and_stuff_crown_diadem_1/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/048_epic_catalog_hats_more_accessories_and_stuff_crown_diadem_1/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/048_epic_catalog_hats_more_accessories_and_stuff_crown_diadem_1/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_earmuffs",
+      "rarity": "common",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 0,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": []
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::Beret",
+        "pack": "Cottagecore Set",
+        "family": "Beret"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/049_common_catalog_hats_more_accessories_and_stuff_earmuffs/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/049_common_catalog_hats_more_accessories_and_stuff_earmuffs/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/049_common_catalog_hats_more_accessories_and_stuff_earmuffs/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/049_common_catalog_hats_more_accessories_and_stuff_earmuffs/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 6
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 6
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 2
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_earmuffs",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_earmuffs",
+      "rarity": "uncommon",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "colorblock",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "PATTERN"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::MushroomHat",
+        "pack": "Cottagecore Set",
+        "family": "MushroomHat"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/050_uncommon_catalog_hats_more_accessories_and_stuff_earmuffs/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/050_uncommon_catalog_hats_more_accessories_and_stuff_earmuffs/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/050_uncommon_catalog_hats_more_accessories_and_stuff_earmuffs/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/050_uncommon_catalog_hats_more_accessories_and_stuff_earmuffs/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 6
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 6
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 2
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_earmuffs",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_earmuffs",
+      "rarity": "rare",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "small",
+        "hardware": "small"
+      },
+      "taste": {
+        "complexity": 3,
+        "budget": [
+          2,
+          4
+        ],
+        "channels": [
+          "ATTACHMENT",
+          "HARDWARE",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::Beret",
+        "pack": "Cottagecore Set",
+        "family": "Beret"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "ATTACHMENT",
+          "name": "Earmuffs (Cat)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "HARDWARE",
+          "name": "Decorative Bells (Doubles)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/051_rare_catalog_hats_more_accessories_and_stuff_earmuffs/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/051_rare_catalog_hats_more_accessories_and_stuff_earmuffs/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/051_rare_catalog_hats_more_accessories_and_stuff_earmuffs/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/051_rare_catalog_hats_more_accessories_and_stuff_earmuffs/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 3
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 6
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 3
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 6
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 5
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 2
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 5
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 1
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_earmuffs",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_earmuffs",
+      "rarity": "epic",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "subtle",
+        "motif": "small",
+        "motifPlacement": "front_offset",
+        "attachment": "small",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          3,
+          4
+        ],
+        "channels": [
+          "ATTACHMENT",
+          "GRAPHIC",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::Headscarf",
+        "pack": "Cottagecore Set",
+        "family": "Headscarf"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Beret (Leaf)",
+          "pack": "Cottagecore Set"
+        },
+        {
+          "kind": "ATTACHMENT",
+          "name": "Earmuffs (Cat)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/052_epic_catalog_hats_more_accessories_and_stuff_earmuffs/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/052_epic_catalog_hats_more_accessories_and_stuff_earmuffs/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/052_epic_catalog_hats_more_accessories_and_stuff_earmuffs/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/052_epic_catalog_hats_more_accessories_and_stuff_earmuffs/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 6
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 3
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 6
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 3
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 2
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 3
+          },
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 5
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_earmuffs",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+      "rarity": "common",
+      "capacity": "small",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": [
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "Alt-Fashion Set::Hats::Beanie",
+        "pack": "Alt-Fashion Set",
+        "family": "Beanie"
+      },
+      "parts": [],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/053_common_catalog_hats_more_accessories_and_stuff_garland_dried_1/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/053_common_catalog_hats_more_accessories_and_stuff_garland_dried_1/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/053_common_catalog_hats_more_accessories_and_stuff_garland_dried_1/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/053_common_catalog_hats_more_accessories_and_stuff_garland_dried_1/back.png"
+      },
+      "renderLog": {
+        "front": [],
+        "right": [],
+        "left": [],
+        "back": []
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+      "rarity": "uncommon",
+      "capacity": "small",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "small",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "ATTACHMENT",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Garland",
+        "pack": "More Accessories and Stuff",
+        "family": "Garland"
+      },
+      "parts": [
+        {
+          "kind": "ATTACHMENT",
+          "name": "Veil (Tiara)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/054_uncommon_catalog_hats_more_accessories_and_stuff_garland_dried_1/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/054_uncommon_catalog_hats_more_accessories_and_stuff_garland_dried_1/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/054_uncommon_catalog_hats_more_accessories_and_stuff_garland_dried_1/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/054_uncommon_catalog_hats_more_accessories_and_stuff_garland_dried_1/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Veil (Tiara)",
+            "cellsApplied": 1
+          }
+        ],
+        "right": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Veil (Tiara)",
+            "cellsApplied": 3
+          }
+        ],
+        "left": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Veil (Tiara)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Veil (Tiara)",
+            "cellsApplied": 1
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+      "rarity": "rare",
+      "capacity": "small",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "emblem",
+        "motifPlacement": "front_offset",
+        "attachment": "none",
+        "hardware": "small"
+      },
+      "taste": {
+        "complexity": 3,
+        "budget": [
+          2,
+          3
+        ],
+        "channels": [
+          "GRAPHIC",
+          "HARDWARE"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Bows",
+        "pack": "More Accessories and Stuff",
+        "family": "Bows"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Beret (Leaf)",
+          "pack": "Cottagecore Set"
+        },
+        {
+          "kind": "HARDWARE",
+          "name": "Decorative Bells (Doubles)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/055_rare_catalog_hats_more_accessories_and_stuff_garland_dried_1/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/055_rare_catalog_hats_more_accessories_and_stuff_garland_dried_1/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/055_rare_catalog_hats_more_accessories_and_stuff_garland_dried_1/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/055_rare_catalog_hats_more_accessories_and_stuff_garland_dried_1/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 1
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 3
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 1
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 3
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 1
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+      "rarity": "epic",
+      "capacity": "small",
+      "recipe": {
+        "materialTreatment": "statement",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "back_center",
+        "attachment": "none",
+        "hardware": "small"
+      },
+      "taste": {
+        "complexity": 3,
+        "budget": [
+          3,
+          3
+        ],
+        "channels": [
+          "HARDWARE",
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "Alt-Fashion Set::Hats::Beanie",
+        "pack": "Alt-Fashion Set",
+        "family": "Beanie"
+      },
+      "parts": [
+        {
+          "kind": "HARDWARE",
+          "name": "Decorative Bells (Doubles)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/056_epic_catalog_hats_more_accessories_and_stuff_garland_dried_1/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/056_epic_catalog_hats_more_accessories_and_stuff_garland_dried_1/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/056_epic_catalog_hats_more_accessories_and_stuff_garland_dried_1/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/056_epic_catalog_hats_more_accessories_and_stuff_garland_dried_1/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 1
+          }
+        ],
+        "left": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 1
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_hair_buns",
+      "rarity": "common",
+      "capacity": "small",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 0,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": []
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::SunHat",
+        "pack": "More Accessories and Stuff",
+        "family": "SunHat"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/057_common_catalog_hats_more_accessories_and_stuff_hair_buns/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/057_common_catalog_hats_more_accessories_and_stuff_hair_buns/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/057_common_catalog_hats_more_accessories_and_stuff_hair_buns/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/057_common_catalog_hats_more_accessories_and_stuff_hair_buns/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_hair_buns",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_hair_buns",
+      "rarity": "uncommon",
+      "capacity": "small",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "colorblock",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "PATTERN",
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "Alt-Fashion Set::Hats::Earmuffs",
+        "pack": "Alt-Fashion Set",
+        "family": "Earmuffs"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/058_uncommon_catalog_hats_more_accessories_and_stuff_hair_buns/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/058_uncommon_catalog_hats_more_accessories_and_stuff_hair_buns/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/058_uncommon_catalog_hats_more_accessories_and_stuff_hair_buns/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/058_uncommon_catalog_hats_more_accessories_and_stuff_hair_buns/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_hair_buns",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_hair_buns",
+      "rarity": "rare",
+      "capacity": "small",
+      "recipe": {
+        "materialTreatment": "statement",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "side",
+        "attachment": "small",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 3,
+        "budget": [
+          2,
+          3
+        ],
+        "channels": [
+          "ATTACHMENT",
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::MushroomHat",
+        "pack": "Cottagecore Set",
+        "family": "MushroomHat"
+      },
+      "parts": [
+        {
+          "kind": "ATTACHMENT",
+          "name": "Earmuffs (Cat)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/059_rare_catalog_hats_more_accessories_and_stuff_hair_buns/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/059_rare_catalog_hats_more_accessories_and_stuff_hair_buns/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/059_rare_catalog_hats_more_accessories_and_stuff_hair_buns/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/059_rare_catalog_hats_more_accessories_and_stuff_hair_buns/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 1
+          }
+        ],
+        "right": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 3
+          }
+        ],
+        "left": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 2
+          }
+        ],
+        "back": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 3
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_hair_buns",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_hair_buns",
+      "rarity": "epic",
+      "capacity": "small",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "contrast",
+        "motif": "emblem",
+        "motifPlacement": "side",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 3,
+        "budget": [
+          3,
+          3
+        ],
+        "channels": [
+          "GRAPHIC",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Garland",
+        "pack": "More Accessories and Stuff",
+        "family": "Garland"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Garland (Dried 2)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/060_epic_catalog_hats_more_accessories_and_stuff_hair_buns/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/060_epic_catalog_hats_more_accessories_and_stuff_hair_buns/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/060_epic_catalog_hats_more_accessories_and_stuff_hair_buns/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/060_epic_catalog_hats_more_accessories_and_stuff_hair_buns/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_hair_buns",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_headband",
+      "rarity": "common",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 0,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": []
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Veil",
+        "pack": "More Accessories and Stuff",
+        "family": "Veil"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/061_common_catalog_hats_more_accessories_and_stuff_headband/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/061_common_catalog_hats_more_accessories_and_stuff_headband/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/061_common_catalog_hats_more_accessories_and_stuff_headband/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/061_common_catalog_hats_more_accessories_and_stuff_headband/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 2
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_headband",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_headband",
+      "rarity": "uncommon",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "statement",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Bow",
+        "pack": "More Accessories and Stuff",
+        "family": "Bow"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/062_uncommon_catalog_hats_more_accessories_and_stuff_headband/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/062_uncommon_catalog_hats_more_accessories_and_stuff_headband/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/062_uncommon_catalog_hats_more_accessories_and_stuff_headband/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/062_uncommon_catalog_hats_more_accessories_and_stuff_headband/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 2
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_headband",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_headband",
+      "rarity": "rare",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "emblem",
+        "motifPlacement": "side",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          2,
+          2
+        ],
+        "channels": [
+          "GRAPHIC"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::Hood",
+        "pack": "Cottagecore Set",
+        "family": "Hood"
+      },
+      "parts": [
+        {
+          "kind": "MOTIF",
+          "name": "Beret (Leaf)",
+          "pack": "Cottagecore Set"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/063_rare_catalog_hats_more_accessories_and_stuff_headband/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/063_rare_catalog_hats_more_accessories_and_stuff_headband/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/063_rare_catalog_hats_more_accessories_and_stuff_headband/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/063_rare_catalog_hats_more_accessories_and_stuff_headband/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 2
+          }
+        ],
+        "right": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 2
+          }
+        ],
+        "left": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_headband",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_headband",
+      "rarity": "epic",
+      "capacity": "tiny",
+      "recipe": {
+        "materialTreatment": "statement",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "side",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          2,
+          2
+        ],
+        "channels": [
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Garland",
+        "pack": "More Accessories and Stuff",
+        "family": "Garland"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/064_epic_catalog_hats_more_accessories_and_stuff_headband/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/064_epic_catalog_hats_more_accessories_and_stuff_headband/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/064_epic_catalog_hats_more_accessories_and_stuff_headband/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/064_epic_catalog_hats_more_accessories_and_stuff_headband/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 2
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_headband",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_hood",
+      "rarity": "common",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 0,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": []
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::HairBuns",
+        "pack": "More Accessories and Stuff",
+        "family": "HairBuns"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/065_common_catalog_hats_more_accessories_and_stuff_hood/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/065_common_catalog_hats_more_accessories_and_stuff_hood/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/065_common_catalog_hats_more_accessories_and_stuff_hood/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/065_common_catalog_hats_more_accessories_and_stuff_hood/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_hood",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_hood",
+      "rarity": "uncommon",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "small"
+      },
+      "taste": {
+        "complexity": 1,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "HARDWARE"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Beanie",
+        "pack": "More Accessories and Stuff",
+        "family": "Beanie"
+      },
+      "parts": [
+        {
+          "kind": "HARDWARE",
+          "name": "Decorative Bells (Doubles)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/066_uncommon_catalog_hats_more_accessories_and_stuff_hood/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/066_uncommon_catalog_hats_more_accessories_and_stuff_hood/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/066_uncommon_catalog_hats_more_accessories_and_stuff_hood/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/066_uncommon_catalog_hats_more_accessories_and_stuff_hood/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 1
+          }
+        ],
+        "left": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 2
+          }
+        ],
+        "back": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_hood",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_hood",
+      "rarity": "rare",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "statement",
+        "pattern": "colorblock",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "front_offset",
+        "attachment": "none",
+        "hardware": "small"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          2,
+          4
+        ],
+        "channels": [
+          "HARDWARE",
+          "PATTERN",
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::BoaterHat",
+        "pack": "Cottagecore Set",
+        "family": "BoaterHat"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "HARDWARE",
+          "name": "Decorative Bells (Doubles)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/067_rare_catalog_hats_more_accessories_and_stuff_hood/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/067_rare_catalog_hats_more_accessories_and_stuff_hood/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/067_rare_catalog_hats_more_accessories_and_stuff_hood/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/067_rare_catalog_hats_more_accessories_and_stuff_hood/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 3
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 7
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 1
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 2
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_hood",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_hood",
+      "rarity": "epic",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "large",
+        "motifPlacement": "front_offset",
+        "attachment": "none",
+        "hardware": "small"
+      },
+      "taste": {
+        "complexity": 5,
+        "budget": [
+          3,
+          5
+        ],
+        "channels": [
+          "GRAPHIC",
+          "HARDWARE",
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::MushroomHat",
+        "pack": "Cottagecore Set",
+        "family": "MushroomHat"
+      },
+      "parts": [
+        {
+          "kind": "MOTIF",
+          "name": "Beret (Leaf)",
+          "pack": "Cottagecore Set"
+        },
+        {
+          "kind": "HARDWARE",
+          "name": "Decorative Bells (Doubles)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/068_epic_catalog_hats_more_accessories_and_stuff_hood/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/068_epic_catalog_hats_more_accessories_and_stuff_hood/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/068_epic_catalog_hats_more_accessories_and_stuff_hood/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/068_epic_catalog_hats_more_accessories_and_stuff_hood/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 3
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 1
+          }
+        ],
+        "left": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 2
+          }
+        ],
+        "back": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_hood",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_straw_hat",
+      "rarity": "common",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 0,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": []
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::MushroomHat",
+        "pack": "Cottagecore Set",
+        "family": "MushroomHat"
+      },
+      "parts": [],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/069_common_catalog_hats_more_accessories_and_stuff_straw_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/069_common_catalog_hats_more_accessories_and_stuff_straw_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/069_common_catalog_hats_more_accessories_and_stuff_straw_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/069_common_catalog_hats_more_accessories_and_stuff_straw_hat/back.png"
+      },
+      "renderLog": {
+        "front": [],
+        "right": [],
+        "left": [],
+        "back": []
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_straw_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_straw_hat",
+      "rarity": "uncommon",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "small"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "HARDWARE",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::TulipHat",
+        "pack": "More Accessories and Stuff",
+        "family": "TulipHat"
+      },
+      "parts": [
+        {
+          "kind": "HARDWARE",
+          "name": "Decorative Bells (Doubles)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/070_uncommon_catalog_hats_more_accessories_and_stuff_straw_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/070_uncommon_catalog_hats_more_accessories_and_stuff_straw_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/070_uncommon_catalog_hats_more_accessories_and_stuff_straw_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/070_uncommon_catalog_hats_more_accessories_and_stuff_straw_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "left": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_straw_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_straw_hat",
+      "rarity": "rare",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "contrast",
+        "motif": "large",
+        "motifPlacement": "back_center",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          2,
+          4
+        ],
+        "channels": [
+          "GRAPHIC",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::Hood",
+        "pack": "Cottagecore Set",
+        "family": "Hood"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Beret (Leaf)",
+          "pack": "Cottagecore Set"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/071_rare_catalog_hats_more_accessories_and_stuff_straw_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/071_rare_catalog_hats_more_accessories_and_stuff_straw_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/071_rare_catalog_hats_more_accessories_and_stuff_straw_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/071_rare_catalog_hats_more_accessories_and_stuff_straw_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_straw_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_straw_hat",
+      "rarity": "epic",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "solid",
+        "trim": "contrast",
+        "motif": "small",
+        "motifPlacement": "back_center",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          3,
+          5
+        ],
+        "channels": [
+          "GRAPHIC",
+          "REGION",
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::BoaterHat",
+        "pack": "Cottagecore Set",
+        "family": "BoaterHat"
+      },
+      "parts": [
+        {
+          "kind": "MOTIF",
+          "name": "Garland (Dried 2)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/072_epic_catalog_hats_more_accessories_and_stuff_straw_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/072_epic_catalog_hats_more_accessories_and_stuff_straw_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/072_epic_catalog_hats_more_accessories_and_stuff_straw_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/072_epic_catalog_hats_more_accessories_and_stuff_straw_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "right": [
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MOTIF",
+            "name": "Garland (Dried 2)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_straw_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_sun_hat",
+      "rarity": "common",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 0,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": []
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Earmuffs",
+        "pack": "More Accessories and Stuff",
+        "family": "Earmuffs"
+      },
+      "parts": [],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/073_common_catalog_hats_more_accessories_and_stuff_sun_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/073_common_catalog_hats_more_accessories_and_stuff_sun_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/073_common_catalog_hats_more_accessories_and_stuff_sun_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/073_common_catalog_hats_more_accessories_and_stuff_sun_hat/back.png"
+      },
+      "renderLog": {
+        "front": [],
+        "right": [],
+        "left": [],
+        "back": []
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_sun_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_sun_hat",
+      "rarity": "uncommon",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "small",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "ATTACHMENT",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::DecorativeBells",
+        "pack": "More Accessories and Stuff",
+        "family": "DecorativeBells"
+      },
+      "parts": [
+        {
+          "kind": "ATTACHMENT",
+          "name": "Earmuffs (Cat)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/074_uncommon_catalog_hats_more_accessories_and_stuff_sun_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/074_uncommon_catalog_hats_more_accessories_and_stuff_sun_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/074_uncommon_catalog_hats_more_accessories_and_stuff_sun_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/074_uncommon_catalog_hats_more_accessories_and_stuff_sun_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 0
+          }
+        ],
+        "left": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Earmuffs (Cat)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_sun_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_sun_hat",
+      "rarity": "rare",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "wrap",
+        "motif": "small",
+        "motifPlacement": "front_offset",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          2,
+          4
+        ],
+        "channels": [
+          "GRAPHIC",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Bow",
+        "pack": "More Accessories and Stuff",
+        "family": "Bow"
+      },
+      "parts": [
+        {
+          "kind": "MOTIF",
+          "name": "Beret (Leaf)",
+          "pack": "Cottagecore Set"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/075_rare_catalog_hats_more_accessories_and_stuff_sun_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/075_rare_catalog_hats_more_accessories_and_stuff_sun_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/075_rare_catalog_hats_more_accessories_and_stuff_sun_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/075_rare_catalog_hats_more_accessories_and_stuff_sun_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "right": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_sun_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_sun_hat",
+      "rarity": "epic",
+      "capacity": "large",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "subtle",
+        "trim": "contrast",
+        "motif": "large",
+        "motifPlacement": "back_center",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 5,
+        "budget": [
+          3,
+          5
+        ],
+        "channels": [
+          "GRAPHIC",
+          "REGION",
+          "SURFACE"
+        ]
+      },
+      "styleDonor": {
+        "id": "Cottagecore Set::Hats::Beret",
+        "pack": "Cottagecore Set",
+        "family": "Beret"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "MOTIF",
+          "name": "Beret (Leaf)",
+          "pack": "Cottagecore Set"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/076_epic_catalog_hats_more_accessories_and_stuff_sun_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/076_epic_catalog_hats_more_accessories_and_stuff_sun_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/076_epic_catalog_hats_more_accessories_and_stuff_sun_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/076_epic_catalog_hats_more_accessories_and_stuff_sun_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "MOTIF",
+            "name": "Beret (Leaf)",
+            "cellsApplied": 4
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_sun_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+      "rarity": "common",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "subtle",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 0,
+        "budget": [
+          0,
+          1
+        ],
+        "channels": []
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Bows",
+        "pack": "More Accessories and Stuff",
+        "family": "Bows"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/077_common_catalog_hats_more_accessories_and_stuff_tulip_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/077_common_catalog_hats_more_accessories_and_stuff_tulip_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/077_common_catalog_hats_more_accessories_and_stuff_tulip_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/077_common_catalog_hats_more_accessories_and_stuff_tulip_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+      "rarity": "uncommon",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "solid",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "small",
+        "hardware": "none"
+      },
+      "taste": {
+        "complexity": 2,
+        "budget": [
+          1,
+          2
+        ],
+        "channels": [
+          "ATTACHMENT",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Garland",
+        "pack": "More Accessories and Stuff",
+        "family": "Garland"
+      },
+      "parts": [
+        {
+          "kind": "ATTACHMENT",
+          "name": "Veil (Tiara)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/078_uncommon_catalog_hats_more_accessories_and_stuff_tulip_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/078_uncommon_catalog_hats_more_accessories_and_stuff_tulip_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/078_uncommon_catalog_hats_more_accessories_and_stuff_tulip_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/078_uncommon_catalog_hats_more_accessories_and_stuff_tulip_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Veil (Tiara)",
+            "cellsApplied": 1
+          }
+        ],
+        "right": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Veil (Tiara)",
+            "cellsApplied": 0
+          }
+        ],
+        "left": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Veil (Tiara)",
+            "cellsApplied": 0
+          }
+        ],
+        "back": [
+          {
+            "kind": "ATTACHMENT",
+            "name": "Veil (Tiara)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+      "rarity": "rare",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "subtle",
+        "trim": "wrap",
+        "motif": "none",
+        "motifPlacement": "side",
+        "attachment": "none",
+        "hardware": "small"
+      },
+      "taste": {
+        "complexity": 3,
+        "budget": [
+          2,
+          4
+        ],
+        "channels": [
+          "HARDWARE",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::Garland",
+        "pack": "More Accessories and Stuff",
+        "family": "Garland"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "HARDWARE",
+          "name": "Decorative Bells (Doubles)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/079_rare_catalog_hats_more_accessories_and_stuff_tulip_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/079_rare_catalog_hats_more_accessories_and_stuff_tulip_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/079_rare_catalog_hats_more_accessories_and_stuff_tulip_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/079_rare_catalog_hats_more_accessories_and_stuff_tulip_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 5
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 5
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+      "rarity": "epic",
+      "capacity": "medium",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "dense",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "back_center",
+        "attachment": "none",
+        "hardware": "small"
+      },
+      "taste": {
+        "complexity": 4,
+        "budget": [
+          3,
+          4
+        ],
+        "channels": [
+          "HARDWARE",
+          "PATTERN",
+          "REGION"
+        ]
+      },
+      "styleDonor": {
+        "id": "More Accessories and Stuff::Hats::TulipHat",
+        "pack": "More Accessories and Stuff",
+        "family": "TulipHat"
+      },
+      "parts": [
+        {
+          "kind": "MATERIAL_PATTERN",
+          "name": "Straw Hat (Messy)",
+          "pack": "More Accessories and Stuff"
+        },
+        {
+          "kind": "HARDWARE",
+          "name": "Decorative Bells (Doubles)",
+          "pack": "More Accessories and Stuff"
+        }
+      ],
+      "frames": {
+        "front": "experiments/hat_production_batch_01/candidates/080_epic_catalog_hats_more_accessories_and_stuff_tulip_hat/front.png",
+        "right": "experiments/hat_production_batch_01/candidates/080_epic_catalog_hats_more_accessories_and_stuff_tulip_hat/right.png",
+        "left": "experiments/hat_production_batch_01/candidates/080_epic_catalog_hats_more_accessories_and_stuff_tulip_hat/left.png",
+        "back": "experiments/hat_production_batch_01/candidates/080_epic_catalog_hats_more_accessories_and_stuff_tulip_hat/back.png"
+      },
+      "renderLog": {
+        "front": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ],
+        "right": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 5
+          }
+        ],
+        "left": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 5
+          }
+        ],
+        "back": [
+          {
+            "kind": "MATERIAL_PATTERN",
+            "name": "Straw Hat (Messy)",
+            "cellsApplied": 8
+          },
+          {
+            "kind": "HARDWARE",
+            "name": "Decorative Bells (Doubles)",
+            "cellsApplied": 0
+          }
+        ]
+      },
+      "template": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+      "status": "CANDIDATE_REVIEW_REQUIRED"
+    }
+  ]
+}
