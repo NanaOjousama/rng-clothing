@@ -777,3 +777,14 @@ Implementation:
 - Built per-rarity candidate pool, raw directional QC, localized, and final-cardinal contact sheets under experiments/sfp2_rarity_batch/.
 - Final cardinal manifests remain fail-closed: human art approval and ESM wear approval are still pending.
 - Validation: py_compile PASS; slouch roll-matrix validator PASS; scoped git diff --check PASS.
+
+
+## 2026-09-22 — Beanie rarity gates tightened
+- Common is now hard-gated to simple everyday designs: subtle patterns only (solid/heather), quieter knit structures, simple none/narrow/standard cuff construction, no motif/emblem/localized decoration.
+- Uncommon requires a noticeable non-motif design feature (stronger stripe/colorblock/jacquard pattern, stronger knit, deeper/rolled construction, trim/wrap, attachment, or hardware), but still forces motif/carrier/decoration/motifPlacement off.
+- Motifs/emblems/patches/badges/localized decoration now have minimum rarity Rare.
+- Strong stripe/colorblock patterns are minimum Uncommon; cable_plus_stripe is minimum Rare.
+- Cuffless hats can no longer roll band_trim_line or double_trim_lines.
+- SFP2 proof target slots changed to Common WHOLE+WRAP, Uncommon WHOLE+WRAP, Rare WHOLE+LOCALIZED, Epic WRAP+LOCALIZED.
+- Credit-free reroll v2 created under experiments/sfp2_rarity_batch/reroll_v2. No Sprite Fusion generation was called.
+- Validator updated to enforce the new rarity floors.

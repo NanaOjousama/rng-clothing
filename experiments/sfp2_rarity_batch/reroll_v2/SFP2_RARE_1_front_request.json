@@ -1,0 +1,27 @@
+{
+  "operation": "style-reference",
+  "size": 16,
+  "prompt": "slouch beanie, cable knit, narrow cuff, medium slouch, back center. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+  "referenceRoles": [
+    {
+      "role": "construction",
+      "localPath": "authored/templates/slouch_pl24/front.png",
+      "note": "approved slouch construction"
+    },
+    {
+      "role": "overall_style",
+      "localPath": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_04.png",
+      "note": "approved small-scale beanie evidence"
+    },
+    {
+      "role": "material",
+      "localPath": "experiments/spritefusion_beanie_material_test_01/cable_knit/native/cable_knit_00.png",
+      "note": "cable_knit material evidence"
+    },
+    {
+      "role": "material",
+      "localPath": "experiments/spritefusion_beanie_material_test_01/cable_knit/native/cable_knit_01.png",
+      "note": "cable_knit material evidence alternate"
+    }
+  ]
+}

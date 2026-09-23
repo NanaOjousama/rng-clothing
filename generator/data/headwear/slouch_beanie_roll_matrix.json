@@ -222,6 +222,10 @@
         ],
         "pattern": [
           "contrast_cuff"
+        ],
+        "trimAccent": [
+          "band_trim_line",
+          "double_trim_lines"
         ]
       }
     },
@@ -696,6 +700,7 @@
   "rarityGuidance": {
     "common": [
       "solid",
+      "heather",
       "plain",
       "fine_rib",
       "wide_rib",
@@ -708,18 +713,34 @@
     "uncommon": [
       "seed",
       "waffle",
+      "single_stripe",
       "twin_stripe",
+      "contrast_cuff",
       "two_tone_block",
+      "twist_stripe",
+      "simple_jacquard",
       "deep_cuff",
       "rolled_cuff",
-      "leaf",
-      "star",
-      "badge_small"
+      "diagonal_wrap_band"
     ],
     "rare": [
       "cable",
-      "simple_jacquard",
+      "cable_plus_stripe",
+      "flower_tiny",
       "flower_cluster_small",
+      "leaf",
+      "star",
+      "moon",
+      "heart",
+      "snowflake",
+      "geom_simple",
+      "animal_tiny",
+      "mushroom_tiny",
+      "badge_small",
+      "patch_rect",
+      "patch_square",
+      "tag_side",
+      "initial_rune",
       "leather_patch",
       "gathered",
       "extra"
@@ -727,7 +748,8 @@
     "epic": [
       "cable_plus_stripe",
       "curated_extra_slouch",
-      "extended_botanical"
+      "extended_botanical",
+      "double_trim_lines"
     ]
   },
   "placementRules": {
@@ -1001,5 +1023,128 @@
     "humanArtApproval": true,
     "esmWearApproval": true,
     "rule": "Roll planning may happen before art exists; production pool admission may not."
+  },
+  "rarityRules": {
+    "order": [
+      "common",
+      "uncommon",
+      "rare",
+      "epic"
+    ],
+    "common": {
+      "description": "Simple everyday beanie. Subtle material/knit variation only; no motif/emblem/localized decoration.",
+      "allowedPatterns": [
+        "solid",
+        "heather"
+      ],
+      "allowedTrimAccents": [
+        "none",
+        "band_trim_line"
+      ],
+      "forced": {
+        "motif": "none",
+        "carrierStyle": "none",
+        "decorationStyle": "none",
+        "motifPlacement": "none",
+        "microAccent": "none"
+      },
+      "allowedKnitStructures": [
+        "plain",
+        "fine_rib",
+        "wide_rib",
+        "seed",
+        "jersey",
+        "brushed",
+        "fleece_wool"
+      ],
+      "allowedBandTypes": [
+        "none",
+        "narrow_cuff",
+        "standard_cuff"
+      ]
+    },
+    "uncommon": {
+      "description": "Noticeably stronger material/pattern identity such as stripes, contrast cuff, color blocking, or clearer knit patterning; still no motif/emblem.",
+      "forced": {
+        "motif": "none",
+        "carrierStyle": "none",
+        "decorationStyle": "none",
+        "motifPlacement": "none"
+      },
+      "allowedMicroAccents": [
+        "none",
+        "diagonal_wrap_band"
+      ],
+      "minimumPatterns": [
+        "single_stripe",
+        "twin_stripe",
+        "contrast_cuff",
+        "two_tone_block",
+        "twist_stripe",
+        "simple_jacquard"
+      ],
+      "distinctiveFeatureRule": {
+        "requireAny": {
+          "pattern": [
+            "single_stripe",
+            "twin_stripe",
+            "contrast_cuff",
+            "two_tone_block",
+            "twist_stripe",
+            "simple_jacquard"
+          ],
+          "knitStructure": [
+            "waffle",
+            "cable",
+            "chunky"
+          ],
+          "bandType": [
+            "deep_cuff",
+            "rolled_cuff",
+            "double_roll"
+          ],
+          "trimAccent": [
+            "band_trim_line",
+            "crown_trim_line",
+            "double_trim_lines"
+          ],
+          "microAccent": [
+            "diagonal_wrap_band"
+          ],
+          "attachment": [
+            "pom_small",
+            "pom_large"
+          ],
+          "hardwareAccent": [
+            "button_accent"
+          ]
+        }
+      }
+    },
+    "rare": {
+      "description": "Motifs/emblems/patches/badges/localized decoration may begin at Rare.",
+      "allowsLocalizedDecoration": true
+    },
+    "epic": {
+      "description": "Highest visual complexity; layered strong pattern/material treatment plus Rare-level localized decoration may combine.",
+      "allowsLocalizedDecoration": true
+    },
+    "minimumRarityByFeature": {
+      "motif_non_none": "rare",
+      "carrierStyle_non_none": "rare",
+      "localized_microAccent": [
+        "rare",
+        "cuff_patch_small",
+        "side_bow_small",
+        "tiny_label_tag"
+      ],
+      "single_stripe": "uncommon",
+      "twin_stripe": "uncommon",
+      "contrast_cuff": "uncommon",
+      "two_tone_block": "uncommon",
+      "twist_stripe": "uncommon",
+      "simple_jacquard": "uncommon",
+      "cable_plus_stripe": "rare"
+    }
   }
 }

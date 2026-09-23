@@ -1,0 +1,27 @@
+{
+  "operation": "style-reference",
+  "size": 16,
+  "prompt": "slouch beanie, chunky knit, contrast cuff, rolled cuff, extra slouch, back center, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+  "referenceRoles": [
+    {
+      "role": "construction",
+      "localPath": "authored/templates/slouch_pl24/front.png",
+      "note": "approved slouch construction"
+    },
+    {
+      "role": "overall_style",
+      "localPath": "experiments/spritefusion_beanie_material_rescale_test_01/accepted_32_and_under/material_05.png",
+      "note": "approved small-scale beanie evidence"
+    },
+    {
+      "role": "material",
+      "localPath": "experiments/spritefusion_beanie_material_test_01/stripe_colorblock/native/stripe_colorblock_00.png",
+      "note": "stripe_colorblock material evidence"
+    },
+    {
+      "role": "material",
+      "localPath": "experiments/spritefusion_beanie_material_test_01/stripe_colorblock/native/stripe_colorblock_01.png",
+      "note": "stripe_colorblock material evidence alternate"
+    }
+  ]
+}

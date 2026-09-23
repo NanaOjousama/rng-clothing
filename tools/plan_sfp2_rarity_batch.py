@@ -9,8 +9,8 @@ RNG=random.Random(SEED)
 TARGETS=[
     ('common','WHOLE_HAT'),
     ('common','WRAPAROUND_REGION'),
+    ('uncommon','WHOLE_HAT'),
     ('uncommon','WRAPAROUND_REGION'),
-    ('uncommon','LOCALIZED'),
     ('rare','WHOLE_HAT'),
     ('rare','LOCALIZED'),
     ('epic','WRAPAROUND_REGION'),
@@ -50,6 +50,38 @@ def valid(recipe):
                 if recipe.get(k) not in vals: return False
     return True
 
+def rarity_valid(recipe, rarity):
+    rules=MATRIX['rarityRules'][rarity]
+    forced=rules.get('forced',{})
+    if any(recipe.get(k)!=v for k,v in forced.items()):
+        return False
+    allowed_patterns=rules.get('allowedPatterns')
+    if allowed_patterns is not None and recipe.get('pattern') not in allowed_patterns:
+        return False
+    allowed_trim=rules.get('allowedTrimAccents')
+    if allowed_trim is not None and recipe.get('trimAccent') not in allowed_trim:
+        return False
+    allowed_knits=rules.get('allowedKnitStructures')
+    if allowed_knits is not None and recipe.get('knitStructure') not in allowed_knits:
+        return False
+    allowed_bands=rules.get('allowedBandTypes')
+    if allowed_bands is not None and recipe.get('bandType') not in allowed_bands:
+        return False
+    allowed_micro=rules.get('allowedMicroAccents')
+    if allowed_micro is not None and recipe.get('microAccent') not in allowed_micro:
+        return False
+    if rarity=='uncommon':
+        # Uncommon may be simple WHOLE_HAT or stronger patterned/wraparound,
+        # but never motif/emblem/localized decoration.
+        if recipe.get('motif')!='none' or recipe.get('carrierStyle')!='none':
+            return False
+        if recipe.get('decorationStyle')!='none' or recipe.get('motifPlacement')!='none':
+            return False
+        req=rules.get('distinctiveFeatureRule',{}).get('requireAny',{})
+        if req and not any(recipe.get(axis) in values for axis,values in req.items()):
+            return False
+    return True
+
 def roll_one(rarity):
     axes=[a for a in MATRIX['rollOrder'] if a in MATRIX['axes']]
     for _ in range(10000):
@@ -58,7 +90,7 @@ def roll_one(rarity):
             r['motif']='none'; r['decorationStyle']='none'; r['motifPlacement']='none'
             r['carrierStyle']='none'; r['microAccent']='none'; r['attachment']='none'
             r['hardwareAccent']='none'
-        if valid(r): return r
+        if valid(r) and rarity_valid(r,rarity): return r
     raise RuntimeError('failed to roll '+rarity)
 def consistency(recipe):
     localized=any([
@@ -96,7 +128,7 @@ def front_prompt(recipe, rarity):
     return ', '.join(bits)+'. Simple wearable Stardew-style hat; preserve a clean isolated hat.'
 
 def main():
-    out=ROOT/'experiments/sfp2_rarity_batch'
+    out=ROOT/'experiments/sfp2_rarity_batch/reroll_v2'
     out.mkdir(parents=True,exist_ok=True)
     mats=json.loads((ROOT/'authored/materials/slouch_beanie_v1/manifest.json').read_text())
     small=mats['smallScaleEvidencePool']

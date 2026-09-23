@@ -54,6 +54,14 @@ def main():
     assert 'plaid_woven' in axes['pattern']
     assert {'none','band_trim_line','crown_trim_line','double_trim_lines'}.issubset(axes['trimAccent'])
     assert {'none','cuff_patch_small','side_bow_small','diagonal_wrap_band','tiny_label_tag'}.issubset(axes['microAccent'])
+    rr=data['rarityRules']
+    assert rr['common']['forced']['motif']=='none'
+    assert rr['uncommon']['forced']['motif']=='none'
+    assert rr['minimumRarityByFeature']['motif_non_none']=='rare'
+    assert rr['minimumRarityByFeature']['carrierStyle_non_none']=='rare'
+    assert 'single_stripe' not in rr['common']['allowedPatterns']
+    assert 'single_stripe' in rr['uncommon']['minimumPatterns']
+    assert 'cable_plus_stripe' in rr['minimumRarityByFeature'] and rr['minimumRarityByFeature']['cable_plus_stripe']=='rare'
     vc=data['viewConsistencyPolicy']
     assert set(vc['classes'])=={'WHOLE_HAT','WRAPAROUND_REGION','LOCALIZED'}
     assert vc['axisDefaults']['pattern']=='WHOLE_HAT'
