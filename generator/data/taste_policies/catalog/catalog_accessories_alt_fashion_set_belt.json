@@ -3,6 +3,34 @@
   "family": "catalog_accessories_alt_fashion_set_belt",
   "template": "catalog_accessories_alt_fashion_set_belt",
   "category": "Accessories",
+  "familyCapacity": {
+    "surfaceAreaClass": "tiny",
+    "averageOpaqueCells": 8.0,
+    "minOpaqueCells": 8,
+    "maxOpaqueCells": 8,
+    "maxComplexity": 2,
+    "maxVisualChannels": 1,
+    "maxSecondary": 0,
+    "maxAccents": 1,
+    "maxMotifFootprintCells": 4,
+    "maxAttachmentFootprintClass": "small",
+    "blockedValues": {
+      "motif": [
+        "large"
+      ],
+      "attachment": [
+        "large"
+      ],
+      "pattern": [
+        "dense"
+      ],
+      "trim": [
+        "wrap"
+      ]
+    },
+    "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+    "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+  },
   "rarityRules": {
     "order": [
       "common",

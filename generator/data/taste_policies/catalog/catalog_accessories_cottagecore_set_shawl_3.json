@@ -3,6 +3,25 @@
   "family": "catalog_accessories_cottagecore_set_shawl_3",
   "template": "catalog_accessories_cottagecore_set_shawl_3",
   "category": "Accessories",
+  "familyCapacity": {
+    "surfaceAreaClass": "medium",
+    "averageOpaqueCells": 55.5,
+    "minOpaqueCells": 50,
+    "maxOpaqueCells": 70,
+    "maxComplexity": 4,
+    "maxVisualChannels": 3,
+    "maxSecondary": 1,
+    "maxAccents": 2,
+    "maxMotifFootprintCells": 16,
+    "maxAttachmentFootprintClass": "medium",
+    "blockedValues": {
+      "motif": [
+        "large"
+      ]
+    },
+    "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+    "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+  },
   "rarityRules": {
     "order": [
       "common",

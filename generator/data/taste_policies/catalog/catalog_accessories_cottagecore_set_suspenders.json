@@ -3,6 +3,34 @@
   "family": "catalog_accessories_cottagecore_set_suspenders",
   "template": "catalog_accessories_cottagecore_set_suspenders",
   "category": "Accessories",
+  "familyCapacity": {
+    "surfaceAreaClass": "tiny",
+    "averageOpaqueCells": 16.0,
+    "minOpaqueCells": 16,
+    "maxOpaqueCells": 16,
+    "maxComplexity": 2,
+    "maxVisualChannels": 1,
+    "maxSecondary": 0,
+    "maxAccents": 1,
+    "maxMotifFootprintCells": 4,
+    "maxAttachmentFootprintClass": "small",
+    "blockedValues": {
+      "motif": [
+        "large"
+      ],
+      "attachment": [
+        "large"
+      ],
+      "pattern": [
+        "dense"
+      ],
+      "trim": [
+        "wrap"
+      ]
+    },
+    "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+    "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+  },
   "rarityRules": {
     "order": [
       "common",

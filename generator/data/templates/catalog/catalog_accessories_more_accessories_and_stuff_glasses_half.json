@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "21871ed685355dd203446142c42d0043a0329d4b07d6a8bae6dc896f300dd5af",
-      "alphaSha256": "2f064aeede8ddd9c5871485c5624f17709a7e8313521c121aa12882c71f7d48a"
+      "alphaSha256": "2f064aeede8ddd9c5871485c5624f17709a7e8313521c121aa12882c71f7d48a",
+      "opaqueCells": 18
     },
     "right": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/GlassesHalf/accessory.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "f0396e1fb5c4f3b728c956b07fe7fb191422f3f4aecef6edcaf86858057f8f99",
-      "alphaSha256": "291b81d36775e142ddc240624b8132973ce95c57cb0e5944ccb49e46787c93ee"
+      "alphaSha256": "291b81d36775e142ddc240624b8132973ce95c57cb0e5944ccb49e46787c93ee",
+      "opaqueCells": 14
     },
     "left": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/GlassesHalf/accessory.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "f9579da2aa7040a877b2a532dab8877ac3fd633c1eea280b07e902dee751391c",
-      "alphaSha256": "e3ae383ac187b98274accabd99dd76808b5e9ce4b1b583a7c57f151dab33cce5"
+      "alphaSha256": "e3ae383ac187b98274accabd99dd76808b5e9ce4b1b583a7c57f151dab33cce5",
+      "opaqueCells": 14
     },
     "back": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/GlassesHalf/accessory.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-      "alphaSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "alphaSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "opaqueCells": 0
     }
   },
   "geometryLock": {

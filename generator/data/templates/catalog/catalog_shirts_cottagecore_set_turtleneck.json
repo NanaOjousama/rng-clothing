@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "76615a7fa4c204ce3eb8f46c0e2851cd27af8dcceada62ae90203131e97556dd",
-      "alphaSha256": "60857c3843041080ec7e02e45bf3353caabb47c22cbb20f224ffebe1cccf1ac7"
+      "alphaSha256": "60857c3843041080ec7e02e45bf3353caabb47c22cbb20f224ffebe1cccf1ac7",
+      "opaqueCells": 64
     },
     "right": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Shirts/Turtleneck/shirt.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "684cb7de744301c80003f74bf23e66e62f4e8671e737f2d5573272ab45d37010",
-      "alphaSha256": "c0b888f7e1901fdd6ef1ce64fc311ef5d97931e7411c7ba576d5e751e1352ea4"
+      "alphaSha256": "c0b888f7e1901fdd6ef1ce64fc311ef5d97931e7411c7ba576d5e751e1352ea4",
+      "opaqueCells": 57
     },
     "left": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Shirts/Turtleneck/shirt.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "2d8fb0499e605be71ff77ebd2950693714e19728c6e28d5ebb3e9a673c61c0d0",
-      "alphaSha256": "1bc765572681e9b00f8c4ff9f2c709446746911b954ec437c720a94d477334e4"
+      "alphaSha256": "1bc765572681e9b00f8c4ff9f2c709446746911b954ec437c720a94d477334e4",
+      "opaqueCells": 57
     },
     "back": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Shirts/Turtleneck/shirt.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "aa8e767e66b9a99c06eb109da4f1f0c10865fde1f1bbfc3676347c712bc0212d",
-      "alphaSha256": "c36cfb52b7b678f20b210c6a0dfd520067506871cddf260e35d4e07b177c1836"
+      "alphaSha256": "c36cfb52b7b678f20b210c6a0dfd520067506871cddf260e35d4e07b177c1836",
+      "opaqueCells": 62
     }
   },
   "geometryLock": {

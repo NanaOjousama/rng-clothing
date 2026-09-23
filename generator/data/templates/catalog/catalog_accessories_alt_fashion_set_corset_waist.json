@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "d28c8f52e9a229e827639bccdf268c62cfb3af98a331f44f33faac2661fe6177",
-      "alphaSha256": "c2a29939a686dff1cedd292479e7371a95c7244ba91bf8bc8f8094338322f891"
+      "alphaSha256": "c2a29939a686dff1cedd292479e7371a95c7244ba91bf8bc8f8094338322f891",
+      "opaqueCells": 26
     },
     "right": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/CorsetWaist/accessory.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "c5b7709f7a98c66bada50ba582a9783bf85e1da4e18060ee4f559b4e71b248e0",
-      "alphaSha256": "e521638bdb58c5569bc555b392b8bd263c446c98b9c395be015ca06d2db41abe"
+      "alphaSha256": "e521638bdb58c5569bc555b392b8bd263c446c98b9c395be015ca06d2db41abe",
+      "opaqueCells": 24
     },
     "left": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/CorsetWaist/accessory.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "99577e41722a28d76a4c08cdae68e74c2f4c97f35cc45365e8be0d18a0e863f8",
-      "alphaSha256": "297cc595224f9f738a1b86d16d2781e4365e40a5b332f1960560a9deaa50f23f"
+      "alphaSha256": "297cc595224f9f738a1b86d16d2781e4365e40a5b332f1960560a9deaa50f23f",
+      "opaqueCells": 24
     },
     "back": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/CorsetWaist/accessory.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "589cf55970ad25482fc8198a4b954b035aa69d3e32f74d1bc73aa71ffa2d0093",
-      "alphaSha256": "b51ed5663981d2b2c59ff249530a8d67a2cd1af7893b7ba5098e0ed245c57e32"
+      "alphaSha256": "b51ed5663981d2b2c59ff249530a8d67a2cd1af7893b7ba5098e0ed245c57e32",
+      "opaqueCells": 24
     }
   },
   "geometryLock": {

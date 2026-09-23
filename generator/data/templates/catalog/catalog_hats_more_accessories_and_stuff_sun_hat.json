@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "f6fc43d7f8f174b64e1c98bce5e6d1f434354e2a35c42080509cedea43073377",
-      "alphaSha256": "de5d308bebed7bd7e8072b0fb14fbaa68a780f44995f645b3fe0a07e06fb5456"
+      "alphaSha256": "de5d308bebed7bd7e8072b0fb14fbaa68a780f44995f645b3fe0a07e06fb5456",
+      "opaqueCells": 91
     },
     "right": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/SunHat/hat.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "898a3df3f62ac391d12e39665be61e3341f243776ca3b4d13b9b7dfc8b5984c8",
-      "alphaSha256": "cb09e637fe693a80e67fc02f7cf999687325336cbcb7a28a1a3a1e6a620b60b5"
+      "alphaSha256": "cb09e637fe693a80e67fc02f7cf999687325336cbcb7a28a1a3a1e6a620b60b5",
+      "opaqueCells": 96
     },
     "left": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/SunHat/hat.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "ae46282e99cb7d861266ddb449a108d01987bfcc592fb7ab9fb37e6bc6b48838",
-      "alphaSha256": "40bc1e266b9a97d5c905c345dbcdef384013fb6edb0de23a222c5758a3cb04cf"
+      "alphaSha256": "40bc1e266b9a97d5c905c345dbcdef384013fb6edb0de23a222c5758a3cb04cf",
+      "opaqueCells": 96
     },
     "back": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/SunHat/hat.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "a0f6fe0b1cf85fce1d2dabdb47ad95283da84d9e79ed2df5b2e7af5ff30942cd",
-      "alphaSha256": "f74c6d56d3d8e3eab5061736ed66f0c952f513540ef1177c4c94f7685062d36d"
+      "alphaSha256": "f74c6d56d3d8e3eab5061736ed66f0c952f513540ef1177c4c94f7685062d36d",
+      "opaqueCells": 145
     }
   },
   "geometryLock": {

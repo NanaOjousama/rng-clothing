@@ -35,7 +35,13 @@ def main():
         assert fam in treg['families'] and treg['families'][fam]['status']=='ACTIVE'
         contract=load_template_for_family(fam)
         assert contract.family==fam
+        assert all('opaqueCells' in spec for spec in contract.frames.values())
+        assert max(int(spec['opaqueCells']) for spec in contract.frames.values())>0
         policy=load_family(fam)
+        cap=policy['familyCapacity']
+        assert cap['surfaceAreaClass'] in {'tiny','small','medium','large'}
+        assert 2 <= int(cap['maxComplexity']) <= 5
+        assert cap['rarityCeilingStrategy']=='COMPRESS_BUDGET_NOT_DISABLE_TIER'
         rr=evaluate_family_recipe(fam,'common',policy['defaultRecipe'])
         assert rr.valid,(fam,rr.errors)
 

@@ -3,6 +3,28 @@
   "family": "catalog_hats_more_accessories_and_stuff_hair_buns",
   "template": "catalog_hats_more_accessories_and_stuff_hair_buns",
   "category": "Hats",
+  "familyCapacity": {
+    "surfaceAreaClass": "small",
+    "averageOpaqueCells": 34.5,
+    "minOpaqueCells": 23,
+    "maxOpaqueCells": 46,
+    "maxComplexity": 3,
+    "maxVisualChannels": 2,
+    "maxSecondary": 1,
+    "maxAccents": 1,
+    "maxMotifFootprintCells": 8,
+    "maxAttachmentFootprintClass": "small",
+    "blockedValues": {
+      "motif": [
+        "large"
+      ],
+      "attachment": [
+        "large"
+      ]
+    },
+    "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+    "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+  },
   "rarityRules": {
     "order": [
       "common",

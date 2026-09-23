@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "e93c15319949a9afba89510f721122391f5ddb9e850eaf6185c29ee9c35b99e7",
-      "alphaSha256": "7661b74a4dde11767c6223d37e9ccb8ea98c6c971c2ef2b6d6a3338b88fe75f7"
+      "alphaSha256": "7661b74a4dde11767c6223d37e9ccb8ea98c6c971c2ef2b6d6a3338b88fe75f7",
+      "opaqueCells": 46
     },
     "right": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Shirts/TopOffShoulder/shirt.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "3ccbdd0090e34b6588896482e0853f2015dcf43ef60694b8b353600eb7c079fa",
-      "alphaSha256": "b251f0ac2ecf4dc5c2b0761ba84bb242fa827be908b74b033a64511fefe5600e"
+      "alphaSha256": "b251f0ac2ecf4dc5c2b0761ba84bb242fa827be908b74b033a64511fefe5600e",
+      "opaqueCells": 39
     },
     "left": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Shirts/TopOffShoulder/shirt.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "62e4985afe848908f7bbe428df980de038ba42fd47d0f6540379713c107a2170",
-      "alphaSha256": "f62cde59ef795a5ae51c58890de4cb4eea1b197dd59f11a7358c4ef4f26b6033"
+      "alphaSha256": "f62cde59ef795a5ae51c58890de4cb4eea1b197dd59f11a7358c4ef4f26b6033",
+      "opaqueCells": 39
     },
     "back": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Shirts/TopOffShoulder/shirt.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "03d948931f180a93840aca47b754c2070f197e697b4a61e8acf22a73b7083d6e",
-      "alphaSha256": "ea40c667aa8ec86c0ed1b0fe483e7fbf53a26e69334c58700b6b5ce4aa1bde28"
+      "alphaSha256": "ea40c667aa8ec86c0ed1b0fe483e7fbf53a26e69334c58700b6b5ce4aa1bde28",
+      "opaqueCells": 44
     }
   },
   "geometryLock": {

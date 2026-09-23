@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "703ee1bbb8f90bfe214778da5a2548a8a4a1bdc0fa6ffb102a9fa64edc8e68d2",
-      "alphaSha256": "e333a3e4ae12526c701cf9f7543d35e96da171fdb5a6ee6609d3c72eabd8f8cb"
+      "alphaSha256": "e333a3e4ae12526c701cf9f7543d35e96da171fdb5a6ee6609d3c72eabd8f8cb",
+      "opaqueCells": 16
     },
     "right": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Suspenders/accessory.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "7b2494933528b30ab62f003ffc5c5f54ec56437ecadb0a37b638070515790c8c",
-      "alphaSha256": "57d7f72862149b531e80e724b7ba7ac1d8efa03464930ef360087d3cb0123131"
+      "alphaSha256": "57d7f72862149b531e80e724b7ba7ac1d8efa03464930ef360087d3cb0123131",
+      "opaqueCells": 16
     },
     "left": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Suspenders/accessory.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "b9f14583f944a9f425ea389adf97148daff75ce783491347e7316a5cb3fab4a0",
-      "alphaSha256": "b9de9a39859fc973721a6c28a015611b80eda5ffe7cec7e359a4b1461a35b7f6"
+      "alphaSha256": "b9de9a39859fc973721a6c28a015611b80eda5ffe7cec7e359a4b1461a35b7f6",
+      "opaqueCells": 16
     },
     "back": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Suspenders/accessory.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "5b007989ac20fae706f74dc2e4d22894cba6341d82e07043f5bafa9414947512",
-      "alphaSha256": "af6c716a8ef565ae8f6913cf4ab140c0bfee5cb72b9a34d3c82f879f0a39bc7f"
+      "alphaSha256": "af6c716a8ef565ae8f6913cf4ab140c0bfee5cb72b9a34d3c82f879f0a39bc7f",
+      "opaqueCells": 16
     }
   },
   "geometryLock": {

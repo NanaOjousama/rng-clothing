@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "9c68c2290120a5b44b0a0fd48f842734ddbd21cc9163853f77b913b86273e5c4",
-      "alphaSha256": "9e3533f919e04e8ffe33f2aabf22f4cb2a5af970d82a5b708e13f5e52034ddcb"
+      "alphaSha256": "9e3533f919e04e8ffe33f2aabf22f4cb2a5af970d82a5b708e13f5e52034ddcb",
+      "opaqueCells": 16
     },
     "right": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Neckerchief2/accessory.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "fe79158848541c752a557088489aaee45df70e220053706a9cfe1041ba05d733",
-      "alphaSha256": "a626193e5aad47291f772f64545f178eaa1756b9a93736ad80f80efd190323ea"
+      "alphaSha256": "a626193e5aad47291f772f64545f178eaa1756b9a93736ad80f80efd190323ea",
+      "opaqueCells": 27
     },
     "left": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Neckerchief2/accessory.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "36f59eeeb143976f6b0c7eb9ab173b8c54a9521f4ba10d41c3bbd3b711fd9f86",
-      "alphaSha256": "44918686649310306e2d15b60fa0342ceece532bffe8823cc0d8ef18d5167687"
+      "alphaSha256": "44918686649310306e2d15b60fa0342ceece532bffe8823cc0d8ef18d5167687",
+      "opaqueCells": 27
     },
     "back": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Neckerchief2/accessory.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "8db7f93ccd1094abb4b88be8f4272b305d3b990ce9a88160a109ef09dd187dd8",
-      "alphaSha256": "cf97500d44d89915226bd1c5c0cdccb1b91b56fef455871d66828c114d5b2ed6"
+      "alphaSha256": "cf97500d44d89915226bd1c5c0cdccb1b91b56fef455871d66828c114d5b2ed6",
+      "opaqueCells": 28
     }
   },
   "geometryLock": {

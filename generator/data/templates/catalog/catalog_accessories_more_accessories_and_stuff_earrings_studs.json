@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "3884d979110f841ee6c941a19ad666230fcd68ecca54a367c3657df11829c5c8",
-      "alphaSha256": "14aaa6d214a978628d0fa62968c40243a28396aa84afc0246d3686dab72fbc0e"
+      "alphaSha256": "14aaa6d214a978628d0fa62968c40243a28396aa84afc0246d3686dab72fbc0e",
+      "opaqueCells": 2
     },
     "right": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/EarringsStuds/accessory.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "f385700a0f07d777cd7eec4a3e46206078b54e353fa65e869b596aaa9869bde8",
-      "alphaSha256": "8c01ab0efc35d47f2de5d6bcb8cf7b17a81ec4b7bf01dccf1edfa4e2d61b3190"
+      "alphaSha256": "8c01ab0efc35d47f2de5d6bcb8cf7b17a81ec4b7bf01dccf1edfa4e2d61b3190",
+      "opaqueCells": 1
     },
     "left": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/EarringsStuds/accessory.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "be72f443186c247517e70a153967592d4d1d4a988619f424b583cdc9cf92747e",
-      "alphaSha256": "0f1c15b1314cc25262b6fa01d8a24b65ccf0f2829e985be134bd9d9415898c84"
+      "alphaSha256": "0f1c15b1314cc25262b6fa01d8a24b65ccf0f2829e985be134bd9d9415898c84",
+      "opaqueCells": 1
     },
     "back": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/EarringsStuds/accessory.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "3884d979110f841ee6c941a19ad666230fcd68ecca54a367c3657df11829c5c8",
-      "alphaSha256": "14aaa6d214a978628d0fa62968c40243a28396aa84afc0246d3686dab72fbc0e"
+      "alphaSha256": "14aaa6d214a978628d0fa62968c40243a28396aa84afc0246d3686dab72fbc0e",
+      "opaqueCells": 2
     }
   },
   "geometryLock": {

@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "94da1c71e2c2cc189c74dde5874d05149ca323846c15e6810e1bca9aca7a0322",
-      "alphaSha256": "a7780fa59454c753aff167edf760d78571d0ac202b0bae68bb74bce8a69dc8a9"
+      "alphaSha256": "a7780fa59454c753aff167edf760d78571d0ac202b0bae68bb74bce8a69dc8a9",
+      "opaqueCells": 4
     },
     "right": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/Choker/accessory.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "29fb3e0562cb2d41168df6b1c42b02c9bb5a2ee3a44a39afdc8d5cb8730e0039",
-      "alphaSha256": "f162139fdc6c8dc1c1c00bbd2375744b88ced3eb361257847e15298c470c00a1"
+      "alphaSha256": "f162139fdc6c8dc1c1c00bbd2375744b88ced3eb361257847e15298c470c00a1",
+      "opaqueCells": 3
     },
     "left": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/Choker/accessory.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "1dc23a390ff5581bcd662fb6ed4e0341e1c7a847c58e8adac901ef5ebb5da699",
-      "alphaSha256": "07d54fcc203991f3d12be11d101c92f4890a3f63cfaa752e492b1e2d4a1b3fba"
+      "alphaSha256": "07d54fcc203991f3d12be11d101c92f4890a3f63cfaa752e492b1e2d4a1b3fba",
+      "opaqueCells": 3
     },
     "back": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/Choker/accessory.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "94da1c71e2c2cc189c74dde5874d05149ca323846c15e6810e1bca9aca7a0322",
-      "alphaSha256": "a7780fa59454c753aff167edf760d78571d0ac202b0bae68bb74bce8a69dc8a9"
+      "alphaSha256": "a7780fa59454c753aff167edf760d78571d0ac202b0bae68bb74bce8a69dc8a9",
+      "opaqueCells": 4
     }
   },
   "geometryLock": {

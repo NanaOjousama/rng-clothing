@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "5e7ff6b3e7360d44170102fb7948de680464ef79fcc60886b97a1a6f5ffcc195",
-      "alphaSha256": "722f9240a27691b50b824343b96e43d6a01fe3a7f0e39461eff9696c4dd59b7f"
+      "alphaSha256": "722f9240a27691b50b824343b96e43d6a01fe3a7f0e39461eff9696c4dd59b7f",
+      "opaqueCells": 38
     },
     "right": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandDried1/hat.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "85be40c8a8399cf59be0c4b2aafdd2425c1977b3a11df9a37b141c7cf61b7128",
-      "alphaSha256": "7601030410ed251a0c0e221ebd4dc506f9860c7619fd81f3d6184c4d91d48d66"
+      "alphaSha256": "7601030410ed251a0c0e221ebd4dc506f9860c7619fd81f3d6184c4d91d48d66",
+      "opaqueCells": 40
     },
     "left": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandDried1/hat.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "4a55e65977cff0101f5ee254dc010e3934d605dc3db855fc75a6cedb94623808",
-      "alphaSha256": "205e9c1fdcc19b8bc1983ff784fefb6017f4794bd1a4eff5ba0afb3fb357c418"
+      "alphaSha256": "205e9c1fdcc19b8bc1983ff784fefb6017f4794bd1a4eff5ba0afb3fb357c418",
+      "opaqueCells": 40
     },
     "back": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandDried1/hat.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "0f71077505f467c423e28add6da8c169ed583df578a3f7969bfe60da77b81b82",
-      "alphaSha256": "2dd3379ad53cc1001a73147e9e9e251992d063a0bcca2629e87774bfabc8f598"
+      "alphaSha256": "2dd3379ad53cc1001a73147e9e9e251992d063a0bcca2629e87774bfabc8f598",
+      "opaqueCells": 61
     }
   },
   "geometryLock": {

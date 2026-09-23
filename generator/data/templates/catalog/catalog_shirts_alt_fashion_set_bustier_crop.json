@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "5066749c2b368f3a4ddd192a6a6b45660d3ab148ba0d7c2e7a5472b4f5fcc684",
-      "alphaSha256": "a429c6df2e3f2f84ca916fcf02e24d0105627f4cae976256fdd7ba63cb0c28e8"
+      "alphaSha256": "a429c6df2e3f2f84ca916fcf02e24d0105627f4cae976256fdd7ba63cb0c28e8",
+      "opaqueCells": 32
     },
     "right": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/BustierCrop/shirt.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "9d182b71d00dfa0a05de6fb08386f4c623a5eef5192737b709c8363245b36d2e",
-      "alphaSha256": "6225ecec3b449217024cc28bfff11a932ae7565d453dc320ebee0e73661b8bea"
+      "alphaSha256": "6225ecec3b449217024cc28bfff11a932ae7565d453dc320ebee0e73661b8bea",
+      "opaqueCells": 30
     },
     "left": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/BustierCrop/shirt.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "3f85f4ba13f7d744e2bf5437ba1272aeaf3e9871129c7b706bb660648d67301f",
-      "alphaSha256": "889e35f5f1d290aa4f107d126ea4a01a7934baa9c40adc2add87e43db89f0746"
+      "alphaSha256": "889e35f5f1d290aa4f107d126ea4a01a7934baa9c40adc2add87e43db89f0746",
+      "opaqueCells": 30
     },
     "back": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/BustierCrop/shirt.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "20f9bc55d8d6811b00872702907dddba29712237c52c24a1254a5cd1f16d89f7",
-      "alphaSha256": "6f22bfa14c7ea752b3124ab41373e4fe5d19fd786fac262d4e3da88ba690cad1"
+      "alphaSha256": "6f22bfa14c7ea752b3124ab41373e4fe5d19fd786fac262d4e3da88ba690cad1",
+      "opaqueCells": 34
     }
   },
   "geometryLock": {

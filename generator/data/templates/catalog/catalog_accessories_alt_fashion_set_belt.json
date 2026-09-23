@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "7bb115c08a5c2d7a31658acfa076db8d7deabc1e45841d5d4d181053fcab5b64",
-      "alphaSha256": "4ac4c016df9f97299788eaf05c0cd8748fdc287eb093c3dcd894ac2dfcec44ab"
+      "alphaSha256": "4ac4c016df9f97299788eaf05c0cd8748fdc287eb093c3dcd894ac2dfcec44ab",
+      "opaqueCells": 8
     },
     "right": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/Belt/accessory.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "7abc5142deefd7dbbeab239e79eb3c980747f9a3b5098008bbb5e6fc2bbc8f6a",
-      "alphaSha256": "f27cfefdaa1ee63dbab3acd0e477ba4a3826fa5972c7715f7603387b6bb2cd41"
+      "alphaSha256": "f27cfefdaa1ee63dbab3acd0e477ba4a3826fa5972c7715f7603387b6bb2cd41",
+      "opaqueCells": 8
     },
     "left": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/Belt/accessory.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "9a4d0a4750cc478a644cf3fdf7a8ffc51cd17451a14223b76dc8ee8abf9c46cf",
-      "alphaSha256": "f27cfefdaa1ee63dbab3acd0e477ba4a3826fa5972c7715f7603387b6bb2cd41"
+      "alphaSha256": "f27cfefdaa1ee63dbab3acd0e477ba4a3826fa5972c7715f7603387b6bb2cd41",
+      "opaqueCells": 8
     },
     "back": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/Belt/accessory.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "d1732138ee35c586d0bf6810bf24c8c2eaa95393b96c5c9f3834c9359a4a7db2",
-      "alphaSha256": "2553361ea9fb731e71a6cea9de65e1e7d46e990faba37c5abb8b337f939fd80f"
+      "alphaSha256": "2553361ea9fb731e71a6cea9de65e1e7d46e990faba37c5abb8b337f939fd80f",
+      "opaqueCells": 8
     }
   },
   "geometryLock": {

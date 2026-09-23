@@ -3,6 +3,21 @@
   "family": "catalog_hats_more_accessories_and_stuff_sun_hat",
   "template": "catalog_hats_more_accessories_and_stuff_sun_hat",
   "category": "Hats",
+  "familyCapacity": {
+    "surfaceAreaClass": "large",
+    "averageOpaqueCells": 107.0,
+    "minOpaqueCells": 91,
+    "maxOpaqueCells": 145,
+    "maxComplexity": 5,
+    "maxVisualChannels": 3,
+    "maxSecondary": 2,
+    "maxAccents": 2,
+    "maxMotifFootprintCells": 32,
+    "maxAttachmentFootprintClass": "large",
+    "blockedValues": {},
+    "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+    "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+  },
   "rarityRules": {
     "order": [
       "common",

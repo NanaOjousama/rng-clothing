@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "c2d1df3e56a80dca6b470955a69e0932a13ea81cd28ebb80df24cf94e9c2e933",
-      "alphaSha256": "492dbd4a2f96bd26fabb8b74c495e5aa02e5353e1313060f62e50b464df254b1"
+      "alphaSha256": "492dbd4a2f96bd26fabb8b74c495e5aa02e5353e1313060f62e50b464df254b1",
+      "opaqueCells": 12
     },
     "right": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/BagBackpackHeart/accessory.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "2eaa02a3ec5c6b3d7e5c813329fe355d68488845645c12a7eb828a6ce0735247",
-      "alphaSha256": "9e5d591d4d3d4e73127e9ef97bc92ef79637ab7303a597063c6ec2a6ad77b9ea"
+      "alphaSha256": "9e5d591d4d3d4e73127e9ef97bc92ef79637ab7303a597063c6ec2a6ad77b9ea",
+      "opaqueCells": 30
     },
     "left": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/BagBackpackHeart/accessory.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "91a13f61cadd4f04a05199c35cbc601f092140cfd0e25494c051669a2b29c93c",
-      "alphaSha256": "91849b819120ccedbe292abcd1daaa4fbf65b146984696427a976ebba7214455"
+      "alphaSha256": "91849b819120ccedbe292abcd1daaa4fbf65b146984696427a976ebba7214455",
+      "opaqueCells": 30
     },
     "back": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/BagBackpackHeart/accessory.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "4f6cf409e4ca57ffe4046f2a52762a598d65c4732343ec4ec33a1465356e43cf",
-      "alphaSha256": "99a9135108170b8facf791671d23aa3255282525331943a1823277d64f6bebbc"
+      "alphaSha256": "99a9135108170b8facf791671d23aa3255282525331943a1823277d64f6bebbc",
+      "opaqueCells": 40
     }
   },
   "geometryLock": {

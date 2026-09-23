@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "0b50b71feeb57b6f9809c4bb4d84ff500fe2214728b3e1bff5cf561c4af91d5c",
-      "alphaSha256": "4a4ad10f7fb961a9613dfcce2b48283957fcb9484a2386c17fd113fc8c53406c"
+      "alphaSha256": "4a4ad10f7fb961a9613dfcce2b48283957fcb9484a2386c17fd113fc8c53406c",
+      "opaqueCells": 30
     },
     "right": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/Bra/shirt.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "452a552ec4f0349c185cb3e60c6239ff1fbd4367f53d39bc6ddd0e9eacea75d5",
-      "alphaSha256": "5d09115cd7711a175952637c7ee466356711a41caf7eb70f12583b4c20a59e68"
+      "alphaSha256": "5d09115cd7711a175952637c7ee466356711a41caf7eb70f12583b4c20a59e68",
+      "opaqueCells": 29
     },
     "left": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/Bra/shirt.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "d137179a067e8ea9d2101523c6e6c8d3aa7d4c8cb29c7b4902d81c602773583b",
-      "alphaSha256": "b1ae8364014f01899c58b604d7ee8f6ac297efea9149761a32e92bbb3fe40f13"
+      "alphaSha256": "b1ae8364014f01899c58b604d7ee8f6ac297efea9149761a32e92bbb3fe40f13",
+      "opaqueCells": 29
     },
     "back": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/Bra/shirt.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "6cba3c148b54b4614b5ed604c5443aed0503acc2804e090c073dab788b01549c",
-      "alphaSha256": "818d3e1298c7f134e8c14a6b7517aac9ccbf12aab5238f6b9d18b9912f0e4202"
+      "alphaSha256": "818d3e1298c7f134e8c14a6b7517aac9ccbf12aab5238f6b9d18b9912f0e4202",
+      "opaqueCells": 36
     }
   },
   "geometryLock": {

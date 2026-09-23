@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "504ac6b13243d98bb70c5b5e0d997196889fa31e67466f50b252f795b3f5570e",
-      "alphaSha256": "aba660ea620ac30918e43ddb9591fb43105d8e16f97ec1c128aed5c178282c8a"
+      "alphaSha256": "aba660ea620ac30918e43ddb9591fb43105d8e16f97ec1c128aed5c178282c8a",
+      "opaqueCells": 80
     },
     "right": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHat/hat.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "c2612be846697708d52f30bb76ad78ae354c4b170ac63543dd760e1614ef073e",
-      "alphaSha256": "3beb7e9af77b81040c8980a6b6df2746e80553a49b9733ec169db97c016e69c8"
+      "alphaSha256": "3beb7e9af77b81040c8980a6b6df2746e80553a49b9733ec169db97c016e69c8",
+      "opaqueCells": 90
     },
     "left": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHat/hat.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "913f5045df0e27f09ffb239743d49b91d5f163dc0493920836fb8cac9b72950e",
-      "alphaSha256": "0d4c61a57112035e47d731ab447f0e1450918032e91a6722d0390c12e110f1ff"
+      "alphaSha256": "0d4c61a57112035e47d731ab447f0e1450918032e91a6722d0390c12e110f1ff",
+      "opaqueCells": 90
     },
     "back": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHat/hat.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "245b8cc9f985b6d03ee3faa4ea712f91018c0d5029e11c81665819778066d3ed",
-      "alphaSha256": "607093dc95e1aff48559fb1d8d0b3658a6540f353680d3b92b7bad8ccbf9ef4b"
+      "alphaSha256": "607093dc95e1aff48559fb1d8d0b3658a6540f353680d3b92b7bad8ccbf9ef4b",
+      "opaqueCells": 124
     }
   },
   "geometryLock": {

@@ -82,6 +82,15 @@ def main():
     assert not busy.valid
     assert "conflict:busy_vs_motif" in busy.errors
 
+    tiny=synthetic_policy()
+    tiny["familyCapacity"]={"surfaceAreaClass":"tiny","maxComplexity":2,"maxVisualChannels":1,"maxSecondary":0,"maxAccents":1,"blockedValues":{"motif":["star"]}}
+    tiny_epic=evaluate_recipe({"pattern":"busy","motif":"none","attachment":"none"},"epic",tiny)
+    assert tiny_epic.valid, tiny_epic.errors
+    assert (tiny_epic.budget_min,tiny_epic.budget_max)==(2,2)
+    assert not evaluate_recipe({"pattern":"busy","motif":"none","attachment":"pom"},"epic",tiny).valid
+    tiny_blocked=evaluate_recipe({"pattern":"solid","motif":"star","attachment":"none"},"epic",tiny)
+    assert not tiny_blocked.valid and "family_capacity:motif.star" in tiny_blocked.errors
+
     slouch=json.loads(SLOUCH.read_text())
     # Common: clean, subtle, valid.
     common={

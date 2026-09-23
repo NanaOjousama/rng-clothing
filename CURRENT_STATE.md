@@ -930,3 +930,36 @@ Usability boundary:
 - Their generated catalog taste policies are baseline category-level policies, not hand-tuned final taste profiles for every individual family.
 - Human art/wear approval remains mandatory before production.
 - Explicit compatible donor transfers remain available through semantic zones/anchors; alternate constructions remain fail-closed.
+
+## 2026-09-23 — Family capacity caps rarity complexity
+Implemented geometry-derived family capacity across the shared source-backed generator so small hat families do not get forced into visually overcrowded Rare/Epic designs.
+
+Architecture:
+- generator/taste_policy.py now computes the effective rarity budget as the minimum of rarity allowance and family physical capacity.
+- High rarity remains available for small families by compressing the required minimum budget to the family cap instead of disabling Rare/Epic.
+- Family-capacity blocked values are enforced before generation.
+- Catalog-promoted contracts now record per-view opaqueCells as geometry evidence.
+- tools/promote_catalog_families.py derives a familyCapacity profile from average opaque cells and writes it into each generated family taste policy.
+- Capacity profiles expose surfaceAreaClass, maxComplexity, maxVisualChannels, maxSecondary, maxAccents, maxMotifFootprintCells, maxAttachmentFootprintClass, blockedValues, and COMPRESS_BUDGET_NOT_DISABLE_TIER.
+- Manual slouch_pl24 is explicitly registered as large capacity (avg 307.75 opaque cells) so it does not bypass the shared rule.
+
+Current promoted hat capacity distribution:
+- tiny: 4 — Bows (Double, Small 1), Headband, Headband (Studded), Headband (Daisies)
+- small: 3 — Crown (Diadem 1), Hair Buns, Garland (Dried 1)
+- medium: 8 — Earmuffs, Earmuffs (Horns), Boater Hat, Headscarf, two Beanies, Beret, Tulip Hat
+- large: 5 — Straw Hat, Sun Hat, Mushroom Hat, Hood, Hood (Mushroom)
+
+Capacity behavior:
+- tiny: max complexity 2, max 1 visual channel; blocks large motif, large attachment, dense pattern, wrap.
+- small: max complexity 3, max 2 channels; blocks large motif/attachment.
+- medium: max complexity 4, max 3 channels; blocks large motif.
+- large: max complexity 5, max 3 channels.
+- A tiny Epic can therefore be valid at complexity 2, but cannot accumulate extra channels just to satisfy the normal Epic 3–5 budget.
+
+Validation:
+- generator-wide taste policy PASS, including synthetic tiny-family Epic compression regression.
+- slouch beanie roll matrix PASS.
+- catalog template promotions PASS: 47 promoted / 6 deferred.
+- every promoted family still has at least one valid Common, Uncommon, Rare, and Epic recipe after capacity caps.
+- legitimate zero-opaque directional views are preserved and counted rather than treated as invalid.
+- No ESM/QC promotion performed; contact-sheet approval remains the next visual gate.

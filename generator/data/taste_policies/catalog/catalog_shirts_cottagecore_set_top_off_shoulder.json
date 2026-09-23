@@ -3,6 +3,28 @@
   "family": "catalog_shirts_cottagecore_set_top_off_shoulder",
   "template": "catalog_shirts_cottagecore_set_top_off_shoulder",
   "category": "Shirts",
+  "familyCapacity": {
+    "surfaceAreaClass": "small",
+    "averageOpaqueCells": 42.0,
+    "minOpaqueCells": 39,
+    "maxOpaqueCells": 46,
+    "maxComplexity": 3,
+    "maxVisualChannels": 2,
+    "maxSecondary": 1,
+    "maxAccents": 1,
+    "maxMotifFootprintCells": 8,
+    "maxAttachmentFootprintClass": "small",
+    "blockedValues": {
+      "motif": [
+        "large"
+      ],
+      "attachment": [
+        "large"
+      ]
+    },
+    "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+    "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+  },
   "rarityRules": {
     "order": [
       "common",

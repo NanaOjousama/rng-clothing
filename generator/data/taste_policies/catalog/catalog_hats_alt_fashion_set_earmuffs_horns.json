@@ -3,6 +3,25 @@
   "family": "catalog_hats_alt_fashion_set_earmuffs_horns",
   "template": "catalog_hats_alt_fashion_set_earmuffs_horns",
   "category": "Hats",
+  "familyCapacity": {
+    "surfaceAreaClass": "medium",
+    "averageOpaqueCells": 69.0,
+    "minOpaqueCells": 60,
+    "maxOpaqueCells": 80,
+    "maxComplexity": 4,
+    "maxVisualChannels": 3,
+    "maxSecondary": 1,
+    "maxAccents": 2,
+    "maxMotifFootprintCells": 16,
+    "maxAttachmentFootprintClass": "medium",
+    "blockedValues": {
+      "motif": [
+        "large"
+      ]
+    },
+    "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+    "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+  },
   "rarityRules": {
     "order": [
       "common",

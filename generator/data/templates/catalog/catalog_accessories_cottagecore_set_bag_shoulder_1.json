@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "19e61958e086a3619d29a7afd6096f7f66b264f8086ee64560cdee410d726870",
-      "alphaSha256": "121d1886317fd276c58a35aa63ea1263988c6a3a5ab3efb99caac36af2aa2f31"
+      "alphaSha256": "121d1886317fd276c58a35aa63ea1263988c6a3a5ab3efb99caac36af2aa2f31",
+      "opaqueCells": 18
     },
     "right": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/BagShoulder1/accessory.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "f60cb22dc30054ed353f1c172f4e15c2b0267b5591b63c1f6b9c6ffd343bd071",
-      "alphaSha256": "89e673c6a01145df0493de2d156a6df9af8f1e488692a8110938b822e9f5b632"
+      "alphaSha256": "89e673c6a01145df0493de2d156a6df9af8f1e488692a8110938b822e9f5b632",
+      "opaqueCells": 20
     },
     "left": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/BagShoulder1/accessory.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "8b6121153f8a28ada3dfc2cf528f1d54f88707bf795ef929734fa1c47226e14e",
-      "alphaSha256": "cce299104e47200a59a1062df5c084836dfd51fce6e10fabd83831d854ef869d"
+      "alphaSha256": "cce299104e47200a59a1062df5c084836dfd51fce6e10fabd83831d854ef869d",
+      "opaqueCells": 6
     },
     "back": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/BagShoulder1/accessory.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "84c19162d6aec97cefd5f6000b1ab5ab228785722ca0e4c3f740fa9785aa3a41",
-      "alphaSha256": "a681b04245c6c5209d72583731def956e30e0432c7f1af23825fe2c3f309f953"
+      "alphaSha256": "a681b04245c6c5209d72583731def956e30e0432c7f1af23825fe2c3f309f953",
+      "opaqueCells": 8
     }
   },
   "geometryLock": {

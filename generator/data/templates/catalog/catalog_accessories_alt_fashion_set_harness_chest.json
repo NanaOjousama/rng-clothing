@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "106b984a8544703a2ec4e26c7113f81398f637ca85eaee50184d4beae43adb74",
-      "alphaSha256": "90050772eac24227119edfdc90ee44096502bb91c1739ef85802547a0aaa2f7c"
+      "alphaSha256": "90050772eac24227119edfdc90ee44096502bb91c1739ef85802547a0aaa2f7c",
+      "opaqueCells": 14
     },
     "right": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/HarnessChest/accessory.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "f0a9d9d8ba02967899a6a9e8182cf60b1b85b3ca525f4ba6c9ee74a39443a3d3",
-      "alphaSha256": "d0bf37150e106861b17b8251fb34239af86c64626de21271b1917aa293827503"
+      "alphaSha256": "d0bf37150e106861b17b8251fb34239af86c64626de21271b1917aa293827503",
+      "opaqueCells": 14
     },
     "left": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/HarnessChest/accessory.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "c6ec84f497060d4312893579f85cdf6967becb7ac9bc55741f48ba509597c6e0",
-      "alphaSha256": "6195474a8b65336208f74ecca604a31c5e731d0899893ecd6ec4b09ec5b1a908"
+      "alphaSha256": "6195474a8b65336208f74ecca604a31c5e731d0899893ecd6ec4b09ec5b1a908",
+      "opaqueCells": 14
     },
     "back": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Accessories/HarnessChest/accessory.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "a803268da3e21756de4621c3dee4880aca3d63bfdd44090d43caa8c4bae1e7ea",
-      "alphaSha256": "50a2ba7b692002c293002ff20fb93b012063ebd1c6cb1dd23851950b55444b21"
+      "alphaSha256": "50a2ba7b692002c293002ff20fb93b012063ebd1c6cb1dd23851950b55444b21",
+      "opaqueCells": 10
     }
   },
   "geometryLock": {

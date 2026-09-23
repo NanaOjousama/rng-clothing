@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "d31f342fac7847778abba7744f296d220636c37aaf062b22757d3053247f8043",
-      "alphaSha256": "3e211a53a3279a62473dd90e554a28737e7874424814063fab4575efc0e3b000"
+      "alphaSha256": "3e211a53a3279a62473dd90e554a28737e7874424814063fab4575efc0e3b000",
+      "opaqueCells": 80
     },
     "right": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Hats/EarmuffsHorns/hat.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "629a7dfbb115bdf4afefe60d55c94a44e2ebd4bc7f14064b8e044872209f7eba",
-      "alphaSha256": "97c590d32dccf74edd6be74eea6627e7d5f64a1cd6a6c98e2082d7e5bdde380b"
+      "alphaSha256": "97c590d32dccf74edd6be74eea6627e7d5f64a1cd6a6c98e2082d7e5bdde380b",
+      "opaqueCells": 60
     },
     "left": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Hats/EarmuffsHorns/hat.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "ef20bd78ef67812314ace63d95ddf080a5c7e82c55cde7264f371e28ce39c6cd",
-      "alphaSha256": "09204cbd3bf325e5adec7dfc803084dbe61f37deefd83fbfdf7850e7c51ccd1e"
+      "alphaSha256": "09204cbd3bf325e5adec7dfc803084dbe61f37deefd83fbfdf7850e7c51ccd1e",
+      "opaqueCells": 60
     },
     "back": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Hats/EarmuffsHorns/hat.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "65d509b14133ef2dab2764c5a3756327cbf862b968b3913f3edb083648c204a8",
-      "alphaSha256": "a0beb88297557b9beeb21f88937686da1d9604501e973559a1c8e71d6904f158"
+      "alphaSha256": "a0beb88297557b9beeb21f88937686da1d9604501e973559a1c8e71d6904f158",
+      "opaqueCells": 76
     }
   },
   "geometryLock": {

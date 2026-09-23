@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "e005daa4bda034b55efa076b0c182b00da576b25ff22b19a6ea266ad71b0f387",
-      "alphaSha256": "0d3d92546c28964453eeff7a3afedac98e4a23a854c62be0c699f51b64612844"
+      "alphaSha256": "0d3d92546c28964453eeff7a3afedac98e4a23a854c62be0c699f51b64612844",
+      "opaqueCells": 62
     },
     "right": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Hats/BoaterHat/hat.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "1e74c7f70cab324a1134258f107d2204a1bdacb3e9da5e09c3593d77202a7b51",
-      "alphaSha256": "4de4523234df7cca85b5376658989047eb5efe7f0f1d7280a3548e8994819e23"
+      "alphaSha256": "4de4523234df7cca85b5376658989047eb5efe7f0f1d7280a3548e8994819e23",
+      "opaqueCells": 70
     },
     "left": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Hats/BoaterHat/hat.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "bc2d8a28d219cbc9959ab4aecc5e0de8b359c36e3fa7887ff87be3ffb533b348",
-      "alphaSha256": "fd047e3d62f84bbd5457ace61433a53381b29f9028f167ec610c52f652d1d043"
+      "alphaSha256": "fd047e3d62f84bbd5457ace61433a53381b29f9028f167ec610c52f652d1d043",
+      "opaqueCells": 70
     },
     "back": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Hats/BoaterHat/hat.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "44dfe052461c65cde456a3355c7d9fb07745c10751551a04a4828cf854da36e0",
-      "alphaSha256": "c62c1c076353b2f73a9df57b010ee5452a8fbe61251fa48ce08414c8c39a4c81"
+      "alphaSha256": "c62c1c076353b2f73a9df57b010ee5452a8fbe61251fa48ce08414c8c39a4c81",
+      "opaqueCells": 90
     }
   },
   "geometryLock": {

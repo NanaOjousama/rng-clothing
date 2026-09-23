@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "e5c0844d5b9bdf4037081209c2a38113f9922fe63082a9553b2f5fcc01028cf6",
-      "alphaSha256": "40362e025499ffe7b25f108ab7202cd92dda3f0d3b1502a3471630bd270615ac"
+      "alphaSha256": "40362e025499ffe7b25f108ab7202cd92dda3f0d3b1502a3471630bd270615ac",
+      "opaqueCells": 26
     },
     "right": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Vest/accessory.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "cf502aa9b6f3fc04cdff9354799afc4502096e453f5414913fd8b9ac3b246712",
-      "alphaSha256": "6e7533475f43a7f21ca6c34b62ab951de2ced8d8c3646e7c357f6e91929ce794"
+      "alphaSha256": "6e7533475f43a7f21ca6c34b62ab951de2ced8d8c3646e7c357f6e91929ce794",
+      "opaqueCells": 23
     },
     "left": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Vest/accessory.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "c9ec655979295e9955d61051c800a3a383ab89dd7229b8b40c4cc9a312c8e859",
-      "alphaSha256": "ab928a6ca8dcf78fa000a1c9572d51e8aec84e4a246b6d25b414c94f6edbb544"
+      "alphaSha256": "ab928a6ca8dcf78fa000a1c9572d51e8aec84e4a246b6d25b414c94f6edbb544",
+      "opaqueCells": 23
     },
     "back": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Vest/accessory.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "06187f150b43ef5002b49e16889b6f1b69f38a1923698dee168e089cf911a444",
-      "alphaSha256": "90c081803913f314114c72c3d9e301b5944e93a2edef16d56ed5e0df318455de"
+      "alphaSha256": "90c081803913f314114c72c3d9e301b5944e93a2edef16d56ed5e0df318455de",
+      "opaqueCells": 38
     }
   },
   "geometryLock": {

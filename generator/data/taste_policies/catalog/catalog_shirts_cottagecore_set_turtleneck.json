@@ -3,6 +3,25 @@
   "family": "catalog_shirts_cottagecore_set_turtleneck",
   "template": "catalog_shirts_cottagecore_set_turtleneck",
   "category": "Shirts",
+  "familyCapacity": {
+    "surfaceAreaClass": "medium",
+    "averageOpaqueCells": 60.0,
+    "minOpaqueCells": 57,
+    "maxOpaqueCells": 64,
+    "maxComplexity": 4,
+    "maxVisualChannels": 3,
+    "maxSecondary": 1,
+    "maxAccents": 2,
+    "maxMotifFootprintCells": 16,
+    "maxAttachmentFootprintClass": "medium",
+    "blockedValues": {
+      "motif": [
+        "large"
+      ]
+    },
+    "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+    "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+  },
   "rarityRules": {
     "order": [
       "common",

@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "52e3ed16a0dc85629e2d9e19b73e4d5099403c2d54be9598475b4da2e87934bc",
-      "alphaSha256": "de08269545a7423dafad63510e4bcf281a0d305735ae828984c3e2df9110cd35"
+      "alphaSha256": "de08269545a7423dafad63510e4bcf281a0d305735ae828984c3e2df9110cd35",
+      "opaqueCells": 58
     },
     "right": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/Top/shirt.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "b92e1179f11741e88bedca42f8196435084d9b701269e24f9a6f474883ac1156",
-      "alphaSha256": "4adffb635ed233420cf825306bc951b09bc08fb67a393124197ed9f4ac0c06cc"
+      "alphaSha256": "4adffb635ed233420cf825306bc951b09bc08fb67a393124197ed9f4ac0c06cc",
+      "opaqueCells": 53
     },
     "left": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/Top/shirt.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "b1d79e07a788f77f94350d7351cd886dcaca81c077736997e7356de12d840779",
-      "alphaSha256": "8ad50cabc12b195a6551bf1e4f68b762f26c7610117ca1d022a609de86cac98c"
+      "alphaSha256": "8ad50cabc12b195a6551bf1e4f68b762f26c7610117ca1d022a609de86cac98c",
+      "opaqueCells": 53
     },
     "back": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Shirts/Top/shirt.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "01253f521a6d95e54448f5f743fb59a395b12070be6ad85765caecba114fc8f6",
-      "alphaSha256": "8f1d67b3c758e98879b2ef835666db458630781744ffaf5751a83995a8f4a353"
+      "alphaSha256": "8f1d67b3c758e98879b2ef835666db458630781744ffaf5751a83995a8f4a353",
+      "opaqueCells": 58
     }
   },
   "geometryLock": {

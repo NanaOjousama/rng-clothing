@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "2799ec31ab6ca1e058e24d1fcf13a32053b6b30e40436e43c8faed22c3d74685",
-      "alphaSha256": "f27cfefdaa1ee63dbab3acd0e477ba4a3826fa5972c7715f7603387b6bb2cd41"
+      "alphaSha256": "f27cfefdaa1ee63dbab3acd0e477ba4a3826fa5972c7715f7603387b6bb2cd41",
+      "opaqueCells": 8
     },
     "right": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Waistband/accessory.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "e15370e6c56afd7dfcf904db37eb037d6176a7d3ddf8210f3a0296cc98a9a6f7",
-      "alphaSha256": "7fc1cbe635765219719529239b8d1d4e06aec303c4453e16767166f593356bca"
+      "alphaSha256": "7fc1cbe635765219719529239b8d1d4e06aec303c4453e16767166f593356bca",
+      "opaqueCells": 7
     },
     "left": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Waistband/accessory.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "85a981d9e84a2b86ca54c0bcd8f0c64b2d7d4e1c90a9766f64e9125549e56629",
-      "alphaSha256": "0b81cc0b35723f8ea1921daf7ee95f3315b7a1ff687c83cce19f7eb126afa936"
+      "alphaSha256": "0b81cc0b35723f8ea1921daf7ee95f3315b7a1ff687c83cce19f7eb126afa936",
+      "opaqueCells": 7
     },
     "back": {
       "sheetPath": "generator content/[FS] Cottagecore Set/Accessories/Waistband/accessory.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "12400304a5083cd979f6546171f61b49b3b68cc1d97bbc4eaedaef5fdfbbb590",
-      "alphaSha256": "97807f2fd4f9ea6dea3bc06f75c0d4e0b77883cb10d3a0739e244170b6891e72"
+      "alphaSha256": "97807f2fd4f9ea6dea3bc06f75c0d4e0b77883cb10d3a0739e244170b6891e72",
+      "opaqueCells": 8
     }
   },
   "geometryLock": {

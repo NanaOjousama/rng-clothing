@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "33e5b7692dd6bb5714467c2db23c3e4936a5e395a931ece0a1ceab4d12c0c14a",
-      "alphaSha256": "2282c634b04cdcf5a8baf61d86129b02754f1e357516ffc595fcf736338139f5"
+      "alphaSha256": "2282c634b04cdcf5a8baf61d86129b02754f1e357516ffc595fcf736338139f5",
+      "opaqueCells": 92
     },
     "right": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "12c26ee87f8427ee4c32c9118776279afd4ad8f8216cef8934d2139fe96f308f",
-      "alphaSha256": "9663cb06aefbe69993a704dd39080d095444366a38044f44475e9426b19f8ad2"
+      "alphaSha256": "9663cb06aefbe69993a704dd39080d095444366a38044f44475e9426b19f8ad2",
+      "opaqueCells": 93
     },
     "left": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "4c9200ea2c6305b72fd601176dc0ae06f9f3d2bf88fd7c050069292f1c86219e",
-      "alphaSha256": "10f05432f65fcad6d0c7cf6dcd94f7a33b07735490136e0e5696caf5fe097693"
+      "alphaSha256": "10f05432f65fcad6d0c7cf6dcd94f7a33b07735490136e0e5696caf5fe097693",
+      "opaqueCells": 93
     },
     "back": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "c667bf89a0a8b3f3909d2c54e1213bff51a5009eb89a0d520811e6210dbebce5",
-      "alphaSha256": "c64e06885b44879626b57ba420428fb15a249dd57f783e9b7d4094bccb099228"
+      "alphaSha256": "c64e06885b44879626b57ba420428fb15a249dd57f783e9b7d4094bccb099228",
+      "opaqueCells": 134
     }
   },
   "geometryLock": {

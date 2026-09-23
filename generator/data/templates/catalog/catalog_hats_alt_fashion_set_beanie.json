@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "a7c3f6a750142d43f25d251b7ce77a32cf5f705266aaf385a0cb5dd5e103186b",
-      "alphaSha256": "36bf33f215b4ce7bdc46d854435bd2cd0d32a293533e7cc38989a51feab485c5"
+      "alphaSha256": "36bf33f215b4ce7bdc46d854435bd2cd0d32a293533e7cc38989a51feab485c5",
+      "opaqueCells": 70
     },
     "right": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Hats/Beanie/hat.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "b3444b66a46cb3e415591696c3a491f8895989a0ea803a18126b7ca314ee5e11",
-      "alphaSha256": "f0e7aae73a75ce2e7e5f522725920f1ad34613f00ceaf6e639a2e40388a1769d"
+      "alphaSha256": "f0e7aae73a75ce2e7e5f522725920f1ad34613f00ceaf6e639a2e40388a1769d",
+      "opaqueCells": 78
     },
     "left": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Hats/Beanie/hat.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "081996cb1102c645fc0ff6bc49e022e11e9539f9f7322bb1d6a7c3ff1588bae0",
-      "alphaSha256": "cc7b3d36a698a3e8e88d3d7cd7c9fd3063cfea23cfa7ce231d7469e46460b75b"
+      "alphaSha256": "cc7b3d36a698a3e8e88d3d7cd7c9fd3063cfea23cfa7ce231d7469e46460b75b",
+      "opaqueCells": 78
     },
     "back": {
       "sheetPath": "generator content/[FS] Alt-Fashion Set/Hats/Beanie/hat.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "95df6d86bc3a2c5e08562c0ace8dbfb861cd6131176798fe2fc080a005766602",
-      "alphaSha256": "ef1cd7e92ce983d60bd6c8154844bdb0625f9a2a63c486c2b59b3668b3a6f659"
+      "alphaSha256": "ef1cd7e92ce983d60bd6c8154844bdb0625f9a2a63c486c2b59b3668b3a6f659",
+      "opaqueCells": 104
     }
   },
   "geometryLock": {

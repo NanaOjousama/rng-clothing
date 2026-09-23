@@ -38,7 +38,8 @@
       ],
       "flipX": false,
       "pixelSha256": "829a1f409392d8d50715470252619f49325910d3770454eb93ad034f861141d8",
-      "alphaSha256": "62697c212fb06a9b7d3ef225d44e3fca0b8c886988c0fce5e9fdb54d417c575b"
+      "alphaSha256": "62697c212fb06a9b7d3ef225d44e3fca0b8c886988c0fce5e9fdb54d417c575b",
+      "opaqueCells": 2
     },
     "right": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/MakeUpLipgloss/accessory.png",
@@ -50,7 +51,8 @@
       ],
       "flipX": false,
       "pixelSha256": "ee7f223326ca6db8699454e6896c706481685bd383fec468c7a1893ac741a73c",
-      "alphaSha256": "ae8032101af3a15606a42646b06e8d8f2bc4e742b9cbd86c57e17c9be066b0ee"
+      "alphaSha256": "ae8032101af3a15606a42646b06e8d8f2bc4e742b9cbd86c57e17c9be066b0ee",
+      "opaqueCells": 2
     },
     "left": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/MakeUpLipgloss/accessory.png",
@@ -62,7 +64,8 @@
       ],
       "flipX": true,
       "pixelSha256": "5931e06bb4f8bdeb2dcd18a9cf09e506ce8e6d3f45b0b9ad349d2337e9b2e9ed",
-      "alphaSha256": "9e14d947fc0f268b67f7d32e7dd03ce51fa8a3b944feeb8a1fb2510f110deb48"
+      "alphaSha256": "9e14d947fc0f268b67f7d32e7dd03ce51fa8a3b944feeb8a1fb2510f110deb48",
+      "opaqueCells": 2
     },
     "back": {
       "sheetPath": "generator content/[FS] More Accessories and Stuff Pack/Accessories/MakeUpLipgloss/accessory.png",
@@ -74,7 +77,8 @@
       ],
       "flipX": false,
       "pixelSha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-      "alphaSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "alphaSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "opaqueCells": 0
     }
   },
   "geometryLock": {

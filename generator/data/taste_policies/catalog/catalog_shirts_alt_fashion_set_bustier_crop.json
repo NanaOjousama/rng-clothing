@@ -3,6 +3,28 @@
   "family": "catalog_shirts_alt_fashion_set_bustier_crop",
   "template": "catalog_shirts_alt_fashion_set_bustier_crop",
   "category": "Shirts",
+  "familyCapacity": {
+    "surfaceAreaClass": "small",
+    "averageOpaqueCells": 31.5,
+    "minOpaqueCells": 30,
+    "maxOpaqueCells": 34,
+    "maxComplexity": 3,
+    "maxVisualChannels": 2,
+    "maxSecondary": 1,
+    "maxAccents": 1,
+    "maxMotifFootprintCells": 8,
+    "maxAttachmentFootprintClass": "small",
+    "blockedValues": {
+      "motif": [
+        "large"
+      ],
+      "attachment": [
+        "large"
+      ]
+    },
+    "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+    "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+  },
   "rarityRules": {
     "order": [
       "common",

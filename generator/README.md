@@ -4,6 +4,8 @@
 
 `generator/taste_policy.py` is the generator-wide semantic taste gate. Garment families opt in through `generator/data/taste_policy_registry.json` and provide family-specific `rarityRules` + `tastePolicy` data. The shared engine enforces four layers before visual generation: hard rarity floors, complexity budgets, incompatibility/conflict rules, and design-role/visual-channel control. Rarity means more distinctive, not more cluttered. Validate with `python3 tools/validate_taste_policy.py`.
 
+Family capacity is layered on top of rarity. Promoted templates record opaque-cell evidence per cardinal view and receive a `tiny`/`small`/`medium`/`large` capacity profile. Effective complexity/channel/support limits are the minimum of the rarity allowance and the physical family capacity. High rarity remains available for small families by compressing the required budget rather than forcing extra decoration. Oversized features such as dense patterns, large motifs, wrap treatments, or large attachments can be blocked by family capacity.
+
 ## Catalog-backed template promotion
 
 `tools/promote_catalog_families.py` promotes suitable `FAMILY_BASE` entries from `source_catalog/MASTER_CATALOG.json` into formal source-backed template contracts. Contracts reference exact rectangles in the local `generator content` source sheets, preserve source-declared mirroring/per-view sizes/wear offsets, and hash extracted pixels/alpha without copying third-party PNGs into Git. Each promoted family receives its own registered taste policy. `generator/catalog_templates.py` exposes template loading, family taste evaluation, and donor discovery through `SOURCE_TRANSFER_LIBRARY.json`. Validate with `python3 tools/validate_catalog_template_promotions.py`.

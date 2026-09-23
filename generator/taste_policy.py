@@ -155,6 +155,22 @@ def _semantic_errors(recipe: dict[str, Any], policy: dict[str, Any]) -> list[str
     return errors
 
 
+def _capacity_errors(recipe: dict[str, Any], capacity: dict[str, Any]) -> list[str]:
+    errors: list[str] = []
+    for axis, blocked in capacity.get("blockedValues", {}).items():
+        if recipe.get(axis) in blocked:
+            errors.append(f"family_capacity:{axis}.{recipe.get(axis)}")
+    allowed_channels = capacity.get("supportedChannels")
+    if allowed_channels is not None:
+        allowed = set(allowed_channels)
+        for channel, axes in capacity.get("channelAxes", {}).items():
+            if channel in allowed:
+                continue
+            if any(recipe.get(axis) not in (None, "none", "solid", "plain", "subtle") for axis in axes):
+                errors.append(f"family_capacity:unsupported_channel:{channel}")
+    return errors
+
+
 def evaluate_recipe(
     recipe: dict[str, Any], rarity: str, family_policy: dict[str, Any]
 ) -> TasteReport:
@@ -163,10 +179,20 @@ def evaluate_recipe(
         raise ValueError(f"unsupported rarity {rarity!r}")
 
     policy = family_policy["tastePolicy"]
-    budget = policy["complexityBudgets"][rarity]
+    base_budget = policy["complexityBudgets"][rarity]
+    capacity = family_policy.get("familyCapacity", {})
+    cap_max = int(capacity.get("maxComplexity", base_budget["max"]))
+    budget = {
+        "min": min(int(base_budget["min"]), cap_max),
+        "max": min(int(base_budget["max"]), cap_max),
+        "maxVisualChannels": min(int(base_budget["maxVisualChannels"]), int(capacity.get("maxVisualChannels", base_budget["maxVisualChannels"]))),
+        "maxSecondary": min(int(base_budget["maxSecondary"]), int(capacity.get("maxSecondary", base_budget["maxSecondary"]))),
+        "maxAccents": min(int(base_budget["maxAccents"]), int(capacity.get("maxAccents", base_budget["maxAccents"]))),
+    }
     errors = _rarity_floor_errors(recipe, rarity, family_policy)
     errors.extend(_conflict_errors(recipe, policy))
     errors.extend(_semantic_errors(recipe, policy))
+    errors.extend(_capacity_errors(recipe, capacity))
 
     channel_for = _channel_map(policy)
     rows: list[tuple[str, str, int, int]] = []

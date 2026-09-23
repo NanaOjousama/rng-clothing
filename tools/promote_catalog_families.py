@@ -139,7 +139,8 @@ def make_contract(entry,category,pack,parsed,family_id,template_id):
         rows=crop(sheet,rect,flip)
         x0,y0,x1,y1=bbox(rows)
         cx=(x0+x1)//2; cy=(y0+y1)//2
-        frames[view]={'sheetPath':sheet_rel,'sourceRect':rect,'flipX':flip,'pixelSha256':pixel_hash(rows),'alphaSha256':alpha_hash(rows)}
+        opaque=sum(1 for row in rows for p in row if p[3])
+        frames[view]={'sheetPath':sheet_rel,'sourceRect':rect,'flipX':flip,'pixelSha256':pixel_hash(rows),'alphaSha256':alpha_hash(rows),'opaqueCells':opaque}
         anchors[view]={
           'center':[cx,cy],'top_center':[cx,y0],'bottom_center':[cx,y1],
           'left_edge':[x0,cy],'right_edge':[x1,cy]
@@ -190,7 +191,33 @@ def make_contract(entry,category,pack,parsed,family_id,template_id):
         contract['frameSizes']={v:list(sizes[v]) for v in VIEWS}
     return contract
 
-def make_taste_policy(family_id,template_id,category):
+def capacity_profile(category,contract):
+    counts=[int(spec.get('opaqueCells',0)) for spec in contract['frames'].values()]
+    avg=(sum(counts)/len(counts)) if counts else 0
+    if avg < 24:
+        cls='tiny'; maxc=2; maxch=1; maxsec=0; maxacc=1
+        blocked={'motif':['large'],'attachment':['large'],'pattern':['dense'],'trim':['wrap']}
+    elif avg < 50:
+        cls='small'; maxc=3; maxch=2; maxsec=1; maxacc=1
+        blocked={'motif':['large'],'attachment':['large']}
+    elif avg < 100:
+        cls='medium'; maxc=4; maxch=3; maxsec=1; maxacc=2
+        blocked={'motif':['large']}
+    else:
+        cls='large'; maxc=5; maxch=3; maxsec=2; maxacc=2
+        blocked={}
+    return {
+      'surfaceAreaClass':cls,'averageOpaqueCells':round(avg,2),
+      'minOpaqueCells':min(counts) if counts else 0,'maxOpaqueCells':max(counts) if counts else 0,
+      'maxComplexity':maxc,'maxVisualChannels':maxch,'maxSecondary':maxsec,'maxAccents':maxacc,
+      'maxMotifFootprintCells':{'tiny':4,'small':8,'medium':16,'large':32}[cls],
+      'maxAttachmentFootprintClass':{'tiny':'small','small':'small','medium':'medium','large':'large'}[cls],
+      'blockedValues':blocked,
+      'rarityCeilingStrategy':'COMPRESS_BUDGET_NOT_DISABLE_TIER',
+      'rule':'Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter.'
+    }
+
+def make_taste_policy(family_id,template_id,category,contract):
     attachment_values=['none'] if category=='Shirts' else ['none','small','large']
     default={'materialTreatment':'plain','pattern':'solid','trim':'none','motif':'none','motifPlacement':'none','attachment':'none','hardware':'none'}
     rarity={
@@ -243,7 +270,7 @@ def make_taste_policy(family_id,template_id,category):
         'BASE':'construction/template geometry and zero-impact treatments','PRIMARY':'single strongest visual identity','SECONDARY':'supporting medium/high-impact feature','ACCENT':'low-impact finishing detail','rule':'Exactly zero or one PRIMARY; reject competing focal points before visual generation.'
       },
     }
-    return {'schema':'rng-family-taste-policy/v1','family':family_id,'template':template_id,'category':category,'rarityRules':rarity,'tastePolicy':taste,'defaultRecipe':default,'vocabulary':{
+    return {'schema':'rng-family-taste-policy/v1','family':family_id,'template':template_id,'category':category,'familyCapacity':capacity_profile(category,contract),'rarityRules':rarity,'tastePolicy':taste,'defaultRecipe':default,'vocabulary':{
       'materialTreatment':['plain','subtle','textured','statement'],'pattern':['solid','subtle','stripe','colorblock','dense'],'trim':['none','subtle','contrast','wrap'],'motif':['none','small','emblem','large'],'motifPlacement':['none','front_center','front_offset','side','back_center'],'attachment':attachment_values,'hardware':['none','small']
     }}
 
@@ -274,7 +301,7 @@ def main():
             rec['reason']='contract_build_failed:'+type(e).__name__+':'+str(e); deferred.append(rec); continue
           cpath=OUT/(template_id+'.json')
           cpath.write_text(json.dumps(contract,indent=2)+'\n')
-          policy=make_taste_policy(family_id,template_id,category)
+          policy=make_taste_policy(family_id,template_id,category,contract)
           ppath=POUT/(family_id+'.json')
           ppath.write_text(json.dumps(policy,indent=2)+'\n')
           tidx['templates'][template_id]={
