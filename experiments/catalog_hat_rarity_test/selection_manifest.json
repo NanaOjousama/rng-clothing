@@ -1,0 +1,886 @@
+{
+  "schema": "cross-family-hat-rarity-contact/v2",
+  "sourceBacked": true,
+  "capacityAware": true,
+  "humanArtApproved": false,
+  "rarities": {
+    "common": [
+      {
+        "capacity": "tiny",
+        "family": "catalog_hats_more_accessories_and_stuff_headband",
+        "pack": "More Accessories and Stuff",
+        "name": "Headband",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Headband/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Headband/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "tiny",
+          "averageOpaqueCells": 11.0,
+          "minOpaqueCells": 0,
+          "maxOpaqueCells": 16,
+          "maxComplexity": 2,
+          "maxVisualChannels": 1,
+          "maxSecondary": 0,
+          "maxAccents": 1,
+          "maxMotifFootprintCells": 4,
+          "maxAttachmentFootprintClass": "small",
+          "blockedValues": {
+            "motif": [
+              "large"
+            ],
+            "attachment": [
+              "large"
+            ],
+            "pattern": [
+              "dense"
+            ],
+            "trim": [
+              "wrap"
+            ]
+          },
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "subtle",
+          "motif": "none",
+          "motifPlacement": "none",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "tasteReport": {
+          "complexity": 1,
+          "budget": [
+            0,
+            1
+          ],
+          "activeChannels": [
+            "REGION"
+          ],
+          "primary": "trim.subtle",
+          "secondary": [],
+          "accents": []
+        }
+      },
+      {
+        "capacity": "small",
+        "family": "catalog_hats_more_accessories_and_stuff_hair_buns",
+        "pack": "More Accessories and Stuff",
+        "name": "Hair Buns",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HairBuns/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HairBuns/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "small",
+          "averageOpaqueCells": 34.5,
+          "minOpaqueCells": 23,
+          "maxOpaqueCells": 46,
+          "maxComplexity": 3,
+          "maxVisualChannels": 2,
+          "maxSecondary": 1,
+          "maxAccents": 1,
+          "maxMotifFootprintCells": 8,
+          "maxAttachmentFootprintClass": "small",
+          "blockedValues": {
+            "motif": [
+              "large"
+            ],
+            "attachment": [
+              "large"
+            ]
+          },
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "subtle",
+          "motif": "none",
+          "motifPlacement": "none",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "tasteReport": {
+          "complexity": 1,
+          "budget": [
+            0,
+            1
+          ],
+          "activeChannels": [
+            "REGION"
+          ],
+          "primary": "trim.subtle",
+          "secondary": [],
+          "accents": []
+        }
+      },
+      {
+        "capacity": "medium",
+        "family": "catalog_hats_more_accessories_and_stuff_beanie",
+        "pack": "More Accessories and Stuff",
+        "name": "Beanie",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Beanie/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Beanie/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "medium",
+          "averageOpaqueCells": 83.5,
+          "minOpaqueCells": 72,
+          "maxOpaqueCells": 90,
+          "maxComplexity": 4,
+          "maxVisualChannels": 3,
+          "maxSecondary": 1,
+          "maxAccents": 2,
+          "maxMotifFootprintCells": 16,
+          "maxAttachmentFootprintClass": "medium",
+          "blockedValues": {
+            "motif": [
+              "large"
+            ]
+          },
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "subtle",
+          "motif": "none",
+          "motifPlacement": "none",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "tasteReport": {
+          "complexity": 1,
+          "budget": [
+            0,
+            1
+          ],
+          "activeChannels": [
+            "REGION"
+          ],
+          "primary": "trim.subtle",
+          "secondary": [],
+          "accents": []
+        }
+      },
+      {
+        "capacity": "large",
+        "family": "catalog_hats_more_accessories_and_stuff_straw_hat",
+        "pack": "More Accessories and Stuff",
+        "name": "Straw Hat",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "large",
+          "averageOpaqueCells": 103.0,
+          "minOpaqueCells": 92,
+          "maxOpaqueCells": 134,
+          "maxComplexity": 5,
+          "maxVisualChannels": 3,
+          "maxSecondary": 2,
+          "maxAccents": 2,
+          "maxMotifFootprintCells": 32,
+          "maxAttachmentFootprintClass": "large",
+          "blockedValues": {},
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "subtle",
+          "motif": "none",
+          "motifPlacement": "none",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "tasteReport": {
+          "complexity": 1,
+          "budget": [
+            0,
+            1
+          ],
+          "activeChannels": [
+            "REGION"
+          ],
+          "primary": "trim.subtle",
+          "secondary": [],
+          "accents": []
+        }
+      }
+    ],
+    "uncommon": [
+      {
+        "capacity": "tiny",
+        "family": "catalog_hats_alt_fashion_set_headband_studded",
+        "pack": "Alt-Fashion Set",
+        "name": "Headband (Studded)",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/HeadbandStudded/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/HeadbandStudded/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "tiny",
+          "averageOpaqueCells": 11.0,
+          "minOpaqueCells": 0,
+          "maxOpaqueCells": 16,
+          "maxComplexity": 2,
+          "maxVisualChannels": 1,
+          "maxSecondary": 0,
+          "maxAccents": 1,
+          "maxMotifFootprintCells": 4,
+          "maxAttachmentFootprintClass": "small",
+          "blockedValues": {
+            "motif": [
+              "large"
+            ],
+            "attachment": [
+              "large"
+            ],
+            "pattern": [
+              "dense"
+            ],
+            "trim": [
+              "wrap"
+            ]
+          },
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "statement",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "none",
+          "motifPlacement": "none",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "tasteReport": {
+          "complexity": 2,
+          "budget": [
+            1,
+            2
+          ],
+          "activeChannels": [
+            "SURFACE"
+          ],
+          "primary": "materialTreatment.statement",
+          "secondary": [],
+          "accents": []
+        }
+      },
+      {
+        "capacity": "small",
+        "family": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+        "pack": "More Accessories and Stuff",
+        "name": "Crown (Diadem 1)",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem1/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem1/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "small",
+          "averageOpaqueCells": 30.0,
+          "minOpaqueCells": 28,
+          "maxOpaqueCells": 32,
+          "maxComplexity": 3,
+          "maxVisualChannels": 2,
+          "maxSecondary": 1,
+          "maxAccents": 1,
+          "maxMotifFootprintCells": 8,
+          "maxAttachmentFootprintClass": "small",
+          "blockedValues": {
+            "motif": [
+              "large"
+            ],
+            "attachment": [
+              "large"
+            ]
+          },
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "contrast",
+          "motif": "none",
+          "motifPlacement": "none",
+          "attachment": "small",
+          "hardware": "none"
+        },
+        "tasteReport": {
+          "complexity": 2,
+          "budget": [
+            1,
+            2
+          ],
+          "activeChannels": [
+            "ATTACHMENT",
+            "REGION"
+          ],
+          "primary": "trim.contrast",
+          "secondary": [
+            "attachment.small"
+          ],
+          "accents": []
+        }
+      },
+      {
+        "capacity": "medium",
+        "family": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+        "pack": "More Accessories and Stuff",
+        "name": "Tulip Hat (Striped)",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHatStriped/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHatStriped/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "medium",
+          "averageOpaqueCells": 96.0,
+          "minOpaqueCells": 80,
+          "maxOpaqueCells": 124,
+          "maxComplexity": 4,
+          "maxVisualChannels": 3,
+          "maxSecondary": 1,
+          "maxAccents": 2,
+          "maxMotifFootprintCells": 16,
+          "maxAttachmentFootprintClass": "medium",
+          "blockedValues": {
+            "motif": [
+              "large"
+            ]
+          },
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "contrast",
+          "motif": "none",
+          "motifPlacement": "none",
+          "attachment": "small",
+          "hardware": "none"
+        },
+        "tasteReport": {
+          "complexity": 2,
+          "budget": [
+            1,
+            2
+          ],
+          "activeChannels": [
+            "ATTACHMENT",
+            "REGION"
+          ],
+          "primary": "trim.contrast",
+          "secondary": [
+            "attachment.small"
+          ],
+          "accents": []
+        }
+      },
+      {
+        "capacity": "large",
+        "family": "catalog_hats_cottagecore_set_mushroom_hat",
+        "pack": "Cottagecore Set",
+        "name": "Mushroom Hat (Dotted)",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/MushroomHatDotted/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/MushroomHatDotted/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "large",
+          "averageOpaqueCells": 108.0,
+          "minOpaqueCells": 98,
+          "maxOpaqueCells": 134,
+          "maxComplexity": 5,
+          "maxVisualChannels": 3,
+          "maxSecondary": 2,
+          "maxAccents": 2,
+          "maxMotifFootprintCells": 32,
+          "maxAttachmentFootprintClass": "large",
+          "blockedValues": {},
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "contrast",
+          "motif": "none",
+          "motifPlacement": "none",
+          "attachment": "small",
+          "hardware": "none"
+        },
+        "tasteReport": {
+          "complexity": 2,
+          "budget": [
+            1,
+            2
+          ],
+          "activeChannels": [
+            "ATTACHMENT",
+            "REGION"
+          ],
+          "primary": "trim.contrast",
+          "secondary": [
+            "attachment.small"
+          ],
+          "accents": []
+        }
+      }
+    ],
+    "rare": [
+      {
+        "capacity": "tiny",
+        "family": "catalog_hats_cottagecore_set_headband_daisies",
+        "pack": "Cottagecore Set",
+        "name": "Headband (Daisies)",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HeadbandDaisies/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HeadbandDaisies/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "tiny",
+          "averageOpaqueCells": 16.0,
+          "minOpaqueCells": 0,
+          "maxOpaqueCells": 26,
+          "maxComplexity": 2,
+          "maxVisualChannels": 1,
+          "maxSecondary": 0,
+          "maxAccents": 1,
+          "maxMotifFootprintCells": 4,
+          "maxAttachmentFootprintClass": "small",
+          "blockedValues": {
+            "motif": [
+              "large"
+            ],
+            "attachment": [
+              "large"
+            ],
+            "pattern": [
+              "dense"
+            ],
+            "trim": [
+              "wrap"
+            ]
+          },
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "small",
+          "motifPlacement": "front_center",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "tasteReport": {
+          "complexity": 2,
+          "budget": [
+            2,
+            2
+          ],
+          "activeChannels": [
+            "GRAPHIC"
+          ],
+          "primary": "motif.small",
+          "secondary": [],
+          "accents": []
+        }
+      },
+      {
+        "capacity": "small",
+        "family": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+        "pack": "More Accessories and Stuff",
+        "name": "Garland (Dried 1)",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandDried1/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandDried1/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "small",
+          "averageOpaqueCells": 44.75,
+          "minOpaqueCells": 38,
+          "maxOpaqueCells": 61,
+          "maxComplexity": 3,
+          "maxVisualChannels": 2,
+          "maxSecondary": 1,
+          "maxAccents": 1,
+          "maxMotifFootprintCells": 8,
+          "maxAttachmentFootprintClass": "small",
+          "blockedValues": {
+            "motif": [
+              "large"
+            ],
+            "attachment": [
+              "large"
+            ]
+          },
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "small",
+          "motifPlacement": "front_center",
+          "attachment": "small",
+          "hardware": "none"
+        },
+        "tasteReport": {
+          "complexity": 3,
+          "budget": [
+            2,
+            3
+          ],
+          "activeChannels": [
+            "ATTACHMENT",
+            "GRAPHIC"
+          ],
+          "primary": "motif.small",
+          "secondary": [
+            "attachment.small"
+          ],
+          "accents": []
+        }
+      },
+      {
+        "capacity": "medium",
+        "family": "catalog_hats_cottagecore_set_beret",
+        "pack": "Cottagecore Set",
+        "name": "Beret (Leaf)",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BeretLeaf/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BeretLeaf/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "medium",
+          "averageOpaqueCells": 83.25,
+          "minOpaqueCells": 69,
+          "maxOpaqueCells": 108,
+          "maxComplexity": 4,
+          "maxVisualChannels": 3,
+          "maxSecondary": 1,
+          "maxAccents": 2,
+          "maxMotifFootprintCells": 16,
+          "maxAttachmentFootprintClass": "medium",
+          "blockedValues": {
+            "motif": [
+              "large"
+            ]
+          },
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "small",
+          "motifPlacement": "front_center",
+          "attachment": "small",
+          "hardware": "small"
+        },
+        "tasteReport": {
+          "complexity": 4,
+          "budget": [
+            2,
+            4
+          ],
+          "activeChannels": [
+            "ATTACHMENT",
+            "GRAPHIC",
+            "HARDWARE"
+          ],
+          "primary": "motif.small",
+          "secondary": [
+            "attachment.small"
+          ],
+          "accents": [
+            "hardware.small"
+          ]
+        }
+      },
+      {
+        "capacity": "large",
+        "family": "catalog_hats_more_accessories_and_stuff_sun_hat",
+        "pack": "More Accessories and Stuff",
+        "name": "Sun Hat (Flowers)",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/SunHatFlowers/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/SunHatFlowers/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "large",
+          "averageOpaqueCells": 107.0,
+          "minOpaqueCells": 91,
+          "maxOpaqueCells": 145,
+          "maxComplexity": 5,
+          "maxVisualChannels": 3,
+          "maxSecondary": 2,
+          "maxAccents": 2,
+          "maxMotifFootprintCells": 32,
+          "maxAttachmentFootprintClass": "large",
+          "blockedValues": {},
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "small",
+          "motifPlacement": "front_center",
+          "attachment": "small",
+          "hardware": "small"
+        },
+        "tasteReport": {
+          "complexity": 4,
+          "budget": [
+            2,
+            4
+          ],
+          "activeChannels": [
+            "ATTACHMENT",
+            "GRAPHIC",
+            "HARDWARE"
+          ],
+          "primary": "motif.small",
+          "secondary": [
+            "attachment.small"
+          ],
+          "accents": [
+            "hardware.small"
+          ]
+        }
+      }
+    ],
+    "epic": [
+      {
+        "capacity": "tiny",
+        "family": "catalog_hats_more_accessories_and_stuff_headband",
+        "pack": "More Accessories and Stuff",
+        "name": "Headband (Cat 2)",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandCat2/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandCat2/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "tiny",
+          "averageOpaqueCells": 11.0,
+          "minOpaqueCells": 0,
+          "maxOpaqueCells": 16,
+          "maxComplexity": 2,
+          "maxVisualChannels": 1,
+          "maxSecondary": 0,
+          "maxAccents": 1,
+          "maxMotifFootprintCells": 4,
+          "maxAttachmentFootprintClass": "small",
+          "blockedValues": {
+            "motif": [
+              "large"
+            ],
+            "attachment": [
+              "large"
+            ],
+            "pattern": [
+              "dense"
+            ],
+            "trim": [
+              "wrap"
+            ]
+          },
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "small",
+          "motifPlacement": "front_center",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "tasteReport": {
+          "complexity": 2,
+          "budget": [
+            2,
+            2
+          ],
+          "activeChannels": [
+            "GRAPHIC"
+          ],
+          "primary": "motif.small",
+          "secondary": [],
+          "accents": []
+        }
+      },
+      {
+        "capacity": "small",
+        "family": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+        "pack": "More Accessories and Stuff",
+        "name": "Garland (Dried 2)",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandDried2/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandDried2/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "small",
+          "averageOpaqueCells": 44.75,
+          "minOpaqueCells": 38,
+          "maxOpaqueCells": 61,
+          "maxComplexity": 3,
+          "maxVisualChannels": 2,
+          "maxSecondary": 1,
+          "maxAccents": 1,
+          "maxMotifFootprintCells": 8,
+          "maxAttachmentFootprintClass": "small",
+          "blockedValues": {
+            "motif": [
+              "large"
+            ],
+            "attachment": [
+              "large"
+            ]
+          },
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "small",
+          "motifPlacement": "front_center",
+          "attachment": "small",
+          "hardware": "none"
+        },
+        "tasteReport": {
+          "complexity": 3,
+          "budget": [
+            3,
+            3
+          ],
+          "activeChannels": [
+            "ATTACHMENT",
+            "GRAPHIC"
+          ],
+          "primary": "motif.small",
+          "secondary": [
+            "attachment.small"
+          ],
+          "accents": []
+        }
+      },
+      {
+        "capacity": "medium",
+        "family": "catalog_hats_more_accessories_and_stuff_earmuffs",
+        "pack": "More Accessories and Stuff",
+        "name": "Earmuffs (Cat)",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/EarmuffsCat/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/EarmuffsCat/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "medium",
+          "averageOpaqueCells": 56.0,
+          "minOpaqueCells": 47,
+          "maxOpaqueCells": 78,
+          "maxComplexity": 4,
+          "maxVisualChannels": 3,
+          "maxSecondary": 1,
+          "maxAccents": 2,
+          "maxMotifFootprintCells": 16,
+          "maxAttachmentFootprintClass": "medium",
+          "blockedValues": {
+            "motif": [
+              "large"
+            ]
+          },
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "small",
+          "motifPlacement": "front_center",
+          "attachment": "small",
+          "hardware": "small"
+        },
+        "tasteReport": {
+          "complexity": 4,
+          "budget": [
+            3,
+            4
+          ],
+          "activeChannels": [
+            "ATTACHMENT",
+            "GRAPHIC",
+            "HARDWARE"
+          ],
+          "primary": "motif.small",
+          "secondary": [
+            "attachment.small"
+          ],
+          "accents": [
+            "hardware.small"
+          ]
+        }
+      },
+      {
+        "capacity": "large",
+        "family": "catalog_hats_cottagecore_set_hood_mushroom",
+        "pack": "Cottagecore Set",
+        "name": "Hood (Pointy)",
+        "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HoodPointy/hat.png",
+        "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HoodPointy/hat.json",
+        "generatorRole": null,
+        "familyCapacity": {
+          "surfaceAreaClass": "large",
+          "averageOpaqueCells": 165.25,
+          "minOpaqueCells": 153,
+          "maxOpaqueCells": 202,
+          "maxComplexity": 5,
+          "maxVisualChannels": 3,
+          "maxSecondary": 2,
+          "maxAccents": 2,
+          "maxMotifFootprintCells": 32,
+          "maxAttachmentFootprintClass": "large",
+          "blockedValues": {},
+          "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
+          "rule": "Effective rarity budget is capped by physical family capacity; small families express rarity through distinctiveness, not extra clutter."
+        },
+        "policyValidRecipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "contrast",
+          "motif": "small",
+          "motifPlacement": "front_center",
+          "attachment": "large",
+          "hardware": "none"
+        },
+        "tasteReport": {
+          "complexity": 5,
+          "budget": [
+            3,
+            5
+          ],
+          "activeChannels": [
+            "ATTACHMENT",
+            "GRAPHIC",
+            "REGION"
+          ],
+          "primary": "attachment.large",
+          "secondary": [
+            "motif.small",
+            "trim.contrast"
+          ],
+          "accents": []
+        }
+      }
+    ]
+  }
+}

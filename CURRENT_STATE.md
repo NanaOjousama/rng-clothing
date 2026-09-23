@@ -963,3 +963,18 @@ Validation:
 - every promoted family still has at least one valid Common, Uncommon, Rare, and Epic recipe after capacity caps.
 - legitimate zero-opaque directional views are preserved and counted rather than treated as invalid.
 - No ESM/QC promotion performed; contact-sheet approval remains the next visual gate.
+
+## 2026-09-23 — Targeted-RNG gameplay bookmark + capacity-aware hat contact sheet
+- Future gameplay design saved at docs/decisions/DUPLICATE_CLOTHING_TARGETING.md.
+- Bookmark rule: 3 matching Category Tokens + 1 Clothing Catalyst = guaranteed category + strong catalyst-family bias.
+- Catalyst rarity does not directly copy rarity onto the result; exact economy weights remain intentionally untuned.
+- No gameplay code was implemented for the token/catalyst system yet.
+
+Capacity-aware cross-family hat contact sheet:
+- tools/build_cross_family_hat_rarity_contact.py now pairs each visual candidate with a policy-valid recipe evaluated through generator/catalog_templates.py.
+- Contact matrix deliberately spans tiny / small / medium / large capacity families for every rarity tier.
+- Strongest valid recipe is selected per family+rarity, so the sheet proves compressed high-rarity behavior rather than forcing normal Epic complexity onto tiny families.
+- Current Epic proof: tiny 2/2, small 3/3, medium 4/4 cap, large 5/5 cap.
+- Visuals remain real source-backed front candidates; recipe/capacity proof is recorded in experiments/catalog_hat_rarity_test/selection_manifest.json.
+- Contact sheet: experiments/catalog_hat_rarity_test/CROSS_FAMILY_HAT_ALL_RARITIES_CONTACT.png.
+- humanArtApproved remains false. No ESM/QC promotion performed.
