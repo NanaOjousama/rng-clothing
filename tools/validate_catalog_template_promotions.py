@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import json, sys
+import itertools, json, sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from generator.catalog_templates import load_template_for_family, load_family, evaluate_family_recipe, list_families, compatible_donors
+from generator.catalog_templates import load_template_for_family, load_family, evaluate_family_recipe, list_families, compatible_donors, source_family_entry
+from v5.source.template_transfer import compile_recipe
 
 REPORT=ROOT/'generator/data/templates/catalog_promotion_report.json'
 TIDX=ROOT/'generator/data/templates/index.json'
@@ -37,6 +38,30 @@ def main():
         policy=load_family(fam)
         rr=evaluate_family_recipe(fam,'common',policy['defaultRecipe'])
         assert rr.valid,(fam,rr.errors)
+
+        # Every promoted family must map back to its source family and compile
+        # at least one real source-backed recipe through the shared transfer planner.
+        assert source_family_entry(fam) is not None
+        donor_plan=compatible_donors(fam)
+        styles=[x['part'] for x in donor_plan['allowed'] if x['part'].get('partKind')=='STYLE_PROFILE']
+        assert styles, f'{fam}: no allowed style donor'
+        reusable=[x['part'] for x in donor_plan['allowed']
+                  if x['part'].get('partKind') in {'MATERIAL_PATTERN','MOTIF','ATTACHMENT','HARDWARE','PALETTE_TONE'}]
+        compiled=compile_recipe(contract,styles[0],reusable[:2])
+        assert compiled['template']==tid and compiled['geometryPolicy']=='LOCKED_TEMPLATE_ALPHA'
+
+        # Systematic usability means each family has at least one valid recipe
+        # in every active rarity tier, not merely a valid default Common.
+        vocab=policy['vocabulary']
+        axes=list(vocab)
+        for rarity in ('common','uncommon','rare','epic'):
+            found=False
+            for values in itertools.product(*(vocab[a] for a in axes)):
+                candidate=dict(zip(axes,values))
+                if evaluate_family_recipe(fam,rarity,candidate).valid:
+                    found=True
+                    break
+            assert found, f'{fam}: no valid {rarity} recipe'
     # Third-party source art is referenced from generator content; promoter only writes JSON contracts/policies.
     catalog_dir=ROOT/'generator/data/templates/catalog'
     assert not list(catalog_dir.glob('*.png'))

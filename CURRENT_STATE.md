@@ -904,3 +904,29 @@ Reproducibility fixes:
 - Re-running the entire catalog-build/promotion pipeline produced an identical combined generated-output SHA-256 before/after:
   94db684f556f1933a4802f2576fc9944f92764820f3ada688cecffbad9f35d54
 - Catalog promotion validator PASS: 47 promoted / 6 deferred.
+
+## 2026-09-22 — Catalog promoter deep audit
+The interrupted catalog-promoter result was re-audited against live source files and strengthened.
+
+Verified:
+- Existing promoter is deterministic: rerun produced 47 promoted / 6 deferred again with no tracked contract/policy drift.
+- All 47 promoted contracts load and re-verify exact source-frame pixel hashes and alpha geometry.
+- All 47 map back to a source family in SOURCE_TRANSFER_LIBRARY.json.
+- All 47 have at least one allowed STYLE_PROFILE donor and transferable source parts.
+- All 47 successfully compile a real source-backed generation recipe through v5/source/template_transfer.py with LOCKED_TEMPLATE_ALPHA.
+- All 47 expose at least one valid Common, Uncommon, Rare, and Epic recipe through the shared taste engine.
+- Permanent validator tools/validate_catalog_template_promotions.py now checks actual compilation + all four rarity tiers for every promoted family.
+
+Deferred family requirements confirmed from source JSON:
+- Bow (Side 1): Front/Right/Back only; no LeftHat block. Requires an explicit mirror-safe/static-cardinal adapter before promotion.
+- Decorative Bells (Singles): 4-frame MovementAnimation. Requires animated/stateful headwear template support.
+- Veil: side/back MovementAnimation. Requires animated/stateful headwear template support.
+- Puffy Sleeves: full Fashion Sense farmer-state sleeve animation contract. Requires specialized sleeves adapter.
+- Cape: movement-conditioned multi-frame accessory animation. Requires animated/stateful accessory template support.
+- Plumbob (Animated): explicit 4-frame UniformAnimation. Requires animated accessory template support.
+
+Usability boundary:
+- The 47 are systematically usable as CANDIDATE_READY construction families in the new generator.
+- Their generated catalog taste policies are baseline category-level policies, not hand-tuned final taste profiles for every individual family.
+- Human art/wear approval remains mandatory before production.
+- Explicit compatible donor transfers remain available through semantic zones/anchors; alternate constructions remain fail-closed.
