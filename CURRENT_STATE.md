@@ -788,3 +788,46 @@ Implementation:
 - SFP2 proof target slots changed to Common WHOLE+WRAP, Uncommon WHOLE+WRAP, Rare WHOLE+LOCALIZED, Epic WRAP+LOCALIZED.
 - Credit-free reroll v2 created under experiments/sfp2_rarity_batch/reroll_v2. No Sprite Fusion generation was called.
 - Validator updated to enforce the new rarity floors.
+
+## 2026-09-22 — Generator-wide four-layer taste policy
+Implemented the four-layer taste/rarity system as shared generator infrastructure, not a slouch-only evaluator.
+
+Shared architecture:
+- `generator/taste_policy.py` is the family-agnostic evaluator.
+- `generator/data/taste_policy_registry.json` registers active template families and fails closed when an active template family lacks taste policy coverage.
+- Active source-backed/template/AI-assisted recipes must pass this gate before paid visual generation.
+- Legacy generator versions keep their frozen rarity systems until intentionally migrated; the new source-backed/template path cannot bypass the shared gate.
+
+Four layers:
+1. Hard rarity floors:
+   - Common = simple/subtle; no motif/emblem/localized decoration.
+   - Uncommon = stronger pattern/material/construction identity; still no motif/emblem.
+   - Rare+ = motif/emblem/patch/badge/localized decoration allowed.
+2. Complexity budgets:
+   - Common 0–1, Uncommon 1–2, Rare 2–4, Epic 3–5.
+   - Maximum active visual channels and Secondary/Accent counts are also bounded.
+3. Incompatibility/conflict rules:
+   - Dense surface conflicts, competing large focal points, extra-slouch/top-heavy conflicts, wrap-vs-double-trim conflicts, side-bow quiet-surface rules, plus semantic completeness checks.
+4. Design roles / visual channels:
+   - SURFACE, PATTERN, REGION, GRAPHIC, ATTACHMENT, HARDWARE.
+   - Construction can consume budget but remains BASE.
+   - At most one PRIMARY; bounded SECONDARY and ACCENT support.
+   - Multiple competing dominant features are rejected.
+
+Slouch beanie is the first registered family policy because it is currently the only active family in generator/data/templates/index.json. Future active template families must register their own family data but use the same shared engine.
+
+SFP2 planner now calls the registered-family taste API directly and persists a taste report per recipe (complexity, budget, channels, PRIMARY, SECONDARY, ACCENT, errors).
+Credit-free reroll v2 obeys the new grammar:
+- Common: WHOLE_HAT + WRAPAROUND; no motifs.
+- Uncommon: WHOLE_HAT + WRAPAROUND; no motifs.
+- Rare: WHOLE_HAT + LOCALIZED.
+- Epic: WRAPAROUND + LOCALIZED.
+No Sprite Fusion credits were spent for this reroll.
+
+Verification:
+- generator-wide synthetic policy test PASS.
+- active template-family registry coverage PASS.
+- slouch integration PASS.
+- chaotic Epic recipe correctly rejected for conflicts, complexity 14>5, 6 visual channels, excessive supports, and competing dominant features.
+- slouch roll-matrix validator PASS.
+- scoped git diff --check PASS.

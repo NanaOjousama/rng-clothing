@@ -36,3 +36,4 @@ Before modifying the Sprite Fusion / AI-assisted clothing generator path:
 5. Native Sprite Fusion output does not receive Pixel Snapper by default.
 6. Only PRODUCTION_APPROVED assets may enter the production generator pool.
 7. Preserve template/silhouette authority unless Nana explicitly approves a silhouette change.
+8. Before any paid/AI visual generation for a registered template family, run the shared generator taste gate (`generator/taste_policy.py` via `generator/data/taste_policy_registry.json`). Invalid rarity/complexity/conflict/role recipes must be rejected before the API call.

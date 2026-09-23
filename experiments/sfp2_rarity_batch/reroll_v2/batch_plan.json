@@ -25,7 +25,21 @@
         "hardwareAccent": "none"
       },
       "consistencyClass": "WHOLE_HAT",
-      "materialProfile": "rib_knit"
+      "materialProfile": "rib_knit",
+      "taste": {
+        "valid": true,
+        "rarity": "common",
+        "complexity": 1,
+        "budget": [
+          0,
+          1
+        ],
+        "activeChannels": [],
+        "primary": null,
+        "secondary": [],
+        "accents": [],
+        "errors": []
+      }
     },
     {
       "id": "SFP2_COMMON_2",
@@ -49,7 +63,23 @@
         "hardwareAccent": "none"
       },
       "consistencyClass": "WRAPAROUND_REGION",
-      "materialProfile": "rib_knit"
+      "materialProfile": "rib_knit",
+      "taste": {
+        "valid": true,
+        "rarity": "common",
+        "complexity": 1,
+        "budget": [
+          0,
+          1
+        ],
+        "activeChannels": [
+          "REGION"
+        ],
+        "primary": "trimAccent.band_trim_line",
+        "secondary": [],
+        "accents": [],
+        "errors": []
+      }
     },
     {
       "id": "SFP2_UNCOMMON_1",
@@ -73,7 +103,23 @@
         "hardwareAccent": "none"
       },
       "consistencyClass": "WHOLE_HAT",
-      "materialProfile": "stripe_colorblock"
+      "materialProfile": "stripe_colorblock",
+      "taste": {
+        "valid": true,
+        "rarity": "uncommon",
+        "complexity": 2,
+        "budget": [
+          1,
+          2
+        ],
+        "activeChannels": [
+          "PATTERN"
+        ],
+        "primary": "pattern.two_tone_block",
+        "secondary": [],
+        "accents": [],
+        "errors": []
+      }
     },
     {
       "id": "SFP2_UNCOMMON_2",
@@ -82,11 +128,11 @@
         "presentationLean": "feminine_lean",
         "slouchDepth": "relaxed",
         "bandType": "standard_cuff",
-        "drapeDirection": "soft_back_left",
-        "crownShape": "elongated",
-        "openingFit": "snug",
-        "knitStructure": "seed",
-        "pattern": "single_stripe",
+        "drapeDirection": "soft_back_right",
+        "crownShape": "rounded",
+        "openingFit": "relaxed",
+        "knitStructure": "fine_rib",
+        "pattern": "twin_stripe",
         "trimAccent": "band_trim_line",
         "microAccent": "none",
         "motif": "none",
@@ -94,10 +140,29 @@
         "decorationStyle": "none",
         "motifPlacement": "none",
         "attachment": "none",
-        "hardwareAccent": "button_accent"
+        "hardwareAccent": "none"
       },
       "consistencyClass": "WRAPAROUND_REGION",
-      "materialProfile": "stripe_colorblock"
+      "materialProfile": "stripe_colorblock",
+      "taste": {
+        "valid": true,
+        "rarity": "uncommon",
+        "complexity": 2,
+        "budget": [
+          1,
+          2
+        ],
+        "activeChannels": [
+          "PATTERN",
+          "REGION"
+        ],
+        "primary": "pattern.twin_stripe",
+        "secondary": [],
+        "accents": [
+          "trimAccent.band_trim_line"
+        ],
+        "errors": []
+      }
     },
     {
       "id": "SFP2_RARE_1",
@@ -121,31 +186,68 @@
         "hardwareAccent": "none"
       },
       "consistencyClass": "WHOLE_HAT",
-      "materialProfile": "cable_knit"
+      "materialProfile": "cable_knit",
+      "taste": {
+        "valid": true,
+        "rarity": "rare",
+        "complexity": 2,
+        "budget": [
+          2,
+          4
+        ],
+        "activeChannels": [
+          "SURFACE"
+        ],
+        "primary": "knitStructure.cable",
+        "secondary": [],
+        "accents": [],
+        "errors": []
+      }
     },
     {
       "id": "SFP2_RARE_2",
       "rarity": "rare",
       "recipe": {
-        "presentationLean": "neutral",
-        "slouchDepth": "extra",
-        "bandType": "rolled_cuff",
-        "drapeDirection": "back_center",
-        "crownShape": "gathered",
-        "openingFit": "normal",
+        "presentationLean": "masculine_lean",
+        "slouchDepth": "relaxed",
+        "bandType": "standard_cuff",
+        "drapeDirection": "deep_back",
+        "crownShape": "tapered",
+        "openingFit": "snug",
         "knitStructure": "chunky",
-        "pattern": "contrast_cuff",
+        "pattern": "solid",
         "trimAccent": "none",
         "microAccent": "none",
         "motif": "leaf",
-        "carrierStyle": "patch_rect",
-        "decorationStyle": "knit_in",
-        "motifPlacement": "cuff_back_center",
+        "carrierStyle": "none",
+        "decorationStyle": "woven_patch",
+        "motifPlacement": "body_lower_front",
         "attachment": "none",
         "hardwareAccent": "none"
       },
       "consistencyClass": "LOCALIZED",
-      "materialProfile": "stripe_colorblock"
+      "materialProfile": "rib_knit",
+      "taste": {
+        "valid": true,
+        "rarity": "rare",
+        "complexity": 4,
+        "budget": [
+          2,
+          4
+        ],
+        "activeChannels": [
+          "GRAPHIC",
+          "SURFACE"
+        ],
+        "primary": "motif.leaf",
+        "secondary": [
+          "knitStructure.chunky"
+        ],
+        "accents": [
+          "decorationStyle.woven_patch"
+        ],
+        "errors": []
+      }
     },
     {
       "id": "SFP2_EPIC_1",
@@ -169,7 +271,26 @@
         "hardwareAccent": "none"
       },
       "consistencyClass": "WRAPAROUND_REGION",
-      "materialProfile": "stripe_colorblock"
+      "materialProfile": "stripe_colorblock",
+      "taste": {
+        "valid": true,
+        "rarity": "epic",
+        "complexity": 3,
+        "budget": [
+          3,
+          5
+        ],
+        "activeChannels": [
+          "ATTACHMENT",
+          "PATTERN"
+        ],
+        "primary": "pattern.contrast_cuff",
+        "secondary": [
+          "attachment.pom_small"
+        ],
+        "accents": [],
+        "errors": []
+      }
     },
     {
       "id": "SFP2_EPIC_2",
@@ -193,7 +314,25 @@
         "hardwareAccent": "none"
       },
       "consistencyClass": "LOCALIZED",
-      "materialProfile": "rib_knit"
+      "materialProfile": "rib_knit",
+      "taste": {
+        "valid": true,
+        "rarity": "epic",
+        "complexity": 4,
+        "budget": [
+          3,
+          5
+        ],
+        "activeChannels": [
+          "GRAPHIC"
+        ],
+        "primary": "motif.leaf",
+        "secondary": [],
+        "accents": [
+          "decorationStyle.leather_patch"
+        ],
+        "errors": []
+      }
     }
   ]
 }

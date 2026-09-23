@@ -25,6 +25,14 @@ Use this file as the source of truth for GPT/Claude/Codex when working on the AI
 - Put target size in the API size field, not in prompt prose when possible.
 - Current project target: request 16; prefer 16–24; mechanically allow <=32 for candidate review.
 
+## Pre-generation taste gate
+- Registered template families must pass the shared generator taste engine before any paid/AI request.
+- Shared engine: `generator/taste_policy.py`; registry: `generator/data/taste_policy_registry.json`.
+- The gate enforces: hard rarity floors, complexity budgets, incompatibility/conflict rules, and design-role/visual-channel limits.
+- Family-specific costs/conflicts live with that family policy; the evaluator stays generator-wide.
+- Active template families without a registered taste policy fail closed.
+- Rarity means more distinctive, not more cluttered: one PRIMARY at most, with bounded SECONDARY/ACCENT support.
+
 ## Candidate generation
 - Generate candidate fronts first.
 - Download outputs locally immediately; do not rely on hosted asset URLs.

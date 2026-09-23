@@ -1,7 +1,7 @@
 {
   "operation": "style-reference",
   "size": 16,
-  "prompt": "slouch beanie, chunky knit, contrast cuff, rolled cuff, extra slouch, back center, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
+  "prompt": "slouch beanie, chunky knit, standard cuff, relaxed slouch, deep back, leave localized decoration off the base hat; decoration is added later. Simple wearable Stardew-style hat; preserve a clean isolated hat.",
   "referenceRoles": [
     {
       "role": "construction",
@@ -15,13 +15,13 @@
     },
     {
       "role": "material",
-      "localPath": "experiments/spritefusion_beanie_material_test_01/stripe_colorblock/native/stripe_colorblock_00.png",
-      "note": "stripe_colorblock material evidence"
+      "localPath": "experiments/spritefusion_beanie_material_test_01/rib_knit/native/rib_knit_00.png",
+      "note": "rib_knit material evidence"
     },
     {
       "role": "material",
-      "localPath": "experiments/spritefusion_beanie_material_test_01/stripe_colorblock/native/stripe_colorblock_01.png",
-      "note": "stripe_colorblock material evidence alternate"
+      "localPath": "experiments/spritefusion_beanie_material_test_01/rib_knit/native/rib_knit_01.png",
+      "note": "rib_knit material evidence alternate"
     }
   ]
 }

@@ -1046,7 +1046,9 @@
         "carrierStyle": "none",
         "decorationStyle": "none",
         "motifPlacement": "none",
-        "microAccent": "none"
+        "microAccent": "none",
+        "attachment": "none",
+        "hardwareAccent": "none"
       },
       "allowedKnitStructures": [
         "plain",
@@ -1146,5 +1148,331 @@
       "simple_jacquard": "uncommon",
       "cable_plus_stripe": "rare"
     }
+  },
+  "tastePolicy": {
+    "version": 1,
+    "principle": "Rarity increases distinctiveness, not clutter. One dominant idea with limited supporting features.",
+    "complexityBudgets": {
+      "common": {
+        "min": 0,
+        "max": 1,
+        "maxVisualChannels": 1,
+        "maxSecondary": 0,
+        "maxAccents": 1
+      },
+      "uncommon": {
+        "min": 1,
+        "max": 2,
+        "maxVisualChannels": 2,
+        "maxSecondary": 1,
+        "maxAccents": 1
+      },
+      "rare": {
+        "min": 2,
+        "max": 4,
+        "maxVisualChannels": 3,
+        "maxSecondary": 1,
+        "maxAccents": 2
+      },
+      "epic": {
+        "min": 3,
+        "max": 5,
+        "maxVisualChannels": 3,
+        "maxSecondary": 2,
+        "maxAccents": 2
+      }
+    },
+    "channels": {
+      "SURFACE": [
+        "knitStructure"
+      ],
+      "PATTERN": [
+        "pattern"
+      ],
+      "REGION": [
+        "trimAccent",
+        "microAccent"
+      ],
+      "GRAPHIC": [
+        "motif",
+        "carrierStyle",
+        "decorationStyle"
+      ],
+      "ATTACHMENT": [
+        "attachment"
+      ],
+      "HARDWARE": [
+        "hardwareAccent"
+      ]
+    },
+    "constructionAxes": [
+      "slouchDepth",
+      "bandType",
+      "drapeDirection",
+      "crownShape",
+      "openingFit"
+    ],
+    "featureCosts": {
+      "knitStructure": {
+        "plain": 0,
+        "fine_rib": 0,
+        "wide_rib": 0,
+        "seed": 0,
+        "jersey": 0,
+        "brushed": 0,
+        "fleece_wool": 0,
+        "waffle": 1,
+        "cable": 1,
+        "chunky": 1
+      },
+      "pattern": {
+        "solid": 0,
+        "heather": 0,
+        "single_stripe": 1,
+        "twin_stripe": 1,
+        "contrast_cuff": 1,
+        "two_tone_block": 1,
+        "twist_stripe": 1,
+        "simple_jacquard": 1,
+        "plaid_woven": 2,
+        "cable_plus_stripe": 2
+      },
+      "trimAccent": {
+        "none": 0,
+        "band_trim_line": 1,
+        "crown_trim_line": 1,
+        "double_trim_lines": 2
+      },
+      "microAccent": {
+        "none": 0,
+        "diagonal_wrap_band": 1,
+        "cuff_patch_small": 1,
+        "side_bow_small": 1,
+        "tiny_label_tag": 1
+      },
+      "motif": {
+        "none": 0,
+        "*": 2
+      },
+      "carrierStyle": {
+        "none": 0,
+        "*": 1
+      },
+      "decorationStyle": {
+        "none": 0,
+        "direct_stitch": 0,
+        "knit_in": 0,
+        "contrast_stitch": 1,
+        "woven_patch": 1,
+        "leather_patch": 1,
+        "side_label": 1
+      },
+      "attachment": {
+        "none": 0,
+        "pom_small": 1,
+        "pom_large": 2
+      },
+      "hardwareAccent": {
+        "none": 0,
+        "button_accent": 1
+      },
+      "slouchDepth": {
+        "micro": 0,
+        "relaxed": 0,
+        "medium": 0,
+        "deep": 0,
+        "extra": 1
+      },
+      "bandType": {
+        "none": 0,
+        "narrow_cuff": 0,
+        "standard_cuff": 0,
+        "deep_cuff": 1,
+        "rolled_cuff": 1,
+        "double_roll": 1
+      },
+      "crownShape": {
+        "rounded": 0,
+        "tapered": 0,
+        "elongated": 1,
+        "pouch": 1,
+        "gathered": 1
+      }
+    },
+    "impact": {
+      "high": [
+        "pattern.plaid_woven",
+        "pattern.cable_plus_stripe",
+        "trimAccent.double_trim_lines",
+        "attachment.pom_large",
+        "motif.flower_cluster_small",
+        "motif.badge_small",
+        "motif.patch_rect",
+        "motif.patch_square"
+      ],
+      "mediumPrefixes": [
+        "motif.",
+        "carrierStyle."
+      ],
+      "medium": [
+        "knitStructure.cable",
+        "knitStructure.chunky",
+        "knitStructure.waffle",
+        "pattern.simple_jacquard",
+        "pattern.twin_stripe",
+        "pattern.two_tone_block",
+        "pattern.twist_stripe",
+        "pattern.contrast_cuff",
+        "microAccent.diagonal_wrap_band",
+        "attachment.pom_small",
+        "bandType.double_roll"
+      ]
+    },
+    "dominantPriority": [
+      "GRAPHIC",
+      "PATTERN",
+      "SURFACE",
+      "REGION",
+      "ATTACHMENT",
+      "HARDWARE",
+      "CONSTRUCTION"
+    ],
+    "strongConflictRules": [
+      {
+        "id": "cable_vs_dense_pattern",
+        "when": {
+          "knitStructure": "cable"
+        },
+        "disallow": {
+          "pattern": [
+            "plaid_woven",
+            "simple_jacquard",
+            "twist_stripe"
+          ]
+        },
+        "reason": "Cable already owns the surface rhythm."
+      },
+      {
+        "id": "busy_pattern_vs_large_graphic",
+        "when": {
+          "pattern": [
+            "plaid_woven",
+            "simple_jacquard",
+            "cable_plus_stripe"
+          ]
+        },
+        "disallow": {
+          "motif": [
+            "flower_cluster_small",
+            "badge_small",
+            "patch_rect",
+            "patch_square",
+            "animal_tiny",
+            "mushroom_tiny"
+          ]
+        },
+        "reason": "Dense surface pattern and large graphic compete for dominance."
+      },
+      {
+        "id": "double_trim_vs_wrap",
+        "when": {
+          "trimAccent": "double_trim_lines"
+        },
+        "disallow": {
+          "microAccent": [
+            "diagonal_wrap_band"
+          ]
+        },
+        "reason": "Two region treatments compete for the same visual channel."
+      },
+      {
+        "id": "large_pom_vs_large_graphic",
+        "when": {
+          "attachment": "pom_large"
+        },
+        "disallow": {
+          "motif": [
+            "flower_cluster_small",
+            "badge_small",
+            "patch_rect",
+            "patch_square"
+          ]
+        },
+        "reason": "Large pom and large graphic create two dominant focal points."
+      },
+      {
+        "id": "extra_slouch_vs_heavy_top",
+        "when": {
+          "slouchDepth": "extra"
+        },
+        "disallow": {
+          "attachment": [
+            "pom_large"
+          ],
+          "crownShape": [
+            "pouch"
+          ],
+          "motifPlacement": [
+            "crown_front"
+          ]
+        },
+        "reason": "Extra slouch needs a quieter crown/top silhouette."
+      },
+      {
+        "id": "side_bow_needs_quiet_surface",
+        "when": {
+          "microAccent": "side_bow_small"
+        },
+        "disallow": {
+          "pattern": [
+            "plaid_woven",
+            "cable_plus_stripe"
+          ],
+          "knitStructure": [
+            "cable",
+            "chunky"
+          ]
+        },
+        "reason": "Small bow stays readable only on a quieter surface."
+      }
+    ],
+    "roleRules": {
+      "BASE": "Construction/foundation context. Distinctive construction may consume complexity budget, but CONSTRUCTION-channel features do not become PRIMARY/SECONDARY/ACCENT roles.",
+      "PRIMARY": "Single strongest non-construction visual identity after impact and channel-priority ordering.",
+      "SECONDARY": "Medium/high-impact non-construction feature that supports rather than competes with PRIMARY.",
+      "ACCENT": "Low-impact non-construction finishing detail.",
+      "rule": "Exactly zero or one PRIMARY. Never promote a second competing focal point; reject by conflict/channel/budget first."
+    },
+    "semanticRequirements": [
+      {
+        "id": "motif_needs_style_and_placement",
+        "axis": "motif",
+        "whenNonNone": true,
+        "requiresNonNone": [
+          "decorationStyle",
+          "motifPlacement"
+        ]
+      },
+      {
+        "id": "carrier_needs_placement",
+        "axis": "carrierStyle",
+        "whenNonNone": true,
+        "requiresNonNone": [
+          "motifPlacement"
+        ]
+      },
+      {
+        "id": "localized_micro_needs_placement",
+        "axis": "microAccent",
+        "whenValues": [
+          "cuff_patch_small",
+          "side_bow_small",
+          "tiny_label_tag"
+        ],
+        "requiresNonNone": [
+          "motifPlacement"
+        ]
+      }
+    ]
   }
 }

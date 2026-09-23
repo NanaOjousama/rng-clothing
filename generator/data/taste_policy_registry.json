@@ -1,0 +1,31 @@
+{
+  "schema": "rng-clothing-taste-policy-registry/v1",
+  "engine": "generator/taste_policy.py",
+  "rule": "All garment-family recipe planners must validate rarity/taste through the shared engine before visual generation.",
+  "families": {
+    "slouch_beanie": {
+      "policyFile": "generator/data/headwear/slouch_beanie_roll_matrix.json",
+      "status": "ACTIVE",
+      "axes": 16
+    }
+  },
+  "futureFamilyContract": {
+    "requiredSections": [
+      "rarityRules",
+      "tastePolicy.complexityBudgets",
+      "tastePolicy.channels",
+      "tastePolicy.featureCosts",
+      "tastePolicy.strongConflictRules",
+      "tastePolicy.roleRules"
+    ],
+    "sharedLayers": [
+      "hard_rarity_floors",
+      "complexity_budget",
+      "conflict_rules",
+      "design_roles_and_visual_channels"
+    ]
+  },
+  "templateRegistry": "generator/data/templates/index.json",
+  "unregisteredActiveTemplateFamilyAction": "REJECT",
+  "scope": "generator-wide semantic pre-generation gate for the source-backed/template/AI-assisted pipeline; legacy generator versions retain their own frozen policies until migrated intentionally"
+}

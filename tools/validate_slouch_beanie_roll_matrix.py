@@ -62,6 +62,14 @@ def main():
     assert 'single_stripe' not in rr['common']['allowedPatterns']
     assert 'single_stripe' in rr['uncommon']['minimumPatterns']
     assert 'cable_plus_stripe' in rr['minimumRarityByFeature'] and rr['minimumRarityByFeature']['cable_plus_stripe']=='rare'
+    tp=data['tastePolicy']
+    assert set(tp['complexityBudgets'])=={'common','uncommon','rare','epic'}
+    assert tp['complexityBudgets']['common']['max']==1
+    assert tp['complexityBudgets']['epic']['max']==5
+    assert set(tp['channels'])=={'SURFACE','PATTERN','REGION','GRAPHIC','ATTACHMENT','HARDWARE'}
+    assert tp['roleRules']['rule'].startswith('Exactly zero or one PRIMARY')
+    assert any(r['id']=='cable_vs_dense_pattern' for r in tp['strongConflictRules'])
+    assert any(r['id']=='carrier_needs_placement' for r in tp['semanticRequirements'])
     vc=data['viewConsistencyPolicy']
     assert set(vc['classes'])=={'WHOLE_HAT','WRAPAROUND_REGION','LOCALIZED'}
     assert vc['axisDefaults']['pattern']=='WHOLE_HAT'

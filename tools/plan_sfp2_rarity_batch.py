@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import json, random
+import json, random, sys
 
 ROOT=Path('/run/media/deck/USD00/RNG_clothing')
+sys.path.insert(0,str(ROOT))
+from generator.taste_policy import evaluate_registered_recipe, report_dict
+
 MATRIX=json.loads((ROOT/'generator/data/headwear/slouch_beanie_roll_matrix.json').read_text())
 SEED=9222026
 RNG=random.Random(SEED)
@@ -50,38 +53,6 @@ def valid(recipe):
                 if recipe.get(k) not in vals: return False
     return True
 
-def rarity_valid(recipe, rarity):
-    rules=MATRIX['rarityRules'][rarity]
-    forced=rules.get('forced',{})
-    if any(recipe.get(k)!=v for k,v in forced.items()):
-        return False
-    allowed_patterns=rules.get('allowedPatterns')
-    if allowed_patterns is not None and recipe.get('pattern') not in allowed_patterns:
-        return False
-    allowed_trim=rules.get('allowedTrimAccents')
-    if allowed_trim is not None and recipe.get('trimAccent') not in allowed_trim:
-        return False
-    allowed_knits=rules.get('allowedKnitStructures')
-    if allowed_knits is not None and recipe.get('knitStructure') not in allowed_knits:
-        return False
-    allowed_bands=rules.get('allowedBandTypes')
-    if allowed_bands is not None and recipe.get('bandType') not in allowed_bands:
-        return False
-    allowed_micro=rules.get('allowedMicroAccents')
-    if allowed_micro is not None and recipe.get('microAccent') not in allowed_micro:
-        return False
-    if rarity=='uncommon':
-        # Uncommon may be simple WHOLE_HAT or stronger patterned/wraparound,
-        # but never motif/emblem/localized decoration.
-        if recipe.get('motif')!='none' or recipe.get('carrierStyle')!='none':
-            return False
-        if recipe.get('decorationStyle')!='none' or recipe.get('motifPlacement')!='none':
-            return False
-        req=rules.get('distinctiveFeatureRule',{}).get('requireAny',{})
-        if req and not any(recipe.get(axis) in values for axis,values in req.items()):
-            return False
-    return True
-
 def roll_one(rarity):
     axes=[a for a in MATRIX['rollOrder'] if a in MATRIX['axes']]
     for _ in range(10000):
@@ -90,7 +61,7 @@ def roll_one(rarity):
             r['motif']='none'; r['decorationStyle']='none'; r['motifPlacement']='none'
             r['carrierStyle']='none'; r['microAccent']='none'; r['attachment']='none'
             r['hardwareAccent']='none'
-        if valid(r) and rarity_valid(r,rarity): return r
+        if valid(r) and evaluate_registered_recipe(ROOT,'slouch_beanie',r,rarity).valid: return r
     raise RuntimeError('failed to roll '+rarity)
 def consistency(recipe):
     localized=any([
@@ -158,7 +129,8 @@ def main():
         rid=f"SFP2_{rarity.upper()}_{1+sum(1 for x in recipes if x['rarity']==rarity)}"
         profile=material_profile(rec)
         refs=mats['profiles'][profile]['semanticEvidence']
-        item={'id':rid,'rarity':rarity,'recipe':rec,'consistencyClass':consistency(rec),'materialProfile':profile}
+        taste=report_dict(evaluate_registered_recipe(ROOT,'slouch_beanie',rec,rarity))
+        item={'id':rid,'rarity':rarity,'recipe':rec,'consistencyClass':consistency(rec),'materialProfile':profile,'taste':taste}
         recipes.append(item)
         spec={
           'operation':'style-reference','size':16,'prompt':front_prompt(rec,rarity),

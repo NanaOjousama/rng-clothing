@@ -1,5 +1,9 @@
 # RNG Clothing generators
 
+## Shared taste / rarity gate
+
+`generator/taste_policy.py` is the generator-wide semantic taste gate. Garment families opt in through `generator/data/taste_policy_registry.json` and provide family-specific `rarityRules` + `tastePolicy` data. The shared engine enforces four layers before visual generation: hard rarity floors, complexity budgets, incompatibility/conflict rules, and design-role/visual-channel control. Rarity means more distinctive, not more cluttered. Validate with `python3 tools/validate_taste_policy.py`.
+
 The project contains deterministic, dependency-free Python generation tools. V1/V2 export native Stardew shirts. V3 is an optional Fashion Sense 7.5.0 content-pack backend and does not replace them.
 
 ## Rarity renderer routing

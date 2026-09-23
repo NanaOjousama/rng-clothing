@@ -25,5 +25,17 @@
     "left": "mirror approved right base",
     "localized": "generator-controlled after base cardinal construction",
     "directionSet": "deprecated for hat production"
+  },
+  "tastePolicyRegistry": "generator/data/taste_policy_registry.json",
+  "preGenerationTasteGate": {
+    "engine": "generator/taste_policy.py",
+    "requiredForRegisteredFamilies": true,
+    "layers": [
+      "hard_rarity_floors",
+      "complexity_budget",
+      "conflict_rules",
+      "design_roles_and_visual_channels"
+    ],
+    "rule": "Reject invalid recipe before any paid/AI visual generation request."
   }
 }
