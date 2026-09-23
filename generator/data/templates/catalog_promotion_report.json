@@ -822,6 +822,7 @@
       "author": "plurffle",
       "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowSide1/hat.png",
       "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowSide1/hat.json",
+      "family": "catalog_hats_more_accessories_and_stuff_bow_side_1",
       "reason": "missing_cardinal:left"
     },
     {
@@ -831,6 +832,7 @@
       "author": "plurffle",
       "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/DecorativeBellsSingles/hat.png",
       "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/DecorativeBellsSingles/hat.json",
+      "family": "catalog_hats_more_accessories_and_stuff_decorative_bells_singles",
       "reason": "animated_or_stateful"
     },
     {
@@ -840,6 +842,7 @@
       "author": "plurffle",
       "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Veil/hat.png",
       "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Veil/hat.json",
+      "family": "catalog_hats_more_accessories_and_stuff_veil",
       "reason": "animated_or_stateful"
     },
     {
@@ -849,6 +852,7 @@
       "author": "plurffle",
       "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Sleeves/PuffySleeves/sleeves.png",
       "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Sleeves/PuffySleeves/sleeves.json",
+      "family": "catalog_sleeves_cottagecore_set_puffy_sleeves",
       "reason": "category_requires_specialized_adapter"
     },
     {
@@ -858,6 +862,7 @@
       "author": "plurffle",
       "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/Cape/accessory.png",
       "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/Cape/accessory.json",
+      "family": "catalog_accessories_more_accessories_and_stuff_cape",
       "reason": "animated_or_stateful"
     },
     {
@@ -867,6 +872,7 @@
       "author": "plurffle",
       "png": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/PlumbobAnimated/accessory.png",
       "json": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Accessories/PlumbobAnimated/accessory.json",
+      "family": "catalog_accessories_more_accessories_and_stuff_plumbob_animated",
       "reason": "animated_or_stateful"
     }
   ]

@@ -17,6 +17,14 @@ def main():
     assert report['familyBaseCount']==report['promotedCount']+report['deferredCount']
     assert report['familyBaseCount']==53
     assert report['promotedCount']>0
+    promoted_ids={row['family'] for row in report['promoted']}
+    deferred_ids={row['family'] for row in report['deferred']}
+    assert len(promoted_ids)==report['promotedCount']
+    assert len(deferred_ids)==report['deferredCount']
+    assert not (promoted_ids & deferred_ids)
+    assert len(promoted_ids | deferred_ids)==report['familyBaseCount']
+    assert {x['family'] for x in tidx.get('deferredCatalogFamilies',[])}==deferred_ids
+    assert {x['family'] for x in treg.get('deferredCatalogFamilies',[])}==deferred_ids
     for row in report['promoted']:
         fam=row['family']; tid=row['template']
         assert tid in tidx['templates']

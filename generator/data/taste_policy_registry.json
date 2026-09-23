@@ -356,5 +356,49 @@
   },
   "templateRegistry": "generator/data/templates/index.json",
   "unregisteredActiveTemplateFamilyAction": "REJECT",
-  "scope": "generator-wide semantic pre-generation gate for the source-backed/template/AI-assisted pipeline; legacy generator versions retain their own frozen policies until migrated intentionally"
+  "scope": "generator-wide semantic pre-generation gate for the source-backed/template/AI-assisted pipeline; legacy generator versions retain their own frozen policies until migrated intentionally",
+  "deferredCatalogFamilies": [
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_bow_side_1",
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Bow (Side 1)",
+      "reason": "missing_cardinal:left"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_decorative_bells_singles",
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Decorative Bells (Singles)",
+      "reason": "animated_or_stateful"
+    },
+    {
+      "family": "catalog_hats_more_accessories_and_stuff_veil",
+      "category": "Hats",
+      "pack": "More Accessories and Stuff",
+      "name": "Veil",
+      "reason": "animated_or_stateful"
+    },
+    {
+      "family": "catalog_sleeves_cottagecore_set_puffy_sleeves",
+      "category": "Sleeves",
+      "pack": "Cottagecore Set",
+      "name": "Puffy Sleeves",
+      "reason": "category_requires_specialized_adapter"
+    },
+    {
+      "family": "catalog_accessories_more_accessories_and_stuff_cape",
+      "category": "Accessories",
+      "pack": "More Accessories and Stuff",
+      "name": "Cape",
+      "reason": "animated_or_stateful"
+    },
+    {
+      "family": "catalog_accessories_more_accessories_and_stuff_plumbob_animated",
+      "category": "Accessories",
+      "pack": "More Accessories and Stuff",
+      "name": "Plumbob (Animated)",
+      "reason": "animated_or_stateful"
+    }
+  ]
 }

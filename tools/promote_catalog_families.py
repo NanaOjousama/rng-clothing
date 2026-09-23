@@ -2,6 +2,7 @@
 from __future__ import annotations
 import hashlib, json, re, sys
 from pathlib import Path
+import subprocess
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from v5.pngio import read_rgba_png
@@ -247,6 +248,8 @@ def make_taste_policy(family_id,template_id,category):
     }}
 
 def main():
+    # Rebuild the derived master catalog from tracked source_catalog inputs so promotion is reproducible.
+    subprocess.run([sys.executable, str(ROOT/'tools/build_master_generator_catalog.py')], check=True)
     catalog=json.loads(CAT.read_text())
     tidx=json.loads(TIDX.read_text())
     treg=json.loads(TREG.read_text())
@@ -259,12 +262,12 @@ def main():
       for pack,items in packs.items():
         for entry in items:
           if entry.get('generator_role')!='FAMILY_BASE': continue
-          parsed,reason=classify(entry,category)
-          rec={'category':category,'pack':pack,'name':entry['name'],'author':entry.get('author'),'png':entry.get('png_path'),'json':entry.get('json_path')}
-          if reason:
-            rec['reason']=reason; deferred.append(rec); continue
           family_id='catalog_'+slug(category)+'_'+slug(pack)+'_'+slug(entry['name'])
           template_id=family_id
+          parsed,reason=classify(entry,category)
+          rec={'category':category,'pack':pack,'name':entry['name'],'author':entry.get('author'),'png':entry.get('png_path'),'json':entry.get('json_path'),'family':family_id}
+          if reason:
+            rec['reason']=reason; deferred.append(rec); continue
           try:
             contract=make_contract(entry,category,pack,parsed,family_id,template_id)
           except Exception as e:
@@ -286,8 +289,10 @@ def main():
           promoted.append({**rec,'family':family_id,'template':template_id,'frameSize':(list(parsed['size']) if parsed['size'] else None),'frameSizes':({v:list(sz) for v,sz in parsed['frameSizes'].items()} if not parsed['size'] else None),'slot':parsed['slot']})
     tidx['schema']='source-backed-template-registry/v2'
     tidx['catalogPromotion']={'tool':'tools/promote_catalog_families.py','promoted':len(promoted),'deferred':len(deferred),'humanApprovalRequiredBeforeProduction':True}
+    tidx['deferredCatalogFamilies']=[{'family':x['family'],'category':x['category'],'pack':x['pack'],'name':x['name'],'reason':x['reason']} for x in deferred]
     TIDX.write_text(json.dumps(tidx,indent=2)+'\n')
     treg['unregisteredActiveTemplateFamilyAction']='REJECT'
+    treg['deferredCatalogFamilies']=[{'family':x['family'],'category':x['category'],'pack':x['pack'],'name':x['name'],'reason':x['reason']} for x in deferred]
     TREG.write_text(json.dumps(treg,indent=2)+'\n')
     report={'schema':'catalog-family-promotion/v1','sourceCatalog':str(CAT.relative_to(ROOT)),'familyBaseCount':len(promoted)+len(deferred),'promotedCount':len(promoted),'deferredCount':len(deferred),'promoted':promoted,'deferred':deferred}
     REPORT.write_text(json.dumps(report,indent=2)+'\n')

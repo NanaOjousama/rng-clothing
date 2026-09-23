@@ -874,3 +874,33 @@ Validation:
 - all 47 promoted contracts verify source pixel/alpha hashes
 - all 47 family taste policies validate a default Common recipe
 - no copied PNGs exist under `generator/data/templates/catalog/`
+
+## 2026-09-22 — Catalog family promotion completion / reproducibility
+Continued the interrupted catalog-family promotion milestone from commit 4dc5c3f.
+
+Promotion scope:
+- 53 catalog FAMILY_BASE entries examined from the tracked source-catalog model.
+- 47 families promoted into formal source-backed template contracts and active family taste policies:
+  - Hats: 20
+  - Shirts: 7
+  - Accessories: 20
+- Every promoted family is loadable through generator/catalog_templates.py, validates its default Common recipe through the shared taste engine, and can query compatible donor parts from SOURCE_TRANSFER_LIBRARY.json.
+- Typical donor result per promoted family: ~59–70 allowed parts with incompatible transfers rejected.
+
+Deferred (6) remain explicit and fail-closed rather than being fabricated:
+- Hats / More Accessories and Stuff / Bow (Side 1): missing_cardinal:left. Source JSON has no LeftHat block; unlike accepted mirrored-left constructions, no explicit Flipped Left contract is present.
+- Hats / Decorative Bells (Singles): animated_or_stateful.
+- Hats / Veil: animated_or_stateful.
+- Sleeves / Cottagecore Set / Puffy Sleeves: category_requires_specialized_adapter; source uses a large stateful sleeve animation contract and must not be flattened to a static four-cardinal template.
+- Accessories / Cape: animated_or_stateful.
+- Accessories / Plumbob (Animated): animated_or_stateful.
+
+Reproducibility fixes:
+- tools/build_master_generator_catalog.py is now part of the tracked toolchain.
+- Removed its hidden Pillow dependency; it now uses project-native v5.pngio.
+- tools/promote_catalog_families.py rebuilds the derived master catalog from tracked source_catalog/catalog.json + families.json before promotion.
+- Deferred family IDs/reasons are recorded in both the template registry and taste-policy registry.
+- Promotion validator now proves all 53 FAMILY_BASE entries are accounted for exactly once as promoted or deferred.
+- Re-running the entire catalog-build/promotion pipeline produced an identical combined generated-output SHA-256 before/after:
+  94db684f556f1933a4802f2576fc9944f92764820f3ada688cecffbad9f35d54
+- Catalog promotion validator PASS: 47 promoted / 6 deferred.
