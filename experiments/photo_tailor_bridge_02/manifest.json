@@ -1,0 +1,650 @@
+[
+  {
+    "index": 1,
+    "reference": "mario hat/mariofront.jpg",
+    "family": "proto_dad_cap",
+    "state": "Dad Cap",
+    "reason": "reference+siglip cap",
+    "rgb": [
+      199,
+      3,
+      5
+    ],
+    "palette": [
+      [
+        199,
+        3,
+        5
+      ],
+      [
+        199,
+        3,
+        7
+      ],
+      [
+        199,
+        3,
+        3
+      ],
+      [
+        202,
+        2,
+        5
+      ],
+      [
+        201,
+        3,
+        5
+      ]
+    ],
+    "category": [
+      [
+        "hat",
+        ""
+      ],
+      [
+        "boots",
+        ""
+      ],
+      [
+        "shirt",
+        ""
+      ]
+    ],
+    "silhouette": [
+      [
+        "cap",
+        "hat"
+      ],
+      [
+        "hat",
+        "hat"
+      ],
+      [
+        "shirt",
+        "shirt"
+      ]
+    ],
+    "pattern": [
+      [
+        "graphic",
+        ""
+      ],
+      [
+        "logo",
+        ""
+      ],
+      [
+        "other",
+        ""
+      ]
+    ]
+  },
+  {
+    "index": 2,
+    "reference": "mario hat/super-mario-bros-mario-cosplay-hat-5366136.jpg",
+    "family": "proto_dad_cap",
+    "state": "Dad Cap",
+    "reason": "reference+siglip cap",
+    "rgb": [
+      183,
+      22,
+      28
+    ],
+    "palette": [
+      [
+        183,
+        22,
+        28
+      ],
+      [
+        246,
+        81,
+        93
+      ],
+      [
+        194,
+        26,
+        34
+      ],
+      [
+        202,
+        30,
+        40
+      ],
+      [
+        207,
+        38,
+        47
+      ]
+    ],
+    "category": [
+      [
+        "hat",
+        ""
+      ],
+      [
+        "boots",
+        ""
+      ],
+      [
+        "shirt",
+        ""
+      ]
+    ],
+    "silhouette": [
+      [
+        "cap",
+        "hat"
+      ],
+      [
+        "hat",
+        "hat"
+      ],
+      [
+        "helmet",
+        "hat"
+      ]
+    ],
+    "pattern": [
+      [
+        "solid",
+        ""
+      ],
+      [
+        "logo",
+        ""
+      ],
+      [
+        "camouflage",
+        ""
+      ]
+    ]
+  },
+  {
+    "index": 3,
+    "reference": "mario hat/rightsidevew.webp",
+    "family": "proto_dad_cap",
+    "state": "Dad Cap",
+    "reason": "reference+siglip cap",
+    "rgb": [
+      125,
+      14,
+      29
+    ],
+    "palette": [
+      [
+        125,
+        14,
+        29
+      ],
+      [
+        95,
+        10,
+        20
+      ],
+      [
+        163,
+        38,
+        53
+      ],
+      [
+        136,
+        22,
+        36
+      ],
+      [
+        198,
+        204,
+        203
+      ]
+    ],
+    "category": [
+      [
+        "hat",
+        ""
+      ],
+      [
+        "shirt",
+        ""
+      ],
+      [
+        "shirt",
+        ""
+      ]
+    ],
+    "silhouette": [
+      [
+        "cap",
+        "hat"
+      ],
+      [
+        "hat",
+        "hat"
+      ],
+      [
+        "helmet",
+        "hat"
+      ]
+    ],
+    "pattern": [
+      [
+        "graphic",
+        ""
+      ],
+      [
+        "solid",
+        ""
+      ],
+      [
+        "logo",
+        ""
+      ]
+    ]
+  },
+  {
+    "index": 4,
+    "reference": "mario hat/marioback.jpg",
+    "family": "proto_dad_cap",
+    "state": "Dad Cap",
+    "reason": "reference+siglip cap",
+    "rgb": [
+      227,
+      53,
+      63
+    ],
+    "palette": [
+      [
+        227,
+        53,
+        63
+      ],
+      [
+        216,
+        60,
+        71
+      ],
+      [
+        218,
+        48,
+        57
+      ],
+      [
+        165,
+        17,
+        24
+      ],
+      [
+        176,
+        20,
+        28
+      ]
+    ],
+    "category": [
+      [
+        "hat",
+        ""
+      ],
+      [
+        "pants",
+        ""
+      ],
+      [
+        "pants",
+        ""
+      ]
+    ],
+    "silhouette": [
+      [
+        "hat",
+        "hat"
+      ],
+      [
+        "cap",
+        "hat"
+      ],
+      [
+        "helmet",
+        "hat"
+      ]
+    ],
+    "pattern": [
+      [
+        "solid",
+        ""
+      ],
+      [
+        "gradient",
+        ""
+      ],
+      [
+        "logo",
+        ""
+      ]
+    ]
+  },
+  {
+    "index": 5,
+    "reference": "slouch beanie motif/superslouuch_beanie.jpeg",
+    "family": "beanie",
+    "state": "Beanie",
+    "reason": "reference+siglip beanie",
+    "rgb": [
+      146,
+      162,
+      155
+    ],
+    "palette": [
+      [
+        146,
+        162,
+        155
+      ],
+      [
+        110,
+        115,
+        107
+      ],
+      [
+        230,
+        231,
+        230
+      ],
+      [
+        131,
+        138,
+        131
+      ],
+      [
+        226,
+        228,
+        226
+      ]
+    ],
+    "category": [
+      [
+        "hat",
+        ""
+      ],
+      [
+        "none",
+        ""
+      ],
+      [
+        "shirt",
+        ""
+      ]
+    ],
+    "silhouette": [
+      [
+        "hat",
+        "hat"
+      ],
+      [
+        "shorts",
+        "pants"
+      ],
+      [
+        "helmet",
+        "hat"
+      ]
+    ],
+    "pattern": [
+      [
+        "other",
+        ""
+      ],
+      [
+        "geometric",
+        ""
+      ],
+      [
+        "horizontal_stripes",
+        ""
+      ]
+    ]
+  },
+  {
+    "index": 6,
+    "reference": "slouch beanie motif/pattern_smalslouch.jpeg",
+    "family": "beanie",
+    "state": "Beanie (Floppy)",
+    "reason": "reference+siglip beanie",
+    "rgb": [
+      212,
+      47,
+      48
+    ],
+    "palette": [
+      [
+        212,
+        47,
+        48
+      ],
+      [
+        187,
+        211,
+        232
+      ],
+      [
+        214,
+        160,
+        145
+      ],
+      [
+        204,
+        57,
+        58
+      ],
+      [
+        79,
+        31,
+        41
+      ]
+    ],
+    "category": [
+      [
+        "hat",
+        ""
+      ],
+      [
+        "boots",
+        ""
+      ],
+      [
+        "none",
+        ""
+      ]
+    ],
+    "silhouette": [
+      [
+        "hat",
+        "hat"
+      ],
+      [
+        "shorts",
+        "pants"
+      ],
+      [
+        "cap",
+        "hat"
+      ]
+    ],
+    "pattern": [
+      [
+        "gradient",
+        ""
+      ],
+      [
+        "horizontal_stripes",
+        ""
+      ],
+      [
+        "horizontal_stripes",
+        ""
+      ]
+    ]
+  },
+  {
+    "index": 7,
+    "reference": "slouch beanie motif/pattern+labelmotif.jpeg",
+    "family": "beanie",
+    "state": "Beanie",
+    "reason": "reference+siglip beanie",
+    "rgb": [
+      44,
+      33,
+      21
+    ],
+    "palette": [
+      [
+        44,
+        33,
+        21
+      ],
+      [
+        28,
+        24,
+        26
+      ],
+      [
+        193,
+        172,
+        155
+      ],
+      [
+        62,
+        52,
+        40
+      ],
+      [
+        88,
+        68,
+        56
+      ]
+    ],
+    "category": [
+      [
+        "hat",
+        ""
+      ],
+      [
+        "shirt",
+        ""
+      ],
+      [
+        "boots",
+        ""
+      ]
+    ],
+    "silhouette": [
+      [
+        "hat",
+        "hat"
+      ],
+      [
+        "crown",
+        "hat"
+      ],
+      [
+        "sweater",
+        "shirt"
+      ]
+    ],
+    "pattern": [
+      [
+        "animal_print",
+        ""
+      ],
+      [
+        "other",
+        ""
+      ],
+      [
+        "vertical_stripes",
+        ""
+      ]
+    ]
+  },
+  {
+    "index": 8,
+    "reference": "slouch beanie motif/pom_motif.jpeg",
+    "family": "beanie",
+    "state": "Beanie",
+    "reason": "reference+siglip beanie",
+    "rgb": [
+      49,
+      35,
+      29
+    ],
+    "palette": [
+      [
+        49,
+        35,
+        29
+      ],
+      [
+        103,
+        57,
+        53
+      ],
+      [
+        170,
+        127,
+        112
+      ],
+      [
+        202,
+        163,
+        145
+      ],
+      [
+        207,
+        183,
+        168
+      ]
+    ],
+    "category": [
+      [
+        "hat",
+        ""
+      ],
+      [
+        "hat",
+        ""
+      ],
+      [
+        "shirt",
+        ""
+      ]
+    ],
+    "silhouette": [
+      [
+        "hat",
+        "hat"
+      ],
+      [
+        "crown",
+        "hat"
+      ],
+      [
+        "sweater",
+        "shirt"
+      ]
+    ],
+    "pattern": [
+      [
+        "vertical_stripes",
+        ""
+      ],
+      [
+        "horizontal_stripes",
+        ""
+      ],
+      [
+        "other",
+        ""
+      ]
+    ]
+  }
+]

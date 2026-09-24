@@ -1158,3 +1158,30 @@ Validation:
 - validate_hat_visual_rules.py PASS with all 20 promoted hats declaring SOURCE_RESPECTING_REMIX_ONLY line authority.
 - validate_taste_policy.py PASS.
 - validate_catalog_template_promotions.py PASS: 47 promoted / 6 deferred, including 20 hats.
+
+## 2026-09-23 — Photo Tailor Bridge prototype
+Built an isolated prototype generator under prototypes/photo_tailor_bridge/ to test whether Photo Tailor-style semantic image understanding is worth integrating.
+
+Prototype pipeline:
+- Uses the local Photo Tailor Marqo FashionSigLIP ONNX image encoder plus its label embeddings.
+- Keeps ranked category / silhouette / pattern candidates.
+- Extracts a hat-focused palette from the reference image.
+- Matches the reference to a source-respecting construction.
+- Keeps our source-backed geometry authoritative.
+- Applies reference color within safe construction pixels.
+- Projects only supported semantic patterns (horizontal/vertical stripe, plaid, dot) inside the construction.
+- Exposes the existing dad-cap construction as prototype-only so cap references are not forced into beanie geometry.
+
+Prototype dependencies are NOT production dependencies:
+- numpy
+- Pillow
+- onnxruntime
+- external local Photo Tailor FashionSigLIP ONNX model + labels
+
+Test batch:
+- experiments/photo_tailor_bridge_02/
+- 8 clean single-hat/reference inputs from existing project references.
+- Contact sheet: PHOTO_TAILOR_BRIDGE_V2_CONTACT.png
+- Manifest records model detections, family/state selection, extracted RGB/palette, and source paths.
+
+Production generator was not modified by this prototype.
