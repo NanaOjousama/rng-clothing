@@ -80,10 +80,20 @@
     "families": [
       "beret",
       "beanie",
-      "straw_hat"
+      "straw_hat",
+      "boater_hat",
+      "mushroom_hat",
+      "sun_hat",
+      "tulip_hat"
     ],
     "generatedVariationLastResortEnabled": false,
     "genericLineSynthesisEnabled": false,
-    "sourceParts": "generator/data/source_parts/hat_pilot_parts.json"
+    "sourceParts": "generator/data/source_parts/hat_source_parts.json",
+    "batchA": {
+      "families": ["boater_hat", "mushroom_hat", "sun_hat", "tulip_hat"],
+      "status": "HUMAN_ART_REVIEW_REQUIRED",
+      "genericProjectionEnabled": false,
+      "genericLineSynthesisEnabled": false
+    }
   }
 }

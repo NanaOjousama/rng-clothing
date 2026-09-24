@@ -325,7 +325,8 @@
       "family": "catalog_hats_cottagecore_set_boater_hat",
       "capacity": "medium",
       "linePlacement": {
-        "lineAllowed": true,
+        "lineAllowed": false,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY",
         "lineSemanticType": "ribbon",
         "lineZone": "crown_base",
         "lineCenterYRatio": 0.6,
@@ -640,6 +641,7 @@
       "capacity": "large",
       "linePlacement": {
         "lineAllowed": false,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY",
         "lineSemanticType": "stitch",
         "lineZone": "upper_crown",
         "lineCenterYRatio": 0.38,
@@ -1429,7 +1431,8 @@
       "family": "catalog_hats_more_accessories_and_stuff_sun_hat",
       "capacity": "large",
       "linePlacement": {
-        "lineAllowed": true,
+        "lineAllowed": false,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY",
         "lineSemanticType": "ribbon",
         "lineZone": "crown_base",
         "lineCenterYRatio": 0.6,
@@ -1507,7 +1510,8 @@
       "family": "catalog_hats_more_accessories_and_stuff_tulip_hat",
       "capacity": "medium",
       "linePlacement": {
-        "lineAllowed": true,
+        "lineAllowed": false,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY",
         "lineSemanticType": "stitch",
         "lineZone": "crown_mid",
         "lineCenterYRatio": 0.43,

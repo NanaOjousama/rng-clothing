@@ -24,7 +24,7 @@ from v5.pngio import read_rgba_png
 
 ROOT=Path(__file__).resolve().parents[1]
 CATALOG=ROOT/'source_catalog/catalog.json'
-PARTS=ROOT/'generator/data/source_parts/hat_pilot_parts.json'
+PARTS=ROOT/'generator/data/source_parts/hat_source_parts.json'
 VIEWS=('front','right','left','back')
 
 def read_jsonc(path):
@@ -110,6 +110,24 @@ def _tint(px,tint):
     return (round(px[0]*tint[0]/255),round(px[1]*tint[1]/255),
             round(px[2]*tint[2]/255),px[3])
 
+def _role_tint(px,tint):
+    if tint is None or not px[3]: return px
+    y=round(0.299*px[0]+0.587*px[1]+0.114*px[2])
+    return (round(tint[0]*y/255),round(tint[1]*y/255),round(tint[2]*y/255),px[3])
+
+def _apply_role_prefix_tint(frames,roles,prefix,tint):
+    out=_copy(frames);changed={v:set() for v in out}
+    if tint is None:return out,changed
+    for v in out:
+        for y,row in enumerate(out[v]):
+            for x,p in enumerate(row):
+                if not p[3]:continue
+                role=roles[f'{p[0]},{p[1]},{p[2]}']
+                if role.startswith(prefix):
+                    out[v][y][x]=_role_tint(p,tint)
+                    if out[v][y][x]!=p: changed[v].add((x,y))
+    return out,changed
+
 def _apply_gray_tint(frames,tint):
     out=_copy(frames)
     if tint is None:return out
@@ -124,7 +142,7 @@ def _apply_gray_tint(frames,tint):
 
 def _role_map_for(family,state):
     spec=_parts()['families'][family]
-    if family=='beret':
+    if 'roleByStateRgb' in spec:
         return spec['roleByStateRgb'][state]
     return spec['roleByConstructionRgb'][state]
 
@@ -244,6 +262,90 @@ def straw(construction='Straw Hat',ribbon_palette='source_native'):
         'genericProjectionUsed':False,'genericLineUsed':False,
         'paletteAuthority':'same_family_source_body_plus_explicit_ribbon_role_mask','paletteSelectionTier':('same_family_source' if ribbon_palette=='source_native' else 'curated_transfer_group'),
     })
+
+def boater(state='Boater Hat',feature_palette='source_native'):
+    pack='Cottagecore Set';base,_=source_frames(pack,'Boater Hat');component=None
+    if state=='Boater Hat':
+        raw=base
+    elif state=='Boater Hat (Bow)':
+        component='boater.bow_patch';raw=apply_exact_source_patch(base,component)
+    elif state=='Boater Hat (Ribbons)':
+        component='boater.ribbons_patch';raw=apply_exact_source_patch(base,component)
+    else: raise ValueError(state)
+    roles=_validate_explicit_roles(raw,'boater_hat',state)
+    out,changed=_apply_role_prefix_tint(raw,roles,'feature_',RIBBON_TINTS[feature_palette])
+    _assert_locked_geometry(raw,out)
+    return RemixResult('boater_hat',state,state,feature_palette,component,out,raw,changed,{
+      'constructionAuthority':'exact_source_state',
+      'componentPolicy':'exact_same_construction_patch' if component else 'none',
+      'lockedFeatures':['crown','brim','built_in_band_geometry'],
+      'mutableFeature':'source_feature_color',
+      'genericProjectionUsed':False,'genericLineUsed':False,
+      'paletteAuthority':'explicit_source_rgb_feature_roles'})
+
+def mushroom_hat(state='Mushroom Hat',body_palette='source_native'):
+    pack='Cottagecore Set';base,_=source_frames(pack,'Mushroom Hat');component=None
+    if state=='Mushroom Hat':
+        raw=base
+    elif state=='Mushroom Hat (Dotted)':
+        component='mushroom.dotted_patch';raw=apply_exact_source_patch(base,component)
+    else: raise ValueError(state)
+    roles=_validate_explicit_roles(raw,'mushroom_hat',state)
+    out,changed=_apply_role_prefix_tint(raw,roles,'body_',GRAY_TINTS[body_palette])
+    _assert_locked_geometry(raw,out)
+    return RemixResult('mushroom_hat',state,state,body_palette,component,out,raw,changed,{
+      'constructionAuthority':'exact_source_state',
+      'componentPolicy':'source_authored_surface_patch' if component else 'none',
+      'lockedFeatures':['cap_geometry','stem','defining_seams'],
+      'mutableFeature':'cap_color',
+      'genericProjectionUsed':False,'genericLineUsed':False,
+      'paletteAuthority':'explicit_source_rgb_body_roles'})
+
+def sun_hat(state='Sun Hat',body_palette='source_native',feature_palette='source_native'):
+    pack='More Accessories and Stuff';base,_=source_frames(pack,'Sun Hat');component=None
+    if state=='Sun Hat':
+        raw=base
+    elif state=='Sun Hat (Flowers)':
+        component='sun_hat.flowers_patch';raw=apply_exact_source_patch(base,component)
+    elif state=='Sun Hat (Ribbon)':
+        raw,_=source_frames(pack,state)
+    else: raise ValueError(state)
+    roles=_validate_explicit_roles(raw,'sun_hat',state)
+    if state=='Sun Hat (Ribbon)':
+        palette=feature_palette
+        out,changed=_apply_role_prefix_tint(raw,roles,'feature_',RIBBON_TINTS[feature_palette])
+    else:
+        palette=body_palette
+        out,changed=_apply_role_prefix_tint(raw,roles,'body_',GRAY_TINTS[body_palette])
+    _assert_locked_geometry(raw,out)
+    return RemixResult('sun_hat',state,state,palette,component,out,raw,changed,{
+      'constructionAuthority':'whole_source_alternate_state' if state=='Sun Hat (Ribbon)' else 'exact_source_state',
+      'componentPolicy':'exact_same_construction_patch' if component else 'none_or_whole_source_state',
+      'lockedFeatures':['crown','brim','defining_seams'],
+      'genericProjectionUsed':False,'genericLineUsed':False,
+      'paletteAuthority':'explicit_source_rgb_roles'})
+
+def tulip_hat(state='Tulip Hat',body_palette='source_native',pattern_palette='source_native'):
+    pack='More Accessories and Stuff';base,_=source_frames(pack,'Tulip Hat');component=None
+    if state=='Tulip Hat':
+        raw=base
+    elif state=='Tulip Hat (Striped)':
+        component='tulip.striped_patch';raw=apply_exact_source_patch(base,component)
+    else: raise ValueError(state)
+    roles=_validate_explicit_roles(raw,'tulip_hat',state)
+    if state=='Tulip Hat (Striped)':
+        palette=pattern_palette
+        out,changed=_apply_role_prefix_tint(raw,roles,'pattern_',RIBBON_TINTS[pattern_palette])
+    else:
+        palette=body_palette
+        out,changed=_apply_role_prefix_tint(raw,roles,'body_',GRAY_TINTS[body_palette])
+    _assert_locked_geometry(raw,out)
+    return RemixResult('tulip_hat',state,state,palette,component,out,raw,changed,{
+      'constructionAuthority':'exact_source_state',
+      'componentPolicy':'source_authored_surface_patch' if component else 'none',
+      'lockedFeatures':['petal_silhouette','defining_folds'],
+      'genericProjectionUsed':False,'genericLineUsed':False,
+      'paletteAuthority':'explicit_source_rgb_roles'})
 
 def validate_no_isolated_line_fragment(frames, changed, min_ratio=.45, min_pixels=4):
     """Reject a new horizontal treatment that collapses into a tiny centre dash.

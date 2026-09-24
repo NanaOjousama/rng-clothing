@@ -1093,3 +1093,36 @@ Validation:
 - tools/validate_hat_visual_rules.py PASS including pilot opt-out + isolated-fragment rejection.
 - tools/validate_taste_policy.py PASS.
 - tools/validate_catalog_template_promotions.py PASS: 47 promoted / 6 deferred.
+
+## 2026-09-23 — Source-Respecting Hat Batch A
+Expanded the approved Source-Respecting Remix Model from the 3-family pilot to four more hat families: Boater Hat, Mushroom Hat, Sun Hat, and Tulip Hat.
+
+Batch A source decomposition:
+- Boater Hat: exact base + Bow and Ribbons same-construction source patches. Crown/brim/built-in band stay locked; only stored source feature-role pixels may be recolored.
+- Mushroom Hat: exact base + Dotted source surface patch. Cap/stem/defining seams stay locked; cap recolor is restricted to explicit body-role pixels.
+- Sun Hat: exact base + Flowers source patch; Ribbon is treated as a whole alternate source construction state because it changes authored geometry/palette substantially.
+- Tulip Hat: exact base + Striped source surface patch. Petal silhouette/folds stay locked; stripe recolor is restricted to explicit pattern-role pixels.
+- Six new source patches are stored in generator/data/source_parts/hat_source_parts.json and each reconstructs its author variant exactly.
+- Combined source registry now covers 7 families and 10 source patches total.
+
+Batch A generation:
+- experiments/source_respecting_hat_batch_a_01 contains 36 candidates:
+  - 9 Boater Hat
+  - 8 Mushroom Hat
+  - 11 Sun Hat
+  - 8 Tulip Hat
+- Generic donor projection: disabled.
+- Generic synthesized line treatment: disabled.
+- Generated palette fallback: disabled.
+- All source-native states are preserved pixel-for-pixel.
+- All recolors preserve source alpha and remain inside their explicit source RGB semantic masks.
+- Batch A overview: experiments/source_respecting_hat_batch_a_01/SOURCE_RESPECTING_HAT_BATCH_A_OVERVIEW.png
+- Directional sheets: BOATER_HAT_DIRECTIONAL.png, MUSHROOM_HAT_DIRECTIONAL.png, SUN_HAT_DIRECTIONAL.png, TULIP_HAT_DIRECTIONAL.png.
+- humanArtApproved remains false pending visual review.
+
+Validation:
+- validate_source_respecting_hat_batch_a.py PASS: 36 candidates, 6 exact patches, 10 native source states pixel-identical, recolor masks enforced.
+- validate_source_respecting_hat_remix.py PASS for the original 3-family pilot.
+- validate_hat_visual_rules.py PASS after moving all 7 source-respecting families out of the generic line path.
+- validate_taste_policy.py PASS.
+- validate_catalog_template_promotions.py PASS: 47 promoted / 6 deferred.

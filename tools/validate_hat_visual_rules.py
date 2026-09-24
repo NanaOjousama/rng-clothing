@@ -25,7 +25,7 @@ def main():
         assert 0<q['accentPixelBudgetMax']<=0.18
         assert q['accentPixelBudgetMinPixels']>=2
 
-    vc=contract_for('catalog_hats_cottagecore_set_boater_hat')
+    vc=contract_for('catalog_hats_cottagecore_set_headscarf')
     roles=palette_roles([(35,35,35),(85,85,85),(145,145,145),(210,210,210)])
     fr=frame(); out,meta=render_proportional_line(fr,vc['linePlacement'],roles,'contrast')
     assert meta['applied'] and meta['thicknessPx']==1
@@ -42,6 +42,10 @@ def main():
         'catalog_hats_cottagecore_set_beret',
         'catalog_hats_more_accessories_and_stuff_beanie',
         'catalog_hats_more_accessories_and_stuff_straw_hat',
+        'catalog_hats_cottagecore_set_boater_hat',
+        'catalog_hats_cottagecore_set_mushroom_hat',
+        'catalog_hats_more_accessories_and_stuff_sun_hat',
+        'catalog_hats_more_accessories_and_stuff_tulip_hat',
     ):
         pc=contract_for(pilot_family)
         assert pc['linePlacement']['lineAllowed'] is False

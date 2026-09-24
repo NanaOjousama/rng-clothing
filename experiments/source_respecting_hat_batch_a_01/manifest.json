@@ -1,0 +1,1373 @@
+{
+  "schema": "source-respecting-hat-batch-a/v1",
+  "guidingPrinciple": "Preserve the source hat core construction; remix non-core parts.",
+  "families": [
+    "boater_hat",
+    "mushroom_hat",
+    "sun_hat",
+    "tulip_hat"
+  ],
+  "genericProjectionAllowed": false,
+  "genericLineSynthesisAllowed": false,
+  "palettePriority": [
+    "same_family_source",
+    "same_material_or_construction",
+    "curated_transfer_group",
+    "generated_last_resort"
+  ],
+  "generatedPaletteFallbackEnabled": false,
+  "humanArtApproved": false,
+  "candidates": [
+    {
+      "index": 1,
+      "label": "B01 Base Native",
+      "family": "boater_hat",
+      "construction": "Boater Hat",
+      "sourceState": "Boater Hat",
+      "palette": "source_native",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/01_boater_hat_b01/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/01_boater_hat_b01/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/01_boater_hat_b01/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/01_boater_hat_b01/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_band_geometry"
+        ],
+        "mutableFeature": "source_feature_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_feature_roles"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 2,
+      "label": "B02 Base Cream",
+      "family": "boater_hat",
+      "construction": "Boater Hat",
+      "sourceState": "Boater Hat",
+      "palette": "cream",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/02_boater_hat_b02/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/02_boater_hat_b02/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/02_boater_hat_b02/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/02_boater_hat_b02/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_band_geometry"
+        ],
+        "mutableFeature": "source_feature_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_feature_roles"
+      },
+      "changedCells": {
+        "front": 24,
+        "right": 27,
+        "left": 27,
+        "back": 28
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 3,
+      "label": "B03 Base Rose",
+      "family": "boater_hat",
+      "construction": "Boater Hat",
+      "sourceState": "Boater Hat",
+      "palette": "dusty_rose",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/03_boater_hat_b03/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/03_boater_hat_b03/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/03_boater_hat_b03/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/03_boater_hat_b03/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_band_geometry"
+        ],
+        "mutableFeature": "source_feature_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_feature_roles"
+      },
+      "changedCells": {
+        "front": 24,
+        "right": 27,
+        "left": 27,
+        "back": 28
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 4,
+      "label": "B04 Base Sage",
+      "family": "boater_hat",
+      "construction": "Boater Hat",
+      "sourceState": "Boater Hat",
+      "palette": "sage",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/04_boater_hat_b04/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/04_boater_hat_b04/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/04_boater_hat_b04/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/04_boater_hat_b04/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_band_geometry"
+        ],
+        "mutableFeature": "source_feature_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_feature_roles"
+      },
+      "changedCells": {
+        "front": 24,
+        "right": 27,
+        "left": 27,
+        "back": 28
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 5,
+      "label": "B05 Bow Native",
+      "family": "boater_hat",
+      "construction": "Boater Hat (Bow)",
+      "sourceState": "Boater Hat (Bow)",
+      "palette": "source_native",
+      "component": "boater.bow_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/05_boater_hat_b05/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/05_boater_hat_b05/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/05_boater_hat_b05/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/05_boater_hat_b05/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "exact_same_construction_patch",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_band_geometry"
+        ],
+        "mutableFeature": "source_feature_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_feature_roles"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 6,
+      "label": "B06 Bow Rose",
+      "family": "boater_hat",
+      "construction": "Boater Hat (Bow)",
+      "sourceState": "Boater Hat (Bow)",
+      "palette": "dusty_rose",
+      "component": "boater.bow_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/06_boater_hat_b06/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/06_boater_hat_b06/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/06_boater_hat_b06/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/06_boater_hat_b06/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "exact_same_construction_patch",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_band_geometry"
+        ],
+        "mutableFeature": "source_feature_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_feature_roles"
+      },
+      "changedCells": {
+        "front": 10,
+        "right": 31,
+        "left": 31,
+        "back": 42
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 7,
+      "label": "B07 Bow Sage",
+      "family": "boater_hat",
+      "construction": "Boater Hat (Bow)",
+      "sourceState": "Boater Hat (Bow)",
+      "palette": "sage",
+      "component": "boater.bow_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/07_boater_hat_b07/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/07_boater_hat_b07/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/07_boater_hat_b07/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/07_boater_hat_b07/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "exact_same_construction_patch",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_band_geometry"
+        ],
+        "mutableFeature": "source_feature_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_feature_roles"
+      },
+      "changedCells": {
+        "front": 10,
+        "right": 31,
+        "left": 31,
+        "back": 42
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 8,
+      "label": "B08 Ribbons Native",
+      "family": "boater_hat",
+      "construction": "Boater Hat (Ribbons)",
+      "sourceState": "Boater Hat (Ribbons)",
+      "palette": "source_native",
+      "component": "boater.ribbons_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/08_boater_hat_b08/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/08_boater_hat_b08/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/08_boater_hat_b08/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/08_boater_hat_b08/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "exact_same_construction_patch",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_band_geometry"
+        ],
+        "mutableFeature": "source_feature_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_feature_roles"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 9,
+      "label": "B09 Ribbons Cream",
+      "family": "boater_hat",
+      "construction": "Boater Hat (Ribbons)",
+      "sourceState": "Boater Hat (Ribbons)",
+      "palette": "cream",
+      "component": "boater.ribbons_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/09_boater_hat_b09/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/09_boater_hat_b09/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/09_boater_hat_b09/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/09_boater_hat_b09/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "exact_same_construction_patch",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_band_geometry"
+        ],
+        "mutableFeature": "source_feature_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_feature_roles"
+      },
+      "changedCells": {
+        "front": 78,
+        "right": 51,
+        "left": 51,
+        "back": 24
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 10,
+      "label": "M01 Plain Native",
+      "family": "mushroom_hat",
+      "construction": "Mushroom Hat",
+      "sourceState": "Mushroom Hat",
+      "palette": "source_native",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/10_mushroom_hat_m01/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/10_mushroom_hat_m01/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/10_mushroom_hat_m01/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/10_mushroom_hat_m01/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "cap_geometry",
+          "stem",
+          "defining_seams"
+        ],
+        "mutableFeature": "cap_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 11,
+      "label": "M02 Plain Stone Blue",
+      "family": "mushroom_hat",
+      "construction": "Mushroom Hat",
+      "sourceState": "Mushroom Hat",
+      "palette": "stone_blue",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/11_mushroom_hat_m02/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/11_mushroom_hat_m02/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/11_mushroom_hat_m02/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/11_mushroom_hat_m02/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "cap_geometry",
+          "stem",
+          "defining_seams"
+        ],
+        "mutableFeature": "cap_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles"
+      },
+      "changedCells": {
+        "front": 84,
+        "right": 100,
+        "left": 100,
+        "back": 134
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 12,
+      "label": "M03 Plain Rose Cream",
+      "family": "mushroom_hat",
+      "construction": "Mushroom Hat",
+      "sourceState": "Mushroom Hat",
+      "palette": "rose_cream",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/12_mushroom_hat_m03/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/12_mushroom_hat_m03/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/12_mushroom_hat_m03/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/12_mushroom_hat_m03/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "cap_geometry",
+          "stem",
+          "defining_seams"
+        ],
+        "mutableFeature": "cap_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles"
+      },
+      "changedCells": {
+        "front": 84,
+        "right": 100,
+        "left": 100,
+        "back": 134
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 13,
+      "label": "M04 Plain Cocoa Gold",
+      "family": "mushroom_hat",
+      "construction": "Mushroom Hat",
+      "sourceState": "Mushroom Hat",
+      "palette": "cocoa_gold",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/13_mushroom_hat_m04/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/13_mushroom_hat_m04/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/13_mushroom_hat_m04/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/13_mushroom_hat_m04/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "cap_geometry",
+          "stem",
+          "defining_seams"
+        ],
+        "mutableFeature": "cap_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles"
+      },
+      "changedCells": {
+        "front": 84,
+        "right": 100,
+        "left": 100,
+        "back": 134
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 14,
+      "label": "M05 Dotted Native",
+      "family": "mushroom_hat",
+      "construction": "Mushroom Hat (Dotted)",
+      "sourceState": "Mushroom Hat (Dotted)",
+      "palette": "source_native",
+      "component": "mushroom.dotted_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/14_mushroom_hat_m05/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/14_mushroom_hat_m05/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/14_mushroom_hat_m05/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/14_mushroom_hat_m05/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "source_authored_surface_patch",
+        "lockedFeatures": [
+          "cap_geometry",
+          "stem",
+          "defining_seams"
+        ],
+        "mutableFeature": "cap_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 15,
+      "label": "M06 Dotted Stone Blue",
+      "family": "mushroom_hat",
+      "construction": "Mushroom Hat (Dotted)",
+      "sourceState": "Mushroom Hat (Dotted)",
+      "palette": "stone_blue",
+      "component": "mushroom.dotted_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/15_mushroom_hat_m06/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/15_mushroom_hat_m06/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/15_mushroom_hat_m06/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/15_mushroom_hat_m06/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "source_authored_surface_patch",
+        "lockedFeatures": [
+          "cap_geometry",
+          "stem",
+          "defining_seams"
+        ],
+        "mutableFeature": "cap_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles"
+      },
+      "changedCells": {
+        "front": 84,
+        "right": 100,
+        "left": 100,
+        "back": 134
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 16,
+      "label": "M07 Dotted Rose Cream",
+      "family": "mushroom_hat",
+      "construction": "Mushroom Hat (Dotted)",
+      "sourceState": "Mushroom Hat (Dotted)",
+      "palette": "rose_cream",
+      "component": "mushroom.dotted_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/16_mushroom_hat_m07/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/16_mushroom_hat_m07/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/16_mushroom_hat_m07/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/16_mushroom_hat_m07/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "source_authored_surface_patch",
+        "lockedFeatures": [
+          "cap_geometry",
+          "stem",
+          "defining_seams"
+        ],
+        "mutableFeature": "cap_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles"
+      },
+      "changedCells": {
+        "front": 84,
+        "right": 100,
+        "left": 100,
+        "back": 134
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 17,
+      "label": "M08 Dotted Cocoa Gold",
+      "family": "mushroom_hat",
+      "construction": "Mushroom Hat (Dotted)",
+      "sourceState": "Mushroom Hat (Dotted)",
+      "palette": "cocoa_gold",
+      "component": "mushroom.dotted_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/17_mushroom_hat_m08/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/17_mushroom_hat_m08/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/17_mushroom_hat_m08/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/17_mushroom_hat_m08/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "source_authored_surface_patch",
+        "lockedFeatures": [
+          "cap_geometry",
+          "stem",
+          "defining_seams"
+        ],
+        "mutableFeature": "cap_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles"
+      },
+      "changedCells": {
+        "front": 84,
+        "right": 100,
+        "left": 100,
+        "back": 134
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 18,
+      "label": "S01 Plain Native",
+      "family": "sun_hat",
+      "construction": "Sun Hat",
+      "sourceState": "Sun Hat",
+      "palette": "source_native",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/18_sun_hat_s01/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/18_sun_hat_s01/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/18_sun_hat_s01/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/18_sun_hat_s01/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none_or_whole_source_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 19,
+      "label": "S02 Plain Stone Blue",
+      "family": "sun_hat",
+      "construction": "Sun Hat",
+      "sourceState": "Sun Hat",
+      "palette": "stone_blue",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/19_sun_hat_s02/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/19_sun_hat_s02/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/19_sun_hat_s02/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/19_sun_hat_s02/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none_or_whole_source_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 91,
+        "right": 96,
+        "left": 96,
+        "back": 145
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 20,
+      "label": "S03 Plain Rose Cream",
+      "family": "sun_hat",
+      "construction": "Sun Hat",
+      "sourceState": "Sun Hat",
+      "palette": "rose_cream",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/20_sun_hat_s03/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/20_sun_hat_s03/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/20_sun_hat_s03/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/20_sun_hat_s03/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none_or_whole_source_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 91,
+        "right": 96,
+        "left": 96,
+        "back": 145
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 21,
+      "label": "S04 Plain Cocoa Gold",
+      "family": "sun_hat",
+      "construction": "Sun Hat",
+      "sourceState": "Sun Hat",
+      "palette": "cocoa_gold",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/21_sun_hat_s04/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/21_sun_hat_s04/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/21_sun_hat_s04/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/21_sun_hat_s04/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none_or_whole_source_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 91,
+        "right": 96,
+        "left": 96,
+        "back": 145
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 22,
+      "label": "S05 Flowers Native",
+      "family": "sun_hat",
+      "construction": "Sun Hat (Flowers)",
+      "sourceState": "Sun Hat (Flowers)",
+      "palette": "source_native",
+      "component": "sun_hat.flowers_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/22_sun_hat_s05/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/22_sun_hat_s05/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/22_sun_hat_s05/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/22_sun_hat_s05/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "exact_same_construction_patch",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 23,
+      "label": "S06 Flowers Stone Blue",
+      "family": "sun_hat",
+      "construction": "Sun Hat (Flowers)",
+      "sourceState": "Sun Hat (Flowers)",
+      "palette": "stone_blue",
+      "component": "sun_hat.flowers_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/23_sun_hat_s06/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/23_sun_hat_s06/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/23_sun_hat_s06/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/23_sun_hat_s06/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "exact_same_construction_patch",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 66,
+        "right": 68,
+        "left": 68,
+        "back": 106
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 24,
+      "label": "S07 Flowers Rose Cream",
+      "family": "sun_hat",
+      "construction": "Sun Hat (Flowers)",
+      "sourceState": "Sun Hat (Flowers)",
+      "palette": "rose_cream",
+      "component": "sun_hat.flowers_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/24_sun_hat_s07/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/24_sun_hat_s07/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/24_sun_hat_s07/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/24_sun_hat_s07/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "exact_same_construction_patch",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 66,
+        "right": 68,
+        "left": 68,
+        "back": 106
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 25,
+      "label": "S08 Ribbon Native",
+      "family": "sun_hat",
+      "construction": "Sun Hat (Ribbon)",
+      "sourceState": "Sun Hat (Ribbon)",
+      "palette": "source_native",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/25_sun_hat_s08/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/25_sun_hat_s08/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/25_sun_hat_s08/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/25_sun_hat_s08/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "componentPolicy": "none_or_whole_source_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 26,
+      "label": "S09 Ribbon Cream",
+      "family": "sun_hat",
+      "construction": "Sun Hat (Ribbon)",
+      "sourceState": "Sun Hat (Ribbon)",
+      "palette": "cream",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/26_sun_hat_s09/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/26_sun_hat_s09/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/26_sun_hat_s09/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/26_sun_hat_s09/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "componentPolicy": "none_or_whole_source_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 26,
+        "right": 30,
+        "left": 22,
+        "back": 34
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 27,
+      "label": "S10 Ribbon Rose",
+      "family": "sun_hat",
+      "construction": "Sun Hat (Ribbon)",
+      "sourceState": "Sun Hat (Ribbon)",
+      "palette": "dusty_rose",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/27_sun_hat_s10/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/27_sun_hat_s10/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/27_sun_hat_s10/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/27_sun_hat_s10/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "componentPolicy": "none_or_whole_source_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 26,
+        "right": 30,
+        "left": 22,
+        "back": 34
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 28,
+      "label": "S11 Ribbon Sage",
+      "family": "sun_hat",
+      "construction": "Sun Hat (Ribbon)",
+      "sourceState": "Sun Hat (Ribbon)",
+      "palette": "sage",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/28_sun_hat_s11/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/28_sun_hat_s11/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/28_sun_hat_s11/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/28_sun_hat_s11/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "componentPolicy": "none_or_whole_source_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 26,
+        "right": 30,
+        "left": 22,
+        "back": 34
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 29,
+      "label": "T01 Plain Native",
+      "family": "tulip_hat",
+      "construction": "Tulip Hat",
+      "sourceState": "Tulip Hat",
+      "palette": "source_native",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/29_tulip_hat_t01/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/29_tulip_hat_t01/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/29_tulip_hat_t01/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/29_tulip_hat_t01/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "petal_silhouette",
+          "defining_folds"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 30,
+      "label": "T02 Plain Stone Blue",
+      "family": "tulip_hat",
+      "construction": "Tulip Hat",
+      "sourceState": "Tulip Hat",
+      "palette": "stone_blue",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/30_tulip_hat_t02/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/30_tulip_hat_t02/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/30_tulip_hat_t02/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/30_tulip_hat_t02/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "petal_silhouette",
+          "defining_folds"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 80,
+        "right": 90,
+        "left": 90,
+        "back": 124
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 31,
+      "label": "T03 Plain Rose Cream",
+      "family": "tulip_hat",
+      "construction": "Tulip Hat",
+      "sourceState": "Tulip Hat",
+      "palette": "rose_cream",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/31_tulip_hat_t03/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/31_tulip_hat_t03/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/31_tulip_hat_t03/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/31_tulip_hat_t03/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "petal_silhouette",
+          "defining_folds"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 80,
+        "right": 90,
+        "left": 90,
+        "back": 124
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 32,
+      "label": "T04 Plain Cocoa Gold",
+      "family": "tulip_hat",
+      "construction": "Tulip Hat",
+      "sourceState": "Tulip Hat",
+      "palette": "cocoa_gold",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/32_tulip_hat_t04/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/32_tulip_hat_t04/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/32_tulip_hat_t04/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/32_tulip_hat_t04/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "petal_silhouette",
+          "defining_folds"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 80,
+        "right": 90,
+        "left": 90,
+        "back": 124
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 33,
+      "label": "T05 Striped Native",
+      "family": "tulip_hat",
+      "construction": "Tulip Hat (Striped)",
+      "sourceState": "Tulip Hat (Striped)",
+      "palette": "source_native",
+      "component": "tulip.striped_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/33_tulip_hat_t05/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/33_tulip_hat_t05/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/33_tulip_hat_t05/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/33_tulip_hat_t05/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "source_authored_surface_patch",
+        "lockedFeatures": [
+          "petal_silhouette",
+          "defining_folds"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 34,
+      "label": "T06 Striped Cream",
+      "family": "tulip_hat",
+      "construction": "Tulip Hat (Striped)",
+      "sourceState": "Tulip Hat (Striped)",
+      "palette": "cream",
+      "component": "tulip.striped_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/34_tulip_hat_t06/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/34_tulip_hat_t06/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/34_tulip_hat_t06/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/34_tulip_hat_t06/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "source_authored_surface_patch",
+        "lockedFeatures": [
+          "petal_silhouette",
+          "defining_folds"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 30,
+        "right": 39,
+        "left": 39,
+        "back": 72
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 35,
+      "label": "T07 Striped Rose",
+      "family": "tulip_hat",
+      "construction": "Tulip Hat (Striped)",
+      "sourceState": "Tulip Hat (Striped)",
+      "palette": "dusty_rose",
+      "component": "tulip.striped_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/35_tulip_hat_t07/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/35_tulip_hat_t07/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/35_tulip_hat_t07/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/35_tulip_hat_t07/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "source_authored_surface_patch",
+        "lockedFeatures": [
+          "petal_silhouette",
+          "defining_folds"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 30,
+        "right": 39,
+        "left": 39,
+        "back": 72
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 36,
+      "label": "T08 Striped Sage",
+      "family": "tulip_hat",
+      "construction": "Tulip Hat (Striped)",
+      "sourceState": "Tulip Hat (Striped)",
+      "palette": "sage",
+      "component": "tulip.striped_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_batch_a_01/candidates/36_tulip_hat_t08/front.png",
+        "right": "experiments/source_respecting_hat_batch_a_01/candidates/36_tulip_hat_t08/right.png",
+        "left": "experiments/source_respecting_hat_batch_a_01/candidates/36_tulip_hat_t08/left.png",
+        "back": "experiments/source_respecting_hat_batch_a_01/candidates/36_tulip_hat_t08/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "source_authored_surface_patch",
+        "lockedFeatures": [
+          "petal_silhouette",
+          "defining_folds"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles"
+      },
+      "changedCells": {
+        "front": 30,
+        "right": 39,
+        "left": 39,
+        "back": 72
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    }
+  ],
+  "candidateCount": 36,
+  "contactSheets": [
+    "experiments/source_respecting_hat_batch_a_01/SOURCE_RESPECTING_HAT_BATCH_A_OVERVIEW.png",
+    "experiments/source_respecting_hat_batch_a_01/BOATER_HAT_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_batch_a_01/MUSHROOM_HAT_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_batch_a_01/SUN_HAT_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_batch_a_01/TULIP_HAT_DIRECTIONAL.png"
+  ],
+  "sourcePatchReconstructionExact": true,
+  "sourcePartRegistry": "generator/data/source_parts/hat_source_parts.json"
+}
