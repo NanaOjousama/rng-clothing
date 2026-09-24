@@ -1,0 +1,89 @@
+{
+  "schema": "source-respecting-remix-model/v1",
+  "guidingPrinciple": "Preserve the source hat's core construction. Remix the non-core parts.",
+  "featureClasses": {
+    "LOCKED_CONSTRUCTION": {
+      "mayRemove": false,
+      "mayResample": false,
+      "mayGenericNormalize": false,
+      "examples": [
+        "brim",
+        "crown",
+        "built-in ribbon geometry",
+        "default knit band",
+        "hood edge",
+        "defining seams",
+        "source shading topology"
+      ]
+    },
+    "MUTABLE_SOURCE_BACKED_FEATURE": {
+      "geometryLocked": true,
+      "allowedChanges": [
+        "source-role recolor",
+        "source-authored material treatment",
+        "edge/highlight treatment within declared mask"
+      ],
+      "examples": [
+        "ribbon color",
+        "ribbon material",
+        "woven texture treatment",
+        "edge trim treatment",
+        "highlight pattern"
+      ]
+    },
+    "OPTIONAL_ADDON": {
+      "sourceBackedRequired": true,
+      "placement": "exact same-construction patch or declared authored component",
+      "examples": [
+        "flower",
+        "bow",
+        "leaf",
+        "badge",
+        "pin",
+        "small motif",
+        "accessory hardware"
+      ]
+    },
+    "ALTERNATE_CONSTRUCTION_STATE": {
+      "wholeSourceState": true,
+      "mayReplaceBaseConstruction": true,
+      "examples": [
+        "floppy beanie",
+        "cat beanie",
+        "messy straw hat",
+        "source-authored ribbon construction"
+      ]
+    }
+  },
+  "compositorOrder": [
+    "select exact source construction state",
+    "preserve locked construction verbatim",
+    "apply exact same-construction source patch if chosen",
+    "apply mutable feature treatment only inside its stored source mask",
+    "apply optional addon only through explicit component rules",
+    "validate geometry, continuity, palette-role coverage, and source provenance"
+  ],
+  "prohibited": [
+    "generic donor-delta projection",
+    "normalizing arbitrary donor pixels into another family",
+    "synthesizing a replacement ribbon when source construction already owns one",
+    "arbitrary compatible STYLE_PROFILE whole-hat recolor",
+    "runtime inference of palette roles from brightness when explicit source RGB roles exist"
+  ],
+  "palettePriority": [
+    "same_family_source",
+    "same_material_or_construction_family",
+    "curated_transferable_palette_group",
+    "generated_variation_last_resort"
+  ],
+  "pilot": {
+    "families": [
+      "beret",
+      "beanie",
+      "straw_hat"
+    ],
+    "generatedVariationLastResortEnabled": false,
+    "genericLineSynthesisEnabled": false,
+    "sourceParts": "generator/data/source_parts/hat_pilot_parts.json"
+  }
+}

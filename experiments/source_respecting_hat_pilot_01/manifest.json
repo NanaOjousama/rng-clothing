@@ -1,0 +1,1004 @@
+{
+  "schema": "source-respecting-hat-pilot/v1",
+  "guidingPrinciple": "Preserve the source hat core construction; remix non-core parts.",
+  "families": [
+    "beret",
+    "beanie",
+    "straw_hat"
+  ],
+  "genericProjectionAllowed": false,
+  "genericLineSynthesisAllowed": false,
+  "palettePriority": [
+    "same_family_source",
+    "same_material_or_construction",
+    "curated_transfer_group",
+    "generated_last_resort"
+  ],
+  "generatedPaletteFallbackEnabled": false,
+  "humanArtApproved": false,
+  "candidates": [
+    {
+      "index": 1,
+      "label": "B01 Plain Native",
+      "family": "beret",
+      "construction": "Beret",
+      "sourceState": "Beret",
+      "palette": "source_native",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/01_beret_b01/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/01_beret_b01/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/01_beret_b01/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/01_beret_b01/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none_or_whole_source_state",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 2,
+      "label": "B02 Plain Stone Blue",
+      "family": "beret",
+      "construction": "Beret",
+      "sourceState": "Beret",
+      "palette": "stone_blue",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/02_beret_b02/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/02_beret_b02/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/02_beret_b02/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/02_beret_b02/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none_or_whole_source_state",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 69,
+        "right": 78,
+        "left": 78,
+        "back": 108
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 3,
+      "label": "B03 Plain Rose Cream",
+      "family": "beret",
+      "construction": "Beret",
+      "sourceState": "Beret",
+      "palette": "rose_cream",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/03_beret_b03/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/03_beret_b03/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/03_beret_b03/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/03_beret_b03/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none_or_whole_source_state",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 69,
+        "right": 78,
+        "left": 78,
+        "back": 108
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 4,
+      "label": "B04 Dots Native",
+      "family": "beret",
+      "construction": "Beret (Dotted)",
+      "sourceState": "Beret (Dotted)",
+      "palette": "source_native",
+      "component": "beret.dots_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/04_beret_b04/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/04_beret_b04/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/04_beret_b04/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/04_beret_b04/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "exact_source_patch",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 5,
+      "label": "B05 Dots Rose Cream",
+      "family": "beret",
+      "construction": "Beret (Dotted)",
+      "sourceState": "Beret (Dotted)",
+      "palette": "rose_cream",
+      "component": "beret.dots_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/05_beret_b05/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/05_beret_b05/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/05_beret_b05/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/05_beret_b05/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "exact_source_patch",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 69,
+        "right": 78,
+        "left": 78,
+        "back": 108
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 6,
+      "label": "B06 Leaf Native",
+      "family": "beret",
+      "construction": "Beret (Leaf)",
+      "sourceState": "Beret (Leaf)",
+      "palette": "source_native",
+      "component": "beret.leaf_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/06_beret_b06/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/06_beret_b06/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/06_beret_b06/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/06_beret_b06/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "exact_source_patch",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 7,
+      "label": "B07 Leaf Stone Blue",
+      "family": "beret",
+      "construction": "Beret (Leaf)",
+      "sourceState": "Beret (Leaf)",
+      "palette": "stone_blue",
+      "component": "beret.leaf_patch",
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/07_beret_b07/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/07_beret_b07/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/07_beret_b07/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/07_beret_b07/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "exact_source_patch",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 74,
+        "right": 83,
+        "left": 83,
+        "back": 108
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 8,
+      "label": "B08 Ribbon Native",
+      "family": "beret",
+      "construction": "Beret (Ribbon)",
+      "sourceState": "Beret (Ribbon)",
+      "palette": "source_native",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/08_beret_b08/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/08_beret_b08/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/08_beret_b08/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/08_beret_b08/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none_or_whole_source_state",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 9,
+      "label": "B09 Ribbon Rose Cream",
+      "family": "beret",
+      "construction": "Beret (Ribbon)",
+      "sourceState": "Beret (Ribbon)",
+      "palette": "rose_cream",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/09_beret_b09/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/09_beret_b09/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/09_beret_b09/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/09_beret_b09/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none_or_whole_source_state",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 84,
+        "right": 94,
+        "left": 94,
+        "back": 108
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 10,
+      "label": "B10 White Ribbon Native",
+      "family": "beret",
+      "construction": "Beret (White Ribbon)",
+      "sourceState": "Beret (White Ribbon)",
+      "palette": "source_native",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/10_beret_b10/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/10_beret_b10/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/10_beret_b10/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/10_beret_b10/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "exact_source_state",
+        "componentPolicy": "none_or_whole_source_state",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 11,
+      "label": "N01 Regular Native",
+      "family": "beanie",
+      "construction": "Beanie",
+      "sourceState": "Beanie",
+      "palette": "source_native",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/11_beanie_n01/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/11_beanie_n01/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/11_beanie_n01/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/11_beanie_n01/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "default_knit_band",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 12,
+      "label": "N02 Regular Stone Blue",
+      "family": "beanie",
+      "construction": "Beanie",
+      "sourceState": "Beanie",
+      "palette": "stone_blue",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/12_beanie_n02/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/12_beanie_n02/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/12_beanie_n02/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/12_beanie_n02/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "default_knit_band",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 72,
+        "right": 86,
+        "left": 86,
+        "back": 90
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 13,
+      "label": "N03 Regular Rose Cream",
+      "family": "beanie",
+      "construction": "Beanie",
+      "sourceState": "Beanie",
+      "palette": "rose_cream",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/13_beanie_n03/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/13_beanie_n03/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/13_beanie_n03/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/13_beanie_n03/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "default_knit_band",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 72,
+        "right": 86,
+        "left": 86,
+        "back": 90
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 14,
+      "label": "N04 Floppy Native",
+      "family": "beanie",
+      "construction": "Beanie (Floppy)",
+      "sourceState": "Beanie (Floppy)",
+      "palette": "source_native",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/14_beanie_n04/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/14_beanie_n04/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/14_beanie_n04/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/14_beanie_n04/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "default_knit_band",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 15,
+      "label": "N05 Floppy Stone Blue",
+      "family": "beanie",
+      "construction": "Beanie (Floppy)",
+      "sourceState": "Beanie (Floppy)",
+      "palette": "stone_blue",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/15_beanie_n05/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/15_beanie_n05/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/15_beanie_n05/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/15_beanie_n05/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "default_knit_band",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 98,
+        "right": 98,
+        "left": 98,
+        "back": 100
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 16,
+      "label": "N06 Floppy Rose Cream",
+      "family": "beanie",
+      "construction": "Beanie (Floppy)",
+      "sourceState": "Beanie (Floppy)",
+      "palette": "rose_cream",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/16_beanie_n06/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/16_beanie_n06/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/16_beanie_n06/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/16_beanie_n06/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "default_knit_band",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 98,
+        "right": 98,
+        "left": 98,
+        "back": 100
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 17,
+      "label": "N07 Cat Native",
+      "family": "beanie",
+      "construction": "Beanie (Cat)",
+      "sourceState": "Beanie (Cat)",
+      "palette": "source_native",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/17_beanie_n07/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/17_beanie_n07/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/17_beanie_n07/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/17_beanie_n07/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "default_knit_band",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 18,
+      "label": "N08 Cat Stone Blue",
+      "family": "beanie",
+      "construction": "Beanie (Cat)",
+      "sourceState": "Beanie (Cat)",
+      "palette": "stone_blue",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/18_beanie_n08/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/18_beanie_n08/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/18_beanie_n08/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/18_beanie_n08/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "default_knit_band",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 104,
+        "right": 88,
+        "left": 88,
+        "back": 124
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 19,
+      "label": "N09 Cat Rose Cream",
+      "family": "beanie",
+      "construction": "Beanie (Cat)",
+      "sourceState": "Beanie (Cat)",
+      "palette": "rose_cream",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/19_beanie_n09/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/19_beanie_n09/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/19_beanie_n09/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/19_beanie_n09/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "default_knit_band",
+          "defining_seams"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 104,
+        "right": 88,
+        "left": 88,
+        "back": 124
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 20,
+      "label": "S01 Regular Native Ribbon",
+      "family": "straw_hat",
+      "construction": "Straw Hat",
+      "sourceState": "Straw Hat",
+      "palette": "source_native",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/20_straw_hat_s01/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/20_straw_hat_s01/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/20_straw_hat_s01/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/20_straw_hat_s01/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_ribbon_geometry",
+          "defining_seams"
+        ],
+        "mutableFeature": "built_in_ribbon_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "same_family_source_body_plus_explicit_ribbon_role_mask",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 21,
+      "label": "S02 Regular Cream Ribbon",
+      "family": "straw_hat",
+      "construction": "Straw Hat",
+      "sourceState": "Straw Hat",
+      "palette": "cream",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/21_straw_hat_s02/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/21_straw_hat_s02/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/21_straw_hat_s02/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/21_straw_hat_s02/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_ribbon_geometry",
+          "defining_seams"
+        ],
+        "mutableFeature": "built_in_ribbon_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "same_family_source_body_plus_explicit_ribbon_role_mask",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 10,
+        "right": 10,
+        "left": 10,
+        "back": 23
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 22,
+      "label": "S03 Regular Rose Ribbon",
+      "family": "straw_hat",
+      "construction": "Straw Hat",
+      "sourceState": "Straw Hat",
+      "palette": "dusty_rose",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/22_straw_hat_s03/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/22_straw_hat_s03/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/22_straw_hat_s03/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/22_straw_hat_s03/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_ribbon_geometry",
+          "defining_seams"
+        ],
+        "mutableFeature": "built_in_ribbon_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "same_family_source_body_plus_explicit_ribbon_role_mask",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 10,
+        "right": 10,
+        "left": 10,
+        "back": 23
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 23,
+      "label": "S04 Regular Sage Ribbon",
+      "family": "straw_hat",
+      "construction": "Straw Hat",
+      "sourceState": "Straw Hat",
+      "palette": "sage",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/23_straw_hat_s04/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/23_straw_hat_s04/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/23_straw_hat_s04/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/23_straw_hat_s04/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_ribbon_geometry",
+          "defining_seams"
+        ],
+        "mutableFeature": "built_in_ribbon_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "same_family_source_body_plus_explicit_ribbon_role_mask",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 10,
+        "right": 10,
+        "left": 10,
+        "back": 23
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 24,
+      "label": "S05 Messy Native Ribbon",
+      "family": "straw_hat",
+      "construction": "Straw Hat (Messy)",
+      "sourceState": "Straw Hat (Messy)",
+      "palette": "source_native",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/24_straw_hat_s05/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/24_straw_hat_s05/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/24_straw_hat_s05/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/24_straw_hat_s05/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_ribbon_geometry",
+          "defining_seams"
+        ],
+        "mutableFeature": "built_in_ribbon_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "same_family_source_body_plus_explicit_ribbon_role_mask",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "changedCells": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 25,
+      "label": "S06 Messy Cream Ribbon",
+      "family": "straw_hat",
+      "construction": "Straw Hat (Messy)",
+      "sourceState": "Straw Hat (Messy)",
+      "palette": "cream",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/25_straw_hat_s06/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/25_straw_hat_s06/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/25_straw_hat_s06/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/25_straw_hat_s06/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_ribbon_geometry",
+          "defining_seams"
+        ],
+        "mutableFeature": "built_in_ribbon_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "same_family_source_body_plus_explicit_ribbon_role_mask",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 10,
+        "right": 10,
+        "left": 10,
+        "back": 23
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 26,
+      "label": "S07 Messy Rose Ribbon",
+      "family": "straw_hat",
+      "construction": "Straw Hat (Messy)",
+      "sourceState": "Straw Hat (Messy)",
+      "palette": "dusty_rose",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/26_straw_hat_s07/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/26_straw_hat_s07/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/26_straw_hat_s07/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/26_straw_hat_s07/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_ribbon_geometry",
+          "defining_seams"
+        ],
+        "mutableFeature": "built_in_ribbon_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "same_family_source_body_plus_explicit_ribbon_role_mask",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 10,
+        "right": 10,
+        "left": 10,
+        "back": 23
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 27,
+      "label": "S08 Messy Sage Ribbon",
+      "family": "straw_hat",
+      "construction": "Straw Hat (Messy)",
+      "sourceState": "Straw Hat (Messy)",
+      "palette": "sage",
+      "component": null,
+      "frames": {
+        "front": "experiments/source_respecting_hat_pilot_01/candidates/27_straw_hat_s08/front.png",
+        "right": "experiments/source_respecting_hat_pilot_01/candidates/27_straw_hat_s08/right.png",
+        "left": "experiments/source_respecting_hat_pilot_01/candidates/27_straw_hat_s08/left.png",
+        "back": "experiments/source_respecting_hat_pilot_01/candidates/27_straw_hat_s08/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_source_alternate_state",
+        "lockedFeatures": [
+          "crown",
+          "brim",
+          "built_in_ribbon_geometry",
+          "defining_seams"
+        ],
+        "mutableFeature": "built_in_ribbon_color",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "same_family_source_body_plus_explicit_ribbon_role_mask",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "changedCells": {
+        "front": 10,
+        "right": 10,
+        "left": 10,
+        "back": 23
+      },
+      "lineFragmentErrors": [],
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    }
+  ],
+  "candidateCount": 27,
+  "contactSheets": [
+    "experiments/source_respecting_hat_pilot_01/SOURCE_RESPECTING_HAT_PILOT_OVERVIEW.png",
+    "experiments/source_respecting_hat_pilot_01/BERET_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_pilot_01/BEANIE_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_pilot_01/STRAW_HAT_DIRECTIONAL.png"
+  ],
+  "sourcePatchReconstructionExact": true
+}

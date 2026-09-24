@@ -25,7 +25,7 @@ def main():
         assert 0<q['accentPixelBudgetMax']<=0.18
         assert q['accentPixelBudgetMinPixels']>=2
 
-    vc=contract_for('catalog_hats_cottagecore_set_beret')
+    vc=contract_for('catalog_hats_cottagecore_set_boater_hat')
     roles=palette_roles([(35,35,35),(85,85,85),(145,145,145),(210,210,210)])
     fr=frame(); out,meta=render_proportional_line(fr,vc['linePlacement'],roles,'contrast')
     assert meta['applied'] and meta['thicknessPx']==1
@@ -37,6 +37,26 @@ def main():
     x=dict(meta);x['widthRatio']=0.99
     assert 'line:too_wide_or_narrow' in validate_line(x,vc['linePlacement'])
 
+
+    for pilot_family in (
+        'catalog_hats_cottagecore_set_beret',
+        'catalog_hats_more_accessories_and_stuff_beanie',
+        'catalog_hats_more_accessories_and_stuff_straw_hat',
+    ):
+        pc=contract_for(pilot_family)
+        assert pc['linePlacement']['lineAllowed'] is False
+        assert pc['linePlacement'].get('replacementAuthority')=='SOURCE_RESPECTING_REMIX_ONLY'
+
+    frag=dict(meta)
+    row=frag['row']; x0,y0,x1,y1=frag['bbox']
+    cx=(x0+x1)//2
+    frag['cells']=[(cx-1,row),(cx,row),(cx+1,row)]
+    frag['widthPx']=3
+    frag['widthBasisPx']=max(10,frag.get('widthBasisPx',10))
+    frag['widthRatio']=3/frag['widthBasisPx']
+    ferr=validate_line(frag,vc['linePlacement'])
+    assert 'line:isolated_center_fragment' in ferr
+
     hood=contract_for('catalog_hats_more_accessories_and_stuff_hood')
     assert recipe_visual_precheck({'trim':'contrast'},hood)==['line:family_disallows_line']
     assert harmony_tag([(40,40,40),(110,110,110),(215,215,215)]) in ('soft_neutral','alt_monochrome')
@@ -46,7 +66,7 @@ def main():
 
     print('PASS 20 per-family visual contracts')
     print('PASS proportional line placement and thickness/width/height rejection')
-    print('PASS family line prohibition and no loose trim fallback')
+    print('PASS family line prohibition, pilot opt-out, and isolated-fragment rejection')
     print('PASS explicit palette roles and harmony tagging')
     print('PASS accent budget rejection and discrete pixel floors')
 

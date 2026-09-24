@@ -1038,3 +1038,58 @@ Validation:
 - tools/validate_taste_policy.py PASS.
 - tools/validate_catalog_template_promotions.py PASS: 47 promoted / 6 deferred, including all 20 hat families.
 - tools/validate_hat_visual_rules.py PASS.
+
+## 2026-09-23 — Source-Respecting Remix pilot replaces generic hat redraw path
+Human review of Batch 09 confirmed the remaining failure was architectural: the generic compositor could still redraw meaningful source construction into weak synthetic stripes/palette treatments. The hat pilot now follows a source-respecting remix model instead.
+
+Guiding principle:
+- Preserve the source hat's core construction. Remix the non-core parts.
+- Looking recognizably like the approved source art is acceptable and preferred over forced novelty that weakens readability.
+
+Formal model:
+- generator/data/source_respecting_remix_model.json defines four feature classes:
+  1. LOCKED_CONSTRUCTION — brim, crown, built-in ribbon geometry, default knit band, defining seams, source shading topology. No removal/resample/generic normalization.
+  2. MUTABLE_SOURCE_BACKED_FEATURE — source feature geometry stays locked; only declared color/material/highlight treatment inside its stored mask may vary.
+  3. OPTIONAL_ADDON — explicit source-backed component only, using exact same-construction patches or declared authored parts.
+  4. ALTERNATE_CONSTRUCTION_STATE — whole authored source state, e.g. floppy/cat beanie, messy straw hat, authored ribbon construction.
+- Generic donor-delta projection, arbitrary STYLE_PROFILE whole-hat recolor, fake replacement ribbons, generic line synthesis, and runtime brightness-role inference are prohibited in the pilot.
+- Palette priority is source family -> material/construction family -> curated transfer group -> generated last resort. Generated-last-resort is disabled for the pilot.
+
+Explicit source-part deconstruction:
+- tools/build_hat_source_parts.py writes generator/data/source_parts/hat_pilot_parts.json.
+- Beret Dotted, Leaf, Ribbon, and White Ribbon are deconstructed as exact source-coordinate patches and each patch is proven to reconstruct the source-author variant pixel-for-pixel.
+- Dotted + Leaf are legal OPTIONAL_ADDON source patches.
+- Ribbon + White Ribbon change authored alpha and are therefore classified as ALTERNATE_CONSTRUCTION_STATE, not removable optional parts.
+- Exact source RGB -> semantic role maps are stored at extraction time for all pilot source states. Runtime rendering does not infer roles from brightness.
+- Fashion Sense Flipped semantics are materialized during extraction/rendering, so stored frames match authored in-game direction behavior.
+
+Pilot compositor:
+- generator/source_respecting_hat_remix.py is the new 3-family compositor.
+- Beret starts from exact Cottagecore Set source frames; Dots/Leaf use exact same-construction patches; Ribbon variants use whole authored source states.
+- Beanie uses whole More Accessories and Stuff authored Regular / Floppy / Cat construction states. Existing knit/cuff/seam art is preserved rather than regenerated.
+- Straw Hat uses whole authored Regular / Messy construction states. Warm straw body pixels are locked; the built-in grayscale ribbon is identified by its stored source RGB roles and only that exact mask may be recolored.
+- Palette/tint changes preserve source alpha and source shading ratios. No arbitrary compatible STYLE_PROFILE is used.
+- Generic projection used: false. Generic synthesized line used: false.
+
+Floating/isolated line rejection:
+- Existing hat visual contracts now include minimum contiguous width ratio, minimum pixel length, side-support requirement, and isolated-center-fragment rejection.
+- Beret, Beanie, and Straw Hat explicitly opt out of the generic line system and declare SOURCE_RESPECTING_REMIX_ONLY authority.
+- The old line validator now rejects short isolated center dashes in families that still use line grammar.
+
+Redo pilot batch:
+- experiments/source_respecting_hat_pilot_01 contains 27 candidates:
+  - 10 Berets
+  - 9 Beanies
+  - 8 Straw Hats
+- Overview: experiments/source_respecting_hat_pilot_01/SOURCE_RESPECTING_HAT_PILOT_OVERVIEW.png
+- Directional sheets: BERET_DIRECTIONAL.png, BEANIE_DIRECTIONAL.png, STRAW_HAT_DIRECTIONAL.png
+- Native variants are pixel-identical to source-render frames.
+- All recolors preserve source alpha.
+- Straw ribbon recolors touch only the built-in source ribbon mask.
+- humanArtApproved remains false; this batch is specifically for visual review before expanding the model to the other 17 hat families.
+
+Validation:
+- tools/validate_source_respecting_hat_remix.py PASS.
+- tools/validate_hat_visual_rules.py PASS including pilot opt-out + isolated-fragment rejection.
+- tools/validate_taste_policy.py PASS.
+- tools/validate_catalog_template_promotions.py PASS: 47 promoted / 6 deferred.

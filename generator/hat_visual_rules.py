@@ -177,6 +177,21 @@ def validate_line(meta, line_spec):
     if meta['row'] in forbidden:errors.append('line:forbidden_bottom_row')
     if not line_spec['lineMayTouchOutline'] and any(x in (x0,x1) for x,y in meta['cells']):
         errors.append('line:outline_merge')
+    xs=sorted(x for x,y in meta.get('cells',[]) if y==meta.get('row'))
+    longest=0; run=0; prev=None
+    for x in xs:
+        if prev is not None and x==prev+1:
+            run+=1
+        else:
+            run=1
+        longest=max(longest,run); prev=x
+    min_run=max(int(line_spec.get('lineMinContiguousPixels',1)),
+                round(meta.get('widthBasisPx',max(1,x1-x0+1))*float(line_spec.get('lineMinContiguousWidthRatio',0))))
+    if line_spec.get('rejectIsolatedCenterFragment',False) and longest<min_run:
+        errors.append('line:isolated_center_fragment')
+    if line_spec.get('lineRequiresSideSupport',False) and xs:
+        if min(xs)>x0+2 and max(xs)<x1-2 and longest<max(4,min_run):
+            errors.append('line:missing_side_support')
     h=y1-y0+1
     brim_start=y0+round((h-1)*float(line_spec.get('brimZoneStartRatio',0.72)))
     if not line_spec.get('lineMayOverlapBrimBand',False) and meta['row']>=brim_start:
