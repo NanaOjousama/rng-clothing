@@ -1,0 +1,1501 @@
+{
+  "schema": "hat-visual-contract-registry/v1",
+  "purpose": "Hard pre-promotion grammar for proportional line placement and palette sanity on promoted hat families.",
+  "authority": "Human art review still outranks numeric checks; this registry prevents known repeat failures before contact-sheet review.",
+  "families": {
+    "catalog_hats_alt_fashion_set_beanie": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_alt_fashion_set_beanie",
+      "capacity": "medium",
+      "linePlacement": {
+        "lineAllowed": true,
+        "lineSemanticType": "band",
+        "lineZone": "crown_mid",
+        "lineCenterYRatio": 0.4,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.45,
+          0.72
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "muted_cool",
+          "earthy_warm",
+          "cottage_pastel",
+          "alt_monochrome"
+        ],
+        "preferredHarmonyTags": [
+          "soft_neutral",
+          "muted_cool"
+        ],
+        "accentPixelBudgetMax": 0.14,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 70,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 4,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "soft_read_stripe_allowed_no_black_bright_hard_split",
+        "accentPixelBudgetMinPixels": 5,
+        "maxCrownAccentFraction": 0.26,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_alt_fashion_set_earmuffs_horns": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_alt_fashion_set_earmuffs_horns",
+      "capacity": "medium",
+      "linePlacement": {
+        "lineAllowed": false,
+        "lineSemanticType": "stitch",
+        "lineZone": "upper_crown",
+        "lineCenterYRatio": 0.38,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.45,
+          0.8
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel",
+          "earthy_warm",
+          "muted_cool",
+          "alt_monochrome"
+        ],
+        "preferredHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel"
+        ],
+        "accentPixelBudgetMax": 0.14,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 70,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 4,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "balanced_family_read",
+        "accentPixelBudgetMinPixels": 5,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_alt_fashion_set_headband_studded": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_alt_fashion_set_headband_studded",
+      "capacity": "tiny",
+      "linePlacement": {
+        "lineAllowed": false,
+        "lineSemanticType": "stitch",
+        "lineZone": "upper_crown",
+        "lineCenterYRatio": 0.38,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.45,
+          0.8
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel",
+          "earthy_warm",
+          "muted_cool",
+          "alt_monochrome"
+        ],
+        "preferredHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel"
+        ],
+        "accentPixelBudgetMax": 0.08,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 70,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 2,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "balanced_family_read",
+        "accentPixelBudgetMinPixels": 2,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_cottagecore_set_beret": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_cottagecore_set_beret",
+      "capacity": "medium",
+      "linePlacement": {
+        "lineAllowed": true,
+        "lineSemanticType": "ribbon",
+        "lineZone": "crown_mid",
+        "lineCenterYRatio": 0.38,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.4,
+          0.68
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel",
+          "earthy_warm",
+          "muted_cool"
+        ],
+        "preferredHarmonyTags": [
+          "cottage_pastel",
+          "soft_neutral"
+        ],
+        "accentPixelBudgetMax": 0.14,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 70,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 4,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "soft_cohesive_low_accent_no_harsh_crown_split",
+        "accentPixelBudgetMinPixels": 5,
+        "maxCrownAccentFraction": 0.26,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_cottagecore_set_boater_hat": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_cottagecore_set_boater_hat",
+      "capacity": "medium",
+      "linePlacement": {
+        "lineAllowed": true,
+        "lineSemanticType": "ribbon",
+        "lineZone": "crown_base",
+        "lineCenterYRatio": 0.6,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.55,
+          0.82
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.78
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "earthy_warm",
+          "soft_neutral",
+          "cottage_pastel",
+          "muted_cool"
+        ],
+        "preferredHarmonyTags": [
+          "earthy_warm",
+          "soft_neutral"
+        ],
+        "accentPixelBudgetMax": 0.14,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 85,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 4,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": true,
+        "familyPaletteBehavior": "warm_neutral_ribbon_allowed_avoid_muddy_yellow_brown_cream_stack",
+        "accentPixelBudgetMinPixels": 5,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.78,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": true
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_cottagecore_set_headband_daisies": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_cottagecore_set_headband_daisies",
+      "capacity": "tiny",
+      "linePlacement": {
+        "lineAllowed": false,
+        "lineSemanticType": "stitch",
+        "lineZone": "upper_crown",
+        "lineCenterYRatio": 0.38,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.45,
+          0.8
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel",
+          "earthy_warm",
+          "muted_cool",
+          "alt_monochrome"
+        ],
+        "preferredHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel"
+        ],
+        "accentPixelBudgetMax": 0.08,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 70,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 2,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "balanced_family_read",
+        "accentPixelBudgetMinPixels": 2,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_cottagecore_set_headscarf": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_cottagecore_set_headscarf",
+      "capacity": "medium",
+      "linePlacement": {
+        "lineAllowed": true,
+        "lineSemanticType": "stitch",
+        "lineZone": "upper_crown",
+        "lineCenterYRatio": 0.34,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.35,
+          0.6
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel",
+          "earthy_warm",
+          "muted_cool",
+          "alt_monochrome"
+        ],
+        "preferredHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel"
+        ],
+        "accentPixelBudgetMax": 0.14,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 70,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 4,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "balanced_family_read",
+        "accentPixelBudgetMinPixels": 5,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_cottagecore_set_hood_mushroom": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_cottagecore_set_hood_mushroom",
+      "capacity": "large",
+      "linePlacement": {
+        "lineAllowed": false,
+        "lineSemanticType": "stitch",
+        "lineZone": "upper_crown",
+        "lineCenterYRatio": 0.38,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.45,
+          0.8
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "muted_cool",
+          "earthy_warm",
+          "alt_monochrome"
+        ],
+        "preferredHarmonyTags": [
+          "muted_cool",
+          "soft_neutral"
+        ],
+        "accentPixelBudgetMax": 0.18,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 80,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 4,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "form_and_edge_first_sparse_accents_no_multiband_segmentation",
+        "accentPixelBudgetMinPixels": 8,
+        "maxCrownAccentFraction": 0.26,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 1,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_cottagecore_set_mushroom_hat": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_cottagecore_set_mushroom_hat",
+      "capacity": "large",
+      "linePlacement": {
+        "lineAllowed": false,
+        "lineSemanticType": "stitch",
+        "lineZone": "upper_crown",
+        "lineCenterYRatio": 0.38,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.45,
+          0.8
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel",
+          "earthy_warm",
+          "muted_cool",
+          "bright_playful"
+        ],
+        "preferredHarmonyTags": [
+          "cottage_pastel",
+          "earthy_warm"
+        ],
+        "accentPixelBudgetMax": 0.18,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 80,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 4,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "balanced_family_read",
+        "accentPixelBudgetMinPixels": 8,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_more_accessories_and_stuff_beanie": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_more_accessories_and_stuff_beanie",
+      "capacity": "medium",
+      "linePlacement": {
+        "lineAllowed": true,
+        "lineSemanticType": "band",
+        "lineZone": "crown_mid",
+        "lineCenterYRatio": 0.4,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.45,
+          0.72
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "muted_cool",
+          "earthy_warm",
+          "cottage_pastel",
+          "alt_monochrome"
+        ],
+        "preferredHarmonyTags": [
+          "soft_neutral",
+          "muted_cool"
+        ],
+        "accentPixelBudgetMax": 0.14,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 70,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 4,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "soft_read_stripe_allowed_no_black_bright_hard_split",
+        "accentPixelBudgetMinPixels": 5,
+        "maxCrownAccentFraction": 0.26,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_more_accessories_and_stuff_bows_double_small_1": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+      "capacity": "tiny",
+      "linePlacement": {
+        "lineAllowed": false,
+        "lineSemanticType": "stitch",
+        "lineZone": "upper_crown",
+        "lineCenterYRatio": 0.38,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.45,
+          0.8
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel",
+          "earthy_warm",
+          "muted_cool",
+          "bright_playful"
+        ],
+        "preferredHarmonyTags": [
+          "cottage_pastel",
+          "earthy_warm"
+        ],
+        "accentPixelBudgetMax": 0.08,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 80,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 2,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "balanced_family_read",
+        "accentPixelBudgetMinPixels": 2,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_more_accessories_and_stuff_crown_diadem_1": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+      "capacity": "small",
+      "linePlacement": {
+        "lineAllowed": false,
+        "lineSemanticType": "stitch",
+        "lineZone": "upper_crown",
+        "lineCenterYRatio": 0.38,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.45,
+          0.8
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel",
+          "earthy_warm",
+          "muted_cool",
+          "bright_playful"
+        ],
+        "preferredHarmonyTags": [
+          "cottage_pastel",
+          "earthy_warm"
+        ],
+        "accentPixelBudgetMax": 0.1,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 80,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 2,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "balanced_family_read",
+        "accentPixelBudgetMinPixels": 3,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_more_accessories_and_stuff_earmuffs": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_more_accessories_and_stuff_earmuffs",
+      "capacity": "medium",
+      "linePlacement": {
+        "lineAllowed": false,
+        "lineSemanticType": "stitch",
+        "lineZone": "upper_crown",
+        "lineCenterYRatio": 0.38,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.45,
+          0.8
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel",
+          "earthy_warm",
+          "muted_cool",
+          "alt_monochrome"
+        ],
+        "preferredHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel"
+        ],
+        "accentPixelBudgetMax": 0.14,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 70,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 4,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "balanced_family_read",
+        "accentPixelBudgetMinPixels": 5,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_more_accessories_and_stuff_garland_dried_1": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+      "capacity": "small",
+      "linePlacement": {
+        "lineAllowed": false,
+        "lineSemanticType": "stitch",
+        "lineZone": "upper_crown",
+        "lineCenterYRatio": 0.38,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.45,
+          0.8
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel",
+          "earthy_warm",
+          "muted_cool",
+          "bright_playful"
+        ],
+        "preferredHarmonyTags": [
+          "cottage_pastel",
+          "earthy_warm"
+        ],
+        "accentPixelBudgetMax": 0.1,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 80,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 2,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "balanced_family_read",
+        "accentPixelBudgetMinPixels": 3,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_more_accessories_and_stuff_hair_buns": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_more_accessories_and_stuff_hair_buns",
+      "capacity": "small",
+      "linePlacement": {
+        "lineAllowed": false,
+        "lineSemanticType": "stitch",
+        "lineZone": "upper_crown",
+        "lineCenterYRatio": 0.38,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.45,
+          0.8
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel",
+          "earthy_warm",
+          "muted_cool",
+          "bright_playful"
+        ],
+        "preferredHarmonyTags": [
+          "cottage_pastel",
+          "earthy_warm"
+        ],
+        "accentPixelBudgetMax": 0.1,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 70,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 2,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "balanced_family_read",
+        "accentPixelBudgetMinPixels": 3,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_more_accessories_and_stuff_headband": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_more_accessories_and_stuff_headband",
+      "capacity": "tiny",
+      "linePlacement": {
+        "lineAllowed": false,
+        "lineSemanticType": "stitch",
+        "lineZone": "upper_crown",
+        "lineCenterYRatio": 0.38,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.45,
+          0.8
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel",
+          "earthy_warm",
+          "muted_cool",
+          "alt_monochrome"
+        ],
+        "preferredHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel"
+        ],
+        "accentPixelBudgetMax": 0.08,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 70,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 2,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "balanced_family_read",
+        "accentPixelBudgetMinPixels": 2,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_more_accessories_and_stuff_hood": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_more_accessories_and_stuff_hood",
+      "capacity": "large",
+      "linePlacement": {
+        "lineAllowed": false,
+        "lineSemanticType": "stitch",
+        "lineZone": "upper_crown",
+        "lineCenterYRatio": 0.38,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.45,
+          0.8
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "muted_cool",
+          "earthy_warm",
+          "alt_monochrome"
+        ],
+        "preferredHarmonyTags": [
+          "muted_cool",
+          "soft_neutral"
+        ],
+        "accentPixelBudgetMax": 0.18,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 80,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 4,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "form_and_edge_first_sparse_accents_no_multiband_segmentation",
+        "accentPixelBudgetMinPixels": 8,
+        "maxCrownAccentFraction": 0.26,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 1,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_more_accessories_and_stuff_straw_hat": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_more_accessories_and_stuff_straw_hat",
+      "capacity": "large",
+      "linePlacement": {
+        "lineAllowed": true,
+        "lineSemanticType": "ribbon",
+        "lineZone": "crown_base",
+        "lineCenterYRatio": 0.6,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.55,
+          0.82
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.78
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "earthy_warm",
+          "soft_neutral",
+          "cottage_pastel",
+          "muted_cool"
+        ],
+        "preferredHarmonyTags": [
+          "earthy_warm",
+          "soft_neutral"
+        ],
+        "accentPixelBudgetMax": 0.18,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 85,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 4,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": true,
+        "familyPaletteBehavior": "warm_neutral_ribbon_allowed_avoid_muddy_yellow_brown_cream_stack",
+        "accentPixelBudgetMinPixels": 8,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.78,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": true
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_more_accessories_and_stuff_sun_hat": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_more_accessories_and_stuff_sun_hat",
+      "capacity": "large",
+      "linePlacement": {
+        "lineAllowed": true,
+        "lineSemanticType": "ribbon",
+        "lineZone": "crown_base",
+        "lineCenterYRatio": 0.6,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.55,
+          0.82
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.78
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "earthy_warm",
+          "soft_neutral",
+          "cottage_pastel",
+          "muted_cool"
+        ],
+        "preferredHarmonyTags": [
+          "earthy_warm",
+          "soft_neutral"
+        ],
+        "accentPixelBudgetMax": 0.18,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 85,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 4,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": true,
+        "familyPaletteBehavior": "warm_neutral_ribbon_allowed_avoid_muddy_yellow_brown_cream_stack",
+        "accentPixelBudgetMinPixels": 8,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.78,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": true
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    },
+    "catalog_hats_more_accessories_and_stuff_tulip_hat": {
+      "schema": "hat-visual-contract/v1",
+      "family": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+      "capacity": "medium",
+      "linePlacement": {
+        "lineAllowed": true,
+        "lineSemanticType": "stitch",
+        "lineZone": "crown_mid",
+        "lineCenterYRatio": 0.43,
+        "lineThicknessPxMax": 1,
+        "lineWidthRatioRange": [
+          0.35,
+          0.62
+        ],
+        "lineMayTouchOutline": false,
+        "lineMayOverlapBrimBand": false,
+        "lineContrastMaxStep": 1,
+        "lineCountMax": 1,
+        "lineForbiddenRowsRelativeToBottom": [
+          0,
+          1
+        ],
+        "lineCenterToleranceRatio": 0.09,
+        "brimZoneStartRatio": 0.72
+      },
+      "paletteSanity": {
+        "explicitRoles": [
+          "outline",
+          "shadow",
+          "midtone",
+          "light",
+          "accent"
+        ],
+        "allowedHarmonyTags": [
+          "soft_neutral",
+          "cottage_pastel",
+          "earthy_warm",
+          "muted_cool",
+          "bright_playful"
+        ],
+        "preferredHarmonyTags": [
+          "cottage_pastel",
+          "earthy_warm"
+        ],
+        "accentPixelBudgetMax": 0.14,
+        "outlineMustBeDarkestOrNearDarkest": true,
+        "minOutlineMidtoneValueDelta": 18,
+        "minMidtoneLightValueDelta": 10,
+        "maxAccentToNeighborValueDelta": 80,
+        "crownDominanceRequired": true,
+        "maxDisconnectedAccentIslands": 4,
+        "maxStrongHorizontalBands": 1,
+        "strongBandValueDelta": 62,
+        "rejectMuddyWarmMajorStack": true,
+        "muddyWarmMajorColorMinShare": 0.11,
+        "muddyWarmMajorColorMaxCount": 2,
+        "brimMayBeHighestSaturation": false,
+        "familyPaletteBehavior": "balanced_family_read",
+        "accentPixelBudgetMinPixels": 5,
+        "maxCrownAccentFraction": 0.34,
+        "brimZoneStartRatio": 0.72,
+        "crownZoneEndRatio": 0.7,
+        "maxAccentSystems": 2,
+        "hasBrimZone": false
+      },
+      "proportionSanity": {
+        "measureFrom": "opaque_bounding_box",
+        "normalizeCoordinates": true,
+        "rejectLineTooLow": true,
+        "rejectLineTooThick": true,
+        "rejectLineTooWide": true,
+        "rejectLineOutlineMerge": true,
+        "rejectBandStacking": true
+      }
+    }
+  }
+}

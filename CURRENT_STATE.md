@@ -992,3 +992,49 @@ Capacity-aware cross-family hat contact sheet:
 - Capacity coverage: medium 32, large 20, tiny 16, small 12 candidates.
 - humanArtApproved remains false; these are production candidates for visual curation, not promoted shipping assets.
 - Review sheets: experiments/hat_production_batch_01/HAT_PRODUCTION_BATCH_01_1.png and HAT_PRODUCTION_BATCH_01_2.png.
+
+## 2026-09-23 — Hat proportional line grammar + palette sanity/harmony gate
+Implemented after human review of production Batch 01 identified two repeatable failures: over-thick/misplaced horizontal bands and palette choices that preserved silhouette but weakened hat readability.
+
+Proportional line/ribbon grammar:
+- Added generator/data/hat_visual_contracts.json with a visual contract for all 20 promoted hat families.
+- Every family now declares: lineAllowed, lineSemanticType, lineZone, lineCenterYRatio, lineThicknessPxMax, lineWidthRatioRange, lineMayTouchOutline, lineMayOverlapBrimBand, lineContrastMaxStep, lineCountMax, lineForbiddenRowsRelativeToBottom, lineCenterToleranceRatio, and semantic brim boundary.
+- Line placement is normalized against the hat's opaque bounding box and the usable opaque width of the target crown row, not a loose absolute anchor.
+- Hard max thickness is 1 px for the current hat families.
+- Line color may move only one adjacent value-ramp step from the midtone.
+- Line rows may not touch outer silhouette edges, forbidden bottom rows, or semantic brim rows.
+- Pattern/motif rendering is prevented from overwriting the accepted line cells, eliminating trim/pattern band stacking.
+- Families that should not have a horizontal treatment fail closed at recipe planning; trim is not silently drawn somewhere else.
+- Family behavior is explicit: beanie/beret use crown-mid treatment, boater/straw/sun use crown-base ribbon treatment, headscarf uses upper-crown stitch treatment, tulip uses crown-mid stitch treatment, and hoods/headbands/bows/earmuffs/crown/garland/hair-buns/mushroom-cap families disallow the generic line treatment.
+
+Palette sanity/harmony layer:
+- Added generator/hat_visual_rules.py as a dependency-free generator-side visual gate.
+- Every style vocabulary is assigned explicit outline/shadow/midtone/light/accent roles.
+- Palette donors are classified into soft_neutral, earthy_warm, cottage_pastel, muted_cool, alt_monochrome, or bright_playful.
+- Per-family contracts declare allowed and preferred harmony families.
+- Donor selection now prefers an exact source-family palette when it is valid; otherwise it limits selection to the family's preferred harmony tags before falling back to other allowed tags.
+- Donor palettes with collapsed outline->midtone or midtone->light value structure are filtered before rendering.
+- Capacity accent budgets are enforced at tiny 8%, small 10%, medium 14%, large 18%, with discrete floors of 2/3/5/8 pixels so tiny art remains mathematically usable.
+- Accent budgets now follow the taste engine's semantic roles: PRIMARY and SECONDARY motifs/attachments are not incorrectly charged as ACCENT; only features classified as ACCENT consume the accent budget.
+- Family accent-system caps prevent clutter; hood families allow one motif/attachment/hardware accent system max.
+- Palette checks reject excessive disconnected accent islands, excessive accent-to-neighbor value jumps, crown accent dominance, muddy yellow+brown+cream major-role stacks, and new harsh horizontal value bands.
+- Harsh-band detection is relative to the source-styled reference frame, so authored/source structural shading is not falsely penalized.
+- Zone-aware crown/brim checks only apply brim-specific rules to families that actually have a semantic brim.
+
+Automatic reject/retry:
+- tools/build_hat_production_batch.py now prechecks line legality, harmony eligibility, role/value sanity, and post-render visual metrics.
+- A failing candidate is rejected before it reaches the contact sheet and the deterministic generator tries another legal recipe/donor combination.
+- Rejection reason, palette metrics, line-placement metrics, semantic roles, harmony tag, and rejected attempts are written into the candidate manifest.
+- tools/validate_hat_visual_rules.py adds regression coverage for all 20 contracts, proportional position/thickness/width rejection, family line prohibition, explicit palette roles/harmony tags, and accent-budget behavior.
+
+Governed proof batch:
+- experiments/hat_production_batch_09/ is the post-rule proof batch: 80 candidates / 20 families / 4 rarities / 320 directional frames.
+- All 80 final candidates completed with zero final visual-rule errors.
+- 10 intermediate attempts were automatically rejected before a clean candidate was accepted; the recorded repeat failure in that final run was newly-created harsh horizontal banding.
+- Contact sheets: experiments/hat_production_batch_09/HAT_PRODUCTION_BATCH_09_1.png and HAT_PRODUCTION_BATCH_09/HAT_PRODUCTION_BATCH_09_2.png.
+- humanArtApproved remains false. Numeric/structural gates prevent known repeat failures but do not replace human art review.
+
+Validation:
+- tools/validate_taste_policy.py PASS.
+- tools/validate_catalog_template_promotions.py PASS: 47 promoted / 6 deferred, including all 20 hat families.
+- tools/validate_hat_visual_rules.py PASS.

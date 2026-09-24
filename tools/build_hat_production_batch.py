@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
-import hashlib,itertools,json,sys
+import hashlib,itertools,json,os,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from generator.catalog_templates import list_families,load_family,compatible_donors,load_template_for_family
 from generator.taste_policy import evaluate_recipe
+from generator.hat_visual_rules import (contract_for,palette_roles,filter_style_profiles,recipe_visual_precheck,render_proportional_line,validate_line,validate_palette_frame)
 from v5.pngio import read_rgba_png,write_rgba_png,blank_image,blit,nearest_scale,draw_text
 from v5.source.template_transfer import template_frames,assert_geometry_preserved,compile_recipe
 from v5.source.source_backed_renderer import apply_style_profile
-OUT=ROOT/'experiments/hat_production_batch_01'; CAND=OUT/'candidates'
+BATCH=os.environ.get('RNG_HAT_BATCH','hat_production_batch_01')
+OUT=ROOT/'experiments'/BATCH; CAND=OUT/'candidates'
 CAT=json.loads((ROOT/'source_catalog/catalog.json').read_text())
 RAR=('common','uncommon','rare','epic'); VIEWS=('front','right','left','back')
 
 def idx(k,n): return int(hashlib.sha256(k.encode()).hexdigest()[:12],16)%n
+def feature_kind(name):
+    if not name:return None
+    return {'motif':'MOTIF','attachment':'ATTACHMENT','hardware':'HARDWARE','pattern':'MATERIAL_PATTERN'}.get(name.split('.',1)[0])
 def app(pack,name):
     return next(a for a in CAT['appearances'] if a.get('pack')==pack and a.get('name')==name)
 def crop(sheet,b):
@@ -86,20 +91,21 @@ def trim(fr,a,vocab,mode):
             if p[3]:out[y][x]=(c[0],c[1],c[2],p[3])
     assert_geometry_preserved(fr,out);return out
 def pool(fam,rar):
-    pol=load_family(fam);axes=list(pol['vocabulary']);rows=[]
+    pol=load_family(fam); visual=contract_for(fam); axes=list(pol['vocabulary']);rows=[]
     for vals in itertools.product(*(pol['vocabulary'][a] for a in axes)):
         rec=dict(zip(axes,vals));rep=evaluate_recipe(rec,rar,pol)
-        if rep.valid:rows.append((rec,rep))
+        if rep.valid and not recipe_visual_precheck(rec,visual):rows.append((rec,rep))
+    if not rows: raise RuntimeError(f'{fam}: no visually legal {rar} recipe')
     m=max(x[1].complexity for x in rows);return [x for x in rows if x[1].complexity>=max(0,m-1)]
 def parts(fam,rec,key):
     by={}
     for z in compatible_donors(fam)['allowed']:
         p=z['part'];by.setdefault(p.get('partKind'),[]).append(p)
     for a in by.values():a.sort(key=lambda p:(p.get('pack',''),p.get('name',''),p.get('id','')))
-    styles=[p for p in by['STYLE_PROFILE'] if len(p.get('vocabulary') or [])>=2]
-    hat_styles=[p for p in styles if p.get('category')=='Hats']
-    if hat_styles: styles=hat_styles
-    style=styles[idx(key+'style',len(styles))]; chosen=[]
+    target_family=load_template_for_family(fam).source_identity.get('family')
+    filtered=filter_style_profiles(fam,by.get('STYLE_PROFILE',[]),target_family)
+    if not filtered: raise RuntimeError(f'{fam}: no harmony-valid style profile')
+    style, harmony=filtered[idx(key+'style',len(filtered))]; chosen=[]
     wants=[('pattern','MATERIAL_PATTERN','solid'),('motif','MOTIF','none'),('attachment','ATTACHMENT','none'),('hardware','HARDWARE','none')]
     for axis,k,off in wants:
         if rec.get(axis)!=off and by.get(k):
@@ -107,31 +113,59 @@ def parts(fam,rec,key):
             hat_arr=[p for p in arr if p.get('category')=='Hats']
             if hat_arr: arr=hat_arr
             chosen.append(arr[idx(key+k,len(arr))])
-    return style,chosen
+    return style,chosen,harmony
 def render(fam,rar,n):
-    pol=load_family(fam);tpl=load_template_for_family(fam);choices=pool(fam,rar)
-    rec,rep=choices[idx(fam+rar+'recipe',len(choices))];style,chosen=parts(fam,rec,fam+rar)
-    compile_recipe(tpl,style,chosen);base=template_frames(tpl);vocab=[tuple(c) for c in style.get('vocabulary',[])]
-    cap=pol['familyCapacity'];out=CAND/f'{n:03d}_{rar}_{fam}';out.mkdir(parents=True,exist_ok=True);logs={}
-    for v in VIEWS:
-        fr=apply_style_profile(base[v],style)
-        fr=trim(fr,tpl.anchors[v].get('band_center',tpl.anchors[v]['center']),vocab,rec.get('trim','none'));log=[]
-        for p in chosen:
-            k=p['partKind']
-            if k in ('MOTIF','MATERIAL_PATTERN'):
-                limit=min(cap.get('maxMotifFootprintCells',8),4 if k=='MOTIF' else 8)
-                fr,c=surface(fr,delta(p,v),tpl.anchors[v].get('crown_center',tpl.anchors[v]['center']),vocab,limit)
-            else:
-                limit={'tiny':2,'small':4,'medium':6,'large':8}[cap['surfaceAreaClass']]
-                fr,c=attach(fr,delta(p,v,True),tpl.anchors[v].get('attachment_edge',tpl.anchors[v]['right_edge']),vocab,limit)
-            log.append({'kind':k,'name':p.get('name'),'cellsApplied':c})
-        write_rgba_png(out/f'{v}.png',fr);logs[v]=log
-    return {'family':fam,'rarity':rar,'capacity':cap['surfaceAreaClass'],'recipe':rec,
-      'taste':{'complexity':rep.complexity,'budget':[rep.budget_min,rep.budget_max],'channels':list(rep.active_channels)},
-      'styleDonor':{'id':style.get('id'),'pack':style.get('pack'),'family':style.get('family')},
-      'parts':[{'kind':p['partKind'],'name':p.get('name'),'pack':p.get('pack')} for p in chosen],
-      'frames':{v:str((out/f'{v}.png').relative_to(ROOT)) for v in VIEWS},'renderLog':logs,
-      'template':tpl.id,'status':'CANDIDATE_REVIEW_REQUIRED'}
+    pol=load_family(fam);tpl=load_template_for_family(fam);visual=contract_for(fam);choices=pool(fam,rar)
+    base=template_frames(tpl);cap=pol['familyCapacity'];rejected=[]
+    start=idx(fam+rar+'recipe',len(choices))
+    for attempt in range(min(24,max(8,len(choices)*2))):
+        rec,rep=choices[(start+attempt)%len(choices)]
+        style,chosen,harmony=parts(fam,rec,fam+rar+f':{attempt}')
+        compile_recipe(tpl,style,chosen)
+        vocab=[tuple(c) for c in style.get('vocabulary',[])]
+        roles=palette_roles(vocab)
+        accent_kinds={feature_kind(x) for x in rep.accents if feature_kind(x)}
+        frames={};logs={};attempt_errors=[]
+        for v in VIEWS:
+            fr=apply_style_profile(base[v],style)
+            styled_reference=[row[:] for row in fr]
+            fr,line_meta=render_proportional_line(fr,visual['linePlacement'],roles,rec.get('trim','none'))
+            line_errors=validate_line(line_meta,visual['linePlacement'])
+            line_cells=set(tuple(q) for q in line_meta.get('cells',[]))
+            masks={};log=[]
+            for part in chosen:
+                k=part['partKind'];before=[row[:] for row in fr]
+                if k in ('MOTIF','MATERIAL_PATTERN'):
+                    limit=min(cap.get('maxMotifFootprintCells',8),4 if k=='MOTIF' else 8)
+                    fr,c=surface(fr,delta(part,v),tpl.anchors[v].get('crown_center',tpl.anchors[v]['center']),vocab,limit)
+                else:
+                    limit={'tiny':2,'small':4,'medium':6,'large':8}[cap['surfaceAreaClass']]
+                    fr,c=attach(fr,delta(part,v,True),tpl.anchors[v].get('attachment_edge',tpl.anchors[v]['right_edge']),vocab,limit)
+                for x,y in line_cells: fr[y][x]=before[y][x]
+                changed={(x,y) for y,row in enumerate(fr) for x,pix in enumerate(row) if pix!=before[y][x]}
+                masks.setdefault(k,set()).update(changed)
+                log.append({'kind':k,'name':part.get('name'),'cellsApplied':len(changed)})
+            pal_errors,pal_metrics=validate_palette_frame(fr,roles,visual,masks,harmony,reference_frame=styled_reference,accent_kinds=accent_kinds)
+            errors=line_errors+pal_errors
+            if errors: attempt_errors.extend(f'{v}:{e}' for e in errors)
+            frames[v]=fr;logs[v]={'line':line_meta,'parts':log,'palette':pal_metrics,'errors':errors}
+        if attempt_errors:
+            rejected.append({'attempt':attempt,'recipe':rec,'harmony':harmony,'errors':list(dict.fromkeys(attempt_errors))[:16]})
+            continue
+        out=CAND/f'{n:03d}_{rar}_{fam}';out.mkdir(parents=True,exist_ok=True)
+        for v,fr in frames.items():write_rgba_png(out/f'{v}.png',fr)
+        serial_roles={k:([list(x) for x in val] if k=='ramp' else list(val) if isinstance(val,tuple) else val) for k,val in roles.items()}
+        return {'family':fam,'rarity':rar,'capacity':cap['surfaceAreaClass'],'recipe':rec,
+          'taste':{'complexity':rep.complexity,'budget':[rep.budget_min,rep.budget_max],'channels':list(rep.active_channels),
+                   'primary':rep.primary,'secondary':list(rep.secondary),'accents':list(rep.accents)},
+          'styleDonor':{'id':style.get('id'),'pack':style.get('pack'),'family':style.get('family'),'harmonyTag':harmony},
+          'paletteRoles':serial_roles,
+          'parts':[{'kind':part['partKind'],'name':part.get('name'),'pack':part.get('pack')} for part in chosen],
+          'frames':{v:str((out/f'{v}.png').relative_to(ROOT)) for v in VIEWS},'renderLog':logs,
+          'rejectedAttempts':rejected,'visualContract':'generator/data/hat_visual_contracts.json',
+          'template':tpl.id,'status':'CANDIDATE_REVIEW_REQUIRED'}
+    reasons=sorted({e for row in rejected for e in row['errors']})
+    raise RuntimeError(f'{fam}/{rar}: visual sanity rejected all attempts: {reasons[:12]}')
 def label(f):return f.replace('catalog_hats_','').replace('more_accessories_and_stuff_','MAS ').replace('cottagecore_set_','CC ').replace('alt_fashion_set_','ALT ').replace('_',' ')
 def sheet(grid,k):
     rows=grid[k*10:(k+1)*10];cw,ch=300,180;s=blank_image(cw*4,ch*10,(238,236,229,255))
@@ -146,17 +180,21 @@ def sheet(grid,k):
         if x==0:draw_text(s,label(e['family'])[:43],x*cw+8,y*ch+20,scale=1)
         draw_text(s,','.join(e['taste']['channels'])[:42],x*cw+8,y*ch+33,scale=1)
         draw_text(s,('PARTS '+str(len(e['parts']))+' '+str(e['styleDonor']['family']))[:42],x*cw+8,y*ch+161,scale=1)
-    p=OUT/f'HAT_PRODUCTION_BATCH_01_{k+1}.png';write_rgba_png(p,s);return p
+    p=OUT/f'{BATCH.upper()}_{k+1}.png';write_rgba_png(p,s);return p
 def main():
     CAND.mkdir(parents=True,exist_ok=True)
     hats=sorted(e['family'] for e in list_families(include_manual=False) if load_family(e['family']).get('category')=='Hats')
-    man={'schema':'hat-production-batch/v1','batch':'01','families':len(hats),'humanArtApproved':False,'candidates':[]};grid=[];n=0
+    man={'schema':'hat-production-batch/v2','batch':BATCH,'families':len(hats),'humanArtApproved':False,'visualContractRegistry':'generator/data/hat_visual_contracts.json','proportionalLinePlacementEnabled':True,'paletteSanityEnabled':True,'candidates':[]};grid=[];n=0
     for fam in hats:
       row=[]
       for rar in RAR:
         n+=1;e=render(fam,rar,n);man['candidates'].append(e);row.append(e)
         print(f'{n:02d}/80 {rar:8} {e["capacity"]:6} {label(fam)} C{e["taste"]["complexity"]} parts={len(e["parts"])}')
       grid.append(row)
+    man['candidateCount']=len(man['candidates'])
+    man['rejectedAttemptCount']=sum(len(x.get('rejectedAttempts',[])) for x in man['candidates'])
+    contacts=[sheet(grid,0),sheet(grid,1)]
+    man['contactSheets']=[str(x.relative_to(ROOT)) for x in contacts]
     (OUT/'manifest.json').write_text(json.dumps(man,indent=2)+'\n')
-    print('CONTACT',sheet(grid,0));print('CONTACT',sheet(grid,1));print('MANIFEST',OUT/'manifest.json')
+    print('CONTACT',contacts[0]);print('CONTACT',contacts[1]);print('MANIFEST',OUT/'manifest.json')
 if __name__=='__main__':main()
