@@ -16,7 +16,7 @@
     "generated_last_resort"
   ],
   "generatedPaletteFallbackEnabled": false,
-  "humanArtApproved": false,
+  "humanArtApproved": true,
   "candidates": [
     {
       "index": 1,
@@ -54,7 +54,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 2,
@@ -92,7 +92,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 3,
@@ -130,7 +130,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 4,
@@ -168,7 +168,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 5,
@@ -206,7 +206,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 6,
@@ -244,7 +244,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 7,
@@ -282,7 +282,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 8,
@@ -320,7 +320,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 9,
@@ -358,7 +358,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 10,
@@ -396,7 +396,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 11,
@@ -434,7 +434,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 12,
@@ -472,7 +472,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 13,
@@ -510,7 +510,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 14,
@@ -548,7 +548,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 15,
@@ -586,7 +586,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 16,
@@ -624,7 +624,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 17,
@@ -662,7 +662,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 18,
@@ -699,7 +699,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 19,
@@ -736,7 +736,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 20,
@@ -773,7 +773,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 21,
@@ -810,7 +810,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 22,
@@ -847,7 +847,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 23,
@@ -884,7 +884,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 24,
@@ -921,7 +921,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 25,
@@ -958,7 +958,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 26,
@@ -995,7 +995,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 27,
@@ -1032,7 +1032,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 28,
@@ -1069,7 +1069,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 29,
@@ -1105,7 +1105,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 30,
@@ -1141,7 +1141,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 31,
@@ -1177,7 +1177,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 32,
@@ -1213,7 +1213,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 33,
@@ -1249,7 +1249,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 34,
@@ -1285,7 +1285,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 35,
@@ -1321,7 +1321,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 36,
@@ -1357,7 +1357,7 @@
       "lineFragmentErrors": [],
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     }
   ],
   "candidateCount": 36,
@@ -1369,5 +1369,6 @@
     "experiments/source_respecting_hat_batch_a_01/TULIP_HAT_DIRECTIONAL.png"
   ],
   "sourcePatchReconstructionExact": true,
-  "sourcePartRegistry": "generator/data/source_parts/hat_source_parts.json"
+  "sourcePartRegistry": "generator/data/source_parts/hat_source_parts.json",
+  "humanApprovalStatus": "HUMAN_ART_APPROVED"
 }

@@ -27938,7 +27938,9 @@
           "254,254,254": "spec2",
           "255,255,255": "spec2"
         }
-      }
+      },
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "beanie": {
       "pack": "More Accessories and Stuff",
@@ -27982,7 +27984,9 @@
           "217,217,217": "highlight",
           "255,255,255": "spec"
         }
-      }
+      },
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "straw_hat": {
       "pack": "More Accessories and Stuff",
@@ -28030,7 +28034,9 @@
           "217,217,217": "ribbon_light",
           "254,254,254": "ribbon_highlight"
         }
-      }
+      },
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "boater_hat": {
       "pack": "Cottagecore Set",
@@ -28093,7 +28099,9 @@
           "81,44,12": "body_locked_source_color",
           "255,225,104": "body_locked_source_color"
         }
-      }
+      },
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "mushroom_hat": {
       "pack": "Cottagecore Set",
@@ -28137,7 +28145,9 @@
           "202,179,120": "locked_source_color",
           "178,156,97": "locked_source_color"
         }
-      }
+      },
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "sun_hat": {
       "pack": "More Accessories and Stuff",
@@ -28198,7 +28208,9 @@
           "81,44,12": "body_locked_source_color",
           "255,225,104": "body_locked_source_color"
         }
-      }
+      },
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "tulip_hat": {
       "pack": "More Accessories and Stuff",
@@ -28237,7 +28249,9 @@
           "247,227,200": "pattern_midtone",
           "255,250,228": "pattern_light"
         }
-      }
+      },
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "alt_beanie": {
       "pack": "Alt-Fashion Set",
@@ -28301,7 +28315,9 @@
         "Beanie (Cat)": true,
         "Beanie (Floppy)": true
       },
-      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE",
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "alt_earmuffs": {
       "pack": "Alt-Fashion Set",
@@ -28366,7 +28382,9 @@
         "Earmuffs (Bat Wings)": false,
         "Earmuffs (Horns)": false
       },
-      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE",
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "alt_headband": {
       "pack": "Alt-Fashion Set",
@@ -28420,7 +28438,9 @@
         "Headband (Wide)": true,
         "Headband (Wide, Studded)": true
       },
-      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE",
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "cc_headband": {
       "pack": "Cottagecore Set",
@@ -28458,7 +28478,9 @@
         "Headband (Daisies)": true,
         "Headband (Ribbon)": true
       },
-      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE",
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "cc_headscarf": {
       "pack": "Cottagecore Set",
@@ -28526,7 +28548,9 @@
         "Headscarf (Small)": true,
         "Headscarf (Small, Dotted)": true
       },
-      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE",
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "cc_hood": {
       "pack": "Cottagecore Set",
@@ -28570,7 +28594,9 @@
         "Hood (Mushroom)": true,
         "Hood (Pointy)": true
       },
-      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE",
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "mas_bows": {
       "pack": "More Accessories and Stuff",
@@ -28622,7 +28648,9 @@
         "Bows (Double, Small 1)": true,
         "Bows (Double, Small 2)": true
       },
-      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE",
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "mas_crown": {
       "pack": "More Accessories and Stuff",
@@ -28677,7 +28705,9 @@
         "Crown (Diadem 1)": false,
         "Crown (Diadem 2)": true
       },
-      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE",
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "mas_earmuffs": {
       "pack": "More Accessories and Stuff",
@@ -28722,7 +28752,9 @@
         "Earmuffs": false,
         "Earmuffs (Cat)": false
       },
-      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE",
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "mas_garland": {
       "pack": "More Accessories and Stuff",
@@ -28802,7 +28834,9 @@
         "Garland (Flowers 1)": false,
         "Garland (Flowers 2)": false
       },
-      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE",
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "mas_hair_buns": {
       "pack": "More Accessories and Stuff",
@@ -28844,7 +28878,9 @@
         "Hair Buns": false,
         "Hair Buns (Small)": false
       },
-      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE",
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "mas_headband": {
       "pack": "More Accessories and Stuff",
@@ -28941,7 +28977,9 @@
         "Headband (Tie 1)": true,
         "Headband (Tie 2)": true
       },
-      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE",
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     },
     "mas_hood": {
       "pack": "More Accessories and Stuff",
@@ -29021,7 +29059,9 @@
         "Hood (Horns)": false,
         "Hood (Rabbit)": true
       },
-      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE",
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1"
     }
   },
   "rules": {

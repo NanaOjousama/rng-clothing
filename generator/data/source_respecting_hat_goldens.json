@@ -1,0 +1,1258 @@
+{
+  "schema": "source-respecting-hat-goldens/v1",
+  "humanArtApproved": true,
+  "approvedOn": "2026-09-24",
+  "familyCount": 20,
+  "authority": "GOLDEN_SOURCE_RESPECTING_V1",
+  "rules": {
+    "approvedPairWhitelistRequired": true,
+    "genericProjectionAllowed": false,
+    "genericLineSynthesisAllowed": false,
+    "legacyStyleProfileFallbackAllowed": false,
+    "sourceConstructionRulesAuthoritative": true,
+    "rarityMaySelectOnlyApprovedStatePalettePairs": true,
+    "presentationLeanValues": [
+      "neutral",
+      "male_leaning",
+      "female_leaning"
+    ],
+    "presentationLeanIsBiasNotHardLock": true
+  },
+  "approvedBatches": [
+    {
+      "id": "pilot",
+      "manifest": "experiments/source_respecting_hat_pilot_01/manifest.json",
+      "candidateCount": 27,
+      "manifestSha256": "99af534f1396d744ae8301b0ad9b0d8025130f3ad27927ae1a3697fefe60f6f2"
+    },
+    {
+      "id": "batch_a",
+      "manifest": "experiments/source_respecting_hat_batch_a_01/manifest.json",
+      "candidateCount": 36,
+      "manifestSha256": "e4ef6b0552e762790133fdc7b345105219f0663a1049119fbfd9598d96bc75c0"
+    },
+    {
+      "id": "remaining",
+      "manifest": "experiments/source_respecting_hat_remaining_01/manifest.json",
+      "candidateCount": 84,
+      "manifestSha256": "3d1fed8b0bd035e4bb013c0600c30ab231287a1e8c7ccef44858e9423ec6b00a"
+    }
+  ],
+  "families": {
+    "catalog_hats_alt_fashion_set_beanie": {
+      "templateFamily": "catalog_hats_alt_fashion_set_beanie",
+      "sourceFamily": "alt_beanie",
+      "approvedPairs": [
+        {
+          "state": "Beanie",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Beanie (Bunny)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Beanie (Cat)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Beanie (Floppy)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Beanie",
+          "palette": "stone_blue",
+          "batch": "remaining"
+        },
+        {
+          "state": "Beanie",
+          "palette": "rose_cream",
+          "batch": "remaining"
+        },
+        {
+          "state": "Beanie",
+          "palette": "cocoa_gold",
+          "batch": "remaining"
+        },
+        {
+          "state": "Beanie (Bunny)",
+          "palette": "stone_blue",
+          "batch": "remaining"
+        }
+      ],
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Beanie",
+        "Beanie (Bunny)",
+        "Beanie (Cat)",
+        "Beanie (Floppy)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "4ea3dc68c0aac25c7498daf85d6f26b0a353c6bf7dcdcc25fcf01d78d5e1edb5"
+    },
+    "catalog_hats_alt_fashion_set_earmuffs_horns": {
+      "templateFamily": "catalog_hats_alt_fashion_set_earmuffs_horns",
+      "sourceFamily": "alt_earmuffs",
+      "approvedPairs": [
+        {
+          "state": "Earmuffs (Angel Wings)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Earmuffs (Bat Wings)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Earmuffs (Horns)",
+          "palette": "source_native",
+          "batch": "remaining"
+        }
+      ],
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Earmuffs (Angel Wings)",
+        "Earmuffs (Bat Wings)",
+        "Earmuffs (Horns)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "1e6bae39dad725a3bf99193fa0d09b78ff5ae7630e0bffb2b77452c1b21b6fb7"
+    },
+    "catalog_hats_alt_fashion_set_headband_studded": {
+      "templateFamily": "catalog_hats_alt_fashion_set_headband_studded",
+      "sourceFamily": "alt_headband",
+      "approvedPairs": [
+        {
+          "state": "Headband (Horns)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Studded)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Wide)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Wide, Studded)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Horns)",
+          "palette": "stone_blue",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Horns)",
+          "palette": "rose_cream",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Horns)",
+          "palette": "cocoa_gold",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Studded)",
+          "palette": "stone_blue",
+          "batch": "remaining"
+        }
+      ],
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Headband (Horns)",
+        "Headband (Studded)",
+        "Headband (Wide)",
+        "Headband (Wide, Studded)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "2a3125311d7bed1224c8bd4a30e47c3d166aca9c7e1beaf7b933647d88f9a5ae"
+    },
+    "catalog_hats_cottagecore_set_beret": {
+      "templateFamily": "catalog_hats_cottagecore_set_beret",
+      "sourceFamily": "beret",
+      "approvedPairs": [
+        {
+          "state": "Beret",
+          "palette": "source_native",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beret",
+          "palette": "stone_blue",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beret",
+          "palette": "rose_cream",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beret (Dotted)",
+          "palette": "source_native",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beret (Dotted)",
+          "palette": "rose_cream",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beret (Leaf)",
+          "palette": "source_native",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beret (Leaf)",
+          "palette": "stone_blue",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beret (Ribbon)",
+          "palette": "source_native",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beret (Ribbon)",
+          "palette": "rose_cream",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beret (White Ribbon)",
+          "palette": "source_native",
+          "batch": "pilot"
+        }
+      ],
+      "lockedConstruction": [
+        "base_alpha",
+        "crown",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "source_palette_tint"
+      ],
+      "optionalAddonParts": [
+        "beret.dots_patch",
+        "beret.leaf_patch"
+      ],
+      "alternateConstructionStates": [
+        "Beret (Ribbon)",
+        "Beret (White Ribbon)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "b152e30d4e16462bf1eba47a5f647fb9ceaa436d590808f7b12e5237c6cfc381"
+    },
+    "catalog_hats_cottagecore_set_boater_hat": {
+      "templateFamily": "catalog_hats_cottagecore_set_boater_hat",
+      "sourceFamily": "boater_hat",
+      "approvedPairs": [
+        {
+          "state": "Boater Hat",
+          "palette": "source_native",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Boater Hat",
+          "palette": "cream",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Boater Hat",
+          "palette": "dusty_rose",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Boater Hat",
+          "palette": "sage",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Boater Hat (Bow)",
+          "palette": "source_native",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Boater Hat (Bow)",
+          "palette": "dusty_rose",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Boater Hat (Bow)",
+          "palette": "sage",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Boater Hat (Ribbons)",
+          "palette": "source_native",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Boater Hat (Ribbons)",
+          "palette": "cream",
+          "batch": "batch_a"
+        }
+      ],
+      "lockedConstruction": [
+        "base_alpha",
+        "crown",
+        "brim",
+        "built_in_band_geometry",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "built_in_band_color"
+      ],
+      "optionalAddonParts": [
+        "boater.bow_patch",
+        "boater.ribbons_patch"
+      ],
+      "alternateConstructionStates": [],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "403cea962fdc0f54135c999aec5f3870a6bdf1e6afb4366fb03ac2ec62ce6ea9"
+    },
+    "catalog_hats_cottagecore_set_headband_daisies": {
+      "templateFamily": "catalog_hats_cottagecore_set_headband_daisies",
+      "sourceFamily": "cc_headband",
+      "approvedPairs": [
+        {
+          "state": "Headband (Daisies)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Ribbon)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Daisies)",
+          "palette": "stone_blue",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Daisies)",
+          "palette": "rose_cream",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Daisies)",
+          "palette": "cocoa_gold",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Ribbon)",
+          "palette": "stone_blue",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Ribbon)",
+          "palette": "rose_cream",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Ribbon)",
+          "palette": "cocoa_gold",
+          "batch": "remaining"
+        }
+      ],
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Headband (Daisies)",
+        "Headband (Ribbon)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "ee65a067fb152696e007183627152039f4b18920f32615551de659f65e92220e"
+    },
+    "catalog_hats_cottagecore_set_headscarf": {
+      "templateFamily": "catalog_hats_cottagecore_set_headscarf",
+      "sourceFamily": "cc_headscarf",
+      "approvedPairs": [
+        {
+          "state": "Headscarf",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headscarf (Dotted)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headscarf (Small)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headscarf (Small, Dotted)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headscarf",
+          "palette": "stone_blue",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headscarf",
+          "palette": "rose_cream",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headscarf",
+          "palette": "cocoa_gold",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headscarf (Dotted)",
+          "palette": "stone_blue",
+          "batch": "remaining"
+        }
+      ],
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Headscarf",
+        "Headscarf (Dotted)",
+        "Headscarf (Small)",
+        "Headscarf (Small, Dotted)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "2a3b06646c155b7eab3a43d5212b838495ba4d266c1a1c72a8d67f1190470ff0"
+    },
+    "catalog_hats_cottagecore_set_hood_mushroom": {
+      "templateFamily": "catalog_hats_cottagecore_set_hood_mushroom",
+      "sourceFamily": "cc_hood",
+      "approvedPairs": [
+        {
+          "state": "Hood (Mushroom)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hood (Pointy)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hood (Mushroom)",
+          "palette": "stone_blue",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hood (Mushroom)",
+          "palette": "rose_cream",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hood (Mushroom)",
+          "palette": "cocoa_gold",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hood (Pointy)",
+          "palette": "stone_blue",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hood (Pointy)",
+          "palette": "rose_cream",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hood (Pointy)",
+          "palette": "cocoa_gold",
+          "batch": "remaining"
+        }
+      ],
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Hood (Mushroom)",
+        "Hood (Pointy)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "9ca0fd91b0d4651b3c462e8bbb7d7b1c21c8d621440501a0ca98602b9c76ed1b"
+    },
+    "catalog_hats_cottagecore_set_mushroom_hat": {
+      "templateFamily": "catalog_hats_cottagecore_set_mushroom_hat",
+      "sourceFamily": "mushroom_hat",
+      "approvedPairs": [
+        {
+          "state": "Mushroom Hat",
+          "palette": "source_native",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Mushroom Hat",
+          "palette": "stone_blue",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Mushroom Hat",
+          "palette": "rose_cream",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Mushroom Hat",
+          "palette": "cocoa_gold",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Mushroom Hat (Dotted)",
+          "palette": "source_native",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Mushroom Hat (Dotted)",
+          "palette": "stone_blue",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Mushroom Hat (Dotted)",
+          "palette": "rose_cream",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Mushroom Hat (Dotted)",
+          "palette": "cocoa_gold",
+          "batch": "batch_a"
+        }
+      ],
+      "lockedConstruction": [
+        "base_alpha",
+        "cap",
+        "stem",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "cap_color",
+        "source_authored_dot_pattern"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "a8e950fe71f14e24ebcaffe4ce72514d4de3d6857f7760baeea544b2f2bdae8b"
+    },
+    "catalog_hats_more_accessories_and_stuff_beanie": {
+      "templateFamily": "catalog_hats_more_accessories_and_stuff_beanie",
+      "sourceFamily": "beanie",
+      "approvedPairs": [
+        {
+          "state": "Beanie",
+          "palette": "source_native",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beanie",
+          "palette": "stone_blue",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beanie",
+          "palette": "rose_cream",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beanie (Floppy)",
+          "palette": "source_native",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beanie (Floppy)",
+          "palette": "stone_blue",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beanie (Floppy)",
+          "palette": "rose_cream",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beanie (Cat)",
+          "palette": "source_native",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beanie (Cat)",
+          "palette": "stone_blue",
+          "batch": "pilot"
+        },
+        {
+          "state": "Beanie (Cat)",
+          "palette": "rose_cream",
+          "batch": "pilot"
+        }
+      ],
+      "lockedConstruction": [
+        "base_alpha",
+        "crown",
+        "default_knit_band",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "source_palette_tint"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Beanie",
+        "Beanie (Floppy)",
+        "Beanie (Cat)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "d15324d31ced540487e7d26e6bf7f5a226a95b6aaebfe4c412889c1c1640ed13"
+    },
+    "catalog_hats_more_accessories_and_stuff_bows_double_small_1": {
+      "templateFamily": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+      "sourceFamily": "mas_bows",
+      "approvedPairs": [
+        {
+          "state": "Bows (Double)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Bows (Double, Side)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Bows (Double, Small 1)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Bows (Double, Small 2)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Bows (Double)",
+          "palette": "stone_blue",
+          "batch": "remaining"
+        },
+        {
+          "state": "Bows (Double)",
+          "palette": "rose_cream",
+          "batch": "remaining"
+        },
+        {
+          "state": "Bows (Double)",
+          "palette": "cocoa_gold",
+          "batch": "remaining"
+        },
+        {
+          "state": "Bows (Double, Side)",
+          "palette": "stone_blue",
+          "batch": "remaining"
+        }
+      ],
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Bows (Double)",
+        "Bows (Double, Side)",
+        "Bows (Double, Small 1)",
+        "Bows (Double, Small 2)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "f9fdddedf0c81cf4402037ec68a9a4f3c7ef89ed725325e4f450fd49dbd2f1ff"
+    },
+    "catalog_hats_more_accessories_and_stuff_crown_diadem_1": {
+      "templateFamily": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+      "sourceFamily": "mas_crown",
+      "approvedPairs": [
+        {
+          "state": "Crown (Coronet)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Crown (Diadem 1)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Crown (Diadem 2)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Crown (Diadem 2)",
+          "palette": "stone_blue",
+          "batch": "remaining"
+        },
+        {
+          "state": "Crown (Diadem 2)",
+          "palette": "rose_cream",
+          "batch": "remaining"
+        },
+        {
+          "state": "Crown (Diadem 2)",
+          "palette": "cocoa_gold",
+          "batch": "remaining"
+        }
+      ],
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Crown (Coronet)",
+        "Crown (Diadem 1)",
+        "Crown (Diadem 2)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "1ca50175f1a2109fef87daf255c1b21b87011060506efc5fb8b14c70a152a197"
+    },
+    "catalog_hats_more_accessories_and_stuff_earmuffs": {
+      "templateFamily": "catalog_hats_more_accessories_and_stuff_earmuffs",
+      "sourceFamily": "mas_earmuffs",
+      "approvedPairs": [
+        {
+          "state": "Earmuffs",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Earmuffs (Cat)",
+          "palette": "source_native",
+          "batch": "remaining"
+        }
+      ],
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Earmuffs",
+        "Earmuffs (Cat)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "91e3becc7c48dc1efe83c0487bda21347c0194239857724e829d505c45de6e77"
+    },
+    "catalog_hats_more_accessories_and_stuff_garland_dried_1": {
+      "templateFamily": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+      "sourceFamily": "mas_garland",
+      "approvedPairs": [
+        {
+          "state": "Garland 1",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Garland 2",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Garland (Dried 1)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Garland (Dried 2)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Garland (Flowers 1)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Garland (Flowers 2)",
+          "palette": "source_native",
+          "batch": "remaining"
+        }
+      ],
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Garland 1",
+        "Garland 2",
+        "Garland (Dried 1)",
+        "Garland (Dried 2)",
+        "Garland (Flowers 1)",
+        "Garland (Flowers 2)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "743d712ff53786ff8fe8bbac61d85fa6dd356062fe0b306d4fc7e643e484f1bf"
+    },
+    "catalog_hats_more_accessories_and_stuff_hair_buns": {
+      "templateFamily": "catalog_hats_more_accessories_and_stuff_hair_buns",
+      "sourceFamily": "mas_hair_buns",
+      "approvedPairs": [
+        {
+          "state": "Hair Buns",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hair Buns (Small)",
+          "palette": "source_native",
+          "batch": "remaining"
+        }
+      ],
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Hair Buns",
+        "Hair Buns (Small)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "77b3d1c004699bd6b2494f71b80e3f64456789114da6e50e2cb4d3c5c6b9d94a"
+    },
+    "catalog_hats_more_accessories_and_stuff_headband": {
+      "templateFamily": "catalog_hats_more_accessories_and_stuff_headband",
+      "sourceFamily": "mas_headband",
+      "approvedPairs": [
+        {
+          "state": "Headband",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Cat 1)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Cat 2)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Frilly 1)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Frilly 2)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Puffs)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Small)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Tie 1)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Headband (Tie 2)",
+          "palette": "source_native",
+          "batch": "remaining"
+        }
+      ],
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Headband",
+        "Headband (Cat 1)",
+        "Headband (Cat 2)",
+        "Headband (Frilly 1)",
+        "Headband (Frilly 2)",
+        "Headband (Puffs)",
+        "Headband (Small)",
+        "Headband (Tie 1)",
+        "Headband (Tie 2)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "8241a1bf0095f653a3605d4556673813271615810a1ea2d62e7d3c0a434356fb"
+    },
+    "catalog_hats_more_accessories_and_stuff_hood": {
+      "templateFamily": "catalog_hats_more_accessories_and_stuff_hood",
+      "sourceFamily": "mas_hood",
+      "approvedPairs": [
+        {
+          "state": "Hood",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hood (Cat)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hood (Frog)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hood (Horns)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hood (Rabbit)",
+          "palette": "source_native",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hood",
+          "palette": "stone_blue",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hood",
+          "palette": "rose_cream",
+          "batch": "remaining"
+        },
+        {
+          "state": "Hood",
+          "palette": "cocoa_gold",
+          "batch": "remaining"
+        }
+      ],
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Hood",
+        "Hood (Cat)",
+        "Hood (Frog)",
+        "Hood (Horns)",
+        "Hood (Rabbit)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "4973f4b6e228d91498d98062ab575e91b3eafdd8792a91054523c6ab06bdba41"
+    },
+    "catalog_hats_more_accessories_and_stuff_straw_hat": {
+      "templateFamily": "catalog_hats_more_accessories_and_stuff_straw_hat",
+      "sourceFamily": "straw_hat",
+      "approvedPairs": [
+        {
+          "state": "Straw Hat",
+          "palette": "source_native",
+          "batch": "pilot"
+        },
+        {
+          "state": "Straw Hat",
+          "palette": "cream",
+          "batch": "pilot"
+        },
+        {
+          "state": "Straw Hat",
+          "palette": "dusty_rose",
+          "batch": "pilot"
+        },
+        {
+          "state": "Straw Hat",
+          "palette": "sage",
+          "batch": "pilot"
+        },
+        {
+          "state": "Straw Hat (Messy)",
+          "palette": "source_native",
+          "batch": "pilot"
+        },
+        {
+          "state": "Straw Hat (Messy)",
+          "palette": "cream",
+          "batch": "pilot"
+        },
+        {
+          "state": "Straw Hat (Messy)",
+          "palette": "dusty_rose",
+          "batch": "pilot"
+        },
+        {
+          "state": "Straw Hat (Messy)",
+          "palette": "sage",
+          "batch": "pilot"
+        }
+      ],
+      "lockedConstruction": [
+        "base_alpha",
+        "crown",
+        "brim",
+        "built_in_ribbon_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "built_in_ribbon_color"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Straw Hat",
+        "Straw Hat (Messy)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "0053a619d6cbeebf839f9e6807e28cf9c18f541ee6d2be1e94eab71204f7b37c"
+    },
+    "catalog_hats_more_accessories_and_stuff_sun_hat": {
+      "templateFamily": "catalog_hats_more_accessories_and_stuff_sun_hat",
+      "sourceFamily": "sun_hat",
+      "approvedPairs": [
+        {
+          "state": "Sun Hat",
+          "palette": "source_native",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Sun Hat",
+          "palette": "stone_blue",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Sun Hat",
+          "palette": "rose_cream",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Sun Hat",
+          "palette": "cocoa_gold",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Sun Hat (Flowers)",
+          "palette": "source_native",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Sun Hat (Flowers)",
+          "palette": "stone_blue",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Sun Hat (Flowers)",
+          "palette": "rose_cream",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Sun Hat (Ribbon)",
+          "palette": "source_native",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Sun Hat (Ribbon)",
+          "palette": "cream",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Sun Hat (Ribbon)",
+          "palette": "dusty_rose",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Sun Hat (Ribbon)",
+          "palette": "sage",
+          "batch": "batch_a"
+        }
+      ],
+      "lockedConstruction": [
+        "base_alpha",
+        "crown",
+        "brim",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color",
+        "source_ribbon_color"
+      ],
+      "optionalAddonParts": [
+        "sun_hat.flowers_patch"
+      ],
+      "alternateConstructionStates": [
+        "Sun Hat (Ribbon)"
+      ],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "dbb6c359db6ca04ad76395b92e341124dda40783f45997c4bcb1476752b0eb22"
+    },
+    "catalog_hats_more_accessories_and_stuff_tulip_hat": {
+      "templateFamily": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+      "sourceFamily": "tulip_hat",
+      "approvedPairs": [
+        {
+          "state": "Tulip Hat",
+          "palette": "source_native",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Tulip Hat",
+          "palette": "stone_blue",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Tulip Hat",
+          "palette": "rose_cream",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Tulip Hat",
+          "palette": "cocoa_gold",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Tulip Hat (Striped)",
+          "palette": "source_native",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Tulip Hat (Striped)",
+          "palette": "cream",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Tulip Hat (Striped)",
+          "palette": "dusty_rose",
+          "batch": "batch_a"
+        },
+        {
+          "state": "Tulip Hat (Striped)",
+          "palette": "sage",
+          "batch": "batch_a"
+        }
+      ],
+      "lockedConstruction": [
+        "base_alpha",
+        "petal_silhouette",
+        "defining_folds",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color",
+        "source_authored_stripe_pattern"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [],
+      "humanArtApproved": true,
+      "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+      "contractDigest": "2354686693087aa95d8b5b11d7d201ae8f88d0957f6772c987820f163b038c99"
+    }
+  },
+  "sourcePartsSha256": "f9f0d1d64c13b317555e4aab3eaeaf7ef1bfd60b98faa7678a5b8168a2a9032e"
+}

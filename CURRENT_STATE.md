@@ -1185,3 +1185,37 @@ Test batch:
 - Manifest records model detections, family/state selection, extracted RGB/palette, and source paths.
 
 Production generator was not modified by this prototype.
+
+## 2026-09-24 — Hat goldens frozen; production compositor replaced
+The user approved the complete source-respecting hat proof set. All 20 promoted hat families are now frozen as human-approved golden families.
+
+Golden authority:
+- experiments/source_respecting_hat_pilot_01/manifest.json -> HUMAN_ART_APPROVED
+- experiments/source_respecting_hat_batch_a_01/manifest.json -> HUMAN_ART_APPROVED
+- experiments/source_respecting_hat_remaining_01/manifest.json -> HUMAN_ART_APPROVED
+- generator/data/source_respecting_hat_goldens.json is the production whitelist.
+- 20/20 promoted hat families are mapped to golden source families.
+- 147 approved source-state / palette pairs are whitelisted.
+- source construction/feature contracts are marked GOLDEN_SOURCE_RESPECTING_V1.
+- generic donor projection, generic line synthesis, and legacy STYLE_PROFILE fallback are disabled for production hats.
+
+Production renderer:
+- tools/build_hat_production_batch.py was replaced with the source-respecting production path.
+- generator/source_respecting_hat_production.py keeps the existing taste-policy recipe system, family-capacity compression, rarity budgets, conflicts/exclusions, and visual precheck.
+- Active production test rarities: Common / Uncommon / Rare / Epic.
+- Every pixel render must select an approved golden state/palette pair; there is no fallback compositor.
+- Presentation lean remains optional and bias-only: neutral / male_leaning / female_leaning. It never hard-locks gender or palette.
+- Small approved pools exhaust distinct approved states before reuse instead of fabricating extra rarity clutter.
+
+Final production test batch:
+- experiments/hat_production_source_respecting_final_01/
+- 80 candidates = 20 families x 4 rarities.
+- Rarity counts: Common 20 / Uncommon 20 / Rare 20 / Epic 20.
+- Cross-family sheets: FINAL_HAT_PRODUCTION_ALL.png, FINAL_HAT_PRODUCTION_OVERVIEW_A.png, FINAL_HAT_PRODUCTION_OVERVIEW_B.png.
+- 20 per-family directional sheets are under family_sheets/.
+- Final production batch remains CANDIDATE_REVIEW_REQUIRED until the user visually approves it.
+
+Validation:
+- validate_hat_production_source_respecting.py PASS.
+- All 80 saved frames pixel-match a fresh render from their approved golden pair.
+- Original pilot, Batch A, remaining-13, hat visual rules, taste policy, and catalog-promotion validators all PASS.

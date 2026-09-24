@@ -109,7 +109,7 @@
         "sun_hat",
         "tulip_hat"
       ],
-      "status": "HUMAN_ART_REVIEW_REQUIRED",
+      "status": "HUMAN_ART_APPROVED",
       "genericProjectionEnabled": false,
       "genericLineSynthesisEnabled": false
     },
@@ -129,10 +129,21 @@
         "mas_headband",
         "mas_hood"
       ],
-      "status": "HUMAN_ART_REVIEW_REQUIRED",
+      "status": "HUMAN_ART_APPROVED",
       "genericProjectionEnabled": false,
       "genericLineSynthesisEnabled": false,
       "wholeAuthoredSourceStateDefault": true
-    }
+    },
+    "status": "HUMAN_ART_APPROVED"
+  },
+  "production": {
+    "status": "AUTHORITATIVE",
+    "authority": "GOLDEN_SOURCE_RESPECTING_V1",
+    "familyCount": 20,
+    "genericProjectionEnabled": false,
+    "genericLineSynthesisEnabled": false,
+    "legacyStyleProfileFallbackEnabled": false,
+    "approvedPairWhitelistRequired": true,
+    "goldenRegistry": "generator/data/source_respecting_hat_goldens.json"
   }
 }

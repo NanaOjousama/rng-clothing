@@ -18,7 +18,7 @@
   "genericProjectionAllowed": false,
   "genericLineSynthesisAllowed": false,
   "generatedPaletteFallbackEnabled": false,
-  "humanArtApproved": false,
+  "humanArtApproved": true,
   "candidates": [
     {
       "index": 1,
@@ -47,7 +47,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 2,
@@ -76,7 +76,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 3,
@@ -105,7 +105,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 4,
@@ -134,7 +134,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 5,
@@ -163,7 +163,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 6,
@@ -192,7 +192,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 7,
@@ -221,7 +221,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 8,
@@ -250,7 +250,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 9,
@@ -279,7 +279,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 10,
@@ -308,7 +308,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 11,
@@ -337,7 +337,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 12,
@@ -366,7 +366,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 13,
@@ -395,7 +395,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 14,
@@ -424,7 +424,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 15,
@@ -453,7 +453,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 16,
@@ -482,7 +482,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 17,
@@ -511,7 +511,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 18,
@@ -540,7 +540,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 19,
@@ -569,7 +569,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 20,
@@ -598,7 +598,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 21,
@@ -627,7 +627,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 22,
@@ -656,7 +656,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 23,
@@ -685,7 +685,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 24,
@@ -714,7 +714,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 25,
@@ -743,7 +743,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 26,
@@ -772,7 +772,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 27,
@@ -801,7 +801,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 28,
@@ -830,7 +830,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 29,
@@ -859,7 +859,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 30,
@@ -888,7 +888,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 31,
@@ -917,7 +917,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 32,
@@ -946,7 +946,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 33,
@@ -975,7 +975,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 34,
@@ -1004,7 +1004,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 35,
@@ -1033,7 +1033,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 36,
@@ -1062,7 +1062,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 37,
@@ -1091,7 +1091,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 38,
@@ -1120,7 +1120,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 39,
@@ -1149,7 +1149,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 40,
@@ -1178,7 +1178,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 41,
@@ -1207,7 +1207,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 42,
@@ -1236,7 +1236,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 43,
@@ -1265,7 +1265,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 44,
@@ -1294,7 +1294,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 45,
@@ -1323,7 +1323,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 46,
@@ -1352,7 +1352,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 47,
@@ -1381,7 +1381,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 48,
@@ -1410,7 +1410,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 49,
@@ -1439,7 +1439,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 50,
@@ -1468,7 +1468,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 51,
@@ -1497,7 +1497,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 52,
@@ -1526,7 +1526,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 53,
@@ -1555,7 +1555,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 54,
@@ -1584,7 +1584,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 55,
@@ -1613,7 +1613,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 56,
@@ -1642,7 +1642,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 57,
@@ -1671,7 +1671,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 58,
@@ -1700,7 +1700,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 59,
@@ -1729,7 +1729,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 60,
@@ -1758,7 +1758,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 61,
@@ -1787,7 +1787,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 62,
@@ -1816,7 +1816,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 63,
@@ -1845,7 +1845,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 64,
@@ -1874,7 +1874,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 65,
@@ -1903,7 +1903,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 66,
@@ -1932,7 +1932,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 67,
@@ -1961,7 +1961,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 68,
@@ -1990,7 +1990,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 69,
@@ -2019,7 +2019,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 70,
@@ -2048,7 +2048,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 71,
@@ -2077,7 +2077,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 72,
@@ -2106,7 +2106,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 73,
@@ -2135,7 +2135,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 74,
@@ -2164,7 +2164,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 75,
@@ -2193,7 +2193,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 76,
@@ -2222,7 +2222,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 77,
@@ -2251,7 +2251,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 78,
@@ -2280,7 +2280,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 79,
@@ -2309,7 +2309,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 80,
@@ -2338,7 +2338,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 81,
@@ -2367,7 +2367,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 82,
@@ -2396,7 +2396,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 83,
@@ -2425,7 +2425,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     },
     {
       "index": 84,
@@ -2454,7 +2454,7 @@
       },
       "genericProjectionUsed": false,
       "genericLineUsed": false,
-      "status": "HUMAN_ART_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED"
     }
   ],
   "candidateCount": 84,
@@ -2475,5 +2475,6 @@
     "experiments/source_respecting_hat_remaining_01/MAS_HEADBAND_DIRECTIONAL.png",
     "experiments/source_respecting_hat_remaining_01/MAS_HOOD_DIRECTIONAL.png",
     "experiments/source_respecting_hat_remaining_01/REMAINING_BATCH_D_OVERVIEW.png"
-  ]
+  ],
+  "humanApprovalStatus": "HUMAN_ART_APPROVED"
 }
