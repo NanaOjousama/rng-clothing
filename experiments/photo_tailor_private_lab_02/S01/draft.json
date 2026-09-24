@@ -1,0 +1,164 @@
+{
+  "control_id": "shirt_blouse",
+  "canvas_width": 64,
+  "canvas_height": 96,
+  "views": [
+    {
+      "facing": "front",
+      "width": 16,
+      "height": 16,
+      "bbox": [
+        0,
+        0,
+        15,
+        15
+      ],
+      "opaque": 216,
+      "regions": {
+        "upper": 56,
+        "left_sleeve": 28,
+        "torso": 64,
+        "right_sleeve": 28,
+        "hem": 40
+      },
+      "shade_steps": {
+        "-2": 54,
+        "0": 90,
+        "-1": 59,
+        "1": 13
+      }
+    },
+    {
+      "facing": "right",
+      "width": 16,
+      "height": 16,
+      "bbox": [
+        0,
+        0,
+        13,
+        15
+      ],
+      "opaque": 176,
+      "regions": {
+        "upper": 50,
+        "torso": 49,
+        "right_sleeve": 45,
+        "hem": 32
+      },
+      "shade_steps": {
+        "-2": 49,
+        "0": 60,
+        "-1": 52,
+        "1": 15
+      }
+    },
+    {
+      "facing": "left",
+      "width": 16,
+      "height": 16,
+      "bbox": [
+        2,
+        0,
+        15,
+        15
+      ],
+      "opaque": 176,
+      "regions": {
+        "upper": 50,
+        "torso": 61,
+        "left_sleeve": 33,
+        "hem": 32
+      },
+      "shade_steps": {
+        "-2": 49,
+        "-1": 55,
+        "0": 72
+      }
+    },
+    {
+      "facing": "back",
+      "width": 16,
+      "height": 16,
+      "bbox": [
+        0,
+        0,
+        15,
+        15
+      ],
+      "opaque": 220,
+      "regions": {
+        "upper": 60,
+        "right_sleeve": 28,
+        "torso": 64,
+        "left_sleeve": 28,
+        "hem": 40
+      },
+      "shade_steps": {
+        "-2": 54,
+        "0": 47,
+        "-1": 107,
+        "1": 12
+      }
+    }
+  ],
+  "regions": [
+    "hem",
+    "left_sleeve",
+    "right_sleeve",
+    "torso",
+    "upper"
+  ],
+  "semantic_pattern": "solid",
+  "color_bands": [
+    {
+      "region": "upper",
+      "top": 0.0,
+      "bottom": 0.28,
+      "color": "#eeeeee"
+    }
+  ],
+  "motifs": [],
+  "overlays": [],
+  "region_palettes": {
+    "torso": [
+      "#898989",
+      "#eeeeee",
+      "#c0c0c0"
+    ],
+    "upper": [
+      "#eeeeee",
+      "#c0c0c0",
+      "#898989"
+    ],
+    "left_sleeve": [
+      "#898989",
+      "#eeeeee"
+    ],
+    "right_sleeve": [
+      "#898989",
+      "#eeeeee"
+    ],
+    "hem": [
+      "#eeeeee",
+      "#898989"
+    ],
+    "whole": [
+      "#898989",
+      "#eeeeee",
+      "#c0c0c0"
+    ]
+  },
+  "normalized_pattern_coordinates": true,
+  "base_overlay_separation": true,
+  "shading_topology_preserved": true,
+  "texture_cleanup": true,
+  "coherent_four_view_projection": true,
+  "pattern_cells_after_cleanup": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "design_id": "S01_enhanced",
+  "description": "sailor dress reference"
+}

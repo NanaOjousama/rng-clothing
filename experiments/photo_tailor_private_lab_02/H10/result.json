@@ -1,0 +1,363 @@
+{
+  "input": {
+    "id": "H10",
+    "category": "hat",
+    "constructionHint": "cap",
+    "description": "cap side/back difficult",
+    "originalSource": "mario hat/sidebackmario.jpeg",
+    "file": "references/H10.jpeg"
+  },
+  "blueprint": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "hat",
+        "score": 0.05570179596543312,
+        "category": ""
+      },
+      {
+        "value": "shirt",
+        "score": 0.03333871811628342,
+        "category": ""
+      },
+      {
+        "value": "shirt",
+        "score": 0.02812037616968155,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "cap",
+        "score": 0.07477588206529617,
+        "category": "hat"
+      },
+      {
+        "value": "hat",
+        "score": 0.0706884115934372,
+        "category": "hat"
+      },
+      {
+        "value": "helmet",
+        "score": 0.05128336697816849,
+        "category": "hat"
+      },
+      {
+        "value": "crown",
+        "score": 0.014903935603797436,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "solid",
+        "score": 0.03167065232992172,
+        "category": ""
+      },
+      {
+        "value": "other",
+        "score": -0.0014438563957810402,
+        "category": ""
+      },
+      {
+        "value": "graphic",
+        "score": -0.007414066232740879,
+        "category": ""
+      },
+      {
+        "value": "logo",
+        "score": -0.007471676915884018,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.059268828481435776,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "solid",
+    "paletteRgb": [
+      [
+        228,
+        48,
+        59
+      ],
+      [
+        189,
+        23,
+        32
+      ],
+      [
+        211,
+        37,
+        46
+      ],
+      [
+        192,
+        29,
+        37
+      ],
+      [
+        233,
+        58,
+        69
+      ],
+      [
+        218,
+        58,
+        69
+      ]
+    ],
+    "paletteHex": [
+      "#e4303b",
+      "#bd1720",
+      "#d3252e",
+      "#c01d25",
+      "#e93a45",
+      "#da3a45"
+    ],
+    "primaryColor": "#e4303b",
+    "secondaryColor": "#bd1720",
+    "accentColor": "#d3252e"
+  },
+  "design": {
+    "id": "H10_enhanced",
+    "description": "cap side/back difficult",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#e4303b",
+        "#bd1720",
+        "#d3252e"
+      ],
+      "band": [
+        "#d3252e",
+        "#bd1720",
+        "#e4303b"
+      ],
+      "brim": [
+        "#e4303b",
+        "#bd1720"
+      ],
+      "hem": [
+        "#bd1720",
+        "#e4303b"
+      ],
+      "lower": [
+        "#bd1720",
+        "#e4303b"
+      ],
+      "whole": [
+        "#e4303b",
+        "#bd1720",
+        "#d3252e"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "band",
+        "top": 0.45,
+        "bottom": 0.84,
+        "color": "#d3252e"
+      }
+    ],
+    "motifs": [],
+    "overlays": []
+  },
+  "draft": {
+    "control_id": "cap",
+    "canvas_width": 64,
+    "canvas_height": 96,
+    "views": [
+      {
+        "facing": "front",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          0,
+          0,
+          19,
+          19
+        ],
+        "opaque": 326,
+        "regions": {
+          "crown": 228,
+          "band": 40,
+          "brim": 58
+        },
+        "shade_steps": {
+          "-2": 62,
+          "-1": 69,
+          "0": 195
+        }
+      },
+      {
+        "facing": "right",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          1,
+          5,
+          18,
+          14
+        ],
+        "opaque": 132,
+        "regions": {
+          "crown": 84,
+          "band": 18,
+          "brim": 30
+        },
+        "shade_steps": {
+          "-2": 41,
+          "-1": 65,
+          "1": 8,
+          "0": 18
+        }
+      },
+      {
+        "facing": "left",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          1,
+          5,
+          18,
+          14
+        ],
+        "opaque": 132,
+        "regions": {
+          "crown": 84,
+          "band": 18,
+          "brim": 30
+        },
+        "shade_steps": {
+          "-2": 41,
+          "-1": 65,
+          "1": 8,
+          "0": 18
+        }
+      },
+      {
+        "facing": "back",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          4,
+          4,
+          15,
+          14
+        ],
+        "opaque": 108,
+        "regions": {
+          "crown": 62,
+          "band": 24,
+          "brim": 22
+        },
+        "shade_steps": {
+          "-2": 34,
+          "0": 42,
+          "-1": 28,
+          "1": 4
+        }
+      }
+    ],
+    "regions": [
+      "band",
+      "brim",
+      "crown"
+    ],
+    "semantic_pattern": "solid",
+    "color_bands": [
+      {
+        "region": "band",
+        "top": 0.45,
+        "bottom": 0.84,
+        "color": "#d3252e"
+      }
+    ],
+    "motifs": [],
+    "overlays": [],
+    "region_palettes": {
+      "crown": [
+        "#e4303b",
+        "#bd1720",
+        "#d3252e"
+      ],
+      "band": [
+        "#d3252e",
+        "#bd1720",
+        "#e4303b"
+      ],
+      "brim": [
+        "#e4303b",
+        "#bd1720"
+      ],
+      "hem": [
+        "#bd1720",
+        "#e4303b"
+      ],
+      "lower": [
+        "#bd1720",
+        "#e4303b"
+      ],
+      "whole": [
+        "#e4303b",
+        "#bd1720",
+        "#d3252e"
+      ]
+    },
+    "normalized_pattern_coordinates": true,
+    "base_overlay_separation": true,
+    "shading_topology_preserved": true,
+    "texture_cleanup": true,
+    "coherent_four_view_projection": true,
+    "pattern_cells_after_cleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "design_id": "H10_enhanced",
+    "description": "cap side/back difficult"
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 7.87,
+      "pattern_continuity": 8.8,
+      "motif_location": 8.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "enhanced": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 9.47,
+      "pattern_continuity": 9.0,
+      "motif_location": 8.5,
+      "four_view_coherence": 9.8,
+      "stardew_readability": 9.5,
+      "junk_control": 9.7
+    },
+    "baselineOverall": 9.31,
+    "enhancedOverall": 9.42,
+    "delta": 0.11,
+    "patternDensityByView": {
+      "front": 0.0,
+      "right": 0.0,
+      "left": 0.0,
+      "back": 0.0
+    },
+    "overlayPixelsByView": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+  }
+}

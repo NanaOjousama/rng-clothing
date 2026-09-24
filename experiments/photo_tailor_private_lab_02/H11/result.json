@@ -1,0 +1,381 @@
+{
+  "input": {
+    "id": "H11",
+    "category": "hat",
+    "constructionHint": "cap",
+    "description": "soft-cap motif sheet",
+    "originalSource": "motif/softcap_motif.jpeg",
+    "file": "references/H11.jpeg"
+  },
+  "blueprint": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "none",
+        "score": 0.043093059211969376,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.036884963512420654,
+        "category": ""
+      },
+      {
+        "value": "hat",
+        "score": 0.034830860793590546,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "helmet",
+        "score": 0.026173260062932968,
+        "category": "hat"
+      },
+      {
+        "value": "bow",
+        "score": 0.01884659193456173,
+        "category": "hat"
+      },
+      {
+        "value": "crown",
+        "score": 0.016335779801011086,
+        "category": "hat"
+      },
+      {
+        "value": "cap",
+        "score": 0.0162932351231575,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "logo",
+        "score": 0.06566155701875687,
+        "category": ""
+      },
+      {
+        "value": "other",
+        "score": 0.05420154333114624,
+        "category": ""
+      },
+      {
+        "value": "geometric",
+        "score": 0.051449041813611984,
+        "category": ""
+      },
+      {
+        "value": "color_block",
+        "score": 0.0388602539896965,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.03956933692097664,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "logo",
+    "paletteRgb": [
+      [
+        61,
+        80,
+        76
+      ],
+      [
+        229,
+        228,
+        227
+      ],
+      [
+        238,
+        238,
+        237
+      ],
+      [
+        225,
+        225,
+        224
+      ],
+      [
+        193,
+        191,
+        189
+      ],
+      [
+        122,
+        93,
+        78
+      ]
+    ],
+    "paletteHex": [
+      "#3d504c",
+      "#e5e4e3",
+      "#eeeeed",
+      "#e1e1e0",
+      "#c1bfbd",
+      "#7a5d4e"
+    ],
+    "primaryColor": "#3d504c",
+    "secondaryColor": "#e5e4e3",
+    "accentColor": "#eeeeed"
+  },
+  "design": {
+    "id": "H11_enhanced",
+    "description": "soft-cap motif sheet",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#3d504c",
+        "#e5e4e3",
+        "#eeeeed"
+      ],
+      "band": [
+        "#eeeeed",
+        "#e5e4e3",
+        "#3d504c"
+      ],
+      "brim": [
+        "#3d504c",
+        "#e5e4e3"
+      ],
+      "hem": [
+        "#e5e4e3",
+        "#3d504c"
+      ],
+      "lower": [
+        "#e5e4e3",
+        "#3d504c"
+      ],
+      "whole": [
+        "#3d504c",
+        "#e5e4e3",
+        "#eeeeed"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "band",
+        "top": 0.45,
+        "bottom": 0.84,
+        "color": "#eeeeed"
+      }
+    ],
+    "motifs": [
+      {
+        "type": "badge",
+        "x": 0.5,
+        "y": 0.48,
+        "scope": "FRONT_ONLY",
+        "color": "#eeeeed",
+        "scale": 1
+      }
+    ],
+    "overlays": []
+  },
+  "draft": {
+    "control_id": "cap",
+    "canvas_width": 64,
+    "canvas_height": 96,
+    "views": [
+      {
+        "facing": "front",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          0,
+          0,
+          19,
+          19
+        ],
+        "opaque": 326,
+        "regions": {
+          "crown": 228,
+          "band": 40,
+          "brim": 58
+        },
+        "shade_steps": {
+          "-2": 62,
+          "-1": 69,
+          "0": 195
+        }
+      },
+      {
+        "facing": "right",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          1,
+          5,
+          18,
+          14
+        ],
+        "opaque": 132,
+        "regions": {
+          "crown": 84,
+          "band": 18,
+          "brim": 30
+        },
+        "shade_steps": {
+          "-2": 41,
+          "-1": 65,
+          "1": 8,
+          "0": 18
+        }
+      },
+      {
+        "facing": "left",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          1,
+          5,
+          18,
+          14
+        ],
+        "opaque": 132,
+        "regions": {
+          "crown": 84,
+          "band": 18,
+          "brim": 30
+        },
+        "shade_steps": {
+          "-2": 41,
+          "-1": 65,
+          "1": 8,
+          "0": 18
+        }
+      },
+      {
+        "facing": "back",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          4,
+          4,
+          15,
+          14
+        ],
+        "opaque": 108,
+        "regions": {
+          "crown": 62,
+          "band": 24,
+          "brim": 22
+        },
+        "shade_steps": {
+          "-2": 34,
+          "0": 42,
+          "-1": 28,
+          "1": 4
+        }
+      }
+    ],
+    "regions": [
+      "band",
+      "brim",
+      "crown"
+    ],
+    "semantic_pattern": "solid",
+    "color_bands": [
+      {
+        "region": "band",
+        "top": 0.45,
+        "bottom": 0.84,
+        "color": "#eeeeed"
+      }
+    ],
+    "motifs": [
+      {
+        "type": "badge",
+        "x": 0.5,
+        "y": 0.48,
+        "scope": "FRONT_ONLY",
+        "color": "#eeeeed",
+        "scale": 1
+      }
+    ],
+    "overlays": [],
+    "region_palettes": {
+      "crown": [
+        "#3d504c",
+        "#e5e4e3",
+        "#eeeeed"
+      ],
+      "band": [
+        "#eeeeed",
+        "#e5e4e3",
+        "#3d504c"
+      ],
+      "brim": [
+        "#3d504c",
+        "#e5e4e3"
+      ],
+      "hem": [
+        "#e5e4e3",
+        "#3d504c"
+      ],
+      "lower": [
+        "#e5e4e3",
+        "#3d504c"
+      ],
+      "whole": [
+        "#3d504c",
+        "#e5e4e3",
+        "#eeeeed"
+      ]
+    },
+    "normalized_pattern_coordinates": true,
+    "base_overlay_separation": true,
+    "shading_topology_preserved": true,
+    "texture_cleanup": true,
+    "coherent_four_view_projection": true,
+    "pattern_cells_after_cleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "design_id": "H11_enhanced",
+    "description": "soft-cap motif sheet"
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 6.9,
+      "pattern_continuity": 4.5,
+      "motif_location": 4.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "enhanced": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 8.41,
+      "pattern_continuity": 7.0,
+      "motif_location": 9.3,
+      "four_view_coherence": 9.8,
+      "stardew_readability": 9.5,
+      "junk_control": 9.7
+    },
+    "baselineOverall": 7.99,
+    "enhancedOverall": 9.1,
+    "delta": 1.12,
+    "patternDensityByView": {
+      "front": 0.0,
+      "right": 0.0,
+      "left": 0.0,
+      "back": 0.0
+    },
+    "overlayPixelsByView": {
+      "front": 7,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+  }
+}

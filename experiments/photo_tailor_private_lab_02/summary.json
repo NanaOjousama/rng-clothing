@@ -1,0 +1,898 @@
+{
+  "schema": "photo-tailor-private-lab02-results/v1",
+  "sampleCount": 20,
+  "hatCount": 16,
+  "shirtCount": 4,
+  "baseline": "HAT_PRODUCTION_GOLDEN_V1 controls / copied shirt controls",
+  "averageBaselineOverall": 8.73,
+  "averageEnhancedOverall": 9.18,
+  "averageDelta": 0.45,
+  "dimensionAverages": {
+    "silhouette_fidelity": {
+      "baseline": 10.0,
+      "enhanced": 10.0,
+      "delta": 0.0
+    },
+    "palette_material_resemblance": {
+      "baseline": 7.96,
+      "enhanced": 8.67,
+      "delta": 0.71
+    },
+    "pattern_continuity": {
+      "baseline": 6.22,
+      "enhanced": 7.83,
+      "delta": 1.61
+    },
+    "motif_location": {
+      "baseline": 6.9,
+      "enhanced": 8.82,
+      "delta": 1.92
+    },
+    "four_view_coherence": {
+      "baseline": 10.0,
+      "enhanced": 9.73,
+      "delta": -0.27
+    },
+    "stardew_readability": {
+      "baseline": 10.0,
+      "enhanced": 9.5,
+      "delta": -0.5
+    },
+    "junk_control": {
+      "baseline": 10.0,
+      "enhanced": 9.7,
+      "delta": -0.3
+    }
+  },
+  "prototypeDecision": "MIXED",
+  "systemsEarningFurtherStudy": [
+    "normalized_pattern_coordinates + texture_cleanup",
+    "region_palettes + color_bands",
+    "normalized_motifs + facing_scopes + overlays",
+    "coherent_4_view_projection",
+    "occupancy_masks + cleanup gates"
+  ],
+  "scoringCaveat": "Scores are automated proxy diagnostics. Human visual review of contact sheets remains authoritative.",
+  "results": [
+    {
+      "id": "H01",
+      "description": "beret sheet floral/ribbon",
+      "construction": "beret",
+      "pattern": "colorblock",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.67,
+          "pattern_continuity": 4.5,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.79,
+          "pattern_continuity": 7.0,
+          "motif_location": 8.5,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 8.67,
+        "enhancedOverall": 9.04,
+        "delta": 0.37,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 0,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H02",
+      "description": "beret variants difficult",
+      "construction": "beret",
+      "pattern": "other",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.48,
+          "pattern_continuity": 8.8,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.25,
+          "pattern_continuity": 9.0,
+          "motif_location": 8.5,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 9.54,
+        "enhancedOverall": 9.39,
+        "delta": -0.15,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 0,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H03",
+      "description": "deep slouch",
+      "construction": "beanie",
+      "pattern": "other",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.35,
+          "pattern_continuity": 8.8,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.4,
+          "pattern_continuity": 9.0,
+          "motif_location": 8.5,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 9.52,
+        "enhancedOverall": 9.41,
+        "delta": -0.11,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 0,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H04",
+      "description": "pattern + localized label",
+      "construction": "beanie",
+      "pattern": "animal_print",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.66,
+          "pattern_continuity": 4.5,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.8,
+          "pattern_continuity": 7.0,
+          "motif_location": 8.5,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 8.67,
+        "enhancedOverall": 8.9,
+        "delta": 0.23,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 0,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H05",
+      "description": "flower detail",
+      "construction": "beanie",
+      "pattern": "gradient",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.45,
+          "pattern_continuity": 4.5,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.67,
+          "pattern_continuity": 7.0,
+          "motif_location": 8.5,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 8.64,
+        "enhancedOverall": 9.02,
+        "delta": 0.39,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 0,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H06",
+      "description": "pom detail",
+      "construction": "beanie",
+      "pattern": "vertical_stripes",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.4,
+          "pattern_continuity": 4.5,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.83,
+          "pattern_continuity": 7.5,
+          "motif_location": 8.5,
+          "four_view_coherence": 8.36,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 8.63,
+        "enhancedOverall": 8.91,
+        "delta": 0.28,
+        "patternDensityByView": {
+          "front": 0.125,
+          "right": 0.0465,
+          "left": 0.186,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 0,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H07",
+      "description": "small slouch pattern",
+      "construction": "beanie",
+      "pattern": "gradient",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 6.58,
+          "pattern_continuity": 4.5,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.34,
+          "pattern_continuity": 7.0,
+          "motif_location": 8.5,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 8.51,
+        "enhancedOverall": 8.98,
+        "delta": 0.47,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 0,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H08",
+      "description": "Mario front cap",
+      "construction": "cap",
+      "pattern": "graphic",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 6.05,
+          "pattern_continuity": 4.5,
+          "motif_location": 4.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.92,
+          "pattern_continuity": 7.0,
+          "motif_location": 9.3,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 7.86,
+        "enhancedOverall": 9.17,
+        "delta": 1.31,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 7,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H09",
+      "description": "real cosplay cap",
+      "construction": "cap",
+      "pattern": "solid",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.89,
+          "pattern_continuity": 8.8,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.49,
+          "pattern_continuity": 9.0,
+          "motif_location": 8.5,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 9.31,
+        "enhancedOverall": 9.43,
+        "delta": 0.11,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 0,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H10",
+      "description": "cap side/back difficult",
+      "construction": "cap",
+      "pattern": "solid",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.87,
+          "pattern_continuity": 8.8,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.47,
+          "pattern_continuity": 9.0,
+          "motif_location": 8.5,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 9.31,
+        "enhancedOverall": 9.42,
+        "delta": 0.11,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 0,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H11",
+      "description": "soft-cap motif sheet",
+      "construction": "cap",
+      "pattern": "logo",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 6.9,
+          "pattern_continuity": 4.5,
+          "motif_location": 4.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.41,
+          "pattern_continuity": 7.0,
+          "motif_location": 9.3,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 7.99,
+        "enhancedOverall": 9.1,
+        "delta": 1.12,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 7,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H12",
+      "description": "soft-cap decorated sheet",
+      "construction": "cap",
+      "pattern": "logo",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.36,
+          "pattern_continuity": 4.5,
+          "motif_location": 4.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.28,
+          "pattern_continuity": 7.0,
+          "motif_location": 9.3,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 8.05,
+        "enhancedOverall": 8.94,
+        "delta": 0.89,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 7,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H13",
+      "description": "pixel-art straw hard case",
+      "construction": "straw_hat",
+      "pattern": "logo",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.8,
+          "pattern_continuity": 4.5,
+          "motif_location": 4.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.01,
+          "pattern_continuity": 7.0,
+          "motif_location": 9.3,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 8.11,
+        "enhancedOverall": 9.04,
+        "delta": 0.93,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 7,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H14",
+      "description": "pixel-art floral sun hard case",
+      "construction": "sun_hat",
+      "pattern": "logo",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.02,
+          "pattern_continuity": 4.5,
+          "motif_location": 4.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.06,
+          "pattern_continuity": 7.0,
+          "motif_location": 9.3,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 8.15,
+        "enhancedOverall": 9.05,
+        "delta": 0.91,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 7,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H15",
+      "description": "pixel-art pointy hood hard case",
+      "construction": "hood",
+      "pattern": "logo",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.98,
+          "pattern_continuity": 4.5,
+          "motif_location": 4.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.9,
+          "pattern_continuity": 7.0,
+          "motif_location": 9.3,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 8.14,
+        "enhancedOverall": 9.03,
+        "delta": 0.89,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 6,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "H16",
+      "description": "fantasy wizard hat difficult",
+      "construction": "hood",
+      "pattern": "other",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.69,
+          "pattern_continuity": 8.8,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.01,
+          "pattern_continuity": 9.0,
+          "motif_location": 8.5,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 9.43,
+        "enhancedOverall": 9.22,
+        "delta": -0.21,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 0,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "S01",
+      "description": "sailor dress reference",
+      "construction": "shirt_blouse",
+      "pattern": "other",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.38,
+          "pattern_continuity": 8.8,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.36,
+          "pattern_continuity": 9.0,
+          "motif_location": 8.5,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 9.53,
+        "enhancedOverall": 9.41,
+        "delta": -0.12,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 0,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "S02",
+      "description": "short-sleeve sailor reference",
+      "construction": "shirt_bow_blouse",
+      "pattern": "other",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.25,
+          "pattern_continuity": 8.8,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.36,
+          "pattern_continuity": 9.0,
+          "motif_location": 8.5,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 9.51,
+        "enhancedOverall": 9.41,
+        "delta": -0.1,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 0,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "S03",
+      "description": "AoT jacket/front reference",
+      "construction": "shirt_jacket",
+      "pattern": "graphic",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.66,
+          "pattern_continuity": 4.5,
+          "motif_location": 4.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.57,
+          "pattern_continuity": 7.0,
+          "motif_location": 9.3,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 8.09,
+        "enhancedOverall": 9.12,
+        "delta": 1.03,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 17,
+          "right": 0,
+          "left": 0,
+          "back": 0
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    },
+    {
+      "id": "S04",
+      "description": "AoT garment complex reference",
+      "construction": "shirt_knit",
+      "pattern": "other",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.84,
+          "pattern_continuity": 8.8,
+          "motif_location": 4.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "enhanced": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.47,
+          "pattern_continuity": 9.0,
+          "motif_location": 9.3,
+          "four_view_coherence": 9.8,
+          "stardew_readability": 9.5,
+          "junk_control": 9.7
+        },
+        "baselineOverall": 8.88,
+        "enhancedOverall": 9.54,
+        "delta": 0.66,
+        "patternDensityByView": {
+          "front": 0.0,
+          "right": 0.0,
+          "left": 0.0,
+          "back": 0.0
+        },
+        "overlayPixelsByView": {
+          "front": 12,
+          "right": 8,
+          "left": 8,
+          "back": 12
+        },
+        "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+      }
+    }
+  ]
+}

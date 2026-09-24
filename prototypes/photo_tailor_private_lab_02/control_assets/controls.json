@@ -1,0 +1,123 @@
+{
+  "schema": "pt-private-lab02-controls/v1",
+  "count": 13,
+  "controls": [
+    {
+      "id": "beanie",
+      "frames": {
+        "front": "control_assets/beanie/front.png",
+        "right": "control_assets/beanie/right.png",
+        "left": "control_assets/beanie/left.png",
+        "back": "control_assets/beanie/back.png"
+      }
+    },
+    {
+      "id": "beret",
+      "frames": {
+        "front": "control_assets/beret/front.png",
+        "right": "control_assets/beret/right.png",
+        "left": "control_assets/beret/left.png",
+        "back": "control_assets/beret/back.png"
+      }
+    },
+    {
+      "id": "boater_hat",
+      "frames": {
+        "front": "control_assets/boater_hat/front.png",
+        "right": "control_assets/boater_hat/right.png",
+        "left": "control_assets/boater_hat/left.png",
+        "back": "control_assets/boater_hat/back.png"
+      }
+    },
+    {
+      "id": "cap",
+      "frames": {
+        "front": "control_assets/cap/front.png",
+        "right": "control_assets/cap/right.png",
+        "left": "control_assets/cap/left.png",
+        "back": "control_assets/cap/back.png"
+      }
+    },
+    {
+      "id": "hood",
+      "frames": {
+        "front": "control_assets/hood/front.png",
+        "right": "control_assets/hood/right.png",
+        "left": "control_assets/hood/left.png",
+        "back": "control_assets/hood/back.png"
+      }
+    },
+    {
+      "id": "mushroom_hat",
+      "frames": {
+        "front": "control_assets/mushroom_hat/front.png",
+        "right": "control_assets/mushroom_hat/right.png",
+        "left": "control_assets/mushroom_hat/left.png",
+        "back": "control_assets/mushroom_hat/back.png"
+      }
+    },
+    {
+      "id": "shirt_blouse",
+      "frames": {
+        "front": "control_assets/shirt_blouse/front.png",
+        "right": "control_assets/shirt_blouse/right.png",
+        "left": "control_assets/shirt_blouse/left.png",
+        "back": "control_assets/shirt_blouse/back.png"
+      }
+    },
+    {
+      "id": "shirt_bow_blouse",
+      "frames": {
+        "front": "control_assets/shirt_bow_blouse/front.png",
+        "right": "control_assets/shirt_bow_blouse/right.png",
+        "left": "control_assets/shirt_bow_blouse/left.png",
+        "back": "control_assets/shirt_bow_blouse/back.png"
+      }
+    },
+    {
+      "id": "shirt_jacket",
+      "frames": {
+        "front": "control_assets/shirt_jacket/front.png",
+        "right": "control_assets/shirt_jacket/right.png",
+        "left": "control_assets/shirt_jacket/left.png",
+        "back": "control_assets/shirt_jacket/back.png"
+      }
+    },
+    {
+      "id": "shirt_knit",
+      "frames": {
+        "front": "control_assets/shirt_knit/front.png",
+        "right": "control_assets/shirt_knit/right.png",
+        "left": "control_assets/shirt_knit/left.png",
+        "back": "control_assets/shirt_knit/back.png"
+      }
+    },
+    {
+      "id": "straw_hat",
+      "frames": {
+        "front": "control_assets/straw_hat/front.png",
+        "right": "control_assets/straw_hat/right.png",
+        "left": "control_assets/straw_hat/left.png",
+        "back": "control_assets/straw_hat/back.png"
+      }
+    },
+    {
+      "id": "sun_hat",
+      "frames": {
+        "front": "control_assets/sun_hat/front.png",
+        "right": "control_assets/sun_hat/right.png",
+        "left": "control_assets/sun_hat/left.png",
+        "back": "control_assets/sun_hat/back.png"
+      }
+    },
+    {
+      "id": "tulip_hat",
+      "frames": {
+        "front": "control_assets/tulip_hat/front.png",
+        "right": "control_assets/tulip_hat/right.png",
+        "left": "control_assets/tulip_hat/left.png",
+        "back": "control_assets/tulip_hat/back.png"
+      }
+    }
+  ]
+}

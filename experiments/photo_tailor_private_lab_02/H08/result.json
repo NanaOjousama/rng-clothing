@@ -1,0 +1,381 @@
+{
+  "input": {
+    "id": "H08",
+    "category": "hat",
+    "constructionHint": "cap",
+    "description": "Mario front cap",
+    "originalSource": "mario hat/mariofront.jpg",
+    "file": "references/H08.jpg"
+  },
+  "blueprint": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "hat",
+        "score": 0.03915727138519287,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.0022731940262019634,
+        "category": ""
+      },
+      {
+        "value": "shirt",
+        "score": 0.00010718218982219696,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "cap",
+        "score": 0.059520892798900604,
+        "category": "hat"
+      },
+      {
+        "value": "hat",
+        "score": 0.04031156003475189,
+        "category": "hat"
+      },
+      {
+        "value": "helmet",
+        "score": 0.032272420823574066,
+        "category": "hat"
+      },
+      {
+        "value": "crown",
+        "score": 0.03065076842904091,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "graphic",
+        "score": 0.03242703154683113,
+        "category": ""
+      },
+      {
+        "value": "logo",
+        "score": 0.02709980681538582,
+        "category": ""
+      },
+      {
+        "value": "other",
+        "score": -0.0036583319306373596,
+        "category": ""
+      },
+      {
+        "value": "graphic",
+        "score": -0.008013465441763401,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.018518006429076195,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "graphic",
+    "paletteRgb": [
+      [
+        199,
+        3,
+        5
+      ],
+      [
+        198,
+        4,
+        5
+      ],
+      [
+        199,
+        3,
+        7
+      ],
+      [
+        201,
+        2,
+        5
+      ],
+      [
+        199,
+        3,
+        3
+      ],
+      [
+        201,
+        3,
+        5
+      ]
+    ],
+    "paletteHex": [
+      "#c70305",
+      "#c60405",
+      "#c70307",
+      "#c90205",
+      "#c70303",
+      "#c90305"
+    ],
+    "primaryColor": "#c70305",
+    "secondaryColor": "#c60405",
+    "accentColor": "#c70307"
+  },
+  "design": {
+    "id": "H08_enhanced",
+    "description": "Mario front cap",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#c70305",
+        "#c60405",
+        "#c70307"
+      ],
+      "band": [
+        "#c70307",
+        "#c60405",
+        "#c70305"
+      ],
+      "brim": [
+        "#c70305",
+        "#c60405"
+      ],
+      "hem": [
+        "#c60405",
+        "#c70305"
+      ],
+      "lower": [
+        "#c60405",
+        "#c70305"
+      ],
+      "whole": [
+        "#c70305",
+        "#c60405",
+        "#c70307"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "band",
+        "top": 0.45,
+        "bottom": 0.84,
+        "color": "#c70307"
+      }
+    ],
+    "motifs": [
+      {
+        "type": "badge",
+        "x": 0.5,
+        "y": 0.48,
+        "scope": "FRONT_ONLY",
+        "color": "#c70307",
+        "scale": 1
+      }
+    ],
+    "overlays": []
+  },
+  "draft": {
+    "control_id": "cap",
+    "canvas_width": 64,
+    "canvas_height": 96,
+    "views": [
+      {
+        "facing": "front",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          0,
+          0,
+          19,
+          19
+        ],
+        "opaque": 326,
+        "regions": {
+          "crown": 228,
+          "band": 40,
+          "brim": 58
+        },
+        "shade_steps": {
+          "-2": 62,
+          "-1": 69,
+          "0": 195
+        }
+      },
+      {
+        "facing": "right",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          1,
+          5,
+          18,
+          14
+        ],
+        "opaque": 132,
+        "regions": {
+          "crown": 84,
+          "band": 18,
+          "brim": 30
+        },
+        "shade_steps": {
+          "-2": 41,
+          "-1": 65,
+          "1": 8,
+          "0": 18
+        }
+      },
+      {
+        "facing": "left",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          1,
+          5,
+          18,
+          14
+        ],
+        "opaque": 132,
+        "regions": {
+          "crown": 84,
+          "band": 18,
+          "brim": 30
+        },
+        "shade_steps": {
+          "-2": 41,
+          "-1": 65,
+          "1": 8,
+          "0": 18
+        }
+      },
+      {
+        "facing": "back",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          4,
+          4,
+          15,
+          14
+        ],
+        "opaque": 108,
+        "regions": {
+          "crown": 62,
+          "band": 24,
+          "brim": 22
+        },
+        "shade_steps": {
+          "-2": 34,
+          "0": 42,
+          "-1": 28,
+          "1": 4
+        }
+      }
+    ],
+    "regions": [
+      "band",
+      "brim",
+      "crown"
+    ],
+    "semantic_pattern": "solid",
+    "color_bands": [
+      {
+        "region": "band",
+        "top": 0.45,
+        "bottom": 0.84,
+        "color": "#c70307"
+      }
+    ],
+    "motifs": [
+      {
+        "type": "badge",
+        "x": 0.5,
+        "y": 0.48,
+        "scope": "FRONT_ONLY",
+        "color": "#c70307",
+        "scale": 1
+      }
+    ],
+    "overlays": [],
+    "region_palettes": {
+      "crown": [
+        "#c70305",
+        "#c60405",
+        "#c70307"
+      ],
+      "band": [
+        "#c70307",
+        "#c60405",
+        "#c70305"
+      ],
+      "brim": [
+        "#c70305",
+        "#c60405"
+      ],
+      "hem": [
+        "#c60405",
+        "#c70305"
+      ],
+      "lower": [
+        "#c60405",
+        "#c70305"
+      ],
+      "whole": [
+        "#c70305",
+        "#c60405",
+        "#c70307"
+      ]
+    },
+    "normalized_pattern_coordinates": true,
+    "base_overlay_separation": true,
+    "shading_topology_preserved": true,
+    "texture_cleanup": true,
+    "coherent_four_view_projection": true,
+    "pattern_cells_after_cleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "design_id": "H08_enhanced",
+    "description": "Mario front cap"
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 6.05,
+      "pattern_continuity": 4.5,
+      "motif_location": 4.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "enhanced": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 8.92,
+      "pattern_continuity": 7.0,
+      "motif_location": 9.3,
+      "four_view_coherence": 9.8,
+      "stardew_readability": 9.5,
+      "junk_control": 9.7
+    },
+    "baselineOverall": 7.86,
+    "enhancedOverall": 9.17,
+    "delta": 1.31,
+    "patternDensityByView": {
+      "front": 0.0,
+      "right": 0.0,
+      "left": 0.0,
+      "back": 0.0
+    },
+    "overlayPixelsByView": {
+      "front": 7,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+  }
+}

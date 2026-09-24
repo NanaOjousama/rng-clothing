@@ -1,0 +1,446 @@
+{
+  "input": {
+    "id": "S03",
+    "category": "shirt",
+    "constructionHint": "shirt_jacket",
+    "description": "AoT jacket/front reference",
+    "originalSource": "references/style-profiles/AoTInspired/aotfront.jpeg",
+    "file": "references/S03.jpeg"
+  },
+  "blueprint": {
+    "categoryHint": "shirt",
+    "categoryCandidates": [
+      {
+        "value": "pants",
+        "score": 0.04860842972993851,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.0278801079839468,
+        "category": ""
+      },
+      {
+        "value": "shirt",
+        "score": 0.02775419130921364,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "overalls",
+        "score": 0.053915973752737045,
+        "category": "shirt"
+      },
+      {
+        "value": "cardigan",
+        "score": 0.040218155831098557,
+        "category": "shirt"
+      },
+      {
+        "value": "trench_coat",
+        "score": 0.03773968666791916,
+        "category": "shirt"
+      },
+      {
+        "value": "vest",
+        "score": 0.03675258904695511,
+        "category": "shirt"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "graphic",
+        "score": 0.03961087390780449,
+        "category": ""
+      },
+      {
+        "value": "other",
+        "score": 0.03695763647556305,
+        "category": ""
+      },
+      {
+        "value": "horizontal_stripes",
+        "score": 0.030843444168567657,
+        "category": ""
+      },
+      {
+        "value": "plaid",
+        "score": 0.025585126131772995,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "long_sleeve",
+        "score": 0.01982494816184044,
+        "category": "shirt"
+      },
+      {
+        "value": "sleeveless",
+        "score": 0.004916261415928602,
+        "category": "shirt"
+      },
+      {
+        "value": "short_sleeve",
+        "score": -0.001352168619632721,
+        "category": "shirt"
+      }
+    ],
+    "necklineCandidates": [
+      {
+        "value": "collared",
+        "score": 0.05092475563287735,
+        "category": "shirt"
+      },
+      {
+        "value": "turtleneck",
+        "score": 0.04368476942181587,
+        "category": "shirt"
+      },
+      {
+        "value": "hooded",
+        "score": 0.028474343940615654,
+        "category": "shirt"
+      }
+    ],
+    "detailCandidates": [
+      {
+        "value": "buttons",
+        "score": 0.03387688845396042,
+        "category": "shirt"
+      },
+      {
+        "value": "pockets",
+        "score": 0.027115222066640854,
+        "category": "shirt"
+      },
+      {
+        "value": "none",
+        "score": 0.02526959590613842,
+        "category": "shirt"
+      }
+    ],
+    "semanticPattern": "graphic",
+    "paletteRgb": [
+      [
+        181,
+        202,
+        216
+      ],
+      [
+        24,
+        21,
+        22
+      ],
+      [
+        139,
+        127,
+        115
+      ],
+      [
+        53,
+        40,
+        34
+      ],
+      [
+        213,
+        215,
+        217
+      ],
+      [
+        80,
+        58,
+        48
+      ]
+    ],
+    "paletteHex": [
+      "#b5cad8",
+      "#181516",
+      "#8b7f73",
+      "#352822",
+      "#d5d7d9",
+      "#503a30"
+    ],
+    "primaryColor": "#b5cad8",
+    "secondaryColor": "#181516",
+    "accentColor": "#8b7f73"
+  },
+  "design": {
+    "id": "S03_enhanced",
+    "description": "AoT jacket/front reference",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "torso": [
+        "#b5cad8",
+        "#181516",
+        "#8b7f73"
+      ],
+      "upper": [
+        "#181516",
+        "#8b7f73",
+        "#b5cad8"
+      ],
+      "left_sleeve": [
+        "#b5cad8",
+        "#181516"
+      ],
+      "right_sleeve": [
+        "#b5cad8",
+        "#181516"
+      ],
+      "hem": [
+        "#181516",
+        "#b5cad8"
+      ],
+      "whole": [
+        "#b5cad8",
+        "#181516",
+        "#8b7f73"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "upper",
+        "top": 0.0,
+        "bottom": 0.28,
+        "color": "#181516"
+      }
+    ],
+    "motifs": [
+      {
+        "type": "badge",
+        "x": 0.5,
+        "y": 0.48,
+        "scope": "FRONT_ONLY",
+        "color": "#8b7f73",
+        "scale": 1
+      }
+    ],
+    "overlays": [
+      {
+        "type": "vertical_seam",
+        "x": 0.5,
+        "scope": "FRONT_ONLY",
+        "color": "#8b7f73"
+      }
+    ]
+  },
+  "draft": {
+    "control_id": "shirt_jacket",
+    "canvas_width": 64,
+    "canvas_height": 96,
+    "views": [
+      {
+        "facing": "front",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          0,
+          0,
+          15,
+          15
+        ],
+        "opaque": 238,
+        "regions": {
+          "upper": 56,
+          "left_sleeve": 32,
+          "torso": 64,
+          "right_sleeve": 32,
+          "hem": 54
+        },
+        "shade_steps": {
+          "-2": 54,
+          "0": 99,
+          "-1": 62,
+          "1": 23
+        }
+      },
+      {
+        "facing": "right",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          0,
+          0,
+          14,
+          15
+        ],
+        "opaque": 189,
+        "regions": {
+          "upper": 51,
+          "torso": 51,
+          "right_sleeve": 49,
+          "hem": 38
+        },
+        "shade_steps": {
+          "-2": 48,
+          "0": 94,
+          "-1": 37,
+          "1": 10
+        }
+      },
+      {
+        "facing": "left",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          1,
+          0,
+          15,
+          15
+        ],
+        "opaque": 189,
+        "regions": {
+          "upper": 51,
+          "torso": 57,
+          "left_sleeve": 43,
+          "hem": 38
+        },
+        "shade_steps": {
+          "-2": 48,
+          "0": 98,
+          "-1": 39,
+          "1": 4
+        }
+      },
+      {
+        "facing": "back",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          0,
+          0,
+          15,
+          15
+        ],
+        "opaque": 242,
+        "regions": {
+          "upper": 60,
+          "right_sleeve": 32,
+          "torso": 64,
+          "left_sleeve": 32,
+          "hem": 54
+        },
+        "shade_steps": {
+          "-2": 54,
+          "0": 38,
+          "-1": 135,
+          "1": 15
+        }
+      }
+    ],
+    "regions": [
+      "hem",
+      "left_sleeve",
+      "right_sleeve",
+      "torso",
+      "upper"
+    ],
+    "semantic_pattern": "solid",
+    "color_bands": [
+      {
+        "region": "upper",
+        "top": 0.0,
+        "bottom": 0.28,
+        "color": "#181516"
+      }
+    ],
+    "motifs": [
+      {
+        "type": "badge",
+        "x": 0.5,
+        "y": 0.48,
+        "scope": "FRONT_ONLY",
+        "color": "#8b7f73",
+        "scale": 1
+      }
+    ],
+    "overlays": [
+      {
+        "type": "vertical_seam",
+        "x": 0.5,
+        "scope": "FRONT_ONLY",
+        "color": "#8b7f73"
+      }
+    ],
+    "region_palettes": {
+      "torso": [
+        "#b5cad8",
+        "#181516",
+        "#8b7f73"
+      ],
+      "upper": [
+        "#181516",
+        "#8b7f73",
+        "#b5cad8"
+      ],
+      "left_sleeve": [
+        "#b5cad8",
+        "#181516"
+      ],
+      "right_sleeve": [
+        "#b5cad8",
+        "#181516"
+      ],
+      "hem": [
+        "#181516",
+        "#b5cad8"
+      ],
+      "whole": [
+        "#b5cad8",
+        "#181516",
+        "#8b7f73"
+      ]
+    },
+    "normalized_pattern_coordinates": true,
+    "base_overlay_separation": true,
+    "shading_topology_preserved": true,
+    "texture_cleanup": true,
+    "coherent_four_view_projection": true,
+    "pattern_cells_after_cleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "design_id": "S03_enhanced",
+    "description": "AoT jacket/front reference"
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 7.66,
+      "pattern_continuity": 4.5,
+      "motif_location": 4.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "enhanced": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 8.57,
+      "pattern_continuity": 7.0,
+      "motif_location": 9.3,
+      "four_view_coherence": 9.8,
+      "stardew_readability": 9.5,
+      "junk_control": 9.7
+    },
+    "baselineOverall": 8.09,
+    "enhancedOverall": 9.12,
+    "delta": 1.03,
+    "patternDensityByView": {
+      "front": 0.0,
+      "right": 0.0,
+      "left": 0.0,
+      "back": 0.0
+    },
+    "overlayPixelsByView": {
+      "front": 17,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+  }
+}

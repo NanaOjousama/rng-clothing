@@ -1,0 +1,172 @@
+{
+  "control_id": "shirt_knit",
+  "canvas_width": 64,
+  "canvas_height": 96,
+  "views": [
+    {
+      "facing": "front",
+      "width": 16,
+      "height": 16,
+      "bbox": [
+        0,
+        0,
+        15,
+        15
+      ],
+      "opaque": 240,
+      "regions": {
+        "upper": 58,
+        "left_sleeve": 32,
+        "torso": 64,
+        "right_sleeve": 32,
+        "hem": 54
+      },
+      "shade_steps": {
+        "-2": 54,
+        "0": 93,
+        "-1": 85,
+        "1": 8
+      }
+    },
+    {
+      "facing": "right",
+      "width": 16,
+      "height": 16,
+      "bbox": [
+        0,
+        0,
+        13,
+        15
+      ],
+      "opaque": 187,
+      "regions": {
+        "upper": 50,
+        "torso": 51,
+        "right_sleeve": 48,
+        "hem": 38
+      },
+      "shade_steps": {
+        "-2": 48,
+        "-1": 37,
+        "0": 90,
+        "1": 12
+      }
+    },
+    {
+      "facing": "left",
+      "width": 16,
+      "height": 16,
+      "bbox": [
+        2,
+        0,
+        15,
+        15
+      ],
+      "opaque": 187,
+      "regions": {
+        "upper": 50,
+        "torso": 64,
+        "left_sleeve": 35,
+        "hem": 38
+      },
+      "shade_steps": {
+        "-2": 48,
+        "-1": 70,
+        "0": 59,
+        "1": 10
+      }
+    },
+    {
+      "facing": "back",
+      "width": 16,
+      "height": 16,
+      "bbox": [
+        0,
+        0,
+        15,
+        15
+      ],
+      "opaque": 242,
+      "regions": {
+        "upper": 60,
+        "right_sleeve": 32,
+        "torso": 64,
+        "left_sleeve": 32,
+        "hem": 54
+      },
+      "shade_steps": {
+        "-2": 54,
+        "0": 82,
+        "-1": 89,
+        "1": 17
+      }
+    }
+  ],
+  "regions": [
+    "hem",
+    "left_sleeve",
+    "right_sleeve",
+    "torso",
+    "upper"
+  ],
+  "semantic_pattern": "solid",
+  "color_bands": [
+    {
+      "region": "upper",
+      "top": 0.0,
+      "bottom": 0.28,
+      "color": "#a67858"
+    }
+  ],
+  "motifs": [],
+  "overlays": [
+    {
+      "type": "horizontal_seam",
+      "y": 0.8,
+      "scope": "ALL_FACINGS",
+      "color": "#241412"
+    }
+  ],
+  "region_palettes": {
+    "torso": [
+      "#311c1a",
+      "#a67858",
+      "#241412"
+    ],
+    "upper": [
+      "#a67858",
+      "#241412",
+      "#311c1a"
+    ],
+    "left_sleeve": [
+      "#311c1a",
+      "#a67858"
+    ],
+    "right_sleeve": [
+      "#311c1a",
+      "#a67858"
+    ],
+    "hem": [
+      "#a67858",
+      "#311c1a"
+    ],
+    "whole": [
+      "#311c1a",
+      "#a67858",
+      "#241412"
+    ]
+  },
+  "normalized_pattern_coordinates": true,
+  "base_overlay_separation": true,
+  "shading_topology_preserved": true,
+  "texture_cleanup": true,
+  "coherent_four_view_projection": true,
+  "pattern_cells_after_cleanup": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "design_id": "S04_enhanced",
+  "description": "AoT garment complex reference"
+}

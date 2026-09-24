@@ -1,0 +1,154 @@
+{
+  "control_id": "hood",
+  "canvas_width": 64,
+  "canvas_height": 96,
+  "views": [
+    {
+      "facing": "front",
+      "width": 32,
+      "height": 32,
+      "bbox": [
+        7,
+        4,
+        24,
+        16
+      ],
+      "opaque": 122,
+      "regions": {
+        "crown": 92,
+        "hem": 30
+      },
+      "shade_steps": {
+        "-2": 60,
+        "-1": 26,
+        "0": 29,
+        "1": 7
+      }
+    },
+    {
+      "facing": "right",
+      "width": 32,
+      "height": 32,
+      "bbox": [
+        14,
+        0,
+        29,
+        14
+      ],
+      "opaque": 127,
+      "regions": {
+        "crown": 96,
+        "hem": 31
+      },
+      "shade_steps": {
+        "-2": 52,
+        "-1": 43,
+        "0": 23,
+        "1": 9
+      }
+    },
+    {
+      "facing": "left",
+      "width": 32,
+      "height": 32,
+      "bbox": [
+        2,
+        0,
+        17,
+        14
+      ],
+      "opaque": 127,
+      "regions": {
+        "crown": 96,
+        "hem": 31
+      },
+      "shade_steps": {
+        "-2": 52,
+        "0": 23,
+        "1": 9,
+        "-1": 43
+      }
+    },
+    {
+      "facing": "back",
+      "width": 32,
+      "height": 32,
+      "bbox": [
+        7,
+        3,
+        24,
+        15
+      ],
+      "opaque": 184,
+      "regions": {
+        "crown": 136,
+        "hem": 48
+      },
+      "shade_steps": {
+        "-2": 44,
+        "-1": 80,
+        "0": 51,
+        "1": 9
+      }
+    }
+  ],
+  "regions": [
+    "crown",
+    "hem"
+  ],
+  "semantic_pattern": "solid",
+  "color_bands": [],
+  "motifs": [
+    {
+      "type": "badge",
+      "x": 0.5,
+      "y": 0.48,
+      "scope": "FRONT_ONLY",
+      "color": "#d9d9d9",
+      "scale": 1
+    }
+  ],
+  "overlays": [],
+  "region_palettes": {
+    "crown": [
+      "#515151",
+      "#a5a5a5",
+      "#d9d9d9"
+    ],
+    "band": [
+      "#d9d9d9",
+      "#a5a5a5",
+      "#515151"
+    ],
+    "brim": [
+      "#515151",
+      "#a5a5a5"
+    ],
+    "hem": [
+      "#a5a5a5",
+      "#515151"
+    ],
+    "lower": [
+      "#a5a5a5",
+      "#515151"
+    ],
+    "whole": [
+      "#515151",
+      "#a5a5a5",
+      "#d9d9d9"
+    ]
+  },
+  "normalized_pattern_coordinates": true,
+  "base_overlay_separation": true,
+  "shading_topology_preserved": true,
+  "texture_cleanup": true,
+  "coherent_four_view_projection": true,
+  "pattern_cells_after_cleanup": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "design_id": "H15_enhanced",
+  "description": "pixel-art pointy hood hard case"
+}

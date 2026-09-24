@@ -1,0 +1,357 @@
+{
+  "input": {
+    "id": "H05",
+    "category": "hat",
+    "constructionHint": "beanie",
+    "description": "flower detail",
+    "originalSource": "slouch beanie motif/flower_motif.jpeg",
+    "file": "references/H05.jpeg"
+  },
+  "blueprint": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "hat",
+        "score": 0.04688795283436775,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": -0.025054804980754852,
+        "category": ""
+      },
+      {
+        "value": "shirt",
+        "score": -0.025232093408703804,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "hat",
+        "score": 0.07766281068325043,
+        "category": "hat"
+      },
+      {
+        "value": "cap",
+        "score": 0.02203438989818096,
+        "category": "hat"
+      },
+      {
+        "value": "bow",
+        "score": 0.01356032956391573,
+        "category": "hat"
+      },
+      {
+        "value": "crown",
+        "score": 0.008037667721509933,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "gradient",
+        "score": 0.053305644541978836,
+        "category": ""
+      },
+      {
+        "value": "horizontal_stripes",
+        "score": 0.02535446174442768,
+        "category": ""
+      },
+      {
+        "value": "horizontal_stripes",
+        "score": 0.022800330072641373,
+        "category": ""
+      },
+      {
+        "value": "vertical_stripes",
+        "score": 0.008922446519136429,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.04467092826962471,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "gradient",
+    "paletteRgb": [
+      [
+        172,
+        106,
+        99
+      ],
+      [
+        244,
+        186,
+        166
+      ],
+      [
+        74,
+        68,
+        53
+      ],
+      [
+        95,
+        85,
+        77
+      ],
+      [
+        244,
+        171,
+        150
+      ],
+      [
+        232,
+        155,
+        140
+      ]
+    ],
+    "paletteHex": [
+      "#ac6a63",
+      "#f4baa6",
+      "#4a4435",
+      "#5f554d",
+      "#f4ab96",
+      "#e89b8c"
+    ],
+    "primaryColor": "#ac6a63",
+    "secondaryColor": "#f4baa6",
+    "accentColor": "#4a4435"
+  },
+  "design": {
+    "id": "H05_enhanced",
+    "description": "flower detail",
+    "semantic_pattern": "colorblock",
+    "region_palettes": {
+      "crown": [
+        "#ac6a63",
+        "#f4baa6",
+        "#4a4435"
+      ],
+      "band": [
+        "#4a4435",
+        "#f4baa6",
+        "#ac6a63"
+      ],
+      "brim": [
+        "#ac6a63",
+        "#f4baa6"
+      ],
+      "hem": [
+        "#f4baa6",
+        "#ac6a63"
+      ],
+      "lower": [
+        "#f4baa6",
+        "#ac6a63"
+      ],
+      "whole": [
+        "#ac6a63",
+        "#f4baa6",
+        "#4a4435"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": null,
+        "top": 0.52,
+        "bottom": 1.0,
+        "color": "#f4baa6"
+      }
+    ],
+    "motifs": [],
+    "overlays": []
+  },
+  "draft": {
+    "control_id": "beanie",
+    "canvas_width": 64,
+    "canvas_height": 96,
+    "views": [
+      {
+        "facing": "front",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          2,
+          2,
+          13,
+          11
+        ],
+        "opaque": 72,
+        "regions": {
+          "crown": 60,
+          "band": 12
+        },
+        "shade_steps": {
+          "-2": 32,
+          "-1": 27,
+          "0": 13
+        }
+      },
+      {
+        "facing": "right",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          1,
+          2,
+          13,
+          12
+        ],
+        "opaque": 86,
+        "regions": {
+          "crown": 78,
+          "band": 8
+        },
+        "shade_steps": {
+          "-2": 34,
+          "-1": 38,
+          "0": 13,
+          "1": 1
+        }
+      },
+      {
+        "facing": "left",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          2,
+          2,
+          14,
+          12
+        ],
+        "opaque": 86,
+        "regions": {
+          "crown": 78,
+          "band": 8
+        },
+        "shade_steps": {
+          "-2": 34,
+          "-1": 38,
+          "0": 13,
+          "1": 1
+        }
+      },
+      {
+        "facing": "back",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          3,
+          3,
+          12,
+          13
+        ],
+        "opaque": 90,
+        "regions": {
+          "crown": 66,
+          "band": 24
+        },
+        "shade_steps": {
+          "-2": 28,
+          "0": 33,
+          "-1": 29
+        }
+      }
+    ],
+    "regions": [
+      "band",
+      "crown"
+    ],
+    "semantic_pattern": "colorblock",
+    "color_bands": [
+      {
+        "region": null,
+        "top": 0.52,
+        "bottom": 1.0,
+        "color": "#f4baa6"
+      }
+    ],
+    "motifs": [],
+    "overlays": [],
+    "region_palettes": {
+      "crown": [
+        "#ac6a63",
+        "#f4baa6",
+        "#4a4435"
+      ],
+      "band": [
+        "#4a4435",
+        "#f4baa6",
+        "#ac6a63"
+      ],
+      "brim": [
+        "#ac6a63",
+        "#f4baa6"
+      ],
+      "hem": [
+        "#f4baa6",
+        "#ac6a63"
+      ],
+      "lower": [
+        "#f4baa6",
+        "#ac6a63"
+      ],
+      "whole": [
+        "#ac6a63",
+        "#f4baa6",
+        "#4a4435"
+      ]
+    },
+    "normalized_pattern_coordinates": true,
+    "base_overlay_separation": true,
+    "shading_topology_preserved": true,
+    "texture_cleanup": true,
+    "coherent_four_view_projection": true,
+    "pattern_cells_after_cleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "design_id": "H05_enhanced",
+    "description": "flower detail"
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 7.45,
+      "pattern_continuity": 4.5,
+      "motif_location": 8.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "enhanced": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 8.67,
+      "pattern_continuity": 7.0,
+      "motif_location": 8.5,
+      "four_view_coherence": 9.8,
+      "stardew_readability": 9.5,
+      "junk_control": 9.7
+    },
+    "baselineOverall": 8.64,
+    "enhancedOverall": 9.02,
+    "delta": 0.39,
+    "patternDensityByView": {
+      "front": 0.0,
+      "right": 0.0,
+      "left": 0.0,
+      "back": 0.0
+    },
+    "overlayPixelsByView": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+  }
+}

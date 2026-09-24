@@ -1,0 +1,428 @@
+{
+  "input": {
+    "id": "S04",
+    "category": "shirt",
+    "constructionHint": "shirt_knit",
+    "description": "AoT garment complex reference",
+    "originalSource": "references/style-profiles/AoTInspired/36af5584c94ab46f564e4750b5f13de8.jpg",
+    "file": "references/S04.jpg"
+  },
+  "blueprint": {
+    "categoryHint": "shirt",
+    "categoryCandidates": [
+      {
+        "value": "boots",
+        "score": 0.07410616427659988,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.06845230609178543,
+        "category": ""
+      },
+      {
+        "value": "pants",
+        "score": 0.05588787794113159,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "long_tunic",
+        "score": 0.08302633464336395,
+        "category": "shirt"
+      },
+      {
+        "value": "overalls",
+        "score": 0.061971768736839294,
+        "category": "shirt"
+      },
+      {
+        "value": "bodysuit",
+        "score": 0.03486467897891998,
+        "category": "shirt"
+      },
+      {
+        "value": "shirt",
+        "score": 0.03336162120103836,
+        "category": "shirt"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "other",
+        "score": 0.06701473891735077,
+        "category": ""
+      },
+      {
+        "value": "horizontal_stripes",
+        "score": 0.05137979984283447,
+        "category": ""
+      },
+      {
+        "value": "horizontal_stripes",
+        "score": 0.038589172065258026,
+        "category": ""
+      },
+      {
+        "value": "graphic",
+        "score": 0.02898089587688446,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "short_sleeve",
+        "score": 0.04585269093513489,
+        "category": "shirt"
+      },
+      {
+        "value": "long_sleeve",
+        "score": 0.017578644677996635,
+        "category": "shirt"
+      },
+      {
+        "value": "three_quarter_sleeve",
+        "score": 0.015933504328131676,
+        "category": "shirt"
+      }
+    ],
+    "necklineCandidates": [
+      {
+        "value": "collared",
+        "score": 0.022396115586161613,
+        "category": "shirt"
+      },
+      {
+        "value": "hooded",
+        "score": 0.021160230040550232,
+        "category": "shirt"
+      },
+      {
+        "value": "turtleneck",
+        "score": 0.017492087557911873,
+        "category": "shirt"
+      }
+    ],
+    "detailCandidates": [
+      {
+        "value": "ribbed_trim",
+        "score": 0.044445112347602844,
+        "category": "shirt"
+      },
+      {
+        "value": "none",
+        "score": 0.0375090092420578,
+        "category": "shirt"
+      },
+      {
+        "value": "pockets",
+        "score": 0.020520487800240517,
+        "category": "shirt"
+      }
+    ],
+    "semanticPattern": "other",
+    "paletteRgb": [
+      [
+        49,
+        28,
+        26
+      ],
+      [
+        166,
+        120,
+        88
+      ],
+      [
+        36,
+        20,
+        18
+      ],
+      [
+        135,
+        104,
+        85
+      ],
+      [
+        198,
+        189,
+        180
+      ],
+      [
+        88,
+        43,
+        42
+      ]
+    ],
+    "paletteHex": [
+      "#311c1a",
+      "#a67858",
+      "#241412",
+      "#876855",
+      "#c6bdb4",
+      "#582b2a"
+    ],
+    "primaryColor": "#311c1a",
+    "secondaryColor": "#a67858",
+    "accentColor": "#241412"
+  },
+  "design": {
+    "id": "S04_enhanced",
+    "description": "AoT garment complex reference",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "torso": [
+        "#311c1a",
+        "#a67858",
+        "#241412"
+      ],
+      "upper": [
+        "#a67858",
+        "#241412",
+        "#311c1a"
+      ],
+      "left_sleeve": [
+        "#311c1a",
+        "#a67858"
+      ],
+      "right_sleeve": [
+        "#311c1a",
+        "#a67858"
+      ],
+      "hem": [
+        "#a67858",
+        "#311c1a"
+      ],
+      "whole": [
+        "#311c1a",
+        "#a67858",
+        "#241412"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "upper",
+        "top": 0.0,
+        "bottom": 0.28,
+        "color": "#a67858"
+      }
+    ],
+    "motifs": [],
+    "overlays": [
+      {
+        "type": "horizontal_seam",
+        "y": 0.8,
+        "scope": "ALL_FACINGS",
+        "color": "#241412"
+      }
+    ]
+  },
+  "draft": {
+    "control_id": "shirt_knit",
+    "canvas_width": 64,
+    "canvas_height": 96,
+    "views": [
+      {
+        "facing": "front",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          0,
+          0,
+          15,
+          15
+        ],
+        "opaque": 240,
+        "regions": {
+          "upper": 58,
+          "left_sleeve": 32,
+          "torso": 64,
+          "right_sleeve": 32,
+          "hem": 54
+        },
+        "shade_steps": {
+          "-2": 54,
+          "0": 93,
+          "-1": 85,
+          "1": 8
+        }
+      },
+      {
+        "facing": "right",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          0,
+          0,
+          13,
+          15
+        ],
+        "opaque": 187,
+        "regions": {
+          "upper": 50,
+          "torso": 51,
+          "right_sleeve": 48,
+          "hem": 38
+        },
+        "shade_steps": {
+          "-2": 48,
+          "-1": 37,
+          "0": 90,
+          "1": 12
+        }
+      },
+      {
+        "facing": "left",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          2,
+          0,
+          15,
+          15
+        ],
+        "opaque": 187,
+        "regions": {
+          "upper": 50,
+          "torso": 64,
+          "left_sleeve": 35,
+          "hem": 38
+        },
+        "shade_steps": {
+          "-2": 48,
+          "-1": 70,
+          "0": 59,
+          "1": 10
+        }
+      },
+      {
+        "facing": "back",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          0,
+          0,
+          15,
+          15
+        ],
+        "opaque": 242,
+        "regions": {
+          "upper": 60,
+          "right_sleeve": 32,
+          "torso": 64,
+          "left_sleeve": 32,
+          "hem": 54
+        },
+        "shade_steps": {
+          "-2": 54,
+          "0": 82,
+          "-1": 89,
+          "1": 17
+        }
+      }
+    ],
+    "regions": [
+      "hem",
+      "left_sleeve",
+      "right_sleeve",
+      "torso",
+      "upper"
+    ],
+    "semantic_pattern": "solid",
+    "color_bands": [
+      {
+        "region": "upper",
+        "top": 0.0,
+        "bottom": 0.28,
+        "color": "#a67858"
+      }
+    ],
+    "motifs": [],
+    "overlays": [
+      {
+        "type": "horizontal_seam",
+        "y": 0.8,
+        "scope": "ALL_FACINGS",
+        "color": "#241412"
+      }
+    ],
+    "region_palettes": {
+      "torso": [
+        "#311c1a",
+        "#a67858",
+        "#241412"
+      ],
+      "upper": [
+        "#a67858",
+        "#241412",
+        "#311c1a"
+      ],
+      "left_sleeve": [
+        "#311c1a",
+        "#a67858"
+      ],
+      "right_sleeve": [
+        "#311c1a",
+        "#a67858"
+      ],
+      "hem": [
+        "#a67858",
+        "#311c1a"
+      ],
+      "whole": [
+        "#311c1a",
+        "#a67858",
+        "#241412"
+      ]
+    },
+    "normalized_pattern_coordinates": true,
+    "base_overlay_separation": true,
+    "shading_topology_preserved": true,
+    "texture_cleanup": true,
+    "coherent_four_view_projection": true,
+    "pattern_cells_after_cleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "design_id": "S04_enhanced",
+    "description": "AoT garment complex reference"
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 8.84,
+      "pattern_continuity": 8.8,
+      "motif_location": 4.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "enhanced": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 9.47,
+      "pattern_continuity": 9.0,
+      "motif_location": 9.3,
+      "four_view_coherence": 9.8,
+      "stardew_readability": 9.5,
+      "junk_control": 9.7
+    },
+    "baselineOverall": 8.88,
+    "enhancedOverall": 9.54,
+    "delta": 0.66,
+    "patternDensityByView": {
+      "front": 0.0,
+      "right": 0.0,
+      "left": 0.0,
+      "back": 0.0
+    },
+    "overlayPixelsByView": {
+      "front": 12,
+      "right": 8,
+      "left": 8,
+      "back": 12
+    },
+    "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+  }
+}

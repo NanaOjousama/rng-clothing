@@ -1,0 +1,414 @@
+{
+  "input": {
+    "id": "S02",
+    "category": "shirt",
+    "constructionHint": "shirt_bow_blouse",
+    "description": "short-sleeve sailor reference",
+    "originalSource": "templates/fashionsense/sailor/shortsleeve.jpeg",
+    "file": "references/S02.jpeg"
+  },
+  "blueprint": {
+    "categoryHint": "shirt",
+    "categoryCandidates": [
+      {
+        "value": "shirt",
+        "score": 0.11073384433984756,
+        "category": ""
+      },
+      {
+        "value": "shirt",
+        "score": 0.07542978227138519,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.06387101113796234,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "polo",
+        "score": 0.11017540097236633,
+        "category": "shirt"
+      },
+      {
+        "value": "polo",
+        "score": 0.07537242770195007,
+        "category": "shirt"
+      },
+      {
+        "value": "crop_top",
+        "score": 0.06990253925323486,
+        "category": "shirt"
+      },
+      {
+        "value": "tank_top",
+        "score": 0.0693545937538147,
+        "category": "shirt"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "other",
+        "score": 0.057435717433691025,
+        "category": ""
+      },
+      {
+        "value": "horizontal_stripes",
+        "score": 0.04332564026117325,
+        "category": ""
+      },
+      {
+        "value": "logo",
+        "score": 0.03834746778011322,
+        "category": ""
+      },
+      {
+        "value": "vertical_stripes",
+        "score": 0.03406809642910957,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "short_sleeve",
+        "score": 0.0664234608411789,
+        "category": "shirt"
+      },
+      {
+        "value": "sleeveless",
+        "score": 0.05727091431617737,
+        "category": "shirt"
+      },
+      {
+        "value": "three_quarter_sleeve",
+        "score": 0.049107715487480164,
+        "category": "shirt"
+      }
+    ],
+    "necklineCandidates": [
+      {
+        "value": "collared",
+        "score": 0.07345660030841827,
+        "category": "shirt"
+      },
+      {
+        "value": "v_neck",
+        "score": 0.05368807911872864,
+        "category": "shirt"
+      },
+      {
+        "value": "hooded",
+        "score": 0.04188162088394165,
+        "category": "shirt"
+      }
+    ],
+    "detailCandidates": [
+      {
+        "value": "pockets",
+        "score": 0.046444740146398544,
+        "category": "shirt"
+      },
+      {
+        "value": "ribbed_trim",
+        "score": 0.040096841752529144,
+        "category": "shirt"
+      },
+      {
+        "value": "none",
+        "score": 0.03889411687850952,
+        "category": "shirt"
+      }
+    ],
+    "semanticPattern": "other",
+    "paletteRgb": [
+      [
+        211,
+        214,
+        219
+      ],
+      [
+        208,
+        210,
+        214
+      ],
+      [
+        159,
+        161,
+        163
+      ],
+      [
+        217,
+        220,
+        224
+      ],
+      [
+        246,
+        246,
+        247
+      ],
+      [
+        213,
+        216,
+        220
+      ]
+    ],
+    "paletteHex": [
+      "#d3d6db",
+      "#d0d2d6",
+      "#9fa1a3",
+      "#d9dce0",
+      "#f6f6f7",
+      "#d5d8dc"
+    ],
+    "primaryColor": "#d3d6db",
+    "secondaryColor": "#d0d2d6",
+    "accentColor": "#9fa1a3"
+  },
+  "design": {
+    "id": "S02_enhanced",
+    "description": "short-sleeve sailor reference",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "torso": [
+        "#d3d6db",
+        "#d0d2d6",
+        "#9fa1a3"
+      ],
+      "upper": [
+        "#d0d2d6",
+        "#9fa1a3",
+        "#d3d6db"
+      ],
+      "left_sleeve": [
+        "#d3d6db",
+        "#d0d2d6"
+      ],
+      "right_sleeve": [
+        "#d3d6db",
+        "#d0d2d6"
+      ],
+      "hem": [
+        "#d0d2d6",
+        "#d3d6db"
+      ],
+      "whole": [
+        "#d3d6db",
+        "#d0d2d6",
+        "#9fa1a3"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "upper",
+        "top": 0.0,
+        "bottom": 0.28,
+        "color": "#d0d2d6"
+      }
+    ],
+    "motifs": [],
+    "overlays": []
+  },
+  "draft": {
+    "control_id": "shirt_bow_blouse",
+    "canvas_width": 64,
+    "canvas_height": 96,
+    "views": [
+      {
+        "facing": "front",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          0,
+          0,
+          15,
+          15
+        ],
+        "opaque": 222,
+        "regions": {
+          "upper": 56,
+          "left_sleeve": 30,
+          "torso": 64,
+          "right_sleeve": 30,
+          "hem": 42
+        },
+        "shade_steps": {
+          "-2": 52,
+          "0": 106,
+          "1": 15,
+          "-1": 49
+        }
+      },
+      {
+        "facing": "right",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          0,
+          0,
+          13,
+          15
+        ],
+        "opaque": 176,
+        "regions": {
+          "upper": 50,
+          "torso": 49,
+          "right_sleeve": 45,
+          "hem": 32
+        },
+        "shade_steps": {
+          "-2": 49,
+          "0": 90,
+          "-1": 29,
+          "1": 8
+        }
+      },
+      {
+        "facing": "left",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          2,
+          0,
+          15,
+          15
+        ],
+        "opaque": 176,
+        "regions": {
+          "upper": 50,
+          "torso": 61,
+          "left_sleeve": 33,
+          "hem": 32
+        },
+        "shade_steps": {
+          "-2": 49,
+          "0": 51,
+          "-1": 74,
+          "1": 2
+        }
+      },
+      {
+        "facing": "back",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          0,
+          0,
+          15,
+          15
+        ],
+        "opaque": 226,
+        "regions": {
+          "upper": 60,
+          "right_sleeve": 30,
+          "torso": 64,
+          "left_sleeve": 30,
+          "hem": 42
+        },
+        "shade_steps": {
+          "-2": 52,
+          "-1": 133,
+          "0": 32,
+          "1": 9
+        }
+      }
+    ],
+    "regions": [
+      "hem",
+      "left_sleeve",
+      "right_sleeve",
+      "torso",
+      "upper"
+    ],
+    "semantic_pattern": "solid",
+    "color_bands": [
+      {
+        "region": "upper",
+        "top": 0.0,
+        "bottom": 0.28,
+        "color": "#d0d2d6"
+      }
+    ],
+    "motifs": [],
+    "overlays": [],
+    "region_palettes": {
+      "torso": [
+        "#d3d6db",
+        "#d0d2d6",
+        "#9fa1a3"
+      ],
+      "upper": [
+        "#d0d2d6",
+        "#9fa1a3",
+        "#d3d6db"
+      ],
+      "left_sleeve": [
+        "#d3d6db",
+        "#d0d2d6"
+      ],
+      "right_sleeve": [
+        "#d3d6db",
+        "#d0d2d6"
+      ],
+      "hem": [
+        "#d0d2d6",
+        "#d3d6db"
+      ],
+      "whole": [
+        "#d3d6db",
+        "#d0d2d6",
+        "#9fa1a3"
+      ]
+    },
+    "normalized_pattern_coordinates": true,
+    "base_overlay_separation": true,
+    "shading_topology_preserved": true,
+    "texture_cleanup": true,
+    "coherent_four_view_projection": true,
+    "pattern_cells_after_cleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "design_id": "S02_enhanced",
+    "description": "short-sleeve sailor reference"
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 9.25,
+      "pattern_continuity": 8.8,
+      "motif_location": 8.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "enhanced": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 9.36,
+      "pattern_continuity": 9.0,
+      "motif_location": 8.5,
+      "four_view_coherence": 9.8,
+      "stardew_readability": 9.5,
+      "junk_control": 9.7
+    },
+    "baselineOverall": 9.51,
+    "enhancedOverall": 9.41,
+    "delta": -0.1,
+    "patternDensityByView": {
+      "front": 0.0,
+      "right": 0.0,
+      "left": 0.0,
+      "back": 0.0
+    },
+    "overlayPixelsByView": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+  }
+}

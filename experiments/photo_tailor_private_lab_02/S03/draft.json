@@ -1,0 +1,181 @@
+{
+  "control_id": "shirt_jacket",
+  "canvas_width": 64,
+  "canvas_height": 96,
+  "views": [
+    {
+      "facing": "front",
+      "width": 16,
+      "height": 16,
+      "bbox": [
+        0,
+        0,
+        15,
+        15
+      ],
+      "opaque": 238,
+      "regions": {
+        "upper": 56,
+        "left_sleeve": 32,
+        "torso": 64,
+        "right_sleeve": 32,
+        "hem": 54
+      },
+      "shade_steps": {
+        "-2": 54,
+        "0": 99,
+        "-1": 62,
+        "1": 23
+      }
+    },
+    {
+      "facing": "right",
+      "width": 16,
+      "height": 16,
+      "bbox": [
+        0,
+        0,
+        14,
+        15
+      ],
+      "opaque": 189,
+      "regions": {
+        "upper": 51,
+        "torso": 51,
+        "right_sleeve": 49,
+        "hem": 38
+      },
+      "shade_steps": {
+        "-2": 48,
+        "0": 94,
+        "-1": 37,
+        "1": 10
+      }
+    },
+    {
+      "facing": "left",
+      "width": 16,
+      "height": 16,
+      "bbox": [
+        1,
+        0,
+        15,
+        15
+      ],
+      "opaque": 189,
+      "regions": {
+        "upper": 51,
+        "torso": 57,
+        "left_sleeve": 43,
+        "hem": 38
+      },
+      "shade_steps": {
+        "-2": 48,
+        "0": 98,
+        "-1": 39,
+        "1": 4
+      }
+    },
+    {
+      "facing": "back",
+      "width": 16,
+      "height": 16,
+      "bbox": [
+        0,
+        0,
+        15,
+        15
+      ],
+      "opaque": 242,
+      "regions": {
+        "upper": 60,
+        "right_sleeve": 32,
+        "torso": 64,
+        "left_sleeve": 32,
+        "hem": 54
+      },
+      "shade_steps": {
+        "-2": 54,
+        "0": 38,
+        "-1": 135,
+        "1": 15
+      }
+    }
+  ],
+  "regions": [
+    "hem",
+    "left_sleeve",
+    "right_sleeve",
+    "torso",
+    "upper"
+  ],
+  "semantic_pattern": "solid",
+  "color_bands": [
+    {
+      "region": "upper",
+      "top": 0.0,
+      "bottom": 0.28,
+      "color": "#181516"
+    }
+  ],
+  "motifs": [
+    {
+      "type": "badge",
+      "x": 0.5,
+      "y": 0.48,
+      "scope": "FRONT_ONLY",
+      "color": "#8b7f73",
+      "scale": 1
+    }
+  ],
+  "overlays": [
+    {
+      "type": "vertical_seam",
+      "x": 0.5,
+      "scope": "FRONT_ONLY",
+      "color": "#8b7f73"
+    }
+  ],
+  "region_palettes": {
+    "torso": [
+      "#b5cad8",
+      "#181516",
+      "#8b7f73"
+    ],
+    "upper": [
+      "#181516",
+      "#8b7f73",
+      "#b5cad8"
+    ],
+    "left_sleeve": [
+      "#b5cad8",
+      "#181516"
+    ],
+    "right_sleeve": [
+      "#b5cad8",
+      "#181516"
+    ],
+    "hem": [
+      "#181516",
+      "#b5cad8"
+    ],
+    "whole": [
+      "#b5cad8",
+      "#181516",
+      "#8b7f73"
+    ]
+  },
+  "normalized_pattern_coordinates": true,
+  "base_overlay_separation": true,
+  "shading_topology_preserved": true,
+  "texture_cleanup": true,
+  "coherent_four_view_projection": true,
+  "pattern_cells_after_cleanup": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "design_id": "S03_enhanced",
+  "description": "AoT jacket/front reference"
+}

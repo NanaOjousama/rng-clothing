@@ -1,0 +1,343 @@
+{
+  "input": {
+    "id": "H03",
+    "category": "hat",
+    "constructionHint": "beanie",
+    "description": "deep slouch",
+    "originalSource": "slouch beanie motif/superslouuch_beanie.jpeg",
+    "file": "references/H03.jpeg"
+  },
+  "blueprint": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "hat",
+        "score": 0.03532319888472557,
+        "category": ""
+      },
+      {
+        "value": "none",
+        "score": -0.0028383550234138966,
+        "category": ""
+      },
+      {
+        "value": "shirt",
+        "score": -0.010656017810106277,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "hat",
+        "score": 0.06096808612346649,
+        "category": "hat"
+      },
+      {
+        "value": "helmet",
+        "score": 0.0028453171253204346,
+        "category": "hat"
+      },
+      {
+        "value": "cap",
+        "score": -0.0008673928678035736,
+        "category": "hat"
+      },
+      {
+        "value": "bow",
+        "score": -0.010936431586742401,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "other",
+        "score": 0.014590994454920292,
+        "category": ""
+      },
+      {
+        "value": "geometric",
+        "score": 0.012640062719583511,
+        "category": ""
+      },
+      {
+        "value": "horizontal_stripes",
+        "score": 0.001125875860452652,
+        "category": ""
+      },
+      {
+        "value": "vertical_stripes",
+        "score": -0.003051057457923889,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.03850562125444412,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "other",
+    "paletteRgb": [
+      [
+        230,
+        230,
+        230
+      ],
+      [
+        145,
+        161,
+        154
+      ],
+      [
+        117,
+        112,
+        103
+      ],
+      [
+        216,
+        215,
+        211
+      ],
+      [
+        69,
+        81,
+        72
+      ],
+      [
+        93,
+        106,
+        98
+      ]
+    ],
+    "paletteHex": [
+      "#e6e6e6",
+      "#91a19a",
+      "#757067",
+      "#d8d7d3",
+      "#455148",
+      "#5d6a62"
+    ],
+    "primaryColor": "#e6e6e6",
+    "secondaryColor": "#91a19a",
+    "accentColor": "#757067"
+  },
+  "design": {
+    "id": "H03_enhanced",
+    "description": "deep slouch",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#e6e6e6",
+        "#91a19a",
+        "#757067"
+      ],
+      "band": [
+        "#757067",
+        "#91a19a",
+        "#e6e6e6"
+      ],
+      "brim": [
+        "#e6e6e6",
+        "#91a19a"
+      ],
+      "hem": [
+        "#91a19a",
+        "#e6e6e6"
+      ],
+      "lower": [
+        "#91a19a",
+        "#e6e6e6"
+      ],
+      "whole": [
+        "#e6e6e6",
+        "#91a19a",
+        "#757067"
+      ]
+    },
+    "color_bands": [],
+    "motifs": [],
+    "overlays": []
+  },
+  "draft": {
+    "control_id": "beanie",
+    "canvas_width": 64,
+    "canvas_height": 96,
+    "views": [
+      {
+        "facing": "front",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          2,
+          2,
+          13,
+          11
+        ],
+        "opaque": 72,
+        "regions": {
+          "crown": 60,
+          "band": 12
+        },
+        "shade_steps": {
+          "-2": 32,
+          "-1": 27,
+          "0": 13
+        }
+      },
+      {
+        "facing": "right",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          1,
+          2,
+          13,
+          12
+        ],
+        "opaque": 86,
+        "regions": {
+          "crown": 78,
+          "band": 8
+        },
+        "shade_steps": {
+          "-2": 34,
+          "-1": 38,
+          "0": 13,
+          "1": 1
+        }
+      },
+      {
+        "facing": "left",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          2,
+          2,
+          14,
+          12
+        ],
+        "opaque": 86,
+        "regions": {
+          "crown": 78,
+          "band": 8
+        },
+        "shade_steps": {
+          "-2": 34,
+          "-1": 38,
+          "0": 13,
+          "1": 1
+        }
+      },
+      {
+        "facing": "back",
+        "width": 16,
+        "height": 16,
+        "bbox": [
+          3,
+          3,
+          12,
+          13
+        ],
+        "opaque": 90,
+        "regions": {
+          "crown": 66,
+          "band": 24
+        },
+        "shade_steps": {
+          "-2": 28,
+          "0": 33,
+          "-1": 29
+        }
+      }
+    ],
+    "regions": [
+      "band",
+      "crown"
+    ],
+    "semantic_pattern": "solid",
+    "color_bands": [],
+    "motifs": [],
+    "overlays": [],
+    "region_palettes": {
+      "crown": [
+        "#e6e6e6",
+        "#91a19a",
+        "#757067"
+      ],
+      "band": [
+        "#757067",
+        "#91a19a",
+        "#e6e6e6"
+      ],
+      "brim": [
+        "#e6e6e6",
+        "#91a19a"
+      ],
+      "hem": [
+        "#91a19a",
+        "#e6e6e6"
+      ],
+      "lower": [
+        "#91a19a",
+        "#e6e6e6"
+      ],
+      "whole": [
+        "#e6e6e6",
+        "#91a19a",
+        "#757067"
+      ]
+    },
+    "normalized_pattern_coordinates": true,
+    "base_overlay_separation": true,
+    "shading_topology_preserved": true,
+    "texture_cleanup": true,
+    "coherent_four_view_projection": true,
+    "pattern_cells_after_cleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "design_id": "H03_enhanced",
+    "description": "deep slouch"
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 9.35,
+      "pattern_continuity": 8.8,
+      "motif_location": 8.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "enhanced": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 9.4,
+      "pattern_continuity": 9.0,
+      "motif_location": 8.5,
+      "four_view_coherence": 9.8,
+      "stardew_readability": 9.5,
+      "junk_control": 9.7
+    },
+    "baselineOverall": 9.52,
+    "enhancedOverall": 9.41,
+    "delta": -0.11,
+    "patternDensityByView": {
+      "front": 0.0,
+      "right": 0.0,
+      "left": 0.0,
+      "back": 0.0
+    },
+    "overlayPixelsByView": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+  }
+}

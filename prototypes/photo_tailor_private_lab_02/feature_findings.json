@@ -1,0 +1,69 @@
+{
+  "schema": "photo-tailor-private-lab02-findings/v1",
+  "decision": "MIXED",
+  "overall": {
+    "baseline": 8.73,
+    "enhanced": 9.18,
+    "delta": 0.45
+  },
+  "dimensionAverages": {
+    "silhouette_fidelity": {
+      "baseline": 10.0,
+      "enhanced": 10.0,
+      "delta": 0.0
+    },
+    "palette_material_resemblance": {
+      "baseline": 7.96,
+      "enhanced": 8.67,
+      "delta": 0.71
+    },
+    "pattern_continuity": {
+      "baseline": 6.22,
+      "enhanced": 7.83,
+      "delta": 1.61
+    },
+    "motif_location": {
+      "baseline": 6.9,
+      "enhanced": 8.82,
+      "delta": 1.92
+    },
+    "four_view_coherence": {
+      "baseline": 10.0,
+      "enhanced": 9.73,
+      "delta": -0.27
+    },
+    "stardew_readability": {
+      "baseline": 10.0,
+      "enhanced": 9.5,
+      "delta": -0.5
+    },
+    "junk_control": {
+      "baseline": 10.0,
+      "enhanced": 9.7,
+      "delta": -0.3
+    }
+  },
+  "earned": [
+    "normalized_pattern_coordinates + texture_cleanup",
+    "region_palettes + color_bands",
+    "normalized_motifs + facing_scopes + overlays",
+    "coherent_4_view_projection",
+    "occupancy_masks + cleanup gates"
+  ],
+  "interpretation": {
+    "keep_private_lab": true,
+    "production_integration_now": false,
+    "reason": "The whole stack is not a clear overall win, but pattern continuity, motif placement, and palette/material matching show material gains worth preserving for a clean-room/permission-safe follow-up.",
+    "baseline_strengths": [
+      "four_view_coherence",
+      "stardew_readability",
+      "junk_control"
+    ],
+    "pt_strengths": [
+      "pattern_continuity",
+      "motif_location",
+      "palette_material_resemblance"
+    ],
+    "next_gate": "Human visual review of Lab 02 contact sheets; then selectively reimplement only the winning systems if desired."
+  }
+}

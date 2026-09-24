@@ -1,0 +1,344 @@
+{
+  "input": {
+    "id": "H02",
+    "category": "hat",
+    "constructionHint": "beret",
+    "description": "beret variants difficult",
+    "originalSource": "beret_deesign/Gemini_Generated_Image_g56e57g56e57g56e.jpeg",
+    "file": "references/H02.jpeg"
+  },
+  "blueprint": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "hat",
+        "score": 0.0893196165561676,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.026830723509192467,
+        "category": ""
+      },
+      {
+        "value": "none",
+        "score": 0.026682566851377487,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "hat",
+        "score": 0.08391359448432922,
+        "category": "hat"
+      },
+      {
+        "value": "cap",
+        "score": 0.07241372764110565,
+        "category": "hat"
+      },
+      {
+        "value": "helmet",
+        "score": 0.0691014900803566,
+        "category": "hat"
+      },
+      {
+        "value": "bow",
+        "score": 0.024772673845291138,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "other",
+        "score": 0.06504139304161072,
+        "category": ""
+      },
+      {
+        "value": "camouflage",
+        "score": 0.06476233154535294,
+        "category": ""
+      },
+      {
+        "value": "logo",
+        "score": 0.047080300748348236,
+        "category": ""
+      },
+      {
+        "value": "plaid",
+        "score": 0.04402982443571091,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.11744476854801178,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "other",
+    "paletteRgb": [
+      [
+        209,
+        212,
+        219
+      ],
+      [
+        210,
+        213,
+        220
+      ],
+      [
+        208,
+        211,
+        218
+      ],
+      [
+        163,
+        163,
+        169
+      ],
+      [
+        140,
+        139,
+        145
+      ],
+      [
+        45,
+        36,
+        48
+      ]
+    ],
+    "paletteHex": [
+      "#d1d4db",
+      "#d2d5dc",
+      "#d0d3da",
+      "#a3a3a9",
+      "#8c8b91",
+      "#2d2430"
+    ],
+    "primaryColor": "#d1d4db",
+    "secondaryColor": "#d2d5dc",
+    "accentColor": "#d0d3da"
+  },
+  "design": {
+    "id": "H02_enhanced",
+    "description": "beret variants difficult",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#d1d4db",
+        "#d2d5dc",
+        "#d0d3da"
+      ],
+      "band": [
+        "#d0d3da",
+        "#d2d5dc",
+        "#d1d4db"
+      ],
+      "brim": [
+        "#d1d4db",
+        "#d2d5dc"
+      ],
+      "hem": [
+        "#d2d5dc",
+        "#d1d4db"
+      ],
+      "lower": [
+        "#d2d5dc",
+        "#d1d4db"
+      ],
+      "whole": [
+        "#d1d4db",
+        "#d2d5dc",
+        "#d0d3da"
+      ]
+    },
+    "color_bands": [],
+    "motifs": [],
+    "overlays": []
+  },
+  "draft": {
+    "control_id": "beret",
+    "canvas_width": 64,
+    "canvas_height": 96,
+    "views": [
+      {
+        "facing": "front",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          3,
+          4,
+          16,
+          12
+        ],
+        "opaque": 69,
+        "regions": {
+          "crown": 61,
+          "band": 8
+        },
+        "shade_steps": {
+          "-2": 31,
+          "-1": 24,
+          "0": 13,
+          "1": 1
+        }
+      },
+      {
+        "facing": "right",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          2,
+          5,
+          14,
+          14
+        ],
+        "opaque": 78,
+        "regions": {
+          "crown": 72,
+          "band": 6
+        },
+        "shade_steps": {
+          "-2": 32,
+          "-1": 31,
+          "0": 14,
+          "1": 1
+        }
+      },
+      {
+        "facing": "left",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          5,
+          5,
+          17,
+          14
+        ],
+        "opaque": 78,
+        "regions": {
+          "crown": 72,
+          "band": 6
+        },
+        "shade_steps": {
+          "-2": 32,
+          "-1": 31,
+          "0": 14,
+          "1": 1
+        }
+      },
+      {
+        "facing": "back",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          3,
+          6,
+          16,
+          15
+        ],
+        "opaque": 108,
+        "regions": {
+          "crown": 88,
+          "band": 20
+        },
+        "shade_steps": {
+          "-2": 32,
+          "-1": 41,
+          "0": 35
+        }
+      }
+    ],
+    "regions": [
+      "band",
+      "crown"
+    ],
+    "semantic_pattern": "solid",
+    "color_bands": [],
+    "motifs": [],
+    "overlays": [],
+    "region_palettes": {
+      "crown": [
+        "#d1d4db",
+        "#d2d5dc",
+        "#d0d3da"
+      ],
+      "band": [
+        "#d0d3da",
+        "#d2d5dc",
+        "#d1d4db"
+      ],
+      "brim": [
+        "#d1d4db",
+        "#d2d5dc"
+      ],
+      "hem": [
+        "#d2d5dc",
+        "#d1d4db"
+      ],
+      "lower": [
+        "#d2d5dc",
+        "#d1d4db"
+      ],
+      "whole": [
+        "#d1d4db",
+        "#d2d5dc",
+        "#d0d3da"
+      ]
+    },
+    "normalized_pattern_coordinates": true,
+    "base_overlay_separation": true,
+    "shading_topology_preserved": true,
+    "texture_cleanup": true,
+    "coherent_four_view_projection": true,
+    "pattern_cells_after_cleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "design_id": "H02_enhanced",
+    "description": "beret variants difficult"
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 9.48,
+      "pattern_continuity": 8.8,
+      "motif_location": 8.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "enhanced": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 9.25,
+      "pattern_continuity": 9.0,
+      "motif_location": 8.5,
+      "four_view_coherence": 9.8,
+      "stardew_readability": 9.5,
+      "junk_control": 9.7
+    },
+    "baselineOverall": 9.54,
+    "enhancedOverall": 9.39,
+    "delta": -0.15,
+    "patternDensityByView": {
+      "front": 0.0,
+      "right": 0.0,
+      "left": 0.0,
+      "back": 0.0
+    },
+    "overlayPixelsByView": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+  }
+}

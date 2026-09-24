@@ -1,0 +1,382 @@
+{
+  "input": {
+    "id": "H13",
+    "category": "hat",
+    "constructionHint": "straw_hat",
+    "description": "pixel-art straw hard case",
+    "originalSource": "test-packs/qc-only/RNG-CrossFamily-Rarity-QC/Hats/C04_large_Straw_Hat/hat.png",
+    "file": "references/H13.png"
+  },
+  "blueprint": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "hat",
+        "score": 0.04803097993135452,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.039235591888427734,
+        "category": ""
+      },
+      {
+        "value": "none",
+        "score": 0.031952153891325,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "crown",
+        "score": 0.07231155782938004,
+        "category": "hat"
+      },
+      {
+        "value": "hat",
+        "score": 0.06134564429521561,
+        "category": "hat"
+      },
+      {
+        "value": "cap",
+        "score": 0.05037318915128708,
+        "category": "hat"
+      },
+      {
+        "value": "helmet",
+        "score": 0.04977412894368172,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "logo",
+        "score": 0.048828087747097015,
+        "category": ""
+      },
+      {
+        "value": "horizontal_stripes",
+        "score": 0.047539081424474716,
+        "category": ""
+      },
+      {
+        "value": "graphic",
+        "score": 0.044072214514017105,
+        "category": ""
+      },
+      {
+        "value": "horizontal_stripes",
+        "score": 0.03876732289791107,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.02524382248520851,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "logo",
+    "paletteRgb": [
+      [
+        81,
+        44,
+        12
+      ],
+      [
+        255,
+        182,
+        72
+      ],
+      [
+        206,
+        132,
+        53
+      ],
+      [
+        173,
+        91,
+        24
+      ],
+      [
+        255,
+        225,
+        104
+      ],
+      [
+        137,
+        75,
+        39
+      ]
+    ],
+    "paletteHex": [
+      "#512c0c",
+      "#ffb648",
+      "#ce8435",
+      "#ad5b18",
+      "#ffe168",
+      "#894b27"
+    ],
+    "primaryColor": "#512c0c",
+    "secondaryColor": "#ffb648",
+    "accentColor": "#ce8435"
+  },
+  "design": {
+    "id": "H13_enhanced",
+    "description": "pixel-art straw hard case",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#512c0c",
+        "#ffb648",
+        "#ce8435"
+      ],
+      "band": [
+        "#ce8435",
+        "#ffb648",
+        "#512c0c"
+      ],
+      "brim": [
+        "#512c0c",
+        "#ffb648"
+      ],
+      "hem": [
+        "#ffb648",
+        "#512c0c"
+      ],
+      "lower": [
+        "#ffb648",
+        "#512c0c"
+      ],
+      "whole": [
+        "#512c0c",
+        "#ffb648",
+        "#ce8435"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "band",
+        "top": 0.45,
+        "bottom": 0.84,
+        "color": "#ce8435"
+      }
+    ],
+    "motifs": [
+      {
+        "type": "badge",
+        "x": 0.5,
+        "y": 0.48,
+        "scope": "FRONT_ONLY",
+        "color": "#ce8435",
+        "scale": 1
+      }
+    ],
+    "overlays": []
+  },
+  "draft": {
+    "control_id": "straw_hat",
+    "canvas_width": 64,
+    "canvas_height": 96,
+    "views": [
+      {
+        "facing": "front",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          1,
+          4,
+          18,
+          11
+        ],
+        "opaque": 92,
+        "regions": {
+          "crown": 34,
+          "band": 16,
+          "brim": 42
+        },
+        "shade_steps": {
+          "-2": 38,
+          "-1": 19,
+          "0": 29,
+          "1": 6
+        }
+      },
+      {
+        "facing": "right",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          0,
+          4,
+          17,
+          11
+        ],
+        "opaque": 93,
+        "regions": {
+          "crown": 34,
+          "band": 16,
+          "brim": 43
+        },
+        "shade_steps": {
+          "-2": 38,
+          "-1": 20,
+          "0": 32,
+          "1": 3
+        }
+      },
+      {
+        "facing": "left",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          2,
+          4,
+          19,
+          11
+        ],
+        "opaque": 93,
+        "regions": {
+          "crown": 34,
+          "band": 16,
+          "brim": 43
+        },
+        "shade_steps": {
+          "-2": 38,
+          "-1": 20,
+          "0": 32,
+          "1": 3
+        }
+      },
+      {
+        "facing": "back",
+        "width": 20,
+        "height": 20,
+        "bbox": [
+          1,
+          4,
+          18,
+          14
+        ],
+        "opaque": 134,
+        "regions": {
+          "crown": 58,
+          "band": 18,
+          "brim": 58
+        },
+        "shade_steps": {
+          "-2": 36,
+          "-1": 31,
+          "0": 55,
+          "1": 12
+        }
+      }
+    ],
+    "regions": [
+      "band",
+      "brim",
+      "crown"
+    ],
+    "semantic_pattern": "solid",
+    "color_bands": [
+      {
+        "region": "band",
+        "top": 0.45,
+        "bottom": 0.84,
+        "color": "#ce8435"
+      }
+    ],
+    "motifs": [
+      {
+        "type": "badge",
+        "x": 0.5,
+        "y": 0.48,
+        "scope": "FRONT_ONLY",
+        "color": "#ce8435",
+        "scale": 1
+      }
+    ],
+    "overlays": [],
+    "region_palettes": {
+      "crown": [
+        "#512c0c",
+        "#ffb648",
+        "#ce8435"
+      ],
+      "band": [
+        "#ce8435",
+        "#ffb648",
+        "#512c0c"
+      ],
+      "brim": [
+        "#512c0c",
+        "#ffb648"
+      ],
+      "hem": [
+        "#ffb648",
+        "#512c0c"
+      ],
+      "lower": [
+        "#ffb648",
+        "#512c0c"
+      ],
+      "whole": [
+        "#512c0c",
+        "#ffb648",
+        "#ce8435"
+      ]
+    },
+    "normalized_pattern_coordinates": true,
+    "base_overlay_separation": true,
+    "shading_topology_preserved": true,
+    "texture_cleanup": true,
+    "coherent_four_view_projection": true,
+    "pattern_cells_after_cleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "design_id": "H13_enhanced",
+    "description": "pixel-art straw hard case"
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 7.8,
+      "pattern_continuity": 4.5,
+      "motif_location": 4.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "enhanced": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 8.01,
+      "pattern_continuity": 7.0,
+      "motif_location": 9.3,
+      "four_view_coherence": 9.8,
+      "stardew_readability": 9.5,
+      "junk_control": 9.7
+    },
+    "baselineOverall": 8.11,
+    "enhancedOverall": 9.04,
+    "delta": 0.93,
+    "patternDensityByView": {
+      "front": 0.0,
+      "right": 0.0,
+      "left": 0.0,
+      "back": 0.0
+    },
+    "overlayPixelsByView": {
+      "front": 7,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "proxyNote": "Automated prototype proxies, not a substitute for human art review."
+  }
+}

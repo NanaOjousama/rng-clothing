@@ -1226,3 +1226,7 @@ The user visually approved `experiments/hat_production_source_respecting_final_0
 - 20 source-respecting hat families x Common/Uncommon/Rare/Epic.
 - Baseline metadata: `generator/data/hat_production_golden_baseline.json`.
 - Future Photo Tailor/private-lab experiments must compare against this baseline rather than old failed batches.
+
+## 2026-09-24 — Photo Tailor Private Lab 02 end-to-end challenge
+Built isolated `prototypes/photo_tailor_private_lab_02/` and `experiments/photo_tailor_private_lab_02/` after freezing `HAT_PRODUCTION_GOLDEN_V1`. It uses 20 copied reference inputs (16 hats + 4 shirts), FashionSigLIP semantic blueprints, copied construction controls, and the isolated PT-style compiler. Runtime has zero production generator/render imports.
+Automated proxy result is MIXED: baseline 8.73 -> enhanced 9.18 (+0.45). Strongest gains: pattern continuity +1.60, motif location +1.92, palette/material resemblance +0.71. Golden baseline remains slightly stronger for pristine coherence/readability/junk control. Do not integrate the whole PT stack yet; keep the private lab for human review and selectively preserve the systems that showed material gains.

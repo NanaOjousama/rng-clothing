@@ -1,0 +1,144 @@
+{
+  "control_id": "beret",
+  "canvas_width": 64,
+  "canvas_height": 96,
+  "views": [
+    {
+      "facing": "front",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        3,
+        4,
+        16,
+        12
+      ],
+      "opaque": 69,
+      "regions": {
+        "crown": 61,
+        "band": 8
+      },
+      "shade_steps": {
+        "-2": 31,
+        "-1": 24,
+        "0": 13,
+        "1": 1
+      }
+    },
+    {
+      "facing": "right",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        2,
+        5,
+        14,
+        14
+      ],
+      "opaque": 78,
+      "regions": {
+        "crown": 72,
+        "band": 6
+      },
+      "shade_steps": {
+        "-2": 32,
+        "-1": 31,
+        "0": 14,
+        "1": 1
+      }
+    },
+    {
+      "facing": "left",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        5,
+        5,
+        17,
+        14
+      ],
+      "opaque": 78,
+      "regions": {
+        "crown": 72,
+        "band": 6
+      },
+      "shade_steps": {
+        "-2": 32,
+        "-1": 31,
+        "0": 14,
+        "1": 1
+      }
+    },
+    {
+      "facing": "back",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        3,
+        6,
+        16,
+        15
+      ],
+      "opaque": 108,
+      "regions": {
+        "crown": 88,
+        "band": 20
+      },
+      "shade_steps": {
+        "-2": 32,
+        "-1": 41,
+        "0": 35
+      }
+    }
+  ],
+  "regions": [
+    "band",
+    "crown"
+  ],
+  "semantic_pattern": "colorblock",
+  "color_bands": [],
+  "motifs": [],
+  "overlays": [],
+  "region_palettes": {
+    "crown": [
+      "#959da9",
+      "#878e99",
+      "#505862"
+    ],
+    "band": [
+      "#505862",
+      "#878e99",
+      "#959da9"
+    ],
+    "brim": [
+      "#959da9",
+      "#878e99"
+    ],
+    "hem": [
+      "#878e99",
+      "#959da9"
+    ],
+    "lower": [
+      "#878e99",
+      "#959da9"
+    ],
+    "whole": [
+      "#959da9",
+      "#878e99",
+      "#505862"
+    ]
+  },
+  "normalized_pattern_coordinates": true,
+  "base_overlay_separation": true,
+  "shading_topology_preserved": true,
+  "texture_cleanup": true,
+  "coherent_four_view_projection": true,
+  "pattern_cells_after_cleanup": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "design_id": "H01_enhanced",
+  "description": "beret sheet floral/ribbon"
+}
