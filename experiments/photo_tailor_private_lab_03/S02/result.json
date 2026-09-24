@@ -1,0 +1,353 @@
+{
+  "input": {
+    "id": "S02",
+    "category": "shirt",
+    "constructionHint": "shirt_bow_blouse",
+    "description": "short-sleeve sailor reference",
+    "originalSource": "templates/fashionsense/sailor/shortsleeve.jpeg",
+    "file": "references/S02.jpeg"
+  },
+  "blueprint": {
+    "categoryHint": "shirt",
+    "categoryCandidates": [
+      {
+        "value": "shirt",
+        "score": 0.11073384433984756,
+        "category": ""
+      },
+      {
+        "value": "shirt",
+        "score": 0.07542978227138519,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.06387101113796234,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "polo",
+        "score": 0.11017540097236633,
+        "category": "shirt"
+      },
+      {
+        "value": "polo",
+        "score": 0.07537242770195007,
+        "category": "shirt"
+      },
+      {
+        "value": "crop_top",
+        "score": 0.06990253925323486,
+        "category": "shirt"
+      },
+      {
+        "value": "tank_top",
+        "score": 0.0693545937538147,
+        "category": "shirt"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "other",
+        "score": 0.057435717433691025,
+        "category": ""
+      },
+      {
+        "value": "horizontal_stripes",
+        "score": 0.04332564026117325,
+        "category": ""
+      },
+      {
+        "value": "logo",
+        "score": 0.03834746778011322,
+        "category": ""
+      },
+      {
+        "value": "vertical_stripes",
+        "score": 0.03406809642910957,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "short_sleeve",
+        "score": 0.0664234608411789,
+        "category": "shirt"
+      },
+      {
+        "value": "sleeveless",
+        "score": 0.05727091431617737,
+        "category": "shirt"
+      },
+      {
+        "value": "three_quarter_sleeve",
+        "score": 0.049107715487480164,
+        "category": "shirt"
+      }
+    ],
+    "necklineCandidates": [
+      {
+        "value": "collared",
+        "score": 0.07345660030841827,
+        "category": "shirt"
+      },
+      {
+        "value": "v_neck",
+        "score": 0.05368807911872864,
+        "category": "shirt"
+      },
+      {
+        "value": "hooded",
+        "score": 0.04188162088394165,
+        "category": "shirt"
+      }
+    ],
+    "detailCandidates": [
+      {
+        "value": "pockets",
+        "score": 0.046444740146398544,
+        "category": "shirt"
+      },
+      {
+        "value": "ribbed_trim",
+        "score": 0.040096841752529144,
+        "category": "shirt"
+      },
+      {
+        "value": "none",
+        "score": 0.03889411687850952,
+        "category": "shirt"
+      }
+    ],
+    "semanticPattern": "other",
+    "paletteRgb": [
+      [
+        211,
+        214,
+        219
+      ],
+      [
+        208,
+        210,
+        214
+      ],
+      [
+        159,
+        161,
+        163
+      ],
+      [
+        217,
+        220,
+        224
+      ],
+      [
+        246,
+        246,
+        247
+      ],
+      [
+        213,
+        216,
+        220
+      ]
+    ],
+    "paletteHex": [
+      "#d3d6db",
+      "#d0d2d6",
+      "#9fa1a3",
+      "#d9dce0",
+      "#f6f6f7",
+      "#d5d8dc"
+    ],
+    "primaryColor": "#d3d6db",
+    "secondaryColor": "#d0d2d6",
+    "accentColor": "#9fa1a3"
+  },
+  "plan": {
+    "id": "S02_hybrid",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "torso": [
+        "#d3d6db",
+        "#d0d2d6",
+        "#9fa1a3"
+      ],
+      "upper": [
+        "#d0d2d6",
+        "#9fa1a3",
+        "#d3d6db"
+      ],
+      "left_sleeve": [
+        "#d3d6db",
+        "#d0d2d6"
+      ],
+      "right_sleeve": [
+        "#d3d6db",
+        "#d0d2d6"
+      ],
+      "hem": [
+        "#d0d2d6",
+        "#d3d6db"
+      ],
+      "whole": [
+        "#d3d6db",
+        "#d0d2d6",
+        "#9fa1a3"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "upper",
+        "top": 0.0,
+        "bottom": 0.28,
+        "color": "#d0d2d6"
+      }
+    ],
+    "motifs": [],
+    "overlays": [],
+    "palette_strength": 0.3,
+    "pattern_strength": 0.36,
+    "overlay_strength": 0.7,
+    "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+  },
+  "draft": {
+    "schema": "pt-private-lab03-hybrid-draft/v1",
+    "control": "shirt_bow_blouse",
+    "plan": {
+      "id": "S02_hybrid",
+      "semantic_pattern": "solid",
+      "region_palettes": {
+        "torso": [
+          "#d3d6db",
+          "#d0d2d6",
+          "#9fa1a3"
+        ],
+        "upper": [
+          "#d0d2d6",
+          "#9fa1a3",
+          "#d3d6db"
+        ],
+        "left_sleeve": [
+          "#d3d6db",
+          "#d0d2d6"
+        ],
+        "right_sleeve": [
+          "#d3d6db",
+          "#d0d2d6"
+        ],
+        "hem": [
+          "#d0d2d6",
+          "#d3d6db"
+        ],
+        "whole": [
+          "#d3d6db",
+          "#d0d2d6",
+          "#9fa1a3"
+        ]
+      },
+      "color_bands": [
+        {
+          "region": "upper",
+          "top": 0.0,
+          "bottom": 0.28,
+          "color": "#d0d2d6"
+        }
+      ],
+      "motifs": [],
+      "overlays": [],
+      "palette_strength": 0.3,
+      "pattern_strength": 0.36,
+      "overlay_strength": 0.7,
+      "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+    },
+    "views": [
+      {
+        "facing": "front",
+        "size": [
+          16,
+          16
+        ],
+        "opaque": 222,
+        "changed": 160,
+        "changeRatio": 0.7207
+      },
+      {
+        "facing": "right",
+        "size": [
+          16,
+          16
+        ],
+        "opaque": 176,
+        "changed": 120,
+        "changeRatio": 0.6818
+      },
+      {
+        "facing": "left",
+        "size": [
+          16,
+          16
+        ],
+        "opaque": 176,
+        "changed": 120,
+        "changeRatio": 0.6818
+      },
+      {
+        "facing": "back",
+        "size": [
+          16,
+          16
+        ],
+        "opaque": 226,
+        "changed": 174,
+        "changeRatio": 0.7699
+      }
+    ],
+    "patternCellsAfterCleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "changedPixels": {
+      "front": 160,
+      "right": 120,
+      "left": 120,
+      "back": 174
+    },
+    "changeRatioByView": {
+      "front": 0.7207,
+      "right": 0.6818,
+      "left": 0.6818,
+      "back": 0.7699
+    },
+    "outlinePreservedExactly": true,
+    "sourcePixelsAreBaseAuthority": true
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 9.25,
+      "pattern_continuity": 8.8,
+      "motif_location": 8.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "hybrid": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 9.36,
+      "pattern_continuity": 9.1,
+      "motif_location": 8.6,
+      "four_view_coherence": 9.92,
+      "stardew_readability": 9.5,
+      "junk_control": 9.95
+    },
+    "baselineOverall": 9.51,
+    "hybridOverall": 9.49,
+    "delta": -0.02,
+    "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+  }
+}

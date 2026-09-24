@@ -1,0 +1,311 @@
+{
+  "input": {
+    "id": "H09",
+    "category": "hat",
+    "constructionHint": "cap",
+    "description": "real cosplay cap",
+    "originalSource": "mario hat/super-mario-bros-mario-cosplay-hat-5366136.jpg",
+    "file": "references/H09.jpg"
+  },
+  "blueprint": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "hat",
+        "score": 0.056373272091150284,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.008564915508031845,
+        "category": ""
+      },
+      {
+        "value": "shirt",
+        "score": 0.007812943309545517,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "cap",
+        "score": 0.08091649413108826,
+        "category": "hat"
+      },
+      {
+        "value": "hat",
+        "score": 0.08062516152858734,
+        "category": "hat"
+      },
+      {
+        "value": "helmet",
+        "score": 0.04055849462747574,
+        "category": "hat"
+      },
+      {
+        "value": "crown",
+        "score": 0.015026986598968506,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "solid",
+        "score": 0.02913525328040123,
+        "category": ""
+      },
+      {
+        "value": "logo",
+        "score": 0.0034077363088726997,
+        "category": ""
+      },
+      {
+        "value": "camouflage",
+        "score": -0.006235145032405853,
+        "category": ""
+      },
+      {
+        "value": "plaid",
+        "score": -0.010992133989930153,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.06555067002773285,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "solid",
+    "paletteRgb": [
+      [
+        183,
+        22,
+        28
+      ],
+      [
+        194,
+        26,
+        34
+      ],
+      [
+        197,
+        30,
+        38
+      ],
+      [
+        215,
+        40,
+        49
+      ],
+      [
+        160,
+        15,
+        22
+      ],
+      [
+        246,
+        81,
+        94
+      ]
+    ],
+    "paletteHex": [
+      "#b7161c",
+      "#c21a22",
+      "#c51e26",
+      "#d72831",
+      "#a00f16",
+      "#f6515e"
+    ],
+    "primaryColor": "#b7161c",
+    "secondaryColor": "#c21a22",
+    "accentColor": "#c51e26"
+  },
+  "plan": {
+    "id": "H09_hybrid",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#b7161c",
+        "#c21a22",
+        "#c51e26"
+      ],
+      "band": [
+        "#c51e26",
+        "#c21a22",
+        "#b7161c"
+      ],
+      "brim": [
+        "#b7161c",
+        "#c21a22"
+      ],
+      "hem": [
+        "#c21a22",
+        "#b7161c"
+      ],
+      "lower": [
+        "#c21a22",
+        "#b7161c"
+      ],
+      "whole": [
+        "#b7161c",
+        "#c21a22",
+        "#c51e26"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "band",
+        "top": 0.45,
+        "bottom": 0.84,
+        "color": "#c51e26"
+      }
+    ],
+    "motifs": [],
+    "overlays": [],
+    "palette_strength": 0.3,
+    "pattern_strength": 0.36,
+    "overlay_strength": 0.7,
+    "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+  },
+  "draft": {
+    "schema": "pt-private-lab03-hybrid-draft/v1",
+    "control": "cap",
+    "plan": {
+      "id": "H09_hybrid",
+      "semantic_pattern": "solid",
+      "region_palettes": {
+        "crown": [
+          "#b7161c",
+          "#c21a22",
+          "#c51e26"
+        ],
+        "band": [
+          "#c51e26",
+          "#c21a22",
+          "#b7161c"
+        ],
+        "brim": [
+          "#b7161c",
+          "#c21a22"
+        ],
+        "hem": [
+          "#c21a22",
+          "#b7161c"
+        ],
+        "lower": [
+          "#c21a22",
+          "#b7161c"
+        ],
+        "whole": [
+          "#b7161c",
+          "#c21a22",
+          "#c51e26"
+        ]
+      },
+      "color_bands": [
+        {
+          "region": "band",
+          "top": 0.45,
+          "bottom": 0.84,
+          "color": "#c51e26"
+        }
+      ],
+      "motifs": [],
+      "overlays": [],
+      "palette_strength": 0.3,
+      "pattern_strength": 0.36,
+      "overlay_strength": 0.7,
+      "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+    },
+    "views": [
+      {
+        "facing": "front",
+        "size": [
+          20,
+          20
+        ],
+        "opaque": 326,
+        "changed": 264,
+        "changeRatio": 0.8098
+      },
+      {
+        "facing": "right",
+        "size": [
+          20,
+          20
+        ],
+        "opaque": 132,
+        "changed": 91,
+        "changeRatio": 0.6894
+      },
+      {
+        "facing": "left",
+        "size": [
+          20,
+          20
+        ],
+        "opaque": 132,
+        "changed": 91,
+        "changeRatio": 0.6894
+      },
+      {
+        "facing": "back",
+        "size": [
+          20,
+          20
+        ],
+        "opaque": 108,
+        "changed": 74,
+        "changeRatio": 0.6852
+      }
+    ],
+    "patternCellsAfterCleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "changedPixels": {
+      "front": 264,
+      "right": 91,
+      "left": 91,
+      "back": 74
+    },
+    "changeRatioByView": {
+      "front": 0.8098,
+      "right": 0.6894,
+      "left": 0.6894,
+      "back": 0.6852
+    },
+    "outlinePreservedExactly": true,
+    "sourcePixelsAreBaseAuthority": true
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 7.89,
+      "pattern_continuity": 8.8,
+      "motif_location": 8.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "hybrid": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 8.56,
+      "pattern_continuity": 9.1,
+      "motif_location": 8.6,
+      "four_view_coherence": 9.9,
+      "stardew_readability": 8.9,
+      "junk_control": 9.95
+    },
+    "baselineOverall": 9.31,
+    "hybridOverall": 9.29,
+    "delta": -0.03,
+    "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+  }
+}

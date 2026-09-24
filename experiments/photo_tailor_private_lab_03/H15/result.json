@@ -1,0 +1,291 @@
+{
+  "input": {
+    "id": "H15",
+    "category": "hat",
+    "constructionHint": "hood",
+    "description": "pixel-art pointy hood hard case",
+    "originalSource": "test-packs/qc-only/RNG-CrossFamily-Rarity-QC/Hats/E16_large_Hood_Pointy/hat.png",
+    "file": "references/H15.png"
+  },
+  "blueprint": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "boots",
+        "score": 0.07027451694011688,
+        "category": ""
+      },
+      {
+        "value": "none",
+        "score": 0.05914166197180748,
+        "category": ""
+      },
+      {
+        "value": "shirt",
+        "score": 0.052331309765577316,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "helmet",
+        "score": 0.0581243634223938,
+        "category": "hat"
+      },
+      {
+        "value": "crown",
+        "score": 0.04532598331570625,
+        "category": "hat"
+      },
+      {
+        "value": "cap",
+        "score": 0.038709722459316254,
+        "category": "hat"
+      },
+      {
+        "value": "hat",
+        "score": 0.03515924513339996,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "logo",
+        "score": 0.06251949071884155,
+        "category": ""
+      },
+      {
+        "value": "graphic",
+        "score": 0.052213311195373535,
+        "category": ""
+      },
+      {
+        "value": "geometric",
+        "score": 0.0450885072350502,
+        "category": ""
+      },
+      {
+        "value": "graphic",
+        "score": 0.0413859486579895,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.04037296026945114,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "logo",
+    "paletteRgb": [
+      [
+        81,
+        81,
+        81
+      ],
+      [
+        165,
+        165,
+        165
+      ],
+      [
+        217,
+        217,
+        217
+      ],
+      [
+        57,
+        57,
+        57
+      ],
+      [
+        119,
+        119,
+        119
+      ]
+    ],
+    "paletteHex": [
+      "#515151",
+      "#a5a5a5",
+      "#d9d9d9",
+      "#393939",
+      "#777777"
+    ],
+    "primaryColor": "#515151",
+    "secondaryColor": "#a5a5a5",
+    "accentColor": "#d9d9d9"
+  },
+  "plan": {
+    "id": "H15_hybrid",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#515151",
+        "#a5a5a5",
+        "#d9d9d9"
+      ],
+      "band": [
+        "#d9d9d9",
+        "#a5a5a5",
+        "#515151"
+      ],
+      "brim": [
+        "#515151",
+        "#a5a5a5"
+      ],
+      "hem": [
+        "#a5a5a5",
+        "#515151"
+      ],
+      "lower": [
+        "#a5a5a5",
+        "#515151"
+      ],
+      "whole": [
+        "#515151",
+        "#a5a5a5",
+        "#d9d9d9"
+      ]
+    },
+    "color_bands": [],
+    "motifs": [],
+    "overlays": [],
+    "palette_strength": 0.3,
+    "pattern_strength": 0.36,
+    "overlay_strength": 0.7,
+    "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+  },
+  "draft": {
+    "schema": "pt-private-lab03-hybrid-draft/v1",
+    "control": "hood",
+    "plan": {
+      "id": "H15_hybrid",
+      "semantic_pattern": "solid",
+      "region_palettes": {
+        "crown": [
+          "#515151",
+          "#a5a5a5",
+          "#d9d9d9"
+        ],
+        "band": [
+          "#d9d9d9",
+          "#a5a5a5",
+          "#515151"
+        ],
+        "brim": [
+          "#515151",
+          "#a5a5a5"
+        ],
+        "hem": [
+          "#a5a5a5",
+          "#515151"
+        ],
+        "lower": [
+          "#a5a5a5",
+          "#515151"
+        ],
+        "whole": [
+          "#515151",
+          "#a5a5a5",
+          "#d9d9d9"
+        ]
+      },
+      "color_bands": [],
+      "motifs": [],
+      "overlays": [],
+      "palette_strength": 0.3,
+      "pattern_strength": 0.36,
+      "overlay_strength": 0.7,
+      "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+    },
+    "views": [
+      {
+        "facing": "front",
+        "size": [
+          32,
+          32
+        ],
+        "opaque": 122,
+        "changed": 0,
+        "changeRatio": 0.0
+      },
+      {
+        "facing": "right",
+        "size": [
+          32,
+          32
+        ],
+        "opaque": 127,
+        "changed": 0,
+        "changeRatio": 0.0
+      },
+      {
+        "facing": "left",
+        "size": [
+          32,
+          32
+        ],
+        "opaque": 127,
+        "changed": 0,
+        "changeRatio": 0.0
+      },
+      {
+        "facing": "back",
+        "size": [
+          32,
+          32
+        ],
+        "opaque": 184,
+        "changed": 0,
+        "changeRatio": 0.0
+      }
+    ],
+    "patternCellsAfterCleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "changedPixels": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "changeRatioByView": {
+      "front": 0.0,
+      "right": 0.0,
+      "left": 0.0,
+      "back": 0.0
+    },
+    "outlinePreservedExactly": true,
+    "sourcePixelsAreBaseAuthority": true
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 7.98,
+      "pattern_continuity": 4.5,
+      "motif_location": 8.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "hybrid": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 8.96,
+      "pattern_continuity": 7.3,
+      "motif_location": 8.6,
+      "four_view_coherence": 9.95,
+      "stardew_readability": 9.85,
+      "junk_control": 9.95
+    },
+    "baselineOverall": 8.71,
+    "hybridOverall": 9.23,
+    "delta": 0.52,
+    "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+  }
+}

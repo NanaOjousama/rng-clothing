@@ -1,0 +1,106 @@
+{
+  "schema": "pt-private-lab03-hybrid-draft/v1",
+  "control": "beret",
+  "plan": {
+    "id": "H02_hybrid",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#d1d4db",
+        "#d2d5dc",
+        "#d0d3da"
+      ],
+      "band": [
+        "#d0d3da",
+        "#d2d5dc",
+        "#d1d4db"
+      ],
+      "brim": [
+        "#d1d4db",
+        "#d2d5dc"
+      ],
+      "hem": [
+        "#d2d5dc",
+        "#d1d4db"
+      ],
+      "lower": [
+        "#d2d5dc",
+        "#d1d4db"
+      ],
+      "whole": [
+        "#d1d4db",
+        "#d2d5dc",
+        "#d0d3da"
+      ]
+    },
+    "color_bands": [],
+    "motifs": [],
+    "overlays": [],
+    "palette_strength": 0.3,
+    "pattern_strength": 0.36,
+    "overlay_strength": 0.7,
+    "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+  },
+  "views": [
+    {
+      "facing": "front",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 69,
+      "changed": 38,
+      "changeRatio": 0.5507
+    },
+    {
+      "facing": "right",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 78,
+      "changed": 46,
+      "changeRatio": 0.5897
+    },
+    {
+      "facing": "left",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 78,
+      "changed": 46,
+      "changeRatio": 0.5897
+    },
+    {
+      "facing": "back",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 108,
+      "changed": 76,
+      "changeRatio": 0.7037
+    }
+  ],
+  "patternCellsAfterCleanup": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "changedPixels": {
+    "front": 38,
+    "right": 46,
+    "left": 46,
+    "back": 76
+  },
+  "changeRatioByView": {
+    "front": 0.5507,
+    "right": 0.5897,
+    "left": 0.5897,
+    "back": 0.7037
+  },
+  "outlinePreservedExactly": true,
+  "sourcePixelsAreBaseAuthority": true
+}

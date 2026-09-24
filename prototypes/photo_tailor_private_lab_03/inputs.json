@@ -1,0 +1,167 @@
+{
+  "schema": "pt-private-lab02-inputs/v1",
+  "count": 20,
+  "selectionMode": "FashionSigLIP semantics + coarse precise-recognition construction hint",
+  "inputs": [
+    {
+      "id": "H01",
+      "category": "hat",
+      "constructionHint": "beret",
+      "description": "beret sheet floral/ribbon",
+      "originalSource": "beret_deesign/Gemini_Generated_Image_7nmrzc7nmrzc7nmr.jpeg",
+      "file": "references/H01.jpeg"
+    },
+    {
+      "id": "H02",
+      "category": "hat",
+      "constructionHint": "beret",
+      "description": "beret variants difficult",
+      "originalSource": "beret_deesign/Gemini_Generated_Image_g56e57g56e57g56e.jpeg",
+      "file": "references/H02.jpeg"
+    },
+    {
+      "id": "H03",
+      "category": "hat",
+      "constructionHint": "beanie",
+      "description": "deep slouch",
+      "originalSource": "slouch beanie motif/superslouuch_beanie.jpeg",
+      "file": "references/H03.jpeg"
+    },
+    {
+      "id": "H04",
+      "category": "hat",
+      "constructionHint": "beanie",
+      "description": "pattern + localized label",
+      "originalSource": "slouch beanie motif/pattern+labelmotif.jpeg",
+      "file": "references/H04.jpeg"
+    },
+    {
+      "id": "H05",
+      "category": "hat",
+      "constructionHint": "beanie",
+      "description": "flower detail",
+      "originalSource": "slouch beanie motif/flower_motif.jpeg",
+      "file": "references/H05.jpeg"
+    },
+    {
+      "id": "H06",
+      "category": "hat",
+      "constructionHint": "beanie",
+      "description": "pom detail",
+      "originalSource": "slouch beanie motif/pom_motif.jpeg",
+      "file": "references/H06.jpeg"
+    },
+    {
+      "id": "H07",
+      "category": "hat",
+      "constructionHint": "beanie",
+      "description": "small slouch pattern",
+      "originalSource": "slouch beanie motif/pattern_smalslouch.jpeg",
+      "file": "references/H07.jpeg"
+    },
+    {
+      "id": "H08",
+      "category": "hat",
+      "constructionHint": "cap",
+      "description": "Mario front cap",
+      "originalSource": "mario hat/mariofront.jpg",
+      "file": "references/H08.jpg"
+    },
+    {
+      "id": "H09",
+      "category": "hat",
+      "constructionHint": "cap",
+      "description": "real cosplay cap",
+      "originalSource": "mario hat/super-mario-bros-mario-cosplay-hat-5366136.jpg",
+      "file": "references/H09.jpg"
+    },
+    {
+      "id": "H10",
+      "category": "hat",
+      "constructionHint": "cap",
+      "description": "cap side/back difficult",
+      "originalSource": "mario hat/sidebackmario.jpeg",
+      "file": "references/H10.jpeg"
+    },
+    {
+      "id": "H11",
+      "category": "hat",
+      "constructionHint": "cap",
+      "description": "soft-cap motif sheet",
+      "originalSource": "motif/softcap_motif.jpeg",
+      "file": "references/H11.jpeg"
+    },
+    {
+      "id": "H12",
+      "category": "hat",
+      "constructionHint": "cap",
+      "description": "soft-cap decorated sheet",
+      "originalSource": "motif/Gemini_Generated_Image_c5nvlxc5nvlxc5nv.jpeg",
+      "file": "references/H12.jpeg"
+    },
+    {
+      "id": "H13",
+      "category": "hat",
+      "constructionHint": "straw_hat",
+      "description": "pixel-art straw hard case",
+      "originalSource": "test-packs/qc-only/RNG-CrossFamily-Rarity-QC/Hats/C04_large_Straw_Hat/hat.png",
+      "file": "references/H13.png"
+    },
+    {
+      "id": "H14",
+      "category": "hat",
+      "constructionHint": "sun_hat",
+      "description": "pixel-art floral sun hard case",
+      "originalSource": "test-packs/qc-only/RNG-CrossFamily-Rarity-QC/Hats/R12_large_Sun_Hat_Flowers/hat.png",
+      "file": "references/H14.png"
+    },
+    {
+      "id": "H15",
+      "category": "hat",
+      "constructionHint": "hood",
+      "description": "pixel-art pointy hood hard case",
+      "originalSource": "test-packs/qc-only/RNG-CrossFamily-Rarity-QC/Hats/E16_large_Hood_Pointy/hat.png",
+      "file": "references/H15.png"
+    },
+    {
+      "id": "H16",
+      "category": "hat",
+      "constructionHint": "hood",
+      "description": "fantasy wizard hat difficult",
+      "originalSource": "reference batch/pixellab-cute-wizardCreate-a-finished-p-1789168638595.png",
+      "file": "references/H16.png"
+    },
+    {
+      "id": "S01",
+      "category": "shirt",
+      "constructionHint": "shirt_blouse",
+      "description": "sailor dress reference",
+      "originalSource": "templates/fashionsense/sailor/dress.jpeg",
+      "file": "references/S01.jpeg"
+    },
+    {
+      "id": "S02",
+      "category": "shirt",
+      "constructionHint": "shirt_bow_blouse",
+      "description": "short-sleeve sailor reference",
+      "originalSource": "templates/fashionsense/sailor/shortsleeve.jpeg",
+      "file": "references/S02.jpeg"
+    },
+    {
+      "id": "S03",
+      "category": "shirt",
+      "constructionHint": "shirt_jacket",
+      "description": "AoT jacket/front reference",
+      "originalSource": "references/style-profiles/AoTInspired/aotfront.jpeg",
+      "file": "references/S03.jpeg"
+    },
+    {
+      "id": "S04",
+      "category": "shirt",
+      "constructionHint": "shirt_knit",
+      "description": "AoT garment complex reference",
+      "originalSource": "references/style-profiles/AoTInspired/36af5584c94ab46f564e4750b5f13de8.jpg",
+      "file": "references/S04.jpg"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "schema": "pt-private-lab03-hybrid-draft/v1",
+  "control": "cap",
+  "plan": {
+    "id": "H11_hybrid",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#3d504c",
+        "#e5e4e3",
+        "#eeeeed"
+      ],
+      "band": [
+        "#eeeeed",
+        "#e5e4e3",
+        "#3d504c"
+      ],
+      "brim": [
+        "#3d504c",
+        "#e5e4e3"
+      ],
+      "hem": [
+        "#e5e4e3",
+        "#3d504c"
+      ],
+      "lower": [
+        "#e5e4e3",
+        "#3d504c"
+      ],
+      "whole": [
+        "#3d504c",
+        "#e5e4e3",
+        "#eeeeed"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "band",
+        "top": 0.45,
+        "bottom": 0.84,
+        "color": "#eeeeed"
+      }
+    ],
+    "motifs": [
+      {
+        "type": "badge",
+        "x": 0.5,
+        "y": 0.48,
+        "scope": "FRONT_ONLY",
+        "color": "#eeeeed",
+        "scale": 1
+      }
+    ],
+    "overlays": [],
+    "palette_strength": 0.3,
+    "pattern_strength": 0.36,
+    "overlay_strength": 0.7,
+    "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+  },
+  "views": [
+    {
+      "facing": "front",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 326,
+      "changed": 264,
+      "changeRatio": 0.8098
+    },
+    {
+      "facing": "right",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 132,
+      "changed": 91,
+      "changeRatio": 0.6894
+    },
+    {
+      "facing": "left",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 132,
+      "changed": 91,
+      "changeRatio": 0.6894
+    },
+    {
+      "facing": "back",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 108,
+      "changed": 74,
+      "changeRatio": 0.6852
+    }
+  ],
+  "patternCellsAfterCleanup": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "changedPixels": {
+    "front": 264,
+    "right": 91,
+    "left": 91,
+    "back": 74
+  },
+  "changeRatioByView": {
+    "front": 0.8098,
+    "right": 0.6894,
+    "left": 0.6894,
+    "back": 0.6852
+  },
+  "outlinePreservedExactly": true,
+  "sourcePixelsAreBaseAuthority": true
+}

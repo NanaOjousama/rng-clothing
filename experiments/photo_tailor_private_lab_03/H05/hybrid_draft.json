@@ -1,0 +1,113 @@
+{
+  "schema": "pt-private-lab03-hybrid-draft/v1",
+  "control": "beanie",
+  "plan": {
+    "id": "H05_hybrid",
+    "semantic_pattern": "colorblock",
+    "region_palettes": {
+      "crown": [
+        "#ac6a63",
+        "#f4baa6",
+        "#4a4435"
+      ],
+      "band": [
+        "#4a4435",
+        "#f4baa6",
+        "#ac6a63"
+      ],
+      "brim": [
+        "#ac6a63",
+        "#f4baa6"
+      ],
+      "hem": [
+        "#f4baa6",
+        "#ac6a63"
+      ],
+      "lower": [
+        "#f4baa6",
+        "#ac6a63"
+      ],
+      "whole": [
+        "#ac6a63",
+        "#f4baa6",
+        "#4a4435"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": null,
+        "top": 0.56,
+        "bottom": 1.0,
+        "color": "#f4baa6"
+      }
+    ],
+    "motifs": [],
+    "overlays": [],
+    "palette_strength": 0.3,
+    "pattern_strength": 0.36,
+    "overlay_strength": 0.7,
+    "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+  },
+  "views": [
+    {
+      "facing": "front",
+      "size": [
+        16,
+        16
+      ],
+      "opaque": 72,
+      "changed": 40,
+      "changeRatio": 0.5556
+    },
+    {
+      "facing": "right",
+      "size": [
+        16,
+        16
+      ],
+      "opaque": 86,
+      "changed": 52,
+      "changeRatio": 0.6047
+    },
+    {
+      "facing": "left",
+      "size": [
+        16,
+        16
+      ],
+      "opaque": 86,
+      "changed": 52,
+      "changeRatio": 0.6047
+    },
+    {
+      "facing": "back",
+      "size": [
+        16,
+        16
+      ],
+      "opaque": 90,
+      "changed": 62,
+      "changeRatio": 0.6889
+    }
+  ],
+  "patternCellsAfterCleanup": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "changedPixels": {
+    "front": 40,
+    "right": 52,
+    "left": 52,
+    "back": 62
+  },
+  "changeRatioByView": {
+    "front": 0.5556,
+    "right": 0.6047,
+    "left": 0.6047,
+    "back": 0.6889
+  },
+  "outlinePreservedExactly": true,
+  "sourcePixelsAreBaseAuthority": true
+}

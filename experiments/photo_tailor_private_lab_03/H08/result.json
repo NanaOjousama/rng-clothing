@@ -1,0 +1,329 @@
+{
+  "input": {
+    "id": "H08",
+    "category": "hat",
+    "constructionHint": "cap",
+    "description": "Mario front cap",
+    "originalSource": "mario hat/mariofront.jpg",
+    "file": "references/H08.jpg"
+  },
+  "blueprint": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "hat",
+        "score": 0.03915727138519287,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.0022731940262019634,
+        "category": ""
+      },
+      {
+        "value": "shirt",
+        "score": 0.00010718218982219696,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "cap",
+        "score": 0.059520892798900604,
+        "category": "hat"
+      },
+      {
+        "value": "hat",
+        "score": 0.04031156003475189,
+        "category": "hat"
+      },
+      {
+        "value": "helmet",
+        "score": 0.032272420823574066,
+        "category": "hat"
+      },
+      {
+        "value": "crown",
+        "score": 0.03065076842904091,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "graphic",
+        "score": 0.03242703154683113,
+        "category": ""
+      },
+      {
+        "value": "logo",
+        "score": 0.02709980681538582,
+        "category": ""
+      },
+      {
+        "value": "other",
+        "score": -0.0036583319306373596,
+        "category": ""
+      },
+      {
+        "value": "graphic",
+        "score": -0.008013465441763401,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.018518006429076195,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "graphic",
+    "paletteRgb": [
+      [
+        199,
+        3,
+        5
+      ],
+      [
+        198,
+        4,
+        5
+      ],
+      [
+        199,
+        3,
+        7
+      ],
+      [
+        201,
+        2,
+        5
+      ],
+      [
+        199,
+        3,
+        3
+      ],
+      [
+        201,
+        3,
+        5
+      ]
+    ],
+    "paletteHex": [
+      "#c70305",
+      "#c60405",
+      "#c70307",
+      "#c90205",
+      "#c70303",
+      "#c90305"
+    ],
+    "primaryColor": "#c70305",
+    "secondaryColor": "#c60405",
+    "accentColor": "#c70307"
+  },
+  "plan": {
+    "id": "H08_hybrid",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#c70305",
+        "#c60405",
+        "#c70307"
+      ],
+      "band": [
+        "#c70307",
+        "#c60405",
+        "#c70305"
+      ],
+      "brim": [
+        "#c70305",
+        "#c60405"
+      ],
+      "hem": [
+        "#c60405",
+        "#c70305"
+      ],
+      "lower": [
+        "#c60405",
+        "#c70305"
+      ],
+      "whole": [
+        "#c70305",
+        "#c60405",
+        "#c70307"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "band",
+        "top": 0.45,
+        "bottom": 0.84,
+        "color": "#c70307"
+      }
+    ],
+    "motifs": [
+      {
+        "type": "badge",
+        "x": 0.5,
+        "y": 0.48,
+        "scope": "FRONT_ONLY",
+        "color": "#c70307",
+        "scale": 1
+      }
+    ],
+    "overlays": [],
+    "palette_strength": 0.3,
+    "pattern_strength": 0.36,
+    "overlay_strength": 0.7,
+    "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+  },
+  "draft": {
+    "schema": "pt-private-lab03-hybrid-draft/v1",
+    "control": "cap",
+    "plan": {
+      "id": "H08_hybrid",
+      "semantic_pattern": "solid",
+      "region_palettes": {
+        "crown": [
+          "#c70305",
+          "#c60405",
+          "#c70307"
+        ],
+        "band": [
+          "#c70307",
+          "#c60405",
+          "#c70305"
+        ],
+        "brim": [
+          "#c70305",
+          "#c60405"
+        ],
+        "hem": [
+          "#c60405",
+          "#c70305"
+        ],
+        "lower": [
+          "#c60405",
+          "#c70305"
+        ],
+        "whole": [
+          "#c70305",
+          "#c60405",
+          "#c70307"
+        ]
+      },
+      "color_bands": [
+        {
+          "region": "band",
+          "top": 0.45,
+          "bottom": 0.84,
+          "color": "#c70307"
+        }
+      ],
+      "motifs": [
+        {
+          "type": "badge",
+          "x": 0.5,
+          "y": 0.48,
+          "scope": "FRONT_ONLY",
+          "color": "#c70307",
+          "scale": 1
+        }
+      ],
+      "overlays": [],
+      "palette_strength": 0.3,
+      "pattern_strength": 0.36,
+      "overlay_strength": 0.7,
+      "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+    },
+    "views": [
+      {
+        "facing": "front",
+        "size": [
+          20,
+          20
+        ],
+        "opaque": 326,
+        "changed": 264,
+        "changeRatio": 0.8098
+      },
+      {
+        "facing": "right",
+        "size": [
+          20,
+          20
+        ],
+        "opaque": 132,
+        "changed": 91,
+        "changeRatio": 0.6894
+      },
+      {
+        "facing": "left",
+        "size": [
+          20,
+          20
+        ],
+        "opaque": 132,
+        "changed": 91,
+        "changeRatio": 0.6894
+      },
+      {
+        "facing": "back",
+        "size": [
+          20,
+          20
+        ],
+        "opaque": 108,
+        "changed": 74,
+        "changeRatio": 0.6852
+      }
+    ],
+    "patternCellsAfterCleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "changedPixels": {
+      "front": 264,
+      "right": 91,
+      "left": 91,
+      "back": 74
+    },
+    "changeRatioByView": {
+      "front": 0.8098,
+      "right": 0.6894,
+      "left": 0.6894,
+      "back": 0.6852
+    },
+    "outlinePreservedExactly": true,
+    "sourcePixelsAreBaseAuthority": true
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 6.05,
+      "pattern_continuity": 4.5,
+      "motif_location": 4.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "hybrid": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 7.89,
+      "pattern_continuity": 7.3,
+      "motif_location": 9.4,
+      "four_view_coherence": 9.9,
+      "stardew_readability": 8.9,
+      "junk_control": 9.95
+    },
+    "baselineOverall": 7.86,
+    "hybridOverall": 9.05,
+    "delta": 1.18,
+    "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+  }
+}

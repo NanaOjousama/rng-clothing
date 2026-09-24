@@ -1,0 +1,590 @@
+{
+  "schema": "photo-tailor-private-lab03-results/v1",
+  "sampleCount": 20,
+  "hatCount": 16,
+  "shirtCount": 4,
+  "averageBaselineOverall": 8.81,
+  "averageHybridOverall": 9.29,
+  "averageDelta": 0.48,
+  "dimensionAverages": {
+    "silhouette_fidelity": {
+      "baseline": 10.0,
+      "hybrid": 10.0,
+      "delta": 0.0
+    },
+    "palette_material_resemblance": {
+      "baseline": 7.96,
+      "hybrid": 8.77,
+      "delta": 0.81
+    },
+    "pattern_continuity": {
+      "baseline": 6.22,
+      "hybrid": 8.07,
+      "delta": 1.85
+    },
+    "motif_location": {
+      "baseline": 7.5,
+      "hybrid": 8.8,
+      "delta": 1.3
+    },
+    "four_view_coherence": {
+      "baseline": 10.0,
+      "hybrid": 9.87,
+      "delta": -0.13
+    },
+    "stardew_readability": {
+      "baseline": 10.0,
+      "hybrid": 9.53,
+      "delta": -0.47
+    },
+    "junk_control": {
+      "baseline": 10.0,
+      "hybrid": 9.95,
+      "delta": -0.05
+    }
+  },
+  "prototypeDecision": "PROMISING_HYBRID",
+  "architecture": "SOURCE_PIXELS_FIRST + PT_FEATURE_DELTAS_ONLY",
+  "results": [
+    {
+      "id": "H01",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.67,
+          "pattern_continuity": 4.5,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.66,
+          "pattern_continuity": 7.3,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.89,
+          "stardew_readability": 9.85,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 8.67,
+        "hybridOverall": 9.18,
+        "delta": 0.51,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H02",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.48,
+          "pattern_continuity": 8.8,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.61,
+          "pattern_continuity": 9.1,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.89,
+          "stardew_readability": 9.85,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 9.54,
+        "hybridOverall": 9.57,
+        "delta": 0.03,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H03",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.35,
+          "pattern_continuity": 8.8,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.46,
+          "pattern_continuity": 9.1,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.4,
+          "stardew_readability": 9.85,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 9.52,
+        "hybridOverall": 9.48,
+        "delta": -0.04,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H04",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.66,
+          "pattern_continuity": 4.5,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.69,
+          "pattern_continuity": 7.3,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.9,
+          "stardew_readability": 9.85,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 8.67,
+        "hybridOverall": 9.18,
+        "delta": 0.52,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H05",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.45,
+          "pattern_continuity": 4.5,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.56,
+          "pattern_continuity": 7.3,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.9,
+          "stardew_readability": 9.85,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 8.64,
+        "hybridOverall": 9.17,
+        "delta": 0.53,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H06",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.4,
+          "pattern_continuity": 4.5,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.02,
+          "pattern_continuity": 8.24,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.9,
+          "stardew_readability": 9.85,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 8.63,
+        "hybridOverall": 9.37,
+        "delta": 0.74,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H07",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 6.58,
+          "pattern_continuity": 4.5,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.88,
+          "pattern_continuity": 7.3,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.9,
+          "stardew_readability": 9.85,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 8.51,
+        "hybridOverall": 9.07,
+        "delta": 0.56,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H08",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 6.05,
+          "pattern_continuity": 4.5,
+          "motif_location": 4.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.89,
+          "pattern_continuity": 7.3,
+          "motif_location": 9.4,
+          "four_view_coherence": 9.9,
+          "stardew_readability": 8.9,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 7.86,
+        "hybridOverall": 9.05,
+        "delta": 1.18,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H09",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.89,
+          "pattern_continuity": 8.8,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.56,
+          "pattern_continuity": 9.1,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.9,
+          "stardew_readability": 8.9,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 9.31,
+        "hybridOverall": 9.29,
+        "delta": -0.03,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H10",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.87,
+          "pattern_continuity": 8.8,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.47,
+          "pattern_continuity": 9.1,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.9,
+          "stardew_readability": 8.9,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 9.31,
+        "hybridOverall": 9.27,
+        "delta": -0.04,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H11",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 6.9,
+          "pattern_continuity": 4.5,
+          "motif_location": 4.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.97,
+          "pattern_continuity": 7.3,
+          "motif_location": 9.4,
+          "four_view_coherence": 9.9,
+          "stardew_readability": 8.9,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 7.99,
+        "hybridOverall": 9.06,
+        "delta": 1.07,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H12",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.36,
+          "pattern_continuity": 4.5,
+          "motif_location": 4.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.38,
+          "pattern_continuity": 7.3,
+          "motif_location": 9.4,
+          "four_view_coherence": 9.9,
+          "stardew_readability": 8.9,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 8.05,
+        "hybridOverall": 9.12,
+        "delta": 1.07,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H13",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.8,
+          "pattern_continuity": 4.5,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.79,
+          "pattern_continuity": 7.3,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.9,
+          "stardew_readability": 9.85,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 8.69,
+        "hybridOverall": 9.2,
+        "delta": 0.51,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H14",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.02,
+          "pattern_continuity": 4.5,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.0,
+          "pattern_continuity": 7.3,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.95,
+          "stardew_readability": 9.85,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 8.72,
+        "hybridOverall": 9.24,
+        "delta": 0.52,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H15",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.98,
+          "pattern_continuity": 4.5,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.96,
+          "pattern_continuity": 7.3,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.95,
+          "stardew_readability": 9.85,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 8.71,
+        "hybridOverall": 9.23,
+        "delta": 0.52,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "H16",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.69,
+          "pattern_continuity": 8.8,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.96,
+          "pattern_continuity": 9.1,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.85,
+          "stardew_readability": 9.85,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 9.43,
+        "hybridOverall": 9.47,
+        "delta": 0.05,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "S01",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.38,
+          "pattern_continuity": 8.8,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.49,
+          "pattern_continuity": 9.1,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.76,
+          "stardew_readability": 9.85,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 9.53,
+        "hybridOverall": 9.54,
+        "delta": 0.01,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "S02",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.25,
+          "pattern_continuity": 8.8,
+          "motif_location": 8.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.36,
+          "pattern_continuity": 9.1,
+          "motif_location": 8.6,
+          "four_view_coherence": 9.92,
+          "stardew_readability": 9.5,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 9.51,
+        "hybridOverall": 9.49,
+        "delta": -0.02,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "S03",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 7.66,
+          "pattern_continuity": 4.5,
+          "motif_location": 4.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.58,
+          "pattern_continuity": 7.3,
+          "motif_location": 9.4,
+          "four_view_coherence": 9.94,
+          "stardew_readability": 8.9,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 8.09,
+        "hybridOverall": 9.15,
+        "delta": 1.06,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    },
+    {
+      "id": "S04",
+      "scores": {
+        "baseline": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 8.84,
+          "pattern_continuity": 8.8,
+          "motif_location": 4.5,
+          "four_view_coherence": 10.0,
+          "stardew_readability": 10.0,
+          "junk_control": 10.0
+        },
+        "hybrid": {
+          "silhouette_fidelity": 10.0,
+          "palette_material_resemblance": 9.16,
+          "pattern_continuity": 9.1,
+          "motif_location": 9.4,
+          "four_view_coherence": 9.94,
+          "stardew_readability": 9.5,
+          "junk_control": 9.95
+        },
+        "baselineOverall": 8.88,
+        "hybridOverall": 9.58,
+        "delta": 0.7,
+        "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+      }
+    }
+  ]
+}

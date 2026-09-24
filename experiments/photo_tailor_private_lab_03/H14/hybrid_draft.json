@@ -1,0 +1,113 @@
+{
+  "schema": "pt-private-lab03-hybrid-draft/v1",
+  "control": "sun_hat",
+  "plan": {
+    "id": "H14_hybrid",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#393939",
+        "#515151",
+        "#a5a5a5"
+      ],
+      "band": [
+        "#a5a5a5",
+        "#515151",
+        "#393939"
+      ],
+      "brim": [
+        "#393939",
+        "#515151"
+      ],
+      "hem": [
+        "#515151",
+        "#393939"
+      ],
+      "lower": [
+        "#515151",
+        "#393939"
+      ],
+      "whole": [
+        "#393939",
+        "#515151",
+        "#a5a5a5"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "band",
+        "top": 0.45,
+        "bottom": 0.84,
+        "color": "#a5a5a5"
+      }
+    ],
+    "motifs": [],
+    "overlays": [],
+    "palette_strength": 0.3,
+    "pattern_strength": 0.36,
+    "overlay_strength": 0.7,
+    "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+  },
+  "views": [
+    {
+      "facing": "front",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 91,
+      "changed": 0,
+      "changeRatio": 0.0
+    },
+    {
+      "facing": "right",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 96,
+      "changed": 0,
+      "changeRatio": 0.0
+    },
+    {
+      "facing": "left",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 96,
+      "changed": 0,
+      "changeRatio": 0.0
+    },
+    {
+      "facing": "back",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 145,
+      "changed": 0,
+      "changeRatio": 0.0
+    }
+  ],
+  "patternCellsAfterCleanup": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "changedPixels": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "changeRatioByView": {
+    "front": 0.0,
+    "right": 0.0,
+    "left": 0.0,
+    "back": 0.0
+  },
+  "outlinePreservedExactly": true,
+  "sourcePixelsAreBaseAuthority": true
+}

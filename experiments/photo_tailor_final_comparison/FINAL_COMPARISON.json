@@ -1,0 +1,81 @@
+{
+  "schema": "photo-tailor-final-comparison/v1",
+  "sameReferenceBenchmark": {
+    "sampleCount": 20,
+    "A": "Golden/current copied source-respecting control",
+    "B": "Lab02 full Photo Tailor-style compiler",
+    "C": "Lab03 hybrid source-pixels-first + PT feature deltas",
+    "overall": {
+      "A": 8.73,
+      "B": 9.18,
+      "C": 9.29,
+      "C_minus_B": 0.11
+    },
+    "dimensions": {
+      "silhouette_fidelity": {
+        "A_golden": 10.0,
+        "B_full_pt": 10.0,
+        "C_hybrid": 10.0,
+        "C_minus_B": 0.0
+      },
+      "palette_material_resemblance": {
+        "A_golden": 7.96,
+        "B_full_pt": 8.67,
+        "C_hybrid": 8.77,
+        "C_minus_B": 0.1
+      },
+      "pattern_continuity": {
+        "A_golden": 6.22,
+        "B_full_pt": 7.83,
+        "C_hybrid": 8.07,
+        "C_minus_B": 0.24
+      },
+      "motif_location": {
+        "A_golden": 6.9,
+        "B_full_pt": 8.82,
+        "C_hybrid": 8.8,
+        "C_minus_B": -0.02
+      },
+      "four_view_coherence": {
+        "A_golden": 10.0,
+        "B_full_pt": 9.73,
+        "C_hybrid": 9.87,
+        "C_minus_B": 0.14
+      },
+      "stardew_readability": {
+        "A_golden": 10.0,
+        "B_full_pt": 9.5,
+        "C_hybrid": 9.53,
+        "C_minus_B": 0.03
+      },
+      "junk_control": {
+        "A_golden": 10.0,
+        "B_full_pt": 9.7,
+        "C_hybrid": 9.95,
+        "C_minus_B": 0.25
+      }
+    }
+  },
+  "threeLabHistory": {
+    "Lab01": {
+      "role": "Capability proof",
+      "samples": 8,
+      "same20ReferenceBenchmark": false
+    },
+    "Lab02": {
+      "role": "Full end-to-end PT compiler",
+      "samples": 20,
+      "decision": "MIXED",
+      "deltaVsGolden": 0.45
+    },
+    "Lab03": {
+      "role": "Hybrid source-respecting + PT deltas",
+      "samples": 20,
+      "decision": "PROMISING_HYBRID",
+      "deltaVsGolden": 0.48,
+      "deltaVsLab02": 0.11
+    }
+  },
+  "interpretation": "Lab03 is strongest overall proxy and recovers most cleanliness/coherence while retaining PT pattern/palette/motif gains. Lab01 is architectural only because it did not use the same 20 references.",
+  "humanReviewRequired": true
+}

@@ -1,0 +1,113 @@
+{
+  "schema": "pt-private-lab03-hybrid-draft/v1",
+  "control": "shirt_bow_blouse",
+  "plan": {
+    "id": "S02_hybrid",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "torso": [
+        "#d3d6db",
+        "#d0d2d6",
+        "#9fa1a3"
+      ],
+      "upper": [
+        "#d0d2d6",
+        "#9fa1a3",
+        "#d3d6db"
+      ],
+      "left_sleeve": [
+        "#d3d6db",
+        "#d0d2d6"
+      ],
+      "right_sleeve": [
+        "#d3d6db",
+        "#d0d2d6"
+      ],
+      "hem": [
+        "#d0d2d6",
+        "#d3d6db"
+      ],
+      "whole": [
+        "#d3d6db",
+        "#d0d2d6",
+        "#9fa1a3"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "upper",
+        "top": 0.0,
+        "bottom": 0.28,
+        "color": "#d0d2d6"
+      }
+    ],
+    "motifs": [],
+    "overlays": [],
+    "palette_strength": 0.3,
+    "pattern_strength": 0.36,
+    "overlay_strength": 0.7,
+    "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+  },
+  "views": [
+    {
+      "facing": "front",
+      "size": [
+        16,
+        16
+      ],
+      "opaque": 222,
+      "changed": 160,
+      "changeRatio": 0.7207
+    },
+    {
+      "facing": "right",
+      "size": [
+        16,
+        16
+      ],
+      "opaque": 176,
+      "changed": 120,
+      "changeRatio": 0.6818
+    },
+    {
+      "facing": "left",
+      "size": [
+        16,
+        16
+      ],
+      "opaque": 176,
+      "changed": 120,
+      "changeRatio": 0.6818
+    },
+    {
+      "facing": "back",
+      "size": [
+        16,
+        16
+      ],
+      "opaque": 226,
+      "changed": 174,
+      "changeRatio": 0.7699
+    }
+  ],
+  "patternCellsAfterCleanup": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "changedPixels": {
+    "front": 160,
+    "right": 120,
+    "left": 120,
+    "back": 174
+  },
+  "changeRatioByView": {
+    "front": 0.7207,
+    "right": 0.6818,
+    "left": 0.6818,
+    "back": 0.7699
+  },
+  "outlinePreservedExactly": true,
+  "sourcePixelsAreBaseAuthority": true
+}

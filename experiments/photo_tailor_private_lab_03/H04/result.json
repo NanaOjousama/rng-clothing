@@ -1,0 +1,297 @@
+{
+  "input": {
+    "id": "H04",
+    "category": "hat",
+    "constructionHint": "beanie",
+    "description": "pattern + localized label",
+    "originalSource": "slouch beanie motif/pattern+labelmotif.jpeg",
+    "file": "references/H04.jpeg"
+  },
+  "blueprint": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "hat",
+        "score": 0.033105749636888504,
+        "category": ""
+      },
+      {
+        "value": "shirt",
+        "score": -0.014972777105867863,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": -0.017766743898391724,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "hat",
+        "score": 0.058176785707473755,
+        "category": "hat"
+      },
+      {
+        "value": "crown",
+        "score": 0.009364599362015724,
+        "category": "hat"
+      },
+      {
+        "value": "bow",
+        "score": 0.0046409377828240395,
+        "category": "hat"
+      },
+      {
+        "value": "cap",
+        "score": 0.0006010532379150391,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "animal_print",
+        "score": 0.02779768407344818,
+        "category": ""
+      },
+      {
+        "value": "other",
+        "score": 0.015093894675374031,
+        "category": ""
+      },
+      {
+        "value": "vertical_stripes",
+        "score": 0.007549753412604332,
+        "category": ""
+      },
+      {
+        "value": "horizontal_stripes",
+        "score": 0.0013393126428127289,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.01969677023589611,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "animal_print",
+    "paletteRgb": [
+      [
+        46,
+        35,
+        22
+      ],
+      [
+        200,
+        181,
+        165
+      ],
+      [
+        108,
+        103,
+        93
+      ],
+      [
+        104,
+        93,
+        80
+      ],
+      [
+        154,
+        127,
+        109
+      ],
+      [
+        97,
+        79,
+        65
+      ]
+    ],
+    "paletteHex": [
+      "#2e2316",
+      "#c8b5a5",
+      "#6c675d",
+      "#685d50",
+      "#9a7f6d",
+      "#614f41"
+    ],
+    "primaryColor": "#2e2316",
+    "secondaryColor": "#c8b5a5",
+    "accentColor": "#6c675d"
+  },
+  "plan": {
+    "id": "H04_hybrid",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#2e2316",
+        "#c8b5a5",
+        "#6c675d"
+      ],
+      "band": [
+        "#6c675d",
+        "#c8b5a5",
+        "#2e2316"
+      ],
+      "brim": [
+        "#2e2316",
+        "#c8b5a5"
+      ],
+      "hem": [
+        "#c8b5a5",
+        "#2e2316"
+      ],
+      "lower": [
+        "#c8b5a5",
+        "#2e2316"
+      ],
+      "whole": [
+        "#2e2316",
+        "#c8b5a5",
+        "#6c675d"
+      ]
+    },
+    "color_bands": [],
+    "motifs": [],
+    "overlays": [],
+    "palette_strength": 0.3,
+    "pattern_strength": 0.36,
+    "overlay_strength": 0.7,
+    "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+  },
+  "draft": {
+    "schema": "pt-private-lab03-hybrid-draft/v1",
+    "control": "beanie",
+    "plan": {
+      "id": "H04_hybrid",
+      "semantic_pattern": "solid",
+      "region_palettes": {
+        "crown": [
+          "#2e2316",
+          "#c8b5a5",
+          "#6c675d"
+        ],
+        "band": [
+          "#6c675d",
+          "#c8b5a5",
+          "#2e2316"
+        ],
+        "brim": [
+          "#2e2316",
+          "#c8b5a5"
+        ],
+        "hem": [
+          "#c8b5a5",
+          "#2e2316"
+        ],
+        "lower": [
+          "#c8b5a5",
+          "#2e2316"
+        ],
+        "whole": [
+          "#2e2316",
+          "#c8b5a5",
+          "#6c675d"
+        ]
+      },
+      "color_bands": [],
+      "motifs": [],
+      "overlays": [],
+      "palette_strength": 0.3,
+      "pattern_strength": 0.36,
+      "overlay_strength": 0.7,
+      "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+    },
+    "views": [
+      {
+        "facing": "front",
+        "size": [
+          16,
+          16
+        ],
+        "opaque": 72,
+        "changed": 40,
+        "changeRatio": 0.5556
+      },
+      {
+        "facing": "right",
+        "size": [
+          16,
+          16
+        ],
+        "opaque": 86,
+        "changed": 52,
+        "changeRatio": 0.6047
+      },
+      {
+        "facing": "left",
+        "size": [
+          16,
+          16
+        ],
+        "opaque": 86,
+        "changed": 52,
+        "changeRatio": 0.6047
+      },
+      {
+        "facing": "back",
+        "size": [
+          16,
+          16
+        ],
+        "opaque": 90,
+        "changed": 62,
+        "changeRatio": 0.6889
+      }
+    ],
+    "patternCellsAfterCleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "changedPixels": {
+      "front": 40,
+      "right": 52,
+      "left": 52,
+      "back": 62
+    },
+    "changeRatioByView": {
+      "front": 0.5556,
+      "right": 0.6047,
+      "left": 0.6047,
+      "back": 0.6889
+    },
+    "outlinePreservedExactly": true,
+    "sourcePixelsAreBaseAuthority": true
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 7.66,
+      "pattern_continuity": 4.5,
+      "motif_location": 8.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "hybrid": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 8.69,
+      "pattern_continuity": 7.3,
+      "motif_location": 8.6,
+      "four_view_coherence": 9.9,
+      "stardew_readability": 9.85,
+      "junk_control": 9.95
+    },
+    "baselineOverall": 8.67,
+    "hybridOverall": 9.18,
+    "delta": 0.52,
+    "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+  }
+}

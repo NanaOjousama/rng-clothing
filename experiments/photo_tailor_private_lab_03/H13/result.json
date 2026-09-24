@@ -1,0 +1,311 @@
+{
+  "input": {
+    "id": "H13",
+    "category": "hat",
+    "constructionHint": "straw_hat",
+    "description": "pixel-art straw hard case",
+    "originalSource": "test-packs/qc-only/RNG-CrossFamily-Rarity-QC/Hats/C04_large_Straw_Hat/hat.png",
+    "file": "references/H13.png"
+  },
+  "blueprint": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "hat",
+        "score": 0.04803097993135452,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.039235591888427734,
+        "category": ""
+      },
+      {
+        "value": "none",
+        "score": 0.031952153891325,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "crown",
+        "score": 0.07231155782938004,
+        "category": "hat"
+      },
+      {
+        "value": "hat",
+        "score": 0.06134564429521561,
+        "category": "hat"
+      },
+      {
+        "value": "cap",
+        "score": 0.05037318915128708,
+        "category": "hat"
+      },
+      {
+        "value": "helmet",
+        "score": 0.04977412894368172,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "logo",
+        "score": 0.048828087747097015,
+        "category": ""
+      },
+      {
+        "value": "horizontal_stripes",
+        "score": 0.047539081424474716,
+        "category": ""
+      },
+      {
+        "value": "graphic",
+        "score": 0.044072214514017105,
+        "category": ""
+      },
+      {
+        "value": "horizontal_stripes",
+        "score": 0.03876732289791107,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.02524382248520851,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "logo",
+    "paletteRgb": [
+      [
+        81,
+        44,
+        12
+      ],
+      [
+        255,
+        182,
+        72
+      ],
+      [
+        206,
+        132,
+        53
+      ],
+      [
+        173,
+        91,
+        24
+      ],
+      [
+        255,
+        225,
+        104
+      ],
+      [
+        137,
+        75,
+        39
+      ]
+    ],
+    "paletteHex": [
+      "#512c0c",
+      "#ffb648",
+      "#ce8435",
+      "#ad5b18",
+      "#ffe168",
+      "#894b27"
+    ],
+    "primaryColor": "#512c0c",
+    "secondaryColor": "#ffb648",
+    "accentColor": "#ce8435"
+  },
+  "plan": {
+    "id": "H13_hybrid",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#512c0c",
+        "#ffb648",
+        "#ce8435"
+      ],
+      "band": [
+        "#ce8435",
+        "#ffb648",
+        "#512c0c"
+      ],
+      "brim": [
+        "#512c0c",
+        "#ffb648"
+      ],
+      "hem": [
+        "#ffb648",
+        "#512c0c"
+      ],
+      "lower": [
+        "#ffb648",
+        "#512c0c"
+      ],
+      "whole": [
+        "#512c0c",
+        "#ffb648",
+        "#ce8435"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "band",
+        "top": 0.45,
+        "bottom": 0.84,
+        "color": "#ce8435"
+      }
+    ],
+    "motifs": [],
+    "overlays": [],
+    "palette_strength": 0.3,
+    "pattern_strength": 0.36,
+    "overlay_strength": 0.7,
+    "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+  },
+  "draft": {
+    "schema": "pt-private-lab03-hybrid-draft/v1",
+    "control": "straw_hat",
+    "plan": {
+      "id": "H13_hybrid",
+      "semantic_pattern": "solid",
+      "region_palettes": {
+        "crown": [
+          "#512c0c",
+          "#ffb648",
+          "#ce8435"
+        ],
+        "band": [
+          "#ce8435",
+          "#ffb648",
+          "#512c0c"
+        ],
+        "brim": [
+          "#512c0c",
+          "#ffb648"
+        ],
+        "hem": [
+          "#ffb648",
+          "#512c0c"
+        ],
+        "lower": [
+          "#ffb648",
+          "#512c0c"
+        ],
+        "whole": [
+          "#512c0c",
+          "#ffb648",
+          "#ce8435"
+        ]
+      },
+      "color_bands": [
+        {
+          "region": "band",
+          "top": 0.45,
+          "bottom": 0.84,
+          "color": "#ce8435"
+        }
+      ],
+      "motifs": [],
+      "overlays": [],
+      "palette_strength": 0.3,
+      "pattern_strength": 0.36,
+      "overlay_strength": 0.7,
+      "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+    },
+    "views": [
+      {
+        "facing": "front",
+        "size": [
+          20,
+          20
+        ],
+        "opaque": 92,
+        "changed": 54,
+        "changeRatio": 0.587
+      },
+      {
+        "facing": "right",
+        "size": [
+          20,
+          20
+        ],
+        "opaque": 93,
+        "changed": 55,
+        "changeRatio": 0.5914
+      },
+      {
+        "facing": "left",
+        "size": [
+          20,
+          20
+        ],
+        "opaque": 93,
+        "changed": 55,
+        "changeRatio": 0.5914
+      },
+      {
+        "facing": "back",
+        "size": [
+          20,
+          20
+        ],
+        "opaque": 134,
+        "changed": 94,
+        "changeRatio": 0.7015
+      }
+    ],
+    "patternCellsAfterCleanup": {
+      "front": 0,
+      "right": 0,
+      "left": 0,
+      "back": 0
+    },
+    "changedPixels": {
+      "front": 54,
+      "right": 55,
+      "left": 55,
+      "back": 94
+    },
+    "changeRatioByView": {
+      "front": 0.587,
+      "right": 0.5914,
+      "left": 0.5914,
+      "back": 0.7015
+    },
+    "outlinePreservedExactly": true,
+    "sourcePixelsAreBaseAuthority": true
+  },
+  "scores": {
+    "baseline": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 7.8,
+      "pattern_continuity": 4.5,
+      "motif_location": 8.5,
+      "four_view_coherence": 10.0,
+      "stardew_readability": 10.0,
+      "junk_control": 10.0
+    },
+    "hybrid": {
+      "silhouette_fidelity": 10.0,
+      "palette_material_resemblance": 8.79,
+      "pattern_continuity": 7.3,
+      "motif_location": 8.6,
+      "four_view_coherence": 9.9,
+      "stardew_readability": 9.85,
+      "junk_control": 9.95
+    },
+    "baselineOverall": 8.69,
+    "hybridOverall": 9.2,
+    "delta": 0.51,
+    "proxyNote": "Automated diagnostic proxies; human visual review is authoritative."
+  }
+}

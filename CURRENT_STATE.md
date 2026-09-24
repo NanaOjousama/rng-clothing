@@ -1230,3 +1230,11 @@ The user visually approved `experiments/hat_production_source_respecting_final_0
 ## 2026-09-24 — Photo Tailor Private Lab 02 end-to-end challenge
 Built isolated `prototypes/photo_tailor_private_lab_02/` and `experiments/photo_tailor_private_lab_02/` after freezing `HAT_PRODUCTION_GOLDEN_V1`. It uses 20 copied reference inputs (16 hats + 4 shirts), FashionSigLIP semantic blueprints, copied construction controls, and the isolated PT-style compiler. Runtime has zero production generator/render imports.
 Automated proxy result is MIXED: baseline 8.73 -> enhanced 9.18 (+0.45). Strongest gains: pattern continuity +1.60, motif location +1.92, palette/material resemblance +0.71. Golden baseline remains slightly stronger for pristine coherence/readability/junk control. Do not integrate the whole PT stack yet; keep the private lab for human review and selectively preserve the systems that showed material gains.
+
+## 2026-09-24 — Photo Tailor Private Lab 03 + final A/B/C comparison
+Built isolated Lab 03 using the same 20-reference challenge set as Lab 02. Lab 03 keeps copied golden/source pixels authoritative and applies only bounded PT-style feature deltas: normalized patterns, region palettes/color bands, motif/facing scopes, overlays and occupancy cleanup.
+Validation: zero production imports; all 80 directional outputs preserve alpha geometry; source outline pixels are preserved exactly.
+Automated proxy result: baseline 8.81 -> Hybrid 9.29 (+0.48), decision PROMISING_HYBRID.
+Final same-reference comparison: A Golden 8.73, B Full PT Lab 02 9.18, C Hybrid Lab 03 9.29. Hybrid is +0.11 vs Full PT and recovers most coherence/junk-control losses.
+Final review package: experiments/photo_tailor_final_comparison/ with FINAL_A_B_C_20_REFERENCE_CONTACT.png, FINAL_A_B_C_SCORECARD.png, FINAL_LAB_01_02_03_OVERVIEW.png, FINAL_COMPARISON.md and JSON.
+Lab 01 remains an architectural capability proof and is not assigned a fake same-20-reference numeric score.

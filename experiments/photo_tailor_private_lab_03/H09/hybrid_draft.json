@@ -1,0 +1,113 @@
+{
+  "schema": "pt-private-lab03-hybrid-draft/v1",
+  "control": "cap",
+  "plan": {
+    "id": "H09_hybrid",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "crown": [
+        "#b7161c",
+        "#c21a22",
+        "#c51e26"
+      ],
+      "band": [
+        "#c51e26",
+        "#c21a22",
+        "#b7161c"
+      ],
+      "brim": [
+        "#b7161c",
+        "#c21a22"
+      ],
+      "hem": [
+        "#c21a22",
+        "#b7161c"
+      ],
+      "lower": [
+        "#c21a22",
+        "#b7161c"
+      ],
+      "whole": [
+        "#b7161c",
+        "#c21a22",
+        "#c51e26"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "band",
+        "top": 0.45,
+        "bottom": 0.84,
+        "color": "#c51e26"
+      }
+    ],
+    "motifs": [],
+    "overlays": [],
+    "palette_strength": 0.3,
+    "pattern_strength": 0.36,
+    "overlay_strength": 0.7,
+    "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+  },
+  "views": [
+    {
+      "facing": "front",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 326,
+      "changed": 264,
+      "changeRatio": 0.8098
+    },
+    {
+      "facing": "right",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 132,
+      "changed": 91,
+      "changeRatio": 0.6894
+    },
+    {
+      "facing": "left",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 132,
+      "changed": 91,
+      "changeRatio": 0.6894
+    },
+    {
+      "facing": "back",
+      "size": [
+        20,
+        20
+      ],
+      "opaque": 108,
+      "changed": 74,
+      "changeRatio": 0.6852
+    }
+  ],
+  "patternCellsAfterCleanup": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "changedPixels": {
+    "front": 264,
+    "right": 91,
+    "left": 91,
+    "back": 74
+  },
+  "changeRatioByView": {
+    "front": 0.8098,
+    "right": 0.6894,
+    "left": 0.6894,
+    "back": 0.6852
+  },
+  "outlinePreservedExactly": true,
+  "sourcePixelsAreBaseAuthority": true
+}

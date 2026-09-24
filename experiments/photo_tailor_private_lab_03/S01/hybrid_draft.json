@@ -1,0 +1,113 @@
+{
+  "schema": "pt-private-lab03-hybrid-draft/v1",
+  "control": "shirt_blouse",
+  "plan": {
+    "id": "S01_hybrid",
+    "semantic_pattern": "solid",
+    "region_palettes": {
+      "torso": [
+        "#898989",
+        "#eeeeee",
+        "#c0c0c0"
+      ],
+      "upper": [
+        "#eeeeee",
+        "#c0c0c0",
+        "#898989"
+      ],
+      "left_sleeve": [
+        "#898989",
+        "#eeeeee"
+      ],
+      "right_sleeve": [
+        "#898989",
+        "#eeeeee"
+      ],
+      "hem": [
+        "#eeeeee",
+        "#898989"
+      ],
+      "whole": [
+        "#898989",
+        "#eeeeee",
+        "#c0c0c0"
+      ]
+    },
+    "color_bands": [
+      {
+        "region": "upper",
+        "top": 0.0,
+        "bottom": 0.28,
+        "color": "#eeeeee"
+      }
+    ],
+    "motifs": [],
+    "overlays": [],
+    "palette_strength": 0.3,
+    "pattern_strength": 0.36,
+    "overlay_strength": 0.7,
+    "authority": "SOURCE_PIXELS_FIRST_PT_FEATURE_DELTAS_ONLY"
+  },
+  "views": [
+    {
+      "facing": "front",
+      "size": [
+        16,
+        16
+      ],
+      "opaque": 216,
+      "changed": 22,
+      "changeRatio": 0.1019
+    },
+    {
+      "facing": "right",
+      "size": [
+        16,
+        16
+      ],
+      "opaque": 176,
+      "changed": 13,
+      "changeRatio": 0.0739
+    },
+    {
+      "facing": "left",
+      "size": [
+        16,
+        16
+      ],
+      "opaque": 176,
+      "changed": 13,
+      "changeRatio": 0.0739
+    },
+    {
+      "facing": "back",
+      "size": [
+        16,
+        16
+      ],
+      "opaque": 220,
+      "changed": 32,
+      "changeRatio": 0.1455
+    }
+  ],
+  "patternCellsAfterCleanup": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "changedPixels": {
+    "front": 22,
+    "right": 13,
+    "left": 13,
+    "back": 32
+  },
+  "changeRatioByView": {
+    "front": 0.1019,
+    "right": 0.0739,
+    "left": 0.0739,
+    "back": 0.1455
+  },
+  "outlinePreservedExactly": true,
+  "sourcePixelsAreBaseAuthority": true
+}
