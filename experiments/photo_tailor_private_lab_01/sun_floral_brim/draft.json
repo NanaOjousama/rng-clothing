@@ -1,0 +1,151 @@
+{
+  "control_id": "sun_hat",
+  "canvas_width": 64,
+  "canvas_height": 96,
+  "views": [
+    {
+      "facing": "front",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        1,
+        4,
+        18,
+        11
+      ],
+      "opaque": 91,
+      "regions": {
+        "crown": 38,
+        "band": 14,
+        "brim": 39
+      },
+      "shade_steps": {
+        "-2": 40,
+        "-1": 15,
+        "0": 32,
+        "1": 4
+      }
+    },
+    {
+      "facing": "right",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        0,
+        4,
+        17,
+        12
+      ],
+      "opaque": 96,
+      "regions": {
+        "crown": 34,
+        "band": 13,
+        "brim": 49
+      },
+      "shade_steps": {
+        "-2": 37,
+        "-1": 26,
+        "0": 32,
+        "1": 1
+      }
+    },
+    {
+      "facing": "left",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        2,
+        4,
+        19,
+        12
+      ],
+      "opaque": 96,
+      "regions": {
+        "crown": 34,
+        "band": 13,
+        "brim": 49
+      },
+      "shade_steps": {
+        "-2": 37,
+        "-1": 26,
+        "0": 32,
+        "1": 1
+      }
+    },
+    {
+      "facing": "back",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        1,
+        4,
+        18,
+        14
+      ],
+      "opaque": 145,
+      "regions": {
+        "crown": 49,
+        "band": 33,
+        "brim": 63
+      },
+      "shade_steps": {
+        "-2": 40,
+        "-1": 32,
+        "0": 63,
+        "1": 10
+      }
+    }
+  ],
+  "regions": [
+    "band",
+    "brim",
+    "crown"
+  ],
+  "semantic_pattern": "diagonal",
+  "color_bands": [
+    {
+      "region": "band",
+      "top": 0.48,
+      "bottom": 0.62,
+      "color": "#d4aa53"
+    }
+  ],
+  "motifs": [
+    {
+      "type": "flower",
+      "x": 0.5,
+      "y": 0.56,
+      "scope": "ALL_FACINGS",
+      "color": "#f0d66c",
+      "scale": 1
+    }
+  ],
+  "overlays": [],
+  "region_palettes": {
+    "crown": [
+      "#637f92",
+      "#a9c0ca"
+    ],
+    "band": [
+      "#d0a651",
+      "#f0d77f"
+    ],
+    "brim": [
+      "#4d6574",
+      "#91abb8"
+    ]
+  },
+  "normalized_pattern_coordinates": true,
+  "base_overlay_separation": true,
+  "shading_topology_preserved": true,
+  "texture_cleanup": true,
+  "coherent_four_view_projection": true,
+  "pattern_cells_after_cleanup": {
+    "front": 10,
+    "right": 20,
+    "left": 19,
+    "back": 25
+  },
+  "design_id": "sun_floral_brim",
+  "description": "Three-region sun hat with coherent floral motif propagation and separate brim palette."
+}

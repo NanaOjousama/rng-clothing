@@ -1,0 +1,102 @@
+{
+  "schema": "pt-private-control-snapshot/v1",
+  "sourceCommit": "e6d2c5f",
+  "controls": [
+    {
+      "id": "beret",
+      "sourceFamily": "catalog_hats_cottagecore_set_beret",
+      "sourceState": "Beret",
+      "palette": "source_native",
+      "frames": {
+        "front": "control_assets/beret/front.png",
+        "right": "control_assets/beret/right.png",
+        "left": "control_assets/beret/left.png",
+        "back": "control_assets/beret/back.png"
+      }
+    },
+    {
+      "id": "beanie",
+      "sourceFamily": "catalog_hats_more_accessories_and_stuff_beanie",
+      "sourceState": "Beanie",
+      "palette": "source_native",
+      "frames": {
+        "front": "control_assets/beanie/front.png",
+        "right": "control_assets/beanie/right.png",
+        "left": "control_assets/beanie/left.png",
+        "back": "control_assets/beanie/back.png"
+      }
+    },
+    {
+      "id": "straw_hat",
+      "sourceFamily": "catalog_hats_more_accessories_and_stuff_straw_hat",
+      "sourceState": "Straw Hat",
+      "palette": "source_native",
+      "frames": {
+        "front": "control_assets/straw_hat/front.png",
+        "right": "control_assets/straw_hat/right.png",
+        "left": "control_assets/straw_hat/left.png",
+        "back": "control_assets/straw_hat/back.png"
+      }
+    },
+    {
+      "id": "boater_hat",
+      "sourceFamily": "catalog_hats_cottagecore_set_boater_hat",
+      "sourceState": "Boater Hat",
+      "palette": "source_native",
+      "frames": {
+        "front": "control_assets/boater_hat/front.png",
+        "right": "control_assets/boater_hat/right.png",
+        "left": "control_assets/boater_hat/left.png",
+        "back": "control_assets/boater_hat/back.png"
+      }
+    },
+    {
+      "id": "mushroom_hat",
+      "sourceFamily": "catalog_hats_cottagecore_set_mushroom_hat",
+      "sourceState": "Mushroom Hat",
+      "palette": "source_native",
+      "frames": {
+        "front": "control_assets/mushroom_hat/front.png",
+        "right": "control_assets/mushroom_hat/right.png",
+        "left": "control_assets/mushroom_hat/left.png",
+        "back": "control_assets/mushroom_hat/back.png"
+      }
+    },
+    {
+      "id": "sun_hat",
+      "sourceFamily": "catalog_hats_more_accessories_and_stuff_sun_hat",
+      "sourceState": "Sun Hat",
+      "palette": "source_native",
+      "frames": {
+        "front": "control_assets/sun_hat/front.png",
+        "right": "control_assets/sun_hat/right.png",
+        "left": "control_assets/sun_hat/left.png",
+        "back": "control_assets/sun_hat/back.png"
+      }
+    },
+    {
+      "id": "tulip_hat",
+      "sourceFamily": "catalog_hats_more_accessories_and_stuff_tulip_hat",
+      "sourceState": "Tulip Hat",
+      "palette": "source_native",
+      "frames": {
+        "front": "control_assets/tulip_hat/front.png",
+        "right": "control_assets/tulip_hat/right.png",
+        "left": "control_assets/tulip_hat/left.png",
+        "back": "control_assets/tulip_hat/back.png"
+      }
+    },
+    {
+      "id": "hood",
+      "sourceFamily": "catalog_hats_more_accessories_and_stuff_hood",
+      "sourceState": "Hood",
+      "palette": "source_native",
+      "frames": {
+        "front": "control_assets/hood/front.png",
+        "right": "control_assets/hood/right.png",
+        "left": "control_assets/hood/left.png",
+        "back": "control_assets/hood/back.png"
+      }
+    }
+  ]
+}

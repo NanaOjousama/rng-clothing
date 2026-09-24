@@ -1,0 +1,1169 @@
+{
+  "schema": "photo-tailor-private-lab/v1",
+  "privateDisposablePrototype": true,
+  "productionImports": false,
+  "productionGeneratorModified": false,
+  "borrowedSourceSnapshot": "prototypes/photo_tailor_private_lab/vendor/photo_tailor_decompiled",
+  "controlSnapshot": "prototypes/photo_tailor_private_lab/control_assets",
+  "featureCoverage": [
+    "4_view_projection",
+    "construction_template_drafting",
+    "normalized_motif_placement",
+    "facing_scopes",
+    "base_overlay_layers",
+    "occupancy_region_masks",
+    "normalized_pattern_coordinates",
+    "color_bands",
+    "semantic_pattern_fields",
+    "separate_region_palettes",
+    "shading_topology",
+    "texture_pattern_cleanup",
+    "coherent_detail_propagation"
+  ],
+  "designs": [
+    {
+      "control_id": "beret",
+      "canvas_width": 64,
+      "canvas_height": 96,
+      "views": [
+        {
+          "facing": "front",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            3,
+            4,
+            16,
+            12
+          ],
+          "opaque": 69,
+          "regions": {
+            "crown": 61,
+            "band": 8
+          },
+          "shade_steps": {
+            "-2": 31,
+            "-1": 24,
+            "0": 13,
+            "1": 1
+          }
+        },
+        {
+          "facing": "right",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            2,
+            5,
+            14,
+            14
+          ],
+          "opaque": 78,
+          "regions": {
+            "crown": 72,
+            "band": 6
+          },
+          "shade_steps": {
+            "-2": 32,
+            "-1": 31,
+            "0": 14,
+            "1": 1
+          }
+        },
+        {
+          "facing": "left",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            5,
+            5,
+            17,
+            14
+          ],
+          "opaque": 78,
+          "regions": {
+            "crown": 72,
+            "band": 6
+          },
+          "shade_steps": {
+            "-2": 32,
+            "-1": 31,
+            "0": 14,
+            "1": 1
+          }
+        },
+        {
+          "facing": "back",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            3,
+            6,
+            16,
+            15
+          ],
+          "opaque": 108,
+          "regions": {
+            "crown": 88,
+            "band": 20
+          },
+          "shade_steps": {
+            "-2": 32,
+            "-1": 41,
+            "0": 35
+          }
+        }
+      ],
+      "regions": [
+        "band",
+        "crown"
+      ],
+      "semantic_pattern": "plaid",
+      "color_bands": [
+        {
+          "region": "band",
+          "top": 0.74,
+          "bottom": 1.0,
+          "color": "#5d4650"
+        }
+      ],
+      "motifs": [
+        {
+          "type": "flower",
+          "x": 0.5,
+          "y": 0.38,
+          "scope": "FRONT_SIDES",
+          "color": "#f0d36b",
+          "scale": 1
+        }
+      ],
+      "overlays": [],
+      "region_palettes": {
+        "crown": [
+          "#8f5968",
+          "#d9a6b5",
+          "#f0cfca"
+        ],
+        "band": [
+          "#4a3940",
+          "#e4c9b1"
+        ]
+      },
+      "normalized_pattern_coordinates": true,
+      "base_overlay_separation": true,
+      "shading_topology_preserved": true,
+      "texture_cleanup": true,
+      "coherent_four_view_projection": true,
+      "pattern_cells_after_cleanup": {
+        "front": 18,
+        "right": 10,
+        "left": 13,
+        "back": 18
+      },
+      "design_id": "beret_plaid_flower",
+      "description": "Plaid crown + contrast band + normalized flower shared across front/sides."
+    },
+    {
+      "control_id": "beanie",
+      "canvas_width": 64,
+      "canvas_height": 96,
+      "views": [
+        {
+          "facing": "front",
+          "width": 16,
+          "height": 16,
+          "bbox": [
+            2,
+            2,
+            13,
+            11
+          ],
+          "opaque": 72,
+          "regions": {
+            "crown": 60,
+            "band": 12
+          },
+          "shade_steps": {
+            "-2": 32,
+            "-1": 27,
+            "0": 13
+          }
+        },
+        {
+          "facing": "right",
+          "width": 16,
+          "height": 16,
+          "bbox": [
+            1,
+            2,
+            13,
+            12
+          ],
+          "opaque": 86,
+          "regions": {
+            "crown": 78,
+            "band": 8
+          },
+          "shade_steps": {
+            "-2": 34,
+            "-1": 38,
+            "0": 13,
+            "1": 1
+          }
+        },
+        {
+          "facing": "left",
+          "width": 16,
+          "height": 16,
+          "bbox": [
+            2,
+            2,
+            14,
+            12
+          ],
+          "opaque": 86,
+          "regions": {
+            "crown": 78,
+            "band": 8
+          },
+          "shade_steps": {
+            "-2": 34,
+            "-1": 38,
+            "0": 13,
+            "1": 1
+          }
+        },
+        {
+          "facing": "back",
+          "width": 16,
+          "height": 16,
+          "bbox": [
+            3,
+            3,
+            12,
+            13
+          ],
+          "opaque": 90,
+          "regions": {
+            "crown": 66,
+            "band": 24
+          },
+          "shade_steps": {
+            "-2": 28,
+            "0": 33,
+            "-1": 29
+          }
+        }
+      ],
+      "regions": [
+        "band",
+        "crown"
+      ],
+      "semantic_pattern": "horizontal_stripes",
+      "color_bands": [
+        {
+          "region": "band",
+          "top": 0.7,
+          "bottom": 1.0,
+          "color": "#35495e"
+        }
+      ],
+      "motifs": [
+        {
+          "type": "badge",
+          "x": 0.5,
+          "y": 0.49,
+          "scope": "FRONT_ONLY",
+          "color": "#e4b85c",
+          "scale": 1
+        }
+      ],
+      "overlays": [],
+      "region_palettes": {
+        "crown": [
+          "#617b9b",
+          "#93b4ce",
+          "#d4e0e5"
+        ],
+        "band": [
+          "#293b4d",
+          "#6f8ca3"
+        ]
+      },
+      "normalized_pattern_coordinates": true,
+      "base_overlay_separation": true,
+      "shading_topology_preserved": true,
+      "texture_cleanup": true,
+      "coherent_four_view_projection": true,
+      "pattern_cells_after_cleanup": {
+        "front": 4,
+        "right": 20,
+        "left": 20,
+        "back": 20
+      },
+      "design_id": "beanie_knit_badge",
+      "description": "Normalized horizontal knit field, dark cuff region, front-only badge overlay."
+    },
+    {
+      "control_id": "straw_hat",
+      "canvas_width": 64,
+      "canvas_height": 96,
+      "views": [
+        {
+          "facing": "front",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            1,
+            4,
+            18,
+            11
+          ],
+          "opaque": 92,
+          "regions": {
+            "crown": 34,
+            "band": 16,
+            "brim": 42
+          },
+          "shade_steps": {
+            "-2": 38,
+            "-1": 19,
+            "0": 29,
+            "1": 6
+          }
+        },
+        {
+          "facing": "right",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            0,
+            4,
+            17,
+            11
+          ],
+          "opaque": 93,
+          "regions": {
+            "crown": 34,
+            "band": 16,
+            "brim": 43
+          },
+          "shade_steps": {
+            "-2": 38,
+            "-1": 20,
+            "0": 32,
+            "1": 3
+          }
+        },
+        {
+          "facing": "left",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            2,
+            4,
+            19,
+            11
+          ],
+          "opaque": 93,
+          "regions": {
+            "crown": 34,
+            "band": 16,
+            "brim": 43
+          },
+          "shade_steps": {
+            "-2": 38,
+            "-1": 20,
+            "0": 32,
+            "1": 3
+          }
+        },
+        {
+          "facing": "back",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            1,
+            4,
+            18,
+            14
+          ],
+          "opaque": 134,
+          "regions": {
+            "crown": 58,
+            "band": 18,
+            "brim": 58
+          },
+          "shade_steps": {
+            "-2": 36,
+            "-1": 31,
+            "0": 55,
+            "1": 12
+          }
+        }
+      ],
+      "regions": [
+        "band",
+        "brim",
+        "crown"
+      ],
+      "semantic_pattern": "solid",
+      "color_bands": [
+        {
+          "region": "band",
+          "top": 0.52,
+          "bottom": 0.68,
+          "color": "#557d63"
+        }
+      ],
+      "motifs": [
+        {
+          "type": "leaf",
+          "x": 0.72,
+          "y": 0.58,
+          "scope": "FRONT_SIDES",
+          "color": "#294d38",
+          "scale": 1
+        }
+      ],
+      "overlays": [],
+      "region_palettes": {
+        "crown": [
+          "#d49b48",
+          "#f0c86c"
+        ],
+        "band": [
+          "#426a58",
+          "#77a77e"
+        ],
+        "brim": [
+          "#bd7d31",
+          "#e8b957"
+        ]
+      },
+      "normalized_pattern_coordinates": true,
+      "base_overlay_separation": true,
+      "shading_topology_preserved": true,
+      "texture_cleanup": true,
+      "coherent_four_view_projection": true,
+      "pattern_cells_after_cleanup": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "design_id": "straw_ribbon_leaf",
+      "description": "Separate straw/ribbon/brim palettes, full-facing band and physically scoped side leaf."
+    },
+    {
+      "control_id": "boater_hat",
+      "canvas_width": 64,
+      "canvas_height": 96,
+      "views": [
+        {
+          "facing": "front",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            3,
+            5,
+            16,
+            11
+          ],
+          "opaque": 62,
+          "regions": {
+            "crown": 32,
+            "band": 12,
+            "brim": 18
+          },
+          "shade_steps": {
+            "-2": 30,
+            "-1": 11,
+            "0": 17,
+            "1": 4
+          }
+        },
+        {
+          "facing": "right",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            3,
+            4,
+            14,
+            13
+          ],
+          "opaque": 70,
+          "regions": {
+            "crown": 44,
+            "band": 15,
+            "brim": 11
+          },
+          "shade_steps": {
+            "-2": 29,
+            "0": 23,
+            "-1": 11,
+            "1": 7
+          }
+        },
+        {
+          "facing": "left",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            5,
+            4,
+            16,
+            13
+          ],
+          "opaque": 70,
+          "regions": {
+            "crown": 44,
+            "band": 15,
+            "brim": 11
+          },
+          "shade_steps": {
+            "-2": 29,
+            "0": 23,
+            "1": 7,
+            "-1": 11
+          }
+        },
+        {
+          "facing": "back",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            3,
+            6,
+            16,
+            15
+          ],
+          "opaque": 90,
+          "regions": {
+            "crown": 36,
+            "band": 26,
+            "brim": 28
+          },
+          "shade_steps": {
+            "-2": 28,
+            "0": 35,
+            "-1": 20,
+            "1": 7
+          }
+        }
+      ],
+      "regions": [
+        "band",
+        "brim",
+        "crown"
+      ],
+      "semantic_pattern": "solid",
+      "color_bands": [
+        {
+          "region": "band",
+          "top": 0.5,
+          "bottom": 0.67,
+          "color": "#405a7b"
+        }
+      ],
+      "motifs": [
+        {
+          "type": "diamond",
+          "x": 0.55,
+          "y": 0.56,
+          "scope": "FRONT_ONLY",
+          "color": "#e9d6a2",
+          "scale": 1
+        }
+      ],
+      "overlays": [],
+      "region_palettes": {
+        "crown": [
+          "#d9ac5c",
+          "#f5d689"
+        ],
+        "band": [
+          "#354b6b",
+          "#7189a5"
+        ],
+        "brim": [
+          "#b77a32",
+          "#e5b85d"
+        ]
+      },
+      "normalized_pattern_coordinates": true,
+      "base_overlay_separation": true,
+      "shading_topology_preserved": true,
+      "texture_cleanup": true,
+      "coherent_four_view_projection": true,
+      "pattern_cells_after_cleanup": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "design_id": "boater_band_pin",
+      "description": "Construction-derived crown/brim split with all-facing band and front-only pin."
+    },
+    {
+      "control_id": "mushroom_hat",
+      "canvas_width": 64,
+      "canvas_height": 96,
+      "views": [
+        {
+          "facing": "front",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            2,
+            4,
+            17,
+            14
+          ],
+          "opaque": 98,
+          "regions": {
+            "crown": 86,
+            "lower": 12
+          },
+          "shade_steps": {
+            "-2": 42,
+            "-1": 17,
+            "0": 39
+          }
+        },
+        {
+          "facing": "right",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            1,
+            4,
+            15,
+            14
+          ],
+          "opaque": 100,
+          "regions": {
+            "crown": 84,
+            "lower": 16
+          },
+          "shade_steps": {
+            "-2": 37,
+            "-1": 35,
+            "0": 26,
+            "1": 2
+          }
+        },
+        {
+          "facing": "left",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            4,
+            4,
+            18,
+            14
+          ],
+          "opaque": 100,
+          "regions": {
+            "crown": 84,
+            "lower": 16
+          },
+          "shade_steps": {
+            "-2": 37,
+            "-1": 35,
+            "0": 26,
+            "1": 2
+          }
+        },
+        {
+          "facing": "back",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            2,
+            5,
+            17,
+            15
+          ],
+          "opaque": 134,
+          "regions": {
+            "crown": 94,
+            "lower": 40
+          },
+          "shade_steps": {
+            "-2": 36,
+            "-1": 46,
+            "0": 50,
+            "1": 2
+          }
+        }
+      ],
+      "regions": [
+        "crown",
+        "lower"
+      ],
+      "semantic_pattern": "polka_dot",
+      "color_bands": [],
+      "motifs": [],
+      "overlays": [],
+      "region_palettes": {
+        "crown": [
+          "#8e4a4c",
+          "#e4b9a9",
+          "#f4dfb9"
+        ],
+        "lower": [
+          "#7b654e",
+          "#d5bd91"
+        ]
+      },
+      "normalized_pattern_coordinates": true,
+      "base_overlay_separation": true,
+      "shading_topology_preserved": true,
+      "texture_cleanup": true,
+      "coherent_four_view_projection": true,
+      "pattern_cells_after_cleanup": {
+        "front": 13,
+        "right": 11,
+        "left": 13,
+        "back": 22
+      },
+      "design_id": "mushroom_spotted",
+      "description": "Semantic polka-dot field constrained to occupancy with cap/lower region palettes."
+    },
+    {
+      "control_id": "sun_hat",
+      "canvas_width": 64,
+      "canvas_height": 96,
+      "views": [
+        {
+          "facing": "front",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            1,
+            4,
+            18,
+            11
+          ],
+          "opaque": 91,
+          "regions": {
+            "crown": 38,
+            "band": 14,
+            "brim": 39
+          },
+          "shade_steps": {
+            "-2": 40,
+            "-1": 15,
+            "0": 32,
+            "1": 4
+          }
+        },
+        {
+          "facing": "right",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            0,
+            4,
+            17,
+            12
+          ],
+          "opaque": 96,
+          "regions": {
+            "crown": 34,
+            "band": 13,
+            "brim": 49
+          },
+          "shade_steps": {
+            "-2": 37,
+            "-1": 26,
+            "0": 32,
+            "1": 1
+          }
+        },
+        {
+          "facing": "left",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            2,
+            4,
+            19,
+            12
+          ],
+          "opaque": 96,
+          "regions": {
+            "crown": 34,
+            "band": 13,
+            "brim": 49
+          },
+          "shade_steps": {
+            "-2": 37,
+            "-1": 26,
+            "0": 32,
+            "1": 1
+          }
+        },
+        {
+          "facing": "back",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            1,
+            4,
+            18,
+            14
+          ],
+          "opaque": 145,
+          "regions": {
+            "crown": 49,
+            "band": 33,
+            "brim": 63
+          },
+          "shade_steps": {
+            "-2": 40,
+            "-1": 32,
+            "0": 63,
+            "1": 10
+          }
+        }
+      ],
+      "regions": [
+        "band",
+        "brim",
+        "crown"
+      ],
+      "semantic_pattern": "diagonal",
+      "color_bands": [
+        {
+          "region": "band",
+          "top": 0.48,
+          "bottom": 0.62,
+          "color": "#d4aa53"
+        }
+      ],
+      "motifs": [
+        {
+          "type": "flower",
+          "x": 0.5,
+          "y": 0.56,
+          "scope": "ALL_FACINGS",
+          "color": "#f0d66c",
+          "scale": 1
+        }
+      ],
+      "overlays": [],
+      "region_palettes": {
+        "crown": [
+          "#637f92",
+          "#a9c0ca"
+        ],
+        "band": [
+          "#d0a651",
+          "#f0d77f"
+        ],
+        "brim": [
+          "#4d6574",
+          "#91abb8"
+        ]
+      },
+      "normalized_pattern_coordinates": true,
+      "base_overlay_separation": true,
+      "shading_topology_preserved": true,
+      "texture_cleanup": true,
+      "coherent_four_view_projection": true,
+      "pattern_cells_after_cleanup": {
+        "front": 10,
+        "right": 20,
+        "left": 19,
+        "back": 25
+      },
+      "design_id": "sun_floral_brim",
+      "description": "Three-region sun hat with coherent floral motif propagation and separate brim palette."
+    },
+    {
+      "control_id": "tulip_hat",
+      "canvas_width": 64,
+      "canvas_height": 96,
+      "views": [
+        {
+          "facing": "front",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            2,
+            4,
+            17,
+            13
+          ],
+          "opaque": 80,
+          "regions": {
+            "crown": 74,
+            "hem": 6
+          },
+          "shade_steps": {
+            "-2": 38,
+            "0": 28,
+            "-1": 14
+          }
+        },
+        {
+          "facing": "right",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            1,
+            4,
+            15,
+            14
+          ],
+          "opaque": 90,
+          "regions": {
+            "crown": 81,
+            "hem": 9
+          },
+          "shade_steps": {
+            "-2": 37,
+            "1": 8,
+            "0": 21,
+            "-1": 24
+          }
+        },
+        {
+          "facing": "left",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            4,
+            4,
+            18,
+            14
+          ],
+          "opaque": 90,
+          "regions": {
+            "crown": 81,
+            "hem": 9
+          },
+          "shade_steps": {
+            "-2": 37,
+            "-1": 24,
+            "0": 21,
+            "1": 8
+          }
+        },
+        {
+          "facing": "back",
+          "width": 20,
+          "height": 20,
+          "bbox": [
+            2,
+            5,
+            17,
+            15
+          ],
+          "opaque": 124,
+          "regions": {
+            "crown": 102,
+            "hem": 22
+          },
+          "shade_steps": {
+            "-2": 36,
+            "-1": 52,
+            "1": 12,
+            "0": 24
+          }
+        }
+      ],
+      "regions": [
+        "crown",
+        "hem"
+      ],
+      "semantic_pattern": "vertical_stripes",
+      "color_bands": [
+        {
+          "region": "hem",
+          "top": 0.83,
+          "bottom": 1.0,
+          "color": "#4d624b"
+        }
+      ],
+      "motifs": [],
+      "overlays": [],
+      "region_palettes": {
+        "crown": [
+          "#657e60",
+          "#a8bd84",
+          "#d7ddb2"
+        ],
+        "hem": [
+          "#3f5341",
+          "#7e9770"
+        ]
+      },
+      "normalized_pattern_coordinates": true,
+      "base_overlay_separation": true,
+      "shading_topology_preserved": true,
+      "texture_cleanup": true,
+      "coherent_four_view_projection": true,
+      "pattern_cells_after_cleanup": {
+        "front": 9,
+        "right": 11,
+        "left": 9,
+        "back": 19
+      },
+      "design_id": "tulip_vertical",
+      "description": "Normalized vertical stripe field cleaned against outline plus independently colored hem."
+    },
+    {
+      "control_id": "hood",
+      "canvas_width": 64,
+      "canvas_height": 96,
+      "views": [
+        {
+          "facing": "front",
+          "width": 32,
+          "height": 32,
+          "bbox": [
+            7,
+            4,
+            24,
+            16
+          ],
+          "opaque": 122,
+          "regions": {
+            "crown": 92,
+            "hem": 30
+          },
+          "shade_steps": {
+            "-2": 60,
+            "-1": 26,
+            "0": 29,
+            "1": 7
+          }
+        },
+        {
+          "facing": "right",
+          "width": 32,
+          "height": 32,
+          "bbox": [
+            14,
+            0,
+            29,
+            14
+          ],
+          "opaque": 127,
+          "regions": {
+            "crown": 96,
+            "hem": 31
+          },
+          "shade_steps": {
+            "-2": 52,
+            "-1": 43,
+            "0": 23,
+            "1": 9
+          }
+        },
+        {
+          "facing": "left",
+          "width": 32,
+          "height": 32,
+          "bbox": [
+            2,
+            0,
+            17,
+            14
+          ],
+          "opaque": 127,
+          "regions": {
+            "crown": 96,
+            "hem": 31
+          },
+          "shade_steps": {
+            "-2": 52,
+            "0": 23,
+            "1": 9,
+            "-1": 43
+          }
+        },
+        {
+          "facing": "back",
+          "width": 32,
+          "height": 32,
+          "bbox": [
+            7,
+            3,
+            24,
+            15
+          ],
+          "opaque": 184,
+          "regions": {
+            "crown": 136,
+            "hem": 48
+          },
+          "shade_steps": {
+            "-2": 44,
+            "-1": 80,
+            "0": 51,
+            "1": 9
+          }
+        }
+      ],
+      "regions": [
+        "crown",
+        "hem"
+      ],
+      "semantic_pattern": "colorblock",
+      "color_bands": [
+        {
+          "region": "crown",
+          "top": 0.48,
+          "bottom": 0.78,
+          "color": "#806792"
+        }
+      ],
+      "motifs": [
+        {
+          "type": "spark",
+          "x": 0.5,
+          "y": 0.42,
+          "scope": "BACK_ONLY",
+          "color": "#d6b65d",
+          "scale": 1
+        }
+      ],
+      "overlays": [
+        {
+          "type": "vertical_seam",
+          "x": 0.5,
+          "scope": "FRONT_ONLY",
+          "color": "#3e3249"
+        }
+      ],
+      "region_palettes": {
+        "crown": [
+          "#6a597d",
+          "#aa8fb7"
+        ],
+        "hem": [
+          "#40364d",
+          "#73617f"
+        ]
+      },
+      "normalized_pattern_coordinates": true,
+      "base_overlay_separation": true,
+      "shading_topology_preserved": true,
+      "texture_cleanup": true,
+      "coherent_four_view_projection": true,
+      "pattern_cells_after_cleanup": {
+        "front": 0,
+        "right": 0,
+        "left": 0,
+        "back": 0
+      },
+      "design_id": "hood_two_tone_seams",
+      "description": "Two-tone hood preserving source shade topology with scoped front/back construction details."
+    }
+  ]
+}

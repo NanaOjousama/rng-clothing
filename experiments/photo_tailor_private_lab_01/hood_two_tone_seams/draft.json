@@ -1,0 +1,149 @@
+{
+  "control_id": "hood",
+  "canvas_width": 64,
+  "canvas_height": 96,
+  "views": [
+    {
+      "facing": "front",
+      "width": 32,
+      "height": 32,
+      "bbox": [
+        7,
+        4,
+        24,
+        16
+      ],
+      "opaque": 122,
+      "regions": {
+        "crown": 92,
+        "hem": 30
+      },
+      "shade_steps": {
+        "-2": 60,
+        "-1": 26,
+        "0": 29,
+        "1": 7
+      }
+    },
+    {
+      "facing": "right",
+      "width": 32,
+      "height": 32,
+      "bbox": [
+        14,
+        0,
+        29,
+        14
+      ],
+      "opaque": 127,
+      "regions": {
+        "crown": 96,
+        "hem": 31
+      },
+      "shade_steps": {
+        "-2": 52,
+        "-1": 43,
+        "0": 23,
+        "1": 9
+      }
+    },
+    {
+      "facing": "left",
+      "width": 32,
+      "height": 32,
+      "bbox": [
+        2,
+        0,
+        17,
+        14
+      ],
+      "opaque": 127,
+      "regions": {
+        "crown": 96,
+        "hem": 31
+      },
+      "shade_steps": {
+        "-2": 52,
+        "0": 23,
+        "1": 9,
+        "-1": 43
+      }
+    },
+    {
+      "facing": "back",
+      "width": 32,
+      "height": 32,
+      "bbox": [
+        7,
+        3,
+        24,
+        15
+      ],
+      "opaque": 184,
+      "regions": {
+        "crown": 136,
+        "hem": 48
+      },
+      "shade_steps": {
+        "-2": 44,
+        "-1": 80,
+        "0": 51,
+        "1": 9
+      }
+    }
+  ],
+  "regions": [
+    "crown",
+    "hem"
+  ],
+  "semantic_pattern": "colorblock",
+  "color_bands": [
+    {
+      "region": "crown",
+      "top": 0.48,
+      "bottom": 0.78,
+      "color": "#806792"
+    }
+  ],
+  "motifs": [
+    {
+      "type": "spark",
+      "x": 0.5,
+      "y": 0.42,
+      "scope": "BACK_ONLY",
+      "color": "#d6b65d",
+      "scale": 1
+    }
+  ],
+  "overlays": [
+    {
+      "type": "vertical_seam",
+      "x": 0.5,
+      "scope": "FRONT_ONLY",
+      "color": "#3e3249"
+    }
+  ],
+  "region_palettes": {
+    "crown": [
+      "#6a597d",
+      "#aa8fb7"
+    ],
+    "hem": [
+      "#40364d",
+      "#73617f"
+    ]
+  },
+  "normalized_pattern_coordinates": true,
+  "base_overlay_separation": true,
+  "shading_topology_preserved": true,
+  "texture_cleanup": true,
+  "coherent_four_view_projection": true,
+  "pattern_cells_after_cleanup": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "design_id": "hood_two_tone_seams",
+  "description": "Two-tone hood preserving source shade topology with scoped front/back construction details."
+}

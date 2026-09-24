@@ -1,0 +1,133 @@
+{
+  "control_id": "tulip_hat",
+  "canvas_width": 64,
+  "canvas_height": 96,
+  "views": [
+    {
+      "facing": "front",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        2,
+        4,
+        17,
+        13
+      ],
+      "opaque": 80,
+      "regions": {
+        "crown": 74,
+        "hem": 6
+      },
+      "shade_steps": {
+        "-2": 38,
+        "0": 28,
+        "-1": 14
+      }
+    },
+    {
+      "facing": "right",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        1,
+        4,
+        15,
+        14
+      ],
+      "opaque": 90,
+      "regions": {
+        "crown": 81,
+        "hem": 9
+      },
+      "shade_steps": {
+        "-2": 37,
+        "1": 8,
+        "0": 21,
+        "-1": 24
+      }
+    },
+    {
+      "facing": "left",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        4,
+        4,
+        18,
+        14
+      ],
+      "opaque": 90,
+      "regions": {
+        "crown": 81,
+        "hem": 9
+      },
+      "shade_steps": {
+        "-2": 37,
+        "-1": 24,
+        "0": 21,
+        "1": 8
+      }
+    },
+    {
+      "facing": "back",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        2,
+        5,
+        17,
+        15
+      ],
+      "opaque": 124,
+      "regions": {
+        "crown": 102,
+        "hem": 22
+      },
+      "shade_steps": {
+        "-2": 36,
+        "-1": 52,
+        "1": 12,
+        "0": 24
+      }
+    }
+  ],
+  "regions": [
+    "crown",
+    "hem"
+  ],
+  "semantic_pattern": "vertical_stripes",
+  "color_bands": [
+    {
+      "region": "hem",
+      "top": 0.83,
+      "bottom": 1.0,
+      "color": "#4d624b"
+    }
+  ],
+  "motifs": [],
+  "overlays": [],
+  "region_palettes": {
+    "crown": [
+      "#657e60",
+      "#a8bd84",
+      "#d7ddb2"
+    ],
+    "hem": [
+      "#3f5341",
+      "#7e9770"
+    ]
+  },
+  "normalized_pattern_coordinates": true,
+  "base_overlay_separation": true,
+  "shading_topology_preserved": true,
+  "texture_cleanup": true,
+  "coherent_four_view_projection": true,
+  "pattern_cells_after_cleanup": {
+    "front": 9,
+    "right": 11,
+    "left": 9,
+    "back": 19
+  },
+  "design_id": "tulip_vertical",
+  "description": "Normalized vertical stripe field cleaned against outline plus independently colored hem."
+}

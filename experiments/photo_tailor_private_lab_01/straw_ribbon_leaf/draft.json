@@ -1,0 +1,151 @@
+{
+  "control_id": "straw_hat",
+  "canvas_width": 64,
+  "canvas_height": 96,
+  "views": [
+    {
+      "facing": "front",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        1,
+        4,
+        18,
+        11
+      ],
+      "opaque": 92,
+      "regions": {
+        "crown": 34,
+        "band": 16,
+        "brim": 42
+      },
+      "shade_steps": {
+        "-2": 38,
+        "-1": 19,
+        "0": 29,
+        "1": 6
+      }
+    },
+    {
+      "facing": "right",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        0,
+        4,
+        17,
+        11
+      ],
+      "opaque": 93,
+      "regions": {
+        "crown": 34,
+        "band": 16,
+        "brim": 43
+      },
+      "shade_steps": {
+        "-2": 38,
+        "-1": 20,
+        "0": 32,
+        "1": 3
+      }
+    },
+    {
+      "facing": "left",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        2,
+        4,
+        19,
+        11
+      ],
+      "opaque": 93,
+      "regions": {
+        "crown": 34,
+        "band": 16,
+        "brim": 43
+      },
+      "shade_steps": {
+        "-2": 38,
+        "-1": 20,
+        "0": 32,
+        "1": 3
+      }
+    },
+    {
+      "facing": "back",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        1,
+        4,
+        18,
+        14
+      ],
+      "opaque": 134,
+      "regions": {
+        "crown": 58,
+        "band": 18,
+        "brim": 58
+      },
+      "shade_steps": {
+        "-2": 36,
+        "-1": 31,
+        "0": 55,
+        "1": 12
+      }
+    }
+  ],
+  "regions": [
+    "band",
+    "brim",
+    "crown"
+  ],
+  "semantic_pattern": "solid",
+  "color_bands": [
+    {
+      "region": "band",
+      "top": 0.52,
+      "bottom": 0.68,
+      "color": "#557d63"
+    }
+  ],
+  "motifs": [
+    {
+      "type": "leaf",
+      "x": 0.72,
+      "y": 0.58,
+      "scope": "FRONT_SIDES",
+      "color": "#294d38",
+      "scale": 1
+    }
+  ],
+  "overlays": [],
+  "region_palettes": {
+    "crown": [
+      "#d49b48",
+      "#f0c86c"
+    ],
+    "band": [
+      "#426a58",
+      "#77a77e"
+    ],
+    "brim": [
+      "#bd7d31",
+      "#e8b957"
+    ]
+  },
+  "normalized_pattern_coordinates": true,
+  "base_overlay_separation": true,
+  "shading_topology_preserved": true,
+  "texture_cleanup": true,
+  "coherent_four_view_projection": true,
+  "pattern_cells_after_cleanup": {
+    "front": 0,
+    "right": 0,
+    "left": 0,
+    "back": 0
+  },
+  "design_id": "straw_ribbon_leaf",
+  "description": "Separate straw/ribbon/brim palettes, full-facing band and physically scoped side leaf."
+}

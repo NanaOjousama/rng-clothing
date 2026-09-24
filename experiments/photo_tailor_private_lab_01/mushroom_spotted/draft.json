@@ -1,0 +1,126 @@
+{
+  "control_id": "mushroom_hat",
+  "canvas_width": 64,
+  "canvas_height": 96,
+  "views": [
+    {
+      "facing": "front",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        2,
+        4,
+        17,
+        14
+      ],
+      "opaque": 98,
+      "regions": {
+        "crown": 86,
+        "lower": 12
+      },
+      "shade_steps": {
+        "-2": 42,
+        "-1": 17,
+        "0": 39
+      }
+    },
+    {
+      "facing": "right",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        1,
+        4,
+        15,
+        14
+      ],
+      "opaque": 100,
+      "regions": {
+        "crown": 84,
+        "lower": 16
+      },
+      "shade_steps": {
+        "-2": 37,
+        "-1": 35,
+        "0": 26,
+        "1": 2
+      }
+    },
+    {
+      "facing": "left",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        4,
+        4,
+        18,
+        14
+      ],
+      "opaque": 100,
+      "regions": {
+        "crown": 84,
+        "lower": 16
+      },
+      "shade_steps": {
+        "-2": 37,
+        "-1": 35,
+        "0": 26,
+        "1": 2
+      }
+    },
+    {
+      "facing": "back",
+      "width": 20,
+      "height": 20,
+      "bbox": [
+        2,
+        5,
+        17,
+        15
+      ],
+      "opaque": 134,
+      "regions": {
+        "crown": 94,
+        "lower": 40
+      },
+      "shade_steps": {
+        "-2": 36,
+        "-1": 46,
+        "0": 50,
+        "1": 2
+      }
+    }
+  ],
+  "regions": [
+    "crown",
+    "lower"
+  ],
+  "semantic_pattern": "polka_dot",
+  "color_bands": [],
+  "motifs": [],
+  "overlays": [],
+  "region_palettes": {
+    "crown": [
+      "#8e4a4c",
+      "#e4b9a9",
+      "#f4dfb9"
+    ],
+    "lower": [
+      "#7b654e",
+      "#d5bd91"
+    ]
+  },
+  "normalized_pattern_coordinates": true,
+  "base_overlay_separation": true,
+  "shading_topology_preserved": true,
+  "texture_cleanup": true,
+  "coherent_four_view_projection": true,
+  "pattern_cells_after_cleanup": {
+    "front": 13,
+    "right": 11,
+    "left": 13,
+    "back": 22
+  },
+  "design_id": "mushroom_spotted",
+  "description": "Semantic polka-dot field constrained to occupancy with cap/lower region palettes."
+}
