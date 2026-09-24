@@ -21,7 +21,7 @@ def main():
     assert batch['genericProjectionEnabled'] is False
     assert batch['genericLineSynthesisEnabled'] is False
     parts=_parts()
-    assert parts['schema']=='source-respecting-hat-parts/v2'
+    assert parts['schema']=='source-respecting-hat-parts/v3'
     assert parts['genericProjectionAllowed'] is False
     assert parts['genericLineSynthesisAllowed'] is False
     assert parts['rules']['paletteRolesAreBoundToExactSourceRgb'] is True

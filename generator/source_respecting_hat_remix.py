@@ -347,6 +347,28 @@ def tulip_hat(state='Tulip Hat',body_palette='source_native',pattern_palette='so
       'genericProjectionUsed':False,'genericLineUsed':False,
       'paletteAuthority':'explicit_source_rgb_roles'})
 
+def source_family_state(family,state=None,palette='source_native'):
+    spec=_parts()['families'][family]
+    pack=spec['pack']
+    state=state or spec['base']
+    if state not in spec['alternateConstructionStates']:
+        raise ValueError(f'{family}: unknown authored state {state}')
+    raw,_=source_frames(pack,state)
+    roles=_validate_explicit_roles(raw,family,state)
+    tintable=spec.get('tintableState',{}).get(state,False)
+    if palette!='source_native' and not tintable:
+        raise ValueError(f'{family}/{state}: chromatic authored state is source-native only')
+    out,changed=_apply_role_prefix_tint(raw,roles,'body_',GRAY_TINTS[palette])
+    _assert_locked_geometry(raw,out)
+    return RemixResult(family,state,state,palette,None,out,raw,changed,{
+      'constructionAuthority':'whole_authored_source_state',
+      'componentPolicy':'none',
+      'lockedFeatures':spec['lockedConstruction'],
+      'genericProjectionUsed':False,'genericLineUsed':False,
+      'paletteAuthority':'source_native' if palette=='source_native' else 'explicit_source_rgb_body_roles',
+      'paletteSelectionTier':'same_family_source' if palette=='source_native' else 'curated_transfer_group'
+    })
+
 def validate_no_isolated_line_fragment(frames, changed, min_ratio=.45, min_pixels=4):
     """Reject a new horizontal treatment that collapses into a tiny centre dash.
 

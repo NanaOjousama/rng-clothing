@@ -1,0 +1,2479 @@
+{
+  "schema": "source-respecting-hat-remaining/v1",
+  "families": [
+    "alt_beanie",
+    "alt_earmuffs",
+    "alt_headband",
+    "cc_headband",
+    "cc_headscarf",
+    "cc_hood",
+    "mas_bows",
+    "mas_crown",
+    "mas_earmuffs",
+    "mas_garland",
+    "mas_hair_buns",
+    "mas_headband",
+    "mas_hood"
+  ],
+  "genericProjectionAllowed": false,
+  "genericLineSynthesisAllowed": false,
+  "generatedPaletteFallbackEnabled": false,
+  "humanArtApproved": false,
+  "candidates": [
+    {
+      "index": 1,
+      "family": "alt_beanie",
+      "label": "ALT Beanie",
+      "sourceState": "Beanie",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/001_alt_beanie/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/001_alt_beanie/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/001_alt_beanie/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/001_alt_beanie/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 2,
+      "family": "alt_beanie",
+      "label": "ALT Beanie",
+      "sourceState": "Beanie (Bunny)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/002_alt_beanie/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/002_alt_beanie/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/002_alt_beanie/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/002_alt_beanie/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 3,
+      "family": "alt_beanie",
+      "label": "ALT Beanie",
+      "sourceState": "Beanie (Cat)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/003_alt_beanie/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/003_alt_beanie/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/003_alt_beanie/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/003_alt_beanie/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 4,
+      "family": "alt_beanie",
+      "label": "ALT Beanie",
+      "sourceState": "Beanie (Floppy)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/004_alt_beanie/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/004_alt_beanie/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/004_alt_beanie/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/004_alt_beanie/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 5,
+      "family": "alt_beanie",
+      "label": "ALT Beanie",
+      "sourceState": "Beanie",
+      "palette": "stone_blue",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/005_alt_beanie/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/005_alt_beanie/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/005_alt_beanie/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/005_alt_beanie/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 6,
+      "family": "alt_beanie",
+      "label": "ALT Beanie",
+      "sourceState": "Beanie",
+      "palette": "rose_cream",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/006_alt_beanie/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/006_alt_beanie/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/006_alt_beanie/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/006_alt_beanie/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 7,
+      "family": "alt_beanie",
+      "label": "ALT Beanie",
+      "sourceState": "Beanie",
+      "palette": "cocoa_gold",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/007_alt_beanie/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/007_alt_beanie/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/007_alt_beanie/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/007_alt_beanie/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 8,
+      "family": "alt_beanie",
+      "label": "ALT Beanie",
+      "sourceState": "Beanie (Bunny)",
+      "palette": "stone_blue",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/008_alt_beanie/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/008_alt_beanie/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/008_alt_beanie/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/008_alt_beanie/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 9,
+      "family": "alt_earmuffs",
+      "label": "ALT Earmuffs",
+      "sourceState": "Earmuffs (Angel Wings)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/009_alt_earmuffs/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/009_alt_earmuffs/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/009_alt_earmuffs/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/009_alt_earmuffs/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 10,
+      "family": "alt_earmuffs",
+      "label": "ALT Earmuffs",
+      "sourceState": "Earmuffs (Bat Wings)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/010_alt_earmuffs/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/010_alt_earmuffs/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/010_alt_earmuffs/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/010_alt_earmuffs/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 11,
+      "family": "alt_earmuffs",
+      "label": "ALT Earmuffs",
+      "sourceState": "Earmuffs (Horns)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/011_alt_earmuffs/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/011_alt_earmuffs/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/011_alt_earmuffs/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/011_alt_earmuffs/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 12,
+      "family": "alt_headband",
+      "label": "ALT Headband",
+      "sourceState": "Headband (Horns)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/012_alt_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/012_alt_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/012_alt_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/012_alt_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 13,
+      "family": "alt_headband",
+      "label": "ALT Headband",
+      "sourceState": "Headband (Studded)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/013_alt_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/013_alt_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/013_alt_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/013_alt_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 14,
+      "family": "alt_headband",
+      "label": "ALT Headband",
+      "sourceState": "Headband (Wide)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/014_alt_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/014_alt_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/014_alt_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/014_alt_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 15,
+      "family": "alt_headband",
+      "label": "ALT Headband",
+      "sourceState": "Headband (Wide, Studded)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/015_alt_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/015_alt_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/015_alt_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/015_alt_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 16,
+      "family": "alt_headband",
+      "label": "ALT Headband",
+      "sourceState": "Headband (Horns)",
+      "palette": "stone_blue",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/016_alt_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/016_alt_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/016_alt_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/016_alt_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 17,
+      "family": "alt_headband",
+      "label": "ALT Headband",
+      "sourceState": "Headband (Horns)",
+      "palette": "rose_cream",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/017_alt_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/017_alt_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/017_alt_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/017_alt_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 18,
+      "family": "alt_headband",
+      "label": "ALT Headband",
+      "sourceState": "Headband (Horns)",
+      "palette": "cocoa_gold",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/018_alt_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/018_alt_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/018_alt_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/018_alt_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 19,
+      "family": "alt_headband",
+      "label": "ALT Headband",
+      "sourceState": "Headband (Studded)",
+      "palette": "stone_blue",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/019_alt_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/019_alt_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/019_alt_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/019_alt_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 20,
+      "family": "cc_headband",
+      "label": "CC Headband",
+      "sourceState": "Headband (Daisies)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/020_cc_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/020_cc_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/020_cc_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/020_cc_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 21,
+      "family": "cc_headband",
+      "label": "CC Headband",
+      "sourceState": "Headband (Ribbon)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/021_cc_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/021_cc_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/021_cc_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/021_cc_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 22,
+      "family": "cc_headband",
+      "label": "CC Headband",
+      "sourceState": "Headband (Daisies)",
+      "palette": "stone_blue",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/022_cc_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/022_cc_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/022_cc_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/022_cc_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 23,
+      "family": "cc_headband",
+      "label": "CC Headband",
+      "sourceState": "Headband (Daisies)",
+      "palette": "rose_cream",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/023_cc_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/023_cc_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/023_cc_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/023_cc_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 24,
+      "family": "cc_headband",
+      "label": "CC Headband",
+      "sourceState": "Headband (Daisies)",
+      "palette": "cocoa_gold",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/024_cc_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/024_cc_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/024_cc_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/024_cc_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 25,
+      "family": "cc_headband",
+      "label": "CC Headband",
+      "sourceState": "Headband (Ribbon)",
+      "palette": "stone_blue",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/025_cc_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/025_cc_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/025_cc_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/025_cc_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 26,
+      "family": "cc_headband",
+      "label": "CC Headband",
+      "sourceState": "Headband (Ribbon)",
+      "palette": "rose_cream",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/026_cc_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/026_cc_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/026_cc_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/026_cc_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 27,
+      "family": "cc_headband",
+      "label": "CC Headband",
+      "sourceState": "Headband (Ribbon)",
+      "palette": "cocoa_gold",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/027_cc_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/027_cc_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/027_cc_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/027_cc_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 28,
+      "family": "cc_headscarf",
+      "label": "CC Headscarf",
+      "sourceState": "Headscarf",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/028_cc_headscarf/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/028_cc_headscarf/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/028_cc_headscarf/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/028_cc_headscarf/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 29,
+      "family": "cc_headscarf",
+      "label": "CC Headscarf",
+      "sourceState": "Headscarf (Dotted)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/029_cc_headscarf/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/029_cc_headscarf/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/029_cc_headscarf/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/029_cc_headscarf/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 30,
+      "family": "cc_headscarf",
+      "label": "CC Headscarf",
+      "sourceState": "Headscarf (Small)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/030_cc_headscarf/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/030_cc_headscarf/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/030_cc_headscarf/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/030_cc_headscarf/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 31,
+      "family": "cc_headscarf",
+      "label": "CC Headscarf",
+      "sourceState": "Headscarf (Small, Dotted)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/031_cc_headscarf/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/031_cc_headscarf/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/031_cc_headscarf/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/031_cc_headscarf/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 32,
+      "family": "cc_headscarf",
+      "label": "CC Headscarf",
+      "sourceState": "Headscarf",
+      "palette": "stone_blue",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/032_cc_headscarf/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/032_cc_headscarf/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/032_cc_headscarf/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/032_cc_headscarf/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 33,
+      "family": "cc_headscarf",
+      "label": "CC Headscarf",
+      "sourceState": "Headscarf",
+      "palette": "rose_cream",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/033_cc_headscarf/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/033_cc_headscarf/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/033_cc_headscarf/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/033_cc_headscarf/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 34,
+      "family": "cc_headscarf",
+      "label": "CC Headscarf",
+      "sourceState": "Headscarf",
+      "palette": "cocoa_gold",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/034_cc_headscarf/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/034_cc_headscarf/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/034_cc_headscarf/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/034_cc_headscarf/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 35,
+      "family": "cc_headscarf",
+      "label": "CC Headscarf",
+      "sourceState": "Headscarf (Dotted)",
+      "palette": "stone_blue",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/035_cc_headscarf/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/035_cc_headscarf/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/035_cc_headscarf/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/035_cc_headscarf/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 36,
+      "family": "cc_hood",
+      "label": "CC Hood",
+      "sourceState": "Hood (Mushroom)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/036_cc_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/036_cc_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/036_cc_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/036_cc_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 37,
+      "family": "cc_hood",
+      "label": "CC Hood",
+      "sourceState": "Hood (Pointy)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/037_cc_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/037_cc_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/037_cc_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/037_cc_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 38,
+      "family": "cc_hood",
+      "label": "CC Hood",
+      "sourceState": "Hood (Mushroom)",
+      "palette": "stone_blue",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/038_cc_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/038_cc_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/038_cc_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/038_cc_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 39,
+      "family": "cc_hood",
+      "label": "CC Hood",
+      "sourceState": "Hood (Mushroom)",
+      "palette": "rose_cream",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/039_cc_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/039_cc_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/039_cc_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/039_cc_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 40,
+      "family": "cc_hood",
+      "label": "CC Hood",
+      "sourceState": "Hood (Mushroom)",
+      "palette": "cocoa_gold",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/040_cc_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/040_cc_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/040_cc_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/040_cc_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 41,
+      "family": "cc_hood",
+      "label": "CC Hood",
+      "sourceState": "Hood (Pointy)",
+      "palette": "stone_blue",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/041_cc_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/041_cc_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/041_cc_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/041_cc_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 42,
+      "family": "cc_hood",
+      "label": "CC Hood",
+      "sourceState": "Hood (Pointy)",
+      "palette": "rose_cream",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/042_cc_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/042_cc_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/042_cc_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/042_cc_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 43,
+      "family": "cc_hood",
+      "label": "CC Hood",
+      "sourceState": "Hood (Pointy)",
+      "palette": "cocoa_gold",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/043_cc_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/043_cc_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/043_cc_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/043_cc_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 44,
+      "family": "mas_bows",
+      "label": "MAS Bows",
+      "sourceState": "Bows (Double)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/044_mas_bows/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/044_mas_bows/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/044_mas_bows/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/044_mas_bows/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 45,
+      "family": "mas_bows",
+      "label": "MAS Bows",
+      "sourceState": "Bows (Double, Side)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/045_mas_bows/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/045_mas_bows/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/045_mas_bows/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/045_mas_bows/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 46,
+      "family": "mas_bows",
+      "label": "MAS Bows",
+      "sourceState": "Bows (Double, Small 1)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/046_mas_bows/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/046_mas_bows/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/046_mas_bows/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/046_mas_bows/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 47,
+      "family": "mas_bows",
+      "label": "MAS Bows",
+      "sourceState": "Bows (Double, Small 2)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/047_mas_bows/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/047_mas_bows/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/047_mas_bows/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/047_mas_bows/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 48,
+      "family": "mas_bows",
+      "label": "MAS Bows",
+      "sourceState": "Bows (Double)",
+      "palette": "stone_blue",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/048_mas_bows/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/048_mas_bows/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/048_mas_bows/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/048_mas_bows/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 49,
+      "family": "mas_bows",
+      "label": "MAS Bows",
+      "sourceState": "Bows (Double)",
+      "palette": "rose_cream",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/049_mas_bows/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/049_mas_bows/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/049_mas_bows/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/049_mas_bows/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 50,
+      "family": "mas_bows",
+      "label": "MAS Bows",
+      "sourceState": "Bows (Double)",
+      "palette": "cocoa_gold",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/050_mas_bows/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/050_mas_bows/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/050_mas_bows/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/050_mas_bows/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 51,
+      "family": "mas_bows",
+      "label": "MAS Bows",
+      "sourceState": "Bows (Double, Side)",
+      "palette": "stone_blue",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/051_mas_bows/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/051_mas_bows/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/051_mas_bows/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/051_mas_bows/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 52,
+      "family": "mas_crown",
+      "label": "MAS Crown",
+      "sourceState": "Crown (Coronet)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/052_mas_crown/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/052_mas_crown/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/052_mas_crown/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/052_mas_crown/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 53,
+      "family": "mas_crown",
+      "label": "MAS Crown",
+      "sourceState": "Crown (Diadem 1)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/053_mas_crown/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/053_mas_crown/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/053_mas_crown/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/053_mas_crown/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 54,
+      "family": "mas_crown",
+      "label": "MAS Crown",
+      "sourceState": "Crown (Diadem 2)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/054_mas_crown/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/054_mas_crown/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/054_mas_crown/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/054_mas_crown/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 55,
+      "family": "mas_crown",
+      "label": "MAS Crown",
+      "sourceState": "Crown (Diadem 2)",
+      "palette": "stone_blue",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/055_mas_crown/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/055_mas_crown/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/055_mas_crown/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/055_mas_crown/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 56,
+      "family": "mas_crown",
+      "label": "MAS Crown",
+      "sourceState": "Crown (Diadem 2)",
+      "palette": "rose_cream",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/056_mas_crown/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/056_mas_crown/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/056_mas_crown/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/056_mas_crown/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 57,
+      "family": "mas_crown",
+      "label": "MAS Crown",
+      "sourceState": "Crown (Diadem 2)",
+      "palette": "cocoa_gold",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/057_mas_crown/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/057_mas_crown/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/057_mas_crown/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/057_mas_crown/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 58,
+      "family": "mas_earmuffs",
+      "label": "MAS Earmuffs",
+      "sourceState": "Earmuffs",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/058_mas_earmuffs/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/058_mas_earmuffs/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/058_mas_earmuffs/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/058_mas_earmuffs/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 59,
+      "family": "mas_earmuffs",
+      "label": "MAS Earmuffs",
+      "sourceState": "Earmuffs (Cat)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/059_mas_earmuffs/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/059_mas_earmuffs/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/059_mas_earmuffs/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/059_mas_earmuffs/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 60,
+      "family": "mas_garland",
+      "label": "MAS Garland",
+      "sourceState": "Garland 1",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/060_mas_garland/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/060_mas_garland/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/060_mas_garland/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/060_mas_garland/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 61,
+      "family": "mas_garland",
+      "label": "MAS Garland",
+      "sourceState": "Garland 2",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/061_mas_garland/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/061_mas_garland/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/061_mas_garland/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/061_mas_garland/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 62,
+      "family": "mas_garland",
+      "label": "MAS Garland",
+      "sourceState": "Garland (Dried 1)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/062_mas_garland/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/062_mas_garland/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/062_mas_garland/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/062_mas_garland/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 63,
+      "family": "mas_garland",
+      "label": "MAS Garland",
+      "sourceState": "Garland (Dried 2)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/063_mas_garland/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/063_mas_garland/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/063_mas_garland/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/063_mas_garland/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 64,
+      "family": "mas_garland",
+      "label": "MAS Garland",
+      "sourceState": "Garland (Flowers 1)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/064_mas_garland/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/064_mas_garland/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/064_mas_garland/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/064_mas_garland/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 65,
+      "family": "mas_garland",
+      "label": "MAS Garland",
+      "sourceState": "Garland (Flowers 2)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/065_mas_garland/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/065_mas_garland/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/065_mas_garland/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/065_mas_garland/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 66,
+      "family": "mas_hair_buns",
+      "label": "MAS Hair Buns",
+      "sourceState": "Hair Buns",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/066_mas_hair_buns/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/066_mas_hair_buns/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/066_mas_hair_buns/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/066_mas_hair_buns/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 67,
+      "family": "mas_hair_buns",
+      "label": "MAS Hair Buns",
+      "sourceState": "Hair Buns (Small)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/067_mas_hair_buns/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/067_mas_hair_buns/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/067_mas_hair_buns/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/067_mas_hair_buns/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 68,
+      "family": "mas_headband",
+      "label": "MAS Headband",
+      "sourceState": "Headband",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/068_mas_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/068_mas_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/068_mas_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/068_mas_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 69,
+      "family": "mas_headband",
+      "label": "MAS Headband",
+      "sourceState": "Headband (Cat 1)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/069_mas_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/069_mas_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/069_mas_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/069_mas_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 70,
+      "family": "mas_headband",
+      "label": "MAS Headband",
+      "sourceState": "Headband (Cat 2)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/070_mas_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/070_mas_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/070_mas_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/070_mas_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 71,
+      "family": "mas_headband",
+      "label": "MAS Headband",
+      "sourceState": "Headband (Frilly 1)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/071_mas_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/071_mas_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/071_mas_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/071_mas_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 72,
+      "family": "mas_headband",
+      "label": "MAS Headband",
+      "sourceState": "Headband (Frilly 2)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/072_mas_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/072_mas_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/072_mas_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/072_mas_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 73,
+      "family": "mas_headband",
+      "label": "MAS Headband",
+      "sourceState": "Headband (Puffs)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/073_mas_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/073_mas_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/073_mas_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/073_mas_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 74,
+      "family": "mas_headband",
+      "label": "MAS Headband",
+      "sourceState": "Headband (Small)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/074_mas_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/074_mas_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/074_mas_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/074_mas_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 75,
+      "family": "mas_headband",
+      "label": "MAS Headband",
+      "sourceState": "Headband (Tie 1)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/075_mas_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/075_mas_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/075_mas_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/075_mas_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 76,
+      "family": "mas_headband",
+      "label": "MAS Headband",
+      "sourceState": "Headband (Tie 2)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/076_mas_headband/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/076_mas_headband/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/076_mas_headband/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/076_mas_headband/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 77,
+      "family": "mas_hood",
+      "label": "MAS Hood",
+      "sourceState": "Hood",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/077_mas_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/077_mas_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/077_mas_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/077_mas_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 78,
+      "family": "mas_hood",
+      "label": "MAS Hood",
+      "sourceState": "Hood (Cat)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/078_mas_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/078_mas_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/078_mas_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/078_mas_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 79,
+      "family": "mas_hood",
+      "label": "MAS Hood",
+      "sourceState": "Hood (Frog)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/079_mas_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/079_mas_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/079_mas_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/079_mas_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 80,
+      "family": "mas_hood",
+      "label": "MAS Hood",
+      "sourceState": "Hood (Horns)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/080_mas_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/080_mas_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/080_mas_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/080_mas_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 81,
+      "family": "mas_hood",
+      "label": "MAS Hood",
+      "sourceState": "Hood (Rabbit)",
+      "palette": "source_native",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/081_mas_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/081_mas_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/081_mas_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/081_mas_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "source_native",
+        "paletteSelectionTier": "same_family_source"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 82,
+      "family": "mas_hood",
+      "label": "MAS Hood",
+      "sourceState": "Hood",
+      "palette": "stone_blue",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/082_mas_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/082_mas_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/082_mas_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/082_mas_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 83,
+      "family": "mas_hood",
+      "label": "MAS Hood",
+      "sourceState": "Hood",
+      "palette": "rose_cream",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/083_mas_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/083_mas_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/083_mas_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/083_mas_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    },
+    {
+      "index": 84,
+      "family": "mas_hood",
+      "label": "MAS Hood",
+      "sourceState": "Hood",
+      "palette": "cocoa_gold",
+      "frames": {
+        "front": "experiments/source_respecting_hat_remaining_01/candidates/084_mas_hood/front.png",
+        "right": "experiments/source_respecting_hat_remaining_01/candidates/084_mas_hood/right.png",
+        "left": "experiments/source_respecting_hat_remaining_01/candidates/084_mas_hood/left.png",
+        "back": "experiments/source_respecting_hat_remaining_01/candidates/084_mas_hood/back.png"
+      },
+      "trace": {
+        "constructionAuthority": "whole_authored_source_state",
+        "componentPolicy": "none",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "defining_seams",
+          "source_shading_topology"
+        ],
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "paletteAuthority": "explicit_source_rgb_body_roles",
+        "paletteSelectionTier": "curated_transfer_group"
+      },
+      "genericProjectionUsed": false,
+      "genericLineUsed": false,
+      "status": "HUMAN_ART_REVIEW_REQUIRED"
+    }
+  ],
+  "candidateCount": 84,
+  "contactSheets": [
+    "experiments/source_respecting_hat_remaining_01/ALT_BEANIE_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_remaining_01/ALT_EARMUFFS_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_remaining_01/ALT_HEADBAND_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_remaining_01/CC_HEADBAND_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_remaining_01/CC_HEADSCARF_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_remaining_01/CC_HOOD_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_remaining_01/REMAINING_BATCH_B_OVERVIEW.png",
+    "experiments/source_respecting_hat_remaining_01/MAS_BOWS_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_remaining_01/MAS_CROWN_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_remaining_01/MAS_EARMUFFS_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_remaining_01/MAS_GARLAND_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_remaining_01/MAS_HAIR_BUNS_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_remaining_01/REMAINING_BATCH_C_OVERVIEW.png",
+    "experiments/source_respecting_hat_remaining_01/MAS_HEADBAND_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_remaining_01/MAS_HOOD_DIRECTIONAL.png",
+    "experiments/source_respecting_hat_remaining_01/REMAINING_BATCH_D_OVERVIEW.png"
+  ]
+}

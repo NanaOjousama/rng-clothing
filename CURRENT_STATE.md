@@ -1126,3 +1126,35 @@ Validation:
 - validate_hat_visual_rules.py PASS after moving all 7 source-respecting families out of the generic line path.
 - validate_taste_policy.py PASS.
 - validate_catalog_template_promotions.py PASS: 47 promoted / 6 deferred.
+
+## 2026-09-23 — Source-Respecting Hat Conversion COMPLETE (20/20 promoted families)
+Finished the remaining 13 promoted hat families on the approved Source-Respecting Remix architecture.
+
+Remaining families converted:
+- Alt-Fashion: Beanie, Earmuffs (Horns family), Headband (Studded family).
+- Cottagecore: Headband (Daisies family), Headscarf, Hood (Mushroom family).
+- More Accessories and Stuff: Bows (Double, Small 1 family), Crown (Diadem 1 family), Earmuffs, Garland (Dried 1 family), Hair Buns, Headband, Hood.
+
+Completion policy:
+- Every authored source variant is treated as a whole authored construction state by default.
+- Fully grayscale authored states may receive curated role-bound body tints.
+- Chromatic authored states remain source-native unless an explicit mutable source mask exists.
+- Generic donor projection is disabled.
+- Generic synthesized line treatment is disabled.
+- Arbitrary whole-hat STYLE_PROFILE recoloring is disabled.
+- Generated palette fallback is disabled.
+
+Remaining-family proof batch:
+- experiments/source_respecting_hat_remaining_01 contains 84 candidates across the final 13 families.
+- Review sheets: REMAINING_BATCH_B_OVERVIEW.png, REMAINING_BATCH_C_OVERVIEW.png, REMAINING_BATCH_D_OVERVIEW.png.
+- Per-family directional sheets are included for all 13 families.
+- Every native authored state is pixel-identical to its source render frame.
+- Every tint preserves source alpha and is confined to explicit source RGB body-role masks.
+
+Validation:
+- validate_source_respecting_hat_remaining.py PASS.
+- validate_source_respecting_hat_batch_a.py PASS.
+- validate_source_respecting_hat_remix.py PASS.
+- validate_hat_visual_rules.py PASS with all 20 promoted hats declaring SOURCE_RESPECTING_REMIX_ONLY line authority.
+- validate_taste_policy.py PASS.
+- validate_catalog_template_promotions.py PASS: 47 promoted / 6 deferred, including 20 hats.

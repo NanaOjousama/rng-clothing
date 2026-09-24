@@ -84,16 +84,55 @@
       "boater_hat",
       "mushroom_hat",
       "sun_hat",
-      "tulip_hat"
+      "tulip_hat",
+      "alt_beanie",
+      "alt_earmuffs",
+      "alt_headband",
+      "cc_headband",
+      "cc_headscarf",
+      "cc_hood",
+      "mas_bows",
+      "mas_crown",
+      "mas_earmuffs",
+      "mas_garland",
+      "mas_hair_buns",
+      "mas_headband",
+      "mas_hood"
     ],
     "generatedVariationLastResortEnabled": false,
     "genericLineSynthesisEnabled": false,
     "sourceParts": "generator/data/source_parts/hat_source_parts.json",
     "batchA": {
-      "families": ["boater_hat", "mushroom_hat", "sun_hat", "tulip_hat"],
+      "families": [
+        "boater_hat",
+        "mushroom_hat",
+        "sun_hat",
+        "tulip_hat"
+      ],
       "status": "HUMAN_ART_REVIEW_REQUIRED",
       "genericProjectionEnabled": false,
       "genericLineSynthesisEnabled": false
+    },
+    "remaining13": {
+      "families": [
+        "alt_beanie",
+        "alt_earmuffs",
+        "alt_headband",
+        "cc_headband",
+        "cc_headscarf",
+        "cc_hood",
+        "mas_bows",
+        "mas_crown",
+        "mas_earmuffs",
+        "mas_garland",
+        "mas_hair_buns",
+        "mas_headband",
+        "mas_hood"
+      ],
+      "status": "HUMAN_ART_REVIEW_REQUIRED",
+      "genericProjectionEnabled": false,
+      "genericLineSynthesisEnabled": false,
+      "wholeAuthoredSourceStateDefault": true
     }
   }
 }

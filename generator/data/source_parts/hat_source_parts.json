@@ -1,5 +1,5 @@
 {
-  "schema": "source-respecting-hat-parts/v2",
+  "schema": "source-respecting-hat-parts/v3",
   "principle": "Preserve source construction; remix only explicitly mutable or optional source-backed features.",
   "genericProjectionAllowed": false,
   "genericLineSynthesisAllowed": false,
@@ -28238,6 +28238,790 @@
           "255,250,228": "pattern_light"
         }
       }
+    },
+    "alt_beanie": {
+      "pack": "Alt-Fashion Set",
+      "base": "Beanie",
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Beanie",
+        "Beanie (Bunny)",
+        "Beanie (Cat)",
+        "Beanie (Floppy)"
+      ],
+      "roleByStateRgb": {
+        "Beanie": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "214,214,214": "body_light",
+          "217,217,217": "body_highlight",
+          "254,254,254": "body_spec"
+        },
+        "Beanie (Bunny)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "214,214,214": "body_light",
+          "217,217,217": "body_highlight",
+          "254,254,254": "body_spec"
+        },
+        "Beanie (Cat)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "214,214,214": "body_light",
+          "217,217,217": "body_highlight",
+          "254,254,254": "body_spec",
+          "255,255,255": "body_spec2"
+        },
+        "Beanie (Floppy)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "214,214,214": "body_light",
+          "254,254,254": "body_highlight"
+        }
+      },
+      "tintableState": {
+        "Beanie": true,
+        "Beanie (Bunny)": true,
+        "Beanie (Cat)": true,
+        "Beanie (Floppy)": true
+      },
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+    },
+    "alt_earmuffs": {
+      "pack": "Alt-Fashion Set",
+      "base": "Earmuffs (Horns)",
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Earmuffs (Angel Wings)",
+        "Earmuffs (Bat Wings)",
+        "Earmuffs (Horns)"
+      ],
+      "roleByStateRgb": {
+        "Earmuffs (Angel Wings)": {
+          "57,57,57": "body_outline",
+          "78,78,78": "body_shadow",
+          "112,112,112": "body_mid_dark",
+          "119,119,119": "body_midtone",
+          "165,165,165": "body_light",
+          "172,172,172": "body_highlight",
+          "214,214,214": "body_spec",
+          "217,217,217": "body_spec2",
+          "232,232,232": "body_spec2",
+          "248,248,248": "body_spec2",
+          "254,252,255": "locked_source_color"
+        },
+        "Earmuffs (Bat Wings)": {
+          "57,57,57": "body_outline",
+          "78,78,78": "body_shadow",
+          "112,112,112": "body_mid_dark",
+          "119,119,119": "body_midtone",
+          "165,165,165": "body_light",
+          "172,172,172": "body_highlight",
+          "214,214,214": "body_spec",
+          "217,217,217": "body_spec2",
+          "232,232,232": "body_spec2",
+          "248,248,248": "body_spec2",
+          "254,252,255": "locked_source_color"
+        },
+        "Earmuffs (Horns)": {
+          "57,57,57": "body_outline",
+          "78,78,78": "body_shadow",
+          "112,112,112": "body_mid_dark",
+          "119,119,119": "body_midtone",
+          "165,165,165": "body_light",
+          "172,172,172": "body_highlight",
+          "214,214,214": "body_spec",
+          "217,217,217": "body_spec2",
+          "232,232,232": "body_spec2",
+          "248,248,248": "body_spec2",
+          "254,252,255": "locked_source_color"
+        }
+      },
+      "tintableState": {
+        "Earmuffs (Angel Wings)": false,
+        "Earmuffs (Bat Wings)": false,
+        "Earmuffs (Horns)": false
+      },
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+    },
+    "alt_headband": {
+      "pack": "Alt-Fashion Set",
+      "base": "Headband (Studded)",
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Headband (Horns)",
+        "Headband (Studded)",
+        "Headband (Wide)",
+        "Headband (Wide, Studded)"
+      ],
+      "roleByStateRgb": {
+        "Headband (Horns)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "165,165,165": "body_mid_dark",
+          "217,217,217": "body_midtone",
+          "254,254,254": "body_light"
+        },
+        "Headband (Studded)": {
+          "121,121,121": "body_outline",
+          "144,144,144": "body_shadow",
+          "165,165,165": "body_mid_dark",
+          "217,217,217": "body_midtone",
+          "254,254,254": "body_light"
+        },
+        "Headband (Wide)": {
+          "165,165,165": "body_outline",
+          "217,217,217": "body_shadow",
+          "254,254,254": "body_mid_dark"
+        },
+        "Headband (Wide, Studded)": {
+          "121,121,121": "body_outline",
+          "144,144,144": "body_shadow",
+          "165,165,165": "body_mid_dark",
+          "217,217,217": "body_midtone",
+          "254,254,254": "body_light"
+        }
+      },
+      "tintableState": {
+        "Headband (Horns)": true,
+        "Headband (Studded)": true,
+        "Headband (Wide)": true,
+        "Headband (Wide, Studded)": true
+      },
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+    },
+    "cc_headband": {
+      "pack": "Cottagecore Set",
+      "base": "Headband (Daisies)",
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Headband (Daisies)",
+        "Headband (Ribbon)"
+      ],
+      "roleByStateRgb": {
+        "Headband (Daisies)": {
+          "165,165,165": "body_outline",
+          "217,217,217": "body_shadow",
+          "238,238,238": "body_mid_dark",
+          "250,250,250": "body_midtone",
+          "254,254,254": "body_light",
+          "255,255,255": "body_highlight"
+        },
+        "Headband (Ribbon)": {
+          "81,81,81": "body_outline",
+          "165,165,165": "body_shadow",
+          "217,217,217": "body_mid_dark",
+          "254,254,254": "body_midtone"
+        }
+      },
+      "tintableState": {
+        "Headband (Daisies)": true,
+        "Headband (Ribbon)": true
+      },
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+    },
+    "cc_headscarf": {
+      "pack": "Cottagecore Set",
+      "base": "Headscarf",
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Headscarf",
+        "Headscarf (Dotted)",
+        "Headscarf (Small)",
+        "Headscarf (Small, Dotted)"
+      ],
+      "roleByStateRgb": {
+        "Headscarf": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "217,217,217": "body_light",
+          "254,254,254": "body_highlight"
+        },
+        "Headscarf (Dotted)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "154,154,154": "body_midtone",
+          "165,165,165": "body_light",
+          "206,206,206": "body_highlight",
+          "217,217,217": "body_spec",
+          "246,246,246": "body_spec2",
+          "254,254,254": "body_spec2",
+          "255,255,255": "body_spec2"
+        },
+        "Headscarf (Small)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "217,217,217": "body_light",
+          "254,254,254": "body_highlight"
+        },
+        "Headscarf (Small, Dotted)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "154,154,154": "body_midtone",
+          "165,165,165": "body_light",
+          "206,206,206": "body_highlight",
+          "217,217,217": "body_spec",
+          "246,246,246": "body_spec2",
+          "254,254,254": "body_spec2",
+          "255,255,255": "body_spec2"
+        }
+      },
+      "tintableState": {
+        "Headscarf": true,
+        "Headscarf (Dotted)": true,
+        "Headscarf (Small)": true,
+        "Headscarf (Small, Dotted)": true
+      },
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+    },
+    "cc_hood": {
+      "pack": "Cottagecore Set",
+      "base": "Hood (Mushroom)",
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Hood (Mushroom)",
+        "Hood (Pointy)"
+      ],
+      "roleByStateRgb": {
+        "Hood (Mushroom)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "214,214,214": "body_light",
+          "217,217,217": "body_highlight",
+          "226,226,226": "body_spec",
+          "246,246,246": "body_spec2",
+          "254,254,254": "body_spec2",
+          "255,255,255": "body_spec2"
+        },
+        "Hood (Pointy)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "217,217,217": "body_light",
+          "254,254,254": "body_highlight"
+        }
+      },
+      "tintableState": {
+        "Hood (Mushroom)": true,
+        "Hood (Pointy)": true
+      },
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+    },
+    "mas_bows": {
+      "pack": "More Accessories and Stuff",
+      "base": "Bows (Double, Small 1)",
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Bows (Double)",
+        "Bows (Double, Side)",
+        "Bows (Double, Small 1)",
+        "Bows (Double, Small 2)"
+      ],
+      "roleByStateRgb": {
+        "Bows (Double)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "165,165,165": "body_mid_dark",
+          "217,217,217": "body_midtone",
+          "254,254,254": "body_light"
+        },
+        "Bows (Double, Side)": {
+          "81,81,81": "body_outline",
+          "165,165,165": "body_shadow",
+          "217,217,217": "body_mid_dark",
+          "254,254,254": "body_midtone"
+        },
+        "Bows (Double, Small 1)": {
+          "165,165,165": "body_outline",
+          "217,217,217": "body_shadow",
+          "254,254,254": "body_mid_dark"
+        },
+        "Bows (Double, Small 2)": {
+          "81,81,81": "body_outline",
+          "165,165,165": "body_shadow",
+          "217,217,217": "body_mid_dark",
+          "254,254,254": "body_midtone"
+        }
+      },
+      "tintableState": {
+        "Bows (Double)": true,
+        "Bows (Double, Side)": true,
+        "Bows (Double, Small 1)": true,
+        "Bows (Double, Small 2)": true
+      },
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+    },
+    "mas_crown": {
+      "pack": "More Accessories and Stuff",
+      "base": "Crown (Diadem 1)",
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Crown (Coronet)",
+        "Crown (Diadem 1)",
+        "Crown (Diadem 2)"
+      ],
+      "roleByStateRgb": {
+        "Crown (Coronet)": {
+          "119,119,119": "body_outline",
+          "165,165,165": "body_shadow",
+          "217,217,217": "body_mid_dark",
+          "254,254,254": "body_midtone",
+          "122,51,0": "locked_source_color",
+          "177,86,3": "locked_source_color",
+          "182,136,0": "locked_source_color",
+          "226,178,18": "locked_source_color",
+          "255,249,242": "locked_source_color",
+          "255,255,20": "locked_source_color"
+        },
+        "Crown (Diadem 1)": {
+          "119,119,119": "body_outline",
+          "165,165,165": "body_shadow",
+          "217,217,217": "body_mid_dark",
+          "122,51,0": "locked_source_color",
+          "177,86,3": "locked_source_color",
+          "226,178,18": "locked_source_color",
+          "255,249,242": "locked_source_color",
+          "255,255,20": "locked_source_color"
+        },
+        "Crown (Diadem 2)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "165,165,165": "body_mid_dark",
+          "217,217,217": "body_midtone",
+          "254,254,254": "body_light"
+        }
+      },
+      "tintableState": {
+        "Crown (Coronet)": false,
+        "Crown (Diadem 1)": false,
+        "Crown (Diadem 2)": true
+      },
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+    },
+    "mas_earmuffs": {
+      "pack": "More Accessories and Stuff",
+      "base": "Earmuffs",
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Earmuffs",
+        "Earmuffs (Cat)"
+      ],
+      "roleByStateRgb": {
+        "Earmuffs": {
+          "57,57,57": "body_outline",
+          "78,78,78": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "217,217,217": "body_light",
+          "232,232,232": "body_highlight",
+          "254,252,255": "locked_source_color"
+        },
+        "Earmuffs (Cat)": {
+          "57,57,57": "body_outline",
+          "78,78,78": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "172,172,172": "body_light",
+          "214,214,214": "body_highlight",
+          "217,217,217": "body_spec",
+          "232,232,232": "body_spec2",
+          "254,254,254": "body_spec2",
+          "254,252,255": "locked_source_color"
+        }
+      },
+      "tintableState": {
+        "Earmuffs": false,
+        "Earmuffs (Cat)": false
+      },
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+    },
+    "mas_garland": {
+      "pack": "More Accessories and Stuff",
+      "base": "Garland (Dried 1)",
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Garland 1",
+        "Garland 2",
+        "Garland (Dried 1)",
+        "Garland (Dried 2)",
+        "Garland (Flowers 1)",
+        "Garland (Flowers 2)"
+      ],
+      "roleByStateRgb": {
+        "Garland 1": {
+          "0,56,29": "locked_source_color",
+          "18,76,49": "locked_source_color",
+          "28,124,7": "locked_source_color",
+          "89,175,10": "locked_source_color",
+          "114,216,13": "locked_source_color"
+        },
+        "Garland 2": {
+          "0,56,29": "locked_source_color",
+          "18,76,49": "locked_source_color",
+          "28,124,7": "locked_source_color",
+          "89,175,10": "locked_source_color",
+          "114,216,13": "locked_source_color"
+        },
+        "Garland (Dried 1)": {
+          "50,2,0": "locked_source_color",
+          "82,36,2": "locked_source_color",
+          "125,65,5": "locked_source_color",
+          "167,92,7": "locked_source_color",
+          "189,115,9": "locked_source_color"
+        },
+        "Garland (Dried 2)": {
+          "50,2,0": "locked_source_color",
+          "82,36,2": "locked_source_color",
+          "125,65,5": "locked_source_color",
+          "167,92,7": "locked_source_color",
+          "189,115,9": "locked_source_color"
+        },
+        "Garland (Flowers 1)": {
+          "196,196,196": "body_outline",
+          "254,254,254": "body_shadow",
+          "0,56,28": "locked_source_color",
+          "18,76,49": "locked_source_color",
+          "28,124,7": "locked_source_color",
+          "89,175,10": "locked_source_color",
+          "114,216,13": "locked_source_color",
+          "216,168,0": "locked_source_color"
+        },
+        "Garland (Flowers 2)": {
+          "196,196,196": "body_outline",
+          "254,254,254": "body_shadow",
+          "0,56,28": "locked_source_color",
+          "18,76,49": "locked_source_color",
+          "28,124,7": "locked_source_color",
+          "89,175,10": "locked_source_color",
+          "114,216,13": "locked_source_color",
+          "216,168,0": "locked_source_color"
+        }
+      },
+      "tintableState": {
+        "Garland 1": false,
+        "Garland 2": false,
+        "Garland (Dried 1)": false,
+        "Garland (Dried 2)": false,
+        "Garland (Flowers 1)": false,
+        "Garland (Flowers 2)": false
+      },
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+    },
+    "mas_hair_buns": {
+      "pack": "More Accessories and Stuff",
+      "base": "Hair Buns",
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Hair Buns",
+        "Hair Buns (Small)"
+      ],
+      "roleByStateRgb": {
+        "Hair Buns": {
+          "217,217,217": "body_outline",
+          "254,254,254": "body_shadow",
+          "104,72,71": "locked_source_color",
+          "130,102,101": "locked_source_color",
+          "196,169,147": "locked_source_color",
+          "247,227,200": "locked_source_color",
+          "255,250,228": "locked_source_color"
+        },
+        "Hair Buns (Small)": {
+          "217,217,217": "body_outline",
+          "254,254,254": "body_shadow",
+          "104,72,71": "locked_source_color",
+          "130,102,101": "locked_source_color",
+          "196,169,147": "locked_source_color",
+          "247,227,200": "locked_source_color",
+          "255,250,228": "locked_source_color"
+        }
+      },
+      "tintableState": {
+        "Hair Buns": false,
+        "Hair Buns (Small)": false
+      },
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+    },
+    "mas_headband": {
+      "pack": "More Accessories and Stuff",
+      "base": "Headband",
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Headband",
+        "Headband (Cat 1)",
+        "Headband (Cat 2)",
+        "Headband (Frilly 1)",
+        "Headband (Frilly 2)",
+        "Headband (Puffs)",
+        "Headband (Small)",
+        "Headband (Tie 1)",
+        "Headband (Tie 2)"
+      ],
+      "roleByStateRgb": {
+        "Headband": {
+          "165,165,165": "body_outline",
+          "217,217,217": "body_shadow",
+          "254,254,254": "body_mid_dark"
+        },
+        "Headband (Cat 1)": {
+          "165,165,165": "body_outline",
+          "217,217,217": "body_shadow",
+          "254,254,254": "body_mid_dark"
+        },
+        "Headband (Cat 2)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "165,165,165": "body_mid_dark",
+          "217,217,217": "body_midtone",
+          "254,254,254": "body_light",
+          "232,144,193": "locked_source_color",
+          "239,172,210": "locked_source_color"
+        },
+        "Headband (Frilly 1)": {
+          "165,165,165": "body_outline",
+          "217,217,217": "body_shadow",
+          "232,232,232": "body_mid_dark",
+          "255,255,255": "body_midtone"
+        },
+        "Headband (Frilly 2)": {
+          "165,165,165": "body_outline",
+          "217,217,217": "body_shadow",
+          "232,232,232": "body_mid_dark",
+          "255,255,255": "body_midtone"
+        },
+        "Headband (Puffs)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "165,165,165": "body_mid_dark",
+          "217,217,217": "body_midtone",
+          "254,254,254": "body_light"
+        },
+        "Headband (Small)": {
+          "165,165,165": "body_outline",
+          "217,217,217": "body_shadow",
+          "254,254,254": "body_mid_dark"
+        },
+        "Headband (Tie 1)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "217,217,217": "body_light",
+          "254,254,254": "body_highlight"
+        },
+        "Headband (Tie 2)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "217,217,217": "body_light",
+          "254,254,254": "body_highlight"
+        }
+      },
+      "tintableState": {
+        "Headband": true,
+        "Headband (Cat 1)": true,
+        "Headband (Cat 2)": false,
+        "Headband (Frilly 1)": true,
+        "Headband (Frilly 2)": true,
+        "Headband (Puffs)": true,
+        "Headband (Small)": true,
+        "Headband (Tie 1)": true,
+        "Headband (Tie 2)": true
+      },
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
+    },
+    "mas_hood": {
+      "pack": "More Accessories and Stuff",
+      "base": "Hood",
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "defining_seams",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_color_if_fully_grayscale"
+      ],
+      "optionalAddonParts": [],
+      "alternateConstructionStates": [
+        "Hood",
+        "Hood (Cat)",
+        "Hood (Frog)",
+        "Hood (Horns)",
+        "Hood (Rabbit)"
+      ],
+      "roleByStateRgb": {
+        "Hood": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "217,217,217": "body_light",
+          "254,254,254": "body_highlight"
+        },
+        "Hood (Cat)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "217,217,217": "body_light",
+          "254,254,254": "body_highlight",
+          "232,144,193": "locked_source_color",
+          "239,172,210": "locked_source_color"
+        },
+        "Hood (Frog)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "92,92,92": "body_mid_dark",
+          "119,119,119": "body_midtone",
+          "165,165,165": "body_light",
+          "217,217,217": "body_highlight",
+          "240,240,240": "body_spec",
+          "254,254,254": "body_spec2",
+          "255,255,255": "body_spec2",
+          "24,24,30": "locked_source_color"
+        },
+        "Hood (Horns)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "217,217,217": "body_light",
+          "254,254,254": "body_highlight",
+          "10,10,14": "locked_source_color",
+          "24,24,30": "locked_source_color",
+          "54,56,69": "locked_source_color",
+          "86,91,105": "locked_source_color"
+        },
+        "Hood (Rabbit)": {
+          "57,57,57": "body_outline",
+          "81,81,81": "body_shadow",
+          "119,119,119": "body_mid_dark",
+          "165,165,165": "body_midtone",
+          "217,217,217": "body_light",
+          "254,254,254": "body_highlight"
+        }
+      },
+      "tintableState": {
+        "Hood": true,
+        "Hood (Cat)": false,
+        "Hood (Frog)": false,
+        "Hood (Horns)": false,
+        "Hood (Rabbit)": true
+      },
+      "statePolicy": "WHOLE_AUTHORED_SOURCE_STATE"
     }
   },
   "rules": {
@@ -28252,6 +29036,7 @@
       "curated_transfer_group",
       "generated_last_resort"
     ],
-    "generatedLastResortEnabledInPilot": false
+    "generatedLastResortEnabledInPilot": false,
+    "remainingFamiliesUseWholeSourceStates": true
   }
 }

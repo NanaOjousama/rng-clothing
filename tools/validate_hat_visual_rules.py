@@ -26,30 +26,24 @@ def main():
         assert q['accentPixelBudgetMinPixels']>=2
 
     vc=contract_for('catalog_hats_cottagecore_set_headscarf')
+    line_spec=dict(vc['linePlacement'])
+    line_spec['lineAllowed']=True
+    line_spec.pop('replacementAuthority',None)
     roles=palette_roles([(35,35,35),(85,85,85),(145,145,145),(210,210,210)])
-    fr=frame(); out,meta=render_proportional_line(fr,vc['linePlacement'],roles,'contrast')
+    fr=frame(); out,meta=render_proportional_line(fr,line_spec,roles,'contrast')
     assert meta['applied'] and meta['thicknessPx']==1
-    assert not validate_line(meta,vc['linePlacement'])
+    assert not validate_line(meta,line_spec)
     x=dict(meta);x['thicknessPx']=2
-    assert 'line:too_thick' in validate_line(x,vc['linePlacement'])
+    assert 'line:too_thick' in validate_line(x,line_spec)
     x=dict(meta);x['centerYRatio']=0.90
-    assert 'line:too_low_or_high' in validate_line(x,vc['linePlacement'])
+    assert 'line:too_low_or_high' in validate_line(x,line_spec)
     x=dict(meta);x['widthRatio']=0.99
-    assert 'line:too_wide_or_narrow' in validate_line(x,vc['linePlacement'])
+    assert 'line:too_wide_or_narrow' in validate_line(x,line_spec)
 
 
-    for pilot_family in (
-        'catalog_hats_cottagecore_set_beret',
-        'catalog_hats_more_accessories_and_stuff_beanie',
-        'catalog_hats_more_accessories_and_stuff_straw_hat',
-        'catalog_hats_cottagecore_set_boater_hat',
-        'catalog_hats_cottagecore_set_mushroom_hat',
-        'catalog_hats_more_accessories_and_stuff_sun_hat',
-        'catalog_hats_more_accessories_and_stuff_tulip_hat',
-    ):
-        pc=contract_for(pilot_family)
-        assert pc['linePlacement']['lineAllowed'] is False
-        assert pc['linePlacement'].get('replacementAuthority')=='SOURCE_RESPECTING_REMIX_ONLY'
+    for source_family,pc in reg['families'].items():
+        assert pc['linePlacement']['lineAllowed'] is False,source_family
+        assert pc['linePlacement'].get('replacementAuthority')=='SOURCE_RESPECTING_REMIX_ONLY',source_family
 
     frag=dict(meta)
     row=frag['row']; x0,y0,x1,y1=frag['bbox']
@@ -58,7 +52,7 @@ def main():
     frag['widthPx']=3
     frag['widthBasisPx']=max(10,frag.get('widthBasisPx',10))
     frag['widthRatio']=3/frag['widthBasisPx']
-    ferr=validate_line(frag,vc['linePlacement'])
+    ferr=validate_line(frag,line_spec)
     assert 'line:isolated_center_fragment' in ferr
 
     hood=contract_for('catalog_hats_more_accessories_and_stuff_hood')

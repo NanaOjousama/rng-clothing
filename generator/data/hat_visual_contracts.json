@@ -110,7 +110,8 @@
         "lineMinContiguousWidthRatio": 0.45,
         "lineMinContiguousPixels": 4,
         "lineRequiresSideSupport": true,
-        "rejectIsolatedCenterFragment": true
+        "rejectIsolatedCenterFragment": true,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY"
       },
       "paletteSanity": {
         "explicitRoles": [
@@ -189,7 +190,8 @@
         "lineMinContiguousWidthRatio": 0.45,
         "lineMinContiguousPixels": 4,
         "lineRequiresSideSupport": true,
-        "rejectIsolatedCenterFragment": true
+        "rejectIsolatedCenterFragment": true,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY"
       },
       "paletteSanity": {
         "explicitRoles": [
@@ -426,7 +428,8 @@
         "lineMinContiguousWidthRatio": 0.45,
         "lineMinContiguousPixels": 4,
         "lineRequiresSideSupport": true,
-        "rejectIsolatedCenterFragment": true
+        "rejectIsolatedCenterFragment": true,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY"
       },
       "paletteSanity": {
         "explicitRoles": [
@@ -483,7 +486,7 @@
       "family": "catalog_hats_cottagecore_set_headscarf",
       "capacity": "medium",
       "linePlacement": {
-        "lineAllowed": true,
+        "lineAllowed": false,
         "lineSemanticType": "stitch",
         "lineZone": "upper_crown",
         "lineCenterYRatio": 0.34,
@@ -505,7 +508,8 @@
         "lineMinContiguousWidthRatio": 0.45,
         "lineMinContiguousPixels": 4,
         "lineRequiresSideSupport": true,
-        "rejectIsolatedCenterFragment": true
+        "rejectIsolatedCenterFragment": true,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY"
       },
       "paletteSanity": {
         "explicitRoles": [
@@ -584,7 +588,8 @@
         "lineMinContiguousWidthRatio": 0.45,
         "lineMinContiguousPixels": 4,
         "lineRequiresSideSupport": true,
-        "rejectIsolatedCenterFragment": true
+        "rejectIsolatedCenterFragment": true,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY"
       },
       "paletteSanity": {
         "explicitRoles": [
@@ -822,7 +827,8 @@
         "lineMinContiguousWidthRatio": 0.45,
         "lineMinContiguousPixels": 4,
         "lineRequiresSideSupport": true,
-        "rejectIsolatedCenterFragment": true
+        "rejectIsolatedCenterFragment": true,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY"
       },
       "paletteSanity": {
         "explicitRoles": [
@@ -901,7 +907,8 @@
         "lineMinContiguousWidthRatio": 0.45,
         "lineMinContiguousPixels": 4,
         "lineRequiresSideSupport": true,
-        "rejectIsolatedCenterFragment": true
+        "rejectIsolatedCenterFragment": true,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY"
       },
       "paletteSanity": {
         "explicitRoles": [
@@ -980,7 +987,8 @@
         "lineMinContiguousWidthRatio": 0.45,
         "lineMinContiguousPixels": 4,
         "lineRequiresSideSupport": true,
-        "rejectIsolatedCenterFragment": true
+        "rejectIsolatedCenterFragment": true,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY"
       },
       "paletteSanity": {
         "explicitRoles": [
@@ -1059,7 +1067,8 @@
         "lineMinContiguousWidthRatio": 0.45,
         "lineMinContiguousPixels": 4,
         "lineRequiresSideSupport": true,
-        "rejectIsolatedCenterFragment": true
+        "rejectIsolatedCenterFragment": true,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY"
       },
       "paletteSanity": {
         "explicitRoles": [
@@ -1138,7 +1147,8 @@
         "lineMinContiguousWidthRatio": 0.45,
         "lineMinContiguousPixels": 4,
         "lineRequiresSideSupport": true,
-        "rejectIsolatedCenterFragment": true
+        "rejectIsolatedCenterFragment": true,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY"
       },
       "paletteSanity": {
         "explicitRoles": [
@@ -1217,7 +1227,8 @@
         "lineMinContiguousWidthRatio": 0.45,
         "lineMinContiguousPixels": 4,
         "lineRequiresSideSupport": true,
-        "rejectIsolatedCenterFragment": true
+        "rejectIsolatedCenterFragment": true,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY"
       },
       "paletteSanity": {
         "explicitRoles": [
@@ -1296,7 +1307,8 @@
         "lineMinContiguousWidthRatio": 0.45,
         "lineMinContiguousPixels": 4,
         "lineRequiresSideSupport": true,
-        "rejectIsolatedCenterFragment": true
+        "rejectIsolatedCenterFragment": true,
+        "replacementAuthority": "SOURCE_RESPECTING_REMIX_ONLY"
       },
       "paletteSanity": {
         "explicitRoles": [
