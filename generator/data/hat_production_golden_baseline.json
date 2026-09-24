@@ -1,0 +1,28 @@
+{
+  "schema": "hat-production-golden-baseline/v1",
+  "id": "HAT_PRODUCTION_GOLDEN_V1",
+  "humanArtApproved": true,
+  "approvedOn": "2026-09-24",
+  "sourceCommit": "e6d2c5f",
+  "manifest": "experiments/hat_production_source_respecting_final_01/manifest.json",
+  "manifestSha256": "cb6e2815e3a3fa04d15fd33ba89b5346b29130db32da9e5cca807e390171d443",
+  "familyCount": 20,
+  "candidateCount": 80,
+  "rarityCounts": {
+    "common": 20,
+    "uncommon": 20,
+    "rare": 20,
+    "epic": 20
+  },
+  "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
+  "purpose": "Visual and structural baseline for future generator/prototype comparisons. Do not regress below this standard.",
+  "comparisonDimensions": [
+    "silhouette_fidelity",
+    "palette_material_resemblance",
+    "pattern_continuity",
+    "motif_location",
+    "four_view_coherence",
+    "stardew_readability",
+    "junk_artifacts"
+  ]
+}

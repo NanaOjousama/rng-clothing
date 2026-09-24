@@ -9,7 +9,7 @@
     "epic"
   ],
   "presentationLeanMode": "mixed",
-  "humanArtApproved": false,
+  "humanArtApproved": true,
   "goldenRegistry": "generator/data/source_respecting_hat_goldens.json",
   "productionAuthority": "GOLDEN_SOURCE_RESPECTING_V1",
   "approvedPairWhitelistRequired": true,
@@ -76,7 +76,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/001_common_catalog_hats_alt_fashion_set_beanie/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/001_common_catalog_hats_alt_fashion_set_beanie/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_alt_fashion_set_beanie",
@@ -142,7 +143,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/002_uncommon_catalog_hats_alt_fashion_set_beanie/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/002_uncommon_catalog_hats_alt_fashion_set_beanie/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_alt_fashion_set_beanie",
@@ -208,7 +210,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/003_rare_catalog_hats_alt_fashion_set_beanie/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/003_rare_catalog_hats_alt_fashion_set_beanie/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_alt_fashion_set_beanie",
@@ -274,7 +277,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/004_epic_catalog_hats_alt_fashion_set_beanie/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/004_epic_catalog_hats_alt_fashion_set_beanie/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_alt_fashion_set_earmuffs_horns",
@@ -335,7 +339,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/005_common_catalog_hats_alt_fashion_set_earmuffs_horns/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/005_common_catalog_hats_alt_fashion_set_earmuffs_horns/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_alt_fashion_set_earmuffs_horns",
@@ -401,7 +406,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/006_uncommon_catalog_hats_alt_fashion_set_earmuffs_horns/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/006_uncommon_catalog_hats_alt_fashion_set_earmuffs_horns/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_alt_fashion_set_earmuffs_horns",
@@ -467,7 +473,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/007_rare_catalog_hats_alt_fashion_set_earmuffs_horns/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/007_rare_catalog_hats_alt_fashion_set_earmuffs_horns/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_alt_fashion_set_earmuffs_horns",
@@ -533,7 +540,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/008_epic_catalog_hats_alt_fashion_set_earmuffs_horns/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/008_epic_catalog_hats_alt_fashion_set_earmuffs_horns/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_alt_fashion_set_headband_studded",
@@ -594,7 +602,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/009_common_catalog_hats_alt_fashion_set_headband_studded/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/009_common_catalog_hats_alt_fashion_set_headband_studded/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_alt_fashion_set_headband_studded",
@@ -657,7 +666,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/010_uncommon_catalog_hats_alt_fashion_set_headband_studded/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/010_uncommon_catalog_hats_alt_fashion_set_headband_studded/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_alt_fashion_set_headband_studded",
@@ -720,7 +730,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/011_rare_catalog_hats_alt_fashion_set_headband_studded/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/011_rare_catalog_hats_alt_fashion_set_headband_studded/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_alt_fashion_set_headband_studded",
@@ -783,7 +794,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/012_epic_catalog_hats_alt_fashion_set_headband_studded/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/012_epic_catalog_hats_alt_fashion_set_headband_studded/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_beret",
@@ -839,7 +851,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/013_common_catalog_hats_cottagecore_set_beret/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/013_common_catalog_hats_cottagecore_set_beret/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_beret",
@@ -897,7 +910,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/014_uncommon_catalog_hats_cottagecore_set_beret/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/014_uncommon_catalog_hats_cottagecore_set_beret/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_beret",
@@ -958,7 +972,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/015_rare_catalog_hats_cottagecore_set_beret/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/015_rare_catalog_hats_cottagecore_set_beret/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_beret",
@@ -1022,7 +1037,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/016_epic_catalog_hats_cottagecore_set_beret/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/016_epic_catalog_hats_cottagecore_set_beret/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_boater_hat",
@@ -1083,7 +1099,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/017_common_catalog_hats_cottagecore_set_boater_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/017_common_catalog_hats_cottagecore_set_boater_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_boater_hat",
@@ -1149,7 +1166,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/018_uncommon_catalog_hats_cottagecore_set_boater_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/018_uncommon_catalog_hats_cottagecore_set_boater_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_boater_hat",
@@ -1215,7 +1233,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/019_rare_catalog_hats_cottagecore_set_boater_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/019_rare_catalog_hats_cottagecore_set_boater_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_boater_hat",
@@ -1281,7 +1300,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/020_epic_catalog_hats_cottagecore_set_boater_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/020_epic_catalog_hats_cottagecore_set_boater_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_headband_daisies",
@@ -1342,7 +1362,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/021_common_catalog_hats_cottagecore_set_headband_daisies/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/021_common_catalog_hats_cottagecore_set_headband_daisies/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_headband_daisies",
@@ -1405,7 +1426,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/022_uncommon_catalog_hats_cottagecore_set_headband_daisies/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/022_uncommon_catalog_hats_cottagecore_set_headband_daisies/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_headband_daisies",
@@ -1468,7 +1490,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/023_rare_catalog_hats_cottagecore_set_headband_daisies/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/023_rare_catalog_hats_cottagecore_set_headband_daisies/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_headband_daisies",
@@ -1531,7 +1554,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/024_epic_catalog_hats_cottagecore_set_headband_daisies/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/024_epic_catalog_hats_cottagecore_set_headband_daisies/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_headscarf",
@@ -1592,7 +1616,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/025_common_catalog_hats_cottagecore_set_headscarf/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/025_common_catalog_hats_cottagecore_set_headscarf/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_headscarf",
@@ -1655,7 +1680,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/026_uncommon_catalog_hats_cottagecore_set_headscarf/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/026_uncommon_catalog_hats_cottagecore_set_headscarf/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_headscarf",
@@ -1724,7 +1750,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/027_rare_catalog_hats_cottagecore_set_headscarf/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/027_rare_catalog_hats_cottagecore_set_headscarf/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_headscarf",
@@ -1790,7 +1817,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/028_epic_catalog_hats_cottagecore_set_headscarf/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/028_epic_catalog_hats_cottagecore_set_headscarf/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_hood_mushroom",
@@ -1851,7 +1879,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/029_common_catalog_hats_cottagecore_set_hood_mushroom/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/029_common_catalog_hats_cottagecore_set_hood_mushroom/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_hood_mushroom",
@@ -1917,7 +1946,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/030_uncommon_catalog_hats_cottagecore_set_hood_mushroom/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/030_uncommon_catalog_hats_cottagecore_set_hood_mushroom/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_hood_mushroom",
@@ -1983,7 +2013,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/031_rare_catalog_hats_cottagecore_set_hood_mushroom/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/031_rare_catalog_hats_cottagecore_set_hood_mushroom/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_hood_mushroom",
@@ -2051,7 +2082,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/032_epic_catalog_hats_cottagecore_set_hood_mushroom/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/032_epic_catalog_hats_cottagecore_set_hood_mushroom/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_mushroom_hat",
@@ -2112,7 +2144,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/033_common_catalog_hats_cottagecore_set_mushroom_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/033_common_catalog_hats_cottagecore_set_mushroom_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_mushroom_hat",
@@ -2178,7 +2211,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/034_uncommon_catalog_hats_cottagecore_set_mushroom_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/034_uncommon_catalog_hats_cottagecore_set_mushroom_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_mushroom_hat",
@@ -2244,7 +2278,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/035_rare_catalog_hats_cottagecore_set_mushroom_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/035_rare_catalog_hats_cottagecore_set_mushroom_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_cottagecore_set_mushroom_hat",
@@ -2312,7 +2347,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/036_epic_catalog_hats_cottagecore_set_mushroom_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/036_epic_catalog_hats_cottagecore_set_mushroom_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_beanie",
@@ -2372,7 +2408,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/037_common_catalog_hats_more_accessories_and_stuff_beanie/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/037_common_catalog_hats_more_accessories_and_stuff_beanie/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_beanie",
@@ -2437,7 +2474,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/038_uncommon_catalog_hats_more_accessories_and_stuff_beanie/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/038_uncommon_catalog_hats_more_accessories_and_stuff_beanie/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_beanie",
@@ -2505,7 +2543,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/039_rare_catalog_hats_more_accessories_and_stuff_beanie/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/039_rare_catalog_hats_more_accessories_and_stuff_beanie/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_beanie",
@@ -2570,7 +2609,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/040_epic_catalog_hats_more_accessories_and_stuff_beanie/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/040_epic_catalog_hats_more_accessories_and_stuff_beanie/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
@@ -2631,7 +2671,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/041_common_catalog_hats_more_accessories_and_stuff_bows_double_small_1/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/041_common_catalog_hats_more_accessories_and_stuff_bows_double_small_1/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
@@ -2694,7 +2735,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/042_uncommon_catalog_hats_more_accessories_and_stuff_bows_double_small_1/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/042_uncommon_catalog_hats_more_accessories_and_stuff_bows_double_small_1/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
@@ -2757,7 +2799,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/043_rare_catalog_hats_more_accessories_and_stuff_bows_double_small_1/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/043_rare_catalog_hats_more_accessories_and_stuff_bows_double_small_1/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
@@ -2820,7 +2863,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/044_epic_catalog_hats_more_accessories_and_stuff_bows_double_small_1/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/044_epic_catalog_hats_more_accessories_and_stuff_bows_double_small_1/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
@@ -2881,7 +2925,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/045_common_catalog_hats_more_accessories_and_stuff_crown_diadem_1/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/045_common_catalog_hats_more_accessories_and_stuff_crown_diadem_1/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
@@ -2944,7 +2989,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/046_uncommon_catalog_hats_more_accessories_and_stuff_crown_diadem_1/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/046_uncommon_catalog_hats_more_accessories_and_stuff_crown_diadem_1/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
@@ -3010,7 +3056,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/047_rare_catalog_hats_more_accessories_and_stuff_crown_diadem_1/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/047_rare_catalog_hats_more_accessories_and_stuff_crown_diadem_1/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
@@ -3076,7 +3123,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/048_epic_catalog_hats_more_accessories_and_stuff_crown_diadem_1/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/048_epic_catalog_hats_more_accessories_and_stuff_crown_diadem_1/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_earmuffs",
@@ -3137,7 +3185,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/049_common_catalog_hats_more_accessories_and_stuff_earmuffs/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/049_common_catalog_hats_more_accessories_and_stuff_earmuffs/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_earmuffs",
@@ -3203,7 +3252,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/050_uncommon_catalog_hats_more_accessories_and_stuff_earmuffs/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/050_uncommon_catalog_hats_more_accessories_and_stuff_earmuffs/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_earmuffs",
@@ -3269,7 +3319,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/051_rare_catalog_hats_more_accessories_and_stuff_earmuffs/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/051_rare_catalog_hats_more_accessories_and_stuff_earmuffs/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_earmuffs",
@@ -3335,7 +3386,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/052_epic_catalog_hats_more_accessories_and_stuff_earmuffs/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/052_epic_catalog_hats_more_accessories_and_stuff_earmuffs/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
@@ -3396,7 +3448,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/053_common_catalog_hats_more_accessories_and_stuff_garland_dried_1/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/053_common_catalog_hats_more_accessories_and_stuff_garland_dried_1/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
@@ -3462,7 +3515,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/054_uncommon_catalog_hats_more_accessories_and_stuff_garland_dried_1/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/054_uncommon_catalog_hats_more_accessories_and_stuff_garland_dried_1/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
@@ -3528,7 +3582,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/055_rare_catalog_hats_more_accessories_and_stuff_garland_dried_1/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/055_rare_catalog_hats_more_accessories_and_stuff_garland_dried_1/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_garland_dried_1",
@@ -3594,7 +3649,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/056_epic_catalog_hats_more_accessories_and_stuff_garland_dried_1/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/056_epic_catalog_hats_more_accessories_and_stuff_garland_dried_1/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_hair_buns",
@@ -3655,7 +3711,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/057_common_catalog_hats_more_accessories_and_stuff_hair_buns/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/057_common_catalog_hats_more_accessories_and_stuff_hair_buns/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_hair_buns",
@@ -3721,7 +3778,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/058_uncommon_catalog_hats_more_accessories_and_stuff_hair_buns/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/058_uncommon_catalog_hats_more_accessories_and_stuff_hair_buns/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_hair_buns",
@@ -3787,7 +3845,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/059_rare_catalog_hats_more_accessories_and_stuff_hair_buns/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/059_rare_catalog_hats_more_accessories_and_stuff_hair_buns/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_hair_buns",
@@ -3853,7 +3912,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/060_epic_catalog_hats_more_accessories_and_stuff_hair_buns/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/060_epic_catalog_hats_more_accessories_and_stuff_hair_buns/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_headband",
@@ -3914,7 +3974,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/061_common_catalog_hats_more_accessories_and_stuff_headband/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/061_common_catalog_hats_more_accessories_and_stuff_headband/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_headband",
@@ -3977,7 +4038,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/062_uncommon_catalog_hats_more_accessories_and_stuff_headband/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/062_uncommon_catalog_hats_more_accessories_and_stuff_headband/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_headband",
@@ -4040,7 +4102,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/063_rare_catalog_hats_more_accessories_and_stuff_headband/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/063_rare_catalog_hats_more_accessories_and_stuff_headband/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_headband",
@@ -4103,7 +4166,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/064_epic_catalog_hats_more_accessories_and_stuff_headband/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/064_epic_catalog_hats_more_accessories_and_stuff_headband/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_hood",
@@ -4164,7 +4228,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/065_common_catalog_hats_more_accessories_and_stuff_hood/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/065_common_catalog_hats_more_accessories_and_stuff_hood/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_hood",
@@ -4227,7 +4292,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/066_uncommon_catalog_hats_more_accessories_and_stuff_hood/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/066_uncommon_catalog_hats_more_accessories_and_stuff_hood/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_hood",
@@ -4293,7 +4359,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/067_rare_catalog_hats_more_accessories_and_stuff_hood/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/067_rare_catalog_hats_more_accessories_and_stuff_hood/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_hood",
@@ -4361,7 +4428,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/068_epic_catalog_hats_more_accessories_and_stuff_hood/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/068_epic_catalog_hats_more_accessories_and_stuff_hood/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_straw_hat",
@@ -4423,7 +4491,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/069_common_catalog_hats_more_accessories_and_stuff_straw_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/069_common_catalog_hats_more_accessories_and_stuff_straw_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_straw_hat",
@@ -4490,7 +4559,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/070_uncommon_catalog_hats_more_accessories_and_stuff_straw_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/070_uncommon_catalog_hats_more_accessories_and_stuff_straw_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_straw_hat",
@@ -4557,7 +4627,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/071_rare_catalog_hats_more_accessories_and_stuff_straw_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/071_rare_catalog_hats_more_accessories_and_stuff_straw_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_straw_hat",
@@ -4627,7 +4698,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/072_epic_catalog_hats_more_accessories_and_stuff_straw_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/072_epic_catalog_hats_more_accessories_and_stuff_straw_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_sun_hat",
@@ -4687,7 +4759,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/073_common_catalog_hats_more_accessories_and_stuff_sun_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/073_common_catalog_hats_more_accessories_and_stuff_sun_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_sun_hat",
@@ -4749,7 +4822,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/074_uncommon_catalog_hats_more_accessories_and_stuff_sun_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/074_uncommon_catalog_hats_more_accessories_and_stuff_sun_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_sun_hat",
@@ -4817,7 +4891,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/075_rare_catalog_hats_more_accessories_and_stuff_sun_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/075_rare_catalog_hats_more_accessories_and_stuff_sun_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_sun_hat",
@@ -4884,7 +4959,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/076_epic_catalog_hats_more_accessories_and_stuff_sun_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/076_epic_catalog_hats_more_accessories_and_stuff_sun_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_tulip_hat",
@@ -4943,7 +5019,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/077_common_catalog_hats_more_accessories_and_stuff_tulip_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/077_common_catalog_hats_more_accessories_and_stuff_tulip_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_tulip_hat",
@@ -5004,7 +5081,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/078_uncommon_catalog_hats_more_accessories_and_stuff_tulip_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/078_uncommon_catalog_hats_more_accessories_and_stuff_tulip_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_tulip_hat",
@@ -5068,7 +5146,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/079_rare_catalog_hats_more_accessories_and_stuff_tulip_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/079_rare_catalog_hats_more_accessories_and_stuff_tulip_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     },
     {
       "family": "catalog_hats_more_accessories_and_stuff_tulip_hat",
@@ -5132,7 +5211,8 @@
         "left": "experiments/hat_production_source_respecting_final_01/candidates/080_epic_catalog_hats_more_accessories_and_stuff_tulip_hat/left.png",
         "back": "experiments/hat_production_source_respecting_final_01/candidates/080_epic_catalog_hats_more_accessories_and_stuff_tulip_hat/back.png"
       },
-      "status": "CANDIDATE_REVIEW_REQUIRED"
+      "status": "HUMAN_ART_APPROVED",
+      "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1"
     }
   ],
   "candidateCount": 80,
@@ -5177,5 +5257,8 @@
     "experiments/hat_production_source_respecting_final_01/family_sheets/catalog_hats_more_accessories_and_stuff_straw_hat_DIRECTIONAL.png",
     "experiments/hat_production_source_respecting_final_01/family_sheets/catalog_hats_more_accessories_and_stuff_sun_hat_DIRECTIONAL.png",
     "experiments/hat_production_source_respecting_final_01/family_sheets/catalog_hats_more_accessories_and_stuff_tulip_hat_DIRECTIONAL.png"
-  ]
+  ],
+  "humanApprovalStatus": "HUMAN_ART_APPROVED",
+  "goldenBaseline": true,
+  "goldenBaselineId": "HAT_PRODUCTION_GOLDEN_V1"
 }

@@ -1219,3 +1219,10 @@ Validation:
 - validate_hat_production_source_respecting.py PASS.
 - All 80 saved frames pixel-match a fresh render from their approved golden pair.
 - Original pilot, Batch A, remaining-13, hat visual rules, taste policy, and catalog-promotion validators all PASS.
+
+## 2026-09-24 — Final 80-hat production batch HUMAN_ART_APPROVED
+The user visually approved `experiments/hat_production_source_respecting_final_01/` as clean/good. It is now the production visual golden baseline `HAT_PRODUCTION_GOLDEN_V1`.
+- 80/80 candidates are `HUMAN_ART_APPROVED`.
+- 20 source-respecting hat families x Common/Uncommon/Rare/Epic.
+- Baseline metadata: `generator/data/hat_production_golden_baseline.json`.
+- Future Photo Tailor/private-lab experiments must compare against this baseline rather than old failed batches.
