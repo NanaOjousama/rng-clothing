@@ -36,21 +36,24 @@ def main():
 
     gaps={x['type']:x for x in audit['stillMissingFromProduction']}
     assert gaps['Cowboy hat']['status']=='SOURCE_PRESENT_UNPROMOTED'
-    assert gaps['Snapback cap']['status']=='SOURCE_PRESENT_LIVE_APPROVED'
-    assert gaps['Baseball cap / dad cap']['status']=='SOURCE_AND_EXPERIMENT_PRESENT'
-    assert gaps['Mario-style reference cap']['status']=='EASTER_EGG_PROTOTYPE_PRESENT'
+    assert gaps['Baseball cap']['status']=='CLEANROOM_REBOOT_IN_PROGRESS'
+    assert gaps['Dad cap']['status']=='CLEANROOM_REBOOT_PLANNED'
+    assert gaps['Trucker cap']['status']=='CLEANROOM_REBOOT_PLANNED'
+    assert gaps['Snapback cap']['status']=='DEFERRED_NOT_REQUIRED'
+    assert gaps['Mario-style reference cap']['status']=='DEFERRED_EASTER_EGG'
     assert gaps['Paperboy / newsboy cap']['status']=='SOURCE_PRESENT_BUT_REJECTED'
 
     disp=audit['oldMaterialDisposition']
-    assert 'experiments/dad_cap/production_20x20' in disp['KEEP_REFERENCE_OR_PROMOTION_INPUT']
-    assert any('dad_cap_v2' in x for x in disp['ARCHIVE_CANDIDATE_AFTER_CURRENT_FREEZE'])
-    assert not any('dad_cap_v2' in x for x in disp['DELETE_CANDIDATE_AFTER_VERIFICATION'])
+    assert 'experiments/dad_cap/' in disp['QUARANTINED_CAP_HISTORY']
+    assert 'experiments/dad_cap_v2/' in disp['QUARANTINED_CAP_HISTORY']
+    assert 'experiments/trucker_cap/' in disp['QUARANTINED_CAP_HISTORY']
+    assert not any('dad_cap' in x or 'trucker_cap' in x for x in disp['KEEP_REFERENCE_OR_PROMOTION_INPUT'])
 
     print('PASS HAT_RENDERER_V1 is frozen while catalog remains expandable')
     print('PASS production loader/builder no longer hardcode exactly 20 families')
     print('PASS gap audit: 116 hat-slot sources, 70 covered, 46 uncovered')
-    print('PASS Cowboy/Baseball/Snapback/Mario/Paperboy statuses captured correctly')
-    print('PASS old material is dispositioned conservatively; no premature source deletion')
+    print('PASS cap reboot statuses: Baseball active; Dad/Trucker planned; Snapback/Mario deferred')
+    print('PASS old Dad/Trucker visual history is quarantined, not used as active construction input')
 
 if __name__=='__main__':
     main()

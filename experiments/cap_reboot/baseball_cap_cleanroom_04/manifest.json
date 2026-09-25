@@ -1,0 +1,90 @@
+{
+  "schema": "cap-cleanroom-baseball/v4",
+  "batch": "baseball_cap_cleanroom_04",
+  "cleanroom": true,
+  "construction": "BASEBALL_CAP",
+  "rendererTarget": "HAT_RENDERER_V1",
+  "userReference": "baseball-cap-vector-template-set-uniform-fashion-blank-hat-design-sport-clothing_1284-44135.avif",
+  "referenceUse": "SILHOUETTE_AND_CONSTRUCTION_STUDY_ONLY",
+  "oldDadArtRead": false,
+  "oldTruckerArtRead": false,
+  "oldCapExperimentPixelsUsed": false,
+  "sourceSpritePixelsUsed": false,
+  "method": "FRESH_AUTHORED_GEOMETRY_REFERENCE_REFINED",
+  "candidates": [
+    {
+      "id": "S1_STANDARD_ROUNDED",
+      "label": "S1 STANDARD / ROUNDED",
+      "bboxByView": {
+        "front": [
+          2,
+          2,
+          18,
+          14
+        ],
+        "right": [
+          5,
+          2,
+          19,
+          13
+        ],
+        "back": [
+          4,
+          2,
+          16,
+          12
+        ],
+        "left": [
+          1,
+          2,
+          15,
+          13
+        ]
+      },
+      "sha256ByView": {
+        "front": "0ecd185e6f37daa264b4e22665e2cfcc3333194a35ef52b76c1ef724f359852e",
+        "right": "d5f5f87ab5d232757a3252a29b949c9e43e23c90cf5fa5c8517adf8dad6badd2",
+        "back": "13f331db0a045db1c688b2a5b1ae26dfb5ac1f7163ac2efff7a7fbb2711c95d8",
+        "left": "3efc2f7097dc895e375d3741037f62c3feba49db613fde42a70127a61e4c66df"
+      },
+      "leftIsExactMirrorOfRight": true
+    },
+    {
+      "id": "S2_LOW_ROUNDED",
+      "label": "S2 LOWER / ROUNDED",
+      "bboxByView": {
+        "front": [
+          2,
+          3,
+          18,
+          14
+        ],
+        "right": [
+          5,
+          3,
+          19,
+          13
+        ],
+        "back": [
+          4,
+          3,
+          16,
+          12
+        ],
+        "left": [
+          1,
+          3,
+          15,
+          13
+        ]
+      },
+      "sha256ByView": {
+        "front": "a53de23a4cf7b0000d9d6c650631e06b24b912f0f4e78fa71c38448b5dca1125",
+        "right": "7002cab73f1b695b5040c37e6a8138144406f0ea5e10488e7d6c881011fe4559",
+        "back": "dfda2766ab894cb7229a501767b8aec70961a8833dd11dc5ead5352c5024ebf5",
+        "left": "f11454fb9535628cfb3e43ab7abb85868855842f2e8414807280695948ad6c40"
+      },
+      "leftIsExactMirrorOfRight": true
+    }
+  ]
+}

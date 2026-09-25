@@ -1282,11 +1282,36 @@ Hat-type gap audit:
 - 116 hat-slot source appearances audited.
 - 70 appearances are already represented by current production source contracts/states.
 - 46 are not represented by current production contracts.
-- master production-gap list contains 24 construction/content types.
+- master production-gap list contains 25 construction/content types.
 
 Important audit findings:
 - Cowboy Hat already exists in the primary source corpus and is REVIEW_NEEDED.
-- Baseball Cap (Cap 2) and Snapback are already LIVE_APPROVED source constructions but are not in the current 20-family production catalog.
-- Dad Cap, Trucker Cap, Slouch Beanie, and Mario-style reference-cap work already exist in repo experiments/prototypes.
+- Current normal-cap scope is Baseball + Dad + Trucker. Baseball is being rebuilt clean-room; old Dad/Trucker experiment art is quarantined during new construction.
+- Snapback is deferred/not required; Mario/reference cap is deferred to separate easter-egg work.
+- Slouch Beanie remains a separate existing experiment worth revisiting independently.
 - Paperboy Hat source failed live readability and should not be promoted unchanged.
 - old source/prototype material should not be deleted before its missing family is promoted or explicitly rejected; archive candidates are documented separately.
+
+## 2026-09-24 — Cap reboot clean-room started
+Normal cap scope is now Baseball Cap + Dad Cap + Trucker Cap. Snapback is deferred/not required unless future worn-scale testing proves it meaningfully distinct. Mario/reference cap is excluded from normal caps and deferred to separate easter-egg content.
+
+Hard visual quarantine for fresh cap construction:
+- do not open/sample/trace `experiments/dad_cap/`;
+- do not open/sample/trace `experiments/dad_cap_v2/`;
+- do not open/sample/trace `experiments/trucker_cap/`;
+- old cap history remains preserved but is not an active silhouette donor.
+
+Baseball Cap clean-room pass 04 is the active candidate set:
+- `experiments/cap_reboot/baseball_cap_cleanroom_04/`
+- S1 Standard/Rounded — primary Baseball worn-QC candidate
+- S2 Lower/Rounded — comparison/stress candidate, closer to future Dad-cap territory
+- fresh user-supplied vector reference used for silhouette/construction study only
+- fresh authored 20x20 geometry with separate crown + curved bill layers
+- compact adjustable rear opening/strap
+- no old Dad/Trucker pixels and no mod-author source-sprite pixels used
+- left is exact mirror of right
+- temporary FS QC pack: `test-packs/fashionsense/RNG-Cap-Reboot-Baseball-Cleanroom-04/`
+- installed test copy: `Mods/[FS] RNG Cap Reboot Baseball Cleanroom 04`
+- status: CANDIDATE_WORN_QC, not production-approved.
+
+Docs: `docs/caps/CAP_REBOOT_CLEANROOM.md`, `docs/caps/BASEBALL_CAP_CLEANROOM_04.md`.

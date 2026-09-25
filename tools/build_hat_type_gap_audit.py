@@ -70,13 +70,14 @@ def curated_missing():
     # not necessarily absent from disk.
     return [
       {'type':'Cowboy hat','priority':'HIGH','status':'SOURCE_PRESENT_UNPROMOTED','evidence':['More Accessories and Stuff / Cowboy Hat'],'next':'Promote as its own construction family.'},
-      {'type':'Baseball cap / dad cap','priority':'HIGH','status':'SOURCE_AND_EXPERIMENT_PRESENT','evidence':['More Accessories and Stuff / Cap 2 (LIVE_APPROVED)','experiments/dad_cap/production_20x20'],'next':'Choose source-backed Baseball vs authored Dad Cap as separate constructions; do not merge silhouettes.'},
-      {'type':'Snapback cap','priority':'HIGH','status':'SOURCE_PRESENT_LIVE_APPROVED','evidence':['More Accessories and Stuff / Cap (Snapback)'],'next':'Promote as distinct structured cap construction.'},
-      {'type':'Trucker cap','priority':'MEDIUM','status':'EXPERIMENT_PRESENT_INCOMPLETE','evidence':['experiments/trucker_cap'],'next':'Finish directional set, then promote if human-approved.'},
+      {'type':'Baseball cap','priority':'HIGH','status':'CLEANROOM_REBOOT_IN_PROGRESS','evidence':['experiments/cap_reboot/baseball_cap_cleanroom_02'],'next':'Fresh construction only; worn-QC C1/C2/C3, then approve one master before production.'},
+      {'type':'Dad cap','priority':'HIGH','status':'CLEANROOM_REBOOT_PLANNED','evidence':[],'next':'Fresh construction after Baseball; old Dad experiments remain visually quarantined until new master approval.'},
+      {'type':'Snapback cap','priority':'LOW','status':'DEFERRED_NOT_REQUIRED','evidence':['More Accessories and Stuff / Cap (Snapback)'],'next':'Do not include in current cap reboot; revisit only if it proves meaningfully distinct from Baseball at worn scale.'},
+      {'type':'Trucker cap','priority':'HIGH','status':'CLEANROOM_REBOOT_PLANNED','evidence':[],'next':'Fresh construction after Baseball/Dad; old Trucker experiment art remains visually quarantined until new master approval.'},
       {'type':'Slouch beanie','priority':'HIGH','status':'EXPERIMENT_PRESENT','evidence':['experiments/slouch_beanie_compare','spritefusion slouch experiments'],'next':'Promote as a distinct beanie construction rather than a material variant.'},
       {'type':'Party hat','priority':'MEDIUM','status':'SOURCE_PRESENT_UNPROMOTED','evidence':['More Accessories and Stuff / Party Hat'],'next':'Review and promote if worn identity passes.'},
       {'type':'Paperboy / newsboy cap','priority':'HIGH','status':'SOURCE_PRESENT_BUT_REJECTED','evidence':['More Accessories and Stuff / Paperboy Hat (REJECTED_LIVE)'],'next':'Do not promote rejected source; replace/re-author a readable construction.'},
-      {'type':'Mario-style reference cap','priority':'HIGH','status':'EASTER_EGG_PROTOTYPE_PRESENT','evidence':['prototypes/mario_hat','experiments/mario_hat'],'next':'Keep as easter-egg/reference content; finish/confirm worn QC before promotion.'},
+      {'type':'Mario-style reference cap','priority':'LOW','status':'DEFERRED_EASTER_EGG','evidence':['prototypes/mario_hat','experiments/mario_hat'],'next':'Separate easter-egg/reference project; excluded from the normal cap reboot.'},
       {'type':'Veil family','priority':'MEDIUM','status':'SOURCE_PRESENT_HEAD_ACCESSORY','evidence':['More Accessories and Stuff / Veil + variants'],'next':'Decide whether this belongs in hat catalog or accessory catalog before promotion.'},
       {'type':'Tiara family','priority':'MEDIUM','status':'SOURCE_PRESENT_HEAD_ACCESSORY','evidence':['More Accessories and Stuff / Tiara 1-4'],'next':'Treat as head-accessory construction family if included in hats.'},
       {'type':'Goggles-on-head','priority':'LOW','status':'SOURCE_PRESENT_HEAD_ACCESSORY','evidence':['More Accessories and Stuff / Goggles (On Head)'],'next':'Optional head-accessory family.'},
@@ -108,8 +109,6 @@ def old_material_disposition():
       'KEEP_REFERENCE_OR_PROMOTION_INPUT':[
         'source_catalog/HAT_WORKING_CATALOG.json',
         'source_catalog/HAT_WORKING_CATALOG.md',
-        'experiments/dad_cap/production_20x20',
-        'experiments/trucker_cap',
         'experiments/slouch_beanie_compare',
         'prototypes/mario_hat',
         'experiments/mario_hat',
@@ -117,12 +116,16 @@ def old_material_disposition():
         'experiments/source_respecting_hat_batch_a_01',
         'experiments/source_respecting_hat_remaining_01',
       ],
+      'QUARANTINED_CAP_HISTORY':[
+        'experiments/dad_cap/',
+        'experiments/dad_cap_v2/',
+        'experiments/trucker_cap/',
+      ],
       'ARCHIVE_CANDIDATE_AFTER_CURRENT_FREEZE':[
         'experiments/hat_production_batch_01',
         'experiments/hat_production_batch_09',
         'experiments/source_fidelity',
         'experiments/cap_ai',
-        'experiments/dad_cap_v2 (verified NOT pixel-identical to v1; archive as alternate evidence rather than delete)',
       ],
       'DELETE_CANDIDATE_AFTER_VERIFICATION':[
         'temporary enlarged previews / caches that are reproducible',
@@ -167,7 +170,9 @@ def main():
     OUT_MD.parent.mkdir(parents=True,exist_ok=True)
     OUT_JSON.write_text(json.dumps(audit,indent=2)+'\n')
 
-    source_ready=[x for x in audit['stillMissingFromProduction'] if 'SOURCE' in x['status'] or 'EXPERIMENT' in x['status'] or 'PROTOTYPE' in x['status']]
+    cap_reboot=[x for x in audit['stillMissingFromProduction'] if x['status'].startswith('CLEANROOM_REBOOT') or x['status']=='DEFERRED_NOT_REQUIRED']
+    easter_deferred=[x for x in audit['stillMissingFromProduction'] if x['status']=='DEFERRED_EASTER_EGG']
+    source_ready=[x for x in audit['stillMissingFromProduction'] if ('SOURCE' in x['status'] or 'EXPERIMENT' in x['status'] or 'PROTOTYPE' in x['status']) and x not in cap_reboot and x not in easter_deferred]
     ref_only=[x for x in audit['stillMissingFromProduction'] if 'REFERENCE' in x['status'] or x['status']=='NOT_FOUND_IN_CURRENT_CORPUS']
     lines=[
       '# Hat Type Gap Audit',
@@ -181,10 +186,21 @@ def main():
       f'- Source appearances already represented by production family contracts/states: **{audit["sourceAppearancesCoveredByProductionContracts"]}**.',
       f'- Source appearances not represented by production contracts: **{len(uncovered)}**.',
       '',
-      '## Highest-value production gaps already present in the repo/source corpus',
+      '## Current cap reboot',
+      '',
+      '- **Scope:** Baseball Cap + Dad Cap + Trucker Cap.',
+      '- **Snapback:** deferred/not required unless future worn-scale testing proves it meaningfully distinct.',
+      '- **Mario/reference cap:** excluded; separate easter-egg project later.',
+      '- **Clean-room rule:** old Dad/Trucker experiment art remains visually quarantined during new construction.',
       ''
     ]
+    for x in cap_reboot:
+        lines.append(f'- **{x["type"]}** — {x["status"]} — {x["next"]}')
+    lines += ['', '## Highest-value production gaps already present in the repo/source corpus', '']
     for x in source_ready:
+        lines.append(f'- **{x["type"]}** — {x["status"]} — {x["next"]}')
+    lines += ['', '## Deferred easter-egg/reference content', '']
+    for x in easter_deferred:
         lines.append(f'- **{x["type"]}** — {x["status"]} — {x["next"]}')
     lines += ['', '## Reference-only / genuinely new construction gaps', '']
     for x in ref_only:
@@ -194,7 +210,7 @@ def main():
         lines.append(f'- **{kind}**: {count}')
     lines += ['', '## Old material disposition', '']
     disp=audit['oldMaterialDisposition']
-    for section in ('KEEP_ACTIVE','KEEP_REFERENCE_OR_PROMOTION_INPUT','ARCHIVE_CANDIDATE_AFTER_CURRENT_FREEZE','DELETE_CANDIDATE_AFTER_VERIFICATION'):
+    for section in ('KEEP_ACTIVE','KEEP_REFERENCE_OR_PROMOTION_INPUT','QUARANTINED_CAP_HISTORY','ARCHIVE_CANDIDATE_AFTER_CURRENT_FREEZE','DELETE_CANDIDATE_AFTER_VERIFICATION'):
         lines.append(f'### {section}')
         lines.append('')
         for item in disp[section]:

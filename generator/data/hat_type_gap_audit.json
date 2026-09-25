@@ -657,32 +657,36 @@
       "next": "Promote as its own construction family."
     },
     {
-      "type": "Baseball cap / dad cap",
+      "type": "Baseball cap",
       "priority": "HIGH",
-      "status": "SOURCE_AND_EXPERIMENT_PRESENT",
+      "status": "CLEANROOM_REBOOT_IN_PROGRESS",
       "evidence": [
-        "More Accessories and Stuff / Cap 2 (LIVE_APPROVED)",
-        "experiments/dad_cap/production_20x20"
+        "experiments/cap_reboot/baseball_cap_cleanroom_02"
       ],
-      "next": "Choose source-backed Baseball vs authored Dad Cap as separate constructions; do not merge silhouettes."
+      "next": "Fresh construction only; worn-QC C1/C2/C3, then approve one master before production."
+    },
+    {
+      "type": "Dad cap",
+      "priority": "HIGH",
+      "status": "CLEANROOM_REBOOT_PLANNED",
+      "evidence": [],
+      "next": "Fresh construction after Baseball; old Dad experiments remain visually quarantined until new master approval."
     },
     {
       "type": "Snapback cap",
-      "priority": "HIGH",
-      "status": "SOURCE_PRESENT_LIVE_APPROVED",
+      "priority": "LOW",
+      "status": "DEFERRED_NOT_REQUIRED",
       "evidence": [
         "More Accessories and Stuff / Cap (Snapback)"
       ],
-      "next": "Promote as distinct structured cap construction."
+      "next": "Do not include in current cap reboot; revisit only if it proves meaningfully distinct from Baseball at worn scale."
     },
     {
       "type": "Trucker cap",
-      "priority": "MEDIUM",
-      "status": "EXPERIMENT_PRESENT_INCOMPLETE",
-      "evidence": [
-        "experiments/trucker_cap"
-      ],
-      "next": "Finish directional set, then promote if human-approved."
+      "priority": "HIGH",
+      "status": "CLEANROOM_REBOOT_PLANNED",
+      "evidence": [],
+      "next": "Fresh construction after Baseball/Dad; old Trucker experiment art remains visually quarantined until new master approval."
     },
     {
       "type": "Slouch beanie",
@@ -714,13 +718,13 @@
     },
     {
       "type": "Mario-style reference cap",
-      "priority": "HIGH",
-      "status": "EASTER_EGG_PROTOTYPE_PRESENT",
+      "priority": "LOW",
+      "status": "DEFERRED_EASTER_EGG",
       "evidence": [
         "prototypes/mario_hat",
         "experiments/mario_hat"
       ],
-      "next": "Keep as easter-egg/reference content; finish/confirm worn QC before promotion."
+      "next": "Separate easter-egg/reference project; excluded from the normal cap reboot."
     },
     {
       "type": "Veil family",
@@ -877,8 +881,6 @@
     "KEEP_REFERENCE_OR_PROMOTION_INPUT": [
       "source_catalog/HAT_WORKING_CATALOG.json",
       "source_catalog/HAT_WORKING_CATALOG.md",
-      "experiments/dad_cap/production_20x20",
-      "experiments/trucker_cap",
       "experiments/slouch_beanie_compare",
       "prototypes/mario_hat",
       "experiments/mario_hat",
@@ -886,12 +888,16 @@
       "experiments/source_respecting_hat_batch_a_01",
       "experiments/source_respecting_hat_remaining_01"
     ],
+    "QUARANTINED_CAP_HISTORY": [
+      "experiments/dad_cap/",
+      "experiments/dad_cap_v2/",
+      "experiments/trucker_cap/"
+    ],
     "ARCHIVE_CANDIDATE_AFTER_CURRENT_FREEZE": [
       "experiments/hat_production_batch_01",
       "experiments/hat_production_batch_09",
       "experiments/source_fidelity",
-      "experiments/cap_ai",
-      "experiments/dad_cap_v2 (verified NOT pixel-identical to v1; archive as alternate evidence rather than delete)"
+      "experiments/cap_ai"
     ],
     "DELETE_CANDIDATE_AFTER_VERIFICATION": [
       "temporary enlarged previews / caches that are reproducible"

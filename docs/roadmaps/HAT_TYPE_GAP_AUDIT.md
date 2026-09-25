@@ -9,20 +9,32 @@
 - Source appearances already represented by production family contracts/states: **70**.
 - Source appearances not represented by production contracts: **46**.
 
+## Current cap reboot
+
+- **Scope:** Baseball Cap + Dad Cap + Trucker Cap.
+- **Snapback:** deferred/not required unless future worn-scale testing proves it meaningfully distinct.
+- **Mario/reference cap:** excluded; separate easter-egg project later.
+- **Clean-room rule:** old Dad/Trucker experiment art remains visually quarantined during new construction.
+
+- **Baseball cap** — CLEANROOM_REBOOT_IN_PROGRESS — Fresh construction only; worn-QC C1/C2/C3, then approve one master before production.
+- **Dad cap** — CLEANROOM_REBOOT_PLANNED — Fresh construction after Baseball; old Dad experiments remain visually quarantined until new master approval.
+- **Snapback cap** — DEFERRED_NOT_REQUIRED — Do not include in current cap reboot; revisit only if it proves meaningfully distinct from Baseball at worn scale.
+- **Trucker cap** — CLEANROOM_REBOOT_PLANNED — Fresh construction after Baseball/Dad; old Trucker experiment art remains visually quarantined until new master approval.
+
 ## Highest-value production gaps already present in the repo/source corpus
 
 - **Cowboy hat** — SOURCE_PRESENT_UNPROMOTED — Promote as its own construction family.
-- **Baseball cap / dad cap** — SOURCE_AND_EXPERIMENT_PRESENT — Choose source-backed Baseball vs authored Dad Cap as separate constructions; do not merge silhouettes.
-- **Snapback cap** — SOURCE_PRESENT_LIVE_APPROVED — Promote as distinct structured cap construction.
-- **Trucker cap** — EXPERIMENT_PRESENT_INCOMPLETE — Finish directional set, then promote if human-approved.
 - **Slouch beanie** — EXPERIMENT_PRESENT — Promote as a distinct beanie construction rather than a material variant.
 - **Party hat** — SOURCE_PRESENT_UNPROMOTED — Review and promote if worn identity passes.
 - **Paperboy / newsboy cap** — SOURCE_PRESENT_BUT_REJECTED — Do not promote rejected source; replace/re-author a readable construction.
-- **Mario-style reference cap** — EASTER_EGG_PROTOTYPE_PRESENT — Keep as easter-egg/reference content; finish/confirm worn QC before promotion.
 - **Veil family** — SOURCE_PRESENT_HEAD_ACCESSORY — Decide whether this belongs in hat catalog or accessory catalog before promotion.
 - **Tiara family** — SOURCE_PRESENT_HEAD_ACCESSORY — Treat as head-accessory construction family if included in hats.
 - **Goggles-on-head** — SOURCE_PRESENT_HEAD_ACCESSORY — Optional head-accessory family.
 - **Flower crown** — SOURCE_PRESENT_HEAD_ACCESSORY — Optional alternate crown/garland construction.
+
+## Deferred easter-egg/reference content
+
+- **Mario-style reference cap** — DEFERRED_EASTER_EGG — Separate easter-egg/reference project; excluded from the normal cap reboot.
 
 ## Reference-only / genuinely new construction gaps
 
@@ -63,8 +75,6 @@
 
 - source_catalog/HAT_WORKING_CATALOG.json
 - source_catalog/HAT_WORKING_CATALOG.md
-- experiments/dad_cap/production_20x20
-- experiments/trucker_cap
 - experiments/slouch_beanie_compare
 - prototypes/mario_hat
 - experiments/mario_hat
@@ -72,13 +82,18 @@
 - experiments/source_respecting_hat_batch_a_01
 - experiments/source_respecting_hat_remaining_01
 
+### QUARANTINED_CAP_HISTORY
+
+- experiments/dad_cap/
+- experiments/dad_cap_v2/
+- experiments/trucker_cap/
+
 ### ARCHIVE_CANDIDATE_AFTER_CURRENT_FREEZE
 
 - experiments/hat_production_batch_01
 - experiments/hat_production_batch_09
 - experiments/source_fidelity
 - experiments/cap_ai
-- experiments/dad_cap_v2 (verified NOT pixel-identical to v1; archive as alternate evidence rather than delete)
 
 ### DELETE_CANDIDATE_AFTER_VERIFICATION
 
