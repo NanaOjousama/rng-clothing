@@ -1238,3 +1238,31 @@ Automated proxy result: baseline 8.81 -> Hybrid 9.29 (+0.48), decision PROMISING
 Final same-reference comparison: A Golden 8.73, B Full PT Lab 02 9.18, C Hybrid Lab 03 9.29. Hybrid is +0.11 vs Full PT and recovers most coherence/junk-control losses.
 Final review package: experiments/photo_tailor_final_comparison/ with FINAL_A_B_C_20_REFERENCE_CONTACT.png, FINAL_A_B_C_SCORECARD.png, FINAL_LAB_01_02_03_OVERVIEW.png, FINAL_COMPARISON.md and JSON.
 Lab 01 remains an architectural capability proof and is not assigned a fake same-20-reference numeric score.
+
+## 2026-09-24 — Native Hat Hybrid Production V1
+Productionized the winning Lab 03 concepts as an independent native hat enhancement layer on top of `HAT_PRODUCTION_GOLDEN_V1`.
+
+Production code:
+- `generator/hat_hybrid_enhancements.py`
+- `generator/source_respecting_hat_production.py`
+- policy: `generator/data/hat_hybrid_production_policy.json`
+- decision doc: `docs/decisions/HAT_HYBRID_PRODUCTION_V1.md`
+
+The production path has no Photo Tailor, prototype, FashionSigLIP, ONNX, or vendor runtime dependency/import. Golden source-respecting pixels remain authoritative.
+
+Hybrid safety:
+- exact alpha geometry must match golden;
+- exact outline pixels must match golden;
+- size must match golden;
+- delta ratio is capped by family capacity;
+- any failed gate returns the exact golden render.
+- tiny families skip procedural hybrid clutter and rely on approved authored states.
+
+Final test batch:
+- `experiments/hat_production_hybrid_final_01/`
+- 80 candidates = 20 families x Common/Uncommon/Rare/Epic.
+- 42/80 received native hybrid deltas.
+- 1/80 exceeded its conservative capacity delta cap and automatically fell back to exact golden pixels.
+- 37/80 remained effectively golden because their recipe/capacity did not call for a safe enhancement.
+- comparison: `HYBRID_VS_GOLDEN_CONTACT.png`.
+- final hybrid batch remains CANDIDATE_REVIEW_REQUIRED until visual approval.

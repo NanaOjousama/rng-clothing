@@ -1,0 +1,24 @@
+{
+  "schema": "hat-hybrid-production-policy/v1",
+  "authority": "GOLDEN_SOURCE_RESPECTING_HYBRID_V1",
+  "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1",
+  "productionDependencyOnPhotoTailor": false,
+  "productionDependencyOnFashionSigLIP": false,
+  "prototypeImportsAllowed": false,
+  "principle": "Golden source-respecting pixels remain authoritative; native enhancements are bounded deltas only.",
+  "features": [
+    "normalized_pattern_coordinates",
+    "semantic_region_bands",
+    "normalized_motif_placement",
+    "facing_scopes",
+    "occupancy_bounded_cleanup",
+    "exact_outline_preservation",
+    "exact_alpha_preservation"
+  ],
+  "fallback": "Any alpha drift, outline drift, size drift, or excessive delta returns the untouched golden result.",
+  "capacityDeltaCaps": {
+    "tiny": 0.16,
+    "small": 0.24,
+    "medium_large": 0.34
+  }
+}

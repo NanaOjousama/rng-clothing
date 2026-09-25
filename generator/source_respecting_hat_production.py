@@ -12,6 +12,7 @@ from typing import Any
 from generator.catalog_templates import load_family
 from generator.taste_policy import evaluate_recipe
 from generator.hat_visual_rules import contract_for,recipe_visual_precheck
+from generator.hat_hybrid_enhancements import enhance_frames
 from generator.source_respecting_hat_remix import (
  beret,beanie,straw,boater,mushroom_hat,sun_hat,tulip_hat,
  source_family_state,RemixResult,
@@ -130,7 +131,27 @@ def roll_and_render(template_family:str,rarity:str,presentation_mode:str='mixed'
  rec,rep=select_recipe(template_family,rarity)
  lean=select_presentation_lean(template_family,rarity,presentation_mode)
  pair=select_approved_pair(template_family,rarity,rec,lean)
- res=render_approved_pair(template_family,pair)
+ golden_res=render_approved_pair(template_family,pair)
+ enhanced_frames,enhancement=enhance_frames(golden_res.frames,gold['sourceFamily'],rec,rarity)
+ changed={v:sum(1 for y,row in enumerate(golden_res.frames[v]) for x,p in enumerate(row) if p!=enhanced_frames[v][y][x]) for v in ('front','right','left','back')}
+ trace=dict(golden_res.trace)
+ trace.update({
+  'nativeHybridEnhancement':True,
+  'hybridAuthority':'GOLDEN_SOURCE_PIXELS_FIRST',
+  'hybridApplied':enhancement.applied,
+  'hybridFallbackReason':enhancement.fallback_reason,
+  'hybridChangedPixels':enhancement.changed_pixels,
+  'hybridChangedRatio':enhancement.changed_ratio,
+  'outlinePreserved':enhancement.outline_preserved,
+  'alphaPreserved':enhancement.alpha_preserved,
+  'photoTailorDependency':False,
+  'prototypeImportUsed':False,
+ })
+ res=RemixResult(
+  family=golden_res.family,construction=golden_res.construction,source_state=golden_res.source_state,
+  palette=golden_res.palette,component=golden_res.component,frames=enhanced_frames,
+  source_frames=golden_res.frames,changed=changed,trace=trace,
+ )
  cap=load_family(template_family)['familyCapacity']
  return {
   'family':template_family,'sourceFamily':gold['sourceFamily'],'rarity':rarity,
@@ -140,6 +161,14 @@ def roll_and_render(template_family:str,rarity:str,presentation_mode:str='mixed'
    'channels':list(rep.active_channels),'primary':rep.primary,
    'secondary':list(rep.secondary),'accents':list(rep.accents)},
   'approvedPair':pair,'renderResult':res,'contractDigest':gold['contractDigest'],
-  'productionAuthority':'GOLDEN_SOURCE_RESPECTING_V1','fallbackRendererUsed':False,
-  'genericProjectionUsed':False,'genericLineUsed':False,
+  'productionAuthority':'GOLDEN_SOURCE_RESPECTING_HYBRID_V1','goldenAuthority':'HAT_PRODUCTION_GOLDEN_V1',
+  'hybridEnhancement':{
+   'applied':enhancement.applied,'fallbackReason':enhancement.fallback_reason,
+   'changedPixels':enhancement.changed_pixels,'changedRatio':round(enhancement.changed_ratio,6),
+   'outlinePreserved':enhancement.outline_preserved,'alphaPreserved':enhancement.alpha_preserved,
+   'pattern':enhancement.pattern,'motif':enhancement.motif,'motifPlacement':enhancement.motif_placement,
+   'regionMode':enhancement.region_mode,
+  },
+  'fallbackRendererUsed':bool(enhancement.fallback_reason),
+  'genericProjectionUsed':False,'genericLineUsed':False,'photoTailorDependencyUsed':False,
  }

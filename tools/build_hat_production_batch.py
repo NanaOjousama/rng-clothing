@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Final hat production batch: source-respecting goldens only."""
+"""Final hat production batch: golden source-respecting + native bounded hybrid enhancements."""
 from __future__ import annotations
 import json,os,re,shutil,sys
 from pathlib import Path
@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from generator.catalog_templates import list_families,load_family
 from generator.source_respecting_hat_production import RARITIES,load_goldens,roll_and_render
 from v5.pngio import read_rgba_png,write_rgba_png,blank_image,blit,nearest_scale,draw_text
-BATCH=os.environ.get('RNG_HAT_BATCH','hat_production_source_respecting_final_01')
+BATCH=os.environ.get('RNG_HAT_BATCH','hat_production_hybrid_final_01')
 LEAN=os.environ.get('RNG_HAT_PRESENTATION_LEAN','mixed')
 OUT=ROOT/'experiments'/BATCH;CAND=OUT/'candidates';SHEETS=OUT/'family_sheets'
 VIEWS=('front','right','left','back')
@@ -59,9 +59,10 @@ def main():
  CAND.mkdir(parents=True);SHEETS.mkdir(parents=True)
  reg=load_goldens();hats=sorted(e['family'] for e in list_families(include_manual=False) if load_family(e['family']).get('category')=='Hats')
  if set(hats)!=set(reg['families']):raise RuntimeError('promoted hat set does not match golden registry')
- manifest={'schema':'hat-production-source-respecting/v1','batch':BATCH,'familyCount':20,
+ manifest={'schema':'hat-production-source-respecting-hybrid/v1','batch':BATCH,'familyCount':20,
   'rarities':list(RARITIES),'presentationLeanMode':LEAN,'humanArtApproved':False,
-  'goldenRegistry':'generator/data/source_respecting_hat_goldens.json','productionAuthority':'GOLDEN_SOURCE_RESPECTING_V1',
+  'goldenRegistry':'generator/data/source_respecting_hat_goldens.json','goldenBaseline':'HAT_PRODUCTION_GOLDEN_V1','productionAuthority':'GOLDEN_SOURCE_RESPECTING_HYBRID_V1',
+  'nativeHybridEnhancements':True,'photoTailorDependency':False,'prototypeImportsAllowed':False,
   'approvedPairWhitelistRequired':True,'genericProjectionAllowed':False,'genericLineSynthesisAllowed':False,
   'legacyStyleProfileFallbackAllowed':False,'candidates':[]}
  grid=[];n=0;family_contacts=[]
@@ -78,6 +79,10 @@ def main():
  manifest['rarityCounts']={r:sum(1 for c in manifest['candidates'] if c['rarity']==r) for r in RARITIES}
  manifest['capacityCounts']={k:sum(1 for c in manifest['candidates'] if c['capacity']==k) for k in ('tiny','small','medium','large')}
  manifest['presentationLeanCounts']={k:sum(1 for c in manifest['candidates'] if c['presentationLean']==k) for k in ('neutral','male_leaning','female_leaning')}
+ manifest['hybridAppliedCount']=sum(1 for c in manifest['candidates'] if c['hybridEnhancement']['applied'])
+ manifest['hybridFallbackCount']=sum(1 for c in manifest['candidates'] if c['hybridEnhancement']['fallbackReason'])
+ manifest['hybridChangedPixels']=sum(c['hybridEnhancement']['changedPixels'] for c in manifest['candidates'])
+ manifest['hybridMaxChangedRatio']=max(c['hybridEnhancement']['changedRatio'] for c in manifest['candidates'])
  manifest['contactSheets']=[str(x.relative_to(ROOT)) for x in [all_sheet,a_sheet,b_sheet,*family_contacts]]
  (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
  print('PASS candidates',len(manifest['candidates']),'rarities',manifest['rarityCounts'])
