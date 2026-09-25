@@ -1286,7 +1286,7 @@ Hat-type gap audit:
 
 Important audit findings:
 - Cowboy Hat already exists in the primary source corpus and is REVIEW_NEEDED.
-- Current normal-cap scope is Baseball + Dad + Trucker. Baseball is being rebuilt clean-room; old Dad/Trucker experiment art is quarantined during new construction.
+- Current normal-cap scope is Baseball + Dad + Trucker. Baseball is in a PT-assisted fresh-reference reboot; old Dad/Trucker experiment art remains quarantined during new construction.
 - Snapback is deferred/not required; Mario/reference cap is deferred to separate easter-egg work.
 - Slouch Beanie remains a separate existing experiment worth revisiting independently.
 - Paperboy Hat source failed live readability and should not be promoted unchanged.
@@ -1301,17 +1301,21 @@ Hard visual quarantine for fresh cap construction:
 - do not open/sample/trace `experiments/trucker_cap/`;
 - old cap history remains preserved but is not an active silhouette donor.
 
-Baseball Cap clean-room pass 04 is the active candidate set:
-- `experiments/cap_reboot/baseball_cap_cleanroom_04/`
-- S1 Standard/Rounded — primary Baseball worn-QC candidate
-- S2 Lower/Rounded — comparison/stress candidate, closer to future Dad-cap territory
-- fresh user-supplied vector reference used for silhouette/construction study only
-- fresh authored 20x20 geometry with separate crown + curved bill layers
-- compact adjustable rear opening/strap
-- no old Dad/Trucker pixels and no mod-author source-sprite pixels used
-- left is exact mirror of right
-- temporary FS QC pack: `test-packs/fashionsense/RNG-Cap-Reboot-Baseball-Cleanroom-04/`
-- installed test copy: `Mods/[FS] RNG Cap Reboot Baseball Cleanroom 04`
+Baseball Cleanroom 04 (Python-authored geometry) was visually rejected/superseded and is no longer installed. It remains historical evidence only.
+
+Active Baseball Cap candidate set is **Photo Tailor reboot 04**:
+- authoritative local reference folder: `cap reference/`;
+- primary front + true back: `Screenshot_20260924_223136.png`;
+- primary right-facing side: `Screenshot_20260924_223116.png`;
+- `Screenshot_20260924_223057.png`, `caprefimages.jpeg`, and `capefernece.jpeg` are secondary proportion/construction checks;
+- PT FashionSigLIP independently classifies front/right/back/overview as `hat -> cap -> standard`;
+- reference-derived occupancy drives silhouette; PT normalized cap regions/construction logic drives rendering;
+- BackHat is true rear crown/opening/strap only, with no visor/brim behind the player;
+- reference logos/motifs are ignored in the base master;
+- no old Dad/Trucker/Mario art and no old PT cap control is used;
+- PT5 Primary/Balanced is the primary worn-QC candidate; PT6 Primary/Compact is the comparison candidate;
+- test pack: `test-packs/fashionsense/RNG-Cap-Reboot-Baseball-PT-04/`;
+- installed: `Mods/[FS] RNG Cap Reboot Baseball PT 04`;
 - status: CANDIDATE_WORN_QC, not production-approved.
 
-Docs: `docs/caps/CAP_REBOOT_CLEANROOM.md`, `docs/caps/BASEBALL_CAP_CLEANROOM_04.md`.
+Docs: `docs/caps/CAP_REBOOT_CLEANROOM.md`, `docs/caps/BASEBALL_CAP_PT_04.md`.

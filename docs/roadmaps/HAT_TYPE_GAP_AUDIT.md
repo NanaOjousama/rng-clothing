@@ -16,7 +16,7 @@
 - **Mario/reference cap:** excluded; separate easter-egg project later.
 - **Clean-room rule:** old Dad/Trucker experiment art remains visually quarantined during new construction.
 
-- **Baseball cap** — CLEANROOM_REBOOT_IN_PROGRESS — Fresh construction only; worn-QC C1/C2/C3, then approve one master before production.
+- **Baseball cap** — PHOTO_TAILOR_REBOOT_IN_PROGRESS — PT5/PT6 worn QC from fresh cap-reference folder; old rectangle clean-room pass is superseded.
 - **Dad cap** — CLEANROOM_REBOOT_PLANNED — Fresh construction after Baseball; old Dad experiments remain visually quarantined until new master approval.
 - **Snapback cap** — DEFERRED_NOT_REQUIRED — Do not include in current cap reboot; revisit only if it proves meaningfully distinct from Baseball at worn scale.
 - **Trucker cap** — CLEANROOM_REBOOT_PLANNED — Fresh construction after Baseball/Dad; old Trucker experiment art remains visually quarantined until new master approval.

@@ -70,7 +70,7 @@ def curated_missing():
     # not necessarily absent from disk.
     return [
       {'type':'Cowboy hat','priority':'HIGH','status':'SOURCE_PRESENT_UNPROMOTED','evidence':['More Accessories and Stuff / Cowboy Hat'],'next':'Promote as its own construction family.'},
-      {'type':'Baseball cap','priority':'HIGH','status':'CLEANROOM_REBOOT_IN_PROGRESS','evidence':['experiments/cap_reboot/baseball_cap_cleanroom_02'],'next':'Fresh construction only; worn-QC C1/C2/C3, then approve one master before production.'},
+      {'type':'Baseball cap','priority':'HIGH','status':'PHOTO_TAILOR_REBOOT_IN_PROGRESS','evidence':['experiments/cap_reboot/baseball_cap_pt_04','cap reference'],'next':'PT5/PT6 worn QC from fresh cap-reference folder; old rectangle clean-room pass is superseded.'},
       {'type':'Dad cap','priority':'HIGH','status':'CLEANROOM_REBOOT_PLANNED','evidence':[],'next':'Fresh construction after Baseball; old Dad experiments remain visually quarantined until new master approval.'},
       {'type':'Snapback cap','priority':'LOW','status':'DEFERRED_NOT_REQUIRED','evidence':['More Accessories and Stuff / Cap (Snapback)'],'next':'Do not include in current cap reboot; revisit only if it proves meaningfully distinct from Baseball at worn scale.'},
       {'type':'Trucker cap','priority':'HIGH','status':'CLEANROOM_REBOOT_PLANNED','evidence':[],'next':'Fresh construction after Baseball/Dad; old Trucker experiment art remains visually quarantined until new master approval.'},
@@ -170,7 +170,7 @@ def main():
     OUT_MD.parent.mkdir(parents=True,exist_ok=True)
     OUT_JSON.write_text(json.dumps(audit,indent=2)+'\n')
 
-    cap_reboot=[x for x in audit['stillMissingFromProduction'] if x['status'].startswith('CLEANROOM_REBOOT') or x['status']=='DEFERRED_NOT_REQUIRED']
+    cap_reboot=[x for x in audit['stillMissingFromProduction'] if x['status'].startswith('CLEANROOM_REBOOT') or x['status'].startswith('PHOTO_TAILOR_REBOOT') or x['status']=='DEFERRED_NOT_REQUIRED']
     easter_deferred=[x for x in audit['stillMissingFromProduction'] if x['status']=='DEFERRED_EASTER_EGG']
     source_ready=[x for x in audit['stillMissingFromProduction'] if ('SOURCE' in x['status'] or 'EXPERIMENT' in x['status'] or 'PROTOTYPE' in x['status']) and x not in cap_reboot and x not in easter_deferred]
     ref_only=[x for x in audit['stillMissingFromProduction'] if 'REFERENCE' in x['status'] or x['status']=='NOT_FOUND_IN_CURRENT_CORPUS']

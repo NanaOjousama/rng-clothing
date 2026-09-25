@@ -36,7 +36,7 @@ def main():
 
     gaps={x['type']:x for x in audit['stillMissingFromProduction']}
     assert gaps['Cowboy hat']['status']=='SOURCE_PRESENT_UNPROMOTED'
-    assert gaps['Baseball cap']['status']=='CLEANROOM_REBOOT_IN_PROGRESS'
+    assert gaps['Baseball cap']['status']=='PHOTO_TAILOR_REBOOT_IN_PROGRESS'
     assert gaps['Dad cap']['status']=='CLEANROOM_REBOOT_PLANNED'
     assert gaps['Trucker cap']['status']=='CLEANROOM_REBOOT_PLANNED'
     assert gaps['Snapback cap']['status']=='DEFERRED_NOT_REQUIRED'

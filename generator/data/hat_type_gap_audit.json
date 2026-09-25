@@ -659,11 +659,12 @@
     {
       "type": "Baseball cap",
       "priority": "HIGH",
-      "status": "CLEANROOM_REBOOT_IN_PROGRESS",
+      "status": "PHOTO_TAILOR_REBOOT_IN_PROGRESS",
       "evidence": [
-        "experiments/cap_reboot/baseball_cap_cleanroom_02"
+        "experiments/cap_reboot/baseball_cap_pt_04",
+        "cap reference"
       ],
-      "next": "Fresh construction only; worn-QC C1/C2/C3, then approve one master before production."
+      "next": "PT5/PT6 worn QC from fresh cap-reference folder; old rectangle clean-room pass is superseded."
     },
     {
       "type": "Dad cap",

@@ -1,0 +1,470 @@
+{
+  "front": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "hat",
+        "score": 0.08540242910385132,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.037709832191467285,
+        "category": ""
+      },
+      {
+        "value": "hat",
+        "score": 0.033274486660957336,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "cap",
+        "score": 0.07344576716423035,
+        "category": "hat"
+      },
+      {
+        "value": "bow",
+        "score": 0.0733780786395073,
+        "category": "hat"
+      },
+      {
+        "value": "hat",
+        "score": 0.0453350730240345,
+        "category": "hat"
+      },
+      {
+        "value": "crown",
+        "score": 0.029825359582901,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "logo",
+        "score": 0.03561417758464813,
+        "category": ""
+      },
+      {
+        "value": "other",
+        "score": 0.006310746073722839,
+        "category": ""
+      },
+      {
+        "value": "solid",
+        "score": 0.00407587643712759,
+        "category": ""
+      },
+      {
+        "value": "graphic",
+        "score": 0.0025922837667167187,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.031252775341272354,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "logo",
+    "paletteRgb": [
+      [
+        205,
+        174,
+        165
+      ],
+      [
+        203,
+        179,
+        166
+      ],
+      [
+        190,
+        165,
+        157
+      ],
+      [
+        202,
+        174,
+        164
+      ],
+      [
+        110,
+        99,
+        99
+      ],
+      [
+        204,
+        176,
+        165
+      ]
+    ],
+    "paletteHex": [
+      "#cdaea5",
+      "#cbb3a6",
+      "#bea59d",
+      "#caaea4",
+      "#6e6363",
+      "#ccb0a5"
+    ],
+    "primaryColor": "#cdaea5",
+    "secondaryColor": "#cbb3a6",
+    "accentColor": "#bea59d"
+  },
+  "right": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "hat",
+        "score": 0.10050563514232635,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.04805345460772514,
+        "category": ""
+      },
+      {
+        "value": "none",
+        "score": 0.02231130748987198,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "cap",
+        "score": 0.09129561483860016,
+        "category": "hat"
+      },
+      {
+        "value": "hat",
+        "score": 0.06898091733455658,
+        "category": "hat"
+      },
+      {
+        "value": "crown",
+        "score": 0.03478027880191803,
+        "category": "hat"
+      },
+      {
+        "value": "helmet",
+        "score": 0.03306525945663452,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "logo",
+        "score": 0.051159318536520004,
+        "category": ""
+      },
+      {
+        "value": "solid",
+        "score": 0.03574692830443382,
+        "category": ""
+      },
+      {
+        "value": "horizontal_stripes",
+        "score": 0.02730020135641098,
+        "category": ""
+      },
+      {
+        "value": "vertical_stripes",
+        "score": 0.025002412497997284,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.07943412661552429,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "logo",
+    "paletteRgb": [
+      [
+        181,
+        181,
+        181
+      ],
+      [
+        184,
+        184,
+        184
+      ],
+      [
+        246,
+        245,
+        245
+      ],
+      [
+        235,
+        235,
+        235
+      ],
+      [
+        239,
+        239,
+        239
+      ],
+      [
+        105,
+        105,
+        105
+      ]
+    ],
+    "paletteHex": [
+      "#b5b5b5",
+      "#b8b8b8",
+      "#f6f5f5",
+      "#ebebeb",
+      "#efefef",
+      "#696969"
+    ],
+    "primaryColor": "#b5b5b5",
+    "secondaryColor": "#b8b8b8",
+    "accentColor": "#f6f5f5"
+  },
+  "back": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "hat",
+        "score": 0.10536815226078033,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.04979388415813446,
+        "category": ""
+      },
+      {
+        "value": "none",
+        "score": 0.037778787314891815,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "cap",
+        "score": 0.09581349045038223,
+        "category": "hat"
+      },
+      {
+        "value": "hat",
+        "score": 0.06277579814195633,
+        "category": "hat"
+      },
+      {
+        "value": "crown",
+        "score": 0.04594415798783302,
+        "category": "hat"
+      },
+      {
+        "value": "bow",
+        "score": 0.0384044423699379,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "logo",
+        "score": 0.059471651911735535,
+        "category": ""
+      },
+      {
+        "value": "solid",
+        "score": 0.04147147759795189,
+        "category": ""
+      },
+      {
+        "value": "graphic",
+        "score": 0.036026716232299805,
+        "category": ""
+      },
+      {
+        "value": "vertical_stripes",
+        "score": 0.035765547305345535,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.07496856153011322,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "logo",
+    "paletteRgb": [
+      [
+        205,
+        174,
+        165
+      ],
+      [
+        200,
+        176,
+        165
+      ],
+      [
+        185,
+        163,
+        155
+      ],
+      [
+        205,
+        177,
+        166
+      ],
+      [
+        93,
+        82,
+        77
+      ],
+      [
+        205,
+        174,
+        163
+      ]
+    ],
+    "paletteHex": [
+      "#cdaea5",
+      "#c8b0a5",
+      "#b9a39b",
+      "#cdb1a6",
+      "#5d524d",
+      "#cdaea3"
+    ],
+    "primaryColor": "#cdaea5",
+    "secondaryColor": "#c8b0a5",
+    "accentColor": "#b9a39b"
+  },
+  "folder_overview": {
+    "categoryHint": "hat",
+    "categoryCandidates": [
+      {
+        "value": "hat",
+        "score": 0.09792113304138184,
+        "category": ""
+      },
+      {
+        "value": "boots",
+        "score": 0.04339170455932617,
+        "category": ""
+      },
+      {
+        "value": "shirt",
+        "score": 0.01852400228381157,
+        "category": ""
+      }
+    ],
+    "silhouetteCandidates": [
+      {
+        "value": "cap",
+        "score": 0.06477877497673035,
+        "category": "hat"
+      },
+      {
+        "value": "hat",
+        "score": 0.052047520875930786,
+        "category": "hat"
+      },
+      {
+        "value": "helmet",
+        "score": 0.012092764489352703,
+        "category": "hat"
+      },
+      {
+        "value": "crown",
+        "score": 0.008514775894582272,
+        "category": "hat"
+      }
+    ],
+    "patternCandidates": [
+      {
+        "value": "logo",
+        "score": 0.05669920891523361,
+        "category": ""
+      },
+      {
+        "value": "solid",
+        "score": 0.031190071254968643,
+        "category": ""
+      },
+      {
+        "value": "other",
+        "score": 0.02109389379620552,
+        "category": ""
+      },
+      {
+        "value": "vertical_stripes",
+        "score": 0.016636628657579422,
+        "category": ""
+      }
+    ],
+    "coverageCandidates": [
+      {
+        "value": "standard",
+        "score": 0.07505173236131668,
+        "category": "hat"
+      }
+    ],
+    "necklineCandidates": [],
+    "detailCandidates": [],
+    "semanticPattern": "logo",
+    "paletteRgb": [
+      [
+        14,
+        114,
+        76
+      ],
+      [
+        13,
+        108,
+        71
+      ],
+      [
+        12,
+        116,
+        76
+      ],
+      [
+        216,
+        203,
+        188
+      ],
+      [
+        26,
+        108,
+        76
+      ],
+      [
+        13,
+        123,
+        81
+      ]
+    ],
+    "paletteHex": [
+      "#0e724c",
+      "#0d6c47",
+      "#0c744c",
+      "#d8cbbc",
+      "#1a6c4c",
+      "#0d7b51"
+    ],
+    "primaryColor": "#0e724c",
+    "secondaryColor": "#0d6c47",
+    "accentColor": "#0c744c"
+  }
+}
