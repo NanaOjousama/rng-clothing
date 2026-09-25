@@ -1319,3 +1319,27 @@ Active Baseball Cap candidate set is **Photo Tailor reboot 04**:
 - status: CANDIDATE_WORN_QC, not production-approved.
 
 Docs: `docs/caps/CAP_REBOOT_CLEANROOM.md`, `docs/caps/BASEBALL_CAP_PT_04.md`.
+
+## 2026-09-24 — Baseball reboot now uses actual Photo Tailor runtime
+The prior PT04 experiment was not the real PT renderer and is superseded for Baseball construction/QC.
+
+Actual Photo Tailor 0.15.1 is installed locally on the Deck and runs under native Linux SMAPI with Linux ONNX Runtime shared libraries supplied alongside the mod. `mods/PhotoTailorPersonalBridge/` adds a personal-only `pt_make_cap` console command which invokes PT's compiled `LocalOutfitAnalyzer` and `SpriteRenderer` by reflection.
+
+For this cap-only helper:
+- PT Precise Recognition is used with a full-image crop and category hint `hat`;
+- silhouette is explicitly forced to the known class `cap`;
+- PT owns blueprint/palette/pattern/canonical artwork/projection/final pixels;
+- no custom cap renderer is used;
+- old Dad/Trucker/Mario art is not used.
+
+Real PT Baseball checkpoint:
+- `experiments/cap_reboot/baseball_cap_pt_real_01/`
+- raw candidates: Plain, Colored Front, Colored Side;
+- each source is PT's own 20×80 native hat texture;
+- `test-packs/fashionsense/RNG-Cap-Reboot-Baseball-PT-REAL-01/` copies those PT sheets unchanged;
+- installed QC pack: `Mods/[FS] RNG Cap Reboot Baseball PT REAL 01`;
+- exact pixel-match validation passed for all 3 candidates;
+- only the PT REAL Baseball pack is installed; earlier fake PT04/Cleanroom packs were removed from the active game.
+- status: CANDIDATE_WORN_QC, not production-approved.
+
+Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.

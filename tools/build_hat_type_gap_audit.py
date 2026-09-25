@@ -70,7 +70,7 @@ def curated_missing():
     # not necessarily absent from disk.
     return [
       {'type':'Cowboy hat','priority':'HIGH','status':'SOURCE_PRESENT_UNPROMOTED','evidence':['More Accessories and Stuff / Cowboy Hat'],'next':'Promote as its own construction family.'},
-      {'type':'Baseball cap','priority':'HIGH','status':'PHOTO_TAILOR_REBOOT_IN_PROGRESS','evidence':['experiments/cap_reboot/baseball_cap_pt_04','cap reference'],'next':'PT5/PT6 worn QC from fresh cap-reference folder; old rectangle clean-room pass is superseded.'},
+      {'type':'Baseball cap','priority':'HIGH','status':'PHOTO_TAILOR_REAL_OUTPUT_WORN_QC','evidence':['experiments/cap_reboot/baseball_cap_pt_real_01','cap reference'],'next':'Worn-QC the raw Photo Tailor 0.15.1 outputs copied unchanged into the PT REAL Fashion Sense pack.'},
       {'type':'Dad cap','priority':'HIGH','status':'CLEANROOM_REBOOT_PLANNED','evidence':[],'next':'Fresh construction after Baseball; old Dad experiments remain visually quarantined until new master approval.'},
       {'type':'Snapback cap','priority':'LOW','status':'DEFERRED_NOT_REQUIRED','evidence':['More Accessories and Stuff / Cap (Snapback)'],'next':'Do not include in current cap reboot; revisit only if it proves meaningfully distinct from Baseball at worn scale.'},
       {'type':'Trucker cap','priority':'HIGH','status':'CLEANROOM_REBOOT_PLANNED','evidence':[],'next':'Fresh construction after Baseball/Dad; old Trucker experiment art remains visually quarantined until new master approval.'},

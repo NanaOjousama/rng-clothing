@@ -1,0 +1,38 @@
+{
+  "PLAIN_FRONT": {
+    "name": "White Logo Cap",
+    "category": "hat",
+    "semantic_description": "white charcoal gray logo standard cap",
+    "primary_color": "#FEFEFE",
+    "secondary_color": "#303030",
+    "accent_color": "#9C9C9C",
+    "pattern": "logo",
+    "silhouette": "cap",
+    "coverage": "standard",
+    "confidence": 0.7384
+  },
+  "COLORED_FRONT": {
+    "name": "Brown Logo Cap",
+    "category": "hat",
+    "semantic_description": "brown beige orange logo standard cap",
+    "primary_color": "#53634C",
+    "secondary_color": "#EDB17F",
+    "accent_color": "#D95119",
+    "pattern": "logo",
+    "silhouette": "cap",
+    "coverage": "standard",
+    "confidence": 0.732
+  },
+  "COLORED_SIDE": {
+    "name": "Beige Logo Cap",
+    "category": "hat",
+    "semantic_description": "beige charcoal orange logo standard cap",
+    "primary_color": "#EAC897",
+    "secondary_color": "#2B291E",
+    "accent_color": "#DF6226",
+    "pattern": "logo",
+    "silhouette": "cap",
+    "coverage": "standard",
+    "confidence": 0.7341
+  }
+}

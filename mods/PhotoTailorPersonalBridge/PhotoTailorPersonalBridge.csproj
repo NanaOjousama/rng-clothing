@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GamePath>/run/media/deck/USD00/steamapps/common/Stardew Valley</GamePath>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>PhotoTailorPersonalBridge</AssemblyName>
+    <RootNamespace>PhotoTailorPersonalBridge</RootNamespace>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <EnableHarmony>false</EnableHarmony>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
+  </ItemGroup>
+</Project>

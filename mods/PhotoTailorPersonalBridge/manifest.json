@@ -1,0 +1,16 @@
+{
+  "Name": "Photo Tailor Personal Bridge",
+  "Author": "Nana / ChatGPT",
+  "Version": "0.1.0",
+  "Description": "Personal helper that invokes Photo Tailor's compiled analyzer and renderer from a SMAPI console command.",
+  "UniqueID": "Nana.PhotoTailorPersonalBridge",
+  "EntryDll": "PhotoTailorPersonalBridge.dll",
+  "MinimumApiVersion": "4.0.0",
+  "Dependencies": [
+    {
+      "UniqueID": "Robin.PhotoTailor",
+      "IsRequired": true
+    }
+  ],
+  "UpdateKeys": []
+}

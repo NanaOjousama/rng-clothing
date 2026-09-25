@@ -1,0 +1,23 @@
+{
+  "schema": "baseball-cap-pt-real/v1",
+  "photoTailorVersion": "0.15.1",
+  "actualPhotoTailorRendererUsed": true,
+  "customRendererUsed": false,
+  "silhouetteForcedToCap": true,
+  "pixelsModifiedAfterPhotoTailor": false,
+  "candidates": [
+    {
+      "id": "PLAIN_FRONT",
+      "source": "Robin.PhotoTailor_personal_20260925032118_00_hat.png"
+    },
+    {
+      "id": "COLORED_FRONT",
+      "source": "Robin.PhotoTailor_personal_20260925032204_00_hat.png"
+    },
+    {
+      "id": "COLORED_SIDE",
+      "source": "Robin.PhotoTailor_personal_20260925032207_00_hat.png"
+    }
+  ],
+  "status": "CANDIDATE_WORN_QC"
+}
