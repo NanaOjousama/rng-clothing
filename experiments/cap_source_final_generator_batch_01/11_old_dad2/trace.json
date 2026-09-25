@@ -1,0 +1,19 @@
+{
+  "id": "OLD_DAD2",
+  "label": "Old Dad V2",
+  "palette": "SAILOR_COBALT_CREAM",
+  "recipe": {
+    "pattern": "stripe",
+    "motif": "small",
+    "motifPlacement": "side",
+    "trim": "none",
+    "hardware": "none"
+  },
+  "hybridApplied": true,
+  "fallbackReason": null,
+  "changedPixels": 41,
+  "changedRatio": 0.119186,
+  "alphaPreserved": true,
+  "outlinePreserved": true,
+  "sourcePack": "Project prior experiment"
+}

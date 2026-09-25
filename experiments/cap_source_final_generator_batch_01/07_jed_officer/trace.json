@@ -1,0 +1,19 @@
+{
+  "id": "JED_OFFICER",
+  "label": "Officer Cap",
+  "palette": "EMBER_SUN_CHARCOAL",
+  "recipe": {
+    "pattern": "stripe",
+    "motif": "small",
+    "motifPlacement": "front_center",
+    "trim": "none",
+    "hardware": "none"
+  },
+  "hybridApplied": true,
+  "fallbackReason": null,
+  "changedPixels": 49,
+  "changedRatio": 0.12963,
+  "alphaPreserved": true,
+  "outlinePreserved": true,
+  "sourcePack": "Jedone Casual Hat Pack"
+}

@@ -1,0 +1,235 @@
+{
+  "schema": "cap-source-final-batch/v1",
+  "rarity": "rare",
+  "candidateCount": 12,
+  "candidates": [
+    {
+      "id": "MAS_CAP2",
+      "label": "Baseball / Cap2",
+      "palette": "STREET_TEAL_GRAPHITE",
+      "recipe": {
+        "pattern": "subtle",
+        "motif": "small",
+        "motifPlacement": "front_offset",
+        "trim": "none",
+        "hardware": "none"
+      },
+      "hybridApplied": true,
+      "fallbackReason": null,
+      "changedPixels": 52,
+      "changedRatio": 0.146067,
+      "alphaPreserved": true,
+      "outlinePreserved": true,
+      "sourcePack": "More Accessories / plurffle"
+    },
+    {
+      "id": "MAS_SNAP",
+      "label": "Snapback",
+      "palette": "SAILOR_COBALT_CREAM",
+      "recipe": {
+        "pattern": "colorblock",
+        "motif": "small",
+        "motifPlacement": "front_center",
+        "trim": "none",
+        "hardware": "none"
+      },
+      "hybridApplied": true,
+      "fallbackReason": null,
+      "changedPixels": 100,
+      "changedRatio": 0.316456,
+      "alphaPreserved": true,
+      "outlinePreserved": true,
+      "sourcePack": "More Accessories / plurffle"
+    },
+    {
+      "id": "RAGNAROK_BOYS",
+      "label": "Boys Cap",
+      "palette": "EVERYDAY_STONE_BLUE",
+      "recipe": {
+        "pattern": "subtle",
+        "motif": "small",
+        "motifPlacement": "front_center",
+        "trim": "none",
+        "hardware": "none"
+      },
+      "hybridApplied": true,
+      "fallbackReason": null,
+      "changedPixels": 48,
+      "changedRatio": 0.136364,
+      "alphaPreserved": true,
+      "outlinePreserved": true,
+      "sourcePack": "Ragnarok Online Hats / Seyph"
+    },
+    {
+      "id": "JED_BACK",
+      "label": "Backwards Cap",
+      "palette": "COASTAL_SEAFOAM_CORAL",
+      "recipe": {
+        "pattern": "solid",
+        "motif": "small",
+        "motifPlacement": "back_center",
+        "trim": "none",
+        "hardware": "none"
+      },
+      "hybridApplied": true,
+      "fallbackReason": null,
+      "changedPixels": 2,
+      "changedRatio": 0.006369,
+      "alphaPreserved": true,
+      "outlinePreserved": true,
+      "sourcePack": "Jedone Casual Hat Pack"
+    },
+    {
+      "id": "JED_VINTAGE",
+      "label": "Vintage / Dad-like",
+      "palette": "DESERT_CLAY_TURQUOISE",
+      "recipe": {
+        "pattern": "subtle",
+        "motif": "small",
+        "motifPlacement": "side",
+        "trim": "none",
+        "hardware": "none"
+      },
+      "hybridApplied": true,
+      "fallbackReason": null,
+      "changedPixels": 35,
+      "changedRatio": 0.111821,
+      "alphaPreserved": true,
+      "outlinePreserved": true,
+      "sourcePack": "Jedone Casual Hat Pack"
+    },
+    {
+      "id": "JED_HEADPHONES",
+      "label": "Cap + Headphones",
+      "palette": "STREET_TEAL_GRAPHITE",
+      "recipe": {
+        "pattern": "solid",
+        "motif": "small",
+        "motifPlacement": "front_offset",
+        "trim": "none",
+        "hardware": "none"
+      },
+      "hybridApplied": true,
+      "fallbackReason": null,
+      "changedPixels": 2,
+      "changedRatio": 0.005249,
+      "alphaPreserved": true,
+      "outlinePreserved": true,
+      "sourcePack": "Jedone Casual Hat Pack"
+    },
+    {
+      "id": "JED_OFFICER",
+      "label": "Officer Cap",
+      "palette": "EMBER_SUN_CHARCOAL",
+      "recipe": {
+        "pattern": "stripe",
+        "motif": "small",
+        "motifPlacement": "front_center",
+        "trim": "none",
+        "hardware": "none"
+      },
+      "hybridApplied": true,
+      "fallbackReason": null,
+      "changedPixels": 49,
+      "changedRatio": 0.12963,
+      "alphaPreserved": true,
+      "outlinePreserved": true,
+      "sourcePack": "Jedone Casual Hat Pack"
+    },
+    {
+      "id": "MAS_PAPERBOY",
+      "label": "Paperboy",
+      "palette": "EVERYDAY_STONE_BLUE",
+      "recipe": {
+        "pattern": "dense",
+        "motif": "small",
+        "motifPlacement": "side",
+        "trim": "none",
+        "hardware": "none"
+      },
+      "hybridApplied": true,
+      "fallbackReason": null,
+      "changedPixels": 65,
+      "changedRatio": 0.193452,
+      "alphaPreserved": true,
+      "outlinePreserved": true,
+      "sourcePack": "More Accessories / plurffle"
+    },
+    {
+      "id": "MAID_CAP",
+      "label": "Maid Cap",
+      "palette": "COASTAL_SEAFOAM_CORAL",
+      "recipe": {
+        "pattern": "subtle",
+        "motif": "small",
+        "motifPlacement": "front_center",
+        "trim": "none",
+        "hardware": "none"
+      },
+      "hybridApplied": true,
+      "fallbackReason": null,
+      "changedPixels": 24,
+      "changedRatio": 0.106195,
+      "alphaPreserved": true,
+      "outlinePreserved": true,
+      "sourcePack": "Butlers & Maids"
+    },
+    {
+      "id": "OLD_DAD1",
+      "label": "Old Dad V1",
+      "palette": "DESERT_CLAY_TURQUOISE",
+      "recipe": {
+        "pattern": "subtle",
+        "motif": "small",
+        "motifPlacement": "front_offset",
+        "trim": "none",
+        "hardware": "none"
+      },
+      "hybridApplied": true,
+      "fallbackReason": null,
+      "changedPixels": 66,
+      "changedRatio": 0.094556,
+      "alphaPreserved": true,
+      "outlinePreserved": true,
+      "sourcePack": "Project prior experiment"
+    },
+    {
+      "id": "OLD_DAD2",
+      "label": "Old Dad V2",
+      "palette": "SAILOR_COBALT_CREAM",
+      "recipe": {
+        "pattern": "stripe",
+        "motif": "small",
+        "motifPlacement": "side",
+        "trim": "none",
+        "hardware": "none"
+      },
+      "hybridApplied": true,
+      "fallbackReason": null,
+      "changedPixels": 41,
+      "changedRatio": 0.119186,
+      "alphaPreserved": true,
+      "outlinePreserved": true,
+      "sourcePack": "Project prior experiment"
+    },
+    {
+      "id": "MAS_SNAP",
+      "label": "Trucker (derived)",
+      "palette": "STREET_TEAL_GRAPHITE",
+      "recipe": {
+        "pattern": "dense",
+        "motif": "small",
+        "motifPlacement": "front_center",
+        "trim": "none",
+        "hardware": "none"
+      },
+      "hybridApplied": true,
+      "fallbackReason": null,
+      "changedPixels": 57,
+      "changedRatio": 0.18038,
+      "alphaPreserved": true,
+      "outlinePreserved": true,
+      "sourcePack": "More Accessories / plurffle"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MAS_SNAP",
+  "label": "Snapback",
+  "palette": "SAILOR_COBALT_CREAM",
+  "recipe": {
+    "pattern": "colorblock",
+    "motif": "small",
+    "motifPlacement": "front_center",
+    "trim": "none",
+    "hardware": "none"
+  },
+  "hybridApplied": true,
+  "fallbackReason": null,
+  "changedPixels": 100,
+  "changedRatio": 0.316456,
+  "alphaPreserved": true,
+  "outlinePreserved": true,
+  "sourcePack": "More Accessories / plurffle"
+}

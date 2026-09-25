@@ -1,0 +1,19 @@
+{
+  "id": "OLD_DAD1",
+  "label": "Old Dad V1",
+  "palette": "DESERT_CLAY_TURQUOISE",
+  "recipe": {
+    "pattern": "subtle",
+    "motif": "small",
+    "motifPlacement": "front_offset",
+    "trim": "none",
+    "hardware": "none"
+  },
+  "hybridApplied": true,
+  "fallbackReason": null,
+  "changedPixels": 66,
+  "changedRatio": 0.094556,
+  "alphaPreserved": true,
+  "outlinePreserved": true,
+  "sourcePack": "Project prior experiment"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "JED_VINTAGE",
+  "label": "Vintage / Dad-like",
+  "palette": "DESERT_CLAY_TURQUOISE",
+  "recipe": {
+    "pattern": "subtle",
+    "motif": "small",
+    "motifPlacement": "side",
+    "trim": "none",
+    "hardware": "none"
+  },
+  "hybridApplied": true,
+  "fallbackReason": null,
+  "changedPixels": 35,
+  "changedRatio": 0.111821,
+  "alphaPreserved": true,
+  "outlinePreserved": true,
+  "sourcePack": "Jedone Casual Hat Pack"
+}

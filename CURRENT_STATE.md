@@ -1365,3 +1365,15 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - Exact source/template alpha hash equality verified for all three candidates.
 - Candidate outputs live under `experiments/cap_source_corpus_audit_01/selected_templates/`; QC pack prepared at `test-packs/fashionsense/RNG-Cap-Source-Template-QC/`.
 - These are NOT yet production-promoted. Existing live-approved Cap2 remains the active Baseball fallback until human contact-sheet + worn QC approval.
+
+## 2026-09-25 — full cap source final-output generator batch
+
+- Built a finished-output batch from every complete unique cap construction in the cap-source audit, plus one Trucker derived from the structured Snapback geometry.
+- Batch has 12 final Rare-style rolls, each with front/right/left/back views:
+  Cap2 Baseball, Snapback, Ragnarok Boys Cap, Jedone Backwards Cap, Jedone Vintage Cap, Jedone Cap+Headphones, Jedone Officer Cap, plurffle Paperboy, PeacefulEnd Maid Cap, old Dad V1, old Dad V2, and derived Trucker.
+- Rendering route is source alpha/silhouette + source value/shading topology -> curated project palette ramp -> bounded HAT_RENDERER_V1 hybrid treatment.
+- No source RGB palette is carried forward by the palette-map step.
+- Every row preserved alpha; HAT_RENDERER_V1 enhancement applied successfully on all 12 with no fallback.
+- Contact sheet: `experiments/cap_source_final_generator_batch_01/ALL_CAPS_FINISHED_CONTACT_X9.png`.
+- QC pack: `test-packs/fashionsense/RNG-Cap-Source-Final-Batch-QC/`; installed to Stardew Mods as `[FS] RNG Cap Source Final Batch QC`.
+- These remain visual-QC candidates, not production promotion.

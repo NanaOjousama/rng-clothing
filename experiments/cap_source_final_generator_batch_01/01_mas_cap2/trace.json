@@ -1,0 +1,19 @@
+{
+  "id": "MAS_CAP2",
+  "label": "Baseball / Cap2",
+  "palette": "STREET_TEAL_GRAPHITE",
+  "recipe": {
+    "pattern": "subtle",
+    "motif": "small",
+    "motifPlacement": "front_offset",
+    "trim": "none",
+    "hardware": "none"
+  },
+  "hybridApplied": true,
+  "fallbackReason": null,
+  "changedPixels": 52,
+  "changedRatio": 0.146067,
+  "alphaPreserved": true,
+  "outlinePreserved": true,
+  "sourcePack": "More Accessories / plurffle"
+}

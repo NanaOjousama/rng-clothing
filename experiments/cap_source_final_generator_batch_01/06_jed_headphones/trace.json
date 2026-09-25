@@ -1,0 +1,19 @@
+{
+  "id": "JED_HEADPHONES",
+  "label": "Cap + Headphones",
+  "palette": "STREET_TEAL_GRAPHITE",
+  "recipe": {
+    "pattern": "solid",
+    "motif": "small",
+    "motifPlacement": "front_offset",
+    "trim": "none",
+    "hardware": "none"
+  },
+  "hybridApplied": true,
+  "fallbackReason": null,
+  "changedPixels": 2,
+  "changedRatio": 0.005249,
+  "alphaPreserved": true,
+  "outlinePreserved": true,
+  "sourcePack": "Jedone Casual Hat Pack"
+}
