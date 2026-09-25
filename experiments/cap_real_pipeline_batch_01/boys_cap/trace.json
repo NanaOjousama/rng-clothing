@@ -1,0 +1,52 @@
+{
+  "family": "boys_cap",
+  "sourceId": "RAGNAROK_BOYS",
+  "capacity": "small",
+  "identity": "soft low crown + short visor",
+  "design": "subtle",
+  "validation": {
+    "front": {
+      "bbox": [
+        4,
+        4,
+        16,
+        13
+      ],
+      "opaque": 92,
+      "largestComponentShare": 1.0
+    },
+    "right": {
+      "bbox": [
+        3,
+        4,
+        17,
+        12
+      ],
+      "opaque": 89,
+      "largestComponentShare": 1.0
+    },
+    "left": {
+      "bbox": [
+        3,
+        4,
+        17,
+        12
+      ],
+      "opaque": 89,
+      "largestComponentShare": 1.0
+    },
+    "back": {
+      "bbox": [
+        4,
+        4,
+        16,
+        12
+      ],
+      "opaque": 82,
+      "largestComponentShare": 1.0
+    }
+  },
+  "alphaPreserved": true,
+  "sourceFrameResizeUsed": false,
+  "frontOnlyReferencePixelsUsed": false
+}

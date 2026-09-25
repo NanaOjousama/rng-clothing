@@ -1,0 +1,52 @@
+{
+  "family": "paperboy",
+  "sourceId": "MAS_PAPERBOY",
+  "capacity": "small",
+  "identity": "rounded newsboy crown + short bill",
+  "design": "subtle",
+  "validation": {
+    "front": {
+      "bbox": [
+        3,
+        4,
+        17,
+        13
+      ],
+      "opaque": 82,
+      "largestComponentShare": 1.0
+    },
+    "right": {
+      "bbox": [
+        3,
+        4,
+        18,
+        14
+      ],
+      "opaque": 81,
+      "largestComponentShare": 1.0
+    },
+    "left": {
+      "bbox": [
+        2,
+        4,
+        17,
+        14
+      ],
+      "opaque": 81,
+      "largestComponentShare": 1.0
+    },
+    "back": {
+      "bbox": [
+        4,
+        5,
+        16,
+        15
+      ],
+      "opaque": 92,
+      "largestComponentShare": 1.0
+    }
+  },
+  "alphaPreserved": true,
+  "sourceFrameResizeUsed": false,
+  "frontOnlyReferencePixelsUsed": false
+}

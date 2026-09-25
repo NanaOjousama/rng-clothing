@@ -1,0 +1,52 @@
+{
+  "family": "dad",
+  "sourceId": "JED_VINTAGE",
+  "capacity": "small",
+  "identity": "low soft crown + curved short visor",
+  "design": "side_stitch",
+  "validation": {
+    "front": {
+      "bbox": [
+        4,
+        5,
+        16,
+        13
+      ],
+      "opaque": 66,
+      "largestComponentShare": 1.0
+    },
+    "right": {
+      "bbox": [
+        1,
+        4,
+        17,
+        14
+      ],
+      "opaque": 70,
+      "largestComponentShare": 0.957
+    },
+    "left": {
+      "bbox": [
+        3,
+        4,
+        19,
+        14
+      ],
+      "opaque": 70,
+      "largestComponentShare": 0.957
+    },
+    "back": {
+      "bbox": [
+        4,
+        4,
+        16,
+        18
+      ],
+      "opaque": 107,
+      "largestComponentShare": 0.981
+    }
+  },
+  "alphaPreserved": true,
+  "sourceFrameResizeUsed": false,
+  "frontOnlyReferencePixelsUsed": false
+}

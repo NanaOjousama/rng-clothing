@@ -1,0 +1,52 @@
+{
+  "family": "officer",
+  "sourceId": "JED_OFFICER",
+  "capacity": "small",
+  "identity": "peaked service crown + disciplined front badge/band",
+  "design": "officer_badge",
+  "validation": {
+    "front": {
+      "bbox": [
+        2,
+        5,
+        16,
+        14
+      ],
+      "opaque": 96,
+      "largestComponentShare": 1.0
+    },
+    "right": {
+      "bbox": [
+        1,
+        4,
+        16,
+        13
+      ],
+      "opaque": 98,
+      "largestComponentShare": 1.0
+    },
+    "left": {
+      "bbox": [
+        5,
+        4,
+        19,
+        13
+      ],
+      "opaque": 88,
+      "largestComponentShare": 1.0
+    },
+    "back": {
+      "bbox": [
+        4,
+        4,
+        18,
+        13
+      ],
+      "opaque": 96,
+      "largestComponentShare": 1.0
+    }
+  },
+  "alphaPreserved": true,
+  "sourceFrameResizeUsed": false,
+  "frontOnlyReferencePixelsUsed": false
+}

@@ -1,0 +1,52 @@
+{
+  "family": "snapback",
+  "sourceId": "MAS_SNAP",
+  "capacity": "small",
+  "identity": "structured crown + flat visor",
+  "design": "front_panel",
+  "validation": {
+    "front": {
+      "bbox": [
+        5,
+        4,
+        15,
+        12
+      ],
+      "opaque": 62,
+      "largestComponentShare": 1.0
+    },
+    "right": {
+      "bbox": [
+        1,
+        4,
+        15,
+        12
+      ],
+      "opaque": 72,
+      "largestComponentShare": 1.0
+    },
+    "left": {
+      "bbox": [
+        5,
+        4,
+        19,
+        12
+      ],
+      "opaque": 72,
+      "largestComponentShare": 1.0
+    },
+    "back": {
+      "bbox": [
+        5,
+        6,
+        15,
+        19
+      ],
+      "opaque": 110,
+      "largestComponentShare": 1.0
+    }
+  },
+  "alphaPreserved": true,
+  "sourceFrameResizeUsed": false,
+  "frontOnlyReferencePixelsUsed": false
+}

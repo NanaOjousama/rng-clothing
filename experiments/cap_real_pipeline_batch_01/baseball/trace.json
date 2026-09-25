@@ -1,0 +1,52 @@
+{
+  "family": "baseball",
+  "sourceId": "MAS_CAP2",
+  "capacity": "small",
+  "identity": "baseball crown + forward visor",
+  "design": "front_mark",
+  "validation": {
+    "front": {
+      "bbox": [
+        5,
+        4,
+        15,
+        13
+      ],
+      "opaque": 76,
+      "largestComponentShare": 1.0
+    },
+    "right": {
+      "bbox": [
+        4,
+        3,
+        19,
+        12
+      ],
+      "opaque": 99,
+      "largestComponentShare": 1.0
+    },
+    "left": {
+      "bbox": [
+        1,
+        3,
+        16,
+        12
+      ],
+      "opaque": 99,
+      "largestComponentShare": 1.0
+    },
+    "back": {
+      "bbox": [
+        5,
+        5,
+        15,
+        15
+      ],
+      "opaque": 82,
+      "largestComponentShare": 1.0
+    }
+  },
+  "alphaPreserved": true,
+  "sourceFrameResizeUsed": false,
+  "frontOnlyReferencePixelsUsed": false
+}

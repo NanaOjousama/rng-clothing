@@ -1,0 +1,23 @@
+{
+  "schema": "cap-family-production-contracts/v1",
+  "rules": {
+    "requireFourViews": true,
+    "allowMirroredLeft": true,
+    "neverResizeSourceFrames": true,
+    "rejectOpaqueFullFrame": true,
+    "preserveAlpha": true,
+    "rejectFrontOnlyAsProduction": true,
+    "localizedMotifsStayLocalized": true
+  },
+  "families": {
+    "baseball": {"source":"MAS_CAP2","capacity":"small","design":"front_mark","identity":"baseball crown + forward visor"},
+    "snapback": {"source":"MAS_SNAP","capacity":"small","design":"front_panel","identity":"structured crown + flat visor"},
+    "boys_cap": {"source":"RAGNAROK_BOYS","capacity":"small","design":"subtle","identity":"soft low crown + short visor"},
+    "backwards": {"source":"JED_BACK","capacity":"small","design":"back_mark","identity":"rear-facing visor silhouette"},
+    "dad": {"source":"JED_VINTAGE","capacity":"small","design":"side_stitch","identity":"low soft crown + curved short visor"},
+    "headphones_cap": {"source":"JED_HEADPHONES","capacity":"medium","design":"none","identity":"cap core + authored headphones"},
+    "officer": {"source":"JED_OFFICER","capacity":"small","design":"officer_badge","identity":"peaked service crown + disciplined front badge/band"},
+    "paperboy": {"source":"MAS_PAPERBOY","capacity":"small","design":"subtle","identity":"rounded newsboy crown + short bill"},
+    "trucker": {"source":"MAS_SNAP","capacity":"small","design":"trucker_mesh","identity":"solid front panel + mesh rear/side + visor"}
+  }
+}

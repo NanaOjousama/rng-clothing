@@ -1,0 +1,52 @@
+{
+  "family": "backwards",
+  "sourceId": "JED_BACK",
+  "capacity": "small",
+  "identity": "rear-facing visor silhouette",
+  "design": "back_mark",
+  "validation": {
+    "front": {
+      "bbox": [
+        4,
+        4,
+        16,
+        12
+      ],
+      "opaque": 62,
+      "largestComponentShare": 1.0
+    },
+    "right": {
+      "bbox": [
+        1,
+        4,
+        16,
+        14
+      ],
+      "opaque": 70,
+      "largestComponentShare": 1.0
+    },
+    "left": {
+      "bbox": [
+        4,
+        4,
+        19,
+        14
+      ],
+      "opaque": 70,
+      "largestComponentShare": 1.0
+    },
+    "back": {
+      "bbox": [
+        4,
+        3,
+        16,
+        14
+      ],
+      "opaque": 112,
+      "largestComponentShare": 1.0
+    }
+  },
+  "alphaPreserved": true,
+  "sourceFrameResizeUsed": false,
+  "frontOnlyReferencePixelsUsed": false
+}

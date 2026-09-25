@@ -1,0 +1,52 @@
+{
+  "family": "headphones_cap",
+  "sourceId": "JED_HEADPHONES",
+  "capacity": "medium",
+  "identity": "cap core + authored headphones",
+  "design": "none",
+  "validation": {
+    "front": {
+      "bbox": [
+        2,
+        5,
+        18,
+        16
+      ],
+      "opaque": 84,
+      "largestComponentShare": 1.0
+    },
+    "right": {
+      "bbox": [
+        1,
+        4,
+        17,
+        16
+      ],
+      "opaque": 86,
+      "largestComponentShare": 0.965
+    },
+    "left": {
+      "bbox": [
+        3,
+        4,
+        19,
+        16
+      ],
+      "opaque": 86,
+      "largestComponentShare": 0.965
+    },
+    "back": {
+      "bbox": [
+        2,
+        4,
+        18,
+        18
+      ],
+      "opaque": 125,
+      "largestComponentShare": 0.984
+    }
+  },
+  "alphaPreserved": true,
+  "sourceFrameResizeUsed": false,
+  "frontOnlyReferencePixelsUsed": false
+}

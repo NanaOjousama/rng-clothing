@@ -1377,3 +1377,14 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - Contact sheet: `experiments/cap_source_final_generator_batch_01/ALL_CAPS_FINISHED_CONTACT_X9.png`.
 - QC pack: `test-packs/fashionsense/RNG-Cap-Source-Final-Batch-QC/`; installed to Stardew Mods as `[FS] RNG Cap Source Final Batch QC`.
 - These remain visual-QC candidates, not production promotion.
+
+## 2026-09-25 — cap final-output failure fix / strict real-pipeline QC
+
+- Rejected the previous `cap_source_final_generator_batch_01` approach as a failed QC shortcut; it is not production authority.
+- Added `generator/data/cap_family_production_contracts.json` and `tools/build_cap_real_pipeline_batch.py`.
+- New cap gate requires four explicit materialized views, native frame size, no frame resizing, locked alpha, no full-frame contamination, and family-specific identity/design treatment.
+- Trucker output may use the validated Snapback four-view construction as geometry but MUST NOT ingest any pixels from the front-only Trucker references; those remain identity/reference evidence only.
+- Officer uses the exact Officer source construction and a service-cap-specific badge treatment instead of generic cap decoration.
+- Current corrected QC batch contains 9 unique cap families: Baseball, Snapback, Boys Cap, Backwards Cap, Dad/Vintage, Cap+Headphones, Officer, Paperboy, and Trucker.
+- Old Dad V1 is intentionally not in the production batch because its front source fills the entire 20x20 frame and is contamination/rescale-suspect. Old Dad V2 is superseded by the stronger Vintage/Dad construction. Maid Cap is off-family and not forced into this cap batch.
+- Contact sheet: `experiments/cap_real_pipeline_batch_01/CAP_REAL_PIPELINE_CONTACT_X10.png`. QC pack installed as `[FS] RNG Cap Real Pipeline QC`.
