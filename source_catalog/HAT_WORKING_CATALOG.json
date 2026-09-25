@@ -1,0 +1,3239 @@
+{
+  "count": 116,
+  "kind_counts": {
+    "HEAD_ACCESSORY": 68,
+    "CONSTRUCTION_CANDIDATE": 8,
+    "CONSTRUCTION_BASE": 13,
+    "ALTERNATE_CONSTRUCTION": 14,
+    "SAME_CONSTRUCTION_VARIANT": 10,
+    "RENDER_MATERIAL_VARIANT": 1,
+    "REJECTED_CONSTRUCTION": 1,
+    "MASK_FACE_HEADWEAR": 1
+  },
+  "review_state_counts": {
+    "AVAILABLE_UNGROUPED": 19,
+    "REVIEW_NEEDED": 8,
+    "AVAILABLE_FAMILY_BASE": 23,
+    "REVIEW_AS_OWN_BASE": 14,
+    "ALTERNATE_ACCESSORY_CONSTRUCTION": 24,
+    "BASE_SPECIFIC_VARIANT": 16,
+    "REUSABLE_COMPONENT": 7,
+    "LIVE_APPROVED": 2,
+    "REVIEWED": 1,
+    "REJECTED_LIVE": 1,
+    "AVAILABLE": 1
+  },
+  "rows": [
+    {
+      "pack": "= RURAL OUTFITTERS =",
+      "author": "billi",
+      "name": "Barrette",
+      "folder": "Barrette",
+      "png_size": [
+        20,
+        80
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/Rural Outfitters/Rural Outfitters/Hats/Barrette/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/Rural Outfitters/Rural Outfitters/Hats/Barrette/hat.json"
+    },
+    {
+      "pack": "= RURAL OUTFITTERS =",
+      "author": "billi",
+      "name": "Beanie",
+      "folder": "Beanie",
+      "png_size": [
+        20,
+        80
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "family_hint": "Beanie",
+      "note": "Standalone full headwear construction; review visually before integration.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/Rural Outfitters/Rural Outfitters/Hats/Beanie/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/Rural Outfitters/Rural Outfitters/Hats/Beanie/hat.json"
+    },
+    {
+      "pack": "= RURAL OUTFITTERS =",
+      "author": "billi",
+      "name": "Clip",
+      "folder": "Clip",
+      "png_size": [
+        20,
+        80
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/Rural Outfitters/Rural Outfitters/Hats/Clip/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/Rural Outfitters/Rural Outfitters/Hats/Clip/hat.json"
+    },
+    {
+      "pack": "= RURAL OUTFITTERS =",
+      "author": "billi",
+      "name": "Clips",
+      "folder": "Clips",
+      "png_size": [
+        20,
+        80
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/Rural Outfitters/Rural Outfitters/Hats/Clips/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/Rural Outfitters/Rural Outfitters/Hats/Clips/hat.json"
+    },
+    {
+      "pack": "= RURAL OUTFITTERS =",
+      "author": "billi",
+      "name": "Headband",
+      "folder": "Band",
+      "png_size": [
+        20,
+        80
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/Rural Outfitters/Rural Outfitters/Hats/Band/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/Rural Outfitters/Rural Outfitters/Hats/Band/hat.json"
+    },
+    {
+      "pack": "Alt-Fashion Set",
+      "author": "plurffle",
+      "name": "Beanie",
+      "folder": "Beanie",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": "Beanie",
+      "note": "Detected family base; source construction candidate.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/Beanie/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/Beanie/hat.json"
+    },
+    {
+      "pack": "Alt-Fashion Set",
+      "author": "plurffle",
+      "name": "Beanie (Bunny)",
+      "folder": "BeanieBunny",
+      "png_size": [
+        80,
+        60
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "ALTERNATE_CONSTRUCTION",
+      "review_state": "REVIEW_AS_OWN_BASE",
+      "family_hint": null,
+      "note": "Diff reshapes/removes base cells; review as a separate construction.",
+      "family_memberships": [
+        {
+          "family": "Beanie",
+          "category": "Hats",
+          "pack": "Alt-Fashion Set",
+          "class": "REFERENCE-ONLY",
+          "base": "Beanie",
+          "modelled": false,
+          "exact": null,
+          "reason": "Back: frame size differs from the base"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/BeanieBunny/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/BeanieBunny/hat.json"
+    },
+    {
+      "pack": "Alt-Fashion Set",
+      "author": "plurffle",
+      "name": "Beanie (Cat)",
+      "folder": "BeanieCat",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "ALTERNATE_CONSTRUCTION",
+      "review_state": "REVIEW_AS_OWN_BASE",
+      "family_hint": null,
+      "note": "Diff reshapes/removes base cells; review as a separate construction.",
+      "family_memberships": [
+        {
+          "family": "Beanie",
+          "category": "Hats",
+          "pack": "Alt-Fashion Set",
+          "class": "REFERENCE-ONLY",
+          "base": "Beanie",
+          "modelled": false,
+          "exact": null,
+          "reason": "Back: frame size differs from the base"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/BeanieCat/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/BeanieCat/hat.json"
+    },
+    {
+      "pack": "Alt-Fashion Set",
+      "author": "plurffle",
+      "name": "Beanie (Floppy)",
+      "folder": "BeanieFloppy",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "ALTERNATE_CONSTRUCTION",
+      "review_state": "REVIEW_AS_OWN_BASE",
+      "family_hint": null,
+      "note": "Diff reshapes/removes base cells; review as a separate construction.",
+      "family_memberships": [
+        {
+          "family": "Beanie",
+          "category": "Hats",
+          "pack": "Alt-Fashion Set",
+          "class": "REFERENCE-ONLY",
+          "base": "Beanie",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/BeanieFloppy/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/BeanieFloppy/hat.json"
+    },
+    {
+      "pack": "Alt-Fashion Set",
+      "author": "plurffle",
+      "name": "Bows (Double)",
+      "folder": "BowsDouble",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/BowsDouble/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/BowsDouble/hat.json"
+    },
+    {
+      "pack": "Alt-Fashion Set",
+      "author": "plurffle",
+      "name": "Earmuffs (Angel Wings)",
+      "folder": "EarmuffsAngelWings",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Earmuffs",
+          "category": "Hats",
+          "pack": "Alt-Fashion Set",
+          "class": "REFERENCE-ONLY",
+          "base": "Earmuffs (Horns)",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 8 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/EarmuffsAngelWings/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/EarmuffsAngelWings/hat.json"
+    },
+    {
+      "pack": "Alt-Fashion Set",
+      "author": "plurffle",
+      "name": "Earmuffs (Bat Wings)",
+      "folder": "EarmuffsBatWings",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Earmuffs",
+          "category": "Hats",
+          "pack": "Alt-Fashion Set",
+          "class": "REFERENCE-ONLY",
+          "base": "Earmuffs (Horns)",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/EarmuffsBatWings/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/EarmuffsBatWings/hat.json"
+    },
+    {
+      "pack": "Alt-Fashion Set",
+      "author": "plurffle",
+      "name": "Earmuffs (Horns)",
+      "folder": "EarmuffsHorns",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/EarmuffsHorns/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/EarmuffsHorns/hat.json"
+    },
+    {
+      "pack": "Alt-Fashion Set",
+      "author": "plurffle",
+      "name": "Headband (Horns)",
+      "folder": "HeadbandHorns",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Headband",
+          "category": "Hats",
+          "pack": "Alt-Fashion Set",
+          "class": "BASE-SPECIFIC",
+          "base": "Headband (Studded)",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 28 cells but also re-shades 38 of the base's 44, above the 10% bound"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/HeadbandHorns/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/HeadbandHorns/hat.json"
+    },
+    {
+      "pack": "Alt-Fashion Set",
+      "author": "plurffle",
+      "name": "Headband (Studded)",
+      "folder": "HeadbandStudded",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-04",
+        "members": [
+          {
+            "pack": "Alt-Fashion Set",
+            "name": "Headband (Studded)"
+          },
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Headband"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/HeadbandStudded/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/HeadbandStudded/hat.json"
+    },
+    {
+      "pack": "Alt-Fashion Set",
+      "author": "plurffle",
+      "name": "Headband (Wide)",
+      "folder": "HeadbandWide",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Headband",
+          "category": "Hats",
+          "pack": "Alt-Fashion Set",
+          "class": "BASE-SPECIFIC",
+          "base": "Headband (Studded)",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 24 cells but also re-shades 38 of the base's 44, above the 10% bound"
+        }
+      ],
+      "exact_silhouette_group": {
+        "group": "SHAPE-05",
+        "members": [
+          {
+            "pack": "Alt-Fashion Set",
+            "name": "Headband (Wide)"
+          },
+          {
+            "pack": "Alt-Fashion Set",
+            "name": "Headband (Wide, Studded)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/HeadbandWide/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/HeadbandWide/hat.json"
+    },
+    {
+      "pack": "Alt-Fashion Set",
+      "author": "plurffle",
+      "name": "Headband (Wide, Studded)",
+      "folder": "HeadbandWideStudded",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Headband",
+          "category": "Hats",
+          "pack": "Alt-Fashion Set",
+          "class": "BASE-SPECIFIC",
+          "base": "Headband (Studded)",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 24 cells but also re-shades 6 of the base's 44, above the 10% bound"
+        }
+      ],
+      "exact_silhouette_group": {
+        "group": "SHAPE-05",
+        "members": [
+          {
+            "pack": "Alt-Fashion Set",
+            "name": "Headband (Wide)"
+          },
+          {
+            "pack": "Alt-Fashion Set",
+            "name": "Headband (Wide, Studded)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/HeadbandWideStudded/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Alt-Fashion Set/Hats/HeadbandWideStudded/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Beret",
+      "folder": "Beret",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": "Beret",
+      "note": "Detected family base; source construction candidate.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-13",
+        "members": [
+          {
+            "pack": "Cottagecore Set",
+            "name": "Beret"
+          },
+          {
+            "pack": "Cottagecore Set",
+            "name": "Beret (Dotted)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/Beret/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/Beret/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Beret (Dotted)",
+      "folder": "BeretDotted",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "SAME_CONSTRUCTION_VARIANT",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Variant usable only on its own base.",
+      "family_memberships": [
+        {
+          "family": "Beret",
+          "category": "Hats",
+          "pack": "Cottagecore Set",
+          "class": "BASE-SPECIFIC",
+          "base": "Beret",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds no geometry; it re-shades 28 of the base's own cells, which cannot be lifted off this silhouette"
+        }
+      ],
+      "exact_silhouette_group": {
+        "group": "SHAPE-13",
+        "members": [
+          {
+            "pack": "Cottagecore Set",
+            "name": "Beret"
+          },
+          {
+            "pack": "Cottagecore Set",
+            "name": "Beret (Dotted)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BeretDotted/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BeretDotted/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Beret (Leaf)",
+      "folder": "BeretLeaf",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "REUSABLE_COMPONENT",
+      "hat_kind": "SAME_CONSTRUCTION_VARIANT",
+      "review_state": "REUSABLE_COMPONENT",
+      "family_hint": null,
+      "note": "Composable reusable variant of its family base.",
+      "family_memberships": [
+        {
+          "family": "Beret",
+          "category": "Hats",
+          "pack": "Cottagecore Set",
+          "class": "REUSABLE",
+          "base": "Beret",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 15 cells and disturbs only 19 of the base"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BeretLeaf/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BeretLeaf/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Beret (Ribbon)",
+      "folder": "BeretRibbon",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "ALTERNATE_CONSTRUCTION",
+      "review_state": "REVIEW_AS_OWN_BASE",
+      "family_hint": null,
+      "note": "Diff reshapes/removes base cells; review as a separate construction.",
+      "family_memberships": [
+        {
+          "family": "Beret",
+          "category": "Hats",
+          "pack": "Cottagecore Set",
+          "class": "REFERENCE-ONLY",
+          "base": "Beret",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 1 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": {
+        "group": "SHAPE-10",
+        "members": [
+          {
+            "pack": "Cottagecore Set",
+            "name": "Beret (Ribbon)"
+          },
+          {
+            "pack": "Cottagecore Set",
+            "name": "Beret (White Ribbon)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BeretRibbon/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BeretRibbon/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Beret (White Ribbon)",
+      "folder": "BeretWhiteRibbon",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "ALTERNATE_CONSTRUCTION",
+      "review_state": "REVIEW_AS_OWN_BASE",
+      "family_hint": null,
+      "note": "Diff reshapes/removes base cells; review as a separate construction.",
+      "family_memberships": [
+        {
+          "family": "Beret",
+          "category": "Hats",
+          "pack": "Cottagecore Set",
+          "class": "REFERENCE-ONLY",
+          "base": "Beret",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 1 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": {
+        "group": "SHAPE-10",
+        "members": [
+          {
+            "pack": "Cottagecore Set",
+            "name": "Beret (Ribbon)"
+          },
+          {
+            "pack": "Cottagecore Set",
+            "name": "Beret (White Ribbon)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BeretWhiteRibbon/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BeretWhiteRibbon/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Boater Hat",
+      "folder": "BoaterHat",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": "Boater Hat",
+      "note": "Detected family base; source construction candidate.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BoaterHat/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BoaterHat/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Boater Hat (Bow)",
+      "folder": "BoaterHatBow",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "SAME_CONSTRUCTION_VARIANT",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Variant usable only on its own base.",
+      "family_memberships": [
+        {
+          "family": "BoaterHat",
+          "category": "Hats",
+          "pack": "Cottagecore Set",
+          "class": "BASE-SPECIFIC",
+          "base": "Boater Hat",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 26 cells but also re-shades 92 of the base's 292, above the 10% bound"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BoaterHatBow/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BoaterHatBow/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Boater Hat (Ribbons)",
+      "folder": "BoaterHatRibbons",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "SAME_CONSTRUCTION_VARIANT",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Variant usable only on its own base.",
+      "family_memberships": [
+        {
+          "family": "BoaterHat",
+          "category": "Hats",
+          "pack": "Cottagecore Set",
+          "class": "BASE-SPECIFIC",
+          "base": "Boater Hat",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 134 cells but also re-shades 80 of the base's 292, above the 10% bound"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BoaterHatRibbons/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/BoaterHatRibbons/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Hair Back Bow",
+      "folder": "HairBackBow",
+      "png_size": [
+        20,
+        80
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HairBackBow/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HairBackBow/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Hair Back Ribbon",
+      "folder": "HairBackRibbon",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HairBackRibbon/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HairBackRibbon/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Hair Flowers",
+      "folder": "HairFlowers",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HairFlowers/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HairFlowers/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Headband (Daisies)",
+      "folder": "HeadbandDaisies",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HeadbandDaisies/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HeadbandDaisies/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Headband (Ribbon)",
+      "folder": "HeadbandRibbon",
+      "png_size": [
+        20,
+        80
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Headband",
+          "category": "Hats",
+          "pack": "Cottagecore Set",
+          "class": "REFERENCE-ONLY",
+          "base": "Headband (Daisies)",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 10 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HeadbandRibbon/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HeadbandRibbon/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Headscarf",
+      "folder": "Headscarf",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": "Headscarf",
+      "note": "Detected family base; source construction candidate.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-09",
+        "members": [
+          {
+            "pack": "Cottagecore Set",
+            "name": "Headscarf"
+          },
+          {
+            "pack": "Cottagecore Set",
+            "name": "Headscarf (Dotted)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/Headscarf/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/Headscarf/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Headscarf (Dotted)",
+      "folder": "HeadscarfDotted",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "SAME_CONSTRUCTION_VARIANT",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Variant usable only on its own base.",
+      "family_memberships": [
+        {
+          "family": "Headscarf",
+          "category": "Hats",
+          "pack": "Cottagecore Set",
+          "class": "BASE-SPECIFIC",
+          "base": "Headscarf",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds no geometry; it re-shades 56 of the base's own cells, which cannot be lifted off this silhouette"
+        }
+      ],
+      "exact_silhouette_group": {
+        "group": "SHAPE-09",
+        "members": [
+          {
+            "pack": "Cottagecore Set",
+            "name": "Headscarf"
+          },
+          {
+            "pack": "Cottagecore Set",
+            "name": "Headscarf (Dotted)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HeadscarfDotted/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HeadscarfDotted/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Headscarf (Small)",
+      "folder": "HeadscarfSmall",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "ALTERNATE_CONSTRUCTION",
+      "review_state": "REVIEW_AS_OWN_BASE",
+      "family_hint": null,
+      "note": "Diff reshapes/removes base cells; review as a separate construction.",
+      "family_memberships": [
+        {
+          "family": "Headscarf",
+          "category": "Hats",
+          "pack": "Cottagecore Set",
+          "class": "REFERENCE-ONLY",
+          "base": "Headscarf",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 26 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": {
+        "group": "SHAPE-12",
+        "members": [
+          {
+            "pack": "Cottagecore Set",
+            "name": "Headscarf (Small)"
+          },
+          {
+            "pack": "Cottagecore Set",
+            "name": "Headscarf (Small, Dotted)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HeadscarfSmall/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HeadscarfSmall/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Headscarf (Small, Dotted)",
+      "folder": "HeadscarfSmallDotted",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "ALTERNATE_CONSTRUCTION",
+      "review_state": "REVIEW_AS_OWN_BASE",
+      "family_hint": null,
+      "note": "Diff reshapes/removes base cells; review as a separate construction.",
+      "family_memberships": [
+        {
+          "family": "Headscarf",
+          "category": "Hats",
+          "pack": "Cottagecore Set",
+          "class": "REFERENCE-ONLY",
+          "base": "Headscarf",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 26 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": {
+        "group": "SHAPE-12",
+        "members": [
+          {
+            "pack": "Cottagecore Set",
+            "name": "Headscarf (Small)"
+          },
+          {
+            "pack": "Cottagecore Set",
+            "name": "Headscarf (Small, Dotted)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HeadscarfSmallDotted/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HeadscarfSmallDotted/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Hood (Mushroom)",
+      "folder": "HoodMushroom",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": "Hood",
+      "note": "Detected family base; source construction candidate.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-07",
+        "members": [
+          {
+            "pack": "Cottagecore Set",
+            "name": "Hood (Mushroom)"
+          },
+          {
+            "pack": "Cottagecore Set",
+            "name": "Hood (Pointy)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HoodMushroom/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HoodMushroom/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Hood (Pointy)",
+      "folder": "HoodPointy",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "SAME_CONSTRUCTION_VARIANT",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Variant usable only on its own base.",
+      "family_memberships": [
+        {
+          "family": "Hood",
+          "category": "Hats",
+          "pack": "Cottagecore Set",
+          "class": "BASE-SPECIFIC",
+          "base": "Hood (Mushroom)",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds no geometry; it re-shades 85 of the base's own cells, which cannot be lifted off this silhouette"
+        }
+      ],
+      "exact_silhouette_group": {
+        "group": "SHAPE-07",
+        "members": [
+          {
+            "pack": "Cottagecore Set",
+            "name": "Hood (Mushroom)"
+          },
+          {
+            "pack": "Cottagecore Set",
+            "name": "Hood (Pointy)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HoodPointy/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/HoodPointy/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Mushroom Hat",
+      "folder": "MushroomHat",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": "Mushroom Hat",
+      "note": "Detected family base; source construction candidate.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-11",
+        "members": [
+          {
+            "pack": "Cottagecore Set",
+            "name": "Mushroom Hat"
+          },
+          {
+            "pack": "Cottagecore Set",
+            "name": "Mushroom Hat (Dotted)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/MushroomHat/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/MushroomHat/hat.json"
+    },
+    {
+      "pack": "Cottagecore Set",
+      "author": "plurffle",
+      "name": "Mushroom Hat (Dotted)",
+      "folder": "MushroomHatDotted",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "SAME_CONSTRUCTION_VARIANT",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Variant usable only on its own base.",
+      "family_memberships": [
+        {
+          "family": "MushroomHat",
+          "category": "Hats",
+          "pack": "Cottagecore Set",
+          "class": "BASE-SPECIFIC",
+          "base": "Mushroom Hat",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds no geometry; it re-shades 50 of the base's own cells, which cannot be lifted off this silhouette"
+        }
+      ],
+      "exact_silhouette_group": {
+        "group": "SHAPE-11",
+        "members": [
+          {
+            "pack": "Cottagecore Set",
+            "name": "Mushroom Hat"
+          },
+          {
+            "pack": "Cottagecore Set",
+            "name": "Mushroom Hat (Dotted)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/MushroomHatDotted/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] Cottagecore Set/Hats/MushroomHatDotted/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Beanie",
+      "folder": "Beanie",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": "Beanie",
+      "note": "Detected family base; source construction candidate.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Beanie/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Beanie/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Beanie (Cat)",
+      "folder": "BeanieCat",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "ALTERNATE_CONSTRUCTION",
+      "review_state": "REVIEW_AS_OWN_BASE",
+      "family_hint": null,
+      "note": "Diff reshapes/removes base cells; review as a separate construction.",
+      "family_memberships": [
+        {
+          "family": "Beanie",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Beanie",
+          "modelled": false,
+          "exact": null,
+          "reason": "Back: frame size differs from the base"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BeanieCat/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BeanieCat/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Beanie (Floppy)",
+      "folder": "BeanieFloppy",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "ALTERNATE_CONSTRUCTION",
+      "review_state": "REVIEW_AS_OWN_BASE",
+      "family_hint": null,
+      "note": "Diff reshapes/removes base cells; review as a separate construction.",
+      "family_memberships": [
+        {
+          "family": "Beanie",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Beanie",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 16 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BeanieFloppy/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BeanieFloppy/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Beret 1",
+      "folder": "Beret1",
+      "png_size": [
+        16,
+        64
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "family_hint": "Beret 1",
+      "note": "Standalone full headwear construction; review visually before integration.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Beret1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Beret1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Beret 2",
+      "folder": "Beret2",
+      "png_size": [
+        16,
+        64
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "family_hint": "Beret 2",
+      "note": "Standalone full headwear construction; review visually before integration.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Beret2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Beret2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Bow (Large 1)",
+      "folder": "BowLarge1",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Bow",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Bow (Side 1)",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 22 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowLarge1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowLarge1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Bow (Large 2)",
+      "folder": "BowLarge2",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Bow",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Bow (Side 1)",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 18 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowLarge2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowLarge2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Bow (Side 1)",
+      "folder": "BowSide1",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowSide1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowSide1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Bow (Side 2)",
+      "folder": "BowSide2",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Bow",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Bow (Side 1)",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 63 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowSide2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowSide2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Bows (Double)",
+      "folder": "BowsDouble",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Bows",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Bows (Double, Small 1)",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 6 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDouble/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDouble/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Bows (Double, Side)",
+      "folder": "BowsDoubleSide",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Bows",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Bows (Double, Small 1)",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 24 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSide/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSide/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Bows (Double, Small 1)",
+      "folder": "BowsDoubleSmall1",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSmall1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSmall1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Bows (Double, Small 2)",
+      "folder": "BowsDoubleSmall2",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "REUSABLE_COMPONENT",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "REUSABLE_COMPONENT",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Bows",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REUSABLE",
+          "base": "Bows (Double, Small 1)",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 96 cells and disturbs only 0 of the base"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSmall2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/BowsDoubleSmall2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Cap (Snapback)",
+      "folder": "CapSnapback",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "LIVE_APPROVED",
+      "family_hint": "Snapback",
+      "note": "Current source-backed Snapback construction; live QC approved.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CapSnapback/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CapSnapback/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Cap 1",
+      "folder": "Cap1",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "RENDER_MATERIAL_VARIANT",
+      "review_state": "REVIEWED",
+      "family_hint": "Baseball",
+      "note": "Exact alpha silhouette match to Cap 2; render/material variant, not a new shape.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-08",
+        "members": [
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Cap 1"
+          },
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Cap 2"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Cap1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Cap1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Cap 2",
+      "folder": "Cap2",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "LIVE_APPROVED",
+      "family_hint": "Baseball",
+      "note": "Current source-backed Baseball construction; live QC approved.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-08",
+        "members": [
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Cap 1"
+          },
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Cap 2"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Cap2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Cap2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Cowboy Hat",
+      "folder": "CowboyHat",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "family_hint": "Cowboy Hat",
+      "note": "Standalone full headwear construction; review visually before integration.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CowboyHat/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CowboyHat/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Crown (Coronet)",
+      "folder": "CrownCoronet",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Crown",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Crown (Diadem 1)",
+          "modelled": false,
+          "exact": null,
+          "reason": "Back: frame size differs from the base"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CrownCoronet/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CrownCoronet/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Crown (Diadem 1)",
+      "folder": "CrownDiadem1",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Crown (Diadem 2)",
+      "folder": "CrownDiadem2",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Crown",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Crown (Diadem 1)",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 16 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CrownDiadem2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Decorative Bells (Doubles)",
+      "folder": "DecorativeBellsDoubles",
+      "png_size": [
+        80,
+        60
+      ],
+      "generic_role": "REUSABLE_COMPONENT",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "REUSABLE_COMPONENT",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "DecorativeBells",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REUSABLE",
+          "base": "Decorative Bells (Singles)",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 104 cells and disturbs only 0 of the base"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/DecorativeBellsDoubles/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/DecorativeBellsDoubles/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Decorative Bells (Singles)",
+      "folder": "DecorativeBellsSingles",
+      "png_size": [
+        80,
+        60
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/DecorativeBellsSingles/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/DecorativeBellsSingles/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Earmuffs",
+      "folder": "Earmuffs",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Earmuffs/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Earmuffs/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Earmuffs (Cat)",
+      "folder": "EarmuffsCat",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "REUSABLE_COMPONENT",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "REUSABLE_COMPONENT",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Earmuffs",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REUSABLE",
+          "base": "Earmuffs",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 100 cells and disturbs only 18 of the base"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/EarmuffsCat/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/EarmuffsCat/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Flower Dance Crown",
+      "folder": "FlowerDanceCrown",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/FlowerDanceCrown/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/FlowerDanceCrown/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Garland (Dried 1)",
+      "folder": "GarlandDried1",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-03",
+        "members": [
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Garland 1"
+          },
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Garland (Dried 1)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandDried1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandDried1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Garland (Dried 2)",
+      "folder": "GarlandDried2",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "REUSABLE_COMPONENT",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "REUSABLE_COMPONENT",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Garland",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REUSABLE",
+          "base": "Garland (Dried 1)",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 35 cells and disturbs only 7 of the base"
+        }
+      ],
+      "exact_silhouette_group": {
+        "group": "SHAPE-01",
+        "members": [
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Garland 2"
+          },
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Garland (Dried 2)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandDried2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandDried2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Garland (Flowers 1)",
+      "folder": "GarlandFlowers1",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Garland",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Garland (Dried 1)",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandFlowers1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandFlowers1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Garland (Flowers 2)",
+      "folder": "GarlandFlowers2",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Garland",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Garland (Dried 1)",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 2 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandFlowers2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GarlandFlowers2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Garland 1",
+      "folder": "Garland1",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-03",
+        "members": [
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Garland 1"
+          },
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Garland (Dried 1)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Garland1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Garland1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Garland 2",
+      "folder": "Garland2",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-01",
+        "members": [
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Garland 2"
+          },
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Garland (Dried 2)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Garland2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Garland2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Goggles (On Head)",
+      "folder": "GogglesOnHead",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GogglesOnHead/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/GogglesOnHead/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Hair Buns",
+      "folder": "HairBuns",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HairBuns/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HairBuns/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Hair Buns (Small)",
+      "folder": "HairBunsSmall",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "HairBuns",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Hair Buns",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 64 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HairBunsSmall/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HairBunsSmall/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Headband",
+      "folder": "Headband",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-04",
+        "members": [
+          {
+            "pack": "Alt-Fashion Set",
+            "name": "Headband (Studded)"
+          },
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Headband"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Headband/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Headband/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Headband (Cat 1)",
+      "folder": "HeadbandCat1",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Headband",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "BASE-SPECIFIC",
+          "base": "Headband",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 20 cells but also re-shades 5 of the base's 44, above the 10% bound"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandCat1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandCat1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Headband (Cat 2)",
+      "folder": "HeadbandCat2",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Headband",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "BASE-SPECIFIC",
+          "base": "Headband",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 68 cells but also re-shades 19 of the base's 44, above the 10% bound"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandCat2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandCat2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Headband (Frilly 1)",
+      "folder": "HeadbandFrilly1",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Headband",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "BASE-SPECIFIC",
+          "base": "Headband",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 32 cells but also re-shades 33 of the base's 44, above the 10% bound"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandFrilly1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandFrilly1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Headband (Frilly 2)",
+      "folder": "HeadbandFrilly2",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Headband",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "BASE-SPECIFIC",
+          "base": "Headband",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 46 cells but also re-shades 35 of the base's 44, above the 10% bound"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandFrilly2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandFrilly2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Headband (Puffs)",
+      "folder": "HeadbandPuffs",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Headband",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "BASE-SPECIFIC",
+          "base": "Headband",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 64 cells but also re-shades 22 of the base's 44, above the 10% bound"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandPuffs/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandPuffs/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Headband (Small)",
+      "folder": "HeadbandSmall",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Headband",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Headband",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 16 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandSmall/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandSmall/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Headband (Tie 1)",
+      "folder": "HeadbandTie1",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Headband",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Headband",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandTie1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandTie1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Headband (Tie 2)",
+      "folder": "HeadbandTie2",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Headband",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Headband",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 12 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandTie2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadbandTie2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Headscarf (Small)",
+      "folder": "HeadscarfSmall",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "family_hint": "Headscarf",
+      "note": "Standalone full headwear construction; review visually before integration.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadscarfSmall/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HeadscarfSmall/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Headscarf 1",
+      "folder": "Headscarf1",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "family_hint": "Headscarf 1",
+      "note": "Standalone full headwear construction; review visually before integration.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-02",
+        "members": [
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Headscarf 1"
+          },
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Headscarf 2"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Headscarf1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Headscarf1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Headscarf 2",
+      "folder": "Headscarf2",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "family_hint": "Headscarf 2",
+      "note": "Standalone full headwear construction; review visually before integration.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-02",
+        "members": [
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Headscarf 1"
+          },
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Headscarf 2"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Headscarf2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Headscarf2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Hood",
+      "folder": "Hood",
+      "png_size": [
+        32,
+        96
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": "Hood",
+      "note": "Detected family base; source construction candidate.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Hood/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Hood/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Hood (Cat)",
+      "folder": "HoodCat",
+      "png_size": [
+        32,
+        96
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "ALTERNATE_CONSTRUCTION",
+      "review_state": "REVIEW_AS_OWN_BASE",
+      "family_hint": null,
+      "note": "Diff reshapes/removes base cells; review as a separate construction.",
+      "family_memberships": [
+        {
+          "family": "Hood",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Hood",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 76 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HoodCat/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HoodCat/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Hood (Frog)",
+      "folder": "HoodFrog",
+      "png_size": [
+        32,
+        96
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "ALTERNATE_CONSTRUCTION",
+      "review_state": "REVIEW_AS_OWN_BASE",
+      "family_hint": null,
+      "note": "Diff reshapes/removes base cells; review as a separate construction.",
+      "family_memberships": [
+        {
+          "family": "Hood",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Hood",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 70 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HoodFrog/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HoodFrog/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Hood (Horns)",
+      "folder": "HoodHorns",
+      "png_size": [
+        32,
+        96
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "ALTERNATE_CONSTRUCTION",
+      "review_state": "REVIEW_AS_OWN_BASE",
+      "family_hint": null,
+      "note": "Diff reshapes/removes base cells; review as a separate construction.",
+      "family_memberships": [
+        {
+          "family": "Hood",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Hood",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 76 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HoodHorns/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HoodHorns/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Hood (Rabbit)",
+      "folder": "HoodRabbit",
+      "png_size": [
+        128,
+        96
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "ALTERNATE_CONSTRUCTION",
+      "review_state": "REVIEW_AS_OWN_BASE",
+      "family_hint": null,
+      "note": "Diff reshapes/removes base cells; review as a separate construction.",
+      "family_memberships": [
+        {
+          "family": "Hood",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Hood",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 80 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HoodRabbit/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/HoodRabbit/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Leaf",
+      "folder": "Leaf",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Leaf/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Leaf/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Paperboy Hat",
+      "folder": "PaperboyHat",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "REJECTED_CONSTRUCTION",
+      "review_state": "REJECTED_LIVE",
+      "family_hint": "Paperboy",
+      "note": "Live worn test failed identity/readability.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/PaperboyHat/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/PaperboyHat/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Party Hat",
+      "folder": "PartyHat",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "family_hint": "Party Hat",
+      "note": "Standalone full headwear construction; review visually before integration.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/PartyHat/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/PartyHat/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Plague Doctor Mask",
+      "folder": "PlagueDoctorMask",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "MASK_FACE_HEADWEAR",
+      "review_state": "AVAILABLE",
+      "family_hint": null,
+      "note": "Head-slot face/mask item, not a hat construction base.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/PlagueDoctorMask/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/PlagueDoctorMask/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Sleeping Mask (On Head)",
+      "folder": "SleepingMaskOnHead",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/SleepingMaskOnHead/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/SleepingMaskOnHead/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Straw Hat",
+      "folder": "StrawHat",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": "Straw Hat",
+      "note": "Detected family base; source construction candidate.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHat/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Straw Hat (Messy)",
+      "folder": "StrawHatMessy",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "REUSABLE_COMPONENT",
+      "hat_kind": "SAME_CONSTRUCTION_VARIANT",
+      "review_state": "REUSABLE_COMPONENT",
+      "family_hint": null,
+      "note": "Composable reusable variant of its family base.",
+      "family_memberships": [
+        {
+          "family": "StrawHat",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REUSABLE",
+          "base": "Straw Hat",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 46 cells and disturbs only 0 of the base"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHatMessy/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/StrawHatMessy/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Sun Hat",
+      "folder": "SunHat",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": "Sun Hat",
+      "note": "Detected family base; source construction candidate.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/SunHat/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/SunHat/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Sun Hat (Flowers)",
+      "folder": "SunHatFlowers",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "SAME_CONSTRUCTION_VARIANT",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Variant usable only on its own base.",
+      "family_memberships": [
+        {
+          "family": "SunHat",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "BASE-SPECIFIC",
+          "base": "Sun Hat",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 5 cells but also re-shades 120 of the base's 428, above the 10% bound"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/SunHatFlowers/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/SunHatFlowers/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Sun Hat (Ribbon)",
+      "folder": "SunHatRibbon",
+      "png_size": [
+        20,
+        80
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "ALTERNATE_CONSTRUCTION",
+      "review_state": "REVIEW_AS_OWN_BASE",
+      "family_hint": null,
+      "note": "Diff reshapes/removes base cells; review as a separate construction.",
+      "family_memberships": [
+        {
+          "family": "SunHat",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Sun Hat",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 20 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/SunHatRibbon/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/SunHatRibbon/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Sunglasses (On Head)",
+      "folder": "SunglassesOnHead",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/SunglassesOnHead/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/SunglassesOnHead/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Tiara 1",
+      "folder": "Tiara1",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Tiara1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Tiara1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Tiara 2",
+      "folder": "Tiara2",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Tiara2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Tiara2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Tiara 3",
+      "folder": "Tiara3",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-06",
+        "members": [
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Tiara 3"
+          },
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Tiara 4"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Tiara3/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Tiara3/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Tiara 4",
+      "folder": "Tiara4",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "UNGROUPED_SOURCE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-06",
+        "members": [
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Tiara 3"
+          },
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Tiara 4"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Tiara4/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Tiara4/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Tulip Hat",
+      "folder": "TulipHat",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": "Tulip Hat",
+      "note": "Detected family base; source construction candidate.",
+      "family_memberships": [],
+      "exact_silhouette_group": {
+        "group": "SHAPE-14",
+        "members": [
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Tulip Hat"
+          },
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Tulip Hat (Striped)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHat/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHat/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Tulip Hat (Striped)",
+      "folder": "TulipHatStriped",
+      "png_size": [
+        20,
+        60
+      ],
+      "generic_role": "BASE_SPECIFIC_VARIANT",
+      "hat_kind": "SAME_CONSTRUCTION_VARIANT",
+      "review_state": "BASE_SPECIFIC_VARIANT",
+      "family_hint": null,
+      "note": "Variant usable only on its own base.",
+      "family_memberships": [
+        {
+          "family": "TulipHat",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "BASE-SPECIFIC",
+          "base": "Tulip Hat",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds no geometry; it re-shades 182 of the base's own cells, which cannot be lifted off this silhouette"
+        }
+      ],
+      "exact_silhouette_group": {
+        "group": "SHAPE-14",
+        "members": [
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Tulip Hat"
+          },
+          {
+            "pack": "More Accessories and Stuff",
+            "name": "Tulip Hat (Striped)"
+          }
+        ]
+      },
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHatStriped/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/TulipHatStriped/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Veil",
+      "folder": "Veil",
+      "png_size": [
+        64,
+        48
+      ],
+      "generic_role": "FAMILY_BASE",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Veil/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/Veil/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Veil (Angled 1)",
+      "folder": "VeilAngled1",
+      "png_size": [
+        16,
+        64
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Veil",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Veil",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 365 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilAngled1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilAngled1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Veil (Angled 2)",
+      "folder": "VeilAngled2",
+      "png_size": [
+        16,
+        64
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Veil",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Veil",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 366 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilAngled2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilAngled2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Veil (Birdcage)",
+      "folder": "VeilBirdcage",
+      "png_size": [
+        16,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Veil",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Veil",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 342 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilBirdcage/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilBirdcage/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Veil (Flowers)",
+      "folder": "VeilFlowers",
+      "png_size": [
+        64,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Veil",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Veil",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 50 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilFlowers/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilFlowers/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Veil (Garland 1)",
+      "folder": "VeilGarland1",
+      "png_size": [
+        64,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Veil",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Veil",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 125 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilGarland1/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilGarland1/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Veil (Garland 2)",
+      "folder": "VeilGarland2",
+      "png_size": [
+        64,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Veil",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Veil",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 122 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilGarland2/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilGarland2/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Veil (Puffy)",
+      "folder": "VeilPuffy",
+      "png_size": [
+        64,
+        48
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Veil",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Veil",
+          "modelled": false,
+          "exact": null,
+          "reason": "removes 114 cells of the base silhouette: this is a different construction, not a decoration on it"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilPuffy/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilPuffy/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Veil (Speckled)",
+      "folder": "VeilSpeckled",
+      "png_size": [
+        80,
+        60
+      ],
+      "generic_role": "ALTERNATE_CONSTRUCTION",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Veil",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REFERENCE-ONLY",
+          "base": "Veil",
+          "modelled": false,
+          "exact": null,
+          "reason": "Back: frame size differs from the base"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilSpeckled/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilSpeckled/hat.json"
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "author": "plurffle",
+      "name": "Veil (Tiara)",
+      "folder": "VeilTiara",
+      "png_size": [
+        64,
+        48
+      ],
+      "generic_role": "REUSABLE_COMPONENT",
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "REUSABLE_COMPONENT",
+      "family_hint": null,
+      "note": "Head-slot accessory; keep separate from full hat construction families.",
+      "family_memberships": [
+        {
+          "family": "Veil",
+          "category": "Hats",
+          "pack": "More Accessories and Stuff",
+          "class": "REUSABLE",
+          "base": "Veil",
+          "modelled": true,
+          "exact": true,
+          "reason": "adds 45 cells and disturbs only 38 of the base"
+        }
+      ],
+      "exact_silhouette_group": null,
+      "png_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilTiara/hat.png",
+      "json_path": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/VeilTiara/hat.json"
+    }
+  ]
+}

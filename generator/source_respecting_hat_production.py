@@ -28,8 +28,8 @@ def _idx(key:str,n:int)->int:
 
 def load_goldens()->dict:
  j=json.loads(GOLDENS.read_text())
- if not j.get('humanArtApproved') or j.get('familyCount')!=20:
-  raise RuntimeError('hat golden registry is not production-approved')
+ if not j.get('humanArtApproved') or j.get('familyCount')!=len(j.get('families',{})) or j.get('familyCount',0)<20:
+  raise RuntimeError('hat golden registry is not production-approved or is internally inconsistent')
  rules=j['rules']
  if rules.get('genericProjectionAllowed') or rules.get('genericLineSynthesisAllowed') or rules.get('legacyStyleProfileFallbackAllowed'):
   raise RuntimeError('golden registry illegally enables legacy rendering')

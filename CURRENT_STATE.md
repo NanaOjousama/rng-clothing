@@ -1266,3 +1266,27 @@ Final test batch:
 - 37/80 remained effectively golden because their recipe/capacity did not call for a safe enhancement.
 - comparison: `HYBRID_VS_GOLDEN_CONTACT.png`.
 - final hybrid batch remains CANDIDATE_REVIEW_REQUIRED until visual approval.
+
+## 2026-09-24 — Hat renderer frozen; catalog remains open
+Frozen the hat rendering architecture as `HAT_RENDERER_V1`: `HAT_PRODUCTION_GOLDEN_V1` quality authority + native bounded hybrid enhancements. This freezes the renderer, not the family catalog.
+
+Contract:
+- `generator/data/hat_renderer_contract.json`
+- decision: `docs/decisions/HAT_RENDERER_FROZEN_V1.md`
+
+Production loader/builder no longer require exactly 20 families; the golden registry must be internally consistent and may grow beyond the current 20-family baseline. Ordinary new families must use HAT_RENDERER_V1 rather than redesigning rendering architecture.
+
+Hat-type gap audit:
+- `docs/roadmaps/HAT_TYPE_GAP_AUDIT.md`
+- machine data: `generator/data/hat_type_gap_audit.json`
+- 116 hat-slot source appearances audited.
+- 70 appearances are already represented by current production source contracts/states.
+- 46 are not represented by current production contracts.
+- master production-gap list contains 24 construction/content types.
+
+Important audit findings:
+- Cowboy Hat already exists in the primary source corpus and is REVIEW_NEEDED.
+- Baseball Cap (Cap 2) and Snapback are already LIVE_APPROVED source constructions but are not in the current 20-family production catalog.
+- Dad Cap, Trucker Cap, Slouch Beanie, and Mario-style reference-cap work already exist in repo experiments/prototypes.
+- Paperboy Hat source failed live readability and should not be promoted unchanged.
+- old source/prototype material should not be deleted before its missing family is promoted or explicitly rejected; archive candidates are documented separately.

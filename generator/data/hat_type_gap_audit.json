@@ -1,0 +1,907 @@
+{
+  "schema": "hat-type-gap-audit/v1",
+  "generatedOn": "2026-09-24",
+  "rendererContract": "HAT_RENDERER_V1",
+  "rendererFrozen": true,
+  "catalogFrozen": false,
+  "productionFamilyCount": 20,
+  "productionFamilies": [
+    "catalog_hats_alt_fashion_set_beanie",
+    "catalog_hats_alt_fashion_set_earmuffs_horns",
+    "catalog_hats_alt_fashion_set_headband_studded",
+    "catalog_hats_cottagecore_set_beret",
+    "catalog_hats_cottagecore_set_boater_hat",
+    "catalog_hats_cottagecore_set_headband_daisies",
+    "catalog_hats_cottagecore_set_headscarf",
+    "catalog_hats_cottagecore_set_hood_mushroom",
+    "catalog_hats_cottagecore_set_mushroom_hat",
+    "catalog_hats_more_accessories_and_stuff_beanie",
+    "catalog_hats_more_accessories_and_stuff_bows_double_small_1",
+    "catalog_hats_more_accessories_and_stuff_crown_diadem_1",
+    "catalog_hats_more_accessories_and_stuff_earmuffs",
+    "catalog_hats_more_accessories_and_stuff_garland_dried_1",
+    "catalog_hats_more_accessories_and_stuff_hair_buns",
+    "catalog_hats_more_accessories_and_stuff_headband",
+    "catalog_hats_more_accessories_and_stuff_hood",
+    "catalog_hats_more_accessories_and_stuff_straw_hat",
+    "catalog_hats_more_accessories_and_stuff_sun_hat",
+    "catalog_hats_more_accessories_and_stuff_tulip_hat"
+  ],
+  "sourceCatalogHatSlotAppearances": 116,
+  "sourceAppearancesCoveredByProductionContracts": 70,
+  "sourceAppearancesNotCoveredByProductionContracts": 46,
+  "uncoveredByKind": {
+    "CONSTRUCTION_BASE": 2,
+    "CONSTRUCTION_CANDIDATE": 8,
+    "HEAD_ACCESSORY": 33,
+    "MASK_FACE_HEADWEAR": 1,
+    "REJECTED_CONSTRUCTION": 1,
+    "RENDER_MATERIAL_VARIANT": 1
+  },
+  "uncoveredSourceRows": [
+    {
+      "pack": "= RURAL OUTFITTERS =",
+      "name": "Barrette",
+      "png_size": [
+        20,
+        80
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "= RURAL OUTFITTERS =",
+      "name": "Beanie",
+      "png_size": [
+        20,
+        80
+      ],
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "note": "Standalone full headwear construction; review visually before integration."
+    },
+    {
+      "pack": "= RURAL OUTFITTERS =",
+      "name": "Clip",
+      "png_size": [
+        20,
+        80
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "= RURAL OUTFITTERS =",
+      "name": "Clips",
+      "png_size": [
+        20,
+        80
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "= RURAL OUTFITTERS =",
+      "name": "Headband",
+      "png_size": [
+        20,
+        80
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "Alt-Fashion Set",
+      "name": "Bows (Double)",
+      "png_size": [
+        16,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "Cottagecore Set",
+      "name": "Hair Back Bow",
+      "png_size": [
+        20,
+        80
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "Cottagecore Set",
+      "name": "Hair Back Ribbon",
+      "png_size": [
+        20,
+        60
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "Cottagecore Set",
+      "name": "Hair Flowers",
+      "png_size": [
+        20,
+        60
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Beret 1",
+      "png_size": [
+        16,
+        64
+      ],
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "note": "Standalone full headwear construction; review visually before integration."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Beret 2",
+      "png_size": [
+        16,
+        64
+      ],
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "note": "Standalone full headwear construction; review visually before integration."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Bow (Large 1)",
+      "png_size": [
+        16,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Bow (Large 2)",
+      "png_size": [
+        16,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Bow (Side 1)",
+      "png_size": [
+        16,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Bow (Side 2)",
+      "png_size": [
+        16,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Cap (Snapback)",
+      "png_size": [
+        20,
+        60
+      ],
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "LIVE_APPROVED",
+      "note": "Current source-backed Snapback construction; live QC approved."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Cap 1",
+      "png_size": [
+        20,
+        60
+      ],
+      "hat_kind": "RENDER_MATERIAL_VARIANT",
+      "review_state": "REVIEWED",
+      "note": "Exact alpha silhouette match to Cap 2; render/material variant, not a new shape."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Cap 2",
+      "png_size": [
+        20,
+        60
+      ],
+      "hat_kind": "CONSTRUCTION_BASE",
+      "review_state": "LIVE_APPROVED",
+      "note": "Current source-backed Baseball construction; live QC approved."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Cowboy Hat",
+      "png_size": [
+        20,
+        60
+      ],
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "note": "Standalone full headwear construction; review visually before integration."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Decorative Bells (Doubles)",
+      "png_size": [
+        80,
+        60
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "REUSABLE_COMPONENT",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Decorative Bells (Singles)",
+      "png_size": [
+        80,
+        60
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Flower Dance Crown",
+      "png_size": [
+        20,
+        60
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Goggles (On Head)",
+      "png_size": [
+        20,
+        60
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Headscarf (Small)",
+      "png_size": [
+        20,
+        60
+      ],
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "note": "Standalone full headwear construction; review visually before integration."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Headscarf 1",
+      "png_size": [
+        16,
+        48
+      ],
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "note": "Standalone full headwear construction; review visually before integration."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Headscarf 2",
+      "png_size": [
+        16,
+        48
+      ],
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "note": "Standalone full headwear construction; review visually before integration."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Leaf",
+      "png_size": [
+        16,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Paperboy Hat",
+      "png_size": [
+        20,
+        60
+      ],
+      "hat_kind": "REJECTED_CONSTRUCTION",
+      "review_state": "REJECTED_LIVE",
+      "note": "Live worn test failed identity/readability."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Party Hat",
+      "png_size": [
+        20,
+        60
+      ],
+      "hat_kind": "CONSTRUCTION_CANDIDATE",
+      "review_state": "REVIEW_NEEDED",
+      "note": "Standalone full headwear construction; review visually before integration."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Plague Doctor Mask",
+      "png_size": [
+        20,
+        60
+      ],
+      "hat_kind": "MASK_FACE_HEADWEAR",
+      "review_state": "AVAILABLE",
+      "note": "Head-slot face/mask item, not a hat construction base."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Sleeping Mask (On Head)",
+      "png_size": [
+        20,
+        60
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Sunglasses (On Head)",
+      "png_size": [
+        20,
+        60
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Tiara 1",
+      "png_size": [
+        16,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Tiara 2",
+      "png_size": [
+        16,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Tiara 3",
+      "png_size": [
+        16,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Tiara 4",
+      "png_size": [
+        16,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_UNGROUPED",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Veil",
+      "png_size": [
+        64,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "AVAILABLE_FAMILY_BASE",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Veil (Angled 1)",
+      "png_size": [
+        16,
+        64
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Veil (Angled 2)",
+      "png_size": [
+        16,
+        64
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Veil (Birdcage)",
+      "png_size": [
+        16,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Veil (Flowers)",
+      "png_size": [
+        64,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Veil (Garland 1)",
+      "png_size": [
+        64,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Veil (Garland 2)",
+      "png_size": [
+        64,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Veil (Puffy)",
+      "png_size": [
+        64,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Veil (Speckled)",
+      "png_size": [
+        80,
+        60
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "ALTERNATE_ACCESSORY_CONSTRUCTION",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    },
+    {
+      "pack": "More Accessories and Stuff",
+      "name": "Veil (Tiara)",
+      "png_size": [
+        64,
+        48
+      ],
+      "hat_kind": "HEAD_ACCESSORY",
+      "review_state": "REUSABLE_COMPONENT",
+      "note": "Head-slot accessory; keep separate from full hat construction families."
+    }
+  ],
+  "repoExperimentsAndPrototypes": [
+    {
+      "type": "Dad cap",
+      "status": "EXPERIMENT_READY_FOR_PROMOTION",
+      "path": "experiments/dad_cap/production_20x20",
+      "exists": true
+    },
+    {
+      "type": "Dad cap v2",
+      "status": "EXPERIMENT_VARIANT",
+      "path": "experiments/dad_cap_v2/production_20x20",
+      "exists": true
+    },
+    {
+      "type": "Trucker cap",
+      "status": "EXPERIMENT_INCOMPLETE",
+      "path": "experiments/trucker_cap",
+      "exists": true
+    },
+    {
+      "type": "Mario-style reference cap",
+      "status": "EASTER_EGG_PROTOTYPE",
+      "path": "prototypes/mario_hat",
+      "exists": true
+    },
+    {
+      "type": "Mario worn captures",
+      "status": "EASTER_EGG_WORN_PROOF",
+      "path": "experiments/mario_hat",
+      "exists": true
+    },
+    {
+      "type": "Slouch beanie",
+      "status": "EXPERIMENTAL_CONSTRUCTION",
+      "path": "experiments/slouch_beanie_compare",
+      "exists": true
+    }
+  ],
+  "referenceOnlyConstructionEvidence": [
+    {
+      "type": "Cowboy variants",
+      "path": "references/benchmark/male clothing/[FS] Adventurer's Armour and Outfits 1.0.0/Accessories/Cowboy Hats",
+      "exists": true
+    },
+    {
+      "type": "Fancy hats",
+      "path": "references/benchmark/male clothing/[FS] Adventurer's Armour and Outfits 1.0.0/Accessories/Fancy Hats",
+      "exists": true
+    },
+    {
+      "type": "Helmets",
+      "path": "references/benchmark/male clothing/[FS] Adventurer's Armour and Outfits 1.0.0/Accessories/Helmets",
+      "exists": true
+    },
+    {
+      "type": "Jester hat",
+      "path": "references/benchmark/male clothing/[FS] Adventurer's Armour and Outfits 1.0.0/Accessories/Miscellaneous/Jester Hat",
+      "exists": true
+    },
+    {
+      "type": "Pointy witch hood",
+      "path": "references/benchmark/male clothing/[FS] Adventurer's Armour and Outfits 1.0.0/Accessories/Miscellaneous/Pointy Witch Hood",
+      "exists": true
+    },
+    {
+      "type": "Sombrero",
+      "path": "references/benchmark/male clothing/[FS] Adventurer's Armour and Outfits 1.0.0/Accessories/Miscellaneous/Sombrero",
+      "exists": true
+    },
+    {
+      "type": "Prospector hats",
+      "path": "references/benchmark/male clothing/[FS] Adventurer's Armour and Outfits 1.0.0/Accessories/Prospector Hats",
+      "exists": true
+    },
+    {
+      "type": "Visors",
+      "path": "references/benchmark/male clothing/[FS] Adventurer's Armour and Outfits 1.0.0/Accessories/Visors",
+      "exists": true
+    },
+    {
+      "type": "Sherlock-style hat",
+      "path": "references/benchmark/male clothing/[FS] Frogwares Sherlock Pack/Hats/Sherlock Hat",
+      "exists": true
+    },
+    {
+      "type": "Watson-style hat",
+      "path": "references/benchmark/male clothing/[FS] Frogwares Sherlock Pack/Hats/Watson Hat",
+      "exists": true
+    },
+    {
+      "type": "Sailor hats",
+      "path": "references/benchmark/\u3010FS\u3011SubabyTvanZ's sailor suit Set/Hats",
+      "exists": true
+    },
+    {
+      "type": "Dynamic hood family",
+      "path": "references/hoodie/Hoods & Hoodies Pack/[FS] Hoods & Hoodies/Hats/Hoods",
+      "exists": true
+    }
+  ],
+  "stillMissingFromProduction": [
+    {
+      "type": "Cowboy hat",
+      "priority": "HIGH",
+      "status": "SOURCE_PRESENT_UNPROMOTED",
+      "evidence": [
+        "More Accessories and Stuff / Cowboy Hat"
+      ],
+      "next": "Promote as its own construction family."
+    },
+    {
+      "type": "Baseball cap / dad cap",
+      "priority": "HIGH",
+      "status": "SOURCE_AND_EXPERIMENT_PRESENT",
+      "evidence": [
+        "More Accessories and Stuff / Cap 2 (LIVE_APPROVED)",
+        "experiments/dad_cap/production_20x20"
+      ],
+      "next": "Choose source-backed Baseball vs authored Dad Cap as separate constructions; do not merge silhouettes."
+    },
+    {
+      "type": "Snapback cap",
+      "priority": "HIGH",
+      "status": "SOURCE_PRESENT_LIVE_APPROVED",
+      "evidence": [
+        "More Accessories and Stuff / Cap (Snapback)"
+      ],
+      "next": "Promote as distinct structured cap construction."
+    },
+    {
+      "type": "Trucker cap",
+      "priority": "MEDIUM",
+      "status": "EXPERIMENT_PRESENT_INCOMPLETE",
+      "evidence": [
+        "experiments/trucker_cap"
+      ],
+      "next": "Finish directional set, then promote if human-approved."
+    },
+    {
+      "type": "Slouch beanie",
+      "priority": "HIGH",
+      "status": "EXPERIMENT_PRESENT",
+      "evidence": [
+        "experiments/slouch_beanie_compare",
+        "spritefusion slouch experiments"
+      ],
+      "next": "Promote as a distinct beanie construction rather than a material variant."
+    },
+    {
+      "type": "Party hat",
+      "priority": "MEDIUM",
+      "status": "SOURCE_PRESENT_UNPROMOTED",
+      "evidence": [
+        "More Accessories and Stuff / Party Hat"
+      ],
+      "next": "Review and promote if worn identity passes."
+    },
+    {
+      "type": "Paperboy / newsboy cap",
+      "priority": "HIGH",
+      "status": "SOURCE_PRESENT_BUT_REJECTED",
+      "evidence": [
+        "More Accessories and Stuff / Paperboy Hat (REJECTED_LIVE)"
+      ],
+      "next": "Do not promote rejected source; replace/re-author a readable construction."
+    },
+    {
+      "type": "Mario-style reference cap",
+      "priority": "HIGH",
+      "status": "EASTER_EGG_PROTOTYPE_PRESENT",
+      "evidence": [
+        "prototypes/mario_hat",
+        "experiments/mario_hat"
+      ],
+      "next": "Keep as easter-egg/reference content; finish/confirm worn QC before promotion."
+    },
+    {
+      "type": "Veil family",
+      "priority": "MEDIUM",
+      "status": "SOURCE_PRESENT_HEAD_ACCESSORY",
+      "evidence": [
+        "More Accessories and Stuff / Veil + variants"
+      ],
+      "next": "Decide whether this belongs in hat catalog or accessory catalog before promotion."
+    },
+    {
+      "type": "Tiara family",
+      "priority": "MEDIUM",
+      "status": "SOURCE_PRESENT_HEAD_ACCESSORY",
+      "evidence": [
+        "More Accessories and Stuff / Tiara 1-4"
+      ],
+      "next": "Treat as head-accessory construction family if included in hats."
+    },
+    {
+      "type": "Goggles-on-head",
+      "priority": "LOW",
+      "status": "SOURCE_PRESENT_HEAD_ACCESSORY",
+      "evidence": [
+        "More Accessories and Stuff / Goggles (On Head)"
+      ],
+      "next": "Optional head-accessory family."
+    },
+    {
+      "type": "Flower crown",
+      "priority": "LOW",
+      "status": "SOURCE_PRESENT_HEAD_ACCESSORY",
+      "evidence": [
+        "More Accessories and Stuff / Flower Dance Crown"
+      ],
+      "next": "Optional alternate crown/garland construction."
+    },
+    {
+      "type": "Witch / wizard pointy hat",
+      "priority": "HIGH",
+      "status": "REFERENCE_ONLY",
+      "evidence": [
+        "benchmark Pointy Witch Hood",
+        "vanilla Witch reference",
+        "Photo Tailor challenge reference"
+      ],
+      "next": "Needs new approved construction before production."
+    },
+    {
+      "type": "Jester hat",
+      "priority": "LOW",
+      "status": "REFERENCE_ONLY",
+      "evidence": [
+        "benchmark Jester Hat"
+      ],
+      "next": "Needs new approved construction."
+    },
+    {
+      "type": "Sombrero",
+      "priority": "MEDIUM",
+      "status": "REFERENCE_ONLY",
+      "evidence": [
+        "benchmark Sombrero + Alt"
+      ],
+      "next": "Needs new approved construction."
+    },
+    {
+      "type": "Prospector / miner hat",
+      "priority": "MEDIUM",
+      "status": "REFERENCE_ONLY",
+      "evidence": [
+        "benchmark Prospector Hats"
+      ],
+      "next": "Needs new approved construction."
+    },
+    {
+      "type": "Helmet family",
+      "priority": "MEDIUM",
+      "status": "REFERENCE_ONLY",
+      "evidence": [
+        "benchmark Helmets"
+      ],
+      "next": "Separate armor/headgear family; not a normal soft-hat variant."
+    },
+    {
+      "type": "Visor",
+      "priority": "LOW",
+      "status": "REFERENCE_ONLY",
+      "evidence": [
+        "benchmark Visors"
+      ],
+      "next": "Needs new approved construction."
+    },
+    {
+      "type": "Deerstalker / detective cap",
+      "priority": "LOW",
+      "status": "REFERENCE_ONLY",
+      "evidence": [
+        "benchmark Sherlock Hat"
+      ],
+      "next": "Needs new approved construction."
+    },
+    {
+      "type": "Sailor cap",
+      "priority": "MEDIUM",
+      "status": "REFERENCE_ONLY",
+      "evidence": [
+        "benchmark sailor suit hats"
+      ],
+      "next": "Needs source/construction review before production."
+    },
+    {
+      "type": "Top hat",
+      "priority": "MEDIUM",
+      "status": "REFERENCE_OR_STYLE_PROFILE_ONLY",
+      "evidence": [
+        "style-profile references"
+      ],
+      "next": "No production/source-catalog construction; author or promote a reference-backed construction."
+    },
+    {
+      "type": "Fedora",
+      "priority": "MEDIUM",
+      "status": "POLICY_REFERENCE_ONLY",
+      "evidence": [
+        "authored policy/derivation references"
+      ],
+      "next": "No production/source-catalog construction; needs approved construction."
+    },
+    {
+      "type": "Bucket hat",
+      "priority": "MEDIUM",
+      "status": "NOT_FOUND_IN_CURRENT_CORPUS",
+      "evidence": [],
+      "next": "New construction required."
+    },
+    {
+      "type": "Chef hat",
+      "priority": "LOW",
+      "status": "NOT_FOUND_IN_CURRENT_CORPUS",
+      "evidence": [],
+      "next": "New construction required."
+    }
+  ],
+  "oldMaterialDisposition": {
+    "KEEP_ACTIVE": [
+      "generator/source_respecting_hat_production.py",
+      "generator/hat_hybrid_enhancements.py",
+      "generator/data/source_respecting_hat_goldens.json",
+      "generator/data/source_parts/hat_source_parts.json",
+      "generator/data/hat_hybrid_production_policy.json",
+      "generator/data/hat_renderer_contract.json"
+    ],
+    "KEEP_REFERENCE_OR_PROMOTION_INPUT": [
+      "source_catalog/HAT_WORKING_CATALOG.json",
+      "source_catalog/HAT_WORKING_CATALOG.md",
+      "experiments/dad_cap/production_20x20",
+      "experiments/trucker_cap",
+      "experiments/slouch_beanie_compare",
+      "prototypes/mario_hat",
+      "experiments/mario_hat",
+      "experiments/source_respecting_hat_pilot_01",
+      "experiments/source_respecting_hat_batch_a_01",
+      "experiments/source_respecting_hat_remaining_01"
+    ],
+    "ARCHIVE_CANDIDATE_AFTER_CURRENT_FREEZE": [
+      "experiments/hat_production_batch_01",
+      "experiments/hat_production_batch_09",
+      "experiments/source_fidelity",
+      "experiments/cap_ai",
+      "experiments/dad_cap_v2 (verified NOT pixel-identical to v1; archive as alternate evidence rather than delete)"
+    ],
+    "DELETE_CANDIDATE_AFTER_VERIFICATION": [
+      "temporary enlarged previews / caches that are reproducible"
+    ],
+    "RULE": "Do not delete source/provenance or unpromoted constructions merely because the renderer is frozen."
+  },
+  "notes": [
+    "Still missing means missing from the current production catalog, not necessarily absent from disk.",
+    "Reference-only benchmark material is evidence/inspiration, not automatically approved production source.",
+    "Head accessories are listed separately because inclusion in the hat catalog is a design choice.",
+    "Paperboy source failed live readability and must not be promoted unchanged."
+  ]
+}

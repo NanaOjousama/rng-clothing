@@ -20,5 +20,10 @@
     "tiny": 0.16,
     "small": 0.24,
     "medium_large": 0.34
-  }
+  },
+  "rendererContract": "HAT_RENDERER_V1",
+  "rendererContractPath": "generator/data/hat_renderer_contract.json",
+  "rendererFrozen": true,
+  "catalogFrozen": false,
+  "catalogExpansionAllowed": true
 }

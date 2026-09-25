@@ -1,0 +1,23 @@
+{
+  "schema": "hat-renderer-contract/v1",
+  "id": "HAT_RENDERER_V1",
+  "status": "FROZEN",
+  "frozenOn": "2026-09-24",
+  "goldenBaseline": "HAT_PRODUCTION_GOLDEN_V1",
+  "nativeHybridPolicy": "generator/data/hat_hybrid_production_policy.json",
+  "productionAuthority": "GOLDEN_SOURCE_RESPECTING_HYBRID_V1",
+  "catalogFrozen": false,
+  "catalogExpansionAllowed": true,
+  "rendererRedesignRequiredForNewFamilies": false,
+  "principle": "Freeze the rendering architecture, not the hat catalog.",
+  "invariants": [
+    "approved source construction remains authoritative",
+    "native hybrid edits are bounded feature deltas only",
+    "alpha geometry is preserved unless a new authored construction explicitly defines new geometry",
+    "approved source outline pixels are preserved by hybrid enhancement",
+    "capacity, taste, exclusions, and human review remain authoritative",
+    "failed hybrid safety gates return exact golden/source-respecting pixels"
+  ],
+  "newFamilyProtocol": "Add a family contract, source/construction states, capacity/taste rules, region semantics, approved golden states, then render through HAT_RENDERER_V1. Do not redesign the renderer for ordinary catalog growth.",
+  "rendererChangePolicy": "Any renderer-architecture change requires an explicit new renderer contract version and human approval."
+}

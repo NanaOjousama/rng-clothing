@@ -59,7 +59,7 @@ def main():
  CAND.mkdir(parents=True);SHEETS.mkdir(parents=True)
  reg=load_goldens();hats=sorted(e['family'] for e in list_families(include_manual=False) if load_family(e['family']).get('category')=='Hats')
  if set(hats)!=set(reg['families']):raise RuntimeError('promoted hat set does not match golden registry')
- manifest={'schema':'hat-production-source-respecting-hybrid/v1','batch':BATCH,'familyCount':20,
+ manifest={'schema':'hat-production-source-respecting-hybrid/v1','batch':BATCH,'familyCount':len(hats),
   'rarities':list(RARITIES),'presentationLeanMode':LEAN,'humanArtApproved':False,
   'goldenRegistry':'generator/data/source_respecting_hat_goldens.json','goldenBaseline':'HAT_PRODUCTION_GOLDEN_V1','productionAuthority':'GOLDEN_SOURCE_RESPECTING_HYBRID_V1',
   'nativeHybridEnhancements':True,'photoTailorDependency':False,'prototypeImportsAllowed':False,
