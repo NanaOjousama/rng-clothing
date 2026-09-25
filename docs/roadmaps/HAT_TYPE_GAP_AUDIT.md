@@ -16,13 +16,14 @@
 - **Mario/reference cap:** excluded; separate easter-egg project later.
 - **Clean-room rule:** old Dad/Trucker experiment art remains visually quarantined during new construction.
 
-- **Dad cap** — CLEANROOM_REBOOT_PLANNED — Fresh construction after Baseball; old Dad experiments remain visually quarantined until new master approval.
 - **Snapback cap** — DEFERRED_NOT_REQUIRED — Do not include in current cap reboot; revisit only if it proves meaningfully distinct from Baseball at worn scale.
-- **Trucker cap** — CLEANROOM_REBOOT_PLANNED — Fresh construction after Baseball/Dad; old Trucker experiment art remains visually quarantined until new master approval.
 
 ## Highest-value production gaps already present in the repo/source corpus
 
 - **Cowboy hat** — SOURCE_PRESENT_UNPROMOTED — Promote as its own construction family.
+- **Baseball cap** — SOURCE_BACKED_LIVE_APPROVED_RESTORED — Use the existing source-backed Cap 2 construction as the active Baseball base; keep its geometry locked and let the generator vary palette/decoration.
+- **Dad cap** — OLD_EXPERIMENT_REOPENED_FOR_REVIEW — Review the existing Dad Cap V1/V2 constructions as valid candidates; the clean-room visual quarantine is lifted.
+- **Trucker cap** — OLD_EXPERIMENT_REOPENED_FOR_REVIEW — Review the existing Trucker Cap experiment as a valid construction candidate; the clean-room visual quarantine is lifted.
 - **Slouch beanie** — EXPERIMENT_PRESENT — Promote as a distinct beanie construction rather than a material variant.
 - **Party hat** — SOURCE_PRESENT_UNPROMOTED — Review and promote if worn identity passes.
 - **Paperboy / newsboy cap** — SOURCE_PRESENT_BUT_REJECTED — Do not promote rejected source; replace/re-author a readable construction.
@@ -80,12 +81,12 @@
 - experiments/source_respecting_hat_pilot_01
 - experiments/source_respecting_hat_batch_a_01
 - experiments/source_respecting_hat_remaining_01
-
-### QUARANTINED_CAP_HISTORY
-
 - experiments/dad_cap/
 - experiments/dad_cap_v2/
 - experiments/trucker_cap/
+
+### QUARANTINED_CAP_HISTORY
+
 
 ### ARCHIVE_CANDIDATE_AFTER_CURRENT_FREEZE
 

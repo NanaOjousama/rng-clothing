@@ -36,24 +36,24 @@ def main():
 
     gaps={x['type']:x for x in audit['stillMissingFromProduction']}
     assert gaps['Cowboy hat']['status']=='SOURCE_PRESENT_UNPROMOTED'
-    assert gaps['Baseball cap']['status']=='PHOTO_TAILOR_REAL_OUTPUT_WORN_QC'
-    assert gaps['Dad cap']['status']=='CLEANROOM_REBOOT_PLANNED'
-    assert gaps['Trucker cap']['status']=='CLEANROOM_REBOOT_PLANNED'
+    assert gaps['Baseball cap']['status']=='SOURCE_BACKED_LIVE_APPROVED_RESTORED'
+    assert gaps['Dad cap']['status']=='OLD_EXPERIMENT_REOPENED_FOR_REVIEW'
+    assert gaps['Trucker cap']['status']=='OLD_EXPERIMENT_REOPENED_FOR_REVIEW'
     assert gaps['Snapback cap']['status']=='DEFERRED_NOT_REQUIRED'
     assert gaps['Mario-style reference cap']['status']=='DEFERRED_EASTER_EGG'
     assert gaps['Paperboy / newsboy cap']['status']=='SOURCE_PRESENT_BUT_REJECTED'
 
     disp=audit['oldMaterialDisposition']
-    assert 'experiments/dad_cap/' in disp['QUARANTINED_CAP_HISTORY']
-    assert 'experiments/dad_cap_v2/' in disp['QUARANTINED_CAP_HISTORY']
-    assert 'experiments/trucker_cap/' in disp['QUARANTINED_CAP_HISTORY']
-    assert not any('dad_cap' in x or 'trucker_cap' in x for x in disp['KEEP_REFERENCE_OR_PROMOTION_INPUT'])
+    assert not disp['QUARANTINED_CAP_HISTORY']
+    assert 'experiments/dad_cap/' in disp['KEEP_REFERENCE_OR_PROMOTION_INPUT']
+    assert 'experiments/dad_cap_v2/' in disp['KEEP_REFERENCE_OR_PROMOTION_INPUT']
+    assert 'experiments/trucker_cap/' in disp['KEEP_REFERENCE_OR_PROMOTION_INPUT']
 
     print('PASS HAT_RENDERER_V1 is frozen while catalog remains expandable')
     print('PASS production loader/builder no longer hardcode exactly 20 families')
     print('PASS gap audit: 116 hat-slot sources, 70 covered, 46 uncovered')
-    print('PASS cap reboot statuses: Baseball active; Dad/Trucker planned; Snapback/Mario deferred')
-    print('PASS old Dad/Trucker visual history is quarantined, not used as active construction input')
+    print('PASS cap direction: old source-backed Baseball restored; Dad/Trucker old experiments reopened; Snapback/Mario deferred')
+    print('PASS clean-room visual quarantine is lifted for Dad/Trucker construction review')
 
 if __name__=='__main__':
     main()

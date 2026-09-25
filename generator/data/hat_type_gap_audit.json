@@ -659,19 +659,22 @@
     {
       "type": "Baseball cap",
       "priority": "HIGH",
-      "status": "PHOTO_TAILOR_REAL_OUTPUT_WORN_QC",
+      "status": "SOURCE_BACKED_LIVE_APPROVED_RESTORED",
       "evidence": [
-        "experiments/cap_reboot/baseball_cap_pt_real_01",
-        "cap reference"
+        "authored/source_backed/cap_baseball",
+        "qc_bridge/captures/20260916-213415"
       ],
-      "next": "Worn-QC the raw Photo Tailor 0.15.1 outputs copied unchanged into the PT REAL Fashion Sense pack."
+      "next": "Use the existing source-backed Cap 2 construction as the active Baseball base; keep its geometry locked and let the generator vary palette/decoration."
     },
     {
       "type": "Dad cap",
       "priority": "HIGH",
-      "status": "CLEANROOM_REBOOT_PLANNED",
-      "evidence": [],
-      "next": "Fresh construction after Baseball; old Dad experiments remain visually quarantined until new master approval."
+      "status": "OLD_EXPERIMENT_REOPENED_FOR_REVIEW",
+      "evidence": [
+        "experiments/dad_cap/production_20x20",
+        "experiments/dad_cap_v2/production_20x20"
+      ],
+      "next": "Review the existing Dad Cap V1/V2 constructions as valid candidates; the clean-room visual quarantine is lifted."
     },
     {
       "type": "Snapback cap",
@@ -685,9 +688,11 @@
     {
       "type": "Trucker cap",
       "priority": "HIGH",
-      "status": "CLEANROOM_REBOOT_PLANNED",
-      "evidence": [],
-      "next": "Fresh construction after Baseball/Dad; old Trucker experiment art remains visually quarantined until new master approval."
+      "status": "OLD_EXPERIMENT_REOPENED_FOR_REVIEW",
+      "evidence": [
+        "experiments/trucker_cap"
+      ],
+      "next": "Review the existing Trucker Cap experiment as a valid construction candidate; the clean-room visual quarantine is lifted."
     },
     {
       "type": "Slouch beanie",
@@ -887,13 +892,12 @@
       "experiments/mario_hat",
       "experiments/source_respecting_hat_pilot_01",
       "experiments/source_respecting_hat_batch_a_01",
-      "experiments/source_respecting_hat_remaining_01"
-    ],
-    "QUARANTINED_CAP_HISTORY": [
+      "experiments/source_respecting_hat_remaining_01",
       "experiments/dad_cap/",
       "experiments/dad_cap_v2/",
       "experiments/trucker_cap/"
     ],
+    "QUARANTINED_CAP_HISTORY": [],
     "ARCHIVE_CANDIDATE_AFTER_CURRENT_FREEZE": [
       "experiments/hat_production_batch_01",
       "experiments/hat_production_batch_09",

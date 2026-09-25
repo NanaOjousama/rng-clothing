@@ -1343,3 +1343,11 @@ Real PT Baseball checkpoint:
 - status: CANDIDATE_WORN_QC, not production-approved.
 
 Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
+
+## 2026-09-25 — cap reboot fallback restored to old source-backed constructions
+
+- User explicitly ended the clean-room/PT cap-construction direction after visual rejection of the PT custom-occupancy 24x24 result.
+- Baseball now uses the existing `authored/source_backed/cap_baseball` / More Accessories and Stuff `Cap 2` construction again. This base previously passed live Fashion Sense QC (`qc_bridge/captures/20260916-213415`) and remains geometry-locked while palette/decoration can vary through the source-backed generator.
+- A fresh validation roll using `STREET_TEAL_GRAPHITE` + `cap_baseball_front_ring` rendered successfully with no dropped cells; output is under `experiments/cap_reboot/old_baseball_return_01/fresh_roll_teal_ring/`.
+- Dad Cap V1/V2 and Trucker experiment folders are reopened as construction candidates; their prior clean-room visual quarantine is lifted.
+- Photo Tailor cap geometry experiments are historical/reference evidence only and are no longer the active Baseball construction path.

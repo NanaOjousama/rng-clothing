@@ -1,20 +1,12 @@
-# Cap Reboot — Clean-Room Rule
+# Cap Reboot — Clean-Room Rule (Superseded)
 
-The cap reboot covers three normal production constructions:
-- Baseball Cap
-- Dad Cap
-- Trucker Cap
+This clean-room quarantine was **lifted on 2026-09-25 by explicit user direction** after the new Photo Tailor/reference-derived cap construction experiments failed visual QC.
 
-Mario/reference caps are deferred to separate easter-egg content.
-Snapback is deferred unless a future in-game silhouette proves meaningfully distinct.
+Current cap direction:
+- **Baseball Cap:** restore the existing `authored/source_backed/cap_baseball` construction as the active base. It already passed live Fashion Sense worn QC in session `20260916-213415`; geometry remains locked while palette/decoration may vary through the source-backed generator.
+- **Dad Cap:** `experiments/dad_cap/` and `experiments/dad_cap_v2/` are reopened as valid construction candidates.
+- **Trucker Cap:** `experiments/trucker_cap/` is reopened as a valid construction candidate.
+- **Snapback:** still deferred unless its worn silhouette proves meaningfully distinct from Baseball.
+- **Mario/reference caps:** remain a separate easter-egg/reference project.
 
-## Hard visual quarantine
-
-During construction of the rebooted Baseball, Dad, and Trucker masters:
-- DO NOT open, render, sample, trace, compare against, or copy pixels from `experiments/dad_cap/`.
-- DO NOT open, render, sample, trace, compare against, or copy pixels from `experiments/dad_cap_v2/`.
-- DO NOT open, render, sample, trace, compare against, or copy pixels from `experiments/trucker_cap/`.
-- Do not use old cap experiments as silhouette donors.
-
-Those folders are historical evidence only until the new masters receive human art approval.
-Technical head-fit/QC rules and general Stardew headwear corpus measurements remain allowed.
+The old rule below is retained only as historical context: during the abandoned clean-room reboot, Dad/Trucker experiment art was not to be opened or reused. That restriction is no longer active.

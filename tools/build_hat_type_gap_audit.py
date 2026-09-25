@@ -70,10 +70,10 @@ def curated_missing():
     # not necessarily absent from disk.
     return [
       {'type':'Cowboy hat','priority':'HIGH','status':'SOURCE_PRESENT_UNPROMOTED','evidence':['More Accessories and Stuff / Cowboy Hat'],'next':'Promote as its own construction family.'},
-      {'type':'Baseball cap','priority':'HIGH','status':'PHOTO_TAILOR_REAL_OUTPUT_WORN_QC','evidence':['experiments/cap_reboot/baseball_cap_pt_real_01','cap reference'],'next':'Worn-QC the raw Photo Tailor 0.15.1 outputs copied unchanged into the PT REAL Fashion Sense pack.'},
-      {'type':'Dad cap','priority':'HIGH','status':'CLEANROOM_REBOOT_PLANNED','evidence':[],'next':'Fresh construction after Baseball; old Dad experiments remain visually quarantined until new master approval.'},
+      {'type':'Baseball cap','priority':'HIGH','status':'SOURCE_BACKED_LIVE_APPROVED_RESTORED','evidence':['authored/source_backed/cap_baseball','qc_bridge/captures/20260916-213415'],'next':'Use the existing source-backed Cap 2 construction as the active Baseball base; keep its geometry locked and let the generator vary palette/decoration.'},
+      {'type':'Dad cap','priority':'HIGH','status':'OLD_EXPERIMENT_REOPENED_FOR_REVIEW','evidence':['experiments/dad_cap/production_20x20','experiments/dad_cap_v2/production_20x20'],'next':'Review the existing Dad Cap V1/V2 constructions as valid candidates; the clean-room visual quarantine is lifted.'},
       {'type':'Snapback cap','priority':'LOW','status':'DEFERRED_NOT_REQUIRED','evidence':['More Accessories and Stuff / Cap (Snapback)'],'next':'Do not include in current cap reboot; revisit only if it proves meaningfully distinct from Baseball at worn scale.'},
-      {'type':'Trucker cap','priority':'HIGH','status':'CLEANROOM_REBOOT_PLANNED','evidence':[],'next':'Fresh construction after Baseball/Dad; old Trucker experiment art remains visually quarantined until new master approval.'},
+      {'type':'Trucker cap','priority':'HIGH','status':'OLD_EXPERIMENT_REOPENED_FOR_REVIEW','evidence':['experiments/trucker_cap'],'next':'Review the existing Trucker Cap experiment as a valid construction candidate; the clean-room visual quarantine is lifted.'},
       {'type':'Slouch beanie','priority':'HIGH','status':'EXPERIMENT_PRESENT','evidence':['experiments/slouch_beanie_compare','spritefusion slouch experiments'],'next':'Promote as a distinct beanie construction rather than a material variant.'},
       {'type':'Party hat','priority':'MEDIUM','status':'SOURCE_PRESENT_UNPROMOTED','evidence':['More Accessories and Stuff / Party Hat'],'next':'Review and promote if worn identity passes.'},
       {'type':'Paperboy / newsboy cap','priority':'HIGH','status':'SOURCE_PRESENT_BUT_REJECTED','evidence':['More Accessories and Stuff / Paperboy Hat (REJECTED_LIVE)'],'next':'Do not promote rejected source; replace/re-author a readable construction.'},
@@ -115,12 +115,11 @@ def old_material_disposition():
         'experiments/source_respecting_hat_pilot_01',
         'experiments/source_respecting_hat_batch_a_01',
         'experiments/source_respecting_hat_remaining_01',
-      ],
-      'QUARANTINED_CAP_HISTORY':[
         'experiments/dad_cap/',
         'experiments/dad_cap_v2/',
         'experiments/trucker_cap/',
       ],
+      'QUARANTINED_CAP_HISTORY':[],
       'ARCHIVE_CANDIDATE_AFTER_CURRENT_FREEZE':[
         'experiments/hat_production_batch_01',
         'experiments/hat_production_batch_09',
