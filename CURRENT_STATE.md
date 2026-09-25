@@ -1402,3 +1402,12 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - Trucker is intentionally excluded: the available Trucker reference is front-only, and Photo Tailor's compiler can project art but cannot turn Snapback geometry into a true Trucker construction. Do not fake this family again.
 - New contact sheet: `experiments/cap_photo_tailor_port_batch_01/CAP_PT_PORT_CONTACT_X10.png`.
 - QC pack installed as `[FS] RNG Cap PhotoTailor Port QC`.
+
+## 2026-09-25 — Photo Tailor trucker-hat runtime extension
+
+- Found the prior personal bridge was forcing every detected hat silhouette to `cap`, which invalidated earlier real-Photo-Tailor cap/trucker experiments.
+- Added `pt_make_trucker <imagePath>`. It keeps `Category=hat`, sets `Silhouette=trucker_hat`, and preserves Photo Tailor analysis/palette/pattern evidence.
+- Extended Photo Tailor `SpriteRenderer.HatTemplates` at runtime by reflection: `trucker_hat` and `trucker` map to vanilla hat sprite index **16**, which Photo Tailor semantic data identifies as **Trucker Hat** (`Mesh in the back to keep your head cool.`).
+- This means Photo Tailor now renders real trucker-photo evidence through its normal compiler/projection pipeline using the actual four-view vanilla Trucker Hat construction instead of generic `cap` template #5.
+- Existing `pt_make_cap` no longer force-overwrites all hat silhouettes to `cap`; it preserves the analyzer result.
+- Bridge rebuilt and deployed successfully. Current running SMAPI session still has the old DLL loaded and must be restarted before `pt_make_trucker` is available.

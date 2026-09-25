@@ -15,9 +15,16 @@ public sealed class ModEntry : Mod
             "pt_make_cap",
             "Run Photo Tailor's real analyzer + renderer on one local image. Usage: pt_make_cap <imagePath>",
             OnMakeCap);
+        helper.ConsoleCommands.Add(
+            "pt_make_trucker",
+            "Analyze a real trucker-hat image as category=hat and render it through Photo Tailor using the trucker_hat silhouette. Usage: pt_make_trucker <imagePath>",
+            (command, args) => OnMakeHat(command, args, "trucker_hat"));
     }
 
     private void OnMakeCap(string command, string[] args)
+        => OnMakeHat(command, args, null);
+
+    private void OnMakeHat(string command, string[] args, string? forcedHatSilhouette)
     {
         if (args.Length < 1)
         {
@@ -42,6 +49,8 @@ public sealed class ModEntry : Mod
             Type analyzerType = pt.GetType("PhotoTailor.LocalOutfitAnalyzer", throwOnError: true)!;
             Type retrieverType = pt.GetType("PhotoTailor.SemanticRetriever", throwOnError: true)!;
             Type rendererType = pt.GetType("PhotoTailor.SpriteRenderer", throwOnError: true)!;
+            InstallHatTemplate(rendererType, "trucker_hat", 16);
+            InstallHatTemplate(rendererType, "trucker", 16);
             object analyzer = Activator.CreateInstance(analyzerType, ptDir)
                 ?? throw new InvalidOperationException("Failed to create PhotoTailor analyzer.");
 
@@ -94,8 +103,19 @@ public sealed class ModEntry : Mod
 
                 PropertyInfo? silhouetteProperty = specType.GetProperty("Silhouette");
                 string originalSilhouette = silhouetteProperty?.GetValue(item)?.ToString() ?? "";
-                silhouetteProperty?.SetValue(item, "cap");
-                Monitor.Log($"PT precise hat: forcing silhouette {originalSilhouette} -> cap", LogLevel.Info);
+                if (!string.IsNullOrWhiteSpace(forcedHatSilhouette))
+                {
+                    silhouetteProperty?.SetValue(item, forcedHatSilhouette);
+                    PropertyInfo? semanticProperty = specType.GetProperty("SemanticDescription");
+                    string semantic = semanticProperty?.GetValue(item)?.ToString() ?? "";
+                    if (!semantic.Contains("trucker", StringComparison.OrdinalIgnoreCase))
+                        semanticProperty?.SetValue(item, $"trucker hat {semantic}".Trim());
+                    Monitor.Log($"PT hat override: {originalSilhouette} -> {forcedHatSilhouette}; category remains hat; template selection stays inside Photo Tailor.", LogLevel.Info);
+                }
+                else
+                {
+                    Monitor.Log($"PT hat: preserving analyzer silhouette {originalSilhouette}", LogLevel.Info);
+                }
 
                 string suffix = $"personal_{DateTime.UtcNow:yyyyMMddHHmmss}_{itemIndex:D2}";
                 object generated = Invoke(render, renderer, item, suffix)
@@ -124,6 +144,19 @@ public sealed class ModEntry : Mod
         {
             Monitor.Log(Unwrap(ex).ToString(), LogLevel.Error);
         }
+    }
+
+
+    private void InstallHatTemplate(Type rendererType, string silhouette, int vanillaHatIndex)
+    {
+        FieldInfo field = rendererType.GetField("HatTemplates", BindingFlags.Static | BindingFlags.NonPublic)
+            ?? throw new MissingFieldException("PhotoTailor.SpriteRenderer.HatTemplates");
+        object value = field.GetValue(null)
+            ?? throw new InvalidOperationException("PhotoTailor HatTemplates dictionary is null.");
+        PropertyInfo indexer = value.GetType().GetProperty("Item")
+            ?? throw new MissingMemberException("HatTemplates indexer");
+        indexer.SetValue(value, vanillaHatIndex, new object[] { silhouette });
+        Monitor.Log($"Photo Tailor hat template extension: {silhouette} -> vanilla hat #{vanillaHatIndex}", LogLevel.Debug);
     }
 
     private static object? Invoke(MethodInfo method, object target, params object[] args)
