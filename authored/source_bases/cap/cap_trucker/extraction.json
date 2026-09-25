@@ -1,0 +1,124 @@
+{
+  "master": "source/trucker_4view_master_80.png",
+  "view_order": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ],
+  "rawQuadrantSize": 40,
+  "rawBboxes": {
+    "front": [
+      8,
+      10,
+      37,
+      38
+    ],
+    "right": [
+      2,
+      11,
+      33,
+      35
+    ],
+    "left": [
+      8,
+      6,
+      38,
+      30
+    ],
+    "back": [
+      3,
+      6,
+      40,
+      30
+    ]
+  },
+  "candidates": {
+    "A32": {
+      "size": 32,
+      "inner": 30,
+      "scale": 0.8108108108108109,
+      "views": {
+        "front": {
+          "bbox": [
+            4,
+            7,
+            28,
+            30
+          ],
+          "opaque": 340
+        },
+        "right": {
+          "bbox": [
+            3,
+            11,
+            28,
+            30
+          ],
+          "opaque": 259
+        },
+        "left": {
+          "bbox": [
+            4,
+            11,
+            28,
+            30
+          ],
+          "opaque": 101
+        },
+        "back": {
+          "bbox": [
+            1,
+            11,
+            31,
+            30
+          ],
+          "opaque": 161
+        }
+      }
+    },
+    "B24": {
+      "size": 24,
+      "inner": 22,
+      "scale": 0.5945945945945946,
+      "views": {
+        "front": {
+          "bbox": [
+            3,
+            5,
+            20,
+            22
+          ],
+          "opaque": 174
+        },
+        "right": {
+          "bbox": [
+            3,
+            8,
+            20,
+            22
+          ],
+          "opaque": 141
+        },
+        "left": {
+          "bbox": [
+            3,
+            8,
+            21,
+            22
+          ],
+          "opaque": 55
+        },
+        "back": {
+          "bbox": [
+            1,
+            8,
+            23,
+            22
+          ],
+          "opaque": 90
+        }
+      }
+    }
+  }
+}

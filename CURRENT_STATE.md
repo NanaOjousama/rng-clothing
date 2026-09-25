@@ -1411,3 +1411,13 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - This means Photo Tailor now renders real trucker-photo evidence through its normal compiler/projection pipeline using the actual four-view vanilla Trucker Hat construction instead of generic `cap` template #5.
 - Existing `pt_make_cap` no longer force-overwrites all hat silhouettes to `cap`; it preserves the analyzer result.
 - Bridge rebuilt and deployed successfully. Current running SMAPI session still has the old DLL loaded and must be restarted before `pt_make_trucker` is available.
+
+## 2026-09-25 — Trucker family A/B construction proof
+
+- Registered the user-supplied transparent 80x80 four-view trucker sprite as the trucker construction authority at `authored/source_bases/cap/cap_trucker/source/trucker_4view_master_80.png`.
+- Extracted raw 40x40 front/right/left/back quadrants without repainting.
+- Built two normalized production candidates from the exact same construction: A32 (`production_32`) and B24 (`production_24`). Production resolution is intentionally NOT locked yet.
+- Added `generator/data/trucker_family_contract.json` with hard identity rules: structured solid front panel, forward brim, mesh rear/side, back opening, front-only motif zone, no motifs on mesh/back opening, preserve source alpha.
+- Generated a six-design like-for-like A/B QC batch at `experiments/trucker_ab_resolution_qc_01/`. Contact sheet: `TRUCKER_AB_32_VS_24_CONTACT.png`.
+- Structural validation: all six A32 variants preserve A32 alpha exactly; all six B24 variants preserve B24 alpha exactly.
+- Human visual decision between 32 and 24 remains pending; do not promote either to production before visual QC.

@@ -1,0 +1,72 @@
+{
+  "schema": "rng-clothing-trucker-family/v1",
+  "family": "trucker",
+  "status": "QC_A_B_RESOLUTION_PENDING",
+  "constructionAuthority": "authored/source_bases/cap/cap_trucker/source/trucker_4view_master_80.png",
+  "viewOrder": ["front", "right", "left", "back"],
+  "productionCandidates": {
+    "A32": "authored/source_bases/cap/cap_trucker/production_32/hat.png",
+    "B24": "authored/source_bases/cap/cap_trucker/production_24/hat.png"
+  },
+  "lockedProductionResolution": null,
+  "identity": [
+    "solid structured front panel",
+    "forward visor/brim",
+    "mesh rear-side and back construction",
+    "open back closure silhouette"
+  ],
+  "hardFailures": [
+    "missing directional view",
+    "front-only construction used as full family",
+    "mesh rear becomes solid cap crown",
+    "back opening disappears",
+    "motif stamped onto mesh/back opening",
+    "per-view rescaling independent of family baseline",
+    "alpha contamination outside source-derived silhouette"
+  ],
+  "zones": {
+    "front": {
+      "front_panel": [0.22, 0.08, 0.78, 0.68],
+      "motif_safe": [0.36, 0.24, 0.64, 0.48],
+      "brim": [0.18, 0.62, 0.82, 0.96]
+    },
+    "right": {
+      "solid_front": [0.05, 0.18, 0.58, 0.78],
+      "mesh_rear": [0.52, 0.18, 0.96, 0.76],
+      "brim": [0.02, 0.66, 0.62, 0.96]
+    },
+    "left": {
+      "solid_front": [0.42, 0.18, 0.95, 0.78],
+      "mesh_rear": [0.04, 0.18, 0.48, 0.76],
+      "brim": [0.38, 0.66, 0.98, 0.96]
+    },
+    "back": {
+      "mesh": [0.08, 0.10, 0.92, 0.76],
+      "opening": [0.26, 0.54, 0.74, 0.96]
+    }
+  },
+  "materialRules": {
+    "frontAndBrim": "solid",
+    "rearAndBack": "mesh",
+    "meshMustRemainVisiblyDistinct": true,
+    "preserveSourceAlpha": true
+  },
+  "motifRules": {
+    "primaryZone": "front.motif_safe",
+    "allowedViews": ["front"],
+    "meshAllowed": false,
+    "backOpeningAllowed": false
+  },
+  "qcRequirements": {
+    "sameVariantAtBothCandidateResolutions": true,
+    "minimumVariants": 6,
+    "judge": [
+      "family identity",
+      "directional scale consistency",
+      "mesh readability",
+      "back opening readability",
+      "front-panel readability",
+      "Stardew-scale fit beside existing hats"
+    ]
+  }
+}

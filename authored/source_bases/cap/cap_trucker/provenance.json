@@ -1,0 +1,15 @@
+{
+  "family": "trucker",
+  "sourceType": "user_supplied_transparent_four_view_reference",
+  "sourceFile": "source/trucker_4view_master_80.png",
+  "sourceDimensions": [80, 80],
+  "layout": {
+    "front": [0, 0, 40, 40],
+    "right": [40, 0, 80, 40],
+    "left": [0, 40, 40, 80],
+    "back": [40, 40, 80, 80]
+  },
+  "constructionAuthority": true,
+  "productionResolution": null,
+  "resolutionDecision": "A/B human QC pending: 32x32 vs 24x24"
+}

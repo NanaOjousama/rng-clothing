@@ -1,0 +1,14 @@
+{
+  "source": "/run/media/deck/USD00/RNG_clothing/authored/source_bases/cap/cap_trucker/source/trucker_4view_master_80.png",
+  "A": "32x32 normalized production candidate",
+  "B": "24x24 normalized production candidate",
+  "variants": [
+    "01_source_green",
+    "02_forest_cream",
+    "03_navy_cream",
+    "04_red_blue",
+    "05_rust_tan",
+    "06_charcoal_sage"
+  ],
+  "decision": "pending human visual QC"
+}
