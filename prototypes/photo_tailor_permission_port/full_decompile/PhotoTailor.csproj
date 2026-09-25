@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>PhotoTailor</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework" />
+    <Reference Include="Microsoft.ML.OnnxRuntime">
+      <HintPath>../../../../steamapps/common/Stardew Valley/Mods/PhotoTailor/Microsoft.ML.OnnxRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp" />
+    <Reference Include="StardewModdingAPI" />
+    <Reference Include="Stardew Valley" />
+    <Reference Include="StardewValley.GameData" />
+    <Reference Include="xTile" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+{
+  "family": "backwards",
+  "sourceId": "JED_BACK",
+  "pattern": "solid",
+  "photoTailorPortUsed": true,
+  "alphaPreserved": true,
+  "geometryAuthority": "source four-view construction",
+  "renderAuthority": "Photo Tailor PreviewHat/Recolor direct Python port"
+}

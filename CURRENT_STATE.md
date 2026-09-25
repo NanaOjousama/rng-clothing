@@ -1388,3 +1388,17 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - Current corrected QC batch contains 9 unique cap families: Baseball, Snapback, Boys Cap, Backwards Cap, Dad/Vintage, Cap+Headphones, Officer, Paperboy, and Trucker.
 - Old Dad V1 is intentionally not in the production batch because its front source fills the entire 20x20 frame and is contamination/rescale-suspect. Old Dad V2 is superseded by the stronger Vintage/Dad construction. Maid Cap is off-family and not forced into this cap batch.
 - Contact sheet: `experiments/cap_real_pipeline_batch_01/CAP_REAL_PIPELINE_CONTACT_X10.png`. QC pack installed as `[FS] RNG Cap Real Pipeline QC`.
+
+## 2026-09-25 — Photo Tailor permission-backed direct code port
+
+- User supplied explicit author permission to adapt/reuse Photo Tailor code and confirmed proof is retained in the repo.
+- Fully decompiled the installed PhotoTailor.dll into `prototypes/photo_tailor_permission_port/full_decompile/` (48 source files, ~620K) using ILSpy.
+- Confirmed Photo Tailor hat rendering route: `SpriteRenderer.PreviewHat` selects vanilla HatTemplates[`cap`] = index 5, crops a single 20x80 four-facing template, then runs `Recolor(... FourFacingVertical ...)`.
+- Confirmed this is why PT directional rendering is coherent: it preserves one fixed four-view alpha/template rather than independently generating each view.
+- Direct Python ports now live under `generator/photo_tailor_port.py` and `generator/cap_photo_tailor_pipeline.py`.
+- Ported actual algorithms include CanonicalGarmentCanvas facing projection math, HSL shade-ramp generation, field/pattern color projection, canonical motif anchors, nearest-opaque search, SpriteRenderer topology-boundary detection, source-luma shading, and the PreviewHat/Recolor four-facing loop.
+- Existing approved HAT_PRODUCTION_GOLDEN_V1 remains untouched after validation correctly detected that globally swapping renderer math would change frozen goldens; PT code is isolated to the new cap path pending human visual approval.
+- New direct-code-port QC batch contains 8 real four-view source constructions: Baseball, Snapback, Boys Cap, Backwards Cap, Dad/Vintage, Cap+Headphones, Officer, Paperboy.
+- Trucker is intentionally excluded: the available Trucker reference is front-only, and Photo Tailor's compiler can project art but cannot turn Snapback geometry into a true Trucker construction. Do not fake this family again.
+- New contact sheet: `experiments/cap_photo_tailor_port_batch_01/CAP_PT_PORT_CONTACT_X10.png`.
+- QC pack installed as `[FS] RNG Cap PhotoTailor Port QC`.

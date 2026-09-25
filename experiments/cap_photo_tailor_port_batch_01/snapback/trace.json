@@ -1,0 +1,9 @@
+{
+  "family": "snapback",
+  "sourceId": "MAS_SNAP",
+  "pattern": "colorblock",
+  "photoTailorPortUsed": true,
+  "alphaPreserved": true,
+  "geometryAuthority": "source four-view construction",
+  "renderAuthority": "Photo Tailor PreviewHat/Recolor direct Python port"
+}

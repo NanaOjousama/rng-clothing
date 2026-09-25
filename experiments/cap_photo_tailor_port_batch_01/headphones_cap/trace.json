@@ -1,0 +1,9 @@
+{
+  "family": "headphones_cap",
+  "sourceId": "JED_HEADPHONES",
+  "pattern": "solid",
+  "photoTailorPortUsed": true,
+  "alphaPreserved": true,
+  "geometryAuthority": "source four-view construction",
+  "renderAuthority": "Photo Tailor PreviewHat/Recolor direct Python port"
+}

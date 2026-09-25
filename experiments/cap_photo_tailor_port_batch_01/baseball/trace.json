@@ -1,0 +1,9 @@
+{
+  "family": "baseball",
+  "sourceId": "MAS_CAP2",
+  "pattern": "solid",
+  "photoTailorPortUsed": true,
+  "alphaPreserved": true,
+  "geometryAuthority": "source four-view construction",
+  "renderAuthority": "Photo Tailor PreviewHat/Recolor direct Python port"
+}

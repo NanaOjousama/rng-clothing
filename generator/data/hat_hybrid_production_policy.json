@@ -25,5 +25,10 @@
   "rendererContractPath": "generator/data/hat_renderer_contract.json",
   "rendererFrozen": true,
   "catalogFrozen": false,
-  "catalogExpansionAllowed": true
+  "catalogExpansionAllowed": true,
+  "photoTailorCodePortPresent": true,
+  "photoTailorPortModule": "generator/photo_tailor_port.py",
+  "photoTailorCapPipeline": "generator/cap_photo_tailor_pipeline.py",
+  "photoTailorPermission": "explicit author permission to adapt/reuse code; proof retained in repo by project owner",
+  "note": "Direct Photo Tailor algorithms are vendored/ported into project code; no PhotoTailor runtime dependency is required. Existing golden hat production remains frozen until human QC approves migration."
 }

@@ -1,0 +1,9 @@
+{
+  "family": "officer",
+  "sourceId": "JED_OFFICER",
+  "pattern": "solid",
+  "photoTailorPortUsed": true,
+  "alphaPreserved": true,
+  "geometryAuthority": "source four-view construction",
+  "renderAuthority": "Photo Tailor PreviewHat/Recolor direct Python port"
+}

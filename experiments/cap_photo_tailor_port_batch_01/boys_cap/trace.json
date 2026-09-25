@@ -1,0 +1,9 @@
+{
+  "family": "boys_cap",
+  "sourceId": "RAGNAROK_BOYS",
+  "pattern": "solid",
+  "photoTailorPortUsed": true,
+  "alphaPreserved": true,
+  "geometryAuthority": "source four-view construction",
+  "renderAuthority": "Photo Tailor PreviewHat/Recolor direct Python port"
+}
