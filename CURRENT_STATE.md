@@ -1429,3 +1429,13 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - Both use matching trucker taste rules and front-only motif placements; attachments/hardware are disabled during base selection so resolution is the primary variable.
 - `generator.catalog_templates.load_template_for_family()` successfully loads and verifies both contracts: A32=(32,32), B24=(24,24), four views each.
 - No winner is selected yet. Keep both active until user chooses the base, then collapse to one production `trucker` family.
+
+## 2026-09-25 — Trucker FINAL-look generator A/B
+
+- User clarified the resolution choice must be judged from finished generator output, not template/proof renders.
+- Added `generator/trucker_renderer.py`, a finished trucker renderer that preserves locked silhouette cells/back opening but converts all nonzero template alpha to full production opacity, so source mesh no longer looks faded/disappearing.
+- Mesh is rendered as visible woven fabric with alternating value treatment; front remains solid; strong border is preserved; trim/colorblock and front-only motifs follow the registered taste policy.
+- Added `tools/build_trucker_final_ab_generator.py`. It loads both ACTIVE generator families through `generator.catalog_templates`, validates each recipe through `generator.taste_policy.evaluate_recipe`, then renders the exact same six legal recipes for A32 and B24.
+- Output: `experiments/trucker_final_generator_ab_01/TRUCKER_FINAL_GENERATOR_A32_VS_B24.png`.
+- Validation: 6 finished variants per base; every nonzero output alpha is 255 for both A32 and B24; locked silhouette cells and back openings are preserved.
+- Final base decision remains pending user visual choice.

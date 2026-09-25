@@ -1,0 +1,112 @@
+{
+  "schema": "trucker-final-generator-ab/v1",
+  "A": {
+    "family": "trucker_a32_qc",
+    "size": [
+      32,
+      32
+    ]
+  },
+  "B": {
+    "family": "trucker_b24_qc",
+    "size": [
+      24,
+      24
+    ]
+  },
+  "variants": [
+    {
+      "name": "C1_CLASSIC",
+      "rarity": "common",
+      "palette": "FIELD_CANVAS_MOSS",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      }
+    },
+    {
+      "name": "C2_SUBTLE",
+      "rarity": "common",
+      "palette": "EVERYDAY_STONE_BLUE",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "subtle",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      }
+    },
+    {
+      "name": "U1_TWOTONE",
+      "rarity": "uncommon",
+      "palette": "WORKWEAR_DENIM_RUST",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "colorblock",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      }
+    },
+    {
+      "name": "U2_STRIPE",
+      "rarity": "uncommon",
+      "palette": "STREET_TEAL_GRAPHITE",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "stripe",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      }
+    },
+    {
+      "name": "R1_PATCH",
+      "rarity": "rare",
+      "palette": "CEREMONIAL_CRIMSON_IVORY",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "solid",
+        "trim": "subtle",
+        "motif": "small",
+        "motifPlacement": "front_center",
+        "attachment": "none",
+        "hardware": "none"
+      }
+    },
+    {
+      "name": "E1_EMBLEM",
+      "rarity": "epic",
+      "palette": "CELESTIAL_INDIGO_STAR",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "subtle",
+        "trim": "subtle",
+        "motif": "emblem",
+        "motifPlacement": "front_offset",
+        "attachment": "none",
+        "hardware": "none"
+      }
+    }
+  ],
+  "finishRules": [
+    "opaque production mesh",
+    "mesh value weave",
+    "solid front",
+    "strong border",
+    "front-only motif",
+    "back opening preserved"
+  ],
+  "decision": "pending user visual choice"
+}
