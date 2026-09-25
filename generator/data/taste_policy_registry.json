@@ -336,6 +336,20 @@
       "origin": "catalog-promoter",
       "template": "catalog_accessories_more_accessories_and_stuff_mask",
       "category": "Accessories"
+    },
+    "trucker_a32_qc": {
+      "policyFile": "generator/data/taste_policies/trucker_a32_qc.json",
+      "status": "ACTIVE",
+      "origin": "manual-qc",
+      "template": "trucker_a32_qc",
+      "category": "Hats"
+    },
+    "trucker_b24_qc": {
+      "policyFile": "generator/data/taste_policies/trucker_b24_qc.json",
+      "status": "ACTIVE",
+      "origin": "manual-qc",
+      "template": "trucker_b24_qc",
+      "category": "Hats"
     }
   },
   "futureFamilyContract": {

@@ -572,6 +572,28 @@
       "sourceCategory": "Accessories",
       "sourcePack": "More Accessories and Stuff",
       "sourceName": "Mask"
+    },
+    "trucker_a32_qc": {
+      "contract": "generator/data/templates/trucker_a32_qc.json",
+      "family": "trucker_a32_qc",
+      "slot": "HEAD",
+      "status": "QC_READY",
+      "constructionAuthority": "user-supplied four-view trucker source normalized to 32x32",
+      "humanArtApprovalRequired": true,
+      "origin": "manual-qc",
+      "sourceCategory": "Hats",
+      "sourceName": "Trucker 32px A/B base"
+    },
+    "trucker_b24_qc": {
+      "contract": "generator/data/templates/trucker_b24_qc.json",
+      "family": "trucker_b24_qc",
+      "slot": "HEAD",
+      "status": "QC_READY",
+      "constructionAuthority": "user-supplied four-view trucker source normalized to 24x24",
+      "humanArtApprovalRequired": true,
+      "origin": "manual-qc",
+      "sourceCategory": "Hats",
+      "sourceName": "Trucker 24px A/B base"
     }
   },
   "catalogPromotion": {

@@ -1,0 +1,109 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "trucker_a32_qc",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "trucker_a32_qc",
+  "frameSize": [
+    32,
+    32
+  ],
+  "sourceIdentity": {
+    "kind": "USER_APPROVED_CONSTRUCTION_TEMPLATE",
+    "name": "Transparent four-view trucker construction",
+    "variant": "32px QC candidate"
+  },
+  "requiredInputs": [
+    "four approved cardinal construction frames",
+    "semantic zones and placement anchors",
+    "wear/export contract"
+  ],
+  "frames": {
+    "front": {
+      "path": "authored/source_bases/cap/cap_trucker/production_32/front.png",
+      "sha256": "687d90a505ac846edd091dd514d6b05697f5b13c3c439a5614de8e97f0dd8b95",
+      "alphaSha256": "d79149ad61088481c4c08735d30861ede0db5b80f51917749749bc56cf05f915"
+    },
+    "right": {
+      "path": "authored/source_bases/cap/cap_trucker/production_32/right.png",
+      "sha256": "cf695b9ebf9d49a44ce3332662e292dd845d1b09ce2df07c3cff6a86884ac008",
+      "alphaSha256": "49b00f38ed2f69a82029ddba0d3ba26cacddf10a3c4b25495d36ad5f66932719"
+    },
+    "left": {
+      "path": "authored/source_bases/cap/cap_trucker/production_32/left.png",
+      "sha256": "1e1e7a9c17c860598a45584a93fb46f2e7991ca63734679c60179fab85f04ee1",
+      "alphaSha256": "4ea6c19a10bd2e43e8861ca10d160ee58cb3792d0e0832ca10b3b030e9cd9961"
+    },
+    "back": {
+      "path": "authored/source_bases/cap/cap_trucker/production_32/back.png",
+      "sha256": "762c23dc4435fe7b6e767313f530c53d2a4e088d3e9eac5a7cf289bc34b517dd",
+      "alphaSha256": "b540bfe47406bb15a647d591acb82828a28412b8103fbe797bed9bb9d39a7e5f"
+    }
+  },
+  "geometryLock": {
+    "authority": "trucker four-view source-derived candidate",
+    "requiredViews": [
+      "front",
+      "right",
+      "left",
+      "back"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "none during A/B base QC",
+    "notes": "A/B candidate geometry is locked until user chooses final resolution."
+  },
+  "zones": {
+    "front_panel": {
+      "purpose": "solid front panel and front-only motif zone"
+    },
+    "brim": {
+      "purpose": "visor/bill"
+    },
+    "mesh_rear": {
+      "purpose": "rear-side mesh; no motif"
+    },
+    "back_opening": {
+      "purpose": "open-back negative space; must remain readable"
+    },
+    "surface": {
+      "purpose": "palette/material treatment inside locked alpha only"
+    }
+  },
+  "anchors": {
+    "front": {
+      "motif_center": [
+        16,
+        10
+      ]
+    },
+    "right": {},
+    "left": {},
+    "back": {}
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF"
+  ],
+  "safeTransferRules": [
+    "template owns alpha/silhouette and directional geometry",
+    "motifs front-only",
+    "mesh remains visually distinct",
+    "back opening may not be filled"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true,
+      "reason": "A/B resolution candidate may not silently change construction"
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true,
+      "reason": "resolution choice is explicit A/B, never implicit resampling"
+    }
+  ]
+}

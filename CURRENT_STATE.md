@@ -1421,3 +1421,11 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - Generated a six-design like-for-like A/B QC batch at `experiments/trucker_ab_resolution_qc_01/`. Contact sheet: `TRUCKER_AB_32_VS_24_CONTACT.png`.
 - Structural validation: all six A32 variants preserve A32 alpha exactly; all six B24 variants preserve B24 alpha exactly.
 - Human visual decision between 32 and 24 remains pending; do not promote either to production before visual QC.
+
+## 2026-09-25 — Both trucker A/B bases registered in generator
+
+- Registered two ACTIVE temporary trucker QC families in the shared generator registries: `trucker_a32_qc` and `trucker_b24_qc`.
+- Each family has its own locked source-backed template contract (`generator/data/templates/trucker_a32_qc.json`, `trucker_b24_qc.json`) pointing to the 32x32 or 24x24 four-view production candidate respectively.
+- Both use matching trucker taste rules and front-only motif placements; attachments/hardware are disabled during base selection so resolution is the primary variable.
+- `generator.catalog_templates.load_template_for_family()` successfully loads and verifies both contracts: A32=(32,32), B24=(24,24), four views each.
+- No winner is selected yet. Keep both active until user chooses the base, then collapse to one production `trucker` family.
