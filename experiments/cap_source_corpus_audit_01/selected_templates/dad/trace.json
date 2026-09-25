@@ -1,0 +1,14 @@
+{
+  "type": "DAD",
+  "source": "Jedone's Casual Hat Pack \u2014 Vintage Cap_01",
+  "sourcePath": "/home/deck/Downloads/[FS] Jedone's Casual Hat Pack/Hats/Vintage Cap/Vintage Cap_01/hat.png",
+  "constructionUse": "exact alpha shape donor",
+  "identity": "dad cap / low soft cap",
+  "identityRefs": [],
+  "sourceAlphaHash": "ebaf93bdeec0d5e7f940826fcfbef1af",
+  "templateAlphaHash": "ebaf93bdeec0d5e7f940826fcfbef1af",
+  "alphaExact": true,
+  "copiedSourceRGB": false,
+  "colorPolicy": "new project neutral shading + project identity preview; source RGB not reused",
+  "status": "EXPERIMENTAL_SOURCE_DERIVED_TEMPLATE_NEEDS_HUMAN_APPROVAL"
+}

@@ -1351,3 +1351,17 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - A fresh validation roll using `STREET_TEAL_GRAPHITE` + `cap_baseball_front_ring` rendered successfully with no dropped cells; output is under `experiments/cap_reboot/old_baseball_return_01/fresh_roll_teal_ring/`.
 - Dad Cap V1/V2 and Trucker experiment folders are reopened as construction candidates; their prior clean-room visual quarantine is lifted.
 - Photo Tailor cap geometry experiments are historical/reference evidence only and are no longer the active Baseball construction path.
+
+## 2026-09-25 — full cap source-corpus audit + source-derived cap candidates
+
+- User explicitly requested searching the full repo/reference corpus plus `/home/deck/Downloads/` and `/run/media/deck/USD00/` for cap-like mod-author sources, then building Baseball/Dad/Trucker from the strongest source constructions.
+- External content-aware scan found 22 named-cap author assets before construction-group collapse. Important unique construction groups: plurffle Cap1/Cap2 (same alpha), plurffle Snapback, plurffle Paperboy, Jedone Backwards Cap x5 (same alpha), Jedone Vintage Cap x3 (same alpha), Jedone Cap & Headphones x8 (same alpha; Vintage core + headphone pixels), Jedone Officer Cap, Seyph/Ragnarok Boys Cap, PeacefulEnd Maid Cap. A standalone 16px Trucker front reference also exists.
+- Audit outputs: `experiments/cap_source_corpus_audit_01/CAP_SOURCE_AUDIT_CONTACT_X10.png`, `cap_source_audit.json`, and `docs/caps/CAP_SOURCE_CORPUS_AUDIT_2026-09-25.md`.
+- Selected experimental candidates:
+  - Baseball: Seyph/Ragnarok `0_BoysCap.png` exact alpha geometry.
+  - Dad: Jedone `Vintage Cap_01` exact alpha geometry.
+  - Trucker: plurffle `Cap (Snapback)` exact alpha geometry; Trucker identity comes from panel/material treatment informed by the old 16px Trucker front reference and vanilla #16 Trucker study.
+- Source-derived template policy: borrow alpha geometry only; source RGB/design is not copied. Project neutral shading / identity preview / future generator styling is new.
+- Exact source/template alpha hash equality verified for all three candidates.
+- Candidate outputs live under `experiments/cap_source_corpus_audit_01/selected_templates/`; QC pack prepared at `test-packs/fashionsense/RNG-Cap-Source-Template-QC/`.
+- These are NOT yet production-promoted. Existing live-approved Cap2 remains the active Baseball fallback until human contact-sheet + worn QC approval.

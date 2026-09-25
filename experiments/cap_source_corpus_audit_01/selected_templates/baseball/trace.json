@@ -1,0 +1,14 @@
+{
+  "type": "BASEBALL",
+  "source": "Ragnarok Online Hats / Seyph \u2014 Boys Cap",
+  "sourcePath": "/home/deck/Downloads/[CP] Ragnarok Online Hats/assets/0_BoysCap.png",
+  "constructionUse": "exact alpha shape donor",
+  "identity": "baseball cap",
+  "identityRefs": [],
+  "sourceAlphaHash": "5a993327a73163fc561232b0b24882f7",
+  "templateAlphaHash": "5a993327a73163fc561232b0b24882f7",
+  "alphaExact": true,
+  "copiedSourceRGB": false,
+  "colorPolicy": "new project neutral shading + project identity preview; source RGB not reused",
+  "status": "EXPERIMENTAL_SOURCE_DERIVED_TEMPLATE_NEEDS_HUMAN_APPROVAL"
+}

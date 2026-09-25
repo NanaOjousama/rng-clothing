@@ -1,0 +1,17 @@
+{
+  "type": "TRUCKER",
+  "source": "More Accessories and Stuff / plurffle \u2014 Cap (Snapback)",
+  "sourcePath": "/run/media/deck/USD00/RNG_clothing/generator content/[FS] More Accessories and Stuff Pack/Hats/CapSnapback/hat.png",
+  "constructionUse": "structured cap alpha donor; trucker identity from panel/material contract",
+  "identity": "trucker cap",
+  "identityRefs": [
+    "/home/deck/Downloads/front_view_trucker_h...-1938391056-0.png",
+    "docs/headwear/KNOWLEDGE_BASE.md \u2014 vanilla #16 Trucker structural study"
+  ],
+  "sourceAlphaHash": "10b710cdf009087e6ded6bacbc6b7e3e",
+  "templateAlphaHash": "10b710cdf009087e6ded6bacbc6b7e3e",
+  "alphaExact": true,
+  "copiedSourceRGB": false,
+  "colorPolicy": "new project neutral shading + project identity preview; source RGB not reused",
+  "status": "EXPERIMENTAL_SOURCE_DERIVED_TEMPLATE_NEEDS_HUMAN_APPROVAL"
+}
