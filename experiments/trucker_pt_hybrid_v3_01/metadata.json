@@ -1,0 +1,86 @@
+{
+  "schema": "trucker-pt-hybrid/v3",
+  "family": "trucker",
+  "geometryAuthority": "Stardew Valley vanilla Trucker Hat #16",
+  "photoTailorIntegrated": true,
+  "photoTailorRole": "renderer shading/value projection math per physical semantic region",
+  "regionRules": {
+    "front": "solid crown only; no mesh",
+    "sides": "solid front panel + rear mesh + explicit visor",
+    "back": "rear mesh + explicit lower closure"
+  },
+  "variants": [
+    {
+      "name": "CLASSIC_MOSS",
+      "rarity": "common",
+      "palette": "FIELD_CANVAS_MOSS",
+      "pattern": "solid",
+      "meshStrength": 0.05,
+      "patternStrength": 0.0,
+      "motif": "none"
+    },
+    {
+      "name": "STONE_BLUE",
+      "rarity": "common",
+      "palette": "EVERYDAY_STONE_BLUE",
+      "pattern": "solid",
+      "meshStrength": 0.06,
+      "patternStrength": 0.0,
+      "motif": "none"
+    },
+    {
+      "name": "DENIM_RUST",
+      "rarity": "uncommon",
+      "palette": "WORKWEAR_DENIM_RUST",
+      "pattern": "solid",
+      "meshStrength": 0.09,
+      "patternStrength": 0.0,
+      "motif": "none"
+    },
+    {
+      "name": "TEAL_PINSTRIPE",
+      "rarity": "uncommon",
+      "palette": "STREET_TEAL_GRAPHITE",
+      "pattern": "pinstripe",
+      "meshStrength": 0.08,
+      "patternStrength": 0.11,
+      "motif": "none"
+    },
+    {
+      "name": "COASTAL_TWOTONE",
+      "rarity": "rare",
+      "palette": "COASTAL_SEAFOAM_CORAL",
+      "pattern": "solid",
+      "meshStrength": 0.11,
+      "patternStrength": 0.0,
+      "motif": "small"
+    },
+    {
+      "name": "CRIMSON_PATCH",
+      "rarity": "rare",
+      "palette": "CEREMONIAL_CRIMSON_IVORY",
+      "pattern": "check",
+      "meshStrength": 0.1,
+      "patternStrength": 0.1,
+      "motif": "small"
+    },
+    {
+      "name": "INDIGO_EMBLEM",
+      "rarity": "epic",
+      "palette": "CELESTIAL_INDIGO_STAR",
+      "pattern": "pinstripe",
+      "meshStrength": 0.13,
+      "patternStrength": 0.13,
+      "motif": "emblem"
+    },
+    {
+      "name": "AUTUMN_CHECK",
+      "rarity": "epic",
+      "palette": "AUTUMN_OCHRE_PLUM",
+      "pattern": "check",
+      "meshStrength": 0.12,
+      "patternStrength": 0.14,
+      "motif": "emblem"
+    }
+  ]
+}

@@ -1495,3 +1495,13 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - Photo Tailor port is used on all six variants for source-luma shading/projection. Rare/Epic then receive bounded front motif deltas from the hybrid layer; Common/Uncommon remain Photo-Tailor-shaded only.
 - Output: `experiments/trucker_pt_hybrid_v2_01/TRUCKER_PT_HYBRID_V2_CONTACT.png` plus per-view PNGs and metadata.
 - Validation: all 24 generated frames preserve vanilla #16 alpha bytes exactly; Photo Tailor port reported used on all six variants; no hybrid fallback occurred.
+
+## 2026-09-25 — Trucker PT-hybrid v3 rich styling batch
+
+- Built a richer Photo-Tailor-integrated trucker renderer while keeping vanilla Stardew Trucker Hat #16 as the locked geometry authority.
+- Added `generator/trucker_pt_hybrid_renderer.py` with explicit trucker physical regions derived from vanilla #16 pixels: front view is solid crown only; side views separate solid front panel, rear mesh/body, and visor; back separates rear mesh/body from lower closure.
+- Photo Tailor renderer shading/value math is applied per semantic region instead of flattening the whole hat into one generic field.
+- Restored two-tone contrast, brim contrast, rear mesh weave, front-panel pinstripe/check patterns, and Rare/Epic motifs. Patterns/contrast are constrained to physical regions, not generic full-width horizontal bands.
+- Built eight variants with `tools/build_trucker_pt_hybrid_v3_batch.py`: Classic Moss, Stone Blue, Denim Rust, Teal Pinstripe, Coastal Twotone, Crimson Patch, Indigo Emblem, Autumn Check.
+- Output: `experiments/trucker_pt_hybrid_v3_01/TRUCKER_PT_HYBRID_V3_CONTACT.png` plus individual cardinal frames and metadata.
+- Validation: all 32 generated frames preserve vanilla #16 alpha bytes exactly. Generated views contain multiple RGB values per view (7–16 depending on variant), confirming visible value/shading variation rather than flat single-color fills.
