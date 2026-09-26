@@ -10,8 +10,8 @@
   ],
   "sourceIdentity": {
     "kind": "USER_APPROVED_CONSTRUCTION_TEMPLATE",
-    "name": "Transparent four-view trucker construction",
-    "variant": "32px QC candidate"
+    "name": "Rebuilt coherent trucker production base",
+    "variant": "32px coherent QC candidate"
   },
   "requiredInputs": [
     "four approved cardinal construction frames",
@@ -20,28 +20,28 @@
   ],
   "frames": {
     "front": {
-      "path": "authored/source_bases/cap/cap_trucker/production_32/front.png",
-      "sha256": "687d90a505ac846edd091dd514d6b05697f5b13c3c439a5614de8e97f0dd8b95",
-      "alphaSha256": "d79149ad61088481c4c08735d30861ede0db5b80f51917749749bc56cf05f915"
+      "path": "authored/source_bases/cap/cap_trucker/coherent_production_32/front.png",
+      "sha256": "ed039baa512c3558678e86bb4c23f694b9916c4ebffbfcb8b2266c25f0859aa3",
+      "alphaSha256": "b45f9913f2af6205bdd4174ca447cddc848423aebc6ddb939f23f38e80c8276d"
     },
     "right": {
-      "path": "authored/source_bases/cap/cap_trucker/production_32/right.png",
-      "sha256": "cf695b9ebf9d49a44ce3332662e292dd845d1b09ce2df07c3cff6a86884ac008",
-      "alphaSha256": "49b00f38ed2f69a82029ddba0d3ba26cacddf10a3c4b25495d36ad5f66932719"
+      "path": "authored/source_bases/cap/cap_trucker/coherent_production_32/right.png",
+      "sha256": "32f35f105e9b12183c4b502911b1abaeebbee6a964f9f9da6b766168ffe58267",
+      "alphaSha256": "97389303d72507576762c8155e213de94651d03b9a4c262fb2d7dbf9f8a70cb2"
     },
     "left": {
-      "path": "authored/source_bases/cap/cap_trucker/production_32/left.png",
-      "sha256": "1e1e7a9c17c860598a45584a93fb46f2e7991ca63734679c60179fab85f04ee1",
-      "alphaSha256": "4ea6c19a10bd2e43e8861ca10d160ee58cb3792d0e0832ca10b3b030e9cd9961"
+      "path": "authored/source_bases/cap/cap_trucker/coherent_production_32/left.png",
+      "sha256": "0622e8788d35756c8ff62eb5d1708b50f88970aca07cd29d4c500d3b2b3fbe2a",
+      "alphaSha256": "bc12a8ef1b3cc6fa79b84fed1024e41697281445fcdee5787c46c7fc00e0c220"
     },
     "back": {
-      "path": "authored/source_bases/cap/cap_trucker/production_32/back.png",
-      "sha256": "762c23dc4435fe7b6e767313f530c53d2a4e088d3e9eac5a7cf289bc34b517dd",
-      "alphaSha256": "b540bfe47406bb15a647d591acb82828a28412b8103fbe797bed9bb9d39a7e5f"
+      "path": "authored/source_bases/cap/cap_trucker/coherent_production_32/back.png",
+      "sha256": "2d30ba989645b20d506956948738255e9077223e560e8bf3f98b992aa023e477",
+      "alphaSha256": "6fc3daddd164b91d168d23dedbe9e494a01e39b970f8beb16cd12c5c8381d45f"
     }
   },
   "geometryLock": {
-    "authority": "trucker four-view source-derived candidate",
+    "authority": "rebuilt coherent trucker production silhouette",
     "requiredViews": [
       "front",
       "right",

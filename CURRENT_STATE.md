@@ -1439,3 +1439,12 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - Output: `experiments/trucker_final_generator_ab_01/TRUCKER_FINAL_GENERATOR_A32_VS_B24.png`.
 - Validation: 6 finished variants per base; every nonzero output alpha is 255 for both A32 and B24; locked silhouette cells and back openings are preserved.
 - Final base decision remains pending user visual choice.
+
+## 2026-09-25 — Trucker coherent production base rebuild
+
+- Rejected the sparse reference-derived alpha masks as production geometry because they caused disappearing/fading side and back views.
+- Added rebuilt coherent trucker production bases at 32px and 24px under `authored/source_bases/cap/cap_trucker/coherent_production_32/` and `coherent_production_24/`.
+- New bases keep full opaque hat mass in all four views; mesh is represented as opaque surface texture; only the intentional back opening remains transparent.
+- Updated `trucker_a32_qc` and `trucker_b24_qc` template contracts to point to the rebuilt coherent bases and refreshed hashes.
+- Regenerated `experiments/trucker_final_generator_ab_01/TRUCKER_FINAL_GENERATOR_A32_VS_B24.png` through the shared generator/taste pipeline.
+- Structural gate: every generated front/right/left/back view across both A32 and B24 is a single connected hat silhouette; zero fragmented/blob views.
