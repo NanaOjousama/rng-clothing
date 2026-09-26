@@ -50,7 +50,7 @@ def _solid_region_pattern(rgb,x,y,recipe):
     if patt=='dense' and (x+2*y)%4==0:return _darken(rgb,0.84)
     return rgb
 
-def render_frame(frame,view,body_ramp,mesh_ramp,accent_ramp,recipe,anchor):
+def render_frame(frame,view,body_ramp,mesh_ramp,accent_ramp,recipe,anchor,preserve_alpha=False):
     x0,y0,x1,y1=_opaque_bbox(frame)
     out=[row[:] for row in frame]
     for y,row in enumerate(frame):
@@ -67,7 +67,7 @@ def render_frame(frame,view,body_ramp,mesh_ramp,accent_ramp,recipe,anchor):
             # Preserve a strong Stardew-style border.
             if _edge(frame,x,y):
                 rgb=_darken(rgb,0.56)
-            out[y][x]=(*rgb,255)
+            out[y][x]=(*rgb,p[3] if preserve_alpha else 255)
 
     # Colorblock/contrast treatments apply to the lower brim/band area.
     trim=recipe.get('trim','none')
@@ -79,10 +79,10 @@ def render_frame(frame,view,body_ramp,mesh_ramp,accent_ramp,recipe,anchor):
             if patt=='colorblock' or trim in ('contrast','wrap'):
                 base=accent_ramp[-2 if len(accent_ramp)>1 else -1]
                 rgb=_darken(base,0.60) if _edge(frame,x,y) else base
-                out[y][x]=(*rgb,255)
+                out[y][x]=(*rgb,frame[y][x][3] if preserve_alpha else 255)
             elif trim=='subtle' and y==brim_y:
                 rgb=accent_ramp[0]
-                out[y][x]=(*rgb,255)
+                out[y][x]=(*rgb,frame[y][x][3] if preserve_alpha else 255)
 
     motif=recipe.get('motif','none')
     if view=='front' and motif!='none':
@@ -94,11 +94,11 @@ def render_frame(frame,view,body_ramp,mesh_ramp,accent_ramp,recipe,anchor):
         for dx,dy in pts:
             x,y=ax+dx,ay+dy
             if 0<=y<len(out) and 0<=x<len(out[0]) and out[y][x][3] and not _mesh_cell(frame[y][x]):
-                out[y][x]=(*color,255)
+                out[y][x]=(*color,frame[y][x][3] if preserve_alpha else 255)
     return out
 
-def render_trucker(frames,recipe,body_ramp,mesh_ramp,accent_ramp,anchors):
+def render_trucker(frames,recipe,body_ramp,mesh_ramp,accent_ramp,anchors,preserve_alpha=False):
     return {
-        view:render_frame(frames[view],view,body_ramp,mesh_ramp,accent_ramp,recipe,anchors[view])
+        view:render_frame(frames[view],view,body_ramp,mesh_ramp,accent_ramp,recipe,anchors[view],preserve_alpha=preserve_alpha)
         for view in ('front','right','left','back')
     }

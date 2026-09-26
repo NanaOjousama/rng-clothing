@@ -577,7 +577,7 @@
       "contract": "generator/data/templates/trucker_a32_qc.json",
       "family": "trucker_a32_qc",
       "slot": "HEAD",
-      "status": "QC_READY",
+      "status": "RETIRED_QC",
       "constructionAuthority": "user-supplied four-view trucker source normalized to 32x32",
       "humanArtApprovalRequired": true,
       "origin": "manual-qc",
@@ -588,12 +588,23 @@
       "contract": "generator/data/templates/trucker_b24_qc.json",
       "family": "trucker_b24_qc",
       "slot": "HEAD",
-      "status": "QC_READY",
+      "status": "RETIRED_QC",
       "constructionAuthority": "user-supplied four-view trucker source normalized to 24x24",
       "humanArtApprovalRequired": true,
       "origin": "manual-qc",
       "sourceCategory": "Hats",
       "sourceName": "Trucker 24px A/B base"
+    },
+    "trucker": {
+      "contract": "generator/data/templates/trucker.json",
+      "family": "trucker",
+      "slot": "HEAD",
+      "status": "PRODUCTION_READY",
+      "constructionAuthority": "clean vanilla Stardew Valley Trucker Hat #16",
+      "humanArtApprovalRequired": false,
+      "origin": "vanilla-production",
+      "sourceCategory": "Hats",
+      "sourceName": "Vanilla Trucker Hat #16"
     }
   },
   "catalogPromotion": {

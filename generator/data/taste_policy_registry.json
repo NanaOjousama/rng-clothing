@@ -339,16 +339,23 @@
     },
     "trucker_a32_qc": {
       "policyFile": "generator/data/taste_policies/trucker_a32_qc.json",
-      "status": "ACTIVE",
+      "status": "RETIRED_QC",
       "origin": "manual-qc",
       "template": "trucker_a32_qc",
       "category": "Hats"
     },
     "trucker_b24_qc": {
       "policyFile": "generator/data/taste_policies/trucker_b24_qc.json",
-      "status": "ACTIVE",
+      "status": "RETIRED_QC",
       "origin": "manual-qc",
       "template": "trucker_b24_qc",
+      "category": "Hats"
+    },
+    "trucker": {
+      "policyFile": "generator/data/taste_policies/trucker.json",
+      "status": "ACTIVE",
+      "origin": "vanilla-production",
+      "template": "trucker",
       "category": "Hats"
     }
   },

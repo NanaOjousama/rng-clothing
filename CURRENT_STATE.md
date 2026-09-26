@@ -1474,3 +1474,14 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - Valid clean-template output: `Robin.PhotoTailor_personal_20260926012811_00_hat.png` (20x80).
 - Comparison sheet: `experiments/photo_tailor_clean_vanilla_trucker_01/CLEAN_VANILLA16_VS_PT.png` (left clean vanilla #16, right Photo Tailor result). Opened in Gwenview for visual review.
 - If Photo Tailor transfer still looks poor, fallback is straightforward: use clean vanilla Trucker Hat #16 as the generator geometry authority and bypass Photo Tailor for trucker rendering.
+
+## 2026-09-25 — Official trucker family promoted to vanilla Stardew #16
+
+- Promoted clean vanilla Stardew Valley Trucker Hat index 16 to the official `trucker` geometry authority.
+- Extracted four clean 20x20 cardinal frames to `authored/source_bases/cap/cap_trucker/vanilla16_official/` and registered `generator/data/templates/trucker.json` + `generator/data/taste_policies/trucker.json`.
+- Official geometry lock preserves vanilla silhouette and exact alpha bytes, including partial-alpha edge pixels. No resampling or generic normalization is permitted.
+- Retired `trucker_a32_qc` and `trucker_b24_qc` from the active registry; their files remain only for historical QC reproducibility.
+- Updated `generator/trucker_renderer.py` with an opt-in `preserve_alpha` path so official vanilla geometry is not rewritten.
+- Added `tools/build_trucker_vanilla16_batch.py` and built six production-style variants from the official base with Photo Tailor completely bypassed.
+- Output: `experiments/trucker_vanilla16_production_01/TRUCKER_VANILLA16_PRODUCTION_CONTACT.png` plus individual front/right/left/back PNGs and metadata.
+- Validation: official `trucker` contract loads and verifies; all 24 generated variant frames preserve the vanilla base alpha bytes exactly.

@@ -1,0 +1,96 @@
+{
+  "schema": "trucker-vanilla16-production/v1",
+  "family": "trucker",
+  "geometryAuthority": "Stardew Valley vanilla Trucker Hat #16",
+  "frameSize": [
+    20,
+    20
+  ],
+  "photoTailorUsed": false,
+  "variants": [
+    {
+      "name": "CLASSIC_MOSS",
+      "rarity": "common",
+      "palette": "FIELD_CANVAS_MOSS",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      }
+    },
+    {
+      "name": "STONE_BLUE",
+      "rarity": "common",
+      "palette": "EVERYDAY_STONE_BLUE",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "subtle",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      }
+    },
+    {
+      "name": "DENIM_RUST",
+      "rarity": "uncommon",
+      "palette": "WORKWEAR_DENIM_RUST",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "colorblock",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      }
+    },
+    {
+      "name": "TEAL_STRIPE",
+      "rarity": "uncommon",
+      "palette": "STREET_TEAL_GRAPHITE",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "stripe",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      }
+    },
+    {
+      "name": "CRIMSON_PATCH",
+      "rarity": "rare",
+      "palette": "CEREMONIAL_CRIMSON_IVORY",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "solid",
+        "trim": "subtle",
+        "motif": "small",
+        "motifPlacement": "front_center",
+        "attachment": "none",
+        "hardware": "none"
+      }
+    },
+    {
+      "name": "INDIGO_EMBLEM",
+      "rarity": "epic",
+      "palette": "CELESTIAL_INDIGO_STAR",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "subtle",
+        "trim": "subtle",
+        "motif": "emblem",
+        "motifPlacement": "front_center",
+        "attachment": "none",
+        "hardware": "none"
+      }
+    }
+  ]
+}
