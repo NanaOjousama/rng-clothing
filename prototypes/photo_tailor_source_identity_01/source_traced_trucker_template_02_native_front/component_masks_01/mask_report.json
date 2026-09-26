@@ -1,0 +1,70 @@
+{
+  "schema": "source-traced-trucker-component-mask-report/v1",
+  "sourcePixelsSha256": "9f4f10f9e978f4cc75157a3d146dce3c0a210079c0446b5698a7ca139ab00db8",
+  "maskFileSha256": "a4acf7306317545e7f6725cc08e4260402ab8e20f3dd76d8601acbc9853d305c",
+  "reviewState": "USER_APPROVED_2026-09-26",
+  "approvedForRendering": true,
+  "pixelCounts": {
+    "front": {
+      "front_panel": 99,
+      "rear_mesh": 58,
+      "brim": 78,
+      "top_button": 2,
+      "back_closure": 0,
+      "protected_construction": 71,
+      "back_opening": 0
+    },
+    "right": {
+      "front_panel": 39,
+      "rear_mesh": 91,
+      "brim": 33,
+      "top_button": 0,
+      "back_closure": 2,
+      "protected_construction": 62,
+      "back_opening": 0
+    },
+    "left": {
+      "front_panel": 39,
+      "rear_mesh": 91,
+      "brim": 33,
+      "top_button": 0,
+      "back_closure": 2,
+      "protected_construction": 62,
+      "back_opening": 0
+    },
+    "back": {
+      "front_panel": 0,
+      "rear_mesh": 126,
+      "brim": 0,
+      "top_button": 4,
+      "back_closure": 6,
+      "protected_construction": 72,
+      "back_opening": 12
+    }
+  },
+  "sourceOccupiedPixels": {
+    "front": 308,
+    "right": 227,
+    "left": 227,
+    "back": 208
+  },
+  "checks": {
+    "all_component_coordinates_explicit": true,
+    "all_recolorable_component_pixels_opaque": true,
+    "component_masks_disjoint_per_view": true,
+    "unassigned_occupied_pixels_protected": true,
+    "back_opening_is_exact_transparent_negative_space": true,
+    "left_masks_exact_right_mirrors": true,
+    "left_source_exact_right_mirror": true,
+    "brightness_inference_used": false,
+    "row_threshold_inference_used": false,
+    "color_membership_authority_used": false,
+    "synthetic_mesh_used": false,
+    "technical_gate": "PASS"
+  },
+  "notes": [
+    "Masks cover component interiors; outlines, seams, borders and unclassified rough source pixels remain protected.",
+    "The source-trace front is preserved at native 20x20 within the 26x26 canvas.",
+    "User approved these masks for isolated source-preserving proofs on 2026-09-26."
+  ]
+}

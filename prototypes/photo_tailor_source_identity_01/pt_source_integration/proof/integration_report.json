@@ -1,0 +1,378 @@
+{
+  "schema": "pt-source-integration/v1",
+  "source": {
+    "source_id": "source_traced_trucker_template_02_native_front",
+    "pixels_sha256": "9f4f10f9e978f4cc75157a3d146dce3c0a210079c0446b5698a7ca139ab00db8",
+    "frame_sizes": [
+      [
+        "front",
+        26,
+        26
+      ],
+      [
+        "right",
+        26,
+        26
+      ],
+      [
+        "left",
+        26,
+        26
+      ],
+      [
+        "back",
+        26,
+        26
+      ]
+    ],
+    "provenance": "/run/media/deck/USD00/RNG_clothing/prototypes/photo_tailor_source_identity_01/source_traced_trucker_template_02_native_front/source_trace_contract.json"
+  },
+  "prepared": {
+    "pixels_sha256": "9f4f10f9e978f4cc75157a3d146dce3c0a210079c0446b5698a7ca139ab00db8",
+    "operations": [],
+    "preview_export_same_immutable_pixels": true
+  },
+  "audit": {
+    "source_sha256": "9f4f10f9e978f4cc75157a3d146dce3c0a210079c0446b5698a7ca139ab00db8",
+    "output_sha256": "9f4f10f9e978f4cc75157a3d146dce3c0a210079c0446b5698a7ca139ab00db8",
+    "identity_exact": true,
+    "views": [
+      {
+        "view": "front",
+        "changed_pixels": 0,
+        "changed_coordinates": [],
+        "outside_authority": [],
+        "alpha_changes": 0,
+        "occupancy_changes": 0
+      },
+      {
+        "view": "right",
+        "changed_pixels": 0,
+        "changed_coordinates": [],
+        "outside_authority": [],
+        "alpha_changes": 0,
+        "occupancy_changes": 0
+      },
+      {
+        "view": "left",
+        "changed_pixels": 0,
+        "changed_coordinates": [],
+        "outside_authority": [],
+        "alpha_changes": 0,
+        "occupancy_changes": 0
+      },
+      {
+        "view": "back",
+        "changed_pixels": 0,
+        "changed_coordinates": [],
+        "outside_authority": [],
+        "alpha_changes": 0,
+        "occupancy_changes": 0
+      }
+    ],
+    "color_changes": [],
+    "passed": true
+  },
+  "evidence": {
+    "source_id": "source_traced_trucker_template_02_native_front",
+    "source_sha256": "9f4f10f9e978f4cc75157a3d146dce3c0a210079c0446b5698a7ca139ab00db8",
+    "prepared_pixels_sha256": "9f4f10f9e978f4cc75157a3d146dce3c0a210079c0446b5698a7ca139ab00db8",
+    "semantic_status": "ADVISORY_ONLY",
+    "semantic_candidates": [
+      {
+        "item_id": "55",
+        "name": "Fishing Hat",
+        "sprite_index": 55,
+        "score": 0.657908651639549
+      },
+      {
+        "item_id": "GilsHat",
+        "name": "Gil's Hat",
+        "sprite_index": 98,
+        "score": 0.5078637599173356
+      },
+      {
+        "item_id": "16",
+        "name": "Trucker Hat",
+        "sprite_index": 16,
+        "score": 0.47335750699346674
+      },
+      {
+        "item_id": "19",
+        "name": "Fedora",
+        "sprite_index": 19,
+        "score": 0.4724158431815935
+      },
+      {
+        "item_id": "62",
+        "name": "Pirate Hat",
+        "sprite_index": 62,
+        "score": 0.47160385552182016
+      },
+      {
+        "item_id": "60",
+        "name": "Arcane Hat",
+        "sprite_index": 60,
+        "score": 0.44901678363920144
+      },
+      {
+        "item_id": "90",
+        "name": "Forager's Hat",
+        "sprite_index": 90,
+        "score": 0.4347317018104195
+      },
+      {
+        "item_id": "4",
+        "name": "Straw Hat",
+        "sprite_index": 4,
+        "score": 0.42894100598672036
+      }
+    ],
+    "palette_candidates": [
+      {
+        "rgb": [
+          49,
+          66,
+          103
+        ],
+        "pixel_count": 136,
+        "views": [
+          "front"
+        ],
+        "regions": [],
+        "provenance": "exact_source_pixels",
+        "approved_for_render": false
+      },
+      {
+        "rgb": [
+          35,
+          17,
+          23
+        ],
+        "pixel_count": 91,
+        "views": [
+          "right",
+          "left",
+          "back"
+        ],
+        "regions": [],
+        "provenance": "exact_source_pixels",
+        "approved_for_render": false
+      },
+      {
+        "rgb": [
+          111,
+          93,
+          85
+        ],
+        "pixel_count": 46,
+        "views": [
+          "right",
+          "left"
+        ],
+        "regions": [],
+        "provenance": "exact_source_pixels",
+        "approved_for_render": false
+      },
+      {
+        "rgb": [
+          49,
+          26,
+          34
+        ],
+        "pixel_count": 39,
+        "views": [
+          "back"
+        ],
+        "regions": [],
+        "provenance": "exact_source_pixels",
+        "approved_for_render": false
+      },
+      {
+        "rgb": [
+          66,
+          47,
+          48
+        ],
+        "pixel_count": 38,
+        "views": [
+          "back"
+        ],
+        "regions": [],
+        "provenance": "exact_source_pixels",
+        "approved_for_render": false
+      },
+      {
+        "rgb": [
+          103,
+          84,
+          77
+        ],
+        "pixel_count": 36,
+        "views": [
+          "back"
+        ],
+        "regions": [],
+        "provenance": "exact_source_pixels",
+        "approved_for_render": false
+      },
+      {
+        "rgb": [
+          75,
+          50,
+          49
+        ],
+        "pixel_count": 35,
+        "views": [
+          "back"
+        ],
+        "regions": [],
+        "provenance": "exact_source_pixels",
+        "approved_for_render": false
+      },
+      {
+        "rgb": [
+          37,
+          18,
+          24
+        ],
+        "pixel_count": 28,
+        "views": [
+          "right",
+          "left"
+        ],
+        "regions": [],
+        "provenance": "exact_source_pixels",
+        "approved_for_render": false
+      },
+      {
+        "rgb": [
+          37,
+          19,
+          24
+        ],
+        "pixel_count": 28,
+        "views": [
+          "right",
+          "left"
+        ],
+        "regions": [],
+        "provenance": "exact_source_pixels",
+        "approved_for_render": false
+      },
+      {
+        "rgb": [
+          119,
+          76,
+          65
+        ],
+        "pixel_count": 24,
+        "views": [
+          "right",
+          "left"
+        ],
+        "regions": [],
+        "provenance": "exact_source_pixels",
+        "approved_for_render": false
+      },
+      {
+        "rgb": [
+          87,
+          52,
+          46
+        ],
+        "pixel_count": 20,
+        "views": [
+          "right",
+          "left"
+        ],
+        "regions": [],
+        "provenance": "exact_source_pixels",
+        "approved_for_render": false
+      },
+      {
+        "rgb": [
+          243,
+          248,
+          252
+        ],
+        "pixel_count": 20,
+        "views": [
+          "front"
+        ],
+        "regions": [],
+        "provenance": "exact_source_pixels",
+        "approved_for_render": false
+      }
+    ],
+    "texture_evidence": [
+      {
+        "scope": "view:front",
+        "opaque_pixels": 308,
+        "unique_colors": 29,
+        "horizontal_transitions": 161,
+        "vertical_transitions": 171,
+        "classification": "UNDETERMINED_ADVISORY",
+        "approved_for_render": false
+      },
+      {
+        "scope": "view:right",
+        "opaque_pixels": 227,
+        "unique_colors": 50,
+        "horizontal_transitions": 168,
+        "vertical_transitions": 167,
+        "classification": "UNDETERMINED_ADVISORY",
+        "approved_for_render": false
+      },
+      {
+        "scope": "view:left",
+        "opaque_pixels": 227,
+        "unique_colors": 50,
+        "horizontal_transitions": 168,
+        "vertical_transitions": 167,
+        "classification": "UNDETERMINED_ADVISORY",
+        "approved_for_render": false
+      },
+      {
+        "scope": "view:back",
+        "opaque_pixels": 208,
+        "unique_colors": 7,
+        "horizontal_transitions": 130,
+        "vertical_transitions": 134,
+        "classification": "UNDETERMINED_ADVISORY",
+        "approved_for_render": false
+      }
+    ],
+    "attributes": [],
+    "features": [],
+    "regions": [],
+    "automatic_pixel_operations": []
+  },
+  "authority_contract": {
+    "final_pixels_owned_by": "explicit source + reviewed masks + source-relative transforms",
+    "photo_tailor_role": "advisory evidence/ranking/palette/texture/preview structure",
+    "automatic_pixel_operations_from_evidence": []
+  },
+  "excluded_photo_tailor_systems": [
+    "generic_hat_renderer",
+    "recolor",
+    "harmonize",
+    "shade_ramps",
+    "canonical_projection",
+    "uv_mapping",
+    "whole_hat_region_authority",
+    "procedural_bands",
+    "procedural_patterns",
+    "procedural_motifs",
+    "runtime",
+    "menus",
+    "migration_rerender"
+  ],
+  "proof_scope": {
+    "render": "IDENTITY_ONLY",
+    "reviewed_component_masks_available": false,
+    "styled_outputs_created": 0,
+    "batch_created": false,
+    "semantic_model": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/PhotoTailor/models/semantic_hats.json"
+  }
+}

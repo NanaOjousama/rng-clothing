@@ -1,0 +1,57 @@
+{
+  "schema": "source-traced-trucker-component-masks/v1",
+  "sourceId": "source_traced_trucker_template_02_native_front",
+  "sourcePixelsSha256": "9f4f10f9e978f4cc75157a3d146dce3c0a210079c0446b5698a7ca139ab00db8",
+  "frameSize": [26, 26],
+  "coordinateSystem": "zero-based x/y; rowRuns are [y,x_start,x_end] inclusive",
+  "authority": "manually traced against the accepted aligned-source pixels",
+  "reviewState": "USER_APPROVED_2026-09-26",
+  "approvedForRendering": true,
+  "rules": {
+    "semanticMasksUseBrightness": false,
+    "semanticMasksUseRowThresholds": false,
+    "semanticMasksUseColorMembership": false,
+    "meshSynthesized": false,
+    "unassignedOccupiedPixels": "protected_construction",
+    "transparentBackOpening": "protected_negative_space"
+  },
+  "components": ["front_panel", "rear_mesh", "brim", "top_button", "back_closure"],
+  "views": {
+    "front": {
+      "front_panel": [[5,10,15],[6,9,16],[7,9,16],[8,9,16],[9,9,17],[10,8,17],[11,8,17],[12,8,17],[13,8,17],[14,8,17],[15,8,17]],
+      "rear_mesh": [[5,9,9],[5,16,16],[6,7,8],[6,17,18],[7,6,7],[7,18,19],[8,5,7],[8,18,20],[9,5,7],[9,18,20],[10,4,6],[10,19,21],[11,4,6],[11,19,21],[12,4,6],[12,19,21],[13,4,6],[13,19,21],[14,4,6],[14,19,21],[15,4,6],[15,19,21]],
+      "brim": [[16,5,20],[17,5,20],[18,5,20],[19,5,20],[20,5,9],[20,16,20],[21,6,7],[21,18,19]],
+      "top_button": [[3,12,13]],
+      "back_closure": []
+    },
+    "right": {
+      "front_panel": [[7,11,14],[8,12,16],[9,13,16],[10,13,16],[11,14,17],[12,14,17],[13,14,17],[14,14,17],[15,14,16],[16,14,15],[17,14,14]],
+      "rear_mesh": [[7,6,10],[8,5,11],[9,4,12],[10,4,12],[11,3,12],[12,3,12],[13,4,12],[14,5,12],[15,5,12],[16,5,12],[17,5,12]],
+      "brim": [[14,19,20],[15,18,23],[16,17,23],[17,16,22],[18,15,21],[19,17,20]],
+      "top_button": [],
+      "back_closure": [[15,3,3],[16,3,3]]
+    },
+    "left": {
+      "front_panel": [[7,11,14],[8,9,13],[9,9,12],[10,9,12],[11,8,11],[12,8,11],[13,8,11],[14,8,11],[15,9,11],[16,10,11],[17,11,11]],
+      "rear_mesh": [[7,15,19],[8,14,20],[9,13,21],[10,13,21],[11,13,22],[12,13,22],[13,13,21],[14,13,20],[15,13,20],[16,13,20],[17,13,20]],
+      "brim": [[14,5,6],[15,2,7],[16,2,8],[17,3,9],[18,4,10],[19,5,8]],
+      "top_button": [],
+      "back_closure": [[15,22,22],[16,22,22]]
+    },
+    "back": {
+      "front_panel": [],
+      "rear_mesh": [[6,9,11],[6,14,16],[7,7,11],[7,14,18],[8,7,11],[8,14,18],[9,7,11],[9,14,18],[10,7,11],[10,14,18],[11,6,11],[11,14,19],[12,6,11],[12,14,19],[13,6,11],[13,14,19],[14,6,11],[14,14,19],[15,6,10],[15,15,19],[16,6,9],[16,16,19],[17,6,8],[17,17,19],[18,7,8],[18,17,18],[19,7,8],[19,17,18]],
+      "brim": [],
+      "top_button": [[5,11,14]],
+      "back_closure": [[19,10,15]]
+    }
+  },
+  "protectedFeatures": {
+    "back_opening": {
+      "front": [],
+      "right": [],
+      "left": [],
+      "back": [[15,11,14],[16,11,14],[17,11,14]]
+    }
+  }
+}
