@@ -1456,3 +1456,12 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - Stock Photo Tailor detected: category=`hat`, silhouette=`cap`, semantic=`black white gray solid standard cap`. It did not identify a distinct trucker silhouette.
 - Raw Photo Tailor output: `/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/PhotoTailor/generated/Robin.PhotoTailor_stock_20260926010014_00_hat.png` (20x80).
 - Viewing-only nearest-neighbor contact sheet: `experiments/photo_tailor_stock_trucker_01/PHOTO_TAILOR_STOCK_TRUCKER_CONTACT.png`. No RNG generator code touched the output.
+
+## 2026-09-25 — Photo Tailor real UI-equivalent confirmation test
+
+- Added `pt_ui_equivalent`, which reproduces the installed Photo Tailor normal Quick Recognition confirmation path: `Analyze(imagePath)` -> `SpriteRenderer.Preview(outfit)` -> prepared preview -> `RenderPrepared(spec, preview)`. The UI display layer only copies the prepared pixels into GPU textures and does not alter them.
+- Tested the same real 1024x1024 trucker-hat photo used in the stock direct-render test.
+- UI-equivalent recognition result: category=`hat`, silhouette=`cap`, semantic=`black white gray solid standard cap`.
+- UI-equivalent output: `Robin.PhotoTailor_uiequiv_20260926011407_00_hat.png` (20x80).
+- Compared against prior direct stock `Render()` output `Robin.PhotoTailor_stock_20260926010014_00_hat.png`. Result: identical size, identical pixel SHA256 (`60e657819e8209dcc84ba61d0319fa287e4b3add763feb6fd9f91bfbb91dc8a3`), zero differing pixels.
+- Conclusion: for the same photo and unadjusted Quick Recognition workflow, using the actual in-game preview/confirm path does NOT change the generated hat pixels. Manual crop/precise-recognition edits could still change the analyzed spec and therefore output.
