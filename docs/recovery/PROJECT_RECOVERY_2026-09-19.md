@@ -218,6 +218,9 @@ Additional recovered Git anchors:
 - Deterministic source-backed cap-family compositor: f61ecac791d5b0867af11fe4efe07ae0f9b9c0f2
 - Source corpus/catalog repair: 7e214b7775909afc38f00faac5c58e6854b08649
 - Recovered CURRENT_STATE authority: 8a3cf7e79547d8a59bfc63bc2ab4f22ca95b6b4a
+- Source-authoritative 26x26 trucker trace, user-approved component masks,
+  and isolated Photo Tailor advisory integration:
+  782cd855696135d70a7f756e4807dde0d43b0a07
 
 ## 11. Recovery order
 1. Commit this recovery authority + project safeguards.
