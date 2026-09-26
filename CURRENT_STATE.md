@@ -1448,3 +1448,11 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - Updated `trucker_a32_qc` and `trucker_b24_qc` template contracts to point to the rebuilt coherent bases and refreshed hashes.
 - Regenerated `experiments/trucker_final_generator_ab_01/TRUCKER_FINAL_GENERATOR_A32_VS_B24.png` through the shared generator/taste pipeline.
 - Structural gate: every generated front/right/left/back view across both A32 and B24 is a single connected hat silhouette; zero fragmented/blob views.
+
+## 2026-09-25 — Stock Photo Tailor trucker isolation test
+
+- Added `pt_stock_photo` to PhotoTailorPersonalBridge as a harness for Photo Tailor stock Quick Recognition only: `LocalOutfitAnalyzer.Analyze(imagePath)` followed by stock `SpriteRenderer.Render(spec)` with no category hint, silhouette override, template remap, RNG generator, cleanup, or post-processing.
+- Downloaded a real 1024x1024 Richardson-style trucker-hat studio photo to `/home/deck/Downloads/photo_tailor_stock_test/real_trucker_hat.jpg`.
+- Stock Photo Tailor detected: category=`hat`, silhouette=`cap`, semantic=`black white gray solid standard cap`. It did not identify a distinct trucker silhouette.
+- Raw Photo Tailor output: `/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/PhotoTailor/generated/Robin.PhotoTailor_stock_20260926010014_00_hat.png` (20x80).
+- Viewing-only nearest-neighbor contact sheet: `experiments/photo_tailor_stock_trucker_01/PHOTO_TAILOR_STOCK_TRUCKER_CONTACT.png`. No RNG generator code touched the output.

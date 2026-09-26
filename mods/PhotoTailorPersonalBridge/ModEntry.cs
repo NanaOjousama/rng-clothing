@@ -19,6 +19,54 @@ public sealed class ModEntry : Mod
             "pt_make_trucker",
             "Analyze a real trucker-hat image as category=hat and render it through Photo Tailor using the trucker_hat silhouette. Usage: pt_make_trucker <imagePath>",
             (command, args) => OnMakeHat(command, args, "trucker_hat"));
+        helper.ConsoleCommands.Add(
+            "pt_stock_photo",
+            "Run Photo Tailor stock Quick Recognition + stock renderer, with no spec/template modifications. Usage: pt_stock_photo <imagePath>",
+            OnStockPhoto);
+    }
+
+
+    private void OnStockPhoto(string command, string[] args)
+    {
+        if (args.Length < 1) { Monitor.Log("Usage: pt_stock_photo <imagePath>", LogLevel.Warn); return; }
+        string imagePath = string.Join(" ", args);
+        try
+        {
+            if (!File.Exists(imagePath)) throw new FileNotFoundException("Reference image not found.", imagePath);
+            Assembly pt = AppDomain.CurrentDomain.GetAssemblies().FirstOrDefault(a => string.Equals(a.GetName().Name, "PhotoTailor", StringComparison.Ordinal))
+                ?? throw new InvalidOperationException("PhotoTailor assembly is not loaded.");
+            string modsRoot = Path.GetDirectoryName(Helper.DirectoryPath) ?? throw new InvalidOperationException("Cannot resolve Mods directory.");
+            string ptDir = Path.Combine(modsRoot, "PhotoTailor");
+            Type analyzerType = pt.GetType("PhotoTailor.LocalOutfitAnalyzer", true)!;
+            Type retrieverType = pt.GetType("PhotoTailor.SemanticRetriever", true)!;
+            Type rendererType = pt.GetType("PhotoTailor.SpriteRenderer", true)!;
+            object analyzer = Activator.CreateInstance(analyzerType, ptDir)!;
+            object retriever = Activator.CreateInstance(retrieverType, ptDir)!;
+            object renderer = Activator.CreateInstance(rendererType, ptDir, retriever)!;
+            MethodInfo analyze = analyzerType.GetMethods(BindingFlags.Instance | BindingFlags.Public).First(m => m.Name == "Analyze" && m.GetParameters().Length == 1);
+            object outfit = Invoke(analyze, analyzer, imagePath)!;
+            IEnumerable items = (IEnumerable)(outfit.GetType().GetProperty("Items")!.GetValue(outfit) ?? throw new InvalidOperationException("No garment list."));
+            MethodInfo render = rendererType.GetMethods(BindingFlags.Instance | BindingFlags.Public).First(m => m.Name == "Render" && m.GetParameters().Length == 2 && m.GetParameters()[1].ParameterType == typeof(string));
+            int i = 0;
+            foreach (object item in items)
+            {
+                Type st = item.GetType();
+                string category = st.GetProperty("Category")?.GetValue(item)?.ToString() ?? "";
+                string silhouette = st.GetProperty("Silhouette")?.GetValue(item)?.ToString() ?? "";
+                string semantic = st.GetProperty("SemanticDescription")?.GetValue(item)?.ToString() ?? "";
+                Monitor.Log($"PT STOCK DETECT item={i} category={category} silhouette={silhouette} semantic={semantic}", LogLevel.Info);
+                string suffix = $"stock_{DateTime.UtcNow:yyyyMMddHHmmss}_{i:D2}";
+                object generated = Invoke(render, renderer, item, suffix)!;
+                Type gt = generated.GetType();
+                string texturePath = gt.GetProperty("TexturePath")?.GetValue(generated)?.ToString() ?? "";
+                string artworkPath = gt.GetProperty("ArtworkPath")?.GetValue(generated)?.ToString() ?? "";
+                Monitor.Log($"PT STOCK OUTPUT texture={Path.Combine(ptDir, texturePath)}", LogLevel.Info);
+                if (!string.IsNullOrWhiteSpace(artworkPath)) Monitor.Log($"PT STOCK ARTWORK artwork={Path.Combine(ptDir, artworkPath)}", LogLevel.Info);
+                i++;
+            }
+            Monitor.Log($"PT STOCK complete items={i}", LogLevel.Info);
+        }
+        catch (Exception ex) { Monitor.Log(Unwrap(ex).ToString(), LogLevel.Error); }
     }
 
     private void OnMakeCap(string command, string[] args)
