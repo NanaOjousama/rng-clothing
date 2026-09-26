@@ -1514,3 +1514,10 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - Retro Diffusion 8-direction rotation workflow does not accept 20/26 native direction cells; advanced rotate bottoms out at 32px. Generated native 20px and 26px front constructions, padded each unchanged to 32px, then used RD advanced rotation to create consistent directional sheets. Extracted RD-generated 32px front/right/back views; final requested-size side/back comparison copies are nearest-neighbor presentation reductions while native RD 20/26 fronts are preserved unchanged.
 - Final comparison sheet: `experiments/trucker_ai_construction_20_26/TRUCKER_PL_VS_RD_20_26_CONTACT.png` with four rows: PL20, RD20, PL26, RD26 and columns Front/Right/Back.
 - This experiment is for human visual selection only; no structural validator result should be treated as aesthetic approval.
+
+## 2026-09-26 — Locked-anchor PixelLab trucker rotation test
+- Approved anchor is exactly `experiments/trucker_ai_construction_20_26/pixellab/pl20_right.png` (20x20), matching original PL rotation frame `pl_rot_02.png`.
+- PixelLab docs confirm seed `0` is random; the original exact randomized seed was not preserved in our manual generation log/PNG metadata, so it cannot be recovered.
+- New controlled test uses the exact approved right-side PNG, padded to 32x32 without scaling, PixelLab Rotate API, side view, east -> south, fixed seed `424242`, image guidance 7.5.
+- Raw generated front saved as `experiments/trucker_pl20_anchor_rotation_03/front_seed424242_raw.png`; 20px nearest-neighbor presentation copy and contact sheet are alongside it.
+- Human visual approval still required before this front is accepted into any construction template.
