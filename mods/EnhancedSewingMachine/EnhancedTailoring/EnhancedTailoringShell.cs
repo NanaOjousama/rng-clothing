@@ -110,6 +110,9 @@ namespace EnhancedSewingMachine.EnhancedTailoring
         {
             if (this.state != null && e.OldMenu == this.state.Menu)
             {
+                if (this.state.QcMode && this.state.QcHat != null)
+                    FarmerRendererPatch.SetWorldPreview(this.state.QcHat);
+
                 this.ReturnFragmentStack();
                 this.state = null;
             }
@@ -707,6 +710,13 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 return false;
             }
 
+            if (FarmerRendererPatch.WorldPreviewHat is Hat worldPreview
+                && this.runtime.TryReadInstance(worldPreview, out instance))
+            {
+                hat = worldPreview;
+                return true;
+            }
+
             if (Game1.player.hat.Value is Hat equipped
                 && this.runtime.TryReadInstance(equipped, out instance))
             {
@@ -727,6 +737,7 @@ namespace EnhancedSewingMachine.EnhancedTailoring
             {
                 s.QcMode = false;
                 s.QcHat = null;
+                FarmerRendererPatch.ClearWorldPreview();
                 return;
             }
 
