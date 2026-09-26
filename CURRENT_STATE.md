@@ -1485,3 +1485,13 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - Added `tools/build_trucker_vanilla16_batch.py` and built six production-style variants from the official base with Photo Tailor completely bypassed.
 - Output: `experiments/trucker_vanilla16_production_01/TRUCKER_VANILLA16_PRODUCTION_CONTACT.png` plus individual front/right/left/back PNGs and metadata.
 - Validation: official `trucker` contract loads and verifies; all 24 generated variant frames preserve the vanilla base alpha bytes exactly.
+
+## 2026-09-25 — Trucker Photo-Tailor-integrated hybrid batch
+
+- Kept clean vanilla Stardew Trucker Hat #16 as the official locked geometry authority.
+- Added trucker semantic regions to `generator/hat_hybrid_enhancements.py`.
+- Built `tools/build_trucker_pt_hybrid_batch.py` using the pipeline: vanilla #16 geometry -> direct Photo Tailor PreviewHat/Recolor Python port -> bounded hybrid rarity/motif layer.
+- This batch intentionally excludes stripe, colorblock, contrast-trim, and wrap-trim rules to avoid the long horizontal band artifact seen in the prior trucker/sunhat-style renderer.
+- Photo Tailor port is used on all six variants for source-luma shading/projection. Rare/Epic then receive bounded front motif deltas from the hybrid layer; Common/Uncommon remain Photo-Tailor-shaded only.
+- Output: `experiments/trucker_pt_hybrid_v2_01/TRUCKER_PT_HYBRID_V2_CONTACT.png` plus per-view PNGs and metadata.
+- Validation: all 24 generated frames preserve vanilla #16 alpha bytes exactly; Photo Tailor port reported used on all six variants; no hybrid fallback occurred.

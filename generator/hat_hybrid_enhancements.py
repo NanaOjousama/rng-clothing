@@ -33,6 +33,7 @@ REGIONS={
  "mas_hair_buns":((0.0,1.01,"whole"),),
  "mas_headband":((0.0,.82,"crown"),(.82,1.01,"band")),
  "mas_hood":((0.0,.76,"crown"),(.76,1.01,"hem")),
+ "trucker":((0.0,.70,"crown"),(.70,1.01,"brim")),
 }
 
 TINY_SOURCE_FAMILIES={"alt_headband","cc_headband","mas_bows","mas_headband"}

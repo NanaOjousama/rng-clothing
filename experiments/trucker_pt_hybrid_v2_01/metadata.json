@@ -1,0 +1,216 @@
+{
+  "schema": "trucker-pt-hybrid/v2",
+  "family": "trucker",
+  "geometryAuthority": "Stardew Valley vanilla Trucker Hat #16",
+  "photoTailorIntegrated": true,
+  "pipeline": [
+    "vanilla16 locked geometry",
+    "generator.cap_photo_tailor_pipeline / direct Photo Tailor port",
+    "generator.hat_hybrid_enhancements bounded layer"
+  ],
+  "excludedForThisBatch": [
+    "stripe",
+    "colorblock",
+    "contrast/wrap trim"
+  ],
+  "variants": [
+    {
+      "name": "FOREST",
+      "rarity": "common",
+      "palette": "FIELD_CANVAS_MOSS",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "pt": {
+        "family": "trucker",
+        "valid": true,
+        "errors": [],
+        "alpha_preserved": true,
+        "photo_tailor_port_used": true
+      },
+      "hybrid": {
+        "applied": false,
+        "fallback_reason": null,
+        "changed_pixels": 0,
+        "changed_ratio": 0.0,
+        "outline_preserved": true,
+        "alpha_preserved": true,
+        "pattern": "solid",
+        "motif": "none",
+        "motif_placement": "none",
+        "region_mode": "SOURCE_DERIVED_BOUNDED"
+      }
+    },
+    {
+      "name": "STONE",
+      "rarity": "common",
+      "palette": "EVERYDAY_STONE_BLUE",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "pt": {
+        "family": "trucker",
+        "valid": true,
+        "errors": [],
+        "alpha_preserved": true,
+        "photo_tailor_port_used": true
+      },
+      "hybrid": {
+        "applied": false,
+        "fallback_reason": null,
+        "changed_pixels": 0,
+        "changed_ratio": 0.0,
+        "outline_preserved": true,
+        "alpha_preserved": true,
+        "pattern": "solid",
+        "motif": "none",
+        "motif_placement": "none",
+        "region_mode": "SOURCE_DERIVED_BOUNDED"
+      }
+    },
+    {
+      "name": "DENIM",
+      "rarity": "uncommon",
+      "palette": "WORKWEAR_DENIM_RUST",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "pt": {
+        "family": "trucker",
+        "valid": true,
+        "errors": [],
+        "alpha_preserved": true,
+        "photo_tailor_port_used": true
+      },
+      "hybrid": {
+        "applied": false,
+        "fallback_reason": null,
+        "changed_pixels": 0,
+        "changed_ratio": 0.0,
+        "outline_preserved": true,
+        "alpha_preserved": true,
+        "pattern": "solid",
+        "motif": "none",
+        "motif_placement": "none",
+        "region_mode": "SOURCE_DERIVED_BOUNDED"
+      }
+    },
+    {
+      "name": "TEAL",
+      "rarity": "uncommon",
+      "palette": "STREET_TEAL_GRAPHITE",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "pt": {
+        "family": "trucker",
+        "valid": true,
+        "errors": [],
+        "alpha_preserved": true,
+        "photo_tailor_port_used": true
+      },
+      "hybrid": {
+        "applied": false,
+        "fallback_reason": null,
+        "changed_pixels": 0,
+        "changed_ratio": 0.0,
+        "outline_preserved": true,
+        "alpha_preserved": true,
+        "pattern": "solid",
+        "motif": "none",
+        "motif_placement": "none",
+        "region_mode": "SOURCE_DERIVED_BOUNDED"
+      }
+    },
+    {
+      "name": "CRIMSON_PATCH",
+      "rarity": "rare",
+      "palette": "CEREMONIAL_CRIMSON_IVORY",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "small",
+        "motifPlacement": "front_offset",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "pt": {
+        "family": "trucker",
+        "valid": true,
+        "errors": [],
+        "alpha_preserved": true,
+        "photo_tailor_port_used": true
+      },
+      "hybrid": {
+        "applied": true,
+        "fallback_reason": null,
+        "changed_pixels": 2,
+        "changed_ratio": 0.005208333333333333,
+        "outline_preserved": true,
+        "alpha_preserved": true,
+        "pattern": "solid",
+        "motif": "small",
+        "motif_placement": "front_offset",
+        "region_mode": "SOURCE_DERIVED_BOUNDED"
+      }
+    },
+    {
+      "name": "INDIGO_EMBLEM",
+      "rarity": "epic",
+      "palette": "CELESTIAL_INDIGO_STAR",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "emblem",
+        "motifPlacement": "front_center",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "pt": {
+        "family": "trucker",
+        "valid": true,
+        "errors": [],
+        "alpha_preserved": true,
+        "photo_tailor_port_used": true
+      },
+      "hybrid": {
+        "applied": true,
+        "fallback_reason": null,
+        "changed_pixels": 5,
+        "changed_ratio": 0.013020833333333334,
+        "outline_preserved": true,
+        "alpha_preserved": true,
+        "pattern": "solid",
+        "motif": "emblem",
+        "motif_placement": "front_center",
+        "region_mode": "SOURCE_DERIVED_BOUNDED"
+      }
+    }
+  ]
+}
