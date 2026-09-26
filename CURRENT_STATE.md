@@ -1505,3 +1505,12 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - Built eight variants with `tools/build_trucker_pt_hybrid_v3_batch.py`: Classic Moss, Stone Blue, Denim Rust, Teal Pinstripe, Coastal Twotone, Crimson Patch, Indigo Emblem, Autumn Check.
 - Output: `experiments/trucker_pt_hybrid_v3_01/TRUCKER_PT_HYBRID_V3_CONTACT.png` plus individual cardinal frames and metadata.
 - Validation: all 32 generated frames preserve vanilla #16 alpha bytes exactly. Generated views contain multiple RGB values per view (7–16 depending on variant), confirming visible value/shading variation rather than flat single-color fills.
+
+## 2026-09-25 — PixelLab vs Retro Diffusion trucker construction side experiment
+
+- Side experiment only; no production generator/trucker architecture changed.
+- Read the installed PixelLab rotation/resize plugin code and current Retro Diffusion style documentation before prompting.
+- PixelLab reference-to-8-rotations only supports documented preset canvases such as 32x32+, so generated one 32x32 trucker turnaround with a construction-only prompt (no head/face/person/logo/text/decoration), then selected rotation 0/front, 2/right, 4/back and made 20x20 + 26x26 nearest-neighbor presentation reductions. Raw eight 32px PL rotations are preserved under `experiments/trucker_ai_construction_20_26/pixellab32/`.
+- Retro Diffusion 8-direction rotation workflow does not accept 20/26 native direction cells; advanced rotate bottoms out at 32px. Generated native 20px and 26px front constructions, padded each unchanged to 32px, then used RD advanced rotation to create consistent directional sheets. Extracted RD-generated 32px front/right/back views; final requested-size side/back comparison copies are nearest-neighbor presentation reductions while native RD 20/26 fronts are preserved unchanged.
+- Final comparison sheet: `experiments/trucker_ai_construction_20_26/TRUCKER_PL_VS_RD_20_26_CONTACT.png` with four rows: PL20, RD20, PL26, RD26 and columns Front/Right/Back.
+- This experiment is for human visual selection only; no structural validator result should be treated as aesthetic approval.
