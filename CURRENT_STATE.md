@@ -1465,3 +1465,12 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - UI-equivalent output: `Robin.PhotoTailor_uiequiv_20260926011407_00_hat.png` (20x80).
 - Compared against prior direct stock `Render()` output `Robin.PhotoTailor_stock_20260926010014_00_hat.png`. Result: identical size, identical pixel SHA256 (`60e657819e8209dcc84ba61d0319fa287e4b3add763feb6fd9f91bfbb91dc8a3`), zero differing pixels.
 - Conclusion: for the same photo and unadjusted Quick Recognition workflow, using the actual in-game preview/confirm path does NOT change the generated hat pixels. Manual crop/precise-recognition edits could still change the analyzed spec and therefore output.
+
+## 2026-09-25 — Clean vanilla Trucker Hat #16 Photo Tailor test
+
+- Confirmed `SpriteRenderer.PreviewHat` normally loads live `Characters/Farmer/hats`, so patched/modded live assets can contaminate Photo Tailor hat geometry.
+- Added test-only bridge path `pt_clean_vanilla_trucker` that temporarily serves a copied clean unpacked vanilla `hats.png`, forces analyzer result to `trucker_hat`, maps that silhouette to vanilla hat index 16, renders through Photo Tailor, then restores normal asset behavior.
+- Real 1024x1024 trucker photo analyzed as generic `cap`; test forces only the trucker silhouette/template choice.
+- Valid clean-template output: `Robin.PhotoTailor_personal_20260926012811_00_hat.png` (20x80).
+- Comparison sheet: `experiments/photo_tailor_clean_vanilla_trucker_01/CLEAN_VANILLA16_VS_PT.png` (left clean vanilla #16, right Photo Tailor result). Opened in Gwenview for visual review.
+- If Photo Tailor transfer still looks poor, fallback is straightforward: use clean vanilla Trucker Hat #16 as the generator geometry authority and bypass Photo Tailor for trucker rendering.

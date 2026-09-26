@@ -4,13 +4,17 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using StardewModdingAPI;
+using StardewModdingAPI.Events;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace PhotoTailorPersonalBridge;
 
 public sealed class ModEntry : Mod
 {
+    private bool useCleanVanillaHatsForTest;
     public override void Entry(IModHelper helper)
     {
+        helper.Events.Content.AssetRequested += OnAssetRequested;
         helper.ConsoleCommands.Add(
             "pt_make_cap",
             "Run Photo Tailor's real analyzer + renderer on one local image. Usage: pt_make_cap <imagePath>",
@@ -27,9 +31,42 @@ public sealed class ModEntry : Mod
             "pt_ui_equivalent",
             "Run the exact Photo Tailor Quick Recognition -> Preview -> RenderPrepared confirmation path. Usage: pt_ui_equivalent <imagePath>",
             OnUiEquivalent);
+        helper.ConsoleCommands.Add(
+            "pt_clean_vanilla_trucker",
+            "Render a real photo through Photo Tailor using clean vanilla Stardew Trucker Hat #16 geometry. Usage: pt_clean_vanilla_trucker <imagePath>",
+            OnCleanVanillaTrucker);
     }
 
 
+
+
+    private void OnAssetRequested(object? sender, AssetRequestedEventArgs e)
+    {
+        if (!useCleanVanillaHatsForTest || !e.NameWithoutLocale.IsEquivalentTo("Characters/Farmer/hats"))
+            return;
+        string clean = "assets/test/vanilla_hats.png";
+        e.LoadFromModFile<Texture2D>(clean, AssetLoadPriority.Exclusive);
+        Monitor.Log("TEST ONLY: serving clean unpacked vanilla Characters/Farmer/hats.png", LogLevel.Info);
+    }
+
+    private void OnCleanVanillaTrucker(string command, string[] args)
+    {
+        if (args.Length < 1) { Monitor.Log("Usage: pt_clean_vanilla_trucker <imagePath>", LogLevel.Warn); return; }
+        string imagePath = string.Join(" ", args);
+        try
+        {
+            useCleanVanillaHatsForTest = true;
+            Helper.GameContent.InvalidateCache("Characters/Farmer/hats");
+            // Reuse Photo Tailor analyzer + renderer, but force only the silhouette/template mapping.
+            OnMakeHat(command, new[] { imagePath }, "trucker_hat");
+        }
+        finally
+        {
+            useCleanVanillaHatsForTest = false;
+            Helper.GameContent.InvalidateCache("Characters/Farmer/hats");
+            Monitor.Log("TEST ONLY: restored normal Characters/Farmer/hats asset behavior", LogLevel.Info);
+        }
+    }
 
     private void OnUiEquivalent(string command, string[] args)
     {
