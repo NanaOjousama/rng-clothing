@@ -1585,3 +1585,14 @@ Front-view visor shading now explicitly follows the value grammar measured from 
 - Upper/front plane is lighter, underside is progressively darker, matching vanilla #16's front-brim value hierarchy.
 - The two tiny lower tip cells remain structurally present but are darkest-shade pixels, so they read as part of the underside rather than isolated bright dots.
 - No alpha/silhouette edits.
+
+## Trucker front visor silhouette fix — 2026-09-27
+
+The front-view visor shape, not just its shading, was revised to follow vanilla Stardew hat #16 brim geometry more closely.
+
+- Front crown/body geometry is preserved.
+- Front visor now uses a compact 3-row silhouette: two equal-width upper visor rows followed by an inset lower row, matching vanilla #16's front-brim shape grammar.
+- Removed the prior extra lower visor rows/tip protrusions that made the front brim look boxy and disconnected.
+- Right/Left/Back geometry is unchanged.
+- Front component mask and locked hashes were updated to the new approved geometry.
+- Generator batch regenerated successfully with 24 frames and source-template validation passing.

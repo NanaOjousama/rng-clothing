@@ -32,8 +32,8 @@
   "frames": {
     "front": {
       "path": "authored/templates/trucker_rd22_pl26/front.png",
-      "sha256": "93f460602ea0a8eb1e83ed25c9dc3db9d271f108ab975370b4bd97a1307dc959",
-      "alphaSha256": "57d25c29712e8f9713fcb517aac593ff5cf1b2e8c8b243a9e4dd01aaa54a4f41"
+      "sha256": "685f79d8c09b3a896134c43fc3e924c4f1a6edec5e5c9e655db06dc93e14c821",
+      "alphaSha256": "1c4d0537bbe338e3e17d72e1c7f824715eaf8e346434f1a2873971ca936785c7"
     },
     "right": {
       "path": "authored/templates/trucker_rd22_pl26/right.png",
@@ -52,7 +52,7 @@
     }
   },
   "geometryLock": {
-    "authority": "user-selected final_product_01 RD22/PL26 trucker frames",
+    "authority": "user-selected final_product_01 trucker with vanilla-#16-inspired front visor silhouette",
     "requiredViews": [
       "front",
       "right",
@@ -63,7 +63,7 @@
     "forbidGenericNormalization": true,
     "forbidBaseAlphaRemoval": true,
     "allowedAlphaGrowth": "none unless a future reviewed attachment contract explicitly opts in",
-    "notes": "Use exact final_product_01 frame pixels as construction/style authority. Generator may vary approved masked regions only; unmasked pixels remain protected."
+    "notes": "Front crown remains approved source geometry; front visor silhouette is intentionally reshaped to vanilla #16 brim grammar. Other views unchanged."
   },
   "zones": {
     "front_panel": {
