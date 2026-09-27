@@ -1575,3 +1575,13 @@ Front visor finishing was revised to follow the stronger side-view visor value h
 - The two isolated lower tip cells remain opaque for silhouette fidelity but now use the darkest visor shade, so they visually merge into the underside instead of reading as bright stray dots.
 - Front visor now uses an explicit upper-plane -> midtone -> underside-dark progression based on the side-view visor treatment rather than source-luminance rank alone.
 - `tools/build_trucker_generator_batch_v1.py` now applies this front-only visor finish consistently to every generated trucker variant.
+
+## Trucker front visor vanilla-reference pass — 2026-09-27
+
+Front-view visor shading now explicitly follows the value grammar measured from vanilla Stardew hat #16 while preserving the approved trucker silhouette.
+
+- Front visor only; side/back/left construction remains unchanged.
+- Uses chromatic darkest local visor shade at the rim/tips rather than generic black.
+- Upper/front plane is lighter, underside is progressively darker, matching vanilla #16's front-brim value hierarchy.
+- The two tiny lower tip cells remain structurally present but are darkest-shade pixels, so they read as part of the underside rather than isolated bright dots.
+- No alpha/silhouette edits.

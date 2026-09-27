@@ -43,28 +43,40 @@ def rank_map(frame,cells,ramp):
  return out
 
 def shade_front_brim_like_side(frame,cells,ramp):
-    """Give the front visor the same light-to-underside hierarchy as side views.
+    """Front visor treatment modeled on vanilla Stardew hat #16.
 
-    The approved front source has two isolated tip pixels and a large flat light
-    run. Keep alpha/silhouette unchanged, but fold those tips into the darkest
-    visor shade and use a side-like vertical value progression.
+    Preserve this trucker's alpha/silhouette, but use the vanilla front-brim
+    value grammar: chromatic dark edge, lighter upper/front plane, darker
+    underside, and darkest tiny lower tips.
     """
     out=[row[:] for row in frame]
-    ys=[y for x,y in cells]
-    if not ys:
+    by_row={}
+    for x,y in cells:
+        by_row.setdefault(y,[]).append(x)
+    if not by_row:
         return out
-    lo,hi=min(ys),max(ys)
-    # darkest..lightest ramp. Use brighter upper plane, darker lower/underside.
-    row_index={lo:1, lo+1:4, lo+2:3, lo+3:2, hi:0}
-    for x,y in cells:
-        idx=row_index.get(y,2)
-        idx=max(0,min(len(ramp)-1,idx))
-        out[y][x]=(*ramp[idx],frame[y][x][3])
-    # The two source-authored tip cells remain opaque but visually join the
-    # outline/underside instead of reading as two bright disconnected dots.
-    for x,y in cells:
-        if y==hi:
-            out[y][x]=(*ramp[0],frame[y][x][3])
+    ys=sorted(by_row)
+    top=ys[0]
+    bottom=ys[-1]
+    n=len(ramp)
+    def ri(i): return max(0,min(n-1,i))
+    for y in ys:
+        xs=sorted(by_row[y]); lo,hi=min(xs),max(xs); span=max(1,hi-lo)
+        for x in xs:
+            edge=min(x-lo,hi-x)
+            # Vanilla #16 front brim: brighter front plane with darker chromatic
+            # rim, then a substantially darker underside.
+            if y==top:
+                idx = 1 if edge==0 else (2 if edge==1 else (4 if edge<=3 else 5))
+            elif y==top+1:
+                idx = 0 if edge==0 else (1 if edge==1 else (3 if edge<=3 else 4))
+            elif y==top+2:
+                idx = 0 if edge<=1 else (1 if edge<=3 else 2)
+            elif y==bottom:
+                idx = 0
+            else:
+                idx = 0 if edge<=1 else 1
+            out[y][x]=(*ramp[ri(idx)],frame[y][x][3])
     return out
 
 def motif_cells(name):
