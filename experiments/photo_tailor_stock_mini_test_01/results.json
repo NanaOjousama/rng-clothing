@@ -1,0 +1,23 @@
+{
+  "test": "Photo Tailor stock Quick Recognition + stock renderer mini comparison",
+  "harness": "PhotoTailorPersonalBridge pt_stock_photo reflection harness; no spec/template modification",
+  "hat": {
+    "input": "/home/deck/Downloads/photo_tailor_mini_test/beanie_only.jpg",
+    "detectedCategory": "hat",
+    "detectedSilhouette": "hat",
+    "semanticDescription": "gray brown beige vertical stripes standard hat",
+    "output": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/PhotoTailor/generated/Robin.PhotoTailor_stock_20260927222427_00_hat.png",
+    "retrievalTop": ["Hair Bone", "Butterfly Bow", "Polka Bow", "Lucky Bow", "Pink Bow", "Mouse Ears", "Abigail's Bow", "Small Cap"],
+    "visualResult": "generic rounded/blob-like hat; does not preserve beanie/slouch construction"
+  },
+  "shirt": {
+    "input": "/home/deck/Downloads/photo_tailor_mini_test/sailor_shirt_only_v2.jpg",
+    "detectedCategory": "shirt",
+    "detectedSilhouette": "shirt",
+    "semanticDescription": "white navy blue gray horizontal stripes long sleeve shirt collared ribbed trim",
+    "output": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/PhotoTailor/generated/Robin.PhotoTailor_stock_20260927222602_00_shirt.png",
+    "retrievalTop": ["Striped Shirt", "Turtleneck Sweater", "White Dot Shirt", "Work Shirt", "Prismatic Shirt", "Light Blue Striped Shirt", "Tan Striped Shirt", "Button Down Shirt"],
+    "visualResult": "coherent shirt sprite output, though source details are misread (sailor collar becomes stripe/collared/ribbed interpretation)"
+  },
+  "conclusion": "The failure is not simply 'Photo Tailor cannot render anything'. The stock shirt path produces a coherent garment. Hat recognition/retrieval is much less construction-aware: even a clean non-trucker beanie is reduced to a generic hat semantic and ranks unrelated vanilla hats above cap-like options."
+}
