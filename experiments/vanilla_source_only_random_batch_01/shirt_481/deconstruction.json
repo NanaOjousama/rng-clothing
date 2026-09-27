@@ -1,0 +1,2401 @@
+{
+  "paletteGroups": {
+    "centers": [
+      [
+        59,
+        55,
+        28
+      ],
+      [
+        245,
+        207,
+        16
+      ],
+      [
+        173,
+        146,
+        108
+      ]
+    ],
+    "coverage": [
+      130,
+      6,
+      100
+    ],
+    "clusterRoles": {
+      "0": "body",
+      "2": "trim",
+      "1": "accent"
+    }
+  },
+  "views": {
+    "front": {
+      "0,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "0,1": {
+        "group": "trim",
+        "step": 5,
+        "boundary": true,
+        "source": [
+          226,
+          196,
+          116
+        ]
+      },
+      "0,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": true,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "0,3": {
+        "group": "trim",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "0,4": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "0,5": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "0,6": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "0,7": {
+        "group": "body",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          35,
+          35,
+          35
+        ]
+      },
+      "1,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "1,1": {
+        "group": "trim",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          226,
+          196,
+          116
+        ]
+      },
+      "1,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "1,3": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "1,4": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "1,5": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "1,6": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "1,7": {
+        "group": "body",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          35,
+          35,
+          35
+        ]
+      },
+      "2,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "2,1": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "2,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "2,3": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "2,4": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "2,5": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "2,6": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "2,7": {
+        "group": "body",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          35,
+          35,
+          35
+        ]
+      },
+      "3,1": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "3,2": {
+        "group": "body",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          21,
+          59,
+          19
+        ]
+      },
+      "3,3": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "3,4": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "3,5": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "3,6": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "3,7": {
+        "group": "accent",
+        "step": 2,
+        "boundary": true,
+        "source": [
+          255,
+          227,
+          17
+        ]
+      },
+      "4,1": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "4,2": {
+        "group": "body",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          21,
+          59,
+          19
+        ]
+      },
+      "4,3": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "4,4": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "4,5": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "4,6": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "4,7": {
+        "group": "accent",
+        "step": 2,
+        "boundary": true,
+        "source": [
+          255,
+          227,
+          17
+        ]
+      },
+      "5,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "5,1": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "5,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "5,3": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "5,4": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "5,5": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "5,6": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "5,7": {
+        "group": "body",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          35,
+          35,
+          35
+        ]
+      },
+      "6,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "6,1": {
+        "group": "trim",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          226,
+          196,
+          116
+        ]
+      },
+      "6,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "6,3": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "6,4": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "6,5": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "6,6": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "6,7": {
+        "group": "body",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          35,
+          35,
+          35
+        ]
+      },
+      "7,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "7,1": {
+        "group": "trim",
+        "step": 5,
+        "boundary": true,
+        "source": [
+          226,
+          196,
+          116
+        ]
+      },
+      "7,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": true,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "7,3": {
+        "group": "trim",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "7,4": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "7,5": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "7,6": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "7,7": {
+        "group": "body",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          35,
+          35,
+          35
+        ]
+      }
+    },
+    "right": {
+      "0,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "0,1": {
+        "group": "trim",
+        "step": 5,
+        "boundary": true,
+        "source": [
+          226,
+          196,
+          116
+        ]
+      },
+      "0,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": true,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "0,3": {
+        "group": "trim",
+        "step": 3,
+        "boundary": true,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "0,4": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "1,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "1,1": {
+        "group": "trim",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          226,
+          196,
+          116
+        ]
+      },
+      "1,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "1,3": {
+        "group": "body",
+        "step": 1,
+        "boundary": false,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "1,4": {
+        "group": "body",
+        "step": 1,
+        "boundary": false,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "1,5": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "1,6": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "1,7": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "2,0": {
+        "group": "body",
+        "step": 4,
+        "boundary": true,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "2,1": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "2,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "2,3": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "2,4": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "2,5": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "2,6": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "2,7": {
+        "group": "body",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          35,
+          35,
+          35
+        ]
+      },
+      "3,1": {
+        "group": "body",
+        "step": 4,
+        "boundary": true,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "3,2": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "3,3": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "3,4": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "3,5": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "3,6": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "3,7": {
+        "group": "body",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          35,
+          35,
+          35
+        ]
+      },
+      "4,0": {
+        "group": "body",
+        "step": 4,
+        "boundary": true,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "4,1": {
+        "group": "body",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          21,
+          59,
+          19
+        ]
+      },
+      "4,2": {
+        "group": "body",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          21,
+          59,
+          19
+        ]
+      },
+      "4,3": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "4,4": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "4,5": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "4,6": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "4,7": {
+        "group": "body",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          35,
+          35,
+          35
+        ]
+      },
+      "5,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "5,1": {
+        "group": "body",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          21,
+          59,
+          19
+        ]
+      },
+      "5,2": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "5,3": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "5,4": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "5,5": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "5,6": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "5,7": {
+        "group": "accent",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          224,
+          167,
+          15
+        ]
+      },
+      "6,1": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "6,2": {
+        "group": "body",
+        "step": 3,
+        "boundary": true,
+        "source": [
+          21,
+          59,
+          19
+        ]
+      },
+      "6,3": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "6,4": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "6,5": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "6,6": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "6,7": {
+        "group": "accent",
+        "step": 2,
+        "boundary": true,
+        "source": [
+          255,
+          227,
+          17
+        ]
+      },
+      "7,3": {
+        "group": "body",
+        "step": 3,
+        "boundary": true,
+        "source": [
+          21,
+          59,
+          19
+        ]
+      },
+      "7,4": {
+        "group": "body",
+        "step": 3,
+        "boundary": true,
+        "source": [
+          21,
+          59,
+          19
+        ]
+      },
+      "7,5": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "7,6": {
+        "group": "body",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          35,
+          35,
+          35
+        ]
+      },
+      "7,7": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      }
+    },
+    "left": {
+      "0,3": {
+        "group": "body",
+        "step": 3,
+        "boundary": true,
+        "source": [
+          21,
+          59,
+          19
+        ]
+      },
+      "0,4": {
+        "group": "body",
+        "step": 3,
+        "boundary": true,
+        "source": [
+          21,
+          59,
+          19
+        ]
+      },
+      "0,5": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "0,6": {
+        "group": "body",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          35,
+          35,
+          35
+        ]
+      },
+      "0,7": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "1,1": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "1,2": {
+        "group": "body",
+        "step": 3,
+        "boundary": true,
+        "source": [
+          21,
+          59,
+          19
+        ]
+      },
+      "1,3": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "1,4": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "1,5": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "1,6": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "1,7": {
+        "group": "accent",
+        "step": 2,
+        "boundary": true,
+        "source": [
+          255,
+          227,
+          17
+        ]
+      },
+      "2,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "2,1": {
+        "group": "body",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          21,
+          59,
+          19
+        ]
+      },
+      "2,2": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "2,3": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "2,4": {
+        "group": "body",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          41,
+          96,
+          42
+        ]
+      },
+      "2,5": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "2,6": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "2,7": {
+        "group": "accent",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          224,
+          167,
+          15
+        ]
+      },
+      "3,0": {
+        "group": "body",
+        "step": 4,
+        "boundary": true,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "3,1": {
+        "group": "body",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          21,
+          59,
+          19
+        ]
+      },
+      "3,2": {
+        "group": "body",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          21,
+          59,
+          19
+        ]
+      },
+      "3,3": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "3,4": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "3,5": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "3,6": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "3,7": {
+        "group": "body",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          35,
+          35,
+          35
+        ]
+      },
+      "4,1": {
+        "group": "body",
+        "step": 4,
+        "boundary": true,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "4,2": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "4,3": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "4,4": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "4,5": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "4,6": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "4,7": {
+        "group": "body",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          35,
+          35,
+          35
+        ]
+      },
+      "5,0": {
+        "group": "body",
+        "step": 4,
+        "boundary": true,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "5,1": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "5,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "5,3": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "5,4": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "5,5": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "5,6": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "5,7": {
+        "group": "body",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          35,
+          35,
+          35
+        ]
+      },
+      "6,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "6,1": {
+        "group": "trim",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          226,
+          196,
+          116
+        ]
+      },
+      "6,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "6,3": {
+        "group": "body",
+        "step": 1,
+        "boundary": false,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "6,4": {
+        "group": "body",
+        "step": 1,
+        "boundary": false,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "6,5": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "6,6": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "6,7": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "7,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "7,1": {
+        "group": "trim",
+        "step": 5,
+        "boundary": true,
+        "source": [
+          226,
+          196,
+          116
+        ]
+      },
+      "7,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": true,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "7,3": {
+        "group": "trim",
+        "step": 3,
+        "boundary": true,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "7,4": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      }
+    },
+    "back": {
+      "0,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "0,1": {
+        "group": "trim",
+        "step": 5,
+        "boundary": true,
+        "source": [
+          226,
+          196,
+          116
+        ]
+      },
+      "0,2": {
+        "group": "trim",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "0,3": {
+        "group": "trim",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "0,4": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "0,5": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "0,6": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "1,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "1,1": {
+        "group": "trim",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          226,
+          196,
+          116
+        ]
+      },
+      "1,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "1,3": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "1,4": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "1,5": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "1,6": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "1,7": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "2,0": {
+        "group": "body",
+        "step": 4,
+        "boundary": true,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "2,1": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "2,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "2,3": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "2,4": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "2,5": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "2,6": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "2,7": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "3,0": {
+        "group": "body",
+        "step": 4,
+        "boundary": true,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "3,1": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "3,2": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "3,3": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "3,4": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "3,5": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "3,6": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "3,7": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "4,0": {
+        "group": "body",
+        "step": 4,
+        "boundary": true,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "4,1": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "4,2": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "4,3": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "4,4": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "4,5": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "4,6": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "4,7": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "5,0": {
+        "group": "body",
+        "step": 4,
+        "boundary": true,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "5,1": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "5,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "5,3": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "5,4": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "5,5": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "5,6": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "5,7": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "6,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "6,1": {
+        "group": "trim",
+        "step": 5,
+        "boundary": false,
+        "source": [
+          226,
+          196,
+          116
+        ]
+      },
+      "6,2": {
+        "group": "trim",
+        "step": 3,
+        "boundary": false,
+        "source": [
+          177,
+          153,
+          123
+        ]
+      },
+      "6,3": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "6,4": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "6,5": {
+        "group": "trim",
+        "step": 0,
+        "boundary": false,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "6,6": {
+        "group": "body",
+        "step": 4,
+        "boundary": false,
+        "source": [
+          106,
+          70,
+          29
+        ]
+      },
+      "6,7": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "7,0": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "7,1": {
+        "group": "trim",
+        "step": 5,
+        "boundary": true,
+        "source": [
+          226,
+          196,
+          116
+        ]
+      },
+      "7,2": {
+        "group": "trim",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "7,3": {
+        "group": "trim",
+        "step": 0,
+        "boundary": true,
+        "source": [
+          156,
+          128,
+          93
+        ]
+      },
+      "7,4": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "7,5": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      },
+      "7,6": {
+        "group": "body",
+        "step": 1,
+        "boundary": true,
+        "source": [
+          54,
+          38,
+          23
+        ]
+      }
+    }
+  }
+}

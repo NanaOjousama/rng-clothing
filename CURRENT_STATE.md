@@ -1596,3 +1596,37 @@ The front-view visor shape, not just its shading, was revised to follow vanilla 
 - Right/Left/Back geometry is unchanged.
 - Front component mask and locked hashes were updated to the new approved geometry.
 - Generator batch regenerated successfully with 24 frames and source-template validation passing.
+
+## 2026-09-27 — ConstructionTemplatePrinter trucker-only proof
+
+- Reviewed the decompiled Photo Tailor source. Its hat path cannot print construction: 5 SigLIP hat labels map to hard-coded vanilla hats (`cap`→#5, `hat`→#4), the photo supplies colour only, `FillCanonicalHat` is one trapezoid, and side/back are re-projections of the front. Review/plan: `~/.claude/plans/pasted-content-id-a8f1-i-want-parsed-hearth.md`.
+- Built isolated `prototypes/construction_printer/` (see README). Photo → mask → PT SigLIP (1:1 port) → family gate → measure → clamped integer deltas → print on the approved `authored/templates/trucker_rd22_pl26` master + component masks → validate → neutral 4-view + region masks + JSON.
+- Proven: zero delta reproduces the master exactly. All 125 legal parameter combos resolve to contract-valid templates (5 via backoff). The 5 accepted truckers (plus 1 forced) print coherent, distinct 4-view templates whose profile order matches the photos. None of the 5 negatives is accepted.
+- Not yet proven: in-game worn QC (game was not running); visor-length variation (no true side trucker photo); panel split from anything but one photo; calibration on held-out photos.
+- Resolution rule recorded in `families/trucker.json`: 20–32 per facing, native 26, grow only on overflow, never resample.
+- Output: `experiments/construction_printer_trucker_01/CONSTRUCTION_PRINTER_TRUCKER_COMPARE_X8.png` + contact sheet + per-photo dirs.
+- Next test: neutral templates in a throwaway FS pack → `tools/qc.py worn`; add true side-view trucker photos to exercise visor/panel.
+
+## Vanilla-only source-backed generator control — 2026-09-27
+
+Created a fully isolated side experiment to answer a narrow question: if the generator receives only known-good vanilla Stardew art as its source corpus, can the current source-backed architecture produce coherent variation without Photo Tailor, AI geometry, or source-quality ambiguity?
+
+Experiment:
+- `tools/experiment_vanilla_source_random_batch.py`
+- output: `experiments/vanilla_source_only_random_batch_01/`
+- contact: `VANILLA_ONLY_RANDOM_BATCH_CONTACT.png`
+- deterministic seed: `260927`
+
+Source preparation intentionally mirrors the production source-backed philosophy rather than blindly recoloring a sheet:
+1. exact 4-view extraction from unpacked vanilla `hats.png` / `shirts.png`;
+2. alpha geometry locked and hashed per view;
+3. source-relative 3-group palette deconstruction (`body`, `trim`, `accent`);
+4. independent shade ladder preserved inside each source group;
+5. outer-boundary vs interior cells derived;
+6. existing authored generator palette ramps applied by group;
+7. existing material-treatment rules applied only to interior body cells;
+8. alpha must hash-identical before/after every generated view.
+
+The test randomly selected 6 usable hats and 6 usable shirts from validated four-view pools (115 hats / 329 shirts). All 48 generated views preserved exact source alpha geometry. Visual contact confirms the generator can produce coherent Stardew-native variation when source construction is already authoritative. This is a CONTROL, not production promotion: no template/taste registries were changed, no motif/attachment operations were attempted without semantic zones, and no Photo Tailor path was involved.
+
+Next optional A/B: run the exact same vanilla inputs through PT-assisted semantic/palette deconstruction while keeping vanilla geometry authoritative, then compare whether PT adds useful region/material evidence or degrades the clean source-backed baseline.

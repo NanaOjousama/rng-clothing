@@ -1,0 +1,729 @@
+{
+  "schema": "vanilla-source-only-side-experiment/v2",
+  "seed": 260927,
+  "sourceAuthority": "unpacked vanilla Stardew assets only",
+  "inputs": {
+    "hats": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+    "shirts": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/shirts.png"
+  },
+  "prep": [
+    "exact four-view extraction",
+    "3-group source-relative palette deconstruction",
+    "per-group shade ladder",
+    "outer boundary/interior mask"
+  ],
+  "generatorOps": [
+    "existing authored palette ramps",
+    "existing material treatment rules on interior body pixels only"
+  ],
+  "prohibited": [
+    "Photo Tailor in baseline",
+    "AI geometry",
+    "resampling",
+    "alpha edits",
+    "production registry mutation",
+    "unmapped motif/attachment placement"
+  ],
+  "pools": {
+    "hat": 115,
+    "shirt": 329
+  },
+  "records": [
+    {
+      "kind": "hat",
+      "sourceIndex": 52,
+      "palette": "CUTE_TAN_RIBBON",
+      "treatment": "stitched",
+      "paletteGroups": {
+        "centers": [
+          [
+            178,
+            48,
+            70
+          ],
+          [
+            66,
+            13,
+            25
+          ],
+          [
+            217,
+            147,
+            156
+          ]
+        ],
+        "coverage": [
+          234,
+          170,
+          31
+        ],
+        "clusterRoles": {
+          "0": "body",
+          "2": "trim",
+          "1": "accent"
+        }
+      },
+      "geometryPreserved": true,
+      "sourceHashes": {
+        "front": {
+          "pixels": "7c2a413f5c87549224508b2d8671509a079089f4866f21e95d7a1526604f85cc",
+          "alpha": "c65253b3a4945ebab1a4b0043e000c64f69842eac0ab0a1835ac1c734b1c89fc",
+          "opaque": 107
+        },
+        "right": {
+          "pixels": "c820f8799fc3db0439a222e78ef146ae13c95bf8e05994b77dacf7e5fbf119fd",
+          "alpha": "e71ec9ea532dfdcba8e12789a1473b971c6cf86a1bd034d115e0b23ac99108d7",
+          "opaque": 96
+        },
+        "left": {
+          "pixels": "800e1e6770d34a32d2e1559092166d288e914a9452acf25b7614e8eca0a7ef01",
+          "alpha": "d3ebb031ddac68adfb12b5fcd287c427c5a2b697ed9beaf2af7087e9676e5d97",
+          "opaque": 96
+        },
+        "back": {
+          "pixels": "9fee28939fea4c2ffb7e91e9ab32c3d1a1f2de6a23b8e793c916bb20879525b4",
+          "alpha": "b68e87144409c52eb9931019743359b9b1f1351a6406c63d6c88d2a97ea23874",
+          "opaque": 136
+        }
+      }
+    },
+    {
+      "kind": "hat",
+      "sourceIndex": 66,
+      "palette": "GOTHIC_WINE_ASH",
+      "treatment": "plaid",
+      "paletteGroups": {
+        "centers": [
+          [
+            149,
+            150,
+            144
+          ],
+          [
+            51,
+            47,
+            53
+          ],
+          [
+            221,
+            212,
+            202
+          ]
+        ],
+        "coverage": [
+          240,
+          188,
+          76
+        ],
+        "clusterRoles": {
+          "0": "body",
+          "2": "trim",
+          "1": "accent"
+        }
+      },
+      "geometryPreserved": true,
+      "sourceHashes": {
+        "front": {
+          "pixels": "6fae00eca2b7133b193bd581b0d92c95bf0141133ee52770089f8adc5d5a243d",
+          "alpha": "ccd6cb7e6beabf1ef399cb49cecb5d7992b52eeb159dd21bf411729240d529e3",
+          "opaque": 130
+        },
+        "right": {
+          "pixels": "10011eb187011fd600f6419b4adfb2db08924bbb4e333dfeca2826d4896998a2",
+          "alpha": "55eae5c9d59166fa60af3130b76aba7f4a49557627b924cffcb0112738a7ba75",
+          "opaque": 117
+        },
+        "left": {
+          "pixels": "80a6785799ce72d03d2ebf810cfdeb7c3f8b5852701d07344883a5aa88db6c3b",
+          "alpha": "7e1edbebc4aa39fb92a92eaa2365c9eb305fec9c6380662f8797bd568c1a446b",
+          "opaque": 117
+        },
+        "back": {
+          "pixels": "c899309d5352cb6af4dc5178693abf56c831a4616b4b05af176e43d60e5eee7a",
+          "alpha": "cf2d0a4065b1507c4c2fb9eb59d2408dd52145d6b12546aaa2b9a9ca98b9ef49",
+          "opaque": 140
+        }
+      }
+    },
+    {
+      "kind": "hat",
+      "sourceIndex": 79,
+      "palette": "CUTE_SKY_PLAID",
+      "treatment": "plaid",
+      "paletteGroups": {
+        "centers": [
+          [
+            127,
+            12,
+            5
+          ],
+          [
+            54,
+            9,
+            11
+          ],
+          [
+            215,
+            21,
+            8
+          ]
+        ],
+        "coverage": [
+          139,
+          76,
+          73
+        ],
+        "clusterRoles": {
+          "0": "body",
+          "1": "trim",
+          "2": "accent"
+        }
+      },
+      "geometryPreserved": true,
+      "sourceHashes": {
+        "front": {
+          "pixels": "b604a1b0e5fa967285ef2a0e3ff69fb7f304f24c492ce1c43833ccf6bd220ba8",
+          "alpha": "0c25fe0af499d0e8da455b8e071812edc36cd4e69fca8767452499c514a7bf78",
+          "opaque": 68
+        },
+        "right": {
+          "pixels": "4cdb36047a3c10b48800d09f2abcfb5cd9acd665a5b7f09610770ce2a074e3c2",
+          "alpha": "994675c2f76a044c749a0a320f3e038f29fa0cf7dde33147f10da984aa905c00",
+          "opaque": 70
+        },
+        "left": {
+          "pixels": "3350d0446b20f2944560f4fbb11adfd5a7293ec6714c102f3e4a225b58f57b3c",
+          "alpha": "c5e7df6a0d73d04dfa010b7fc694f8aca3d97911e5defadc19bde001289ff340",
+          "opaque": 70
+        },
+        "back": {
+          "pixels": "1805ef2e09b109c21bea146e752158b38dcbeca33d15ea1f150ec6903e88ecfe",
+          "alpha": "3295c8a10b3a0e18bb6e7ac69ccc8ae1e8b6566e90c1ef5538060d0b5fe67ff5",
+          "opaque": 80
+        }
+      }
+    },
+    {
+      "kind": "hat",
+      "sourceIndex": 98,
+      "palette": "FIELD_CANVAS_MOSS",
+      "treatment": "felt",
+      "paletteGroups": {
+        "centers": [
+          [
+            156,
+            36,
+            29
+          ],
+          [
+            33,
+            9,
+            19
+          ],
+          [
+            81,
+            22,
+            32
+          ]
+        ],
+        "coverage": [
+          155,
+          34,
+          221
+        ],
+        "clusterRoles": {
+          "2": "body",
+          "1": "trim",
+          "0": "accent"
+        }
+      },
+      "geometryPreserved": true,
+      "sourceHashes": {
+        "front": {
+          "pixels": "21469b0f984ae4116acd73ba948812b919e546bcabc2e795b303398fe31a5b37",
+          "alpha": "19f1aae33823f12d896415b7310e0353f01cd2f0f9ff4cdbd4235e2b6293346d",
+          "opaque": 96
+        },
+        "right": {
+          "pixels": "11044481d200e0bb62bdb79bd8e94d99a0366a7627345f147640ac9156e31766",
+          "alpha": "064e208050d8cf354ad882dd8865fb5c781a1dee55ab2918c6fc66f836d3a702",
+          "opaque": 91
+        },
+        "left": {
+          "pixels": "fcdac63276b9e41e199ed710880975e469836d05598e970a55841ac46dc07bd3",
+          "alpha": "0e6fa1f90679f1e371c78e701496cb880a61f262ae6c09dde64f7c5eec7236f0",
+          "opaque": 91
+        },
+        "back": {
+          "pixels": "29223d579c12a04810d9544d53e418863aeb2e5cfb6b8832a2f20a8e4306b85a",
+          "alpha": "6cbc21bd32ef7a93564c5933060a88c02d7e2627ccd2d5e92089c0a4457d5850",
+          "opaque": 132
+        }
+      }
+    },
+    {
+      "kind": "hat",
+      "sourceIndex": 33,
+      "palette": "FORMAL_PEARL_MIDNIGHT",
+      "treatment": "wool",
+      "paletteGroups": {
+        "centers": [
+          [
+            78,
+            27,
+            71
+          ],
+          [
+            255,
+            184,
+            190
+          ],
+          [
+            193,
+            93,
+            141
+          ]
+        ],
+        "coverage": [
+          222,
+          28,
+          160
+        ],
+        "clusterRoles": {
+          "0": "body",
+          "1": "trim",
+          "2": "accent"
+        }
+      },
+      "geometryPreserved": true,
+      "sourceHashes": {
+        "front": {
+          "pixels": "1096e47183039276c16afc2e759586357ac7bf1a9ace5fe0814cc256fd5ec85b",
+          "alpha": "7bc6e6c17fdff4f78bd5551eb77b904ac6dd1025476d7db1ea18878d286fa619",
+          "opaque": 116
+        },
+        "right": {
+          "pixels": "e45be150007a2d20063e8639e6490838a91821bffbf785e79bda94d4ba8a1cf3",
+          "alpha": "ab1b83398e5b9d8104891cd7971a1df83165a92b0d7c0ebbec8d81efdb216ec0",
+          "opaque": 89
+        },
+        "left": {
+          "pixels": "b6a539afaaa693a84cf975256f5ef61b48839074522506a58ac279d40ab57aa6",
+          "alpha": "a196723db42287334f7245441bb368d690ec57f465b10fddfe49e429fa531f41",
+          "opaque": 89
+        },
+        "back": {
+          "pixels": "dc94c499fcf826d0217e3bacf7e9beec962c8f781a881b143b8d3e4424a14709",
+          "alpha": "3f41eb4198412f6d42492c2a2aa49fd9f26b9378ae998f3848bcfce5e0a9134a",
+          "opaque": 116
+        }
+      }
+    },
+    {
+      "kind": "hat",
+      "sourceIndex": 82,
+      "palette": "CUTE_OLIVE_GOLD",
+      "treatment": "plaid",
+      "paletteGroups": {
+        "centers": [
+          [
+            58,
+            58,
+            72
+          ],
+          [
+            1,
+            0,
+            9
+          ],
+          [
+            92,
+            92,
+            114
+          ]
+        ],
+        "coverage": [
+          200,
+          206,
+          122
+        ],
+        "clusterRoles": {
+          "1": "body",
+          "2": "trim",
+          "0": "accent"
+        }
+      },
+      "geometryPreserved": true,
+      "sourceHashes": {
+        "front": {
+          "pixels": "d7c14a1911025f006faae9816e95406c5fda5ab15e2ad298f5910572937b1cd4",
+          "alpha": "4e2bb9fc4941350f912a8d95753d25202203b0e8bb633d398709669ddf3d3a5b",
+          "opaque": 144
+        },
+        "right": {
+          "pixels": "4141ec3137830bc4b3832abc653e6e90ef40903a860a7fa601e7a07f3222cd3b",
+          "alpha": "c8225a167cfe9c11dca370cd15c68688dd86d0587e0db3f7cb4bb91ff701b845",
+          "opaque": 120
+        },
+        "left": {
+          "pixels": "57909435b391878a10982fd38320b802d8d583a47d713c9ce5865fff4f7aef93",
+          "alpha": "44bb986b0188122d4d73ac0a7d47a5ef447269a19fc4cd687ad9edce9814d570",
+          "opaque": 120
+        },
+        "back": {
+          "pixels": "d7c14a1911025f006faae9816e95406c5fda5ab15e2ad298f5910572937b1cd4",
+          "alpha": "4e2bb9fc4941350f912a8d95753d25202203b0e8bb633d398709669ddf3d3a5b",
+          "opaque": 144
+        }
+      }
+    },
+    {
+      "kind": "shirt",
+      "sourceIndex": 527,
+      "palette": "CYBER_CYAN_MAGENTA",
+      "treatment": "stitched",
+      "paletteGroups": {
+        "centers": [
+          [
+            66,
+            69,
+            23
+          ],
+          [
+            165,
+            149,
+            97
+          ],
+          [
+            99,
+            165,
+            23
+          ]
+        ],
+        "coverage": [
+          112,
+          42,
+          80
+        ],
+        "clusterRoles": {
+          "0": "body",
+          "1": "trim",
+          "2": "accent"
+        }
+      },
+      "geometryPreserved": true,
+      "sourceHashes": {
+        "front": {
+          "pixels": "ee8f61e59a47f061a6f32875fb249d8d4d942c26a44fe1039798c98c7cc69a58",
+          "alpha": "bbf1f7532df66303d948dfefbf42617c66171577dad1d15ca99606698e908cb6",
+          "opaque": 62
+        },
+        "right": {
+          "pixels": "d5132c18b7029cb540eb8f58efa71186c0c65b866ac85301a487d39840372a88",
+          "alpha": "0578c26dc5c36161318cd84a0a111023b057ce010c092a56ce091eb9e5bb7048",
+          "opaque": 55
+        },
+        "left": {
+          "pixels": "31e1d53aa90e57f597682311b7bd2ca897bf547483bb47303026a7982dae74e7",
+          "alpha": "0f9848d561dca98291ee6211fc3949f222d731cbafdcd201246f4d4f25f97b71",
+          "opaque": 55
+        },
+        "back": {
+          "pixels": "c492a5c3fd57635f94c8a4c008012f983eec2aa0474ec26e2a74d761889c619f",
+          "alpha": "80cdb7d8aabee8c70ddee50e92e6377c4163c9a7c85b17c1b798a140cfbc4745",
+          "opaque": 62
+        }
+      }
+    },
+    {
+      "kind": "shirt",
+      "sourceIndex": 481,
+      "palette": "FIELD_CANVAS_MOSS",
+      "treatment": "knit",
+      "paletteGroups": {
+        "centers": [
+          [
+            59,
+            55,
+            28
+          ],
+          [
+            245,
+            207,
+            16
+          ],
+          [
+            173,
+            146,
+            108
+          ]
+        ],
+        "coverage": [
+          130,
+          6,
+          100
+        ],
+        "clusterRoles": {
+          "0": "body",
+          "2": "trim",
+          "1": "accent"
+        }
+      },
+      "geometryPreserved": true,
+      "sourceHashes": {
+        "front": {
+          "pixels": "354002dc2c989bd6e46e7f5243cbcb96449ac1453f0ca215931c992c99dadaa8",
+          "alpha": "bbf1f7532df66303d948dfefbf42617c66171577dad1d15ca99606698e908cb6",
+          "opaque": 62
+        },
+        "right": {
+          "pixels": "47434d9d619e259090e78d1a38dd812e93f7fc81db932df42d55bffb26417b1d",
+          "alpha": "78940a9c49cf5c2da8260fc7e8fa2fe19ad726549fffe2fbab79119d055e9cdf",
+          "opaque": 56
+        },
+        "left": {
+          "pixels": "08c3980a6b71affb09a3ed14e235ab63ae931578ef4ee7646fec4cb07f3c689b",
+          "alpha": "03eee749436e89e581b16512bbd78c4a7fda1d7c6a5d4510e9a85193267e74ef",
+          "opaque": 56
+        },
+        "back": {
+          "pixels": "a9247aee9cb0ea44511b1a3908cf5cbb95fe1532dabdc6cb08778ae4f0152b53",
+          "alpha": "80cdb7d8aabee8c70ddee50e92e6377c4163c9a7c85b17c1b798a140cfbc4745",
+          "opaque": 62
+        }
+      }
+    },
+    {
+      "kind": "shirt",
+      "sourceIndex": 225,
+      "palette": "EMBER_SUN_CHARCOAL",
+      "treatment": "plaid",
+      "paletteGroups": {
+        "centers": [
+          [
+            231,
+            124,
+            137
+          ],
+          [
+            82,
+            23,
+            69
+          ],
+          [
+            151,
+            107,
+            185
+          ]
+        ],
+        "coverage": [
+          130,
+          81,
+          21
+        ],
+        "clusterRoles": {
+          "0": "body",
+          "2": "trim",
+          "1": "accent"
+        }
+      },
+      "geometryPreserved": true,
+      "sourceHashes": {
+        "front": {
+          "pixels": "4539830a560b5f8a968a60d2b23c48f467cf3a72fbb0452a31c4ca6549bc8c95",
+          "alpha": "6e05a0612628f7300b76846a707eb5bc21229711d5d5bab90b02b537b0a22b98",
+          "opaque": 60
+        },
+        "right": {
+          "pixels": "8db74331dfea2d35d2f0df745000898a443d4170d9cfda2bb6a9ae600d710cae",
+          "alpha": "5961ead0652d6002d894dbc74dd9e8eade95d24e07159c64db02039718d6e005",
+          "opaque": 55
+        },
+        "left": {
+          "pixels": "1fa48768fa52118faadaec002dfae54e1bb56f9d018301d64d81159cbec0c7f5",
+          "alpha": "b34612840c3cd0979832c1ff21a25b098abddfa178bee8778af7ed7954a9a97b",
+          "opaque": 55
+        },
+        "back": {
+          "pixels": "7c65e95331a0dc74fccad5146bcb04e894ab7ca07ecd57727498c5596c422787",
+          "alpha": "80cdb7d8aabee8c70ddee50e92e6377c4163c9a7c85b17c1b798a140cfbc4745",
+          "opaque": 62
+        }
+      }
+    },
+    {
+      "kind": "shirt",
+      "sourceIndex": 584,
+      "palette": "SAILOR_COBALT_CREAM",
+      "treatment": "wool",
+      "paletteGroups": {
+        "centers": [
+          [
+            178,
+            137,
+            11
+          ],
+          [
+            0,
+            75,
+            157
+          ],
+          [
+            216,
+            214,
+            208
+          ]
+        ],
+        "coverage": [
+          170,
+          33,
+          35
+        ],
+        "clusterRoles": {
+          "0": "body",
+          "2": "trim",
+          "1": "accent"
+        }
+      },
+      "geometryPreserved": true,
+      "sourceHashes": {
+        "front": {
+          "pixels": "5f7899828e4fd7048f4966ee09e73bfe6559c8ca025b3dbbf0d62eea11b3101a",
+          "alpha": "bbf1f7532df66303d948dfefbf42617c66171577dad1d15ca99606698e908cb6",
+          "opaque": 62
+        },
+        "right": {
+          "pixels": "29ab3bb3b9fdf0becfec2677df9f628bf6fc578614af50d05a3ce37aa848d9dd",
+          "alpha": "78940a9c49cf5c2da8260fc7e8fa2fe19ad726549fffe2fbab79119d055e9cdf",
+          "opaque": 56
+        },
+        "left": {
+          "pixels": "0ff4bd45e05b6735c8cb420101c79e0872075c5d4cdd111ae3bae29d6066c8b9",
+          "alpha": "03eee749436e89e581b16512bbd78c4a7fda1d7c6a5d4510e9a85193267e74ef",
+          "opaque": 56
+        },
+        "back": {
+          "pixels": "4d87730eff30d921683e2132614a648c732770ecd228c18edefcdaa9478f34bd",
+          "alpha": "50dbf00b4c39736c4e96e1cdac3e18d7897dfa4729bb5f80a5c7eaa92f9c3fa1",
+          "opaque": 64
+        }
+      }
+    },
+    {
+      "kind": "shirt",
+      "sourceIndex": 535,
+      "palette": "EMBER_SUN_CHARCOAL",
+      "treatment": "knit",
+      "paletteGroups": {
+        "centers": [
+          [
+            130,
+            130,
+            130
+          ],
+          [
+            254,
+            254,
+            254
+          ],
+          [
+            198,
+            198,
+            198
+          ]
+        ],
+        "coverage": [
+          22,
+          18,
+          14
+        ],
+        "clusterRoles": {
+          "0": "body",
+          "2": "trim",
+          "1": "accent"
+        }
+      },
+      "geometryPreserved": true,
+      "sourceHashes": {
+        "front": {
+          "pixels": "702a2b52eaf0c5cee39ddb079abfcbab31a11231e8204f3d67e72d33074bf6cd",
+          "alpha": "23bfb21392b1d5cab98325185e4472173375a2abd5a85d6132923507175db36e",
+          "opaque": 18
+        },
+        "right": {
+          "pixels": "02dcb3f7672c0adce4c197df8b88049cedac925c5a9da6c437e70fc80a02c23b",
+          "alpha": "345f8a183f700125f5c24d8771db0d12c02dc2e4e4ace23c21a792ebe5526219",
+          "opaque": 15
+        },
+        "left": {
+          "pixels": "3a3729d3eae05ededab728f20a51bb1a9ed24e7ea16ebe4645dd7b23d4ea6318",
+          "alpha": "3736b91380a19ea80f15e27e2dee3aa90817e8bce98cf851953ec0bf228dc3e2",
+          "opaque": 15
+        },
+        "back": {
+          "pixels": "5866ec3bb75518d1f85c3cf08fb79ef7592d636d54a031fb4e234ee4b0b05b04",
+          "alpha": "a51f1b18fee918d79872eb77e77d574ac0d8d8094feaba88cf57876c5caace91",
+          "opaque": 6
+        }
+      }
+    },
+    {
+      "kind": "shirt",
+      "sourceIndex": 424,
+      "palette": "COASTAL_SEAFOAM_CORAL",
+      "treatment": "wool",
+      "paletteGroups": {
+        "centers": [
+          [
+            36,
+            53,
+            104
+          ],
+          [
+            224,
+            167,
+            15
+          ],
+          [
+            208,
+            204,
+            201
+          ]
+        ],
+        "coverage": [
+          184,
+          6,
+          46
+        ],
+        "clusterRoles": {
+          "0": "body",
+          "2": "trim",
+          "1": "accent"
+        }
+      },
+      "geometryPreserved": true,
+      "sourceHashes": {
+        "front": {
+          "pixels": "5433740376c305e48614a4e1187ccb9fa9314450c1189e7e5d22923875809b11",
+          "alpha": "bbf1f7532df66303d948dfefbf42617c66171577dad1d15ca99606698e908cb6",
+          "opaque": 62
+        },
+        "right": {
+          "pixels": "456d41c5c8ccb7ea8ad9f720861a86b397be36ef3f7287db7afc0646452d879d",
+          "alpha": "78940a9c49cf5c2da8260fc7e8fa2fe19ad726549fffe2fbab79119d055e9cdf",
+          "opaque": 56
+        },
+        "left": {
+          "pixels": "3d9abd788553e46da9b0fc35c4da180b48ca56d6e34826a249b237a1c5a8d70a",
+          "alpha": "03eee749436e89e581b16512bbd78c4a7fda1d7c6a5d4510e9a85193267e74ef",
+          "opaque": 56
+        },
+        "back": {
+          "pixels": "ad2b67a284ac724f057a11d053ef5cf6a25b774f1de09a21fec2491aca08755b",
+          "alpha": "80cdb7d8aabee8c70ddee50e92e6377c4163c9a7c85b17c1b798a140cfbc4745",
+          "opaque": 62
+        }
+      }
+    }
+  ]
+}
