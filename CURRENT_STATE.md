@@ -1537,3 +1537,30 @@ The approved RD22-front + PL26-side/back trucker construction is now the active 
 - Validation: template hash/alpha lock PASS; exact mirrored Left PASS; mask opaque/non-overlap PASS; generator-wide taste policy PASS; source-template tests PASS.
 
 This promotion makes the trucker a reusable generator construction contract; it does not declare the previously packaged source-preserving QC sprite to be the final visual product.
+
+## Measured vanilla Stardew outline/shading grammar — 2026-09-27
+
+Studied the unpacked vanilla `Characters/Farmer/hats.png` and `shirts.png` directly and converted the observed style into a reusable experimental generator finish profile.
+
+Evidence:
+- 478 vanilla hat direction frames analyzed; 470 had enough local outline/interior pairs for measurement.
+- 1,275 vanilla shirt direction frames analyzed.
+- Hats: median outer-boundary darkening is ~47.5 luma relative to adjacent interior; median near-black share is only ~26.8%; median outline saturation ~0.60; median hue drift from local interior ~22.5 degrees.
+- Shirts: median boundary darkening ~37.7 luma; median near-black share 0%; median outline saturation ~0.48; median hue drift ~16.5 degrees.
+- Hats show a strong vertical light bias: top is ~20.5 luma brighter than bottom on the median analyzed frame; there is almost no consistent left/right brightness bias.
+
+Generator rule derived from that evidence:
+- outer silhouette defaults to the darkest local semantic/component ramp color, not global RGB black;
+- internal seams should use the second-darkest local ramp unless they are deep physical separations;
+- near-black is reserved for deep creases, undersides, negative-space borders and very strong separations;
+- outline hue stays close to the adjacent component hue (target <=25 degrees when saturation permits);
+- finishing may change RGB only, never locked alpha/silhouette;
+- top-to-bottom light hierarchy is preferred; no blanket left/right relighting.
+
+Implementation/proof:
+- `generator/data/vanilla_sprite_finish_profile.json`
+- `generator/vanilla_sprite_finish.py`
+- `experiments/vanilla_hat_style_grammar_01/`
+- `experiments/trucker_chromatic_outline_ab_01/TRUCKER_CHROMATIC_OUTLINE_AB.png`
+
+This is currently an experimental finish pass, not yet promoted to production. Human visual approval of the A/B is required before applying it generator-wide.

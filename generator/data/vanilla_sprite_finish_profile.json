@@ -1,0 +1,36 @@
+{
+  "schema": "rng-vanilla-sprite-finish/v1",
+  "sourceEvidence": {
+    "hatsSheet": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+    "shirtsSheet": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/shirts.png",
+    "hatFramesAnalyzed": 478,
+    "hatUsableFrames": 470,
+    "shirtUsableFrames": 1275
+  },
+  "measuredGrammar": {
+    "hats": {
+      "medianBoundaryVsInteriorDarkeningLuma": 47.53,
+      "medianNearBlackBoundaryFraction": 0.268,
+      "medianOutlineSaturation": 0.598,
+      "medianOutlineHueDistanceDegrees": 22.51,
+      "medianTopMinusBottomLuma": 20.51,
+      "medianLeftMinusRightLuma": -2.56
+    },
+    "shirts": {
+      "medianBoundaryVsInteriorDarkeningLuma": 37.74,
+      "medianNearBlackBoundaryFraction": 0.0,
+      "medianOutlineSaturation": 0.482,
+      "medianOutlineHueDistanceDegrees": 16.53
+    }
+  },
+  "rules": {
+    "outerSilhouette": "Use the darkest local component ramp color by default; do not force RGB black.",
+    "internalSeam": "Use the second-darkest local component ramp color unless a deep separation is required.",
+    "deepCrease": "Near-black is allowed only at undersides, negative-space borders, deep creases, or high-contrast physical separations.",
+    "localHue": "Outline hue should stay near the adjacent material/component hue; target <= 25 degrees hue drift when saturation permits.",
+    "valueSpacing": "Boundary should normally be about 38-50 luma darker than adjacent interior, preserving authored shade order.",
+    "lightDirection": "Prefer upper regions lighter than lower regions; hats show a strong vertical bias (~20 luma) and almost no consistent left/right bias.",
+    "geometry": "Finish pass may change RGB only; alpha/silhouette and protected negative space never change.",
+    "semanticOwnership": "Choose outline/seam color from the neighboring semantic component, not from one global outline color."
+  }
+}
