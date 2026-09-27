@@ -1564,3 +1564,14 @@ Implementation/proof:
 - `experiments/trucker_chromatic_outline_ab_01/TRUCKER_CHROMATIC_OUTLINE_AB.png`
 
 This is currently an experimental finish pass, not yet promoted to production. Human visual approval of the A/B is required before applying it generator-wide.
+
+## Trucker front-visor consistency fix — 2026-09-27
+
+Front visor finishing was revised to follow the stronger side-view visor value hierarchy without changing geometry.
+
+- Only front-view brim RGB was changed; Right/Left/Back frames are byte-identical to the prior batch.
+- 40 front-view brim pixels per variant changed, bounded to x=7..19 / y=16..20.
+- Alpha/silhouette remained exact.
+- The two isolated lower tip cells remain opaque for silhouette fidelity but now use the darkest visor shade, so they visually merge into the underside instead of reading as bright stray dots.
+- Front visor now uses an explicit upper-plane -> midtone -> underside-dark progression based on the side-view visor treatment rather than source-luminance rank alone.
+- `tools/build_trucker_generator_batch_v1.py` now applies this front-only visor finish consistently to every generated trucker variant.

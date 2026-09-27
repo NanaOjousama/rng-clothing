@@ -42,6 +42,31 @@ def rank_map(frame,cells,ramp):
   out[y][x]=(*ramp[ri],p[3])
  return out
 
+def shade_front_brim_like_side(frame,cells,ramp):
+    """Give the front visor the same light-to-underside hierarchy as side views.
+
+    The approved front source has two isolated tip pixels and a large flat light
+    run. Keep alpha/silhouette unchanged, but fold those tips into the darkest
+    visor shade and use a side-like vertical value progression.
+    """
+    out=[row[:] for row in frame]
+    ys=[y for x,y in cells]
+    if not ys:
+        return out
+    lo,hi=min(ys),max(ys)
+    # darkest..lightest ramp. Use brighter upper plane, darker lower/underside.
+    row_index={lo:1, lo+1:4, lo+2:3, lo+3:2, hi:0}
+    for x,y in cells:
+        idx=row_index.get(y,2)
+        idx=max(0,min(len(ramp)-1,idx))
+        out[y][x]=(*ramp[idx],frame[y][x][3])
+    # The two source-authored tip cells remain opaque but visually join the
+    # outline/underside instead of reading as two bright disconnected dots.
+    for x,y in cells:
+        if y==hi:
+            out[y][x]=(*ramp[0],frame[y][x][3])
+    return out
+
 def motif_cells(name):
  im=read_rgba_png(MOTIFS/f'{name}.png')
  pts=[(x,y,p) for y,row in enumerate(im) for x,p in enumerate(row) if p[3]]
@@ -76,7 +101,11 @@ def render_variant(base,masks,pal,spec):
  cmap={'front_panel':spec['panel'],'rear_mesh':spec['mesh'],'brim':spec['brim'],'top_button':spec['button'],'back_closure':spec['closure']}
  for v in VIEWS:
   fr=[row[:] for row in base[v]]
-  for comp,ramp_name in cmap.items(): fr=rank_map(fr,masks[v][comp],ramps[ramp_name])
+  for comp,ramp_name in cmap.items():
+   if v=='front' and comp=='brim':
+    fr=shade_front_brim_like_side(fr,masks[v][comp],ramps[ramp_name])
+   else:
+    fr=rank_map(fr,masks[v][comp],ramps[ramp_name])
   if v=='front' and spec.get('motif_asset'):
    fr=apply_front_motif(fr,masks[v]['front_panel'],spec['motif_asset'],ramps['accent'],tuple(TPL.anchors['front']['motif_center']))
   if alpha_cells(fr)!=alpha_cells(base[v]): raise ContractError(f'{v}: alpha changed')
