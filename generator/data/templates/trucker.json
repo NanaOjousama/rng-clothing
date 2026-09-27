@@ -9,11 +9,16 @@
     26
   ],
   "sourceIdentity": {
-    "kind": "USER_APPROVED_HYBRID_CONSTRUCTION_TEMPLATE",
-    "name": "RD22 rounded front + PL26 side/back trucker",
-    "frontAuthority": "Retro Diffusion rd20_front scaled nearest-neighbor to 22x22 and centered",
-    "sideBackAuthority": "PixelLab PL26 right/back",
-    "leftAuthority": "exact horizontal mirror of PL26 right"
+    "kind": "USER_APPROVED_FINAL_PRODUCT_SOURCE_TEMPLATE",
+    "name": "Final RD22 front + PL26 side/back product atlas",
+    "sourceAtlas": "prototypes/photo_tailor_source_identity_01/rd_front_pl_sides_final_candidate_01/final_product_01/trucker_final_rd22_pl26.png",
+    "runtimeOrder": [
+      "front",
+      "right",
+      "back",
+      "left"
+    ],
+    "note": "Exact frame pixels extracted from the user-selected final_product_01 atlas and promoted as generator source authority."
   },
   "requiredInputs": [
     "four approved cardinal construction frames",
@@ -27,27 +32,27 @@
   "frames": {
     "front": {
       "path": "authored/templates/trucker_rd22_pl26/front.png",
-      "sha256": "c0456675e9f479df1227593dba9741bd46d6433a1d893827d50a36a88e59e874",
-      "alphaSha256": "3365fed29295c8df41ea846f4bbd68608c944e0ddfa83ca78fc31382868d9ce7"
+      "sha256": "93f460602ea0a8eb1e83ed25c9dc3db9d271f108ab975370b4bd97a1307dc959",
+      "alphaSha256": "57d25c29712e8f9713fcb517aac593ff5cf1b2e8c8b243a9e4dd01aaa54a4f41"
     },
     "right": {
       "path": "authored/templates/trucker_rd22_pl26/right.png",
-      "sha256": "cfad404462fa707d5353ba054b5c55998b251a6b2f3db9d74bc681e0b0e2b5b4",
+      "sha256": "a1bcd1ff6f809049ec707316eaa989580b9ebf30d6cd13cc83803f0355538b52",
       "alphaSha256": "3c7b80258a4f747b4a595427d9c4f09be8375f603938b04635c6540223a58f09"
     },
     "left": {
       "path": "authored/templates/trucker_rd22_pl26/left.png",
-      "sha256": "9a06378f9e0e67feb22c9b0b321998c08364afd1b5ba8a55c7bb77471bc8833a",
+      "sha256": "73a6040a4c0919b284e13e424d79d53fce3186b1aebc241fdf7a2e469d05733a",
       "alphaSha256": "9dc199274a1206967f28bc578a35350287810379b2ba2939346b6c2113389ce7"
     },
     "back": {
       "path": "authored/templates/trucker_rd22_pl26/back.png",
-      "sha256": "b845a004edbacd186da405cbe7d6b6383c8dfa547940f3e9da5f43c3613d9df8",
+      "sha256": "91fbb0f687b0fc94625c061c9dadb9846eb0c5731d74a73307ba4ea5a0bdf131",
       "alphaSha256": "82d1eaaf9d50fd24079b73bea89fe8c74a737dbbc9f14d8ba47f108c51c4bcb1"
     }
   },
   "geometryLock": {
-    "authority": "approved RD22-front + PL26-side/back trucker family",
+    "authority": "user-selected final_product_01 RD22/PL26 trucker frames",
     "requiredViews": [
       "front",
       "right",
@@ -58,7 +63,7 @@
     "forbidGenericNormalization": true,
     "forbidBaseAlphaRemoval": true,
     "allowedAlphaGrowth": "none unless a future reviewed attachment contract explicitly opts in",
-    "notes": "Construction geometry is locked. Styling may change RGB only inside approved semantic masks; unmasked pixels remain protected."
+    "notes": "Use exact final_product_01 frame pixels as construction/style authority. Generator may vary approved masked regions only; unmasked pixels remain protected."
   },
   "zones": {
     "front_panel": {

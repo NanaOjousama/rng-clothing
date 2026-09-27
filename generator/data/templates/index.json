@@ -600,11 +600,11 @@
       "family": "trucker",
       "slot": "HEAD",
       "status": "CANDIDATE_APPROVED_FOR_GENERATOR",
-      "constructionAuthority": "approved RD22 front + PL26 right/back + mirrored left",
+      "constructionAuthority": "user-selected final_product_01 RD22/PL26 trucker atlas",
       "humanArtApprovalRequired": false,
       "origin": "user-approved-hybrid-source",
       "sourceCategory": "Hats",
-      "sourceName": "RD22 + PL26 Trucker"
+      "sourceName": "FINAL_TRUCKER_PRODUCT RD22/PL26"
     }
   },
   "catalogPromotion": {

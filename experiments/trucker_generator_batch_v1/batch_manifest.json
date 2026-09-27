@@ -1,0 +1,135 @@
+{
+  "schema": "trucker-generator-batch/v1",
+  "template": "trucker",
+  "count": 6,
+  "variants": [
+    {
+      "id": "C1_FIELD_MOSS",
+      "rarity": "common",
+      "palette": "FIELD_CANVAS_MOSS",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "componentRampMap": {
+        "panel": "body",
+        "mesh": "trim",
+        "brim": "body",
+        "button": "hardware",
+        "closure": "trim"
+      }
+    },
+    {
+      "id": "C2_STONE_BLUE",
+      "rarity": "common",
+      "palette": "EVERYDAY_STONE_BLUE",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "subtle",
+        "trim": "subtle",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "componentRampMap": {
+        "panel": "body",
+        "mesh": "trim",
+        "brim": "trim",
+        "button": "hardware",
+        "closure": "hardware"
+      }
+    },
+    {
+      "id": "U1_DENIM_RUST",
+      "rarity": "uncommon",
+      "palette": "WORKWEAR_DENIM_RUST",
+      "recipe": {
+        "materialTreatment": "subtle",
+        "pattern": "colorblock",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "componentRampMap": {
+        "panel": "trim",
+        "mesh": "body",
+        "brim": "accent",
+        "button": "hardware",
+        "closure": "accent"
+      }
+    },
+    {
+      "id": "U2_TEAL_GRAPHITE",
+      "rarity": "uncommon",
+      "palette": "STREET_TEAL_GRAPHITE",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "stripe",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "componentRampMap": {
+        "panel": "body",
+        "mesh": "trim",
+        "brim": "accent",
+        "button": "hardware",
+        "closure": "hardware"
+      }
+    },
+    {
+      "id": "R1_CRIMSON_PATCH",
+      "rarity": "rare",
+      "palette": "CEREMONIAL_CRIMSON_IVORY",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "solid",
+        "trim": "subtle",
+        "motif": "small",
+        "motifPlacement": "front_center",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "componentRampMap": {
+        "panel": "body",
+        "mesh": "trim",
+        "brim": "accent",
+        "button": "hardware",
+        "closure": "hardware",
+        "motif_asset": "tiny_label_tag"
+      }
+    },
+    {
+      "id": "E1_INDIGO_STAR",
+      "rarity": "epic",
+      "palette": "CELESTIAL_INDIGO_STAR",
+      "recipe": {
+        "materialTreatment": "textured",
+        "pattern": "subtle",
+        "trim": "subtle",
+        "motif": "emblem",
+        "motifPlacement": "front_offset",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "componentRampMap": {
+        "panel": "body",
+        "mesh": "trim",
+        "brim": "accent",
+        "button": "hardware",
+        "closure": "hardware",
+        "motif_asset": "star"
+      }
+    }
+  ]
+}
