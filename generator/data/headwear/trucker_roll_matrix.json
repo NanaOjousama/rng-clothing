@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "id": "trucker_rd22_pl26_v1",
+  "family": "trucker",
+  "construction": "rd22_front_pl26_sides",
+  "status": "ACTIVE_TEMPLATE_RULES",
+  "templateContract": "generator/data/templates/trucker.json",
+  "sourceTransferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json",
+  "rollOrder": [
+    "presentationLean",
+    "materialTreatment",
+    "pattern",
+    "panelTreatment",
+    "brimTreatment",
+    "motif",
+    "motifPlacement",
+    "hardwareAccent",
+    "palette"
+  ],
+  "axes": {
+    "presentationLean": {
+      "neutral": 60,
+      "masculine_lean": 20,
+      "feminine_lean": 20
+    },
+    "materialTreatment": {
+      "plain": 40,
+      "subtle": 30,
+      "textured": 25,
+      "statement": 5
+    },
+    "pattern": {
+      "solid": 55,
+      "subtle": 20,
+      "two_tone_block": 15,
+      "small_panel_pattern": 10
+    },
+    "panelTreatment": {
+      "match_crown": 45,
+      "contrast_panel": 35,
+      "soft_panel": 20
+    },
+    "brimTreatment": {
+      "match_panel": 35,
+      "match_mesh": 20,
+      "contrast_brim": 35,
+      "subtle_brim": 10
+    },
+    "motif": {
+      "none": 55,
+      "small": 25,
+      "emblem": 20
+    },
+    "motifPlacement": {
+      "none": 55,
+      "front_center": 30,
+      "front_offset": 15
+    },
+    "hardwareAccent": {
+      "none": 75,
+      "button_accent": 15,
+      "closure_accent": 10
+    }
+  },
+  "viewConsistency": {
+    "wholeHat": "same material/palette identity must resolve coherently across all views",
+    "localized": "front motifs remain on front_panel only unless explicit per-view continuation art exists",
+    "wraparound": "any wrap treatment must explicitly continue through right/back/left masks; no screen-space duplication"
+  },
+  "exclusions": [
+    {
+      "when": {
+        "motif": "none"
+      },
+      "force": {
+        "motifPlacement": "none"
+      }
+    },
+    {
+      "whenNot": {
+        "motif": "none"
+      },
+      "disallow": {
+        "motifPlacement": [
+          "none"
+        ]
+      }
+    },
+    {
+      "when": {
+        "pattern": "small_panel_pattern"
+      },
+      "disallow": {
+        "motif": [
+          "emblem"
+        ]
+      }
+    },
+    {
+      "when": {
+        "materialTreatment": "statement"
+      },
+      "disallow": {
+        "pattern": [
+          "small_panel_pattern"
+        ],
+        "motif": [
+          "emblem"
+        ]
+      }
+    },
+    {
+      "when": {
+        "brimTreatment": "contrast_brim"
+      },
+      "disallow": {
+        "pattern": [
+          "small_panel_pattern"
+        ]
+      },
+      "reason": "avoid competing small-sprite focal systems"
+    },
+    {
+      "when": {
+        "hardwareAccent": "closure_accent"
+      },
+      "requireView": "back",
+      "reason": "closure accent must remain physically localized to the back closure"
+    }
+  ],
+  "rarityRules": {
+    "common": {
+      "force": {
+        "motif": "none",
+        "motifPlacement": "none",
+        "hardwareAccent": "none"
+      },
+      "allow": {
+        "materialTreatment": [
+          "plain",
+          "subtle"
+        ],
+        "pattern": [
+          "solid",
+          "subtle"
+        ]
+      }
+    },
+    "uncommon": {
+      "force": {
+        "motif": "none",
+        "motifPlacement": "none"
+      },
+      "allow": {
+        "materialTreatment": [
+          "plain",
+          "subtle",
+          "textured"
+        ],
+        "pattern": [
+          "solid",
+          "subtle",
+          "two_tone_block"
+        ],
+        "brimTreatment": [
+          "match_panel",
+          "match_mesh",
+          "contrast_brim",
+          "subtle_brim"
+        ]
+      }
+    },
+    "rare": {
+      "allow": {
+        "motif": [
+          "none",
+          "small",
+          "emblem"
+        ],
+        "hardwareAccent": [
+          "none",
+          "button_accent",
+          "closure_accent"
+        ]
+      }
+    },
+    "epic": {
+      "allow": {
+        "motif": [
+          "small",
+          "emblem"
+        ],
+        "hardwareAccent": [
+          "none",
+          "button_accent",
+          "closure_accent"
+        ]
+      },
+      "rule": "increase distinctiveness, not clutter; max one dominant graphic idea"
+    }
+  },
+  "renderPolicy": {
+    "geometry": "LOCKED_TEMPLATE_ALPHA",
+    "maskAuthority": "authored/templates/trucker_rd22_pl26/component_masks.json",
+    "forbid": [
+      "synthetic_mesh",
+      "generic_full_width_band",
+      "generic_normalization",
+      "unreviewed_alpha_growth"
+    ],
+    "stardewFinish": "allowed only as RGB/value treatment that preserves geometry and protected pixels"
+  }
+}

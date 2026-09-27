@@ -1,0 +1,62 @@
+{
+  "schema": "rng-hat-wear-contract/v1",
+  "family": "trucker",
+  "template": "trucker",
+  "frameSize": [
+    26,
+    26
+  ],
+  "runtime": "EnhancedSewingMachine",
+  "vanillaReferenceAnchor": [
+    10,
+    16
+  ],
+  "baseRenderScale": 0.6153846153846154,
+  "directionDefaults": {
+    "front": {
+      "anchor": [
+        13,
+        21
+      ],
+      "offset": [
+        0,
+        -3
+      ],
+      "fitScale": 0.85
+    },
+    "right": {
+      "anchor": [
+        13,
+        21
+      ],
+      "offset": [
+        0,
+        -3
+      ],
+      "fitScale": 1.05
+    },
+    "left": {
+      "anchor": [
+        13,
+        21
+      ],
+      "offset": [
+        -1,
+        -3
+      ],
+      "fitScale": 1.0
+    },
+    "back": {
+      "anchor": [
+        13,
+        21
+      ],
+      "offset": [
+        0,
+        1
+      ],
+      "fitScale": 1.2
+    }
+  },
+  "source": "Recorded in-game ESM fit values from approved RD22-front + PL26-side/back candidate; defaults combine base direction offsets with recorded fit offsets."
+}

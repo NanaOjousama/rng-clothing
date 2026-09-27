@@ -5,43 +5,49 @@
   "category": "Hats",
   "family": "trucker",
   "frameSize": [
-    20,
-    20
+    26,
+    26
   ],
   "sourceIdentity": {
-    "kind": "VANILLA_STARDEW_CONSTRUCTION_TEMPLATE",
-    "name": "Stardew Valley Trucker Hat",
-    "variant": "vanilla hat index 16"
+    "kind": "USER_APPROVED_HYBRID_CONSTRUCTION_TEMPLATE",
+    "name": "RD22 rounded front + PL26 side/back trucker",
+    "frontAuthority": "Retro Diffusion rd20_front scaled nearest-neighbor to 22x22 and centered",
+    "sideBackAuthority": "PixelLab PL26 right/back",
+    "leftAuthority": "exact horizontal mirror of PL26 right"
   },
   "requiredInputs": [
-    "four clean vanilla cardinal construction frames",
+    "four approved cardinal construction frames",
+    "exact frame hashes and alpha-geometry hashes",
+    "explicit reviewed component masks",
     "semantic zones and placement anchors",
-    "wear/export contract"
+    "source transfer library built from approved sources",
+    "roll matrix plus incompatibility/exclusion rules",
+    "wear/export contract for ESM"
   ],
   "frames": {
     "front": {
-      "path": "authored/source_bases/cap/cap_trucker/vanilla16_official/front.png",
-      "sha256": "4d61dc7eb6f3c536d65c88df9d53709b57d743abc2972853dfb844db18cb3430",
-      "alphaSha256": "6a2fc8bbc832ac46549a2cca963521fa8292a62e04ae7b13d0a3f1a00dccfb0e"
+      "path": "authored/templates/trucker_rd22_pl26/front.png",
+      "sha256": "c0456675e9f479df1227593dba9741bd46d6433a1d893827d50a36a88e59e874",
+      "alphaSha256": "3365fed29295c8df41ea846f4bbd68608c944e0ddfa83ca78fc31382868d9ce7"
     },
     "right": {
-      "path": "authored/source_bases/cap/cap_trucker/vanilla16_official/right.png",
-      "sha256": "6fca29b77fbd3e5511b65530e139d4f5c91aabe7e80a92ee43f62e1c39f2eec2",
-      "alphaSha256": "c7ff7793948f247a3a2e61604aa4025366a86983ec944e7db4a28da427b30c89"
+      "path": "authored/templates/trucker_rd22_pl26/right.png",
+      "sha256": "cfad404462fa707d5353ba054b5c55998b251a6b2f3db9d74bc681e0b0e2b5b4",
+      "alphaSha256": "3c7b80258a4f747b4a595427d9c4f09be8375f603938b04635c6540223a58f09"
     },
     "left": {
-      "path": "authored/source_bases/cap/cap_trucker/vanilla16_official/left.png",
-      "sha256": "420a5b28f7dcf607f13dd9b53dde5a1eb363e6be0d1ff76c6c187da581617dbe",
-      "alphaSha256": "caa3d2afddcc8927de164e835991cae50b386f0566c9152de6fd62708650173b"
+      "path": "authored/templates/trucker_rd22_pl26/left.png",
+      "sha256": "9a06378f9e0e67feb22c9b0b321998c08364afd1b5ba8a55c7bb77471bc8833a",
+      "alphaSha256": "9dc199274a1206967f28bc578a35350287810379b2ba2939346b6c2113389ce7"
     },
     "back": {
-      "path": "authored/source_bases/cap/cap_trucker/vanilla16_official/back.png",
-      "sha256": "798d84870ce88b8dcbcab970def36eb99872d1157dd08dc370101bfdc386e59e",
-      "alphaSha256": "9b4277e79deb55d54598aae4a889a11f18c026cab519771b675d65817b33e23e"
+      "path": "authored/templates/trucker_rd22_pl26/back.png",
+      "sha256": "b845a004edbacd186da405cbe7d6b6383c8dfa547940f3e9da5f43c3613d9df8",
+      "alphaSha256": "82d1eaaf9d50fd24079b73bea89fe8c74a737dbbc9f14d8ba47f108c51c4bcb1"
     }
   },
   "geometryLock": {
-    "authority": "clean vanilla Stardew Valley Trucker Hat #16 silhouette and alpha topology",
+    "authority": "approved RD22-front + PL26-side/back trucker family",
     "requiredViews": [
       "front",
       "right",
@@ -51,59 +57,152 @@
     "forbidResample": true,
     "forbidGenericNormalization": true,
     "forbidBaseAlphaRemoval": true,
-    "allowedAlphaGrowth": "none",
-    "notes": "Official trucker geometry authority. Preserve vanilla partial-alpha edge pixels exactly."
+    "allowedAlphaGrowth": "none unless a future reviewed attachment contract explicitly opts in",
+    "notes": "Construction geometry is locked. Styling may change RGB only inside approved semantic masks; unmasked pixels remain protected."
   },
   "zones": {
     "front_panel": {
-      "purpose": "primary solid front construction and front-only graphic zone"
-    },
-    "brim": {
-      "purpose": "vanilla visor/bill geometry; may contrast in color"
+      "purpose": "primary front-facing design/motif and controlled palette zone",
+      "maskContract": "authored/templates/trucker_rd22_pl26/component_masks.json",
+      "allowed": [
+        "PALETTE_TONE",
+        "MATERIAL_PATTERN",
+        "MOTIF"
+      ]
     },
     "mesh_rear": {
-      "purpose": "rear-side trucker material treatment; no large motif"
+      "purpose": "rear/side mesh material identity; recolor/material treatment only, never synthesize checker mesh",
+      "maskContract": "authored/templates/trucker_rd22_pl26/component_masks.json",
+      "allowed": [
+        "PALETTE_TONE",
+        "MATERIAL_PATTERN"
+      ]
+    },
+    "brim": {
+      "purpose": "visor/brim color/material treatment",
+      "maskContract": "authored/templates/trucker_rd22_pl26/component_masks.json",
+      "allowed": [
+        "PALETTE_TONE",
+        "MATERIAL_PATTERN"
+      ]
+    },
+    "top_button": {
+      "purpose": "small coordinated accent only",
+      "maskContract": "authored/templates/trucker_rd22_pl26/component_masks.json",
+      "allowed": [
+        "PALETTE_TONE",
+        "HARDWARE"
+      ]
+    },
+    "back_closure": {
+      "purpose": "restrained closure/hardware treatment only",
+      "maskContract": "authored/templates/trucker_rd22_pl26/component_masks.json",
+      "allowed": [
+        "PALETTE_TONE",
+        "HARDWARE"
+      ]
     },
     "back_opening": {
-      "purpose": "vanilla back negative-space/readability; never fill"
+      "purpose": "protected negative space; never fill"
     },
-    "surface": {
-      "purpose": "palette/material treatment inside vanilla geometry only"
+    "protected": {
+      "purpose": "all outlines, seams, openings and unmasked construction pixels remain source-authoritative"
     }
   },
   "anchors": {
     "front": {
       "motif_center": [
-        10,
-        7
+        13,
+        9
+      ],
+      "panel_center": [
+        13,
+        10
       ]
     },
-    "right": {},
-    "left": {},
-    "back": {}
+    "right": {
+      "panel_center": [
+        17,
+        10
+      ],
+      "brim_center": [
+        21,
+        16
+      ]
+    },
+    "left": {
+      "panel_center": [
+        8,
+        10
+      ],
+      "brim_center": [
+        4,
+        16
+      ]
+    },
+    "back": {
+      "closure_center": [
+        13,
+        19
+      ]
+    }
   },
   "allowedPartKinds": [
     "STYLE_PROFILE",
     "PALETTE_TONE",
     "MATERIAL_PATTERN",
-    "MOTIF"
+    "MOTIF",
+    "HARDWARE",
+    "REUSABLE_COMPONENT"
   ],
   "safeTransferRules": [
-    "vanilla template owns alpha/silhouette and directional geometry",
-    "motifs front-only",
-    "rear treatment remains visually distinct",
-    "do not fill vanilla negative space"
+    "template owns alpha/silhouette and directional construction",
+    "all RGB changes must stay inside approved component masks",
+    "same semantic component resolves to one coherent target palette ramp across all views",
+    "motifs are localized to front_panel unless an explicit directional art variant is reviewed",
+    "mesh texture may be recolored/material-treated but synthetic mesh/checker generation is forbidden",
+    "unmasked outlines/seams/openings remain pixel-identical",
+    "neutral render must round-trip exactly before any variant is accepted"
   ],
   "incompatibilities": [
     {
       "scope": "ALTERNATE_CONSTRUCTION",
       "deny": true,
-      "reason": "official trucker family keeps vanilla #16 construction"
+      "reason": "different geometry must become its own template"
+    },
+    {
+      "scope": "SAME_BASE_ONLY",
+      "deny": true,
+      "reason": "base-specific donor deltas cannot overwrite this approved construction"
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true,
+      "reason": "generic normalization would destroy approved cross-view construction"
     },
     {
       "feature": "resample_to_fit",
       "deny": true,
-      "reason": "vanilla 20x20 cardinal frames are authoritative"
+      "reason": "26x26 approved cardinal geometry is authoritative"
+    },
+    {
+      "feature": "synthetic_mesh",
+      "deny": true,
+      "reason": "rear mesh must remain source-authored; do not invent checker cells"
+    },
+    {
+      "feature": "generic_full_width_band",
+      "deny": true,
+      "reason": "historical band artifact path is forbidden"
+    },
+    {
+      "feature": "blind_source_coordinates",
+      "deny": true,
+      "reason": "transfers must map through semantic masks/anchors"
     }
-  ]
+  ],
+  "maskContract": "authored/templates/trucker_rd22_pl26/component_masks.json",
+  "sourceTransferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json",
+  "rollMatrix": "generator/data/headwear/trucker_roll_matrix.json",
+  "wearContract": "generator/data/headwear/trucker_wear_contract.json"
 }

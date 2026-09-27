@@ -5,14 +5,14 @@
   "category": "Hats",
   "familyCapacity": {
     "surfaceAreaClass": "medium",
-    "averageOpaqueCells": 96.0,
-    "minOpaqueCells": 80,
-    "maxOpaqueCells": 105,
+    "averageOpaqueCells": 254.75,
+    "minOpaqueCells": 208,
+    "maxOpaqueCells": 357,
     "maxComplexity": 4,
     "maxVisualChannels": 3,
     "maxSecondary": 1,
     "maxAccents": 2,
-    "maxMotifFootprintCells": 10,
+    "maxMotifFootprintCells": 18,
     "maxAttachmentFootprintClass": "medium",
     "blockedValues": {
       "motif": [
@@ -20,7 +20,7 @@
       ]
     },
     "rarityCeilingStrategy": "COMPRESS_BUDGET_NOT_DISABLE_TIER",
-    "rule": "Official vanilla #16 trucker family: preserve Stardew construction; rarity adds controlled color/material/front-graphic variation, never geometry clutter."
+    "rule": "Approved RD22-front + PL26-side/back trucker: preserve locked construction and reviewed masks; rarity adds controlled material, palette, brim, hardware and front-panel graphic variation without clutter."
   },
   "rarityRules": {
     "order": [

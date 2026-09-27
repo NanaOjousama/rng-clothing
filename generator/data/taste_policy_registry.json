@@ -354,7 +354,7 @@
     "trucker": {
       "policyFile": "generator/data/taste_policies/trucker.json",
       "status": "ACTIVE",
-      "origin": "vanilla-production",
+      "origin": "user-approved-hybrid-source",
       "template": "trucker",
       "category": "Hats"
     }

@@ -599,12 +599,12 @@
       "contract": "generator/data/templates/trucker.json",
       "family": "trucker",
       "slot": "HEAD",
-      "status": "PRODUCTION_READY",
-      "constructionAuthority": "clean vanilla Stardew Valley Trucker Hat #16",
+      "status": "CANDIDATE_APPROVED_FOR_GENERATOR",
+      "constructionAuthority": "approved RD22 front + PL26 right/back + mirrored left",
       "humanArtApprovalRequired": false,
-      "origin": "vanilla-production",
+      "origin": "user-approved-hybrid-source",
       "sourceCategory": "Hats",
-      "sourceName": "Vanilla Trucker Hat #16"
+      "sourceName": "RD22 + PL26 Trucker"
     }
   },
   "catalogPromotion": {

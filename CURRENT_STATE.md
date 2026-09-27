@@ -1521,3 +1521,19 @@ Doc: `docs/caps/BASEBALL_CAP_PT_REAL_01.md`.
 - New controlled test uses the exact approved right-side PNG, padded to 32x32 without scaling, PixelLab Rotate API, side view, east -> south, fixed seed `424242`, image guidance 7.5.
 - Raw generated front saved as `experiments/trucker_pl20_anchor_rotation_03/front_seed424242_raw.png`; 20px nearest-neighbor presentation copy and contact sheet are alongside it.
 - Human visual approval still required before this front is accepted into any construction template.
+
+## Trucker generator template promotion — 2026-09-27
+
+The approved RD22-front + PL26-side/back trucker construction is now the active `trucker` source-backed generator template.
+
+- 26x26 locked cardinal frames copied to `authored/templates/trucker_rd22_pl26/`.
+- Front authority: RD20 rounded front, nearest-neighbor scaled to 22x22 and centered in the 26x26 contract.
+- Right/back authority: PL26; Left is an exact horizontal mirror of Right.
+- Reviewed component masks are machine-readable and locked for front panel, rear mesh, brim, top button and back closure. All unmasked outline/seam/opening pixels are protected.
+- `generator/data/templates/trucker.json` now points to this approved family and links the source transfer library, trucker roll matrix and ESM wear contract.
+- New `generator/data/headwear/trucker_roll_matrix.json` defines rarity, motif, material, view-consistency and incompatibility/exclusion behavior.
+- New `generator/data/headwear/trucker_wear_contract.json` records the approved per-view ESM fit defaults.
+- Generic normalization, resample-to-fit, synthetic mesh and generic full-width bands are explicitly forbidden.
+- Validation: template hash/alpha lock PASS; exact mirrored Left PASS; mask opaque/non-overlap PASS; generator-wide taste policy PASS; source-template tests PASS.
+
+This promotion makes the trucker a reusable generator construction contract; it does not declare the previously packaged source-preserving QC sprite to be the final visual product.
