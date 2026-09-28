@@ -1,0 +1,121 @@
+{
+  "schema": "stardew-only-material-regions/v4",
+  "rules": [
+    "source alpha locked",
+    "eligible cells are source-derived interior only",
+    "very dark construction pixels excluded",
+    "isolated detail pixels excluded",
+    "treatment cells cannot be orthogonally adjacent",
+    "capacity-aware skip instead of forced decoration"
+  ],
+  "records": [
+    {
+      "dir": "hat_052",
+      "kind": "hat",
+      "sourceIndex": 52,
+      "material": "knit",
+      "safeCells": 177,
+      "treatedCells": 28,
+      "theme": "LUXURY_JADE_BRONZE"
+    },
+    {
+      "dir": "hat_066",
+      "kind": "hat",
+      "sourceIndex": 66,
+      "material": "plaid",
+      "safeCells": 243,
+      "treatedCells": 37,
+      "theme": "LUXURY_JADE_BRONZE"
+    },
+    {
+      "dir": "hat_079",
+      "kind": "hat",
+      "sourceIndex": 79,
+      "material": "wool",
+      "safeCells": 165,
+      "treatedCells": 17,
+      "theme": "EVERYDAY_STONE_BLUE"
+    },
+    {
+      "dir": "hat_098",
+      "kind": "hat",
+      "sourceIndex": 98,
+      "material": "knit",
+      "safeCells": 222,
+      "treatedCells": 39,
+      "theme": "STREET_TEAL_GRAPHITE"
+    },
+    {
+      "dir": "hat_033",
+      "kind": "hat",
+      "sourceIndex": 33,
+      "material": "plaid",
+      "safeCells": 128,
+      "treatedCells": 18,
+      "theme": "LUXURY_JADE_BRONZE"
+    },
+    {
+      "dir": "hat_082",
+      "kind": "hat",
+      "sourceIndex": 82,
+      "material": "wool",
+      "safeCells": 314,
+      "treatedCells": 27,
+      "theme": "SPRING_SAGE_PETAL"
+    },
+    {
+      "dir": "shirt_527",
+      "kind": "shirt",
+      "sourceIndex": 527,
+      "material": "knit",
+      "safeCells": 118,
+      "treatedCells": 19,
+      "theme": "CYBER_CYAN_MAGENTA"
+    },
+    {
+      "dir": "shirt_481",
+      "kind": "shirt",
+      "sourceIndex": 481,
+      "material": "plaid",
+      "safeCells": 103,
+      "treatedCells": 15,
+      "theme": "CUTE_PERIWINKLE_HEART"
+    },
+    {
+      "dir": "shirt_225",
+      "kind": "shirt",
+      "sourceIndex": 225,
+      "material": "wool",
+      "safeCells": 116,
+      "treatedCells": 9,
+      "theme": "LUXURY_JADE_BRONZE"
+    },
+    {
+      "dir": "shirt_584",
+      "kind": "shirt",
+      "sourceIndex": 584,
+      "material": "knit",
+      "safeCells": 116,
+      "treatedCells": 20,
+      "theme": "COASTAL_SEAFOAM_CORAL"
+    },
+    {
+      "dir": "shirt_535",
+      "kind": "shirt",
+      "sourceIndex": 535,
+      "material": "none",
+      "safeCells": 0,
+      "treatedCells": 0,
+      "theme": "CUTE_OLIVE_GOLD"
+    },
+    {
+      "dir": "shirt_424",
+      "kind": "shirt",
+      "sourceIndex": 424,
+      "material": "wool",
+      "safeCells": 60,
+      "treatedCells": 7,
+      "theme": "PASTEL_PEACH_LILAC"
+    }
+  ]
+}

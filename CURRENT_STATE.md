@@ -1671,3 +1671,21 @@ The v2 failure mode (forcing every source into guessed body/trim/accent buckets 
 A new novelty gate enforces the user's actual Stardew-only goal: outputs must be a meaningfully different wardrobe piece, not the identical source or a near-duplicate. A candidate must change >=40% of opaque pixels with average RGB distance >=18. The builder evaluates the existing approved palette library and rejects palettes that do not clear that gate; two visually distinct passing colorways are selected per source, with variant-to-variant diversity preferred.
 
 Result: all 12 original regression sources produced two passing variants each (24 variants total), while exact source alpha/construction and shade topology remain intact. Contact sheets: `STARDEW_ONLY_HAT_REMIX_V3_CONTACT.png`, `STARDEW_ONLY_SHIRT_REMIX_V3_CONTACT.png`, and combined `STARDEW_ONLY_REMIX_V3_CONTACT.png`. This is visual-QC evidence only and is not promoted into production/source-pool config yet. Material/pattern/motif variation remains intentionally deferred until a source has safe semantic masks; this pass proves distinct source-respecting colorway variation first.
+
+## AI-reference trucker construction printer — 2026-09-27 (CANDIDATE, not worn-QC'd)
+
+Fresh, isolated experiment; ignores ALL earlier trucker work (old `prototypes/construction_printer/`, `trucker_rd22_pl26`, photos, pool fits, visor revisions, preference weights) by user instruction.
+
+- Code: `prototypes/construction_printer_ai_trucker/` (README there). Output: `experiments/construction_printer_ai_trucker_01/`.
+- Evidence: AI pools `trucker_reference_ai_compare_01/` + `trucker_front_hybrid_0_1_01/style_reference/` only; sf_02/sf_03 rejected by user.
+- Recognition: 21/27 pool identified, 0/10 negatives accepted. Button gate added after a boater false positive (not independently validated).
+- Candidates C0 consensus (19/21 refs share it), C1 pl02, C2 pl04 — 20x20 native, W=12 crown, all validation checks pass.
+- Throwaway FS pack `RNG-AITrucker-QC-01` (tag AITRK) installed to live Mods while the game was closed.
+- Not yet proven: worn look in game. Next test: `python3 tools/qc.py worn --pack-dir "<Mods>/RNG-AITrucker-QC-01" --name AITRK` after launching + loading a save.
+- Do not: promote anything, or feed old trucker geometry into this experiment.
+
+## Stardew-only v4 — source-derived safe material regions — 2026-09-28
+
+Built the next isolated layer on top of the approved-direction v3 colorway proof: `tools/experiment_vanilla_material_regions_v4.py` with outputs under `experiments/vanilla_source_only_material_regions_01/`. The same 12-source regression set is used again. V4 derives a `material_safe` mask directly from each vanilla sprite: opaque interior only, very-dark construction pixels excluded, isolated/detail-like cells excluded, and treatment marks may not be orthogonally adjacent. Exact vanilla alpha/geometry remains locked; the v3 source-respecting colorway remains the base.
+
+Material treatment is capacity-aware. Large-enough masks receive a conservative `knit`, `plaid`, or `wool` proof; low-capacity items skip instead of forcing decoration. 11/12 regression sources admitted at least one safe treatment; shirt #535 correctly returned `material=none` with zero safe interior cells. This validates the capability boundary rather than forcing universal coverage. Main sheets: `STARDEW_ONLY_V4_HAT_MATERIAL_CONTACT.png`, `STARDEW_ONLY_V4_SHIRT_MATERIAL_CONTACT.png`, and combined `STARDEW_ONLY_V4_MATERIAL_CONTACT.png`. Treatment strength/art direction remains visual-QC pending; this is not production promotion yet.
