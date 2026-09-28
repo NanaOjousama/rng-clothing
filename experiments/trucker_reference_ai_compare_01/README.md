@@ -27,8 +27,10 @@ Useful references:
 
 ## Sprite Fusion
 
-A front-focused request is ready at `spritefusion/request.json`, but the API returned HTTP 402 Payment Required before producing any output. `spritefusion/status.json` records the block. No unrelated or recycled Sprite Fusion image was substituted.
+The retry succeeded after credits became available. Sprite Fusion returned 12 native 32x32 front-view trucker references from the front-focused request in `spritefusion/request.json`. Batch: `spritefusion/SPRITE_FUSION_TRUCKER_FRONT_BATCH_X8.png`. The prompt explicitly keeps the visor subtle/tucked so front-view readability comes from taper, lower-edge curvature and the crown-to-visor join rather than exaggerated forward projection. `spritefusion/status.json` records the successful request and credit state.
 
 ## Recommended Claude sheet
 
-`CLAUDE_FRONT_VISOR_SHORTLIST_X8.png` contains PL02 / PL03 / PL04 / RD01 / RD04. Use these only to improve the **front visor profile**: width, taper, lower-edge curvature, and crown-to-visor join. Keep the approved side/back geometry unchanged unless separately requested.
+`CLAUDE_FRONT_VISOR_SHORTLIST_X8.png` now includes PixelLab, Retro Diffusion and Sprite Fusion candidates chosen for a **subtle straight-on front-view visor**. Use these only to improve front visor width, taper, lower-edge curvature and crown-to-visor join. Do not force projection; too much visible visor depth raises the apparent camera angle. Keep the approved side/back geometry unchanged unless separately requested.
+
+`TRUCKER_FRONT_THREE_TOOL_COMPARE_X7.png` is the representative three-tool comparison.

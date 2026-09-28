@@ -1,6 +1,9 @@
 {
-  "status": "BLOCKED_PAYMENT_REQUIRED",
-  "httpStatus": 402,
-  "note": "Sprite Fusion API rejected the generation request before any output was created. No substitute or recycled asset was used.",
-  "readyToRetry": true
+  "status": "COMPLETE",
+  "requestId": "req_bf8b428a-4046-46ee-a368-0be0c3f6741e",
+  "operation": "generate",
+  "reservedCredits": 15,
+  "remainingCredits": 435,
+  "outputCount": 12,
+  "note": "Generated after credits became available. Front-view prompt explicitly keeps visor subtle/tucked to avoid a high-angle read."
 }

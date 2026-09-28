@@ -1639,6 +1639,8 @@ User clarified the printer's side views are acceptable; the weak visual is speci
 - Retro Diffusion: 4 native 32x32 front-view references using `rd_mini__fast_low_res`; total tool-reported generation cost US$0.068. Batch: `retro_diffusion/RETRO_DIFFUSION_TRUCKER_FRONT_BATCH_X10.png`.
 - Combined sheet: `TRUCKER_FRONT_AI_REFERENCE_COMPARE_X8.png`.
 - Claude-facing geometry shortlist: `CLAUDE_FRONT_VISOR_SHORTLIST_X8.png` (PL02, PL03, PL04, RD01, RD04).
-- Sprite Fusion front-focused request is saved at `spritefusion/request.json`, but the API returned HTTP 402 Payment Required before any generation. `spritefusion/status.json` records the block; no old/unrelated SF output was substituted.
+- Sprite Fusion retry succeeded after credits became available: 12 native 32x32 front-view references were generated from the front-focused request. Batch: `spritefusion/SPRITE_FUSION_TRUCKER_FRONT_BATCH_X8.png`; status/request details are in `spritefusion/status.json` / `events.json`.
+- New representative all-three-tools sheet: `TRUCKER_FRONT_THREE_TOOL_COMPARE_X7.png`.
+- Updated Claude shortlist now explicitly targets a **subtle straight-on visor**: improve taper/curve/join without forcing forward projection, because excessive visible visor depth raises the apparent camera angle.
 
 Scope rule: these images are geometry references only. The existing approved trucker family remains construction/style authority, and this experiment should modify only the problematic front visor behavior unless a later QC explicitly reopens side/back geometry.

@@ -1,0 +1,259 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_bf8b428a-4046-46ee-a368-0be0c3f6741e",
+    "operation": "generate",
+    "credits": {
+      "reserved": 15,
+      "remaining": 435
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "48e4679f-495c-4fef-9862-21571e8164a0",
+      "type": "image",
+      "createdAt": "2026-09-28T01:04:27.912Z",
+      "updatedAt": "2026-09-28T01:04:27.912Z",
+      "prompt": "An isolated trucker cap shown in exact straight-on front view. Across the returned variations, keep the front visor subtle and compact so the camera does not read as looking down from above. Vary the visor through shape, not excessive projection: gentle taper, slightly inset lower edge, shallow curved front lip, and a clean crown-to-visor join. Include compact, short, medium and slightly broader brim interpretations while keeping each one tucked close to the crown. Solid front panel with only slight rear-mesh hints at the far edges. No head, face, hair, logo, lettering, hands, mannequin, or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/48e4679f-495c-4fef-9862-21571e8164a0/image.png?v=1790557467912",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a28ea954-49b4-44f7-ba13-792b750e1ab2",
+      "batchIndex": 0,
+      "batchSize": 12
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "e510d078-c41f-49ae-ad22-9a1978a4485b",
+      "type": "image",
+      "createdAt": "2026-09-28T01:04:28.455Z",
+      "updatedAt": "2026-09-28T01:04:28.455Z",
+      "prompt": "An isolated trucker cap shown in exact straight-on front view. Across the returned variations, keep the front visor subtle and compact so the camera does not read as looking down from above. Vary the visor through shape, not excessive projection: gentle taper, slightly inset lower edge, shallow curved front lip, and a clean crown-to-visor join. Include compact, short, medium and slightly broader brim interpretations while keeping each one tucked close to the crown. Solid front panel with only slight rear-mesh hints at the far edges. No head, face, hair, logo, lettering, hands, mannequin, or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/e510d078-c41f-49ae-ad22-9a1978a4485b/image.png?v=1790557468455",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a28ea954-49b4-44f7-ba13-792b750e1ab2",
+      "batchIndex": 1,
+      "batchSize": 12
+    }
+  },
+  {
+    "type": "output",
+    "index": 2,
+    "asset": {
+      "id": "8c282c42-1749-485a-bebe-d2e883c6f67d",
+      "type": "image",
+      "createdAt": "2026-09-28T01:04:28.781Z",
+      "updatedAt": "2026-09-28T01:04:28.781Z",
+      "prompt": "An isolated trucker cap shown in exact straight-on front view. Across the returned variations, keep the front visor subtle and compact so the camera does not read as looking down from above. Vary the visor through shape, not excessive projection: gentle taper, slightly inset lower edge, shallow curved front lip, and a clean crown-to-visor join. Include compact, short, medium and slightly broader brim interpretations while keeping each one tucked close to the crown. Solid front panel with only slight rear-mesh hints at the far edges. No head, face, hair, logo, lettering, hands, mannequin, or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/8c282c42-1749-485a-bebe-d2e883c6f67d/image.png?v=1790557468781",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a28ea954-49b4-44f7-ba13-792b750e1ab2",
+      "batchIndex": 2,
+      "batchSize": 12
+    }
+  },
+  {
+    "type": "output",
+    "index": 3,
+    "asset": {
+      "id": "b8fce9c9-5148-43e8-9ed4-23fa618b1419",
+      "type": "image",
+      "createdAt": "2026-09-28T01:04:29.093Z",
+      "updatedAt": "2026-09-28T01:04:29.093Z",
+      "prompt": "An isolated trucker cap shown in exact straight-on front view. Across the returned variations, keep the front visor subtle and compact so the camera does not read as looking down from above. Vary the visor through shape, not excessive projection: gentle taper, slightly inset lower edge, shallow curved front lip, and a clean crown-to-visor join. Include compact, short, medium and slightly broader brim interpretations while keeping each one tucked close to the crown. Solid front panel with only slight rear-mesh hints at the far edges. No head, face, hair, logo, lettering, hands, mannequin, or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/b8fce9c9-5148-43e8-9ed4-23fa618b1419/image.png?v=1790557469093",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a28ea954-49b4-44f7-ba13-792b750e1ab2",
+      "batchIndex": 3,
+      "batchSize": 12
+    }
+  },
+  {
+    "type": "output",
+    "index": 4,
+    "asset": {
+      "id": "c8fd35fd-2688-446f-be80-5502dc1bf66d",
+      "type": "image",
+      "createdAt": "2026-09-28T01:04:29.394Z",
+      "updatedAt": "2026-09-28T01:04:29.394Z",
+      "prompt": "An isolated trucker cap shown in exact straight-on front view. Across the returned variations, keep the front visor subtle and compact so the camera does not read as looking down from above. Vary the visor through shape, not excessive projection: gentle taper, slightly inset lower edge, shallow curved front lip, and a clean crown-to-visor join. Include compact, short, medium and slightly broader brim interpretations while keeping each one tucked close to the crown. Solid front panel with only slight rear-mesh hints at the far edges. No head, face, hair, logo, lettering, hands, mannequin, or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/c8fd35fd-2688-446f-be80-5502dc1bf66d/image.png?v=1790557469394",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a28ea954-49b4-44f7-ba13-792b750e1ab2",
+      "batchIndex": 4,
+      "batchSize": 12
+    }
+  },
+  {
+    "type": "output",
+    "index": 5,
+    "asset": {
+      "id": "4a55f43e-91e7-4cd6-9f1b-4a0726c2a885",
+      "type": "image",
+      "createdAt": "2026-09-28T01:04:29.958Z",
+      "updatedAt": "2026-09-28T01:04:29.958Z",
+      "prompt": "An isolated trucker cap shown in exact straight-on front view. Across the returned variations, keep the front visor subtle and compact so the camera does not read as looking down from above. Vary the visor through shape, not excessive projection: gentle taper, slightly inset lower edge, shallow curved front lip, and a clean crown-to-visor join. Include compact, short, medium and slightly broader brim interpretations while keeping each one tucked close to the crown. Solid front panel with only slight rear-mesh hints at the far edges. No head, face, hair, logo, lettering, hands, mannequin, or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/4a55f43e-91e7-4cd6-9f1b-4a0726c2a885/image.png?v=1790557469958",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a28ea954-49b4-44f7-ba13-792b750e1ab2",
+      "batchIndex": 5,
+      "batchSize": 12
+    }
+  },
+  {
+    "type": "output",
+    "index": 6,
+    "asset": {
+      "id": "57779ff1-c2b3-4ad9-b6eb-acaabe740dd1",
+      "type": "image",
+      "createdAt": "2026-09-28T01:04:30.476Z",
+      "updatedAt": "2026-09-28T01:04:30.476Z",
+      "prompt": "An isolated trucker cap shown in exact straight-on front view. Across the returned variations, keep the front visor subtle and compact so the camera does not read as looking down from above. Vary the visor through shape, not excessive projection: gentle taper, slightly inset lower edge, shallow curved front lip, and a clean crown-to-visor join. Include compact, short, medium and slightly broader brim interpretations while keeping each one tucked close to the crown. Solid front panel with only slight rear-mesh hints at the far edges. No head, face, hair, logo, lettering, hands, mannequin, or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/57779ff1-c2b3-4ad9-b6eb-acaabe740dd1/image.png?v=1790557470476",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a28ea954-49b4-44f7-ba13-792b750e1ab2",
+      "batchIndex": 6,
+      "batchSize": 12
+    }
+  },
+  {
+    "type": "output",
+    "index": 7,
+    "asset": {
+      "id": "d7250d1e-b6ba-4023-abd4-6293af2cde09",
+      "type": "image",
+      "createdAt": "2026-09-28T01:04:31.005Z",
+      "updatedAt": "2026-09-28T01:04:31.005Z",
+      "prompt": "An isolated trucker cap shown in exact straight-on front view. Across the returned variations, keep the front visor subtle and compact so the camera does not read as looking down from above. Vary the visor through shape, not excessive projection: gentle taper, slightly inset lower edge, shallow curved front lip, and a clean crown-to-visor join. Include compact, short, medium and slightly broader brim interpretations while keeping each one tucked close to the crown. Solid front panel with only slight rear-mesh hints at the far edges. No head, face, hair, logo, lettering, hands, mannequin, or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/d7250d1e-b6ba-4023-abd4-6293af2cde09/image.png?v=1790557471005",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a28ea954-49b4-44f7-ba13-792b750e1ab2",
+      "batchIndex": 7,
+      "batchSize": 12
+    }
+  },
+  {
+    "type": "output",
+    "index": 8,
+    "asset": {
+      "id": "5723581e-efcd-40cd-a4ce-2760a93dd4b4",
+      "type": "image",
+      "createdAt": "2026-09-28T01:04:31.580Z",
+      "updatedAt": "2026-09-28T01:04:31.580Z",
+      "prompt": "An isolated trucker cap shown in exact straight-on front view. Across the returned variations, keep the front visor subtle and compact so the camera does not read as looking down from above. Vary the visor through shape, not excessive projection: gentle taper, slightly inset lower edge, shallow curved front lip, and a clean crown-to-visor join. Include compact, short, medium and slightly broader brim interpretations while keeping each one tucked close to the crown. Solid front panel with only slight rear-mesh hints at the far edges. No head, face, hair, logo, lettering, hands, mannequin, or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/5723581e-efcd-40cd-a4ce-2760a93dd4b4/image.png?v=1790557471580",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a28ea954-49b4-44f7-ba13-792b750e1ab2",
+      "batchIndex": 8,
+      "batchSize": 12
+    }
+  },
+  {
+    "type": "output",
+    "index": 9,
+    "asset": {
+      "id": "c053c24e-61f0-494d-9ac0-03bd3ad87272",
+      "type": "image",
+      "createdAt": "2026-09-28T01:04:32.160Z",
+      "updatedAt": "2026-09-28T01:04:32.160Z",
+      "prompt": "An isolated trucker cap shown in exact straight-on front view. Across the returned variations, keep the front visor subtle and compact so the camera does not read as looking down from above. Vary the visor through shape, not excessive projection: gentle taper, slightly inset lower edge, shallow curved front lip, and a clean crown-to-visor join. Include compact, short, medium and slightly broader brim interpretations while keeping each one tucked close to the crown. Solid front panel with only slight rear-mesh hints at the far edges. No head, face, hair, logo, lettering, hands, mannequin, or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/c053c24e-61f0-494d-9ac0-03bd3ad87272/image.png?v=1790557472160",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a28ea954-49b4-44f7-ba13-792b750e1ab2",
+      "batchIndex": 9,
+      "batchSize": 12
+    }
+  },
+  {
+    "type": "output",
+    "index": 10,
+    "asset": {
+      "id": "987db6af-0bdd-4d51-baa5-6b152001a020",
+      "type": "image",
+      "createdAt": "2026-09-28T01:04:32.761Z",
+      "updatedAt": "2026-09-28T01:04:32.761Z",
+      "prompt": "An isolated trucker cap shown in exact straight-on front view. Across the returned variations, keep the front visor subtle and compact so the camera does not read as looking down from above. Vary the visor through shape, not excessive projection: gentle taper, slightly inset lower edge, shallow curved front lip, and a clean crown-to-visor join. Include compact, short, medium and slightly broader brim interpretations while keeping each one tucked close to the crown. Solid front panel with only slight rear-mesh hints at the far edges. No head, face, hair, logo, lettering, hands, mannequin, or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/987db6af-0bdd-4d51-baa5-6b152001a020/image.png?v=1790557472761",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a28ea954-49b4-44f7-ba13-792b750e1ab2",
+      "batchIndex": 10,
+      "batchSize": 12
+    }
+  },
+  {
+    "type": "output",
+    "index": 11,
+    "asset": {
+      "id": "2e132d91-ebda-44a5-8655-5136aedbb439",
+      "type": "image",
+      "createdAt": "2026-09-28T01:04:33.332Z",
+      "updatedAt": "2026-09-28T01:04:33.332Z",
+      "prompt": "An isolated trucker cap shown in exact straight-on front view. Across the returned variations, keep the front visor subtle and compact so the camera does not read as looking down from above. Vary the visor through shape, not excessive projection: gentle taper, slightly inset lower edge, shallow curved front lip, and a clean crown-to-visor join. Include compact, short, medium and slightly broader brim interpretations while keeping each one tucked close to the crown. Solid front panel with only slight rear-mesh hints at the far edges. No head, face, hair, logo, lettering, hands, mannequin, or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/2e132d91-ebda-44a5-8655-5136aedbb439/image.png?v=1790557473332",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "a28ea954-49b4-44f7-ba13-792b750e1ab2",
+      "batchIndex": 11,
+      "batchSize": 12
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 12,
+    "credits": {
+      "remaining": 435
+    }
+  }
+]

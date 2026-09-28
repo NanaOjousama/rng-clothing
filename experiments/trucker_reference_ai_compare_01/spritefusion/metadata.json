@@ -1,0 +1,89 @@
+{
+  "prompt": "An isolated trucker cap shown in exact straight-on front view. Across the returned variations, keep the front visor subtle and compact so the camera does not read as looking down from above. Vary the visor through shape, not excessive projection: gentle taper, slightly inset lower edge, shallow curved front lip, and a clean crown-to-visor join. Include compact, short, medium and slightly broader brim interpretations while keeping each one tucked close to the crown. Solid front panel with only slight rear-mesh hints at the far edges. No head, face, hair, logo, lettering, hands, mannequin, or scene.",
+  "outputs": [
+    {
+      "index": 0,
+      "asset_id": "48e4679f-495c-4fef-9862-21571e8164a0",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_reference_ai_compare_01/spritefusion/sf_00.png"
+    },
+    {
+      "index": 1,
+      "asset_id": "e510d078-c41f-49ae-ad22-9a1978a4485b",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_reference_ai_compare_01/spritefusion/sf_01.png"
+    },
+    {
+      "index": 2,
+      "asset_id": "8c282c42-1749-485a-bebe-d2e883c6f67d",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_reference_ai_compare_01/spritefusion/sf_02.png"
+    },
+    {
+      "index": 3,
+      "asset_id": "b8fce9c9-5148-43e8-9ed4-23fa618b1419",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_reference_ai_compare_01/spritefusion/sf_03.png"
+    },
+    {
+      "index": 4,
+      "asset_id": "c8fd35fd-2688-446f-be80-5502dc1bf66d",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_reference_ai_compare_01/spritefusion/sf_04.png"
+    },
+    {
+      "index": 5,
+      "asset_id": "4a55f43e-91e7-4cd6-9f1b-4a0726c2a885",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_reference_ai_compare_01/spritefusion/sf_05.png"
+    },
+    {
+      "index": 6,
+      "asset_id": "57779ff1-c2b3-4ad9-b6eb-acaabe740dd1",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_reference_ai_compare_01/spritefusion/sf_06.png"
+    },
+    {
+      "index": 7,
+      "asset_id": "d7250d1e-b6ba-4023-abd4-6293af2cde09",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_reference_ai_compare_01/spritefusion/sf_07.png"
+    },
+    {
+      "index": 8,
+      "asset_id": "5723581e-efcd-40cd-a4ce-2760a93dd4b4",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_reference_ai_compare_01/spritefusion/sf_08.png"
+    },
+    {
+      "index": 9,
+      "asset_id": "c053c24e-61f0-494d-9ac0-03bd3ad87272",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_reference_ai_compare_01/spritefusion/sf_09.png"
+    },
+    {
+      "index": 10,
+      "asset_id": "987db6af-0bdd-4d51-baa5-6b152001a020",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_reference_ai_compare_01/spritefusion/sf_10.png"
+    },
+    {
+      "index": 11,
+      "asset_id": "2e132d91-ebda-44a5-8655-5136aedbb439",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_reference_ai_compare_01/spritefusion/sf_11.png"
+    }
+  ]
+}
