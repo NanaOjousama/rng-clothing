@@ -1,0 +1,6 @@
+{
+  "status": "BLOCKED_PAYMENT_REQUIRED",
+  "httpStatus": 402,
+  "note": "Sprite Fusion API rejected the generation request before any output was created. No substitute or recycled asset was used.",
+  "readyToRetry": true
+}

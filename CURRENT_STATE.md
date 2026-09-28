@@ -1630,3 +1630,15 @@ Source preparation intentionally mirrors the production source-backed philosophy
 The test randomly selected 6 usable hats and 6 usable shirts from validated four-view pools (115 hats / 329 shirts). All 48 generated views preserved exact source alpha geometry. Visual contact confirms the generator can produce coherent Stardew-native variation when source construction is already authoritative. This is a CONTROL, not production promotion: no template/taste registries were changed, no motif/attachment operations were attempted without semantic zones, and no Photo Tailor path was involved.
 
 Next optional A/B: run the exact same vanilla inputs through PT-assisted semantic/palette deconstruction while keeping vanilla geometry authoritative, then compare whether PT adds useful region/material evidence or degrades the clean source-backed baseline.
+
+## Trucker front-visor AI reference experiment — 2026-09-27
+
+User clarified the printer's side views are acceptable; the weak visual is specifically the **front-view visor**. Created an isolated reference experiment at `experiments/trucker_reference_ai_compare_01/` to give the construction printer clearer front-brim geometry evidence without changing the approved trucker source template.
+
+- PixelLab Pro Flash: 4 native 32x32 front-view trucker references, with prompts varying compact/short/medium/broad visor width, taper, lower-edge curvature and crown-to-visor join. Batch: `pixellab/PIXELLAB_TRUCKER_FRONT_BATCH_X10.png`.
+- Retro Diffusion: 4 native 32x32 front-view references using `rd_mini__fast_low_res`; total tool-reported generation cost US$0.068. Batch: `retro_diffusion/RETRO_DIFFUSION_TRUCKER_FRONT_BATCH_X10.png`.
+- Combined sheet: `TRUCKER_FRONT_AI_REFERENCE_COMPARE_X8.png`.
+- Claude-facing geometry shortlist: `CLAUDE_FRONT_VISOR_SHORTLIST_X8.png` (PL02, PL03, PL04, RD01, RD04).
+- Sprite Fusion front-focused request is saved at `spritefusion/request.json`, but the API returned HTTP 402 Payment Required before any generation. `spritefusion/status.json` records the block; no old/unrelated SF output was substituted.
+
+Scope rule: these images are geometry references only. The existing approved trucker family remains construction/style authority, and this experiment should modify only the problematic front visor behavior unless a later QC explicitly reopens side/back geometry.

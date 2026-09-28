@@ -1,0 +1,21 @@
+{
+  "tool": "Retro Diffusion MCP (pixel-art plugin)",
+  "style": "rd_mini__fast_low_res",
+  "style_choice_reason": "cheapest still-image style supporting 32x32 (estimated $0.017/image, tied with rd_fast__low_res)",
+  "size": [32, 32],
+  "remove_bg": true,
+  "seeds": "not returned by API",
+  "purpose": "trucker cap front-view geometry references only; not source art",
+  "images": [
+    {"file": "rd01.png", "request_id": "ea27f89a-a3db-420d-a6a1-4bb29fa77b1e", "cost_usd": 0.017,
+     "prompt": "front view of a single isolated trucker cap, medium height crown, compact rounded visor whose lower edge is slightly narrower than the edge where it joins the crown, clear crown-to-visor seam, centered, no logo, no text, no head, on a plain white background"},
+    {"file": "rd02.png", "request_id": "47d31c89-9b81-4f0a-a64a-b1eb1f06d908", "cost_usd": 0.017,
+     "prompt": "front view of a single isolated trucker cap, low crown, short visor with rounded corners and a gently inset curved lower edge, not a rectangular shelf, clear crown-to-visor seam, centered, no logo, no text, no head, on a plain white background"},
+    {"file": "rd03.png", "request_id": "5195d094-b0b2-49c7-a5b4-c670463f9ba1", "cost_usd": 0.017,
+     "prompt": "front view of a single isolated trucker cap, tall crown, medium-long visor forming a shallow symmetrical front arc with tapered ends, clear crown-to-visor seam, centered, no logo, no text, no head, on a plain white background"},
+    {"file": "rd04.png", "request_id": "dbebfca4-f3c5-4747-831d-da79721aff73", "cost_usd": 0.017,
+     "prompt": "front view of a single isolated trucker cap, medium crown, broad visor with strong stepped curvature, broad upper brim narrowing to a narrower lower brim, clear crown-to-visor seam, centered, no logo, no text, no head, on a plain white background"}
+  ],
+  "total_generation_cost_usd": 0.068,
+  "remaining_rd_balance_usd": 3.588
+}
