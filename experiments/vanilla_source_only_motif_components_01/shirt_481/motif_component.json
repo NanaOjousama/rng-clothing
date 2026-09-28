@@ -1,0 +1,29 @@
+{
+  "dir": "shirt_481",
+  "kind": "shirt",
+  "sourceIndex": 481,
+  "theme": "FORMAL_PEARL_MIDNIGHT",
+  "localizedApplied": true,
+  "localizedPixels": 2,
+  "localizedViews": [
+    "front"
+  ],
+  "wrapApplied": true,
+  "wrapPixels": 9,
+  "wrapViews": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ],
+  "localizedStats": {
+    "changedOpaqueRatio": 0.0085,
+    "avgRgbDeltaChanged": 24.41,
+    "changedPixels": 2
+  },
+  "wrapStats": {
+    "changedOpaqueRatio": 0.0381,
+    "avgRgbDeltaChanged": 28.19,
+    "changedPixels": 9
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "dir": "hat_098",
+  "kind": "hat",
+  "sourceIndex": 98,
+  "theme": "CEREMONIAL_CRIMSON_IVORY",
+  "localizedApplied": true,
+  "localizedPixels": 3,
+  "localizedViews": [
+    "front"
+  ],
+  "wrapApplied": true,
+  "wrapPixels": 17,
+  "wrapViews": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ],
+  "localizedStats": {
+    "changedOpaqueRatio": 0.0073,
+    "avgRgbDeltaChanged": 87.92,
+    "changedPixels": 3
+  },
+  "wrapStats": {
+    "changedOpaqueRatio": 0.0415,
+    "avgRgbDeltaChanged": 14.74,
+    "changedPixels": 17
+  }
+}

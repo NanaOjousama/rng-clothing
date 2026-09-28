@@ -1,0 +1,29 @@
+{
+  "dir": "shirt_424",
+  "kind": "shirt",
+  "sourceIndex": 424,
+  "theme": "WORKWEAR_DENIM_RUST",
+  "localizedApplied": true,
+  "localizedPixels": 2,
+  "localizedViews": [
+    "front"
+  ],
+  "wrapApplied": true,
+  "wrapPixels": 8,
+  "wrapViews": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ],
+  "localizedStats": {
+    "changedOpaqueRatio": 0.0085,
+    "avgRgbDeltaChanged": 91.09,
+    "changedPixels": 2
+  },
+  "wrapStats": {
+    "changedOpaqueRatio": 0.0339,
+    "avgRgbDeltaChanged": 60.83,
+    "changedPixels": 8
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "dir": "hat_052",
+  "kind": "hat",
+  "sourceIndex": 52,
+  "theme": "GOTHIC_WINE_ASH",
+  "localizedApplied": true,
+  "localizedPixels": 3,
+  "localizedViews": [
+    "front"
+  ],
+  "wrapApplied": false,
+  "wrapPixels": 0,
+  "wrapViews": [],
+  "localizedStats": {
+    "changedOpaqueRatio": 0.0069,
+    "avgRgbDeltaChanged": 84.86,
+    "changedPixels": 3
+  },
+  "wrapStats": {
+    "changedOpaqueRatio": 0.0,
+    "avgRgbDeltaChanged": 0.0,
+    "changedPixels": 0
+  }
+}

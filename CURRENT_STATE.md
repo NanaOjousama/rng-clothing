@@ -1699,3 +1699,13 @@ V5 moves beyond whole-item recolor/material by deriving two generic source-geome
 Region-specific color treatment uses an alternate approved palette lane while retaining each treated pixel's local luminance, so vanilla shade topology/rounding remains readable. Exact alpha/geometry is hash-locked. All 11 region-capable regression sources produced two region-style proofs; one low-capacity source skipped both safely. Contact sheets: `STARDEW_ONLY_V5_HAT_REGION_CONTACT.png` and `STARDEW_ONLY_V5_SHIRT_REGION_CONTACT.png`.
 
 This validates **region-specific styling capability**, not final semantic labelling or final art direction. `primary`/`secondary` remain generic until source/human review can safely promote them to names such as crown, brim/band, torso, sleeve, collar, cuff, etc. Motifs/components and authored construction swaps remain later layers. Nothing from v5 is promoted into the production content pool yet.
+
+## Stardew-only v6 — safe localized motifs / wrap trims — 2026-09-28
+
+Added `tools/experiment_vanilla_motif_components_v6.py`, output under `experiments/vanilla_source_only_motif_components_01/`, reusing the same 6 hats + 6 shirts regression set and the v5 region-styled outputs as the base.
+
+V6 adds two capacity-aware decoration channels without changing vanilla geometry: (1) a **localized accent** confined to the front view only, because localized motifs must not be blindly copied to every direction; and (2) a **wrap trim** that is allowed only when source-safe lower/edge cells exist coherently in at least three views. Both channels recolor existing source-safe pixels only; no alpha is added, no silhouette changes, no resampling, and no external/mod-author/AI geometry enters the Stardew-only pool.
+
+Results: 11/12 sources admitted a localized accent; hat 52 and hat 79 correctly rejected wrap trim while the remaining region-capable items admitted one; shirt #535 again rejected both channels due to zero safe capacity. Hat localized marks use only 2-3 logical pixels; shirts use 1-2 pixels. This confirms that vanilla-scale content has a real capacity ceiling and the generator should skip rather than overdecorate.
+
+Contact sheets: `STARDEW_ONLY_V6_HAT_MOTIF_COMPONENT_CONTACT.png` and `STARDEW_ONLY_V6_SHIRT_MOTIF_COMPONENT_CONTACT.png`. These prove **safe localized motif + wrap-trim capability**, not large attached components or silhouette-changing add-ons. Larger components should only come later from explicitly compatible vanilla donor constructions or approved authored construction variants. Nothing from v6 is promoted into production yet.

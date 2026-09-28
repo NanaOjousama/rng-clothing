@@ -1,0 +1,22 @@
+{
+  "dir": "shirt_535",
+  "kind": "shirt",
+  "sourceIndex": 535,
+  "theme": "GOTHIC_WINE_ASH",
+  "localizedApplied": false,
+  "localizedPixels": 0,
+  "localizedViews": [],
+  "wrapApplied": false,
+  "wrapPixels": 0,
+  "wrapViews": [],
+  "localizedStats": {
+    "changedOpaqueRatio": 0.0,
+    "avgRgbDeltaChanged": 0.0,
+    "changedPixels": 0
+  },
+  "wrapStats": {
+    "changedOpaqueRatio": 0.0,
+    "avgRgbDeltaChanged": 0.0,
+    "changedPixels": 0
+  }
+}

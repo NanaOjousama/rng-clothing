@@ -1,0 +1,29 @@
+{
+  "dir": "shirt_584",
+  "kind": "shirt",
+  "sourceIndex": 584,
+  "theme": "FIELD_CANVAS_MOSS",
+  "localizedApplied": true,
+  "localizedPixels": 2,
+  "localizedViews": [
+    "front"
+  ],
+  "wrapApplied": true,
+  "wrapPixels": 9,
+  "wrapViews": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ],
+  "localizedStats": {
+    "changedOpaqueRatio": 0.0084,
+    "avgRgbDeltaChanged": 55.59,
+    "changedPixels": 2
+  },
+  "wrapStats": {
+    "changedOpaqueRatio": 0.0378,
+    "avgRgbDeltaChanged": 77.68,
+    "changedPixels": 9
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "dir": "shirt_527",
+  "kind": "shirt",
+  "sourceIndex": 527,
+  "theme": "CUTE_TAN_RIBBON",
+  "localizedApplied": true,
+  "localizedPixels": 2,
+  "localizedViews": [
+    "front"
+  ],
+  "wrapApplied": true,
+  "wrapPixels": 10,
+  "wrapViews": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ],
+  "localizedStats": {
+    "changedOpaqueRatio": 0.0085,
+    "avgRgbDeltaChanged": 80.85,
+    "changedPixels": 2
+  },
+  "wrapStats": {
+    "changedOpaqueRatio": 0.0427,
+    "avgRgbDeltaChanged": 47.62,
+    "changedPixels": 10
+  }
+}
