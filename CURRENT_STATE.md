@@ -1709,3 +1709,13 @@ V6 adds two capacity-aware decoration channels without changing vanilla geometry
 Results: 11/12 sources admitted a localized accent; hat 52 and hat 79 correctly rejected wrap trim while the remaining region-capable items admitted one; shirt #535 again rejected both channels due to zero safe capacity. Hat localized marks use only 2-3 logical pixels; shirts use 1-2 pixels. This confirms that vanilla-scale content has a real capacity ceiling and the generator should skip rather than overdecorate.
 
 Contact sheets: `STARDEW_ONLY_V6_HAT_MOTIF_COMPONENT_CONTACT.png` and `STARDEW_ONLY_V6_SHIRT_MOTIF_COMPONENT_CONTACT.png`. These prove **safe localized motif + wrap-trim capability**, not large attached components or silhouette-changing add-ons. Larger components should only come later from explicitly compatible vanilla donor constructions or approved authored construction variants. Nothing from v6 is promoted into production yet.
+
+## Stardew-only v7 — full vanilla capability audit + reviewed donor grammar — 2026-09-28
+
+Added `tools/experiment_vanilla_capability_audit_v7.py` and isolated outputs under `experiments/vanilla_source_only_capability_audit_01/`. V7 scans the full vanilla Farmer clothing corpus: 132 hat slots / 122 non-empty hats and 608 shirt slots / 339 non-empty shirt fronts. The broad machine classifier is intentionally treated as a discovery aid only because visual review showed false positives when shading/panels resemble motifs.
+
+A second conservative review layer now defines the usable seed vocabulary in `vanilla_donor_vocabulary_reviewed.json`. Shirt grammar seeds are grouped as `compact_graphic`, `horizontal_stripe_or_band`, `checker_or_plaid`, and `placket_or_buttons`. These are **grammar evidence only**, not approved literal pixel-transfer parts. The reviewed contact is `reviewed_donor_seed_contact_x18.png`. Ambiguous shirt #531 was removed from the reviewed placket/button seeds after visual QC.
+
+The full hat audit changed the design rule: vanilla hats should **not** receive a universal motif axis. Their visual variety is dominated more by whole construction/components, bands, bows, object-shaped silhouettes, and other family-specific geometry. Hats therefore move to the later compatible vanilla-donor construction/component pass rather than generic motif transfer.
+
+V7 remains fully isolated from the production generator and has no rarity logic. The next proof is V8: generate a small mixed vanilla-only batch where each target garment may use only capabilities its own source/capacity supports, guided by the reviewed vanilla grammar seeds rather than generic motifs.

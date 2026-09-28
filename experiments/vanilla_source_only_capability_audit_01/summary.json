@@ -1,0 +1,33 @@
+{
+  "schema": "stardew-only-capability-summary/v7",
+  "summary": {
+    "hat": {
+      "nonEmpty": 122,
+      "capabilityCounts": {
+        "central_placket_or_buttons": 102,
+        "compact_graphic_candidate": 57,
+        "contrast_panel_candidate": 104,
+        "dense_pattern_candidate": 44,
+        "hat_front_detail_candidate": 8,
+        "hat_lower_band_detail_candidate": 104,
+        "horizontal_band_or_stripe": 108,
+        "plain_or_low_detail": 4
+      },
+      "withDonorCandidates": 57
+    },
+    "shirt": {
+      "nonEmpty": 339,
+      "capabilityCounts": {
+        "central_placket_or_buttons": 248,
+        "compact_graphic_candidate": 103,
+        "contrast_panel_candidate": 242,
+        "dense_pattern_candidate": 36,
+        "horizontal_band_or_stripe": 276,
+        "plain_or_low_detail": 35,
+        "side_or_sleeve_contrast_candidate": 242
+      },
+      "withDonorCandidates": 103
+    }
+  },
+  "donorCandidates": 160
+}

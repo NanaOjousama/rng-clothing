@@ -1,0 +1,5138 @@
+{
+  "schema": "stardew-only-donor-vocabulary/v1",
+  "boundary": "candidate source pixels only; no production transfer approval",
+  "donors": [
+    {
+      "id": "vanilla.hat.1.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 1,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          12,
+          10
+        ],
+        [
+          13,
+          10
+        ]
+      ],
+      "bbox": [
+        6,
+        10,
+        13,
+        10
+      ]
+    },
+    {
+      "id": "vanilla.hat.2.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 2,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          14,
+          8
+        ],
+        [
+          14,
+          9
+        ]
+      ],
+      "bbox": [
+        14,
+        8,
+        14,
+        9
+      ]
+    },
+    {
+      "id": "vanilla.hat.6.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 6,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          12,
+          5
+        ]
+      ],
+      "bbox": [
+        7,
+        5,
+        12,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.hat.7.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 7,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          15,
+          12
+        ],
+        [
+          15,
+          13
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "bbox": [
+        15,
+        12,
+        17,
+        13
+      ]
+    },
+    {
+      "id": "vanilla.hat.10.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 10,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          10
+        ]
+      ],
+      "bbox": [
+        7,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "vanilla.hat.11.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 11,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          4,
+          11
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          5,
+          14
+        ]
+      ],
+      "bbox": [
+        4,
+        10,
+        5,
+        14
+      ]
+    },
+    {
+      "id": "vanilla.hat.14.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 14,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          10
+        ]
+      ],
+      "bbox": [
+        4,
+        8,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "vanilla.hat.15.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 15,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          12,
+          9
+        ]
+      ],
+      "bbox": [
+        7,
+        9,
+        12,
+        9
+      ]
+    },
+    {
+      "id": "vanilla.hat.16.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 16,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          10
+        ]
+      ],
+      "bbox": [
+        8,
+        10,
+        11,
+        10
+      ]
+    },
+    {
+      "id": "vanilla.hat.18.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 18,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "bbox": [
+        8,
+        9,
+        11,
+        9
+      ]
+    },
+    {
+      "id": "vanilla.hat.21.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 21,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ]
+      ],
+      "bbox": [
+        9,
+        7,
+        10,
+        7
+      ]
+    },
+    {
+      "id": "vanilla.hat.22.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 22,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ]
+      ],
+      "bbox": [
+        9,
+        7,
+        10,
+        7
+      ]
+    },
+    {
+      "id": "vanilla.hat.25.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 25,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          13,
+          5
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          14,
+          6
+        ]
+      ],
+      "bbox": [
+        13,
+        5,
+        14,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.hat.26.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 26,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          10
+        ]
+      ],
+      "bbox": [
+        9,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "vanilla.hat.30.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 30,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "bbox": [
+        6,
+        7,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "vanilla.hat.32.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 32,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          13,
+          6
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          15,
+          5
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          15,
+          7
+        ]
+      ],
+      "bbox": [
+        13,
+        5,
+        15,
+        7
+      ]
+    },
+    {
+      "id": "vanilla.hat.35.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 35,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          7,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          10
+        ]
+      ],
+      "bbox": [
+        7,
+        9,
+        8,
+        10
+      ]
+    },
+    {
+      "id": "vanilla.hat.36.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 36,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "bbox": [
+        4,
+        6,
+        5,
+        7
+      ]
+    },
+    {
+      "id": "vanilla.hat.40.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 40,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "bbox": [
+        3,
+        1,
+        6,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.hat.41.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 41,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "bbox": [
+        8,
+        9,
+        11,
+        9
+      ]
+    },
+    {
+      "id": "vanilla.hat.42.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 42,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          12,
+          9
+        ],
+        [
+          13,
+          9
+        ]
+      ],
+      "bbox": [
+        6,
+        9,
+        13,
+        9
+      ]
+    },
+    {
+      "id": "vanilla.hat.43.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 43,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ]
+      ],
+      "bbox": [
+        9,
+        4,
+        10,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.hat.44.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 44,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          4,
+          17
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          5,
+          17
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          7,
+          18
+        ]
+      ],
+      "bbox": [
+        4,
+        15,
+        7,
+        18
+      ]
+    },
+    {
+      "id": "vanilla.hat.46.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 46,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "bbox": [
+        6,
+        5,
+        7,
+        7
+      ]
+    },
+    {
+      "id": "vanilla.hat.47.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 47,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "bbox": [
+        5,
+        5,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.hat.48.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 48,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          6,
+          15
+        ],
+        [
+          7,
+          15
+        ]
+      ],
+      "bbox": [
+        6,
+        15,
+        7,
+        15
+      ]
+    },
+    {
+      "id": "vanilla.hat.51.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 51,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          5,
+          15
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          7,
+          16
+        ]
+      ],
+      "bbox": [
+        5,
+        15,
+        7,
+        16
+      ]
+    },
+    {
+      "id": "vanilla.hat.52.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 52,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          12,
+          9
+        ],
+        [
+          12,
+          10
+        ]
+      ],
+      "bbox": [
+        7,
+        9,
+        12,
+        10
+      ]
+    },
+    {
+      "id": "vanilla.hat.53.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 53,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          10,
+          6
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          12,
+          8
+        ]
+      ],
+      "bbox": [
+        10,
+        6,
+        12,
+        8
+      ]
+    },
+    {
+      "id": "vanilla.hat.54.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 54,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          7,
+          9
+        ],
+        [
+          7,
+          10
+        ]
+      ],
+      "bbox": [
+        7,
+        9,
+        7,
+        10
+      ]
+    },
+    {
+      "id": "vanilla.hat.56.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 56,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          12,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          14,
+          9
+        ],
+        [
+          15,
+          8
+        ]
+      ],
+      "bbox": [
+        12,
+        6,
+        15,
+        9
+      ]
+    },
+    {
+      "id": "vanilla.hat.61.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 61,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          10,
+          2
+        ],
+        [
+          11,
+          2
+        ]
+      ],
+      "bbox": [
+        10,
+        2,
+        11,
+        2
+      ]
+    },
+    {
+      "id": "vanilla.hat.64.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 64,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          12,
+          6
+        ]
+      ],
+      "bbox": [
+        11,
+        3,
+        12,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.hat.65.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 65,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          10
+        ]
+      ],
+      "bbox": [
+        8,
+        10,
+        11,
+        10
+      ]
+    },
+    {
+      "id": "vanilla.hat.66.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 66,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "bbox": [
+        4,
+        5,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "vanilla.hat.67.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 67,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          14,
+          8
+        ],
+        [
+          14,
+          9
+        ],
+        [
+          14,
+          10
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          15,
+          8
+        ]
+      ],
+      "bbox": [
+        14,
+        7,
+        15,
+        10
+      ]
+    },
+    {
+      "id": "vanilla.hat.68.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 68,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          11,
+          3
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          14,
+          3
+        ]
+      ],
+      "bbox": [
+        11,
+        3,
+        14,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.hat.72.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 72,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "bbox": [
+        10,
+        3,
+        11,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.hat.77.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 77,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ]
+      ],
+      "bbox": [
+        9,
+        7,
+        10,
+        7
+      ]
+    },
+    {
+      "id": "vanilla.hat.78.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 78,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          12,
+          5
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          14,
+          7
+        ]
+      ],
+      "bbox": [
+        12,
+        5,
+        14,
+        7
+      ]
+    },
+    {
+      "id": "vanilla.hat.80.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 80,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          7,
+          16
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          9,
+          17
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          10,
+          17
+        ],
+        [
+          11,
+          16
+        ],
+        [
+          12,
+          16
+        ]
+      ],
+      "bbox": [
+        7,
+        16,
+        12,
+        17
+      ]
+    },
+    {
+      "id": "vanilla.hat.82.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 82,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          6
+        ]
+      ],
+      "bbox": [
+        9,
+        3,
+        11,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.hat.85.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 85,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "bbox": [
+        4,
+        6,
+        6,
+        9
+      ]
+    },
+    {
+      "id": "vanilla.hat.87.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 87,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          13,
+          8
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          14,
+          9
+        ],
+        [
+          14,
+          10
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          15,
+          8
+        ],
+        [
+          15,
+          9
+        ]
+      ],
+      "bbox": [
+        13,
+        6,
+        15,
+        10
+      ]
+    },
+    {
+      "id": "vanilla.hat.90.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 90,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "bbox": [
+        3,
+        7,
+        4,
+        8
+      ]
+    },
+    {
+      "id": "vanilla.hat.92.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 92,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          12
+        ]
+      ],
+      "bbox": [
+        9,
+        12,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "vanilla.hat.94.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 94,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "bbox": [
+        8,
+        6,
+        8,
+        7
+      ]
+    },
+    {
+      "id": "vanilla.hat.97.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 97,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          10,
+          10
+        ]
+      ],
+      "bbox": [
+        9,
+        9,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "vanilla.hat.98.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 98,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          11
+        ],
+        [
+          4,
+          11
+        ]
+      ],
+      "bbox": [
+        3,
+        11,
+        4,
+        11
+      ]
+    },
+    {
+      "id": "vanilla.hat.99.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 99,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          6
+        ]
+      ],
+      "bbox": [
+        9,
+        6,
+        10,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.hat.100.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 100,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          6
+        ]
+      ],
+      "bbox": [
+        9,
+        6,
+        10,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.hat.102.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 102,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          10
+        ]
+      ],
+      "bbox": [
+        5,
+        8,
+        7,
+        10
+      ]
+    },
+    {
+      "id": "vanilla.hat.105.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 105,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "bbox": [
+        9,
+        3,
+        12,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.hat.106.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 106,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          12,
+          11
+        ],
+        [
+          13,
+          11
+        ]
+      ],
+      "bbox": [
+        6,
+        11,
+        13,
+        11
+      ]
+    },
+    {
+      "id": "vanilla.hat.111.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 111,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "bbox": [
+        8,
+        9,
+        11,
+        9
+      ]
+    },
+    {
+      "id": "vanilla.hat.113.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 113,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          12,
+          10
+        ],
+        [
+          12,
+          11
+        ]
+      ],
+      "bbox": [
+        12,
+        10,
+        12,
+        11
+      ]
+    },
+    {
+      "id": "vanilla.hat.114.compact_graphic.0",
+      "sourceKind": "hat",
+      "sourceIndex": 114,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          12,
+          11
+        ],
+        [
+          13,
+          11
+        ]
+      ],
+      "bbox": [
+        6,
+        11,
+        13,
+        11
+      ]
+    },
+    {
+      "id": "vanilla.shirt.2.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 2,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "bbox": [
+        3,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "id": "vanilla.shirt.5.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 5,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.shirt.6.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 6,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "bbox": [
+        1,
+        4,
+        6,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.9.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 9,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "bbox": [
+        5,
+        1,
+        6,
+        1
+      ]
+    },
+    {
+      "id": "vanilla.shirt.11.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 11,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "bbox": [
+        2,
+        4,
+        5,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.12.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 12,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "bbox": [
+        1,
+        5,
+        6,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.13.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 13,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "bbox": [
+        1,
+        3,
+        6,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.shirt.34.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 34,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        2,
+        1,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.35.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 35,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "bbox": [
+        2,
+        2,
+        5,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.shirt.42.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 42,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "bbox": [
+        1,
+        3,
+        6,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.shirt.43.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 43,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "bbox": [
+        1,
+        5,
+        6,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.46.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 46,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "vanilla.shirt.65.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 65,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "bbox": [
+        3,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "id": "vanilla.shirt.66.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 66,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "bbox": [
+        3,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "id": "vanilla.shirt.73.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 73,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "bbox": [
+        1,
+        5,
+        6,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.79.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 79,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "bbox": [
+        3,
+        3,
+        4,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.shirt.97.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 97,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "bbox": [
+        1,
+        5,
+        6,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.101.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 101,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "bbox": [
+        1,
+        5,
+        6,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.103.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 103,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "bbox": [
+        1,
+        4,
+        6,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.104.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 104,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "bbox": [
+        2,
+        4,
+        5,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.108.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 108,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "bbox": [
+        2,
+        4,
+        5,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.109.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 109,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "bbox": [
+        5,
+        5,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.111.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 111,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.128.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 128,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "bbox": [
+        5,
+        4,
+        6,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.133.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 133,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "bbox": [
+        5,
+        5,
+        6,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.134.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 134,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        5,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.136.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 136,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "bbox": [
+        3,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "id": "vanilla.shirt.139.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 139,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "bbox": [
+        2,
+        2,
+        5,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.shirt.140.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 140,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        5,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.141.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 141,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "bbox": [
+        3,
+        6,
+        4,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.161.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 161,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "bbox": [
+        2,
+        6,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.173.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 173,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "bbox": [
+        6,
+        5,
+        6,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.174.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 174,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "bbox": [
+        2,
+        1,
+        5,
+        2
+      ]
+    },
+    {
+      "id": "vanilla.shirt.199.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 199,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "bbox": [
+        3,
+        2,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.200.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 200,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "bbox": [
+        2,
+        4,
+        5,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.225.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 225,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "bbox": [
+        1,
+        4,
+        6,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.226.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 226,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "bbox": [
+        1,
+        4,
+        6,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.234.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 234,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        2,
+        1,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.236.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 236,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        1,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.239.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 239,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "bbox": [
+        2,
+        4,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.265.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 265,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        5,
+        1,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.266.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 266,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        2,
+        1,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.272.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 272,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "bbox": [
+        2,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.278.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 278,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.shirt.280.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 280,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "bbox": [
+        1,
+        5,
+        6,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.281.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 281,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "bbox": [
+        3,
+        5,
+        3,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.283.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 283,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "bbox": [
+        1,
+        3,
+        2,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.288.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 288,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        1,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.289.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 289,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "bbox": [
+        3,
+        3,
+        5,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.290.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 290,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "bbox": [
+        4,
+        5,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.292.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 292,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "bbox": [
+        2,
+        6,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.293.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 293,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "bbox": [
+        6,
+        4,
+        6,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.295.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 295,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "bbox": [
+        2,
+        4,
+        3,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.299.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 299,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "bbox": [
+        5,
+        1,
+        6,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.shirt.312.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 312,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "bbox": [
+        4,
+        3,
+        6,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.shirt.322.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 322,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "bbox": [
+        2,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.325.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 325,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.326.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 326,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.328.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 328,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "bbox": [
+        2,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.330.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 330,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "bbox": [
+        2,
+        4,
+        4,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.332.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 332,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "bbox": [
+        2,
+        1,
+        5,
+        2
+      ]
+    },
+    {
+      "id": "vanilla.shirt.335.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 335,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.342.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 342,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.349.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 349,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "bbox": [
+        2,
+        1,
+        5,
+        1
+      ]
+    },
+    {
+      "id": "vanilla.shirt.356.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 356,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "bbox": [
+        3,
+        2,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.357.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 357,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        5,
+        1,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.362.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 362,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "bbox": [
+        2,
+        1,
+        5,
+        1
+      ]
+    },
+    {
+      "id": "vanilla.shirt.366.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 366,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "bbox": [
+        5,
+        5,
+        6,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.368.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 368,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "vanilla.shirt.370.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 370,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        5,
+        1,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.383.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 383,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "bbox": [
+        2,
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.385.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 385,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "bbox": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.389.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 389,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "bbox": [
+        4,
+        4,
+        4,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.390.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 390,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "bbox": [
+        1,
+        4,
+        6,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.391.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 391,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "vanilla.shirt.394.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 394,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.417.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 417,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "vanilla.shirt.421.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 421,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "vanilla.shirt.424.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 424,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "bbox": [
+        2,
+        1,
+        5,
+        2
+      ]
+    },
+    {
+      "id": "vanilla.shirt.429.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 429,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "bbox": [
+        3,
+        6,
+        4,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.458.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 458,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        4,
+        3,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.459.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 459,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "vanilla.shirt.460.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 460,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.shirt.486.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 486,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "bbox": [
+        3,
+        4,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.492.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 492,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "vanilla.shirt.494.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 494,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "bbox": [
+        2,
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.504.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 504,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "bbox": [
+        3,
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.shirt.519.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 519,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "bbox": [
+        2,
+        1,
+        5,
+        1
+      ]
+    },
+    {
+      "id": "vanilla.shirt.533.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 533,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "bbox": [
+        3,
+        3,
+        4,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.shirt.543.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 543,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "bbox": [
+        6,
+        1,
+        6,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.548.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 548,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "bbox": [
+        6,
+        5,
+        6,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.549.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 549,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "bbox": [
+        1,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.555.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 555,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        1,
+        5
+      ]
+    },
+    {
+      "id": "vanilla.shirt.556.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 556,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "bbox": [
+        4,
+        5,
+        6,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.558.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 558,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "vanilla.shirt.559.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 559,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "vanilla.shirt.565.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 565,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "bbox": [
+        3,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "id": "vanilla.shirt.572.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 572,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "bbox": [
+        4,
+        5,
+        6,
+        6
+      ]
+    },
+    {
+      "id": "vanilla.shirt.578.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 578,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.shirt.580.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 580,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "vanilla.shirt.588.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 588,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "vanilla.shirt.603.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 603,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "bbox": [
+        5,
+        2,
+        6,
+        4
+      ]
+    },
+    {
+      "id": "vanilla.shirt.605.compact_graphic.0",
+      "sourceKind": "shirt",
+      "sourceIndex": 605,
+      "type": "compact_graphic",
+      "view": "front",
+      "cells": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "bbox": [
+        1,
+        1,
+        2,
+        1
+      ]
+    }
+  ]
+}

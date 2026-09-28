@@ -1,0 +1,11 @@
+{
+  "hatConclusion": "Do not use a universal motif axis for vanilla hats. Treat hats primarily as construction/component families; small front marks may exist, but the audit does not support generic motif transfer as a default.",
+  "shirtConclusion": "Vanilla shirts clearly support several decoration grammars at 8x8: compact graphics, horizontal stripes/bands, checker/plaid patterns, and placket/button layouts. These should be capacity-gated and source-grammar-driven.",
+  "reviewedCounts": {
+    "compact_graphic": 14,
+    "horizontal_stripe_or_band": 13,
+    "checker_or_plaid": 6,
+    "placket_or_buttons": 9
+  },
+  "nextStep": "v8 should generate mixed vanilla-only variants by selecting only capabilities supported by the target garment and using these reviewed donor examples as grammar references, not literal copied pixels."
+}
