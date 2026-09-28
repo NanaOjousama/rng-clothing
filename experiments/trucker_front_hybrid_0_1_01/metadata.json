@@ -1,0 +1,21 @@
+{
+  "primary": "SF_00",
+  "support": "SF_01",
+  "prompt": "Keep the first trucker cap as the primary design. Change ONLY the front visor shape using the second cap as a geometry reference. Target a hybrid between the two: closer to the second cap's shallow Stardew-like front curve, but not as flat. Keep slightly more visor body/fullness from the first cap, roughly one small pixel step more depth than the second. The visor must remain tucked close to the crown and read as a straight-on front view, not a top-down view. Improve the visor with a gentle shallow curve, slight lower-edge inset/taper, and a clean crown-to-visor join. Do not enlarge the visor, do not make it protrude farther forward, and do not turn it into a thick rectangular shelf. Preserve the crown, front panel, side mesh, button, overall width, and rest of the first hat.",
+  "outputs": [
+    {
+      "index": 0,
+      "asset_id": "4333dd14-bad8-45ea-87e2-77eb21e7897f",
+      "width": 32,
+      "height": 30,
+      "path": "experiments/trucker_front_hybrid_0_1_01/hyb_00.png"
+    },
+    {
+      "index": 1,
+      "asset_id": "90de8700-1b87-49ae-bece-2d204a36e598",
+      "width": 60,
+      "height": 52,
+      "path": "experiments/trucker_front_hybrid_0_1_01/hyb_01.png"
+    }
+  ]
+}

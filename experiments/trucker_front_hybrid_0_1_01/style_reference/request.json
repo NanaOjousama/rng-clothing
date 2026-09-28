@@ -1,0 +1,13 @@
+{
+  "operation": "style-reference",
+  "prompt": "A straight-on front-view trucker cap using the first reference for overall fullness and the second reference for visor curve language. The front visor should sit BETWEEN the two references, leaning closer to the second reference: shallow, compact and gently curved, but not as flat as the second. Keep slightly more visor depth/body like the first reference while staying tucked close to the crown. The visor should read through a slight lower-edge inset, gentle taper and clean crown-to-visor join, not through forward projection. Avoid a top-down camera feeling, avoid a thick shelf-like brim, and keep the hat centered and straight-on. Keep the crown/body proportion similar to the references. No head, face, hair, logo, text, mannequin, hands or scene.",
+  "size": 32,
+  "inputs": [
+    {
+      "asset_id": "48e4679f-495c-4fef-9862-21571e8164a0"
+    },
+    {
+      "asset_id": "e510d078-c41f-49ae-ad22-9a1978a4485b"
+    }
+  ]
+}

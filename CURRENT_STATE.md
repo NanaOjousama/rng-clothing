@@ -1644,3 +1644,7 @@ User clarified the printer's side views are acceptable; the weak visual is speci
 - Updated Claude shortlist now explicitly targets a **subtle straight-on visor**: improve taper/curve/join without forcing forward projection, because excessive visible visor depth raises the apparent camera angle.
 
 Scope rule: these images are geometry references only. The existing approved trucker family remains construction/style authority, and this experiment should modify only the problematic front visor behavior unless a later QC explicitly reopens side/back geometry.
+
+## Trucker front visor SF0+SF1 hybrid study — 2026-09-27
+
+Created `experiments/trucker_front_hybrid_0_1_01/` after user clarified the desired front visor should land between Sprite Fusion hats 0 and 1: closer to SF1's shallow Stardew-like curve, but with slightly more body/fullness from SF0 and without extra projection that would imply a higher camera angle. A targeted edit returned only two oddly trimmed outputs, so a second `style-reference` pass used SF0+SF1 together and produced nine native 32x32 candidates H0-H8. Main sheets: `TRUCKER_FRONT_HYBRID_0_1_BATCH_X8.png` and `TRUCKER_FRONT_HYBRID_0_1_VISOR_CROP_X12.png`. This is reference/QC only; the construction printer has not been modified from this experiment yet.

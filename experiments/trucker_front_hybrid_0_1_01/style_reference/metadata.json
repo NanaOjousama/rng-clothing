@@ -1,0 +1,70 @@
+{
+  "referenceA": "SF_00",
+  "referenceB": "SF_01",
+  "prompt": "A straight-on front-view trucker cap using the first reference for overall fullness and the second reference for visor curve language. The front visor should sit BETWEEN the two references, leaning closer to the second reference: shallow, compact and gently curved, but not as flat as the second. Keep slightly more visor depth/body like the first reference while staying tucked close to the crown. The visor should read through a slight lower-edge inset, gentle taper and clean crown-to-visor join, not through forward projection. Avoid a top-down camera feeling, avoid a thick shelf-like brim, and keep the hat centered and straight-on. Keep the crown/body proportion similar to the references. No head, face, hair, logo, text, mannequin, hands or scene.",
+  "outputs": [
+    {
+      "index": 0,
+      "asset_id": "5900dfd1-4cca-437d-8a65-9b01bf41337e",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_front_hybrid_0_1_01/style_reference/hyb_00.png"
+    },
+    {
+      "index": 1,
+      "asset_id": "e1f75439-e093-488b-9e8d-e2d85b97d06f",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_front_hybrid_0_1_01/style_reference/hyb_01.png"
+    },
+    {
+      "index": 2,
+      "asset_id": "e8ca202a-9c35-4a53-8bb0-ccdc5a67d469",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_front_hybrid_0_1_01/style_reference/hyb_02.png"
+    },
+    {
+      "index": 3,
+      "asset_id": "b0127853-06a6-40a0-91a0-fa0fb4ca3a00",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_front_hybrid_0_1_01/style_reference/hyb_03.png"
+    },
+    {
+      "index": 4,
+      "asset_id": "c18c9955-fbd0-4904-add9-93a3e644d674",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_front_hybrid_0_1_01/style_reference/hyb_04.png"
+    },
+    {
+      "index": 5,
+      "asset_id": "058d633a-fede-4d58-b18d-6d80a2221c23",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_front_hybrid_0_1_01/style_reference/hyb_05.png"
+    },
+    {
+      "index": 6,
+      "asset_id": "18adebfa-18e6-4e80-95d2-c5577e770abf",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_front_hybrid_0_1_01/style_reference/hyb_06.png"
+    },
+    {
+      "index": 7,
+      "asset_id": "84c472cb-3e66-45a0-a979-a560b8057ca3",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_front_hybrid_0_1_01/style_reference/hyb_07.png"
+    },
+    {
+      "index": 8,
+      "asset_id": "7efb9f74-2305-4dd3-81ea-73cbcd39737c",
+      "width": 32,
+      "height": 32,
+      "path": "experiments/trucker_front_hybrid_0_1_01/style_reference/hyb_08.png"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+[
+  {
+    "type": "started",
+    "request_id": "req_7d77977e-1cd8-435a-bc6f-dd5c91519b15",
+    "operation": "style-reference",
+    "credits": {
+      "reserved": 15,
+      "remaining": 405
+    }
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "progress",
+    "message": "Generating sprites"
+  },
+  {
+    "type": "output",
+    "index": 0,
+    "asset": {
+      "id": "5900dfd1-4cca-437d-8a65-9b01bf41337e",
+      "type": "image",
+      "createdAt": "2026-09-28T01:16:13.422Z",
+      "updatedAt": "2026-09-28T01:16:13.422Z",
+      "prompt": "A straight-on front-view trucker cap using the first reference for overall fullness and the second reference for visor curve language. The front visor should sit BETWEEN the two references, leaning closer to the second reference: shallow, compact and gently curved, but not as flat as the second. Keep slightly more visor depth/body like the first reference while staying tucked close to the crown. The visor should read through a slight lower-edge inset, gentle taper and clean crown-to-visor join, not through forward projection. Avoid a top-down camera feeling, avoid a thick shelf-like brim, and keep the hat centered and straight-on. Keep the crown/body proportion similar to the references. No head, face, hair, logo, text, mannequin, hands or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/5900dfd1-4cca-437d-8a65-9b01bf41337e/image.png?v=1790558173422",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d6319371-d50d-4b87-9f54-af509c66caa0",
+      "batchIndex": 0,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style",
+        "sourceImageAssetId": "48e4679f-495c-4fef-9862-21571e8164a0",
+        "sourceImageAssetIds": [
+          "48e4679f-495c-4fef-9862-21571e8164a0",
+          "e510d078-c41f-49ae-ad22-9a1978a4485b"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 1,
+    "asset": {
+      "id": "e1f75439-e093-488b-9e8d-e2d85b97d06f",
+      "type": "image",
+      "createdAt": "2026-09-28T01:16:14.091Z",
+      "updatedAt": "2026-09-28T01:16:14.091Z",
+      "prompt": "A straight-on front-view trucker cap using the first reference for overall fullness and the second reference for visor curve language. The front visor should sit BETWEEN the two references, leaning closer to the second reference: shallow, compact and gently curved, but not as flat as the second. Keep slightly more visor depth/body like the first reference while staying tucked close to the crown. The visor should read through a slight lower-edge inset, gentle taper and clean crown-to-visor join, not through forward projection. Avoid a top-down camera feeling, avoid a thick shelf-like brim, and keep the hat centered and straight-on. Keep the crown/body proportion similar to the references. No head, face, hair, logo, text, mannequin, hands or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/e1f75439-e093-488b-9e8d-e2d85b97d06f/image.png?v=1790558174091",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d6319371-d50d-4b87-9f54-af509c66caa0",
+      "batchIndex": 1,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style",
+        "sourceImageAssetId": "48e4679f-495c-4fef-9862-21571e8164a0",
+        "sourceImageAssetIds": [
+          "48e4679f-495c-4fef-9862-21571e8164a0",
+          "e510d078-c41f-49ae-ad22-9a1978a4485b"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 2,
+    "asset": {
+      "id": "e8ca202a-9c35-4a53-8bb0-ccdc5a67d469",
+      "type": "image",
+      "createdAt": "2026-09-28T01:16:14.659Z",
+      "updatedAt": "2026-09-28T01:16:14.659Z",
+      "prompt": "A straight-on front-view trucker cap using the first reference for overall fullness and the second reference for visor curve language. The front visor should sit BETWEEN the two references, leaning closer to the second reference: shallow, compact and gently curved, but not as flat as the second. Keep slightly more visor depth/body like the first reference while staying tucked close to the crown. The visor should read through a slight lower-edge inset, gentle taper and clean crown-to-visor join, not through forward projection. Avoid a top-down camera feeling, avoid a thick shelf-like brim, and keep the hat centered and straight-on. Keep the crown/body proportion similar to the references. No head, face, hair, logo, text, mannequin, hands or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/e8ca202a-9c35-4a53-8bb0-ccdc5a67d469/image.png?v=1790558174659",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d6319371-d50d-4b87-9f54-af509c66caa0",
+      "batchIndex": 2,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style",
+        "sourceImageAssetId": "48e4679f-495c-4fef-9862-21571e8164a0",
+        "sourceImageAssetIds": [
+          "48e4679f-495c-4fef-9862-21571e8164a0",
+          "e510d078-c41f-49ae-ad22-9a1978a4485b"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 3,
+    "asset": {
+      "id": "b0127853-06a6-40a0-91a0-fa0fb4ca3a00",
+      "type": "image",
+      "createdAt": "2026-09-28T01:16:15.239Z",
+      "updatedAt": "2026-09-28T01:16:15.239Z",
+      "prompt": "A straight-on front-view trucker cap using the first reference for overall fullness and the second reference for visor curve language. The front visor should sit BETWEEN the two references, leaning closer to the second reference: shallow, compact and gently curved, but not as flat as the second. Keep slightly more visor depth/body like the first reference while staying tucked close to the crown. The visor should read through a slight lower-edge inset, gentle taper and clean crown-to-visor join, not through forward projection. Avoid a top-down camera feeling, avoid a thick shelf-like brim, and keep the hat centered and straight-on. Keep the crown/body proportion similar to the references. No head, face, hair, logo, text, mannequin, hands or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/b0127853-06a6-40a0-91a0-fa0fb4ca3a00/image.png?v=1790558175239",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d6319371-d50d-4b87-9f54-af509c66caa0",
+      "batchIndex": 3,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style",
+        "sourceImageAssetId": "48e4679f-495c-4fef-9862-21571e8164a0",
+        "sourceImageAssetIds": [
+          "48e4679f-495c-4fef-9862-21571e8164a0",
+          "e510d078-c41f-49ae-ad22-9a1978a4485b"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 4,
+    "asset": {
+      "id": "c18c9955-fbd0-4904-add9-93a3e644d674",
+      "type": "image",
+      "createdAt": "2026-09-28T01:16:15.858Z",
+      "updatedAt": "2026-09-28T01:16:15.858Z",
+      "prompt": "A straight-on front-view trucker cap using the first reference for overall fullness and the second reference for visor curve language. The front visor should sit BETWEEN the two references, leaning closer to the second reference: shallow, compact and gently curved, but not as flat as the second. Keep slightly more visor depth/body like the first reference while staying tucked close to the crown. The visor should read through a slight lower-edge inset, gentle taper and clean crown-to-visor join, not through forward projection. Avoid a top-down camera feeling, avoid a thick shelf-like brim, and keep the hat centered and straight-on. Keep the crown/body proportion similar to the references. No head, face, hair, logo, text, mannequin, hands or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/c18c9955-fbd0-4904-add9-93a3e644d674/image.png?v=1790558175858",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d6319371-d50d-4b87-9f54-af509c66caa0",
+      "batchIndex": 4,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style",
+        "sourceImageAssetId": "48e4679f-495c-4fef-9862-21571e8164a0",
+        "sourceImageAssetIds": [
+          "48e4679f-495c-4fef-9862-21571e8164a0",
+          "e510d078-c41f-49ae-ad22-9a1978a4485b"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 5,
+    "asset": {
+      "id": "058d633a-fede-4d58-b18d-6d80a2221c23",
+      "type": "image",
+      "createdAt": "2026-09-28T01:16:16.387Z",
+      "updatedAt": "2026-09-28T01:16:16.387Z",
+      "prompt": "A straight-on front-view trucker cap using the first reference for overall fullness and the second reference for visor curve language. The front visor should sit BETWEEN the two references, leaning closer to the second reference: shallow, compact and gently curved, but not as flat as the second. Keep slightly more visor depth/body like the first reference while staying tucked close to the crown. The visor should read through a slight lower-edge inset, gentle taper and clean crown-to-visor join, not through forward projection. Avoid a top-down camera feeling, avoid a thick shelf-like brim, and keep the hat centered and straight-on. Keep the crown/body proportion similar to the references. No head, face, hair, logo, text, mannequin, hands or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/058d633a-fede-4d58-b18d-6d80a2221c23/image.png?v=1790558176387",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d6319371-d50d-4b87-9f54-af509c66caa0",
+      "batchIndex": 5,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style",
+        "sourceImageAssetId": "48e4679f-495c-4fef-9862-21571e8164a0",
+        "sourceImageAssetIds": [
+          "48e4679f-495c-4fef-9862-21571e8164a0",
+          "e510d078-c41f-49ae-ad22-9a1978a4485b"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 6,
+    "asset": {
+      "id": "18adebfa-18e6-4e80-95d2-c5577e770abf",
+      "type": "image",
+      "createdAt": "2026-09-28T01:16:16.946Z",
+      "updatedAt": "2026-09-28T01:16:16.946Z",
+      "prompt": "A straight-on front-view trucker cap using the first reference for overall fullness and the second reference for visor curve language. The front visor should sit BETWEEN the two references, leaning closer to the second reference: shallow, compact and gently curved, but not as flat as the second. Keep slightly more visor depth/body like the first reference while staying tucked close to the crown. The visor should read through a slight lower-edge inset, gentle taper and clean crown-to-visor join, not through forward projection. Avoid a top-down camera feeling, avoid a thick shelf-like brim, and keep the hat centered and straight-on. Keep the crown/body proportion similar to the references. No head, face, hair, logo, text, mannequin, hands or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/18adebfa-18e6-4e80-95d2-c5577e770abf/image.png?v=1790558176946",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d6319371-d50d-4b87-9f54-af509c66caa0",
+      "batchIndex": 6,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style",
+        "sourceImageAssetId": "48e4679f-495c-4fef-9862-21571e8164a0",
+        "sourceImageAssetIds": [
+          "48e4679f-495c-4fef-9862-21571e8164a0",
+          "e510d078-c41f-49ae-ad22-9a1978a4485b"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 7,
+    "asset": {
+      "id": "84c472cb-3e66-45a0-a979-a560b8057ca3",
+      "type": "image",
+      "createdAt": "2026-09-28T01:16:17.452Z",
+      "updatedAt": "2026-09-28T01:16:17.452Z",
+      "prompt": "A straight-on front-view trucker cap using the first reference for overall fullness and the second reference for visor curve language. The front visor should sit BETWEEN the two references, leaning closer to the second reference: shallow, compact and gently curved, but not as flat as the second. Keep slightly more visor depth/body like the first reference while staying tucked close to the crown. The visor should read through a slight lower-edge inset, gentle taper and clean crown-to-visor join, not through forward projection. Avoid a top-down camera feeling, avoid a thick shelf-like brim, and keep the hat centered and straight-on. Keep the crown/body proportion similar to the references. No head, face, hair, logo, text, mannequin, hands or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/84c472cb-3e66-45a0-a979-a560b8057ca3/image.png?v=1790558177452",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d6319371-d50d-4b87-9f54-af509c66caa0",
+      "batchIndex": 7,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style",
+        "sourceImageAssetId": "48e4679f-495c-4fef-9862-21571e8164a0",
+        "sourceImageAssetIds": [
+          "48e4679f-495c-4fef-9862-21571e8164a0",
+          "e510d078-c41f-49ae-ad22-9a1978a4485b"
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "index": 8,
+    "asset": {
+      "id": "7efb9f74-2305-4dd3-81ea-73cbcd39737c",
+      "type": "image",
+      "createdAt": "2026-09-28T01:16:17.960Z",
+      "updatedAt": "2026-09-28T01:16:17.960Z",
+      "prompt": "A straight-on front-view trucker cap using the first reference for overall fullness and the second reference for visor curve language. The front visor should sit BETWEEN the two references, leaning closer to the second reference: shallow, compact and gently curved, but not as flat as the second. Keep slightly more visor depth/body like the first reference while staying tucked close to the crown. The visor should read through a slight lower-edge inset, gentle taper and clean crown-to-visor join, not through forward projection. Avoid a top-down camera feeling, avoid a thick shelf-like brim, and keep the hat centered and straight-on. Keep the crown/body proportion similar to the references. No head, face, hair, logo, text, mannequin, hands or scene.",
+      "width": 32,
+      "height": 32,
+      "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/7efb9f74-2305-4dd3-81ea-73cbcd39737c/image.png?v=1790558177960",
+      "style": "default",
+      "contentType": "image/png",
+      "batchId": "d6319371-d50d-4b87-9f54-af509c66caa0",
+      "batchIndex": 8,
+      "batchSize": 9,
+      "action": {
+        "kind": "same-style",
+        "sourceImageAssetId": "48e4679f-495c-4fef-9862-21571e8164a0",
+        "sourceImageAssetIds": [
+          "48e4679f-495c-4fef-9862-21571e8164a0",
+          "e510d078-c41f-49ae-ad22-9a1978a4485b"
+        ]
+      }
+    }
+  },
+  {
+    "type": "completed",
+    "status": "succeeded",
+    "output_count": 9,
+    "credits": {
+      "remaining": 405
+    }
+  }
+]
