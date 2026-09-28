@@ -1,0 +1,95 @@
+{
+  "kind": "hat",
+  "sourceIndex": 98,
+  "themeA": "STREET_TEAL_GRAPHITE",
+  "themeB": "CEREMONIAL_CRIMSON_IVORY",
+  "sourcePixelSha256": "6fd1317e4bf8db61438199ed81b1836dfb28530d0cab6e0c5cb6695f4375c4a1",
+  "sourceAlphaSha256": "8feb1fd4abede30af3354c14928956b0aaa1383e1a59e34c560ea29ff8f7b8e0",
+  "rules": [
+    "exact source alpha/coordinates locked",
+    "same source RGB maps identically across all views",
+    "extreme dark construction colors protected",
+    "no source shade quantization",
+    "no procedural texture/pattern",
+    "injective source-color mapping",
+    "max luminance drift <= 2.25",
+    "near-duplicate rejection: changed opaque >= 40% and avg changed RGB delta >= 18",
+    "variant-to-variant diversity preferred: >=35% pixels and avg RGB delta >=16"
+  ],
+  "metricsA": {
+    "changedOpaqueRatio": 0.9171,
+    "avgRgbDeltaChanged": 128.46,
+    "maxLumaDrift": 0.218,
+    "uniqueSourceColorsMapped": 6
+  },
+  "metricsB": {
+    "changedOpaqueRatio": 0.9171,
+    "avgRgbDeltaChanged": 18.17,
+    "maxLumaDrift": 0.27,
+    "uniqueSourceColorsMapped": 6
+  },
+  "mappingA": {
+    "73,20,35": [
+      8,
+      49,
+      57
+    ],
+    "88,26,25": [
+      9,
+      56,
+      76
+    ],
+    "108,29,27": [
+      7,
+      68,
+      93
+    ],
+    "127,27,27": [
+      0,
+      76,
+      108
+    ],
+    "156,31,30": [
+      4,
+      90,
+      126
+    ],
+    "192,52,30": [
+      2,
+      131,
+      122
+    ]
+  },
+  "mappingB": {
+    "73,20,35": [
+      72,
+      22,
+      28
+    ],
+    "88,26,25": [
+      91,
+      23,
+      33
+    ],
+    "108,29,27": [
+      112,
+      25,
+      37
+    ],
+    "127,27,27": [
+      131,
+      23,
+      38
+    ],
+    "156,31,30": [
+      161,
+      26,
+      45
+    ],
+    "192,52,30": [
+      129,
+      89,
+      5
+    ]
+  }
+}

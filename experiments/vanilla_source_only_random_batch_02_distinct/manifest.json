@@ -1,0 +1,252 @@
+{
+  "schema": "stardew-only-remix/v3",
+  "purpose": "meaningfully different vanilla-derived wardrobe variants without generated geometry",
+  "regressionSet": {
+    "hats": [
+      52,
+      66,
+      79,
+      98,
+      33,
+      82
+    ],
+    "shirts": [
+      527,
+      481,
+      225,
+      584,
+      535,
+      424
+    ]
+  },
+  "records": [
+    {
+      "dir": "hat_052",
+      "kind": "hat",
+      "sourceIndex": 52,
+      "themeA": "LUXURY_JADE_BRONZE",
+      "themeB": "GOTHIC_WINE_ASH",
+      "metricsA": {
+        "changedOpaqueRatio": 0.7931,
+        "avgRgbDeltaChanged": 162.22,
+        "maxLumaDrift": 0.408,
+        "uniqueSourceColorsMapped": 5
+      },
+      "metricsB": {
+        "changedOpaqueRatio": 0.7931,
+        "avgRgbDeltaChanged": 38.94,
+        "maxLumaDrift": 0.343,
+        "uniqueSourceColorsMapped": 5
+      }
+    },
+    {
+      "dir": "hat_066",
+      "kind": "hat",
+      "sourceIndex": 66,
+      "themeA": "LUXURY_JADE_BRONZE",
+      "themeB": "GOTHIC_WINE_ASH",
+      "metricsA": {
+        "changedOpaqueRatio": 0.9365,
+        "avgRgbDeltaChanged": 36.06,
+        "maxLumaDrift": 0.194,
+        "uniqueSourceColorsMapped": 7
+      },
+      "metricsB": {
+        "changedOpaqueRatio": 0.9365,
+        "avgRgbDeltaChanged": 35.88,
+        "maxLumaDrift": 0.288,
+        "uniqueSourceColorsMapped": 7
+      }
+    },
+    {
+      "dir": "hat_079",
+      "kind": "hat",
+      "sourceIndex": 79,
+      "themeA": "EVERYDAY_STONE_BLUE",
+      "themeB": "CEREMONIAL_CRIMSON_IVORY",
+      "metricsA": {
+        "changedOpaqueRatio": 0.7535,
+        "avgRgbDeltaChanged": 215.4,
+        "maxLumaDrift": 0.232,
+        "uniqueSourceColorsMapped": 6
+      },
+      "metricsB": {
+        "changedOpaqueRatio": 0.7535,
+        "avgRgbDeltaChanged": 25.55,
+        "maxLumaDrift": 0.275,
+        "uniqueSourceColorsMapped": 6
+      }
+    },
+    {
+      "dir": "hat_098",
+      "kind": "hat",
+      "sourceIndex": 98,
+      "themeA": "STREET_TEAL_GRAPHITE",
+      "themeB": "CEREMONIAL_CRIMSON_IVORY",
+      "metricsA": {
+        "changedOpaqueRatio": 0.9171,
+        "avgRgbDeltaChanged": 128.46,
+        "maxLumaDrift": 0.218,
+        "uniqueSourceColorsMapped": 6
+      },
+      "metricsB": {
+        "changedOpaqueRatio": 0.9171,
+        "avgRgbDeltaChanged": 18.17,
+        "maxLumaDrift": 0.27,
+        "uniqueSourceColorsMapped": 6
+      }
+    },
+    {
+      "dir": "hat_033",
+      "kind": "hat",
+      "sourceIndex": 33,
+      "themeA": "LUXURY_JADE_BRONZE",
+      "themeB": "GOTHIC_WINE_ASH",
+      "metricsA": {
+        "changedOpaqueRatio": 0.9415,
+        "avgRgbDeltaChanged": 116.85,
+        "maxLumaDrift": 0.348,
+        "uniqueSourceColorsMapped": 7
+      },
+      "metricsB": {
+        "changedOpaqueRatio": 0.9415,
+        "avgRgbDeltaChanged": 28.59,
+        "maxLumaDrift": 0.381,
+        "uniqueSourceColorsMapped": 7
+      }
+    },
+    {
+      "dir": "hat_082",
+      "kind": "hat",
+      "sourceIndex": 82,
+      "themeA": "SPRING_SAGE_PETAL",
+      "themeB": "GOTHIC_WINE_ASH",
+      "metricsA": {
+        "changedOpaqueRatio": 0.6098,
+        "avgRgbDeltaChanged": 47.27,
+        "maxLumaDrift": 0.322,
+        "uniqueSourceColorsMapped": 2
+      },
+      "metricsB": {
+        "changedOpaqueRatio": 0.6098,
+        "avgRgbDeltaChanged": 37.79,
+        "maxLumaDrift": 0.095,
+        "uniqueSourceColorsMapped": 2
+      }
+    },
+    {
+      "dir": "shirt_527",
+      "kind": "shirt",
+      "sourceIndex": 527,
+      "themeA": "CYBER_CYAN_MAGENTA",
+      "themeB": "CUTE_TAN_RIBBON",
+      "metricsA": {
+        "changedOpaqueRatio": 1.0,
+        "avgRgbDeltaChanged": 124.44,
+        "maxLumaDrift": 0.398,
+        "uniqueSourceColorsMapped": 8
+      },
+      "metricsB": {
+        "changedOpaqueRatio": 1.0,
+        "avgRgbDeltaChanged": 54.7,
+        "maxLumaDrift": 0.364,
+        "uniqueSourceColorsMapped": 8
+      }
+    },
+    {
+      "dir": "shirt_481",
+      "kind": "shirt",
+      "sourceIndex": 481,
+      "themeA": "CUTE_PERIWINKLE_HEART",
+      "themeB": "FORMAL_PEARL_MIDNIGHT",
+      "metricsA": {
+        "changedOpaqueRatio": 1.0,
+        "avgRgbDeltaChanged": 83.28,
+        "maxLumaDrift": 0.394,
+        "uniqueSourceColorsMapped": 10
+      },
+      "metricsB": {
+        "changedOpaqueRatio": 1.0,
+        "avgRgbDeltaChanged": 21.36,
+        "maxLumaDrift": 0.33,
+        "uniqueSourceColorsMapped": 10
+      }
+    },
+    {
+      "dir": "shirt_225",
+      "kind": "shirt",
+      "sourceIndex": 225,
+      "themeA": "LUXURY_JADE_BRONZE",
+      "themeB": "GOTHIC_WINE_ASH",
+      "metricsA": {
+        "changedOpaqueRatio": 1.0,
+        "avgRgbDeltaChanged": 138.94,
+        "maxLumaDrift": 0.334,
+        "uniqueSourceColorsMapped": 5
+      },
+      "metricsB": {
+        "changedOpaqueRatio": 1.0,
+        "avgRgbDeltaChanged": 38.0,
+        "maxLumaDrift": 0.369,
+        "uniqueSourceColorsMapped": 5
+      }
+    },
+    {
+      "dir": "shirt_584",
+      "kind": "shirt",
+      "sourceIndex": 584,
+      "themeA": "COASTAL_SEAFOAM_CORAL",
+      "themeB": "FIELD_CANVAS_MOSS",
+      "metricsA": {
+        "changedOpaqueRatio": 1.0,
+        "avgRgbDeltaChanged": 209.56,
+        "maxLumaDrift": 0.472,
+        "uniqueSourceColorsMapped": 7
+      },
+      "metricsB": {
+        "changedOpaqueRatio": 1.0,
+        "avgRgbDeltaChanged": 37.94,
+        "maxLumaDrift": 0.326,
+        "uniqueSourceColorsMapped": 7
+      }
+    },
+    {
+      "dir": "shirt_535",
+      "kind": "shirt",
+      "sourceIndex": 535,
+      "themeA": "CUTE_OLIVE_GOLD",
+      "themeB": "GOTHIC_WINE_ASH",
+      "metricsA": {
+        "changedOpaqueRatio": 1.0,
+        "avgRgbDeltaChanged": 24.74,
+        "maxLumaDrift": 0.224,
+        "uniqueSourceColorsMapped": 3
+      },
+      "metricsB": {
+        "changedOpaqueRatio": 0.6667,
+        "avgRgbDeltaChanged": 36.25,
+        "maxLumaDrift": 0.202,
+        "uniqueSourceColorsMapped": 3
+      }
+    },
+    {
+      "dir": "shirt_424",
+      "kind": "shirt",
+      "sourceIndex": 424,
+      "themeA": "PASTEL_PEACH_LILAC",
+      "themeB": "WORKWEAR_DENIM_RUST",
+      "metricsA": {
+        "changedOpaqueRatio": 0.7627,
+        "avgRgbDeltaChanged": 109.28,
+        "maxLumaDrift": 0.237,
+        "uniqueSourceColorsMapped": 6
+      },
+      "metricsB": {
+        "changedOpaqueRatio": 0.7627,
+        "avgRgbDeltaChanged": 28.58,
+        "maxLumaDrift": 0.395,
+        "uniqueSourceColorsMapped": 6
+      }
+    }
+  ]
+}

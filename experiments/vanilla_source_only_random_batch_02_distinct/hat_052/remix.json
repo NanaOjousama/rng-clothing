@@ -1,0 +1,85 @@
+{
+  "kind": "hat",
+  "sourceIndex": 52,
+  "themeA": "LUXURY_JADE_BRONZE",
+  "themeB": "GOTHIC_WINE_ASH",
+  "sourcePixelSha256": "b62f27a9d301fa897f6b58451b93e4fd0a54cc1fe84e1f4588a9d21b154c9b36",
+  "sourceAlphaSha256": "65e87f600da7e0182e824f299d90a63666dc7ceec7372ab209a59fcad8b1bb02",
+  "rules": [
+    "exact source alpha/coordinates locked",
+    "same source RGB maps identically across all views",
+    "extreme dark construction colors protected",
+    "no source shade quantization",
+    "no procedural texture/pattern",
+    "injective source-color mapping",
+    "max luminance drift <= 2.25",
+    "near-duplicate rejection: changed opaque >= 40% and avg changed RGB delta >= 18",
+    "variant-to-variant diversity preferred: >=35% pixels and avg RGB delta >=16"
+  ],
+  "metricsA": {
+    "changedOpaqueRatio": 0.7931,
+    "avgRgbDeltaChanged": 162.22,
+    "maxLumaDrift": 0.408,
+    "uniqueSourceColorsMapped": 5
+  },
+  "metricsB": {
+    "changedOpaqueRatio": 0.7931,
+    "avgRgbDeltaChanged": 38.94,
+    "maxLumaDrift": 0.343,
+    "uniqueSourceColorsMapped": 5
+  },
+  "mappingA": {
+    "91,13,30": [
+      1,
+      57,
+      38
+    ],
+    "142,21,47": [
+      2,
+      90,
+      59
+    ],
+    "196,62,82": [
+      10,
+      153,
+      103
+    ],
+    "217,132,144": [
+      104,
+      191,
+      133
+    ],
+    "217,183,187": [
+      165,
+      211,
+      180
+    ]
+  },
+  "mappingB": {
+    "91,13,30": [
+      90,
+      9,
+      51
+    ],
+    "142,21,47": [
+      141,
+      15,
+      80
+    ],
+    "196,62,82": [
+      196,
+      53,
+      127
+    ],
+    "217,132,144": [
+      186,
+      134,
+      212
+    ],
+    "217,183,187": [
+      208,
+      181,
+      222
+    ]
+  }
+}

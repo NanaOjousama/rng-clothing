@@ -1,0 +1,65 @@
+{
+  "kind": "shirt",
+  "sourceIndex": 535,
+  "themeA": "CUTE_OLIVE_GOLD",
+  "themeB": "GOTHIC_WINE_ASH",
+  "sourcePixelSha256": "41926383b3175109320f65bdcc3204203dd0d6daa2dbd44d452d4fc9bdf0088a",
+  "sourceAlphaSha256": "510684b3d95c2b388e757c3c9545d79788425623717b92fe50f9699283edfd99",
+  "rules": [
+    "exact source alpha/coordinates locked",
+    "same source RGB maps identically across all views",
+    "extreme dark construction colors protected",
+    "no source shade quantization",
+    "no procedural texture/pattern",
+    "injective source-color mapping",
+    "max luminance drift <= 2.25",
+    "near-duplicate rejection: changed opaque >= 40% and avg changed RGB delta >= 18",
+    "variant-to-variant diversity preferred: >=35% pixels and avg RGB delta >=16"
+  ],
+  "metricsA": {
+    "changedOpaqueRatio": 1.0,
+    "avgRgbDeltaChanged": 24.74,
+    "maxLumaDrift": 0.224,
+    "uniqueSourceColorsMapped": 3
+  },
+  "metricsB": {
+    "changedOpaqueRatio": 0.6667,
+    "avgRgbDeltaChanged": 36.25,
+    "maxLumaDrift": 0.202,
+    "uniqueSourceColorsMapped": 3
+  },
+  "mappingA": {
+    "130,130,130": [
+      105,
+      147,
+      110
+    ],
+    "198,198,198": [
+      173,
+      215,
+      178
+    ],
+    "254,254,254": [
+      253,
+      255,
+      253
+    ]
+  },
+  "mappingB": {
+    "130,130,130": [
+      161,
+      113,
+      138
+    ],
+    "198,198,198": [
+      229,
+      181,
+      206
+    ],
+    "254,254,254": [
+      254,
+      254,
+      254
+    ]
+  }
+}

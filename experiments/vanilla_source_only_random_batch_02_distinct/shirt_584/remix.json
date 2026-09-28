@@ -1,0 +1,105 @@
+{
+  "kind": "shirt",
+  "sourceIndex": 584,
+  "themeA": "COASTAL_SEAFOAM_CORAL",
+  "themeB": "FIELD_CANVAS_MOSS",
+  "sourcePixelSha256": "8e1936866e5ef0b4f4491143a269631c536af5c43d9550e9fbf4c77468325614",
+  "sourceAlphaSha256": "13479171a49cdb85c41e4a2916a91a093666e81ef9139703b5773138ad7c26fe",
+  "rules": [
+    "exact source alpha/coordinates locked",
+    "same source RGB maps identically across all views",
+    "extreme dark construction colors protected",
+    "no source shade quantization",
+    "no procedural texture/pattern",
+    "injective source-color mapping",
+    "max luminance drift <= 2.25",
+    "near-duplicate rejection: changed opaque >= 40% and avg changed RGB delta >= 18",
+    "variant-to-variant diversity preferred: >=35% pixels and avg RGB delta >=16"
+  ],
+  "metricsA": {
+    "changedOpaqueRatio": 1.0,
+    "avgRgbDeltaChanged": 209.56,
+    "maxLumaDrift": 0.472,
+    "uniqueSourceColorsMapped": 7
+  },
+  "metricsB": {
+    "changedOpaqueRatio": 1.0,
+    "avgRgbDeltaChanged": 37.94,
+    "maxLumaDrift": 0.326,
+    "uniqueSourceColorsMapped": 7
+  },
+  "mappingA": {
+    "0,75,157": [
+      146,
+      30,
+      4
+    ],
+    "107,67,20": [
+      16,
+      98,
+      99
+    ],
+    "142,113,105": [
+      91,
+      133,
+      133
+    ],
+    "190,140,0": [
+      4,
+      196,
+      199
+    ],
+    "221,181,0": [
+      9,
+      241,
+      245
+    ],
+    "181,175,159": [
+      146,
+      188,
+      188
+    ],
+    "234,234,234": [
+      223,
+      239,
+      239
+    ]
+  },
+  "mappingB": {
+    "0,75,157": [
+      60,
+      74,
+      5
+    ],
+    "107,67,20": [
+      98,
+      72,
+      15
+    ],
+    "142,113,105": [
+      137,
+      118,
+      93
+    ],
+    "190,140,0": [
+      197,
+      136,
+      3
+    ],
+    "221,181,0": [
+      242,
+      169,
+      8
+    ],
+    "181,175,159": [
+      191,
+      172,
+      147
+    ],
+    "234,234,234": [
+      240,
+      233,
+      224
+    ]
+  }
+}

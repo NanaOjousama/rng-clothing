@@ -1,0 +1,115 @@
+{
+  "kind": "shirt",
+  "sourceIndex": 527,
+  "themeA": "CYBER_CYAN_MAGENTA",
+  "themeB": "CUTE_TAN_RIBBON",
+  "sourcePixelSha256": "353815faae56716fb6c001ca1f2ab08cb4e3b9fbed91f3de0f546ac1dea8f71a",
+  "sourceAlphaSha256": "a9266c47b569bc5636e02ae988d6ececd88f17ce38731767a01344aa000af55b",
+  "rules": [
+    "exact source alpha/coordinates locked",
+    "same source RGB maps identically across all views",
+    "extreme dark construction colors protected",
+    "no source shade quantization",
+    "no procedural texture/pattern",
+    "injective source-color mapping",
+    "max luminance drift <= 2.25",
+    "near-duplicate rejection: changed opaque >= 40% and avg changed RGB delta >= 18",
+    "variant-to-variant diversity preferred: >=35% pixels and avg RGB delta >=16"
+  ],
+  "metricsA": {
+    "changedOpaqueRatio": 1.0,
+    "avgRgbDeltaChanged": 124.44,
+    "maxLumaDrift": 0.398,
+    "uniqueSourceColorsMapped": 8
+  },
+  "metricsB": {
+    "changedOpaqueRatio": 1.0,
+    "avgRgbDeltaChanged": 54.7,
+    "maxLumaDrift": 0.364,
+    "uniqueSourceColorsMapped": 8
+  },
+  "mappingA": {
+    "61,54,7": [
+      9,
+      69,
+      68
+    ],
+    "67,49,32": [
+      33,
+      57,
+      78
+    ],
+    "61,84,31": [
+      56,
+      72,
+      109
+    ],
+    "113,90,66": [
+      74,
+      99,
+      121
+    ],
+    "84,132,25": [
+      74,
+      106,
+      183
+    ],
+    "150,133,84": [
+      101,
+      140,
+      174
+    ],
+    "111,191,21": [
+      108,
+      149,
+      246
+    ],
+    "203,189,131": [
+      151,
+      195,
+      233
+    ]
+  },
+  "mappingB": {
+    "61,54,7": [
+      70,
+      49,
+      10
+    ],
+    "67,49,32": [
+      74,
+      46,
+      29
+    ],
+    "61,84,31": [
+      97,
+      64,
+      39
+    ],
+    "113,90,66": [
+      117,
+      88,
+      69
+    ],
+    "84,132,25": [
+      158,
+      91,
+      41
+    ],
+    "150,133,84": [
+      167,
+      122,
+      94
+    ],
+    "111,191,21": [
+      231,
+      125,
+      45
+    ],
+    "203,189,131": [
+      225,
+      175,
+      143
+    ]
+  }
+}

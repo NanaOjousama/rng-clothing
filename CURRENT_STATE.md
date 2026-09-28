@@ -1648,3 +1648,26 @@ Scope rule: these images are geometry references only. The existing approved tru
 ## Trucker front visor SF0+SF1 hybrid study — 2026-09-27
 
 Created `experiments/trucker_front_hybrid_0_1_01/` after user clarified the desired front visor should land between Sprite Fusion hats 0 and 1: closer to SF1's shallow Stardew-like curve, but with slightly more body/fullness from SF0 and without extra projection that would imply a higher camera angle. A targeted edit returned only two oddly trimmed outputs, so a second `style-reference` pass used SF0+SF1 together and produced nine native 32x32 candidates H0-H8. Main sheets: `TRUCKER_FRONT_HYBRID_0_1_BATCH_X8.png` and `TRUCKER_FRONT_HYBRID_0_1_VISOR_CROP_X12.png`. This is reference/QC only; the construction printer has not been modified from this experiment yet.
+
+## 2026-09-27 — Trucker front-visor revision A/B/C (experimental)
+
+- Adapted the approved trucker front visor toward the SF0/SF1 hybrids (H4 primary, H1, H5, H3, H7). Only front rows 14–18 change; everything else, including wear anchor and lowest row, is identical. A = H4 arch (recommended), B = fuller H1/H7, C = subtle H3/H5.
+- Output + notes: `experiments/trucker_front_visor_revision_01/` (README, 4 sheets, `rev_*/` frames + masks). Script: `prototypes/construction_printer/visor_revisions.py`.
+- Proven: silhouette checks, construction-printer compatibility on all three. Not proven: in-game worn read. Not promoted.
+- Next test: start game → FS/ESM test pack with rev A/B/C → `tools/qc.py worn`.
+
+## 2026-09-27 — Trucker pooled construction fit from AI references (experimental)
+
+- Ran the construction-printer process on the AI reference pool plus the hybrid preference set, replacing photos. Added the `visor_shape` family parameter (current/A/B/C/D, where D = PL02 grammar) and a sprite measurement path zeroed on the family's own masks.
+- Candidates: P1 PL02-led (crown −1, panel +2, visor B); P2 preference pool = P3 whole pool (crown 0, panel +2, visor A). All 4-view, contract-valid, anchor unchanged.
+- Output: `experiments/construction_printer_trucker_pool_02/` (README, sheets, POOL_FIT.json). Not promoted; worn QC pending.
+
+## Stardew-only remix v3 — distinct piece / same vanilla construction — 2026-09-27
+
+Reworked the failed vanilla-only regression set instead of selecting easier sources. The test reuses the exact 6 hats and 6 shirts from `vanilla_source_only_random_batch_01`, where only hat 82 and some shirts had looked convincing. New isolated builder: `tools/experiment_vanilla_source_variants_v3.py`; output: `experiments/vanilla_source_only_random_batch_02_distinct/`.
+
+The v2 failure mode (forcing every source into guessed body/trim/accent buckets and rebuilding its shade ladder) is bypassed. V3 treats the vanilla sprite itself as art authority: exact alpha/pixel coordinates are locked; extreme-dark construction colors are protected; source RGB identities map consistently across all four views; source color families may move toward curated palette chroma but each original color remains injective; source luminance is retained within <=2.25; no shade quantization, procedural texture, geometry generation, motif, or resampling is allowed.
+
+A new novelty gate enforces the user's actual Stardew-only goal: outputs must be a meaningfully different wardrobe piece, not the identical source or a near-duplicate. A candidate must change >=40% of opaque pixels with average RGB distance >=18. The builder evaluates the existing approved palette library and rejects palettes that do not clear that gate; two visually distinct passing colorways are selected per source, with variant-to-variant diversity preferred.
+
+Result: all 12 original regression sources produced two passing variants each (24 variants total), while exact source alpha/construction and shade topology remain intact. Contact sheets: `STARDEW_ONLY_HAT_REMIX_V3_CONTACT.png`, `STARDEW_ONLY_SHIRT_REMIX_V3_CONTACT.png`, and combined `STARDEW_ONLY_REMIX_V3_CONTACT.png`. This is visual-QC evidence only and is not promoted into production/source-pool config yet. Material/pattern/motif variation remains intentionally deferred until a source has safe semantic masks; this pass proves distinct source-respecting colorway variation first.
