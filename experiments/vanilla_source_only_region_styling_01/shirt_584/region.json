@@ -1,0 +1,45 @@
+{
+  "dir": "shirt_584",
+  "kind": "shirt",
+  "sourceIndex": 584,
+  "material": "knit",
+  "alternateTheme": "FIELD_CANVAS_MOSS",
+  "regionTotals": {
+    "primary": 55,
+    "secondary": 61
+  },
+  "regionValid": {
+    "primary": true,
+    "secondary": true
+  },
+  "perView": {
+    "front": {
+      "primary": 12,
+      "secondary": 16
+    },
+    "right": {
+      "primary": 12,
+      "secondary": 14
+    },
+    "left": {
+      "primary": 13,
+      "secondary": 13
+    },
+    "back": {
+      "primary": 18,
+      "secondary": 18
+    }
+  },
+  "zoneA": "secondary",
+  "zoneB": "primary",
+  "appliedA": true,
+  "appliedB": true,
+  "statsA": {
+    "changedOpaqueRatio": 0.2563,
+    "avgRgbDeltaChanged": 146.24
+  },
+  "statsB": {
+    "changedOpaqueRatio": 0.2311,
+    "avgRgbDeltaChanged": 108.94
+  }
+}

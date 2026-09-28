@@ -1,0 +1,555 @@
+{
+  "schema": "stardew-only-region-styling/v5",
+  "principle": "generic source-geometry regions first; semantic names only after human/source-backed confirmation",
+  "rules": [
+    "exact alpha/geometry locked",
+    "region masks derive from source occupied geometry + safe interior",
+    "no brightness/color semantic guessing",
+    "region must have >=10 cells and appear in >=2 views",
+    "dark structural pixels and silhouette edges excluded",
+    "capacity-aware skip",
+    "region recolor preserves local luminance"
+  ],
+  "records": [
+    {
+      "dir": "hat_052",
+      "kind": "hat",
+      "sourceIndex": 52,
+      "material": "knit",
+      "alternateTheme": "GOTHIC_WINE_ASH",
+      "regionTotals": {
+        "primary": 129,
+        "secondary": 48
+      },
+      "regionValid": {
+        "primary": true,
+        "secondary": true
+      },
+      "perView": {
+        "front": {
+          "primary": 21,
+          "secondary": 2
+        },
+        "right": {
+          "primary": 31,
+          "secondary": 11
+        },
+        "left": {
+          "primary": 31,
+          "secondary": 11
+        },
+        "back": {
+          "primary": 46,
+          "secondary": 24
+        }
+      },
+      "zoneA": "secondary",
+      "zoneB": "primary",
+      "appliedA": true,
+      "appliedB": true,
+      "statsA": {
+        "changedOpaqueRatio": 0.1103,
+        "avgRgbDeltaChanged": 78.64
+      },
+      "statsB": {
+        "changedOpaqueRatio": 0.2966,
+        "avgRgbDeltaChanged": 76.64
+      }
+    },
+    {
+      "dir": "hat_066",
+      "kind": "hat",
+      "sourceIndex": 66,
+      "material": "plaid",
+      "alternateTheme": "GOTHIC_WINE_ASH",
+      "regionTotals": {
+        "primary": 149,
+        "secondary": 94
+      },
+      "regionValid": {
+        "primary": true,
+        "secondary": true
+      },
+      "perView": {
+        "front": {
+          "primary": 39,
+          "secondary": 24
+        },
+        "right": {
+          "primary": 33,
+          "secondary": 20
+        },
+        "left": {
+          "primary": 34,
+          "secondary": 20
+        },
+        "back": {
+          "primary": 43,
+          "secondary": 30
+        }
+      },
+      "zoneA": "secondary",
+      "zoneB": "primary",
+      "appliedA": true,
+      "appliedB": true,
+      "statsA": {
+        "changedOpaqueRatio": 0.1865,
+        "avgRgbDeltaChanged": 50.79
+      },
+      "statsB": {
+        "changedOpaqueRatio": 0.2956,
+        "avgRgbDeltaChanged": 38.64
+      }
+    },
+    {
+      "dir": "hat_079",
+      "kind": "hat",
+      "sourceIndex": 79,
+      "material": "wool",
+      "alternateTheme": "CEREMONIAL_CRIMSON_IVORY",
+      "regionTotals": {
+        "primary": 113,
+        "secondary": 52
+      },
+      "regionValid": {
+        "primary": true,
+        "secondary": true
+      },
+      "perView": {
+        "front": {
+          "primary": 30,
+          "secondary": 8
+        },
+        "right": {
+          "primary": 23,
+          "secondary": 15
+        },
+        "left": {
+          "primary": 22,
+          "secondary": 15
+        },
+        "back": {
+          "primary": 38,
+          "secondary": 14
+        }
+      },
+      "zoneA": "secondary",
+      "zoneB": "primary",
+      "appliedA": true,
+      "appliedB": true,
+      "statsA": {
+        "changedOpaqueRatio": 0.1806,
+        "avgRgbDeltaChanged": 114.8
+      },
+      "statsB": {
+        "changedOpaqueRatio": 0.3924,
+        "avgRgbDeltaChanged": 104.05
+      }
+    },
+    {
+      "dir": "hat_098",
+      "kind": "hat",
+      "sourceIndex": 98,
+      "material": "knit",
+      "alternateTheme": "CEREMONIAL_CRIMSON_IVORY",
+      "regionTotals": {
+        "primary": 168,
+        "secondary": 54
+      },
+      "regionValid": {
+        "primary": true,
+        "secondary": true
+      },
+      "perView": {
+        "front": {
+          "primary": 38,
+          "secondary": 8
+        },
+        "right": {
+          "primary": 37,
+          "secondary": 9
+        },
+        "left": {
+          "primary": 37,
+          "secondary": 9
+        },
+        "back": {
+          "primary": 56,
+          "secondary": 28
+        }
+      },
+      "zoneA": "secondary",
+      "zoneB": "primary",
+      "appliedA": true,
+      "appliedB": true,
+      "statsA": {
+        "changedOpaqueRatio": 0.1317,
+        "avgRgbDeltaChanged": 86.4
+      },
+      "statsB": {
+        "changedOpaqueRatio": 0.4098,
+        "avgRgbDeltaChanged": 62.68
+      }
+    },
+    {
+      "dir": "hat_033",
+      "kind": "hat",
+      "sourceIndex": 33,
+      "material": "plaid",
+      "alternateTheme": "GOTHIC_WINE_ASH",
+      "regionTotals": {
+        "primary": 58,
+        "secondary": 70
+      },
+      "regionValid": {
+        "primary": true,
+        "secondary": true
+      },
+      "perView": {
+        "front": {
+          "primary": 7,
+          "secondary": 24
+        },
+        "right": {
+          "primary": 15,
+          "secondary": 12
+        },
+        "left": {
+          "primary": 16,
+          "secondary": 12
+        },
+        "back": {
+          "primary": 20,
+          "secondary": 22
+        }
+      },
+      "zoneA": "secondary",
+      "zoneB": "primary",
+      "appliedA": true,
+      "appliedB": true,
+      "statsA": {
+        "changedOpaqueRatio": 0.1707,
+        "avgRgbDeltaChanged": 72.76
+      },
+      "statsB": {
+        "changedOpaqueRatio": 0.1415,
+        "avgRgbDeltaChanged": 57.1
+      }
+    },
+    {
+      "dir": "hat_082",
+      "kind": "hat",
+      "sourceIndex": 82,
+      "material": "wool",
+      "alternateTheme": "GOTHIC_WINE_ASH",
+      "regionTotals": {
+        "primary": 184,
+        "secondary": 130
+      },
+      "regionValid": {
+        "primary": true,
+        "secondary": true
+      },
+      "perView": {
+        "front": {
+          "primary": 50,
+          "secondary": 36
+        },
+        "right": {
+          "primary": 42,
+          "secondary": 29
+        },
+        "left": {
+          "primary": 42,
+          "secondary": 29
+        },
+        "back": {
+          "primary": 50,
+          "secondary": 36
+        }
+      },
+      "zoneA": "secondary",
+      "zoneB": "primary",
+      "appliedA": true,
+      "appliedB": true,
+      "statsA": {
+        "changedOpaqueRatio": 0.2462,
+        "avgRgbDeltaChanged": 43.45
+      },
+      "statsB": {
+        "changedOpaqueRatio": 0.3485,
+        "avgRgbDeltaChanged": 34.07
+      }
+    },
+    {
+      "dir": "shirt_527",
+      "kind": "shirt",
+      "sourceIndex": 527,
+      "material": "knit",
+      "alternateTheme": "CUTE_TAN_RIBBON",
+      "regionTotals": {
+        "primary": 65,
+        "secondary": 53
+      },
+      "regionValid": {
+        "primary": true,
+        "secondary": true
+      },
+      "perView": {
+        "front": {
+          "primary": 15,
+          "secondary": 15
+        },
+        "right": {
+          "primary": 16,
+          "secondary": 11
+        },
+        "left": {
+          "primary": 16,
+          "secondary": 11
+        },
+        "back": {
+          "primary": 18,
+          "secondary": 16
+        }
+      },
+      "zoneA": "secondary",
+      "zoneB": "primary",
+      "appliedA": true,
+      "appliedB": true,
+      "statsA": {
+        "changedOpaqueRatio": 0.2265,
+        "avgRgbDeltaChanged": 118.7
+      },
+      "statsB": {
+        "changedOpaqueRatio": 0.2778,
+        "avgRgbDeltaChanged": 76.65
+      }
+    },
+    {
+      "dir": "shirt_481",
+      "kind": "shirt",
+      "sourceIndex": 481,
+      "material": "plaid",
+      "alternateTheme": "FORMAL_PEARL_MIDNIGHT",
+      "regionTotals": {
+        "primary": 57,
+        "secondary": 46
+      },
+      "regionValid": {
+        "primary": true,
+        "secondary": true
+      },
+      "perView": {
+        "front": {
+          "primary": 13,
+          "secondary": 14
+        },
+        "right": {
+          "primary": 15,
+          "secondary": 7
+        },
+        "left": {
+          "primary": 12,
+          "secondary": 10
+        },
+        "back": {
+          "primary": 17,
+          "secondary": 15
+        }
+      },
+      "zoneA": "secondary",
+      "zoneB": "primary",
+      "appliedA": true,
+      "appliedB": true,
+      "statsA": {
+        "changedOpaqueRatio": 0.1949,
+        "avgRgbDeltaChanged": 73.61
+      },
+      "statsB": {
+        "changedOpaqueRatio": 0.2415,
+        "avgRgbDeltaChanged": 22.1
+      }
+    },
+    {
+      "dir": "shirt_225",
+      "kind": "shirt",
+      "sourceIndex": 225,
+      "material": "wool",
+      "alternateTheme": "GOTHIC_WINE_ASH",
+      "regionTotals": {
+        "primary": 60,
+        "secondary": 56
+      },
+      "regionValid": {
+        "primary": true,
+        "secondary": true
+      },
+      "perView": {
+        "front": {
+          "primary": 13,
+          "secondary": 15
+        },
+        "right": {
+          "primary": 14,
+          "secondary": 13
+        },
+        "left": {
+          "primary": 15,
+          "secondary": 12
+        },
+        "back": {
+          "primary": 18,
+          "secondary": 16
+        }
+      },
+      "zoneA": "secondary",
+      "zoneB": "primary",
+      "appliedA": true,
+      "appliedB": true,
+      "statsA": {
+        "changedOpaqueRatio": 0.2414,
+        "avgRgbDeltaChanged": 104.55
+      },
+      "statsB": {
+        "changedOpaqueRatio": 0.2586,
+        "avgRgbDeltaChanged": 73.97
+      }
+    },
+    {
+      "dir": "shirt_584",
+      "kind": "shirt",
+      "sourceIndex": 584,
+      "material": "knit",
+      "alternateTheme": "FIELD_CANVAS_MOSS",
+      "regionTotals": {
+        "primary": 55,
+        "secondary": 61
+      },
+      "regionValid": {
+        "primary": true,
+        "secondary": true
+      },
+      "perView": {
+        "front": {
+          "primary": 12,
+          "secondary": 16
+        },
+        "right": {
+          "primary": 12,
+          "secondary": 14
+        },
+        "left": {
+          "primary": 13,
+          "secondary": 13
+        },
+        "back": {
+          "primary": 18,
+          "secondary": 18
+        }
+      },
+      "zoneA": "secondary",
+      "zoneB": "primary",
+      "appliedA": true,
+      "appliedB": true,
+      "statsA": {
+        "changedOpaqueRatio": 0.2563,
+        "avgRgbDeltaChanged": 146.24
+      },
+      "statsB": {
+        "changedOpaqueRatio": 0.2311,
+        "avgRgbDeltaChanged": 108.94
+      }
+    },
+    {
+      "dir": "shirt_535",
+      "kind": "shirt",
+      "sourceIndex": 535,
+      "material": "none",
+      "alternateTheme": "GOTHIC_WINE_ASH",
+      "regionTotals": {
+        "primary": 0,
+        "secondary": 0
+      },
+      "regionValid": {
+        "primary": false,
+        "secondary": false
+      },
+      "perView": {
+        "front": {
+          "primary": 0,
+          "secondary": 0
+        },
+        "right": {
+          "primary": 0,
+          "secondary": 0
+        },
+        "left": {
+          "primary": 0,
+          "secondary": 0
+        },
+        "back": {
+          "primary": 0,
+          "secondary": 0
+        }
+      },
+      "zoneA": "secondary",
+      "zoneB": "primary",
+      "appliedA": false,
+      "appliedB": false,
+      "statsA": {
+        "changedOpaqueRatio": 0.0,
+        "avgRgbDeltaChanged": 0.0
+      },
+      "statsB": {
+        "changedOpaqueRatio": 0.0,
+        "avgRgbDeltaChanged": 0.0
+      }
+    },
+    {
+      "dir": "shirt_424",
+      "kind": "shirt",
+      "sourceIndex": 424,
+      "material": "wool",
+      "alternateTheme": "WORKWEAR_DENIM_RUST",
+      "regionTotals": {
+        "primary": 37,
+        "secondary": 23
+      },
+      "regionValid": {
+        "primary": true,
+        "secondary": true
+      },
+      "perView": {
+        "front": {
+          "primary": 9,
+          "secondary": 5
+        },
+        "right": {
+          "primary": 7,
+          "secondary": 2
+        },
+        "left": {
+          "primary": 4,
+          "secondary": 5
+        },
+        "back": {
+          "primary": 17,
+          "secondary": 11
+        }
+      },
+      "zoneA": "secondary",
+      "zoneB": "primary",
+      "appliedA": true,
+      "appliedB": true,
+      "statsA": {
+        "changedOpaqueRatio": 0.0975,
+        "avgRgbDeltaChanged": 58.33
+      },
+      "statsB": {
+        "changedOpaqueRatio": 0.1568,
+        "avgRgbDeltaChanged": 57.04
+      }
+    }
+  ]
+}

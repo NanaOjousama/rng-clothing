@@ -1,0 +1,45 @@
+{
+  "dir": "shirt_527",
+  "kind": "shirt",
+  "sourceIndex": 527,
+  "material": "knit",
+  "alternateTheme": "CUTE_TAN_RIBBON",
+  "regionTotals": {
+    "primary": 65,
+    "secondary": 53
+  },
+  "regionValid": {
+    "primary": true,
+    "secondary": true
+  },
+  "perView": {
+    "front": {
+      "primary": 15,
+      "secondary": 15
+    },
+    "right": {
+      "primary": 16,
+      "secondary": 11
+    },
+    "left": {
+      "primary": 16,
+      "secondary": 11
+    },
+    "back": {
+      "primary": 18,
+      "secondary": 16
+    }
+  },
+  "zoneA": "secondary",
+  "zoneB": "primary",
+  "appliedA": true,
+  "appliedB": true,
+  "statsA": {
+    "changedOpaqueRatio": 0.2265,
+    "avgRgbDeltaChanged": 118.7
+  },
+  "statsB": {
+    "changedOpaqueRatio": 0.2778,
+    "avgRgbDeltaChanged": 76.65
+  }
+}

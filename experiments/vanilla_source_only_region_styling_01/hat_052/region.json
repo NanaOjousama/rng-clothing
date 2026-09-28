@@ -1,0 +1,45 @@
+{
+  "dir": "hat_052",
+  "kind": "hat",
+  "sourceIndex": 52,
+  "material": "knit",
+  "alternateTheme": "GOTHIC_WINE_ASH",
+  "regionTotals": {
+    "primary": 129,
+    "secondary": 48
+  },
+  "regionValid": {
+    "primary": true,
+    "secondary": true
+  },
+  "perView": {
+    "front": {
+      "primary": 21,
+      "secondary": 2
+    },
+    "right": {
+      "primary": 31,
+      "secondary": 11
+    },
+    "left": {
+      "primary": 31,
+      "secondary": 11
+    },
+    "back": {
+      "primary": 46,
+      "secondary": 24
+    }
+  },
+  "zoneA": "secondary",
+  "zoneB": "primary",
+  "appliedA": true,
+  "appliedB": true,
+  "statsA": {
+    "changedOpaqueRatio": 0.1103,
+    "avgRgbDeltaChanged": 78.64
+  },
+  "statsB": {
+    "changedOpaqueRatio": 0.2966,
+    "avgRgbDeltaChanged": 76.64
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "dir": "shirt_424",
+  "kind": "shirt",
+  "sourceIndex": 424,
+  "material": "wool",
+  "alternateTheme": "WORKWEAR_DENIM_RUST",
+  "regionTotals": {
+    "primary": 37,
+    "secondary": 23
+  },
+  "regionValid": {
+    "primary": true,
+    "secondary": true
+  },
+  "perView": {
+    "front": {
+      "primary": 9,
+      "secondary": 5
+    },
+    "right": {
+      "primary": 7,
+      "secondary": 2
+    },
+    "left": {
+      "primary": 4,
+      "secondary": 5
+    },
+    "back": {
+      "primary": 17,
+      "secondary": 11
+    }
+  },
+  "zoneA": "secondary",
+  "zoneB": "primary",
+  "appliedA": true,
+  "appliedB": true,
+  "statsA": {
+    "changedOpaqueRatio": 0.0975,
+    "avgRgbDeltaChanged": 58.33
+  },
+  "statsB": {
+    "changedOpaqueRatio": 0.1568,
+    "avgRgbDeltaChanged": 57.04
+  }
+}

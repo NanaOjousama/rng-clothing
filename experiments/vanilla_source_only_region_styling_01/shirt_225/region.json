@@ -1,0 +1,45 @@
+{
+  "dir": "shirt_225",
+  "kind": "shirt",
+  "sourceIndex": 225,
+  "material": "wool",
+  "alternateTheme": "GOTHIC_WINE_ASH",
+  "regionTotals": {
+    "primary": 60,
+    "secondary": 56
+  },
+  "regionValid": {
+    "primary": true,
+    "secondary": true
+  },
+  "perView": {
+    "front": {
+      "primary": 13,
+      "secondary": 15
+    },
+    "right": {
+      "primary": 14,
+      "secondary": 13
+    },
+    "left": {
+      "primary": 15,
+      "secondary": 12
+    },
+    "back": {
+      "primary": 18,
+      "secondary": 16
+    }
+  },
+  "zoneA": "secondary",
+  "zoneB": "primary",
+  "appliedA": true,
+  "appliedB": true,
+  "statsA": {
+    "changedOpaqueRatio": 0.2414,
+    "avgRgbDeltaChanged": 104.55
+  },
+  "statsB": {
+    "changedOpaqueRatio": 0.2586,
+    "avgRgbDeltaChanged": 73.97
+  }
+}

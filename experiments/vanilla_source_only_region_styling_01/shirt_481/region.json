@@ -1,0 +1,45 @@
+{
+  "dir": "shirt_481",
+  "kind": "shirt",
+  "sourceIndex": 481,
+  "material": "plaid",
+  "alternateTheme": "FORMAL_PEARL_MIDNIGHT",
+  "regionTotals": {
+    "primary": 57,
+    "secondary": 46
+  },
+  "regionValid": {
+    "primary": true,
+    "secondary": true
+  },
+  "perView": {
+    "front": {
+      "primary": 13,
+      "secondary": 14
+    },
+    "right": {
+      "primary": 15,
+      "secondary": 7
+    },
+    "left": {
+      "primary": 12,
+      "secondary": 10
+    },
+    "back": {
+      "primary": 17,
+      "secondary": 15
+    }
+  },
+  "zoneA": "secondary",
+  "zoneB": "primary",
+  "appliedA": true,
+  "appliedB": true,
+  "statsA": {
+    "changedOpaqueRatio": 0.1949,
+    "avgRgbDeltaChanged": 73.61
+  },
+  "statsB": {
+    "changedOpaqueRatio": 0.2415,
+    "avgRgbDeltaChanged": 22.1
+  }
+}

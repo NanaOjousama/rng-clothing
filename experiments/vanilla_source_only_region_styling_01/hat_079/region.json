@@ -1,0 +1,45 @@
+{
+  "dir": "hat_079",
+  "kind": "hat",
+  "sourceIndex": 79,
+  "material": "wool",
+  "alternateTheme": "CEREMONIAL_CRIMSON_IVORY",
+  "regionTotals": {
+    "primary": 113,
+    "secondary": 52
+  },
+  "regionValid": {
+    "primary": true,
+    "secondary": true
+  },
+  "perView": {
+    "front": {
+      "primary": 30,
+      "secondary": 8
+    },
+    "right": {
+      "primary": 23,
+      "secondary": 15
+    },
+    "left": {
+      "primary": 22,
+      "secondary": 15
+    },
+    "back": {
+      "primary": 38,
+      "secondary": 14
+    }
+  },
+  "zoneA": "secondary",
+  "zoneB": "primary",
+  "appliedA": true,
+  "appliedB": true,
+  "statsA": {
+    "changedOpaqueRatio": 0.1806,
+    "avgRgbDeltaChanged": 114.8
+  },
+  "statsB": {
+    "changedOpaqueRatio": 0.3924,
+    "avgRgbDeltaChanged": 104.05
+  }
+}
