@@ -1,0 +1,20 @@
+{
+  "dir": "shirt_228",
+  "kind": "shirt",
+  "sourceIndex": 228,
+  "detected": [
+    "central_placket_or_buttons",
+    "contrast_panel_candidate"
+  ],
+  "used": [
+    "colorway",
+    "placket_or_buttons"
+  ],
+  "skipped": [],
+  "notes": "v8 source-safe colorway base; placket_or_buttons grammar applied (3 px)",
+  "difference": {
+    "ratio": 0.6752,
+    "avgDelta": 45.6,
+    "pixels": 158
+  }
+}

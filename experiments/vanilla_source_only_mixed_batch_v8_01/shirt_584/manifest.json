@@ -1,0 +1,23 @@
+{
+  "dir": "shirt_584",
+  "kind": "shirt",
+  "sourceIndex": 584,
+  "detected": [
+    "central_placket_or_buttons",
+    "contrast_panel_candidate",
+    "horizontal_band_or_stripe"
+  ],
+  "used": [
+    "colorway",
+    "region_style"
+  ],
+  "skipped": [
+    "shirt_graphic_grammar"
+  ],
+  "notes": "v5 base; region_material_only_control",
+  "difference": {
+    "ratio": 1.0,
+    "avgDelta": 175.81,
+    "pixels": 238
+  }
+}

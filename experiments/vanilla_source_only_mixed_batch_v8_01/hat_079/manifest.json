@@ -1,0 +1,25 @@
+{
+  "dir": "hat_079",
+  "kind": "hat",
+  "sourceIndex": 79,
+  "detected": [
+    "central_placket_or_buttons",
+    "contrast_panel_candidate",
+    "hat_lower_band_detail_candidate",
+    "horizontal_band_or_stripe"
+  ],
+  "used": [
+    "colorway",
+    "region_style"
+  ],
+  "skipped": [
+    "generic_motif",
+    "wrap_trim"
+  ],
+  "notes": "v5 region-style base",
+  "difference": {
+    "ratio": 0.7535,
+    "avgDelta": 192.66,
+    "pixels": 217
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "dir": "shirt_225",
+  "kind": "shirt",
+  "sourceIndex": 225,
+  "detected": [
+    "compact_graphic_candidate",
+    "horizontal_band_or_stripe",
+    "side_or_sleeve_contrast_candidate"
+  ],
+  "used": [
+    "colorway",
+    "region_style",
+    "horizontal_stripe_or_band"
+  ],
+  "skipped": [],
+  "notes": "v5 base; horizontal_stripe_or_band grammar applied (6 px)",
+  "difference": {
+    "ratio": 1.0,
+    "avgDelta": 113.29,
+    "pixels": 232
+  }
+}

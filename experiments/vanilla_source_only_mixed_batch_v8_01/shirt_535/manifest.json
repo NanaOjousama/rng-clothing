@@ -1,0 +1,21 @@
+{
+  "dir": "shirt_535",
+  "kind": "shirt",
+  "sourceIndex": 535,
+  "detected": [
+    "plain_or_low_detail"
+  ],
+  "used": [
+    "colorway",
+    "region_style"
+  ],
+  "skipped": [
+    "shirt_graphic_grammar"
+  ],
+  "notes": "v5 base; low_capacity_fallback",
+  "difference": {
+    "ratio": 1.0,
+    "avgDelta": 24.74,
+    "pixels": 54
+  }
+}

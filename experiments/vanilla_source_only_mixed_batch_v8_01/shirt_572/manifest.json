@@ -1,0 +1,24 @@
+{
+  "dir": "shirt_572",
+  "kind": "shirt",
+  "sourceIndex": 572,
+  "detected": [
+    "central_placket_or_buttons",
+    "compact_graphic_candidate",
+    "contrast_panel_candidate",
+    "dense_pattern_candidate",
+    "horizontal_band_or_stripe",
+    "side_or_sleeve_contrast_candidate"
+  ],
+  "used": [
+    "colorway",
+    "checker_or_plaid"
+  ],
+  "skipped": [],
+  "notes": "v8 source-safe colorway base; checker_or_plaid grammar applied (15 px)",
+  "difference": {
+    "ratio": 1.0,
+    "avgDelta": 14.84,
+    "pixels": 238
+  }
+}

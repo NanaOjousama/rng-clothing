@@ -1,0 +1,20 @@
+{
+  "dir": "shirt_239",
+  "kind": "shirt",
+  "sourceIndex": 239,
+  "detected": [
+    "central_placket_or_buttons",
+    "compact_graphic_candidate"
+  ],
+  "used": [
+    "colorway",
+    "compact_graphic"
+  ],
+  "skipped": [],
+  "notes": "v8 source-safe colorway base; compact_graphic grammar applied (4 px)",
+  "difference": {
+    "ratio": 0.7436,
+    "avgDelta": 96.59,
+    "pixels": 174
+  }
+}

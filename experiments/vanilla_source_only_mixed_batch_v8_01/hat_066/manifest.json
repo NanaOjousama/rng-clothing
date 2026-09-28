@@ -1,0 +1,27 @@
+{
+  "dir": "hat_066",
+  "kind": "hat",
+  "sourceIndex": 66,
+  "detected": [
+    "central_placket_or_buttons",
+    "compact_graphic_candidate",
+    "contrast_panel_candidate",
+    "dense_pattern_candidate",
+    "hat_lower_band_detail_candidate",
+    "horizontal_band_or_stripe"
+  ],
+  "used": [
+    "colorway",
+    "region_style",
+    "wrap_trim"
+  ],
+  "skipped": [
+    "generic_motif"
+  ],
+  "notes": "v5 region-style base; source-safe wrap trim",
+  "difference": {
+    "ratio": 0.9365,
+    "avgDelta": 33.68,
+    "pixels": 472
+  }
+}

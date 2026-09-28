@@ -1719,3 +1719,13 @@ A second conservative review layer now defines the usable seed vocabulary in `va
 The full hat audit changed the design rule: vanilla hats should **not** receive a universal motif axis. Their visual variety is dominated more by whole construction/components, bands, bows, object-shaped silhouettes, and other family-specific geometry. Hats therefore move to the later compatible vanilla-donor construction/component pass rather than generic motif transfer.
 
 V7 remains fully isolated from the production generator and has no rarity logic. The next proof is V8: generate a small mixed vanilla-only batch where each target garment may use only capabilities its own source/capacity supports, guided by the reviewed vanilla grammar seeds rather than generic motifs.
+
+## Stardew-only v8 — mixed capability batch — 2026-09-28
+
+Added `tools/experiment_vanilla_mixed_batch_v8.py` and isolated output under `experiments/vanilla_source_only_mixed_batch_v8_01/`. V8 combines the prior safe vanilla-only layers with the conservative reviewed v7 grammar. No rarity logic is used and nothing is promoted into the production generator.
+
+The first render was rejected internally because all six shirt targets selected the stripe/band branch, which defeated the purpose of a mixed proof. The retained second batch deliberately covers different target-supported vanilla grammars: shirt #225 = horizontal stripe/band; #228 = placket/buttons; #239 = compact graphic; #572 = checker/plaid; #584 = region/material-only control; #535 = low-capacity fallback with no graphic grammar. Grammar categories are accepted only when the target source both appears in the reviewed seed set and exposes the corresponding v7 capability evidence.
+
+The four hats (#52, #66, #79, #98) deliberately skip generic motifs. They use only already-proven source-safe colorway / region-style / wrap-trim axes when supported. This follows the v7 finding that vanilla hat variety is primarily construction/component-driven rather than a universal motif system.
+
+All 10 outputs preserve exact source alpha/geometry. Contact sheets: `STARDEW_ONLY_V8_HAT_MIXED_CONTACT.png` and `STARDEW_ONLY_V8_SHIRT_MIXED_CONTACT.png`. This proves that a vanilla-only content path can select different decoration/styling capabilities per garment instead of applying one universal transformation. The next remaining question is whether compatible vanilla donor constructions/components can safely create stronger hat and clothing variation without leaving Stardew-native design language.

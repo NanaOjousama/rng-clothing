@@ -1,0 +1,239 @@
+{
+  "schema": "stardew-only-mixed-batch/v8",
+  "boundary": "isolated experiment; reviewed vanilla grammar only; no rarity; no production promotion",
+  "records": [
+    {
+      "dir": "hat_052",
+      "kind": "hat",
+      "sourceIndex": 52,
+      "detected": [
+        "central_placket_or_buttons",
+        "compact_graphic_candidate",
+        "horizontal_band_or_stripe"
+      ],
+      "used": [
+        "colorway",
+        "region_style"
+      ],
+      "skipped": [
+        "generic_motif",
+        "wrap_trim"
+      ],
+      "notes": "v5 region-style base",
+      "difference": {
+        "ratio": 0.7931,
+        "avgDelta": 150.88,
+        "pixels": 345
+      }
+    },
+    {
+      "dir": "hat_066",
+      "kind": "hat",
+      "sourceIndex": 66,
+      "detected": [
+        "central_placket_or_buttons",
+        "compact_graphic_candidate",
+        "contrast_panel_candidate",
+        "dense_pattern_candidate",
+        "hat_lower_band_detail_candidate",
+        "horizontal_band_or_stripe"
+      ],
+      "used": [
+        "colorway",
+        "region_style",
+        "wrap_trim"
+      ],
+      "skipped": [
+        "generic_motif"
+      ],
+      "notes": "v5 region-style base; source-safe wrap trim",
+      "difference": {
+        "ratio": 0.9365,
+        "avgDelta": 33.68,
+        "pixels": 472
+      }
+    },
+    {
+      "dir": "hat_079",
+      "kind": "hat",
+      "sourceIndex": 79,
+      "detected": [
+        "central_placket_or_buttons",
+        "contrast_panel_candidate",
+        "hat_lower_band_detail_candidate",
+        "horizontal_band_or_stripe"
+      ],
+      "used": [
+        "colorway",
+        "region_style"
+      ],
+      "skipped": [
+        "generic_motif",
+        "wrap_trim"
+      ],
+      "notes": "v5 region-style base",
+      "difference": {
+        "ratio": 0.7535,
+        "avgDelta": 192.66,
+        "pixels": 217
+      }
+    },
+    {
+      "dir": "hat_098",
+      "kind": "hat",
+      "sourceIndex": 98,
+      "detected": [
+        "central_placket_or_buttons",
+        "compact_graphic_candidate",
+        "contrast_panel_candidate",
+        "dense_pattern_candidate",
+        "hat_lower_band_detail_candidate",
+        "horizontal_band_or_stripe"
+      ],
+      "used": [
+        "colorway",
+        "region_style",
+        "wrap_trim"
+      ],
+      "skipped": [
+        "generic_motif"
+      ],
+      "notes": "v5 region-style base; source-safe wrap trim",
+      "difference": {
+        "ratio": 0.9171,
+        "avgDelta": 115.79,
+        "pixels": 376
+      }
+    },
+    {
+      "dir": "shirt_225",
+      "kind": "shirt",
+      "sourceIndex": 225,
+      "detected": [
+        "compact_graphic_candidate",
+        "horizontal_band_or_stripe",
+        "side_or_sleeve_contrast_candidate"
+      ],
+      "used": [
+        "colorway",
+        "region_style",
+        "horizontal_stripe_or_band"
+      ],
+      "skipped": [],
+      "notes": "v5 base; horizontal_stripe_or_band grammar applied (6 px)",
+      "difference": {
+        "ratio": 1.0,
+        "avgDelta": 113.29,
+        "pixels": 232
+      }
+    },
+    {
+      "dir": "shirt_228",
+      "kind": "shirt",
+      "sourceIndex": 228,
+      "detected": [
+        "central_placket_or_buttons",
+        "contrast_panel_candidate"
+      ],
+      "used": [
+        "colorway",
+        "placket_or_buttons"
+      ],
+      "skipped": [],
+      "notes": "v8 source-safe colorway base; placket_or_buttons grammar applied (3 px)",
+      "difference": {
+        "ratio": 0.6752,
+        "avgDelta": 45.6,
+        "pixels": 158
+      }
+    },
+    {
+      "dir": "shirt_239",
+      "kind": "shirt",
+      "sourceIndex": 239,
+      "detected": [
+        "central_placket_or_buttons",
+        "compact_graphic_candidate"
+      ],
+      "used": [
+        "colorway",
+        "compact_graphic"
+      ],
+      "skipped": [],
+      "notes": "v8 source-safe colorway base; compact_graphic grammar applied (4 px)",
+      "difference": {
+        "ratio": 0.7436,
+        "avgDelta": 96.59,
+        "pixels": 174
+      }
+    },
+    {
+      "dir": "shirt_572",
+      "kind": "shirt",
+      "sourceIndex": 572,
+      "detected": [
+        "central_placket_or_buttons",
+        "compact_graphic_candidate",
+        "contrast_panel_candidate",
+        "dense_pattern_candidate",
+        "horizontal_band_or_stripe",
+        "side_or_sleeve_contrast_candidate"
+      ],
+      "used": [
+        "colorway",
+        "checker_or_plaid"
+      ],
+      "skipped": [],
+      "notes": "v8 source-safe colorway base; checker_or_plaid grammar applied (15 px)",
+      "difference": {
+        "ratio": 1.0,
+        "avgDelta": 14.84,
+        "pixels": 238
+      }
+    },
+    {
+      "dir": "shirt_584",
+      "kind": "shirt",
+      "sourceIndex": 584,
+      "detected": [
+        "central_placket_or_buttons",
+        "contrast_panel_candidate",
+        "horizontal_band_or_stripe"
+      ],
+      "used": [
+        "colorway",
+        "region_style"
+      ],
+      "skipped": [
+        "shirt_graphic_grammar"
+      ],
+      "notes": "v5 base; region_material_only_control",
+      "difference": {
+        "ratio": 1.0,
+        "avgDelta": 175.81,
+        "pixels": 238
+      }
+    },
+    {
+      "dir": "shirt_535",
+      "kind": "shirt",
+      "sourceIndex": 535,
+      "detected": [
+        "plain_or_low_detail"
+      ],
+      "used": [
+        "colorway",
+        "region_style"
+      ],
+      "skipped": [
+        "shirt_graphic_grammar"
+      ],
+      "notes": "v5 base; low_capacity_fallback",
+      "difference": {
+        "ratio": 1.0,
+        "avgDelta": 24.74,
+        "pixels": 54
+      }
+    }
+  ]
+}
