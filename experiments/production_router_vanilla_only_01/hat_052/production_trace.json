@@ -1,0 +1,18 @@
+{
+  "provenance": "VANILLA",
+  "kind": "hat",
+  "sourceIndex": 52,
+  "sourceName": "Spotted Headscarf",
+  "capacity": "medium",
+  "allowed": [
+    "recolor",
+    "region_style"
+  ],
+  "used": [
+    "recolor"
+  ],
+  "palette": "FIELD_CANVAS_MOSS",
+  "extraChangedPixels": 0,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "hat_052"
+}

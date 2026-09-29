@@ -1,0 +1,16 @@
+{
+  "schema": "rng-clothing-content-source-policy/v1",
+  "defaultMode": "Everything",
+  "modes": {
+    "VanillaOnly": ["VANILLA"],
+    "ModAuthorOnly": ["MOD_AUTHOR"],
+    "Everything": ["VANILLA", "MOD_AUTHOR", "CONSTRUCTION_PRINTER"]
+  },
+  "aliases": {
+    "vanilla": "VanillaOnly",
+    "mod_author": "ModAuthorOnly",
+    "all": "Everything",
+    "everything": "Everything"
+  },
+  "rule": "Content source filtering happens before recipe selection/rendering. Source provenance never changes after selection."
+}

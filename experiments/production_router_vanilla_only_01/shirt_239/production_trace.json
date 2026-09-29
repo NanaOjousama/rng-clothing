@@ -1,0 +1,19 @@
+{
+  "provenance": "VANILLA",
+  "kind": "shirt",
+  "sourceIndex": 239,
+  "sourceName": "Vanilla shirt 239",
+  "capacity": "medium",
+  "allowed": [
+    "recolor",
+    "compact_graphic"
+  ],
+  "used": [
+    "recolor",
+    "compact_graphic"
+  ],
+  "palette": "SAILOR_COBALT_CREAM",
+  "extraChangedPixels": 4,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "shirt_239"
+}

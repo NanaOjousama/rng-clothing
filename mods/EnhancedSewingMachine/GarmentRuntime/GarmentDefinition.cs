@@ -206,6 +206,7 @@ namespace EnhancedSewingMachine.GarmentRuntime
         // generator roll produced its pixels even when a future sewing roll
         // selected that compiled result from a pool.
         public string GeneratorId { get; set; } = "";
+        public string ContentSource { get; set; } = "";
         public int GeneratorVersion { get; set; } = 1;
         public long GeneratorSeed { get; set; }
         public string Style { get; set; } = "";
@@ -222,6 +223,7 @@ namespace EnhancedSewingMachine.GarmentRuntime
                 Palette = this.Palette ?? "",
                 Motif = this.Motif ?? "",
                 GeneratorId = this.GeneratorId ?? "",
+                ContentSource = this.ContentSource ?? "",
                 GeneratorVersion = this.GeneratorVersion,
                 GeneratorSeed = this.GeneratorSeed,
                 Style = this.Style ?? "",

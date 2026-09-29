@@ -1,0 +1,17 @@
+{
+  "provenance": "VANILLA",
+  "kind": "hat",
+  "sourceIndex": 15,
+  "sourceName": "Hunter's Cap",
+  "capacity": "small",
+  "allowed": [
+    "recolor"
+  ],
+  "used": [
+    "recolor"
+  ],
+  "palette": "COASTAL_SEAFOAM_CORAL",
+  "extraChangedPixels": 0,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "hat_015"
+}

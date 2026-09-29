@@ -1,0 +1,19 @@
+{
+  "provenance": "VANILLA",
+  "kind": "shirt",
+  "sourceIndex": 481,
+  "sourceName": "Vanilla shirt 481",
+  "capacity": "medium",
+  "allowed": [
+    "recolor",
+    "region_style"
+  ],
+  "used": [
+    "recolor",
+    "region_style"
+  ],
+  "palette": "GOTHIC_WINE_ASH",
+  "extraChangedPixels": 50,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "shirt_481"
+}

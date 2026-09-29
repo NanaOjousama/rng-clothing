@@ -1,0 +1,19 @@
+{
+  "provenance": "VANILLA",
+  "kind": "hat",
+  "sourceIndex": 98,
+  "sourceName": "Vanilla Hat 98",
+  "capacity": "medium",
+  "allowed": [
+    "recolor",
+    "crown_band"
+  ],
+  "used": [
+    "recolor",
+    "crown_band"
+  ],
+  "palette": "CUTE_ROSE_CREAM",
+  "extraChangedPixels": 40,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "hat_098"
+}

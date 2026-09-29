@@ -1,0 +1,17 @@
+{
+  "provenance": "VANILLA",
+  "kind": "shirt",
+  "sourceIndex": 535,
+  "sourceName": "Vanilla shirt 535",
+  "capacity": "tiny",
+  "allowed": [
+    "recolor"
+  ],
+  "used": [
+    "recolor"
+  ],
+  "palette": "SPRING_SAGE_PETAL",
+  "extraChangedPixels": 0,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "shirt_535"
+}

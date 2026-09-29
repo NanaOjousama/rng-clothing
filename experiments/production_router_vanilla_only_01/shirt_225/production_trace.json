@@ -1,0 +1,20 @@
+{
+  "provenance": "VANILLA",
+  "kind": "shirt",
+  "sourceIndex": 225,
+  "sourceName": "Vanilla shirt 225",
+  "capacity": "medium",
+  "allowed": [
+    "recolor",
+    "region_style",
+    "horizontal_stripe_or_band"
+  ],
+  "used": [
+    "recolor",
+    "horizontal_stripe_or_band"
+  ],
+  "palette": "COASTAL_SEAFOAM_CORAL",
+  "extraChangedPixels": 6,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "shirt_225"
+}

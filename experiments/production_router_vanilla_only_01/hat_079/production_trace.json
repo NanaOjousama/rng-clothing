@@ -1,0 +1,17 @@
+{
+  "provenance": "VANILLA",
+  "kind": "hat",
+  "sourceIndex": 79,
+  "sourceName": "Small Cap",
+  "capacity": "tiny",
+  "allowed": [
+    "recolor"
+  ],
+  "used": [
+    "recolor"
+  ],
+  "palette": "DESERT_CLAY_TURQUOISE",
+  "extraChangedPixels": 0,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "hat_079"
+}

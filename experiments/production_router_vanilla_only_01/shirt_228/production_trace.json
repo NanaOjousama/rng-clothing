@@ -1,0 +1,19 @@
+{
+  "provenance": "VANILLA",
+  "kind": "shirt",
+  "sourceIndex": 228,
+  "sourceName": "Vanilla shirt 228",
+  "capacity": "medium",
+  "allowed": [
+    "recolor",
+    "placket_or_buttons"
+  ],
+  "used": [
+    "recolor",
+    "placket_or_buttons"
+  ],
+  "palette": "AUTUMN_OCHRE_PLUM",
+  "extraChangedPixels": 3,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "shirt_228"
+}

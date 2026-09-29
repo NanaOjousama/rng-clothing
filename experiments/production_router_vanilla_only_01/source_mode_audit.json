@@ -1,0 +1,393 @@
+{
+  "VanillaOnly": {
+    "mode": "VanillaOnly",
+    "allowedSources": [
+      "VANILLA"
+    ],
+    "hat": [
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 15
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 16
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 17
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 52
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 55
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 66
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 79
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 98
+      }
+    ],
+    "shirt": [
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 225
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 228
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 239
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 424
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 481
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 535
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 572
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 584
+      }
+    ]
+  },
+  "ModAuthorOnly": {
+    "mode": "ModAuthorOnly",
+    "allowedSources": [
+      "MOD_AUTHOR"
+    ],
+    "hat": [
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_alt_fashion_set_beanie"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_alt_fashion_set_earmuffs_horns"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_alt_fashion_set_headband_studded"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_cottagecore_set_beret"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_cottagecore_set_boater_hat"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_cottagecore_set_headband_daisies"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_cottagecore_set_headscarf"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_cottagecore_set_hood_mushroom"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_cottagecore_set_mushroom_hat"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_beanie"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_bows_double_small_1"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_crown_diadem_1"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_earmuffs"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_garland_dried_1"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_hair_buns"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_headband"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_hood"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_straw_hat"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_sun_hat"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_tulip_hat"
+      }
+    ],
+    "shirt": []
+  },
+  "Everything": {
+    "mode": "Everything",
+    "allowedSources": [
+      "CONSTRUCTION_PRINTER",
+      "MOD_AUTHOR",
+      "VANILLA"
+    ],
+    "hat": [
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 15
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 16
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 17
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 52
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 55
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 66
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 79
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "hat",
+        "sourceIndex": 98
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_alt_fashion_set_beanie"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_alt_fashion_set_earmuffs_horns"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_alt_fashion_set_headband_studded"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_cottagecore_set_beret"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_cottagecore_set_boater_hat"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_cottagecore_set_headband_daisies"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_cottagecore_set_headscarf"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_cottagecore_set_hood_mushroom"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_cottagecore_set_mushroom_hat"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_beanie"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_bows_double_small_1"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_crown_diadem_1"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_earmuffs"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_garland_dried_1"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_hair_buns"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_headband"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_hood"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_straw_hat"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_sun_hat"
+      },
+      {
+        "provenance": "MOD_AUTHOR",
+        "kind": "hat",
+        "family": "catalog_hats_more_accessories_and_stuff_tulip_hat"
+      }
+    ],
+    "shirt": [
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 225
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 228
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 239
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 424
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 481
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 535
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 572
+      },
+      {
+        "provenance": "VANILLA",
+        "kind": "shirt",
+        "sourceIndex": 584
+      }
+    ]
+  }
+}

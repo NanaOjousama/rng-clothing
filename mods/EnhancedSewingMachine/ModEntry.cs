@@ -19,11 +19,13 @@ namespace EnhancedSewingMachine
         private GarmentRuntimeHost runtime;
         private TailoringSelectionService tailoring;
         private EnhancedTailoringShell tailoringShell;
+        private ModConfig config;
 
         public override void Entry(IModHelper helper)
         {
+            this.config = helper.ReadConfig<ModConfig>() ?? new ModConfig();
             this.runtime = new GarmentRuntimeHost(helper, this.Monitor);
-            this.tailoring = new TailoringSelectionService(helper, this.Monitor, this.runtime.Registry);
+            this.tailoring = new TailoringSelectionService(helper, this.Monitor, this.runtime.Registry, this.config.ContentSourceMode);
             this.tailoringShell = new EnhancedTailoringShell(
                 helper,
                 this.Monitor,

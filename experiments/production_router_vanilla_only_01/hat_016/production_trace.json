@@ -1,0 +1,17 @@
+{
+  "provenance": "VANILLA",
+  "kind": "hat",
+  "sourceIndex": 16,
+  "sourceName": "Trucker Hat",
+  "capacity": "small",
+  "allowed": [
+    "recolor"
+  ],
+  "used": [
+    "recolor"
+  ],
+  "palette": "AUTUMN_OCHRE_PLUM",
+  "extraChangedPixels": 0,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "hat_016"
+}

@@ -1,0 +1,19 @@
+{
+  "provenance": "VANILLA",
+  "kind": "shirt",
+  "sourceIndex": 424,
+  "sourceName": "Vanilla shirt 424",
+  "capacity": "medium",
+  "allowed": [
+    "recolor",
+    "region_style"
+  ],
+  "used": [
+    "recolor",
+    "region_style"
+  ],
+  "palette": "FIELD_CANVAS_MOSS",
+  "extraChangedPixels": 64,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "shirt_424"
+}

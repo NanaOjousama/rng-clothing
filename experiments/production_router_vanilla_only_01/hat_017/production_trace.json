@@ -1,0 +1,17 @@
+{
+  "provenance": "VANILLA",
+  "kind": "hat",
+  "sourceIndex": 17,
+  "sourceName": "Sailor's Cap",
+  "capacity": "small",
+  "allowed": [
+    "recolor"
+  ],
+  "used": [
+    "recolor"
+  ],
+  "palette": "SAILOR_COBALT_CREAM",
+  "extraChangedPixels": 0,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "hat_017"
+}

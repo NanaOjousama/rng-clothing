@@ -1,0 +1,19 @@
+{
+  "provenance": "VANILLA",
+  "kind": "hat",
+  "sourceIndex": 55,
+  "sourceName": "Fishing Hat",
+  "capacity": "medium",
+  "allowed": [
+    "recolor",
+    "crown_band"
+  ],
+  "used": [
+    "recolor",
+    "crown_band"
+  ],
+  "palette": "GOTHIC_WINE_ASH",
+  "extraChangedPixels": 50,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "hat_055"
+}

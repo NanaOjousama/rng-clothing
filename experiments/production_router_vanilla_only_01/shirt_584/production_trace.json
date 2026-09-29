@@ -1,0 +1,19 @@
+{
+  "provenance": "VANILLA",
+  "kind": "shirt",
+  "sourceIndex": 584,
+  "sourceName": "Vanilla shirt 584",
+  "capacity": "medium",
+  "allowed": [
+    "recolor",
+    "region_style"
+  ],
+  "used": [
+    "recolor",
+    "region_style"
+  ],
+  "palette": "CUTE_ROSE_CREAM",
+  "extraChangedPixels": 90,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "shirt_584"
+}

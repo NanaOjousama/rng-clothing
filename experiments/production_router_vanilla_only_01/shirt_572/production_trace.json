@@ -1,0 +1,19 @@
+{
+  "provenance": "VANILLA",
+  "kind": "shirt",
+  "sourceIndex": 572,
+  "sourceName": "Vanilla shirt 572",
+  "capacity": "medium",
+  "allowed": [
+    "recolor",
+    "checker_or_plaid"
+  ],
+  "used": [
+    "recolor",
+    "checker_or_plaid"
+  ],
+  "palette": "DESERT_CLAY_TURQUOISE",
+  "extraChangedPixels": 15,
+  "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "dir": "shirt_572"
+}

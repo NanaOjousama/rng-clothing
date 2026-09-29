@@ -12,15 +12,18 @@ namespace EnhancedSewingMachine.TailoringSelection
         private readonly IModHelper helper;
         private readonly IMonitor monitor;
         private readonly GarmentRegistry registry;
+        private readonly string contentSourceMode;
 
         public TailoringSelectionService(
             IModHelper helper,
             IMonitor monitor,
-            GarmentRegistry registry)
+            GarmentRegistry registry,
+            string contentSourceMode)
         {
             this.helper = helper;
             this.monitor = monitor;
             this.registry = registry;
+            this.contentSourceMode = NormalizeContentSourceMode(contentSourceMode);
         }
 
         public TailoringBiasCatalog Catalog { get; private set; }
@@ -75,6 +78,7 @@ namespace EnhancedSewingMachine.TailoringSelection
             out string error)
         {
             var candidates = this.registry.All
+                .Where(IsSourceAllowed)
                 .Select(ToCandidate)
                 .ToArray();
 
@@ -99,6 +103,42 @@ namespace EnhancedSewingMachine.TailoringSelection
                 ?.OrderBy(x => x, StringComparer.OrdinalIgnoreCase)
                 ?.ToArray()
                 ?? Array.Empty<string>();
+
+
+        private bool IsSourceAllowed(RegisteredGarment registered)
+        {
+            GarmentTemplateMetadata metadata = registered.Definition.Metadata ?? new GarmentTemplateMetadata();
+            string source = metadata.ContentSource?.Trim().ToUpperInvariant() ?? "";
+
+            // Backward-compatible inference for compiled garments created before
+            // ContentSource was added. Explicit metadata always wins.
+            if (string.IsNullOrWhiteSpace(source))
+            {
+                string generator = metadata.GeneratorId?.Trim().ToLowerInvariant() ?? "";
+                if (generator.Contains("vanilla"))
+                    source = "VANILLA";
+                else if (generator.Contains("authored") || generator.Contains("source") || generator.Contains("catalog"))
+                    source = "MOD_AUTHOR";
+            }
+
+            if (this.contentSourceMode == "Everything")
+                return true;
+            if (this.contentSourceMode == "VanillaOnly")
+                return source == "VANILLA";
+            if (this.contentSourceMode == "ModAuthorOnly")
+                return source == "MOD_AUTHOR";
+            return true;
+        }
+
+        private static string NormalizeContentSourceMode(string value)
+        {
+            string mode = value?.Trim() ?? "";
+            if (mode.Equals("VanillaOnly", StringComparison.OrdinalIgnoreCase))
+                return "VanillaOnly";
+            if (mode.Equals("ModAuthorOnly", StringComparison.OrdinalIgnoreCase))
+                return "ModAuthorOnly";
+            return "Everything";
+        }
 
         private static TailoringSelectionCandidate ToCandidate(RegisteredGarment registered)
         {

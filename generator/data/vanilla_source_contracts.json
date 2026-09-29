@@ -1,0 +1,34 @@
+{
+  "schema": "rng-clothing-vanilla-source-contracts/v1",
+  "authority": "STARDEW_SOURCE_PIXELS_FIRST",
+  "rules": {
+    "geometry": "exact_source_alpha_locked",
+    "shading": "source_luminance_topology_preserved",
+    "nearDuplicateRejected": true,
+    "hatDefault": ["recolor"],
+    "shirtDefault": ["recolor", "region_style"],
+    "genericHatMotifAllowed": false,
+    "genericHatWrapTrimAllowed": false,
+    "semanticCapacityRequired": true
+  },
+  "hats": {
+    "15": {"name": "Hunter's Cap", "allowed": ["recolor"], "capacity": "small"},
+    "16": {"name": "Trucker Hat", "allowed": ["recolor"], "capacity": "small"},
+    "17": {"name": "Sailor's Cap", "allowed": ["recolor"], "capacity": "small"},
+    "52": {"name": "Spotted Headscarf", "allowed": ["recolor", "region_style"], "capacity": "medium"},
+    "55": {"name": "Fishing Hat", "allowed": ["recolor", "crown_band"], "capacity": "medium", "bandZone": "crown_mid"},
+    "66": {"name": "Garbage Hat", "allowed": ["recolor"], "capacity": "small"},
+    "79": {"name": "Small Cap", "allowed": ["recolor"], "capacity": "tiny"},
+    "98": {"name": "Vanilla Hat 98", "allowed": ["recolor", "crown_band"], "capacity": "medium", "bandZone": "crown_mid"}
+  },
+  "shirts": {
+    "225": {"allowed": ["recolor", "region_style", "horizontal_stripe_or_band"], "capacity": "medium"},
+    "228": {"allowed": ["recolor", "placket_or_buttons"], "capacity": "medium"},
+    "239": {"allowed": ["recolor", "compact_graphic"], "capacity": "medium"},
+    "424": {"allowed": ["recolor", "region_style"], "capacity": "medium"},
+    "481": {"allowed": ["recolor", "region_style"], "capacity": "medium"},
+    "535": {"allowed": ["recolor"], "capacity": "tiny"},
+    "572": {"allowed": ["recolor", "checker_or_plaid"], "capacity": "medium"},
+    "584": {"allowed": ["recolor", "region_style"], "capacity": "medium"}
+  }
+}

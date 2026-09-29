@@ -1,0 +1,301 @@
+{
+  "schema": "production-router-vanilla-only-proof/v1",
+  "mode": "VanillaOnly",
+  "allowedSources": [
+    "VANILLA"
+  ],
+  "records": [
+    {
+      "provenance": "VANILLA",
+      "kind": "hat",
+      "sourceIndex": 15,
+      "sourceName": "Hunter's Cap",
+      "capacity": "small",
+      "allowed": [
+        "recolor"
+      ],
+      "used": [
+        "recolor"
+      ],
+      "palette": "COASTAL_SEAFOAM_CORAL",
+      "extraChangedPixels": 0,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "hat_015"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "hat",
+      "sourceIndex": 16,
+      "sourceName": "Trucker Hat",
+      "capacity": "small",
+      "allowed": [
+        "recolor"
+      ],
+      "used": [
+        "recolor"
+      ],
+      "palette": "AUTUMN_OCHRE_PLUM",
+      "extraChangedPixels": 0,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "hat_016"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "hat",
+      "sourceIndex": 17,
+      "sourceName": "Sailor's Cap",
+      "capacity": "small",
+      "allowed": [
+        "recolor"
+      ],
+      "used": [
+        "recolor"
+      ],
+      "palette": "SAILOR_COBALT_CREAM",
+      "extraChangedPixels": 0,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "hat_017"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "hat",
+      "sourceIndex": 52,
+      "sourceName": "Spotted Headscarf",
+      "capacity": "medium",
+      "allowed": [
+        "recolor",
+        "region_style"
+      ],
+      "used": [
+        "recolor"
+      ],
+      "palette": "FIELD_CANVAS_MOSS",
+      "extraChangedPixels": 0,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "hat_052"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "hat",
+      "sourceIndex": 55,
+      "sourceName": "Fishing Hat",
+      "capacity": "medium",
+      "allowed": [
+        "recolor",
+        "crown_band"
+      ],
+      "used": [
+        "recolor",
+        "crown_band"
+      ],
+      "palette": "GOTHIC_WINE_ASH",
+      "extraChangedPixels": 50,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "hat_055"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "hat",
+      "sourceIndex": 66,
+      "sourceName": "Garbage Hat",
+      "capacity": "small",
+      "allowed": [
+        "recolor"
+      ],
+      "used": [
+        "recolor"
+      ],
+      "palette": "SPRING_SAGE_PETAL",
+      "extraChangedPixels": 0,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "hat_066"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "hat",
+      "sourceIndex": 79,
+      "sourceName": "Small Cap",
+      "capacity": "tiny",
+      "allowed": [
+        "recolor"
+      ],
+      "used": [
+        "recolor"
+      ],
+      "palette": "DESERT_CLAY_TURQUOISE",
+      "extraChangedPixels": 0,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "hat_079"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "hat",
+      "sourceIndex": 98,
+      "sourceName": "Vanilla Hat 98",
+      "capacity": "medium",
+      "allowed": [
+        "recolor",
+        "crown_band"
+      ],
+      "used": [
+        "recolor",
+        "crown_band"
+      ],
+      "palette": "CUTE_ROSE_CREAM",
+      "extraChangedPixels": 40,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "hat_098"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "shirt",
+      "sourceIndex": 225,
+      "sourceName": "Vanilla shirt 225",
+      "capacity": "medium",
+      "allowed": [
+        "recolor",
+        "region_style",
+        "horizontal_stripe_or_band"
+      ],
+      "used": [
+        "recolor",
+        "horizontal_stripe_or_band"
+      ],
+      "palette": "COASTAL_SEAFOAM_CORAL",
+      "extraChangedPixels": 6,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "shirt_225"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "shirt",
+      "sourceIndex": 228,
+      "sourceName": "Vanilla shirt 228",
+      "capacity": "medium",
+      "allowed": [
+        "recolor",
+        "placket_or_buttons"
+      ],
+      "used": [
+        "recolor",
+        "placket_or_buttons"
+      ],
+      "palette": "AUTUMN_OCHRE_PLUM",
+      "extraChangedPixels": 3,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "shirt_228"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "shirt",
+      "sourceIndex": 239,
+      "sourceName": "Vanilla shirt 239",
+      "capacity": "medium",
+      "allowed": [
+        "recolor",
+        "compact_graphic"
+      ],
+      "used": [
+        "recolor",
+        "compact_graphic"
+      ],
+      "palette": "SAILOR_COBALT_CREAM",
+      "extraChangedPixels": 4,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "shirt_239"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "shirt",
+      "sourceIndex": 424,
+      "sourceName": "Vanilla shirt 424",
+      "capacity": "medium",
+      "allowed": [
+        "recolor",
+        "region_style"
+      ],
+      "used": [
+        "recolor",
+        "region_style"
+      ],
+      "palette": "FIELD_CANVAS_MOSS",
+      "extraChangedPixels": 64,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "shirt_424"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "shirt",
+      "sourceIndex": 481,
+      "sourceName": "Vanilla shirt 481",
+      "capacity": "medium",
+      "allowed": [
+        "recolor",
+        "region_style"
+      ],
+      "used": [
+        "recolor",
+        "region_style"
+      ],
+      "palette": "GOTHIC_WINE_ASH",
+      "extraChangedPixels": 50,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "shirt_481"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "shirt",
+      "sourceIndex": 535,
+      "sourceName": "Vanilla shirt 535",
+      "capacity": "tiny",
+      "allowed": [
+        "recolor"
+      ],
+      "used": [
+        "recolor"
+      ],
+      "palette": "SPRING_SAGE_PETAL",
+      "extraChangedPixels": 0,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "shirt_535"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "shirt",
+      "sourceIndex": 572,
+      "sourceName": "Vanilla shirt 572",
+      "capacity": "medium",
+      "allowed": [
+        "recolor",
+        "checker_or_plaid"
+      ],
+      "used": [
+        "recolor",
+        "checker_or_plaid"
+      ],
+      "palette": "DESERT_CLAY_TURQUOISE",
+      "extraChangedPixels": 15,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "shirt_572"
+    },
+    {
+      "provenance": "VANILLA",
+      "kind": "shirt",
+      "sourceIndex": 584,
+      "sourceName": "Vanilla shirt 584",
+      "capacity": "medium",
+      "allowed": [
+        "recolor",
+        "region_style"
+      ],
+      "used": [
+        "recolor",
+        "region_style"
+      ],
+      "palette": "CUTE_ROSE_CREAM",
+      "extraChangedPixels": 90,
+      "productionAuthority": "STARDEW_SOURCE_PIXELS_FIRST",
+      "dir": "shirt_584"
+    }
+  ]
+}
