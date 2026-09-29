@@ -1729,3 +1729,9 @@ The first render was rejected internally because all six shirt targets selected 
 The four hats (#52, #66, #79, #98) deliberately skip generic motifs. They use only already-proven source-safe colorway / region-style / wrap-trim axes when supported. This follows the v7 finding that vanilla hat variety is primarily construction/component-driven rather than a universal motif system.
 
 All 10 outputs preserve exact source alpha/geometry. Contact sheets: `STARDEW_ONLY_V8_HAT_MIXED_CONTACT.png` and `STARDEW_ONLY_V8_SHIRT_MIXED_CONTACT.png`. This proves that a vanilla-only content path can select different decoration/styling capabilities per garment instead of applying one universal transformation. The next remaining question is whether compatible vanilla donor constructions/components can safely create stronger hat and clothing variation without leaving Stardew-native design language.
+
+## Stardew-only v8 contact-sheet overlap fix — 2026-09-28
+
+User visually flagged hat #79 and #98 generated rows as failures and questioned hat #66. Inspection of the individual 20x20 output PNGs showed #79/#98 were not broken: the V8 hat contact-sheet renderer placed the SOURCE 4-view group directly against the VARIANT group with no inter-group spacing, so the source Back frame overlapped the variant Front frame and made the generated hats look like two sprites mashed together. `tools/experiment_vanilla_mixed_batch_v8.py` now computes group width dynamically and inserts a dedicated gap between SOURCE and VARIANT groups. The regenerated `STARDEW_ONLY_V8_HAT_MIXED_CONTACT.png` shows clean, separate frames.
+
+Hat labels now include vanilla names when available. Hat #66 is confirmed from vanilla `Data/hats.json` as `Garbage Hat`; its round trash-can-lid / donut-like read is source-authentic, not a generator defect. Hat #79 is `Small Cap`. No generated hat geometry was changed by this correction; this was a QC presentation bug only.

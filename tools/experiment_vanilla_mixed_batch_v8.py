@@ -14,6 +14,7 @@ VIEWS=('front','right','left','back')
 HATS=Image.open(GAME/'hats.png').convert('RGBA')
 SHIRTS=Image.open(GAME/'shirts.png').convert('RGBA')
 PALETTES={p['id']:p for p in json.loads((ROOT/'authored/palettes.json').read_text())['palettes']}
+HAT_DATA=json.loads((GAME.parent.parent/'Data/hats.json').read_text()) if (GAME.parent.parent/'Data/hats.json').exists() else {}
 REVIEW=json.loads((V7/'vanilla_donor_vocabulary_reviewed.json').read_text())['categories']
 CATALOG=json.loads((V7/'capability_catalog.json').read_text())['records']
 CAP={(r['kind'],r['index']):r for r in CATALOG}
@@ -104,19 +105,29 @@ def fallback_colorway(source,theme):
      im.putpixel((x,y),tint_keep_luma(p,tgt,.76))
  return out
 
+def hat_name(idx):
+ raw=HAT_DATA.get(str(idx),'')
+ return raw.split('/')[0] if raw else ''
+
 def contact(records,kind,path):
  rows=[r for r in records if r['kind']==kind];sc=8 if kind=='hat' else 14; size=20 if kind=='hat' else 8
- W=1450;rowh=255 if kind=='hat' else 230;H=64+len(rows)*rowh
+ framew=size*sc; gap=12
+ groupw=4*framew+3*gap
+ source_x=70
+ variant_x=source_x+groupw+(120 if kind=='hat' else 110)
+ W=variant_x+groupw+80
+ rowh=255 if kind=='hat' else 230;H=64+len(rows)*rowh
  s=Image.new('RGBA',(W,H),(240,238,232,255));d=ImageDraw.Draw(s)
  d.text((14,10),f'STARDEW-ONLY V8 {kind.upper()} MIXED BATCH',fill=(20,20,20,255))
  d.text((14,29),'SOURCE | GENERATED VARIANT | capabilities used/skipped (no rarity)',fill=(55,55,55,255))
  for ri,r in enumerate(rows):
   y0=64+ri*rowh;f=OUT/r['dir']
-  d.text((14,y0),f"{kind.upper()} #{r['sourceIndex']}  used={','.join(r['used']) or 'none'}  skipped={','.join(r['skipped']) or 'none'}",fill=(30,30,30,255))
-  for ci,(lab,pref) in enumerate((('SOURCE','source'),('VARIANT','variant'))):
-   x0=90+ci*590;d.text((x0,y0+20),lab,fill=(65,65,65,255));x=x0
+  nm=f" ({hat_name(r['sourceIndex'])})" if kind=='hat' and hat_name(r['sourceIndex']) else ''
+  d.text((14,y0),f"{kind.upper()} #{r['sourceIndex']}{nm}  used={','.join(r['used']) or 'none'}  skipped={','.join(r['skipped']) or 'none'}",fill=(30,30,30,255))
+  for x0,lab,pref in ((source_x,'SOURCE','source'),(variant_x,'VARIANT','variant')):
+   d.text((x0,y0+20),lab,fill=(65,65,65,255));x=x0
    for v in VIEWS:
-    im=Image.open(f/f'{pref}_{v}.png').convert('RGBA');big=im.resize((size*sc,size*sc),Image.Resampling.NEAREST);s.alpha_composite(big,(x,y0+42));d.text((x,y0+45+size*sc),v[0].upper(),fill=(70,70,70,255));x+=size*sc+10
+    im=Image.open(f/f'{pref}_{v}.png').convert('RGBA');big=im.resize((framew,framew),Image.Resampling.NEAREST);s.alpha_composite(big,(x,y0+42));d.text((x,y0+45+framew),v[0].upper(),fill=(70,70,70,255));x+=framew+gap
   d.text((14,y0+rowh-28),f"{r['notes']}  | delta {r['difference']}",fill=(65,65,65,255))
  s.save(path)
 
