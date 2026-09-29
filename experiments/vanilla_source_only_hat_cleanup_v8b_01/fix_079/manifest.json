@@ -1,0 +1,12 @@
+{
+  "dir": "fix_079",
+  "idx": 79,
+  "name": "Small Cap",
+  "rule": "recolor only; no added line",
+  "bandCells": {
+    "front": [],
+    "right": [],
+    "left": [],
+    "back": []
+  }
+}

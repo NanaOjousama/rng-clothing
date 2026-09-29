@@ -1,0 +1,12 @@
+{
+  "dir": "new_015",
+  "idx": 15,
+  "name": "Hunter's Cap",
+  "rule": "recolor only; capacity too limited/ambiguous for extra detail",
+  "bandCells": {
+    "front": [],
+    "right": [],
+    "left": [],
+    "back": []
+  }
+}

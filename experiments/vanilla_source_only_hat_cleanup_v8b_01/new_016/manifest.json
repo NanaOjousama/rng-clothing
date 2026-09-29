@@ -1,0 +1,12 @@
+{
+  "dir": "new_016",
+  "idx": 16,
+  "name": "Trucker Hat",
+  "rule": "recolor only; capacity too limited/ambiguous for extra detail",
+  "bandCells": {
+    "front": [],
+    "right": [],
+    "left": [],
+    "back": []
+  }
+}
