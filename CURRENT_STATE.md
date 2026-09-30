@@ -1759,3 +1759,16 @@ The first real-generator VanillaOnly proof is under `experiments/production_rout
 Enhanced Sewing Machine now has player config plumbing via `ModConfig.ContentSourceMode` (`Everything` default; `VanillaOnly`; `ModAuthorOnly`). `GarmentTemplateMetadata` now carries `ContentSource`; tailoring selection filters registered garments by the selected mode. Explicit `ContentSource` wins; legacy compiled garments may infer provenance from `GeneratorId` for backward compatibility. Unknown/unannotated garments are available in Everything but not restrictive modes. This adds the config/filter boundary without introducing a dependency or a new UI requirement.
 
 Validation: `tools/validate_content_source_routing.py` passes; existing source-respecting hat production validator passes all 20 families / 147 approved pairs / 80 rarity candidates; generator-wide taste policy passes; catalog template promotion validator passes (47 promoted / 6 deferred); EnhancedSewingMachine Release build succeeds with 0 warnings / 0 errors and deploys normally to the Steam Deck Mods folder.
+
+
+## 2026-09-29 — Trucker rerouted through frozen HAT_RENDERER_V1 proof
+
+- Confirmed the noisy TEAL/INDIGO regression came from the separate uncommitted `generator/source_mask_renderer.py` path, not the frozen production renderer.
+- Kept the approved `trucker_pl02_editref24` construction and masks; no frozen renderer module was modified.
+- Added isolated onboarding proof tool `tools/build_trucker_hatrenderer_v1_proof.py`.
+- The onboarding step collapses each semantic trucker component to a bounded 3–4 tone Stardew-style ramp globally across views, while leaving protected construction/outline pixels source-exact.
+- The resulting approved-style golden state is passed into the existing frozen `generator.hat_hybrid_enhancements.enhance_frames(..., "trucker", ...)` path unchanged.
+- The proof has zero dependency on `source_mask_renderer.py`.
+- Output: `experiments/trucker_hatrenderer_v1_proof_01/TRUCKER_HAT_RENDERER_V1_CONTACT.png` plus per-view TEAL_WORKWEAR and INDIGO_SAGE frames and `proof_report.json`.
+- Hard checks pass: bounded semantic ramps, outline preserved, alpha preserved, no renderer redesign; existing `v5.tests.test_trucker_pl02_editref24` remains 4/4 passing.
+- Status: CANDIDATE PROOF ONLY. Do not register/promote trucker into `HAT_PRODUCTION_GOLDEN_V1` until the new contact is visually approved.

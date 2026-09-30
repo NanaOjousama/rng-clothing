@@ -1,0 +1,449 @@
+{
+  "schema": "trucker-hat-renderer-v1-proof/v1",
+  "rendererContract": "HAT_RENDERER_V1",
+  "rendererContractStatus": "FROZEN",
+  "template": "trucker_pl02_editref24",
+  "sourceMaskRendererUsed": false,
+  "frozenProductionModulesModified": false,
+  "contractVerification": {
+    "template": "trucker_pl02_editref24",
+    "views": {
+      "front": {
+        "sha256": "c8ec90bbc9350c712e369efb814f2f2e89b02d3bc221aeb34a35b29d28a52db7",
+        "alphaSha256": "6b4206d8e47c460bad57382303445a8eb1421c3083afdd4aace392b15ae21fa4",
+        "opaque": 222
+      },
+      "right": {
+        "sha256": "9d0a6fb8c6ffd73a7aa8f1b03367ed2a0b6da2b71d6c8d6356a2fcd48441c6f2",
+        "alphaSha256": "dc07e821479005bc16a3804b0a5067e7b9b6e4bba91dca8fe50ec60817dff4cb",
+        "opaque": 205
+      },
+      "left": {
+        "sha256": "7ef109d664eccecdc6d03ef9242e0ec9512bd593b8c122247c382f9462062acb",
+        "alphaSha256": "b13b7117e1fa021368c1edd37884554e293695ea11de225d904e793442dd71c4",
+        "opaque": 205
+      },
+      "back": {
+        "sha256": "d296c4b2054631bebf4a9f44aad4269333230249e166ab2601824571cea0ff6e",
+        "alphaSha256": "bcbbf0abad2eb045bc40689d4eb13eeb537157a5b1e32ceaa81f0923e2543f21",
+        "opaque": 214
+      }
+    },
+    "ok": true
+  },
+  "maskVerification": {
+    "front": {
+      "opaque": 222,
+      "masked": 174,
+      "protected": 48,
+      "regions": {
+        "front_panel": 74,
+        "rear_mesh": 52,
+        "brim": 46,
+        "top_button": 2,
+        "back_closure": 0
+      }
+    },
+    "right": {
+      "opaque": 205,
+      "masked": 151,
+      "protected": 54,
+      "regions": {
+        "front_panel": 31,
+        "rear_mesh": 97,
+        "brim": 18,
+        "top_button": 2,
+        "back_closure": 3
+      }
+    },
+    "left": {
+      "opaque": 205,
+      "masked": 151,
+      "protected": 54,
+      "regions": {
+        "front_panel": 31,
+        "rear_mesh": 97,
+        "brim": 18,
+        "top_button": 2,
+        "back_closure": 3
+      }
+    },
+    "back": {
+      "opaque": 214,
+      "masked": 150,
+      "protected": 64,
+      "regions": {
+        "front_panel": 0,
+        "rear_mesh": 130,
+        "brim": 0,
+        "top_button": 2,
+        "back_closure": 18
+      }
+    }
+  },
+  "variants": [
+    {
+      "id": "TEAL_WORKWEAR",
+      "rarity": "common",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "none",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "onboardingPaletteCollapse": {
+        "front_panel": {
+          "sourceColorCount": 31,
+          "goldenColorCount": 4,
+          "rampLimit": 4,
+          "usedColors": [
+            [
+              35,
+              58,
+              63
+            ],
+            [
+              46,
+              91,
+              96
+            ],
+            [
+              67,
+              130,
+              130
+            ],
+            [
+              104,
+              167,
+              159
+            ]
+          ]
+        },
+        "rear_mesh": {
+          "sourceColorCount": 103,
+          "goldenColorCount": 3,
+          "rampLimit": 3,
+          "usedColors": [
+            [
+              38,
+              61,
+              58
+            ],
+            [
+              58,
+              100,
+              91
+            ],
+            [
+              94,
+              142,
+              124
+            ]
+          ]
+        },
+        "brim": {
+          "sourceColorCount": 33,
+          "goldenColorCount": 4,
+          "rampLimit": 4,
+          "usedColors": [
+            [
+              70,
+              48,
+              29
+            ],
+            [
+              115,
+              78,
+              39
+            ],
+            [
+              164,
+              116,
+              58
+            ],
+            [
+              205,
+              158,
+              82
+            ]
+          ]
+        },
+        "top_button": {
+          "sourceColorCount": 5,
+          "goldenColorCount": 3,
+          "rampLimit": 4,
+          "usedColors": [
+            [
+              70,
+              48,
+              29
+            ],
+            [
+              164,
+              116,
+              58
+            ],
+            [
+              205,
+              158,
+              82
+            ]
+          ]
+        },
+        "back_closure": {
+          "sourceColorCount": 18,
+          "goldenColorCount": 3,
+          "rampLimit": 3,
+          "usedColors": [
+            [
+              38,
+              61,
+              58
+            ],
+            [
+              58,
+              100,
+              91
+            ],
+            [
+              94,
+              142,
+              124
+            ]
+          ]
+        }
+      },
+      "perViewRegionColorCounts": {
+        "front": {
+          "front_panel": 3,
+          "rear_mesh": 3,
+          "brim": 4,
+          "top_button": 1,
+          "back_closure": 0
+        },
+        "right": {
+          "front_panel": 4,
+          "rear_mesh": 3,
+          "brim": 4,
+          "top_button": 2,
+          "back_closure": 3
+        },
+        "left": {
+          "front_panel": 4,
+          "rear_mesh": 3,
+          "brim": 4,
+          "top_button": 2,
+          "back_closure": 3
+        },
+        "back": {
+          "front_panel": 0,
+          "rear_mesh": 3,
+          "brim": 0,
+          "top_button": 1,
+          "back_closure": 3
+        }
+      },
+      "hatRendererV1": {
+        "calledFrozenEnhancer": true,
+        "sourceFamily": "trucker",
+        "applied": false,
+        "fallbackReason": null,
+        "changedPixels": 0,
+        "changedRatio": 0.0,
+        "outlinePreserved": true,
+        "alphaPreserved": true,
+        "regionMode": "SOURCE_DERIVED_BOUNDED"
+      }
+    },
+    {
+      "id": "INDIGO_SAGE",
+      "rarity": "uncommon",
+      "recipe": {
+        "materialTreatment": "plain",
+        "pattern": "solid",
+        "trim": "contrast",
+        "motif": "none",
+        "motifPlacement": "none",
+        "attachment": "none",
+        "hardware": "none"
+      },
+      "onboardingPaletteCollapse": {
+        "front_panel": {
+          "sourceColorCount": 31,
+          "goldenColorCount": 4,
+          "rampLimit": 4,
+          "usedColors": [
+            [
+              40,
+              44,
+              73
+            ],
+            [
+              58,
+              66,
+              112
+            ],
+            [
+              83,
+              92,
+              151
+            ],
+            [
+              119,
+              126,
+              184
+            ]
+          ]
+        },
+        "rear_mesh": {
+          "sourceColorCount": 103,
+          "goldenColorCount": 3,
+          "rampLimit": 3,
+          "usedColors": [
+            [
+              49,
+              62,
+              48
+            ],
+            [
+              78,
+              102,
+              72
+            ],
+            [
+              117,
+              139,
+              103
+            ]
+          ]
+        },
+        "brim": {
+          "sourceColorCount": 33,
+          "goldenColorCount": 4,
+          "rampLimit": 4,
+          "usedColors": [
+            [
+              67,
+              46,
+              30
+            ],
+            [
+              108,
+              76,
+              45
+            ],
+            [
+              151,
+              109,
+              66
+            ],
+            [
+              193,
+              151,
+              96
+            ]
+          ]
+        },
+        "top_button": {
+          "sourceColorCount": 5,
+          "goldenColorCount": 3,
+          "rampLimit": 4,
+          "usedColors": [
+            [
+              67,
+              46,
+              30
+            ],
+            [
+              151,
+              109,
+              66
+            ],
+            [
+              193,
+              151,
+              96
+            ]
+          ]
+        },
+        "back_closure": {
+          "sourceColorCount": 18,
+          "goldenColorCount": 4,
+          "rampLimit": 4,
+          "usedColors": [
+            [
+              67,
+              46,
+              30
+            ],
+            [
+              108,
+              76,
+              45
+            ],
+            [
+              151,
+              109,
+              66
+            ],
+            [
+              193,
+              151,
+              96
+            ]
+          ]
+        }
+      },
+      "perViewRegionColorCounts": {
+        "front": {
+          "front_panel": 3,
+          "rear_mesh": 3,
+          "brim": 4,
+          "top_button": 1,
+          "back_closure": 0
+        },
+        "right": {
+          "front_panel": 6,
+          "rear_mesh": 6,
+          "brim": 4,
+          "top_button": 2,
+          "back_closure": 3
+        },
+        "left": {
+          "front_panel": 6,
+          "rear_mesh": 6,
+          "brim": 4,
+          "top_button": 2,
+          "back_closure": 3
+        },
+        "back": {
+          "front_panel": 0,
+          "rear_mesh": 6,
+          "brim": 0,
+          "top_button": 1,
+          "back_closure": 4
+        }
+      },
+      "hatRendererV1": {
+        "calledFrozenEnhancer": true,
+        "sourceFamily": "trucker",
+        "applied": true,
+        "fallbackReason": null,
+        "changedPixels": 170,
+        "changedRatio": 0.20094562647754138,
+        "outlinePreserved": true,
+        "alphaPreserved": true,
+        "regionMode": "SOURCE_DERIVED_BOUNDED"
+      }
+    }
+  ],
+  "checks": {
+    "boundedSemanticRamps": true,
+    "outlinePreserved": true,
+    "alphaPreserved": true,
+    "noRendererRedesign": true
+  }
+}
