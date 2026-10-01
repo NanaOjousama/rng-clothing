@@ -13,6 +13,7 @@ namespace EnhancedSewingMachine.GarmentRuntime
         public int FrameWidth { get; set; }
         public int FrameHeight { get; set; }
         public float RenderScale { get; set; } = 1f;
+        public string HairMode { get; set; } = GarmentHairMode.Full;
         public IntPoint VanillaReferenceAnchor { get; set; } = new IntPoint(10, 16);
         public Dictionary<string, DirectionFrame> Directions { get; set; } = new(StringComparer.OrdinalIgnoreCase);
         public GarmentTemplateMetadata Metadata { get; set; } = new();
@@ -55,6 +56,8 @@ namespace EnhancedSewingMachine.GarmentRuntime
                 return Fail("FrameWidth/FrameHeight must be between 1 and 128.", out error);
             if (!float.IsFinite(this.RenderScale) || this.RenderScale <= 0f || this.RenderScale > 8f)
                 return Fail("RenderScale must be finite and in (0, 8].", out error);
+            if (!GarmentHairMode.IsValid(this.HairMode))
+                return Fail($"HairMode '{this.HairMode}' must be Full, Obscured, or Hidden.", out error);
             if (textureWidth <= 0 || textureHeight <= 0)
                 return Fail("Texture dimensions must be positive.", out error);
             if (this.VanillaReferenceAnchor == null)
@@ -96,6 +99,7 @@ namespace EnhancedSewingMachine.GarmentRuntime
                 FrameWidth = this.FrameWidth,
                 FrameHeight = this.FrameHeight,
                 RenderScale = this.RenderScale,
+                HairMode = GarmentHairMode.Normalize(this.HairMode),
                 VanillaReferenceAnchor = this.VanillaReferenceAnchor?.Clone() ?? new IntPoint(10, 16),
                 Directions = directions,
                 AppearanceDigest = appearanceDigest
@@ -141,6 +145,7 @@ namespace EnhancedSewingMachine.GarmentRuntime
         public int FrameWidth { get; set; }
         public int FrameHeight { get; set; }
         public float RenderScale { get; set; } = 1f;
+        public string HairMode { get; set; } = GarmentHairMode.Full;
         public IntPoint VanillaReferenceAnchor { get; set; } = new IntPoint(10, 16);
         public Dictionary<string, DirectionFrame> Directions { get; set; } = new(StringComparer.OrdinalIgnoreCase);
         public string AppearanceDigest { get; set; }
@@ -164,6 +169,7 @@ namespace EnhancedSewingMachine.GarmentRuntime
                 FrameWidth = this.FrameWidth,
                 FrameHeight = this.FrameHeight,
                 RenderScale = this.RenderScale,
+                HairMode = this.HairMode,
                 VanillaReferenceAnchor = this.VanillaReferenceAnchor,
                 Directions = this.Directions
             };
@@ -186,6 +192,7 @@ namespace EnhancedSewingMachine.GarmentRuntime
                 FrameWidth = this.FrameWidth,
                 FrameHeight = this.FrameHeight,
                 RenderScale = this.RenderScale,
+                HairMode = GarmentHairMode.Normalize(this.HairMode),
                 VanillaReferenceAnchor = this.VanillaReferenceAnchor?.Clone(),
                 Directions = directions,
                 AppearanceDigest = this.AppearanceDigest
@@ -230,6 +237,37 @@ namespace EnhancedSewingMachine.GarmentRuntime
                 QualityTier = this.QualityTier ?? "",
                 Decals = this.Decals ?? "",
                 Classification = this.Classification ?? ""
+            };
+    }
+
+    internal static class GarmentHairMode
+    {
+        public const string Full = "Full";
+        public const string Obscured = "Obscured";
+        public const string Hidden = "Hidden";
+
+        public static bool IsValid(string value)
+            => string.Equals(value, Full, StringComparison.OrdinalIgnoreCase)
+                || string.Equals(value, Obscured, StringComparison.OrdinalIgnoreCase)
+                || string.Equals(value, Hidden, StringComparison.OrdinalIgnoreCase);
+
+        public static string Normalize(string value)
+        {
+            if (string.Equals(value, Obscured, StringComparison.OrdinalIgnoreCase))
+                return Obscured;
+            if (string.Equals(value, Hidden, StringComparison.OrdinalIgnoreCase))
+                return Hidden;
+            return Full;
+        }
+
+        // StardewValley.Objects.Hat.HairDrawType values in Stardew 1.6.15:
+        // 0 = DrawFullHair, 1 = DrawObscuredHair, 2 = HideHair.
+        public static int ToVanillaDrawType(string value)
+            => Normalize(value) switch
+            {
+                Obscured => 1,
+                Hidden => 2,
+                _ => 0
             };
     }
 

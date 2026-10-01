@@ -59,6 +59,10 @@ namespace EnhancedSewingMachine.GarmentRuntime
             if (instance == null || !instance.IsUsable())
                 throw new ArgumentException("Garment instance is incomplete.", nameof(instance));
 
+            // Let Stardew itself choose the covered hairstyle, exactly like vanilla hats.
+            // This field is a serialized NetInt on Hat, so the per-garment choice persists with the item.
+            hat.hairDrawType.Value = GarmentHairMode.ToVanillaDrawType(instance.Render?.HairMode);
+
             string json = GarmentInstanceCodec.Encode(instance);
             hat.modData[GarmentInstanceKeys.Instance] = json;
             hat.modData[GarmentInstanceKeys.GarmentId] = instance.GarmentId;

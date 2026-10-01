@@ -415,7 +415,7 @@ namespace EnhancedSewingMachine
                 $"palette={instance.Palette} motif={instance.Motif} " +
                 $"generator={instance.GeneratorId} generatorSeed={instance.GeneratorSeed} generatorVersion={instance.GeneratorVersion} " +
                 $"style={instance.Style} tier={instance.QualityTier} decals={instance.Decals} class={instance.Classification} " +
-                $"frame={instance.Render.FrameWidth}x{instance.Render.FrameHeight} scale={instance.Render.RenderScale:0.###} " +
+                $"frame={instance.Render.FrameWidth}x{instance.Render.FrameHeight} scale={instance.Render.RenderScale:0.###} hair={instance.Render.HairMode} " +
                 $"digest={instance.Render.AppearanceDigest}",
                 LogLevel.Info);
         }

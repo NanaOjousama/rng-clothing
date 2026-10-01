@@ -34,6 +34,7 @@ namespace EnhancedSewingMachine.Tests
                 FrameWidth = 32,
                 FrameHeight = 32,
                 RenderScale = .5f,
+                HairMode = GarmentHairMode.Obscured,
                 VanillaReferenceAnchor = new IntPoint(10, 16),
                 Metadata = new GarmentTemplateMetadata
                 {
@@ -211,6 +212,13 @@ namespace EnhancedSewingMachine.Tests
                 left != null && left.FlipX && left.AnchorX == 20 && left.AnchorY == 25);
             Check("valid generic definition passes texture-bound validation",
                 def.TryValidate(32, 96, out _));
+            Check("obscured hair mode maps to Stardew covered-hair draw type",
+                GarmentHairMode.ToVanillaDrawType(def.HairMode) == 1);
+
+            GarmentDefinition badHair = Build32();
+            badHair.HairMode = "mystery";
+            Check("unknown hair mode is rejected",
+                !badHair.TryValidate(32, 96, out _));
 
             GarmentDefinition badSource = Build32();
             badSource.Directions["Back"].SourceY = 80;
@@ -228,6 +236,7 @@ namespace EnhancedSewingMachine.Tests
             Check("resolved item snapshot is independent from later definition edits",
                 Near(snapshot.RenderScale, .5f)
                 && snapshot.Resolve(2).AnchorX == 16
+                && snapshot.HairMode == GarmentHairMode.Obscured
                 && snapshot.AppearanceDigest == "abc123");
 
             var instance = new GarmentInstanceData
@@ -288,6 +297,7 @@ namespace EnhancedSewingMachine.Tests
                 && Near(decoded.Render.RenderScale, .5f)
                 && decoded.Render.FrameWidth == 32
                 && decoded.Render.Resolve(3).FlipX
+                && decoded.Render.HairMode == GarmentHairMode.Obscured
                 && decoded.Render.AppearanceDigest == "abc123");
 
             Check("garment fit offsets remain independent per direction",

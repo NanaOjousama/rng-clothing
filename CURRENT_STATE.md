@@ -1772,3 +1772,13 @@ Validation: `tools/validate_content_source_routing.py` passes; existing source-r
 - Output: `experiments/trucker_hatrenderer_v1_proof_01/TRUCKER_HAT_RENDERER_V1_CONTACT.png` plus per-view TEAL_WORKWEAR and INDIGO_SAGE frames and `proof_report.json`.
 - Hard checks pass: bounded semantic ramps, outline preserved, alpha preserved, no renderer redesign; existing `v5.tests.test_trucker_pl02_editref24` remains 4/4 passing.
 - Status: CANDIDATE PROOF ONLY. Do not register/promote trucker into `HAT_PRODUCTION_GOLDEN_V1` until the new contact is visually approved.
+
+## 2026-10-01 — ESM per-garment vanilla hair mode + C04 live QC
+
+- Added per-garment `HairMode` to Enhanced Sewing Machine garment definitions/render snapshots with supported values `Full`, `Obscured`, and `Hidden`.
+- ESM now maps those modes directly to Stardew 1.6.15 `Hat.hairDrawType` (`0/1/2`) when writing a generated hat instance, so Stardew itself chooses the normal, covered, or hidden hairstyle. No custom hair renderer was added.
+- Existing garments remain backward-compatible because missing `HairMode` defaults to `Full`; invalid modes fail definition validation.
+- C04 (`qc.finished.trucker.spaced20.c04`) is set to `HairMode: Obscured`, matching vanilla Trucker Hat behavior. Its previously tuned wear settings remain `RenderScale: 0.75` and `OffsetY: -1` on all four directions.
+- Confirmed from decompiled Stardew 1.6.15 code that `Farmer.getHair()` applies the vanilla obscured-hair fallback mapping; for the current player hairstyle 38 this resolves to covered hairstyle 30.
+- Unit/regression suite passes, including HairMode mapping, validation, snapshot persistence, and codec round-trip; EnhancedSewingMachine Release build succeeds with 0 warnings / 0 errors and auto-deploys to the live Mods folder.
+- Live QC capture: `qc_bridge/captures/20261001-182856/c04_obscured_hair/` confirms C04 renders successfully with the new vanilla obscured-hair path in all four directions.
