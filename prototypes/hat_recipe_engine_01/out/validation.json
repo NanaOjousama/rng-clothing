@@ -1,0 +1,350 @@
+{
+ "variants": {
+  "bucket": {
+   "checks": {
+    "grid_and_codes": {
+     "pass": true,
+     "hard": true,
+     "bad": []
+    },
+    "left_mirrors_right": {
+     "pass": true,
+     "hard": true
+    },
+    "back_outline_equals_front": {
+     "pass": true,
+     "hard": true
+    },
+    "outline_closed": {
+     "pass": true,
+     "hard": true,
+     "open": []
+    },
+    "no_orphan_pixels": {
+     "pass": true,
+     "hard": true,
+     "orphans": []
+    },
+    "front_side_height_agree": {
+     "pass": true,
+     "hard": true,
+     "front": [
+      5,
+      13
+     ],
+     "side": [
+      5,
+      13
+     ]
+    },
+    "seating_vs_vanilla": {
+     "pass": true,
+     "hard": true,
+     "crown_top": 5,
+     "front_lip_bottom": 12,
+     "vanilla_lip_bottom": {
+      "Bucket Hat (102)": 12,
+      "Fishing Hat (55)": 11,
+      "Straw Hat (4)": 10
+     }
+    },
+    "regions_and_roles_present": {
+     "pass": true,
+     "hard": true,
+     "missing": {},
+     "front_roles": [
+      "C",
+      "H",
+      "L",
+      "M",
+      "O",
+      "S"
+     ]
+    },
+    "not_helmet": {
+     "pass": true,
+     "hard": true,
+     "max_gap": 3,
+     "spread": 2,
+     "lift": 2,
+     "helmet": false
+    },
+    "nearest_references": {
+     "pass": true,
+     "hard": false,
+     "top5": [
+      [
+       0.758,
+       "vanilla:Bucket Hat (102)"
+      ],
+      [
+       0.696,
+       "vanilla:Straw Hat (4)"
+      ],
+      [
+       0.687,
+       "vanilla:Paper Hat (114)"
+      ],
+      [
+       0.676,
+       "vanilla:Gil's Hat (98)"
+      ],
+      [
+       0.673,
+       "vanilla:Forager's Hat (90)"
+      ]
+     ]
+    }
+   }
+  },
+  "fisherman": {
+   "checks": {
+    "grid_and_codes": {
+     "pass": true,
+     "hard": true,
+     "bad": []
+    },
+    "left_mirrors_right": {
+     "pass": true,
+     "hard": true
+    },
+    "back_outline_equals_front": {
+     "pass": true,
+     "hard": true
+    },
+    "outline_closed": {
+     "pass": true,
+     "hard": true,
+     "open": []
+    },
+    "no_orphan_pixels": {
+     "pass": true,
+     "hard": true,
+     "orphans": []
+    },
+    "front_side_height_agree": {
+     "pass": true,
+     "hard": true,
+     "front": [
+      5,
+      13
+     ],
+     "side": [
+      5,
+      13
+     ]
+    },
+    "seating_vs_vanilla": {
+     "pass": true,
+     "hard": true,
+     "crown_top": 5,
+     "front_lip_bottom": 11,
+     "vanilla_lip_bottom": {
+      "Bucket Hat (102)": 12,
+      "Fishing Hat (55)": 11,
+      "Straw Hat (4)": 10
+     }
+    },
+    "regions_and_roles_present": {
+     "pass": true,
+     "hard": true,
+     "missing": {},
+     "front_roles": [
+      "C",
+      "H",
+      "L",
+      "M",
+      "O",
+      "S"
+     ]
+    },
+    "not_helmet": {
+     "pass": true,
+     "hard": true,
+     "max_gap": 4,
+     "spread": 3,
+     "lift": 2,
+     "helmet": false
+    },
+    "nearest_references": {
+     "pass": true,
+     "hard": false,
+     "top5": [
+      [
+       0.722,
+       "vanilla:Straw Hat (4)"
+      ],
+      [
+       0.701,
+       "vanilla:Forager's Hat (90)"
+      ],
+      [
+       0.694,
+       "vanilla:Fishing Hat (55)"
+      ],
+      [
+       0.691,
+       "vanilla:Gil's Hat (98)"
+      ],
+      [
+       0.681,
+       "vanilla:Cowgal Hat (33)"
+      ]
+     ]
+    }
+   }
+  },
+  "sun": {
+   "checks": {
+    "grid_and_codes": {
+     "pass": true,
+     "hard": true,
+     "bad": []
+    },
+    "left_mirrors_right": {
+     "pass": true,
+     "hard": true
+    },
+    "back_outline_equals_front": {
+     "pass": true,
+     "hard": true
+    },
+    "outline_closed": {
+     "pass": true,
+     "hard": true,
+     "open": []
+    },
+    "no_orphan_pixels": {
+     "pass": true,
+     "hard": true,
+     "orphans": []
+    },
+    "front_side_height_agree": {
+     "pass": true,
+     "hard": true,
+     "front": [
+      5,
+      12
+     ],
+     "side": [
+      5,
+      12
+     ]
+    },
+    "seating_vs_vanilla": {
+     "pass": true,
+     "hard": true,
+     "crown_top": 5,
+     "front_lip_bottom": 10,
+     "vanilla_lip_bottom": {
+      "Bucket Hat (102)": 12,
+      "Fishing Hat (55)": 11,
+      "Straw Hat (4)": 10
+     }
+    },
+    "regions_and_roles_present": {
+     "pass": true,
+     "hard": true,
+     "missing": {},
+     "front_roles": [
+      "C",
+      "H",
+      "L",
+      "M",
+      "O",
+      "S"
+     ]
+    },
+    "not_helmet": {
+     "pass": true,
+     "hard": true,
+     "max_gap": 5,
+     "spread": 4,
+     "lift": 2,
+     "helmet": false
+    },
+    "nearest_references": {
+     "pass": true,
+     "hard": false,
+     "top5": [
+      [
+       0.669,
+       "plurffle:Straw Hat"
+      ],
+      [
+       0.656,
+       "plurffle:Sun Hat"
+      ],
+      [
+       0.649,
+       "vanilla:Gil's Hat (98)"
+      ],
+      [
+       0.642,
+       "vanilla:Cowgal Hat (33)"
+      ],
+      [
+       0.635,
+       "vanilla:Straw Hat (4)"
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "family": {
+  "variants_distinct": {
+   "pass": true,
+   "hard": true,
+   "detail": "front+side silhouette IoU {'bucket~fisherman': 0.781, 'bucket~sun': 0.581, 'fisherman~sun': 0.757}",
+   "iou": {
+    "bucket~fisherman": 0.781,
+    "bucket~sun": 0.581,
+    "fisherman~sun": 0.757
+   }
+  },
+  "helmet_metric_calibrated": {
+   "pass": true,
+   "hard": true,
+   "detail": "vanilla brimmed hats pass, head-shell strawmen fail",
+   "calib": {
+    "vanilla Bucket Hat 102": {
+     "max_gap": 2,
+     "spread": 1,
+     "lift": 2,
+     "helmet": false
+    },
+    "vanilla Fishing Hat 55": {
+     "max_gap": 3,
+     "spread": 2,
+     "lift": 2,
+     "helmet": false
+    },
+    "vanilla Straw Hat 4": {
+     "max_gap": 3,
+     "spread": 2,
+     "lift": 3,
+     "helmet": false
+    },
+    "vanilla Cowboy Hat 0": {
+     "max_gap": 5,
+     "spread": 5,
+     "lift": 3,
+     "helmet": false
+    },
+    "strawman head+1px shell": {
+     "max_gap": 1,
+     "spread": 0,
+     "lift": 1,
+     "helmet": true
+    },
+    "strawman head+2px shell": {
+     "max_gap": 2,
+     "spread": 0,
+     "lift": 2,
+     "helmet": true
+    }
+   }
+  }
+ }
+}
