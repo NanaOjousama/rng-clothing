@@ -1,0 +1,2 @@
+TECHNICAL PASS
+Technical pass only means valid connected 26px geometry, not visual approval.

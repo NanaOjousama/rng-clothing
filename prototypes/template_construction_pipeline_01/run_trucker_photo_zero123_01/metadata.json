@@ -1,0 +1,14 @@
+{
+  "model": "sudo-ai/zero123plus-v1.2",
+  "customPipeline": "sudo-ai/zero123plus-pipeline",
+  "input": "cap reference/Deadly-XX-Summer-Trucker-Cap-Black-2.webp",
+  "inputPolicy": "SINGLE 3/4 PRODUCT PHOTO ONLY; orthographic side/back references withheld from model",
+  "seed": 424242,
+  "steps": 8,
+  "guidanceScale": 4.0,
+  "dtype": "float32",
+  "device": "cpu",
+  "loadSeconds": 26.270962715148926,
+  "inferenceSeconds": 417.1447627544403,
+  "status": "RAW_MULTIVIEW_CANDIDATE_NOT_APPROVED"
+}
