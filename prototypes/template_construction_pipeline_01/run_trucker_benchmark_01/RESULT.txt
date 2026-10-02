@@ -1,0 +1,2 @@
+TECHNICAL PASS
+See 03_stardew_fit_preview.png and construction_template.json

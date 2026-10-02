@@ -1,0 +1,127 @@
+{
+  "schema": "experimental-construction-template/v1",
+  "id": "trucker_multistage_benchmark_01",
+  "family": "trucker_cap",
+  "status": "EXPERIMENTAL_CANDIDATE",
+  "frameSize": [
+    26,
+    26
+  ],
+  "pipeline": [
+    "reference-view segmentation",
+    "source-derived silhouette reduction",
+    "semantic component mapping",
+    "Photo Tailor four-facing normalization",
+    "Stardew farmer wear-space fit"
+  ],
+  "viewProvider": {
+    "kind": "KNOWN_REFERENCE_BENCHMARK",
+    "note": "Front/right/back are known references; left mirrors right. Replaceable by multiview AI provider when available."
+  },
+  "geometryAuthority": "source-derived frames; Photo Tailor is forbidden from changing alpha",
+  "frames": {
+    "front": {
+      "path": "template_frames/front.png",
+      "sha256": "6e64d111af24f8969458547ebceb45641978d761cf0645e545cacac70b8f536d"
+    },
+    "right": {
+      "path": "template_frames/right.png",
+      "sha256": "ae1c2b9f42b9d2dd240c32317410cb2d7bc20804d7b1a4eb31361e9f64c9563c"
+    },
+    "back": {
+      "path": "template_frames/back.png",
+      "sha256": "928e78b68d44344a360c229d0fce289af17503897f82b240baf257a48e925619"
+    },
+    "left": {
+      "path": "template_frames/left.png",
+      "sha256": "28e00fa821eb602db00fbdcfa5e4f3a5845e605a0372d98020c4fb8cb3a75164"
+    }
+  },
+  "wearContract": {
+    "front": {
+      "scaleX": 7,
+      "scaleY": 6,
+      "offsetX": 69,
+      "offsetY": 78
+    },
+    "right": {
+      "scaleX": 8,
+      "scaleY": 8,
+      "offsetX": 56,
+      "offsetY": 56
+    },
+    "left": {
+      "scaleX": 8,
+      "scaleY": 8,
+      "offsetX": 56,
+      "offsetY": 56
+    },
+    "back": {
+      "scaleX": 8,
+      "scaleY": 8,
+      "offsetX": 52,
+      "offsetY": 60
+    }
+  },
+  "qc": {
+    "front": {
+      "size": [
+        26,
+        26
+      ],
+      "bbox": [
+        3,
+        3,
+        23,
+        21
+      ],
+      "opaquePixels": 272,
+      "largestComponentShare": 1.0
+    },
+    "right": {
+      "size": [
+        26,
+        26
+      ],
+      "bbox": [
+        0,
+        4,
+        26,
+        19
+      ],
+      "opaquePixels": 265,
+      "largestComponentShare": 1.0
+    },
+    "back": {
+      "size": [
+        26,
+        26
+      ],
+      "bbox": [
+        3,
+        3,
+        23,
+        19
+      ],
+      "opaquePixels": 236,
+      "largestComponentShare": 1.0
+    },
+    "left": {
+      "size": [
+        26,
+        26
+      ],
+      "bbox": [
+        0,
+        4,
+        26,
+        19
+      ],
+      "opaquePixels": 265,
+      "largestComponentShare": 1.0
+    },
+    "leftMirrorsRight": true,
+    "technicalPass": true
+  },
+  "promotionRule": "Do not promote automatically. Requires visual approval in Stardew/in-game QC."
+}
