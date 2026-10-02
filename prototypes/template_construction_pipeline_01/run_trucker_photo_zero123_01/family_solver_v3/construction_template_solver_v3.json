@@ -1,0 +1,81 @@
+{
+  "schema": "experimental-trucker-family-solver/v3",
+  "status": "EXPERIMENTAL_REVIEW_REQUIRED",
+  "family": "trucker_cap",
+  "authorities": {
+    "ai": "proportion evidence only",
+    "referenceTrace": "family envelope evidence",
+    "vanillaHat16": "pixel-space occupancy prior"
+  },
+  "measurements": {
+    "front": {
+      "aiSize": [
+        20,
+        18
+      ],
+      "vanillaSize": [
+        10,
+        9
+      ],
+      "referenceTraceSize": [
+        21,
+        18
+      ],
+      "solvedSize": [
+        14,
+        12
+      ]
+    },
+    "right": {
+      "aiSize": [
+        24,
+        12
+      ],
+      "vanillaSize": [
+        15,
+        9
+      ],
+      "referenceTraceSize": [
+        26,
+        15
+      ],
+      "solvedSize": [
+        19,
+        11
+      ]
+    },
+    "back": {
+      "aiSize": [
+        16,
+        18
+      ],
+      "vanillaSize": [
+        10,
+        11
+      ],
+      "referenceTraceSize": [
+        22,
+        16
+      ],
+      "solvedSize": [
+        14,
+        13
+      ]
+    },
+    "left": {
+      "mirrorOf": "right",
+      "solvedSize": [
+        19,
+        11
+      ]
+    }
+  },
+  "rules": [
+    "vanilla occupancy strongest prior",
+    "AI cannot directly author final pixels",
+    "real trace moderates dimensions",
+    "left is exact mirror of right",
+    "back opening reconstructed from family grammar"
+  ],
+  "promotionRule": "Visual + in-game approval required before template registration."
+}
