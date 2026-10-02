@@ -19,12 +19,12 @@ Zero123/SDXL experiments.
 ## Template format
 
 Per view (front/right/left/back, the vanilla hats.png order), two 20-char x 20-row maps:
-- **region**: `c` crown, `b` band, `t` brim_top, `u` brim_under, `x` cast, `.` empty
+- **region**: `c` crown, `b` band, `t` brim_top, `u` brim_under, `s` seam, `x` cast, `.` empty
 - **role**: `O` outline, `S` shadow, `M` mid, `L` light, `H` highlight, `C` cast
 
-View rules: `left = mirror(right)` exactly; `back` = same silhouette as front, with different
-interior roles and no cast. Family exceptions are meant to go in as explicit recipe keys
-(`back_rule`).
+View rules: `left = mirror(right)` exactly. `back` defaults to the front silhouette with
+different interior roles and no cast (`back_rule: front_outline`, used by the bucket). The fisherman
+and sun hat use the explicit exception `back_rule: bowl` (below).
 
 ## Construction grammar learned from the references
 
