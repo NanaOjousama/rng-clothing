@@ -1,0 +1,53 @@
+{
+  "schema": "experimental-trucker-family-solver/v5",
+  "status": "EXPERIMENTAL_REVIEW_REQUIRED",
+  "family": "trucker_cap",
+  "base": "solver_v4",
+  "changes": [
+    "shorten side visor by about 2 px",
+    "thicken visor root into crown",
+    "smooth crown-to-visor transition",
+    "retain v4 rounded back opening",
+    "left exact mirror of right"
+  ],
+  "qc": {
+    "front": {
+      "bbox": [
+        6,
+        3,
+        19,
+        14
+      ],
+      "opaque": 154
+    },
+    "right": {
+      "bbox": [
+        4,
+        3,
+        25,
+        10
+      ],
+      "opaque": 106
+    },
+    "back": {
+      "bbox": [
+        6,
+        3,
+        19,
+        15
+      ],
+      "opaque": 134
+    },
+    "left": {
+      "bbox": [
+        0,
+        3,
+        21,
+        10
+      ],
+      "opaque": 106
+    },
+    "leftExactMirror": true
+  },
+  "promotionRule": "Visual + in-game approval required."
+}
