@@ -1,6 +1,6 @@
 {
   "family": "crown_brim",
-  "description": "Soft or rigid crown sitting on a continuous brim. One recipe; variants differ only in parameters.",
+  "description": "Crown sitting on a continuous brim. One recipe; variants differ only in parameters.",
   "parts": [
     "crown",
     "band",
@@ -8,106 +8,153 @@
   ],
   "view_rules": {
     "left": "mirror(right)",
-    "back": "front_outline"
+    "back": "front_outline (default) | bowl (exception, per variant)"
   },
   "parameter_doc": {
-    "brim_root_y": "frame row where the brim starts (seating anchor; vanilla Bucket Hat = 10, Fishing/Straw = 9)",
+    "brim_root_y": "frame row where the brim starts (seating anchor; vanilla Fishing/Straw = 9, Bucket = 10)",
     "crown_h": "crown rows above the brim root",
     "crown_top_hw / crown_base_hw": "crown half-width (incl. outline) at top / at base",
     "crown_curve": "linear | bell (flares late) | dome (rounds early)",
-    "top_round": "pixels removed per side on the top crown row",
+    "top_round": "pixels removed per side on the top crown row (0 = flat-topped)",
+    "base_flare": "extra px per side on the last crown row (vanilla crown/brim junction flare)",
     "band_h": "rows of band just above the brim root (0 = none)",
-    "brim_hw": "front-view brim half-width (frame is 20 wide, so 10 = full width)",
-    "brim_thick": "lip rows, outline included",
-    "brim_droop / droop_power": "how far the lobes hang below the lip, and how that drop is spread across the lobe",
-    "brim_tilt": "rows of brim top surface seen above the root at the flanks (wide brims seen from above)",
-    "tip_round": "1 = trim the top corner of each brim tip",
-    "side_*": "right-view asymmetry: crown shift toward the back, brim reach and droop front/back",
-    "brim_top_follow": "0 = brim top stays level and only the underside drops (vanilla bowl brim); 1 = whole brim bends down (skirt)",
-    "lip_hw": "half-width of the front lip (the brim part in front of the face); the rest of the brim is lobes"
+    "brim_kind": "disc (ring seen from slightly above) | skirt (angled down all round)",
+    "brim_hw": "disc: front-view brim half-width (10 = full 20 px frame)",
+    "brim_thick": "disc: lip rows, outline included",
+    "lip_hw": "disc: half-width of the front lip; outside it the brim hangs as lobes",
+    "brim_droop / droop_power": "disc: how far the lobes hang at the tips, and how late",
+    "brim_far / brim_near": "disc: ellipse rows - far edge shown above the root beside the crown / near edge dip at the centre",
+    "brim_top_follow": "disc: 0 = lobe top stays level (vanilla bowl), 1 = whole lobe bends down",
+    "brim_curl": "disc: px the right-hand brim (front view) flips up - soft/floppy brim; mirrored in back view",
+    "tip_round": "1 = round the brim tips",
+    "skirt_rows / skirt_out / skirt_slope": "skirt: rows, first-row overhang past the crown, extra px per row",
+    "brim_stitch": "skirt: row index of a stitched seam line (0 = none) - structural, region 'seam'",
+    "side_*": "right-view (left mirrors it): brim reach and droop back/front, crown extra depth, whole-view y shift",
+    "back_rule / bowl_depth / bowl_power": "bowl exception: brim seen from above-behind, near edge bowl_depth rows below the lip",
+    "bowl_crown_extend": "bowl back view: rows the crown continues down into the bowl"
   },
   "defaults": {
-    "brim_root_y": 10,
-    "crown_h": 5,
+    "brim_root_y": 9,
+    "crown_h": 4,
     "crown_top_hw": 4,
     "crown_base_hw": 5,
     "crown_curve": "linear",
     "top_round": 1,
+    "base_flare": 0,
     "band_h": 0,
+    "brim_kind": "disc",
     "brim_hw": 8,
     "brim_thick": 3,
+    "lip_hw": 3,
     "brim_droop": 1,
     "droop_power": 1.0,
-    "brim_tilt": 0,
+    "brim_far": 0,
+    "brim_near": 0,
+    "brim_top_follow": 0.0,
+    "brim_curl": 0,
     "tip_round": 1,
-    "side_crown_shift": 1,
+    "skirt_rows": 3,
+    "skirt_out": 1,
+    "skirt_slope": 1.0,
+    "brim_stitch": 0,
+    "side_skirt_back": 0,
+    "side_skirt_front": 0,
     "side_crown_extra": 0,
     "side_brim_back_hw": 8,
-    "side_brim_front_hw": 7,
+    "side_brim_front_hw": 8,
     "side_droop_back": 1,
     "side_droop_front": 1,
-    "brim_top_follow": 0.0,
-    "lip_hw": 5
+    "side_y_shift": 0,
+    "back_rule": "front_outline",
+    "bowl_depth": 4,
+    "bowl_power": 1.0,
+    "bowl_crown_extend": 2
   },
   "variants": {
     "bucket": {
       "identity": [
-        "tall straight-sided crown with flat top",
-        "short brim angled down all round",
-        "no band"
+        "flat-topped tapered crown",
+        "short stiff brim angled DOWN all round (lampshade)",
+        "stitched brim"
       ],
-      "nearest_vanilla": "Bucket Hat (102)",
-      "params": {}
-    },
-    "fisherman": {
-      "identity": [
-        "lower crown with a cord band",
-        "longer brim that droops at the sides"
+      "nearest_references": [
+        "vanilla Bucket Hat (102)"
       ],
-      "nearest_vanilla": "Fishing Hat (55)",
       "params": {
-        "brim_root_y": 9,
-        "crown_h": 4,
-        "crown_top_hw": 4,
-        "crown_base_hw": 5,
-        "band_h": 1,
-        "brim_hw": 9,
-        "brim_droop": 2,
-        "droop_power": 1.0,
-        "side_brim_back_hw": 9,
-        "side_brim_front_hw": 8,
-        "side_droop_back": 2,
-        "side_droop_front": 1,
-        "brim_top_follow": 0.0,
-        "lip_hw": 3
-      }
-    },
-    "sun": {
-      "identity": [
-        "small round dome crown with a ribbon",
-        "full-width thin brim, flat near the crown, floppy at the tips"
-      ],
-      "nearest_vanilla": "Straw Hat (4)",
-      "params": {
-        "brim_root_y": 9,
         "crown_h": 4,
         "crown_top_hw": 3,
         "crown_base_hw": 5,
-        "crown_curve": "dome",
+        "top_round": 0,
+        "brim_kind": "skirt",
+        "skirt_rows": 4,
+        "skirt_out": 1,
+        "skirt_slope": 0.67,
+        "brim_stitch": 1,
+        "side_skirt_front": 1
+      },
+      "preview_palette": "charcoal"
+    },
+    "fisherman": {
+      "identity": [
+        "low soft crown with a band",
+        "deep bowl brim whose sides hang well below the lip"
+      ],
+      "nearest_references": [
+        "vanilla Fishing Hat (55)"
+      ],
+      "params": {
+        "crown_top_hw": 4,
+        "crown_base_hw": 4,
+        "base_flare": 1,
         "band_h": 1,
-        "brim_hw": 10,
-        "brim_thick": 2,
+        "brim_hw": 8,
+        "lip_hw": 3,
         "brim_droop": 2,
-        "droop_power": 0.6,
-        "brim_tilt": 0,
-        "tip_round": 1,
-        "side_brim_back_hw": 10,
-        "side_brim_front_hw": 9,
-        "side_droop_back": 2,
+        "droop_power": 1.0,
+        "side_brim_back_hw": 8,
+        "side_brim_front_hw": 8,
+        "side_droop_back": 3,
         "side_droop_front": 1,
-        "brim_top_follow": 0.0,
-        "lip_hw": 3
-      }
+        "back_rule": "bowl",
+        "bowl_depth": 5,
+        "bowl_power": 1.0
+      },
+      "preview_palette": "olive"
+    },
+    "sun": {
+      "identity": [
+        "small round crown with a ribbon",
+        "very wide thin elliptical brim",
+        "soft: one side flips up"
+      ],
+      "nearest_references": [
+        "plurffle Sun Hat",
+        "plurffle Straw Hat",
+        "vanilla Straw Hat (4)"
+      ],
+      "params": {
+        "crown_curve": "dome",
+        "crown_top_hw": 3,
+        "crown_base_hw": 4,
+        "base_flare": 1,
+        "band_h": 1,
+        "brim_hw": 9,
+        "brim_thick": 2,
+        "lip_hw": 4,
+        "brim_droop": 1,
+        "droop_power": 2.0,
+        "brim_far": 1,
+        "brim_near": 0,
+        "brim_curl": 2,
+        "side_brim_back_hw": 9,
+        "side_brim_front_hw": 9,
+        "side_droop_back": 1,
+        "side_droop_front": 1,
+        "back_rule": "bowl",
+        "bowl_depth": 4,
+        "bowl_power": 1.0
+      },
+      "preview_palette": "straw"
     }
   }
 }

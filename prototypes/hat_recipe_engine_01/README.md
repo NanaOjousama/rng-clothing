@@ -26,35 +26,39 @@ View rules: `left = mirror(right)` exactly; `back` = same silhouette as front, w
 interior roles and no cast. Family exceptions are meant to go in as explicit recipe keys
 (`back_rule`).
 
-## Construction grammar learned from vanilla (evidence: Fishing Hat 55, Straw Hat 4, Bucket Hat 102)
+## Construction grammar learned from the references
 
-The decisive finding: in the front view a brim is **not** one strip. It is a short
-central **lip** (the part in front of the face: high, with the cast shadow under it)
-plus two **lobes** (the brim's sides seen edge-on, hanging lower, separated from the
-lip by a turn-under line). The lobe top stays level and only the underside drops.
-Modelling the brim as one drooping strip gave thin outline "claws" (iterations 1–4);
-lip + lobes fixed it.
+Measured pixel by pixel from vanilla Fishing Hat 55, Straw Hat 4 and Bucket Hat 102, and plurffle's
+Sun, Straw and Boater hats. Each rule is a recipe parameter or an engine rule, never pixels copied
+from a reference:
 
-## Status at this checkpoint
+- **Disc brim, front view** = a short central **lip** (high, cast shadow under it) plus two **lobes**
+  (the brim's sides seen edge-on; the lobe top stays level and only the underside drops). A uniform
+  drooping strip gave thin outline "claws".
+- **Wide brims are an ellipse** seen from slightly above: the far edge shows beside the crown and the
+  tips taper (`brim_far`, `brim_near`). A soft brim flips up on one side (`brim_curl`, plurffle Sun Hat).
+- **Brim top faces the light**: lit top surface, shadow only where the lobe turns under. Mid/shadow
+  fills made every brim muddy.
+- **Skirt brim** (bucket): angled down all round, built row by row as a trapezoid, with a stitched seam row.
+- **Back-view exception `bowl`** (55, 4, 98, plurffle Sun/Straw): the brim is seen from above and
+  behind; the crown continues ~2 rows down into the bowl, then a shadow band, mid, a lit rim and the
+  outline. Same width and top as the front, but deeper.
+- The highlight is a small cluster on the light side, not a full-width stripe; the crown base flares
+  (`base_flare`).
 
-Hard checks pass for all 3 variants: grid/codes, left mirrors right, back silhouette
-matches front, closed outline, no orphan pixels, front/side height agreement, seating
-inside the measured vanilla range (lip bottom 10–12), regions/roles present, not a
-helmet. Family checks: variants distinct (silhouette IoU < 0.85), and the helmet metric
-calibration (vanilla brimmed hats pass, head-shell strawmen fail).
+## Status at this checkpoint (v2, visual iteration)
 
-Nearest-reference retrieval (silhouette IoU over 4 views, vanilla + plurffle):
-bucket → vanilla Bucket Hat ✔; sun → plurffle Straw Hat / Sun Hat ✔;
-fisherman → Straw Hat first, Fishing Hat only third ✘ (soft check).
+Judged at 1x / 2x / 6x beside matched-palette references (`WORN_PREVIEW.png`, `COMPARE_6X.png`).
+Hard checks pass for all three. Retrieval now matches the intended reference for every variant:
+bucket → vanilla Bucket Hat, fisherman → vanilla Fishing Hat, sun → plurffle Straw Hat / Sun Hat.
 
 Not proven / known gaps:
-- **Worn preview is an offline composite** (farmer_base + hairstyle 0, hat at −2,−2),
-  not a QC Bridge capture. The bridge was not running.
-- Hair pokes past the crown sides with hairstyle 0 at full hair. Vanilla Bucket Hat
-  does the same in this composite. No hat-hair or `HairMode` setting has been tested.
-- Back view follows the default rule. Vanilla brimmed backs are a slightly
-  top-down "bowl" (more brim visible, ~1 row lower). That is a candidate `back_rule`
-  exception with recurring evidence (55, 98, 4, 102, plurffle Sun Hat).
-- "<20 manual edits" is an estimate only; it has not been measured by a person.
-- The sun and fisherman hats are the closest pair (IoU ≈ 0.76).
-- Not yet routed through the frozen generator; the 4 palettes are preview-only ramps.
+- Offline worn composite, not a QC Bridge capture.
+- Hair pokes past the crown sides with hairstyle 0 at full hair (vanilla does the same here).
+- Every variant uses the same crown shading pattern; there is no material micro-texture (the
+  generator's job) and no deliberate hand irregularity.
+- Bucket side view is almost its front view (a round hat; acceptable but plain).
+- bucket~fisherman silhouette IoU 0.835 is close to the 0.85 distinctness limit; their brim
+  construction and interior differ, but the outlines are similar.
+- "<20 manual edits" is not measured by a person.
+- Not yet run through the frozen generator.

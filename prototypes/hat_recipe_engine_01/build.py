@@ -7,7 +7,8 @@ Outputs (prototypes/hat_recipe_engine_01/out/):
     <variant>.template.json      region + role maps per view, params, view rules
     <variant>_20x80.png          preview-palette strip, vanilla hats.png order
     CONTACT_SHEET.png            templates (roles / regions / 4 palettes) next to nearest references
-    WORN_PREVIEW.png             offline worn preview, 1x game zoom x4 and close-up, with vanilla neighbours
+    WORN_PREVIEW.png             offline worn preview at 1x / 2x / 4x, each hat above its references
+    COMPARE_6X.png               head-crop pairs: generated (row) above references (rows below it)
     validation.json              every check, every number
 
 Exit status is non-zero if any hard check fails.
@@ -40,6 +41,7 @@ def load_variants():
     for name, v in recipe["variants"].items():
         p = dict(recipe["defaults"])
         p.update(v["params"])
+        v.setdefault("preview_palette", "olive")
         out[name] = (p, v)
     return recipe, out
 
@@ -77,24 +79,48 @@ def contact_sheet(tpls, refs):
     return sheet
 
 
-def worn_sheet(tpls, refs):
-    """Top: every row at Stardew's normal 4x zoom (judge here).  Bottom: 1x actual pixels."""
-    rows = [(n, render_strip(t, pal)) for n, t in tpls.items()
-            for pal in ("olive", "straw")] + refs
-    game = blank_image(96 * 2, 40 * ((len(rows) + 1) // 2), (126, 150, 110, 255))
+def worn_sheet(tpls, metas, refs):
+    """Each generated hat (matched preview palette) directly above its references.
+
+    Left block: native 1x, the scale that matters.  Middle: 2x.  Right: Stardew's
+    normal 4x zoom.  Offline composite, not a QC Bridge capture."""
+    ref = dict(refs)
+    order = [("bucket", ["vanilla bucket hat (102)"]),
+             ("fisherman", ["vanilla fishing hat (55)"]),
+             ("sun", ["plurffle straw hat", "plurffle sun hat", "vanilla straw hat (4)"])]
+    rows = []
+    for name, rnames in order:
+        if name in tpls:
+            rows.append((f"{name.upper()} (GENERATED)", render_strip(tpls[name], metas[name]["preview_palette"])))
+            rows += [(r.upper(), ref[r]) for r in rnames if r in ref]
+    game = blank_image(96, 40 * len(rows), (126, 150, 110, 255))
     for i, (_, st) in enumerate(rows):
-        blit(game, worn_row(st), (i % 2) * 96, (i // 2) * 40)
-    big = nearest_scale(game, 4)
-    sheet = blank_image(len(big[0]) + 40 + len(game[0]) + 20, len(big) + 80, BG)
-    draw_text(sheet, "WORN - 4X (NORMAL ZOOM)", 20, 10, scale=3, color=LABEL)
-    blit(sheet, big, 20, 50)
-    draw_text(sheet, "1X", len(big[0]) + 40, 10, scale=3, color=LABEL)
-    blit(sheet, game, len(big[0]) + 40, 50)
-    labels = [f"{n.upper()} {pal.upper()}" for n in tpls for pal in ("olive", "straw")] + \
-             [l.upper() for l, _ in refs]
-    for i, l in enumerate(labels):
-        draw_text(sheet, l, 20 + (i % 2) * 96 * 4 + 4, 50 + (i // 2) * 160 + 2, scale=2, color=(20, 30, 20, 255))
+        blit(game, worn_row(st), 0, i * 40)
+    x2, x4 = nearest_scale(game, 2), nearest_scale(game, 4)
+    w = 20 + 96 + 30 + len(x2[0]) + 30 + len(x4[0]) + 20
+    sheet = blank_image(w, len(x4) + 70, BG)
+    xs = [20, 20 + 96 + 30, 20 + 96 + 30 + len(x2[0]) + 30]
+    for x, img, lab in zip(xs, (game, x2, x4), ("1X NATIVE", "2X", "4X - NORMAL ZOOM")):
+        draw_text(sheet, lab, x, 12, scale=2, color=LABEL)
+        blit(sheet, img, x, 50)
+    for i, (lab, _) in enumerate(rows):
+        draw_text(sheet, lab, xs[2] + 6, 50 + i * 160 + 4, scale=2, color=(20, 30, 20, 255))
     return sheet
+
+
+def compare_sheet(tpls, metas, refs, scale=6):
+    """Head-crop pairs: each generated hat (matched palette) directly above its references."""
+    ref = dict(refs)
+    rows = []
+    for name, rnames in (("bucket", ["vanilla bucket hat (102)"]), ("fisherman", ["vanilla fishing hat (55)"]),
+                         ("sun", ["plurffle straw hat", "plurffle sun hat", "vanilla straw hat (4)"])):
+        rows.append(render_strip(tpls[name], metas[name]["preview_palette"]))
+        rows += [ref[r] for r in rnames if r in ref]
+    out = blank_image(86 + 100, 24 * len(rows), (150, 150, 160, 255))
+    for i, st in enumerate(rows):
+        blit(out, _strip_h(st), 0, i * 24 + 2)
+        blit(out, [r[:96] for r in worn_row(st)[0:24]], 88, i * 24)
+    return nearest_scale(out, scale)
 
 
 def main():
@@ -106,9 +132,9 @@ def main():
         tpls[name] = tpl
         data = serialise(tpl, f"crown_brim/{name}")
         data["identity"] = meta["identity"]
-        data["nearest_vanilla"] = meta["nearest_vanilla"]
+        data["nearest_references"] = meta["nearest_references"]
         (OUT / f"{name}.template.json").write_text(json.dumps(data, indent=1) + "\n")
-        write_rgba_png(OUT / f"{name}_20x80.png", render_strip(tpl, "olive"))
+        write_rgba_png(OUT / f"{name}_20x80.png", render_strip(tpl, meta["preview_palette"]))
 
     bank = vanilla_bank()
     bank.update(mod_bank())
@@ -117,9 +143,11 @@ def main():
 
     refs = [(f"vanilla {n} ({i})", vanilla_strip(i)) for n, i in
             (("bucket hat", 102), ("fishing hat", 55), ("straw hat", 4))]
-    refs += [(k.replace(":", " "), v) for k, v in mod_bank().items()]
+    refs += [(k.replace(":", " ").lower(), v) for k, v in mod_bank().items()]
     write_rgba_png(OUT / "CONTACT_SHEET.png", contact_sheet(tpls, refs))
-    write_rgba_png(OUT / "WORN_PREVIEW.png", worn_sheet(tpls, refs[:3]))
+    metas = {n: m for n, (_, m) in variants.items()}
+    write_rgba_png(OUT / "WORN_PREVIEW.png", worn_sheet(tpls, metas, refs))
+    write_rgba_png(OUT / "COMPARE_6X.png", compare_sheet(tpls, metas, refs))
 
     failed = [f"{v}:{c}" for v, r in report["variants"].items()
               for c, res in r["checks"].items() if res["hard"] and not res["pass"]]

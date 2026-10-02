@@ -1,22 +1,30 @@
-"""Hat recipe engine — prototype 01.
+"""Hat recipe engine — prototype 01, v2.
 
 One family recipe (``crown_brim``) builds a 4-view construction template
-directly on the target pixel grid from a handful of integer parameters.
-Nothing is drawn large and shrunk; nothing is anti-aliased.
+directly on the target pixel grid from integer/ratio parameters.  Nothing is
+drawn large and shrunk; nothing is anti-aliased.
 
 A template is NOT flattened pixels.  Every cell carries
-    region  — what the cell is made of (crown / band / brim_top / brim_under / cast)
-    role    — how it is shaded       (O outline, S shadow, M mid, L light, H highlight, C cast)
-so a downstream generator can repaint by (region, role) without re-deriving
-structure.
+    region  — crown / band / brim_top / brim_under / seam / cast
+    role    — O outline, S shadow, M mid, L light, H highlight, C cast
+so a downstream generator can repaint by (region, role).
 
-View rules (defaults, per the prototype brief):
-    left  = exact horizontal mirror of right
-    back  = same silhouette as front; only interior roles differ
-Family exceptions are expressed as explicit recipe keys, never silent code paths.
+Brim constructions (one recipe, chosen by ``brim_kind``):
+    disc   — a ring seen slightly from above: an ellipse (far edge visible beside
+             the crown, near edge dipping at the centre) that may droop toward the
+             tips (fishing hat lobes) or curl up on one side (soft sun hat).
+    skirt  — a brim angled down all round (bucket hat): a row-built trapezoid.
 
-Frame order matches vanilla hats.png: front, right, left, back.
-Dependency-free (stdlib only).
+View rules:
+    left  = exact mirror of right                       (default, always)
+    back  = front silhouette                            (default, back_rule "front_outline")
+          | bowl: front crown + brim seen from above/behind, near edge deeper
+                                                        (exception, back_rule "bowl";
+             evidence: vanilla Fishing 55, Straw 4, Gil's 98, plurffle Sun/Straw)
+
+Screen-space light comes from the upper right in front/back and from the face
+side in the right view (left view mirrors it, as vanilla does).
+Frame order matches vanilla hats.png: front, right, left, back.  Stdlib only.
 """
 from __future__ import annotations
 
@@ -26,7 +34,7 @@ SIZE = 20
 CX = 10                      # frame centre lies between columns 9 and 10
 VIEWS = ("front", "right", "left", "back")
 ROLES = "OSMLHC"
-REGIONS = ("crown", "band", "brim_top", "brim_under", "cast")
+REGIONS = ("crown", "band", "brim_top", "brim_under", "seam", "cast")
 
 # Head span in hat-frame columns (vanilla farmer_base head x3..12, hat drawn at -2,-2).
 HEAD_X = (5, 15)
@@ -39,9 +47,9 @@ def _rnd(v: float) -> int:
 def _curve(kind: str, t: float) -> float:
     if kind == "linear":
         return t
-    if kind == "bell":                       # widens late: tall soft crown flaring at the base
+    if kind == "bell":
         return t * t
-    if kind == "dome":                       # widens early: round crown
+    if kind == "dome":
         return math.sqrt(t)
     raise ValueError(f"unknown crown curve {kind!r}")
 
@@ -71,138 +79,203 @@ class Grid:
 
 # --------------------------------------------------------------------------- geometry
 
-def _crown_rows(p, view):
-    """{y: (x0, x1)} inclusive, for the crown above the brim root."""
+def crown_rows(p, view):
+    """{y: (x0, x1)} inclusive, crown above the brim root.
+
+    Bowl back view: the crown's back is nearer the viewer than the brim root, so
+    it continues ``bowl_crown_extend`` rows down into the bowl (vanilla Fishing 55)."""
     side = view in ("right", "left")
-    shift = -p["side_crown_shift"] if side else 0
     extra = p["side_crown_extra"] if side else 0
     top = p["brim_root_y"] - p["crown_h"]
-    rows = {}
     n = p["crown_h"]
+    rows = {}
     for i in range(n):
         t = i / (n - 1) if n > 1 else 1.0
-        hw = p["crown_top_hw"] + (p["crown_base_hw"] - p["crown_top_hw"]) * _curve(p["crown_curve"], t)
-        hw = _rnd(hw)
+        hw = _rnd(p["crown_top_hw"] + (p["crown_base_hw"] - p["crown_top_hw"]) * _curve(p["crown_curve"], t))
         if i == 0:
             hw -= p["top_round"]
-        rows[top + i] = (CX + shift - hw - extra, CX + shift + hw - 1)
+        if i == n - 1:
+            hw += p["base_flare"]
+        rows[top + i] = (CX - hw - extra, CX + hw - 1)
+    if view == "back" and p["back_rule"] == "bowl":
+        x0, x1 = rows[top + n - 1]
+        for k in range(p["bowl_crown_extend"]):
+            rows[top + n + k] = (x0, x1)
     return rows
 
 
-def _brim_columns(p, view):
-    """{x: (y_top, y_bottom, droop_px, part)} inclusive.
-
-    Vanilla grammar (Fishing Hat 55, Straw Hat 4, Bucket Hat 102): seen from the
-    front a brim is a short central LIP (the part in front of the face, high, with
-    the cast shadow under it) flanked by two LOBES (the brim's sides seen edge-on,
-    which hang lower and read as the bowl of the brim).  part in {'lip','L','R'}.
-    """
-    side_view = view in ("right", "left")
-    shift = -p["side_crown_shift"] if side_view else 0
-    if side_view:
-        bl, br = CX - p["side_brim_back_hw"], CX + p["side_brim_front_hw"] - 1
-        droop_l, droop_r = p["side_droop_back"], p["side_droop_front"]
+def _disc_columns(p, view):
+    """{x: (top, bottom, part)} for a disc brim.  part: lip | L | R | curl."""
+    side = view in ("right", "left")
+    root, thick = p["brim_root_y"], p["brim_thick"]
+    if side:
+        rx_l, rx_r = p["side_brim_back_hw"], p["side_brim_front_hw"]
+        dr_l, dr_r = p["side_droop_back"], p["side_droop_front"]
     else:
-        bl, br = CX - p["brim_hw"], CX + p["brim_hw"] - 1
-        droop_l = droop_r = p["brim_droop"]
-    root, thick, tilt = p["brim_root_y"], p["brim_thick"], p["brim_tilt"]
-    lip_l, lip_r = CX + shift - p["lip_hw"], CX + shift + p["lip_hw"] - 1
-    lip_bottom = root + thick - 1
+        rx_l = rx_r = p["brim_hw"]
+        dr_l = dr_r = p["brim_droop"]
+    curl_side = None
+    if p["brim_curl"] and view == "front":
+        curl_side = "R"
+    elif p["brim_curl"] and view == "back":
+        curl_side = "L"                                   # the same flap, seen from behind
+    lip_hw = p["lip_hw"]
     cols = {}
-    for x in range(bl, br + 1):
-        if lip_l <= x <= lip_r:
-            cols[x] = (root, lip_bottom, 0, "lip")
-            continue
-        if x < lip_l:
-            k, n, droop, part = lip_l - x, lip_l - bl, droop_l, "L"
-        else:
-            k, n, droop, part = x - lip_r, br - lip_r, droop_r, "R"
-        u = k / max(1, n)
-        d = max(1, _rnd(droop * u ** p["droop_power"])) if droop else 0
-        y0 = root - tilt + _rnd(d * p["brim_top_follow"])
-        y1 = lip_bottom + d
-        if k == n and p["tip_round"]:
-            y0 += 1                                   # round the brim tip
-            if y1 - y0 >= 3:
-                y1 -= 1
-        cols[x] = (y0, y1, d, part)
+    for x in range(CX - rx_l, CX + rx_r):
+        dx = x + 0.5 - CX
+        s = "L" if dx < 0 else "R"
+        rx, droop = (rx_l, dr_l) if s == "L" else (rx_r, dr_r)
+        a_c = abs(dx) / rx                                 # pixel centre
+        a_e = (abs(dx) + 0.5) / rx                         # pixel outer edge (tip reaches 1)
+        e = math.sqrt(max(0.0, 1 - a_c * a_c))
+        a0 = p["crown_base_hw"] / rx
+        u = max(0.0, (a_e - a0) / max(1e-6, 1 - a0))
+        d = _rnd(droop * u ** p["droop_power"])
+        top = root - _rnd(p["brim_far"] * e) + _rnd(d * p["brim_top_follow"])
+        bot = root + thick - 1 + _rnd(p["brim_near"] * e) + d
+        part = "lip" if abs(dx) < lip_hw else s
+        if curl_side == s and part != "lip":
+            lift = _rnd(p["brim_curl"] * u ** 2)
+            top, bot = top - lift, bot - lift // 2       # the flap bends up; its root stays attached
+            if lift:
+                part = "curl"
+        if a_e >= 1 and p["tip_round"]:
+            top += 1
+            if bot - top >= 3:
+                bot -= 1
+        cols[x] = (top, bot, part)
     return cols
 
 
-# --------------------------------------------------------------------------- shading
-
-def _shade_crown(g, p, crown, view):
-    top = min(crown)
+def _skirt_rows(p, view):
+    """{y: (x0, x1)} for a skirt brim angled down all round."""
+    side = view in ("right", "left")
     root = p["brim_root_y"]
-    band_rows = set(range(root - p["band_h"], root)) if p["band_h"] else set()
+    out = {}
+    for r in range(p["skirt_rows"]):
+        hw = p["crown_base_hw"] + p["skirt_out"] + _rnd(r * p["skirt_slope"])
+        ext_l = p["side_skirt_back"] if side else 0
+        ext_r = p["side_skirt_front"] if side else 0
+        out[root + r] = (CX - hw - ext_l, CX + hw - 1 + ext_r)
+    return out
+
+
+def _bowl_bottom(p, x):
+    """Back-view exception: the brim's near (back) edge, seen from above and behind."""
+    dx = x + 0.5 - CX
+    e = math.sqrt(max(0.0, 1 - (abs(dx) / p["brim_hw"]) ** 2))
+    return p["brim_root_y"] + p["brim_thick"] - 1 + _rnd(p["bowl_depth"] * e ** p["bowl_power"])
+
+
+# --------------------------------------------------------------------------- construction
+
+def _paint_crown(g, p, crown, view):
+    top = min(crown)
+    root = max(crown) + 1                                         # crown base (moves down in a bowl back view)
+    band = set(range(root - p["band_h"], root)) if p["band_h"] else set()
+    light_right = view != "left"
     for y, (x0, x1) in crown.items():
+        w = x1 - x0 + 1
         for x in range(x0, x1 + 1):
-            region = "band" if y in band_rows else "crown"
-            interior_rank = min(x - x0, x1 - x)     # 0 = edge column
+            lit_rank = (x1 - x) if light_right else (x - x0)      # 0 = edge on the lit side
+            shade_rank = (x - x0) if light_right else (x1 - x)    # 0 = edge on the shadow side
+            region = "band" if y in band else "crown"
             if region == "band":
-                role = "S" if interior_rank <= 1 else "M"
-            elif y == top + 1:
-                role = "L" if interior_rank <= 1 else "H"
+                role = "S" if shade_rank <= 1 else ("L" if lit_rank == 1 else "M")
+            elif y == top + 1:                                    # top plane, seen from above
+                role = "H" if 2 <= lit_rank <= max(2, w // 2 - 1) else "L"
             elif y == top + 2 and p["crown_h"] >= 5:
-                role = "L" if interior_rank >= 2 else "M"
-            elif interior_rank == 1 and y >= root - 2:
+                role = "L" if 1 <= lit_rank <= w // 2 else "M"
+            elif shade_rank == 1 and y > top + 1:
                 role = "S"
+            elif y == root - 1 and not band and (shade_rank <= 2 or lit_rank <= 1):
+                role = "S"                                        # base crease / flare
             else:
                 role = "M"
             g.set(x, y, region, role)
 
 
-def _shade_brim(g, p, cols, view):
-    front_part = "R" if view == "right" else None
+def _paint_disc(g, p, cols, view):
     root = p["brim_root_y"]
-    for x, (y0, y1, d, part) in cols.items():
-        for y in range(y0, y1 + 1):
-            if g.get(x, y) and y < root:           # crown stands in front of the brim's far half
+    lit_side = "R" if view != "left" else "L"
+    back = view == "back" and p["back_rule"] == "bowl"
+    for x, (top, bot, part) in cols.items():
+        if back:
+            bot = max(bot, _bowl_bottom(p, x))
+        for y in range(top, bot + 1):
+            if g.get(x, y):                                       # crown in front of far brim
                 continue
-            if part == "lip":
-                if y == root and p["brim_thick"] >= 3:
-                    role, region = "S", "brim_top"           # crown base occludes the brim
-                elif y == root:
-                    role, region = "L", "brim_top"           # thin lip: vanilla lights its top (Straw Hat 4)
+            if back:
+                crown_base = root + p["bowl_crown_extend"]
+                if y == bot - 1 and bot - top >= 3:
+                    role, region = "L", "brim_top"                # near rim catches the light
+                elif y <= crown_base and y > top + 1 and abs(x + 0.5 - CX) < p["crown_base_hw"] + 2:
+                    role, region = "S", "brim_top"                # brim in the crown's shadow
+                elif y <= top + 1 and part == lit_side:
+                    role, region = "L", "brim_top"
                 else:
-                    role, region = ("L" if view == "front" else "M"), "brim_top"
-            elif y >= y1 - 1 and y > y0 + 1 and (d > 0 or part == front_part):
-                role, region = "S", "brim_under"             # lobe underside
-            elif y == y0 + 1 or (y == y0 and y < root):
-                role, region = "L", "brim_top"
+                    role, region = "M", "brim_top"
+            elif part == "lip":
+                if y == root and p["brim_thick"] >= 3:
+                    role, region = "S", "brim_top"                # crown base shades the brim
+                elif view == "front":
+                    role, region = ("H" if lit_side == "R" and 0 < x + 0.5 - CX < p["lip_hw"] - 1 else "L"), "brim_top"
+                else:
+                    role, region = "L", "brim_top"
+            elif part == "curl":
+                role, region = ("S", "brim_under") if y == top + 1 else ("M", "brim_top")
+            elif y == bot - 1 and bot - top >= 4:
+                role, region = "S", "brim_under"                  # lobe turning under
+            elif y <= root + 1:
+                role, region = ("L" if part == lit_side or y < root else "M"), "brim_top"   # top faces the light
             else:
                 role, region = "M", "brim_top"
             g.set(x, y, region, role)
 
 
-def _lip_dividers(cols):
-    """The line where each lobe turns under, beside the lip (vanilla Fishing Hat x6/x13)."""
-    out = set()
-    lip = [x for x, c in cols.items() if c[3] == "lip"]
-    if not lip:
-        return out
-    root, lip_bottom = cols[lip[0]][0], cols[lip[0]][1]
-    for x in (min(lip) - 1, max(lip) + 1):
-        if x in cols:
-            out |= {(x, y) for y in range(root + 1, lip_bottom + 1)}
-    return out
+def _paint_skirt(g, p, rows, view):
+    root = p["brim_root_y"]
+    light_right = view != "left"
+    n = len(rows)
+    for y, (x0, x1) in rows.items():
+        r = y - root
+        for x in range(x0, x1 + 1):
+            shade_rank = (x - x0) if light_right else (x1 - x)
+            lit_rank = (x1 - x) if light_right else (x - x0)
+            if r == 0:
+                role, region = "S", "brim_top"                    # crease under the crown
+            elif p["brim_stitch"] and r == p["brim_stitch"] and shade_rank >= 1 and lit_rank >= 1:
+                role, region = ("H" if x % 2 == 0 else "L"), "seam"
+            elif shade_rank == 1:
+                role, region = "S", "brim_top"
+            elif r == n - 2 and view != "back":
+                role, region = "S", "brim_under"                  # front edge turns under
+            elif r == 1:
+                role, region = ("L" if lit_rank >= 1 else "M"), "brim_top"
+            else:
+                role, region = "M", "brim_top"
+            g.set(x, y, region, role)
 
 
-def _outline(g, crown, extra=()):
-    """Outer contour + crown sides where the crown stands against the brim + brim dividers."""
+def _outline(g, crown, cols=None):
+    """Outer contour + crown sides against the brim + lobe turn-under lines."""
     solid = g.mask()
     out = set()
     for (x, y) in solid:
-        for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
-            if (x + dx, y + dy) not in solid:
-                out.add((x, y))
-    for y, (x0, x1) in crown.items():
-        for x in (x0, x1):
+        if any((x + dx, y + dy) not in solid for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1))):
             out.add((x, y))
-    out |= {c for c in extra if g.get(*c)}
+    for y, (x0, x1) in crown.items():
+        out |= {(x0, y), (x1, y)}
+    if cols:
+        lip = [x for x, c in cols.items() if c[2] == "lip"]
+        if lip:
+            root, lip_bot = cols[lip[0]][0], cols[lip[0]][1]
+            for x in (min(lip) - 1, max(lip) + 1):
+                if x in cols and cols[x][1] > lip_bot:            # only where a lobe hangs below the lip
+                    out |= {(x, y) for y in range(max(root, cols[x][0]) + 1, lip_bot + 1)}
     for (x, y) in out:
-        region = g.cells[y][x][0]
-        g.set(x, y, region, "O")
+        if g.get(x, y):
+            g.set(x, y, g.cells[y][x][0], "O")
 
 
 def _cast(g, view):
@@ -213,52 +286,55 @@ def _cast(g, view):
         ys = [y for (xx, y) in solid if xx == x]
         if not ys:
             continue
-        y = max(ys) + 1
-        if view == "right" and x < CX - 1:      # cast falls on the face side only
+        if view == "right" and x < CX - 1:                        # cast falls on the face side only
             continue
-        if g.get(x, y) is None and y < SIZE:
+        y = max(ys) + 1
+        if y < SIZE and g.get(x, y) is None:
             g.set(x, y, "cast", "C")
 
-
-# --------------------------------------------------------------------------- build
 
 def build_view(p, view):
     if view == "left":
         return build_view(p, "right").mirrored()
-    if view == "back" and p.get("back_rule", "front_outline") == "front_outline":
-        front = build_view(p, "front")
-        g = Grid()
-        crown = _crown_rows(p, "front")
-        _shade_crown(g, p, crown, "back")
-        cols = _brim_columns(p, "front")
-        _shade_brim(g, p, cols, "back")
-        _outline(g, crown, _lip_dividers(cols))
-        assert g.mask() == front.mask(), "back silhouette must equal front"
-        return g
+    if view == "back" and p["back_rule"] == "front_outline":
+        return _construct(p, "front", interior_view="back")
+    return _construct(p, view)
+
+
+def _construct(p, view, interior_view=None):
+    iv = interior_view or view
     g = Grid()
-    crown = _crown_rows(p, view)
-    _shade_crown(g, p, crown, view)
-    cols = _brim_columns(p, view)
-    _shade_brim(g, p, cols, view)
-    _outline(g, crown, _lip_dividers(cols))
-    _cast(g, view)
+    crown = crown_rows(p, view)
+    _paint_crown(g, p, crown, iv)
+    cols = None
+    if p["brim_kind"] == "disc":
+        cols = _disc_columns(p, view)
+        _paint_disc(g, p, cols, iv)
+    else:
+        _paint_skirt(g, p, _skirt_rows(p, view), iv)
+    _outline(g, crown, cols if iv != "back" else None)
+    _cast(g, iv)
+    dy = p["side_y_shift"] if view in ("right", "left") else 0
+    if dy < 0:
+        g.cells = g.cells[-dy:] + [[None] * SIZE for _ in range(-dy)]
+    elif dy > 0:
+        g.cells = [[None] * SIZE for _ in range(dy)] + g.cells[:-dy]
     return g
 
 
 def build_template(params: dict) -> dict:
     p = dict(params)
-    views = {v: build_view(p, v) for v in VIEWS}
-    return {"params": p, "views": views}
+    return {"params": p, "views": {v: build_view(p, v) for v in VIEWS}}
 
 
 def serialise(tpl: dict, name: str) -> dict:
     """JSON form: per view, a region map (one char per cell) + role map."""
-    rcode = {"crown": "c", "band": "b", "brim_top": "t", "brim_under": "u", "cast": "x"}
+    rcode = {"crown": "c", "band": "b", "brim_top": "t", "brim_under": "u", "seam": "s", "cast": "x"}
     out = {"name": name, "frame": [SIZE, SIZE], "view_order": list(VIEWS),
            "region_codes": {v: k for k, v in rcode.items()},
            "role_codes": {"O": "outline", "S": "shadow", "M": "mid", "L": "light",
                           "H": "highlight", "C": "cast"},
-           "view_rules": {"left": "mirror(right)", "back": tpl["params"].get("back_rule", "front_outline")},
+           "view_rules": {"left": "mirror(right)", "back": tpl["params"]["back_rule"]},
            "params": tpl["params"], "views": {}}
     for v, g in tpl["views"].items():
         out["views"][v] = {

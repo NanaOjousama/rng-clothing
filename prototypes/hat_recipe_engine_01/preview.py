@@ -40,17 +40,17 @@ RAMPS = {
 }
 # preview palettes: region -> ramp
 PALETTES = {
-    "olive":  {"crown": "olive", "brim_top": "olive", "brim_under": "olive", "band": "khaki"},
-    "denim":  {"crown": "denim", "brim_top": "denim", "brim_under": "denim", "band": "cream"},
-    "straw":  {"crown": "straw", "brim_top": "straw", "brim_under": "straw", "band": "rust"},
-    "charcoal": {"crown": "charcoal", "brim_top": "charcoal", "brim_under": "charcoal", "band": "navy"},
+    "olive":  {"crown": "olive", "brim_top": "olive", "brim_under": "olive", "seam": "olive", "band": "khaki"},
+    "denim":  {"crown": "denim", "brim_top": "denim", "brim_under": "denim", "seam": "denim", "band": "cream"},
+    "straw":  {"crown": "straw", "brim_top": "straw", "brim_under": "straw", "seam": "straw", "band": "rust"},
+    "charcoal": {"crown": "charcoal", "brim_top": "charcoal", "brim_under": "charcoal", "seam": "charcoal", "band": "navy"},
 }
 ROLE_INDEX = {"O": 0, "S": 1, "M": 2, "L": 3, "H": 4}
 # role-map debug colours
 ROLE_DEBUG = {"O": (20, 20, 24, 255), "S": (90, 90, 110, 255), "M": (150, 150, 165, 255),
               "L": (205, 205, 215, 255), "H": (250, 250, 255, 255), "C": (120, 30, 60, 255)}
 REGION_DEBUG = {"crown": (214, 120, 70, 255), "band": (240, 210, 70, 255), "brim_top": (90, 160, 210, 255),
-                "brim_under": (40, 80, 150, 255), "cast": (120, 30, 60, 255)}
+                "brim_under": (40, 80, 150, 255), "seam": (230, 90, 200, 255), "cast": (120, 30, 60, 255)}
 
 
 def render_view(grid, palette="olive", mode="colour"):

@@ -11,9 +11,10 @@
      "pass": true,
      "hard": true
     },
-    "back_outline_equals_front": {
+    "back_view_rule": {
      "pass": true,
-     "hard": true
+     "hard": true,
+     "rule": "back silhouette == front"
     },
     "outline_closed": {
      "pass": true,
@@ -30,11 +31,11 @@
      "hard": true,
      "front": [
       5,
-      13
+      12
      ],
      "side": [
       5,
-      13
+      12
      ]
     },
     "seating_vs_vanilla": {
@@ -74,24 +75,24 @@
      "hard": false,
      "top5": [
       [
-       0.758,
+       0.793,
        "vanilla:Bucket Hat (102)"
       ],
       [
-       0.696,
-       "vanilla:Straw Hat (4)"
-      ],
-      [
-       0.687,
+       0.762,
        "vanilla:Paper Hat (114)"
       ],
       [
-       0.676,
-       "vanilla:Gil's Hat (98)"
+       0.724,
+       "vanilla:Fedora (19)"
       ],
       [
-       0.673,
-       "vanilla:Forager's Hat (90)"
+       0.713,
+       "vanilla:Straw Hat (4)"
+      ],
+      [
+       0.697,
+       "vanilla:Sou'wester (28)"
       ]
      ]
     }
@@ -108,9 +109,20 @@
      "pass": true,
      "hard": true
     },
-    "back_outline_equals_front": {
+    "back_view_rule": {
      "pass": true,
-     "hard": true
+     "hard": true,
+     "rule": "bowl: same width/top as front, deeper",
+     "front": [
+      2,
+      17,
+      5
+     ],
+     "back": [
+      2,
+      17,
+      5
+     ]
     },
     "outline_closed": {
      "pass": true,
@@ -161,8 +173,8 @@
     "not_helmet": {
      "pass": true,
      "hard": true,
-     "max_gap": 4,
-     "spread": 3,
+     "max_gap": 3,
+     "spread": 2,
      "lift": 2,
      "helmet": false
     },
@@ -171,24 +183,24 @@
      "hard": false,
      "top5": [
       [
-       0.722,
-       "vanilla:Straw Hat (4)"
-      ],
-      [
-       0.701,
-       "vanilla:Forager's Hat (90)"
-      ],
-      [
-       0.694,
+       0.809,
        "vanilla:Fishing Hat (55)"
       ],
       [
-       0.691,
+       0.797,
+       "vanilla:Straw Hat (4)"
+      ],
+      [
+       0.782,
        "vanilla:Gil's Hat (98)"
       ],
       [
-       0.681,
-       "vanilla:Cowgal Hat (33)"
+       0.768,
+       "vanilla:Forager's Hat (90)"
+      ],
+      [
+       0.76,
+       "vanilla:Sou'wester (28)"
       ]
      ]
     }
@@ -205,9 +217,20 @@
      "pass": true,
      "hard": true
     },
-    "back_outline_equals_front": {
+    "back_view_rule": {
      "pass": true,
-     "hard": true
+     "hard": true,
+     "rule": "bowl: same width/top as front, deeper",
+     "front": [
+      1,
+      18,
+      5
+     ],
+     "back": [
+      1,
+      18,
+      5
+     ]
     },
     "outline_closed": {
      "pass": true,
@@ -224,11 +247,11 @@
      "hard": true,
      "front": [
       5,
-      12
+      11
      ],
      "side": [
       5,
-      12
+      11
      ]
     },
     "seating_vs_vanilla": {
@@ -258,8 +281,8 @@
     "not_helmet": {
      "pass": true,
      "hard": true,
-     "max_gap": 5,
-     "spread": 4,
+     "max_gap": 4,
+     "spread": 3,
      "lift": 2,
      "helmet": false
     },
@@ -268,24 +291,24 @@
      "hard": false,
      "top5": [
       [
-       0.669,
+       0.772,
        "plurffle:Straw Hat"
       ],
       [
-       0.656,
+       0.719,
        "plurffle:Sun Hat"
       ],
       [
-       0.649,
-       "vanilla:Gil's Hat (98)"
-      ],
-      [
-       0.642,
+       0.714,
        "vanilla:Cowgal Hat (33)"
       ],
       [
-       0.635,
-       "vanilla:Straw Hat (4)"
+       0.708,
+       "vanilla:Cowpoke Hat (34)"
+      ],
+      [
+       0.685,
+       "vanilla:Fishing Hat (55)"
       ]
      ]
     }
@@ -296,11 +319,11 @@
   "variants_distinct": {
    "pass": true,
    "hard": true,
-   "detail": "front+side silhouette IoU {'bucket~fisherman': 0.781, 'bucket~sun': 0.581, 'fisherman~sun': 0.757}",
+   "detail": "front+side silhouette IoU {'bucket~fisherman': 0.835, 'bucket~sun': 0.533, 'fisherman~sun': 0.611}",
    "iou": {
-    "bucket~fisherman": 0.781,
-    "bucket~sun": 0.581,
-    "fisherman~sun": 0.757
+    "bucket~fisherman": 0.835,
+    "bucket~sun": 0.533,
+    "fisherman~sun": 0.611
    }
   },
   "helmet_metric_calibrated": {

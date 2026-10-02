@@ -97,7 +97,13 @@ def check_variant(name, tpl, bank):
     checks["grid_and_codes"] = _res(not bad and all(len(v[vw].cells) == SIZE for vw in VIEWS), bad=bad[:5])
 
     checks["left_mirrors_right"] = _res(v["left"].cells == v["right"].mirrored().cells)
-    checks["back_outline_equals_front"] = _res(_solid(v["back"]) == _solid(v["front"]))
+    if p["back_rule"] == "front_outline":
+        checks["back_view_rule"] = _res(_solid(v["back"]) == _solid(v["front"]), rule="back silhouette == front")
+    else:   # bowl exception: same crown top and brim span as the front, and it must reach lower (seen from above)
+        fb, bb = _solid(v["front"]), _solid(v["back"])
+        span = lambda m: (min(x for x, _ in m), max(x for x, _ in m), min(y for _, y in m))
+        checks["back_view_rule"] = _res(span(fb) == span(bb) and max(y for _, y in bb) > max(y for _, y in fb),
+                                        rule="bowl: same width/top as front, deeper", front=span(fb), back=span(bb))
 
     open_edges = []
     for vw in VIEWS:
