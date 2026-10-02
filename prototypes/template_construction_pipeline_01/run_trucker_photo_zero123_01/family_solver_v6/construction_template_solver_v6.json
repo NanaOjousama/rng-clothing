@@ -1,0 +1,53 @@
+{
+  "schema": "experimental-trucker-family-solver/v6",
+  "status": "EXPERIMENTAL_REVIEW_REQUIRED",
+  "family": "trucker_cap",
+  "base": "solver_v5",
+  "changes": [
+    "final 1 px visor shortening",
+    "thicker 2-row visor root",
+    "remove isolated tip notch",
+    "soften back opening shoulders",
+    "retain exact left/right mirror"
+  ],
+  "qc": {
+    "front": {
+      "bbox": [
+        6,
+        3,
+        19,
+        14
+      ],
+      "opaque": 154
+    },
+    "right": {
+      "bbox": [
+        4,
+        3,
+        25,
+        9
+      ],
+      "opaque": 87
+    },
+    "back": {
+      "bbox": [
+        6,
+        3,
+        19,
+        15
+      ],
+      "opaque": 134
+    },
+    "left": {
+      "bbox": [
+        0,
+        3,
+        21,
+        9
+      ],
+      "opaque": 87
+    },
+    "leftExactMirror": true
+  },
+  "promotionRule": "Visual + in-game approval required."
+}
