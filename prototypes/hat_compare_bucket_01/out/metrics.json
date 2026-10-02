@@ -1,0 +1,86 @@
+{
+ "B2 PixelLab Pro Flash 8-dir (text+style)": {
+  "seating": {
+   "front": {
+    "content_w": 18,
+    "content_h": 14,
+    "cropped_px": 8
+   },
+   "right": {
+    "content_w": 18,
+    "content_h": 14,
+    "cropped_px": 8
+   },
+   "left": {
+    "content_w": 18,
+    "content_h": 15,
+    "cropped_px": 16
+   },
+   "back": {
+    "content_w": 18,
+    "content_h": 15,
+    "cropped_px": 18
+   }
+  },
+  "colours": 30,
+  "partial_alpha_px": 0,
+  "left_vs_mirrored_right_px": 6,
+  "front_size": {
+   "content_w": 18,
+   "content_h": 13,
+   "cropped_px": 0
+  }
+ },
+ "B4 PixelLab Pro 20px (64 cands) + rotate": {
+  "seating": {
+   "front": {
+    "content_w": 15,
+    "content_h": 10,
+    "cropped_px": 0
+   },
+   "right": {
+    "content_w": 16,
+    "content_h": 12,
+    "cropped_px": 0
+   },
+   "left": {
+    "content_w": 16,
+    "content_h": 12,
+    "cropped_px": 0
+   },
+   "back": {
+    "content_w": 11,
+    "content_h": 14,
+    "cropped_px": 5
+   }
+  },
+  "colours": 10,
+  "partial_alpha_px": 0,
+  "left_vs_mirrored_right_px": 15,
+  "front_size": {
+   "content_w": 15,
+   "content_h": 10,
+   "cropped_px": 0
+  }
+ },
+ "A Recipe (deterministic)": {
+  "colours": 6,
+  "partial_alpha_px": 0,
+  "left_vs_mirrored_right_px": 0,
+  "front_size": {
+   "content_w": 16,
+   "content_h": 9,
+   "cropped_px": 0
+  }
+ },
+ "REF vanilla Bucket Hat (102)": {
+  "colours": 5,
+  "partial_alpha_px": 22,
+  "left_vs_mirrored_right_px": 0,
+  "front_size": {
+   "content_w": 14,
+   "content_h": 9,
+   "cropped_px": 0
+  }
+ }
+}
