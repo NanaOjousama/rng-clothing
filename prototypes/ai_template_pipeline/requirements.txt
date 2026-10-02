@@ -1,0 +1,8 @@
+diffusers>=0.35
+transformers>=4.46
+accelerate>=1.1
+safetensors>=0.4
+huggingface_hub>=0.27
+Pillow>=10.4
+numpy>=2.0
+opencv-python-headless>=4.10
