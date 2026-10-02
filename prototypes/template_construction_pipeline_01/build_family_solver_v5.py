@@ -86,14 +86,14 @@ def main():
     frames['left']=frames['right'].transpose(Image.Transpose.FLIP_LEFT_RIGHT)
     OUT.mkdir(parents=True,exist_ok=True); (OUT/'template_frames').mkdir(exist_ok=True)
     for v in VIEWS: frames[v].save(OUT/'template_frames'/f'{v}.png')
-    contact(frames,OUT/'01_family_solver_v4.png','TRUCKER SOLVER V5 - SHORTER VISOR / THICKER ROOT')
+    contact(frames,OUT/'01_family_solver_v5.png','TRUCKER SOLVER V5 - SHORTER VISOR / THICKER ROOT')
     wear_sheet(frames,OUT/'02_stardew_fit_preview.png')
     report={v:{'bbox':list(bbox(cells(frames[v]))),'opaque':len(cells(frames[v]))} for v in VIEWS}
     report['leftExactMirror']=list(frames['left'].getdata())==[frames['right'].getpixel((25-x,y)) for y in range(26) for x in range(26)]
     contract={'schema':'experimental-trucker-family-solver/v5','status':'EXPERIMENTAL_REVIEW_REQUIRED',
               'family':'trucker_cap','base':'solver_v4','changes':['shorten side visor by about 2 px','thicken visor root into crown','smooth crown-to-visor transition','retain v4 rounded back opening','left exact mirror of right'],
               'qc':report,'promotionRule':'Visual + in-game approval required.'}
-    (OUT/'construction_template_solver_v4.json').write_text(json.dumps(contract,indent=2)+'\n')
+    (OUT/'construction_template_solver_v5.json').write_text(json.dumps(contract,indent=2)+'\n')
     print(json.dumps(report,indent=2)); print('OUTPUT',OUT)
 
 if __name__=='__main__': main()
