@@ -1,0 +1,66 @@
+{
+  "Id": "qc.reference.vanilla.trucker16",
+  "Category": "Hat",
+  "DefinitionVersion": 1,
+  "WornTexture": "assets/qc/vanilla_reference/vanilla_trucker16.png",
+  "FrameWidth": 20,
+  "FrameHeight": 20,
+  "RenderScale": 1.0,
+  "VanillaReferenceAnchor": {
+    "X": 10,
+    "Y": 16
+  },
+  "Directions": {
+    "Front": {
+      "SourceX": 0,
+      "SourceY": 0,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 0,
+      "FlipX": false
+    },
+    "Right": {
+      "SourceX": 0,
+      "SourceY": 20,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 0,
+      "FlipX": false
+    },
+    "Left": {
+      "SourceX": 0,
+      "SourceY": 40,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 0,
+      "FlipX": false
+    },
+    "Back": {
+      "SourceX": 0,
+      "SourceY": 60,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 0,
+      "FlipX": false
+    }
+  },
+  "Metadata": {
+    "Family": "trucker_hat",
+    "Construction": "vanilla_reference",
+    "Material": "",
+    "Palette": "vanilla",
+    "Motif": "",
+    "GeneratorId": "vanilla-reference-qc",
+    "GeneratorVersion": 1,
+    "GeneratorSeed": 16,
+    "Style": "exact-unpacked-vanilla-pixels",
+    "QualityTier": "REFERENCE",
+    "Decals": "",
+    "Classification": "REFERENCE_ONLY",
+    "Label": "VANILLA TRUCKER HAT 16 - ORIGINAL PIXELS"
+  }
+}
