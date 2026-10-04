@@ -1783,6 +1783,17 @@ Validation: `tools/validate_content_source_routing.py` passes; existing source-r
 - Unit/regression suite passes, including HairMode mapping, validation, snapshot persistence, and codec round-trip; EnhancedSewingMachine Release build succeeds with 0 warnings / 0 errors and auto-deploys to the live Mods folder.
 - Live QC capture: `qc_bridge/captures/20261001-182856/c04_obscured_hair/` confirms C04 renders successfully with the new vanilla obscured-hair path in all four directions.
 
+## Sprite Fusion bucket hat generate + direction-set — 2026-10-02
+
+- experiments/spritefusion_bucket_16_01/: `generate` size 16 gave 12 clean 16–17 px bucket candidates; output_10 picked.
+- `direction-set` on output_10 again produced a full chibi wearer in all 8 views (no hat-only view). Second confirmation that direction-set is not usable for headwear; EDIT-CARDINAL remains the headwear direction path.
+- tools/sf_run_request.py now supports `operation: generate`.
+- Follow-up EDIT-CARDINAL on output_10: 4/4 edit outputs hat-only (no wearer). Correct-scale picks (right_00, back_00) are weakly rotated / size-drifted and switch the outline colour; the true right profile came out at ~2x scale. Draft four_view_x10.png, not promoted.
+- Retry right edit also came back ~2x scale. Hand-drawn 16x16 right/back (handfix/) completes a consistent draft 4-view; not worn-QC'd.
+- experiments/rd_bucket_rotate_01: Retro Diffusion `rd_advanced_animation__rotate` on SF output_10 (padded 16->32 canvas) gave 8 hat-only views at 15-16 px, $0.10. First AI route this project has seen that rotates a small hat without wearer contamination or size drift. RD key works via direct REST; the MCP session still holds a stale key.
+- experiments/rd_bucket_rotate_02_maroon: same RD rotate on a user-supplied SF web maroon bucket hat with chin strap; 8 hat-only views, no size drift, strap rotates plausibly. User: "finally looks alright". Next: worn QC.
+- experiments/rd_bucket_rotate_03_repeatability: same RD rotate on 5 more bucket hats (pad-only 32x32). Hat-only + size held 5/5; detail fidelity mixed: 1 PASS (strap hat), 3 PARTIAL (band/seam lines and one-side outline dropped), 1 FAIL (frog hat rotated as a frog). Rotate is reliable for shape/scale, not for thin detail.
+
 ## Maroon bucket RD8 construction-template candidate — 2026-10-03
 
 - Corrected subject after the cow-ear bucket was mistakenly used for the template pass: the intended construction is `experiments/rd_bucket_rotate_02_maroon/`.
@@ -1795,7 +1806,6 @@ Validation: `tools/validate_content_source_routing.py` passes; existing source-r
 - Source-transfer, roll, geometry-lock, and provisional ESM wear contracts are present; human art approval and ESM wear approval remain fail-closed.
 - Review contact: `experiments/bucket_maroon_rd8_template_01/BUCKET_MAROON_RD8_TEMPLATE_CONTACT.png`.
 - Validation: `tools/validate_bucket_maroon_rd8_template.py` PASS; existing source-backed template validator PASS.
-
 
 ## Bucket chin-strap separated into optional roll — 2026-10-03
 
@@ -1819,3 +1829,12 @@ Validation: `tools/validate_content_source_routing.py` passes; existing source-r
 - EnhancedSewingMachine Release build: PASS, 0 warnings / 0 errors, auto-deployed to the live Stardew Mods folder.
 - EnhancedSewingMachine.Tests: ALL TESTS PASSED.
 - Live ESM visual approval is still pending; inspect all four directions for both QC garments before changing the wear contract to approved.
+
+## Maroon bucket vanilla hair policy in ESM QC — 2026-10-03
+
+- Added `HairMode: Obscured` to both `qc.bucket.maroon.rd8.base_off` and `qc.bucket.maroon.rd8.strap_on`, so ESM QC Preview visibly uses Stardew's covered-hair behavior while judging the hat.
+- The bucket wear contract now records the same hair policy and maps it to Stardew `Hat.hairDrawType = 1`.
+- Strap presence does not change hair behavior; both variants share the bucket-hat policy.
+- ESM garment validator remains 23/23 PASS.
+- EnhancedSewingMachine Release build succeeds with 0 warnings / 0 errors and auto-deploys the updated QC definitions to the live Mods folder.
+- EnhancedSewingMachine.Tests: ALL TESTS PASSED, including the obscured-hair mapping test.

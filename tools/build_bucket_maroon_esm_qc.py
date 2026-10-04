@@ -28,7 +28,7 @@ def make(slug,strap,label):
     dirs={}
     for i,v in enumerate(ORDER):
         dirs[v.title()]={'SourceX':0,'SourceY':i*FS,'AnchorX':12,'AnchorY':17,'OffsetX':0,'OffsetY':-2}
-    d={'Id':f'qc.bucket.maroon.rd8.{slug}','Category':'Hat','DefinitionVersion':1,'WornTexture':texrel,'FrameWidth':FS,'FrameHeight':FS,'RenderScale':RS,'VanillaReferenceAnchor':{'X':10,'Y':16},'Directions':dirs,'Metadata':{'Family':'bucket_hat','Construction':'bucket_maroon_rd8','Material':'source_backed','Palette':'maroon','Motif':'','GeneratorId':'BucketMaroonRD8','GeneratorVersion':1,'GeneratorSeed':1 if strap else 0,'Style':'approved-construction,wear-qc','QualityTier':'QC','Decals':'chin_strap' if strap else '','Classification':'QC_CANDIDATE','Label':label}}
+    d={'Id':f'qc.bucket.maroon.rd8.{slug}','Category':'Hat','DefinitionVersion':1,'WornTexture':texrel,'FrameWidth':FS,'FrameHeight':FS,'RenderScale':RS,'VanillaReferenceAnchor':{'X':10,'Y':16},'HairMode':'Obscured','Directions':dirs,'Metadata':{'Family':'bucket_hat','Construction':'bucket_maroon_rd8','Material':'source_backed','Palette':'maroon','Motif':'','GeneratorId':'BucketMaroonRD8','GeneratorVersion':1,'GeneratorSeed':1 if strap else 0,'Style':'approved-construction,wear-qc','QualityTier':'QC','Decals':'chin_strap' if strap else '','Classification':'QC_CANDIDATE','Label':label}}
     rel=f'qc/bucket_maroon_rd8/{slug}.json'; (MOD/'assets/garments'/rel).write_text(json.dumps(d,indent=2)+'\n'); return rel
 entries=[make('base_off',False,'BUCKET MAROON RD8 - STRAP OFF'),make('strap_on',True,'BUCKET MAROON RD8 - STRAP ON')]
 idx=json.loads(INDEX.read_text()); idx['Garments']=[x for x in idx['Garments'] if not str(x).startswith('qc/bucket_maroon_rd8/')]+entries; INDEX.write_text(json.dumps(idx,indent=2)+'\n')

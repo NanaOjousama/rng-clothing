@@ -39,5 +39,14 @@
       "fitScale": 1.0
     }
   },
-  "note": "Human art approved. Wear QC is for strap-off base first; chin_strap is an optional roll-on attachment and must not be baked into every bucket hat."
+  "note": "Human art approved. Wear QC is for strap-off base first; chin_strap is an optional roll-on attachment and must not be baked into every bucket hat.",
+  "hairPolicy": {
+    "mode": "Obscured",
+    "authority": "vanilla Bucket Hat behavior",
+    "runtimeMapping": "Stardew Hat.hairDrawType = 1",
+    "appliesTo": [
+      "base",
+      "chin_strap"
+    ]
+  }
 }
