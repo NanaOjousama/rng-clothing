@@ -1,0 +1,77 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "bucket_maroon_rd8",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "bucket_maroon_rd8",
+  "frameSize": [24, 24],
+  "sourceIdentity": {
+    "kind": "USER_APPROVED_RD_ROTATION_CANDIDATE",
+    "name": "Maroon bucket hat RD8",
+    "frontAuthority": "experiments/rd_bucket_rotate_02_maroon/source_17x17.png",
+    "rotationAuthority": "experiments/rd_bucket_rotate_02_maroon",
+    "runtimeOrder": ["front", "right", "back", "left"],
+    "referenceOnlyViews": ["front_right", "back_right", "back_left", "front_left"]
+  },
+  "requiredInputs": [
+    "approved front source",
+    "RD cardinal rotation frames",
+    "frame and alpha hashes",
+    "semantic interior/protected masks",
+    "source transfer library",
+    "roll and incompatibility rules",
+    "wear contract"
+  ],
+  "frameManifest": "authored/templates/bucket_maroon_rd8/frame_manifest.json",
+  "frames": {
+    "front": {"path": "authored/templates/bucket_maroon_rd8/front.png"},
+    "right": {"path": "authored/templates/bucket_maroon_rd8/right.png"},
+    "back": {"path": "authored/templates/bucket_maroon_rd8/back.png"},
+    "left": {"path": "authored/templates/bucket_maroon_rd8/left.png"}
+  },
+  "referenceFrames": {
+    "front_right": "authored/templates/bucket_maroon_rd8/front_right.png",
+    "back_right": "authored/templates/bucket_maroon_rd8/back_right.png",
+    "back_left": "authored/templates/bucket_maroon_rd8/back_left.png",
+    "front_left": "authored/templates/bucket_maroon_rd8/front_left.png"
+  },
+  "geometryLock": {
+    "authority": "the four cardinal frame files above",
+    "requiredViews": ["front", "right", "back", "left"],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "allowedAlphaGrowth": "none until a reviewed attachment contract opts in",
+    "notes": "24x24 is presentation canvas only. Native hat pixels are never scaled."
+  },
+  "zones": {
+    "surface": {"purpose": "whole bucket-hat body treatment", "maskContract": "authored/templates/bucket_maroon_rd8/frame_manifest.json"},
+    "front_localized": {"purpose": "future localized front motif only", "views": ["front"]},
+    "protected_boundary": {"purpose": "silhouette boundary remains source-authoritative"}
+  },
+  "anchors": {
+    "front": {"motif_center": [12, 10], "contact_center": [12, 17]},
+    "right": {"contact_center": [12, 17]},
+    "back": {"contact_center": [12, 17]},
+    "left": {"contact_center": [12, 17]}
+  },
+  "allowedPartKinds": ["STYLE_PROFILE", "PALETTE_TONE", "MATERIAL_PATTERN", "MOTIF", "HARDWARE", "REUSABLE_COMPONENT"],
+  "safeTransferRules": [
+    "cardinal template owns alpha/silhouette",
+    "diagonal frames are evidence/reference only",
+    "style and material changes are RGB-only inside opaque interior cells",
+    "localized motifs require explicit cardinal visibility",
+    "protected boundary cells remain source-exact",
+    "neutral render must round-trip exactly"
+  ],
+  "incompatibilities": [
+    {"scope": "ALTERNATE_CONSTRUCTION", "deny": true},
+    {"scope": "SAME_BASE_ONLY", "deny": true},
+    {"feature": "resample_to_fit", "deny": true},
+    {"feature": "generic_normalization", "deny": true},
+    {"feature": "blind_source_coordinates", "deny": true}
+  ],
+  "sourceTransferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json",
+  "rollMatrix": "generator/data/headwear/bucket_maroon_rd8_roll_matrix.json",
+  "wearContract": "generator/data/headwear/bucket_maroon_rd8_wear_contract.json"
+}

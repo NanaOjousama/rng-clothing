@@ -595,6 +595,18 @@
       "sourceCategory": "Hats",
       "sourceName": "Trucker 24px A/B base"
     },
+    "bucket_maroon_rd8": {
+      "contract": "generator/data/templates/bucket_maroon_rd8.json",
+      "family": "bucket_maroon_rd8",
+      "slot": "HEAD",
+      "status": "CANDIDATE_PENDING_HUMAN_ART_APPROVAL",
+      "constructionAuthority": "user-supplied maroon front plus Retro Diffusion 8-direction rotation; cardinal runtime authority with diagonal evidence",
+      "humanArtApprovalRequired": true,
+      "esmWearApprovalRequired": true,
+      "origin": "rd8-maroon-bucket-candidate",
+      "sourceCategory": "Hats",
+      "sourceName": "Maroon Bucket RD8 Candidate"
+    },
     "trucker": {
       "contract": "generator/data/templates/trucker.json",
       "family": "trucker",

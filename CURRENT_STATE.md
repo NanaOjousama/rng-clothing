@@ -1782,3 +1782,17 @@ Validation: `tools/validate_content_source_routing.py` passes; existing source-r
 - Confirmed from decompiled Stardew 1.6.15 code that `Farmer.getHair()` applies the vanilla obscured-hair fallback mapping; for the current player hairstyle 38 this resolves to covered hairstyle 30.
 - Unit/regression suite passes, including HairMode mapping, validation, snapshot persistence, and codec round-trip; EnhancedSewingMachine Release build succeeds with 0 warnings / 0 errors and auto-deploys to the live Mods folder.
 - Live QC capture: `qc_bridge/captures/20261001-182856/c04_obscured_hair/` confirms C04 renders successfully with the new vanilla obscured-hair path in all four directions.
+
+## Maroon bucket RD8 construction-template candidate — 2026-10-03
+
+- Corrected subject after the cow-ear bucket was mistakenly used for the template pass: the intended construction is `experiments/rd_bucket_rotate_02_maroon/`.
+- Registered candidate template: `bucket_maroon_rd8`.
+- Front authority is the exact user-supplied maroon `source_17x17.png`; it is not AI-repaired or rescaled.
+- Runtime construction authority is four cardinals: Front / Right / Back / Left.
+- RD diagonals are retained only as rotation evidence/reference: Front-Right / Back-Right / Back-Left / Front-Left.
+- All eight views are transparent-padded/bottom-centered to 24x24 only; native pixels are never resampled.
+- Frame bytes and alpha masks are SHA-256 pinned in `authored/templates/bucket_maroon_rd8/frame_manifest.json`.
+- Source-transfer, roll, geometry-lock, and provisional ESM wear contracts are present; human art approval and ESM wear approval remain fail-closed.
+- Review contact: `experiments/bucket_maroon_rd8_template_01/BUCKET_MAROON_RD8_TEMPLATE_CONTACT.png`.
+- Validation: `tools/validate_bucket_maroon_rd8_template.py` PASS; existing source-backed template validator PASS.
+

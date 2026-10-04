@@ -1,0 +1,10 @@
+{
+ "prompt": "maroon bucket hat",
+ "prompt_style": "rd_advanced_animation__rotate",
+ "width": 32,
+ "height": 32,
+ "num_images": 1,
+ "input_image": "<base64 of input_17_on_32.png>",
+ "return_spritesheet": true,
+ "task_id": "5c90f80d-4c22-467f-9745-a9843517d1a8"
+}

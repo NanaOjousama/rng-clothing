@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "bucket_maroon_rd8_v1",
+  "family": "bucket_maroon_rd8",
+  "construction": "rd8_maroon_bucket",
+  "status": "CANDIDATE_TEMPLATE_RULES",
+  "templateContract": "generator/data/templates/bucket_maroon_rd8.json",
+  "sourceTransferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json",
+  "rollOrder": ["materialTreatment", "pattern", "motif", "motifPlacement", "palette"],
+  "axes": {
+    "materialTreatment": {"plain": 50, "subtle": 30, "textured": 20},
+    "pattern": {"solid": 60, "subtle": 25, "stripe": 15},
+    "motif": {"none": 70, "small": 30},
+    "motifPlacement": {"none": 70, "front_center": 30}
+  },
+  "viewConsistency": {
+    "wholeHat": "material/palette identity stays coherent across all four cardinal views",
+    "localized": "motifs are cardinal-localized and never duplicated as screen-space stickers",
+    "referenceOnly": "diagonal views are evidence only and do not participate in runtime rendering"
+  },
+  "exclusions": [
+    {"when": {"motif": "none"}, "force": {"motifPlacement": "none"}},
+    {"whenNot": {"motif": "none"}, "disallow": {"motifPlacement": ["none"]}}
+  ],
+  "renderPolicy": {
+    "geometry": "LOCKED_TEMPLATE_ALPHA",
+    "forbid": ["resample", "generic_normalization", "blind_source_coordinates", "unreviewed_alpha_growth"]
+  }
+}
