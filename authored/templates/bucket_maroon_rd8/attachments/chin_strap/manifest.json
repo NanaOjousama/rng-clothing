@@ -1,0 +1,32 @@
+{
+  "schema": "rng-directional-attachment/v1",
+  "id": "chin_strap",
+  "family": "bucket_maroon_rd8",
+  "views": {
+    "front": {
+      "baseCutY": 17,
+      "overlayPath": "authored/templates/bucket_maroon_rd8/attachments/chin_strap/front.png",
+      "sourceFullPath": "authored/templates/bucket_maroon_rd8/front_with_strap_source.png",
+      "overlayOpaqueCells": 20
+    },
+    "right": {
+      "baseCutY": 18,
+      "overlayPath": "authored/templates/bucket_maroon_rd8/attachments/chin_strap/right.png",
+      "sourceFullPath": "authored/templates/bucket_maroon_rd8/right_with_strap_source.png",
+      "overlayOpaqueCells": 14
+    },
+    "back": {
+      "baseCutY": 21,
+      "overlayPath": "authored/templates/bucket_maroon_rd8/attachments/chin_strap/back.png",
+      "sourceFullPath": "authored/templates/bucket_maroon_rd8/back_with_strap_source.png",
+      "overlayOpaqueCells": 4
+    },
+    "left": {
+      "baseCutY": 18,
+      "overlayPath": "authored/templates/bucket_maroon_rd8/attachments/chin_strap/left.png",
+      "sourceFullPath": "authored/templates/bucket_maroon_rd8/left_with_strap_source.png",
+      "overlayOpaqueCells": 9
+    }
+  },
+  "rule": "Optional overlay reconstructed from approved full cardinal source."
+}

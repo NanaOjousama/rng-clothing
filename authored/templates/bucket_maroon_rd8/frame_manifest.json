@@ -1,7 +1,7 @@
 {
-  "schema": "rd8-construction-source/v1",
+  "schema": "rd8-construction-source/v2",
   "id": "bucket_maroon_rd8",
-  "status": "CANDIDATE_PENDING_HUMAN_ART_APPROVAL",
+  "status": "HUMAN_ART_APPROVED_PENDING_WEAR_QC",
   "sourceRun": "experiments/rd_bucket_rotate_02_maroon",
   "runtimeAuthority": [
     "front",
@@ -15,16 +15,20 @@
     "back_left",
     "front_left"
   ],
+  "optionalAttachments": [
+    "chin_strap"
+  ],
   "notes": [
-    "No resampling; tight native sprites are only transparent-padded/bottom-centered to 24x24.",
-    "Front authority is the original user-supplied maroon source_17x17.png.",
-    "RD diagonal views are retained as rotation evidence/reference only."
+    "Runtime cardinal base excludes chin strap.",
+    "chin_strap is an optional directional overlay roll.",
+    "Full approved source views are retained as *_with_strap_source.png.",
+    "No resampling; sprites are transparent-padded/bottom-centered only."
   ],
   "frames": {
     "front": {
       "path": "authored/templates/bucket_maroon_rd8/front.png",
-      "sha256": "9436e737afdd20f36822f4bbcb8e11933ff206dd98150c9d6f11d7a6bfc3fdc0",
-      "alphaSha256": "4fa46433f22bfc27f3984ed605873b4cb5d3c849c8b016eba7ab37f6cbe0ebfb",
+      "sha256": "483247dc4a120090b4a43297be916dab4679d9049b8b0de0aff9e7aa34b832eb",
+      "alphaSha256": "9e9338e6b4a952acf016e9959826d6d05cf3b5e68e7ccb8cc99a0c87ba609a4a",
       "nativeTightSize": [
         16,
         17
@@ -71,20 +75,12 @@
           16
         ],
         [
-          6,
-          17
-        ],
-        [
           7,
           7
         ],
         [
           7,
-          17
-        ],
-        [
-          7,
-          18
+          16
         ],
         [
           8,
@@ -95,10 +91,6 @@
           16
         ],
         [
-          8,
-          19
-        ],
-        [
           9,
           6
         ],
@@ -107,24 +99,12 @@
           16
         ],
         [
-          9,
-          20
-        ],
-        [
           10,
           6
         ],
         [
           10,
           16
-        ],
-        [
-          10,
-          20
-        ],
-        [
-          10,
-          22
         ],
         [
           11,
@@ -135,14 +115,6 @@
           16
         ],
         [
-          11,
-          19
-        ],
-        [
-          11,
-          21
-        ],
-        [
           12,
           6
         ],
@@ -151,28 +123,12 @@
           16
         ],
         [
-          12,
-          19
-        ],
-        [
-          12,
-          21
-        ],
-        [
           13,
           6
         ],
         [
           13,
           16
-        ],
-        [
-          13,
-          20
-        ],
-        [
-          13,
-          22
         ],
         [
           14,
@@ -183,20 +139,12 @@
           16
         ],
         [
-          14,
-          20
-        ],
-        [
           15,
           6
         ],
         [
           15,
           16
-        ],
-        [
-          15,
-          19
         ],
         [
           16,
@@ -204,11 +152,7 @@
         ],
         [
           16,
-          17
-        ],
-        [
-          16,
-          18
+          16
         ],
         [
           17,
@@ -229,10 +173,6 @@
         [
           17,
           16
-        ],
-        [
-          17,
-          17
         ],
         [
           18,
@@ -309,10 +249,6 @@
           15
         ],
         [
-          7,
-          16
-        ],
-        [
           8,
           7
         ],
@@ -457,10 +393,6 @@
           15
         ],
         [
-          11,
-          20
-        ],
-        [
           12,
           7
         ],
@@ -495,10 +427,6 @@
         [
           12,
           15
-        ],
-        [
-          12,
-          20
         ],
         [
           13,
@@ -639,10 +567,6 @@
         [
           16,
           15
-        ],
-        [
-          16,
-          16
         ],
         [
           17,
@@ -1333,8 +1257,8 @@
     },
     "right": {
       "path": "authored/templates/bucket_maroon_rd8/right.png",
-      "sha256": "454f0051f8112cf0efbda530e365ac7c1c8fec3f94c4d5dec4906bccf48c08a9",
-      "alphaSha256": "4cefe529a7d92003f9a0c1e7370890d9926826cc73298440887663ba83e7cf72",
+      "sha256": "ba00cf2005d3bc4887d708e2299040106d4b80c4abf236f5e311c39005e80feb",
+      "alphaSha256": "51ea2c7388eede2468d4fa04a839306438ecfadec4852385a3bb7cb354778632",
       "nativeTightSize": [
         15,
         17
@@ -1417,24 +1341,12 @@
           17
         ],
         [
-          10,
-          21
-        ],
-        [
           11,
           6
         ],
         [
           11,
-          18
-        ],
-        [
-          11,
-          20
-        ],
-        [
-          11,
-          21
+          17
         ],
         [
           12,
@@ -1445,18 +1357,6 @@
           17
         ],
         [
-          12,
-          18
-        ],
-        [
-          12,
-          19
-        ],
-        [
-          12,
-          22
-        ],
-        [
           13,
           6
         ],
@@ -1465,28 +1365,12 @@
           16
         ],
         [
-          13,
-          19
-        ],
-        [
-          13,
-          21
-        ],
-        [
-          13,
-          22
-        ],
-        [
           14,
           7
         ],
         [
           14,
           16
-        ],
-        [
-          14,
-          20
         ],
         [
           15,
@@ -1743,10 +1627,6 @@
           16
         ],
         [
-          11,
-          17
-        ],
-        [
           12,
           7
         ],
@@ -1787,14 +1667,6 @@
           16
         ],
         [
-          12,
-          20
-        ],
-        [
-          12,
-          21
-        ],
-        [
           13,
           7
         ],
@@ -1829,10 +1701,6 @@
         [
           13,
           15
-        ],
-        [
-          13,
-          20
         ],
         [
           14,
@@ -2591,8 +2459,8 @@
     },
     "back": {
       "path": "authored/templates/bucket_maroon_rd8/back.png",
-      "sha256": "265e3814ec02717728cdc6033dddcf035b23cb354d70387029996183905c5d1e",
-      "alphaSha256": "00586592bf66caa6c8e2f0c8f2c911f62c1da7675266ce511c96380ba1a1f1e4",
+      "sha256": "6615e0d5f41c21c84f3976debfe387f6755b4ad10099bea448253f9c7f4f29f3",
+      "alphaSha256": "394f10dc080b38eceecafaa0943f544a137c0e2c0aa8019c8db1f53d499f431d",
       "nativeTightSize": [
         16,
         16
@@ -2675,16 +2543,12 @@
           20
         ],
         [
-          10,
-          22
-        ],
-        [
           11,
           7
         ],
         [
           11,
-          21
+          20
         ],
         [
           12,
@@ -2692,7 +2556,7 @@
         ],
         [
           12,
-          21
+          20
         ],
         [
           13,
@@ -2701,10 +2565,6 @@
         [
           13,
           20
-        ],
-        [
-          13,
-          22
         ],
         [
           14,
@@ -3029,10 +2889,6 @@
           19
         ],
         [
-          11,
-          20
-        ],
-        [
           12,
           8
         ],
@@ -3079,10 +2935,6 @@
         [
           12,
           19
-        ],
-        [
-          12,
-          20
         ],
         [
           13,
@@ -3961,8 +3813,8 @@
     },
     "left": {
       "path": "authored/templates/bucket_maroon_rd8/left.png",
-      "sha256": "b062f18ca768f7f09826434f4eb282a9b5826e21430d20bf51a8fc0d3653653c",
-      "alphaSha256": "94514d3310d54f6cdcfa7fe85e58f7db456619b9eeecf8369f1214dd8e614bfa",
+      "sha256": "7fa8df43a24f216e468701cd7c92b32aa2e976658d83f0654a9f1e533f59714d",
+      "alphaSha256": "61710775a5f92b3d915962b0ab0da95d23ceeafccde39e9c07c2697b948a6285",
       "nativeTightSize": [
         15,
         17
@@ -4029,28 +3881,12 @@
           16
         ],
         [
-          9,
-          20
-        ],
-        [
           10,
           6
         ],
         [
           10,
           16
-        ],
-        [
-          10,
-          19
-        ],
-        [
-          10,
-          21
-        ],
-        [
-          10,
-          22
         ],
         [
           11,
@@ -4061,24 +3897,12 @@
           17
         ],
         [
-          11,
-          18
-        ],
-        [
-          11,
-          19
-        ],
-        [
-          11,
-          20
-        ],
-        [
           12,
           6
         ],
         [
           12,
-          18
+          17
         ],
         [
           13,
@@ -4287,10 +4111,6 @@
           15
         ],
         [
-          10,
-          20
-        ],
-        [
           11,
           7
         ],
@@ -4369,10 +4189,6 @@
         [
           12,
           16
-        ],
-        [
-          12,
-          17
         ],
         [
           13,

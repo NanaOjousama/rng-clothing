@@ -1796,3 +1796,15 @@ Validation: `tools/validate_content_source_routing.py` passes; existing source-r
 - Review contact: `experiments/bucket_maroon_rd8_template_01/BUCKET_MAROON_RD8_TEMPLATE_CONTACT.png`.
 - Validation: `tools/validate_bucket_maroon_rd8_template.py` PASS; existing source-backed template validator PASS.
 
+
+## Bucket chin-strap separated into optional roll — 2026-10-03
+
+- User approved the maroon bucket construction, then clarified that the chin string must not be baked into every bucket hat.
+- `bucket_maroon_rd8` cardinal construction is now strap-off crown + brim geometry.
+- `chin_strap` is a directional optional `ATTACHMENT` with generator roll weights: none 65 / chin_strap 35.
+- Approved per-view strap overlays live under `authored/templates/bucket_maroon_rd8/attachments/chin_strap/`.
+- The exact original full cardinal views are retained as `*_with_strap_source.png`; validation proves base + attachment reconstructs those approved sources pixel-for-pixel in all four cardinals.
+- Four RD diagonal views remain rotation evidence/reference only and are not runtime construction requirements.
+- Human art approval is recorded; ESM wear approval remains required. Wear QC should test the strap-off base first, then the optional strap overlay.
+- Review contact: `experiments/bucket_maroon_rd8_template_01/BUCKET_MAROON_STRAP_ROLL_CONTACT.png`.
+- Validation: `tools/validate_bucket_maroon_rd8_template.py` PASS.

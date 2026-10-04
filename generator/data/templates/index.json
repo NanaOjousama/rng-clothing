@@ -599,13 +599,14 @@
       "contract": "generator/data/templates/bucket_maroon_rd8.json",
       "family": "bucket_maroon_rd8",
       "slot": "HEAD",
-      "status": "CANDIDATE_PENDING_HUMAN_ART_APPROVAL",
-      "constructionAuthority": "user-supplied maroon front plus Retro Diffusion 8-direction rotation; cardinal runtime authority with diagonal evidence",
-      "humanArtApprovalRequired": true,
+      "status": "HUMAN_ART_APPROVED_PENDING_ESM_WEAR_QC",
+      "constructionAuthority": "approved strap-off maroon bucket cardinal base; RD diagonals as evidence; chin strap is optional roll-on attachment",
+      "humanArtApprovalRequired": false,
       "esmWearApprovalRequired": true,
       "origin": "rd8-maroon-bucket-candidate",
       "sourceCategory": "Hats",
-      "sourceName": "Maroon Bucket RD8 Candidate"
+      "sourceName": "Maroon Bucket RD8 Candidate",
+      "humanArtApproved": true
     },
     "trucker": {
       "contract": "generator/data/templates/trucker.json",

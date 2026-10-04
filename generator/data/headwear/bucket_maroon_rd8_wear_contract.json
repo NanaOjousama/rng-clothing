@@ -2,15 +2,42 @@
   "schema": "rng-hat-wear-contract/v1",
   "family": "bucket_maroon_rd8",
   "template": "bucket_maroon_rd8",
-  "frameSize": [24, 24],
+  "frameSize": [
+    24,
+    24
+  ],
   "runtime": "EnhancedSewingMachine",
   "status": "PENDING_ESM_WEAR_QC",
   "baseRenderScale": 0.8333333333333334,
   "directionDefaults": {
-    "front": {"offset": [0, -2], "fitScale": 1.0},
-    "right": {"offset": [0, -2], "fitScale": 1.0},
-    "back": {"offset": [0, -2], "fitScale": 1.0},
-    "left": {"offset": [0, -2], "fitScale": 1.0}
+    "front": {
+      "offset": [
+        0,
+        -2
+      ],
+      "fitScale": 1.0
+    },
+    "right": {
+      "offset": [
+        0,
+        -2
+      ],
+      "fitScale": 1.0
+    },
+    "back": {
+      "offset": [
+        0,
+        -2
+      ],
+      "fitScale": 1.0
+    },
+    "left": {
+      "offset": [
+        0,
+        -2
+      ],
+      "fitScale": 1.0
+    }
   },
-  "note": "Provisional defaults only; in-game ESM wear QC is still required before promotion."
+  "note": "Human art approved. Wear QC is for strap-off base first; chin_strap is an optional roll-on attachment and must not be baked into every bucket hat."
 }
