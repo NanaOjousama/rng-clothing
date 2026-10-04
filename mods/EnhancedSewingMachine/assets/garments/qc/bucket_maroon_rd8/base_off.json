@@ -1,0 +1,62 @@
+{
+  "Id": "qc.bucket.maroon.rd8.base_off",
+  "Category": "Hat",
+  "DefinitionVersion": 1,
+  "WornTexture": "assets/qc/bucket_maroon_rd8/base_off.png",
+  "FrameWidth": 24,
+  "FrameHeight": 24,
+  "RenderScale": 0.8333333333333334,
+  "VanillaReferenceAnchor": {
+    "X": 10,
+    "Y": 16
+  },
+  "Directions": {
+    "Front": {
+      "SourceX": 0,
+      "SourceY": 0,
+      "AnchorX": 12,
+      "AnchorY": 17,
+      "OffsetX": 0,
+      "OffsetY": -2
+    },
+    "Right": {
+      "SourceX": 0,
+      "SourceY": 24,
+      "AnchorX": 12,
+      "AnchorY": 17,
+      "OffsetX": 0,
+      "OffsetY": -2
+    },
+    "Back": {
+      "SourceX": 0,
+      "SourceY": 48,
+      "AnchorX": 12,
+      "AnchorY": 17,
+      "OffsetX": 0,
+      "OffsetY": -2
+    },
+    "Left": {
+      "SourceX": 0,
+      "SourceY": 72,
+      "AnchorX": 12,
+      "AnchorY": 17,
+      "OffsetX": 0,
+      "OffsetY": -2
+    }
+  },
+  "Metadata": {
+    "Family": "bucket_hat",
+    "Construction": "bucket_maroon_rd8",
+    "Material": "source_backed",
+    "Palette": "maroon",
+    "Motif": "",
+    "GeneratorId": "BucketMaroonRD8",
+    "GeneratorVersion": 1,
+    "GeneratorSeed": 0,
+    "Style": "approved-construction,wear-qc",
+    "QualityTier": "QC",
+    "Decals": "",
+    "Classification": "QC_CANDIDATE",
+    "Label": "BUCKET MAROON RD8 - STRAP OFF"
+  }
+}

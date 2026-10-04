@@ -16,6 +16,8 @@
     "qc/cross_family_rarity/qc.crossfamily.epic.small.14.json",
     "qc/cross_family_rarity/qc.crossfamily.epic.medium.15.json",
     "qc/cross_family_rarity/qc.crossfamily.epic.large.16.json",
-    "qc/finished_hat_candidates/trucker_spaced20_c04.json"
+    "qc/finished_hat_candidates/trucker_spaced20_c04.json",
+    "qc/bucket_maroon_rd8/base_off.json",
+    "qc/bucket_maroon_rd8/strap_on.json"
   ]
 }

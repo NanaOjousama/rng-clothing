@@ -1808,3 +1808,14 @@ Validation: `tools/validate_content_source_routing.py` passes; existing source-r
 - Human art approval is recorded; ESM wear approval remains required. Wear QC should test the strap-off base first, then the optional strap overlay.
 - Review contact: `experiments/bucket_maroon_rd8_template_01/BUCKET_MAROON_STRAP_ROLL_CONTACT.png`.
 - Validation: `tools/validate_bucket_maroon_rd8_template.py` PASS.
+
+## Maroon bucket ESM wear-QC pair installed — 2026-10-03
+
+- User approved moving the strap-off bucket construction into ESM wear QC.
+- Added two QC Preview garments: `qc.bucket.maroon.rd8.base_off` and `qc.bucket.maroon.rd8.strap_on`.
+- Both use the approved 24x24 cardinal construction, runtime order Front/Right/Back/Left, RenderScale 0.8333333333333334, and provisional offset [0,-2].
+- Strap-off renders only crown + brim; strap-on composites the optional directional `chin_strap` attachment over the same base.
+- ESM garment validator: 23/23 PASS including both bucket QC definitions.
+- EnhancedSewingMachine Release build: PASS, 0 warnings / 0 errors, auto-deployed to the live Stardew Mods folder.
+- EnhancedSewingMachine.Tests: ALL TESTS PASSED.
+- Live ESM visual approval is still pending; inspect all four directions for both QC garments before changing the wear contract to approved.
