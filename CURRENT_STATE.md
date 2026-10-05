@@ -1838,3 +1838,45 @@ Validation: `tools/validate_content_source_routing.py` passes; existing source-r
 - ESM garment validator remains 23/23 PASS.
 - EnhancedSewingMachine Release build succeeds with 0 warnings / 0 errors and auto-deploys the updated QC definitions to the live Mods folder.
 - EnhancedSewingMachine.Tests: ALL TESTS PASSED, including the obscured-hair mapping test.
+
+## AI bucket-hat inpaint on the policy-hair mannequin — 2026-10-05
+
+Experiment: `experiments/bucket_ai_inpaint_01/` (rules-waived test, user-approved).
+Not approved source art; nothing loaded in game yet.
+
+Proven:
+- Vanilla `BucketHat` is `showRealHair=false` -> `DrawObscuredHair`. Vanilla
+  `Farmer.getHair()` (decompiled 1.6.15) remaps hairstyles in code under it
+  (e.g. 38 -> 30); `Data/HairData` CoveredIndex is not the whole story.
+- QC bridge now also writes `{dir}_nohat_policy.png` (hat removed, policy hairstyle
+  kept) plus `hair_real` / `hair_policy` in render_state. Needs a game restart after
+  deploy. Mannequin + true hat == worn capture.
+- True hat = worn vs `nohat_policy`; `hatonly` (vs normal-hair nohat) overcounts
+  the hair swap. Vanilla Bucket Hat front = 14x9 game px, 94 px, outline 34 px.
+- Masked inpainting leaves 0 px changed outside the mask (Retro Diffusion, PixelLab).
+  RD reads the mask from ALPHA; PixelLab Pro Flash from binary RGB at native 64x64
+  (5 generations). SpriteFusion has no mask; its `edit` keeps input size (no `size`
+  field), returns trimmed sprites and redraws face/hair.
+- Mask sized to the vanilla footprint fixes "hat far too big".
+- Vanilla hats.png outline calibration (110 fronts): edge/interior luminance 0.38
+  dark / 0.37 mid / 0.35 bright (~0.30 yellows); bright coloured hats hue-shift
+  ~-23 deg; outlines are deep and muted.
+
+Locked decisions:
+- Core = locked vanilla silhouette (shape fixed, AI chooses colour only);
+  allowance ring = decoration only, never brim/outline growth.
+- Outline repair uses the vanilla hat for structure only; colour comes from each
+  hat's own palette (`outline.py`). Raw `merged_*` cuts are never overwritten.
+
+Known failures:
+- Decoration in a 1 px allowance ring: AI thickens the outline instead
+  (`REJECTED_decoration_round/`, local only, experimental).
+- SpriteFusion gingham: hat drawn higher, hair inside the core -> dropped.
+- A 6-way parallel RD call returned HTTP 500 after charging; run sequentially.
+
+Next test: decoration on the core surface with outline restored, or a larger
+decoration-only zone (user to choose); then an in-game worn check of the best
+outlined hats (PixelLab mushroom / gingham / mustard, RD denim / olive).
+
+Do not redo: the hair-policy analysis, the vanilla outline calibration, or
+full-farmer masks (they produce oversized hats).

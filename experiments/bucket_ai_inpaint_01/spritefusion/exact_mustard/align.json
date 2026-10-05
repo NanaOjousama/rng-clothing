@@ -1,0 +1,41 @@
+{
+ "results": [
+  {
+   "output": "output_00.png",
+   "size": [
+    14,
+    28
+   ],
+   "scale": 1,
+   "offset": [
+    25,
+    16
+   ],
+   "outside_mask_match": 195,
+   "outside_mask_mismatch": 16
+  },
+  {
+   "output": "output_01.png",
+   "size": [
+    84,
+    156
+   ],
+   "scale": 1,
+   "offset": [
+    -84,
+    -156
+   ],
+   "outside_mask_match": 0,
+   "outside_mask_mismatch": 0
+  }
+ ],
+ "credits": [
+  {
+   "reserved": 15,
+   "remaining": 780
+  },
+  {
+   "remaining": 780
+  }
+ ]
+}

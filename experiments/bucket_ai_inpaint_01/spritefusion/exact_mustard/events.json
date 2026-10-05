@@ -1,0 +1,71 @@
+[
+ {
+  "type": "started",
+  "request_id": "req_2e901aa3-a2ba-4463-a927-d42e8810f6e7",
+  "operation": "edit",
+  "credits": {
+   "reserved": 15,
+   "remaining": 780
+  }
+ },
+ {
+  "type": "progress",
+  "message": "Generating sprites"
+ },
+ {
+  "type": "progress",
+  "message": "Generating sprites"
+ },
+ {
+  "type": "output",
+  "index": 0,
+  "asset": {
+   "id": "4ebd1941-f1b4-46e0-839e-e77e560106a6",
+   "type": "image",
+   "createdAt": "2026-10-05T03:51:23.996Z",
+   "updatedAt": "2026-10-05T03:51:23.996Z",
+   "prompt": "Put a simple bucket hat on this farmer's head: mustard yellow corduroy with a brown band, stardew valley style, dark outline. The hat is small, the same size as a vanilla Stardew Valley bucket hat, sitting on top of the hair and ending at the eyebrows. Keep the farmer, pose, face, hair below the hat, clothes, colours and canvas position exactly unchanged.",
+   "width": 14,
+   "height": 28,
+   "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/4ebd1941-f1b4-46e0-839e-e77e560106a6/image.png?v=1791172283996",
+   "style": "default",
+   "contentType": "image/png",
+   "batchId": "8a9d94ad-72c6-4860-9f77-ee0f94b21329",
+   "batchIndex": 0,
+   "batchSize": 2,
+   "action": {
+    "kind": "edit"
+   }
+  }
+ },
+ {
+  "type": "output",
+  "index": 1,
+  "asset": {
+   "id": "7f5e090b-812e-4711-9918-54a0a7f5ac5b",
+   "type": "image",
+   "createdAt": "2026-10-05T03:51:24.767Z",
+   "updatedAt": "2026-10-05T03:51:24.767Z",
+   "prompt": "Put a simple bucket hat on this farmer's head: mustard yellow corduroy with a brown band, stardew valley style, dark outline. The hat is small, the same size as a vanilla Stardew Valley bucket hat, sitting on top of the hair and ending at the eyebrows. Keep the farmer, pose, face, hair below the hat, clothes, colours and canvas position exactly unchanged.",
+   "width": 84,
+   "height": 156,
+   "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/7f5e090b-812e-4711-9918-54a0a7f5ac5b/image.png?v=1791172284767",
+   "style": "default",
+   "contentType": "image/png",
+   "batchId": "8a9d94ad-72c6-4860-9f77-ee0f94b21329",
+   "batchIndex": 1,
+   "batchSize": 2,
+   "action": {
+    "kind": "edit"
+   }
+  }
+ },
+ {
+  "type": "completed",
+  "status": "succeeded",
+  "output_count": 2,
+  "credits": {
+   "remaining": 780
+  }
+ }
+]

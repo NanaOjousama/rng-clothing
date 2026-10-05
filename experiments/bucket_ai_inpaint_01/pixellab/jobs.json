@@ -1,0 +1,5 @@
+{"tool": "pixellab inpaint_image_pro_flash, 64x64 native, 5 generations each",
+ "exact_mustard": "935c9ec4-7b76-4297-9cbc-9a3f84db9247", "exact_gingham": "f5438625-f1ac-41f1-984a-3eeb2ced08f8",
+ "exact_mushroom": "e02a752e-9c00-421f-aa98-ab60249e7ad7", "loose_mustard": "04d80b39-5145-4090-adec-2e4c12fa5980",
+ "loose_gingham": "0a968dcc-89bd-45c5-a102-949349687f38", "loose_mushroom": "444ab27b-95a5-4c35-9291-d58d687f0564",
+ "seeds": {"mustard": 4404, "gingham": 5505, "mushroom": 6606}}

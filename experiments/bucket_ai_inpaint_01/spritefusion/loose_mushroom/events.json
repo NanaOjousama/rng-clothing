@@ -1,0 +1,71 @@
+[
+ {
+  "type": "started",
+  "request_id": "req_13a77330-bcab-46df-9217-e94d39b95ada",
+  "operation": "edit",
+  "credits": {
+   "reserved": 15,
+   "remaining": 750
+  }
+ },
+ {
+  "type": "progress",
+  "message": "Generating sprites"
+ },
+ {
+  "type": "progress",
+  "message": "Generating sprites"
+ },
+ {
+  "type": "output",
+  "index": 0,
+  "asset": {
+   "id": "2292c0b7-33d1-4019-ba9c-aea9d13b10f1",
+   "type": "image",
+   "createdAt": "2026-10-05T03:53:57.046Z",
+   "updatedAt": "2026-10-05T03:53:57.046Z",
+   "prompt": "Put a simple bucket hat on this farmer's head: forest green with a small orange mushroom patch on the front, stardew valley style, dark outline. The hat is small, the same size as a vanilla Stardew Valley bucket hat, sitting on top of the hair and ending at the eyebrows. Keep the farmer, pose, face, hair below the hat, clothes, colours and canvas position exactly unchanged.",
+   "width": 14,
+   "height": 28,
+   "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/2292c0b7-33d1-4019-ba9c-aea9d13b10f1/image.png?v=1791172437046",
+   "style": "default",
+   "contentType": "image/png",
+   "batchId": "c68ac239-f31f-4a08-838f-7953d1eb5069",
+   "batchIndex": 0,
+   "batchSize": 2,
+   "action": {
+    "kind": "edit"
+   }
+  }
+ },
+ {
+  "type": "output",
+  "index": 1,
+  "asset": {
+   "id": "bf4d4bdf-c386-481e-a6f3-794794c59371",
+   "type": "image",
+   "createdAt": "2026-10-05T03:53:57.860Z",
+   "updatedAt": "2026-10-05T03:53:57.860Z",
+   "prompt": "Put a simple bucket hat on this farmer's head: forest green with a small orange mushroom patch on the front, stardew valley style, dark outline. The hat is small, the same size as a vanilla Stardew Valley bucket hat, sitting on top of the hair and ending at the eyebrows. Keep the farmer, pose, face, hair below the hat, clothes, colours and canvas position exactly unchanged.",
+   "width": 40,
+   "height": 68,
+   "assetUrl": "https://media.spritefusion.com/pixel-art-assets/ed5e5713-2cbb-48e8-9dd8-48b93f5d373f/bf4d4bdf-c386-481e-a6f3-794794c59371/image.png?v=1791172437860",
+   "style": "default",
+   "contentType": "image/png",
+   "batchId": "c68ac239-f31f-4a08-838f-7953d1eb5069",
+   "batchIndex": 1,
+   "batchSize": 2,
+   "action": {
+    "kind": "edit"
+   }
+  }
+ },
+ {
+  "type": "completed",
+  "status": "succeeded",
+  "output_count": 2,
+  "credits": {
+   "remaining": 750
+  }
+ }
+]

@@ -1,0 +1,50 @@
+{
+ "exact_olive": {
+  "hat_game_px": [
+   14,
+   9
+  ],
+  "changed_outside_mask": 0,
+  "mixed_4x4_blocks": 66
+ },
+ "exact_pink": {
+  "hat_game_px": [
+   14,
+   9
+  ],
+  "changed_outside_mask": 0,
+  "mixed_4x4_blocks": 54
+ },
+ "exact_denim": {
+  "hat_game_px": [
+   14,
+   9
+  ],
+  "changed_outside_mask": 0,
+  "mixed_4x4_blocks": 73
+ },
+ "loose_olive": {
+  "hat_game_px": [
+   16,
+   11
+  ],
+  "changed_outside_mask": 0,
+  "mixed_4x4_blocks": 111
+ },
+ "loose_pink": {
+  "hat_game_px": [
+   16,
+   11
+  ],
+  "changed_outside_mask": 0,
+  "mixed_4x4_blocks": 127
+ },
+ "loose_denim": {
+  "hat_game_px": [
+   16,
+   11
+  ],
+  "changed_outside_mask": 0,
+  "mixed_4x4_blocks": 64
+ }
+}

@@ -637,6 +637,9 @@ namespace StardewVisualQCBridge
                 bool hadHat = !string.IsNullOrEmpty(keep) || vanillaHat != null;
                 if (hadHat)
                 {
+                    // the hairstyle the hat's hair policy actually draws
+                    // (vanilla Farmer.getHair: e.g. DrawObscuredHair maps 38 -> 30)
+                    int policyHair = Game1.player.getHair();
                     if (keep != null)
                         Game1.player.modData.Remove("FashionSense.CustomHat.Id");
                     if (vanillaHat != null)
@@ -644,6 +647,28 @@ namespace StardewVisualQCBridge
                     this.SetDirty();
                     string bare = Path.Combine(dir, $"{dirName}_nohat.png");
                     Color[] without = Capture.SaveIsolated(bare, out _, out _, out _);
+
+                    // 3b. hat removed but its hair policy kept: the "mannequin"
+                    //     a replacement hat is designed against
+                    int realHair = Game1.player.hair.Value;
+                    record["hair_real"] = realHair;
+                    record["hair_policy"] = policyHair;
+                    if (policyHair >= 0 && policyHair != realHair)
+                    {
+                        Game1.player.hair.Value = policyHair;
+                        this.SetDirty();
+                        string policyPath = Path.Combine(dir, $"{dirName}_nohat_policy.png");
+                        if (Capture.SaveIsolated(policyPath, out _, out _, out _) != null)
+                        {
+                            record["nohat_policy"] = policyPath;
+                            p.Written.Add(policyPath);
+                        }
+                        Game1.player.hair.Value = realHair;
+                        this.SetDirty();
+                    }
+                    else if (policyHair < 0)
+                        record["nohat_policy_note"] = "hat hides hair entirely (HideHair); not captured";
+
                     if (keep != null)
                         Game1.player.modData["FashionSense.CustomHat.Id"] = keep;
                     if (vanillaHat != null)

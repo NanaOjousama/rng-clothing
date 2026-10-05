@@ -1,0 +1,47 @@
+{
+ "Retro Diffusion/olive": {
+  "core_px": 94,
+  "core_holes": 1,
+  "deco_px_kept": 0
+ },
+ "Retro Diffusion/pink": {
+  "core_px": 94,
+  "core_holes": 6,
+  "deco_px_kept": 0
+ },
+ "Retro Diffusion/denim": {
+  "core_px": 94,
+  "core_holes": 0,
+  "deco_px_kept": 0
+ },
+ "PixelLab/mustard": {
+  "core_px": 94,
+  "core_holes": 7,
+  "deco_px_kept": 0
+ },
+ "PixelLab/gingham": {
+  "core_px": 94,
+  "core_holes": 2,
+  "deco_px_kept": 0
+ },
+ "PixelLab/mushroom": {
+  "core_px": 94,
+  "core_holes": 4,
+  "deco_px_kept": 0
+ },
+ "SpriteFusion/mustard": {
+  "core_px": 94,
+  "core_holes": 5,
+  "deco_px_kept": 0
+ },
+ "SpriteFusion/gingham": {
+  "core_px": 94,
+  "core_holes": 6,
+  "deco_px_kept": 0
+ },
+ "SpriteFusion/mushroom": {
+  "core_px": 94,
+  "core_holes": 2,
+  "deco_px_kept": 0
+ }
+}
