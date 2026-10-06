@@ -1,0 +1,17 @@
+{
+ "status": "succeeded",
+ "task_id": "3423be3d-0870-4887-822a-dfdfffc9f2fc",
+ "created_at": 1791258920,
+ "updated_at": 1791259068,
+ "result": {
+  "created_at": 1791259067,
+  "credit_cost": 1,
+  "balance_cost": 0.1,
+  "output_urls": [],
+  "model": "rd_fast",
+  "remaining_credits": 0,
+  "remaining_balance": 2.75,
+  "request_id": "3423be3d-0870-4887-822a-dfdfffc9f2fc",
+  "outputs_retained_until": 1791345320
+ }
+}

@@ -56,12 +56,13 @@
       "rollWeight": 0
     },
     "sf_contact_01": {
-      "status": "USER_SELECTED_FRONT_ONLY",
+      "status": "DIRECTIONAL_PENDING_ESM_WEAR_QC",
       "fronts": [
         "construction_sf01_06_01_cream_split_droop"
       ],
-      "note": "User explicitly selected index 01.",
-      "rollWeight": 0
+      "note": "User supplied completed Hat 01 rotation in experiments/sf_approved_rotate/01; four cardinal construction now locked pending ESM wear QC.",
+      "rollWeight": 0,
+      "authority": "generator/data/templates/bucket_sf01_rd8.json"
     },
     "sf_contact_02": {
       "status": "USER_SELECTED_FRONT_ONLY",

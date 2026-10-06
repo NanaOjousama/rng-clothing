@@ -595,6 +595,17 @@
       "sourceCategory": "Hats",
       "sourceName": "Trucker 24px A/B base"
     },
+    "trucker_pl02_editref24": {
+      "contract": "generator/data/templates/trucker_pl02_editref24.json",
+      "family": "trucker_pl02_editref24",
+      "slot": "HEAD",
+      "status": "SOURCE_AUTHORITY_REGISTERED",
+      "constructionAuthority": "approved PL02 24px front/back plus PixelLab EditRef24a side; exact mirrored left",
+      "humanArtApprovalRequired": false,
+      "origin": "user-approved-composite-source",
+      "sourceCategory": "Hats",
+      "sourceName": "PL02 EditRef24 Trucker Master"
+    },
     "bucket_maroon_rd8": {
       "contract": "generator/data/templates/bucket_maroon_rd8.json",
       "family": "bucket_maroon_rd8",
@@ -618,6 +629,19 @@
       "origin": "user-approved-hybrid-source",
       "sourceCategory": "Hats",
       "sourceName": "FINAL_TRUCKER_PRODUCT RD22/PL26"
+    },
+    "bucket_sf01_rd8": {
+      "contract": "generator/data/templates/bucket_sf01_rd8.json",
+      "family": "bucket_sf01_rd8",
+      "slot": "HEAD",
+      "status": "HUMAN_ART_APPROVED_PENDING_ESM_WEAR_QC",
+      "constructionAuthority": "user-supplied approved Hat 01 RD8 rotation; exact source front remains front authority",
+      "humanArtApprovalRequired": false,
+      "esmWearApprovalRequired": true,
+      "origin": "sf-approved-rotate/01",
+      "sourceCategory": "Hats",
+      "sourceName": "Bucket Hat 01 RD8",
+      "humanArtApproved": true
     }
   },
   "catalogPromotion": {

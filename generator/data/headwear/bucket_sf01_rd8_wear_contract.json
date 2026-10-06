@@ -1,0 +1,51 @@
+{
+  "schema": "rng-hat-wear-contract/v1",
+  "family": "bucket_sf01_rd8",
+  "template": "bucket_sf01_rd8",
+  "frameSize": [
+    24,
+    24
+  ],
+  "runtime": "EnhancedSewingMachine",
+  "status": "PENDING_ESM_WEAR_QC",
+  "baseRenderScale": 0.8333333333333334,
+  "directionDefaults": {
+    "front": {
+      "offset": [
+        0,
+        -2
+      ],
+      "fitScale": 1.0
+    },
+    "right": {
+      "offset": [
+        0,
+        -2
+      ],
+      "fitScale": 1.0
+    },
+    "back": {
+      "offset": [
+        0,
+        -2
+      ],
+      "fitScale": 1.0
+    },
+    "left": {
+      "offset": [
+        0,
+        -2
+      ],
+      "fitScale": 1.0
+    }
+  },
+  "note": "Hat 01 directional art supplied/approved by user; ESM wear QC is the remaining gate.",
+  "hairPolicy": {
+    "mode": "Obscured",
+    "authority": "vanilla Bucket Hat behavior",
+    "runtimeMapping": "Stardew Hat.hairDrawType = 1",
+    "appliesTo": [
+      "base"
+    ]
+  }
+}

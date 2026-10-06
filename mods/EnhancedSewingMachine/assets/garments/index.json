@@ -16,8 +16,15 @@
     "qc/cross_family_rarity/qc.crossfamily.epic.small.14.json",
     "qc/cross_family_rarity/qc.crossfamily.epic.medium.15.json",
     "qc/cross_family_rarity/qc.crossfamily.epic.large.16.json",
+    "qc/trucker_fit01/trucker_fit01.json",
+    "qc/trucker_final_rd22_pl26/trucker_final_rd22_pl26.json",
     "qc/finished_hat_candidates/trucker_spaced20_c04.json",
+    "qc/vanilla_reference/vanilla_trucker16.json",
+    "qc/finished_hat_candidates/trucker_spaced20_c04_side02.json",
     "qc/bucket_maroon_rd8/base_off.json",
-    "qc/bucket_maroon_rd8/strap_on.json"
+    "qc/bucket_maroon_rd8/strap_on.json",
+    "qc/bucket_lower_angle_01/original_source.json",
+    "qc/bucket_lower_angle_01/pixellab_lower_angle.json",
+    "qc/bucket_sf01_rd8/base.json"
   ]
 }

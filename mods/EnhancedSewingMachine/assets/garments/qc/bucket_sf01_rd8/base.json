@@ -1,0 +1,63 @@
+{
+  "Id": "qc.bucket.sf01.rd8.base",
+  "Category": "Hat",
+  "DefinitionVersion": 1,
+  "WornTexture": "assets/qc/bucket_sf01_rd8/base.png",
+  "FrameWidth": 24,
+  "FrameHeight": 24,
+  "RenderScale": 0.8333333333333334,
+  "VanillaReferenceAnchor": {
+    "X": 10,
+    "Y": 16
+  },
+  "HairMode": "Obscured",
+  "Directions": {
+    "Front": {
+      "SourceX": 0,
+      "SourceY": 0,
+      "AnchorX": 12,
+      "AnchorY": 17,
+      "OffsetX": 0,
+      "OffsetY": -2
+    },
+    "Right": {
+      "SourceX": 0,
+      "SourceY": 24,
+      "AnchorX": 12,
+      "AnchorY": 17,
+      "OffsetX": 0,
+      "OffsetY": -2
+    },
+    "Back": {
+      "SourceX": 0,
+      "SourceY": 48,
+      "AnchorX": 12,
+      "AnchorY": 17,
+      "OffsetX": 0,
+      "OffsetY": -2
+    },
+    "Left": {
+      "SourceX": 0,
+      "SourceY": 72,
+      "AnchorX": 12,
+      "AnchorY": 17,
+      "OffsetX": 0,
+      "OffsetY": -2
+    }
+  },
+  "Metadata": {
+    "Family": "bucket_hat",
+    "Construction": "bucket_sf01_rd8",
+    "Material": "source_backed",
+    "Palette": "cream_tan",
+    "Motif": "",
+    "GeneratorId": "BucketSF01RD8",
+    "GeneratorVersion": 1,
+    "GeneratorSeed": 1,
+    "Style": "approved-construction,wear-qc",
+    "QualityTier": "QC",
+    "Decals": "",
+    "Classification": "QC_CANDIDATE",
+    "Label": "BUCKET HAT 01 RD8"
+  }
+}

@@ -1895,3 +1895,16 @@ full-farmer masks (they produce oversized hats).
 - Intake registry: `generator/data/headwear/bucket_hat_approved_library.json`. It is deliberately **not** registered as active generator production yet.
 - Promotion rule: front selection -> approved cardinal Right/Back/Left construction -> cross-view semantic consistency -> ESM wear QC -> taste/rarity policy registration -> explicit production promotion.
 - Validator: `python3 tools/validate_bucket_hat_approved_intake.py` — PASS: 23 preserved inputs, 18 construction groups, priority 01–06 unique, all roll weights 0.
+
+## Bucket Hat 01 directional template — 2026-10-06
+- User supplied `experiments/sf_approved_rotate/01/` as the completed Hat 01 rotation; no additional art generation is required for this construction.
+- Canonical rotation pixels copied to `authored/approved/bucket_hat_v1/rotations/01/` with byte-identical provenance.
+- New template: `bucket_sf01_rd8`.
+- Front authority remains the exact approved `construction_sf01_06_01_cream_split_droop.png`; RD front is evidence only.
+- Runtime cardinals: exact front + supplied right `r1c0` + back `r2c1` + left `r1c2`.
+- Native pixels are not resampled; they are only alpha-cropped and transparent-padded/bottom-seated on 24x24 presentation frames.
+- Human directional art is accepted; status is `HUMAN_ART_APPROVED_PENDING_ESM_WEAR_QC`.
+- `sf_contact_01` remains rollWeight 0 and cannot enter production until ESM wear QC passes.
+- ESM QC garment registered as `qc.bucket.sf01.rd8.base`, RenderScale 0.8333333333333334, HairMode Obscured, provisional offsets [0,-2].
+- Verification: `validate_bucket_sf01_rd8_template.py` PASS; approved intake PASS; ESM garments 26/26 valid.
+- Pre-change ESM checkpoint: `archive/esm-checkpoints/ESM_20261006-001156.tar.gz` (SHA-256 `0558d7d3ed521930cee7f8e04271b81495851e7a80ee9c7d5004aac1caed1cfe`).
