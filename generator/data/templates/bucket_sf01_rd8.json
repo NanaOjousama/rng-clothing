@@ -5,8 +5,8 @@
   "category": "Hats",
   "family": "bucket_sf01_rd8",
   "frameSize": [
-    24,
-    24
+    20,
+    20
   ],
   "sourceIdentity": {
     "kind": "USER_APPROVED_RD_ROTATION_TEMPLATE",
@@ -58,7 +58,7 @@
     "forbidResample": true,
     "forbidGenericNormalization": true,
     "forbidBaseAlphaRemoval": true,
-    "notes": "24x24 is presentation canvas only. Native hat pixels are never scaled."
+    "notes": "20x20 is presentation canvas only. Native hat pixels are never scaled. Runtime Left is a deterministic horizontal mirror of Right because the supplied left rotation has a cut-off ribbon."
   },
   "zones": {
     "surface": {
@@ -78,26 +78,26 @@
   "anchors": {
     "front": {
       "contact_center": [
-        12,
-        17
+        10,
+        13
       ]
     },
     "right": {
       "contact_center": [
-        12,
-        17
+        10,
+        13
       ]
     },
     "back": {
       "contact_center": [
-        12,
-        17
+        10,
+        13
       ]
     },
     "left": {
       "contact_center": [
-        12,
-        17
+        10,
+        13
       ]
     }
   },

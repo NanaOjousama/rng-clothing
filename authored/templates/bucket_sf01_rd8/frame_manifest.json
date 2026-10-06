@@ -21,7 +21,8 @@
   "notes": [
     "User supplied this folder as the completed Hat 01 rotation.",
     "Exact approved source front remains front authority; RD front is evidence only.",
-    "No resampling. Native pixels are only cropped to alpha bounds and transparent-padded/bottom-seated on 24x24.",
+    "No resampling. Native pixels are only cropped to alpha bounds and transparent-padded/bottom-seated on 20x20.",
+    "Runtime Left is a deterministic horizontal mirror of the supplied true Right r1c0; supplied r1c2 is retained as evidence only because its ribbon is cut off.",
     "Production remains disabled until ESM wear QC passes."
   ],
   "frames": {
@@ -29,15 +30,15 @@
       "path": "authored/templates/bucket_sf01_rd8/front.png",
       "sourcePath": "authored/approved/bucket_hat_v1/sources/construction_sf01_06_01_cream_split_droop.png",
       "sourceSha256": "f07ca19452e09882fd0a280bd6c8d4406cedb0105af2a1e87f4a68e5195db489",
-      "sha256": "fd09f27de9a82b496f4608b4e24bcf6279ecf6102ffeae70b1373090cd1f8c69",
-      "alphaSha256": "d1b3782a73931aef0427d73b2dc38b243f8505a894def2da4bd4c0d2ed55b5e6",
+      "sha256": "e5f4889d8b878f5dbe93e669b59aad6bc1f0d7df9210284f73c1f28449d7225f",
+      "alphaSha256": "b7206283a960e9477ac0f37537be238b23a54f4587a3f1589e49c976ac36cb34",
       "nativeTightSize": [
         16,
         12
       ],
       "seat": [
-        4,
-        11
+        2,
+        7
       ],
       "sourceOpaqueBBox": [
         0,
@@ -50,15 +51,15 @@
       "path": "authored/templates/bucket_sf01_rd8/front_right.png",
       "sourcePath": "authored/approved/bucket_hat_v1/rotations/01/r0c2_snapped.png",
       "sourceSha256": "dd99ffedfe800e28fca40bfe8966d274db5619284391a28cf3e51186e371f676",
-      "sha256": "342f5945496611100dd24f73204dbb37f525d48c5f7f80b4a8d4c02264b9e1ba",
-      "alphaSha256": "249f5419e1c968447b00c0be0e2c12103d85089bf5ebbd41af6ee36b80b989ef",
+      "sha256": "1e7b430d0d4321c245bfd55fba035b33e0958ebb11b8ee0d202c41ed0e6c559d",
+      "alphaSha256": "fa3e6e3db83908cbf84c08d626f8bd594a58b91518dd755e400d30b87c89c900",
       "nativeTightSize": [
         17,
         15
       ],
       "seat": [
-        3,
-        8
+        1,
+        4
       ],
       "sourceOpaqueBBox": [
         0,
@@ -71,15 +72,15 @@
       "path": "authored/templates/bucket_sf01_rd8/right.png",
       "sourcePath": "authored/approved/bucket_hat_v1/rotations/01/r1c0_snapped.png",
       "sourceSha256": "816589f770551b1d7a6927aac11289c7243ba5aa21b519410e0dbf94121a7632",
-      "sha256": "d76ada18dca68424b56992b1636ac2552583c9463ef9d9e216662512a5dfca51",
-      "alphaSha256": "e63374dc2d87ea4534df8235ee48cecd6a0f5a777241caf81a8f3e35d605681c",
+      "sha256": "acd4e7980989c261cd966594ff8011b301ccd556bf2e06daa44975b3e25ecc1d",
+      "alphaSha256": "469a50f6d4921f7017ef5e1e12f50bb617eddf74198c2b55b4cfb7d1fe603ea0",
       "nativeTightSize": [
         19,
         15
       ],
       "seat": [
-        2,
-        8
+        0,
+        4
       ],
       "sourceOpaqueBBox": [
         0,
@@ -92,15 +93,15 @@
       "path": "authored/templates/bucket_sf01_rd8/back_right.png",
       "sourcePath": "authored/approved/bucket_hat_v1/rotations/01/r2c2_snapped.png",
       "sourceSha256": "2844a596e5f6a2ae5b939b86bff4d2bd58dbc13f8cdb14f78d6a871666c09ba3",
-      "sha256": "f2111ec5e9cfebb48b70d2b8f2ff6ed84938e9346584988aa4fb99b7d5954c14",
-      "alphaSha256": "d52b5b4bb09e4e47f4a6e0e4dd283ff310e5c82aea183b1569bf9131d55e4103",
+      "sha256": "ed42a18dcaa35982f7ffbc866e4ec764650216d388271ac449e0c70513bed8d1",
+      "alphaSha256": "32ed00d5c0e313589fe3823c28e5350d679c61add3c1d5dd256a04570bf64845",
       "nativeTightSize": [
         18,
         13
       ],
       "seat": [
-        3,
-        10
+        1,
+        6
       ],
       "sourceOpaqueBBox": [
         0,
@@ -113,15 +114,15 @@
       "path": "authored/templates/bucket_sf01_rd8/back.png",
       "sourcePath": "authored/approved/bucket_hat_v1/rotations/01/r2c1_snapped.png",
       "sourceSha256": "06964b3dcfcf8c6f799a926e661563ab3295aee0b624fa9555fef9acf9d1279f",
-      "sha256": "91efd78b3ffe62fc97dfe756d8db24221491278706e1fb32d9f405c09d6e1514",
-      "alphaSha256": "17237333842425e8e6b82fa6f13617a27b08766921820b0c9afda23c8b7f0353",
+      "sha256": "4993b19ad2e878adf2b4e79344b5c00db3753b81305227698352a0ba63bb403e",
+      "alphaSha256": "c32b3f44ce5c31620076328a8c216526a863a597917e5612ca98c2a24fd1d4a8",
       "nativeTightSize": [
         18,
         16
       ],
       "seat": [
-        3,
-        7
+        1,
+        3
       ],
       "sourceOpaqueBBox": [
         0,
@@ -134,15 +135,15 @@
       "path": "authored/templates/bucket_sf01_rd8/back_left.png",
       "sourcePath": "authored/approved/bucket_hat_v1/rotations/01/r2c0_snapped.png",
       "sourceSha256": "e8d45ba8bb2275bc2b173abffe00b527c4c2e69274dc9df37b3211471f08f690",
-      "sha256": "1e0362fb9dae122606a5a956597db5f53d32f6f389f42ca0a02c9cf9d05d6499",
-      "alphaSha256": "797a73c5e9d4cea12b2f7193d900fa8b51b9934a3a862bda9bd892c2e8d3ef29",
+      "sha256": "8d42770815842c463b98ab27d4648f03222ff5f8e0cdd48cfa682ed69927749a",
+      "alphaSha256": "1764193112d1bd3d5447be01dd1847786831fb3c10330bff6feb4052531fc910",
       "nativeTightSize": [
         18,
         14
       ],
       "seat": [
-        3,
-        9
+        1,
+        5
       ],
       "sourceOpaqueBBox": [
         0,
@@ -153,22 +154,22 @@
     },
     "left": {
       "path": "authored/templates/bucket_sf01_rd8/left.png",
-      "sourcePath": "authored/approved/bucket_hat_v1/rotations/01/r1c2_snapped.png",
-      "sourceSha256": "93faa5daccf6304e0da8bde5b59959333ebbe0b118d736428d03893b275e38a8",
-      "sha256": "f7fa784660bc97590294d1bae05f0754f322d03f25ad880370a1c9e8f6b6e206",
-      "alphaSha256": "15aa08f4f0f981bd0700332f709b81eef489011a749cd5076e14ff0dd5ea9b60",
+      "sourcePath": "authored/approved/bucket_hat_v1/rotations/01/r1c0_snapped.png",
+      "sourceSha256": "816589f770551b1d7a6927aac11289c7243ba5aa21b519410e0dbf94121a7632",
+      "sha256": "085b93a3d2eac25ff6e88a6dcbf14674295b2d8bd2d677ddb129fce6f9c30ca5",
+      "alphaSha256": "62ad585e0869d8fab6e2d59c7e7b069b4eb47d361f7da82bf0e86620e2b08bfc",
       "nativeTightSize": [
-        18,
+        19,
         15
       ],
       "seat": [
-        3,
-        8
+        0,
+        4
       ],
       "sourceOpaqueBBox": [
         0,
         0,
-        18,
+        19,
         15
       ]
     },
@@ -176,15 +177,15 @@
       "path": "authored/templates/bucket_sf01_rd8/front_left.png",
       "sourcePath": "authored/approved/bucket_hat_v1/rotations/01/r0c0_snapped.png",
       "sourceSha256": "3dbe9882b9ce61fb65688eaabb2e1e1cf22001fdd5e381c6c2736aca24e9e4df",
-      "sha256": "c0fa824892ff5b65a01836709aafc1ed0877e1d6d9cfc570926657b99c86d173",
-      "alphaSha256": "89621ccf21ae6c5fb1795adf3dc8713df546de0cbc9d2102375386898093e448",
+      "sha256": "0bd49713dbb58168adb36a9cf07f5fbf01c56a3c1339b46369bd01fd668cff7d",
+      "alphaSha256": "78f2aa646efcb3d7d607517740c362a1a9a88d03c7aa3673d7e71aa7a10abc47",
       "nativeTightSize": [
         18,
         15
       ],
       "seat": [
-        3,
-        8
+        1,
+        4
       ],
       "sourceOpaqueBBox": [
         0,

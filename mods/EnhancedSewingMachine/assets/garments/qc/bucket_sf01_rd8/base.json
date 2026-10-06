@@ -3,9 +3,9 @@
   "Category": "Hat",
   "DefinitionVersion": 1,
   "WornTexture": "assets/qc/bucket_sf01_rd8/base.png",
-  "FrameWidth": 24,
-  "FrameHeight": 24,
-  "RenderScale": 0.8333333333333334,
+  "FrameWidth": 20,
+  "FrameHeight": 20,
+  "RenderScale": 0.8,
   "VanillaReferenceAnchor": {
     "X": 10,
     "Y": 16
@@ -15,32 +15,32 @@
     "Front": {
       "SourceX": 0,
       "SourceY": 0,
-      "AnchorX": 12,
-      "AnchorY": 17,
+      "AnchorX": 10,
+      "AnchorY": 13,
       "OffsetX": 0,
       "OffsetY": -2
     },
     "Right": {
       "SourceX": 0,
-      "SourceY": 24,
-      "AnchorX": 12,
-      "AnchorY": 17,
+      "SourceY": 20,
+      "AnchorX": 10,
+      "AnchorY": 13,
       "OffsetX": 0,
       "OffsetY": -2
     },
     "Back": {
       "SourceX": 0,
-      "SourceY": 48,
-      "AnchorX": 12,
-      "AnchorY": 17,
+      "SourceY": 40,
+      "AnchorX": 10,
+      "AnchorY": 13,
       "OffsetX": 0,
       "OffsetY": -2
     },
     "Left": {
       "SourceX": 0,
-      "SourceY": 72,
-      "AnchorX": 12,
-      "AnchorY": 17,
+      "SourceY": 60,
+      "AnchorX": 10,
+      "AnchorY": 13,
       "OffsetX": 0,
       "OffsetY": -2
     }
@@ -58,6 +58,6 @@
     "QualityTier": "QC",
     "Decals": "",
     "Classification": "QC_CANDIDATE",
-    "Label": "BUCKET HAT 01 RD8"
+    "Label": "BUCKET HAT 01 - TRUE SIDE QC"
   }
 }

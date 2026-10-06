@@ -3,12 +3,12 @@
   "family": "bucket_sf01_rd8",
   "template": "bucket_sf01_rd8",
   "frameSize": [
-    24,
-    24
+    20,
+    20
   ],
   "runtime": "EnhancedSewingMachine",
   "status": "PENDING_ESM_WEAR_QC",
-  "baseRenderScale": 0.8333333333333334,
+  "baseRenderScale": 0.8,
   "directionDefaults": {
     "front": {
       "offset": [
@@ -39,7 +39,7 @@
       "fitScale": 1.0
     }
   },
-  "note": "Hat 01 directional art supplied/approved by user; ESM wear QC is the remaining gate.",
+  "note": "Hat 01 uses the supplied true Right r1c0 and Back r2c1; Left is a deterministic mirror of Right because supplied r1c2 has a cut-off ribbon. Native pixels are not resampled. ESM wear QC is the remaining gate.",
   "hairPolicy": {
     "mode": "Obscured",
     "authority": "vanilla Bucket Hat behavior",

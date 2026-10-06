@@ -1901,10 +1901,11 @@ full-farmer masks (they produce oversized hats).
 - Canonical rotation pixels copied to `authored/approved/bucket_hat_v1/rotations/01/` with byte-identical provenance.
 - New template: `bucket_sf01_rd8`.
 - Front authority remains the exact approved `construction_sf01_06_01_cream_split_droop.png`; RD front is evidence only.
-- Runtime cardinals: exact front + supplied right `r1c0` + back `r2c1` + left `r1c2`.
-- Native pixels are not resampled; they are only alpha-cropped and transparent-padded/bottom-seated on 24x24 presentation frames.
-- Human directional art is accepted; status is `HUMAN_ART_APPROVED_PENDING_ESM_WEAR_QC`.
-- `sf_contact_01` remains rollWeight 0 and cannot enter production until ESM wear QC passes.
-- ESM QC garment registered as `qc.bucket.sf01.rd8.base`, RenderScale 0.8333333333333334, HairMode Obscured, provisional offsets [0,-2].
-- Verification: `validate_bucket_sf01_rd8_template.py` PASS; approved intake PASS; ESM garments 26/26 valid.
-- Pre-change ESM checkpoint: `archive/esm-checkpoints/ESM_20261006-001156.tar.gz` (SHA-256 `0558d7d3ed521930cee7f8e04271b81495851e7a80ee9c7d5004aac1caed1cfe`).
+- Runtime cardinals for wear-QC: exact front + supplied true right `r1c0` + back `r2c1` + **Left = deterministic horizontal mirror of `r1c0`**. The supplied `r1c2` left is evidence only because its ribbon is cut off.
+- Native pixels are not resampled; they are only alpha-cropped and transparent-padded/bottom-seated on 20x20 presentation frames.
+- The true side is intentionally being tested first. If its brim actually covers too much of the farmer face in-game, only then make a small side-brim art correction using the 3/4 view as visual guidance.
+- Human directional art remains pending wear behavior; `sf_contact_01` remains rollWeight 0 and cannot enter production until ESM wear QC passes.
+- ESM QC garment: `qc.bucket.sf01.rd8.base`, RenderScale 0.8 (~64px nominal frame width), HairMode Obscured, provisional offsets [0,-2]. This replaces the incorrect maroon-derived 24x24 / 0.8333 QC presentation.
+- Verification: exact Right->Left mirror equality PASS; `validate_bucket_sf01_rd8_template.py` PASS; approved intake PASS; ESM garments 26/26 valid; EnhancedSewingMachine Release build PASS (0 warnings / 0 errors); EnhancedSewingMachine.Tests ALL PASS. Build auto-deployed the corrected QC garment to the live Mods folder.
+- Live capture/equip is still pending because the QC bridge was not answering (game/save not running when checked).
+- Latest pre-change ESM checkpoint: `archive/esm-checkpoints/ESM_20261006-011021.tar.gz` (SHA-256 `666e79bf0181f5d871cde0b9517d1c91a4bb7b30d44c0afc42c9034cbe45680c`).

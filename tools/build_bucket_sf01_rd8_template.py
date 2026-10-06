@@ -9,7 +9,7 @@ SRC = ROOT / 'authored/approved/bucket_hat_v1/rotations/01'
 FRONT = ROOT / 'authored/approved/bucket_hat_v1/sources/construction_sf01_06_01_cream_split_droop.png'
 OUT = ROOT / 'authored/templates/bucket_sf01_rd8'
 OUT.mkdir(parents=True, exist_ok=True)
-FS = 24
+FS = 20
 
 # RD rotate mapping follows the already-proven maroon RD8 orientation contract.
 views = {
@@ -19,7 +19,7 @@ views = {
     'back_right': SRC / 'r2c2_snapped.png',
     'back': SRC / 'r2c1_snapped.png',
     'back_left': SRC / 'r2c0_snapped.png',
-    'left': SRC / 'r1c2_snapped.png',
+    'left': SRC / 'r1c0_snapped.png',
     'front_left': SRC / 'r0c0_snapped.png',
 }
 
@@ -49,6 +49,10 @@ def alpha_sha(pix):
 frames={}
 for name,path in views.items():
     pix,native,pos,bbox=seat(path)
+    if name == 'left':
+        # User rejected the supplied left because its ribbon is cut off.
+        # Runtime left is a deterministic horizontal mirror of the approved true-right frame.
+        pix=[list(reversed(row)) for row in pix]
     dst=OUT/f'{name}.png'; write_rgba_png(dst,pix)
     frames[name]={
         'path':str(dst.relative_to(ROOT)),
@@ -74,7 +78,8 @@ manifest={
     'notes':[
         'User supplied this folder as the completed Hat 01 rotation.',
         'Exact approved source front remains front authority; RD front is evidence only.',
-        'No resampling. Native pixels are only cropped to alpha bounds and transparent-padded/bottom-seated on 24x24.',
+        'No resampling. Native pixels are only cropped to alpha bounds and transparent-padded/bottom-seated on 20x20.',
+        'Runtime Left is a deterministic horizontal mirror of the supplied true Right r1c0; supplied r1c2 is retained as evidence only because its ribbon is cut off.',
         'Production remains disabled until ESM wear QC passes.'
     ],
     'frames':frames,
