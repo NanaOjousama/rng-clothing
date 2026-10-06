@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "id": "bucket_hat_approved_intake_v1",
+  "family": "bucket_hat",
+  "status": "AUDITED_INTAKE_FAIL_CLOSED",
+  "assetManifest": "authored/approved/bucket_hat_v1/manifest.json",
+  "selectionEvidence": "authored/approved/bucket_hat_v1/sources/selection_sheet_generate_contact_x10.png",
+  "mainSelectionIndices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "constructionGroups": {
+    "existing_maroon_rd8": {
+      "status": "DIRECTIONAL_PENDING_ESM_WEAR_QC",
+      "fronts": [],
+      "authority": "generator/data/templates/bucket_maroon_rd8.json",
+      "note": "Existing approved four-cardinal bucket base. Chin strap remains optional attachment.",
+      "rollWeight": 0
+    },
+    "pl_floppy_soft": {
+      "status": "FRONT_REFERENCE_ONLY",
+      "fronts": [
+        "construction_floppy_cream_worn64"
+      ],
+      "note": "A floppy/soft worn front; needs clean extracted/authoritative cardinal art.",
+      "rollWeight": 0
+    },
+    "pl_fisherman_tight": {
+      "status": "FRONT_REFERENCE_ONLY",
+      "fronts": [
+        "construction_fisherman_cream_worn64",
+        "construction_fisherman_navy_worn64",
+        "construction_fisherman_rust_worn64"
+      ],
+      "note": "One construction, three palette/material examples. Do not count as three silhouette rolls.",
+      "rollWeight": 0
+    },
+    "pl_deep_crown": {
+      "status": "FRONT_REFERENCE_ONLY",
+      "fronts": [
+        "construction_deep_cream_worn64"
+      ],
+      "note": "Deep-crown worn front.",
+      "rollWeight": 0
+    },
+    "pl_wide_soft": {
+      "status": "FRONT_REFERENCE_ONLY",
+      "fronts": [
+        "construction_wide_soft_navy_worn64"
+      ],
+      "note": "Wide soft-brim worn front.",
+      "rollWeight": 0
+    },
+    "sf_contact_01": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "fronts": [
+        "construction_sf01_06_01_cream_split_droop"
+      ],
+      "note": "User explicitly selected index 01.",
+      "rollWeight": 0
+    },
+    "sf_contact_02": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "fronts": [
+        "construction_sf01_06_02_salmon_angular_flare"
+      ],
+      "note": "User explicitly selected index 02.",
+      "rollWeight": 0
+    },
+    "sf_contact_03": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "fronts": [
+        "construction_sf01_06_03_chartreuse_deep_droop"
+      ],
+      "note": "User explicitly selected index 03.",
+      "rollWeight": 0
+    },
+    "sf_contact_04": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "fronts": [
+        "construction_sf01_06_04_mauve_round_droop"
+      ],
+      "note": "User explicitly selected index 04.",
+      "rollWeight": 0
+    },
+    "sf_contact_05": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "fronts": [
+        "construction_sf01_06_05_olive_band_flare"
+      ],
+      "note": "User explicitly selected index 05.",
+      "rollWeight": 0
+    },
+    "sf_contact_06": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "fronts": [
+        "construction_sf01_06_06_cream_teal_long_droop"
+      ],
+      "note": "User explicitly selected index 06.",
+      "rollWeight": 0
+    },
+    "sf_fisherman_compact": {
+      "status": "FRONT_ONLY",
+      "fronts": [
+        "design_fisherman_navy_front"
+      ],
+      "note": "Compact 14x8 isolated fisherman silhouette.",
+      "rollWeight": 0
+    },
+    "sf_flower_band_wide": {
+      "status": "FRONT_ONLY",
+      "fronts": [
+        "design_flower_band_cream_front"
+      ],
+      "note": "22x13 distinct wide/soft silhouette; floral band is separately reusable as wraparound detail.",
+      "rollWeight": 0
+    },
+    "vanilla_footprint_core": {
+      "status": "FRONT_ONLY_DIRECTION_PATH_KNOWN",
+      "fronts": [
+        "pattern_gingham_red_front64",
+        "motif_mushroom_pixellab_front64",
+        "motif_mushroom_spritefusion_front64"
+      ],
+      "note": "All three have the exact same 14x9 alpha geometry. One construction roll, multiple pattern/motif looks. Vanilla cardinal footprint path is already known from bucket_ai_inpaint_01.",
+      "rollWeight": 0
+    },
+    "sf_round_wide_28x16": {
+      "status": "FRONT_ONLY",
+      "fronts": [
+        "design_moss_mushroom_front",
+        "motif_daisy_pink_front"
+      ],
+      "note": "Moss mushroom and pink daisy share exact 28x16 alpha geometry. One construction roll, two visual treatments.",
+      "rollWeight": 0
+    },
+    "sf_classic_olive_17x10": {
+      "status": "FRONT_ONLY",
+      "fronts": [
+        "design_classic_olive_band_front"
+      ],
+      "note": "17x10 isolated classic olive/band silhouette.",
+      "rollWeight": 0
+    },
+    "sf_patchwork_16x9": {
+      "status": "FRONT_ONLY",
+      "fronts": [
+        "pattern_patchwork_earth_front"
+      ],
+      "note": "16x9 compact silhouette plus patchwork design donor.",
+      "rollWeight": 0
+    },
+    "sf_rain_22x10": {
+      "status": "FRONT_ONLY",
+      "fronts": [
+        "material_rain_yellow_front"
+      ],
+      "note": "22x10 wide rain-hat/bucket silhouette plus waterproof material donor.",
+      "rollWeight": 0
+    }
+  },
+  "designVocabulary": {
+    "wholeHatMaterial": [
+      "canvas",
+      "corduroy_like",
+      "waterproof_rain",
+      "soft_fabric"
+    ],
+    "wholeHatPattern": [
+      "solid",
+      "gingham",
+      "patchwork_large_blocks"
+    ],
+    "wraparoundRegion": [
+      "contrast_band",
+      "teal_band",
+      "floral_band"
+    ],
+    "localizedMotif": [
+      "mushroom_patch",
+      "daisy"
+    ],
+    "paletteStories": [
+      "cream",
+      "navy",
+      "rust",
+      "olive_moss",
+      "pastel_pink",
+      "salmon",
+      "chartreuse",
+      "mauve",
+      "rain_yellow",
+      "cream_teal"
+    ],
+    "optionalAttachment": [
+      "chin_strap"
+    ]
+  },
+  "consistencyRules": {
+    "WHOLE_HAT": "Material/pattern identity continues across all cardinal views.",
+    "WRAPAROUND_REGION": "Band/trim continues on the same physical region across visible views.",
+    "LOCALIZED": "Motif appears only where physically visible; never screen-space duplicated.",
+    "CONSTRUCTION": "A front silhouette is not rollable until cardinal construction art and wear QC exist."
+  },
+  "promotionGate": [
+    "front art selected",
+    "right/back/left construction approved",
+    "four-cardinal semantic consistency pass",
+    "ESM wear QC pass",
+    "taste/rarity policy registered",
+    "explicit production promotion"
+  ],
+  "activeGeneratorIntegration": false
+}

@@ -1,0 +1,932 @@
+{
+  "schemaVersion": 1,
+  "id": "bucket_hat_user_approved_v1",
+  "family": "bucket_hat",
+  "status": "USER_APPROVED_INTAKE_NOT_PRODUCTION",
+  "sourceSelectionFolder": "apprved/bucket hats",
+  "canonicalRoot": "authored/approved/bucket_hat_v1/sources",
+  "policy": {
+    "doNotTreatEveryImageAsSeparateHat": true,
+    "separateAxes": [
+      "construction",
+      "material",
+      "pattern",
+      "wraparound_detail",
+      "localized_motif",
+      "palette",
+      "attachment"
+    ],
+    "frontOnlyCannotEnterProduction": true,
+    "wornCompositeCannotEnterProduction": true,
+    "localizedMotifMustUsePhysicalVisibility": true,
+    "wholeHatPatternMustRemainConsistentAcrossCardinals": true,
+    "approvedDoesNotMeanDirectionalOrWearApproved": true
+  },
+  "constructionClasses": {
+    "floppy_soft": {
+      "status": "FRONT_REFERENCE_ONLY"
+    },
+    "fisherman_short_brim": {
+      "status": "FRONT_REFERENCE_PLUS_HAT_ONLY_FRONT"
+    },
+    "deep_crown": {
+      "status": "FRONT_REFERENCE_ONLY"
+    },
+    "wide_soft_brim": {
+      "status": "FRONT_REFERENCE_ONLY"
+    },
+    "maroon_rd8_existing": {
+      "status": "EXISTING_DIRECTIONAL_TEMPLATE_PENDING_ESM_WEAR_QC",
+      "templateContract": "generator/data/templates/bucket_maroon_rd8.json"
+    },
+    "sf_bucket_01": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "rollWeight": 0
+    },
+    "sf_bucket_02": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "rollWeight": 0
+    },
+    "sf_bucket_03": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "rollWeight": 0
+    },
+    "sf_bucket_04": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "rollWeight": 0
+    },
+    "sf_bucket_05": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "rollWeight": 0
+    },
+    "sf_bucket_06": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "rollWeight": 0
+    }
+  },
+  "approvedDesignVocabulary": {
+    "materials": [
+      "canvas",
+      "corduroy_like",
+      "waterproof_rain",
+      "soft_fabric"
+    ],
+    "patterns": [
+      "solid",
+      "gingham",
+      "patchwork_large_blocks"
+    ],
+    "wraparoundDetails": [
+      "contrast_band",
+      "floral_band"
+    ],
+    "localizedMotifs": [
+      "mushroom_patch",
+      "daisy"
+    ],
+    "paletteStories": [
+      "cream",
+      "navy",
+      "rust",
+      "olive_moss",
+      "pastel_pink",
+      "rain_yellow"
+    ],
+    "attachments": [
+      "chin_strap_existing_optional"
+    ]
+  },
+  "items": [
+    {
+      "id": "construction_floppy_cream_worn64",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/construction_floppy_cream_worn64.png",
+      "approvedSourcePath": "apprved/bucket hats/A_floppy_cream.png",
+      "originPath": "experiments/bucket_pl_silhouettes_02_tight/out/A_floppy_cream.png",
+      "sha256": "e00fe3929d823450915b6f751db70ee14aa8d705f5f3748d906073c6a3e94163",
+      "width": 64,
+      "height": 64,
+      "roles": [
+        "CONSTRUCTION_FRONT_REFERENCE",
+        "PALETTE_REFERENCE"
+      ],
+      "constructionClass": "floppy_soft",
+      "tags": [
+        "cream",
+        "soft",
+        "floppy",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "APPROVED_FRONT_REFERENCE_ONLY",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "User-selected worn front reference. Extract/author clean front construction before directional work; do not use farmer pixels as hat art.",
+      "constructionGroup": "pl_floppy_soft"
+    },
+    {
+      "id": "construction_fisherman_cream_worn64",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/construction_fisherman_cream_worn64.png",
+      "approvedSourcePath": "apprved/bucket hats/B_fisherman_cream.png",
+      "originPath": "experiments/bucket_pl_silhouettes_02_tight/out/B_fisherman_cream.png",
+      "sha256": "d986852e1f6c6051931978688908541b81a74dca68a0516b1db0948f614ef798",
+      "width": 64,
+      "height": 64,
+      "roles": [
+        "CONSTRUCTION_FRONT_REFERENCE",
+        "PALETTE_REFERENCE"
+      ],
+      "constructionClass": "fisherman_short_brim",
+      "tags": [
+        "cream",
+        "fisherman",
+        "short_brim",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "APPROVED_FRONT_REFERENCE_ONLY",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Same fisherman construction as navy/rust; palette example, not a separate silhouette roll.",
+      "constructionGroup": "pl_fisherman_tight"
+    },
+    {
+      "id": "construction_fisherman_navy_worn64",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/construction_fisherman_navy_worn64.png",
+      "approvedSourcePath": "apprved/bucket hats/B_fisherman_navy.png",
+      "originPath": "experiments/bucket_pl_silhouettes_02_tight/out/B_fisherman_navy.png",
+      "sha256": "49b6f1b61db18dcea1c6c654cc9b42854742b6079a114d9623f86a8831fdea40",
+      "width": 64,
+      "height": 64,
+      "roles": [
+        "CONSTRUCTION_FRONT_REFERENCE",
+        "PALETTE_REFERENCE"
+      ],
+      "constructionClass": "fisherman_short_brim",
+      "tags": [
+        "navy",
+        "fisherman",
+        "short_brim",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "APPROVED_FRONT_REFERENCE_ONLY",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Same fisherman construction as cream/rust; palette example, not a separate silhouette roll.",
+      "constructionGroup": "pl_fisherman_tight"
+    },
+    {
+      "id": "construction_fisherman_rust_worn64",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/construction_fisherman_rust_worn64.png",
+      "approvedSourcePath": "apprved/bucket hats/B_fisherman_rust.png",
+      "originPath": "experiments/bucket_pl_silhouettes_02_tight/out/B_fisherman_rust.png",
+      "sha256": "9a65250cc6f99449586def0ed37f56ce5004829fe04780f98f27ac14639ee10c",
+      "width": 64,
+      "height": 64,
+      "roles": [
+        "CONSTRUCTION_FRONT_REFERENCE",
+        "PALETTE_REFERENCE",
+        "MATERIAL_REFERENCE"
+      ],
+      "constructionClass": "fisherman_short_brim",
+      "tags": [
+        "rust",
+        "fisherman",
+        "short_brim",
+        "corduroy_like",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "APPROVED_FRONT_REFERENCE_ONLY",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Same fisherman construction as cream/navy; palette/material example, not a separate silhouette roll.",
+      "constructionGroup": "pl_fisherman_tight"
+    },
+    {
+      "id": "construction_deep_cream_worn64",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/construction_deep_cream_worn64.png",
+      "approvedSourcePath": "apprved/bucket hats/C_deep_cream.png",
+      "originPath": "experiments/bucket_pl_silhouettes_02_tight/out/C_deep_cream.png",
+      "sha256": "94db8ec0a412b4966c567858e3c0d28445c671ad4fb85120a307b66235d7ef90",
+      "width": 64,
+      "height": 64,
+      "roles": [
+        "CONSTRUCTION_FRONT_REFERENCE",
+        "PALETTE_REFERENCE"
+      ],
+      "constructionClass": "deep_crown",
+      "tags": [
+        "cream",
+        "deep_crown",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "APPROVED_FRONT_REFERENCE_ONLY",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "User-selected deep-crown front construction reference.",
+      "constructionGroup": "pl_deep_crown"
+    },
+    {
+      "id": "construction_wide_soft_navy_worn64",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/construction_wide_soft_navy_worn64.png",
+      "approvedSourcePath": "apprved/bucket hats/D_wide_soft_navy.png",
+      "originPath": "experiments/bucket_pl_silhouettes_02_tight/out/D_wide_soft_navy.png",
+      "sha256": "473fb8598d303bd1cc274048ca03f9824e923b843328c71d0a6ec7973aadd438",
+      "width": 64,
+      "height": 64,
+      "roles": [
+        "CONSTRUCTION_FRONT_REFERENCE",
+        "PALETTE_REFERENCE"
+      ],
+      "constructionClass": "wide_soft_brim",
+      "tags": [
+        "navy",
+        "wide_brim",
+        "soft_brim",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "APPROVED_FRONT_REFERENCE_ONLY",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "User-selected wide/soft front construction reference.",
+      "constructionGroup": "pl_wide_soft"
+    },
+    {
+      "id": "design_fisherman_navy_front",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/design_fisherman_navy_front.png",
+      "approvedSourcePath": "apprved/bucket hats/fisherman.png",
+      "originPath": "experiments/bucket_sf_batch_20/07_fisherman/fisherman.png",
+      "sha256": "c3a193c90ac332d1a291d8ae2f01d177c6ffaa9da488899ad95774c20edadd39",
+      "width": 14,
+      "height": 8,
+      "roles": [
+        "CONSTRUCTION_FRONT_CANDIDATE",
+        "STYLE_REFERENCE"
+      ],
+      "constructionClass": "fisherman_short_brim",
+      "tags": [
+        "navy",
+        "fisherman",
+        "short_brim",
+        "isolated_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "APPROVED_FRONT_ONLY",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Hat-only fisherman front; useful clean front authority candidate but requires approved cardinal construction before production.",
+      "constructionGroup": "sf_fisherman_compact"
+    },
+    {
+      "id": "design_flower_band_cream_front",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/design_flower_band_cream_front.png",
+      "approvedSourcePath": "apprved/bucket hats/flowerBH.png",
+      "originPath": "experiments/bucket_sf_batch_20/10_flower_band/flowerBH.png",
+      "sha256": "739476e3998fea5e9300be0c7eed241ef260954f0c1d1b21e4903208ac9dd5e5",
+      "width": 22,
+      "height": 13,
+      "roles": [
+        "WRAPAROUND_DETAIL_REFERENCE",
+        "PALETTE_REFERENCE"
+      ],
+      "constructionClass": null,
+      "tags": [
+        "cream",
+        "floral_band",
+        "restrained",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WRAPAROUND_REGION"
+      ],
+      "readiness": "APPROVED_DESIGN_DONOR",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Treat floral band as a region design, not as a second construction. Side/back continuation must be authored semantically.",
+      "constructionGroup": "sf_flower_band_wide"
+    },
+    {
+      "id": "pattern_gingham_red_front64",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/pattern_gingham_red_front64.png",
+      "approvedSourcePath": "apprved/bucket hats/outlined_pixellab_gingham_1x.png",
+      "originPath": "experiments/bucket_ai_inpaint_01/outlined_pixellab_gingham_1x.png",
+      "sha256": "1f5277dbc3593cdfbcb502c6e6b74ec55165d2039d1d6bfd6149ae29fa9aebed",
+      "width": 64,
+      "height": 64,
+      "roles": [
+        "PATTERN_REFERENCE",
+        "PALETTE_REFERENCE"
+      ],
+      "constructionClass": null,
+      "tags": [
+        "red",
+        "cream",
+        "gingham",
+        "check",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "APPROVED_DESIGN_DONOR",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Whole-hat pattern identity; geometry is not authority.",
+      "constructionGroup": "vanilla_footprint_core"
+    },
+    {
+      "id": "motif_mushroom_pixellab_front64",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/motif_mushroom_pixellab_front64.png",
+      "approvedSourcePath": "apprved/bucket hats/outlined_pixellab_mushroom_1x.png",
+      "originPath": "experiments/bucket_ai_inpaint_01/outlined_pixellab_mushroom_1x.png",
+      "sha256": "602c171626436974aa69924921972e3e6597af06f65aab997ee1e4245aa688ef",
+      "width": 64,
+      "height": 64,
+      "roles": [
+        "LOCALIZED_MOTIF_REFERENCE",
+        "PALETTE_REFERENCE"
+      ],
+      "constructionClass": null,
+      "tags": [
+        "moss",
+        "green",
+        "mushroom",
+        "patch",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "LOCALIZED"
+      ],
+      "readiness": "APPROVED_DESIGN_DONOR",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Mushroom is a localized motif. Do not duplicate it at a fixed screen-space position across directions.",
+      "constructionGroup": "vanilla_footprint_core"
+    },
+    {
+      "id": "motif_mushroom_spritefusion_front64",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/motif_mushroom_spritefusion_front64.png",
+      "approvedSourcePath": "apprved/bucket hats/outlined_spritefusion_mushroom_1x.png",
+      "originPath": "experiments/bucket_ai_inpaint_01/outlined_spritefusion_mushroom_1x.png",
+      "sha256": "dc4fdec0c9cfa88413ac9fca43ae29ddf0065540c0ab41e4c08a94907714eb43",
+      "width": 64,
+      "height": 64,
+      "roles": [
+        "LOCALIZED_MOTIF_REFERENCE",
+        "STYLE_REFERENCE"
+      ],
+      "constructionClass": null,
+      "tags": [
+        "moss",
+        "green",
+        "mushroom",
+        "patch",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "LOCALIZED"
+      ],
+      "readiness": "APPROVED_DESIGN_DONOR",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Second approved mushroom interpretation; keep as alternate visual donor for the same motif class, not a duplicate motif roll.",
+      "constructionGroup": "vanilla_footprint_core"
+    },
+    {
+      "id": "design_moss_mushroom_front",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/design_moss_mushroom_front.png",
+      "approvedSourcePath": "apprved/bucket hats/output_00.png",
+      "originPath": "experiments/bucket_sf_batch_20/04_green_mushroom/output_00.png",
+      "sha256": "f8fdb925e55b3041b56c054892d12927ee488504ac8d3ddfc3817fa0852aec99",
+      "width": 28,
+      "height": 16,
+      "roles": [
+        "LOCALIZED_MOTIF_REFERENCE",
+        "STYLE_REFERENCE",
+        "PALETTE_REFERENCE"
+      ],
+      "constructionClass": null,
+      "tags": [
+        "moss",
+        "green",
+        "mushroom",
+        "patch",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT",
+        "LOCALIZED"
+      ],
+      "readiness": "APPROVED_DESIGN_DONOR",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Combined design example: whole-hat moss identity + localized mushroom patch.",
+      "constructionGroup": "sf_round_wide_28x16"
+    },
+    {
+      "id": "design_classic_olive_band_front",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/design_classic_olive_band_front.png",
+      "approvedSourcePath": "apprved/bucket hats/output_01.png",
+      "originPath": "experiments/bucket_sf_batch_20/01_classic_olive/output_01.png",
+      "sha256": "5c462d3e627d51524655f9dc70eea2bb25e2b55d0b6130031c0eb57e1d1d1054",
+      "width": 17,
+      "height": 10,
+      "roles": [
+        "MATERIAL_REFERENCE",
+        "WRAPAROUND_DETAIL_REFERENCE",
+        "PALETTE_REFERENCE"
+      ],
+      "constructionClass": null,
+      "tags": [
+        "olive",
+        "canvas",
+        "dark_band",
+        "classic",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT",
+        "WRAPAROUND_REGION"
+      ],
+      "readiness": "APPROVED_DESIGN_DONOR",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Classic canvas/olive material story with darker band; band should continue physically around the hat.",
+      "constructionGroup": "sf_classic_olive_17x10"
+    },
+    {
+      "id": "pattern_patchwork_earth_front",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/pattern_patchwork_earth_front.png",
+      "approvedSourcePath": "apprved/bucket hats/patchwork.png",
+      "originPath": "experiments/bucket_sf_batch_20/09_patchwork/patchwork.png",
+      "sha256": "df9e1209244d48232b4d234ff93cbcc761753615958bf2d70fed5bee0006492e",
+      "width": 16,
+      "height": 9,
+      "roles": [
+        "PATTERN_REFERENCE",
+        "PALETTE_REFERENCE"
+      ],
+      "constructionClass": null,
+      "tags": [
+        "earth_tone",
+        "patchwork",
+        "large_blocks",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "APPROVED_DESIGN_DONOR",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Whole-hat patchwork pattern using a few large readable fabric blocks; avoid tiny noisy mosaic.",
+      "constructionGroup": "sf_patchwork_16x9"
+    },
+    {
+      "id": "motif_daisy_pink_front",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/motif_daisy_pink_front.png",
+      "approvedSourcePath": "apprved/bucket hats/pink daisy.png",
+      "originPath": "experiments/bucket_sf_batch_20/02_pink_daisy/pink daisy.png",
+      "sha256": "aa1a4817d9989c00d802071d2c8e3010bdefb4e924074ec685aab1026d6f0315",
+      "width": 28,
+      "height": 16,
+      "roles": [
+        "LOCALIZED_MOTIF_REFERENCE",
+        "PALETTE_REFERENCE",
+        "STYLE_REFERENCE"
+      ],
+      "constructionClass": null,
+      "tags": [
+        "pink",
+        "daisy",
+        "flower",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT",
+        "LOCALIZED"
+      ],
+      "readiness": "APPROVED_DESIGN_DONOR",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Pink whole-hat palette/material identity plus one localized daisy.",
+      "constructionGroup": "sf_round_wide_28x16"
+    },
+    {
+      "id": "material_rain_yellow_front",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/material_rain_yellow_front.png",
+      "approvedSourcePath": "apprved/bucket hats/rainy day.png",
+      "originPath": "experiments/bucket_sf_batch_20/08_rain/rainy day.png",
+      "sha256": "c60647194a3730381cbf2c2fe7968bf8deec9476d7355d3e5c851f00d056442b",
+      "width": 22,
+      "height": 10,
+      "roles": [
+        "MATERIAL_REFERENCE",
+        "PALETTE_REFERENCE"
+      ],
+      "constructionClass": null,
+      "tags": [
+        "yellow",
+        "rain",
+        "waterproof",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "APPROVED_DESIGN_DONOR",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Waterproof/rain-fabric material story; treat as surface/material identity, not a unique silhouette.",
+      "constructionGroup": "sf_rain_22x10"
+    },
+    {
+      "id": "direction_reference_pink_right_worn256",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/direction_reference_pink_right_worn256.png",
+      "approvedSourcePath": "apprved/bucket hats/right_raw.png",
+      "originPath": "experiments/bucket_ai_inpaint_01/dirs/pink/right_raw.png",
+      "sha256": "a5f252fd8ff720019eedb812123ed548992f103310ee9274880e7f68bf734d72",
+      "width": 256,
+      "height": 256,
+      "roles": [
+        "DIRECTION_REFERENCE_ONLY"
+      ],
+      "constructionClass": null,
+      "tags": [
+        "pink",
+        "right_profile",
+        "worn_reference",
+        "bucket_hat"
+      ],
+      "viewConsistency": [],
+      "readiness": "APPROVED_REFERENCE_ONLY",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Raw worn right-view reference includes farmer. Never roll/copy as production art; use only to judge side angle, crown/brim relationship and wear silhouette. Associated with the pink/vanilla-footprint directional study.",
+      "constructionGroup": "vanilla_footprint_core"
+    },
+    {
+      "id": "construction_sf01_06_01_cream_split_droop",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/construction_sf01_06_01_cream_split_droop.png",
+      "approvedSourcePath": "apprved/bucket hats/generate_contact_x10.png",
+      "originPath": "experiments/spritefusion_bucket_16_01/generate/output_01.png",
+      "selectionIndex": 1,
+      "sha256": "f07ca19452e09882fd0a280bd6c8d4406cedb0105af2a1e87f4a68e5195db489",
+      "width": 16,
+      "height": 16,
+      "roles": [
+        "CONSTRUCTION_FRONT_CANDIDATE",
+        "PALETTE_REFERENCE",
+        "WRAPAROUND_DETAIL_REFERENCE"
+      ],
+      "constructionClass": "sf_bucket_01",
+      "tags": [
+        "cream",
+        "two_tone",
+        "split_droop_brim",
+        "soft_crown",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "USER_SELECTED_FRONT_ONLY",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Cream two-tone construction with pronounced downturned side brim/open center; distinctive silhouette, keep as its own base. Exact front sprite preserved; requires authored/approved cardinal directions and ESM wear QC before roll weight can become nonzero.",
+      "constructionGroup": "sf_contact_01"
+    },
+    {
+      "id": "construction_sf01_06_02_salmon_angular_flare",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/construction_sf01_06_02_salmon_angular_flare.png",
+      "approvedSourcePath": "apprved/bucket hats/generate_contact_x10.png",
+      "originPath": "experiments/spritefusion_bucket_16_01/generate/output_02.png",
+      "selectionIndex": 2,
+      "sha256": "16cb409d1a10f1d4e60723f098fb6bb6b71ac81daf9419b2fdab7685d05e7b40",
+      "width": 16,
+      "height": 16,
+      "roles": [
+        "CONSTRUCTION_FRONT_CANDIDATE",
+        "PALETTE_REFERENCE",
+        "STYLE_REFERENCE"
+      ],
+      "constructionClass": "sf_bucket_02",
+      "tags": [
+        "salmon",
+        "angular_crown",
+        "flared_brim",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "USER_SELECTED_FRONT_ONLY",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Compact salmon construction with angular crown and short flared brim; clean independent silhouette. Exact front sprite preserved; requires authored/approved cardinal directions and ESM wear QC before roll weight can become nonzero.",
+      "constructionGroup": "sf_contact_02"
+    },
+    {
+      "id": "construction_sf01_06_03_chartreuse_deep_droop",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/construction_sf01_06_03_chartreuse_deep_droop.png",
+      "approvedSourcePath": "apprved/bucket hats/generate_contact_x10.png",
+      "originPath": "experiments/spritefusion_bucket_16_01/generate/output_03.png",
+      "selectionIndex": 3,
+      "sha256": "c804a4d19e15dca438ed533172da697a9a1c45b087775216493b142cbb307b48",
+      "width": 16,
+      "height": 16,
+      "roles": [
+        "CONSTRUCTION_FRONT_CANDIDATE",
+        "PALETTE_REFERENCE",
+        "STYLE_REFERENCE"
+      ],
+      "constructionClass": "sf_bucket_03",
+      "tags": [
+        "chartreuse",
+        "deep_crown",
+        "deep_droop_brim",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "USER_SELECTED_FRONT_ONLY",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Deep/high crown with strongly downturned sides; bucket/rain-hat-adjacent but explicitly user-selected for the bucket generator. Exact front sprite preserved; requires authored/approved cardinal directions and ESM wear QC before roll weight can become nonzero.",
+      "constructionGroup": "sf_contact_03"
+    },
+    {
+      "id": "construction_sf01_06_04_mauve_round_droop",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/construction_sf01_06_04_mauve_round_droop.png",
+      "approvedSourcePath": "apprved/bucket hats/generate_contact_x10.png",
+      "originPath": "experiments/spritefusion_bucket_16_01/generate/output_04.png",
+      "selectionIndex": 4,
+      "sha256": "881dd9c9c88d25ca41883f08e5bebfcb7de662c4f113fb1c327cce415d87af62",
+      "width": 16,
+      "height": 16,
+      "roles": [
+        "CONSTRUCTION_FRONT_CANDIDATE",
+        "PALETTE_REFERENCE",
+        "STYLE_REFERENCE"
+      ],
+      "constructionClass": "sf_bucket_04",
+      "tags": [
+        "mauve",
+        "rounded_crown",
+        "soft_droop_brim",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "USER_SELECTED_FRONT_ONLY",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Rounded mauve crown with soft hanging side brim; related language to 03 but separate geometry. Exact front sprite preserved; requires authored/approved cardinal directions and ESM wear QC before roll weight can become nonzero.",
+      "constructionGroup": "sf_contact_04"
+    },
+    {
+      "id": "construction_sf01_06_05_olive_band_flare",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/construction_sf01_06_05_olive_band_flare.png",
+      "approvedSourcePath": "apprved/bucket hats/generate_contact_x10.png",
+      "originPath": "experiments/spritefusion_bucket_16_01/generate/output_05.png",
+      "selectionIndex": 5,
+      "sha256": "4d2d325ef9cba8a59fdb22aec4e43f9947213ff064c40f33e2e8cc552c045cec",
+      "width": 16,
+      "height": 16,
+      "roles": [
+        "CONSTRUCTION_FRONT_CANDIDATE",
+        "MATERIAL_REFERENCE",
+        "PALETTE_REFERENCE",
+        "WRAPAROUND_DETAIL_REFERENCE"
+      ],
+      "constructionClass": "sf_bucket_05",
+      "tags": [
+        "olive",
+        "canvas",
+        "contrast_band",
+        "flared_brim",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "USER_SELECTED_FRONT_ONLY",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Olive compact crown with contrast band and broad flared/downturned brim; construction plus reusable band/material story. Exact front sprite preserved; requires authored/approved cardinal directions and ESM wear QC before roll weight can become nonzero.",
+      "constructionGroup": "sf_contact_05"
+    },
+    {
+      "id": "construction_sf01_06_06_cream_teal_long_droop",
+      "canonicalPath": "authored/approved/bucket_hat_v1/sources/construction_sf01_06_06_cream_teal_long_droop.png",
+      "approvedSourcePath": "apprved/bucket hats/generate_contact_x10.png",
+      "originPath": "experiments/spritefusion_bucket_16_01/generate/output_06.png",
+      "selectionIndex": 6,
+      "sha256": "7742d005d997519e190117911e44d7e029b790f76e7e1a9de8ba327fef5039eb",
+      "width": 16,
+      "height": 16,
+      "roles": [
+        "CONSTRUCTION_FRONT_CANDIDATE",
+        "PALETTE_REFERENCE",
+        "WRAPAROUND_DETAIL_REFERENCE"
+      ],
+      "constructionClass": "sf_bucket_06",
+      "tags": [
+        "cream",
+        "teal_band",
+        "long_droop_brim",
+        "bucket_hat"
+      ],
+      "viewConsistency": [
+        "WHOLE_HAT"
+      ],
+      "readiness": "USER_SELECTED_FRONT_ONLY",
+      "humanApproved": true,
+      "productionApproved": false,
+      "note": "Cream/tan crown with teal wrap band and long downturned side brim; construction plus reusable teal-band design story. Exact front sprite preserved; requires authored/approved cardinal directions and ESM wear QC before roll weight can become nonzero.",
+      "constructionGroup": "sf_contact_06"
+    }
+  ],
+  "userSelectionEvidence": {
+    "contactSheet": "authored/approved/bucket_hat_v1/sources/selection_sheet_generate_contact_x10.png",
+    "contactSheetSha256": "4e8baadf65cbab041eacf0e43a716257fd40b25f7d0bbd12d7c438768da83765",
+    "primarySelectedIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "interpretation": "Indices 01-06 are explicit desired generator looks and are audited as independent front construction candidates; old experiment rejection language does not override user selection."
+  },
+  "constructionGroups": {
+    "existing_maroon_rd8": {
+      "status": "DIRECTIONAL_PENDING_ESM_WEAR_QC",
+      "fronts": [],
+      "authority": "generator/data/templates/bucket_maroon_rd8.json",
+      "note": "Existing approved four-cardinal bucket base. Chin strap remains optional attachment."
+    },
+    "pl_floppy_soft": {
+      "status": "FRONT_REFERENCE_ONLY",
+      "fronts": [
+        "construction_floppy_cream_worn64"
+      ],
+      "note": "A floppy/soft worn front; needs clean extracted/authoritative cardinal art."
+    },
+    "pl_fisherman_tight": {
+      "status": "FRONT_REFERENCE_ONLY",
+      "fronts": [
+        "construction_fisherman_cream_worn64",
+        "construction_fisherman_navy_worn64",
+        "construction_fisherman_rust_worn64"
+      ],
+      "note": "One construction, three palette/material examples. Do not count as three silhouette rolls."
+    },
+    "pl_deep_crown": {
+      "status": "FRONT_REFERENCE_ONLY",
+      "fronts": [
+        "construction_deep_cream_worn64"
+      ],
+      "note": "Deep-crown worn front."
+    },
+    "pl_wide_soft": {
+      "status": "FRONT_REFERENCE_ONLY",
+      "fronts": [
+        "construction_wide_soft_navy_worn64"
+      ],
+      "note": "Wide soft-brim worn front."
+    },
+    "sf_contact_01": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "fronts": [
+        "construction_sf01_06_01_cream_split_droop"
+      ],
+      "note": "User explicitly selected index 01."
+    },
+    "sf_contact_02": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "fronts": [
+        "construction_sf01_06_02_salmon_angular_flare"
+      ],
+      "note": "User explicitly selected index 02."
+    },
+    "sf_contact_03": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "fronts": [
+        "construction_sf01_06_03_chartreuse_deep_droop"
+      ],
+      "note": "User explicitly selected index 03."
+    },
+    "sf_contact_04": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "fronts": [
+        "construction_sf01_06_04_mauve_round_droop"
+      ],
+      "note": "User explicitly selected index 04."
+    },
+    "sf_contact_05": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "fronts": [
+        "construction_sf01_06_05_olive_band_flare"
+      ],
+      "note": "User explicitly selected index 05."
+    },
+    "sf_contact_06": {
+      "status": "USER_SELECTED_FRONT_ONLY",
+      "fronts": [
+        "construction_sf01_06_06_cream_teal_long_droop"
+      ],
+      "note": "User explicitly selected index 06."
+    },
+    "sf_fisherman_compact": {
+      "status": "FRONT_ONLY",
+      "fronts": [
+        "design_fisherman_navy_front"
+      ],
+      "note": "Compact 14x8 isolated fisherman silhouette."
+    },
+    "sf_flower_band_wide": {
+      "status": "FRONT_ONLY",
+      "fronts": [
+        "design_flower_band_cream_front"
+      ],
+      "note": "22x13 distinct wide/soft silhouette; floral band is separately reusable as wraparound detail."
+    },
+    "vanilla_footprint_core": {
+      "status": "FRONT_ONLY_DIRECTION_PATH_KNOWN",
+      "fronts": [
+        "pattern_gingham_red_front64",
+        "motif_mushroom_pixellab_front64",
+        "motif_mushroom_spritefusion_front64"
+      ],
+      "note": "All three have the exact same 14x9 alpha geometry. One construction roll, multiple pattern/motif looks. Vanilla cardinal footprint path is already known from bucket_ai_inpaint_01."
+    },
+    "sf_round_wide_28x16": {
+      "status": "FRONT_ONLY",
+      "fronts": [
+        "design_moss_mushroom_front",
+        "motif_daisy_pink_front"
+      ],
+      "note": "Moss mushroom and pink daisy share exact 28x16 alpha geometry. One construction roll, two visual treatments."
+    },
+    "sf_classic_olive_17x10": {
+      "status": "FRONT_ONLY",
+      "fronts": [
+        "design_classic_olive_band_front"
+      ],
+      "note": "17x10 isolated classic olive/band silhouette."
+    },
+    "sf_patchwork_16x9": {
+      "status": "FRONT_ONLY",
+      "fronts": [
+        "pattern_patchwork_earth_front"
+      ],
+      "note": "16x9 compact silhouette plus patchwork design donor."
+    },
+    "sf_rain_22x10": {
+      "status": "FRONT_ONLY",
+      "fronts": [
+        "material_rain_yellow_front"
+      ],
+      "note": "22x10 wide rain-hat/bucket silhouette plus waterproof material donor."
+    }
+  },
+  "auditSummary": {
+    "constructionGroupsIncludingExistingMaroon": 18,
+    "newFrontOnlyOrReferenceGroups": 17,
+    "mainContactSheetSelections": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "dedupRules": [
+      "B fisherman cream/navy/rust = one construction group, three visual treatments",
+      "PixelLab gingham + two mushroom fronts = one exact 14x9 alpha construction group",
+      "moss mushroom output_00 + pink daisy = one exact 28x16 alpha construction group"
+    ],
+    "productionRule": "All incomplete construction groups have effective roll weight 0 until cardinal art + ESM wear QC pass."
+  }
+}

@@ -1880,3 +1880,18 @@ outlined hats (PixelLab mushroom / gingham / mustard, RD denim / olive).
 
 Do not redo: the hair-policy analysis, the vanilla outline calibration, or
 full-farmer masks (they produce oversized hats).
+
+## Bucket approved-intake audit — 2026-10-05
+
+- User created `apprved/bucket hats/` as a preference folder: every image in it means "I want this look represented in the bucket-hat generator somehow"; the user is not expected to pre-classify construction/material/motif/etc.
+- Canonical immutable intake copies + SHA-256 provenance now live under `authored/approved/bucket_hat_v1/` with `manifest.json` and `AUDIT.md`.
+- `generate_contact_x10.png` indices **01–06** are the priority selection. All six are preserved as independent front construction candidates; the older experiment note calling some hood-like no longer acts as a rejection.
+- Audit result: 23 preserved approved inputs map to 18 construction groups including the existing maroon RD8 group. Incomplete groups stay fail-closed with roll weight 0.
+- Intentional deduplication preserves visual variety without fake silhouette variety:
+  - B fisherman cream/navy/rust = one construction group, three palette/material treatments;
+  - PixelLab gingham + PixelLab mushroom + SpriteFusion mushroom = one exact 14x9 alpha construction group, separate pattern/motif treatments;
+  - moss mushroom `output_00` + `pink daisy.png` = one exact 28x16 alpha construction group, separate visual treatments.
+- Design vocabulary is now explicitly separated into construction, whole-hat material, whole-hat pattern, wraparound region detail, localized motif, palette, and optional attachment. One selected image may contribute to multiple axes.
+- Intake registry: `generator/data/headwear/bucket_hat_approved_library.json`. It is deliberately **not** registered as active generator production yet.
+- Promotion rule: front selection -> approved cardinal Right/Back/Left construction -> cross-view semantic consistency -> ESM wear QC -> taste/rarity policy registration -> explicit production promotion.
+- Validator: `python3 tools/validate_bucket_hat_approved_intake.py` — PASS: 23 preserved inputs, 18 construction groups, priority 01–06 unique, all roll weights 0.
