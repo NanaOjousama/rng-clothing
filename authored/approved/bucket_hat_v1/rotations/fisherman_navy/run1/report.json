@@ -1,0 +1,82 @@
+{
+ "source_size": [
+  14,
+  8
+ ],
+ "source_colours": 54,
+ "cell_px": 32,
+ "views": {
+  "r0c0": {
+   "size": [
+    15,
+    10
+   ],
+   "raw_colours": 8,
+   "partial_alpha_px": 0,
+   "max_snap_distance": 0
+  },
+  "r0c1": {
+   "size": [
+    14,
+    8
+   ],
+   "raw_colours": 9,
+   "partial_alpha_px": 0,
+   "max_snap_distance": 0
+  },
+  "r0c2": {
+   "size": [
+    14,
+    10
+   ],
+   "raw_colours": 8,
+   "partial_alpha_px": 0,
+   "max_snap_distance": 0
+  },
+  "r1c0": {
+   "size": [
+    14,
+    11
+   ],
+   "raw_colours": 9,
+   "partial_alpha_px": 0,
+   "max_snap_distance": 0
+  },
+  "r1c2": {
+   "size": [
+    13,
+    11
+   ],
+   "raw_colours": 7,
+   "partial_alpha_px": 0,
+   "max_snap_distance": 0
+  },
+  "r2c0": {
+   "size": [
+    14,
+    11
+   ],
+   "raw_colours": 8,
+   "partial_alpha_px": 0,
+   "max_snap_distance": 0
+  },
+  "r2c1": {
+   "size": [
+    14,
+    10
+   ],
+   "raw_colours": 8,
+   "partial_alpha_px": 0,
+   "max_snap_distance": 0
+  },
+  "r2c2": {
+   "size": [
+    14,
+    11
+   ],
+   "raw_colours": 8,
+   "partial_alpha_px": 0,
+   "max_snap_distance": 0
+  }
+ }
+}

@@ -19,7 +19,7 @@ Purpose: interpret everything Nana placed in `apprved/bucket hats/` as a desired
 - **sf_contact_04** — USER_SELECTED_FRONT_ONLY: User explicitly selected index 04.
 - **sf_contact_05** — USER_SELECTED_FRONT_ONLY: User explicitly selected index 05.
 - **sf_contact_06** — USER_SELECTED_FRONT_ONLY: User explicitly selected index 06.
-- **sf_fisherman_compact** — FRONT_ONLY: Compact 14x8 isolated fisherman silhouette.
+- **sf_fisherman_compact** — DIRECTIONAL_PENDING_ESM_WEAR_QC (2026-10-06): user approved the four-cardinal set for construction; see `rotations/fisherman_navy/selection.json`.
 - **sf_flower_band_wide** — FRONT_ONLY: 22x13 distinct wide/soft silhouette; floral band is separately reusable as wraparound detail.
 - **vanilla_footprint_core** — FRONT_ONLY_DIRECTION_PATH_KNOWN: All three have the exact same 14x9 alpha geometry. One construction roll, multiple pattern/motif looks. Vanilla cardinal footprint path is already known from bucket_ai_inpaint_01.
 - **sf_round_wide_28x16** — FRONT_ONLY: Moss mushroom and pink daisy share exact 28x16 alpha geometry. One construction roll, two visual treatments.

@@ -1,0 +1,10 @@
+{
+ "prompt": "bucket hat, same hat rotated, keep exact design colours and size, pixel art",
+ "prompt_style": "rd_advanced_animation__rotate",
+ "width": 32,
+ "height": 32,
+ "num_images": 1,
+ "input_image": "<input_on_32.png>",
+ "return_spritesheet": true,
+ "task_id": "75d493b2-95d7-4d49-a334-844d32a14355"
+}

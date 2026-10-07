@@ -105,12 +105,13 @@
       "rollWeight": 0
     },
     "sf_fisherman_compact": {
-      "status": "FRONT_ONLY",
+      "status": "DIRECTIONAL_PENDING_ESM_WEAR_QC",
       "fronts": [
         "design_fisherman_navy_front"
       ],
-      "note": "Compact 14x8 isolated fisherman silhouette.",
-      "rollWeight": 0
+      "note": "Compact 14x8 isolated fisherman silhouette. User approved the four-cardinal set for construction on 2026-10-06: front = source, right = RD run 1 r0c0, left = mirror, back = RD run 1 r2c1. Template + ESM wear QC not built yet.",
+      "rollWeight": 0,
+      "directionalSelection": "authored/approved/bucket_hat_v1/rotations/fisherman_navy/selection.json"
     },
     "sf_flower_band_wide": {
       "status": "FRONT_ONLY",

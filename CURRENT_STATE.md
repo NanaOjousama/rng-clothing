@@ -1909,3 +1909,14 @@ full-farmer masks (they produce oversized hats).
 - Verification: exact Right->Left mirror equality PASS; `validate_bucket_sf01_rd8_template.py` PASS; approved intake PASS; ESM garments 26/26 valid; EnhancedSewingMachine Release build PASS (0 warnings / 0 errors); EnhancedSewingMachine.Tests ALL PASS. Build auto-deployed the corrected QC garment to the live Mods folder.
 - Live capture/equip is still pending because the QC bridge was not answering (game/save not running when checked).
 - Latest pre-change ESM checkpoint: `archive/esm-checkpoints/ESM_20261006-011021.tar.gz` (SHA-256 `666e79bf0181f5d871cde0b9517d1c91a4bb7b30d44c0afc42c9034cbe45680c`).
+
+## Fisherman (navy) bucket — four-cardinal set APPROVED for construction — 2026-10-06
+
+- Construction group `sf_fisherman_compact` (source `design_fisherman_navy_front`, 14x8): FRONT_ONLY -> DIRECTIONAL_PENDING_ESM_WEAR_QC.
+- Selected views (user): front = exact source; right = RD rotate run 1 `r0c0` (15x10); left = exact mirror; back = RD rotate run 1 `r2c1` (14x10).
+- Canonical copies + both RD runs' provenance, SHA-256 pinned: `authored/approved/bucket_hat_v1/rotations/fisherman_navy/selection.json`. Review sheet `VIEWS_FISHERMAN_ALL.png` there (composited mockup, not in game).
+- Proven: selected sprites byte-equal to their origins; left == mirror(right); intake validator PASS.
+- Not yet proven: in-game worn result. Known: side/back 2 px taller than the front; mockup side brim + shadow partly over the eye.
+- Next: construction template (as `bucket_sf01_rd8`), ESM QC garment, QC Bridge worn capture.
+- Do not redo: RD rotate rerolls for this hat (2 runs, $0.20; user picked from them). RD reruns are unseeded -> different every time.
+- Experiment log: `experiments/sf_approved_rotate/README.md` (also hat 02, rainy_day, sf16x11 yellow side work this session; all GENERATED_UNREVIEWED).

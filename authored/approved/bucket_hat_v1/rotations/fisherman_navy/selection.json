@@ -1,0 +1,70 @@
+{
+ "id": "sf_fisherman_compact_directional_v1",
+ "constructionGroup": "sf_fisherman_compact",
+ "status": "USER_APPROVED_FOR_CONSTRUCTION_PENDING_ESM_WEAR_QC",
+ "approvedOn": "2026-10-06",
+ "approvedBy": "user (\"I think this is it.. can we approve this for construction\")",
+ "views": {
+  "front": {
+   "file": "selected/front_sprite.png",
+   "origin": "authored/approved/bucket_hat_v1/sources/design_fisherman_navy_front.png",
+   "note": "exact approved source front, 14x8"
+  },
+  "right": {
+   "file": "selected/right_sprite.png",
+   "origin": "run1/r0c0_snapped.png",
+   "note": "RD rotate run 1 cell r0c0, 15x10, brim reaches right"
+  },
+  "left": {
+   "file": "selected/left_sprite.png",
+   "origin": "run1/r0c0_snapped.png",
+   "note": "exact horizontal mirror of right"
+  },
+  "back": {
+   "file": "selected/back_sprite.png",
+   "origin": "run1/r2c1_snapped.png",
+   "note": "RD rotate run 1 cell r2c1, 14x10"
+  }
+ },
+ "reviewSheet": "VIEWS_FISHERMAN_ALL.png",
+ "experiment": "experiments/sf_approved_rotate/ (fisherman/, fisherman_r2/, fisherman_views_all/)",
+ "knownIssues": [
+  "side/back are 2 px taller than the 14x8 front (RD looking-down camera)",
+  "mockup placement: side brim + vanilla-tone shadow partly over the eye; not yet checked in game"
+ ],
+ "notYet": [
+  "construction template",
+  "ESM QC garment",
+  "in-game worn QC"
+ ],
+ "rollWeight": 0,
+ "sha256": {
+  "VIEWS_FISHERMAN_ALL.png": "b4790df1bd3df2287c0f2f30d5c86c8cf7c495a989c9ad4e7700925ebc54b8fb",
+  "run1/r0c0_snapped.png": "b0805c2ec3739448349cf472dd8c205c736e931fe0bfee33dee57622f7795e23",
+  "run1/r0c1_snapped.png": "3ae9b28d8728663cda3995901bf49a005db6ff6dc11f0f063d4038e9b236823b",
+  "run1/r0c2_snapped.png": "d7213a45d8377112dd6edd40e548561e74acaf1f657b32ee29e7731f36e4d000",
+  "run1/r1c0_snapped.png": "078df8fdaf8cbf0daa39bce10813002ffb64791aa648b72270f83b5e0cfc2018",
+  "run1/r1c2_snapped.png": "cd51e55a699d8db825fd73c0b22011f3467b1f1b3259dd05c63bde3a763361e7",
+  "run1/r2c0_snapped.png": "8f3eed61ce59a1d63b66f36e19bc6d40eeee6a7878b961ac3749ccea0e6c11ed",
+  "run1/r2c1_snapped.png": "5cfabd48371495fe5ccb960ccccf9e9cd3180504d5f40cbe8085838845519ba7",
+  "run1/r2c2_snapped.png": "e66ba7142c0ce060db0f68f4040fe3020a522f15acd3aefbe7393849193adcad",
+  "run1/report.json": "d0f8c3300d821e1439cc37b68f2f5fab6e945322ed6e5f9a31c2ace4cf3622d2",
+  "run1/request.json": "dace2b268b9d96c1adaa273497330ac0866f995002df0f4f6f37c32b8558d400",
+  "run1/task.json": "8f361a23a8e087f02fdd4ac29ef80c62353ffc70272f1d91687622cc30d42d27",
+  "run2/r0c0_snapped.png": "2645a70d510b655e310046607161d6a257d19556bf805e4585ecf1674683ce6c",
+  "run2/r0c1_snapped.png": "4b0912c8bb0adbe4d1c98f4c52e30546dbda557dae188dab5be86e0bc290cc29",
+  "run2/r0c2_snapped.png": "8abfa1aabf92c75311a6bc7a180e21d39fc587ef95c364416a0daa72a237e411",
+  "run2/r1c0_snapped.png": "03babbae73faa975e0372c01ea6376fc7f0c978a84df5937821135add39598db",
+  "run2/r1c2_snapped.png": "c9ef81040cd347fbda0b6d0ff990f557031980ba0457b48202081b6294fde190",
+  "run2/r2c0_snapped.png": "26b1c3ac6c67b39ba8e7bb1e7b6fd2e9e07997f3859b517b1f2c13790116191c",
+  "run2/r2c1_snapped.png": "14247050754010b49fc5cdafed34f1603f12b8fdbb39fb9ef6a55dbd76b25e58",
+  "run2/r2c2_snapped.png": "ec9702b055b408a745375177b361f1995a15533acaf6cb3b3f75fd69a14db32c",
+  "run2/report.json": "02403c6bda5c739f9e2c83d2be4dec2db4cf57a0474e1bc3b16be93466735d8e",
+  "run2/request.json": "7f21ce05bf422671caea0f3b0d2a7ce9ac87852e238b361737e8adac2e839043",
+  "run2/task.json": "c321b4121949eba812effea82c5185d52518f464fdd05abf7a240d0665944e0a",
+  "selected/back_sprite.png": "5cfabd48371495fe5ccb960ccccf9e9cd3180504d5f40cbe8085838845519ba7",
+  "selected/front_sprite.png": "fbdc85682564cd2dcce3e96d75f016683bd116a29325a6e1546fb0a2f2dfc9e7",
+  "selected/left_sprite.png": "89e7c41baedfea8efba27ce915496e77e31a0c63ad0c148f8024533141bca9ae",
+  "selected/right_sprite.png": "b0805c2ec3739448349cf472dd8c205c736e931fe0bfee33dee57622f7795e23"
+ }
+}
