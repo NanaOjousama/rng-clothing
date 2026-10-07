@@ -642,6 +642,19 @@
       "sourceCategory": "Hats",
       "sourceName": "Bucket Hat 01 RD8",
       "humanArtApproved": true
+    },
+    "bucket_fisherman_navy16": {
+      "contract": "generator/data/templates/bucket_fisherman_navy16.json",
+      "family": "bucket_hat",
+      "slot": "HEAD",
+      "status": "HUMAN_ART_APPROVED_PENDING_ESM_WEAR_QC",
+      "constructionAuthority": "user-approved Fisherman Navy four-cardinal set; exact selected frames are hash-pinned",
+      "humanArtApprovalRequired": false,
+      "esmWearApprovalRequired": true,
+      "origin": "sf-approved-rotate/fisherman_views_all",
+      "sourceCategory": "Hats",
+      "sourceName": "Fisherman Navy 16",
+      "humanArtApproved": true
     }
   },
   "catalogPromotion": {

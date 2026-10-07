@@ -1,0 +1,105 @@
+{
+  "schema": "cardinal-construction-source/v1",
+  "id": "bucket_fisherman_navy16",
+  "status": "HUMAN_ART_APPROVED_ESM_WEAR_QC_READY",
+  "sourceSelection": "authored/approved/bucket_hat_v1/rotations/fisherman_navy/selection.json",
+  "reviewSheet": "authored/approved/bucket_hat_v1/rotations/fisherman_navy/VIEWS_FISHERMAN_ALL.png",
+  "runtimeAuthority": [
+    "front",
+    "right",
+    "back",
+    "left"
+  ],
+  "notes": [
+    "User explicitly chose this four-view fisherman/bucket set as the first finished construction.",
+    "Front is the exact approved navy fisherman source; Right is RD run1 r0c0; Back is RD run1 r2c1; Left is an exact horizontal mirror of Right.",
+    "No source-art resampling or recoloring. Cardinal art is only transparent-padded and bottom-seated on a 16x16 presentation canvas.",
+    "Production roll weight remains zero until live ESM wear QC is accepted."
+  ],
+  "frames": {
+    "front": {
+      "path": "authored/templates/bucket_fisherman_navy16/front.png",
+      "sourcePath": "authored/approved/bucket_hat_v1/rotations/fisherman_navy/selected/front_sprite.png",
+      "sourceSha256": "fbdc85682564cd2dcce3e96d75f016683bd116a29325a6e1546fb0a2f2dfc9e7",
+      "sha256": "8431df5f4ef205bfbb0951d38bfb6dad3bf84431505e9661586a32047084063f",
+      "alphaSha256": "5232cdc0cf39360cbf12d58824f11f64da1008727396544d5f9e9395edc4e462",
+      "nativeTightSize": [
+        14,
+        8
+      ],
+      "seat": [
+        1,
+        5
+      ],
+      "sourceOpaqueBBox": [
+        0,
+        0,
+        14,
+        8
+      ]
+    },
+    "right": {
+      "path": "authored/templates/bucket_fisherman_navy16/right.png",
+      "sourcePath": "authored/approved/bucket_hat_v1/rotations/fisherman_navy/selected/right_sprite.png",
+      "sourceSha256": "b0805c2ec3739448349cf472dd8c205c736e931fe0bfee33dee57622f7795e23",
+      "sha256": "0fa9d6e8fb3b788fd43b2936c83fe23d725bd12bacab5c5cc145d13ab5180d2a",
+      "alphaSha256": "553d7b0a46a9a0cefc7bab943d1f48d8f2da767cb98e4a0be230fdfae2ad5b20",
+      "nativeTightSize": [
+        15,
+        10
+      ],
+      "seat": [
+        0,
+        3
+      ],
+      "sourceOpaqueBBox": [
+        0,
+        0,
+        15,
+        10
+      ]
+    },
+    "back": {
+      "path": "authored/templates/bucket_fisherman_navy16/back.png",
+      "sourcePath": "authored/approved/bucket_hat_v1/rotations/fisherman_navy/selected/back_sprite.png",
+      "sourceSha256": "5cfabd48371495fe5ccb960ccccf9e9cd3180504d5f40cbe8085838845519ba7",
+      "sha256": "225f163036161370af5ab05210d8b45f1b453483595508e3933ec9b3307802db",
+      "alphaSha256": "d2e572355829bf4641c9e76be71b4f7b35b79a33f726b3b66bf5a4d8bb400a0a",
+      "nativeTightSize": [
+        14,
+        10
+      ],
+      "seat": [
+        1,
+        3
+      ],
+      "sourceOpaqueBBox": [
+        0,
+        0,
+        14,
+        10
+      ]
+    },
+    "left": {
+      "path": "authored/templates/bucket_fisherman_navy16/left.png",
+      "sourcePath": "authored/approved/bucket_hat_v1/rotations/fisherman_navy/selected/left_sprite.png",
+      "sourceSha256": "89e7c41baedfea8efba27ce915496e77e31a0c63ad0c148f8024533141bca9ae",
+      "sha256": "7c739d24c7266cd4a8e09dcbd74518b6124bdb23e8cf9e917d3b1685dafbb7d6",
+      "alphaSha256": "75e306d2c411fedb96771cc14c76fe37aff7344d4016f65c463eb2e67ca1840a",
+      "nativeTightSize": [
+        15,
+        10
+      ],
+      "seat": [
+        1,
+        3
+      ],
+      "sourceOpaqueBBox": [
+        0,
+        0,
+        15,
+        10
+      ]
+    }
+  }
+}

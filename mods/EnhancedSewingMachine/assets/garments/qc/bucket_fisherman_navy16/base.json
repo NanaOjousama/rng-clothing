@@ -1,0 +1,63 @@
+{
+  "Id": "qc.bucket.fisherman.navy16.base",
+  "Category": "Hat",
+  "DefinitionVersion": 1,
+  "WornTexture": "assets/qc/bucket_fisherman_navy16/base.png",
+  "FrameWidth": 16,
+  "FrameHeight": 16,
+  "RenderScale": 1.0,
+  "VanillaReferenceAnchor": {
+    "X": 10,
+    "Y": 16
+  },
+  "HairMode": "Obscured",
+  "Directions": {
+    "Front": {
+      "SourceX": 0,
+      "SourceY": 0,
+      "AnchorX": 8,
+      "AnchorY": 12,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    "Right": {
+      "SourceX": 0,
+      "SourceY": 16,
+      "AnchorX": 8,
+      "AnchorY": 12,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    "Back": {
+      "SourceX": 0,
+      "SourceY": 32,
+      "AnchorX": 8,
+      "AnchorY": 12,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    "Left": {
+      "SourceX": 0,
+      "SourceY": 48,
+      "AnchorX": 8,
+      "AnchorY": 12,
+      "OffsetX": 0,
+      "OffsetY": 0
+    }
+  },
+  "Metadata": {
+    "Family": "bucket_hat",
+    "Construction": "bucket_fisherman_navy16",
+    "Material": "source_backed",
+    "Palette": "navy",
+    "Motif": "",
+    "GeneratorId": "BucketFishermanNavy16",
+    "GeneratorVersion": 1,
+    "GeneratorSeed": 1,
+    "Style": "approved-construction,wear-qc",
+    "QualityTier": "QC",
+    "Decals": "",
+    "Classification": "QC_CANDIDATE",
+    "Label": "FISHERMAN NAVY 16 - FINAL CONSTRUCTION QC"
+  }
+}

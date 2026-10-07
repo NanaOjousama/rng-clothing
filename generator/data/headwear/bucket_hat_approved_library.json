@@ -105,13 +105,14 @@
       "rollWeight": 0
     },
     "sf_fisherman_compact": {
-      "status": "DIRECTIONAL_PENDING_ESM_WEAR_QC",
+      "status": "DIRECTIONAL_APPROVED_ESM_WEAR_QC_READY",
       "fronts": [
         "design_fisherman_navy_front"
       ],
-      "note": "Compact 14x8 isolated fisherman silhouette. User approved the four-cardinal set for construction on 2026-10-06: front = source, right = RD run 1 r0c0, left = mirror, back = RD run 1 r2c1. Template + ESM wear QC not built yet.",
+      "note": "User selected this complete four-cardinal Fisherman Navy set as the first finished construction. Exact source frames are now locked in a 16x16 template; ESM live wear QC remains the final production gate.",
       "rollWeight": 0,
-      "directionalSelection": "authored/approved/bucket_hat_v1/rotations/fisherman_navy/selection.json"
+      "directionalSelection": "authored/approved/bucket_hat_v1/rotations/fisherman_navy/selection.json",
+      "authority": "generator/data/templates/bucket_fisherman_navy16.json"
     },
     "sf_flower_band_wide": {
       "status": "FRONT_ONLY",

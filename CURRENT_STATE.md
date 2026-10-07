@@ -1920,3 +1920,39 @@ full-farmer masks (they produce oversized hats).
 - Next: construction template (as `bucket_sf01_rd8`), ESM QC garment, QC Bridge worn capture.
 - Do not redo: RD rotate rerolls for this hat (2 runs, $0.20; user picked from them). RD reruns are unseeded -> different every time.
 - Experiment log: `experiments/sf_approved_rotate/README.md` (also hat 02, rainy_day, sf16x11 yellow side work this session; all GENERATED_UNREVIEWED).
+
+
+## Accepted Fisherman Navy four-view construction — 2026-10-07
+
+User explicitly selected the complete `fisherman_views_all` four-cardinal set as the first finished bucket/fisherman construction.
+
+Canonical construction:
+- template: `generator/data/templates/bucket_fisherman_navy16.json`
+- frame authority: `authored/templates/bucket_fisherman_navy16/`
+- selection/provenance: `authored/approved/bucket_hat_v1/rotations/fisherman_navy/selection.json`
+- Front: exact approved 14x8 navy source
+- Right: approved RD run 1 `r0c0`
+- Back: approved RD run 1 `r2c1`
+- Left: exact horizontal mirror of Right
+- 16x16 presentation canvas only; no source-art resampling or recoloring
+- generator roll weight remains 0 until live ESM wear QC and explicit production promotion
+
+ESM QC:
+- garment id: `qc.bucket.fisherman.navy16.base`
+- texture/definition: `mods/EnhancedSewingMachine/assets/qc/bucket_fisherman_navy16/base.png` + `assets/garments/qc/bucket_fisherman_navy16/base.json`
+- frame: 16x16
+- RenderScale: 1.0 (native Stardew 4 display pixels/source pixel)
+- HairMode: Obscured
+- ESM checkpoint before changes: `archive/esm-checkpoints/ESM_20261007-003751.tar.gz`
+- checkpoint SHA-256: `0bd11b3597bccd90d01d86193400f6e5929017877a250cb4c3c8f1c96b4408b3`
+
+Verification:
+- `validate_bucket_fisherman_navy16_template.py`: PASS
+- approved bucket intake validator: PASS
+- source-backed template validator: PASS
+- ESM garment validator: 27/27 PASS
+- ESM Release build: PASS, 0 warnings / 0 errors; deployed to live Mods
+- ESM tests: ALL PASS (30 checks)
+- live QC bridge: unavailable at verification time because no loaded save/bridge response; live worn approval remains pending
+
+Production status: **HUMAN_ART_APPROVED / ESM_QC_READY / LIVE_WEAR_QC_PENDING**.

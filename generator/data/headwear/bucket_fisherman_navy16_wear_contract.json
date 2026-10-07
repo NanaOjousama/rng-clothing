@@ -1,0 +1,51 @@
+{
+  "schema": "rng-hat-wear-contract/v1",
+  "family": "bucket_hat",
+  "template": "bucket_fisherman_navy16",
+  "frameSize": [
+    16,
+    16
+  ],
+  "runtime": "EnhancedSewingMachine",
+  "status": "PENDING_LIVE_ESM_WEAR_QC",
+  "baseRenderScale": 1.0,
+  "directionDefaults": {
+    "front": {
+      "offset": [
+        0,
+        0
+      ],
+      "fitScale": 1.0
+    },
+    "right": {
+      "offset": [
+        0,
+        0
+      ],
+      "fitScale": 1.0
+    },
+    "back": {
+      "offset": [
+        0,
+        0
+      ],
+      "fitScale": 1.0
+    },
+    "left": {
+      "offset": [
+        0,
+        0
+      ],
+      "fitScale": 1.0
+    }
+  },
+  "note": "Native fisherman frames are already Stardew-scale in the approved worn contact sheet. RenderScale 1.0 preserves 4 display pixels per source pixel; no art resizing.",
+  "hairPolicy": {
+    "mode": "Obscured",
+    "authority": "wear-fit behavior only; not generator visual vocabulary",
+    "runtimeMapping": "Stardew Hat.hairDrawType = 1",
+    "appliesTo": [
+      "base"
+    ]
+  }
+}

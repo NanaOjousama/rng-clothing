@@ -1,0 +1,123 @@
+{
+  "schema": "source-backed-template/v1",
+  "id": "bucket_fisherman_navy16",
+  "slot": "HEAD",
+  "category": "Hats",
+  "family": "bucket_hat",
+  "frameSize": [
+    16,
+    16
+  ],
+  "sourceIdentity": {
+    "kind": "USER_APPROVED_DIRECTIONAL_TEMPLATE",
+    "name": "Fisherman Navy 16",
+    "selectionAuthority": "authored/approved/bucket_hat_v1/rotations/fisherman_navy/selection.json",
+    "runtimeOrder": [
+      "front",
+      "right",
+      "back",
+      "left"
+    ]
+  },
+  "frameManifest": "authored/templates/bucket_fisherman_navy16/frame_manifest.json",
+  "frames": {
+    "front": {
+      "path": "authored/templates/bucket_fisherman_navy16/front.png"
+    },
+    "right": {
+      "path": "authored/templates/bucket_fisherman_navy16/right.png"
+    },
+    "back": {
+      "path": "authored/templates/bucket_fisherman_navy16/back.png"
+    },
+    "left": {
+      "path": "authored/templates/bucket_fisherman_navy16/left.png"
+    }
+  },
+  "geometryLock": {
+    "authority": "the four cardinal frame files above",
+    "requiredViews": [
+      "front",
+      "right",
+      "back",
+      "left"
+    ],
+    "forbidResample": true,
+    "forbidGenericNormalization": true,
+    "forbidBaseAlphaRemoval": true,
+    "notes": "16x16 is presentation canvas only; selected source pixels remain native and exact."
+  },
+  "zones": {
+    "surface": {
+      "purpose": "whole fisherman/bucket body treatment",
+      "maskContract": "authored/templates/bucket_fisherman_navy16/frame_manifest.json"
+    },
+    "front_localized": {
+      "purpose": "future localized front motif only",
+      "views": [
+        "front"
+      ]
+    },
+    "protected_boundary": {
+      "purpose": "silhouette boundary remains source-authoritative"
+    }
+  },
+  "anchors": {
+    "front": {
+      "contact_center": [
+        8,
+        12
+      ]
+    },
+    "right": {
+      "contact_center": [
+        8,
+        12
+      ]
+    },
+    "back": {
+      "contact_center": [
+        8,
+        12
+      ]
+    },
+    "left": {
+      "contact_center": [
+        8,
+        12
+      ]
+    }
+  },
+  "allowedPartKinds": [
+    "STYLE_PROFILE",
+    "PALETTE_TONE",
+    "MATERIAL_PATTERN",
+    "MOTIF",
+    "HARDWARE",
+    "REUSABLE_COMPONENT",
+    "ATTACHMENT"
+  ],
+  "safeTransferRules": [
+    "cardinal template owns crown/brim alpha and directional shape",
+    "style and material changes are RGB-only inside opaque interior cells",
+    "localized motifs require explicit cardinal visibility",
+    "protected boundary cells remain source-exact",
+    "neutral render must round-trip exactly"
+  ],
+  "incompatibilities": [
+    {
+      "scope": "ALTERNATE_CONSTRUCTION",
+      "deny": true
+    },
+    {
+      "feature": "resample_to_fit",
+      "deny": true
+    },
+    {
+      "feature": "generic_normalization",
+      "deny": true
+    }
+  ],
+  "sourceTransferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json",
+  "wearContract": "generator/data/headwear/bucket_fisherman_navy16_wear_contract.json"
+}
