@@ -1956,3 +1956,15 @@ Verification:
 - live QC bridge: unavailable at verification time because no loaded save/bridge response; live worn approval remains pending
 
 Production status: **HUMAN_ART_APPROVED / ESM_QC_READY / LIVE_WEAR_QC_PENDING**.
+
+### Future hair-policy configuration note
+- Not implemented yet: consider a player-facing configuration toggle for whether ESM/generated hats apply their authored hair policy (Full / Obscured / Hidden) or ignore it and keep full/real hair visible.
+- Current default remains: honor each garment's authored HairMode.
+- Exact scope can be decided later (global toggle vs. per-hat/per-item override); do not change current runtime behavior until that design is chosen.
+
+### ESM fitting-preview continuity fix — pending live verification
+- Preview now reuses the currently equipped generated garment when it matches the selected QC garment, so fit edits write back to the same item instead of creating a fresh copy.
+- Preview-only candidates cache per-direction fit offsets/scales in memory across closing/reopening ESM and no longer drop/mint a QC hat on menu close.
+- ESM farmer preview now temporarily equips the generated carrier during the preview draw so Stardew applies the same HairMode policy as the real in-world render.
+- QC bridge generated-garment equip now includes HairMode in the render snapshot and applies the matching vanilla hairDrawType.
+- Build/tests pass; restart + live menu reopen test is still required before marking this behavior accepted.

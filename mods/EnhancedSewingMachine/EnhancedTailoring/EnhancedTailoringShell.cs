@@ -47,6 +47,9 @@ namespace EnhancedSewingMachine.EnhancedTailoring
         private readonly TailoringSelectionService tailoring;
 
         private State state;
+        private readonly Dictionary<string, GarmentInstanceData> qcFitCache =
+            new(StringComparer.OrdinalIgnoreCase);
+        private string lastQcGarmentId;
 
         private sealed class State
         {
@@ -111,7 +114,21 @@ namespace EnhancedSewingMachine.EnhancedTailoring
             if (this.state != null && e.OldMenu == this.state.Menu)
             {
                 if (this.state.QcMode && this.state.QcHat != null)
-                    FarmerRendererPatch.SetWorldPreview(this.state.QcHat);
+                {
+                    // Preview is non-destructive and must never mint a new inventory
+                    // hat merely because the fitting menu was closed. Cache the fit
+                    // state in memory so reopening Preview resumes where the player
+                    // left off; an actually equipped generated hat already persists
+                    // through its own item modData.
+                    if (this.runtime.TryReadInstance(this.state.QcHat, out GarmentInstanceData qcInstance)
+                        && !string.IsNullOrWhiteSpace(qcInstance.GarmentId))
+                    {
+                        this.qcFitCache[qcInstance.GarmentId] = qcInstance.Clone();
+                        this.lastQcGarmentId = qcInstance.GarmentId;
+                    }
+
+                    FarmerRendererPatch.ClearWorldPreview();
+                }
 
                 this.ReturnFragmentStack();
                 this.state = null;
@@ -245,6 +262,11 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 if (changed)
                 {
                     this.runtime.WriteInstance(fitHat, fitInstance);
+                    if (s.QcMode && !string.IsNullOrWhiteSpace(fitInstance.GarmentId))
+                    {
+                        this.qcFitCache[fitInstance.GarmentId] = fitInstance.Clone();
+                        this.lastQcGarmentId = fitInstance.GarmentId;
+                    }
                     this.helper.Input.Suppress(e.Button);
                     Game1.playSound(dx != 0 || dy != 0 ? "stoneStep" : "smallSelect");
                     return;
@@ -735,6 +757,14 @@ namespace EnhancedSewingMachine.EnhancedTailoring
 
             if (!enabled)
             {
+                if (s.QcHat != null
+                    && this.runtime.TryReadInstance(s.QcHat, out GarmentInstanceData qcInstance)
+                    && !string.IsNullOrWhiteSpace(qcInstance.GarmentId))
+                {
+                    this.qcFitCache[qcInstance.GarmentId] = qcInstance.Clone();
+                    this.lastQcGarmentId = qcInstance.GarmentId;
+                }
+
                 s.QcMode = false;
                 s.QcHat = null;
                 FarmerRendererPatch.ClearWorldPreview();
@@ -757,7 +787,26 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 return;
             }
 
-            s.QcIndex = Math.Clamp(s.QcIndex, 0, s.QcGarmentIds.Count - 1);
+            // Prefer the currently equipped generated garment so Preview edits
+            // continue on the real item instead of creating a fresh copy.
+            string preferredId = null;
+            if (Game1.player.hat.Value is Hat equipped
+                && this.runtime.TryReadInstance(equipped, out GarmentInstanceData equippedInstance)
+                && s.QcGarmentIds.Contains(equippedInstance.GarmentId, StringComparer.OrdinalIgnoreCase))
+            {
+                preferredId = equippedInstance.GarmentId;
+            }
+            else if (!string.IsNullOrWhiteSpace(this.lastQcGarmentId)
+                && s.QcGarmentIds.Contains(this.lastQcGarmentId, StringComparer.OrdinalIgnoreCase))
+            {
+                preferredId = this.lastQcGarmentId;
+            }
+
+            if (!string.IsNullOrWhiteSpace(preferredId))
+                s.QcIndex = s.QcGarmentIds.FindIndex(id => string.Equals(id, preferredId, StringComparison.OrdinalIgnoreCase));
+            else
+                s.QcIndex = Math.Clamp(s.QcIndex, 0, s.QcGarmentIds.Count - 1);
+
             s.QcMode = true;
             this.LoadQcCandidate();
         }
@@ -781,15 +830,50 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 return;
 
             string id = s.QcGarmentIds[s.QcIndex];
+            this.lastQcGarmentId = id;
             try
             {
-                s.QcHat = this.runtime.CreateHat(id, 0);
+                // If the player is already wearing this exact generated garment,
+                // edit that same item. Its fit values persist in item modData and
+                // reopening ESM therefore resumes the same positioning.
+                if (Game1.player.hat.Value is Hat equipped
+                    && this.runtime.TryReadInstance(equipped, out GarmentInstanceData equippedInstance)
+                    && string.Equals(equippedInstance.GarmentId, id, StringComparison.OrdinalIgnoreCase))
+                {
+                    s.QcHat = equipped;
+                }
+                else
+                {
+                    // Other registry candidates are preview-only. Recreate their
+                    // art snapshot safely, then reapply cached fit values without
+                    // ever minting an inventory item.
+                    s.QcHat = this.runtime.CreateHat(id, 0);
+                    if (this.qcFitCache.TryGetValue(id, out GarmentInstanceData cached)
+                        && this.runtime.TryReadInstance(s.QcHat, out GarmentInstanceData fresh))
+                    {
+                        CopyFitState(cached, fresh);
+                        this.runtime.WriteInstance(s.QcHat, fresh);
+                    }
+                }
+
                 s.FitFacingDirection = 2;
             }
             catch (Exception ex)
             {
                 s.QcHat = null;
                 this.monitor.Log($"QC preview could not load '{id}': {ex.Message}", LogLevel.Warn);
+            }
+        }
+
+        private static void CopyFitState(GarmentInstanceData source, GarmentInstanceData target)
+        {
+            foreach (int direction in new[] { 2, 1, 0, 3 })
+            {
+                target.SetFitOffset(
+                    direction,
+                    source.GetFitOffsetX(direction),
+                    source.GetFitOffsetY(direction));
+                target.SetFitScale(direction, source.GetFitScale(direction));
             }
         }
 
@@ -1165,8 +1249,11 @@ namespace EnhancedSewingMachine.EnhancedTailoring
             bool oldFlip = who.FarmerSprite?.CurrentAnimationFrame.flip ?? false;
             try
             {
-                // Draw a stable farmer pose without the carrier hat first, then
-                // draw the ESM garment explicitly for the selected fitting view.
+                // Draw the stable preview with the generated hat temporarily
+                // equipped. The carrier texture is transparent, so vanilla applies
+                // the hat's hairDrawType (Full/Obscured/Hidden) while the normal ESM
+                // FarmerRenderer postfix draws the garment exactly once. This keeps
+                // the preview faithful to the real in-world hair policy.
                 // Stardew uses the right-facing side frame for both side views
                 // and distinguishes Left by setting animationFrame.flip = true.
                 who.FacingDirection = facingDirection;
@@ -1180,7 +1267,7 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                     box.Center.X - 32,
                     box.Center.Y - 92);
 
-                who.hat.Value = null;
+                who.hat.Value = previewHat;
                 who.FarmerRenderer.draw(
                     b,
                     who.FarmerSprite.CurrentAnimationFrame,
@@ -1194,24 +1281,6 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                     0f,
                     1f,
                     who);
-
-                who.hat.Value = previewHat;
-                if (previewHat != null && this.runtime.TryReadInstance(previewHat, out _))
-                {
-                    this.runtime.Draw(
-                        b,
-                        facingDirection,
-                        who,
-                        pos,
-                        Vector2.Zero,
-                        1f,
-                        who.FarmerSprite.CurrentFrame,
-                        0f,
-                        Color.White,
-                        0.8f,
-                        Vector2.Zero,
-                        0);
-                }
             }
             catch
             {

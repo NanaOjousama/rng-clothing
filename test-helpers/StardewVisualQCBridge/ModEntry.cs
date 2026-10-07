@@ -818,6 +818,10 @@ namespace StardewVisualQCBridge
             JsonElement metadata = hit.TryGetProperty("Metadata", out JsonElement meta)
                 ? meta
                 : default;
+            string hairMode = Str(hit, "HairMode", "Full");
+            int hairDrawType = hairMode.Equals("Hidden", StringComparison.OrdinalIgnoreCase)
+                ? 2
+                : hairMode.Equals("Obscured", StringComparison.OrdinalIgnoreCase) ? 1 : 0;
 
             var render = new Dictionary<string, object>
             {
@@ -826,6 +830,7 @@ namespace StardewVisualQCBridge
                 ["FrameWidth"] = Int(hit, "FrameWidth"),
                 ["FrameHeight"] = Int(hit, "FrameHeight"),
                 ["RenderScale"] = hit.TryGetProperty("RenderScale", out JsonElement rs) ? rs.GetSingle() : 1f,
+                ["HairMode"] = Str(hit, "HairMode", "Full"),
                 ["VanillaReferenceAnchor"] = hit.GetProperty("VanillaReferenceAnchor").Clone(),
                 ["Directions"] = hit.GetProperty("Directions").Clone(),
                 ["AppearanceDigest"] = ""
@@ -857,6 +862,9 @@ namespace StardewVisualQCBridge
             };
 
             var hat = ItemRegistry.Create<StardewValley.Objects.Hat>("(H)RNGClothing.ESM.GeneratedHat");
+            // Match ESM's real GarmentItemService.Write path: the carrier hat must
+            // carry the definition's vanilla hair policy as well as the render snapshot.
+            hat.hairDrawType.Value = hairDrawType;
             hat.modData["RNGClothing.ESM/Instance"] = JsonSerializer.Serialize(payload);
             hat.modData["RNGClothing.ESM/GarmentId"] = wanted;
             hat.modData["RNGClothing.ESM/AppearanceDigest"] = "";
