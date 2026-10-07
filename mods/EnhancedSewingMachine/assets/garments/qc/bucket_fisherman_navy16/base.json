@@ -18,7 +18,7 @@
       "AnchorX": 8,
       "AnchorY": 12,
       "OffsetX": 0,
-      "OffsetY": 0
+      "OffsetY": -4
     },
     "Right": {
       "SourceX": 0,
@@ -57,7 +57,7 @@
     "Style": "approved-construction,wear-qc",
     "QualityTier": "QC",
     "Decals": "",
-    "Classification": "QC_CANDIDATE",
-    "Label": "FISHERMAN NAVY 16 - FINAL CONSTRUCTION QC"
+    "Classification": "PRODUCTION_CONSTRUCTION",
+    "Label": "FISHERMAN NAVY 16 - APPROVED CONSTRUCTION"
   }
 }

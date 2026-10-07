@@ -1,0 +1,40 @@
+{
+  "seed": 1402,
+  "rarity": "Epic",
+  "construction": "bucket_fisherman_navy16",
+  "material": "canvas",
+  "pattern": "solid",
+  "wraparound": "contrast_band",
+  "motif": "none",
+  "palette": "pastel_pink",
+  "frames": {
+    "front": "experiments/bucket_fisherman_rng_proof_01/epic_1402/front.png",
+    "right": "experiments/bucket_fisherman_rng_proof_01/epic_1402/right.png",
+    "back": "experiments/bucket_fisherman_rng_proof_01/epic_1402/back.png",
+    "left": "experiments/bucket_fisherman_rng_proof_01/epic_1402/left.png"
+  },
+  "hashes": {
+    "front": "c9bcf988684ba1889b6de2a8458ef06f183720459ff8b94a5bf5f7114e63b3af",
+    "right": "ac4e60e7920807309ba458fd7db58b191f446096238563e0334fd28bc4728cac",
+    "back": "aa910de7e4476ddd7a6d15e2ab62cce2f431de768786b576d83de1516e9b0dff",
+    "left": "309ddcbc41957773528abf242045a742b948c24f1d3a289df4116eabb73e5de4"
+  },
+  "audit": {
+    "front": {
+      "geometryPreserved": true,
+      "motif": null
+    },
+    "right": {
+      "geometryPreserved": true,
+      "motif": null
+    },
+    "back": {
+      "geometryPreserved": true,
+      "motif": null
+    },
+    "left": {
+      "geometryPreserved": true,
+      "mirrorOf": "right"
+    }
+  }
+}

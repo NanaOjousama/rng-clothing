@@ -75,7 +75,7 @@ for v,p in SOURCES.items():
 manifest={
  'schema':'cardinal-construction-source/v1',
  'id':ID,
- 'status':'HUMAN_ART_APPROVED_ESM_WEAR_QC_READY',
+ 'status':'PRODUCTION_CONSTRUCTION_APPROVED',
  'sourceSelection':str(SELECTION.relative_to(ROOT)),
  'reviewSheet':'authored/approved/bucket_hat_v1/rotations/fisherman_navy/VIEWS_FISHERMAN_ALL.png',
  'runtimeAuthority':list(RUNTIME),
@@ -131,10 +131,10 @@ CONTRACT.write_text(json.dumps(contract,indent=2)+'\n')
 
 wear={
  'schema':'rng-hat-wear-contract/v1','family':'bucket_hat','template':ID,
- 'frameSize':[FRAME,FRAME],'runtime':'EnhancedSewingMachine','status':'PENDING_LIVE_ESM_WEAR_QC',
+ 'frameSize':[FRAME,FRAME],'runtime':'EnhancedSewingMachine','status':'APPROVED_LIVE_ESM_WEAR_QC',
  'baseRenderScale':1.0,
- 'directionDefaults':{v:{'offset':[0,0],'fitScale':1.0} for v in RUNTIME},
- 'note':'Native fisherman frames are already Stardew-scale in the approved worn contact sheet. RenderScale 1.0 preserves 4 display pixels per source pixel; no art resizing.',
+ 'directionDefaults':{v:{'offset':([0,-4] if v=="front" else [0,0]),'fitScale':1.0} for v in RUNTIME},
+ 'note':'Native fisherman frames are already Stardew-scale. User-approved live fit bakes Front Y=-4 as the default authored offset; Right/Back/Left remain 0,0. RenderScale 1.0 preserves 4 display pixels per source pixel; no art resizing.',
  'hairPolicy':{'mode':'Obscured','authority':'wear-fit behavior only; not generator visual vocabulary','runtimeMapping':'Stardew Hat.hairDrawType = 1','appliesTo':['base']}
 }
 WEAR.write_text(json.dumps(wear,indent=2)+'\n')
@@ -142,9 +142,9 @@ WEAR.write_text(json.dumps(wear,indent=2)+'\n')
 idx=json.loads(TINDEX.read_text())
 idx['templates'][ID]={
  'contract':str(CONTRACT.relative_to(ROOT)),'family':'bucket_hat','slot':'HEAD',
- 'status':'HUMAN_ART_APPROVED_PENDING_ESM_WEAR_QC',
+ 'status':'PRODUCTION_READY',
  'constructionAuthority':'user-approved Fisherman Navy four-cardinal set; exact selected frames are hash-pinned',
- 'humanArtApprovalRequired':False,'esmWearApprovalRequired':True,
+ 'humanArtApprovalRequired':False,'esmWearApprovalRequired':False,'liveWearApproved':True,
  'origin':'sf-approved-rotate/fisherman_views_all','sourceCategory':'Hats',
  'sourceName':'Fisherman Navy 16','humanArtApproved':True
 }
@@ -153,10 +153,10 @@ TINDEX.write_text(json.dumps(idx,indent=2)+'\n')
 lib=json.loads(LIB.read_text())
 g=lib['constructionGroups']['sf_fisherman_compact']
 g.update({
- 'status':'DIRECTIONAL_APPROVED_ESM_WEAR_QC_READY',
- 'note':'User selected this complete four-cardinal Fisherman Navy set as the first finished construction. Exact source frames are now locked in a 16x16 template; ESM live wear QC remains the final production gate.',
+ 'status':'PRODUCTION_PROMOTED',
+ 'note':'User selected and live-wear-approved this four-cardinal Fisherman Navy set as the first production construction. Intake stays fail-closed; active weighting is owned by generator/data/headwear/bucket_hat_production_registry.json.',
  'rollWeight':0,
- 'authority':str(CONTRACT.relative_to(ROOT)),
+ 'authority':str(CONTRACT.relative_to(ROOT)),'productionRegistry':'generator/data/headwear/bucket_hat_production_registry.json',
  'directionalSelection':str(SELECTION.relative_to(ROOT))
 })
 LIB.write_text(json.dumps(lib,indent=2)+'\n')
@@ -169,7 +169,7 @@ TEX.parent.mkdir(parents=True,exist_ok=True); write_rgba_png(TEX,sheet)
 DEF.parent.mkdir(parents=True,exist_ok=True)
 directions={}
 for i,v in enumerate(RUNTIME):
-    directions[v.title()]={'SourceX':0,'SourceY':i*FRAME,'AnchorX':8,'AnchorY':BOTTOM,'OffsetX':0,'OffsetY':0}
+    directions[v.title()]={'SourceX':0,'SourceY':i*FRAME,'AnchorX':8,'AnchorY':BOTTOM,'OffsetX':0,'OffsetY':(-4 if v=='front' else 0)}
 definition={
  'Id':'qc.bucket.fisherman.navy16.base','Category':'Hat','DefinitionVersion':1,
  'WornTexture':'assets/qc/bucket_fisherman_navy16/base.png',
@@ -180,7 +180,7 @@ definition={
    'Family':'bucket_hat','Construction':'bucket_fisherman_navy16','Material':'source_backed',
    'Palette':'navy','Motif':'','GeneratorId':'BucketFishermanNavy16','GeneratorVersion':1,
    'GeneratorSeed':1,'Style':'approved-construction,wear-qc','QualityTier':'QC','Decals':'',
-   'Classification':'QC_CANDIDATE','Label':'FISHERMAN NAVY 16 - FINAL CONSTRUCTION QC'
+   'Classification':'PRODUCTION_CONSTRUCTION','Label':'FISHERMAN NAVY 16 - APPROVED CONSTRUCTION'
  }
 }
 DEF.write_text(json.dumps(definition,indent=2)+'\n')
@@ -191,13 +191,16 @@ gidx['Garments']=[x for x in gidx.get('Garments',[]) if x!=rel]+[rel]
 GINDEX.write_text(json.dumps(gidx,indent=2)+'\n')
 
 # Update directional selection to reflect that template + QC garment now exist.
-sel['status']='USER_APPROVED_FOR_CONSTRUCTION_ESM_QC_READY'
+sel['status']='PRODUCTION_CONSTRUCTION_APPROVED'
 sel['reconfirmedOn']='2026-10-07'
 sel['reconfirmedBy']='user ("finally, do it!")'
 sel['templateAuthority']=str(CONTRACT.relative_to(ROOT))
 sel['esmQcGarment']='qc.bucket.fisherman.navy16.base'
-sel['notYet']=['in-game worn QC','explicit production promotion']
+sel['notYet']=[]
 sel['rollWeight']=0
+sel['liveWearApprovedOn']='2026-10-07'
+sel['liveWearApprovedBy']='user (fit approved)'
+sel['productionRegistry']='generator/data/headwear/bucket_hat_production_registry.json'
 SELECTION.write_text(json.dumps(sel,indent=2)+'\n')
 
 print(json.dumps({

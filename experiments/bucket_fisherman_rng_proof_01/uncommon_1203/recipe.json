@@ -1,0 +1,40 @@
+{
+  "seed": 1203,
+  "rarity": "Uncommon",
+  "construction": "bucket_fisherman_navy16",
+  "material": "corduroy_like",
+  "pattern": "solid",
+  "wraparound": "none",
+  "motif": "none",
+  "palette": "olive_moss",
+  "frames": {
+    "front": "experiments/bucket_fisherman_rng_proof_01/uncommon_1203/front.png",
+    "right": "experiments/bucket_fisherman_rng_proof_01/uncommon_1203/right.png",
+    "back": "experiments/bucket_fisherman_rng_proof_01/uncommon_1203/back.png",
+    "left": "experiments/bucket_fisherman_rng_proof_01/uncommon_1203/left.png"
+  },
+  "hashes": {
+    "front": "e0166af4f32dc7712a4a5ab9014e3e4688532e5384515a0370022672f65d22e6",
+    "right": "7537860065b73638847e7fa5255d5aef3c9788d46eb91d0465726e8fc803a4bf",
+    "back": "f376c7956df0717ac840385c63efaedf6f00d9314e57240f8fa81771df5027fe",
+    "left": "7249ccc647f2e4db2c13a00945c31b1b627f9c2b90cb3dd44fcf623702e1d1ac"
+  },
+  "audit": {
+    "front": {
+      "geometryPreserved": true,
+      "motif": null
+    },
+    "right": {
+      "geometryPreserved": true,
+      "motif": null
+    },
+    "back": {
+      "geometryPreserved": true,
+      "motif": null
+    },
+    "left": {
+      "geometryPreserved": true,
+      "mirrorOf": "right"
+    }
+  }
+}

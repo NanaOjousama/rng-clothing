@@ -1,0 +1,22 @@
+{
+  "schema": "bucket-hat-production-registry/v1",
+  "active": true,
+  "family": "bucket_hat",
+  "policy": "Only explicitly live-wear-approved constructions may have positive production weight.",
+  "constructions": {
+    "bucket_fisherman_navy16": {
+      "status": "PRODUCTION_READY",
+      "template": "generator/data/templates/bucket_fisherman_navy16.json",
+      "rollMatrix": "generator/data/headwear/bucket_fisherman_navy16_roll_matrix.json",
+      "weight": 100,
+      "liveWearApproved": true,
+      "approvedOn": "2026-10-07",
+      "defaultFit": {
+        "front": {"offset": [0, -4], "scale": 1.0},
+        "right": {"offset": [0, 0], "scale": 1.0},
+        "back": {"offset": [0, 0], "scale": 1.0},
+        "left": {"offset": [0, 0], "scale": 1.0}
+      }
+    }
+  }
+}

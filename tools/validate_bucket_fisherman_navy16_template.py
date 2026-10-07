@@ -24,10 +24,11 @@ for name,rec in m['frames'].items():
 right=read_rgba_png(TD/'right.png'); left=read_rgba_png(TD/'left.png')
 assert left==[list(reversed(row)) for row in right], 'left must be exact mirror of right'
 g=lib['constructionGroups']['sf_fisherman_compact']
-assert g['status']=='DIRECTIONAL_APPROVED_ESM_WEAR_QC_READY'
+assert g['status']=='PRODUCTION_PROMOTED'
 assert g['rollWeight']==0 and g['authority']==f'generator/data/templates/{ID}.json'
 reg=idx['templates'][ID]
-assert reg['humanArtApproved'] is True and reg['esmWearApprovalRequired'] is True
-assert sel['status']=='USER_APPROVED_FOR_CONSTRUCTION_ESM_QC_READY'
+assert reg['humanArtApproved'] is True and reg['esmWearApprovalRequired'] is False and reg['liveWearApproved'] is True and reg['status']=='PRODUCTION_READY'
+assert sel['status']=='PRODUCTION_CONSTRUCTION_APPROVED'
 assert sel['esmQcGarment']=='qc.bucket.fisherman.navy16.base'
-print('PASS bucket_fisherman_navy16: exact approved four-cardinal art locked; no resampling; Left mirrors Right; ESM QC registered; production weight 0 pending live wear QC')
+assert w['status']=='APPROVED_LIVE_ESM_WEAR_QC' and w['directionDefaults']['front']['offset']==[0,-4]
+print('PASS bucket_fisherman_navy16: four-cardinal art locked; live wear QC approved; Front default Y=-4; production template ready; intake stays fail-closed')

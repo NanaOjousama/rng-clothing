@@ -1,0 +1,40 @@
+{
+  "seed": 1101,
+  "rarity": "Common",
+  "construction": "bucket_fisherman_navy16",
+  "material": "canvas",
+  "pattern": "solid",
+  "wraparound": "none",
+  "motif": "none",
+  "palette": "rain_yellow",
+  "frames": {
+    "front": "experiments/bucket_fisherman_rng_proof_01/common_1101/front.png",
+    "right": "experiments/bucket_fisherman_rng_proof_01/common_1101/right.png",
+    "back": "experiments/bucket_fisherman_rng_proof_01/common_1101/back.png",
+    "left": "experiments/bucket_fisherman_rng_proof_01/common_1101/left.png"
+  },
+  "hashes": {
+    "front": "23fca17d4ac2b5211bbfcec435ddbea6b57f710832fbf526096f02f490a156ae",
+    "right": "05d52a81c2a328df11d1b1daf971003e6c1c938c892b54fad3626cd89b03de86",
+    "back": "7d51abb02d2042186cecdb3b293a63a423d5519a1892e3f339d89acebc302027",
+    "left": "71f7a2ab41f8061a037ecbe563ebefc7b7c9de99c463f19483b60f52c238a297"
+  },
+  "audit": {
+    "front": {
+      "geometryPreserved": true,
+      "motif": null
+    },
+    "right": {
+      "geometryPreserved": true,
+      "motif": null
+    },
+    "back": {
+      "geometryPreserved": true,
+      "motif": null
+    },
+    "left": {
+      "geometryPreserved": true,
+      "mirrorOf": "right"
+    }
+  }
+}

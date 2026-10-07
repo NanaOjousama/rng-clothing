@@ -1969,3 +1969,44 @@ Production status: **HUMAN_ART_APPROVED / ESM_QC_READY / LIVE_WEAR_QC_PENDING**.
 - QC bridge generated-garment equip now includes HairMode in the render snapshot and applies the matching vanilla hairDrawType.
 - Build/tests pass; restart + live menu reopen test is still required before marking this behavior accepted.
 - Follow-up fix: closing ESM now keeps the fitted QC hat visible through the renderer's WorldPreview instead of clearing it, without adding another physical hat item. Reopening Preview reuses that same WorldPreviewHat when the garment id matches, so the player should see the same hat with the same fit rather than a new preview instance.
+
+
+## Fisherman production promotion + first RNG proof batch — 2026-10-07
+
+User approved the live Fisherman fit.
+
+Production promotion:
+- construction: `bucket_fisherman_navy16`
+- live wear QC: APPROVED
+- approved default fit observed in ESM: Front X=0, Y=-4, Size=100%; Right/Back/Left retain the approved 0,0 / 100% defaults.
+- ESM definition now bakes Front OffsetY=-4 so new Fisherman-based hats start at the approved fit while per-item ESM fitting remains available.
+- dedicated production authority: `generator/data/headwear/bucket_hat_production_registry.json`
+- Fisherman production weight: 100 (currently the only active bucket construction).
+- approved-intake registry intentionally remains fail-closed with rollWeight 0 for every intake group; production selection is separated from intake evidence.
+
+First real Fisherman RNG generator:
+- generator module: `generator/bucket_fisherman_generator.py`
+- roll matrix: `generator/data/headwear/bucket_fisherman_navy16_roll_matrix.json`
+- axes: material, pattern, wraparound detail, localized motif, palette
+- source-backed vocabulary references approved bucket donors for gingham, patchwork, contrast/floral bands, mushroom, daisy, and rain material.
+- rarity is capacity-aware: Common stays minimal; Uncommon allows simple banding; Rare/Epic unlock patterns and localized motifs.
+- locked construction alpha is never changed or resampled; rendered Left is always an exact mirror of rendered Right; localized motifs are Front-only.
+
+Proof batch:
+- `experiments/bucket_fisherman_rng_proof_01/`
+- 16 deterministic rolls: 4 Common, 4 Uncommon, 4 Rare, 4 Epic.
+- review overview: `OVERVIEW_FRONT_16.png`
+- four-view rarity sheets: `COMMON_4VIEW.png`, `UNCOMMON_4VIEW.png`, `RARE_4VIEW.png`, `EPIC_4VIEW.png`
+- status: GENERATED_REVIEW_REQUIRED — batch proves the pipeline but individual variant art is not auto-approved.
+
+Verification:
+- Fisherman template validator: PASS
+- Fisherman production validator: PASS
+- approved intake validator: PASS
+- source-template validator: PASS
+- ESM garment validator: 27/27 PASS
+- ESM Release build: PASS, 0 warnings / 0 errors and deployed
+- ESM tests: ALL 30 PASS
+- ESM safety checkpoint before promotion: `archive/esm-checkpoints/ESM_20261007-020946.tar.gz` SHA-256 `49b6fde5f09d541945f4069be17b5e7784cb494641b983930985632c8f0e647e`
+
+Next construction may use the planned 3D proxy workflow if no clean four-view set already exists.

@@ -1,0 +1,40 @@
+{
+  "seed": 1103,
+  "rarity": "Common",
+  "construction": "bucket_fisherman_navy16",
+  "material": "canvas",
+  "pattern": "solid",
+  "wraparound": "none",
+  "motif": "none",
+  "palette": "rust",
+  "frames": {
+    "front": "experiments/bucket_fisherman_rng_proof_01/common_1103/front.png",
+    "right": "experiments/bucket_fisherman_rng_proof_01/common_1103/right.png",
+    "back": "experiments/bucket_fisherman_rng_proof_01/common_1103/back.png",
+    "left": "experiments/bucket_fisherman_rng_proof_01/common_1103/left.png"
+  },
+  "hashes": {
+    "front": "cb54f52229c177dbc5041a0c806961cab6b9df769ad64629b2251342443d5e90",
+    "right": "7a3cdabdc7f5f18c0b14ae605b2d417ca6913c164133fef80d87825b4d48776a",
+    "back": "ed077ac999d5bcf484c6c4e3ae2fc1d6d24b2bbda0661da98c8f5505f722235c",
+    "left": "5e945648ca5e67f2e0377f485e22b6e04cd65f77b0ae4b2424a0182058a5ea45"
+  },
+  "audit": {
+    "front": {
+      "geometryPreserved": true,
+      "motif": null
+    },
+    "right": {
+      "geometryPreserved": true,
+      "motif": null
+    },
+    "back": {
+      "geometryPreserved": true,
+      "motif": null
+    },
+    "left": {
+      "geometryPreserved": true,
+      "mirrorOf": "right"
+    }
+  }
+}

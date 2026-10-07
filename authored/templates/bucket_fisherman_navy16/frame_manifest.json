@@ -1,7 +1,7 @@
 {
   "schema": "cardinal-construction-source/v1",
   "id": "bucket_fisherman_navy16",
-  "status": "HUMAN_ART_APPROVED_ESM_WEAR_QC_READY",
+  "status": "PRODUCTION_CONSTRUCTION_APPROVED",
   "sourceSelection": "authored/approved/bucket_hat_v1/rotations/fisherman_navy/selection.json",
   "reviewSheet": "authored/approved/bucket_hat_v1/rotations/fisherman_navy/VIEWS_FISHERMAN_ALL.png",
   "runtimeAuthority": [

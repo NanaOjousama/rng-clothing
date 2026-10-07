@@ -1,7 +1,7 @@
 {
   "id": "sf_fisherman_compact_directional_v1",
   "constructionGroup": "sf_fisherman_compact",
-  "status": "USER_APPROVED_FOR_CONSTRUCTION_ESM_QC_READY",
+  "status": "PRODUCTION_CONSTRUCTION_APPROVED",
   "approvedOn": "2026-10-06",
   "approvedBy": "user (\"I think this is it.. can we approve this for construction\")",
   "views": {
@@ -32,10 +32,7 @@
     "side/back are 2 px taller than the 14x8 front (RD looking-down camera)",
     "mockup placement: side brim + vanilla-tone shadow partly over the eye; not yet checked in game"
   ],
-  "notYet": [
-    "in-game worn QC",
-    "explicit production promotion"
-  ],
+  "notYet": [],
   "rollWeight": 0,
   "sha256": {
     "VIEWS_FISHERMAN_ALL.png": "b4790df1bd3df2287c0f2f30d5c86c8cf7c495a989c9ad4e7700925ebc54b8fb",
@@ -69,5 +66,8 @@
   "reconfirmedOn": "2026-10-07",
   "reconfirmedBy": "user (\"finally, do it!\")",
   "templateAuthority": "generator/data/templates/bucket_fisherman_navy16.json",
-  "esmQcGarment": "qc.bucket.fisherman.navy16.base"
+  "esmQcGarment": "qc.bucket.fisherman.navy16.base",
+  "liveWearApprovedOn": "2026-10-07",
+  "liveWearApprovedBy": "user (fit approved)",
+  "productionRegistry": "generator/data/headwear/bucket_hat_production_registry.json"
 }

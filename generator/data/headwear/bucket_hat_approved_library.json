@@ -105,14 +105,15 @@
       "rollWeight": 0
     },
     "sf_fisherman_compact": {
-      "status": "DIRECTIONAL_APPROVED_ESM_WEAR_QC_READY",
+      "status": "PRODUCTION_PROMOTED",
       "fronts": [
         "design_fisherman_navy_front"
       ],
-      "note": "User selected this complete four-cardinal Fisherman Navy set as the first finished construction. Exact source frames are now locked in a 16x16 template; ESM live wear QC remains the final production gate.",
+      "note": "User selected and live-wear-approved this four-cardinal Fisherman Navy set as the first production construction. Intake stays fail-closed; active weighting is owned by generator/data/headwear/bucket_hat_production_registry.json.",
       "rollWeight": 0,
       "directionalSelection": "authored/approved/bucket_hat_v1/rotations/fisherman_navy/selection.json",
-      "authority": "generator/data/templates/bucket_fisherman_navy16.json"
+      "authority": "generator/data/templates/bucket_fisherman_navy16.json",
+      "productionRegistry": "generator/data/headwear/bucket_hat_production_registry.json"
     },
     "sf_flower_band_wide": {
       "status": "FRONT_ONLY",

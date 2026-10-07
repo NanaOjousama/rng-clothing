@@ -1,0 +1,46 @@
+{
+  "seed": 1303,
+  "rarity": "Rare",
+  "construction": "bucket_fisherman_navy16",
+  "material": "canvas",
+  "pattern": "patchwork_large_blocks",
+  "wraparound": "contrast_band",
+  "motif": "mushroom_patch",
+  "palette": "rain_yellow",
+  "frames": {
+    "front": "experiments/bucket_fisherman_rng_proof_01/rare_1303/front.png",
+    "right": "experiments/bucket_fisherman_rng_proof_01/rare_1303/right.png",
+    "back": "experiments/bucket_fisherman_rng_proof_01/rare_1303/back.png",
+    "left": "experiments/bucket_fisherman_rng_proof_01/rare_1303/left.png"
+  },
+  "hashes": {
+    "front": "670105250016daa861eb0216f445ac93ea9cbeeae5cf4da1e3b6dfd623520d29",
+    "right": "021997998b3fa0bbc9780c7b7c09bdff216df8dd968acad7857e3c70c97d6f61",
+    "back": "13cb0173c2277dd59a80d59a1b4e4eb68879a3d6d7b87568c5530ed303a6a2e6",
+    "left": "94a4773a213fe953158fe5514d8d013c422df5e3e7e908619231ac63457b760a"
+  },
+  "audit": {
+    "front": {
+      "geometryPreserved": true,
+      "motif": {
+        "offset": [
+          6,
+          7
+        ],
+        "cells": 5
+      }
+    },
+    "right": {
+      "geometryPreserved": true,
+      "motif": null
+    },
+    "back": {
+      "geometryPreserved": true,
+      "motif": null
+    },
+    "left": {
+      "geometryPreserved": true,
+      "mirrorOf": "right"
+    }
+  }
+}
