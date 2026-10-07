@@ -1968,3 +1968,4 @@ Production status: **HUMAN_ART_APPROVED / ESM_QC_READY / LIVE_WEAR_QC_PENDING**.
 - ESM farmer preview now temporarily equips the generated carrier during the preview draw so Stardew applies the same HairMode policy as the real in-world render.
 - QC bridge generated-garment equip now includes HairMode in the render snapshot and applies the matching vanilla hairDrawType.
 - Build/tests pass; restart + live menu reopen test is still required before marking this behavior accepted.
+- Follow-up fix: closing ESM now keeps the fitted QC hat visible through the renderer's WorldPreview instead of clearing it, without adding another physical hat item. Reopening Preview reuses that same WorldPreviewHat when the garment id matches, so the player should see the same hat with the same fit rather than a new preview instance.

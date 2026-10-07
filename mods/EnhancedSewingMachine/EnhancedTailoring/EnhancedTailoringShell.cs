@@ -127,7 +127,10 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                         this.lastQcGarmentId = qcInstance.GarmentId;
                     }
 
-                    FarmerRendererPatch.ClearWorldPreview();
+                    // Keep the fitted QC hat visible after closing ESM without
+                    // creating an inventory duplicate. The preview hat itself is
+                    // retained by the renderer and can be reopened/edited again.
+                    FarmerRendererPatch.SetWorldPreview(this.state.QcHat);
                 }
 
                 this.ReturnFragmentStack();
@@ -836,7 +839,13 @@ namespace EnhancedSewingMachine.EnhancedTailoring
                 // If the player is already wearing this exact generated garment,
                 // edit that same item. Its fit values persist in item modData and
                 // reopening ESM therefore resumes the same positioning.
-                if (Game1.player.hat.Value is Hat equipped
+                if (FarmerRendererPatch.WorldPreviewHat is Hat worldPreview
+                    && this.runtime.TryReadInstance(worldPreview, out GarmentInstanceData worldInstance)
+                    && string.Equals(worldInstance.GarmentId, id, StringComparison.OrdinalIgnoreCase))
+                {
+                    s.QcHat = worldPreview;
+                }
+                else if (Game1.player.hat.Value is Hat equipped
                     && this.runtime.TryReadInstance(equipped, out GarmentInstanceData equippedInstance)
                     && string.Equals(equippedInstance.GarmentId, id, StringComparison.OrdinalIgnoreCase))
                 {
