@@ -3,22 +3,104 @@
   "id": "bucket_fisherman_navy16_v1",
   "family": "bucket_hat",
   "construction": "bucket_fisherman_navy16",
-  "status": "PRODUCTION_READY",
+  "status": "REJECTED_VISUAL_PROOF_DO_NOT_USE",
   "templateContract": "generator/data/templates/bucket_fisherman_navy16.json",
   "capacity": "small",
-  "rollOrder": ["material", "pattern", "wraparound", "motif", "palette"],
+  "rollOrder": [
+    "material",
+    "pattern",
+    "wraparound",
+    "motif",
+    "palette"
+  ],
   "axes": {
-    "material": {"soft_fabric": 35, "canvas": 35, "corduroy_like": 18, "waterproof_rain": 12},
-    "pattern": {"solid": 52, "gingham": 24, "patchwork_large_blocks": 24},
-    "wraparound": {"none": 55, "contrast_band": 30, "floral_band": 15},
-    "motif": {"none": 66, "mushroom_patch": 18, "daisy": 16},
-    "palette": {"navy": 20, "cream": 16, "olive_moss": 18, "rust": 14, "pastel_pink": 14, "rain_yellow": 18}
+    "material": {
+      "soft_fabric": 35,
+      "canvas": 35,
+      "corduroy_like": 18,
+      "waterproof_rain": 12
+    },
+    "pattern": {
+      "solid": 52,
+      "gingham": 24,
+      "patchwork_large_blocks": 24
+    },
+    "wraparound": {
+      "none": 55,
+      "contrast_band": 30,
+      "floral_band": 15
+    },
+    "motif": {
+      "none": 66,
+      "mushroom_patch": 18,
+      "daisy": 16
+    },
+    "palette": {
+      "navy": 20,
+      "cream": 16,
+      "olive_moss": 18,
+      "rust": 14,
+      "pastel_pink": 14,
+      "rain_yellow": 18
+    }
   },
   "rarityPolicy": {
-    "Common": {"allowPattern": ["solid"], "allowWraparound": ["none"], "allowMotif": ["none"]},
-    "Uncommon": {"allowPattern": ["solid"], "allowWraparound": ["none", "contrast_band"], "allowMotif": ["none"]},
-    "Rare": {"allowPattern": ["solid", "gingham", "patchwork_large_blocks"], "allowWraparound": ["none", "contrast_band", "floral_band"], "allowMotif": ["none", "mushroom_patch", "daisy"]},
-    "Epic": {"allowPattern": ["solid", "gingham", "patchwork_large_blocks"], "allowWraparound": ["contrast_band", "floral_band"], "allowMotif": ["none", "mushroom_patch", "daisy"]}
+    "Common": {
+      "allowPattern": [
+        "solid"
+      ],
+      "allowWraparound": [
+        "none"
+      ],
+      "allowMotif": [
+        "none"
+      ]
+    },
+    "Uncommon": {
+      "allowPattern": [
+        "solid"
+      ],
+      "allowWraparound": [
+        "none",
+        "contrast_band"
+      ],
+      "allowMotif": [
+        "none"
+      ]
+    },
+    "Rare": {
+      "allowPattern": [
+        "solid",
+        "gingham",
+        "patchwork_large_blocks"
+      ],
+      "allowWraparound": [
+        "none",
+        "contrast_band",
+        "floral_band"
+      ],
+      "allowMotif": [
+        "none",
+        "mushroom_patch",
+        "daisy"
+      ]
+    },
+    "Epic": {
+      "allowPattern": [
+        "solid",
+        "gingham",
+        "patchwork_large_blocks"
+      ],
+      "allowWraparound": [
+        "contrast_band",
+        "floral_band"
+      ],
+      "allowMotif": [
+        "none",
+        "mushroom_patch",
+        "daisy"
+      ]
+    }
   },
   "sourceBackedVocabulary": {
     "gingham": "pattern_gingham_red_front64",
@@ -33,6 +115,18 @@
     "geometry": "LOCKED_TEMPLATE_ALPHA",
     "left": "exact mirror of rendered right",
     "localizedMotif": "front only",
-    "forbid": ["resample", "alpha_change", "generic_normalization", "screen_space_motif_duplication"]
-  }
+    "forbid": [
+      "resample",
+      "alpha_change",
+      "generic_normalization",
+      "screen_space_motif_duplication"
+    ]
+  },
+  "replacedBy": {
+    "rendererContract": "generator/data/hat_renderer_contract.json",
+    "photoTailorProfile": "authored/templates/bucket_fisherman_navy16/pt_profile.json",
+    "tastePolicy": "generator/data/headwear/bucket_fisherman_hat_renderer_v1_policy.json",
+    "proof": "experiments/bucket_fisherman_pt_frozen_01/manifest.json"
+  },
+  "note": "This was the temporary custom Fisherman mini-renderer that produced the rejected ugly shading. It is historical proof only and is not production authority."
 }

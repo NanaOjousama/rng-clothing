@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""Historical rejected visual proof. Do not use for production.
+
+The active Fisherman proof path is tools/build_bucket_fisherman_pt_frozen_proof.py.
+"""
 from pathlib import Path
 import json, shutil, sys
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))

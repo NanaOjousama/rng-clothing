@@ -1,3 +1,10 @@
+"""REJECTED historical Fisherman proof renderer.
+
+This temporary mini-renderer produced the user-rejected shading in
+experiments/bucket_fisherman_rng_proof_01. It is retained only so that old
+proof artifacts remain reproducible. It is NOT HAT_RENDERER_V1 and must not be
+used for production or new Fisherman generations.
+"""
 from __future__ import annotations
 import json, random, hashlib
 from pathlib import Path

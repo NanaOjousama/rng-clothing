@@ -1,0 +1,54 @@
+{
+  "rarity": "epic",
+  "seed": 2402,
+  "palette": "pastel_pink",
+  "recipe": {
+    "materialTreatment": "statement",
+    "pattern": "subtle",
+    "trim": "contrast",
+    "motif": "none",
+    "motifPlacement": "back_center",
+    "attachment": "none",
+    "hardware": "none"
+  },
+  "taste": {
+    "complexity": 3,
+    "budget": [
+      3,
+      3
+    ],
+    "channels": [
+      "REGION",
+      "SURFACE"
+    ],
+    "primary": "materialTreatment.statement",
+    "secondary": [
+      "trim.contrast"
+    ],
+    "accents": []
+  },
+  "hybrid": {
+    "applied": false,
+    "fallbackReason": "DELTA_TOO_LARGE:0.351>0.240",
+    "changedPixels": 0,
+    "changedRatio": 0.0,
+    "outlinePreserved": true,
+    "alphaPreserved": true,
+    "pattern": "subtle",
+    "motif": "none",
+    "motifPlacement": "back_center",
+    "regionMode": "SOURCE_DERIVED_BOUNDED"
+  },
+  "frames": {
+    "front": "experiments/bucket_fisherman_pt_frozen_01/epic_2402/front.png",
+    "right": "experiments/bucket_fisherman_pt_frozen_01/epic_2402/right.png",
+    "back": "experiments/bucket_fisherman_pt_frozen_01/epic_2402/back.png",
+    "left": "experiments/bucket_fisherman_pt_frozen_01/epic_2402/left.png"
+  },
+  "goldenFrames": {
+    "front": "experiments/bucket_fisherman_pt_frozen_01/epic_2402/golden_front.png",
+    "right": "experiments/bucket_fisherman_pt_frozen_01/epic_2402/golden_right.png",
+    "back": "experiments/bucket_fisherman_pt_frozen_01/epic_2402/golden_back.png",
+    "left": "experiments/bucket_fisherman_pt_frozen_01/epic_2402/golden_left.png"
+  }
+}

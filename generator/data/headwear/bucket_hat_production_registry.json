@@ -5,18 +5,48 @@
   "policy": "Only explicitly live-wear-approved constructions may have positive production weight.",
   "constructions": {
     "bucket_fisherman_navy16": {
-      "status": "PRODUCTION_READY",
+      "status": "CONSTRUCTION_PRODUCTION_READY_RENDERER_REVIEW_REQUIRED",
       "template": "generator/data/templates/bucket_fisherman_navy16.json",
-      "rollMatrix": "generator/data/headwear/bucket_fisherman_navy16_roll_matrix.json",
-      "weight": 100,
+      "weight": 0,
       "liveWearApproved": true,
       "approvedOn": "2026-10-07",
       "defaultFit": {
-        "front": {"offset": [0, -4], "scale": 1.0},
-        "right": {"offset": [0, 0], "scale": 1.0},
-        "back": {"offset": [0, 0], "scale": 1.0},
-        "left": {"offset": [0, 0], "scale": 1.0}
-      }
+        "front": {
+          "offset": [
+            0,
+            -4
+          ],
+          "scale": 1.0
+        },
+        "right": {
+          "offset": [
+            0,
+            0
+          ],
+          "scale": 1.0
+        },
+        "back": {
+          "offset": [
+            0,
+            0
+          ],
+          "scale": 1.0
+        },
+        "left": {
+          "offset": [
+            0,
+            0
+          ],
+          "scale": 1.0
+        }
+      },
+      "rendererContract": "generator/data/hat_renderer_contract.json",
+      "rendererId": "HAT_RENDERER_V1",
+      "rendererFamily": "bucket_fisherman",
+      "photoTailorProfile": "authored/templates/bucket_fisherman_navy16/pt_profile.json",
+      "tastePolicy": "generator/data/headwear/bucket_fisherman_hat_renderer_v1_policy.json",
+      "candidateProof": "experiments/bucket_fisherman_pt_frozen_01/manifest.json",
+      "activationGate": "Human visual approval of Photo Tailor + HAT_RENDERER_V1 proof batch"
     }
   }
 }

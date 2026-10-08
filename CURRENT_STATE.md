@@ -2010,3 +2010,44 @@ Verification:
 - ESM safety checkpoint before promotion: `archive/esm-checkpoints/ESM_20261007-020946.tar.gz` SHA-256 `49b6fde5f09d541945f4069be17b5e7784cb494641b983930985632c8f0e647e`
 
 Next construction may use the planned 3D proxy workflow if no clean four-view set already exists.
+
+
+## Fisherman Photo Tailor + frozen HAT_RENDERER_V1 correction — 2026-10-07
+
+The previous `experiments/bucket_fisherman_rng_proof_01/` visual batch is explicitly rejected as a temporary custom mini-renderer proof. It did not use the frozen hat renderer and produced the user-rejected ugly shading. The historical module/tool remain only for reproducibility and are marked DO NOT USE.
+
+Correct Fisherman path now:
+- construction authority remains the already-approved `bucket_fisherman_navy16` four-view template; no geometry or fit approval was revoked.
+- Photo Tailor helper profile: `authored/templates/bucket_fisherman_navy16/pt_profile.json`.
+- PT profile is built from the permission-backed direct port in `generator/photo_tailor_port.py`, using actual PT mechanics: source relative luminance, topology-boundary detection, and HSL shade-ramp construction.
+- PT role is helper/preparation only: it identifies source shading topology and candidate shade ramps/palette evidence; it never owns the Fisherman silhouette.
+- approved donor sources supply palette evidence and dark outline colors for cream, olive/canvas, rust, pastel pink, and rain yellow.
+- template contract now references the PT profile plus frozen renderer contract `HAT_RENDERER_V1`.
+- frozen renderer region semantics now include `bucket_fisherman`: crown 0-.64, band .64-.82, brim .82-1.01; family uses the small-capacity hybrid delta cap.
+- candidate taste policy: `generator/data/headwear/bucket_fisherman_hat_renderer_v1_policy.json`.
+- actual frozen enhancement code used: `generator/hat_hybrid_enhancements.py::enhance_frames`; no temporary Fisherman mini-renderer import is allowed.
+
+Corrected proof:
+- `experiments/bucket_fisherman_pt_frozen_01/`
+- 12 candidates: 3 each Common / Uncommon / Rare / Epic.
+- `PT_FROZEN_FRONT_12.png`: front-view review.
+- `PT_FROZEN_4VIEW_BY_RARITY.png`: one four-view candidate per rarity.
+- `PT_FROZEN_VS_REJECTED.png`: rejected temporary renderer vs PT + frozen renderer comparison.
+- all candidate alpha matches the approved construction exactly.
+- rendered Left remains the exact mirror of rendered Right.
+- HAT_RENDERER_V1 hybrid safety reports outline + alpha preservation on every candidate.
+- status remains CANDIDATE_REVIEW_REQUIRED; these pixels are not auto-approved as new goldens.
+
+Production gating:
+- Fisherman construction remains live-wear-approved with Front default X=0, Y=-4, scale=100%.
+- `bucket_hat_production_registry.json` now routes Fisherman to `HAT_RENDERER_V1` + PT profile + Fisherman taste policy.
+- production weight is intentionally set back to 0 until the user visually approves this corrected PT + frozen-renderer proof.
+- the old `bucket_fisherman_navy16_roll_matrix.json` is marked `REJECTED_VISUAL_PROOF_DO_NOT_USE`.
+
+Validation:
+- `validate_bucket_fisherman_pt_frozen.py`: PASS.
+- `validate_bucket_fisherman_production.py`: PASS with renderer activation correctly gated.
+- `validate_hat_renderer_freeze.py`: PASS; frozen architecture unchanged, catalog expansion rules preserved.
+- `validate_hat_hybrid_production.py`: PASS; existing 80-family-baseline outputs remain exact and all frozen safety checks still pass.
+- `validate_bucket_fisherman_navy16_template.py`: PASS.
+- `validate_esm_garments.py`: 27/27 PASS.

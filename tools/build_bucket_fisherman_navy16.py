@@ -125,6 +125,9 @@ contract={
    {'feature':'generic_normalization','deny':True}
  ],
  'sourceTransferLibrary':'source_catalog/SOURCE_TRANSFER_LIBRARY.json',
+ 'photoTailorProfile':str((TD/'pt_profile.json').relative_to(ROOT)),
+ 'rendererContract':'generator/data/hat_renderer_contract.json',
+ 'rendererFamily':'bucket_fisherman',
  'wearContract':str(WEAR.relative_to(ROOT))
 }
 CONTRACT.write_text(json.dumps(contract,indent=2)+'\n')

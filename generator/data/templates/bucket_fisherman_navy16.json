@@ -119,5 +119,8 @@
     }
   ],
   "sourceTransferLibrary": "source_catalog/SOURCE_TRANSFER_LIBRARY.json",
+  "photoTailorProfile": "authored/templates/bucket_fisherman_navy16/pt_profile.json",
+  "rendererContract": "generator/data/hat_renderer_contract.json",
+  "rendererFamily": "bucket_fisherman",
   "wearContract": "generator/data/headwear/bucket_fisherman_navy16_wear_contract.json"
 }

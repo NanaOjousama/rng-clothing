@@ -34,10 +34,11 @@ REGIONS={
  "mas_headband":((0.0,.82,"crown"),(.82,1.01,"band")),
  "mas_hood":((0.0,.76,"crown"),(.76,1.01,"hem")),
  "trucker":((0.0,.70,"crown"),(.70,1.01,"brim")),
+ "bucket_fisherman":((0.0,.64,"crown"),(.64,.82,"band"),(.82,1.01,"brim")),
 }
 
 TINY_SOURCE_FAMILIES={"alt_headband","cc_headband","mas_bows","mas_headband"}
-SMALL_SOURCE_FAMILIES={"mas_crown","mas_garland","mas_hair_buns"}
+SMALL_SOURCE_FAMILIES={"mas_crown","mas_garland","mas_hair_buns","bucket_fisherman"}
 
 @dataclass(frozen=True)
 class EnhancementReport:

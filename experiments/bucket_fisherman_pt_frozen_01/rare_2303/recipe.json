@@ -1,0 +1,54 @@
+{
+  "rarity": "rare",
+  "seed": 2303,
+  "palette": "rust",
+  "recipe": {
+    "materialTreatment": "subtle",
+    "pattern": "subtle",
+    "trim": "contrast",
+    "motif": "emblem",
+    "motifPlacement": "front_offset",
+    "attachment": "none",
+    "hardware": "none"
+  },
+  "taste": {
+    "complexity": 3,
+    "budget": [
+      2,
+      3
+    ],
+    "channels": [
+      "GRAPHIC",
+      "REGION"
+    ],
+    "primary": "motif.emblem",
+    "secondary": [
+      "trim.contrast"
+    ],
+    "accents": []
+  },
+  "hybrid": {
+    "applied": false,
+    "fallbackReason": "DELTA_TOO_LARGE:0.361>0.240",
+    "changedPixels": 0,
+    "changedRatio": 0.0,
+    "outlinePreserved": true,
+    "alphaPreserved": true,
+    "pattern": "subtle",
+    "motif": "emblem",
+    "motifPlacement": "front_offset",
+    "regionMode": "SOURCE_DERIVED_BOUNDED"
+  },
+  "frames": {
+    "front": "experiments/bucket_fisherman_pt_frozen_01/rare_2303/front.png",
+    "right": "experiments/bucket_fisherman_pt_frozen_01/rare_2303/right.png",
+    "back": "experiments/bucket_fisherman_pt_frozen_01/rare_2303/back.png",
+    "left": "experiments/bucket_fisherman_pt_frozen_01/rare_2303/left.png"
+  },
+  "goldenFrames": {
+    "front": "experiments/bucket_fisherman_pt_frozen_01/rare_2303/golden_front.png",
+    "right": "experiments/bucket_fisherman_pt_frozen_01/rare_2303/golden_right.png",
+    "back": "experiments/bucket_fisherman_pt_frozen_01/rare_2303/golden_back.png",
+    "left": "experiments/bucket_fisherman_pt_frozen_01/rare_2303/golden_left.png"
+  }
+}
