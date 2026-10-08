@@ -2051,3 +2051,54 @@ Validation:
 - `validate_hat_hybrid_production.py`: PASS; existing 80-family-baseline outputs remain exact and all frozen safety checks still pass.
 - `validate_bucket_fisherman_navy16_template.py`: PASS.
 - `validate_esm_garments.py`: 27/27 PASS.
+
+
+## Fisherman source-golden family conversion — 2026-10-07
+
+The approved Fisherman Navy 16 construction is now prepared as a real source-respecting family extension for the frozen hat architecture instead of using PT shade buckets as visible form.
+
+Source family:
+- source family id: `bucket_fisherman`
+- extension spec: `generator/data/source_parts/hat_source_extensions.json`
+- renderer: `generator/fisherman_source_family.py`
+- exact approved source state: `Fisherman Navy 16`
+- exact four-view source authority remains `authored/templates/bucket_fisherman_navy16/{front,right,back,left}.png`
+- locked: whole source geometry, directionality, Right->Left mirror, and source shading topology.
+- `generator/source_respecting_hat_production.py` now contains the dormant `bucket_fisherman` family route. It cannot activate until the Fisherman pair(s) enter the approved golden registry, so the existing 20 approved families are unchanged.
+
+Shading/palette correction:
+- Non-native palette candidates no longer convert the Fisherman into PT shadow/mid/light buckets.
+- Every authored source pixel keeps a continuous luminance relationship to the original source. The transfer is monotonic and RGB-only; alpha never changes.
+- Photo Tailor is now helper evidence only for palette selection: approved donor base/outline colors come from `authored/templates/bucket_fisherman_navy16/pt_profile.json`. PT does not repaint or define Fisherman form/shading topology.
+- Candidate transfer intentionally compresses palette contrast while preserving the authored source topology, so lighter palettes do not exaggerate the source shade clusters as aggressively.
+
+Golden candidates:
+- candidate registry: `generator/data/source_respecting_hat_goldens_fisherman_candidate.json`
+- contact sheet: `experiments/fisherman_source_goldens_candidate_02/FISHERMAN_SOURCE_GOLDENS_4X4.png`
+- four controlled candidates: source-native navy, cream, olive/canvas, rain yellow.
+- source-native is exact approved Fisherman pixels.
+- cream / olive / rain are CANDIDATE_REVIEW_REQUIRED; they are not in the production whitelist.
+- Fisherman candidate visual-contract activation input: `generator/data/headwear/bucket_fisherman_visual_contract_candidate.json`
+- Fisherman taste policy remains `generator/data/headwear/bucket_fisherman_hat_renderer_v1_policy.json`.
+
+Frozen-renderer use proof:
+- `experiments/fisherman_frozen_source_smoke_01/FISHERMAN_GOLDEN_TO_FROZEN_SMOKE.png`
+- actual frozen core used: `generator/hat_hybrid_enhancements.py::enhance_frames`.
+- Common recipe returns every golden pixel-exact (0 changed pixels).
+- controlled Rare smoke changes only 2 pixels per palette while preserving exact alpha + outline.
+- this proves the Fisherman source family can feed HAT_RENDERER_V1 the same way approved mod-author source pixels do once its goldens are whitelisted.
+
+Production gate:
+- Fisherman construction/live fit remains approved.
+- production weight remains 0.
+- current status: `CONSTRUCTION_PRODUCTION_READY_SOURCE_GOLDEN_REVIEW_REQUIRED`.
+- user visual approval is required before any non-native Fisherman palette is copied into the main approved golden whitelist or receives positive production weight.
+
+Validation:
+- `validate_fisherman_source_goldens.py`: PASS (exact source-native pixels; 4/4 alpha + mirror; continuous shading topology; no five-bucket collapse; frozen smoke bounded).
+- `validate_bucket_fisherman_production.py`: PASS with production held at weight 0.
+- `validate_hat_renderer_freeze.py`: PASS.
+- `validate_hat_hybrid_production.py`: PASS; existing frozen 80-candidate baseline remains pixel-exact.
+- `validate_bucket_fisherman_navy16_template.py`: PASS.
+
+The earlier `bucket_fisherman_pt_frozen_01` PT shade-role proof is superseded for Fisherman shading authority. Its lesson remains useful, but the new source-golden path makes approved Fisherman pixels—not coarse PT shade roles—the visible shading authority.

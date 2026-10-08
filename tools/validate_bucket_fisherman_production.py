@@ -8,10 +8,12 @@ wear=json.loads((ROOT/'generator/data/headwear/bucket_fisherman_navy16_wear_cont
 old=json.loads((ROOT/'generator/data/headwear/bucket_fisherman_navy16_roll_matrix.json').read_text())
 assert reg['active'] is True
 assert c['liveWearApproved'] is True
-assert c['status']=='CONSTRUCTION_PRODUCTION_READY_RENDERER_REVIEW_REQUIRED'
+assert c['status']=='CONSTRUCTION_PRODUCTION_READY_SOURCE_GOLDEN_REVIEW_REQUIRED'
 assert c['rendererId']=='HAT_RENDERER_V1'
+assert c['sourceFamily']=='bucket_fisherman'
 assert c['weight']==0
-assert c['activationGate']=='Human visual approval of Photo Tailor + HAT_RENDERER_V1 proof batch'
+assert c['candidateGoldenRegistry']=='generator/data/source_respecting_hat_goldens_fisherman_candidate.json'
+assert c['activationGate']=='User visually approves Fisherman source-golden palette candidates before whitelist/positive production weight'
 assert wear['status']=='APPROVED_LIVE_ESM_WEAR_QC'
 assert wear['directionDefaults']['front']['offset']==[0,-4]
 assert old['status']=='REJECTED_VISUAL_PROOF_DO_NOT_USE'

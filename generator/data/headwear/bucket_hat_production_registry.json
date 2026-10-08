@@ -5,7 +5,7 @@
   "policy": "Only explicitly live-wear-approved constructions may have positive production weight.",
   "constructions": {
     "bucket_fisherman_navy16": {
-      "status": "CONSTRUCTION_PRODUCTION_READY_RENDERER_REVIEW_REQUIRED",
+      "status": "CONSTRUCTION_PRODUCTION_READY_SOURCE_GOLDEN_REVIEW_REQUIRED",
       "template": "generator/data/templates/bucket_fisherman_navy16.json",
       "weight": 0,
       "liveWearApproved": true,
@@ -45,8 +45,13 @@
       "rendererFamily": "bucket_fisherman",
       "photoTailorProfile": "authored/templates/bucket_fisherman_navy16/pt_profile.json",
       "tastePolicy": "generator/data/headwear/bucket_fisherman_hat_renderer_v1_policy.json",
-      "candidateProof": "experiments/bucket_fisherman_pt_frozen_01/manifest.json",
-      "activationGate": "Human visual approval of Photo Tailor + HAT_RENDERER_V1 proof batch"
+      "candidateProof": "experiments/fisherman_frozen_source_smoke_01/manifest.json",
+      "activationGate": "User visually approves Fisherman source-golden palette candidates before whitelist/positive production weight",
+      "sourceFamily": "bucket_fisherman",
+      "sourceFamilyExtension": "generator/data/source_parts/hat_source_extensions.json",
+      "candidateGoldenRegistry": "generator/data/source_respecting_hat_goldens_fisherman_candidate.json",
+      "photoTailorRole": "palette evidence only; source Fisherman pixels own shading topology",
+      "visualContractCandidate": "generator/data/headwear/bucket_fisherman_visual_contract_candidate.json"
     }
   }
 }

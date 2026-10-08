@@ -1,0 +1,51 @@
+{
+  "schema": "source-respecting-hat-extension-families/v1",
+  "status": "CANDIDATE_FAMILIES_ALLOWED_PRODUCTION_REQUIRES_GOLDEN_APPROVAL",
+  "families": {
+    "bucket_fisherman": {
+      "sourceType": "AUTHORED_DIRECTIONAL_TEMPLATE",
+      "templateFamily": "bucket_fisherman_navy16",
+      "base": "Fisherman Navy 16",
+      "authoredFrames": {
+        "front": "authored/templates/bucket_fisherman_navy16/front.png",
+        "right": "authored/templates/bucket_fisherman_navy16/right.png",
+        "back": "authored/templates/bucket_fisherman_navy16/back.png",
+        "left": "authored/templates/bucket_fisherman_navy16/left.png"
+      },
+      "lockedConstruction": [
+        "whole_source_geometry",
+        "source_directionality",
+        "right_left_mirror",
+        "source_shading_topology"
+      ],
+      "mutableSourceFeatures": [
+        "body_palette_continuous_luma_transfer"
+      ],
+      "alternateConstructionStates": [
+        "Fisherman Navy 16"
+      ],
+      "paletteEvidence": "authored/templates/bucket_fisherman_navy16/pt_profile.json",
+      "paletteTransfer": {
+        "mode": "CONTINUOUS_SOURCE_LUMA_AROUND_SOURCE_REFERENCE",
+        "interiorContrast": 0.45,
+        "boundaryContrast": 0.45,
+        "ratioClamp": [0.45, 1.75],
+        "boundaryTarget": "approved_donor_outline",
+        "interiorTarget": "approved_donor_base",
+        "forbidShadeBuckets": true,
+        "forbidRegionRepainting": true,
+        "preserveAlpha": true,
+        "note": "Every source pixel keeps its authored continuous luminance relationship. Photo Tailor supplies donor palette evidence only; PT shade buckets do not define Fisherman form."
+      },
+      "candidatePalettes": [
+        "source_native",
+        "cream",
+        "olive_canvas",
+        "rain_yellow"
+      ],
+      "humanArtApprovedSourceState": true,
+      "candidatePaletteApprovalRequired": true,
+      "productionAuthorityAfterApproval": "GOLDEN_SOURCE_RESPECTING_HYBRID_V1"
+    }
+  }
+}

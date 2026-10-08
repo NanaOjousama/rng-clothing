@@ -13,6 +13,7 @@ from generator.catalog_templates import load_family
 from generator.taste_policy import evaluate_recipe
 from generator.hat_visual_rules import contract_for,recipe_visual_precheck
 from generator.hat_hybrid_enhancements import enhance_frames
+from generator.fisherman_source_family import load_spec as load_fisherman_spec, render as render_fisherman
 from generator.source_respecting_hat_remix import (
  beret,beanie,straw,boater,mushroom_hat,sun_hat,tulip_hat,
  source_family_state,RemixResult,
@@ -64,7 +65,8 @@ def select_presentation_lean(template_family:str,rarity:str,mode:str='mixed')->s
 
 
 def _pair_distinctiveness(source_family:str,pair:dict)->float:
- spec=_parts()['families'][source_family];state=pair['state'];pal=pair['palette']
+ spec=load_fisherman_spec() if source_family=='bucket_fisherman' else _parts()['families'][source_family]
+ state=pair['state'];pal=pair['palette']
  s=0.0 if state==spec['base'] else 2.0
  if pal!='source_native':s+=1.0
  name=state.lower()
@@ -119,6 +121,7 @@ def render_approved_pair(template_family:str,pair:dict)->RemixResult:
  elif source=='mushroom_hat':res=mushroom_hat(state=state,body_palette=palette)
  elif source=='sun_hat':res=sun_hat(state=state,body_palette=palette,feature_palette=palette)
  elif source=='tulip_hat':res=tulip_hat(state=state,body_palette=palette,pattern_palette=palette)
+ elif source=='bucket_fisherman':res=render_fisherman(state=state,palette=palette)
  else:res=source_family_state(source,state=state,palette=palette)
  if res.trace.get('genericProjectionUsed') or res.trace.get('genericLineUsed'):
   raise RuntimeError(f'{template_family}: source-respecting renderer reported legacy path')

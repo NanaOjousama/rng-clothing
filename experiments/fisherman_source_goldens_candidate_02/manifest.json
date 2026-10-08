@@ -1,0 +1,168 @@
+{
+  "schema": "fisherman-source-golden-proof/v1",
+  "candidateCount": 4,
+  "registry": "generator/data/source_respecting_hat_goldens_fisherman_candidate.json",
+  "contactSheet": "experiments/fisherman_source_goldens_candidate_02/FISHERMAN_SOURCE_GOLDENS_4X4.png",
+  "candidates": [
+    {
+      "state": "Fisherman Navy 16",
+      "palette": "source_native",
+      "status": "SOURCE_STATE_ALREADY_APPROVED",
+      "sourceShadingTopologyPreserved": true,
+      "trace": {
+        "constructionAuthority": "exact_user_approved_four_view_source_state",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "source_directionality",
+          "right_left_mirror",
+          "source_shading_topology"
+        ],
+        "mutableFeature": "body_palette_continuous_luma_transfer",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "sourceShadingTopologyPreserved": true,
+        "paletteAuthority": "exact_user_approved_source_pixels",
+        "photoTailorRole": "none_for_source_native",
+        "shadeTopology": "EXACT_SOURCE_PIXELS"
+      },
+      "frames": {
+        "front": "experiments/fisherman_source_goldens_candidate_02/source_native/front.png",
+        "right": "experiments/fisherman_source_goldens_candidate_02/source_native/right.png",
+        "back": "experiments/fisherman_source_goldens_candidate_02/source_native/back.png",
+        "left": "experiments/fisherman_source_goldens_candidate_02/source_native/left.png"
+      },
+      "hashes": {
+        "front": "8431df5f4ef205bfbb0951d38bfb6dad3bf84431505e9661586a32047084063f",
+        "right": "0fa9d6e8fb3b788fd43b2936c83fe23d725bd12bacab5c5cc145d13ab5180d2a",
+        "back": "225f163036161370af5ab05210d8b45f1b453483595508e3933ec9b3307802db",
+        "left": "7c739d24c7266cd4a8e09dcbd74518b6124bdb23e8cf9e917d3b1685dafbb7d6"
+      }
+    },
+    {
+      "state": "Fisherman Navy 16",
+      "palette": "cream",
+      "status": "CANDIDATE_REVIEW_REQUIRED",
+      "sourceShadingTopologyPreserved": true,
+      "trace": {
+        "constructionAuthority": "exact_user_approved_four_view_source_state",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "source_directionality",
+          "right_left_mirror",
+          "source_shading_topology"
+        ],
+        "mutableFeature": "body_palette_continuous_luma_transfer",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "sourceShadingTopologyPreserved": true,
+        "paletteAuthority": "approved_donor_palette_evidence",
+        "photoTailorRole": "palette_evidence_only",
+        "photoTailorProfile": "authored/templates/bucket_fisherman_navy16/pt_profile.json",
+        "shadeTopology": "CONTINUOUS_SOURCE_LUMA_NO_BUCKETS",
+        "interiorContrast": 0.45,
+        "boundaryContrast": 0.45,
+        "ratioClamp": [
+          0.45,
+          1.75
+        ],
+        "donor": "authored/approved/bucket_hat_v1/sources/design_flower_band_cream_front.png"
+      },
+      "frames": {
+        "front": "experiments/fisherman_source_goldens_candidate_02/cream/front.png",
+        "right": "experiments/fisherman_source_goldens_candidate_02/cream/right.png",
+        "back": "experiments/fisherman_source_goldens_candidate_02/cream/back.png",
+        "left": "experiments/fisherman_source_goldens_candidate_02/cream/left.png"
+      },
+      "hashes": {
+        "front": "313d00b18f29020f760a855fd6dfd8208729ae6914534279402904b4882a808c",
+        "right": "8de77ea8616955d1348a58b15c3a8adc3ff97b7c14f0478ca7629644bddefd6a",
+        "back": "268dc8248ab58e3d920f435fffaf09059a161acca6603c3cabf8e4884ae6b2ae",
+        "left": "60f7d0056ddd4ae63c33da8d38555c39e197d5d2771a1a0f6ec6942618038db9"
+      }
+    },
+    {
+      "state": "Fisherman Navy 16",
+      "palette": "olive_canvas",
+      "status": "CANDIDATE_REVIEW_REQUIRED",
+      "sourceShadingTopologyPreserved": true,
+      "trace": {
+        "constructionAuthority": "exact_user_approved_four_view_source_state",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "source_directionality",
+          "right_left_mirror",
+          "source_shading_topology"
+        ],
+        "mutableFeature": "body_palette_continuous_luma_transfer",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "sourceShadingTopologyPreserved": true,
+        "paletteAuthority": "approved_donor_palette_evidence",
+        "photoTailorRole": "palette_evidence_only",
+        "photoTailorProfile": "authored/templates/bucket_fisherman_navy16/pt_profile.json",
+        "shadeTopology": "CONTINUOUS_SOURCE_LUMA_NO_BUCKETS",
+        "interiorContrast": 0.45,
+        "boundaryContrast": 0.45,
+        "ratioClamp": [
+          0.45,
+          1.75
+        ],
+        "donor": "authored/approved/bucket_hat_v1/sources/design_classic_olive_band_front.png"
+      },
+      "frames": {
+        "front": "experiments/fisherman_source_goldens_candidate_02/olive_canvas/front.png",
+        "right": "experiments/fisherman_source_goldens_candidate_02/olive_canvas/right.png",
+        "back": "experiments/fisherman_source_goldens_candidate_02/olive_canvas/back.png",
+        "left": "experiments/fisherman_source_goldens_candidate_02/olive_canvas/left.png"
+      },
+      "hashes": {
+        "front": "23fdc37853a681baa96f4c8b5b543a7aa6b84c994d70d79e8713edf5a4e262bb",
+        "right": "3e0d7eb34d2162d1bb9665a7b5ebebfa3609ff99f78b140be1db449bf3e0aff4",
+        "back": "2523fefdfa1812b4a2170f0c583c518e91f071afb56de3a40219effa90863d91",
+        "left": "11215b14171e8f98603fdd442246dfc87c39a0fce214036057baa70c319c5d9f"
+      }
+    },
+    {
+      "state": "Fisherman Navy 16",
+      "palette": "rain_yellow",
+      "status": "CANDIDATE_REVIEW_REQUIRED",
+      "sourceShadingTopologyPreserved": true,
+      "trace": {
+        "constructionAuthority": "exact_user_approved_four_view_source_state",
+        "lockedFeatures": [
+          "whole_source_geometry",
+          "source_directionality",
+          "right_left_mirror",
+          "source_shading_topology"
+        ],
+        "mutableFeature": "body_palette_continuous_luma_transfer",
+        "genericProjectionUsed": false,
+        "genericLineUsed": false,
+        "sourceShadingTopologyPreserved": true,
+        "paletteAuthority": "approved_donor_palette_evidence",
+        "photoTailorRole": "palette_evidence_only",
+        "photoTailorProfile": "authored/templates/bucket_fisherman_navy16/pt_profile.json",
+        "shadeTopology": "CONTINUOUS_SOURCE_LUMA_NO_BUCKETS",
+        "interiorContrast": 0.45,
+        "boundaryContrast": 0.45,
+        "ratioClamp": [
+          0.45,
+          1.75
+        ],
+        "donor": "authored/approved/bucket_hat_v1/sources/material_rain_yellow_front.png"
+      },
+      "frames": {
+        "front": "experiments/fisherman_source_goldens_candidate_02/rain_yellow/front.png",
+        "right": "experiments/fisherman_source_goldens_candidate_02/rain_yellow/right.png",
+        "back": "experiments/fisherman_source_goldens_candidate_02/rain_yellow/back.png",
+        "left": "experiments/fisherman_source_goldens_candidate_02/rain_yellow/left.png"
+      },
+      "hashes": {
+        "front": "001667c30ba03cf9dd2b34aeebc19d6de00c3f6c77c1105900ed7a89d633827a",
+        "right": "79475281d375a7fd56318557b54759a2698f9758fc98b5e52b6c60d63d2fd2c5",
+        "back": "1ffe22bb3ab3f169e7476b04c78585fb0cd94ee691e0999c127a7350bbc486c5",
+        "left": "c3b2658960a887520ac04cc97b6930e20f09476679e6eb709e8ebc7fe3dc30e8"
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "state": "Fisherman Navy 16",
+  "palette": "rain_yellow",
+  "status": "CANDIDATE_REVIEW_REQUIRED",
+  "sourceShadingTopologyPreserved": true,
+  "trace": {
+    "constructionAuthority": "exact_user_approved_four_view_source_state",
+    "lockedFeatures": [
+      "whole_source_geometry",
+      "source_directionality",
+      "right_left_mirror",
+      "source_shading_topology"
+    ],
+    "mutableFeature": "body_palette_continuous_luma_transfer",
+    "genericProjectionUsed": false,
+    "genericLineUsed": false,
+    "sourceShadingTopologyPreserved": true,
+    "paletteAuthority": "approved_donor_palette_evidence",
+    "photoTailorRole": "palette_evidence_only",
+    "photoTailorProfile": "authored/templates/bucket_fisherman_navy16/pt_profile.json",
+    "shadeTopology": "CONTINUOUS_SOURCE_LUMA_NO_BUCKETS",
+    "interiorContrast": 0.45,
+    "boundaryContrast": 0.45,
+    "ratioClamp": [
+      0.45,
+      1.75
+    ],
+    "donor": "authored/approved/bucket_hat_v1/sources/material_rain_yellow_front.png"
+  },
+  "frames": {
+    "front": "experiments/fisherman_source_goldens_candidate_02/rain_yellow/front.png",
+    "right": "experiments/fisherman_source_goldens_candidate_02/rain_yellow/right.png",
+    "back": "experiments/fisherman_source_goldens_candidate_02/rain_yellow/back.png",
+    "left": "experiments/fisherman_source_goldens_candidate_02/rain_yellow/left.png"
+  },
+  "hashes": {
+    "front": "001667c30ba03cf9dd2b34aeebc19d6de00c3f6c77c1105900ed7a89d633827a",
+    "right": "79475281d375a7fd56318557b54759a2698f9758fc98b5e52b6c60d63d2fd2c5",
+    "back": "1ffe22bb3ab3f169e7476b04c78585fb0cd94ee691e0999c127a7350bbc486c5",
+    "left": "c3b2658960a887520ac04cc97b6930e20f09476679e6eb709e8ebc7fe3dc30e8"
+  }
+}

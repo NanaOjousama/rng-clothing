@@ -1,0 +1,215 @@
+{
+  "schema": "fisherman-candidate-frozen-smoke/v1",
+  "renderer": "HAT_RENDERER_V1",
+  "productionCore": "generator/hat_hybrid_enhancements.py::enhance_frames",
+  "sourceFamilyRenderer": "generator/fisherman_source_family.py",
+  "candidateRegistry": "generator/data/source_respecting_hat_goldens_fisherman_candidate.json",
+  "status": "CANDIDATE_REVIEW_REQUIRED_NOT_PRODUCTION_WHITELISTED",
+  "contactSheet": "experiments/fisherman_frozen_source_smoke_01/FISHERMAN_GOLDEN_TO_FROZEN_SMOKE.png",
+  "rows": [
+    {
+      "palette": "source_native",
+      "goldenStatus": "SOURCE_STATE_ALREADY_APPROVED",
+      "common": {
+        "recipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "none",
+          "motifPlacement": "none",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "changedPixels": 0,
+        "fallbackReason": null,
+        "frames": {
+          "front": "experiments/fisherman_frozen_source_smoke_01/source_native/common_front.png",
+          "right": "experiments/fisherman_frozen_source_smoke_01/source_native/common_right.png",
+          "back": "experiments/fisherman_frozen_source_smoke_01/source_native/common_back.png",
+          "left": "experiments/fisherman_frozen_source_smoke_01/source_native/common_left.png"
+        }
+      },
+      "rare": {
+        "recipe": {
+          "materialTreatment": "textured",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "small",
+          "motifPlacement": "front_center",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "changedPixels": 2,
+        "changedRatio": 0.004975,
+        "fallbackReason": null,
+        "outlinePreserved": true,
+        "alphaPreserved": true,
+        "frames": {
+          "front": "experiments/fisherman_frozen_source_smoke_01/source_native/rare_front.png",
+          "right": "experiments/fisherman_frozen_source_smoke_01/source_native/rare_right.png",
+          "back": "experiments/fisherman_frozen_source_smoke_01/source_native/rare_back.png",
+          "left": "experiments/fisherman_frozen_source_smoke_01/source_native/rare_left.png"
+        }
+      },
+      "goldenFrames": {
+        "front": "experiments/fisherman_frozen_source_smoke_01/source_native/golden_front.png",
+        "right": "experiments/fisherman_frozen_source_smoke_01/source_native/golden_right.png",
+        "back": "experiments/fisherman_frozen_source_smoke_01/source_native/golden_back.png",
+        "left": "experiments/fisherman_frozen_source_smoke_01/source_native/golden_left.png"
+      }
+    },
+    {
+      "palette": "cream",
+      "goldenStatus": "CANDIDATE_REVIEW_REQUIRED",
+      "common": {
+        "recipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "none",
+          "motifPlacement": "none",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "changedPixels": 0,
+        "fallbackReason": null,
+        "frames": {
+          "front": "experiments/fisherman_frozen_source_smoke_01/cream/common_front.png",
+          "right": "experiments/fisherman_frozen_source_smoke_01/cream/common_right.png",
+          "back": "experiments/fisherman_frozen_source_smoke_01/cream/common_back.png",
+          "left": "experiments/fisherman_frozen_source_smoke_01/cream/common_left.png"
+        }
+      },
+      "rare": {
+        "recipe": {
+          "materialTreatment": "textured",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "small",
+          "motifPlacement": "front_center",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "changedPixels": 2,
+        "changedRatio": 0.004975,
+        "fallbackReason": null,
+        "outlinePreserved": true,
+        "alphaPreserved": true,
+        "frames": {
+          "front": "experiments/fisherman_frozen_source_smoke_01/cream/rare_front.png",
+          "right": "experiments/fisherman_frozen_source_smoke_01/cream/rare_right.png",
+          "back": "experiments/fisherman_frozen_source_smoke_01/cream/rare_back.png",
+          "left": "experiments/fisherman_frozen_source_smoke_01/cream/rare_left.png"
+        }
+      },
+      "goldenFrames": {
+        "front": "experiments/fisherman_frozen_source_smoke_01/cream/golden_front.png",
+        "right": "experiments/fisherman_frozen_source_smoke_01/cream/golden_right.png",
+        "back": "experiments/fisherman_frozen_source_smoke_01/cream/golden_back.png",
+        "left": "experiments/fisherman_frozen_source_smoke_01/cream/golden_left.png"
+      }
+    },
+    {
+      "palette": "olive_canvas",
+      "goldenStatus": "CANDIDATE_REVIEW_REQUIRED",
+      "common": {
+        "recipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "none",
+          "motifPlacement": "none",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "changedPixels": 0,
+        "fallbackReason": null,
+        "frames": {
+          "front": "experiments/fisherman_frozen_source_smoke_01/olive_canvas/common_front.png",
+          "right": "experiments/fisherman_frozen_source_smoke_01/olive_canvas/common_right.png",
+          "back": "experiments/fisherman_frozen_source_smoke_01/olive_canvas/common_back.png",
+          "left": "experiments/fisherman_frozen_source_smoke_01/olive_canvas/common_left.png"
+        }
+      },
+      "rare": {
+        "recipe": {
+          "materialTreatment": "textured",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "small",
+          "motifPlacement": "front_center",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "changedPixels": 2,
+        "changedRatio": 0.004975,
+        "fallbackReason": null,
+        "outlinePreserved": true,
+        "alphaPreserved": true,
+        "frames": {
+          "front": "experiments/fisherman_frozen_source_smoke_01/olive_canvas/rare_front.png",
+          "right": "experiments/fisherman_frozen_source_smoke_01/olive_canvas/rare_right.png",
+          "back": "experiments/fisherman_frozen_source_smoke_01/olive_canvas/rare_back.png",
+          "left": "experiments/fisherman_frozen_source_smoke_01/olive_canvas/rare_left.png"
+        }
+      },
+      "goldenFrames": {
+        "front": "experiments/fisherman_frozen_source_smoke_01/olive_canvas/golden_front.png",
+        "right": "experiments/fisherman_frozen_source_smoke_01/olive_canvas/golden_right.png",
+        "back": "experiments/fisherman_frozen_source_smoke_01/olive_canvas/golden_back.png",
+        "left": "experiments/fisherman_frozen_source_smoke_01/olive_canvas/golden_left.png"
+      }
+    },
+    {
+      "palette": "rain_yellow",
+      "goldenStatus": "CANDIDATE_REVIEW_REQUIRED",
+      "common": {
+        "recipe": {
+          "materialTreatment": "plain",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "none",
+          "motifPlacement": "none",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "changedPixels": 0,
+        "fallbackReason": null,
+        "frames": {
+          "front": "experiments/fisherman_frozen_source_smoke_01/rain_yellow/common_front.png",
+          "right": "experiments/fisherman_frozen_source_smoke_01/rain_yellow/common_right.png",
+          "back": "experiments/fisherman_frozen_source_smoke_01/rain_yellow/common_back.png",
+          "left": "experiments/fisherman_frozen_source_smoke_01/rain_yellow/common_left.png"
+        }
+      },
+      "rare": {
+        "recipe": {
+          "materialTreatment": "textured",
+          "pattern": "solid",
+          "trim": "none",
+          "motif": "small",
+          "motifPlacement": "front_center",
+          "attachment": "none",
+          "hardware": "none"
+        },
+        "changedPixels": 2,
+        "changedRatio": 0.004975,
+        "fallbackReason": null,
+        "outlinePreserved": true,
+        "alphaPreserved": true,
+        "frames": {
+          "front": "experiments/fisherman_frozen_source_smoke_01/rain_yellow/rare_front.png",
+          "right": "experiments/fisherman_frozen_source_smoke_01/rain_yellow/rare_right.png",
+          "back": "experiments/fisherman_frozen_source_smoke_01/rain_yellow/rare_back.png",
+          "left": "experiments/fisherman_frozen_source_smoke_01/rain_yellow/rare_left.png"
+        }
+      },
+      "goldenFrames": {
+        "front": "experiments/fisherman_frozen_source_smoke_01/rain_yellow/golden_front.png",
+        "right": "experiments/fisherman_frozen_source_smoke_01/rain_yellow/golden_right.png",
+        "back": "experiments/fisherman_frozen_source_smoke_01/rain_yellow/golden_back.png",
+        "left": "experiments/fisherman_frozen_source_smoke_01/rain_yellow/golden_left.png"
+      }
+    }
+  ]
+}
