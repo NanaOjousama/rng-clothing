@@ -7,6 +7,15 @@ docs/recovery/PROJECT_RECOVERY_2026-09-19.md
 
 Do not reconstruct project state from chat memory.
 
+## 2026-10-09 — pack_study (clean-slate track)
+
+User asked for a fresh start that does not reuse the old generator. New, isolated
+work lives in `pack_study/` (see `pack_study/README.md`): 492 third-party hats
+studied, library built, pure-Python generator v0 with author-gated recolour /
+pattern / add-on / restyle tiers. Not yet proven: worn in-game captures; clothing
+not studied yet. Next test: `python3 tools/qc.py worn` on a generated pack after a
+game restart (new pack folder needs a restart, not fs_reload).
+
 ## Git-backed recovery anchors
 
 - Recovery authority + continuity safeguards:

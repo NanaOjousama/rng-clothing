@@ -93,3 +93,7 @@ tools/bin/spritefusion-pixel-snapper
 tools/bin/cc
 experiments/pixel_snapper_smoke_*.png
 experiments/pixel_snapper_smoke_*.json
+
+# pack_study: extracted third-party hat sprites (regenerate: pack_study/tools/extract_hats.py) and regenerable output
+pack_study/data/hats/
+pack_study/out/

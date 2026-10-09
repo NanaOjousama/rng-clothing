@@ -1,0 +1,17 @@
+{
+ "_note": "Reviewed by eye on out/decorations_*.png (2026-10-09). Label = what it is on the worn hat; kind = how it attaches.",
+ "dec_ids_by_from": {
+  "kailey__straw_hat_sunflower": {"label": "sunflower", "kind": "perched"},
+  "kailey__flower_crown_bird": {"label": "bird", "kind": "perched"},
+  "seyph__hats_90": {"label": "leaf sprig", "kind": "perched"},
+  "plurffle__earmuffs_cat": {"label": "cat ears", "kind": "perched"},
+  "orangeblossom__1_old_straw_hat_w_ribbon": {"label": "white ribbon band", "kind": "band"},
+  "kailey__straw_hat_blue": {"label": "blue dotted band", "kind": "band"}
+ },
+ "rejected": {
+  "orangeblossom recolour pairs": "colour-map leftovers, not a new part",
+  "jedone cap&headphones / backwards cap": "recolour leftovers",
+  "coii female_9 / female_19": "whole-hat redraw, not a decoration",
+  "plurffle hoods (cat/horns/frog)": "real decorations but hood view layout pulls in hood pixels; revisit"
+ }
+}

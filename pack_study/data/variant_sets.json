@@ -1,0 +1,869 @@
+[
+ {
+  "type": "RECOLOUR",
+  "author": "SubabyTvanZ",
+  "base": "subabytvanz__subabytvanz_hat_4__7f43a9",
+  "recolours": [
+   "subabytvanz__subabytvanz_hat_3__0af7ef",
+   "subabytvanz__subabytvanz_hat_2__10aaa3",
+   "subabytvanz__subabytvanz_hat_1__910cd5"
+  ],
+  "patternVariants": [],
+  "size": 4
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "orangeblossom",
+  "base": "orangeblossom__0_old_straw_hat__c1a828",
+  "recolours": [],
+  "patternVariants": [
+   "orangeblossom__0_old_straw_hat_w_ribbon__a67bd4",
+   "orangeblossom__1_old_straw_hat_w_ribbon__9af6fd"
+  ],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "orangeblossom",
+  "base": "orangeblossom__1_old_straw_hat__a21df2",
+  "recolours": [
+   "orangeblossom__4_old_straw_hat__c4f6e1",
+   "orangeblossom__2_old_straw_hat__132829",
+   "orangeblossom__5_old_straw_hat__1f5d2c"
+  ],
+  "patternVariants": [
+   "orangeblossom__2_old_straw_hat_w_ribbon__b8fa95",
+   "orangeblossom__3_old_straw_hat_w_ribbon__43294e",
+   "orangeblossom__3_old_straw_hat__7abc45",
+   "orangeblossom__5_old_straw_hat_w_ribbon__261a09",
+   "orangeblossom__4_old_straw_hat_w_ribbon__901f32"
+  ],
+  "size": 9
+ },
+ {
+  "type": "TWEAK",
+  "author": "billi",
+  "base": "billi__clip__ebfc57",
+  "with": "billi__barrette__01c71a",
+  "baseKept": 1.0,
+  "addedPixels": 4,
+  "basePixels": 12
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "plurffle",
+  "base": "plurffle__tiara_4__5746d5",
+  "recolours": [],
+  "patternVariants": [
+   "plurffle__tiara_3__a969c8"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "plurffle",
+  "base": "plurffle__headband__2795c9",
+  "recolours": [],
+  "patternVariants": [
+   "plurffle__headband_studded__958f7e"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "plurffle",
+  "base": "plurffle__garland_dried_2__932f4d",
+  "recolours": [
+   "plurffle__garland_2__cbedc6"
+  ],
+  "patternVariants": [],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "plurffle",
+  "base": "plurffle__garland_dried_1__df0e34",
+  "recolours": [
+   "plurffle__garland_1__fd7340"
+  ],
+  "patternVariants": [],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "plurffle",
+  "base": "plurffle__headband_wide_studded__1fc7b0",
+  "recolours": [],
+  "patternVariants": [
+   "plurffle__headband_wide__25e165"
+  ],
+  "size": 2
+ },
+ {
+  "type": "ADDON",
+  "author": "plurffle",
+  "base": "plurffle__tiara_3__a969c8",
+  "with": "plurffle__tiara_1__363552",
+  "baseKept": 1.0,
+  "addedPixels": 26,
+  "basePixels": 32
+ },
+ {
+  "type": "ADDON",
+  "author": "plurffle",
+  "base": "plurffle__headband_tie_1__8f28a0",
+  "with": "plurffle__headband_tie_2__fb1cf8",
+  "baseKept": 0.945,
+  "addedPixels": 32,
+  "basePixels": 146
+ },
+ {
+  "type": "ADDON",
+  "author": "plurffle",
+  "base": "plurffle__headband_frilly_1__78b4c4",
+  "with": "plurffle__headband_frilly_2__604397",
+  "baseKept": 0.921,
+  "addedPixels": 14,
+  "basePixels": 76
+ },
+ {
+  "type": "ADDON",
+  "author": "plurffle",
+  "base": "plurffle__headband__2795c9",
+  "with": "plurffle__headband_cat_1__64f04b",
+  "baseKept": 0.886,
+  "addedPixels": 20,
+  "basePixels": 44
+ },
+ {
+  "type": "ADDON",
+  "author": "plurffle",
+  "base": "plurffle__headband__2795c9",
+  "with": "plurffle__headband_wide__25e165",
+  "baseKept": 1.0,
+  "addedPixels": 24,
+  "basePixels": 44
+ },
+ {
+  "type": "ADDON",
+  "author": "plurffle",
+  "base": "plurffle__garland_dried_1__df0e34",
+  "with": "plurffle__garland_dried_2__932f4d",
+  "baseKept": 0.961,
+  "addedPixels": 35,
+  "basePixels": 179
+ },
+ {
+  "type": "ADDON",
+  "author": "plurffle",
+  "base": "plurffle__earmuffs__1a7fc4",
+  "with": "plurffle__earmuffs_cat__e91c83",
+  "baseKept": 0.92,
+  "addedPixels": 100,
+  "basePixels": 224
+ },
+ {
+  "type": "ADDON",
+  "author": "plurffle",
+  "base": "plurffle__bow_side_2__885468",
+  "with": "plurffle__bows_double__b5a515",
+  "baseKept": 1.0,
+  "addedPixels": 99,
+  "basePixels": 99
+ },
+ {
+  "type": "ADDON",
+  "author": "plurffle",
+  "base": "plurffle__bow_side_1__fb713d",
+  "with": "plurffle__bows_double__b5a515",
+  "baseKept": 1.0,
+  "addedPixels": 99,
+  "basePixels": 99
+ },
+ {
+  "type": "ADDON",
+  "author": "plurffle",
+  "base": "plurffle__bows_double_small_1__12878c",
+  "with": "plurffle__bows_double_small_2__229f7e",
+  "baseKept": 1.0,
+  "addedPixels": 96,
+  "basePixels": 36
+ },
+ {
+  "type": "ADDON",
+  "author": "plurffle",
+  "base": "plurffle__bows_double_small_1__12878c",
+  "with": "plurffle__bows_double__3913f8",
+  "baseKept": 1.0,
+  "addedPixels": 12,
+  "basePixels": 36
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "plurffle",
+  "base": "plurffle__tulip_hat_striped__1077e7",
+  "recolours": [],
+  "patternVariants": [
+   "plurffle__tulip_hat__b83e82"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "plurffle",
+  "base": "plurffle__cap_2__094293",
+  "recolours": [],
+  "patternVariants": [
+   "plurffle__cap_1__9128af"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "plurffle",
+  "base": "plurffle__mushroom_hat_dotted__3f38e2",
+  "recolours": [],
+  "patternVariants": [
+   "plurffle__mushroom_hat__7f0a97"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "plurffle",
+  "base": "plurffle__hood_pointy__02098f",
+  "recolours": [],
+  "patternVariants": [
+   "plurffle__hood_mushroom__11c75b"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "plurffle",
+  "base": "plurffle__headscarf_small_dotted__e56782",
+  "recolours": [],
+  "patternVariants": [
+   "plurffle__headscarf_small__c00e96"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "plurffle",
+  "base": "plurffle__headscarf_dotted__8de014",
+  "recolours": [],
+  "patternVariants": [
+   "plurffle__headscarf__67df58"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "plurffle",
+  "base": "plurffle__beret_dotted__e5ce20",
+  "recolours": [],
+  "patternVariants": [
+   "plurffle__beret__8575cc"
+  ],
+  "size": 2
+ },
+ {
+  "type": "ADDON",
+  "author": "plurffle",
+  "base": "plurffle__straw_hat__9108fe",
+  "with": "plurffle__straw_hat_messy__1f5171",
+  "baseKept": 1.0,
+  "addedPixels": 46,
+  "basePixels": 412
+ },
+ {
+  "type": "ADDON",
+  "author": "plurffle",
+  "base": "plurffle__decorative_bells_singles__d5e802",
+  "with": "plurffle__decorative_bells_doubles__0202e9",
+  "baseKept": 1.0,
+  "addedPixels": 104,
+  "basePixels": 258
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Kookoroo",
+  "base": "kookoroo__kookoroo_9__242276",
+  "recolours": [
+   "kookoroo__kookoroo_8__b72327"
+  ],
+  "patternVariants": [
+   "kookoroo__kookoroo_7__ce1083"
+  ],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Kookoroo",
+  "base": "kookoroo__kookoroo_6__e72462",
+  "recolours": [
+   "kookoroo__kookoroo_5__cae7f4"
+  ],
+  "patternVariants": [
+   "kookoroo__kookoroo_4__e957a0"
+  ],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Kookoroo",
+  "base": "kookoroo__kookoroo_3__ba78c8",
+  "recolours": [
+   "kookoroo__kookoroo_2__46f0fe"
+  ],
+  "patternVariants": [
+   "kookoroo__kookoroo_1__caa191"
+  ],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "Kookoroo",
+  "base": "kookoroo__kookoroo_17__89c794",
+  "recolours": [
+   "kookoroo__kookoroo_16__fd09c6"
+  ],
+  "patternVariants": [],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "Kookoroo",
+  "base": "kookoroo__kookoroo_15__4add35",
+  "recolours": [
+   "kookoroo__kookoroo_14__f18d60",
+   "kookoroo__kookoroo_13__a93a54"
+  ],
+  "patternVariants": [],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "Kookoroo",
+  "base": "kookoroo__kookoroo_12__0066a2",
+  "recolours": [
+   "kookoroo__kookoroo_11__4e112f",
+   "kookoroo__kookoroo_10__900ec9"
+  ],
+  "patternVariants": [],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Jedone",
+  "base": "jedone__vintage_cap_03__10a064",
+  "recolours": [
+   "jedone__vintage_cap_02__e53432"
+  ],
+  "patternVariants": [
+   "jedone__vintage_cap_01__afb220"
+  ],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Jedone",
+  "base": "jedone__trapper_hat_02__5d9e28",
+  "recolours": [],
+  "patternVariants": [
+   "jedone__trapper_hat_01__2a4c4b"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Jedone",
+  "base": "jedone__hair_kerchief_05__246975",
+  "recolours": [
+   "jedone__hair_kerchief_04__bc749a",
+   "jedone__hair_kerchief_02__06023c",
+   "jedone__hair_kerchief_01__072553"
+  ],
+  "patternVariants": [
+   "jedone__hair_kerchief_03__7faf8b"
+  ],
+  "size": 5
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "Jedone",
+  "base": "jedone__fluffy_beanie_03__0c7ebd",
+  "recolours": [
+   "jedone__fluffy_beanie_02__2760a3",
+   "jedone__fluffy_beanie_01__6d2b87"
+  ],
+  "patternVariants": [],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Jedone",
+  "base": "jedone__cat_headphones_03__bbe356",
+  "recolours": [],
+  "patternVariants": [
+   "jedone__cat_headphones_02__8f3790",
+   "jedone__cat_headphones_01__e1e646"
+  ],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Jedone",
+  "base": "jedone__cap_headphones_08__368588",
+  "recolours": [
+   "jedone__cap_headphones_07__111e72",
+   "jedone__cap_headphones_06__ae9a87"
+  ],
+  "patternVariants": [
+   "jedone__cap_headphones_05__1be6c3",
+   "jedone__cap_headphones_04__3eb4e2",
+   "jedone__cap_headphones_03__b3aac9",
+   "jedone__cap_headphones_02__cc8188",
+   "jedone__cap_headphones_01__dd8a4c"
+  ],
+  "size": 8
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Jedone",
+  "base": "jedone__backwards_cap_05__ca89bf",
+  "recolours": [
+   "jedone__backwards_cap_04__649a9f",
+   "jedone__backwards_cap_03__400b41",
+   "jedone__backwards_cap_01__7aff9d"
+  ],
+  "patternVariants": [
+   "jedone__backwards_cap_02__3b19ea"
+  ],
+  "size": 5
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "h young FS Code By Mychocolate",
+  "base": "h_young_fs_code_by_mychocolate__hyoung_hats_9__43b7c3",
+  "recolours": [],
+  "patternVariants": [
+   "h_young_fs_code_by_mychocolate__hyoung_hats_8__1e0fa6"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "h young FS Code By Mychocolate",
+  "base": "h_young_fs_code_by_mychocolate__hyoung_hats_7__ced1f4",
+  "recolours": [
+   "h_young_fs_code_by_mychocolate__hyoung_hats_10__a5622d"
+  ],
+  "patternVariants": [],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "h young FS Code By Mychocolate",
+  "base": "h_young_fs_code_by_mychocolate__hyoung_hats_28__898c87",
+  "recolours": [],
+  "patternVariants": [
+   "h_young_fs_code_by_mychocolate__hyoung_hats_27__59394b",
+   "h_young_fs_code_by_mychocolate__hyoung_hats_24__56368b"
+  ],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "h young FS Code By Mychocolate",
+  "base": "h_young_fs_code_by_mychocolate__hyoung_hats_26__bb5dc0",
+  "recolours": [],
+  "patternVariants": [
+   "h_young_fs_code_by_mychocolate__hyoung_hats_25__f2f30e"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "h young FS Code By Mychocolate",
+  "base": "h_young_fs_code_by_mychocolate__hyoung_hats_23__e7a503",
+  "recolours": [
+   "h_young_fs_code_by_mychocolate__hyoung_hats_21__bf9b1c"
+  ],
+  "patternVariants": [
+   "h_young_fs_code_by_mychocolate__hyoung_hats_19__32dbc4"
+  ],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "h young FS Code By Mychocolate",
+  "base": "h_young_fs_code_by_mychocolate__hyoung_hats_22__51b500",
+  "recolours": [],
+  "patternVariants": [
+   "h_young_fs_code_by_mychocolate__hyoung_hats_20__5b6c19",
+   "h_young_fs_code_by_mychocolate__hyoung_hats_18__9a5821"
+  ],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "h young FS Code By Mychocolate",
+  "base": "h_young_fs_code_by_mychocolate__hyoung_hats_2__8bc5c4",
+  "recolours": [
+   "h_young_fs_code_by_mychocolate__hyoung_hats_1__4b1e99"
+  ],
+  "patternVariants": [],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "h young FS Code By Mychocolate",
+  "base": "h_young_fs_code_by_mychocolate__hyoung_hats_17__9fab08",
+  "recolours": [
+   "h_young_fs_code_by_mychocolate__hyoung_hats_15__6ec08f"
+  ],
+  "patternVariants": [
+   "h_young_fs_code_by_mychocolate__hyoung_hats_16__5c7ccd",
+   "h_young_fs_code_by_mychocolate__hyoung_hats_13__a908fc",
+   "h_young_fs_code_by_mychocolate__hyoung_hats_12__565ce0"
+  ],
+  "size": 5
+ },
+ {
+  "type": "ADDON",
+  "author": "h young FS Code By Mychocolate",
+  "base": "h_young_fs_code_by_mychocolate__hyoung_hats_19__32dbc4",
+  "with": "h_young_fs_code_by_mychocolate__hyoung_hats_18__9a5821",
+  "baseKept": 0.885,
+  "addedPixels": 12,
+  "basePixels": 366
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "CuteBeret-35115",
+  "base": "cuteberet_35115__cute_beret_9__34010c",
+  "recolours": [
+   "cuteberet_35115__cute_beret_8__edc4df"
+  ],
+  "patternVariants": [
+   "cuteberet_35115__cute_beret_7__3264c3",
+   "cuteberet_35115__cute_beret_4__a0987e",
+   "cuteberet_35115__cute_beret_3__0efde1",
+   "cuteberet_35115__cute_beret_2__0b93cc",
+   "cuteberet_35115__cute_beret_10__352d94",
+   "cuteberet_35115__cute_beret_1__8442d6"
+  ],
+  "size": 8
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "CuteBeret-35115",
+  "base": "cuteberet_35115__cute_beret_6__60080b",
+  "recolours": [],
+  "patternVariants": [
+   "cuteberet_35115__cute_beret_12__793433"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "CuteBeret-35115",
+  "base": "cuteberet_35115__cute_beret_5__40be6a",
+  "recolours": [],
+  "patternVariants": [
+   "cuteberet_35115__cute_beret_11__ac6de8"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "Molamole",
+  "base": "molamole__red_horns__3f1938",
+  "recolours": [
+   "molamole__lavanda_horns__a5d30e",
+   "molamole__green_horns__d383d7",
+   "molamole__pink_horns__19da9a"
+  ],
+  "patternVariants": [],
+  "size": 4
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "Molamole",
+  "base": "molamole__blue_horns__e9068c",
+  "recolours": [
+   "molamole__mole_horns__a179da",
+   "molamole__black_horns__0df83e"
+  ],
+  "patternVariants": [],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Kailey",
+  "base": "kailey__winter_beanie_colourable__504252",
+  "recolours": [],
+  "patternVariants": [
+   "kailey__winter_beanie_blue__93925a"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Kailey",
+  "base": "kailey__winter_beanie_colourable_2__9fb20f",
+  "recolours": [],
+  "patternVariants": [
+   "kailey__winter_beanie_pink__28d0db"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Kailey",
+  "base": "kailey__straw_hat_blue__a993f6",
+  "recolours": [
+   "kailey__straw_hat_prismatic__8da36e"
+  ],
+  "patternVariants": [
+   "kailey__straw_hat_colourable_2__eceb78"
+  ],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Kailey",
+  "base": "kailey__flower_crown_yellow__6d5fa4",
+  "recolours": [],
+  "patternVariants": [
+   "kailey__flower_crown_blue__da98f4",
+   "kailey__flower_crown_colourable_1__b88805",
+   "kailey__flower_crown_orange__81a947",
+   "kailey__flower_crown_green__f09ab0",
+   "kailey__flower_crown_pink__e8cc05",
+   "kailey__flower_crown_gray__caf3e2"
+  ],
+  "size": 7
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Kailey",
+  "base": "kailey__flower_crown_black_white__5a80e3",
+  "recolours": [],
+  "patternVariants": [
+   "kailey__flower_crown_red__450b2e",
+   "kailey__flower_crown_purple__9e96c4",
+   "kailey__flower_crown_white_purple__f73cfe"
+  ],
+  "size": 4
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "Kailey",
+  "base": "kailey__trapper_hat_prismatic__2dcd12",
+  "recolours": [
+   "kailey__trapper_hat__238453"
+  ],
+  "patternVariants": [],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Kailey",
+  "base": "kailey__hats_0__bfe389",
+  "recolours": [
+   "kailey__hats_3__ec729c"
+  ],
+  "patternVariants": [
+   "kailey__hats_1__2714a1",
+   "kailey__hats_2__80d9c7",
+   "kailey__hats_4__f8d0d5"
+  ],
+  "size": 5
+ },
+ {
+  "type": "ADDON",
+  "author": "Kailey",
+  "base": "kailey__flower_crown_red__450b2e",
+  "with": "kailey__flower_crown_bird__aedb87",
+  "baseKept": 0.99,
+  "addedPixels": 146,
+  "basePixels": 386
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "JIAOJIAO",
+  "base": "jiaojiao____bd1b9e",
+  "recolours": [],
+  "patternVariants": [
+   "jiaojiao____94e068",
+   "jiaojiao____347aab",
+   "jiaojiao____f41770",
+   "jiaojiao____f18f15",
+   "jiaojiao____699304"
+  ],
+  "size": 6
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "lovisity",
+  "base": "lovisity__21_bluecharmingribbon_0__b92da5",
+  "recolours": [],
+  "patternVariants": [
+   "lovisity__22_redcharmingribbon_0__8b928a"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "lovisity",
+  "base": "lovisity__36_pandahat_0__ac58c6",
+  "recolours": [],
+  "patternVariants": [
+   "lovisity__37_teddybearhat_0__8b1261"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "Seyph",
+  "base": "seyph__hats_37__0c1e93",
+  "recolours": [
+   "seyph__hats_83__e66e01"
+  ],
+  "patternVariants": [],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "Seyph",
+  "base": "seyph__hats_84__696445",
+  "recolours": [
+   "seyph__hats_89__662daf"
+  ],
+  "patternVariants": [],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "ConcernedApe",
+  "base": "concernedape__hats_57__0af754",
+  "recolours": [],
+  "patternVariants": [
+   "concernedape__hats_58__c9400d",
+   "concernedape__hats_59__729835"
+  ],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "ConcernedApe",
+  "base": "concernedape__hats_72__8bff8e",
+  "recolours": [],
+  "patternVariants": [
+   "concernedape__hats_74__85fd36"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "Coii",
+  "base": "coii__female_16__490b90",
+  "recolours": [
+   "coii__female_20__eb2578"
+  ],
+  "patternVariants": [],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "Coii",
+  "base": "coii__female_21__119fbb",
+  "recolours": [
+   "coii__female_22__1382e2"
+  ],
+  "patternVariants": [],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "Coii",
+  "base": "coii__female_33__731f3c",
+  "recolours": [
+   "coii__female_34__f5f32f",
+   "coii__female_35__2cbeee"
+  ],
+  "patternVariants": [],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Coii",
+  "base": "coii__female_37__aa3387",
+  "recolours": [],
+  "patternVariants": [
+   "coii__female_38__e3d898"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "Coii",
+  "base": "coii__male_21__a753ae",
+  "recolours": [
+   "coii__male_22__efdedf"
+  ],
+  "patternVariants": [],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "Coii",
+  "base": "coii__male_33__7cdeca",
+  "recolours": [
+   "coii__male_34__8c0bf6",
+   "coii__male_35__d1b2e3"
+  ],
+  "patternVariants": [],
+  "size": 3
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "Coii",
+  "base": "coii__male_37__370b03",
+  "recolours": [],
+  "patternVariants": [
+   "coii__male_38__dc48a3"
+  ],
+  "size": 2
+ },
+ {
+  "type": "TWEAK",
+  "author": "Coii",
+  "base": "coii__female_0__0bf4e4",
+  "with": "coii__male_0__f6a294",
+  "baseKept": 1.0,
+  "addedPixels": 3,
+  "basePixels": 269
+ },
+ {
+  "type": "TWEAK",
+  "author": "Coii",
+  "base": "coii__male_8__67059e",
+  "with": "coii__female_8__4dc195",
+  "baseKept": 0.99,
+  "addedPixels": 6,
+  "basePixels": 408
+ },
+ {
+  "type": "ADDON",
+  "author": "Coii",
+  "base": "coii__male_10__d55aef",
+  "with": "coii__female_10__52aba2",
+  "baseKept": 0.912,
+  "addedPixels": 18,
+  "basePixels": 362
+ }
+]
