@@ -1,0 +1,488 @@
+{
+ "_note": "Semantic/taste filter ON TOP of geometric seating (gen/semantics.py). Keys = keys of decorations_approved.json, plus 'pattern:<label>'. class: surface | structural | ornament | headpiece. transfer: broad | family-limited | novelty-only | headpiece-only. reject -> never, not even novelty (wins over prefer: Plague Doctor Mask is fantasy AND mask), prefer -> weight 1, allow -> ALLOW_W, any other NAMED family -> only in a novelty roll. unknownHost = weight on a host whose names give no family (opaque ids: Coii female_N, Seyph hats_N, ...). placement.anchor is checked against the measured source position by gen/demo_semantics.py. Host families come from author/vanilla names only (CLAUDE.md s3: shape-family membership is not evidence). Judgements are Claude's taste proposal, 2026-10-09; edit freely. Anchors: top-centre | top-side | front-mount | crown-brim-junction | material-interior | face | head-top | head-ring; the first three were corrected to the measured source position (bird, cat ears, leaf sprig were mis-declared).",
+ "profiles": {
+  "kailey__straw_hat_sunflower": {
+   "label": "sunflower",
+   "class": "ornament",
+   "transfer": "family-limited",
+   "prefer": [
+    "straw",
+    "floral",
+    "cottage"
+   ],
+   "allow": [
+    "fantasy",
+    "western",
+    "hair"
+   ],
+   "reject": [
+    "helmet",
+    "regal",
+    "mask"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "top-side",
+    "seat": "surface",
+    "why": "a flower tucked at the side of a sun-hat crown"
+   }
+  },
+  "kailey__flower_crown_bird": {
+   "label": "bird",
+   "class": "ornament",
+   "transfer": "family-limited",
+   "prefer": [
+    "floral",
+    "straw",
+    "cottage"
+   ],
+   "allow": [
+    "fantasy",
+    "hair",
+    "knit"
+   ],
+   "reject": [
+    "helmet",
+    "mask"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "top-centre",
+    "seat": "surface",
+    "why": "a bird nesting on a flower crown / garden hat"
+   }
+  },
+  "seyph__hats_90": {
+   "label": "leaf sprig",
+   "class": "ornament",
+   "transfer": "family-limited",
+   "prefer": [
+    "straw",
+    "floral",
+    "cottage",
+    "fantasy"
+   ],
+   "allow": [
+    "western",
+    "knit",
+    "hair",
+    "hood"
+   ],
+   "reject": [
+    "helmet",
+    "regal",
+    "mask"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "top-side",
+    "seat": "surface",
+    "why": "vanilla Forager's Hat: a sprig stuck in the crown; on a ball cap it is a joke"
+   }
+  },
+  "plurffle__earmuffs_cat": {
+   "label": "cat ears",
+   "class": "ornament",
+   "transfer": "family-limited",
+   "prefer": [
+    "knit",
+    "hood",
+    "hair"
+   ],
+   "allow": [
+    "cottage",
+    "fantasy",
+    "animal",
+    "party"
+   ],
+   "reject": [
+    "helmet",
+    "regal",
+    "mask"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "top-centre",
+    "seat": "surface",
+    "why": "ears on a beanie / hood / headband (plurffle's own Beanie (Cat), Hood (Cat))"
+   }
+  },
+  "orangeblossom__1_old_straw_hat_w_ribbon": {
+   "label": "white ribbon band",
+   "class": "structural",
+   "transfer": "broad",
+   "prefer": [
+    "straw",
+    "western",
+    "formal",
+    "cottage",
+    "cavalier",
+    "fantasy"
+   ],
+   "allow": [],
+   "reject": [
+    "helmet",
+    "regal",
+    "mask"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "crown-brim-junction",
+    "seat": "junction",
+    "why": "a hat band; band.eligible() already requires a hat NAMED as brimmed (incl. witch hat), so every brimmed host is a fit"
+   }
+  },
+  "kailey__straw_hat_blue": {
+   "label": "blue dotted band",
+   "class": "structural",
+   "transfer": "broad",
+   "prefer": [
+    "straw",
+    "western",
+    "formal",
+    "cottage",
+    "cavalier",
+    "fantasy"
+   ],
+   "allow": [],
+   "reject": [
+    "helmet",
+    "regal",
+    "mask"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "crown-brim-junction",
+    "seat": "junction",
+    "why": "a hat band; band.eligible() already requires a hat NAMED as brimmed (incl. witch hat), so every brimmed host is a fit"
+   }
+  },
+  "vhe__knight_s_helmet_alt__removed": {
+   "label": "plume",
+   "class": "ornament",
+   "transfer": "family-limited",
+   "prefer": [
+    "helmet",
+    "cavalier",
+    "fantasy"
+   ],
+   "allow": [
+    "formal",
+    "western"
+   ],
+   "reject": [
+    "mask",
+    "hair",
+    "floral"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "top-centre",
+    "seat": "surface",
+    "why": "helmet plume / cavalier feather"
+   }
+  },
+  "vhe__squire_s_helmet_alt__removed": {
+   "label": "crest",
+   "class": "ornament",
+   "transfer": "family-limited",
+   "prefer": [
+    "helmet"
+   ],
+   "allow": [
+    "fantasy",
+    "cavalier"
+   ],
+   "reject": [
+    "mask",
+    "hair",
+    "floral",
+    "straw",
+    "knit",
+    "cap"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "top-centre",
+    "seat": "surface",
+    "why": "a helmet crest; follows the helmet's ridge"
+   }
+  },
+  "vhe__infinity_crown_alt__removed": {
+   "label": "crown gems (upper points)",
+   "class": "ornament",
+   "transfer": "family-limited",
+   "prefer": [
+    "regal"
+   ],
+   "allow": [
+    "fantasy"
+   ],
+   "reject": [
+    "cap",
+    "straw",
+    "western",
+    "helmet",
+    "mask",
+    "hood",
+    "knit",
+    "cottage"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "top-centre",
+    "seat": "surface",
+    "why": "the points of a crown; they need a crown rim to sit on"
+   }
+  },
+  "vhe__red_party_hat_alt__removed": {
+   "label": "pompom (red)",
+   "class": "ornament",
+   "transfer": "family-limited",
+   "prefer": [
+    "knit",
+    "party"
+   ],
+   "allow": [
+    "fantasy",
+    "cottage",
+    "hood"
+   ],
+   "reject": [
+    "helmet",
+    "regal",
+    "mask"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "top-centre",
+    "seat": "surface",
+    "why": "bobble on a beanie / party hat / tam"
+   }
+  },
+  "vhe__blue_party_hat_alt__removed": {
+   "label": "pompom (blue)",
+   "class": "ornament",
+   "transfer": "family-limited",
+   "prefer": [
+    "knit",
+    "party"
+   ],
+   "allow": [
+    "fantasy",
+    "cottage",
+    "hood"
+   ],
+   "reject": [
+    "helmet",
+    "regal",
+    "mask"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "top-centre",
+    "seat": "surface",
+    "why": "as red"
+   }
+  },
+  "vhe__green_party_hat_alt__removed": {
+   "label": "pompom (green)",
+   "class": "ornament",
+   "transfer": "family-limited",
+   "prefer": [
+    "knit",
+    "party"
+   ],
+   "allow": [
+    "fantasy",
+    "cottage",
+    "hood"
+   ],
+   "reject": [
+    "helmet",
+    "regal",
+    "mask"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "top-centre",
+    "seat": "surface",
+    "why": "as red"
+   }
+  },
+  "vhe__propeller_hat_alt__kept": {
+   "label": "propeller",
+   "class": "ornament",
+   "transfer": "novelty-only",
+   "prefer": [],
+   "allow": [],
+   "novelty": [
+    "cap",
+    "knit",
+    "party",
+    "animal"
+   ],
+   "reject": [
+    "regal",
+    "floral",
+    "mask",
+    "hair"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "top-centre",
+    "seat": "surface",
+    "why": "vanilla Propeller Hat is itself a joke item; only in a novelty roll"
+   }
+  },
+  "vhe__hard_hat_alt__added": {
+   "label": "lamp",
+   "class": "ornament",
+   "transfer": "family-limited",
+   "prefer": [
+    "helmet"
+   ],
+   "allow": [],
+   "reject": [
+    "floral",
+    "regal",
+    "hair",
+    "mask",
+    "straw"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "front-mount",
+    "seat": "surface",
+    "why": "miner's lamp on a hard hat; on a cap/beanie only as novelty"
+   }
+  },
+  "vhe__tricorn_hat_alt__added": {
+   "label": "ribbon",
+   "class": "ornament",
+   "transfer": "family-limited",
+   "prefer": [
+    "cavalier",
+    "formal"
+   ],
+   "allow": [
+    "western",
+    "straw",
+    "cottage"
+   ],
+   "reject": [
+    "helmet",
+    "mask",
+    "regal"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "top-side",
+    "seat": "surface",
+    "why": "a cockade on a tricorn / dress hat"
+   }
+  },
+  "vhe__cat_ears_alt_1__removed": {
+   "label": "whiskers",
+   "class": "headpiece",
+   "transfer": "headpiece-only",
+   "wornWith": [
+    "any"
+   ],
+   "conflicts": [
+    "mask",
+    "helmet"
+   ],
+   "placement": {
+    "anchor": "face",
+    "seat": "head",
+    "why": "drawn on the face; an FS accessory, never composited into a hat"
+   }
+  },
+  "vhe__cat_ears_alt_2__removed": {
+   "label": "cat ears (vanilla)",
+   "class": "headpiece",
+   "transfer": "headpiece-only",
+   "wornWith": [
+    "hair",
+    "mask",
+    "none"
+   ],
+   "conflicts": [
+    "any hat covering the crown"
+   ],
+   "placement": {
+    "anchor": "head-top",
+    "seat": "head",
+    "why": "headband ears; a hat would hide the band"
+   }
+  },
+  "vhe__totem_mask_alt__removed": {
+   "label": "totem face",
+   "class": "headpiece",
+   "transfer": "headpiece-only",
+   "wornWith": [
+    "hair",
+    "none"
+   ],
+   "conflicts": [
+    "mask",
+    "helmet"
+   ],
+   "placement": {
+    "anchor": "face",
+    "seat": "head",
+    "why": "face mask"
+   }
+  },
+  "vhe__totem_mask_alt__kept": {
+   "label": "leaf ring",
+   "class": "headpiece",
+   "transfer": "headpiece-only",
+   "wornWith": [
+    "hair",
+    "mask",
+    "none"
+   ],
+   "conflicts": [
+    "any hat covering the crown"
+   ],
+   "placement": {
+    "anchor": "head-ring",
+    "seat": "head",
+    "why": "wreath around the head"
+   }
+  },
+  "pattern:plaid": {
+   "label": "plaid",
+   "class": "surface",
+   "transfer": "family-limited",
+   "prefer": [
+    "cottage",
+    "cap",
+    "formal",
+    "hood"
+   ],
+   "allow": [
+    "western",
+    "fantasy",
+    "party",
+    "animal"
+   ],
+   "reject": [
+    "straw",
+    "floral",
+    "helmet",
+    "regal",
+    "mask",
+    "knit"
+   ],
+   "unknownHost": 0,
+   "placement": {
+    "anchor": "material-interior",
+    "seat": "pattern",
+    "why": "printed/woven cloth; not on straw, knit, metal, flowers or faces (knit/straw texture is inherent, patterns_approved.json)"
+   }
+  }
+ }
+}

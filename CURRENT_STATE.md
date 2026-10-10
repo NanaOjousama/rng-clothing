@@ -26,6 +26,11 @@ worn capture.  Then: band transfer (name-evidenced brimmed targets), plaid trans
 material targets only), crown x brim extended to 78 approved cross-author combos.
 Next test: worn QC of a generated pack (padded decoration, band, plaid, extended combo).
 Not done: caps peak x crown; clothing.
+Then: semantic attachment classes (`pack_study/gen/semantics.py`, `data/attachment_profiles.json`):
+a taste filter on top of seating. Host family comes from names only. 162/498 constructions have opaque
+names (unknown) and get no family-limited parts, so decorated hats fell from 29 to 14 per 300. Only the
+two bands are broad-transfer; propeller is novelty-only; 4 headpieces are headpiece-only; the rest are
+family-limited. Next lever: hand host labels (`data/host_labels.json`) by eye.
 
 ## Git-backed recovery anchors
 

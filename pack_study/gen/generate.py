@@ -23,6 +23,7 @@ import png
 from restyle import single_material, target_style, ramp_of, restyle
 from decorate import load_approved, place
 import band
+import semantics
 import pattern as patterns
 import combine_brimmed
 from colour import to_lch, from_lch
@@ -159,28 +160,39 @@ def names_of(c):
         _VNAME = {r['id']: r.get('vanillaName') for r in json.load(open(os.path.join(HERE, 'data', 'hats.json')))}
     return list(c.get('names', [])) + [_VNAME.get(w['source']) for w in c.get('colourways', [])]
 
-def decorate(px, frame, rng, names=()):
-    """Try approved decorations (random order) until one seats in all 4 views: perched
-    parts on any hat; bands only on hats named as brimmed and not already banded."""
+def decorate(px, frame, rng, names=(), cons_id=None):
+    """Try approved decorations until one seats in all 4 views: perched parts on any
+    hat; bands only on hats named as brimmed and not already banded.
+    Geometry decides IF a part fits; the semantic profile (semantics.py,
+    data/attachment_profiles.json) decides WHICH parts are tried and how often: a
+    leaf sprig goes on straw/floral/cottage/fantasy hats, not on a ball cap.  A small
+    share of rolls (NOVELTY_RATE) is an intentional novelty: off-family hosts only.
+    Returns {'label', 'novelty', 'host'} or None."""
     global _DECS
     if _DECS is None: _DECS = [d for d in load_approved() if d['kind'] in ('perched', 'band')]
     w, h = frame
     masks = {v: [[1 if px[y][vi * w + x][3] else 0 for x in range(w)] for y in range(h)] for vi, v in enumerate(VIEWS)}
     banded = band.eligible(names)
-    for d in rng.sample(_DECS, len(_DECS)):
-        if d['frame'][0] != w: continue
-        if d['kind'] == 'band':
-            if not banded: continue
-            res = band.place(d, masks)
-        else:
-            res = place(d, masks)
-        if res:
-            pad = max([0] + [-y for v in VIEWS for _, y, _ in res[v]])
-            if pad:                                   # part rises above the frame: grow upward
-                px[0:0] = [[(0, 0, 0, 0)] * (4 * w) for _ in range(pad)]
-            for vi, v in enumerate(VIEWS):
-                for x, y, p in res[v]: px[y + pad][vi * w + x] = tuple(p)
-            return d['label']
+    fams = semantics.host_families(names, cons_id)
+    novelty = rng.random() < semantics.NOVELTY_RATE
+    for nov in ([True, False] if novelty else [False]):
+        cands = [(d, semantics.weight(d, fams, nov)) for d in _DECS if d['frame'][0] == w]
+        # weighted order without replacement (Efraimidis-Spirakis key u^(1/w))
+        order = sorted(((rng.random() ** (1 / wt), k) for k, (d, wt) in enumerate(cands) if wt > 0), reverse=True)
+        for _, k in order:
+            d = cands[k][0]
+            if d['kind'] == 'band':
+                if not banded: continue
+                res = band.place(d, masks)
+            else:
+                res = place(d, masks)
+            if res:
+                pad = max([0] + [-y for v in VIEWS for _, y, _ in res[v]])
+                if pad:                                   # part rises above the frame: grow upward
+                    px[0:0] = [[(0, 0, 0, 0)] * (4 * w) for _ in range(pad)]
+                for vi, v in enumerate(VIEWS):
+                    for x, y, p in res[v]: px[y + pad][vi * w + x] = tuple(p)
+                return {'label': d['label'], 'novelty': nov, 'host': sorted(fams)}
     return None
 
 def roll(lib, rng):
@@ -203,7 +215,9 @@ def roll(lib, rng):
              'rare': [c for c in mine if c['id'] in addons] or [c for c in mine if sum(g >= 0 for g in c['grid']) >= 160]}
     if tier == 'uncommon' and not pools['uncommon']:
         # no pattern variant of the author's own: transfer an approved pattern (plaid) instead
-        ok = [c for c in pools['common'] if patterns.eligible(c)]
+        # (semantic filter: plaid is cloth -- only on hosts whose names say a fabric hat)
+        ok = [c for c in pools['common'] if patterns.eligible(c)
+              and semantics.weight({'label': 'plaid'}, semantics.host_families(names_of(c), c['id'])) > 0]
         if ok:
             c = rng.choice(ok)
             pal, how = colourise(c, rng)
@@ -243,7 +257,7 @@ def main():
             p = rng.choice(_PATS); px = patterns.apply(p, px, c['frame'], patterns.material_mask(c)); pat = p['label']
         deco = None
         if r['tier'] == 'rare' and not r['addon']:
-            deco = decorate(px, c['frame'], rng, names_of(c))
+            deco = decorate(px, c['frame'], rng, names_of(c), c['id'])
             tries = 0
             while not deco and tries < 12:      # other hats by the same author until one seats a decoration
                 tries += 1
@@ -253,7 +267,7 @@ def main():
                 c = rng.choice(pool); pal, how = colourise(c, rng)
                 tint = how.get('tint') if c['colourable'] else None
                 px = render(c, pal, None, tint)
-                deco = decorate(px, c['frame'], rng, names_of(c))
+                deco = decorate(px, c['frame'], rng, names_of(c), c['id'])
                 if deco: r['construction'], r['colour'] = c, how
             if not deco: r['tier'] = 'common'
         name = f"PS{seed}_{i:02d}_{r['tier']}"

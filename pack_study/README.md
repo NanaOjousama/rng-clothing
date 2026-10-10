@@ -254,3 +254,63 @@ leaf (duplicate), flecks.  Addons include pixels painted over the base (lamp's f
   combined tier uses the reviewed straw set + these.  Mostly plurffle x vanilla:
   only possible after the vanilla backfill.
 - Not done: peak x crown for caps (needs a verified visor split, CLAUDE.md s3).
+
+## Semantic attachment classes — 2026-10-09
+
+Seating answers "does it fit?"; it does not answer "does it belong?". A leaf sprig
+seats on 378 constructions, ball caps included. `gen/semantics.py` +
+`data/attachment_profiles.json` add a taste filter **on top of** seating (never
+instead of it):
+
+* **class**: `surface` (plaid) · `structural` (bands; crown/brim combos) ·
+  `ornament` (physical attached parts) · `headpiece` (worn on the head, never on a hat).
+* **transfer**: `broad` · `family-limited` · `novelty-only` · `headpiece-only`.
+* **host family** from author/vanilla **names only** (same evidence rule as bands):
+  straw, floral, cottage, western, formal, cavalier, cap, knit, fantasy, regal,
+  helmet, party, animal, hair, mask, hood. A hat can have several. 162 of 498
+  constructions have opaque names (Coii `female_N`, Seyph/h young `hats_N`,
+  Kookoroo, TiaoTiao, …) → `unknown`. `data/host_labels.json` (empty) takes hand
+  labels, by eye only.
+* **verdict** per part × host: `reject` (never, not even novelty; it wins over
+  prefer, e.g. Plague Doctor Mask is fantasy AND mask) → `prefer` (weight 1) →
+  `allow` (0.4) → `unknown` (profile's `unknownHost`, 0 for every part now) →
+  otherwise `novelty` (a named host outside the profile).
+* **generator**: `decorate()` orders parts by weight. 8% of decorated rolls are an
+  intentional novelty: they use off-family hosts only and are logged as
+  `decoration.novelty`. Plaid also needs a host the plaid profile accepts.
+* **placement anchor** per profile (`top-centre` / `top-side` / `front-mount` /
+  `crown-brim-junction` / `material-interior` / face / head). `gen/demo_semantics.py`
+  checks it against the part's measured position on its source hat. Three of my
+  declared anchors were wrong and are now corrected to the measured position: bird
+  and cat ears sit top-centre, the leaf sprig sits top-side.
+
+`python3 -I pack_study/gen/demo_semantics.py` → `data/attachment_report.json`,
+`out/semantics_{0,1}.png` (front views; green = kept, olive = novelty, red =
+rejected or unknown host).
+
+| part | class | transfer | seats | prefer | allow | novelty | reject | unknown host |
+|---|---|---|---|---|---|---|---|---|
+| white ribbon band | structural | broad (brim-named hosts) | 15 | 15 | | | | |
+| blue dotted band | structural | broad (brim-named hosts) | 30 | 30 | | | | |
+| sunflower | ornament | family-limited | 370 | 75 | 45 | 88 | 26 | 136 |
+| bird | ornament | family-limited | 336 | 73 | 41 | 80 | 21 | 121 |
+| leaf sprig | ornament | family-limited | 378 | 93 | 51 | 69 | 25 | 140 |
+| cat ears (plurffle) | ornament | family-limited | 3 | 3 | | | | |
+| plume | ornament | family-limited | 190 | 20 | 20 | 40 | 31 | 79 |
+| crest | ornament | family-limited | 54 | 2 | 1 | 13 | 25 | 13 |
+| crown gems | ornament | family-limited | 201 | 2 | 11 | 39 | 83 | 66 |
+| pompom ×3 | ornament | family-limited | 292 | 23 | 43 | 105 | 22 | 99 |
+| ribbon (cockade) | ornament | family-limited | 376 | 20 | 63 | 129 | 26 | 138 |
+| lamp | ornament | family-limited | 363 | 8 | | 140 | 83 | 132 |
+| propeller | ornament | novelty-only | 225 | | | 108 | 35 | 82 |
+| plaid | surface | family-limited | 15 | 5 | 2 | | 1 | 7 |
+| whiskers, cat ears (vanilla), totem face, leaf ring | headpiece | headpiece-only | — | | | | | |
+
+No part is broad-transfer except the two bands, and they are broad only because
+`band.eligible()` already limits them to hats named as brimmed. The 78 approved
+crown × brim combos all pair straw/western/formal/cottage/witch hats (counted by
+host family), so they need no extra filter.
+
+Effect on generation (300 hats, seed 7): 29 decorated before, 14 now (1 novelty);
+the rare tier falls from 53 to 28 hats, the rest demoted to common. The loss is mostly unknown hosts.
+Labelling the 162 opaque names by eye is the lever that recovers it.

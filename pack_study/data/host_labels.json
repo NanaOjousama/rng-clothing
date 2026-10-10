@@ -1,0 +1,4 @@
+{
+ "_note": "Hand host-family labels for constructions whose names give no family (opaque ids). Key = library construction id, value = list of families from gen/semantics.py FAMILIES. A label here replaces the name-derived families. Label only by eye on the worn/contact render (CLAUDE.md s3). Empty until reviewed.",
+ "labels": {}
+}
