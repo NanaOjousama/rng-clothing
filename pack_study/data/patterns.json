@@ -1,0 +1,1343 @@
+[
+ {
+  "solid": "orangeblossom__c15",
+  "patterned": "orangeblossom__c16",
+  "author": "orangeblossom",
+  "names": [
+   "0 - Old Straw Hat",
+   "0 - Old Straw Hat w/ Ribbon"
+  ],
+  "frame": [
+   20,
+   25
+  ],
+  "splitFrac": 0.548,
+  "periodX": [
+   2,
+   0.92
+  ],
+  "periodY": [
+   2,
+   0.889
+  ],
+  "candidate": true
+ },
+ {
+  "solid": "orangeblossom__c15",
+  "patterned": "orangeblossom__c17",
+  "author": "orangeblossom",
+  "names": [
+   "0 - Old Straw Hat",
+   "1 - Old Straw Hat w/ Ribbon"
+  ],
+  "frame": [
+   20,
+   25
+  ],
+  "splitFrac": 0.673,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "orangeblossom__c18",
+  "patterned": "orangeblossom__c19",
+  "author": "orangeblossom",
+  "names": [
+   "1 - Old Straw Hat",
+   "2 - Old Straw Hat w/ Ribbon"
+  ],
+  "frame": [
+   20,
+   25
+  ],
+  "splitFrac": 0.712,
+  "periodX": [
+   2,
+   0.909
+  ],
+  "periodY": [
+   4,
+   1.0
+  ],
+  "candidate": true
+ },
+ {
+  "solid": "orangeblossom__c18",
+  "patterned": "orangeblossom__c20",
+  "author": "orangeblossom",
+  "names": [
+   "1 - Old Straw Hat",
+   "3 - Old Straw Hat"
+  ],
+  "frame": [
+   20,
+   25
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "plurffle__c39",
+  "patterned": "plurffle__c40",
+  "author": "plurffle",
+  "names": [
+   "Tulip Hat (Striped)",
+   "Tulip Hat"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.5,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "plurffle__c41",
+  "patterned": "plurffle__c42",
+  "author": "plurffle",
+  "names": [
+   "Tiara 4",
+   "Tiara 3"
+  ],
+  "frame": [
+   16,
+   16
+  ],
+  "splitFrac": 0.667,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "plurffle__c71",
+  "patterned": "plurffle__c72",
+  "author": "plurffle",
+  "names": [
+   "Headband",
+   "Headband (Studded)"
+  ],
+  "frame": [
+   16,
+   16
+  ],
+  "splitFrac": 0.833,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "plurffle__c90",
+  "patterned": "plurffle__c91",
+  "author": "plurffle",
+  "names": [
+   "Cap 2",
+   "Cap 1"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 1.0,
+  "periodX": [
+   7,
+   0.8
+  ],
+  "periodY": null,
+  "candidate": true
+ },
+ {
+  "solid": "plurffle__c105",
+  "patterned": "plurffle__c106",
+  "author": "plurffle",
+  "names": [
+   "Mushroom Hat (Dotted)",
+   "Mushroom Hat"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.449,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "plurffle__c107",
+  "patterned": "plurffle__c108",
+  "author": "plurffle",
+  "names": [
+   "Hood (Pointy)",
+   "Hood (Mushroom)"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.556,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "plurffle__c109",
+  "patterned": "plurffle__c110",
+  "author": "plurffle",
+  "names": [
+   "Headscarf (Small, Dotted)",
+   "Headscarf (Small)"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.132,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "plurffle__c111",
+  "patterned": "plurffle__c112",
+  "author": "plurffle",
+  "names": [
+   "Headscarf (Dotted)",
+   "Headscarf"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.088,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "plurffle__c123",
+  "patterned": "plurffle__c124",
+  "author": "plurffle",
+  "names": [
+   "Beret (Dotted)",
+   "Beret"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.188,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "plurffle__c125",
+  "patterned": "plurffle__c126",
+  "author": "plurffle",
+  "names": [
+   "Headband (Wide, Studded)",
+   "Headband (Wide)"
+  ],
+  "frame": [
+   16,
+   16
+  ],
+  "splitFrac": 0.273,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kookoroo__c137",
+  "patterned": "kookoroo__c138",
+  "author": "Kookoroo",
+  "names": [
+   "Kookoroo_9",
+   "Kookoroo_7"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.14,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kookoroo__c139",
+  "patterned": "kookoroo__c140",
+  "author": "Kookoroo",
+  "names": [
+   "Kookoroo_6",
+   "Kookoroo_4"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.465,
+  "periodX": [
+   2,
+   0.9
+  ],
+  "periodY": [
+   2,
+   0.8
+  ],
+  "candidate": true
+ },
+ {
+  "solid": "kookoroo__c141",
+  "patterned": "kookoroo__c142",
+  "author": "Kookoroo",
+  "names": [
+   "Kookoroo_3",
+   "Kookoroo_1"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.257,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "jedone__c147",
+  "patterned": "jedone__c148",
+  "author": "Jedone",
+  "names": [
+   "Vintage Cap_03",
+   "Vintage Cap_01"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.636,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "jedone__c149",
+  "patterned": "jedone__c150",
+  "author": "Jedone",
+  "names": [
+   "Trapper Hat_02",
+   "Trapper Hat_01"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.069,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "jedone__c152",
+  "patterned": "jedone__c153",
+  "author": "Jedone",
+  "names": [
+   "Hair_Kerchief_05",
+   "Hair_Kerchief_03"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "jedone__c155",
+  "patterned": "jedone__c156",
+  "author": "Jedone",
+  "names": [
+   "Cat_Headphones_03",
+   "Cat_Headphones_02"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.829,
+  "periodX": [
+   2,
+   0.857
+  ],
+  "periodY": [
+   2,
+   0.909
+  ],
+  "candidate": true
+ },
+ {
+  "solid": "jedone__c155",
+  "patterned": "jedone__c157",
+  "author": "Jedone",
+  "names": [
+   "Cat_Headphones_03",
+   "Cat_Headphones_01"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.114,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "jedone__c158",
+  "patterned": "jedone__c159",
+  "author": "Jedone",
+  "names": [
+   "Cap&Headphones_08",
+   "Cap&Headphones_05"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "jedone__c158",
+  "patterned": "jedone__c160",
+  "author": "Jedone",
+  "names": [
+   "Cap&Headphones_08",
+   "Cap&Headphones_04"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.524,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "jedone__c158",
+  "patterned": "jedone__c161",
+  "author": "Jedone",
+  "names": [
+   "Cap&Headphones_08",
+   "Cap&Headphones_03"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.476,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "jedone__c158",
+  "patterned": "jedone__c162",
+  "author": "Jedone",
+  "names": [
+   "Cap&Headphones_08",
+   "Cap&Headphones_02"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.476,
+  "periodX": [
+   5,
+   0.8
+  ],
+  "periodY": null,
+  "candidate": true
+ },
+ {
+  "solid": "jedone__c158",
+  "patterned": "jedone__c163",
+  "author": "Jedone",
+  "names": [
+   "Cap&Headphones_08",
+   "Cap&Headphones_01"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.476,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "jedone__c164",
+  "patterned": "jedone__c165",
+  "author": "Jedone",
+  "names": [
+   "Backwards_Cap_05",
+   "Backwards_Cap_02"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "h_young_fs_code_by_mychocolate__c166",
+  "patterned": "h_young_fs_code_by_mychocolate__c167",
+  "author": "h young FS Code By Mychocolate",
+  "names": [
+   "hyoung_hats_9",
+   "hyoung_hats_8"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "h_young_fs_code_by_mychocolate__c175",
+  "patterned": "h_young_fs_code_by_mychocolate__c176",
+  "author": "h young FS Code By Mychocolate",
+  "names": [
+   "hyoung_hats_28",
+   "hyoung_hats_27"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.29,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "h_young_fs_code_by_mychocolate__c175",
+  "patterned": "h_young_fs_code_by_mychocolate__c177",
+  "author": "h young FS Code By Mychocolate",
+  "names": [
+   "hyoung_hats_28",
+   "hyoung_hats_24"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.274,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "h_young_fs_code_by_mychocolate__c178",
+  "patterned": "h_young_fs_code_by_mychocolate__c179",
+  "author": "h young FS Code By Mychocolate",
+  "names": [
+   "hyoung_hats_26",
+   "hyoung_hats_25"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.087,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "h_young_fs_code_by_mychocolate__c180",
+  "patterned": "h_young_fs_code_by_mychocolate__c181",
+  "author": "h young FS Code By Mychocolate",
+  "names": [
+   "hyoung_hats_23",
+   "hyoung_hats_19"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "h_young_fs_code_by_mychocolate__c182",
+  "patterned": "h_young_fs_code_by_mychocolate__c183",
+  "author": "h young FS Code By Mychocolate",
+  "names": [
+   "hyoung_hats_22",
+   "hyoung_hats_20"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "h_young_fs_code_by_mychocolate__c182",
+  "patterned": "h_young_fs_code_by_mychocolate__c184",
+  "author": "h young FS Code By Mychocolate",
+  "names": [
+   "hyoung_hats_22",
+   "hyoung_hats_18"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "h_young_fs_code_by_mychocolate__c186",
+  "patterned": "h_young_fs_code_by_mychocolate__c187",
+  "author": "h young FS Code By Mychocolate",
+  "names": [
+   "hyoung_hats_17",
+   "hyoung_hats_16"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.667,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "h_young_fs_code_by_mychocolate__c186",
+  "patterned": "h_young_fs_code_by_mychocolate__c188",
+  "author": "h young FS Code By Mychocolate",
+  "names": [
+   "hyoung_hats_17",
+   "hyoung_hats_13"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "h_young_fs_code_by_mychocolate__c186",
+  "patterned": "h_young_fs_code_by_mychocolate__c189",
+  "author": "h young FS Code By Mychocolate",
+  "names": [
+   "hyoung_hats_17",
+   "hyoung_hats_12"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "cuteberet_35115__c192",
+  "patterned": "cuteberet_35115__c193",
+  "author": "CuteBeret-35115",
+  "names": [
+   "Cute_beret_9",
+   "Cute_beret_7"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "cuteberet_35115__c192",
+  "patterned": "cuteberet_35115__c194",
+  "author": "CuteBeret-35115",
+  "names": [
+   "Cute_beret_9",
+   "Cute_beret_4"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "cuteberet_35115__c192",
+  "patterned": "cuteberet_35115__c195",
+  "author": "CuteBeret-35115",
+  "names": [
+   "Cute_beret_9",
+   "Cute_beret_3"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "cuteberet_35115__c196",
+  "patterned": "cuteberet_35115__c197",
+  "author": "CuteBeret-35115",
+  "names": [
+   "Cute_beret_6",
+   "Cute_beret_12"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 1.0,
+  "periodX": [
+   5,
+   0.833
+  ],
+  "periodY": [
+   3,
+   0.923
+  ],
+  "candidate": true
+ },
+ {
+  "solid": "cuteberet_35115__c198",
+  "patterned": "cuteberet_35115__c199",
+  "author": "CuteBeret-35115",
+  "names": [
+   "Cute_beret_5",
+   "Cute_beret_11"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 1.0,
+  "periodX": [
+   5,
+   0.833
+  ],
+  "periodY": [
+   3,
+   0.923
+  ],
+  "candidate": true
+ },
+ {
+  "solid": "kailey__c208",
+  "patterned": "kailey__c209",
+  "author": "Kailey",
+  "names": [
+   "Winter Beanie (Colourable)",
+   "Winter Beanie (Blue)"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kailey__c210",
+  "patterned": "kailey__c211",
+  "author": "Kailey",
+  "names": [
+   "Winter Beanie (Colourable 2)",
+   "Winter Beanie (Pink)"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.292,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kailey__c212",
+  "patterned": "kailey__c213",
+  "author": "Kailey",
+  "names": [
+   "Straw Hat (Blue)",
+   "Straw Hat (Colourable 2)"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kailey__c217",
+  "patterned": "kailey__c218",
+  "author": "Kailey",
+  "names": [
+   "Flower Crown (Yellow)",
+   "Flower Crown (Blue)"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.872,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kailey__c217",
+  "patterned": "kailey__c219",
+  "author": "Kailey",
+  "names": [
+   "Flower Crown (Yellow)",
+   "Flower Crown (Colourable 1)"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.298,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kailey__c217",
+  "patterned": "kailey__c220",
+  "author": "Kailey",
+  "names": [
+   "Flower Crown (Yellow)",
+   "Flower Crown (Orange)"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.862,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kailey__c217",
+  "patterned": "kailey__c221",
+  "author": "Kailey",
+  "names": [
+   "Flower Crown (Yellow)",
+   "Flower Crown (Green)"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.809,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kailey__c217",
+  "patterned": "kailey__c222",
+  "author": "Kailey",
+  "names": [
+   "Flower Crown (Yellow)",
+   "Flower Crown (Pink)"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.851,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kailey__c217",
+  "patterned": "kailey__c223",
+  "author": "Kailey",
+  "names": [
+   "Flower Crown (Yellow)",
+   "Flower Crown (Gray)"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.883,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kailey__c224",
+  "patterned": "kailey__c225",
+  "author": "Kailey",
+  "names": [
+   "Flower Crown (Black White)",
+   "Flower Crown (Red)"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.117,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kailey__c224",
+  "patterned": "kailey__c226",
+  "author": "Kailey",
+  "names": [
+   "Flower Crown (Black White)",
+   "Flower Crown (Purple)"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.223,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kailey__c224",
+  "patterned": "kailey__c227",
+  "author": "Kailey",
+  "names": [
+   "Flower Crown (Black White)",
+   "Flower Crown (White Purple)"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.181,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "jiaojiao__c231",
+  "patterned": "jiaojiao__c232",
+  "author": "JIAOJIAO",
+  "names": [
+   "\u84dd\u8272\u9488\u7ec7\u5e3d",
+   "\u7c73\u8272\u9488\u7ec7\u5e3d"
+  ],
+  "frame": [
+   16,
+   16
+  ],
+  "splitFrac": 0.5,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "jiaojiao__c231",
+  "patterned": "jiaojiao__c233",
+  "author": "JIAOJIAO",
+  "names": [
+   "\u84dd\u8272\u9488\u7ec7\u5e3d",
+   "\u767d\u8272\u9488\u7ec7\u5e3d"
+  ],
+  "frame": [
+   16,
+   16
+  ],
+  "splitFrac": 0.5,
+  "periodX": [
+   2,
+   1.0
+  ],
+  "periodY": [
+   4,
+   0.875
+  ],
+  "candidate": true
+ },
+ {
+  "solid": "jiaojiao__c231",
+  "patterned": "jiaojiao__c234",
+  "author": "JIAOJIAO",
+  "names": [
+   "\u84dd\u8272\u9488\u7ec7\u5e3d",
+   "\u9ec4\u8272\u9488\u7ec7\u5e3d"
+  ],
+  "frame": [
+   16,
+   16
+  ],
+  "splitFrac": 0.302,
+  "periodX": [
+   2,
+   1.0
+  ],
+  "periodY": null,
+  "candidate": true
+ },
+ {
+  "solid": "jiaojiao__c231",
+  "patterned": "jiaojiao__c235",
+  "author": "JIAOJIAO",
+  "names": [
+   "\u84dd\u8272\u9488\u7ec7\u5e3d",
+   "\u9ed1\u8272\u9488\u7ec7\u5e3d"
+  ],
+  "frame": [
+   16,
+   16
+  ],
+  "splitFrac": 0.323,
+  "periodX": [
+   2,
+   1.0
+  ],
+  "periodY": null,
+  "candidate": true
+ },
+ {
+  "solid": "jiaojiao__c231",
+  "patterned": "jiaojiao__c236",
+  "author": "JIAOJIAO",
+  "names": [
+   "\u84dd\u8272\u9488\u7ec7\u5e3d",
+   "\u7c89\u8272\u9488\u7ec7\u5e3d"
+  ],
+  "frame": [
+   16,
+   16
+  ],
+  "splitFrac": 0.125,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "lovisity__c257",
+  "patterned": "lovisity__c258",
+  "author": "lovisity",
+  "names": [
+   "21_BlueCharmingRibbon_0",
+   "22_RedCharmingRibbon_0"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "lovisity__c273",
+  "patterned": "lovisity__c274",
+  "author": "lovisity",
+  "names": [
+   "36_PandaHat_0",
+   "37_TeddybearHat_0"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.827,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kailey__c284",
+  "patterned": "kailey__c285",
+  "author": "Kailey",
+  "names": [
+   "hats_0",
+   "hats_1"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "kailey__c284",
+  "patterned": "kailey__c286",
+  "author": "Kailey",
+  "names": [
+   "hats_0",
+   "hats_2"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.432,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "seyph__c325",
+  "patterned": "concernedape__c326",
+  "author": "ConcernedApe",
+  "names": [
+   "hats_38",
+   "hats_73"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.481,
+  "periodX": [
+   7,
+   0.909
+  ],
+  "periodY": null,
+  "candidate": true
+ },
+ {
+  "solid": "concernedape__c345",
+  "patterned": "concernedape__c346",
+  "author": "ConcernedApe",
+  "names": [
+   "hats_57",
+   "hats_58"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "concernedape__c358",
+  "patterned": "concernedape__c359",
+  "author": "ConcernedApe",
+  "names": [
+   "hats_71",
+   "hats_107"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.38,
+  "periodX": [
+   2,
+   0.842
+  ],
+  "periodY": [
+   3,
+   0.812
+  ],
+  "candidate": true
+ },
+ {
+  "solid": "concernedape__c358",
+  "patterned": "concernedape__c360",
+  "author": "ConcernedApe",
+  "names": [
+   "hats_71",
+   "hats_108"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.64,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "concernedape__c358",
+  "patterned": "concernedape__c361",
+  "author": "ConcernedApe",
+  "names": [
+   "hats_71",
+   "hats_109"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.44,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "concernedape__c362",
+  "patterned": "concernedape__c363",
+  "author": "ConcernedApe",
+  "names": [
+   "hats_72",
+   "hats_74"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.538,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "coii__c414",
+  "patterned": "coii__c415",
+  "author": "Coii",
+  "names": [
+   "female_37",
+   "female_38"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 1.0,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "coii__c435",
+  "patterned": "coii__c436",
+  "author": "Coii",
+  "names": [
+   "male_37",
+   "male_38"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.769,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "concernedape__c440",
+  "patterned": "concernedape__c441",
+  "author": "ConcernedApe",
+  "names": [
+   "hats_2",
+   "hats_110"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.905,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ },
+ {
+  "solid": "concernedape__c479",
+  "patterned": "concernedape__c480",
+  "author": "ConcernedApe",
+  "names": [
+   "hats_99",
+   "hats_119"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.418,
+  "periodX": [
+   2,
+   0.917
+  ],
+  "periodY": null,
+  "candidate": true
+ },
+ {
+  "solid": "concernedape__c485",
+  "patterned": "concernedape__c486",
+  "author": "ConcernedApe",
+  "names": [
+   "hats_104",
+   "hats_111"
+  ],
+  "frame": [
+   20,
+   20
+  ],
+  "splitFrac": 0.443,
+  "periodX": null,
+  "periodY": null,
+  "candidate": false
+ }
+]

@@ -10,7 +10,7 @@ Rules:
     silhouette take the target's edge level, which also re-outlines the seam.
   * band / decoration pixels (chromatic, far from the part's dominant hue) keep
     their source colour.
-usage: combine_brimmed.py  -> out/brimmed_combos.png + data/brimmed_combos.json
+usage: combine_brimmed.py [suffix]  -> out/brimmed_combos<suffix>.png + data/brimmed_combos<suffix>.json
 """
 import json, os, sys
 sys.path.insert(0, os.path.dirname(__file__))
@@ -19,6 +19,7 @@ from colour import to_lch
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VIEWS = ['front', 'right', 'left', 'back']
 SEAT_TOL = 2
+MIN_JUMP = 2
 
 def lch(p): return to_lch(p)
 
@@ -103,7 +104,8 @@ def combine(a, b, tgt, frame):
     return out
 
 def main():
-    data = json.load(open(os.path.join(HERE, 'data', 'brimmed_parts.json')))['hats']
+    sfx = sys.argv[1] if len(sys.argv) > 1 else ''
+    data = json.load(open(os.path.join(HERE, 'data', f'brimmed_parts{sfx}.json')))['hats']
     ids = list(data)
     combos = []
     for ia in ids:
@@ -111,15 +113,20 @@ def main():
             a, b = data[ia], data[ib]
             if ia == ib or a['author'] == b['author'] and a['name'].split(' w/')[0] == b['name'].split(' w/')[0]: continue
             if a['frame'] != b['frame'] or not compatible(a, b): continue
-            for it in {ia, ib}:
-                combos.append((ia, ib, it))
+            if sfx and not all(h['views'][v]['jump'] >= MIN_JUMP for h in (a, b) for v in VIEWS):
+                continue                     # extended pool: a real brim step in every view
+            if sfx and a['author'] == b['author']:
+                continue                     # extended pool: same-author mixes are near-copies
+            styles = [ib] if sfx else list({ia, ib})   # extended: the brim's author (it sets the silhouette)
+            for it in styles:
+                if target_ramp(data[it]): combos.append((ia, ib, it))
     print('compatible (crown, brim, style) triples:', len(combos))
     rows = []
     for ia, ib, it in combos:
         a, b, t = data[ia], data[ib], data[it]
         rows.append((ia, ib, it, combine(a, b, t, b['frame'])))
     json.dump([{'crown': ia, 'brim': ib, 'style': it} for ia, ib, it, _ in rows],
-              open(os.path.join(HERE, 'data', 'brimmed_combos.json'), 'w'), indent=1)
+              open(os.path.join(HERE, 'data', f'brimmed_combos{sfx}.json'), 'w'), indent=1)
     # contact sheet: crown source | brim source | result   (4 views each, x4)
     S = 4; fw = 20 * S; cell = 4 * fw + 12; gap = 16
     W = 3 * cell + 2 * gap; rowh = 25 * S + 6
@@ -139,7 +146,7 @@ def main():
     for k, (ia, ib, it, res) in enumerate(rows):
         y = k * rowh + 3
         put(src(data[ia]), 0, y); put(src(data[ib]), cell + gap, y); put(res, 2 * (cell + gap), y)
-    png.write(os.path.join(HERE, 'out', 'brimmed_combos.png'), W, H, canvas)
+    png.write(os.path.join(HERE, 'out', f'brimmed_combos{sfx}.png'), W, H, canvas)
     for ia, ib, it, _ in rows: print(f"crown {data[ia]['author'][:8]}:{data[ia]['name'][:20]:20s} | brim {data[ib]['author'][:8]}:{data[ib]['name'][:20]:20s} | style {data[it]['author']}")
 
 if __name__ == '__main__':

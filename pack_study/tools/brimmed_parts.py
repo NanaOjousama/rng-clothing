@@ -12,7 +12,11 @@ import colorsys, json, os
 from collections import Counter
 from PIL import Image
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-IDS = [l.strip() for l in open(os.path.join(HERE, 'data', 'straw_family.txt')) if l.strip()]
+import sys
+# usage: brimmed_parts.py [id_list.txt] [suffix]   (default: the reviewed straw family)
+LIST = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, 'data', 'straw_family.txt')
+SUFFIX = sys.argv[2] if len(sys.argv) > 2 else ''
+IDS = [l.strip() for l in open(LIST) if l.strip()]
 EXCLUDE = {'coii__female_4__65feb3': 'side-view brim tilted', 'plurffle__boater_hat__a34628': 'side-view brim tilted',
            'kailey__straw_hat_sunflower__94b36c': 'sunflower shares straw hue; junction lands on the flower',
            'kailey__straw_hat_colourable_2__eceb78': 'same drawing as Straw Hat (Blue), mask-tinted copy'}
@@ -24,7 +28,7 @@ def main():
     recs = {r['id']: r for r in json.load(open(os.path.join(HERE, 'data', 'hats.json')))}
     out = {}
     for i in IDS:
-        if i in EXCLUDE: continue
+        if i in EXCLUDE or i not in recs: continue
         r = recs[i]; w, h = r['frame']
         strip = Image.open(os.path.join(HERE, 'data', 'hats', i + '.png')).convert('RGBA')
         cnt = Counter(p[:3] for p in strip.get_flattened_data() if p[3] and hsv(p)[1] > 0.15)
@@ -38,6 +42,7 @@ def main():
             f = strip.crop((v * w, 0, v * w + w, h)); px = f.load()
             rows = [[x for x in range(w) if material(px[x, y])] for y in range(h)]
             ys = [y for y in range(h) if rows[y]]
+            if len(ys) < 3: views = None; break
             y0, y1 = ys[0], ys[-1]
             wid = lambda y: (max(rows[y]) - min(rows[y]) + 1) if rows[y] else 0
             cen = lambda y: (max(rows[y]) + min(rows[y])) / 2 if rows[y] else w / 2
@@ -47,9 +52,10 @@ def main():
             views[name] = {'junction': j, 'jump': jump,
                            'crown': [p for p in allpx if p[1] < j], 'brim': [p for p in allpx if p[1] >= j],
                            'crownBase': [cen(j - 1), wid(j - 1)], 'seat': [cen(j - 1), wid(j - 1)]}
+        if views is None: continue
         masks = [list(v) for l in r['flags'].get('colorMaskLayers', []) for v in l['values']]
         out[i] = {'maskValues': masks, 'author': r['author'], 'name': r['name'], 'frame': [w, h], 'head': r.get('head') or {}, 'views': views}
-    json.dump({'excluded': EXCLUDE, 'hats': out}, open(os.path.join(HERE, 'data', 'brimmed_parts.json'), 'w'))
+    json.dump({'excluded': EXCLUDE, 'hats': out}, open(os.path.join(HERE, 'data', f'brimmed_parts{SUFFIX}.json'), 'w'))
     for i, o in out.items():
         print(f"{o['author'][:12]:12s} {o['name'][:28]:28s} " + ' '.join(f"{n[0]}:j{o['views'][n]['junction']} base{o['views'][n]['crownBase'][1]}" for n in VIEWS))
 

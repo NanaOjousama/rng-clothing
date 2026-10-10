@@ -22,7 +22,10 @@ items, 16 author-split parts, per-view move offsets, 89 hats of named colour-mas
 Then: corpus recredited (24 Seyph -> ConcernedApe) + 63 vanilla backfilled (122 total);
 measured reseat rule wired into decoration placement; 13 VHE parts approved; parts may
 rise 6 rows above the frame (HeadPosition.Y grows) -- confirmed in FS source, NOT yet in a
-worn capture.  Next test: worn QC of a generated pack with a padded decoration.
+worn capture.  Then: band transfer (name-evidenced brimmed targets), plaid transfer (CuteBeret, proven-
+material targets only), crown x brim extended to 78 approved cross-author combos.
+Next test: worn QC of a generated pack (padded decoration, band, plaid, extended combo).
+Not done: caps peak x crown; clothing.
 
 ## Git-backed recovery anchors
 

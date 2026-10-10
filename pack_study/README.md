@@ -208,3 +208,49 @@ gems, pompom x3 colours, propeller (the Alt itself; the cap is its base), lamp, 
 headpiece (worn on the head, never placed on a hat) = whiskers, vanilla cat ears, totem
 face, leaf ring.  Rejected: Archer feather tip (extension of its own feather), Forager
 leaf (duplicate), flecks.  Addons include pixels painted over the base (lamp's front face).
+
+## Band transfer — 2026-10-09
+
+    python3 -I pack_study/gen/demo_band.py            # -> out/band_matrix.png
+
+- `gen/band.py`: band rows keep their offset from the crown/brim junction (per view);
+  each row is resampled to the target crown width by keeping 2 edge columns and CYCLING
+  the middle ones, so a dotted band keeps its dot spacing.  Target outline never painted.
+- Targets need NAME evidence of a brim (straw/sun hat/boater/cowboy/fedora/bowler/top hat/
+  sombrero/fishing/bucket/witch hat) and must not already carry one (ribbon/band/bow in the
+  name).  A width jump alone admitted a veil, a plague-doctor mask, a crown and a beret;
+  shape-family membership admitted a mask and a headscarf -- both rejected as evidence.
+- Matrix: blue dotted band 9/9, white ribbon band 6/9.  Generator: bands join the rare
+  tier's decoration pool on eligible hats.
+
+## Pattern transfer (plaid) — 2026-10-09
+
+    python3 pack_study/tools/patterns.py              # candidates -> data/patterns.json, out/patterns.png
+    python3 -I pack_study/gen/demo_pattern.py         # self-check + out/pattern_matrix.png
+
+- 75 library "pattern variants" -> 14 periodic candidates -> **1 approved by eye**:
+  CuteBeret plaid (2 colourways).  Rejected: inherent textures (straw weave, knit),
+  recolours, colour blocks, reshades (data/patterns_approved.json).
+- Measured layout (not a tile): horizontal lines every 3 rows from 2 below the top;
+  vertical lines symmetric about the centre (2.5 px half-gap, then every 3 px);
+  crossings darker (-0.18..-0.21 OKLab L) than lines (-0.11..-0.13).  Both colourways
+  measure the same layout.  Self-check reproduces 82% of the author's own plaid.
+- Applied as a lightness change on the target's own colour, interior only.
+- **Targets need proven colourways**: only the author's MATERIAL pixels take plaid.
+  Measurement (chroma share, lightness break) could not tell Santa fur trim, bunny inner
+  ears or panda patches from highlights, so unproven hats take no pattern.
+- Generator: uncommon tier transfers plaid when the author has no pattern of their own.
+
+## Larger crown x brim matrix — 2026-10-09
+
+    python3 -I pack_study/tools/brimmed_family.py     # named brimmed constructions -> data/brimmed_family_all.txt
+    python3 pack_study/tools/brimmed_parts.py data/brimmed_family_all.txt _all
+    python3 -I pack_study/gen/combine_brimmed.py _all # -> data/brimmed_combos_all.json, out/brimmed_combos_all.png
+
+- 36 named brimmed constructions -> 33 splittable -> 86 cross-author combos (brim step
+  >= 2 in every view; style = the brim's author).  Same-author mixes excluded: near-copies.
+- Reviewed by eye: **78 approved**, 8 rejected (flower-heavy crowns, beekeeper veil,
+  one muddled overlap) -> data/brimmed_combos_all_approved.json.  The generator's
+  combined tier uses the reviewed straw set + these.  Mostly plurffle x vanilla:
+  only possible after the vanilla backfill.
+- Not done: peak x crown for caps (needs a verified visor split, CLAUDE.md s3).

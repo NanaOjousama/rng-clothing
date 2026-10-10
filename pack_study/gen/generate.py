@@ -22,6 +22,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 import png
 from restyle import single_material, target_style, ramp_of, restyle
 from decorate import load_approved, place
+import band
+import pattern as patterns
 import combine_brimmed
 from colour import to_lch, from_lch
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -126,6 +128,13 @@ def roll_combined(rng):
         data = json.load(open(os.path.join(HERE, 'data', 'brimmed_parts.json')))['hats']
         combos = [c for c in json.load(open(os.path.join(HERE, 'data', 'brimmed_combos.json')))
                   if 'sun_hat_ribbon' not in c['crown'] + c['brim']]
+        # extended named-brimmed pool (cross-author): only combos approved by eye
+        ap = os.path.join(HERE, 'data', 'brimmed_combos_all_approved.json')
+        if os.path.exists(ap):
+            ok = set(json.load(open(ap))['approved'])
+            data = dict(json.load(open(os.path.join(HERE, 'data', 'brimmed_parts_all.json')))['hats'], **data)
+            combos += [c for c in json.load(open(os.path.join(HERE, 'data', 'brimmed_combos_all.json')))
+                       if f"{c['crown']}|{c['brim']}" in ok]
         _BRIM = (data, combos)
     data, combos = _BRIM
     c = rng.choice(combos)
@@ -140,16 +149,31 @@ def roll_combined(rng):
             'pixels': [p for row in px for p in row], 'colour': {'mode': 'combine', **c}, 'addon': None, 'palette': None}
 
 _DECS = None
+_VNAME = None
+_PATS = None
 
-def decorate(px, frame, rng):
-    """Try approved perched decorations (random order) until one seats in all 4 views."""
+def names_of(c):
+    """Author names of a construction plus vanilla names of its sources (band evidence)."""
+    global _VNAME
+    if _VNAME is None:
+        _VNAME = {r['id']: r.get('vanillaName') for r in json.load(open(os.path.join(HERE, 'data', 'hats.json')))}
+    return list(c.get('names', [])) + [_VNAME.get(w['source']) for w in c.get('colourways', [])]
+
+def decorate(px, frame, rng, names=()):
+    """Try approved decorations (random order) until one seats in all 4 views: perched
+    parts on any hat; bands only on hats named as brimmed and not already banded."""
     global _DECS
-    if _DECS is None: _DECS = [d for d in load_approved() if d['kind'] == 'perched']
+    if _DECS is None: _DECS = [d for d in load_approved() if d['kind'] in ('perched', 'band')]
     w, h = frame
     masks = {v: [[1 if px[y][vi * w + x][3] else 0 for x in range(w)] for y in range(h)] for vi, v in enumerate(VIEWS)}
+    banded = band.eligible(names)
     for d in rng.sample(_DECS, len(_DECS)):
         if d['frame'][0] != w: continue
-        res = place(d, masks)
+        if d['kind'] == 'band':
+            if not banded: continue
+            res = band.place(d, masks)
+        else:
+            res = place(d, masks)
         if res:
             pad = max([0] + [-y for v in VIEWS for _, y, _ in res[v]])
             if pad:                                   # part rises above the frame: grow upward
@@ -177,6 +201,14 @@ def roll(lib, rng):
     pools = {'common': [c for c in mine if not c['patternOf']],
              'uncommon': [c for c in mine if c['patternOf']],
              'rare': [c for c in mine if c['id'] in addons] or [c for c in mine if sum(g >= 0 for g in c['grid']) >= 160]}
+    if tier == 'uncommon' and not pools['uncommon']:
+        # no pattern variant of the author's own: transfer an approved pattern (plaid) instead
+        ok = [c for c in pools['common'] if patterns.eligible(c)]
+        if ok:
+            c = rng.choice(ok)
+            pal, how = colourise(c, rng)
+            return {'tier': 'uncommon', 'author': author, 'construction': c, 'palette': pal,
+                    'colour': how, 'addon': None, 'pattern': True}
     for t in [tier, 'uncommon', 'common']:
         if pools[t]: tier = t if t != 'uncommon' or tier != 'rare' else t; break
     c = rng.choice(pools[tier] or mine)
@@ -204,9 +236,14 @@ def main():
         else:
             tint = r['colour'].get('tint') if c['colourable'] else None
             px = render(c, r['palette'], r['addon'], tint)
+        pat = None
+        if r.get('pattern'):
+            global _PATS
+            if _PATS is None: _PATS = patterns.load_approved(lib)
+            p = rng.choice(_PATS); px = patterns.apply(p, px, c['frame'], patterns.material_mask(c)); pat = p['label']
         deco = None
         if r['tier'] == 'rare' and not r['addon']:
-            deco = decorate(px, c['frame'], rng)
+            deco = decorate(px, c['frame'], rng, names_of(c))
             tries = 0
             while not deco and tries < 12:      # other hats by the same author until one seats a decoration
                 tries += 1
@@ -216,14 +253,14 @@ def main():
                 c = rng.choice(pool); pal, how = colourise(c, rng)
                 tint = how.get('tint') if c['colourable'] else None
                 px = render(c, pal, None, tint)
-                deco = decorate(px, c['frame'], rng)
+                deco = decorate(px, c['frame'], rng, names_of(c))
                 if deco: r['construction'], r['colour'] = c, how
             if not deco: r['tier'] = 'common'
         name = f"PS{seed}_{i:02d}_{r['tier']}"
         write_hat(pack, name, c, px)
         previews.append((name, (c['frame'][0], len(px)), px))
         log.append({'name': name, 'tier': r['tier'], 'author': r['author'], 'construction': c['id'],
-                    'sourceNames': c['names'][:3], 'colour': r['colour'], 'addon': r['addon'] and r['addon']['id'], 'decoration': deco})
+                    'sourceNames': c['names'][:3], 'colour': r['colour'], 'addon': r['addon'] and r['addon']['id'], 'decoration': deco, 'pattern': pat})
     json.dump(log, open(os.path.join(out, f'roll_log_s{seed}.json'), 'w'), indent=1)
     # preview: 4 views per hat at x4, 4 hats per row
     S, cols, bg = 4, 4, (118, 128, 112, 255)

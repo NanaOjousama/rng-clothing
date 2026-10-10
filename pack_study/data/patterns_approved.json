@@ -1,0 +1,14 @@
+{
+ "_note": "Reviewed by eye on out/patterns.png (2026-10-09). Only a pattern DRAWN ONTO an author's own solid hat counts; inherent textures (weave, knit) are part of the construction, not a transferable pattern.",
+ "approved": {
+  "CuteBeret-35115|Cute_beret_6|Cute_beret_12": {"label": "plaid", "colourway": "navy"},
+  "CuteBeret-35115|Cute_beret_5|Cute_beret_11": {"label": "plaid", "colourway": "light blue"}
+ },
+ "rejected": {
+  "orangeblossom Old Straw Hat -> w/ Ribbon (x2)": "straw weave is inherent to both; the difference is the ribbon (already a band)",
+  "plurffle Cap 2 -> Cap 1": "colour block (front panel), not a repeating pattern",
+  "Kookoroo_6 -> Kookoroo_4, Jedone Cat_Headphones, Jedone Cap&Headphones_02": "recolour of a textured hat; periodicity is the texture",
+  "JIAOJIAO knit hats (x3)": "knit texture inherent; recolours",
+  "ConcernedApe hats_38->73 (cowboy), hats_71->107 (pans), hats_99->119 (bows)": "reshades / recolours"
+ }
+}
