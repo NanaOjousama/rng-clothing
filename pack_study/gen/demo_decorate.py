@@ -27,14 +27,15 @@ def views_of(c):
 def main():
     decs = [d for d in load_approved() if d['kind'] == 'perched']
     tg = [find(*t) for t in TARGETS]
-    S = 4; fw = 20 * S; cell = 4 * (fw + 3) + 10; rowh = 22 * S + 6
+    S = 4; fw = 20 * S; cell = 4 * (fw + 3) + 10; TOP = 6; rowh = (22 + TOP) * S + 6
     W = (1 + len(tg)) * cell; H = len(decs) * rowh
     bg = (118, 128, 112, 255); canvas = [[bg] * W for _ in range(H)]
     def put(px_by_view, ox, oy, frame):
         w, h = frame
         for vi, v in enumerate(VIEWS):
             for (x, y), p in px_by_view[v].items():
-                if not p[3] or y >= 22: continue
+                if not p[3] or y >= 22 or y < -TOP: continue
+                y += TOP
                 a = p[3] / 255
                 for yy in range(S):
                     row = canvas[oy + y * S + yy]
@@ -46,17 +47,21 @@ def main():
     for r, d in enumerate(decs):
         src = {v: {(x, y): p for x, y, p in d['views'][v]['pixels']} for v in VIEWS}
         put(src, 2, r * rowh + 3, d['frame'])
-        ok = 0
+        ok, rs, fl = 0, [], []
         for k, t in enumerate(tg):
             px, masks = views_of(t)
-            res = place(d, masks)
+            info = {}
+            res = place(d, masks, info)
             if res is None: continue
             ok += 1
+            if info['reseated']: rs.append(f"{t['names'][0]}:{'/'.join(info['reseated'])}")
+            if info['reseatFlags']: fl.append(f"{t['names'][0]}:{info['reseatFlags']}")
             comp = {v: dict(px[v]) for v in VIEWS}
             for v in VIEWS:
                 for x, y, p in res[v]: comp[v][(x, y)] = p
             put(comp, (k + 1) * cell + 2, r * rowh + 3, t['frame'])
-        report.append(f"{d['label']}: placed on {ok}/{len(tg)}")
+        report.append(f"{d['label']}: placed on {ok}/{len(tg)}" + (f" | reseated by rule: {rs}" if rs else '')
+                      + (f" | disagrees with rule: {fl}" if fl else ''))
     png.write(os.path.join(HERE, 'out', 'decorate_matrix.png'), W, H, canvas)
     print('\n'.join(report)); print('cols:', ', '.join(f'{a[:8]}:{n}' for a, n in TARGETS))
 

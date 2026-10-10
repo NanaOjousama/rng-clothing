@@ -1,0 +1,643 @@
+{
+ "recredited": [
+  [
+   "seyph__hats_14__692441",
+   "Seyph",
+   14,
+   "Butterfly Bow"
+  ],
+  [
+   "seyph__hats_36__f1ebad",
+   "Seyph",
+   36,
+   "Panda Hat"
+  ],
+  [
+   "seyph__hats_37__0c1e93",
+   "Seyph",
+   37,
+   "Blue Cowboy Hat"
+  ],
+  [
+   "seyph__hats_38__041930",
+   "Seyph",
+   38,
+   "Red Cowboy Hat"
+  ],
+  [
+   "seyph__hats_39__f0cac3",
+   "Seyph",
+   39,
+   "Cone Hat"
+  ],
+  [
+   "seyph__hats_75__b5deae",
+   "Seyph",
+   75,
+   "Golden Helmet"
+  ],
+  [
+   "seyph__hats_76__6051de",
+   "Seyph",
+   76,
+   "Deluxe Pirate Hat"
+  ],
+  [
+   "seyph__hats_77__61eee2",
+   "Seyph",
+   77,
+   "Pink Bow"
+  ],
+  [
+   "seyph__hats_78__4a575e",
+   "Seyph",
+   78,
+   "Frog Hat"
+  ],
+  [
+   "seyph__hats_79__83f174",
+   "Seyph",
+   79,
+   "Small Cap"
+  ],
+  [
+   "seyph__hats_80__9fcca5",
+   "Seyph",
+   80,
+   "Bluebird Mask"
+  ],
+  [
+   "seyph__hats_81__025cc4",
+   "Seyph",
+   81,
+   "Deluxe Cowboy Hat"
+  ],
+  [
+   "seyph__hats_82__53436b",
+   "Seyph",
+   82,
+   "Mr. Qi's Hat"
+  ],
+  [
+   "seyph__hats_83__e66e01",
+   "Seyph",
+   83,
+   "Dark Cowboy Hat"
+  ],
+  [
+   "seyph__hats_84__696445",
+   "Seyph",
+   84,
+   "Radioactive Goggles"
+  ],
+  [
+   "seyph__hats_85__446a8c",
+   "Seyph",
+   85,
+   "Swashbuckler Hat"
+  ],
+  [
+   "seyph__hats_86__e920d1",
+   "Seyph",
+   86,
+   "Qi Mask"
+  ],
+  [
+   "seyph__hats_87__ff3756",
+   "Seyph",
+   87,
+   "Star Helmet"
+  ],
+  [
+   "seyph__hats_88__1b51fd",
+   "Seyph",
+   88,
+   "Sunglasses"
+  ],
+  [
+   "seyph__hats_89__662daf",
+   "Seyph",
+   89,
+   "Goggles"
+  ],
+  [
+   "seyph__hats_90__6649c7",
+   "Seyph",
+   90,
+   "Forager's Hat"
+  ],
+  [
+   "seyph__hats_91__15f548",
+   "Seyph",
+   91,
+   "Tiger Hat"
+  ],
+  [
+   "seyph__hats_92__916be6",
+   "Seyph",
+   92,
+   "???"
+  ],
+  [
+   "seyph__hats_93__5a7fa8",
+   "Seyph",
+   93,
+   "Warrior Helmet"
+  ]
+ ],
+ "alreadyVanilla": [
+  [
+   "concernedape__hats_40__e188a1",
+   40,
+   "Living Hat"
+  ],
+  [
+   "concernedape__hats_41__b55850",
+   41,
+   "Emily's Magic Hat"
+  ],
+  [
+   "concernedape__hats_42__e48fc6",
+   42,
+   "Mushroom Cap"
+  ],
+  [
+   "concernedape__hats_43__fbd562",
+   43,
+   "Dinosaur Hat"
+  ],
+  [
+   "concernedape__hats_44__8e25a0",
+   44,
+   "Totem Mask"
+  ],
+  [
+   "concernedape__hats_45__2566e6",
+   45,
+   "Logo Cap"
+  ],
+  [
+   "concernedape__hats_46__d1745d",
+   46,
+   "Wearable Dwarf Helm"
+  ],
+  [
+   "concernedape__hats_47__f4fc9d",
+   47,
+   "Fashion Hat"
+  ],
+  [
+   "concernedape__hats_48__859028",
+   48,
+   "Pumpkin Mask"
+  ],
+  [
+   "concernedape__hats_49__f34088",
+   49,
+   "Hair Bone"
+  ],
+  [
+   "concernedape__hats_50__75b03d",
+   50,
+   "Knight's Helmet"
+  ],
+  [
+   "concernedape__hats_51__f8800a",
+   51,
+   "Squire's Helmet"
+  ],
+  [
+   "concernedape__hats_52__f2f01e",
+   52,
+   "Spotted Headscarf"
+  ],
+  [
+   "concernedape__hats_53__a25ade",
+   53,
+   "Beanie"
+  ],
+  [
+   "concernedape__hats_54__3822b0",
+   54,
+   "Floppy Beanie"
+  ],
+  [
+   "concernedape__hats_55__9fa1e5",
+   55,
+   "Fishing Hat"
+  ],
+  [
+   "concernedape__hats_56__b0ba55",
+   56,
+   "Blobfish Mask"
+  ],
+  [
+   "concernedape__hats_57__0af754",
+   57,
+   "Party Hat"
+  ],
+  [
+   "concernedape__hats_58__c9400d",
+   58,
+   "Party Hat"
+  ],
+  [
+   "concernedape__hats_59__729835",
+   59,
+   "Party Hat"
+  ],
+  [
+   "concernedape__hats_60__09c43a",
+   60,
+   "Arcane Hat"
+  ],
+  [
+   "concernedape__hats_61__745485",
+   61,
+   "Chef Hat"
+  ],
+  [
+   "concernedape__hats_62__361e51",
+   62,
+   "Pirate Hat"
+  ],
+  [
+   "concernedape__hats_63__ff510b",
+   63,
+   "Flat Topped Hat"
+  ],
+  [
+   "concernedape__hats_64__e633ca",
+   64,
+   "Elegant Turban"
+  ],
+  [
+   "concernedape__hats_65__cd9944",
+   65,
+   "White Turban"
+  ],
+  [
+   "concernedape__hats_66__5f354b",
+   66,
+   "Garbage Hat"
+  ],
+  [
+   "concernedape__hats_67__9d522d",
+   67,
+   "Golden Mask"
+  ],
+  [
+   "concernedape__hats_68__c42edb",
+   68,
+   "Propeller Hat"
+  ],
+  [
+   "concernedape__hats_69__91a70b",
+   69,
+   "Bridal Veil"
+  ],
+  [
+   "concernedape__hats_70__c6b7b4",
+   70,
+   "Witch Hat"
+  ],
+  [
+   "concernedape__hats_71__c309fd",
+   71,
+   "Copper Pan"
+  ],
+  [
+   "concernedape__hats_72__8bff8e",
+   72,
+   "Green Turban"
+  ],
+  [
+   "concernedape__hats_73__725552",
+   73,
+   "Magic Cowboy Hat"
+  ],
+  [
+   "concernedape__hats_74__85fd36",
+   74,
+   "Magic Turban"
+  ]
+ ],
+ "presentMoved": [],
+ "added": [
+  [
+   "concernedape__hats_0__vanilla",
+   0,
+   "Cowboy Hat"
+  ],
+  [
+   "concernedape__hats_1__vanilla",
+   1,
+   "Bowler Hat"
+  ],
+  [
+   "concernedape__hats_2__vanilla",
+   2,
+   "Top Hat"
+  ],
+  [
+   "concernedape__hats_3__vanilla",
+   3,
+   "Sombrero"
+  ],
+  [
+   "concernedape__hats_4__vanilla",
+   4,
+   "Straw Hat"
+  ],
+  [
+   "concernedape__hats_5__vanilla",
+   5,
+   "Official Cap"
+  ],
+  [
+   "concernedape__hats_6__vanilla",
+   6,
+   "Blue Bonnet"
+  ],
+  [
+   "concernedape__hats_7__vanilla",
+   7,
+   "Plum Chapeau"
+  ],
+  [
+   "concernedape__hats_8__vanilla",
+   8,
+   "Skeleton Mask"
+  ],
+  [
+   "concernedape__hats_9__vanilla",
+   9,
+   "Goblin Mask"
+  ],
+  [
+   "concernedape__hats_10__vanilla",
+   10,
+   "Chicken Mask"
+  ],
+  [
+   "concernedape__hats_11__vanilla",
+   11,
+   "Earmuffs"
+  ],
+  [
+   "concernedape__hats_12__vanilla",
+   12,
+   "Delicate Bow"
+  ],
+  [
+   "concernedape__hats_13__vanilla",
+   13,
+   "Tropiclip"
+  ],
+  [
+   "concernedape__hats_15__vanilla",
+   15,
+   "Hunter's Cap"
+  ],
+  [
+   "concernedape__hats_16__vanilla",
+   16,
+   "Trucker Hat"
+  ],
+  [
+   "concernedape__hats_17__vanilla",
+   17,
+   "Sailor's Cap"
+  ],
+  [
+   "concernedape__hats_18__vanilla",
+   18,
+   "Good Ol' Cap"
+  ],
+  [
+   "concernedape__hats_19__vanilla",
+   19,
+   "Fedora"
+  ],
+  [
+   "concernedape__hats_20__vanilla",
+   20,
+   "Cool Cap"
+  ],
+  [
+   "concernedape__hats_21__vanilla",
+   21,
+   "Lucky Bow"
+  ],
+  [
+   "concernedape__hats_22__vanilla",
+   22,
+   "Polka Bow"
+  ],
+  [
+   "concernedape__hats_23__vanilla",
+   23,
+   "Gnome's Cap"
+  ],
+  [
+   "concernedape__hats_24__vanilla",
+   24,
+   "Eye Patch"
+  ],
+  [
+   "concernedape__hats_25__vanilla",
+   25,
+   "Santa Hat"
+  ],
+  [
+   "concernedape__hats_26__vanilla",
+   26,
+   "Tiara"
+  ],
+  [
+   "concernedape__hats_27__vanilla",
+   27,
+   "Hard Hat"
+  ],
+  [
+   "concernedape__hats_28__vanilla",
+   28,
+   "Sou'wester"
+  ],
+  [
+   "concernedape__hats_29__vanilla",
+   29,
+   "Daisy"
+  ],
+  [
+   "concernedape__hats_30__vanilla",
+   30,
+   "Watermelon Band"
+  ],
+  [
+   "concernedape__hats_31__vanilla",
+   31,
+   "Mouse Ears"
+  ],
+  [
+   "concernedape__hats_32__vanilla",
+   32,
+   "Cat Ears"
+  ],
+  [
+   "concernedape__hats_33__vanilla",
+   33,
+   "Cowgal Hat"
+  ],
+  [
+   "concernedape__hats_34__vanilla",
+   34,
+   "Cowpoke Hat"
+  ],
+  [
+   "concernedape__hats_35__vanilla",
+   35,
+   "Archer's Cap"
+  ],
+  [
+   "concernedape__hats_94__vanilla",
+   94,
+   "Abigail's Bow"
+  ],
+  [
+   "concernedape__hats_95__vanilla",
+   95,
+   "Tricorn Hat"
+  ],
+  [
+   "concernedape__hats_96__vanilla",
+   96,
+   "Joja Cap"
+  ],
+  [
+   "concernedape__hats_97__vanilla",
+   97,
+   "Laurel Wreath Crown"
+  ],
+  [
+   "concernedape__hats_98__vanilla",
+   98,
+   "Gil's Hat"
+  ],
+  [
+   "concernedape__hats_99__vanilla",
+   99,
+   "Blue Bow"
+  ],
+  [
+   "concernedape__hats_100__vanilla",
+   100,
+   "Dark Velvet Bow"
+  ],
+  [
+   "concernedape__hats_101__vanilla",
+   101,
+   "Mummy Mask"
+  ],
+  [
+   "concernedape__hats_102__vanilla",
+   102,
+   "Bucket Hat"
+  ],
+  [
+   "concernedape__hats_103__vanilla",
+   103,
+   "Squid Hat"
+  ],
+  [
+   "concernedape__hats_104__vanilla",
+   104,
+   "Sports Cap"
+  ],
+  [
+   "concernedape__hats_105__vanilla",
+   105,
+   "Red Fez"
+  ],
+  [
+   "concernedape__hats_106__vanilla",
+   106,
+   "Raccoon Hat"
+  ],
+  [
+   "concernedape__hats_107__vanilla",
+   107,
+   "Steel Pan"
+  ],
+  [
+   "concernedape__hats_108__vanilla",
+   108,
+   "Gold Pan"
+  ],
+  [
+   "concernedape__hats_109__vanilla",
+   109,
+   "Iridium Pan"
+  ],
+  [
+   "concernedape__hats_110__vanilla",
+   110,
+   "Mystery Hat"
+  ],
+  [
+   "concernedape__hats_111__vanilla",
+   111,
+   "Dark Ballcap"
+  ],
+  [
+   "concernedape__hats_112__vanilla",
+   112,
+   "Leprechaun Hat"
+  ],
+  [
+   "concernedape__hats_113__vanilla",
+   113,
+   "Junimo Hat"
+  ],
+  [
+   "concernedape__hats_114__vanilla",
+   114,
+   "Paper Hat"
+  ],
+  [
+   "concernedape__hats_115__vanilla",
+   115,
+   "Pageboy Cap"
+  ],
+  [
+   "concernedape__hats_116__vanilla",
+   116,
+   "Jester Hat"
+  ],
+  [
+   "concernedape__hats_117__vanilla",
+   117,
+   "Blue Ribbon"
+  ],
+  [
+   "concernedape__hats_118__vanilla",
+   118,
+   "Governor's Hat"
+  ],
+  [
+   "concernedape__hats_119__vanilla",
+   119,
+   "White Bow"
+  ],
+  [
+   "concernedape__hats_120__vanilla",
+   120,
+   "Space Helmet"
+  ],
+  [
+   "concernedape__hats_121__vanilla",
+   121,
+   "Infinity Crown"
+  ]
+ ]
+}

@@ -16,6 +16,14 @@ pattern / add-on / restyle tiers. Not yet proven: worn in-game captures; clothin
 not studied yet. Next test: `python3 tools/qc.py worn` on a generated pack after a
 game restart (new pack folder needs a restart, not fs_reload).
 
+Vanilla Hats Extended (Nexus 26851) studied in `pack_study/tools/vhe_study.py`
+(see README section): real vanilla now read from `Content (unpacked)`; ~30 distinct new
+items, 16 author-split parts, per-view move offsets, 89 hats of named colour-mask roles.
+Then: corpus recredited (24 Seyph -> ConcernedApe) + 63 vanilla backfilled (122 total);
+measured reseat rule wired into decoration placement; 13 VHE parts approved; parts may
+rise 6 rows above the frame (HeadPosition.Y grows) -- confirmed in FS source, NOT yet in a
+worn capture.  Next test: worn QC of a generated pack with a padded decoration.
+
 ## Git-backed recovery anchors
 
 - Recovery authority + continuity safeguards:

@@ -15274,7 +15274,7 @@
   ]
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_14",
   "format": "sheet",
@@ -15292,7 +15292,14 @@
   ],
   "missing": [
    "left"
-  ]
+  ],
+  "vanillaIndex": 14,
+  "vanillaName": "Butterfly Bow",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 14"
+  }
  },
  {
   "author": "Seyph",
@@ -15697,7 +15704,7 @@
   "missing": []
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_36",
   "format": "sheet",
@@ -15713,10 +15720,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 36,
+  "vanillaName": "Panda Hat",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 36"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_37",
   "format": "sheet",
@@ -15732,10 +15746,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 37,
+  "vanillaName": "Blue Cowboy Hat",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 37"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_38",
   "format": "sheet",
@@ -15751,10 +15772,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 38,
+  "vanillaName": "Red Cowboy Hat",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 38"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_39",
   "format": "sheet",
@@ -15770,7 +15798,14 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 39,
+  "vanillaName": "Cone Hat",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 39"
+  }
  },
  {
   "author": "ConcernedApe",
@@ -15789,7 +15824,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 40,
+  "vanillaName": "Living Hat"
  },
  {
   "author": "ConcernedApe",
@@ -15808,7 +15845,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 41,
+  "vanillaName": "Emily's Magic Hat"
  },
  {
   "author": "ConcernedApe",
@@ -15827,7 +15866,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 42,
+  "vanillaName": "Mushroom Cap"
  },
  {
   "author": "ConcernedApe",
@@ -15846,7 +15887,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 43,
+  "vanillaName": "Dinosaur Hat"
  },
  {
   "author": "ConcernedApe",
@@ -15865,7 +15908,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 44,
+  "vanillaName": "Totem Mask"
  },
  {
   "author": "ConcernedApe",
@@ -15884,7 +15929,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 45,
+  "vanillaName": "Logo Cap"
  },
  {
   "author": "ConcernedApe",
@@ -15903,7 +15950,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 46,
+  "vanillaName": "Wearable Dwarf Helm"
  },
  {
   "author": "ConcernedApe",
@@ -15922,7 +15971,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 47,
+  "vanillaName": "Fashion Hat"
  },
  {
   "author": "ConcernedApe",
@@ -15941,7 +15992,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 48,
+  "vanillaName": "Pumpkin Mask"
  },
  {
   "author": "ConcernedApe",
@@ -15960,7 +16013,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 49,
+  "vanillaName": "Hair Bone"
  },
  {
   "author": "ConcernedApe",
@@ -15979,7 +16034,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 50,
+  "vanillaName": "Knight's Helmet"
  },
  {
   "author": "ConcernedApe",
@@ -15998,7 +16055,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 51,
+  "vanillaName": "Squire's Helmet"
  },
  {
   "author": "ConcernedApe",
@@ -16017,7 +16076,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 52,
+  "vanillaName": "Spotted Headscarf"
  },
  {
   "author": "ConcernedApe",
@@ -16036,7 +16097,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 53,
+  "vanillaName": "Beanie"
  },
  {
   "author": "ConcernedApe",
@@ -16055,7 +16118,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 54,
+  "vanillaName": "Floppy Beanie"
  },
  {
   "author": "ConcernedApe",
@@ -16074,7 +16139,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 55,
+  "vanillaName": "Fishing Hat"
  },
  {
   "author": "ConcernedApe",
@@ -16093,7 +16160,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 56,
+  "vanillaName": "Blobfish Mask"
  },
  {
   "author": "ConcernedApe",
@@ -16112,7 +16181,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 57,
+  "vanillaName": "Party Hat"
  },
  {
   "author": "ConcernedApe",
@@ -16131,7 +16202,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 58,
+  "vanillaName": "Party Hat"
  },
  {
   "author": "ConcernedApe",
@@ -16150,7 +16223,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 59,
+  "vanillaName": "Party Hat"
  },
  {
   "author": "ConcernedApe",
@@ -16169,7 +16244,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 60,
+  "vanillaName": "Arcane Hat"
  },
  {
   "author": "ConcernedApe",
@@ -16188,7 +16265,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 61,
+  "vanillaName": "Chef Hat"
  },
  {
   "author": "ConcernedApe",
@@ -16207,7 +16286,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 62,
+  "vanillaName": "Pirate Hat"
  },
  {
   "author": "ConcernedApe",
@@ -16226,7 +16307,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 63,
+  "vanillaName": "Flat Topped Hat"
  },
  {
   "author": "ConcernedApe",
@@ -16245,7 +16328,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 64,
+  "vanillaName": "Elegant Turban"
  },
  {
   "author": "ConcernedApe",
@@ -16264,7 +16349,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 65,
+  "vanillaName": "White Turban"
  },
  {
   "author": "ConcernedApe",
@@ -16283,7 +16370,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 66,
+  "vanillaName": "Garbage Hat"
  },
  {
   "author": "ConcernedApe",
@@ -16302,7 +16391,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 67,
+  "vanillaName": "Golden Mask"
  },
  {
   "author": "ConcernedApe",
@@ -16321,7 +16412,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 68,
+  "vanillaName": "Propeller Hat"
  },
  {
   "author": "ConcernedApe",
@@ -16340,7 +16433,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 69,
+  "vanillaName": "Bridal Veil"
  },
  {
   "author": "ConcernedApe",
@@ -16359,7 +16454,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 70,
+  "vanillaName": "Witch Hat"
  },
  {
   "author": "ConcernedApe",
@@ -16378,7 +16475,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 71,
+  "vanillaName": "Copper Pan"
  },
  {
   "author": "ConcernedApe",
@@ -16397,7 +16496,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 72,
+  "vanillaName": "Green Turban"
  },
  {
   "author": "ConcernedApe",
@@ -16416,7 +16517,9 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 73,
+  "vanillaName": "Magic Cowboy Hat"
  },
  {
   "author": "ConcernedApe",
@@ -16435,10 +16538,12 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 74,
+  "vanillaName": "Magic Turban"
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_75",
   "format": "sheet",
@@ -16454,10 +16559,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 75,
+  "vanillaName": "Golden Helmet",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 75"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_76",
   "format": "sheet",
@@ -16473,10 +16585,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 76,
+  "vanillaName": "Deluxe Pirate Hat",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 76"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_77",
   "format": "sheet",
@@ -16492,10 +16611,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 77,
+  "vanillaName": "Pink Bow",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 77"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_78",
   "format": "sheet",
@@ -16511,10 +16637,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 78,
+  "vanillaName": "Frog Hat",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 78"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_79",
   "format": "sheet",
@@ -16530,10 +16663,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 79,
+  "vanillaName": "Small Cap",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 79"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_80",
   "format": "sheet",
@@ -16549,10 +16689,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 80,
+  "vanillaName": "Bluebird Mask",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 80"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_81",
   "format": "sheet",
@@ -16568,10 +16715,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 81,
+  "vanillaName": "Deluxe Cowboy Hat",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 81"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_82",
   "format": "sheet",
@@ -16587,10 +16741,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 82,
+  "vanillaName": "Mr. Qi's Hat",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 82"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_83",
   "format": "sheet",
@@ -16606,10 +16767,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 83,
+  "vanillaName": "Dark Cowboy Hat",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 83"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_84",
   "format": "sheet",
@@ -16625,10 +16793,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 84,
+  "vanillaName": "Radioactive Goggles",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 84"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_85",
   "format": "sheet",
@@ -16644,10 +16819,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 85,
+  "vanillaName": "Swashbuckler Hat",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 85"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_86",
   "format": "sheet",
@@ -16663,10 +16845,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 86,
+  "vanillaName": "Qi Mask",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 86"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_87",
   "format": "sheet",
@@ -16682,10 +16871,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 87,
+  "vanillaName": "Star Helmet",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 87"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_88",
   "format": "sheet",
@@ -16703,10 +16899,17 @@
   ],
   "missing": [
    "back"
-  ]
+  ],
+  "vanillaIndex": 88,
+  "vanillaName": "Sunglasses",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 88"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_89",
   "format": "sheet",
@@ -16722,10 +16925,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 89,
+  "vanillaName": "Goggles",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 89"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_90",
   "format": "sheet",
@@ -16741,10 +16951,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 90,
+  "vanillaName": "Forager's Hat",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 90"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_91",
   "format": "sheet",
@@ -16760,10 +16977,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 91,
+  "vanillaName": "Tiger Hat",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 91"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_92",
   "format": "sheet",
@@ -16779,10 +17003,17 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 92,
+  "vanillaName": "???",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 92"
+  }
  },
  {
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "pack": "Kawaii Hats Revamp",
   "name": "hats_93",
   "format": "sheet",
@@ -16798,7 +17029,14 @@
    20,
    20
   ],
-  "missing": []
+  "missing": [],
+  "vanillaIndex": 93,
+  "vanillaName": "Warrior Helmet",
+  "foundIn": "Kawaii Hats Revamp",
+  "creditFix": {
+   "was": "Seyph",
+   "why": "pixel-identical to vanilla hats.png cell 93"
+  }
  },
  {
   "author": "Coii",
@@ -18022,5 +18260,1328 @@
    20
   ],
   "missing": []
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_0",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 0,
+  "id": "concernedape__hats_0__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 0,
+  "vanillaName": "Cowboy Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_1",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 1,
+  "id": "concernedape__hats_1__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 1,
+  "vanillaName": "Bowler Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_2",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 2,
+  "id": "concernedape__hats_2__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 2,
+  "vanillaName": "Top Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_3",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 3,
+  "id": "concernedape__hats_3__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 3,
+  "vanillaName": "Sombrero"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_4",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 4,
+  "id": "concernedape__hats_4__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 4,
+  "vanillaName": "Straw Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_5",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 5,
+  "id": "concernedape__hats_5__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 5,
+  "vanillaName": "Official Cap"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_6",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 6,
+  "id": "concernedape__hats_6__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 6,
+  "vanillaName": "Blue Bonnet"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_7",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 7,
+  "id": "concernedape__hats_7__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 7,
+  "vanillaName": "Plum Chapeau"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_8",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 8,
+  "id": "concernedape__hats_8__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 8,
+  "vanillaName": "Skeleton Mask"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_9",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 9,
+  "id": "concernedape__hats_9__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 9,
+  "vanillaName": "Goblin Mask"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_10",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 10,
+  "id": "concernedape__hats_10__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 10,
+  "vanillaName": "Chicken Mask"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_11",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 11,
+  "id": "concernedape__hats_11__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 11,
+  "vanillaName": "Earmuffs"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_12",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 12,
+  "id": "concernedape__hats_12__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 12,
+  "vanillaName": "Delicate Bow"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_13",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 13,
+  "id": "concernedape__hats_13__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 13,
+  "vanillaName": "Tropiclip"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_15",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 15,
+  "id": "concernedape__hats_15__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 15,
+  "vanillaName": "Hunter's Cap"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_16",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 16,
+  "id": "concernedape__hats_16__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 16,
+  "vanillaName": "Trucker Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_17",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 17,
+  "id": "concernedape__hats_17__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 17,
+  "vanillaName": "Sailor's Cap"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_18",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 18,
+  "id": "concernedape__hats_18__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 18,
+  "vanillaName": "Good Ol' Cap"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_19",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 19,
+  "id": "concernedape__hats_19__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 19,
+  "vanillaName": "Fedora"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_20",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 20,
+  "id": "concernedape__hats_20__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 20,
+  "vanillaName": "Cool Cap"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_21",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 21,
+  "id": "concernedape__hats_21__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 21,
+  "vanillaName": "Lucky Bow"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_22",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 22,
+  "id": "concernedape__hats_22__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 22,
+  "vanillaName": "Polka Bow"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_23",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 23,
+  "id": "concernedape__hats_23__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 23,
+  "vanillaName": "Gnome's Cap"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_24",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 24,
+  "id": "concernedape__hats_24__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 24,
+  "vanillaName": "Eye Patch"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_25",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 25,
+  "id": "concernedape__hats_25__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 25,
+  "vanillaName": "Santa Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_26",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 26,
+  "id": "concernedape__hats_26__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 26,
+  "vanillaName": "Tiara"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_27",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 27,
+  "id": "concernedape__hats_27__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 27,
+  "vanillaName": "Hard Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_28",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 28,
+  "id": "concernedape__hats_28__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 28,
+  "vanillaName": "Sou'wester"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_29",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 29,
+  "id": "concernedape__hats_29__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 29,
+  "vanillaName": "Daisy"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_30",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 30,
+  "id": "concernedape__hats_30__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 30,
+  "vanillaName": "Watermelon Band"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_31",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 31,
+  "id": "concernedape__hats_31__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 31,
+  "vanillaName": "Mouse Ears"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_32",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 32,
+  "id": "concernedape__hats_32__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 32,
+  "vanillaName": "Cat Ears"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_33",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 33,
+  "id": "concernedape__hats_33__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 33,
+  "vanillaName": "Cowgal Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_34",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 34,
+  "id": "concernedape__hats_34__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 34,
+  "vanillaName": "Cowpoke Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_35",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 35,
+  "id": "concernedape__hats_35__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 35,
+  "vanillaName": "Archer's Cap"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_94",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 94,
+  "id": "concernedape__hats_94__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 94,
+  "vanillaName": "Abigail's Bow"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_95",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 95,
+  "id": "concernedape__hats_95__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 95,
+  "vanillaName": "Tricorn Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_96",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 96,
+  "id": "concernedape__hats_96__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 96,
+  "vanillaName": "Joja Cap"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_97",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 97,
+  "id": "concernedape__hats_97__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 97,
+  "vanillaName": "Laurel Wreath Crown"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_98",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 98,
+  "id": "concernedape__hats_98__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 98,
+  "vanillaName": "Gil's Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_99",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 99,
+  "id": "concernedape__hats_99__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 99,
+  "vanillaName": "Blue Bow"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_100",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 100,
+  "id": "concernedape__hats_100__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 100,
+  "vanillaName": "Dark Velvet Bow"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_101",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 101,
+  "id": "concernedape__hats_101__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 101,
+  "vanillaName": "Mummy Mask"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_102",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 102,
+  "id": "concernedape__hats_102__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 102,
+  "vanillaName": "Bucket Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_103",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 103,
+  "id": "concernedape__hats_103__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 103,
+  "vanillaName": "Squid Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_104",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 104,
+  "id": "concernedape__hats_104__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 104,
+  "vanillaName": "Sports Cap"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_105",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 105,
+  "id": "concernedape__hats_105__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 105,
+  "vanillaName": "Red Fez"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_106",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 106,
+  "id": "concernedape__hats_106__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 106,
+  "vanillaName": "Raccoon Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_107",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 107,
+  "id": "concernedape__hats_107__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 107,
+  "vanillaName": "Steel Pan"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_108",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 108,
+  "id": "concernedape__hats_108__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 108,
+  "vanillaName": "Gold Pan"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_109",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 109,
+  "id": "concernedape__hats_109__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 109,
+  "vanillaName": "Iridium Pan"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_110",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 110,
+  "id": "concernedape__hats_110__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 110,
+  "vanillaName": "Mystery Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_111",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 111,
+  "id": "concernedape__hats_111__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 111,
+  "vanillaName": "Dark Ballcap"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_112",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 112,
+  "id": "concernedape__hats_112__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 112,
+  "vanillaName": "Leprechaun Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_113",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 113,
+  "id": "concernedape__hats_113__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 113,
+  "vanillaName": "Junimo Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_114",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 114,
+  "id": "concernedape__hats_114__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 114,
+  "vanillaName": "Paper Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_115",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 115,
+  "id": "concernedape__hats_115__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 115,
+  "vanillaName": "Pageboy Cap"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_116",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 116,
+  "id": "concernedape__hats_116__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 116,
+  "vanillaName": "Jester Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_117",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 117,
+  "id": "concernedape__hats_117__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 117,
+  "vanillaName": "Blue Ribbon"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_118",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 118,
+  "id": "concernedape__hats_118__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 118,
+  "vanillaName": "Governor's Hat"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_119",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 119,
+  "id": "concernedape__hats_119__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 119,
+  "vanillaName": "White Bow"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_120",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 120,
+  "id": "concernedape__hats_120__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 120,
+  "vanillaName": "Space Helmet"
+ },
+ {
+  "author": "ConcernedApe",
+  "pack": "vanilla (Content unpacked hats.png)",
+  "name": "hats_121",
+  "format": "sheet",
+  "scale": [
+   4
+  ],
+  "colourable": false,
+  "flags": {},
+  "src": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Content (unpacked)/Characters/Farmer/hats.png",
+  "cell": 121,
+  "id": "concernedape__hats_121__vanilla",
+  "frame": [
+   20,
+   20
+  ],
+  "missing": [],
+  "vanillaIndex": 121,
+  "vanillaName": "Infinity Crown"
  }
 ]

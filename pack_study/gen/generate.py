@@ -82,7 +82,10 @@ def render(c, pal, addon=None, tint=None):
     return px
 
 def write_hat(pack_dir, name, c, px):
-    w, h = c['frame']
+    """px may be taller than the construction frame: rows added on top by decorate()
+    for a part rising above it.  HeadPosition.Y grows by the same amount (see
+    decorate.HEADROOM) so the hat itself does not move."""
+    w = c['frame'][0]; h = len(px); pad = h - c['frame'][1]
     d = os.path.join(pack_dir, 'Hats', name); os.makedirs(d, exist_ok=True)
     sheet = [px[y][v * w:(v + 1) * w] for v in range(4) for y in range(h)]   # stack views vertically
     png.write(os.path.join(d, 'hat.png'), w, 4 * h, sheet)
@@ -90,7 +93,7 @@ def write_hat(pack_dir, name, c, px):
     for v, view in enumerate(VIEWS):
         hp = c['head'].get(view, [0, 0])
         m = {'DisableGrayscale': True, 'StartingPosition': {'X': 0, 'Y': v * h},
-             'HeadPosition': {'X': int(hp[0]), 'Y': int(hp[1])}, 'HatSize': {'Width': w, 'Length': h}}
+             'HeadPosition': {'X': int(hp[0]), 'Y': int(hp[1]) + pad}, 'HatSize': {'Width': w, 'Length': h}}
         if c['flags'].get('hideHair'): m['HideHair'] = True
         model[view.capitalize() + 'Hat'] = m
     json.dump(model, open(os.path.join(d, 'hat.json'), 'w'), indent=2)
@@ -148,8 +151,11 @@ def decorate(px, frame, rng):
         if d['frame'][0] != w: continue
         res = place(d, masks)
         if res:
+            pad = max([0] + [-y for v in VIEWS for _, y, _ in res[v]])
+            if pad:                                   # part rises above the frame: grow upward
+                px[0:0] = [[(0, 0, 0, 0)] * (4 * w) for _ in range(pad)]
             for vi, v in enumerate(VIEWS):
-                for x, y, p in res[v]: px[y][vi * w + x] = tuple(p)
+                for x, y, p in res[v]: px[y + pad][vi * w + x] = tuple(p)
             return d['label']
     return None
 
@@ -215,13 +221,14 @@ def main():
             if not deco: r['tier'] = 'common'
         name = f"PS{seed}_{i:02d}_{r['tier']}"
         write_hat(pack, name, c, px)
-        previews.append((name, c['frame'], px))
+        previews.append((name, (c['frame'][0], len(px)), px))
         log.append({'name': name, 'tier': r['tier'], 'author': r['author'], 'construction': c['id'],
                     'sourceNames': c['names'][:3], 'colour': r['colour'], 'addon': r['addon'] and r['addon']['id'], 'decoration': deco})
     json.dump(log, open(os.path.join(out, f'roll_log_s{seed}.json'), 'w'), indent=1)
     # preview: 4 views per hat at x4, 4 hats per row
     S, cols, bg = 4, 4, (118, 128, 112, 255)
-    cw, ch = 4 * 24 * S + 16, 24 * S + 8
+    fw = max(24, max(w for _, (w, _), _ in previews))      # widest frame (some packs use 32x32)
+    cw, ch = 4 * fw * S + 16, max(24, max(h for _, (_, h), _ in previews)) * S + 8
     rows = (len(previews) + cols - 1) // cols
     W, H = cols * cw, rows * ch
     canvas = [[bg] * W for _ in range(H)]

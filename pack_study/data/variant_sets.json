@@ -728,7 +728,7 @@
  },
  {
   "type": "RECOLOUR",
-  "author": "Seyph",
+  "author": "ConcernedApe",
   "base": "seyph__hats_37__0c1e93",
   "recolours": [
    "seyph__hats_83__e66e01"
@@ -737,13 +737,13 @@
   "size": 2
  },
  {
-  "type": "RECOLOUR",
-  "author": "Seyph",
-  "base": "seyph__hats_84__696445",
-  "recolours": [
-   "seyph__hats_89__662daf"
+  "type": "RECOLOUR+PATTERN",
+  "author": "ConcernedApe",
+  "base": "seyph__hats_38__041930",
+  "recolours": [],
+  "patternVariants": [
+   "concernedape__hats_73__725552"
   ],
-  "patternVariants": [],
   "size": 2
  },
  {
@@ -760,10 +760,62 @@
  {
   "type": "RECOLOUR+PATTERN",
   "author": "ConcernedApe",
+  "base": "concernedape__hats_71__c309fd",
+  "recolours": [],
+  "patternVariants": [
+   "concernedape__hats_107__vanilla",
+   "concernedape__hats_108__vanilla",
+   "concernedape__hats_109__vanilla"
+  ],
+  "size": 4
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "ConcernedApe",
   "base": "concernedape__hats_72__8bff8e",
   "recolours": [],
   "patternVariants": [
    "concernedape__hats_74__85fd36"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR",
+  "author": "ConcernedApe",
+  "base": "seyph__hats_84__696445",
+  "recolours": [
+   "seyph__hats_89__662daf"
+  ],
+  "patternVariants": [],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "ConcernedApe",
+  "base": "concernedape__hats_2__vanilla",
+  "recolours": [],
+  "patternVariants": [
+   "concernedape__hats_110__vanilla"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "ConcernedApe",
+  "base": "concernedape__hats_99__vanilla",
+  "recolours": [],
+  "patternVariants": [
+   "concernedape__hats_119__vanilla"
+  ],
+  "size": 2
+ },
+ {
+  "type": "RECOLOUR+PATTERN",
+  "author": "ConcernedApe",
+  "base": "concernedape__hats_104__vanilla",
+  "recolours": [],
+  "patternVariants": [
+   "concernedape__hats_111__vanilla"
   ],
   "size": 2
  },

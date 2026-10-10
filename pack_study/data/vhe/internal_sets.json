@@ -1,0 +1,226 @@
+{
+ "hat": [
+  {
+   "base": "Blue Bow",
+   "members": [
+    "Blue Bow",
+    "Pink Bow",
+    "White Bow"
+   ],
+   "relations": {
+    "Pink Bow": "RESHADE",
+    "White Bow": "RESHADE"
+   }
+  },
+  {
+   "base": "Blue Cowboy Hat",
+   "members": [
+    "Blue Cowboy Hat",
+    "Dark Cowboy Hat"
+   ],
+   "relations": {
+    "Dark Cowboy Hat": "RECOLOUR"
+   }
+  },
+  {
+   "base": "Blue Party Hat",
+   "members": [
+    "Blue Party Hat",
+    "Green Party Hat",
+    "Red Party Hat"
+   ],
+   "relations": {
+    "Green Party Hat": "PARTIAL",
+    "Red Party Hat": "RESHADE"
+   }
+  },
+  {
+   "base": "Blue Party Hat Alt",
+   "members": [
+    "Blue Party Hat Alt",
+    "Green Party Hat Alt",
+    "Red Party Hat Alt"
+   ],
+   "relations": {
+    "Green Party Hat Alt": "PARTIAL",
+    "Red Party Hat Alt": "RESHADE"
+   }
+  },
+  {
+   "base": "Concerned Hat Alt 1",
+   "members": [
+    "Concerned Hat Alt 1",
+    "Concerned Hat Alt 2"
+   ],
+   "relations": {
+    "Concerned Hat Alt 2": "RESHADE"
+   }
+  },
+  {
+   "base": "Copper Pan Hat",
+   "members": [
+    "Copper Pan Hat",
+    "Gold Pan Hat",
+    "Iridium Pan Hat",
+    "Steel Pan Hat"
+   ],
+   "relations": {
+    "Gold Pan Hat": "RESHADE",
+    "Iridium Pan Hat": "RESHADE",
+    "Steel Pan Hat": "RESHADE"
+   }
+  },
+  {
+   "base": "Dark Ballcap",
+   "members": [
+    "Dark Ballcap",
+    "Sports Cap"
+   ],
+   "relations": {
+    "Sports Cap": "RESHADE"
+   }
+  },
+  {
+   "base": "Forager's Hat Alt",
+   "members": [
+    "Forager's Hat Alt",
+    "Straw Hat"
+   ],
+   "relations": {
+    "Straw Hat": "RESHADE"
+   }
+  },
+  {
+   "base": "Goggles",
+   "members": [
+    "Goggles",
+    "Radioactive Goggles"
+   ],
+   "relations": {
+    "Radioactive Goggles": "PARTIAL"
+   }
+  },
+  {
+   "base": "Goggles Alt 1",
+   "members": [
+    "Goggles Alt 1",
+    "Radioactive Goggles Alt 1"
+   ],
+   "relations": {
+    "Radioactive Goggles Alt 1": "PARTIAL"
+   }
+  },
+  {
+   "base": "Goggles Alt 2",
+   "members": [
+    "Goggles Alt 2",
+    "Radioactive Goggles Alt 2"
+   ],
+   "relations": {
+    "Radioactive Goggles Alt 2": "PARTIAL"
+   }
+  },
+  {
+   "base": "Green Turban",
+   "members": [
+    "Green Turban",
+    "Magic Turban"
+   ],
+   "relations": {
+    "Magic Turban": "RESHADE"
+   }
+  },
+  {
+   "base": "Magic Cowboy Hat",
+   "members": [
+    "Magic Cowboy Hat",
+    "Red Cowboy Hat"
+   ],
+   "relations": {
+    "Red Cowboy Hat": "RESHADE"
+   }
+  },
+  {
+   "base": "Spotted Headscarf",
+   "members": [
+    "Spotted Headscarf",
+    "Spotted Headscarf Alt"
+   ],
+   "relations": {
+    "Spotted Headscarf Alt": "RESHADE"
+   }
+  }
+ ],
+ "accessory": [
+  {
+   "base": "Ballcap",
+   "members": [
+    "Ballcap",
+    "Sports Cap"
+   ],
+   "relations": {
+    "Sports Cap": "RESHADE"
+   }
+  },
+  {
+   "base": "Concerned Hat Alt 1",
+   "members": [
+    "Concerned Hat Alt 1",
+    "Concerned Hat Alt 2"
+   ],
+   "relations": {
+    "Concerned Hat Alt 2": "RESHADE"
+   }
+  },
+  {
+   "base": "Cowboy Hat 3",
+   "members": [
+    "Cowboy Hat 3",
+    "Cowboy Hat 4"
+   ],
+   "relations": {
+    "Cowboy Hat 4": "RESHADE"
+   }
+  },
+  {
+   "base": "Forager's Hat Alt",
+   "members": [
+    "Forager's Hat Alt",
+    "Straw Hat"
+   ],
+   "relations": {
+    "Straw Hat": "RESHADE"
+   }
+  },
+  {
+   "base": "Mystery Hat",
+   "members": [
+    "Mystery Hat",
+    "Top Hat"
+   ],
+   "relations": {
+    "Top Hat": "RESHADE"
+   }
+  },
+  {
+   "base": "Spotted Headscarf",
+   "members": [
+    "Spotted Headscarf",
+    "Spotted Headscarf Alt"
+   ],
+   "relations": {
+    "Spotted Headscarf Alt": "RESHADE"
+   }
+  },
+  {
+   "base": "Turban 2",
+   "members": [
+    "Turban 2",
+    "Turban 3"
+   ],
+   "relations": {
+    "Turban 3": "RESHADE"
+   }
+  }
+ ]
+}

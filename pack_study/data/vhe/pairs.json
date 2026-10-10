@@ -1,0 +1,1428 @@
+[
+ {
+  "version": "hat",
+  "base": "Abigail's Bow",
+  "variant": "Abigail's Bow Alt",
+  "iou": 0.186,
+  "basePx": 70,
+  "px": 70,
+  "added": 48,
+  "removed": 48,
+  "cls": "NOVEL",
+  "baseKept": 0.818,
+  "moved": [
+   [
+    3,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    -3,
+    0
+   ]
+  ],
+  "unalignedIou": 0.0
+ },
+ {
+  "version": "hat",
+  "base": "Archer's Cap",
+  "variant": "Archer's Cap Alt",
+  "iou": 0.924,
+  "basePx": 293,
+  "px": 317,
+  "added": 24,
+  "removed": 0,
+  "cls": "ADDON",
+  "baseKept": 0.949
+ },
+ {
+  "version": "hat",
+  "base": "Blobfish Mask",
+  "variant": "Blobfish Mask Alt",
+  "iou": 0.804,
+  "basePx": 528,
+  "px": 468,
+  "added": 24,
+  "removed": 84,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.658,
+  "moved": [
+   [
+    0,
+    -3
+   ],
+   [
+    -2,
+    -3
+   ],
+   [
+    2,
+    -3
+   ],
+   [
+    0,
+    -1
+   ]
+  ],
+  "unalignedIou": 0.456
+ },
+ {
+  "version": "hat",
+  "base": "Blue Party Hat",
+  "variant": "Blue Party Hat Alt",
+  "iou": 0.83,
+  "basePx": 400,
+  "px": 332,
+  "added": 0,
+  "removed": 68,
+  "cls": "REMOVAL",
+  "baseKept": 0.852
+ },
+ {
+  "version": "hat",
+  "base": "Cat Ears",
+  "variant": "Cat Ears Alt 1",
+  "iou": 0.846,
+  "basePx": 182,
+  "px": 154,
+  "added": 0,
+  "removed": 28,
+  "cls": "REMOVAL",
+  "baseKept": 1.0
+ },
+ {
+  "version": "hat",
+  "base": "Cat Ears",
+  "variant": "Cat Ears Alt 2",
+  "iou": 0.154,
+  "basePx": 182,
+  "px": 28,
+  "added": 0,
+  "removed": 154,
+  "cls": "REMOVAL",
+  "baseKept": 1.0
+ },
+ {
+  "version": "hat",
+  "base": "Chicken Mask",
+  "variant": "Chicken Mask Alt",
+  "iou": 0.759,
+  "basePx": 358,
+  "px": 300,
+  "added": 16,
+  "removed": 74,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.782,
+  "moved": [
+   [
+    0,
+    -4
+   ],
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.394
+ },
+ {
+  "version": "hat",
+  "base": "Concerned Hat",
+  "variant": "Concerned Hat Alt 1",
+  "iou": 0.998,
+  "basePx": 962,
+  "px": 960,
+  "added": 0,
+  "removed": 2,
+  "cls": "TWEAK",
+  "baseKept": 0.918,
+  "tweakOf": "REMOVAL"
+ },
+ {
+  "version": "hat",
+  "base": "Concerned Hat",
+  "variant": "Concerned Hat Alt 2",
+  "iou": 0.998,
+  "basePx": 962,
+  "px": 960,
+  "added": 0,
+  "removed": 2,
+  "cls": "TWEAK",
+  "baseKept": 0.916,
+  "tweakOf": "REMOVAL"
+ },
+ {
+  "version": "hat",
+  "base": "Deluxe Pirate Hat",
+  "variant": "Deluxe Pirate Hat Alt",
+  "iou": 0.979,
+  "basePx": 612,
+  "px": 599,
+  "added": 0,
+  "removed": 13,
+  "cls": "REMOVAL",
+  "baseKept": 0.97
+ },
+ {
+  "version": "hat",
+  "base": "Eye Patch",
+  "variant": "Eye Patch Alt",
+  "iou": 0.52,
+  "basePx": 57,
+  "px": 57,
+  "added": 18,
+  "removed": 18,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.949,
+  "moved": [
+   [
+    3,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.295
+ },
+ {
+  "version": "hat",
+  "base": "Fashion Hat",
+  "variant": "Fashion Hat Alt",
+  "iou": 0.973,
+  "basePx": 473,
+  "px": 460,
+  "added": 0,
+  "removed": 13,
+  "cls": "REMOVAL",
+  "baseKept": 0.97
+ },
+ {
+  "version": "hat",
+  "base": "Forager's Hat",
+  "variant": "Forager's Hat Alt",
+  "iou": 0.953,
+  "basePx": 443,
+  "px": 422,
+  "added": 0,
+  "removed": 21,
+  "cls": "REMOVAL",
+  "baseKept": 0.986
+ },
+ {
+  "version": "hat",
+  "base": "Gnome's Cap",
+  "variant": "Gnome's Cap Alt",
+  "iou": 0.684,
+  "basePx": 356,
+  "px": 358,
+  "added": 68,
+  "removed": 66,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.448,
+  "moved": [
+   [
+    0,
+    0
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    -2,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.638
+ },
+ {
+  "version": "hat",
+  "base": "Goblin Mask",
+  "variant": "Goblin Mask Alt",
+  "iou": 0.812,
+  "basePx": 396,
+  "px": 394,
+  "added": 40,
+  "removed": 42,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.791,
+  "moved": [
+   [
+    0,
+    -5
+   ],
+   [
+    -1,
+    -5
+   ],
+   [
+    1,
+    -5
+   ],
+   [
+    0,
+    -2
+   ]
+  ],
+  "unalignedIou": 0.348
+ },
+ {
+  "version": "hat",
+  "base": "Goggles",
+  "variant": "Goggles Alt 1",
+  "iou": 0.825,
+  "basePx": 196,
+  "px": 180,
+  "added": 10,
+  "removed": 26,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.706,
+  "moved": [
+   [
+    0,
+    -3
+   ],
+   [
+    -2,
+    -3
+   ],
+   [
+    2,
+    -3
+   ],
+   [
+    0,
+    -2
+   ]
+  ],
+  "unalignedIou": 0.229
+ },
+ {
+  "version": "hat",
+  "base": "Goggles",
+  "variant": "Goggles Alt 2",
+  "iou": 0.723,
+  "basePx": 196,
+  "px": 152,
+  "added": 6,
+  "removed": 50,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.719,
+  "moved": [
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    1
+   ]
+  ],
+  "unalignedIou": 0.061
+ },
+ {
+  "version": "hat",
+  "base": "Golden Mask",
+  "variant": "Golden Mask Alt",
+  "iou": 0.615,
+  "basePx": 410,
+  "px": 378,
+  "added": 78,
+  "removed": 110,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.54,
+  "moved": [
+   [
+    0,
+    -4
+   ],
+   [
+    -1,
+    -4
+   ],
+   [
+    1,
+    -4
+   ],
+   [
+    0,
+    -1
+   ]
+  ],
+  "unalignedIou": 0.359
+ },
+ {
+  "version": "hat",
+  "base": "Green Party Hat",
+  "variant": "Green Party Hat Alt",
+  "iou": 0.83,
+  "basePx": 400,
+  "px": 332,
+  "added": 0,
+  "removed": 68,
+  "cls": "REMOVAL",
+  "baseKept": 0.852
+ },
+ {
+  "version": "hat",
+  "base": "Hard Hat",
+  "variant": "Hard Hat Alt",
+  "iou": 0.937,
+  "basePx": 356,
+  "px": 380,
+  "added": 24,
+  "removed": 0,
+  "cls": "ADDON",
+  "baseKept": 0.913
+ },
+ {
+  "version": "hat",
+  "base": "Infinity Crown",
+  "variant": "Infinity Crown Alt",
+  "iou": 0.7,
+  "basePx": 467,
+  "px": 327,
+  "added": 0,
+  "removed": 140,
+  "cls": "REMOVAL",
+  "baseKept": 0.988
+ },
+ {
+  "version": "hat",
+  "base": "Jester Hat",
+  "variant": "Jester Hat Alt",
+  "iou": 0.969,
+  "basePx": 588,
+  "px": 570,
+  "added": 0,
+  "removed": 18,
+  "cls": "REMOVAL",
+  "baseKept": 0.67
+ },
+ {
+  "version": "hat",
+  "base": "Knight's Helmet",
+  "variant": "Knight's Helmet Alt",
+  "iou": 0.77,
+  "basePx": 610,
+  "px": 470,
+  "added": 0,
+  "removed": 140,
+  "cls": "REMOVAL",
+  "baseKept": 0.951
+ },
+ {
+  "version": "hat",
+  "base": "Propeller Hat",
+  "variant": "Propeller Hat Alt",
+  "iou": 0.358,
+  "basePx": 386,
+  "px": 138,
+  "added": 0,
+  "removed": 248,
+  "cls": "REMOVAL",
+  "baseKept": 0.986,
+  "moved": [
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.323
+ },
+ {
+  "version": "hat",
+  "base": "Raccoon Hat",
+  "variant": "Raccoon Hat Alt",
+  "iou": 0.796,
+  "basePx": 400,
+  "px": 340,
+  "added": 12,
+  "removed": 72,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.939,
+  "moved": [
+   [
+    0,
+    0
+   ],
+   [
+    -1,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.77
+ },
+ {
+  "version": "hat",
+  "base": "Radioactive Goggles",
+  "variant": "Radioactive Goggles Alt 1",
+  "iou": 0.825,
+  "basePx": 196,
+  "px": 180,
+  "added": 10,
+  "removed": 26,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.706,
+  "moved": [
+   [
+    0,
+    -3
+   ],
+   [
+    -2,
+    -3
+   ],
+   [
+    2,
+    -3
+   ],
+   [
+    0,
+    -2
+   ]
+  ],
+  "unalignedIou": 0.229
+ },
+ {
+  "version": "hat",
+  "base": "Radioactive Goggles",
+  "variant": "Radioactive Goggles Alt 2",
+  "iou": 0.723,
+  "basePx": 196,
+  "px": 152,
+  "added": 6,
+  "removed": 50,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.719,
+  "moved": [
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    1
+   ]
+  ],
+  "unalignedIou": 0.061
+ },
+ {
+  "version": "hat",
+  "base": "Red Party Hat",
+  "variant": "Red Party Hat Alt",
+  "iou": 0.83,
+  "basePx": 400,
+  "px": 332,
+  "added": 0,
+  "removed": 68,
+  "cls": "REMOVAL",
+  "baseKept": 0.756
+ },
+ {
+  "version": "hat",
+  "base": "Skeleton Mask",
+  "variant": "Skeleton Mask Alt",
+  "iou": 0.732,
+  "basePx": 350,
+  "px": 374,
+  "added": 68,
+  "removed": 44,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.85,
+  "moved": [
+   [
+    0,
+    -4
+   ],
+   [
+    -1,
+    -6
+   ],
+   [
+    1,
+    -6
+   ],
+   [
+    0,
+    -3
+   ]
+  ],
+  "unalignedIou": 0.302
+ },
+ {
+  "version": "hat",
+  "base": "Spotted Headscarf",
+  "variant": "Spotted Headscarf Alt",
+  "iou": 1.0,
+  "basePx": 435,
+  "px": 435,
+  "added": 0,
+  "removed": 0,
+  "cls": "RESHADE",
+  "changedPx": 62
+ },
+ {
+  "version": "hat",
+  "base": "Squire's Helmet",
+  "variant": "Squire's Helmet Alt",
+  "iou": 0.736,
+  "basePx": 500,
+  "px": 368,
+  "added": 0,
+  "removed": 132,
+  "cls": "REMOVAL",
+  "baseKept": 0.902
+ },
+ {
+  "version": "hat",
+  "base": "Sunglasses",
+  "variant": "Sunglasses Alt",
+  "iou": 0.629,
+  "basePx": 54,
+  "px": 60,
+  "added": 16,
+  "removed": 10,
+  "cls": "STRUCTURAL",
+  "baseKept": 1.0,
+  "moved": [
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.213
+ },
+ {
+  "version": "hat",
+  "base": "Swashbuckler Hat",
+  "variant": "Swashbuckler Hat Alt",
+  "iou": 0.945,
+  "basePx": 495,
+  "px": 468,
+  "added": 0,
+  "removed": 27,
+  "cls": "REMOVAL",
+  "baseKept": 0.959
+ },
+ {
+  "version": "hat",
+  "base": "Totem Mask",
+  "variant": "Totem Mask Alt",
+  "iou": 0.314,
+  "basePx": 490,
+  "px": 154,
+  "added": 0,
+  "removed": 336,
+  "cls": "REMOVAL",
+  "baseKept": 0.942,
+  "moved": [
+   [
+    0,
+    0
+   ],
+   [
+    -3,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.258
+ },
+ {
+  "version": "hat",
+  "base": "Tricorn Hat",
+  "variant": "Tricorn Hat Alt",
+  "iou": 0.927,
+  "basePx": 406,
+  "px": 438,
+  "added": 32,
+  "removed": 0,
+  "cls": "ADDON",
+  "baseKept": 0.958
+ },
+ {
+  "version": "accessory",
+  "base": "Abigail's Bow",
+  "variant": "Abigail's Bow Alt",
+  "iou": 0.186,
+  "basePx": 70,
+  "px": 70,
+  "added": 48,
+  "removed": 48,
+  "cls": "NOVEL",
+  "baseKept": 0.818,
+  "moved": [
+   [
+    3,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    -3,
+    0
+   ]
+  ],
+  "unalignedIou": 0.0
+ },
+ {
+  "version": "accessory",
+  "base": "Archer's Cap",
+  "variant": "Archer's Cap Alt",
+  "iou": 0.924,
+  "basePx": 293,
+  "px": 317,
+  "added": 24,
+  "removed": 0,
+  "cls": "ADDON",
+  "baseKept": 0.962
+ },
+ {
+  "version": "accessory",
+  "base": "Artifact Mask",
+  "variant": "Artifact Mask Alt",
+  "iou": 0.615,
+  "basePx": 410,
+  "px": 378,
+  "added": 78,
+  "removed": 110,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.657,
+  "moved": [
+   [
+    0,
+    -3
+   ],
+   [
+    -1,
+    -3
+   ],
+   [
+    1,
+    -3
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.438
+ },
+ {
+  "version": "accessory",
+  "base": "Blobfish Mask",
+  "variant": "Blobfish Mask Alt",
+  "iou": 0.788,
+  "basePx": 528,
+  "px": 484,
+  "added": 38,
+  "removed": 82,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.608,
+  "moved": [
+   [
+    0,
+    -3
+   ],
+   [
+    -1,
+    -3
+   ],
+   [
+    1,
+    -3
+   ],
+   [
+    0,
+    -1
+   ]
+  ],
+  "unalignedIou": 0.442
+ },
+ {
+  "version": "accessory",
+  "base": "Cat Ears",
+  "variant": "Cat Ears Alt 1",
+  "iou": 0.846,
+  "basePx": 182,
+  "px": 154,
+  "added": 0,
+  "removed": 28,
+  "cls": "REMOVAL",
+  "baseKept": 1.0
+ },
+ {
+  "version": "accessory",
+  "base": "Cat Ears",
+  "variant": "Cat Ears Alt 2",
+  "iou": 0.154,
+  "basePx": 182,
+  "px": 28,
+  "added": 0,
+  "removed": 154,
+  "cls": "REMOVAL",
+  "baseKept": 1.0
+ },
+ {
+  "version": "accessory",
+  "base": "Chicken Mask",
+  "variant": "Chicken Mask Alt",
+  "iou": 0.759,
+  "basePx": 358,
+  "px": 300,
+  "added": 16,
+  "removed": 74,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.789,
+  "moved": [
+   [
+    0,
+    -4
+   ],
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.394
+ },
+ {
+  "version": "accessory",
+  "base": "Concerned Hat",
+  "variant": "Concerned Hat Alt 1",
+  "iou": 0.998,
+  "basePx": 962,
+  "px": 960,
+  "added": 0,
+  "removed": 2,
+  "cls": "TWEAK",
+  "baseKept": 0.917,
+  "tweakOf": "REMOVAL"
+ },
+ {
+  "version": "accessory",
+  "base": "Concerned Hat",
+  "variant": "Concerned Hat Alt 2",
+  "iou": 0.998,
+  "basePx": 962,
+  "px": 960,
+  "added": 0,
+  "removed": 2,
+  "cls": "TWEAK",
+  "baseKept": 0.912,
+  "tweakOf": "REMOVAL"
+ },
+ {
+  "version": "accessory",
+  "base": "Cowboy Hat 1",
+  "variant": "Cowboy Hat 2",
+  "iou": 0.908,
+  "basePx": 430,
+  "px": 398,
+  "added": 4,
+  "removed": 36,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.624
+ },
+ {
+  "version": "accessory",
+  "base": "Cowboy Hat 1",
+  "variant": "Cowboy Hat 3",
+  "iou": 0.917,
+  "basePx": 430,
+  "px": 402,
+  "added": 4,
+  "removed": 32,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.588
+ },
+ {
+  "version": "accessory",
+  "base": "Cowboy Hat 1",
+  "variant": "Cowboy Hat 4",
+  "iou": 0.917,
+  "basePx": 430,
+  "px": 402,
+  "added": 4,
+  "removed": 32,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.555
+ },
+ {
+  "version": "accessory",
+  "base": "Deluxe Pirate Hat",
+  "variant": "Deluxe Pirate Hat Alt",
+  "iou": 0.979,
+  "basePx": 612,
+  "px": 599,
+  "added": 0,
+  "removed": 13,
+  "cls": "REMOVAL",
+  "baseKept": 0.98
+ },
+ {
+  "version": "accessory",
+  "base": "Eye Patch",
+  "variant": "Eye Patch Alt",
+  "iou": 0.52,
+  "basePx": 57,
+  "px": 57,
+  "added": 18,
+  "removed": 18,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.949,
+  "moved": [
+   [
+    3,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.295
+ },
+ {
+  "version": "accessory",
+  "base": "Fashion Hat",
+  "variant": "Fashion Hat Alt",
+  "iou": 0.973,
+  "basePx": 473,
+  "px": 460,
+  "added": 0,
+  "removed": 13,
+  "cls": "REMOVAL",
+  "baseKept": 0.976
+ },
+ {
+  "version": "accessory",
+  "base": "Forager's Hat",
+  "variant": "Forager's Hat Alt",
+  "iou": 0.953,
+  "basePx": 443,
+  "px": 422,
+  "added": 0,
+  "removed": 21,
+  "cls": "REMOVAL",
+  "baseKept": 0.986
+ },
+ {
+  "version": "accessory",
+  "base": "Gnome's Cap",
+  "variant": "Gnome's Cap Alt",
+  "iou": 0.684,
+  "basePx": 356,
+  "px": 358,
+  "added": 68,
+  "removed": 66,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.472,
+  "moved": [
+   [
+    0,
+    0
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    -2,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.638
+ },
+ {
+  "version": "accessory",
+  "base": "Goblin Mask",
+  "variant": "Goblin Mask Alt",
+  "iou": 0.812,
+  "basePx": 396,
+  "px": 394,
+  "added": 40,
+  "removed": 42,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.791,
+  "moved": [
+   [
+    0,
+    -5
+   ],
+   [
+    -1,
+    -5
+   ],
+   [
+    1,
+    -5
+   ],
+   [
+    0,
+    -2
+   ]
+  ],
+  "unalignedIou": 0.348
+ },
+ {
+  "version": "accessory",
+  "base": "Goggles",
+  "variant": "Goggles Alt 1",
+  "iou": 0.825,
+  "basePx": 196,
+  "px": 180,
+  "added": 10,
+  "removed": 26,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.694,
+  "moved": [
+   [
+    0,
+    -3
+   ],
+   [
+    -2,
+    -3
+   ],
+   [
+    2,
+    -3
+   ],
+   [
+    0,
+    -2
+   ]
+  ],
+  "unalignedIou": 0.229
+ },
+ {
+  "version": "accessory",
+  "base": "Goggles",
+  "variant": "Goggles Alt 2",
+  "iou": 0.723,
+  "basePx": 196,
+  "px": 152,
+  "added": 6,
+  "removed": 50,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.664,
+  "moved": [
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    1
+   ]
+  ],
+  "unalignedIou": 0.061
+ },
+ {
+  "version": "accessory",
+  "base": "Hard Hat",
+  "variant": "Hard Hat Alt",
+  "iou": 0.937,
+  "basePx": 356,
+  "px": 380,
+  "added": 24,
+  "removed": 0,
+  "cls": "ADDON",
+  "baseKept": 0.91
+ },
+ {
+  "version": "accessory",
+  "base": "Infinity Crown",
+  "variant": "Infinity Crown Alt",
+  "iou": 0.7,
+  "basePx": 467,
+  "px": 327,
+  "added": 0,
+  "removed": 140,
+  "cls": "REMOVAL",
+  "baseKept": 0.982
+ },
+ {
+  "version": "accessory",
+  "base": "Jester Hat",
+  "variant": "Jester Hat Alt",
+  "iou": 0.969,
+  "basePx": 588,
+  "px": 570,
+  "added": 0,
+  "removed": 18,
+  "cls": "REMOVAL",
+  "baseKept": 0.944
+ },
+ {
+  "version": "accessory",
+  "base": "Knight's Helmet",
+  "variant": "Knight's Helmet Alt",
+  "iou": 0.77,
+  "basePx": 610,
+  "px": 470,
+  "added": 0,
+  "removed": 140,
+  "cls": "REMOVAL",
+  "baseKept": 0.951
+ },
+ {
+  "version": "accessory",
+  "base": "Party Hat",
+  "variant": "Party Hat Alt",
+  "iou": 0.83,
+  "basePx": 400,
+  "px": 332,
+  "added": 0,
+  "removed": 68,
+  "cls": "REMOVAL",
+  "baseKept": 0.877
+ },
+ {
+  "version": "accessory",
+  "base": "Propeller Hat",
+  "variant": "Propeller Hat Alt",
+  "iou": 0.358,
+  "basePx": 386,
+  "px": 138,
+  "added": 0,
+  "removed": 248,
+  "cls": "REMOVAL",
+  "baseKept": 0.942,
+  "moved": [
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.323
+ },
+ {
+  "version": "accessory",
+  "base": "Raccoon Hat",
+  "variant": "Raccoon Hat Alt",
+  "iou": 0.796,
+  "basePx": 400,
+  "px": 340,
+  "added": 12,
+  "removed": 72,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.939,
+  "moved": [
+   [
+    0,
+    0
+   ],
+   [
+    -1,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.77
+ },
+ {
+  "version": "accessory",
+  "base": "Skeleton Mask",
+  "variant": "Skeleton Mask Alt",
+  "iou": 0.732,
+  "basePx": 350,
+  "px": 374,
+  "added": 68,
+  "removed": 44,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.837,
+  "moved": [
+   [
+    0,
+    -4
+   ],
+   [
+    -1,
+    -6
+   ],
+   [
+    1,
+    -6
+   ],
+   [
+    0,
+    -3
+   ]
+  ],
+  "unalignedIou": 0.302
+ },
+ {
+  "version": "accessory",
+  "base": "Spotted Headscarf",
+  "variant": "Spotted Headscarf Alt",
+  "iou": 1.0,
+  "basePx": 435,
+  "px": 435,
+  "added": 0,
+  "removed": 0,
+  "cls": "RESHADE",
+  "changedPx": 87
+ },
+ {
+  "version": "accessory",
+  "base": "Squire's Helmet",
+  "variant": "Squire's Helmet Alt",
+  "iou": 0.736,
+  "basePx": 500,
+  "px": 368,
+  "added": 0,
+  "removed": 132,
+  "cls": "REMOVAL",
+  "baseKept": 0.905
+ },
+ {
+  "version": "accessory",
+  "base": "Sunglasses",
+  "variant": "Sunglasses Alt",
+  "iou": 0.629,
+  "basePx": 54,
+  "px": 60,
+  "added": 16,
+  "removed": 10,
+  "cls": "STRUCTURAL",
+  "baseKept": 1.0,
+  "moved": [
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.213
+ },
+ {
+  "version": "accessory",
+  "base": "Swashbuckler Hat",
+  "variant": "Swashbuckler Hat Alt",
+  "iou": 0.945,
+  "basePx": 495,
+  "px": 468,
+  "added": 0,
+  "removed": 27,
+  "cls": "REMOVAL",
+  "baseKept": 0.959
+ },
+ {
+  "version": "accessory",
+  "base": "Totem Mask",
+  "variant": "Totem Mask Alt",
+  "iou": 0.314,
+  "basePx": 490,
+  "px": 154,
+  "added": 0,
+  "removed": 336,
+  "cls": "REMOVAL",
+  "baseKept": 0.942,
+  "moved": [
+   [
+    0,
+    0
+   ],
+   [
+    -3,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ],
+  "unalignedIou": 0.258
+ },
+ {
+  "version": "accessory",
+  "base": "Tricorn Hat",
+  "variant": "Tricorn Hat Alt",
+  "iou": 0.927,
+  "basePx": 406,
+  "px": 438,
+  "added": 32,
+  "removed": 0,
+  "cls": "ADDON",
+  "baseKept": 0.958
+ },
+ {
+  "version": "accessory",
+  "base": "Turban 1",
+  "variant": "Turban 2",
+  "iou": 0.972,
+  "basePx": 562,
+  "px": 554,
+  "added": 4,
+  "removed": 12,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.247
+ },
+ {
+  "version": "accessory",
+  "base": "Turban 1",
+  "variant": "Turban 3",
+  "iou": 0.972,
+  "basePx": 562,
+  "px": 554,
+  "added": 4,
+  "removed": 12,
+  "cls": "STRUCTURAL",
+  "baseKept": 0.242
+ }
+]

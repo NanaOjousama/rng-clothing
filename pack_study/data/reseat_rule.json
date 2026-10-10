@@ -1,0 +1,280 @@
+{
+ "_source": "pack_study/data/vhe/moves.json (Vanilla Hats Extended Alts, Tea-Loving Lad)",
+ "_meaning": "for a front move dy: side dy = sideDy*dy; right dx = -sideDxTowardBack*|dy| (left mirrored); back dy = backDy*dy",
+ "samples": [
+  {
+   "item": "Blobfish Mask Alt",
+   "dir": "up",
+   "front": [
+    0,
+    -3
+   ],
+   "sideDy": 1.0,
+   "sideDxTowardBack": 0.6666666666666666,
+   "backDy": 0.3333333333333333,
+   "moved": [
+    [
+     0,
+     -3
+    ],
+    [
+     -2,
+     -3
+    ],
+    [
+     2,
+     -3
+    ],
+    [
+     0,
+     -1
+    ]
+   ]
+  },
+  {
+   "item": "Chicken Mask Alt",
+   "dir": "up",
+   "front": [
+    0,
+    -4
+   ],
+   "sideDy": 0.5,
+   "sideDxTowardBack": 0.0,
+   "backDy": -0.0,
+   "moved": [
+    [
+     0,
+     -4
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "item": "Goblin Mask Alt",
+   "dir": "up",
+   "front": [
+    0,
+    -5
+   ],
+   "sideDy": 1.0,
+   "sideDxTowardBack": 0.2,
+   "backDy": 0.4,
+   "moved": [
+    [
+     0,
+     -5
+    ],
+    [
+     -1,
+     -5
+    ],
+    [
+     1,
+     -5
+    ],
+    [
+     0,
+     -2
+    ]
+   ]
+  },
+  {
+   "item": "Goggles Alt 1",
+   "dir": "up",
+   "front": [
+    0,
+    -3
+   ],
+   "sideDy": 1.0,
+   "sideDxTowardBack": 0.6666666666666666,
+   "backDy": 0.6666666666666666,
+   "moved": [
+    [
+     0,
+     -3
+    ],
+    [
+     -2,
+     -3
+    ],
+    [
+     2,
+     -3
+    ],
+    [
+     0,
+     -2
+    ]
+   ]
+  },
+  {
+   "item": "Goggles Alt 2",
+   "dir": "down",
+   "front": [
+    0,
+    4
+   ],
+   "sideDy": 1.25,
+   "sideDxTowardBack": 0.0,
+   "backDy": 0.25,
+   "moved": [
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     1
+    ]
+   ]
+  },
+  {
+   "item": "Golden Mask Alt",
+   "dir": "up",
+   "front": [
+    0,
+    -4
+   ],
+   "sideDy": 1.0,
+   "sideDxTowardBack": 0.25,
+   "backDy": 0.25,
+   "moved": [
+    [
+     0,
+     -4
+    ],
+    [
+     -1,
+     -4
+    ],
+    [
+     1,
+     -4
+    ],
+    [
+     0,
+     -1
+    ]
+   ]
+  },
+  {
+   "item": "Skeleton Mask Alt",
+   "dir": "up",
+   "front": [
+    0,
+    -4
+   ],
+   "sideDy": 1.5,
+   "sideDxTowardBack": 0.25,
+   "backDy": 0.75,
+   "moved": [
+    [
+     0,
+     -4
+    ],
+    [
+     -1,
+     -6
+    ],
+    [
+     1,
+     -6
+    ],
+    [
+     0,
+     -3
+    ]
+   ]
+  },
+  {
+   "item": "Sunglasses Alt",
+   "dir": "up",
+   "front": [
+    0,
+    -2
+   ],
+   "sideDy": 1.0,
+   "sideDxTowardBack": 0.0,
+   "backDy": -0.0,
+   "moved": [
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     0
+    ]
+   ]
+  }
+ ],
+ "up": {
+  "sideDy": 1.0,
+  "sideDxTowardBack": 0.25,
+  "backDy": 0.333,
+  "n": 7,
+  "usable": true,
+  "range": {
+   "sideDy": [
+    0.5,
+    1.5
+   ],
+   "sideDxTowardBack": [
+    0.0,
+    0.667
+   ],
+   "backDy": [
+    -0.0,
+    0.75
+   ]
+  }
+ },
+ "down": {
+  "sideDy": 1.25,
+  "sideDxTowardBack": 0.0,
+  "backDy": 0.25,
+  "n": 1,
+  "usable": false,
+  "range": {
+   "sideDy": [
+    1.25,
+    1.25
+   ],
+   "sideDxTowardBack": [
+    0.0,
+    0.0
+   ],
+   "backDy": [
+    0.25,
+    0.25
+   ]
+  }
+ }
+}

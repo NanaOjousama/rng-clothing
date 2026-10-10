@@ -1,17 +1,103 @@
 {
- "_note": "Reviewed by eye on out/decorations_*.png (2026-10-09). Label = what it is on the worn hat; kind = how it attaches.",
+ "_note": "Reviewed by eye on out/decorations_*.png (2026-10-09). Label = what it is on the worn hat; kind = how it attaches. VHE parts: kind 'headpiece' = worn on the head (reseat rule applies), never placed on a hat.",
  "dec_ids_by_from": {
-  "kailey__straw_hat_sunflower": {"label": "sunflower", "kind": "perched"},
-  "kailey__flower_crown_bird": {"label": "bird", "kind": "perched"},
-  "seyph__hats_90": {"label": "leaf sprig", "kind": "perched"},
-  "plurffle__earmuffs_cat": {"label": "cat ears", "kind": "perched"},
-  "orangeblossom__1_old_straw_hat_w_ribbon": {"label": "white ribbon band", "kind": "band"},
-  "kailey__straw_hat_blue": {"label": "blue dotted band", "kind": "band"}
+  "kailey__straw_hat_sunflower": {
+   "label": "sunflower",
+   "kind": "perched"
+  },
+  "kailey__flower_crown_bird": {
+   "label": "bird",
+   "kind": "perched"
+  },
+  "seyph__hats_90": {
+   "label": "leaf sprig",
+   "kind": "perched"
+  },
+  "plurffle__earmuffs_cat": {
+   "label": "cat ears",
+   "kind": "perched"
+  },
+  "orangeblossom__1_old_straw_hat_w_ribbon": {
+   "label": "white ribbon band",
+   "kind": "band"
+  },
+  "kailey__straw_hat_blue": {
+   "label": "blue dotted band",
+   "kind": "band"
+  },
+  "vhe__knight_s_helmet_alt__removed": {
+   "label": "plume",
+   "kind": "perched",
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user"
+  },
+  "vhe__squire_s_helmet_alt__removed": {
+   "label": "crest",
+   "kind": "perched",
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user"
+  },
+  "vhe__infinity_crown_alt__removed": {
+   "label": "crown gems (upper points)",
+   "kind": "perched",
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user"
+  },
+  "vhe__red_party_hat_alt__removed": {
+   "label": "pompom (red)",
+   "kind": "perched",
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user"
+  },
+  "vhe__blue_party_hat_alt__removed": {
+   "label": "pompom (blue)",
+   "kind": "perched",
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user"
+  },
+  "vhe__green_party_hat_alt__removed": {
+   "label": "pompom (green)",
+   "kind": "perched",
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user"
+  },
+  "vhe__propeller_hat_alt__kept": {
+   "label": "propeller",
+   "kind": "perched",
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user; the cap is the base"
+  },
+  "vhe__hard_hat_alt__added": {
+   "label": "lamp",
+   "kind": "perched",
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user; front-mounted, keeps its depth below the top"
+  },
+  "vhe__tricorn_hat_alt__added": {
+   "label": "ribbon",
+   "kind": "perched",
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user"
+  },
+  "vhe__cat_ears_alt_1__removed": {
+   "label": "whiskers",
+   "kind": "headpiece",
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user; worn on the face, not on a hat"
+  },
+  "vhe__cat_ears_alt_2__removed": {
+   "label": "cat ears (vanilla)",
+   "kind": "headpiece",
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user; vanilla headband ears, not on a hat"
+  },
+  "vhe__totem_mask_alt__removed": {
+   "label": "totem face",
+   "kind": "headpiece",
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user; face mask"
+  },
+  "vhe__totem_mask_alt__kept": {
+   "label": "leaf ring",
+   "kind": "headpiece",
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user; wreath worn on the head"
+  }
  },
  "rejected": {
   "orangeblossom recolour pairs": "colour-map leftovers, not a new part",
   "jedone cap&headphones / backwards cap": "recolour leftovers",
   "coii female_9 / female_19": "whole-hat redraw, not a decoration",
-  "plurffle hoods (cat/horns/frog)": "real decorations but hood view layout pulls in hood pixels; revisit"
+  "plurffle hoods (cat/horns/frog)": "real decorations but hood view layout pulls in hood pixels; revisit",
+  "vhe Archer's Cap Alt": "adds only a red tip to the cap's own feather: an extension, not a standalone part",
+  "vhe Forager's Hat Alt": "same leaf sprig as the approved seyph__hats_90 (now ConcernedApe) -- duplicate",
+  "vhe Deluxe Pirate / Fashion / Jester / Swashbuckler Alt": "13-27 px flecks, not a readable part"
  }
 }

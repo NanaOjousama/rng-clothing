@@ -1,0 +1,7718 @@
+[
+ {
+  "version": "hat",
+  "folder": "Abigail's Bow",
+  "name": "Abigail's Bow",
+  "vanilla": {
+   "index": 94,
+   "id": "AbigailsBow",
+   "name": "Abigail's Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 70,
+   "px": 70,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Abigail's Bow Alt",
+  "name": "Abigail's Bow Alt.",
+  "vanilla": {
+   "index": 94,
+   "id": "AbigailsBow",
+   "name": "Abigail's Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.186,
+   "basePx": 70,
+   "px": 70,
+   "added": 48,
+   "removed": 48,
+   "cls": "NOVEL",
+   "baseKept": 0.818,
+   "moved": [
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     -3,
+     0
+    ]
+   ],
+   "unalignedIou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Arcane Hat",
+  "name": "Arcane Hat",
+  "vanilla": {
+   "index": 60,
+   "id": "60",
+   "name": "Arcane Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 412,
+   "px": 412,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_60__09c43a",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Archer's Cap",
+  "name": "Archer's Cap",
+  "vanilla": {
+   "index": 35,
+   "id": "35",
+   "name": "Archer's Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 293,
+   "px": 293,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Archer's Cap Alt",
+  "name": "Archer's Cap Alt.",
+  "vanilla": {
+   "index": 35,
+   "id": "35",
+   "name": "Archer's Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.924,
+   "basePx": 293,
+   "px": 317,
+   "added": 24,
+   "removed": 0,
+   "cls": "ADDON",
+   "baseKept": 0.949
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Beanie",
+  "name": "Beanie",
+  "vanilla": {
+   "index": 53,
+   "id": "53",
+   "name": "Beanie",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 360,
+   "px": 360,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_53__a25ade",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Blobfish Mask",
+  "name": "Blobfish Mask",
+  "vanilla": {
+   "index": 56,
+   "id": "56",
+   "name": "Blobfish Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 528,
+   "px": 528,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_56__b0ba55",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Blobfish Mask Alt",
+  "name": "Blobfish Mask Alt.",
+  "vanilla": {
+   "index": 56,
+   "id": "56",
+   "name": "Blobfish Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.804,
+   "basePx": 528,
+   "px": 468,
+   "added": 24,
+   "removed": 84,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.658,
+   "moved": [
+    [
+     0,
+     -3
+    ],
+    [
+     -2,
+     -3
+    ],
+    [
+     2,
+     -3
+    ],
+    [
+     0,
+     -1
+    ]
+   ],
+   "unalignedIou": 0.456
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Blue Bonnet",
+  "name": "Blue Bonnet",
+  "vanilla": {
+   "index": 6,
+   "id": "6",
+   "name": "Blue Bonnet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 545,
+   "px": 545,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Blue Bow",
+  "name": "Blue Bow",
+  "vanilla": {
+   "index": 99,
+   "id": "BlueBow",
+   "name": "Blue Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 331,
+   "px": 331,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Blue Cowboy Hat",
+  "name": "Blue Cowboy Hat",
+  "vanilla": {
+   "index": 37,
+   "id": "37",
+   "name": "Blue Cowboy Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 398,
+   "px": 398,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_37__0c1e93",
+    "Seyph",
+    "IDENTICAL"
+   ],
+   [
+    "seyph__hats_83__e66e01",
+    "Seyph",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 2,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Blue Party Hat",
+  "name": "Blue Party Hat",
+  "vanilla": {
+   "index": 58,
+   "id": "58",
+   "name": "Party Hat",
+   "matchedBy": "shape"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 400,
+   "px": 400,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_58__c9400d",
+    "ConcernedApe",
+    "IDENTICAL"
+   ],
+   [
+    "concernedape__hats_59__729835",
+    "ConcernedApe",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 2,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Blue Party Hat Alt",
+  "name": "Blue Party Hat Alt.",
+  "vanilla": {
+   "index": 58,
+   "id": "58",
+   "name": "Party Hat",
+   "matchedBy": "sibling:shape"
+  },
+  "vsVanilla": {
+   "iou": 0.83,
+   "basePx": 400,
+   "px": 332,
+   "added": 0,
+   "removed": 68,
+   "cls": "REMOVAL",
+   "baseKept": 0.852
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Blue Ribbon",
+  "name": "Blue Ribbon",
+  "vanilla": {
+   "index": 117,
+   "id": "BlueRibbon",
+   "name": "Blue Ribbon",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 118,
+   "px": 118,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Bluebird Mask",
+  "name": "Bluebird Mask",
+  "vanilla": {
+   "index": 80,
+   "id": "80",
+   "name": "Bluebird Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 587,
+   "px": 587,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_80__9fcca5",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Bowler Hat",
+  "name": "Bowler Hat",
+  "vanilla": {
+   "index": 1,
+   "id": "1",
+   "name": "Bowler Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 388,
+   "px": 388,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL",
+   "moved": [
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     -1
+    ]
+   ],
+   "unalignedIou": 0.756
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Bridal Veil",
+  "name": "Bridal Veil",
+  "vanilla": {
+   "index": 69,
+   "id": "69",
+   "name": "Bridal Veil",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 495,
+   "px": 495,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_69__91a70b",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Bucket Hat",
+  "name": "Bucket Hat",
+  "vanilla": {
+   "index": 102,
+   "id": "BucketHat",
+   "name": "Bucket Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 344,
+   "px": 344,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Butterfly Bow",
+  "name": "Butterfly Bow",
+  "vanilla": {
+   "index": 14,
+   "id": "14",
+   "name": "Butterfly Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 99,
+   "px": 99,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_14__692441",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Cat Ears",
+  "name": "Cat Ears",
+  "vanilla": {
+   "index": 32,
+   "id": "32",
+   "name": "Cat Ears",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 182,
+   "px": 182,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_32__780eb6",
+    "Seyph",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Cat Ears Alt 1",
+  "name": "Cat Ears Alt. 1",
+  "vanilla": {
+   "index": 32,
+   "id": "32",
+   "name": "Cat Ears",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.846,
+   "basePx": 182,
+   "px": 154,
+   "added": 0,
+   "removed": 28,
+   "cls": "REMOVAL",
+   "baseKept": 1.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Cat Ears Alt 2",
+  "name": "Cat Ears Alt. 2",
+  "vanilla": {
+   "index": 32,
+   "id": "32",
+   "name": "Cat Ears",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.154,
+   "basePx": 182,
+   "px": 28,
+   "added": 0,
+   "removed": 154,
+   "cls": "REMOVAL",
+   "baseKept": 1.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Chef Hat",
+  "name": "Chef Hat",
+  "vanilla": {
+   "index": 61,
+   "id": "61",
+   "name": "Chef Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 613,
+   "px": 613,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_61__745485",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Chicken Mask",
+  "name": "Chicken Mask",
+  "vanilla": {
+   "index": 10,
+   "id": "10",
+   "name": "Chicken Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 358,
+   "px": 358,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Chicken Mask Alt",
+  "name": "Chicken Mask Alt.",
+  "vanilla": {
+   "index": 10,
+   "id": "10",
+   "name": "Chicken Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.759,
+   "basePx": 358,
+   "px": 300,
+   "added": 16,
+   "removed": 74,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.782,
+   "moved": [
+    [
+     0,
+     -4
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "unalignedIou": 0.394
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Concerned Hat",
+  "name": "Concerned Hat",
+  "vanilla": {
+   "index": 92,
+   "id": "92",
+   "name": "???",
+   "matchedBy": "shape"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 962,
+   "px": 962,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_92__916be6",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Concerned Hat Alt 1",
+  "name": "Concerned Hat Alt. 1",
+  "vanilla": {
+   "index": 92,
+   "id": "92",
+   "name": "???",
+   "matchedBy": "shape"
+  },
+  "vsVanilla": {
+   "iou": 0.998,
+   "basePx": 962,
+   "px": 960,
+   "added": 0,
+   "removed": 2,
+   "cls": "TWEAK",
+   "baseKept": 0.918,
+   "tweakOf": "REMOVAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Concerned Hat Alt 2",
+  "name": "Concerned Hat Alt. 2",
+  "vanilla": {
+   "index": 92,
+   "id": "92",
+   "name": "???",
+   "matchedBy": "shape"
+  },
+  "vsVanilla": {
+   "iou": 0.998,
+   "basePx": 962,
+   "px": 960,
+   "added": 0,
+   "removed": 2,
+   "cls": "TWEAK",
+   "baseKept": 0.916,
+   "tweakOf": "REMOVAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Cone Hat",
+  "name": "Cone Hat",
+  "vanilla": {
+   "index": 39,
+   "id": "39",
+   "name": "Cone Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 334,
+   "px": 334,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_39__f0cac3",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Cool Cap",
+  "name": "Cool Cap",
+  "vanilla": {
+   "index": 20,
+   "id": "20",
+   "name": "Cool Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 350,
+   "px": 350,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Copper Pan Hat",
+  "name": "Copper Pan Hat",
+  "vanilla": {
+   "index": 71,
+   "id": "71",
+   "name": "Copper Pan",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 406,
+   "px": 406,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_71__c309fd",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Cowboy Hat",
+  "name": "Cowboy Hat 1",
+  "vanilla": {
+   "index": 0,
+   "id": "0",
+   "name": "Cowboy Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 430,
+   "px": 430,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Cowgal Hat",
+  "name": "Cowgal Hat",
+  "vanilla": {
+   "index": 33,
+   "id": "33",
+   "name": "Cowgal Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 410,
+   "px": 410,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Cowpoke Hat",
+  "name": "Cowpoke Hat",
+  "vanilla": {
+   "index": 34,
+   "id": "34",
+   "name": "Cowpoke Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 424,
+   "px": 424,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Daisy",
+  "name": "Daisy",
+  "vanilla": {
+   "index": 29,
+   "id": "29",
+   "name": "Daisy",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 24,
+   "px": 24,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Dark Ballcap",
+  "name": "Dark Ballcap",
+  "vanilla": {
+   "index": 111,
+   "id": "DarkBallcap",
+   "name": "Dark Ballcap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 316,
+   "px": 316,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Dark Cowboy Hat",
+  "name": "Dark Cowboy Hat",
+  "vanilla": {
+   "index": 83,
+   "id": "83",
+   "name": "Dark Cowboy Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 398,
+   "px": 398,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_37__0c1e93",
+    "Seyph",
+    "RECOLOUR"
+   ],
+   [
+    "seyph__hats_83__e66e01",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 2,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Dark Velvet Bow",
+  "name": "Dark Velvet Bow",
+  "vanilla": {
+   "index": 100,
+   "id": "DarkVelvetBow",
+   "name": "Dark Velvet Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 330,
+   "px": 330,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Delicate Bow",
+  "name": "Delicate Bow",
+  "vanilla": {
+   "index": 12,
+   "id": "12",
+   "name": "Delicate Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 14,
+   "px": 14,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Deluxe Cowboy Hat",
+  "name": "Deluxe Cowboy Hat",
+  "vanilla": {
+   "index": 81,
+   "id": "81",
+   "name": "Deluxe Cowboy Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 446,
+   "px": 446,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_81__025cc4",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Deluxe Pirate Hat",
+  "name": "Deluxe Pirate Hat",
+  "vanilla": {
+   "index": 76,
+   "id": "76",
+   "name": "Deluxe Pirate Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 612,
+   "px": 612,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_76__6051de",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Deluxe Pirate Hat Alt",
+  "name": "Deluxe Pirate Hat Alt.",
+  "vanilla": {
+   "index": 76,
+   "id": "76",
+   "name": "Deluxe Pirate Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.979,
+   "basePx": 612,
+   "px": 599,
+   "added": 0,
+   "removed": 13,
+   "cls": "REMOVAL",
+   "baseKept": 0.97
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Dinosaur Hat",
+  "name": "Dinosaur Hat",
+  "vanilla": {
+   "index": 43,
+   "id": "43",
+   "name": "Dinosaur Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 386,
+   "px": 386,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_43__fbd562",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Dwarf Helm",
+  "name": "Dwarf Helm",
+  "vanilla": {
+   "index": 46,
+   "id": "46",
+   "name": "Wearable Dwarf Helm",
+   "matchedBy": "shape"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 370,
+   "px": 370,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_46__d1745d",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Earmuffs",
+  "name": "Earmuffs",
+  "vanilla": {
+   "index": 11,
+   "id": "11",
+   "name": "Earmuffs",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 238,
+   "px": 238,
+   "added": 0,
+   "removed": 0,
+   "cls": "TWEAK",
+   "changedPx": 2,
+   "tweakOf": "RESHADE"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Elegant Turban",
+  "name": "Elegant Turban",
+  "vanilla": {
+   "index": 64,
+   "id": "64",
+   "name": "Elegant Turban",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 558,
+   "px": 558,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_64__e633ca",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Emily's Magic Hat",
+  "name": "Emily's Magic Hat",
+  "vanilla": {
+   "index": 41,
+   "id": "41",
+   "name": "Emily's Magic Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 548,
+   "px": 548,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_41__b55850",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Eye Patch",
+  "name": "Eye Patch",
+  "vanilla": {
+   "index": 24,
+   "id": "24",
+   "name": "Eye Patch",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 57,
+   "px": 57,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_24__437807",
+    "Seyph",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Eye Patch Alt",
+  "name": "Eye Patch Alt.",
+  "vanilla": {
+   "index": 24,
+   "id": "24",
+   "name": "Eye Patch",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.52,
+   "basePx": 57,
+   "px": 57,
+   "added": 18,
+   "removed": 18,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.949,
+   "moved": [
+    [
+     3,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "unalignedIou": 0.295
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Fashion Hat",
+  "name": "Fashion Hat",
+  "vanilla": {
+   "index": 47,
+   "id": "47",
+   "name": "Fashion Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 473,
+   "px": 473,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_47__f4fc9d",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Fashion Hat Alt",
+  "name": "Fashion Hat Alt.",
+  "vanilla": {
+   "index": 47,
+   "id": "47",
+   "name": "Fashion Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.973,
+   "basePx": 473,
+   "px": 460,
+   "added": 0,
+   "removed": 13,
+   "cls": "REMOVAL",
+   "baseKept": 0.97
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Fedora",
+  "name": "Fedora",
+  "vanilla": {
+   "index": 19,
+   "id": "19",
+   "name": "Fedora",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.995,
+   "basePx": 385,
+   "px": 385,
+   "added": 1,
+   "removed": 1,
+   "cls": "TWEAK",
+   "baseKept": 1.0,
+   "tweakOf": "STRUCTURAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Fishing Hat",
+  "name": "Fishing Hat",
+  "vanilla": {
+   "index": 55,
+   "id": "55",
+   "name": "Fishing Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 430,
+   "px": 430,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_55__9fa1e5",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Flat Topped Hat",
+  "name": "Flat Topped hat",
+  "vanilla": {
+   "index": 63,
+   "id": "63",
+   "name": "Flat Topped Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 530,
+   "px": 530,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_63__ff510b",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Floppy Beanie",
+  "name": "Floppy Beanie",
+  "vanilla": {
+   "index": 54,
+   "id": "54",
+   "name": "Floppy Beanie",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 418,
+   "px": 418,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_54__3822b0",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Forager's Hat",
+  "name": "Forager's Hat",
+  "vanilla": {
+   "index": 90,
+   "id": "90",
+   "name": "Forager's Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.991,
+   "basePx": 439,
+   "px": 443,
+   "added": 4,
+   "removed": 0,
+   "cls": "TWEAK",
+   "baseKept": 1.0,
+   "tweakOf": "ADDON"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Forager's Hat Alt",
+  "name": "Forager's Hat Alt.",
+  "vanilla": {
+   "index": 90,
+   "id": "90",
+   "name": "Forager's Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.961,
+   "basePx": 439,
+   "px": 422,
+   "added": 0,
+   "removed": 17,
+   "cls": "REMOVAL",
+   "baseKept": 0.986
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Frog Hat",
+  "name": "Frog Hat",
+  "vanilla": {
+   "index": 78,
+   "id": "78",
+   "name": "Frog Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 490,
+   "px": 490,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_78__4a575e",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Garbage Hat",
+  "name": "Garbage Hat",
+  "vanilla": {
+   "index": 66,
+   "id": "66",
+   "name": "Garbage Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 504,
+   "px": 504,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_66__5f354b",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Gil's Hat",
+  "name": "Gil's Hat",
+  "vanilla": {
+   "index": 98,
+   "id": "GilsHat",
+   "name": "Gil's Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 410,
+   "px": 410,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Gnome's Cap",
+  "name": "Gnome's Cap",
+  "vanilla": {
+   "index": 23,
+   "id": "23",
+   "name": "Gnome's Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 356,
+   "px": 356,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_23__c7e308",
+    "Seyph",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Gnome's Cap Alt",
+  "name": "Gnome's Cap Alt.",
+  "vanilla": {
+   "index": 23,
+   "id": "23",
+   "name": "Gnome's Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.684,
+   "basePx": 356,
+   "px": 358,
+   "added": 68,
+   "removed": 66,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.448,
+   "moved": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     -2,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "unalignedIou": 0.638
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Goblin Mask",
+  "name": "Goblin Mask",
+  "vanilla": {
+   "index": 9,
+   "id": "9",
+   "name": "Goblin Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 396,
+   "px": 396,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Goblin Mask Alt",
+  "name": "Goblin Mask Alt.",
+  "vanilla": {
+   "index": 9,
+   "id": "9",
+   "name": "Goblin Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.812,
+   "basePx": 396,
+   "px": 394,
+   "added": 40,
+   "removed": 42,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.791,
+   "moved": [
+    [
+     0,
+     -5
+    ],
+    [
+     -1,
+     -5
+    ],
+    [
+     1,
+     -5
+    ],
+    [
+     0,
+     -2
+    ]
+   ],
+   "unalignedIou": 0.348
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Goggles",
+  "name": "Goggles",
+  "vanilla": {
+   "index": 89,
+   "id": "89",
+   "name": "Goggles",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 196,
+   "px": 196,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_84__696445",
+    "Seyph",
+    "RECOLOUR"
+   ],
+   [
+    "seyph__hats_89__662daf",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 2,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Goggles Alt 1",
+  "name": "Goggles Alt. 1",
+  "vanilla": {
+   "index": 89,
+   "id": "89",
+   "name": "Goggles",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.825,
+   "basePx": 196,
+   "px": 180,
+   "added": 10,
+   "removed": 26,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.706,
+   "moved": [
+    [
+     0,
+     -3
+    ],
+    [
+     -2,
+     -3
+    ],
+    [
+     2,
+     -3
+    ],
+    [
+     0,
+     -2
+    ]
+   ],
+   "unalignedIou": 0.229
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Goggles Alt 2",
+  "name": "Goggles Alt. 2",
+  "vanilla": {
+   "index": 89,
+   "id": "89",
+   "name": "Goggles",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.723,
+   "basePx": 196,
+   "px": 152,
+   "added": 6,
+   "removed": 50,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.719,
+   "moved": [
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "unalignedIou": 0.061
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Gold Pan Hat",
+  "name": "Pan Hat",
+  "vanilla": {
+   "index": 108,
+   "id": "GoldPanHat",
+   "name": "Gold Pan",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 406,
+   "px": 406,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Golden Helmet",
+  "name": "Coconut Helmet",
+  "vanilla": {
+   "index": 75,
+   "id": "75",
+   "name": "Golden Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 498,
+   "px": 498,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_75__b5deae",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Golden Mask",
+  "name": "Golden Mask",
+  "vanilla": {
+   "index": 67,
+   "id": "67",
+   "name": "Golden Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 410,
+   "px": 410,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_67__9d522d",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Golden Mask Alt",
+  "name": "Golden Mask Alt.",
+  "vanilla": {
+   "index": 67,
+   "id": "67",
+   "name": "Golden Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.615,
+   "basePx": 410,
+   "px": 378,
+   "added": 78,
+   "removed": 110,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.54,
+   "moved": [
+    [
+     0,
+     -4
+    ],
+    [
+     -1,
+     -4
+    ],
+    [
+     1,
+     -4
+    ],
+    [
+     0,
+     -1
+    ]
+   ],
+   "unalignedIou": 0.359
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Good Ol' Cap",
+  "name": "Good Ol' Cap",
+  "vanilla": {
+   "index": 18,
+   "id": "18",
+   "name": "Good Ol' Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 320,
+   "px": 320,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Governor's Hat",
+  "name": "Governor's Hat",
+  "vanilla": {
+   "index": 118,
+   "id": "GovernorsHat",
+   "name": "Governor's Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 458,
+   "px": 458,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Green Party Hat",
+  "name": "Green Party Hat",
+  "vanilla": {
+   "index": 59,
+   "id": "59",
+   "name": "Party Hat",
+   "matchedBy": "shape"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 400,
+   "px": 400,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_58__c9400d",
+    "ConcernedApe",
+    "RECOLOUR"
+   ],
+   [
+    "concernedape__hats_59__729835",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 2,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Green Party Hat Alt",
+  "name": "Green Party Hat Alt.",
+  "vanilla": {
+   "index": 59,
+   "id": "59",
+   "name": "Party Hat",
+   "matchedBy": "sibling:shape"
+  },
+  "vsVanilla": {
+   "iou": 0.83,
+   "basePx": 400,
+   "px": 332,
+   "added": 0,
+   "removed": 68,
+   "cls": "REMOVAL",
+   "baseKept": 0.852
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Green Turban",
+  "name": "Green Turban",
+  "vanilla": {
+   "index": 72,
+   "id": "72",
+   "name": "Green Turban",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 554,
+   "px": 554,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_72__8bff8e",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Hair Bone",
+  "name": "Hair Bone",
+  "vanilla": {
+   "index": 49,
+   "id": "49",
+   "name": "Hair Bone",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 270,
+   "px": 270,
+   "added": 0,
+   "removed": 0,
+   "cls": "TWEAK",
+   "changedPx": 2,
+   "tweakOf": "RESHADE"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Hard Hat",
+  "name": "Hard Hat",
+  "vanilla": {
+   "index": 27,
+   "id": "27",
+   "name": "Hard Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 356,
+   "px": 356,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Hard Hat Alt",
+  "name": "Hard Hat Alt.",
+  "vanilla": {
+   "index": 27,
+   "id": "27",
+   "name": "Hard Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.937,
+   "basePx": 356,
+   "px": 380,
+   "added": 24,
+   "removed": 0,
+   "cls": "ADDON",
+   "baseKept": 0.913
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Hunter's Cap",
+  "name": "Hunter's Cap",
+  "vanilla": {
+   "index": 15,
+   "id": "15",
+   "name": "Hunter's Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 333,
+   "px": 333,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Infinity Crown",
+  "name": "Infinity Crown",
+  "vanilla": {
+   "index": 121,
+   "id": "InfinityCrown",
+   "name": "Infinity Crown",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 467,
+   "px": 467,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Infinity Crown Alt",
+  "name": "Infinity Crown Alt.",
+  "vanilla": {
+   "index": 121,
+   "id": "InfinityCrown",
+   "name": "Infinity Crown",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.7,
+   "basePx": 467,
+   "px": 327,
+   "added": 0,
+   "removed": 140,
+   "cls": "REMOVAL",
+   "baseKept": 0.988
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Iridium Pan Hat",
+  "name": "Iridium Pan Hat",
+  "vanilla": {
+   "index": 109,
+   "id": "IridiumPanHat",
+   "name": "Iridium Pan",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 406,
+   "px": 406,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Jester Hat",
+  "name": "Jester Hat",
+  "vanilla": {
+   "index": 116,
+   "id": "JesterHat",
+   "name": "Jester Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 588,
+   "px": 588,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Jester Hat Alt",
+  "name": "Jester Hat Alt.",
+  "vanilla": {
+   "index": 116,
+   "id": "JesterHat",
+   "name": "Jester Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.969,
+   "basePx": 588,
+   "px": 570,
+   "added": 0,
+   "removed": 18,
+   "cls": "REMOVAL",
+   "baseKept": 0.67
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Joja Cap",
+  "name": "Joja Cap",
+  "vanilla": {
+   "index": 96,
+   "id": "JojaCap",
+   "name": "Joja Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 428,
+   "px": 428,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Junimo Hat",
+  "name": "Junimo Hat",
+  "vanilla": {
+   "index": 113,
+   "id": "JunimoHat",
+   "name": "Junimo Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 482,
+   "px": 482,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Knight's Helmet",
+  "name": "Knight's Helmet",
+  "vanilla": {
+   "index": 50,
+   "id": "50",
+   "name": "Knight's Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 610,
+   "px": 610,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_50__75b03d",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Knight's Helmet Alt",
+  "name": "Knight's Helmet Alt.",
+  "vanilla": {
+   "index": 50,
+   "id": "50",
+   "name": "Knight's Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.77,
+   "basePx": 610,
+   "px": 470,
+   "added": 0,
+   "removed": 140,
+   "cls": "REMOVAL",
+   "baseKept": 0.951
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Laurel Wreath Crown",
+  "name": "Laurel Wreath Crown",
+  "vanilla": {
+   "index": 97,
+   "id": "LaurelWreathCrown",
+   "name": "Laurel Wreath Crown",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 155,
+   "px": 155,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Leprechaun Hat",
+  "name": "Leprechaun Hat",
+  "vanilla": {
+   "index": 112,
+   "id": "LeprechuanHat",
+   "name": "Leprechaun Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 553,
+   "px": 553,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Living Hat",
+  "name": "Living Hat",
+  "vanilla": {
+   "index": 40,
+   "id": "40",
+   "name": "Living Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 713,
+   "px": 713,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_40__e188a1",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Logo Cap",
+  "name": "Logo Cap",
+  "vanilla": {
+   "index": 45,
+   "id": "45",
+   "name": "Logo Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 322,
+   "px": 322,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_45__2566e6",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Lucky Bow",
+  "name": "Lucky Bow",
+  "vanilla": {
+   "index": 21,
+   "id": "21",
+   "name": "Lucky Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 257,
+   "px": 257,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Magic Cowboy Hat",
+  "name": "Magic Cowboy Hat",
+  "vanilla": {
+   "index": 73,
+   "id": "73",
+   "name": "Magic Cowboy Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 402,
+   "px": 402,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_73__725552",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": true
+ },
+ {
+  "version": "hat",
+  "folder": "Magic Turban",
+  "name": "Magic Turban",
+  "vanilla": {
+   "index": 74,
+   "id": "74",
+   "name": "Magic Turban",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 554,
+   "px": 554,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_74__85fd36",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": true
+ },
+ {
+  "version": "hat",
+  "folder": "Mouse Ears",
+  "name": "Mouse Ears",
+  "vanilla": {
+   "index": 31,
+   "id": "31",
+   "name": "Mouse Ears",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 225,
+   "px": 225,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Mr. Qi's Hat",
+  "name": "Mr. Qi's Hat",
+  "vanilla": {
+   "index": 82,
+   "id": "82",
+   "name": "Mr. Qi's Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 528,
+   "px": 528,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_82__53436b",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Mummy Mask",
+  "name": "Mummy Mask",
+  "vanilla": {
+   "index": 101,
+   "id": "MummyMask",
+   "name": "Mummy Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 668,
+   "px": 668,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Mushroom Cap",
+  "name": "Mushroom Cap",
+  "vanilla": {
+   "index": 42,
+   "id": "42",
+   "name": "Mushroom Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 534,
+   "px": 534,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_42__e48fc6",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Mystery Hat",
+  "name": "Mystery Hat",
+  "vanilla": {
+   "index": 110,
+   "id": "MysteryHat",
+   "name": "Mystery Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 515,
+   "px": 515,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Official Cap",
+  "name": "Official Cap",
+  "vanilla": {
+   "index": 5,
+   "id": "5",
+   "name": "Official Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 291,
+   "px": 291,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Pageboy Cap",
+  "name": "Pageboy Cap",
+  "vanilla": {
+   "index": 115,
+   "id": "PageboyCap",
+   "name": "Pageboy Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 292,
+   "px": 292,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Panda hat",
+  "name": "Panda Hat",
+  "vanilla": {
+   "index": 36,
+   "id": "36",
+   "name": "Panda Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 347,
+   "px": 347,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_36__f1ebad",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Paper Hat",
+  "name": "Paper Hat",
+  "vanilla": {
+   "index": 114,
+   "id": "PaperHat",
+   "name": "Paper Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 386,
+   "px": 386,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Pink Bow",
+  "name": "Pink Bow",
+  "vanilla": {
+   "index": 77,
+   "id": "77",
+   "name": "Pink Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 331,
+   "px": 331,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL",
+   "moved": [
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     -1
+    ]
+   ],
+   "unalignedIou": 0.733
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Pirate Hat",
+  "name": "Pirate Hat",
+  "vanilla": {
+   "index": 62,
+   "id": "62",
+   "name": "Pirate Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 496,
+   "px": 496,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_62__361e51",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Plum Chapeau",
+  "name": "Plum Chapeau",
+  "vanilla": {
+   "index": 7,
+   "id": "7",
+   "name": "Plum Chapeau",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 444,
+   "px": 444,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Polka Bow",
+  "name": "Polka Bow",
+  "vanilla": {
+   "index": 22,
+   "id": "22",
+   "name": "Polka Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 258,
+   "px": 258,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Propeller Hat",
+  "name": "Propeller Hat",
+  "vanilla": {
+   "index": 68,
+   "id": "68",
+   "name": "Propeller Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 386,
+   "px": 386,
+   "added": 0,
+   "removed": 0,
+   "cls": "TWEAK",
+   "changedPx": 8,
+   "tweakOf": "RESHADE"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Propeller Hat Alt",
+  "name": "Propeller Hat Alt.",
+  "vanilla": {
+   "index": 68,
+   "id": "68",
+   "name": "Propeller Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.358,
+   "basePx": 386,
+   "px": 138,
+   "added": 0,
+   "removed": 248,
+   "cls": "REMOVAL",
+   "baseKept": 0.986,
+   "moved": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "unalignedIou": 0.323
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Pumpkin Mask",
+  "name": "Pumpkin Mask",
+  "vanilla": {
+   "index": 48,
+   "id": "48",
+   "name": "Pumpkin Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 660,
+   "px": 660,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_48__859028",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Qi Mask",
+  "name": "Qi Mask",
+  "vanilla": {
+   "index": 86,
+   "id": "86",
+   "name": "Qi Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 828,
+   "px": 828,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_86__e920d1",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Raccoon Hat",
+  "name": "Raccoon Hat",
+  "vanilla": {
+   "index": 106,
+   "id": "RaccoonHat",
+   "name": "Raccoon Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 400,
+   "px": 400,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Raccoon Hat Alt",
+  "name": "Raccoon Hat Alt.",
+  "vanilla": {
+   "index": 106,
+   "id": "RaccoonHat",
+   "name": "Raccoon Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.796,
+   "basePx": 400,
+   "px": 340,
+   "added": 12,
+   "removed": 72,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.939,
+   "moved": [
+    [
+     0,
+     0
+    ],
+    [
+     -1,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "unalignedIou": 0.77
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Radioactive Goggles",
+  "name": "Radioactive Goggles",
+  "vanilla": {
+   "index": 84,
+   "id": "84",
+   "name": "Radioactive Goggles",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 196,
+   "px": 196,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_84__696445",
+    "Seyph",
+    "IDENTICAL"
+   ],
+   [
+    "seyph__hats_89__662daf",
+    "Seyph",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 2,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Radioactive Goggles Alt 1",
+  "name": "Radioactive Goggles Alt. 1",
+  "vanilla": {
+   "index": 84,
+   "id": "84",
+   "name": "Radioactive Goggles",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.825,
+   "basePx": 196,
+   "px": 180,
+   "added": 10,
+   "removed": 26,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.706,
+   "moved": [
+    [
+     0,
+     -3
+    ],
+    [
+     -2,
+     -3
+    ],
+    [
+     2,
+     -3
+    ],
+    [
+     0,
+     -2
+    ]
+   ],
+   "unalignedIou": 0.229
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Radioactive Goggles Alt 2",
+  "name": "Radioactive Goggles Alt. 2",
+  "vanilla": {
+   "index": 84,
+   "id": "84",
+   "name": "Radioactive Goggles",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.723,
+   "basePx": 196,
+   "px": 152,
+   "added": 6,
+   "removed": 50,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.719,
+   "moved": [
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "unalignedIou": 0.061
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Red Cowboy Hat",
+  "name": "Red Cowboy Hat",
+  "vanilla": {
+   "index": 38,
+   "id": "38",
+   "name": "Red Cowboy Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 402,
+   "px": 402,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_38__041930",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Red Fez",
+  "name": "Red Fez",
+  "vanilla": {
+   "index": 105,
+   "id": "RedFez",
+   "name": "Red Fez",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 348,
+   "px": 348,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Red Party Hat",
+  "name": "Red Party Hat",
+  "vanilla": {
+   "index": 57,
+   "id": "57",
+   "name": "Party Hat",
+   "matchedBy": "shape"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 400,
+   "px": 400,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_57__0af754",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Red Party Hat Alt",
+  "name": "Red Party Hat Alt.",
+  "vanilla": {
+   "index": 57,
+   "id": "57",
+   "name": "Party Hat",
+   "matchedBy": "sibling:shape"
+  },
+  "vsVanilla": {
+   "iou": 0.83,
+   "basePx": 400,
+   "px": 332,
+   "added": 0,
+   "removed": 68,
+   "cls": "REMOVAL",
+   "baseKept": 0.756
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Sailor's Cap",
+  "name": "Sailor's Cap",
+  "vanilla": {
+   "index": 17,
+   "id": "17",
+   "name": "Sailor's Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 411,
+   "px": 411,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Santa Hat",
+  "name": "Santa Hat",
+  "vanilla": {
+   "index": 25,
+   "id": "25",
+   "name": "Santa Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 459,
+   "px": 459,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Skeleton Mask",
+  "name": "Skeleton Mask",
+  "vanilla": {
+   "index": 8,
+   "id": "8",
+   "name": "Skeleton Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 350,
+   "px": 350,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Skeleton Mask Alt",
+  "name": "Skeleton Mask Alt.",
+  "vanilla": {
+   "index": 8,
+   "id": "8",
+   "name": "Skeleton Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.732,
+   "basePx": 350,
+   "px": 374,
+   "added": 68,
+   "removed": 44,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.85,
+   "moved": [
+    [
+     0,
+     -4
+    ],
+    [
+     -1,
+     -6
+    ],
+    [
+     1,
+     -6
+    ],
+    [
+     0,
+     -3
+    ]
+   ],
+   "unalignedIou": 0.302
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Small Cap",
+  "name": "Small Cap",
+  "vanilla": {
+   "index": 79,
+   "id": "79",
+   "name": "Small Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 288,
+   "px": 288,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_79__83f174",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Sombrero",
+  "name": "Sombrero",
+  "vanilla": {
+   "index": 3,
+   "id": "3",
+   "name": "Sombrero",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 606,
+   "px": 606,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Sou'wester",
+  "name": "Sou'wester",
+  "vanilla": {
+   "index": 28,
+   "id": "28",
+   "name": "Sou'wester",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 390,
+   "px": 390,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Space Helmet",
+  "name": "Space Helmet",
+  "vanilla": {
+   "index": 120,
+   "id": "SpaceHelmet",
+   "name": "Space Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 518,
+   "px": 518,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Sports Cap",
+  "name": "Sports Cap",
+  "vanilla": {
+   "index": 104,
+   "id": "SportsCap",
+   "name": "Sports Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 316,
+   "px": 316,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Spotted Headscarf",
+  "name": "Spotted Headscarf",
+  "vanilla": {
+   "index": 52,
+   "id": "52",
+   "name": "Spotted Headscarf",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 435,
+   "px": 435,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_52__f2f01e",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Spotted Headscarf Alt",
+  "name": "Spotted Headscarf Alt",
+  "vanilla": {
+   "index": 52,
+   "id": "52",
+   "name": "Spotted Headscarf",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 435,
+   "px": 435,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 62
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Squid Hat",
+  "name": "Squid Hat",
+  "vanilla": {
+   "index": 103,
+   "id": "SquidHat",
+   "name": "Squid Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 470,
+   "px": 470,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Squire's Helmet",
+  "name": "Squire's Helmet",
+  "vanilla": {
+   "index": 51,
+   "id": "51",
+   "name": "Squire's Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 500,
+   "px": 500,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_51__f8800a",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Squire's Helmet Alt",
+  "name": "Squire's Helmet Alt.",
+  "vanilla": {
+   "index": 51,
+   "id": "51",
+   "name": "Squire's Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.736,
+   "basePx": 500,
+   "px": 368,
+   "added": 0,
+   "removed": 132,
+   "cls": "REMOVAL",
+   "baseKept": 0.902
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Star Helmet",
+  "name": "Star Helmet",
+  "vanilla": {
+   "index": 87,
+   "id": "87",
+   "name": "Star Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 610,
+   "px": 610,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_87__ff3756",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Steel Pan Hat",
+  "name": "Steel Pan Hat",
+  "vanilla": {
+   "index": 107,
+   "id": "SteelPanHat",
+   "name": "Steel Pan",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 406,
+   "px": 406,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Straw Hat",
+  "name": "Straw Hat",
+  "vanilla": {
+   "index": 4,
+   "id": "4",
+   "name": "Straw Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 422,
+   "px": 422,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_4__82230d",
+    "Seyph",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Sunglasses",
+  "name": "Sunglasses",
+  "vanilla": {
+   "index": 88,
+   "id": "88",
+   "name": "Sunglasses",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 54,
+   "px": 54,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_88__1b51fd",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Sunglasses Alt",
+  "name": "Sunglasses Alt.",
+  "vanilla": {
+   "index": 88,
+   "id": "88",
+   "name": "Sunglasses",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.629,
+   "basePx": 54,
+   "px": 60,
+   "added": 16,
+   "removed": 10,
+   "cls": "STRUCTURAL",
+   "baseKept": 1.0,
+   "moved": [
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "unalignedIou": 0.213
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Swashbuckler Hat",
+  "name": "Swashbuckler Hat",
+  "vanilla": {
+   "index": 85,
+   "id": "85",
+   "name": "Swashbuckler Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 495,
+   "px": 495,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_85__446a8c",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Swashbuckler Hat Alt",
+  "name": "Swashbuckler Hat Alt.",
+  "vanilla": {
+   "index": 85,
+   "id": "85",
+   "name": "Swashbuckler Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.945,
+   "basePx": 495,
+   "px": 468,
+   "added": 0,
+   "removed": 27,
+   "cls": "REMOVAL",
+   "baseKept": 0.959
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Tiara",
+  "name": "Tiara",
+  "vanilla": {
+   "index": 26,
+   "id": "26",
+   "name": "Tiara",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 64,
+   "px": 64,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Tiger Hat",
+  "name": "Tiger Hat",
+  "vanilla": {
+   "index": 91,
+   "id": "91",
+   "name": "Tiger Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 460,
+   "px": 460,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_91__15f548",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Top Hat",
+  "name": "Top Hat",
+  "vanilla": {
+   "index": 2,
+   "id": "2",
+   "name": "Top Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.998,
+   "basePx": 515,
+   "px": 516,
+   "added": 1,
+   "removed": 0,
+   "cls": "TWEAK",
+   "baseKept": 1.0,
+   "tweakOf": "ADDON"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Totem Mask",
+  "name": "Totem Mask",
+  "vanilla": {
+   "index": 44,
+   "id": "44",
+   "name": "Totem Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 490,
+   "px": 490,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_44__8e25a0",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Totem Mask Alt",
+  "name": "Totem Mask Alt.",
+  "vanilla": {
+   "index": 44,
+   "id": "44",
+   "name": "Totem Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.314,
+   "basePx": 490,
+   "px": 154,
+   "added": 0,
+   "removed": 336,
+   "cls": "REMOVAL",
+   "baseKept": 0.942,
+   "moved": [
+    [
+     0,
+     0
+    ],
+    [
+     -3,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "unalignedIou": 0.258
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Tricorn Hat",
+  "name": "Tricorn Hat",
+  "vanilla": {
+   "index": 95,
+   "id": "TricornHat",
+   "name": "Tricorn Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 406,
+   "px": 406,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Tricorn Hat Alt",
+  "name": "Tricorn Hat Alt.",
+  "vanilla": {
+   "index": 95,
+   "id": "TricornHat",
+   "name": "Tricorn Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.927,
+   "basePx": 406,
+   "px": 438,
+   "added": 32,
+   "removed": 0,
+   "cls": "ADDON",
+   "baseKept": 0.958
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Tropiclip",
+  "name": "Tropiclip",
+  "vanilla": {
+   "index": 13,
+   "id": "13",
+   "name": "Tropiclip",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 4,
+   "px": 4,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Trucker Hat",
+  "name": "Trucker Cap",
+  "vanilla": {
+   "index": 16,
+   "id": "16",
+   "name": "Trucker Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 384,
+   "px": 384,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Warrior Helmet",
+  "name": "Warrior Helmet",
+  "vanilla": {
+   "index": 93,
+   "id": "93",
+   "name": "Warrior Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 464,
+   "px": 464,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_93__5a7fa8",
+    "Seyph",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Watermelon Band",
+  "name": "Watermelon Band",
+  "vanilla": {
+   "index": 30,
+   "id": "30",
+   "name": "Watermelon Band",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 66,
+   "px": 66,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "White Bow",
+  "name": "White Bow",
+  "vanilla": {
+   "index": 119,
+   "id": "WhiteBow",
+   "name": "White Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 331,
+   "px": 331,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "White Turban",
+  "name": "Turban 1",
+  "vanilla": {
+   "index": 65,
+   "id": "65",
+   "name": "White Turban",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 562,
+   "px": 562,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_65__cd9944",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "hat",
+  "folder": "Witch Hat",
+  "name": "Witch Hat",
+  "vanilla": {
+   "index": 70,
+   "id": "70",
+   "name": "Witch Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 512,
+   "px": 512,
+   "added": 0,
+   "removed": 0,
+   "cls": "IDENTICAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_70__c6b7b4",
+    "ConcernedApe",
+    "IDENTICAL"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Abigail's Bow",
+  "name": "Abigail's Bow",
+  "vanilla": {
+   "index": 94,
+   "id": "AbigailsBow",
+   "name": "Abigail's Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 70,
+   "px": 70,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 57,
+   "changedColours": 5,
+   "baseColours": 6,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Abigail's Bow Alt",
+  "name": "Abigail's Bow Alt.",
+  "vanilla": {
+   "index": 94,
+   "id": "AbigailsBow",
+   "name": "Abigail's Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.061,
+   "basePx": 70,
+   "px": 70,
+   "added": 62,
+   "removed": 62,
+   "cls": "NOVEL",
+   "baseKept": 0.25,
+   "moved": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     -1,
+     0
+    ]
+   ],
+   "unalignedIou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Arcane Hat",
+  "name": "Arcane Hat",
+  "vanilla": {
+   "index": 60,
+   "id": "60",
+   "name": "Arcane Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 412,
+   "px": 412,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 384,
+   "changedColours": 9,
+   "baseColours": 10,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_60__09c43a",
+    "ConcernedApe",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Archer's Cap",
+  "name": "Archer's Cap",
+  "vanilla": {
+   "index": 35,
+   "id": "35",
+   "name": "Archer's Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 293,
+   "px": 293,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 264
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Archer's Cap Alt",
+  "name": "Archer's Cap Alt.",
+  "vanilla": {
+   "index": 35,
+   "id": "35",
+   "name": "Archer's Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.924,
+   "basePx": 293,
+   "px": 317,
+   "added": 24,
+   "removed": 0,
+   "cls": "ADDON",
+   "baseKept": 0.099
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Artifact Mask",
+  "name": "Artifact Mask",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Artifact Mask Alt",
+  "name": "Artifact Mask Alt.",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Ballcap",
+  "name": "Ballcap",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Beanie",
+  "name": "Beanie",
+  "vanilla": {
+   "index": 53,
+   "id": "53",
+   "name": "Beanie",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 360,
+   "px": 360,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 334
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Big Bow",
+  "name": "Big Bow",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Bird Mask",
+  "name": "Bird Mask",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Blobfish Mask",
+  "name": "Blobfish Mask",
+  "vanilla": {
+   "index": 56,
+   "id": "56",
+   "name": "Blobfish Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 528,
+   "px": 528,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 520
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Blobfish Mask Alt",
+  "name": "Blobfish Mask Alt.",
+  "vanilla": {
+   "index": 56,
+   "id": "56",
+   "name": "Blobfish Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.622,
+   "basePx": 528,
+   "px": 484,
+   "added": 96,
+   "removed": 140,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.015,
+   "moved": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     -3
+    ],
+    [
+     0,
+     -3
+    ],
+    [
+     0,
+     -3
+    ]
+   ],
+   "unalignedIou": 0.442
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Bonnet",
+  "name": "Bonnet",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Bowler Hat",
+  "name": "Bowler Hat",
+  "vanilla": {
+   "index": 1,
+   "id": "1",
+   "name": "Bowler Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.865,
+   "basePx": 388,
+   "px": 388,
+   "added": 28,
+   "removed": 28,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.097,
+   "moved": [
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "unalignedIou": 0.756
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Bridal Veil",
+  "name": "Bridal Veil",
+  "vanilla": {
+   "index": 69,
+   "id": "69",
+   "name": "Bridal Veil",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 495,
+   "px": 495,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 495
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Bucket Hat",
+  "name": "Bucket Hat",
+  "vanilla": {
+   "index": 102,
+   "id": "BucketHat",
+   "name": "Bucket Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 344,
+   "px": 344,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 322
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Butterfly Bow",
+  "name": "Butterfly Bow",
+  "vanilla": {
+   "index": 14,
+   "id": "14",
+   "name": "Butterfly Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 99,
+   "px": 99,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 99,
+   "changedColours": 5,
+   "baseColours": 5,
+   "cls": "RECOLOUR"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_14__692441",
+    "Seyph",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Cat Ears",
+  "name": "Cat Ears",
+  "vanilla": {
+   "index": 32,
+   "id": "32",
+   "name": "Cat Ears",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 182,
+   "px": 182,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 178
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Cat Ears Alt 1",
+  "name": "Cat Ears Alt. 1",
+  "vanilla": {
+   "index": 32,
+   "id": "32",
+   "name": "Cat Ears",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.846,
+   "basePx": 182,
+   "px": 154,
+   "added": 0,
+   "removed": 28,
+   "cls": "REMOVAL",
+   "baseKept": 0.013
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Cat Ears Alt 2",
+  "name": "Cat Ears Alt. 2",
+  "vanilla": {
+   "index": 32,
+   "id": "32",
+   "name": "Cat Ears",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.154,
+   "basePx": 182,
+   "px": 28,
+   "added": 0,
+   "removed": 154,
+   "cls": "REMOVAL",
+   "baseKept": 0.071
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Chef Hat",
+  "name": "Chef Hat",
+  "vanilla": {
+   "index": 61,
+   "id": "61",
+   "name": "Chef Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 613,
+   "px": 613,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 589,
+   "changedColours": 5,
+   "baseColours": 6,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_61__745485",
+    "ConcernedApe",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Chicken Mask",
+  "name": "Chicken Mask",
+  "vanilla": {
+   "index": 10,
+   "id": "10",
+   "name": "Chicken Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 358,
+   "px": 358,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 330
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Chicken Mask Alt",
+  "name": "Chicken Mask Alt.",
+  "vanilla": {
+   "index": 10,
+   "id": "10",
+   "name": "Chicken Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.759,
+   "basePx": 358,
+   "px": 300,
+   "added": 16,
+   "removed": 74,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.035,
+   "moved": [
+    [
+     0,
+     -4
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "unalignedIou": 0.394
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Coconut Helmet",
+  "name": "Coconut Helmet",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Concerned Hat",
+  "name": "Concerned Hat",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Concerned Hat Alt 1",
+  "name": "Concerned Hat Alt 1",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Concerned Hat Alt 2",
+  "name": "Concerned Hat Alt 2",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Cone Hat",
+  "name": "Cone Hat",
+  "vanilla": {
+   "index": 39,
+   "id": "39",
+   "name": "Cone Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 334,
+   "px": 334,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 294
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Cool Cap",
+  "name": "Cool Cap",
+  "vanilla": {
+   "index": 20,
+   "id": "20",
+   "name": "Cool Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 350,
+   "px": 350,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 316
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Cowboy Hat 1",
+  "name": "Cowboy Hat 1",
+  "vanilla": {
+   "index": 0,
+   "id": "0",
+   "name": "Cowboy Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 430,
+   "px": 430,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 403
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Cowboy Hat 2",
+  "name": "Cowboy Hat 2",
+  "vanilla": {
+   "index": 0,
+   "id": "0",
+   "name": "Cowboy Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.908,
+   "basePx": 430,
+   "px": 398,
+   "added": 4,
+   "removed": 36,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.069
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Cowboy Hat 3",
+  "name": "Cowboy Hat 3",
+  "vanilla": {
+   "index": 0,
+   "id": "0",
+   "name": "Cowboy Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.917,
+   "basePx": 430,
+   "px": 402,
+   "added": 4,
+   "removed": 32,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.045
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Cowboy Hat 4",
+  "name": "Cowboy Hat 4",
+  "vanilla": {
+   "index": 0,
+   "id": "0",
+   "name": "Cowboy Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.917,
+   "basePx": 430,
+   "px": 402,
+   "added": 4,
+   "removed": 32,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.045
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_73__725552",
+    "ConcernedApe",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Cowgal Hat",
+  "name": "Cowgal Hat",
+  "vanilla": {
+   "index": 33,
+   "id": "33",
+   "name": "Cowgal Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 410,
+   "px": 410,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 383
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Cowpoke Hat",
+  "name": "Cowpoke Hat",
+  "vanilla": {
+   "index": 34,
+   "id": "34",
+   "name": "Cowpoke Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 424,
+   "px": 424,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 391
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Daisy",
+  "name": "Daisy",
+  "vanilla": {
+   "index": 29,
+   "id": "29",
+   "name": "Daisy",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 24,
+   "px": 24,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 24,
+   "changedColours": 3,
+   "baseColours": 3,
+   "cls": "RECOLOUR"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Delicate Bow",
+  "name": "Delicate Bow",
+  "vanilla": {
+   "index": 12,
+   "id": "12",
+   "name": "Delicate Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 14,
+   "px": 14,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 14,
+   "changedColours": 3,
+   "baseColours": 3,
+   "cls": "RECOLOUR"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Deluxe Cowboy Hat",
+  "name": "Deluxe Cowboy Hat",
+  "vanilla": {
+   "index": 81,
+   "id": "81",
+   "name": "Deluxe Cowboy Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 446,
+   "px": 446,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 416
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Deluxe Pirate Hat",
+  "name": "Deluxe Pirate Hat",
+  "vanilla": {
+   "index": 76,
+   "id": "76",
+   "name": "Deluxe Pirate Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 612,
+   "px": 612,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 599
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Deluxe Pirate Hat Alt",
+  "name": "Deluxe Pirate Hat Alt.",
+  "vanilla": {
+   "index": 76,
+   "id": "76",
+   "name": "Deluxe Pirate Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.979,
+   "basePx": 612,
+   "px": 599,
+   "added": 0,
+   "removed": 13,
+   "cls": "REMOVAL",
+   "baseKept": 0.018
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Dinosaur Hat",
+  "name": "Dinosaur Hat",
+  "vanilla": {
+   "index": 43,
+   "id": "43",
+   "name": "Dinosaur Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 386,
+   "px": 386,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 366
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Dwarf Helm",
+  "name": "Dwarf Helm",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Earmuffs",
+  "name": "Earmuffs",
+  "vanilla": {
+   "index": 11,
+   "id": "11",
+   "name": "Earmuffs",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 238,
+   "px": 238,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 226
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Elegant Turban",
+  "name": "Elegant Turban",
+  "vanilla": {
+   "index": 64,
+   "id": "64",
+   "name": "Elegant Turban",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.736,
+   "basePx": 558,
+   "px": 558,
+   "added": 85,
+   "removed": 85,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.068,
+   "moved": [
+    [
+     -1,
+     0
+    ],
+    [
+     -1,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     -3,
+     0
+    ]
+   ],
+   "unalignedIou": 1.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Emily's Magic Hat",
+  "name": "Emily's Magic Hat",
+  "vanilla": {
+   "index": 41,
+   "id": "41",
+   "name": "Emily's Magic Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 548,
+   "px": 548,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 516,
+   "changedColours": 6,
+   "baseColours": 8,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_41__b55850",
+    "ConcernedApe",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Eye Patch",
+  "name": "Eye Patch",
+  "vanilla": {
+   "index": 24,
+   "id": "24",
+   "name": "Eye Patch",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 57,
+   "px": 57,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 51,
+   "changedColours": 2,
+   "baseColours": 3,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_24__437807",
+    "Seyph",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Eye Patch Alt",
+  "name": "Eye Patch Alt.",
+  "vanilla": {
+   "index": 24,
+   "id": "24",
+   "name": "Eye Patch",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.267,
+   "basePx": 57,
+   "px": 57,
+   "added": 33,
+   "removed": 33,
+   "cls": "NOVEL",
+   "baseKept": 0.208,
+   "moved": [
+    [
+     -1,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "unalignedIou": 0.295
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Fashion Hat",
+  "name": "Fashion Hat",
+  "vanilla": {
+   "index": 47,
+   "id": "47",
+   "name": "Fashion Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 473,
+   "px": 473,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 449
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Fashion Hat Alt",
+  "name": "Fashion Hat Alt.",
+  "vanilla": {
+   "index": 47,
+   "id": "47",
+   "name": "Fashion Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.973,
+   "basePx": 473,
+   "px": 460,
+   "added": 0,
+   "removed": 13,
+   "cls": "REMOVAL",
+   "baseKept": 0.052
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Fedora",
+  "name": "Fedora",
+  "vanilla": {
+   "index": 19,
+   "id": "19",
+   "name": "Fedora",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.992,
+   "basePx": 385,
+   "px": 386,
+   "added": 2,
+   "removed": 1,
+   "cls": "TWEAK",
+   "baseKept": 0.099,
+   "tweakOf": "STRUCTURAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Fez",
+  "name": "Fez",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Fishing Hat",
+  "name": "Fishing Hat",
+  "vanilla": {
+   "index": 55,
+   "id": "55",
+   "name": "Fishing Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 430,
+   "px": 430,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 402,
+   "changedColours": 5,
+   "baseColours": 6,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_55__9fa1e5",
+    "ConcernedApe",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Flat Topped Hat",
+  "name": "Flat Topped Hat",
+  "vanilla": {
+   "index": 63,
+   "id": "63",
+   "name": "Flat Topped Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 530,
+   "px": 530,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 506,
+   "changedColours": 7,
+   "baseColours": 8,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_63__ff510b",
+    "ConcernedApe",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Floppy Beanie",
+  "name": "Floppy Beanie",
+  "vanilla": {
+   "index": 54,
+   "id": "54",
+   "name": "Floppy Beanie",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 418,
+   "px": 418,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 391
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Forager's Hat",
+  "name": "Forager's Hat",
+  "vanilla": {
+   "index": 90,
+   "id": "90",
+   "name": "Forager's Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.991,
+   "basePx": 439,
+   "px": 443,
+   "added": 4,
+   "removed": 0,
+   "cls": "TWEAK",
+   "baseKept": 0.073,
+   "tweakOf": "ADDON"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Forager's Hat Alt",
+  "name": "Forager's Hat Alt.",
+  "vanilla": {
+   "index": 90,
+   "id": "90",
+   "name": "Forager's Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.961,
+   "basePx": 439,
+   "px": 422,
+   "added": 0,
+   "removed": 17,
+   "cls": "REMOVAL",
+   "baseKept": 0.076
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Frog Hat",
+  "name": "Frog Hat",
+  "vanilla": {
+   "index": 78,
+   "id": "78",
+   "name": "Frog Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 490,
+   "px": 490,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 462
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Garbage Hat",
+  "name": "Garbage Hat",
+  "vanilla": {
+   "index": 66,
+   "id": "66",
+   "name": "Garbage Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 504,
+   "px": 504,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 399,
+   "changedColours": 6,
+   "baseColours": 8,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_66__5f354b",
+    "ConcernedApe",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Gil's Hat",
+  "name": "Gil's Hat",
+  "vanilla": {
+   "index": 98,
+   "id": "GilsHat",
+   "name": "Gil's Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 410,
+   "px": 410,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 376,
+   "changedColours": 6,
+   "baseColours": 7,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Gnome's Cap",
+  "name": "Gnome's Cap",
+  "vanilla": {
+   "index": 23,
+   "id": "23",
+   "name": "Gnome's Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 356,
+   "px": 356,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 335
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Gnome's Cap Alt",
+  "name": "Gnome's Cap Alt.",
+  "vanilla": {
+   "index": 23,
+   "id": "23",
+   "name": "Gnome's Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.638,
+   "basePx": 356,
+   "px": 358,
+   "added": 80,
+   "removed": 78,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Goblin Mask",
+  "name": "Goblin Mask",
+  "vanilla": {
+   "index": 9,
+   "id": "9",
+   "name": "Goblin Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 396,
+   "px": 396,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 378
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Goblin Mask Alt",
+  "name": "Goblin Mask Alt.",
+  "vanilla": {
+   "index": 9,
+   "id": "9",
+   "name": "Goblin Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.447,
+   "basePx": 396,
+   "px": 394,
+   "added": 150,
+   "removed": 152,
+   "cls": "NOVEL",
+   "baseKept": 0.049,
+   "moved": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     -2
+    ],
+    [
+     -2,
+     -2
+    ],
+    [
+     0,
+     -2
+    ]
+   ],
+   "unalignedIou": 0.348
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Goggles",
+  "name": "Goggles",
+  "vanilla": {
+   "index": 89,
+   "id": "89",
+   "name": "Goggles",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 196,
+   "px": 196,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 174
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Goggles Alt 1",
+  "name": "Goggles Alt. 1",
+  "vanilla": {
+   "index": 89,
+   "id": "89",
+   "name": "Goggles",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.717,
+   "basePx": 196,
+   "px": 180,
+   "added": 23,
+   "removed": 39,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.076,
+   "moved": [
+    [
+     0,
+     -3
+    ],
+    [
+     1,
+     -3
+    ],
+    [
+     2,
+     -2
+    ],
+    [
+     0,
+     -2
+    ]
+   ],
+   "unalignedIou": 0.229
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Goggles Alt 2",
+  "name": "Goggles Alt. 2",
+  "vanilla": {
+   "index": 89,
+   "id": "89",
+   "name": "Goggles",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.723,
+   "basePx": 196,
+   "px": 152,
+   "added": 6,
+   "removed": 50,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.096,
+   "moved": [
+    [
+     0,
+     4
+    ],
+    [
+     -1,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "unalignedIou": 0.061
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Good Ol' Cap",
+  "name": "Good Ol' Cap",
+  "vanilla": {
+   "index": 18,
+   "id": "18",
+   "name": "Good Ol' Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 320,
+   "px": 320,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 283
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Governor's Hat",
+  "name": "Governor's Hat",
+  "vanilla": {
+   "index": 118,
+   "id": "GovernorsHat",
+   "name": "Governor's Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 458,
+   "px": 458,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 432,
+   "changedColours": 5,
+   "baseColours": 6,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Hair Bone",
+  "name": "Hair Bone",
+  "vanilla": {
+   "index": 49,
+   "id": "49",
+   "name": "Hair Bone",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 270,
+   "px": 270,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 226
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Hard Hat",
+  "name": "Hard Hat",
+  "vanilla": {
+   "index": 27,
+   "id": "27",
+   "name": "Hard Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 356,
+   "px": 356,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 330
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Hard Hat Alt",
+  "name": "Hard Hat Alt.",
+  "vanilla": {
+   "index": 27,
+   "id": "27",
+   "name": "Hard Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.937,
+   "basePx": 356,
+   "px": 380,
+   "added": 24,
+   "removed": 0,
+   "cls": "ADDON",
+   "baseKept": 0.084
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Hunter's Cap",
+  "name": "Hunter's Cap",
+  "vanilla": {
+   "index": 15,
+   "id": "15",
+   "name": "Hunter's Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 333,
+   "px": 333,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 304
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Infinity Crown",
+  "name": "Infinity Crown",
+  "vanilla": {
+   "index": 121,
+   "id": "InfinityCrown",
+   "name": "Infinity Crown",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 467,
+   "px": 467,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 448
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Infinity Crown Alt",
+  "name": "Infinity Crown Alt.",
+  "vanilla": {
+   "index": 121,
+   "id": "InfinityCrown",
+   "name": "Infinity Crown",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.7,
+   "basePx": 467,
+   "px": 327,
+   "added": 0,
+   "removed": 140,
+   "cls": "REMOVAL",
+   "baseKept": 0.058
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Jester Hat",
+  "name": "Jester Hat",
+  "vanilla": {
+   "index": 116,
+   "id": "JesterHat",
+   "name": "Jester Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 588,
+   "px": 588,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 564
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Jester Hat Alt",
+  "name": "Jester Hat Alt.",
+  "vanilla": {
+   "index": 116,
+   "id": "JesterHat",
+   "name": "Jester Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.969,
+   "basePx": 588,
+   "px": 570,
+   "added": 0,
+   "removed": 18,
+   "cls": "REMOVAL",
+   "baseKept": 0.042
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Joja Cap",
+  "name": "Joja Cap",
+  "vanilla": {
+   "index": 96,
+   "id": "JojaCap",
+   "name": "Joja Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 428,
+   "px": 428,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 400,
+   "changedColours": 6,
+   "baseColours": 8,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Junimo Hat",
+  "name": "Junimo Hat",
+  "vanilla": {
+   "index": 113,
+   "id": "JunimoHat",
+   "name": "Junimo Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 482,
+   "px": 482,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 462
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Knight's Helmet",
+  "name": "Knight's Helmet",
+  "vanilla": {
+   "index": 50,
+   "id": "50",
+   "name": "Knight's Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 610,
+   "px": 610,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 606
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Knight's Helmet Alt",
+  "name": "Knight's Helmet Alt.",
+  "vanilla": {
+   "index": 50,
+   "id": "50",
+   "name": "Knight's Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.77,
+   "basePx": 610,
+   "px": 470,
+   "added": 0,
+   "removed": 140,
+   "cls": "REMOVAL",
+   "baseKept": 0.009
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Laurel Wreath Crown",
+  "name": "Laurel Wreath Crown",
+  "vanilla": {
+   "index": 97,
+   "id": "LaurelWreathCrown",
+   "name": "Laurel Wreath Crown",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 155,
+   "px": 155,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 138,
+   "changedColours": 5,
+   "baseColours": 7,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Leprechaun Hat",
+  "name": "Leprechaun Hat",
+  "vanilla": {
+   "index": 112,
+   "id": "LeprechuanHat",
+   "name": "Leprechaun Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 553,
+   "px": 553,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 516,
+   "changedColours": 8,
+   "baseColours": 9,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Living Hat",
+  "name": "Living Hat",
+  "vanilla": {
+   "index": 40,
+   "id": "40",
+   "name": "Living Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 713,
+   "px": 713,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 678,
+   "changedColours": 5,
+   "baseColours": 6,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_40__e188a1",
+    "ConcernedApe",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Logo Cap",
+  "name": "Logo Cap",
+  "vanilla": {
+   "index": 45,
+   "id": "45",
+   "name": "Logo Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 322,
+   "px": 322,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 285
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Lucky Bow",
+  "name": "Lucky Bow",
+  "vanilla": {
+   "index": 21,
+   "id": "21",
+   "name": "Lucky Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 257,
+   "px": 257,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 226
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Mouse Ears",
+  "name": "Mouse Ears",
+  "vanilla": {
+   "index": 31,
+   "id": "31",
+   "name": "Mouse Ears",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 225,
+   "px": 225,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 204,
+   "changedColours": 4,
+   "baseColours": 5,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Mr. Qi's Hat",
+  "name": "Mr. Qi's Hat",
+  "vanilla": {
+   "index": 82,
+   "id": "82",
+   "name": "Mr. Qi's Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 528,
+   "px": 528,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 500
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Mummy Mask",
+  "name": "Mummy Mask",
+  "vanilla": {
+   "index": 101,
+   "id": "MummyMask",
+   "name": "Mummy Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 668,
+   "px": 668,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 668,
+   "changedColours": 6,
+   "baseColours": 6,
+   "cls": "RECOLOUR"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Mushroom Cap",
+  "name": "Mushroom Cap",
+  "vanilla": {
+   "index": 42,
+   "id": "42",
+   "name": "Mushroom Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 534,
+   "px": 534,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 492
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Mystery Hat",
+  "name": "Mystery Hat",
+  "vanilla": {
+   "index": 110,
+   "id": "MysteryHat",
+   "name": "Mystery Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 515,
+   "px": 515,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 478,
+   "changedColours": 7,
+   "baseColours": 8,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Official Cap",
+  "name": "Official Cap",
+  "vanilla": {
+   "index": 5,
+   "id": "5",
+   "name": "Official Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 291,
+   "px": 291,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 258
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Pageboy Cap",
+  "name": "Pageboy Cap",
+  "vanilla": {
+   "index": 115,
+   "id": "PageboyCap",
+   "name": "Pageboy Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 292,
+   "px": 292,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 260
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Pan Hat",
+  "name": "Pan Hat",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Panda Hat",
+  "name": "Panda Hat",
+  "vanilla": {
+   "index": 36,
+   "id": "36",
+   "name": "Panda Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 347,
+   "px": 347,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 319
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Paper Hat",
+  "name": "Paper Hat",
+  "vanilla": {
+   "index": 114,
+   "id": "PaperHat",
+   "name": "Paper Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 386,
+   "px": 386,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 362
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Party Hat",
+  "name": "Party Hat",
+  "vanilla": {
+   "index": 57,
+   "id": "57",
+   "name": "Party Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 400,
+   "px": 400,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 370
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Party Hat Alt",
+  "name": "Party Hat Alt.",
+  "vanilla": {
+   "index": 57,
+   "id": "57",
+   "name": "Party Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.83,
+   "basePx": 400,
+   "px": 332,
+   "added": 0,
+   "removed": 68,
+   "cls": "REMOVAL",
+   "baseKept": 0.09
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Pirate Hat",
+  "name": "Pirate Hat",
+  "vanilla": {
+   "index": 62,
+   "id": "62",
+   "name": "Pirate Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 496,
+   "px": 496,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 474
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Plum Chapeau",
+  "name": "Plum Chapeau",
+  "vanilla": {
+   "index": 7,
+   "id": "7",
+   "name": "Plum Chapeau",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 444,
+   "px": 444,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 416,
+   "changedColours": 4,
+   "baseColours": 6,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Polka Bow",
+  "name": "Polka Bow",
+  "vanilla": {
+   "index": 22,
+   "id": "22",
+   "name": "Polka Bow",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 258,
+   "px": 258,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 226,
+   "changedColours": 7,
+   "baseColours": 8,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Propeller Hat",
+  "name": "Propeller Hat",
+  "vanilla": {
+   "index": 68,
+   "id": "68",
+   "name": "Propeller Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 386,
+   "px": 386,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 354
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Propeller Hat Alt",
+  "name": "Propeller Hat Alt.",
+  "vanilla": {
+   "index": 68,
+   "id": "68",
+   "name": "Propeller Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.323,
+   "basePx": 386,
+   "px": 138,
+   "added": 10,
+   "removed": 258,
+   "cls": "NOVEL",
+   "baseKept": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Pumpkin Mask",
+  "name": "Pumpkin Mask",
+  "vanilla": {
+   "index": 48,
+   "id": "48",
+   "name": "Pumpkin Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 660,
+   "px": 660,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 660,
+   "changedColours": 8,
+   "baseColours": 8,
+   "cls": "RECOLOUR"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_48__859028",
+    "ConcernedApe",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Qi Mask",
+  "name": "Qi Mask",
+  "vanilla": {
+   "index": 86,
+   "id": "86",
+   "name": "Qi Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 828,
+   "px": 828,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 828
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Raccoon Hat",
+  "name": "Raccoon Hat",
+  "vanilla": {
+   "index": 106,
+   "id": "RaccoonHat",
+   "name": "Raccoon Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 400,
+   "px": 400,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 380,
+   "changedColours": 6,
+   "baseColours": 7,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Raccoon Hat Alt",
+  "name": "Raccoon Hat Alt.",
+  "vanilla": {
+   "index": 106,
+   "id": "RaccoonHat",
+   "name": "Raccoon Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.77,
+   "basePx": 400,
+   "px": 340,
+   "added": 18,
+   "removed": 78,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.05
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Ribbon",
+  "name": "Ribbon",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Sailor's Cap",
+  "name": "Sailor's Cap",
+  "vanilla": {
+   "index": 17,
+   "id": "17",
+   "name": "Sailor's Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.986,
+   "basePx": 411,
+   "px": 413,
+   "added": 4,
+   "removed": 2,
+   "cls": "TWEAK",
+   "baseKept": 0.088,
+   "tweakOf": "STRUCTURAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Santa Hat",
+  "name": "Santa Hat",
+  "vanilla": {
+   "index": 25,
+   "id": "25",
+   "name": "Santa Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 459,
+   "px": 459,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 440
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Skeleton Mask",
+  "name": "Skeleton Mask",
+  "vanilla": {
+   "index": 8,
+   "id": "8",
+   "name": "Skeleton Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 350,
+   "px": 350,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 334
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Skeleton Mask Alt",
+  "name": "Skeleton Mask Alt.",
+  "vanilla": {
+   "index": 8,
+   "id": "8",
+   "name": "Skeleton Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.392,
+   "basePx": 350,
+   "px": 374,
+   "added": 170,
+   "removed": 146,
+   "cls": "NOVEL",
+   "baseKept": 0.049,
+   "moved": [
+    [
+     0,
+     0
+    ],
+    [
+     3,
+     -1
+    ],
+    [
+     -2,
+     -2
+    ],
+    [
+     0,
+     -3
+    ]
+   ],
+   "unalignedIou": 0.302
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Small Cap",
+  "name": "Small Cap",
+  "vanilla": {
+   "index": 79,
+   "id": "79",
+   "name": "Small Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 288,
+   "px": 288,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 261
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Sombrero",
+  "name": "Sombrero",
+  "vanilla": {
+   "index": 3,
+   "id": "3",
+   "name": "Sombrero",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 606,
+   "px": 606,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 556,
+   "changedColours": 6,
+   "baseColours": 7,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Sou'wester",
+  "name": "Sou'wester",
+  "vanilla": {
+   "index": 28,
+   "id": "28",
+   "name": "Sou'wester",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 390,
+   "px": 390,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 382,
+   "changedColours": 5,
+   "baseColours": 6,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Space Helmet",
+  "name": "Space Helmet",
+  "vanilla": {
+   "index": 120,
+   "id": "SpaceHelmet",
+   "name": "Space Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 518,
+   "px": 518,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 426,
+   "changedColours": 6,
+   "baseColours": 8,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Sports Cap",
+  "name": "Sports Cap",
+  "vanilla": {
+   "index": 104,
+   "id": "SportsCap",
+   "name": "Sports Cap",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 316,
+   "px": 316,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 280
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Spotted Headscarf",
+  "name": "Spotted Headscarf",
+  "vanilla": {
+   "index": 52,
+   "id": "52",
+   "name": "Spotted Headscarf",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 435,
+   "px": 435,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 403
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Spotted Headscarf Alt",
+  "name": "Spotted Headscarf Alt.",
+  "vanilla": {
+   "index": 52,
+   "id": "52",
+   "name": "Spotted Headscarf",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 435,
+   "px": 435,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 435
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Squid Hat",
+  "name": "Squid Hat",
+  "vanilla": {
+   "index": 103,
+   "id": "SquidHat",
+   "name": "Squid Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 470,
+   "px": 470,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 438
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Squire's Helmet",
+  "name": "Squire's Helmet",
+  "vanilla": {
+   "index": 51,
+   "id": "51",
+   "name": "Squire's Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 500,
+   "px": 500,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 474
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Squire's Helmet Alt",
+  "name": "Squire's Helmet Alt.",
+  "vanilla": {
+   "index": 51,
+   "id": "51",
+   "name": "Squire's Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.736,
+   "basePx": 500,
+   "px": 368,
+   "added": 0,
+   "removed": 132,
+   "cls": "REMOVAL",
+   "baseKept": 0.071
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Star Helmet",
+  "name": "Star Helmet",
+  "vanilla": {
+   "index": 87,
+   "id": "87",
+   "name": "Star Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 610,
+   "px": 610,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 588
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Straw Hat",
+  "name": "Straw Hat",
+  "vanilla": {
+   "index": 4,
+   "id": "4",
+   "name": "Straw Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 422,
+   "px": 422,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 390
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Sunglasses",
+  "name": "Sunglasses",
+  "vanilla": {
+   "index": 88,
+   "id": "88",
+   "name": "Sunglasses",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 54,
+   "px": 54,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 52,
+   "changedColours": 2,
+   "baseColours": 3,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [
+   [
+    "seyph__hats_88__1b51fd",
+    "Seyph",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Sunglasses Alt",
+  "name": "Sunglasses Alt.",
+  "vanilla": {
+   "index": 88,
+   "id": "88",
+   "name": "Sunglasses",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.213,
+   "basePx": 54,
+   "px": 60,
+   "added": 40,
+   "removed": 34,
+   "cls": "NOVEL",
+   "baseKept": 0.1
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Swashbuckler Hat",
+  "name": "Swashbuckler Hat",
+  "vanilla": {
+   "index": 85,
+   "id": "85",
+   "name": "Swashbuckler Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 495,
+   "px": 495,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 467
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Swashbuckler Hat Alt",
+  "name": "Swashbuckler Hat Alt.",
+  "vanilla": {
+   "index": 85,
+   "id": "85",
+   "name": "Swashbuckler Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.945,
+   "basePx": 495,
+   "px": 468,
+   "added": 0,
+   "removed": 27,
+   "cls": "REMOVAL",
+   "baseKept": 0.06
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Tiara",
+  "name": "Tiara",
+  "vanilla": {
+   "index": 26,
+   "id": "26",
+   "name": "Tiara",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 64,
+   "px": 64,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 57,
+   "changedColours": 6,
+   "baseColours": 7,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Tiger Hat",
+  "name": "Tiger Hat",
+  "vanilla": {
+   "index": 91,
+   "id": "91",
+   "name": "Tiger Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 460,
+   "px": 460,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 430
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Top Hat",
+  "name": "Top Hat",
+  "vanilla": {
+   "index": 2,
+   "id": "2",
+   "name": "Top Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.653,
+   "basePx": 515,
+   "px": 515,
+   "added": 108,
+   "removed": 108,
+   "cls": "STRUCTURAL",
+   "baseKept": 0.125,
+   "moved": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     -2,
+     0
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "unalignedIou": 1.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Totem Mask",
+  "name": "Totem Mask",
+  "vanilla": {
+   "index": 44,
+   "id": "44",
+   "name": "Totem Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 490,
+   "px": 490,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 470
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Totem Mask Alt",
+  "name": "Totem Mask Alt.",
+  "vanilla": {
+   "index": 44,
+   "id": "44",
+   "name": "Totem Mask",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.258,
+   "basePx": 490,
+   "px": 154,
+   "added": 22,
+   "removed": 358,
+   "cls": "NOVEL",
+   "baseKept": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Tricorn Hat",
+  "name": "Tricorn Hat",
+  "vanilla": {
+   "index": 95,
+   "id": "TricornHat",
+   "name": "Tricorn Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 406,
+   "px": 406,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 380
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Tricorn Hat Alt",
+  "name": "Tricorn Hat Alt.",
+  "vanilla": {
+   "index": 95,
+   "id": "TricornHat",
+   "name": "Tricorn Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 0.927,
+   "basePx": 406,
+   "px": 438,
+   "added": 32,
+   "removed": 0,
+   "cls": "ADDON",
+   "baseKept": 0.064
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Tropiclip",
+  "name": "Tropiclip",
+  "vanilla": {
+   "index": 13,
+   "id": "13",
+   "name": "Tropiclip",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 4,
+   "px": 4,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 4,
+   "changedColours": 2,
+   "baseColours": 2,
+   "cls": "TWEAK",
+   "tweakOf": "RECOLOUR"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Trucker Hat",
+  "name": "Trucker Cap",
+  "vanilla": {
+   "index": 16,
+   "id": "16",
+   "name": "Trucker Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 384,
+   "px": 384,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 356
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Turban 1",
+  "name": "Turban 1",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Turban 2",
+  "name": "Turban 2",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Turban 3",
+  "name": "Turban 3",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Velvet Bow",
+  "name": "Velvet Bow",
+  "vanilla": null,
+  "vsVanilla": {
+   "cls": "NOVEL",
+   "iou": 0.0
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Warrior Helmet",
+  "name": "Warrior Helmet",
+  "vanilla": {
+   "index": 93,
+   "id": "93",
+   "name": "Warrior Helmet",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 464,
+   "px": 464,
+   "added": 0,
+   "removed": 0,
+   "cls": "RESHADE",
+   "changedPx": 450
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Watermelon Band",
+  "name": "Watermelon Band",
+  "vanilla": {
+   "index": 30,
+   "id": "30",
+   "name": "Watermelon Band",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 66,
+   "px": 66,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 57,
+   "changedColours": 5,
+   "baseColours": 6,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [],
+  "corpusDupeCount": 0,
+  "prismatic": false
+ },
+ {
+  "version": "accessory",
+  "folder": "Witch Hat",
+  "name": "Witch Hat",
+  "vanilla": {
+   "index": 70,
+   "id": "70",
+   "name": "Witch Hat",
+   "matchedBy": "name"
+  },
+  "vsVanilla": {
+   "iou": 1.0,
+   "basePx": 512,
+   "px": 512,
+   "added": 0,
+   "removed": 0,
+   "changedPx": 480,
+   "changedColours": 5,
+   "baseColours": 6,
+   "cls": "PARTIAL"
+  },
+  "corpusDupes": [
+   [
+    "concernedape__hats_70__c6b7b4",
+    "ConcernedApe",
+    "RECOLOUR"
+   ]
+  ],
+  "corpusDupeCount": 1,
+  "prismatic": false
+ }
+]

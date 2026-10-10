@@ -1,0 +1,398 @@
+[
+ {
+  "item": "Abigail's Bow Alt",
+  "cls": "NOVEL",
+  "moved": [
+   [
+    3,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    -3,
+    0
+   ]
+  ]
+ },
+ {
+  "item": "Blobfish Mask Alt",
+  "cls": "STRUCTURAL",
+  "moved": [
+   [
+    0,
+    -3
+   ],
+   [
+    -2,
+    -3
+   ],
+   [
+    2,
+    -3
+   ],
+   [
+    0,
+    -1
+   ]
+  ]
+ },
+ {
+  "item": "Bowler Hat",
+  "cls": "IDENTICAL",
+  "moved": [
+   [
+    0,
+    -1
+   ],
+   [
+    0,
+    -1
+   ],
+   [
+    0,
+    -1
+   ],
+   [
+    0,
+    -1
+   ]
+  ]
+ },
+ {
+  "item": "Chicken Mask Alt",
+  "cls": "STRUCTURAL",
+  "moved": [
+   [
+    0,
+    -4
+   ],
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    0
+   ]
+  ]
+ },
+ {
+  "item": "Eye Patch Alt",
+  "cls": "STRUCTURAL",
+  "moved": [
+   [
+    3,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ]
+ },
+ {
+  "item": "Gnome's Cap Alt",
+  "cls": "STRUCTURAL",
+  "moved": [
+   [
+    0,
+    0
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    -2,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ]
+ },
+ {
+  "item": "Goblin Mask Alt",
+  "cls": "STRUCTURAL",
+  "moved": [
+   [
+    0,
+    -5
+   ],
+   [
+    -1,
+    -5
+   ],
+   [
+    1,
+    -5
+   ],
+   [
+    0,
+    -2
+   ]
+  ]
+ },
+ {
+  "item": "Goggles Alt 1",
+  "cls": "STRUCTURAL",
+  "moved": [
+   [
+    0,
+    -3
+   ],
+   [
+    -2,
+    -3
+   ],
+   [
+    2,
+    -3
+   ],
+   [
+    0,
+    -2
+   ]
+  ]
+ },
+ {
+  "item": "Goggles Alt 2",
+  "cls": "STRUCTURAL",
+  "moved": [
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    1
+   ]
+  ]
+ },
+ {
+  "item": "Golden Mask Alt",
+  "cls": "STRUCTURAL",
+  "moved": [
+   [
+    0,
+    -4
+   ],
+   [
+    -1,
+    -4
+   ],
+   [
+    1,
+    -4
+   ],
+   [
+    0,
+    -1
+   ]
+  ]
+ },
+ {
+  "item": "Pink Bow",
+  "cls": "IDENTICAL",
+  "moved": [
+   [
+    0,
+    -1
+   ],
+   [
+    0,
+    -1
+   ],
+   [
+    0,
+    -1
+   ],
+   [
+    0,
+    -1
+   ]
+  ]
+ },
+ {
+  "item": "Propeller Hat Alt",
+  "cls": "REMOVAL",
+  "moved": [
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ]
+ },
+ {
+  "item": "Raccoon Hat Alt",
+  "cls": "STRUCTURAL",
+  "moved": [
+   [
+    0,
+    0
+   ],
+   [
+    -1,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ]
+ },
+ {
+  "item": "Radioactive Goggles Alt 1",
+  "cls": "STRUCTURAL",
+  "moved": [
+   [
+    0,
+    -3
+   ],
+   [
+    -2,
+    -3
+   ],
+   [
+    2,
+    -3
+   ],
+   [
+    0,
+    -2
+   ]
+  ]
+ },
+ {
+  "item": "Radioactive Goggles Alt 2",
+  "cls": "STRUCTURAL",
+  "moved": [
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    1
+   ]
+  ]
+ },
+ {
+  "item": "Skeleton Mask Alt",
+  "cls": "STRUCTURAL",
+  "moved": [
+   [
+    0,
+    -4
+   ],
+   [
+    -1,
+    -6
+   ],
+   [
+    1,
+    -6
+   ],
+   [
+    0,
+    -3
+   ]
+  ]
+ },
+ {
+  "item": "Sunglasses Alt",
+  "cls": "STRUCTURAL",
+  "moved": [
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    -2
+   ],
+   [
+    0,
+    0
+   ]
+  ]
+ },
+ {
+  "item": "Totem Mask Alt",
+  "cls": "REMOVAL",
+  "moved": [
+   [
+    0,
+    0
+   ],
+   [
+    -3,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    0,
+    0
+   ]
+  ]
+ }
+]

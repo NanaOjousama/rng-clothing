@@ -125,3 +125,86 @@ Roots used: scratchpad extracts of every clothing/hat archive in ~/Downloads and
 - Pattern transfer (CuteBeret plaid onto other single-piece hats).
 - Crown×brim for cowboy / top / bucket; peak×crown for caps.
 - Decoration outline restyle (sunflower keeps Kailey's dark outline on soft hats).
+
+## Vanilla Hats Extended (Nexus 26851, Tea-Loving Lad) — 2026-10-09
+
+    source tools/env.sh
+    python3 pack_study/tools/vhe_study.py "<unzipped Hat Version dir>" "<unzipped Accessory Version dir>"
+    # -> data/vhe/{items,pairs,internal_sets,parts,moves,mask_layers,summary}.json
+    #    out/vhe_vs_vanilla.png, out/vhe_alt_pairs.png, out/vhe_parts.png  (base | item | diff)
+
+Vanilla authority: the game's unpacked `Content (unpacked)/Characters/Farmer/hats.png`
++ `Data/hats.json` (122 hats) — no more inferring vanilla from replacement sheets.
+Matching is name-first (Alts inherit their sibling's base), shape only as fallback with
+>=50% shared pixels kept, and **per-view shift-aligned** (a moved part is not a new part).
+
+- 157 hat-version items: **116 are vanilla unchanged** (incl. 1px whole-sprite shifts),
+  8 are touch-ups (<=8 px), ~30 are distinct new evidence after collapsing recoloured
+  copies (Party Hat Alt x3, Goggles/Radioactive Goggles Alt).  None were in the corpus.
+- **Author splits of vanilla hats (best evidence):** 13 parts removed from ConcernedApe
+  art (Knight plume, Squire crest, Infinity Crown upper gems, Party Hat pompom, Forager
+  leaf sprig, propeller vs cap, Totem face vs leaf ring, cat ears vs whiskers) + 3 added
+  by Tea-Loving Lad (Hard Hat lamp, Tricorn ribbon, Archer feather tip).  A human drew
+  those boundaries; still candidates until approved by eye (like decorations_approved).
+  Deluxe Pirate / Jester / Swashbuckler splits are flecks (13–27 px), low value.
+- **Placement evidence:** 18 items are the same art moved with a consistent per-view
+  offset, e.g. masks raised to sit on the head: front (0,-4), right (-1,-4),
+  left (+1,-4), back (0,-1); goggles lowered to the eyes: (0,4)/(0,5)/(0,5)/(0,1).
+  Side views move horizontally in opposite directions; back moves least.
+- **Vanilla's own variant sets** (same mask): Blue/Pink/White Bow, Red/Blue/Green
+  Party Hat, Copper/Steel/Gold/Iridium Pan, Blue/Dark Cowboy (pure recolour),
+  Dark Ballcap/Sports Cap, Goggles/Radioactive Goggles (partial: only lens role changes).
+- **Palette roles (Accessory version):** 89 hats carry author-named `ColorMaskLayers`
+  (2–5 per hat, 5-step grey ramps offset by 1 per layer), covering 94.7% of opaque
+  pixels.  Each named layer spans 1–8 original vanilla colours (mean 3.5) -> an
+  author-labelled region + its vanilla ramp.  Names (Brim, Band, Feather, Strap, Visor,
+  Plume, Lens/Frame, Gemstone ...) are the author's claims: per CLAUDE.md §3 they are
+  positive evidence, not promotion; verify location before using a label.
+- **Corpus hygiene found:** 24 corpus hats credited to **Seyph** are pixel-identical
+  vanilla (unchanged cells of the Kawaii Revamp sheet) -> `data/vhe/corpus_vanilla_identical.json`.
+  With "style unit = author" the generator currently treats them as Seyph's style.
+  Not yet fixed (needs a decision).  Corpus holds 59/122 vanilla hats.
+
+## Corpus agrees with real vanilla — 2026-10-09
+
+    python3 pack_study/tools/vanilla_corpus.py        # rerunnable; run after extract_hats.py
+
+- 24 hats credited to **Seyph** were unchanged vanilla cells of the Kawaii Revamp sheet ->
+  recredited to ConcernedApe (`creditFix` keeps the old author, `foundIn` the pack).
+  ids/names kept, so approvals/demos still resolve.  The approved leaf sprig
+  (`seyph__hats_90`) is vanilla's Forager's Hat -> now ConcernedApe.
+- 63 missing vanilla hats added from `Content (unpacked)` (`concernedape__hats_<i>__vanilla`);
+  nothing was present moved by <=2 px.  ConcernedApe = all 122 vanilla hats.
+- **Finding 4 corrected:** Seyph measures `tonal_outline` (edge/inner 0.49), not hard;
+  the "hard" reading was vanilla's style (0.32) credited to Seyph.
+- Downstream rerun: 555 hats, 498 constructions; vanilla brings its own recolour/pattern
+  sets (Pans, Party Hats, Goggles, Cowboy) into the library.
+
+## Reseating rule (measured) — 2026-10-09
+
+    python3 -I pack_study/tools/reseat_rule.py        # data/vhe/moves.json -> data/reseat_rule.json
+
+- From 7 authored head-piece moves (VHE Alts; removals and recoloured twins excluded):
+  front dy -> side dy x1.0 (0.5-1.5), side dx 0.25*|dy| toward the back of the head
+  (right -x, left +x), back dy x0.33 (0-0.75).  "down" has n=1 -> marked unusable.
+- `gen/decorate.py`: front stays the anchor.  A side/back view that cannot seat is placed
+  by the rule instead of rejecting the pairing; a side view that disagrees by >2 px takes
+  the rule (A/B by eye: keeps a perched part on top in profile, as in front); the back view
+  keeps its surface seat (A/B: a perched part seen from behind pokes above the crown).
+  `reseat(pixels, front_dy)` moves a headpiece along the head.
+- **Headroom:** parts may rise 6 rows above the frame; the writer grows the canvas upward
+  and adds the same to HeadPosition.Y.  FS uses HeadPosition as the draw origin
+  (src/DrawManager.cs) -> confirmed in source, **not yet by a worn capture**.
+- Decoration matrix (10 targets): bird 1->10, cat ears 1->3, pompoms 10, plume 5,
+  propeller 6, crown gems 6, lamp 10, ribbon 10, leaf 10, sunflower 10.  Crest 0: it
+  follows the helmet's curve in profile, only a helmet-shaped target could take it.
+
+## VHE parts in the pool — 2026-10-09
+
+    python3 pack_study/tools/vhe_parts.py "<unzipped Hat Version dir>"   # -> data/vhe/decorations.json
+
+Approved (data/decorations_approved.json, keys `vhe__...`): perched = plume, crest, crown
+gems, pompom x3 colours, propeller (the Alt itself; the cap is its base), lamp, ribbon.
+headpiece (worn on the head, never placed on a hat) = whiskers, vanilla cat ears, totem
+face, leaf ring.  Rejected: Archer feather tip (extension of its own feather), Forager
+leaf (duplicate), flecks.  Addons include pixels painted over the base (lamp's front face).
