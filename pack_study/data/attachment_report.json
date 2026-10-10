@@ -416,7 +416,7 @@
   }
  },
  "vhe__red_party_hat_alt__removed": {
-  "label": "pompom (red)",
+  "label": "tied tassel tuft (red)",
   "class": "ornament",
   "transfer": "family-limited",
   "anchor": "top-centre",
@@ -474,7 +474,7 @@
   }
  },
  "vhe__blue_party_hat_alt__removed": {
-  "label": "pompom (blue)",
+  "label": "tied tassel tuft (blue)",
   "class": "ornament",
   "transfer": "family-limited",
   "anchor": "top-centre",
@@ -532,7 +532,7 @@
   }
  },
  "vhe__green_party_hat_alt__removed": {
-  "label": "pompom (green)",
+  "label": "tied tassel tuft (green)",
   "class": "ornament",
   "transfer": "family-limited",
   "anchor": "top-centre",

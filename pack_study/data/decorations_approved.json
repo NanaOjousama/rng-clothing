@@ -41,19 +41,22 @@
    "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user"
   },
   "vhe__red_party_hat_alt__removed": {
-   "label": "pompom (red)",
+   "label": "tied tassel tuft (red)",
    "kind": "perched",
-   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user"
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user; renamed 2026-10-09 after a x12 look at vanilla Party Hat: the cone tip is pinched by a purple tie and splays into a yellow/peach starburst -- a tied tassel tuft, not a round pompom and not a bow (no loops)",
+   "formerLabel": "pompom (red)"
   },
   "vhe__blue_party_hat_alt__removed": {
-   "label": "pompom (blue)",
+   "label": "tied tassel tuft (blue)",
    "kind": "perched",
-   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user"
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user; renamed 2026-10-09 after a x12 look at vanilla Party Hat: the cone tip is pinched by a purple tie and splays into a yellow/peach starburst -- a tied tassel tuft, not a round pompom and not a bow (no loops)",
+   "formerLabel": "pompom (blue)"
   },
   "vhe__green_party_hat_alt__removed": {
-   "label": "pompom (green)",
+   "label": "tied tassel tuft (green)",
    "kind": "perched",
-   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user"
+   "note": "Vanilla Hats Extended split, reviewed by eye on out/vhe_parts.png 2026-10-09; vocabulary endorsed by user; renamed 2026-10-09 after a x12 look at vanilla Party Hat: the cone tip is pinched by a purple tie and splays into a yellow/peach starburst -- a tied tassel tuft, not a round pompom and not a bow (no loops)",
+   "formerLabel": "pompom (green)"
   },
   "vhe__propeller_hat_alt__kept": {
    "label": "propeller",

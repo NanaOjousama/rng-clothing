@@ -236,7 +236,7 @@
    }
   },
   "vhe__red_party_hat_alt__removed": {
-   "label": "pompom (red)",
+   "label": "tied tassel tuft (red)",
    "class": "ornament",
    "transfer": "family-limited",
    "prefer": [
@@ -257,11 +257,12 @@
    "placement": {
     "anchor": "top-centre",
     "seat": "surface",
-    "why": "bobble on a beanie / party hat / tam"
-   }
+    "why": "vanilla Party Hat top: tip pinched by a tie, splayed into a tassel burst. Fits tapered tops (party, knit/Santa/floppy, jester/gnome); on a beret it reads as the stalk. Not a pompom: do not treat as a round bobble."
+   },
+   "formerLabel": "pompom (red)"
   },
   "vhe__blue_party_hat_alt__removed": {
-   "label": "pompom (blue)",
+   "label": "tied tassel tuft (blue)",
    "class": "ornament",
    "transfer": "family-limited",
    "prefer": [
@@ -282,11 +283,12 @@
    "placement": {
     "anchor": "top-centre",
     "seat": "surface",
-    "why": "as red"
-   }
+    "why": "vanilla Party Hat top: tip pinched by a tie, splayed into a tassel burst. Fits tapered tops (party, knit/Santa/floppy, jester/gnome); on a beret it reads as the stalk. Not a pompom: do not treat as a round bobble."
+   },
+   "formerLabel": "pompom (blue)"
   },
   "vhe__green_party_hat_alt__removed": {
-   "label": "pompom (green)",
+   "label": "tied tassel tuft (green)",
    "class": "ornament",
    "transfer": "family-limited",
    "prefer": [
@@ -307,8 +309,9 @@
    "placement": {
     "anchor": "top-centre",
     "seat": "surface",
-    "why": "as red"
-   }
+    "why": "vanilla Party Hat top: tip pinched by a tie, splayed into a tassel burst. Fits tapered tops (party, knit/Santa/floppy, jester/gnome); on a beret it reads as the stalk. Not a pompom: do not treat as a round bobble."
+   },
+   "formerLabel": "pompom (green)"
   },
   "vhe__propeller_hat_alt__kept": {
    "label": "propeller",

@@ -142,7 +142,7 @@ Matching is name-first (Alts inherit their sibling's base), shape only as fallba
   8 are touch-ups (<=8 px), ~30 are distinct new evidence after collapsing recoloured
   copies (Party Hat Alt x3, Goggles/Radioactive Goggles Alt).  None were in the corpus.
 - **Author splits of vanilla hats (best evidence):** 13 parts removed from ConcernedApe
-  art (Knight plume, Squire crest, Infinity Crown upper gems, Party Hat pompom, Forager
+  art (Knight plume, Squire crest, Infinity Crown upper gems, Party Hat tied tassel tuft, Forager
   leaf sprig, propeller vs cap, Totem face vs leaf ring, cat ears vs whiskers) + 3 added
   by Tea-Loving Lad (Hard Hat lamp, Tricorn ribbon, Archer feather tip).  A human drew
   those boundaries; still candidates until approved by eye (like decorations_approved).
@@ -195,7 +195,7 @@ Matching is name-first (Alts inherit their sibling's base), shape only as fallba
 - **Headroom:** parts may rise 6 rows above the frame; the writer grows the canvas upward
   and adds the same to HeadPosition.Y.  FS uses HeadPosition as the draw origin
   (src/DrawManager.cs) -> confirmed in source, **not yet by a worn capture**.
-- Decoration matrix (10 targets): bird 1->10, cat ears 1->3, pompoms 10, plume 5,
+- Decoration matrix (10 targets): bird 1->10, cat ears 1->3, tassel tufts 10, plume 5,
   propeller 6, crown gems 6, lamp 10, ribbon 10, leaf 10, sunflower 10.  Crest 0: it
   follows the helmet's curve in profile, only a helmet-shaped target could take it.
 
@@ -204,7 +204,7 @@ Matching is name-first (Alts inherit their sibling's base), shape only as fallba
     python3 pack_study/tools/vhe_parts.py "<unzipped Hat Version dir>"   # -> data/vhe/decorations.json
 
 Approved (data/decorations_approved.json, keys `vhe__...`): perched = plume, crest, crown
-gems, pompom x3 colours, propeller (the Alt itself; the cap is its base), lamp, ribbon.
+gems, tied tassel tuft x3 colours (first labelled pompom), propeller (the Alt itself; the cap is its base), lamp, ribbon.
 headpiece (worn on the head, never placed on a hat) = whiskers, vanilla cat ears, totem
 face, leaf ring.  Rejected: Archer feather tip (extension of its own feather), Forager
 leaf (duplicate), flecks.  Addons include pixels painted over the base (lamp's front face).
@@ -299,7 +299,7 @@ rejected or unknown host).
 | plume | ornament | family-limited | 190 | 20 | 20 | 40 | 31 | 79 |
 | crest | ornament | family-limited | 54 | 2 | 1 | 13 | 25 | 13 |
 | crown gems | ornament | family-limited | 201 | 2 | 11 | 39 | 83 | 66 |
-| pompom ×3 | ornament | family-limited | 292 | 23 | 43 | 105 | 22 | 99 |
+| tied tassel tuft ×3 | ornament | family-limited | 292 | 23 | 43 | 105 | 22 | 99 |
 | ribbon (cockade) | ornament | family-limited | 376 | 20 | 63 | 129 | 26 | 138 |
 | lamp | ornament | family-limited | 363 | 8 | | 140 | 83 | 132 |
 | propeller | ornament | novelty-only | 225 | | | 108 | 35 | 82 |
@@ -349,3 +349,13 @@ earmuffs and goggles alike):
 Proposed fix, not applied: split `hair` into soft hair pieces (headband, bow,
 clip, kerchief) and worn devices (earmuffs, goggles, headphones, sleeping mask),
 and reject large ornaments on devices.
+
+### Label fix — 2026-10-09
+
+The three VHE Party Hat Alt parts were labelled "pompom". A ×12 look at vanilla
+Party Hat shows the cone tip pinched by a purple tie and splayed into a
+yellow/peach starburst. That is a **tied tassel tuft**: not a round pompom, and
+not a bow (no loops). Only the label changed. The approval keys
+(`vhe__{red,blue,green}_party_hat_alt__removed`) are unchanged, and the old label
+is kept as `formerLabel`. Host profile unchanged: prefer party/knit, allow
+fantasy/cottage/hood (on a beret it reads as the stalk).
