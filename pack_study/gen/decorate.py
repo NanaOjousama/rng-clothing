@@ -19,7 +19,7 @@ horizontal anchor is unchanged.  A view that seats but disagrees with the
 prediction by more than RESEAT_TOL px is flagged (info['reseatFlags']); side views
 then take the rule's move, the back view keeps its surface seat (A/B by eye).
 """
-import json, os
+import json, os, math
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VIEWS = ['front', 'right', 'left', 'back']
 
@@ -116,6 +116,96 @@ def place_view(dec_px, src_mask, tgt_mask, shift_y=None):
     out = [[x + shift_x, y + shift_y, p] for x, y, p in dec_px]
     return (out, shift_y) if _valid(out, tgt_mask) else None
 
+# --- contact / seat primitives (worn QC 2026-10-10: PSQC 02/06 sprig floated, PSQC 04 tuft split) ---
+
+def _n4(x, y): return ((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1))
+
+def _occ(mask):
+    return {(x, y) for y in range(len(mask)) for x in range(len(mask[0])) if mask[y][x]}
+
+def contacts(px, occ):
+    """Part pixels touching the host (4-neighbour, host pixel not covered by the part)."""
+    P = {(x, y) for x, y, _ in px}
+    return [(x, y) for x, y in P if any(q in occ and q not in P for q in _n4(x, y))]
+
+def need_contact(px, src_mask):
+    """A placed part must touch its new host at least half as much as on its source,
+    so a part that sat on a 6-px stem cannot hang off one diagonal-ish pixel."""
+    n = len(contacts(px, _occ(src_mask)))
+    return max(1, math.ceil(n / 2)) if n else 0
+
+def wrap_rows(px, src_mask):
+    """Rows where the part wraps the host (part pixels left AND right of a host pixel):
+    the tuft tied round a cone tip.  Such a part only fits a host as narrow there."""
+    P = {(x, y) for x, y, _ in px}; out = []
+    for y in {y for _, y in P}:
+        xs = sorted(x for x, yy in P if yy == y)
+        if any(src_mask[y][x] and (x, y) not in P for x in range(xs[0] + 1, xs[-1])) if 0 <= y < len(src_mask) else False:
+            out.append(y)
+    return out
+
+def fits_wrap(placed, rows_dy, tgt_mask):
+    """Every wrapped row: the host is present and lies strictly inside the part's span."""
+    P = {(x, y) for x, y, _ in placed}
+    for y in rows_dy:
+        xs = sorted(x for x, yy in P if yy == y)
+        if not xs or not (0 <= y < len(tgt_mask)): return False
+        host = [x for x in range(len(tgt_mask[0])) if tgt_mask[y][x] and (x, y) not in P]
+        if not host or min(host) <= xs[0] or max(host) >= xs[-1]: return False
+    return True
+
+def _run_at(mask, y, x):
+    """(x0, x1) of the filled run on row y containing x, or the run nearest x."""
+    if not (0 <= y < len(mask)): return None
+    row = mask[y]; runs, x0 = [], None
+    for i, v in enumerate(list(row) + [0]):
+        if v and x0 is None: x0 = i
+        if not v and x0 is not None: runs.append((x0, i - 1)); x0 = None
+    if not runs: return None
+    return min(runs, key=lambda r: 0 if r[0] <= x <= r[1] else min(abs(x - r[0]), abs(x - r[1])))
+
+def place_side(dec_px, src_mask, tgt_mask):
+    """SIDE seat: a part tucked against the CROWN WALL (leaf sprig in a Forager's Hat).
+    The stem root is the lowest part pixel with the source hat beside it.  On the source,
+    find the crown run on that row and the root's offset from the run's edge; on the
+    target, take the row the same depth below the hat top, the run nearest the hat's
+    centre (the crown, not a brim tip or an ear), and keep the same offset from its edge.
+    Then +-1/+2 rows to reach need_contact() contacts without covering more host than on
+    the source.  Worn QC 2026-10-10: anchoring by whole-hat width put the sprig on the
+    brim tip / outer corner, where it read as floating (PSQC 02/06)."""
+    if not dec_px: return [], 0
+    socc, tocc = _occ(src_mask), _occ(tgt_mask)
+    si, ti = mask_info(src_mask), mask_info(tgt_mask)
+    if not si or not ti: return None
+    P = {(x, y) for x, y, _ in dec_px}
+    side_con = [(x, y, d) for x, y in P for d in (1, -1) if (x + d, y) in socc and (x + d, y) not in P]
+    if not side_con: return None
+    rx, ry, d = max(side_con, key=lambda t: t[1])                   # stem root, d = direction to the hat
+    s_top, t_top = min(y for _, y in socc), min(y for _, y in tocc)
+    run = _run_at(src_mask, ry, rx + d)
+    edge_s = run[0] if d == 1 else run[1]
+    off = rx - edge_s                                              # root column relative to the wall
+    ty = t_top + (ry - s_top)
+    trun = _run_at(tgt_mask, ty, (ti[0] + ti[1]) // 2)
+    if trun is None: return None
+    edge_t = trun[0] if d == 1 else trun[1]
+    dx, dy0 = edge_t + off - rx, ty - ry
+    over_s = sum(q in socc for q in P)
+    need = need_contact(dec_px, src_mask)
+    for dy in (dy0, dy0 + 1, dy0 - 1, dy0 + 2):
+        out = [[x + dx, y + dy, p] for x, y, p in dec_px]
+        if sum((x, y) in tocc for x, y, _ in out) > over_s + 1: continue
+        if len(contacts(out, tocc)) >= need and _valid(out, tgt_mask): return out, dy
+    return None
+
+def seat_of(dec):
+    import semantics
+    pl = (semantics.profiles().get(dec['from'].rsplit('__', 1)[0]) or {}).get('placement', {})
+    return pl.get('seat', 'surface'), pl.get('fit')
+
+def _contact_ok(px, src_mask, out, tgt_mask):
+    return len(contacts(out, _occ(tgt_mask))) >= need_contact(px, src_mask)
+
 RULE_WINS = ('right', 'left')   # A/B by eye 2026-10-09: rule better on sides; back keeps surface
 
 def place(dec, target_masks, info=None, prefer_rule=RULE_WINS):
@@ -124,6 +214,15 @@ def place(dec, target_masks, info=None, prefer_rule=RULE_WINS):
     prefer_rule: views that take the rule's move (if valid) when they disagree with it.
     Sides: the rule keeps a perched part on top in profile, as in the front view.
     Back: the surface wins -- a perched part seen from behind pokes above the crown."""
+    seat, fit = seat_of(dec)
+    if seat == 'side':
+        res = {}
+        for v in VIEWS:
+            r = place_side(dec['views'][v]['pixels'], dec['views'][v]['baseMask'], target_masks[v])
+            if r is None: return None
+            res[v] = r[0]
+        if info is not None: info['reseated'], info['reseatFlags'] = [], []
+        return res
     res, dy = {}, {}
     front = place_view(dec['views']['front']['pixels'], dec['views']['front']['baseMask'], target_masks['front'])
     if front is None: return None
@@ -143,6 +242,12 @@ def place(dec, target_masks, info=None, prefer_rule=RULE_WINS):
             if r is not None: reseated.append(v)
         if r is None: return None
         res[v], dy[v] = r
+    for v in VIEWS:          # every view must touch its new host about as firmly as its source
+        px, sm = dec['views'][v]['pixels'], dec['views'][v]['baseMask']
+        if px and not _contact_ok(px, sm, res[v], target_masks[v]): return None
+        if fit == 'wrap':
+            rows = wrap_rows(px, sm)
+            if rows and not fits_wrap(res[v], [y + dy[v] for y in rows], target_masks[v]): return None
     if info is not None:
         info['reseated'], info['reseatFlags'] = reseated, flags
     return res

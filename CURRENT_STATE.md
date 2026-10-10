@@ -38,6 +38,16 @@ proposed split of hair into soft pieces vs worn devices, not applied.
 Then: tassel tufts roll as ONE concept (tuft share 26% -> 15% of decorated); 'hair' split into soft hair vs
 'device' (earmuffs/goggles/headphones/sunglasses/sleeping mask), rejected by every hat ornament except cat
 ears -> 0 device decorations in 5x300.
+2026-10-10, worn QC of v1: **propeller above frame PASS (golden; above-frame growth proven worn)**, band and ribbon OK,
+leaf sprig FAIL (floats), tuft FAIL (malformed on a beanie). Fixes:
+- sprig: side-wall seat (`decorate.place_side`)
+- tuft: wrap fit, now 2 hosts, neither recolourable, so the tuft is out of generation
+- all parts: must touch the host at least half as much as on the source
+- device: rejected by every ornament, cat ears included
+Golden propeller is pixel-identical. Provenance proofs (`gen/provenance.py`, `gen/qc_replay.py`,
+`pack_study/tools/provenance_sheet.py`) sit beside every QC hat; all 11 v1 hats replay exactly.
+`[FS] PackStudy QC v2` (6 hats) is installed. Next test: restart the game, then
+`python3 tools/qc.py worn --pack PackStudy.QC2 --expect 6`. Do not redo: v1 sprig surface seat, tuft on flat tops.
 
 ## Git-backed recovery anchors
 

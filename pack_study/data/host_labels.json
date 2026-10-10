@@ -469,9 +469,11 @@
    "name": "Hat 04"
   },
   "mok_tinora__c240": {
-   "families": [],
+   "families": [
+    "device"
+   ],
    "confidence": "high",
-   "note": "brown pilot cap with goggles and ear flaps",
+   "note": "brown pilot cap with goggles and ear flaps; goggles worn on the cap -> device (ornaments must not perch on it)",
    "author": "mok&Tinora",
    "name": "Hat 02",
    "proposedFamily": "aviator"

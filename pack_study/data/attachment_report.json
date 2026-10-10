@@ -42,21 +42,20 @@
   "seated": 3,
   "verdicts": {
    "prefer": 1,
-   "allow": 2
+   "reject": 2
   },
   "keptFamilies": {
-   "fantasy": 2,
-   "device": 2,
    "hair": 1
   },
   "examples": {
    "keep": [
-    "plurffle:Bows (Double, Small 2) ['hair']",
-    "plurffle:Earmuffs (Bat Wings) ['device', 'fantasy']",
-    "plurffle:Earmuffs (Angel Wings) ['device', 'fantasy']"
+    "plurffle:Bows (Double, Small 2) ['hair']"
    ],
    "novelty": [],
-   "reject": []
+   "reject": [
+    "plurffle:Earmuffs (Bat Wings) ['device', 'fantasy']",
+    "plurffle:Earmuffs (Angel Wings) ['device', 'fantasy']"
+   ]
   }
  },
  "kailey__straw_hat_sunflower": {
@@ -70,22 +69,22 @@
    "bottomBelowTop": 4
   },
   "anchorOk": true,
-  "seated": 370,
+  "seated": 320,
   "verdicts": {
-   "unknown": 22,
-   "allow": 68,
-   "prefer": 108,
-   "novelty": 118,
-   "reject": 54
+   "unknown": 18,
+   "allow": 57,
+   "prefer": 95,
+   "novelty": 106,
+   "reject": 44
   },
   "keptFamilies": {
-   "cottage": 56,
-   "hair": 47,
+   "cottage": 48,
+   "hair": 39,
    "floral": 29,
-   "straw": 27,
-   "fantasy": 21,
+   "straw": 22,
+   "fantasy": 15,
    "western": 9,
-   "animal": 8,
+   "animal": 7,
    "formal": 4,
    "hood": 2,
    "cap": 1
@@ -94,26 +93,26 @@
    "keep": [
     "marmuruah:Soul's Hood ['fantasy', 'hood']",
     "TiaoTiao:TT.summer.bluecyan ['hair']",
-    "TiaoTiao:TT.summer.blue4 ['hair']",
-    "TiaoTiao:TT.summer.blue3 ['hair']",
     "TiaoTiao:TT.summer.blue1 ['cottage']",
-    "TiaoTiao:TT.summer.orange ['floral', 'straw']"
+    "TiaoTiao:TT.summer.orange ['floral', 'straw']",
+    "TiaoTiao:TT.summer.red ['hair']",
+    "orangeblosso:0 - Old Straw Hat ['straw']"
    ],
    "novelty": [
     "billi:Beanie ['knit']",
     "plurffle:Party Hat ['party']",
-    "plurffle:Cap (Snapback) ['cap']",
     "plurffle:Cap 2 ['cap']",
     "plurffle:Cap 1 ['cap']",
-    "plurffle:Beanie (Cat) ['animal', 'knit']"
+    "plurffle:Beanie (Cat) ['animal', 'knit']",
+    "plurffle:Hood (Pointy) ['hood']"
    ],
    "reject": [
     "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
     "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
     "plurffle:Crown (Coronet) ['regal']",
-    "Jedone:Cat_Headphones_03 ['animal', 'device']",
-    "Jedone:Cat_Headphones_02 ['animal', 'device']",
-    "Jedone:Cat_Headphones_01 ['animal', 'device']"
+    "Jedone:Cap&Headphones_08 ['cap', 'device']",
+    "Jedone:Cap&Headphones_05 ['cap', 'device']",
+    "Jedone:Cap&Headphones_04 ['cap', 'device']"
    ]
   }
  },
@@ -158,25 +157,25 @@
    "bottomBelowTop": 1
   },
   "anchorOk": true,
-  "seated": 336,
+  "seated": 285,
   "verdicts": {
-   "unknown": 19,
-   "allow": 73,
-   "prefer": 105,
-   "reject": 42,
-   "novelty": 97
+   "unknown": 17,
+   "allow": 61,
+   "prefer": 92,
+   "reject": 36,
+   "novelty": 79
   },
   "keptFamilies": {
-   "cottage": 55,
-   "hair": 30,
-   "knit": 30,
-   "floral": 27,
-   "straw": 27,
-   "fantasy": 19,
-   "animal": 9,
+   "cottage": 50,
+   "knit": 29,
+   "floral": 25,
+   "hair": 23,
+   "straw": 21,
+   "fantasy": 15,
+   "animal": 5,
    "hood": 2,
-   "formal": 2,
    "western": 1,
+   "formal": 1,
    "cap": 1
   },
   "examples": {
@@ -189,12 +188,12 @@
     "TiaoTiao:TT.summer.red ['hair']"
    ],
    "novelty": [
-    "plurffle:Party Hat ['party']",
-    "plurffle:Crown (Coronet) ['regal']",
     "plurffle:Cowboy Hat ['western']",
     "plurffle:Cap (Snapback) ['cap']",
     "plurffle:Cap 2 ['cap']",
-    "plurffle:Cap 1 ['cap']"
+    "plurffle:Cap 1 ['cap']",
+    "plurffle:Hood (Pointy) ['hood']",
+    "Jedone:Vintage Cap_03 ['cap']"
    ],
    "reject": [
     "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
@@ -210,58 +209,57 @@
   "label": "leaf sprig",
   "class": "ornament",
   "transfer": "family-limited",
-  "anchor": "top-side",
+  "anchor": "side-wall",
   "measured": {
    "xRel": -0.38,
    "aboveTop": -2,
    "bottomBelowTop": 4
   },
   "anchorOk": true,
-  "seated": 378,
+  "seated": 149,
   "verdicts": {
-   "unknown": 22,
-   "prefer": 131,
-   "allow": 87,
-   "reject": 53,
-   "novelty": 85
+   "unknown": 8,
+   "prefer": 55,
+   "allow": 29,
+   "reject": 26,
+   "novelty": 31
   },
   "keptFamilies": {
-   "cottage": 56,
-   "hair": 54,
-   "floral": 30,
-   "knit": 30,
-   "straw": 27,
-   "fantasy": 22,
-   "animal": 12,
-   "western": 9,
-   "hood": 6,
-   "formal": 4,
-   "cap": 1
+   "cottage": 32,
+   "knit": 19,
+   "straw": 12,
+   "hair": 8,
+   "floral": 7,
+   "fantasy": 6,
+   "hood": 3,
+   "animal": 3,
+   "western": 2,
+   "formal": 1
   },
   "examples": {
    "keep": [
     "marmuruah:Soul's Hood ['fantasy', 'hood']",
-    "TiaoTiao:TT.summer.bluecyan ['hair']",
-    "TiaoTiao:TT.summer.blue4 ['hair']",
-    "TiaoTiao:TT.summer.blue3 ['hair']",
-    "TiaoTiao:TT.summer.blue1 ['cottage']",
-    "TiaoTiao:TT.summer.orange ['floral', 'straw']"
+    "TiaoTiao:TT.summer.red ['hair']",
+    "billi:Beanie ['knit']",
+    "plurffle:Veil (Speckled) ['hair']",
+    "plurffle:Tulip Hat (Striped) ['floral']",
+    "plurffle:Tulip Hat ['floral']"
    ],
    "novelty": [
-    "plurffle:Party Hat ['party']",
-    "plurffle:Cap (Snapback) ['cap']",
-    "plurffle:Cap 2 ['cap']",
-    "plurffle:Cap 1 ['cap']",
     "Jedone:Vintage Cap_03 ['cap']",
-    "Jedone:Vintage Cap_01 ['cap']"
+    "Jedone:Vintage Cap_01 ['cap']",
+    "Jedone:Backwards_Cap_05 ['cap']",
+    "Jedone:Backwards_Cap_02 ['cap']",
+    "h young FS C:hyoung_hats_30 ['animal']",
+    "h young FS C:hyoung_hats_25 ['animal']"
    ],
    "reject": [
     "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
     "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
-    "plurffle:Crown (Coronet) ['regal']",
     "Jedone:Cat_Headphones_03 ['animal', 'device']",
     "Jedone:Cat_Headphones_02 ['animal', 'device']",
-    "Jedone:Cat_Headphones_01 ['animal', 'device']"
+    "Jedone:Cat_Headphones_01 ['animal', 'device']",
+    "Jedone:Cap&Headphones_08 ['cap', 'device']"
    ]
   }
  },
@@ -276,19 +274,19 @@
    "bottomBelowTop": -1
   },
   "anchorOk": true,
-  "seated": 190,
+  "seated": 155,
   "verdicts": {
-   "reject": 51,
-   "novelty": 77,
+   "reject": 29,
+   "novelty": 67,
    "allow": 26,
-   "unknown": 14,
-   "prefer": 22
+   "unknown": 12,
+   "prefer": 21
   },
   "keptFamilies": {
    "formal": 20,
    "fantasy": 10,
    "western": 9,
-   "helmet": 9,
+   "helmet": 8,
    "cavalier": 3,
    "cap": 1
   },
@@ -315,7 +313,7 @@
     "TiaoTiao:TT.summer.red ['hair']",
     "plurffle:Veil (Speckled) ['hair']",
     "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
-    "plurffle:Flower Dance Crown ['floral']"
+    "Kookoroo:Kookoroo_6 ['hair']"
    ]
   }
  },
@@ -330,39 +328,36 @@
    "bottomBelowTop": 0
   },
   "anchorOk": true,
-  "seated": 54,
+  "seated": 50,
   "verdicts": {
-   "reject": 32,
-   "novelty": 14,
-   "unknown": 5,
+   "reject": 31,
+   "novelty": 13,
    "prefer": 2,
-   "allow": 1
+   "unknown": 4
   },
   "keptFamilies": {
-   "helmet": 2,
-   "fantasy": 1
+   "helmet": 2
   },
   "examples": {
    "keep": [
     "ConcernedApe:hats_46 ['helmet']",
-    "ConcernedApe:hats_27 ['helmet']",
-    "ConcernedApe:hats_113 ['fantasy']"
+    "ConcernedApe:hats_27 ['helmet']"
    ],
    "novelty": [
     "plurffle:Party Hat ['party']",
-    "lovisity:26_Crown_0 ['regal']",
     "lovisity:32_BlackCatEars_0 ['animal']",
     "lovisity:39_PartyHat_0 ['party']",
     "Seyph:hats_22 ['animal']",
-    "ConcernedApe:hats_36 ['animal']"
+    "ConcernedApe:hats_36 ['animal']",
+    "ConcernedApe:hats_39 ['party']"
    ],
    "reject": [
     "TiaoTiao:TT.summer.bluecyan ['hair']",
-    "TiaoTiao:TT.summer.blue3 ['hair']",
     "plurffle:Cap 2 ['cap']",
     "plurffle:Cap 1 ['cap']",
     "h young FS C:hyoung_hats_2 ['hair']",
-    "mok&Tinora:Hat 04 ['device']"
+    "mok&Tinora:Hat 04 ['device']",
+    "lovisity:19_KitsuneMask_0 ['fantasy', 'mask']"
    ]
   }
  },
@@ -377,16 +372,16 @@
    "bottomBelowTop": 1
   },
   "anchorOk": true,
-  "seated": 201,
+  "seated": 156,
   "verdicts": {
-   "unknown": 3,
-   "reject": 119,
-   "novelty": 66,
+   "reject": 101,
+   "novelty": 42,
    "prefer": 2,
-   "allow": 11
+   "allow": 9,
+   "unknown": 2
   },
   "keptFamilies": {
-   "fantasy": 11,
+   "fantasy": 9,
    "regal": 2,
    "formal": 2
   },
@@ -397,7 +392,7 @@
     "plurffle:Mushroom Hat ['fantasy']",
     "lovisity:23_MageHat_0 ['fantasy']",
     "lovisity:2_MagicianHat_0 ['fantasy', 'formal']",
-    "ConcernedApe:hats_41 ['fantasy']"
+    "ConcernedApe:hats_42 ['fantasy']"
    ],
    "novelty": [
     "TiaoTiao:TT.summer.red ['hair']",
@@ -408,12 +403,12 @@
     "Kookoroo:Kookoroo_7 ['hair']"
    ],
    "reject": [
-    "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
-    "marmuruah:Soul's Hood ['fantasy', 'hood']",
     "TiaoTiao:TT.summer.blue1 ['cottage']",
-    "TiaoTiao:TT.summer.orange ['floral', 'straw']",
     "orangeblosso:0 - Old Straw Hat ['straw']",
-    "orangeblosso:0 - Old Straw Hat w/ R ['straw']"
+    "orangeblosso:0 - Old Straw Hat w/ R ['straw']",
+    "orangeblosso:1 - Old Straw Hat w/ R ['straw']",
+    "orangeblosso:1 - Old Straw Hat ['straw']",
+    "orangeblosso:2 - Old Straw Hat w/ R ['straw']"
    ]
   }
  },
@@ -428,51 +423,22 @@
    "bottomBelowTop": 2
   },
   "anchorOk": true,
-  "seated": 292,
+  "seated": 2,
   "verdicts": {
-   "unknown": 17,
-   "allow": 60,
-   "novelty": 138,
-   "prefer": 34,
-   "reject": 43
+   "prefer": 1,
+   "allow": 1
   },
   "keptFamilies": {
-   "cottage": 39,
-   "knit": 25,
-   "fantasy": 17,
-   "party": 9,
-   "hood": 6,
-   "animal": 4,
-   "hair": 3,
-   "formal": 2,
-   "western": 1,
-   "cap": 1
+   "party": 1,
+   "fantasy": 1
   },
   "examples": {
    "keep": [
-    "marmuruah:Soul's Hood ['fantasy', 'hood']",
-    "TiaoTiao:TT.summer.blue1 ['cottage']",
-    "billi:Beanie ['knit']",
-    "plurffle:Party Hat ['party']",
-    "plurffle:Paperboy Hat ['cottage']",
-    "plurffle:Headscarf (Small) ['cottage']"
+    "lovisity:39_PartyHat_0 ['party']",
+    "ConcernedApe:hats_113 ['fantasy']"
    ],
-   "novelty": [
-    "TiaoTiao:TT.summer.blue3 ['hair']",
-    "TiaoTiao:TT.summer.orange ['floral', 'straw']",
-    "TiaoTiao:TT.summer.red ['hair']",
-    "plurffle:Veil (Speckled) ['hair']",
-    "plurffle:Sun Hat (Ribbon) ['straw']",
-    "plurffle:Sun Hat (Flowers) ['floral', 'straw']"
-   ],
-   "reject": [
-    "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
-    "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
-    "plurffle:Crown (Coronet) ['regal']",
-    "Jedone:Cap&Headphones_08 ['cap', 'device']",
-    "Jedone:Cap&Headphones_05 ['cap', 'device']",
-    "Jedone:Cap&Headphones_04 ['cap', 'device']"
-   ]
+   "novelty": [],
+   "reject": []
   }
  },
  "vhe__blue_party_hat_alt__removed": {
@@ -486,51 +452,22 @@
    "bottomBelowTop": 2
   },
   "anchorOk": true,
-  "seated": 292,
+  "seated": 2,
   "verdicts": {
-   "unknown": 17,
-   "allow": 60,
-   "novelty": 138,
-   "prefer": 34,
-   "reject": 43
+   "prefer": 1,
+   "allow": 1
   },
   "keptFamilies": {
-   "cottage": 39,
-   "knit": 25,
-   "fantasy": 17,
-   "party": 9,
-   "hood": 6,
-   "animal": 4,
-   "hair": 3,
-   "formal": 2,
-   "western": 1,
-   "cap": 1
+   "party": 1,
+   "fantasy": 1
   },
   "examples": {
    "keep": [
-    "marmuruah:Soul's Hood ['fantasy', 'hood']",
-    "TiaoTiao:TT.summer.blue1 ['cottage']",
-    "billi:Beanie ['knit']",
-    "plurffle:Party Hat ['party']",
-    "plurffle:Paperboy Hat ['cottage']",
-    "plurffle:Headscarf (Small) ['cottage']"
+    "lovisity:39_PartyHat_0 ['party']",
+    "ConcernedApe:hats_113 ['fantasy']"
    ],
-   "novelty": [
-    "TiaoTiao:TT.summer.blue3 ['hair']",
-    "TiaoTiao:TT.summer.orange ['floral', 'straw']",
-    "TiaoTiao:TT.summer.red ['hair']",
-    "plurffle:Veil (Speckled) ['hair']",
-    "plurffle:Sun Hat (Ribbon) ['straw']",
-    "plurffle:Sun Hat (Flowers) ['floral', 'straw']"
-   ],
-   "reject": [
-    "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
-    "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
-    "plurffle:Crown (Coronet) ['regal']",
-    "Jedone:Cap&Headphones_08 ['cap', 'device']",
-    "Jedone:Cap&Headphones_05 ['cap', 'device']",
-    "Jedone:Cap&Headphones_04 ['cap', 'device']"
-   ]
+   "novelty": [],
+   "reject": []
   }
  },
  "vhe__green_party_hat_alt__removed": {
@@ -544,51 +481,22 @@
    "bottomBelowTop": 2
   },
   "anchorOk": true,
-  "seated": 292,
+  "seated": 2,
   "verdicts": {
-   "unknown": 17,
-   "allow": 60,
-   "novelty": 138,
-   "prefer": 34,
-   "reject": 43
+   "prefer": 1,
+   "allow": 1
   },
   "keptFamilies": {
-   "cottage": 39,
-   "knit": 25,
-   "fantasy": 17,
-   "party": 9,
-   "hood": 6,
-   "animal": 4,
-   "hair": 3,
-   "formal": 2,
-   "western": 1,
-   "cap": 1
+   "party": 1,
+   "fantasy": 1
   },
   "examples": {
    "keep": [
-    "marmuruah:Soul's Hood ['fantasy', 'hood']",
-    "TiaoTiao:TT.summer.blue1 ['cottage']",
-    "billi:Beanie ['knit']",
-    "plurffle:Party Hat ['party']",
-    "plurffle:Paperboy Hat ['cottage']",
-    "plurffle:Headscarf (Small) ['cottage']"
+    "lovisity:39_PartyHat_0 ['party']",
+    "ConcernedApe:hats_113 ['fantasy']"
    ],
-   "novelty": [
-    "TiaoTiao:TT.summer.blue3 ['hair']",
-    "TiaoTiao:TT.summer.orange ['floral', 'straw']",
-    "TiaoTiao:TT.summer.red ['hair']",
-    "plurffle:Veil (Speckled) ['hair']",
-    "plurffle:Sun Hat (Ribbon) ['straw']",
-    "plurffle:Sun Hat (Flowers) ['floral', 'straw']"
-   ],
-   "reject": [
-    "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
-    "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
-    "plurffle:Crown (Coronet) ['regal']",
-    "Jedone:Cap&Headphones_08 ['cap', 'device']",
-    "Jedone:Cap&Headphones_05 ['cap', 'device']",
-    "Jedone:Cap&Headphones_04 ['cap', 'device']"
-   ]
+   "novelty": [],
+   "reject": []
   }
  },
  "vhe__propeller_hat_alt__kept": {
@@ -602,11 +510,11 @@
    "bottomBelowTop": 0
   },
   "anchorOk": true,
-  "seated": 225,
+  "seated": 190,
   "verdicts": {
-   "unknown": 6,
-   "novelty": 151,
-   "reject": 68
+   "unknown": 5,
+   "novelty": 128,
+   "reject": 57
   },
   "keptFamilies": {},
   "examples": {
@@ -615,9 +523,9 @@
     "billi:Beanie ['knit']",
     "plurffle:Beanie (Cat) ['animal', 'knit']",
     "plurffle:Beanie (Cat) ['animal', 'knit']",
-    "plurffle:Beanie (Bunny) ['animal', 'knit']",
-    "Jedone:Officer Cap ['cap']",
-    "Jedone:Fluffy_Beanie_03 ['knit']"
+    "Jedone:Fluffy_Beanie_03 ['knit']",
+    "h young FS C:hyoung_hats_30 ['animal']",
+    "mok&Tinora:Hat 01 ['cap']"
    ],
    "reject": [
     "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
@@ -640,11 +548,11 @@
    "bottomBelowTop": 5
   },
   "anchorOk": true,
-  "seated": 363,
+  "seated": 307,
   "verdicts": {
-   "unknown": 21,
-   "novelty": 197,
-   "reject": 134,
+   "novelty": 181,
+   "reject": 97,
+   "unknown": 18,
    "prefer": 11
   },
   "keptFamilies": {
@@ -661,19 +569,19 @@
    ],
    "novelty": [
     "marmuruah:Soul's Hood ['fantasy', 'hood']",
-    "TiaoTiao:TT.summer.blue1 ['cottage']",
     "billi:Beanie ['knit']",
     "plurffle:Party Hat ['party']",
     "plurffle:Paperboy Hat ['cottage']",
-    "plurffle:Headscarf (Small) ['cottage']"
+    "plurffle:Headscarf (Small) ['cottage']",
+    "plurffle:Cowboy Hat ['western']"
    ],
    "reject": [
-    "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
-    "TiaoTiao:TT.summer.bluecyan ['hair']",
-    "TiaoTiao:TT.summer.blue4 ['hair']",
-    "TiaoTiao:TT.summer.blue3 ['hair']",
-    "TiaoTiao:TT.summer.orange ['floral', 'straw']",
-    "TiaoTiao:TT.summer.red ['hair']"
+    "orangeblosso:0 - Old Straw Hat ['straw']",
+    "orangeblosso:0 - Old Straw Hat w/ R ['straw']",
+    "orangeblosso:1 - Old Straw Hat w/ R ['straw']",
+    "orangeblosso:1 - Old Straw Hat ['straw']",
+    "orangeblosso:2 - Old Straw Hat w/ R ['straw']",
+    "orangeblosso:3 - Old Straw Hat ['straw']"
    ]
   }
  },
@@ -688,16 +596,16 @@
    "bottomBelowTop": 2
   },
   "anchorOk": true,
-  "seated": 376,
+  "seated": 365,
   "verdicts": {
-   "unknown": 22,
-   "novelty": 179,
-   "allow": 92,
-   "reject": 54,
+   "unknown": 20,
+   "novelty": 174,
+   "allow": 91,
+   "reject": 51,
    "prefer": 29
   },
   "keptFamilies": {
-   "cottage": 56,
+   "cottage": 55,
    "straw": 27,
    "formal": 23,
    "western": 9,

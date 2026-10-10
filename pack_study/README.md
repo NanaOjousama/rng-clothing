@@ -387,3 +387,44 @@ hat per open worn check. It copies each into `[FS] PackStudy QC` (UniqueID
 `Mods/` folder: 11 hats (baseline, 2 above-frame decorations, tuft, band, sprig,
 ribbon, novelty, plaid, crown × brim, restyle). The folder is new, so the game
 needs a restart before Fashion Sense draws it.
+
+### Worn QC v1 results + QC v2 — 2026-10-10
+
+User's worn check of QC v1:
+
+| Hat | Verdict |
+|---|---|
+| PSQC 03 propeller above frame | **PASS, golden reference.** Above-frame growth (HatSize + HeadPosition.Y) is proven worn. |
+| PSQC 02 / 06 leaf sprig | FAIL. Hat seated, sprig floats. Frame padding was not the cause (06 has none). |
+| PSQC 04 tied tassel tuft | FAIL. Malformed on a flat beanie top. |
+| PSQC 05 band, PSQC 07 ribbon | acceptable |
+
+Causes, read from the extraction (`gen/decorate.py`):
+- **Sprig**: it touches the source crown's *wall*, in the notch where the narrow crown widens, not its top. The surface seat anchored it by whole-hat width and dropped it to the top surface, so it landed on outer corners and brim tips. New `seat: side` (`place_side`) finds the stem root, keeps its offset from the crown wall at the same depth below the hat top, and takes the run nearest the hat centre, so it lands on the crown, not a brim tip or an ear. Seated hosts: 378 → 149. A cap has no such notch, so the v1 novelty-on-cap case no longer seats.
+- **Tuft**: it is tied *round* a narrow cone tip (part pixels left and right of the tip). New `fit: wrap` needs a host that is present and lies inside the tie in those rows. It now fits 2 hosts (Lovisity party hat, vanilla hats_113), down from 292. Neither has a proven recolour, so **the generator no longer rolls the tuft at all**; QC v2 checks the fit rule on their own authored colourways.
+- **All placements**: a placed part must touch its new host at least half as many times as it touched its source (`need_contact`). This removes floaty seats of other parts too (sunflower 370 → 320, bird 336 → 285, propeller 225 → 190). **The golden propeller is pixel-identical** (checked by `qc_v2.py`, which exits if it changes).
+- **Devices**: cat ears now reject `device` like every other ornament. The goggled pilot cap (mok&Tinora Hat 02) is labelled `device`. Seed-7 test: 0 decorations on devices. Decorated hats per 300 fell 30 → 17.
+
+**Provenance.** `gen/provenance.py` hooks a loaded generate module and records, per hat:
+- type: recolor / restyle / attachment / structural combination
+- the BASE pixels before any part was added
+- the FINAL pixels
+- every source part, with the exact extracted pixels
+
+`gen/qc_replay.py` reruns an archived commit's generator (`git archive <commit> pack_study`) to reproduce hats already worn in game. `tools/provenance_sheet.py` (PIL) draws, per hat: SOURCE hats, EXTRACTED part (on a grey source silhouette), BASE, FINAL, FINAL vs BASE with changed pixels boxed, the v1 hat for A/B, and a check that **the installed hat.png equals FINAL**. All 11 v1 hats replay exactly from `6c6671e`.
+
+Rebuild, run from `pack_study/`:
+
+    git -C .. archive 6c6671e pack_study | tar -x -C out/qc_work/v1code
+    python3 -I gen/qc_replay.py out/qc_work/v1code/pack_study/gen out/qc_work/v1replay out/qc_work/v1_records.json 300 1 <PS1 names>
+    python3 -I gen/qc_v2.py out/qc_work/v1_records.json out/qc_work out/qc_work/v2_records.json
+    python3 tools/provenance_sheet.py out/qc_work/v2_records.json "<pack>/provenance" "<pack>"
+
+`[FS] PackStudy QC v2` (UniqueID `PackStudy.QC2`, names `PSQC2 NN`) is installed with `provenance/` sheets, and the v1 pack has its own `provenance/` too. It holds 6 hats:
+- 01 propeller control
+- 02, 03 sprig on the v1 hosts, with v1's exact pixels and colours
+- 05 sprig on a straw hat
+- 06, 07 tuft, labelled PRIMITIVE ONLY
+
+The 04 slot is empty: no host seats the cap novelty.
+

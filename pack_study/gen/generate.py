@@ -202,7 +202,7 @@ def decorate(px, frame, rng, names=(), cons_id=None):
                     px[0:0] = [[(0, 0, 0, 0)] * (4 * w) for _ in range(pad)]
                 for vi, v in enumerate(VIEWS):
                     for x, y, p in res[v]: px[y + pad][vi * w + x] = tuple(p)
-                return {'label': d['label'], 'novelty': nov, 'host': sorted(fams)}
+                return {'label': d['label'], 'novelty': nov, 'host': sorted(fams), 'from': d['from']}
     return None
 
 def roll(lib, rng):

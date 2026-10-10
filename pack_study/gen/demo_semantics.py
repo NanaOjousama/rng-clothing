@@ -31,6 +31,7 @@ def anchor_ok(anchor, m):
     if m is None: return None
     if anchor == 'top-centre': return abs(m['xRel']) <= 0.12 and m['aboveTop'] > 0
     if anchor == 'top-side': return abs(m['xRel']) > 0.12
+    if anchor == 'side-wall': return abs(m['xRel']) > 0.12 and m['bottomBelowTop'] > 0
     if anchor == 'front-mount': return abs(m['xRel']) <= 0.12 and m['bottomBelowTop'] > 2 and m['aboveTop'] <= 0
     return None
 
