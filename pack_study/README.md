@@ -377,3 +377,13 @@ hat-ornament profile rejects `device`, except cat ears, whose own source is earm
 5×300 run: 0 decorations on devices. Soft-hair hosts still take birds, sprigs and
 sunflowers on Kookoroo bow headbands. A bird on the large bow (Kookoroo_6) is
 borderline, but in-family.
+
+### In-game QC pack — 2026-10-09
+
+`python3 -I pack_study/gen/qc_pack.py <generate out dir> <dest>` picks one generated
+hat per open worn check. It copies each into `[FS] PackStudy QC` (UniqueID
+`PackStudy.QC`) under a self-describing name starting `PSQC NN`, and writes
+`qc_index.json` saying what each hat tests. It is installed in the game's
+`Mods/` folder: 11 hats (baseline, 2 above-frame decorations, tuft, band, sprig,
+ribbon, novelty, plaid, crown × brim, restyle). The folder is new, so the game
+needs a restart before Fashion Sense draws it.
