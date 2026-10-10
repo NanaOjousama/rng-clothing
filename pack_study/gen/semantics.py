@@ -11,7 +11,7 @@ a joke.  Every approved part has a profile in data/attachment_profiles.json:
 HOST FAMILY comes from positive evidence only: the author's names and the vanilla
 name of the source (same rule as band.eligible).  Shape-family membership is not
 evidence (CLAUDE.md s3).  Opaque ids (Coii female_N, Seyph hats_N, ...) give no
-family -> 'unknown'; data/host_labels.json can label them by eye.
+family -> 'unknown'; data/host_labels.json labels them by eye (high/medium only).
 """
 import json, os, re
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -61,8 +61,11 @@ def host_families(names, cons_id=None):
     global _LABELS
     if _LABELS is None:
         p = os.path.join(HERE, 'data', 'host_labels.json')
-        _LABELS = json.load(open(p)).get('labels', {}) if os.path.exists(p) else {}
-    if cons_id in _LABELS: return set(_LABELS[cons_id])
+        raw = json.load(open(p)).get('labels', {}) if os.path.exists(p) else {}
+        # visual labels: only high/medium confidence with a family count; low / [] stay unknown
+        _LABELS = {k: set(v['families']) for k, v in raw.items()
+                   if v['families'] and v.get('confidence') in ('high', 'medium')}
+    if cons_id in _LABELS: return _LABELS[cons_id]
     out = set()
     for n in filter(None, names):
         n = norm(n)

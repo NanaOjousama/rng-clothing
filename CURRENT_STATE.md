@@ -31,6 +31,10 @@ a taste filter on top of seating. Host family comes from names only. 162/498 con
 names (unknown) and get no family-limited parts, so decorated hats fell from 29 to 14 per 300. Only the
 two bands are broad-transfer; propeller is novelty-only; 4 headpieces are headpiece-only; the rest are
 family-limited. Next lever: hand host labels (`data/host_labels.json`) by eye.
+Then: all 162 unknown hosts labelled by eye (`data/host_labels.json`, confidence per label; 22 stay unknown:
+13 ambiguous + 9 needing new families: prop/gag, food novelty, aviator). 300-hat test: rare tier 28 -> 46, decorated
+14 -> 30 (pre-semantics 29). Surviving nonsense: big ornaments on earmuffs/goggles ('hair' too broad) --
+proposed split of hair into soft pieces vs worn devices, not applied.
 
 ## Git-backed recovery anchors
 

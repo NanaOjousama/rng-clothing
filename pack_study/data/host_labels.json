@@ -1,4 +1,1460 @@
 {
- "_note": "Hand host-family labels for constructions whose names give no family (opaque ids). Key = library construction id, value = list of families from gen/semantics.py FAMILIES. A label here replaces the name-derived families. Label only by eye on the worn/contact render (CLAUDE.md s3). Empty until reviewed.",
- "labels": {}
+ "_note": "Visual host-family labels for constructions whose names give no family. Labelled by eye 2026-10-09 from 4-view contact sheets (x4, ambiguous ones x8): explicit visual semantic labels, NOT shape-similarity inference. confidence high/medium -> used by gen/semantics.py; low -> recorded but treated as unknown. families [] = stays unknown. proposedFamily = the hat belongs to a family the vocabulary lacks (food novelty, prop/gag, aviator) or a tentative reading; reported, not forced into an existing family.",
+ "labels": {
+  "subabytvanz__c0": {
+   "families": [],
+   "confidence": "low",
+   "note": "light-blue zig-zag band around the head; folded paper crown? bandana? cannot tell",
+   "author": "SubabyTvanZ",
+   "name": "SubabyTvanZ hat 4",
+   "proposedFamily": "hair?"
+  },
+  "tiaotiao__c3": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "small bow",
+   "author": "TiaoTiao",
+   "name": "TT.summer.bluecyan"
+  },
+  "tiaotiao__c4": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "medium",
+   "note": "white ribbon bow",
+   "author": "TiaoTiao",
+   "name": "TT.summer.blue4"
+  },
+  "tiaotiao__c5": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "medium",
+   "note": "thin headband",
+   "author": "TiaoTiao",
+   "name": "TT.summer.blue3"
+  },
+  "tiaotiao__c6": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "tiny hair clip",
+   "author": "TiaoTiao",
+   "name": "TT.summer.blue2"
+  },
+  "tiaotiao__c7": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "headscarf covering the head (back view full)",
+   "author": "TiaoTiao",
+   "name": "TT.summer.blue1"
+  },
+  "tiaotiao__c8": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "two small clips",
+   "author": "TiaoTiao",
+   "name": "TT.summer.pinkblue"
+  },
+  "tiaotiao__c9": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "feather/butterfly side clip",
+   "author": "TiaoTiao",
+   "name": "TT.summer.purple"
+  },
+  "tiaotiao__c10": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "gem clip",
+   "author": "TiaoTiao",
+   "name": "TT.summer.pink"
+  },
+  "tiaotiao__c11": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "small x clips",
+   "author": "TiaoTiao",
+   "name": "TT.summer.cyan"
+  },
+  "tiaotiao__c12": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "tiny clip",
+   "author": "TiaoTiao",
+   "name": "TT.summer.green"
+  },
+  "tiaotiao__c13": {
+   "families": [
+    "straw",
+    "floral"
+   ],
+   "confidence": "high",
+   "note": "sun hat with orange band and yellow flowers",
+   "author": "TiaoTiao",
+   "name": "TT.summer.orange"
+  },
+  "tiaotiao__c14": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "medium",
+   "note": "red tied headband/kerchief",
+   "author": "TiaoTiao",
+   "name": "TT.summer.red"
+  },
+  "plurffle__c51": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "medium",
+   "note": "sleeping mask pushed up on the head (name says on head)",
+   "author": "plurffle",
+   "name": "Sleeping Mask (On Head)"
+  },
+  "plurffle__c55": {
+   "families": [
+    "hair",
+    "floral"
+   ],
+   "confidence": "medium",
+   "note": "single leaf clip",
+   "author": "plurffle",
+   "name": "Leaf"
+  },
+  "kookoroo__c137": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "headband with big bow and long back ribbons",
+   "author": "Kookoroo",
+   "name": "Kookoroo_9"
+  },
+  "kookoroo__c138": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "same, white",
+   "author": "Kookoroo",
+   "name": "Kookoroo_7"
+  },
+  "kookoroo__c139": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "large bow",
+   "author": "Kookoroo",
+   "name": "Kookoroo_6"
+  },
+  "kookoroo__c140": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "large bow",
+   "author": "Kookoroo",
+   "name": "Kookoroo_4"
+  },
+  "kookoroo__c141": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "soft bonnet/cap covering the crown",
+   "author": "Kookoroo",
+   "name": "Kookoroo_3"
+  },
+  "kookoroo__c142": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "same, cream",
+   "author": "Kookoroo",
+   "name": "Kookoroo_1"
+  },
+  "kookoroo__c143": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "thin headband, bow at back",
+   "author": "Kookoroo",
+   "name": "Kookoroo_18"
+  },
+  "kookoroo__c144": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "same, blue",
+   "author": "Kookoroo",
+   "name": "Kookoroo_17"
+  },
+  "kookoroo__c145": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "frilled bonnet/beret with two small top bumps",
+   "author": "Kookoroo",
+   "name": "Kookoroo_15"
+  },
+  "kookoroo__c146": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "headband, big bow at back",
+   "author": "Kookoroo",
+   "name": "Kookoroo_12"
+  },
+  "h_young_fs_code_by_mychocolate__c166": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "earmuffs",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_9"
+  },
+  "h_young_fs_code_by_mychocolate__c167": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "earmuffs",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_8"
+  },
+  "h_young_fs_code_by_mychocolate__c168": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "earmuffs",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_7"
+  },
+  "h_young_fs_code_by_mychocolate__c169": {
+   "families": [
+    "animal",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "animal ears, no band",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_6"
+  },
+  "h_young_fs_code_by_mychocolate__c170": {
+   "families": [
+    "animal",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "dark animal ears",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_5"
+  },
+  "h_young_fs_code_by_mychocolate__c171": {
+   "families": [
+    "animal",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "small cat ears",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_4"
+  },
+  "h_young_fs_code_by_mychocolate__c172": {
+   "families": [
+    "animal"
+   ],
+   "confidence": "high",
+   "note": "white bear/mouse hat with a face",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_30"
+  },
+  "h_young_fs_code_by_mychocolate__c173": {
+   "families": [
+    "animal",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "small ears",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_3"
+  },
+  "h_young_fs_code_by_mychocolate__c174": {
+   "families": [
+    "animal",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "ear headband",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_29"
+  },
+  "h_young_fs_code_by_mychocolate__c175": {
+   "families": [],
+   "confidence": "low",
+   "note": "smooth plain dome, no texture: skullcap, beret or beanie -- cannot tell",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_28"
+  },
+  "h_young_fs_code_by_mychocolate__c176": {
+   "families": [],
+   "confidence": "low",
+   "note": "same as 34, tan",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_27"
+  },
+  "h_young_fs_code_by_mychocolate__c177": {
+   "families": [],
+   "confidence": "low",
+   "note": "same as 34, dark",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_24"
+  },
+  "h_young_fs_code_by_mychocolate__c178": {
+   "families": [],
+   "confidence": "high",
+   "note": "white dome with green sprout leaves: turnip/radish hat",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_26",
+   "proposedFamily": "food novelty"
+  },
+  "h_young_fs_code_by_mychocolate__c179": {
+   "families": [
+    "animal"
+   ],
+   "confidence": "medium",
+   "note": "white dome with pink ears",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_25"
+  },
+  "h_young_fs_code_by_mychocolate__c180": {
+   "families": [
+    "knit"
+   ],
+   "confidence": "high",
+   "note": "ribbed cuffed beanie",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_23"
+  },
+  "h_young_fs_code_by_mychocolate__c181": {
+   "families": [
+    "knit"
+   ],
+   "confidence": "high",
+   "note": "ribbed cuffed beanie",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_19"
+  },
+  "h_young_fs_code_by_mychocolate__c182": {
+   "families": [
+    "knit"
+   ],
+   "confidence": "high",
+   "note": "ribbed cuffed beanie",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_22"
+  },
+  "h_young_fs_code_by_mychocolate__c183": {
+   "families": [
+    "knit"
+   ],
+   "confidence": "high",
+   "note": "ribbed cuffed beanie",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_20"
+  },
+  "h_young_fs_code_by_mychocolate__c184": {
+   "families": [
+    "knit"
+   ],
+   "confidence": "high",
+   "note": "ribbed cuffed beanie",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_18"
+  },
+  "h_young_fs_code_by_mychocolate__c185": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "side bows",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_2"
+  },
+  "h_young_fs_code_by_mychocolate__c186": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "soft cap with chin ties (bonnet)",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_17"
+  },
+  "h_young_fs_code_by_mychocolate__c187": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "same",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_16"
+  },
+  "h_young_fs_code_by_mychocolate__c188": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "same",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_13"
+  },
+  "h_young_fs_code_by_mychocolate__c189": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "same",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_12"
+  },
+  "h_young_fs_code_by_mychocolate__c190": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "same",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_14"
+  },
+  "h_young_fs_code_by_mychocolate__c191": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "same",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_11"
+  },
+  "mok_tinora__c239": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "goggles on head",
+   "author": "mok&Tinora",
+   "name": "Hat 04"
+  },
+  "mok_tinora__c240": {
+   "families": [],
+   "confidence": "high",
+   "note": "brown pilot cap with goggles and ear flaps",
+   "author": "mok&Tinora",
+   "name": "Hat 02",
+   "proposedFamily": "aviator"
+  },
+  "mok_tinora__c241": {
+   "families": [
+    "cap"
+   ],
+   "confidence": "medium",
+   "note": "black peaked flat cap",
+   "author": "mok&Tinora",
+   "name": "Hat 01"
+  },
+  "mok_tinora__c242": {
+   "families": [
+    "animal",
+    "hood"
+   ],
+   "confidence": "high",
+   "note": "blue animal hood with open mouth",
+   "author": "mok&Tinora",
+   "name": "Hat 03"
+  },
+  "lovisity__c263": {
+   "families": [
+    "animal"
+   ],
+   "confidence": "high",
+   "note": "sheep/ram costume hat",
+   "author": "lovisity",
+   "name": "27_AmistrHat_0"
+  },
+  "lovisity__c282": {
+   "families": [
+    "mask"
+   ],
+   "confidence": "medium",
+   "note": "carved pumpkin over the head (Halloween costume)",
+   "author": "lovisity",
+   "name": "8_FestivalPumpkinHat_0"
+  },
+  "lovisity__c283": {
+   "families": [
+    "mask"
+   ],
+   "confidence": "medium",
+   "note": "cardboard box over the head with angry face (costume)",
+   "author": "lovisity",
+   "name": "9_AngrySoloHat_0"
+  },
+  "kailey__c284": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "high",
+   "note": "beret with stem",
+   "author": "Kailey",
+   "name": "hats_0"
+  },
+  "kailey__c285": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "high",
+   "note": "beret",
+   "author": "Kailey",
+   "name": "hats_1"
+  },
+  "kailey__c286": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "high",
+   "note": "beret",
+   "author": "Kailey",
+   "name": "hats_2"
+  },
+  "seyph__c287": {
+   "families": [
+    "animal"
+   ],
+   "confidence": "high",
+   "note": "bear hat with face",
+   "author": "Seyph",
+   "name": "hats_0"
+  },
+  "seyph__c288": {
+   "families": [
+    "animal"
+   ],
+   "confidence": "high",
+   "note": "cat hat, ears and tail",
+   "author": "Seyph",
+   "name": "hats_1"
+  },
+  "seyph__c289": {
+   "families": [
+    "formal"
+   ],
+   "confidence": "medium",
+   "note": "dark top hat with pin",
+   "author": "Seyph",
+   "name": "hats_2"
+  },
+  "seyph__c290": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "medium",
+   "note": "hanging red/gold tassel ornaments on both sides",
+   "author": "Seyph",
+   "name": "hats_3"
+  },
+  "seyph__c291": {
+   "families": [
+    "straw"
+   ],
+   "confidence": "medium",
+   "note": "smooth sun hat",
+   "author": "Seyph",
+   "name": "hats_4"
+  },
+  "seyph__c292": {
+   "families": [],
+   "confidence": "high",
+   "note": "sword through the head (gag prop)",
+   "author": "Seyph",
+   "name": "hats_5",
+   "proposedFamily": "prop/gag"
+  },
+  "seyph__c293": {
+   "families": [],
+   "confidence": "low",
+   "note": "frilled blue-white ring framing the face: bonnet or ghost hood -- cannot tell",
+   "author": "Seyph",
+   "name": "hats_6",
+   "proposedFamily": "bonnet?/hood?"
+  },
+  "seyph__c294": {
+   "families": [
+    "fantasy"
+   ],
+   "confidence": "medium",
+   "note": "ice-blue antlers",
+   "author": "Seyph",
+   "name": "hats_7"
+  },
+  "seyph__c295": {
+   "families": [
+    "helmet"
+   ],
+   "confidence": "high",
+   "note": "robot/mech helmet with visor",
+   "author": "Seyph",
+   "name": "hats_8"
+  },
+  "seyph__c296": {
+   "families": [
+    "mask"
+   ],
+   "confidence": "high",
+   "note": "gas mask",
+   "author": "Seyph",
+   "name": "hats_9"
+  },
+  "seyph__c297": {
+   "families": [
+    "animal",
+    "mask"
+   ],
+   "confidence": "high",
+   "note": "chicken head costume",
+   "author": "Seyph",
+   "name": "hats_10"
+  },
+  "seyph__c298": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "medium",
+   "note": "black/cyan headphones",
+   "author": "Seyph",
+   "name": "hats_11"
+  },
+  "seyph__c299": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "heart clip",
+   "author": "Seyph",
+   "name": "hats_12"
+  },
+  "seyph__c300": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "medium",
+   "note": "small feather clip",
+   "author": "Seyph",
+   "name": "hats_13"
+  },
+  "seyph__c302": {
+   "families": [],
+   "confidence": "high",
+   "note": "strawberry hat",
+   "author": "Seyph",
+   "name": "hats_15",
+   "proposedFamily": "food novelty"
+  },
+  "seyph__c303": {
+   "families": [
+    "floral"
+   ],
+   "confidence": "medium",
+   "note": "leafy bush with sprouts (cf. vanilla Living Hat)",
+   "author": "Seyph",
+   "name": "hats_16"
+  },
+  "seyph__c304": {
+   "families": [
+    "floral",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "daisy crown",
+   "author": "Seyph",
+   "name": "hats_17"
+  },
+  "seyph__c305": {
+   "families": [
+    "animal",
+    "mask"
+   ],
+   "confidence": "high",
+   "note": "horse head mask",
+   "author": "Seyph",
+   "name": "hats_18"
+  },
+  "seyph__c306": {
+   "families": [
+    "fantasy",
+    "hair"
+   ],
+   "confidence": "medium",
+   "note": "tiny mushroom on the head",
+   "author": "Seyph",
+   "name": "hats_19"
+  },
+  "seyph__c307": {
+   "families": [
+    "party"
+   ],
+   "confidence": "high",
+   "note": "cake hat",
+   "author": "Seyph",
+   "name": "hats_20"
+  },
+  "seyph__c308": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "bow",
+   "author": "Seyph",
+   "name": "hats_21"
+  },
+  "seyph__c309": {
+   "families": [
+    "animal"
+   ],
+   "confidence": "high",
+   "note": "bluebird perched on the head",
+   "author": "Seyph",
+   "name": "hats_22"
+  },
+  "seyph__c310": {
+   "families": [
+    "fantasy"
+   ],
+   "confidence": "medium",
+   "note": "green elf/archer pointed cap",
+   "author": "Seyph",
+   "name": "hats_23"
+  },
+  "seyph__c311": {
+   "families": [
+    "mask"
+   ],
+   "confidence": "high",
+   "note": "eye patch",
+   "author": "Seyph",
+   "name": "hats_24"
+  },
+  "seyph__c312": {
+   "families": [
+    "knit"
+   ],
+   "confidence": "high",
+   "note": "Santa hat with star",
+   "author": "Seyph",
+   "name": "hats_25"
+  },
+  "seyph__c313": {
+   "families": [
+    "animal",
+    "mask"
+   ],
+   "confidence": "high",
+   "note": "shiba dog head",
+   "author": "Seyph",
+   "name": "hats_26"
+  },
+  "seyph__c314": {
+   "families": [
+    "mask"
+   ],
+   "confidence": "high",
+   "note": "jack-o-lantern head",
+   "author": "Seyph",
+   "name": "hats_27"
+  },
+  "seyph__c315": {
+   "families": [
+    "cap",
+    "animal"
+   ],
+   "confidence": "medium",
+   "note": "orange cap with bear ears",
+   "author": "Seyph",
+   "name": "hats_28"
+  },
+  "seyph__c316": {
+   "families": [
+    "floral",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "small flower clip",
+   "author": "Seyph",
+   "name": "hats_29"
+  },
+  "seyph__c317": {
+   "families": [
+    "fantasy",
+    "hair"
+   ],
+   "confidence": "medium",
+   "note": "small white wings",
+   "author": "Seyph",
+   "name": "hats_30"
+  },
+  "seyph__c318": {
+   "families": [
+    "animal",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "small ears",
+   "author": "Seyph",
+   "name": "hats_31"
+  },
+  "seyph__c319": {
+   "families": [
+    "animal",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "cat ears with whiskers",
+   "author": "Seyph",
+   "name": "hats_32"
+  },
+  "seyph__c320": {
+   "families": [
+    "animal",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "bunny ears",
+   "author": "Seyph",
+   "name": "hats_33"
+  },
+  "seyph__c321": {
+   "families": [
+    "floral",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "daisy sprouting from the head",
+   "author": "Seyph",
+   "name": "hats_34"
+  },
+  "seyph__c322": {
+   "families": [
+    "floral"
+   ],
+   "confidence": "medium",
+   "note": "green vine sprouts",
+   "author": "Seyph",
+   "name": "hats_35"
+  },
+  "concernedape__c335": {
+   "families": [
+    "formal"
+   ],
+   "confidence": "medium",
+   "note": "vanilla Fashion Hat: dark wide-brim dress hat",
+   "author": "ConcernedApe",
+   "name": "hats_47"
+  },
+  "concernedape__c353": {
+   "families": [],
+   "confidence": "high",
+   "note": "vanilla Garbage Hat: trash can lid",
+   "author": "ConcernedApe",
+   "name": "hats_66",
+   "proposedFamily": "prop/gag"
+  },
+  "concernedape__c358": {
+   "families": [],
+   "confidence": "high",
+   "note": "vanilla Copper Pan on the head",
+   "author": "ConcernedApe",
+   "name": "hats_71",
+   "proposedFamily": "prop/gag"
+  },
+  "concernedape__c359": {
+   "families": [],
+   "confidence": "high",
+   "note": "vanilla Steel Pan",
+   "author": "ConcernedApe",
+   "name": "hats_107",
+   "proposedFamily": "prop/gag"
+  },
+  "concernedape__c360": {
+   "families": [],
+   "confidence": "high",
+   "note": "vanilla Gold Pan",
+   "author": "ConcernedApe",
+   "name": "hats_108",
+   "proposedFamily": "prop/gag"
+  },
+  "concernedape__c361": {
+   "families": [],
+   "confidence": "high",
+   "note": "vanilla Iridium Pan",
+   "author": "ConcernedApe",
+   "name": "hats_109",
+   "proposedFamily": "prop/gag"
+  },
+  "seyph__c379": {
+   "families": [
+    "mask"
+   ],
+   "confidence": "medium",
+   "note": "vanilla ???: purple furry creature head",
+   "author": "ConcernedApe",
+   "name": "hats_92"
+  },
+  "coii__c381": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "brown beret",
+   "author": "Coii",
+   "name": "female_0"
+  },
+  "coii__c382": {
+   "families": [
+    "knit"
+   ],
+   "confidence": "medium",
+   "note": "striped cuffed beanie with pompom",
+   "author": "Coii",
+   "name": "female_1"
+  },
+  "coii__c383": {
+   "families": [
+    "formal",
+    "hair"
+   ],
+   "confidence": "medium",
+   "note": "tiny tilted hat with red band (fascinator)",
+   "author": "Coii",
+   "name": "female_2"
+  },
+  "coii__c384": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "checkered bandana headband",
+   "author": "Coii",
+   "name": "female_3"
+  },
+  "coii__c385": {
+   "families": [
+    "straw"
+   ],
+   "confidence": "high",
+   "note": "straw hat with red band",
+   "author": "Coii",
+   "name": "female_4"
+  },
+  "coii__c386": {
+   "families": [
+    "cap"
+   ],
+   "confidence": "high",
+   "note": "officer/conductor cap with gold band",
+   "author": "Coii",
+   "name": "female_5"
+  },
+  "coii__c387": {
+   "families": [
+    "floral",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "flower garland",
+   "author": "Coii",
+   "name": "female_6"
+  },
+  "coii__c388": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "high",
+   "note": "polka-dot headscarf",
+   "author": "Coii",
+   "name": "female_7"
+  },
+  "coii__c389": {
+   "families": [
+    "cavalier"
+   ],
+   "confidence": "high",
+   "note": "black tricorn with skull",
+   "author": "Coii",
+   "name": "female_8"
+  },
+  "coii__c390": {
+   "families": [
+    "mask"
+   ],
+   "confidence": "high",
+   "note": "ghost-face mask",
+   "author": "Coii",
+   "name": "female_9"
+  },
+  "coii__c391": {
+   "families": [
+    "animal"
+   ],
+   "confidence": "high",
+   "note": "chicken sitting on the head",
+   "author": "Coii",
+   "name": "female_10"
+  },
+  "coii__c392": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "over-ear headphones",
+   "author": "Coii",
+   "name": "female_11"
+  },
+  "coii__c393": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "tiny clip",
+   "author": "Coii",
+   "name": "female_12"
+  },
+  "coii__c394": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "small bow",
+   "author": "Coii",
+   "name": "female_13"
+  },
+  "coii__c395": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "medium",
+   "note": "small red ribbon/tie",
+   "author": "Coii",
+   "name": "female_14"
+  },
+  "coii__c396": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "red beret/newsboy cap",
+   "author": "Coii",
+   "name": "female_15"
+  },
+  "coii__c397": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "grey beret/newsboy cap",
+   "author": "Coii",
+   "name": "female_16"
+  },
+  "coii__c398": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "sailor beret with ribbon tails",
+   "author": "Coii",
+   "name": "female_17"
+  },
+  "coii__c399": {
+   "families": [],
+   "confidence": "low",
+   "note": "black dome with white base band: riding helmet, cloche or bowler -- cannot tell",
+   "author": "Coii",
+   "name": "female_18",
+   "proposedFamily": "riding helmet?"
+  },
+  "coii__c400": {
+   "families": [
+    "formal"
+   ],
+   "confidence": "high",
+   "note": "black fedora",
+   "author": "Coii",
+   "name": "female_19"
+  },
+  "coii__c401": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "bonnet with bow at back",
+   "author": "Coii",
+   "name": "female_21"
+  },
+  "coii__c402": {
+   "families": [],
+   "confidence": "low",
+   "note": "black dome with rim ring at back: bonnet or hood -- cannot tell",
+   "author": "Coii",
+   "name": "female_23"
+  },
+  "coii__c403": {
+   "families": [
+    "fantasy",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "small horns",
+   "author": "Coii",
+   "name": "female_24"
+  },
+  "coii__c404": {
+   "families": [
+    "knit"
+   ],
+   "confidence": "high",
+   "note": "Santa slouch hat",
+   "author": "Coii",
+   "name": "female_25"
+  },
+  "coii__c405": {
+   "families": [
+    "regal"
+   ],
+   "confidence": "high",
+   "note": "small gold crown",
+   "author": "Coii",
+   "name": "female_26"
+  },
+  "coii__c406": {
+   "families": [
+    "helmet"
+   ],
+   "confidence": "medium",
+   "note": "bicycle helmet with straps",
+   "author": "Coii",
+   "name": "female_27"
+  },
+  "coii__c407": {
+   "families": [],
+   "confidence": "low",
+   "note": "yellow lump on one side: banana clip? cannot tell",
+   "author": "Coii",
+   "name": "female_28"
+  },
+  "coii__c408": {
+   "families": [
+    "floral",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "leaf-and-flower clip",
+   "author": "Coii",
+   "name": "female_29"
+  },
+  "coii__c409": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "thin headband",
+   "author": "Coii",
+   "name": "female_30"
+  },
+  "coii__c410": {
+   "families": [
+    "animal",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "mouse ears",
+   "author": "Coii",
+   "name": "female_31"
+  },
+  "coii__c411": {
+   "families": [
+    "animal",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "cat ears",
+   "author": "Coii",
+   "name": "female_32"
+  },
+  "coii__c412": {
+   "families": [
+    "knit"
+   ],
+   "confidence": "medium",
+   "note": "slouch beanie with cuff",
+   "author": "Coii",
+   "name": "female_33"
+  },
+  "coii__c413": {
+   "families": [
+    "animal"
+   ],
+   "confidence": "high",
+   "note": "panda hat",
+   "author": "Coii",
+   "name": "female_36"
+  },
+  "coii__c414": {
+   "families": [
+    "knit"
+   ],
+   "confidence": "high",
+   "note": "ribbed slouch beanie",
+   "author": "Coii",
+   "name": "female_37"
+  },
+  "coii__c415": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "soft bucket/cloche hat",
+   "author": "Coii",
+   "name": "female_38"
+  },
+  "coii__c416": {
+   "families": [],
+   "confidence": "low",
+   "note": "pink puffed cap with two front lobes: beret or animal hat -- cannot tell",
+   "author": "Coii",
+   "name": "female_39"
+  },
+  "coii__c417": {
+   "families": [
+    "cap"
+   ],
+   "confidence": "high",
+   "note": "officer cap",
+   "author": "Coii",
+   "name": "goodhatmale_0"
+  },
+  "coii__c418": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "sailor beret with ribbon tails",
+   "author": "Coii",
+   "name": "goodhatmale_1"
+  },
+  "coii__c419": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "brown beret",
+   "author": "Coii",
+   "name": "male_0"
+  },
+  "coii__c420": {
+   "families": [
+    "formal",
+    "hair"
+   ],
+   "confidence": "medium",
+   "note": "tiny tilted hat (fascinator)",
+   "author": "Coii",
+   "name": "male_2"
+  },
+  "coii__c421": {
+   "families": [
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "checkered bandana",
+   "author": "Coii",
+   "name": "male_3"
+  },
+  "coii__c422": {
+   "families": [
+    "straw"
+   ],
+   "confidence": "high",
+   "note": "straw hat with red band",
+   "author": "Coii",
+   "name": "male_4"
+  },
+  "coii__c423": {
+   "families": [
+    "floral",
+    "hair"
+   ],
+   "confidence": "high",
+   "note": "flower garland",
+   "author": "Coii",
+   "name": "male_6"
+  },
+  "coii__c424": {
+   "families": [
+    "cavalier"
+   ],
+   "confidence": "high",
+   "note": "black tricorn",
+   "author": "Coii",
+   "name": "male_8"
+  },
+  "coii__c425": {
+   "families": [
+    "animal"
+   ],
+   "confidence": "high",
+   "note": "chicken on the head",
+   "author": "Coii",
+   "name": "male_10"
+  },
+  "coii__c426": {
+   "families": [],
+   "confidence": "low",
+   "note": "same as 121",
+   "author": "Coii",
+   "name": "male_18",
+   "proposedFamily": "riding helmet?"
+  },
+  "coii__c427": {
+   "families": [
+    "formal"
+   ],
+   "confidence": "high",
+   "note": "black fedora",
+   "author": "Coii",
+   "name": "male_19"
+  },
+  "coii__c428": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "bonnet with bow",
+   "author": "Coii",
+   "name": "male_21"
+  },
+  "coii__c429": {
+   "families": [],
+   "confidence": "low",
+   "note": "same as 124",
+   "author": "Coii",
+   "name": "male_23"
+  },
+  "coii__c430": {
+   "families": [
+    "knit"
+   ],
+   "confidence": "high",
+   "note": "Santa slouch hat",
+   "author": "Coii",
+   "name": "male_25"
+  },
+  "coii__c431": {
+   "families": [
+    "helmet"
+   ],
+   "confidence": "medium",
+   "note": "bicycle helmet",
+   "author": "Coii",
+   "name": "male_27"
+  },
+  "coii__c432": {
+   "families": [],
+   "confidence": "low",
+   "note": "same as 129",
+   "author": "Coii",
+   "name": "male_28"
+  },
+  "coii__c433": {
+   "families": [
+    "knit"
+   ],
+   "confidence": "medium",
+   "note": "slouch beanie",
+   "author": "Coii",
+   "name": "male_33"
+  },
+  "coii__c434": {
+   "families": [
+    "animal"
+   ],
+   "confidence": "high",
+   "note": "panda hat",
+   "author": "Coii",
+   "name": "male_36"
+  },
+  "coii__c435": {
+   "families": [
+    "knit"
+   ],
+   "confidence": "high",
+   "note": "ribbed slouch beanie",
+   "author": "Coii",
+   "name": "male_37"
+  },
+  "coii__c436": {
+   "families": [
+    "cottage"
+   ],
+   "confidence": "medium",
+   "note": "soft bucket/cloche hat",
+   "author": "Coii",
+   "name": "male_38"
+  },
+  "coii__c437": {
+   "families": [],
+   "confidence": "low",
+   "note": "same as 138",
+   "author": "Coii",
+   "name": "male_39"
+  },
+  "concernedape__c441": {
+   "families": [
+    "formal"
+   ],
+   "confidence": "medium",
+   "note": "vanilla Mystery Hat: top hat with a question mark",
+   "author": "ConcernedApe",
+   "name": "hats_110"
+  },
+  "concernedape__c478": {
+   "families": [
+    "western"
+   ],
+   "confidence": "medium",
+   "note": "vanilla Gil's Hat: red wide-brim ranger hat",
+   "author": "ConcernedApe",
+   "name": "hats_98"
+  }
+ }
 }

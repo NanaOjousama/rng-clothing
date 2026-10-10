@@ -314,3 +314,38 @@ host family), so they need no extra filter.
 Effect on generation (300 hats, seed 7): 29 decorated before, 14 now (1 novelty);
 the rare tier falls from 53 to 28 hats, the rest demoted to common. The loss is mostly unknown hosts.
 Labelling the 162 opaque names by eye is the lever that recovers it.
+
+### Visual host labels — 2026-10-09
+
+`data/host_labels.json`: all 162 hosts with opaque names were labelled by eye from
+4-view contact sheets (×4; ambiguous ones re-checked at ×8). These are explicit
+visual labels, not shape similarity. Each label has `families`, a `confidence`
+(high 96 / medium 53 / low 13) and a note.
+Only high and medium labels are used. **22 stay unknown:**
+- 13 low-confidence ambiguous hats: plain smooth domes (beret, skullcap or beanie?),
+  black domes (riding helmet, cloche or bonnet?), a yellow side lump, a pink puffed cap,
+  a frilled bonnet or ghost hood, and a zig-zag band.
+- 9 clearly readable hats that need a family the vocabulary lacks, recorded as
+  `proposedFamily`, not forced: **prop/gag** ×6 (sword through head, Garbage Hat,
+  4 vanilla pans), **food novelty** ×2 (turnip-sprout hat, strawberry hat) and
+  **aviator** ×1 (pilot cap with goggles).
+
+Other labelling choices:
+- The vanilla Living Hat precedent puts a leafy bush hat in floral.
+- Costume heads that cover the face (pumpkin, box, creature) are labelled mask.
+
+300 hats, seed 7:
+
+| | before semantics | semantics, no labels | with labels |
+|---|---|---|---|
+| rare tier | 53 | 28 | 46 |
+| decorated | 29 | 14 | 30 (2 novelty) |
+
+Nonsense that still survives (`hair` is too broad: it covers headbands, clips,
+earmuffs and goggles alike):
+- A sunflower on Lucille's Earmuffs, 3 times; in profile it sits on the ear cup.
+- A bird on vanilla Radioactive Goggles.
+
+Proposed fix, not applied: split `hair` into soft hair pieces (headband, bow,
+clip, kerchief) and worn devices (earmuffs, goggles, headphones, sleeping mask),
+and reject large ornaments on devices.
