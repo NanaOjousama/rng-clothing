@@ -1,5 +1,5 @@
 {
- "_note": "Semantic/taste filter ON TOP of geometric seating (gen/semantics.py). Keys = keys of decorations_approved.json, plus 'pattern:<label>'. class: surface | structural | ornament | headpiece. transfer: broad | family-limited | novelty-only | headpiece-only. reject -> never, not even novelty (wins over prefer: Plague Doctor Mask is fantasy AND mask), prefer -> weight 1, allow -> ALLOW_W, any other NAMED family -> only in a novelty roll. unknownHost = weight on a host whose names give no family (opaque ids: Coii female_N, Seyph hats_N, ...). placement.anchor is checked against the measured source position by gen/demo_semantics.py. Host families come from author/vanilla names only (CLAUDE.md s3: shape-family membership is not evidence). Judgements are Claude's taste proposal, 2026-10-09; edit freely. Anchors: top-centre | top-side | front-mount | crown-brim-junction | material-interior | face | head-top | head-ring; the first three were corrected to the measured source position (bird, cat ears, leaf sprig were mis-declared).",
+ "_note": "Semantic/taste filter ON TOP of geometric seating (gen/semantics.py). Keys = keys of decorations_approved.json, plus 'pattern:<label>'. class: surface | structural | ornament | headpiece. transfer: broad | family-limited | novelty-only | headpiece-only. reject -> never, not even novelty (wins over prefer: Plague Doctor Mask is fantasy AND mask), prefer -> weight 1, allow -> ALLOW_W, any other NAMED family -> only in a novelty roll. unknownHost = weight on a host whose names give no family (opaque ids: Coii female_N, Seyph hats_N, ...). placement.anchor is checked against the measured source position by gen/demo_semantics.py. Host families come from author/vanilla names only (CLAUDE.md s3: shape-family membership is not evidence). Judgements are Claude's taste proposal, 2026-10-09; edit freely. Anchors: top-centre | top-side | front-mount | crown-brim-junction | material-interior | face | head-top | head-ring; the first three were corrected to the measured source position (bird, cat ears, leaf sprig were mis-declared). concept: parts sharing a concept (colour variants of one drawing) are rolled as ONE attachment, then a variant is picked -- variants never multiply the concept's odds. 'device' (earmuffs, goggles, headphones, sunglasses, sleeping mask) is split from 'hair' (soft hair pieces): large ornaments reject devices; cat ears allow them (their source is earmuffs).",
  "profiles": {
   "kailey__straw_hat_sunflower": {
    "label": "sunflower",
@@ -18,7 +18,8 @@
    "reject": [
     "helmet",
     "regal",
-    "mask"
+    "mask",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {
@@ -43,7 +44,8 @@
    ],
    "reject": [
     "helmet",
-    "mask"
+    "mask",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {
@@ -71,7 +73,8 @@
    "reject": [
     "helmet",
     "regal",
-    "mask"
+    "mask",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {
@@ -93,7 +96,8 @@
     "cottage",
     "fantasy",
     "animal",
-    "party"
+    "party",
+    "device"
    ],
    "reject": [
     "helmet",
@@ -123,7 +127,8 @@
    "reject": [
     "helmet",
     "regal",
-    "mask"
+    "mask",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {
@@ -148,7 +153,8 @@
    "reject": [
     "helmet",
     "regal",
-    "mask"
+    "mask",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {
@@ -173,7 +179,8 @@
    "reject": [
     "mask",
     "hair",
-    "floral"
+    "floral",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {
@@ -199,7 +206,8 @@
     "floral",
     "straw",
     "knit",
-    "cap"
+    "cap",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {
@@ -226,7 +234,8 @@
     "mask",
     "hood",
     "knit",
-    "cottage"
+    "cottage",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {
@@ -251,7 +260,8 @@
    "reject": [
     "helmet",
     "regal",
-    "mask"
+    "mask",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {
@@ -259,7 +269,8 @@
     "seat": "surface",
     "why": "vanilla Party Hat top: tip pinched by a tie, splayed into a tassel burst. Fits tapered tops (party, knit/Santa/floppy, jester/gnome); on a beret it reads as the stalk. Not a pompom: do not treat as a round bobble."
    },
-   "formerLabel": "pompom (red)"
+   "formerLabel": "pompom (red)",
+   "concept": "tied tassel tuft"
   },
   "vhe__blue_party_hat_alt__removed": {
    "label": "tied tassel tuft (blue)",
@@ -277,7 +288,8 @@
    "reject": [
     "helmet",
     "regal",
-    "mask"
+    "mask",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {
@@ -285,7 +297,8 @@
     "seat": "surface",
     "why": "vanilla Party Hat top: tip pinched by a tie, splayed into a tassel burst. Fits tapered tops (party, knit/Santa/floppy, jester/gnome); on a beret it reads as the stalk. Not a pompom: do not treat as a round bobble."
    },
-   "formerLabel": "pompom (blue)"
+   "formerLabel": "pompom (blue)",
+   "concept": "tied tassel tuft"
   },
   "vhe__green_party_hat_alt__removed": {
    "label": "tied tassel tuft (green)",
@@ -303,7 +316,8 @@
    "reject": [
     "helmet",
     "regal",
-    "mask"
+    "mask",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {
@@ -311,7 +325,8 @@
     "seat": "surface",
     "why": "vanilla Party Hat top: tip pinched by a tie, splayed into a tassel burst. Fits tapered tops (party, knit/Santa/floppy, jester/gnome); on a beret it reads as the stalk. Not a pompom: do not treat as a round bobble."
    },
-   "formerLabel": "pompom (green)"
+   "formerLabel": "pompom (green)",
+   "concept": "tied tassel tuft"
   },
   "vhe__propeller_hat_alt__kept": {
    "label": "propeller",
@@ -329,7 +344,8 @@
     "regal",
     "floral",
     "mask",
-    "hair"
+    "hair",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {
@@ -351,7 +367,8 @@
     "regal",
     "hair",
     "mask",
-    "straw"
+    "straw",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {
@@ -376,7 +393,8 @@
    "reject": [
     "helmet",
     "mask",
-    "regal"
+    "regal",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {
@@ -478,7 +496,8 @@
     "helmet",
     "regal",
     "mask",
-    "knit"
+    "knit",
+    "device"
    ],
    "unknownHost": 0,
    "placement": {

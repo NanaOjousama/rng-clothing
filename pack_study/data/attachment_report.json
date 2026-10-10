@@ -41,17 +41,19 @@
   "anchorOk": true,
   "seated": 3,
   "verdicts": {
-   "prefer": 3
+   "prefer": 1,
+   "allow": 2
   },
   "keptFamilies": {
-   "hair": 3,
-   "fantasy": 2
+   "fantasy": 2,
+   "device": 2,
+   "hair": 1
   },
   "examples": {
    "keep": [
     "plurffle:Bows (Double, Small 2) ['hair']",
-    "plurffle:Earmuffs (Bat Wings) ['fantasy', 'hair']",
-    "plurffle:Earmuffs (Angel Wings) ['fantasy', 'hair']"
+    "plurffle:Earmuffs (Bat Wings) ['device', 'fantasy']",
+    "plurffle:Earmuffs (Angel Wings) ['device', 'fantasy']"
    ],
    "novelty": [],
    "reject": []
@@ -71,19 +73,19 @@
   "seated": 370,
   "verdicts": {
    "unknown": 22,
-   "allow": 77,
+   "allow": 68,
    "prefer": 108,
-   "novelty": 124,
-   "reject": 39
+   "novelty": 118,
+   "reject": 54
   },
   "keptFamilies": {
-   "hair": 56,
    "cottage": 56,
+   "hair": 47,
    "floral": 29,
    "straw": 27,
    "fantasy": 21,
-   "animal": 11,
    "western": 9,
+   "animal": 8,
    "formal": 4,
    "hood": 2,
    "cap": 1
@@ -109,9 +111,9 @@
     "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
     "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
     "plurffle:Crown (Coronet) ['regal']",
-    "h young FS C:hyoung_hats_28 ['unknown']",
-    "h young FS C:hyoung_hats_27 ['unknown']",
-    "h young FS C:hyoung_hats_24 ['unknown']"
+    "Jedone:Cat_Headphones_03 ['animal', 'device']",
+    "Jedone:Cat_Headphones_02 ['animal', 'device']",
+    "Jedone:Cat_Headphones_01 ['animal', 'device']"
    ]
   }
  },
@@ -159,17 +161,17 @@
   "seated": 336,
   "verdicts": {
    "unknown": 19,
-   "allow": 76,
+   "allow": 73,
    "prefer": 105,
-   "reject": 33,
-   "novelty": 103
+   "reject": 42,
+   "novelty": 97
   },
   "keptFamilies": {
    "cottage": 55,
-   "hair": 33,
+   "hair": 30,
    "knit": 30,
-   "straw": 27,
    "floral": 27,
+   "straw": 27,
    "fantasy": 19,
    "animal": 9,
    "hood": 2,
@@ -197,10 +199,10 @@
    "reject": [
     "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
     "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
-    "h young FS C:hyoung_hats_28 ['unknown']",
-    "h young FS C:hyoung_hats_27 ['unknown']",
-    "h young FS C:hyoung_hats_24 ['unknown']",
-    "h young FS C:hyoung_hats_26 ['unknown']"
+    "Jedone:Cap&Headphones_08 ['cap', 'device']",
+    "Jedone:Cap&Headphones_05 ['cap', 'device']",
+    "Jedone:Cap&Headphones_04 ['cap', 'device']",
+    "Jedone:Cap&Headphones_03 ['cap', 'device']"
    ]
   }
  },
@@ -219,18 +221,18 @@
   "verdicts": {
    "unknown": 22,
    "prefer": 131,
-   "allow": 96,
-   "reject": 38,
-   "novelty": 91
+   "allow": 87,
+   "reject": 53,
+   "novelty": 85
   },
   "keptFamilies": {
-   "hair": 63,
    "cottage": 56,
+   "hair": 54,
    "floral": 30,
    "knit": 30,
    "straw": 27,
    "fantasy": 22,
-   "animal": 15,
+   "animal": 12,
    "western": 9,
    "hood": 6,
    "formal": 4,
@@ -257,9 +259,9 @@
     "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
     "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
     "plurffle:Crown (Coronet) ['regal']",
-    "h young FS C:hyoung_hats_28 ['unknown']",
-    "h young FS C:hyoung_hats_27 ['unknown']",
-    "h young FS C:hyoung_hats_24 ['unknown']"
+    "Jedone:Cat_Headphones_03 ['animal', 'device']",
+    "Jedone:Cat_Headphones_02 ['animal', 'device']",
+    "Jedone:Cat_Headphones_01 ['animal', 'device']"
    ]
   }
  },
@@ -360,7 +362,7 @@
     "plurffle:Cap 2 ['cap']",
     "plurffle:Cap 1 ['cap']",
     "h young FS C:hyoung_hats_2 ['hair']",
-    "mok&Tinora:Hat 04 ['hair']"
+    "mok&Tinora:Hat 04 ['device']"
    ]
   }
  },
@@ -430,9 +432,9 @@
   "verdicts": {
    "unknown": 17,
    "allow": 60,
-   "novelty": 147,
+   "novelty": 138,
    "prefer": 34,
-   "reject": 34
+   "reject": 43
   },
   "keptFamilies": {
    "cottage": 39,
@@ -467,9 +469,9 @@
     "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
     "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
     "plurffle:Crown (Coronet) ['regal']",
-    "h young FS C:hyoung_hats_28 ['unknown']",
-    "h young FS C:hyoung_hats_27 ['unknown']",
-    "h young FS C:hyoung_hats_24 ['unknown']"
+    "Jedone:Cap&Headphones_08 ['cap', 'device']",
+    "Jedone:Cap&Headphones_05 ['cap', 'device']",
+    "Jedone:Cap&Headphones_04 ['cap', 'device']"
    ]
   }
  },
@@ -488,9 +490,9 @@
   "verdicts": {
    "unknown": 17,
    "allow": 60,
-   "novelty": 147,
+   "novelty": 138,
    "prefer": 34,
-   "reject": 34
+   "reject": 43
   },
   "keptFamilies": {
    "cottage": 39,
@@ -525,9 +527,9 @@
     "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
     "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
     "plurffle:Crown (Coronet) ['regal']",
-    "h young FS C:hyoung_hats_28 ['unknown']",
-    "h young FS C:hyoung_hats_27 ['unknown']",
-    "h young FS C:hyoung_hats_24 ['unknown']"
+    "Jedone:Cap&Headphones_08 ['cap', 'device']",
+    "Jedone:Cap&Headphones_05 ['cap', 'device']",
+    "Jedone:Cap&Headphones_04 ['cap', 'device']"
    ]
   }
  },
@@ -546,9 +548,9 @@
   "verdicts": {
    "unknown": 17,
    "allow": 60,
-   "novelty": 147,
+   "novelty": 138,
    "prefer": 34,
-   "reject": 34
+   "reject": 43
   },
   "keptFamilies": {
    "cottage": 39,
@@ -583,9 +585,9 @@
     "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
     "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
     "plurffle:Crown (Coronet) ['regal']",
-    "h young FS C:hyoung_hats_28 ['unknown']",
-    "h young FS C:hyoung_hats_27 ['unknown']",
-    "h young FS C:hyoung_hats_24 ['unknown']"
+    "Jedone:Cap&Headphones_08 ['cap', 'device']",
+    "Jedone:Cap&Headphones_05 ['cap', 'device']",
+    "Jedone:Cap&Headphones_04 ['cap', 'device']"
    ]
   }
  },
@@ -603,8 +605,8 @@
   "seated": 225,
   "verdicts": {
    "unknown": 6,
-   "novelty": 157,
-   "reject": 62
+   "novelty": 151,
+   "reject": 68
   },
   "keptFamilies": {},
   "examples": {
@@ -641,8 +643,8 @@
   "seated": 363,
   "verdicts": {
    "unknown": 21,
-   "novelty": 203,
-   "reject": 128,
+   "novelty": 197,
+   "reject": 134,
    "prefer": 11
   },
   "keptFamilies": {
@@ -689,9 +691,9 @@
   "seated": 376,
   "verdicts": {
    "unknown": 22,
-   "novelty": 194,
+   "novelty": 179,
    "allow": 92,
-   "reject": 39,
+   "reject": 54,
    "prefer": 29
   },
   "keptFamilies": {
@@ -726,9 +728,9 @@
     "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
     "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
     "plurffle:Crown (Coronet) ['regal']",
-    "h young FS C:hyoung_hats_28 ['unknown']",
-    "h young FS C:hyoung_hats_27 ['unknown']",
-    "h young FS C:hyoung_hats_24 ['unknown']"
+    "Jedone:Cat_Headphones_03 ['animal', 'device']",
+    "Jedone:Cat_Headphones_02 ['animal', 'device']",
+    "Jedone:Cat_Headphones_01 ['animal', 'device']"
    ]
   }
  },

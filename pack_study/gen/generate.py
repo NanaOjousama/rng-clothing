@@ -176,11 +176,21 @@ def decorate(px, frame, rng, names=(), cons_id=None):
     fams = semantics.host_families(names, cons_id)
     novelty = rng.random() < semantics.NOVELTY_RATE
     for nov in ([True, False] if novelty else [False]):
-        cands = [(d, semantics.weight(d, fams, nov)) for d in _DECS if d['frame'][0] == w]
-        # weighted order without replacement (Efraimidis-Spirakis key u^(1/w))
-        order = sorted(((rng.random() ** (1 / wt), k) for k, (d, wt) in enumerate(cands) if wt > 0), reverse=True)
-        for _, k in order:
-            d = cands[k][0]
+        # group by attachment CONCEPT first: colour variants of one drawing are one
+        # attachment, so three tuft colourways do not triple the tuft's odds
+        groups = {}
+        for d in _DECS:
+            if d['frame'][0] != w: continue
+            wt = semantics.weight(d, fams, nov)
+            if wt > 0: groups.setdefault(semantics.concept_of(d), []).append((d, wt))
+        # weighted order of concepts without replacement (Efraimidis-Spirakis key u^(1/w));
+        # concept weight = its best variant's weight; then the variants in random order
+        concepts = sorted(groups)
+        order = sorted(((rng.random() ** (1 / max(wt for _, wt in groups[c])), c) for c in concepts), reverse=True)
+        tries = []
+        for _, c in order:
+            tries += [d for d, _ in rng.sample(groups[c], len(groups[c]))]
+        for d in tries:
             if d['kind'] == 'band':
                 if not banded: continue
                 res = band.place(d, masks)

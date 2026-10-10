@@ -359,3 +359,21 @@ not a bow (no loops). Only the label changed. The approval keys
 (`vhe__{red,blue,green}_party_hat_alt__removed`) are unchanged, and the old label
 is kept as `formerLabel`. Host profile unchanged: prefer party/knit, allow
 fantasy/cottage/hood (on a beret it reads as the stalk).
+
+### Roll concepts + `device` split — 2026-10-09
+
+**Concept weighting (RNG only, not a visual change).** Profiles can name a
+`concept`. The red, blue and green tied tassel tufts share `tied tassel tuft`.
+`decorate()` first orders concepts by weight, picks one, and only then picks a
+colour variant, so the three colourways count as one attachment. IDs and approvals
+are unchanged. Over 5 seeds × 300 hats (119 decorated either way), tufts went from
+31 to 18 decorated hats (26% → 15%). No other part has colour-variant records.
+
+**`hair` split.** Soft hair pieces (headband, bow, clip, ribbon, kerchief, veil)
+stay `hair`. Earmuffs, goggles, sunglasses, headphones and sleeping masks are now
+`device`: a regex on names, plus 7 visual labels moved from hair to device. Every
+hat-ornament profile rejects `device`, except cat ears, whose own source is earmuffs.
+27 hosts are devices, Lucille's Earmuffs and Radioactive Goggles among them. Same
+5×300 run: 0 decorations on devices. Soft-hair hosts still take birds, sprigs and
+sunflowers on Kookoroo bow headbands. A bird on the large bow (Kookoroo_6) is
+borderline, but in-family.

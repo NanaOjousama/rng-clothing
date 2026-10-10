@@ -35,6 +35,9 @@ Then: all 162 unknown hosts labelled by eye (`data/host_labels.json`, confidence
 13 ambiguous + 9 needing new families: prop/gag, food novelty, aviator). 300-hat test: rare tier 28 -> 46, decorated
 14 -> 30 (pre-semantics 29). Surviving nonsense: big ornaments on earmuffs/goggles ('hair' too broad) --
 proposed split of hair into soft pieces vs worn devices, not applied.
+Then: tassel tufts roll as ONE concept (tuft share 26% -> 15% of decorated); 'hair' split into soft hair vs
+'device' (earmuffs/goggles/headphones/sunglasses/sleeping mask), rejected by every hat ornament except cat
+ears -> 0 device decorations in 5x300.
 
 ## Git-backed recovery anchors
 

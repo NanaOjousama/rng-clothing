@@ -1,5 +1,5 @@
 {
- "_note": "Visual host-family labels for constructions whose names give no family. Labelled by eye 2026-10-09 from 4-view contact sheets (x4, ambiguous ones x8): explicit visual semantic labels, NOT shape-similarity inference. confidence high/medium -> used by gen/semantics.py; low -> recorded but treated as unknown. families [] = stays unknown. proposedFamily = the hat belongs to a family the vocabulary lacks (food novelty, prop/gag, aviator) or a tentative reading; reported, not forced into an existing family.",
+ "_note": "Visual host-family labels for constructions whose names give no family. Labelled by eye 2026-10-09 from 4-view contact sheets (x4, ambiguous ones x8): explicit visual semantic labels, NOT shape-similarity inference. confidence high/medium -> used by gen/semantics.py; low -> recorded but treated as unknown. families [] = stays unknown. proposedFamily = the hat belongs to a family the vocabulary lacks (food novelty, prop/gag, aviator) or a tentative reading; reported, not forced into an existing family. 'device' split from 'hair' 2026-10-09 (earmuffs, goggles, headphones, sleeping mask).",
  "labels": {
   "subabytvanz__c0": {
    "families": [],
@@ -120,7 +120,7 @@
   },
   "plurffle__c51": {
    "families": [
-    "hair"
+    "device"
    ],
    "confidence": "medium",
    "note": "sleeping mask pushed up on the head (name says on head)",
@@ -229,7 +229,7 @@
   },
   "h_young_fs_code_by_mychocolate__c166": {
    "families": [
-    "hair"
+    "device"
    ],
    "confidence": "high",
    "note": "earmuffs",
@@ -238,7 +238,7 @@
   },
   "h_young_fs_code_by_mychocolate__c167": {
    "families": [
-    "hair"
+    "device"
    ],
    "confidence": "high",
    "note": "earmuffs",
@@ -247,7 +247,7 @@
   },
   "h_young_fs_code_by_mychocolate__c168": {
    "families": [
-    "hair"
+    "device"
    ],
    "confidence": "high",
    "note": "earmuffs",
@@ -461,7 +461,7 @@
   },
   "mok_tinora__c239": {
    "families": [
-    "hair"
+    "device"
    ],
    "confidence": "high",
    "note": "goggles on head",
@@ -649,7 +649,7 @@
   },
   "seyph__c298": {
    "families": [
-    "hair"
+    "device"
    ],
    "confidence": "medium",
    "note": "black/cyan headphones",
@@ -1034,7 +1034,7 @@
   },
   "coii__c392": {
    "families": [
-    "hair"
+    "device"
    ],
    "confidence": "high",
    "note": "over-ear headphones",

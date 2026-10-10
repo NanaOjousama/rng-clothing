@@ -35,7 +35,9 @@ FAMILIES = [
     ('helmet',   r'helmet|\bhelm\b|hard hat'),
     ('party',    r'party|paper hat|cone hat|\bcake\b|propeller'),
     ('animal',   r'\bcats?\b|bunny|rabbit|\bfrog\b|tiger|panda|raccoon|teddy|shark|squid|dinosaur|chicken|bluebird|\bfish\b|blobfish|mouse|\bbao\b|drooping'),
-    ('hair',     r'headband|barrette|\bclips?\b|\bbows?\b|ribbon|\bhair\b|bells?\b|veil|earmuffs|goggles|sunglasses|tropiclip|\bband\b|headphones'),
+    ('hair',     r'headband|barrette|\bclips?\b|\bbows?\b|ribbon|\bhair\b|bells?\b|veil|tropiclip|\bband\b|kerchief'),
+    # worn devices, not soft hair pieces: a sunflower on an earmuff cup or a bird on goggles reads wrong
+    ('device',   r'earmuffs?|goggles|sunglasses|headphones|sleeping mask'),
     ('mask',     r'mask|eye patch'),
     ('hood',     r'\bhood'),
 ]
@@ -85,6 +87,13 @@ def key_of(dec):
     """Approval key of a decoration record (decorate.load_approved) or 'pattern:<label>'."""
     if 'from' in dec: return dec['from'].rsplit('__', 1)[0]
     return 'pattern:' + dec['label']
+
+
+def concept_of(dec):
+    """Roll unit: colour variants of one drawing share a 'concept' in their profiles
+    (red/blue/green tied tassel tuft) so they count once in roll weighting."""
+    prof = profiles().get(key_of(dec)) or {}
+    return prof.get('concept', key_of(dec))
 
 
 def verdict(prof, fams):
