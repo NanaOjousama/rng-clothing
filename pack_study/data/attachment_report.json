@@ -9,6 +9,7 @@
    "prefer": 15
   },
   "keptFamilies": {
+   "brimmed": 15,
    "straw": 11,
    "floral": 2,
    "cottage": 2,
@@ -17,12 +18,12 @@
   },
   "examples": {
    "keep": [
-    "orangeblosso:0 - Old Straw Hat ['straw']",
-    "orangeblosso:1 - Old Straw Hat ['straw']",
-    "orangeblosso:3 - Old Straw Hat ['straw']",
-    "plurffle:Straw Hat (Messy) ['straw']",
-    "plurffle:Boater Hat ['straw']",
-    "Kailey:Straw Hat (Beekeeper) ['straw']"
+    "orangeblosso:0 - Old Straw Hat ['brimmed', 'straw']",
+    "orangeblosso:1 - Old Straw Hat ['brimmed', 'straw']",
+    "orangeblosso:3 - Old Straw Hat ['brimmed', 'straw']",
+    "plurffle:Straw Hat (Messy) ['brimmed', 'straw']",
+    "plurffle:Boater Hat ['brimmed', 'straw']",
+    "Kailey:Straw Hat (Beekeeper) ['brimmed', 'straw']"
    ],
    "novelty": [],
    "reject": []
@@ -80,6 +81,7 @@
   "keptFamilies": {
    "cottage": 48,
    "hair": 39,
+   "brimmed": 36,
    "floral": 29,
    "straw": 22,
    "fantasy": 15,
@@ -94,9 +96,9 @@
     "marmuruah:Soul's Hood ['fantasy', 'hood']",
     "TiaoTiao:TT.summer.bluecyan ['hair']",
     "TiaoTiao:TT.summer.blue1 ['cottage']",
-    "TiaoTiao:TT.summer.orange ['floral', 'straw']",
+    "TiaoTiao:TT.summer.orange ['brimmed', 'floral', 'straw']",
     "TiaoTiao:TT.summer.red ['hair']",
-    "orangeblosso:0 - Old Straw Hat ['straw']"
+    "orangeblosso:0 - Old Straw Hat ['brimmed', 'straw']"
    ],
    "novelty": [
     "billi:Beanie ['knit']",
@@ -126,6 +128,7 @@
    "prefer": 30
   },
   "keptFamilies": {
+   "brimmed": 30,
    "straw": 16,
    "western": 8,
    "floral": 3,
@@ -135,12 +138,12 @@
   },
   "examples": {
    "keep": [
-    "orangeblosso:0 - Old Straw Hat ['straw']",
-    "orangeblosso:1 - Old Straw Hat ['straw']",
-    "orangeblosso:3 - Old Straw Hat ['straw']",
-    "plurffle:Sun Hat (Flowers) ['floral', 'straw']",
-    "plurffle:Sun Hat ['straw']",
-    "plurffle:Straw Hat (Messy) ['straw']"
+    "orangeblosso:0 - Old Straw Hat ['brimmed', 'straw']",
+    "orangeblosso:1 - Old Straw Hat ['brimmed', 'straw']",
+    "orangeblosso:3 - Old Straw Hat ['brimmed', 'straw']",
+    "plurffle:Sun Hat (Flowers) ['brimmed', 'floral', 'straw']",
+    "plurffle:Sun Hat ['brimmed', 'straw']",
+    "plurffle:Straw Hat (Messy) ['brimmed', 'straw']"
    ],
    "novelty": [],
    "reject": []
@@ -168,6 +171,7 @@
   "keptFamilies": {
    "cottage": 50,
    "knit": 29,
+   "brimmed": 26,
    "floral": 25,
    "hair": 23,
    "straw": 21,
@@ -184,11 +188,11 @@
     "TiaoTiao:TT.summer.bluecyan ['hair']",
     "TiaoTiao:TT.summer.blue3 ['hair']",
     "TiaoTiao:TT.summer.blue1 ['cottage']",
-    "TiaoTiao:TT.summer.orange ['floral', 'straw']",
+    "TiaoTiao:TT.summer.orange ['brimmed', 'floral', 'straw']",
     "TiaoTiao:TT.summer.red ['hair']"
    ],
    "novelty": [
-    "plurffle:Cowboy Hat ['western']",
+    "plurffle:Cowboy Hat ['brimmed', 'western']",
     "plurffle:Cap (Snapback) ['cap']",
     "plurffle:Cap 2 ['cap']",
     "plurffle:Cap 1 ['cap']",
@@ -216,50 +220,37 @@
    "bottomBelowTop": 4
   },
   "anchorOk": true,
-  "seated": 149,
+  "seated": 32,
   "verdicts": {
-   "unknown": 8,
-   "prefer": 55,
-   "allow": 29,
-   "reject": 26,
-   "novelty": 31
+   "reject": 20,
+   "prefer": 10,
+   "novelty": 1,
+   "allow": 1
   },
   "keptFamilies": {
-   "cottage": 32,
-   "knit": 19,
-   "straw": 12,
-   "hair": 8,
-   "floral": 7,
-   "fantasy": 6,
-   "hood": 3,
-   "animal": 3,
-   "western": 2,
-   "formal": 1
+   "brimmed": 11,
+   "straw": 7,
+   "cottage": 3,
+   "floral": 2,
+   "western": 1
   },
   "examples": {
    "keep": [
-    "marmuruah:Soul's Hood ['fantasy', 'hood']",
-    "TiaoTiao:TT.summer.red ['hair']",
-    "billi:Beanie ['knit']",
-    "plurffle:Veil (Speckled) ['hair']",
-    "plurffle:Tulip Hat (Striped) ['floral']",
-    "plurffle:Tulip Hat ['floral']"
+    "plurffle:Straw Hat (Messy) ['brimmed', 'straw']",
+    "Kailey:Straw Hat (Beekeeper) ['brimmed', 'straw']",
+    "Kailey:Straw Hat (Prismatic F ['brimmed', 'floral', 'straw']",
+    "Kailey:Straw Hat (Sunflower) ['brimmed', 'floral', 'straw']",
+    "lovisity:3_Sombrero_0 ['brimmed', 'straw']",
+    "Seyph:hats_4 ['brimmed', 'straw']"
    ],
-   "novelty": [
-    "Jedone:Vintage Cap_03 ['cap']",
-    "Jedone:Vintage Cap_01 ['cap']",
-    "Jedone:Backwards_Cap_05 ['cap']",
-    "Jedone:Backwards_Cap_02 ['cap']",
-    "h young FS C:hyoung_hats_30 ['animal']",
-    "h young FS C:hyoung_hats_25 ['animal']"
-   ],
+   "novelty": [],
    "reject": [
-    "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
-    "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
-    "Jedone:Cat_Headphones_03 ['animal', 'device']",
-    "Jedone:Cat_Headphones_02 ['animal', 'device']",
-    "Jedone:Cat_Headphones_01 ['animal', 'device']",
-    "Jedone:Cap&Headphones_08 ['cap', 'device']"
+    "marmuruah:Soul's Hood ['fantasy', 'hood']",
+    "plurffle:Beret (White Ribbon) ['cottage']",
+    "plurffle:Beret (Leaf) ['cottage']",
+    "Kookoroo:Kookoroo_3 ['cottage']",
+    "Kookoroo:Kookoroo_1 ['cottage']",
+    "Jedone:Fluffy_Beanie_03 ['knit']"
    ]
   }
  },
@@ -284,6 +275,7 @@
   },
   "keptFamilies": {
    "formal": 20,
+   "brimmed": 16,
    "fantasy": 10,
    "western": 9,
    "helmet": 8,
@@ -292,7 +284,7 @@
   },
   "examples": {
    "keep": [
-    "plurffle:Cowboy Hat ['western']",
+    "plurffle:Cowboy Hat ['brimmed', 'western']",
     "marmuruah:Watson's Hat ['formal']",
     "marmuruah:Sherlock's Hat ['formal']",
     "lovisity:15_DeviruchiHat_0 ['fantasy']",
@@ -309,7 +301,7 @@
    ],
    "reject": [
     "TiaoTiao:TT.summer.bluecyan ['hair']",
-    "TiaoTiao:TT.summer.orange ['floral', 'straw']",
+    "TiaoTiao:TT.summer.orange ['brimmed', 'floral', 'straw']",
     "TiaoTiao:TT.summer.red ['hair']",
     "plurffle:Veil (Speckled) ['hair']",
     "plurffle:Plague Doctor Mask ['fantasy', 'mask']",
@@ -383,7 +375,8 @@
   "keptFamilies": {
    "fantasy": 9,
    "regal": 2,
-   "formal": 2
+   "formal": 2,
+   "brimmed": 1
   },
   "examples": {
    "keep": [
@@ -404,11 +397,11 @@
    ],
    "reject": [
     "TiaoTiao:TT.summer.blue1 ['cottage']",
-    "orangeblosso:0 - Old Straw Hat ['straw']",
-    "orangeblosso:0 - Old Straw Hat w/ R ['straw']",
-    "orangeblosso:1 - Old Straw Hat w/ R ['straw']",
-    "orangeblosso:1 - Old Straw Hat ['straw']",
-    "orangeblosso:2 - Old Straw Hat w/ R ['straw']"
+    "orangeblosso:0 - Old Straw Hat ['brimmed', 'straw']",
+    "orangeblosso:0 - Old Straw Hat w/ R ['brimmed', 'straw']",
+    "orangeblosso:1 - Old Straw Hat w/ R ['brimmed', 'straw']",
+    "orangeblosso:1 - Old Straw Hat ['brimmed', 'straw']",
+    "orangeblosso:2 - Old Straw Hat w/ R ['brimmed', 'straw']"
    ]
   }
  },
@@ -531,9 +524,9 @@
     "SubabyTvanZ:SubabyTvanZ hat 4 ['unknown']",
     "marmuruah:Soul's Hood ['fantasy', 'hood']",
     "TiaoTiao:TT.summer.blue1 ['cottage']",
-    "TiaoTiao:TT.summer.orange ['floral', 'straw']",
+    "TiaoTiao:TT.summer.orange ['brimmed', 'floral', 'straw']",
     "TiaoTiao:TT.summer.red ['hair']",
-    "orangeblosso:0 - Old Straw Hat ['straw']"
+    "orangeblosso:0 - Old Straw Hat ['brimmed', 'straw']"
    ]
   }
  },
@@ -573,15 +566,15 @@
     "plurffle:Party Hat ['party']",
     "plurffle:Paperboy Hat ['cottage']",
     "plurffle:Headscarf (Small) ['cottage']",
-    "plurffle:Cowboy Hat ['western']"
+    "plurffle:Cowboy Hat ['brimmed', 'western']"
    ],
    "reject": [
-    "orangeblosso:0 - Old Straw Hat ['straw']",
-    "orangeblosso:0 - Old Straw Hat w/ R ['straw']",
-    "orangeblosso:1 - Old Straw Hat w/ R ['straw']",
-    "orangeblosso:1 - Old Straw Hat ['straw']",
-    "orangeblosso:2 - Old Straw Hat w/ R ['straw']",
-    "orangeblosso:3 - Old Straw Hat ['straw']"
+    "orangeblosso:0 - Old Straw Hat ['brimmed', 'straw']",
+    "orangeblosso:0 - Old Straw Hat w/ R ['brimmed', 'straw']",
+    "orangeblosso:1 - Old Straw Hat w/ R ['brimmed', 'straw']",
+    "orangeblosso:1 - Old Straw Hat ['brimmed', 'straw']",
+    "orangeblosso:2 - Old Straw Hat w/ R ['brimmed', 'straw']",
+    "orangeblosso:3 - Old Straw Hat ['brimmed', 'straw']"
    ]
   }
  },
@@ -606,6 +599,7 @@
   },
   "keptFamilies": {
    "cottage": 55,
+   "brimmed": 46,
    "straw": 27,
    "formal": 23,
    "western": 9,
@@ -618,11 +612,11 @@
   "examples": {
    "keep": [
     "TiaoTiao:TT.summer.blue1 ['cottage']",
-    "TiaoTiao:TT.summer.orange ['floral', 'straw']",
-    "orangeblosso:0 - Old Straw Hat ['straw']",
-    "orangeblosso:0 - Old Straw Hat w/ R ['straw']",
-    "orangeblosso:1 - Old Straw Hat w/ R ['straw']",
-    "orangeblosso:1 - Old Straw Hat ['straw']"
+    "TiaoTiao:TT.summer.orange ['brimmed', 'floral', 'straw']",
+    "orangeblosso:0 - Old Straw Hat ['brimmed', 'straw']",
+    "orangeblosso:0 - Old Straw Hat w/ R ['brimmed', 'straw']",
+    "orangeblosso:1 - Old Straw Hat w/ R ['brimmed', 'straw']",
+    "orangeblosso:1 - Old Straw Hat ['brimmed', 'straw']"
    ],
    "novelty": [
     "marmuruah:Soul's Hood ['fantasy', 'hood']",
@@ -686,6 +680,7 @@
    "cottage": 7,
    "cap": 1,
    "western": 1,
+   "brimmed": 1,
    "party": 1
   },
   "examples": {

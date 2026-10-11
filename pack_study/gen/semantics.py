@@ -47,6 +47,10 @@ NOT_FAMILY = {                          # name words that look like a family but
     'mask': r'on head',
     'hair': r'old straw hat w/ ribbon|sun hat \(ribbon\)|boater hat \(|beret \(white ribbon\)|cap&headphones',
 }
+# TRAIT, not a family: positive evidence the hat HAS A BRIM (a beret / bonnet does not).
+# Names: band.BRIM_NAMES' words plus sou'wester; visual labels: the label note.
+BRIMMED_NAME = re.compile(r"straw|sun ?hat|boater|cowboy|cowgal|cowpoke|fedora|bowler|top ?hat|sombrero|fishing|bucket|panama|witch hat|sou.?wester", re.I)
+BRIMMED_NOTE = re.compile(r"brim|sun ?hat|bucket|cloche|boater|sombrero|ranger|cowboy|fedora|straw", re.I)
 _RX = [(f, re.compile(p, re.I)) for f, p in FAMILIES]
 _NOT = {f: re.compile(p, re.I) for f, p in NOT_FAMILY.items()}
 _PROF = _LABELS = None
@@ -59,20 +63,23 @@ def norm(n):
 
 def host_families(names, cons_id=None):
     """Set of host families for a construction's names (author + vanilla); 'unknown'
-    when none.  A hand label in data/host_labels.json wins."""
+    when none.  A hand label in data/host_labels.json wins.
+    Plus the trait 'brimmed' (never alone: an unknown host stays {'unknown'}) when the
+    names / label note say the hat has a brim; profiles may `require` it."""
     global _LABELS
     if _LABELS is None:
         p = os.path.join(HERE, 'data', 'host_labels.json')
         raw = json.load(open(p)).get('labels', {}) if os.path.exists(p) else {}
         # visual labels: only high/medium confidence with a family count; low / [] stay unknown
-        _LABELS = {k: set(v['families']) for k, v in raw.items()
-                   if v['families'] and v.get('confidence') in ('high', 'medium')}
-    if cons_id in _LABELS: return _LABELS[cons_id]
+        _LABELS = {k: set(v['families']) | ({'brimmed'} if BRIMMED_NOTE.search(v.get('note', '')) else set())
+                   for k, v in raw.items() if v['families'] and v.get('confidence') in ('high', 'medium')}
+    if cons_id in _LABELS: return set(_LABELS[cons_id])
     out = set()
     for n in filter(None, names):
         n = norm(n)
         for f, rx in _RX:
             if rx.search(n) and not (f in _NOT and _NOT[f].search(n)): out.add(f)
+    if out and any(BRIMMED_NAME.search(norm(n)) for n in filter(None, names)): out.add('brimmed')
     return out or {'unknown'}
 
 
@@ -102,6 +109,7 @@ def verdict(prof, fams):
     'novelty' = named host outside prefer/allow and not rejected: only in a novelty roll."""
     if prof['transfer'] == 'headpiece-only': return 'reject', 0.0
     if fams & set(prof.get('reject', [])): return 'reject', 0.0     # a horned headband is fantasy AND hair: hair wins
+    if not set(prof.get('requires', [])) <= fams: return 'reject', 0.0   # e.g. leaf sprig requires 'brimmed'
     if fams & set(prof.get('prefer', [])): return 'prefer', 1.0
     if fams & set(prof.get('allow', [])): return 'allow', ALLOW_W
     if fams == {'unknown'}: return 'unknown', prof.get('unknownHost', 0)   # no name evidence either way

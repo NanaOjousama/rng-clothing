@@ -46,8 +46,27 @@ leaf sprig FAIL (floats), tuft FAIL (malformed on a beanie). Fixes:
 - device: rejected by every ornament, cat ears included
 Golden propeller is pixel-identical. Provenance proofs (`gen/provenance.py`, `gen/qc_replay.py`,
 `pack_study/tools/provenance_sheet.py`) sit beside every QC hat; all 11 v1 hats replay exactly.
-`[FS] PackStudy QC v2` (6 hats) is installed. Next test: restart the game, then
-`python3 tools/qc.py worn --pack PackStudy.QC2 --expect 6`. Do not redo: v1 sprig surface seat, tuft on flat tops.
+`[FS] PackStudy QC v2` (6 hats) is installed and was worn-captured (`qc_bridge/captures/20261010-195657/`):
+- control propeller: identical to v1
+- tuft 06/07: one piece
+- sprig on straw (05): tucked correctly
+- sprig 02/03 (beanie, dome cap): attached but jutting sideways
+
+**Final sprig policy (user, 2026-10-10):**
+- **normal** on brimmed straw / cottage / western hosts
+- **rejected** on dome / beanie / cap hosts
+
+Both of these gates must pass:
+- the profile requires the `brimmed` trait, taken from brim words in the names or the label note
+- `decorate.brim_shelf`: the brim must reach out under the stem in every view
+
+Results:
+- 11 normal hosts (`data/sprig_hosts.json`)
+- v2 02/03/04 are now rejected
+- the 4 surviving v2 hats are pixel-identical to the installed ones
+
+Only 2 normal hosts are generator-eligible, so the sprig is rare: 0 in 5x300.
+Do not redo: v1 sprig surface seat, tuft on flat tops, sprig on domes/beanies/caps/berets/bonnets.
 
 ## Git-backed recovery anchors
 

@@ -1,5 +1,5 @@
 {
- "_note": "Semantic/taste filter ON TOP of geometric seating (gen/semantics.py). Keys = keys of decorations_approved.json, plus 'pattern:<label>'. class: surface | structural | ornament | headpiece. transfer: broad | family-limited | novelty-only | headpiece-only. reject -> never, not even novelty (wins over prefer: Plague Doctor Mask is fantasy AND mask), prefer -> weight 1, allow -> ALLOW_W, any other NAMED family -> only in a novelty roll. unknownHost = weight on a host whose names give no family (opaque ids: Coii female_N, Seyph hats_N, ...). placement.anchor is checked against the measured source position by gen/demo_semantics.py. Host families come from author/vanilla names only (CLAUDE.md s3: shape-family membership is not evidence). Judgements are Claude's taste proposal, 2026-10-09; edit freely. Anchors: top-centre | top-side | front-mount | side-wall | crown-brim-junction | material-interior | face | head-top | head-ring; the first three were corrected to the measured source position (bird, cat ears, leaf sprig were mis-declared). concept: parts sharing a concept (colour variants of one drawing) are rolled as ONE attachment, then a variant is picked -- variants never multiply the concept's odds. 'device' (earmuffs, goggles, headphones, sunglasses, sleeping mask) is split from 'hair' (soft hair pieces): every ornament rejects devices, cat ears included (user 2026-10-10: ornaments reject earmuffs/goggles). placement.seat: surface (rests on the top) | side (tucked into the crown wall) ; placement.fit 'wrap': the part wraps a narrow tip and needs a host as narrow there.",
+ "_note": "Semantic/taste filter ON TOP of geometric seating (gen/semantics.py). Keys = keys of decorations_approved.json, plus 'pattern:<label>'. class: surface | structural | ornament | headpiece. transfer: broad | family-limited | novelty-only | headpiece-only. reject -> never, not even novelty (wins over prefer: Plague Doctor Mask is fantasy AND mask), prefer -> weight 1, allow -> ALLOW_W, any other NAMED family -> only in a novelty roll. unknownHost = weight on a host whose names give no family (opaque ids: Coii female_N, Seyph hats_N, ...). placement.anchor is checked against the measured source position by gen/demo_semantics.py. Host families come from author/vanilla names only (CLAUDE.md s3: shape-family membership is not evidence). Judgements are Claude's taste proposal, 2026-10-09; edit freely. Anchors: top-centre | top-side | front-mount | side-wall | crown-brim-junction | material-interior | face | head-top | head-ring; the first three were corrected to the measured source position (bird, cat ears, leaf sprig were mis-declared). concept: parts sharing a concept (colour variants of one drawing) are rolled as ONE attachment, then a variant is picked -- variants never multiply the concept's odds. 'device' (earmuffs, goggles, headphones, sunglasses, sleeping mask) is split from 'hair' (soft hair pieces): every ornament rejects devices, cat ears included (user 2026-10-10: ornaments reject earmuffs/goggles). placement.seat: surface (rests on the top) | side (tucked into the crown wall) ; placement.fit 'wrap': the part wraps a narrow tip and needs a host as narrow there. placement.host 'brim-shelf': a side-seated part also needs the host's brim to reach out under it (decorate.brim_shelf) -- the crown-over-brim notch; family and geometry must both agree. hostClass: the policy in words. requires: host traits that must ALL be present (semantics.host_families adds the trait 'brimmed' from brim words in the names or the visual label note), else reject.",
  "profiles": {
   "kailey__straw_hat_sunflower": {
    "label": "sunflower",
@@ -60,17 +60,18 @@
    "transfer": "family-limited",
    "prefer": [
     "straw",
-    "floral",
-    "cottage",
-    "fantasy"
+    "cottage"
    ],
    "allow": [
-    "western",
-    "knit",
-    "hair",
-    "hood"
+    "western"
    ],
    "reject": [
+    "knit",
+    "hood",
+    "cap",
+    "hair",
+    "party",
+    "animal",
     "helmet",
     "regal",
     "mask",
@@ -80,8 +81,19 @@
    "placement": {
     "anchor": "side-wall",
     "seat": "side",
-    "why": "vanilla Forager's Hat: a sprig tucked into the side of the crown -- it touches the crown WALL, not the top. Seated by decorate.place_side (worn QC 2026-10-10: the surface seat left it floating, PSQC 02/06)"
-   }
+    "why": "vanilla Forager's Hat: a sprig tucked into the crown-over-brim notch -- it touches the crown WALL with the brim reaching out under its stem. Seated by decorate.place_side (worn QC 2026-10-10: the surface seat left it floating, PSQC 02/06); host='brim-shelf' = decorate.brim_shelf must hold in every view (worn QC v2 2026-10-10: attached but jutting sideways off a beanie / dome cap, PSQC2 02/03; tucked correctly on straw, PSQC2 05).",
+    "host": "brim-shelf"
+   },
+   "novelty": [],
+   "hostClass": {
+    "normal": "brimmed straw / cottage hosts (and western) whose brim shelf reaches under the stem",
+    "rejected": "dome / beanie / cap hosts: knit, hood, cap families by name, and any host -- of any family -- with no brim shelf under the stem",
+    "novelty": "none: a sprig off a dome reads as a stick poking out, not a joke"
+   },
+   "policy": "final 2026-10-10 (user, after worn QC v2)",
+   "requires": [
+    "brimmed"
+   ]
   },
   "plurffle__earmuffs_cat": {
    "label": "cat ears",

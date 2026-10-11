@@ -428,3 +428,32 @@ Rebuild, run from `pack_study/`:
 
 The 04 slot is empty: no host seats the cap novelty.
 
+### Final leaf-sprig policy — 2026-10-10
+
+The worn capture of QC v2 is at `qc_bridge/captures/20261010-195657/`. The tuft and control pass. The sprig sits correctly on straw (05). On the beanie and dome cap (02, 03) it is attached but juts out sideways: those hosts have no crown-over-brim notch to tuck it into.
+
+The user's policy:
+- **normal** on brimmed straw / cottage hosts (western allowed)
+- **rejected** on dome / beanie / cap hosts
+- no sprig novelty rolls
+
+It is recorded as `hostClass` and `policy` in the profile. Both gates must pass:
+- **Name evidence:** profile `requires: ['brimmed']`. `semantics.host_families` adds the *trait* `brimmed` (not a family) from brim words in the names (band's list plus sou'wester) or in the visual label note. Without it, berets, bonnets and headscarves passed the geometry, because their puff overhangs like a brim.
+- **Geometry:** `placement.host = 'brim-shelf'`, so `decorate.brim_shelf` must hold for the side seat in every view. Within 3 rows below the part, the host must reach out under the part's outer edge, at least 2 px past the crown edge at the part's top row. This holds on the source in all 4 views and on v2 05. It fails on v2 02 and 03.
+
+`python3 -I gen/sprig_hosts.py` writes `data/sprig_hosts.json`:
+
+| Class | Hosts |
+|---|---|
+| normal | 11 (6 straw, 4 brimmed cottage, 1 western) |
+| rejected: family | 345 |
+| rejected: off-family | 7 |
+| rejected: no shelf | 7 (e.g. boaters, flat narrow brim) |
+| rejected: no seat | 22 |
+
+Only 2 normal hosts are generator-eligible, so the generator rolls the sprig rarely: 0 times in 5×300.
+
+The rebuilt `qc_v2.py` now *asserts* that 02, 03 and 04 are rejected. The 4 surviving hats are pixel-identical to the installed pack, so the installed QC v2 stays as the worn record.
+
+`attachment_report`: leaf seated 149 → 32. Every other part is unchanged.
+

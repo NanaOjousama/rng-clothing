@@ -164,7 +164,34 @@ def _run_at(mask, y, x):
     if not runs: return None
     return min(runs, key=lambda r: 0 if r[0] <= x <= r[1] else min(abs(x - r[0]), abs(x - r[1])))
 
-def place_side(dec_px, src_mask, tgt_mask):
+def brim_shelf(out, tgt_mask, rows=3, step=2):
+    """The host's brim reaches out UNDER a side-seated part: within `rows` rows below the
+    part's lowest row, a host run extends outward (away from the hat centre) to within
+    1 px of the part's outer edge, and at least `step` px past the crown edge at the
+    part's TOP row (not its lowest: seen from behind, the source sprig overlaps the crown
+    face down there).  This is the crown-over-brim notch the source sprig sits in (Forager's
+    Hat, straw sun hats); a dome, beanie or cap wall has nothing under the stem and the
+    part juts out sideways (worn QC v2 2026-10-10, PSQC2 02/03)."""
+    if not out: return True
+    ti = mask_info(tgt_mask)
+    if not ti: return False
+    h = len(tgt_mask)
+    xs = [x for x, _, _ in out]
+    out_dir = 1 if (min(xs) + max(xs)) / 2 > (ti[0] + ti[1]) / 2 else -1
+    outer = max(xs) if out_dir == 1 else min(xs)
+    low, top = max(y for _, y, _ in out), max(0, min(y for _, y, _ in out))
+    crown = _run_at(tgt_mask, top, (ti[0] + ti[1]) // 2)
+    if crown is None: return False
+    crown_edge = crown[1] if out_dir == 1 else crown[0]
+    for y in range(low + 1, min(h, low + 1 + rows)):
+        run = _run_at(tgt_mask, y, (ti[0] + ti[1]) // 2)
+        if run is None: continue
+        edge = run[1] if out_dir == 1 else run[0]
+        reach, past = (edge - outer, edge - crown_edge) if out_dir == 1 else (outer - edge, crown_edge - edge)
+        if reach >= -1 and past >= step: return True
+    return False
+
+def place_side(dec_px, src_mask, tgt_mask, shelf=False):
     """SIDE seat: a part tucked against the CROWN WALL (leaf sprig in a Forager's Hat).
     The stem root is the lowest part pixel with the source hat beside it.  On the source,
     find the crown run on that row and the root's offset from the run's edge; on the
@@ -195,13 +222,14 @@ def place_side(dec_px, src_mask, tgt_mask):
     for dy in (dy0, dy0 + 1, dy0 - 1, dy0 + 2):
         out = [[x + dx, y + dy, p] for x, y, p in dec_px]
         if sum((x, y) in tocc for x, y, _ in out) > over_s + 1: continue
-        if len(contacts(out, tocc)) >= need and _valid(out, tgt_mask): return out, dy
+        if len(contacts(out, tocc)) >= need and _valid(out, tgt_mask) and (not shelf or brim_shelf(out, tgt_mask)):
+            return out, dy
     return None
 
 def seat_of(dec):
     import semantics
     pl = (semantics.profiles().get(dec['from'].rsplit('__', 1)[0]) or {}).get('placement', {})
-    return pl.get('seat', 'surface'), pl.get('fit')
+    return pl.get('seat', 'surface'), pl.get('fit'), pl.get('host')
 
 def _contact_ok(px, src_mask, out, tgt_mask):
     return len(contacts(out, _occ(tgt_mask))) >= need_contact(px, src_mask)
@@ -214,11 +242,12 @@ def place(dec, target_masks, info=None, prefer_rule=RULE_WINS):
     prefer_rule: views that take the rule's move (if valid) when they disagree with it.
     Sides: the rule keeps a perched part on top in profile, as in the front view.
     Back: the surface wins -- a perched part seen from behind pokes above the crown."""
-    seat, fit = seat_of(dec)
+    seat, fit, host = seat_of(dec)
     if seat == 'side':
         res = {}
         for v in VIEWS:
-            r = place_side(dec['views'][v]['pixels'], dec['views'][v]['baseMask'], target_masks[v])
+            r = place_side(dec['views'][v]['pixels'], dec['views'][v]['baseMask'], target_masks[v],
+                           shelf=host == 'brim-shelf')
             if r is None: return None
             res[v] = r[0]
         if info is not None: info['reseated'], info['reseatFlags'] = [], []

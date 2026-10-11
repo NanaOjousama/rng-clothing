@@ -21,9 +21,9 @@ HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # (what, test, host, part key).  host = 'v1:<log name>' (v1 pixels) or a construction id.
 CASES = [
     ('CONTROL propeller', 'golden v1 PSQC 03 re-placed by current code: must look identical', 'v1:PS1_58_rare', 'vhe__propeller_hat_alt__kept'),
-    ('leaf sprig side seat', 'v1 PSQC 02 host (cat beanie): sprig tucked into the crown wall, touching it', 'v1:PS1_06_rare', 'seyph__hats_90'),
-    ('leaf sprig side seat', 'v1 PSQC 06 host: sprig tucked into the crown wall, touching it', 'v1:PS1_04_rare', 'seyph__hats_90'),
-    ('leaf sprig side seat NOVELTY', 'v1 PSQC 08 host (cap): sprig touching, a deliberate joke', 'v1:PS1_21_rare', 'seyph__hats_90'),
+    ('leaf sprig side seat', 'v1 PSQC 02 host (cat beanie): final sprig policy must REJECT (no brim shelf; worn v2: juts sideways)', 'v1:PS1_06_rare', 'seyph__hats_90'),
+    ('leaf sprig side seat', 'v1 PSQC 06 host (dome cap): final sprig policy must REJECT (no brim shelf; worn v2: juts sideways)', 'v1:PS1_04_rare', 'seyph__hats_90'),
+    ('leaf sprig side seat NOVELTY', 'v1 PSQC 08 host (cap): final sprig policy must REJECT (cap family, no novelty)', 'v1:PS1_21_rare', 'seyph__hats_90'),
     ('leaf sprig side seat', 'preferred straw host, closest to the source Forager\'s Hat', 'family:straw', 'seyph__hats_90'),
     ('tied tassel tuft', 'tuft tied round a narrow party-hat tip (fit=wrap)', 'lovisity__c', 'vhe__green_party_hat_alt__removed'),
     ('tied tassel tuft', 'second narrow-tip host', 'concernedape__c', 'vhe__red_party_hat_alt__removed'),
@@ -73,6 +73,10 @@ def main():
         dec = decs[key]
         if host.startswith('v1:'):
             r1 = v1[host[3:]]; c = cons[r1['construction']]
+            fams = S.host_families(G.names_of(c), c['id'])
+            if 'must REJECT' in test and S.weight(dec, fams) <= 0 and not S.weight(dec, fams, True):
+                index.append({'n': n, 'what': what, 'test': test, 'missing': True, 'host': host,
+                              'rejectedBy': 'family/trait', 'families': sorted(fams)}); continue
             w, h = c['frame']
             base = [list(map(tuple, row)) for row in r1['base']][len(r1['base']) - h:]   # v1 base never has pad rows
             fams = S.host_families(G.names_of(c), c['id'])
@@ -96,7 +100,7 @@ def main():
         if res is None:
             index.append({'n': n, 'what': what, 'test': test, 'missing': True, 'host': host}); continue
         final = put(base, res, w)
-        hostname = ','.join(sorted(fams))
+        hostname = ','.join(sorted(fams - {'brimmed'}))     # trait, not a family: keep v2 names stable
         if not G.eligible(c): what += ' PRIMITIVE ONLY'
         name = f"PSQC2 {n:02d} {what} ({hostname})"
         G.write_hat(os.path.join(out), name, c, final)
@@ -116,6 +120,8 @@ def main():
     json.dump(index, open(os.path.join(out, 'qc_index.json'), 'w'), indent=1)
     json.dump(records, open(rec_out, 'w'))
     for i in index: print(i.get('name') or f"#{i['n']} {i['what']}: NO HOST SEATS", '|', i['test'])
+    bad = [i for i in index if i.get('name') and 'must REJECT' in i['test']]
+    if bad: sys.exit('sprig policy did not reject: ' + ', '.join(i['name'] for i in bad))
 
 
 if __name__ == '__main__':
