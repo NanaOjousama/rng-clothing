@@ -457,3 +457,46 @@ The rebuilt `qc_v2.py` now *asserts* that 02, 03 and 04 are rejected. The 4 surv
 
 `attachment_report`: leaf seated 149 → 32. Every other part is unchanged.
 
+### Verified brim structure, boater seat, sprig frequency — 2026-10-10 (follow-up)
+
+**Verified structure, not names** (user: imported packs must not be excluded for naming differently).
+
+`data/host_structure.json` gives every one of the 392 hosts a `brim`:
+
+| brim | Hosts |
+|---|---|
+| wide | 46 |
+| narrow | 15 |
+| upturned | 3 |
+| none | 328 |
+
+These were verified by eye on the source sprite (CLAUDE.md §3): a 3× front+right sheet for every host, and 6× in all 4 views for the uncertain ones. The name words and `band.junction` geometry are recorded only as `proposals`, and neither is used. The geometry disagreed with the eye on about half the hosts, because beanies and berets widen downward too. The names missed real brims, e.g. the Forager's Hat itself, Lovisity HatOfGirl, Sherlock/Watson, top hats and mage hats.
+
+`semantics.host_families` now adds the traits `brimmed` and `brim-narrow` from this registry only. A host missing from it, such as one from a newly imported pack, has no brim trait, so brim-requiring parts reject it until it is reviewed and added.
+
+*Still name-based:* the families themselves (`straw`, `cottage`, ...) for named hosts. Only the 162 opaque-name hosts have visual family labels. Moving every family into a verified registry is the next step for imported packs.
+
+**Boater measure** (`decorate.stem_on_brim`): this applies only when the host is verified `brim-narrow` and the part's profile has `placement.host='brim-shelf'`.
+- A boater lip, 1–2 px, cannot reach under the leaves, so the *stem* must rest on it: the pixel under the stem root is hat, and that row reaches at least 1 px past the crown edge.
+- The seat may slide −3…+3 rows and up to 2 px toward the hat centre.
+- The global `brim_shelf` rule is unchanged for every other host. The propeller control and QC v2 01/05/06/07 are pixel-identical.
+
+The 3 plurffle boaters and Kailey's boater-shaped straw hats now seat in all 4 views. Installed as **PSQC2 08 / 09 / 10** into the existing QC v2 folder (fs_reload or restart, then worn capture); they are not yet worn-verified.
+
+Sprig hosts (`data/sprig_hosts.json`): **18 normal**, up from 11.
+
+**Why the sprig is rare** (`python3 -I gen/sprig_funnel.py 1000 1,2,3,4,5` → `data/sprig_funnel.json`, 5000 hats):
+
+| Bottleneck | Measured |
+|---|---|
+| attachment eligibility | 43 hosts seat it; 25 of those are rejected by family/trait (intended) |
+| **no proven recolour** | **11 of the 18 compatible hosts** are never rendered by the generator (`generate.eligible`) |
+| **rare-pool host selection** | plurffle's rare pool is only its add-on bases, so its 4 compatible hats (3 boaters, Messy straw) never reach `decorate()` |
+| competition (sunflower / band / bird) | *not* the bottleneck: on a compatible host the sprig wins 19–41% (sampled), and won 6 of 21 decorations in the 5000-hat run |
+
+**Frequency:** 6 sprigs in 5000 hats (about 1 in 830), all on Kailey straw hats.
+
+A scratch simulation (not adopted) that lets an author's rare pool include its large non-add-on hats gave 34 decorations on compatible hosts instead of 21, and 7 sprigs instead of 6. Both options below are generator-wide, so they await a decision:
+- the rare-pool change
+- rendering non-recolourable compatible hosts in their authored colourway
+

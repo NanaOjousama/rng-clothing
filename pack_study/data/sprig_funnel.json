@@ -1,0 +1,946 @@
+{
+ "funnel": {
+  "hosts": 392,
+  "seat": 43,
+  "seat but family/trait rejects": 25,
+  "seat+family": 18,
+  "seat+family+eligible": 7,
+  "...+reachable as rare": 7,
+  "compatible but no proven recolour": 11
+ },
+ "compatibleHosts": [
+  {
+   "id": "plurffle__c49",
+   "author": "plurffle",
+   "name": "Straw Hat (Messy)",
+   "families": [
+    "brimmed",
+    "straw"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": true,
+   "rarePool": false,
+   "retryPool": true,
+   "cells": 458
+  },
+  {
+   "id": "plurffle__c118",
+   "author": "plurffle",
+   "name": "Boater Hat (Ribbons)",
+   "families": [
+    "brim-narrow",
+    "brimmed",
+    "straw"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": true,
+   "rarePool": false,
+   "retryPool": true,
+   "cells": 426
+  },
+  {
+   "id": "plurffle__c119",
+   "author": "plurffle",
+   "name": "Boater Hat (Bow)",
+   "families": [
+    "brim-narrow",
+    "brimmed",
+    "straw"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": true,
+   "rarePool": false,
+   "retryPool": true,
+   "cells": 318
+  },
+  {
+   "id": "plurffle__c120",
+   "author": "plurffle",
+   "name": "Boater Hat",
+   "families": [
+    "brim-narrow",
+    "brimmed",
+    "straw"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": true,
+   "rarePool": false,
+   "retryPool": true,
+   "cells": 292
+  },
+  {
+   "id": "kailey__c212",
+   "author": "Kailey",
+   "name": "Straw Hat (Blue)",
+   "families": [
+    "brim-narrow",
+    "brimmed",
+    "straw"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": true,
+   "rarePool": true,
+   "retryPool": true,
+   "cells": 459
+  },
+  {
+   "id": "kailey__c213",
+   "author": "Kailey",
+   "name": "Straw Hat (Colourable 2)",
+   "families": [
+    "brim-narrow",
+    "brimmed",
+    "straw"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": true,
+   "rarePool": true,
+   "retryPool": true,
+   "cells": 459
+  },
+  {
+   "id": "kailey__c214",
+   "author": "Kailey",
+   "name": "Straw Hat (Beekeeper)",
+   "families": [
+    "brimmed",
+    "straw"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 668
+  },
+  {
+   "id": "kailey__c215",
+   "author": "Kailey",
+   "name": "Straw Hat (Prismatic Flowers)",
+   "families": [
+    "brimmed",
+    "floral",
+    "straw"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": true,
+   "rarePool": true,
+   "retryPool": true,
+   "cells": 496
+  },
+  {
+   "id": "kailey__c216",
+   "author": "Kailey",
+   "name": "Straw Hat (Sunflower)",
+   "families": [
+    "brimmed",
+    "floral",
+    "straw"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 505
+  },
+  {
+   "id": "lovisity__c277",
+   "author": "lovisity",
+   "name": "3_Sombrero_0",
+   "families": [
+    "brimmed",
+    "straw"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 650
+  },
+  {
+   "id": "lovisity__c280",
+   "author": "lovisity",
+   "name": "6_HatOfGirl_0",
+   "families": [
+    "brimmed",
+    "cottage"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 632
+  },
+  {
+   "id": "seyph__c291",
+   "author": "Seyph",
+   "name": "hats_4",
+   "families": [
+    "brimmed",
+    "straw"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 422
+  },
+  {
+   "id": "coii__c415",
+   "author": "Coii",
+   "name": "female_38",
+   "families": [
+    "brimmed",
+    "cottage"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 386
+  },
+  {
+   "id": "coii__c436",
+   "author": "Coii",
+   "name": "male_38",
+   "families": [
+    "brimmed",
+    "cottage"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 374
+  },
+  {
+   "id": "concernedape__c443",
+   "author": "ConcernedApe",
+   "name": "hats_4",
+   "families": [
+    "brimmed",
+    "straw"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 422
+  },
+  {
+   "id": "concernedape__c466",
+   "author": "ConcernedApe",
+   "name": "hats_28",
+   "families": [
+    "brimmed",
+    "cottage"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 390
+  },
+  {
+   "id": "concernedape__c478",
+   "author": "ConcernedApe",
+   "name": "hats_98",
+   "families": [
+    "brimmed",
+    "western"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 410
+  },
+  {
+   "id": "concernedape__c483",
+   "author": "ConcernedApe",
+   "name": "hats_102",
+   "families": [
+    "brim-narrow",
+    "brimmed",
+    "cottage"
+   ],
+   "family": true,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 344
+  }
+ ],
+ "seatButRejected": [
+  {
+   "id": "marmuruah__c1",
+   "author": "marmuruah",
+   "name": "Soul's Hood",
+   "families": [
+    "fantasy",
+    "hood"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 648
+  },
+  {
+   "id": "plurffle__c121",
+   "author": "plurffle",
+   "name": "Beret (White Ribbon)",
+   "families": [
+    "cottage"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": true,
+   "rarePool": false,
+   "retryPool": true,
+   "cells": 380
+  },
+  {
+   "id": "plurffle__c122",
+   "author": "plurffle",
+   "name": "Beret (Leaf)",
+   "families": [
+    "cottage"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": true,
+   "rarePool": false,
+   "retryPool": true,
+   "cells": 348
+  },
+  {
+   "id": "kookoroo__c141",
+   "author": "Kookoroo",
+   "name": "Kookoroo_3",
+   "families": [
+    "cottage"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": true,
+   "rarePool": true,
+   "retryPool": true,
+   "cells": 322
+  },
+  {
+   "id": "kookoroo__c142",
+   "author": "Kookoroo",
+   "name": "Kookoroo_1",
+   "families": [
+    "cottage"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 322
+  },
+  {
+   "id": "jedone__c154",
+   "author": "Jedone",
+   "name": "Fluffy_Beanie_03",
+   "families": [
+    "knit"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": true,
+   "rarePool": true,
+   "retryPool": true,
+   "cells": 420
+  },
+  {
+   "id": "h_young_fs_code_by_mychocolate__c178",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_26",
+   "families": [
+    "unknown"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": true,
+   "rarePool": false,
+   "retryPool": true,
+   "cells": 400
+  },
+  {
+   "id": "h_young_fs_code_by_mychocolate__c179",
+   "author": "h young FS Code By Mychocolate",
+   "name": "hyoung_hats_25",
+   "families": [
+    "animal"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": true,
+   "rarePool": false,
+   "retryPool": true,
+   "cells": 400
+  },
+  {
+   "id": "marmuruah__c237",
+   "author": "marmuruah",
+   "name": "Watson's Hat",
+   "families": [
+    "brim-narrow",
+    "brimmed",
+    "formal"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 374
+  },
+  {
+   "id": "marmuruah__c238",
+   "author": "marmuruah",
+   "name": "Sherlock's Hat",
+   "families": [
+    "brim-narrow",
+    "brimmed",
+    "formal"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 596
+  },
+  {
+   "id": "kailey__c284",
+   "author": "Kailey",
+   "name": "hats_0",
+   "families": [
+    "cottage"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": true,
+   "rarePool": true,
+   "retryPool": true,
+   "cells": 413
+  },
+  {
+   "id": "kailey__c285",
+   "author": "Kailey",
+   "name": "hats_1",
+   "families": [
+    "cottage"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": true,
+   "rarePool": true,
+   "retryPool": true,
+   "cells": 413
+  },
+  {
+   "id": "kailey__c286",
+   "author": "Kailey",
+   "name": "hats_2",
+   "families": [
+    "cottage"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 413
+  },
+  {
+   "id": "seyph__c289",
+   "author": "Seyph",
+   "name": "hats_2",
+   "families": [
+    "brim-narrow",
+    "brimmed",
+    "formal"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 557
+  },
+  {
+   "id": "seyph__c297",
+   "author": "Seyph",
+   "name": "hats_10",
+   "families": [
+    "animal",
+    "mask"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 686
+  },
+  {
+   "id": "seyph__c314",
+   "author": "Seyph",
+   "name": "hats_27",
+   "families": [
+    "mask"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 824
+  },
+  {
+   "id": "concernedape__c349",
+   "author": "ConcernedApe",
+   "name": "hats_62",
+   "families": [
+    "cavalier"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 496
+  },
+  {
+   "id": "coii__c391",
+   "author": "Coii",
+   "name": "female_10",
+   "families": [
+    "animal"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 380
+  },
+  {
+   "id": "coii__c414",
+   "author": "Coii",
+   "name": "female_37",
+   "families": [
+    "knit"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 386
+  },
+  {
+   "id": "coii__c425",
+   "author": "Coii",
+   "name": "male_10",
+   "families": [
+    "animal"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 362
+  },
+  {
+   "id": "coii__c427",
+   "author": "Coii",
+   "name": "male_19",
+   "families": [
+    "brimmed",
+    "formal"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 420
+  },
+  {
+   "id": "coii__c435",
+   "author": "Coii",
+   "name": "male_37",
+   "families": [
+    "knit"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 374
+  },
+  {
+   "id": "concernedape__c439",
+   "author": "ConcernedApe",
+   "name": "hats_1",
+   "families": [
+    "brim-narrow",
+    "brimmed",
+    "formal"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 388
+  },
+  {
+   "id": "concernedape__c489",
+   "author": "ConcernedApe",
+   "name": "hats_112",
+   "families": [
+    "brim-narrow",
+    "brimmed",
+    "fantasy"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 553
+  },
+  {
+   "id": "concernedape__c491",
+   "author": "ConcernedApe",
+   "name": "hats_114",
+   "families": [
+    "party"
+   ],
+   "family": false,
+   "seat": true,
+   "eligible": false,
+   "rarePool": false,
+   "retryPool": false,
+   "cells": 386
+  }
+ ],
+ "competition": {
+  "plurffle__c49": {
+   "seatingCompetitors": {
+    "orangeblossom__1_old_straw_hat_w_ribbon": 1.0,
+    "kailey__straw_hat_blue": 1.0,
+    "kailey__flower_crown_bird": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "1_old_straw_hat_w_ribbon": 0.237,
+    "straw_hat_blue": 0.226,
+    "hats_90": 0.223,
+    "flower_crown_bird": 0.22,
+    "tricorn_hat_alt": 0.094
+   }
+  },
+  "plurffle__c118": {
+   "seatingCompetitors": {
+    "kailey__straw_hat_sunflower": 1.0,
+    "kailey__flower_crown_bird": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "straw_hat_sunflower": 0.302,
+    "hats_90": 0.299,
+    "flower_crown_bird": 0.28,
+    "tricorn_hat_alt": 0.119
+   }
+  },
+  "plurffle__c119": {
+   "seatingCompetitors": {
+    "kailey__straw_hat_sunflower": 1.0,
+    "kailey__flower_crown_bird": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "straw_hat_sunflower": 0.302,
+    "hats_90": 0.299,
+    "flower_crown_bird": 0.28,
+    "tricorn_hat_alt": 0.119
+   }
+  },
+  "plurffle__c120": {
+   "seatingCompetitors": {
+    "orangeblossom__1_old_straw_hat_w_ribbon": 1.0,
+    "kailey__straw_hat_sunflower": 1.0,
+    "kailey__straw_hat_blue": 1.0,
+    "kailey__flower_crown_bird": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "hats_90": 0.193,
+    "1_old_straw_hat_w_ribbon": 0.188,
+    "flower_crown_bird": 0.185,
+    "straw_hat_sunflower": 0.183,
+    "straw_hat_blue": 0.172,
+    "tricorn_hat_alt": 0.08
+   }
+  },
+  "kailey__c212": {
+   "seatingCompetitors": {
+    "kailey__straw_hat_sunflower": 1.0,
+    "kailey__straw_hat_blue": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "straw_hat_sunflower": 0.302,
+    "hats_90": 0.299,
+    "straw_hat_blue": 0.28,
+    "tricorn_hat_alt": 0.119
+   }
+  },
+  "kailey__c213": {
+   "seatingCompetitors": {
+    "kailey__straw_hat_sunflower": 1.0,
+    "kailey__straw_hat_blue": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "straw_hat_sunflower": 0.302,
+    "hats_90": 0.299,
+    "straw_hat_blue": 0.28,
+    "tricorn_hat_alt": 0.119
+   }
+  },
+  "kailey__c214": {
+   "seatingCompetitors": {
+    "orangeblossom__1_old_straw_hat_w_ribbon": 1.0,
+    "kailey__straw_hat_blue": 1.0,
+    "kailey__flower_crown_bird": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "1_old_straw_hat_w_ribbon": 0.237,
+    "straw_hat_blue": 0.226,
+    "hats_90": 0.223,
+    "flower_crown_bird": 0.22,
+    "tricorn_hat_alt": 0.094
+   }
+  },
+  "kailey__c215": {
+   "seatingCompetitors": {
+    "orangeblossom__1_old_straw_hat_w_ribbon": 1.0,
+    "kailey__straw_hat_sunflower": 1.0,
+    "kailey__straw_hat_blue": 1.0,
+    "kailey__flower_crown_bird": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "hats_90": 0.193,
+    "1_old_straw_hat_w_ribbon": 0.188,
+    "flower_crown_bird": 0.185,
+    "straw_hat_sunflower": 0.183,
+    "straw_hat_blue": 0.172,
+    "tricorn_hat_alt": 0.08
+   }
+  },
+  "kailey__c216": {
+   "seatingCompetitors": {
+    "orangeblossom__1_old_straw_hat_w_ribbon": 1.0,
+    "kailey__straw_hat_sunflower": 1.0,
+    "kailey__straw_hat_blue": 1.0,
+    "kailey__flower_crown_bird": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "hats_90": 0.193,
+    "1_old_straw_hat_w_ribbon": 0.188,
+    "flower_crown_bird": 0.185,
+    "straw_hat_sunflower": 0.183,
+    "straw_hat_blue": 0.172,
+    "tricorn_hat_alt": 0.08
+   }
+  },
+  "lovisity__c277": {
+   "seatingCompetitors": {
+    "orangeblossom__1_old_straw_hat_w_ribbon": 1.0,
+    "kailey__straw_hat_blue": 1.0,
+    "kailey__flower_crown_bird": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "1_old_straw_hat_w_ribbon": 0.237,
+    "straw_hat_blue": 0.226,
+    "hats_90": 0.223,
+    "flower_crown_bird": 0.22,
+    "tricorn_hat_alt": 0.094
+   }
+  },
+  "lovisity__c280": {
+   "seatingCompetitors": {
+    "kailey__straw_hat_sunflower": 1.0,
+    "kailey__flower_crown_bird": 1.0,
+    "seyph__hats_90": 1.0
+   },
+   "pWin": {
+    "straw_hat_sunflower": 0.348,
+    "hats_90": 0.326,
+    "flower_crown_bird": 0.326
+   }
+  },
+  "seyph__c291": {
+   "seatingCompetitors": {
+    "kailey__straw_hat_sunflower": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "straw_hat_sunflower": 0.424,
+    "hats_90": 0.41,
+    "tricorn_hat_alt": 0.165
+   }
+  },
+  "coii__c415": {
+   "seatingCompetitors": {
+    "kailey__straw_hat_sunflower": 1.0,
+    "kailey__flower_crown_bird": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "straw_hat_sunflower": 0.302,
+    "hats_90": 0.299,
+    "flower_crown_bird": 0.28,
+    "tricorn_hat_alt": 0.119
+   }
+  },
+  "coii__c436": {
+   "seatingCompetitors": {
+    "kailey__straw_hat_sunflower": 1.0,
+    "kailey__flower_crown_bird": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "straw_hat_sunflower": 0.302,
+    "hats_90": 0.299,
+    "flower_crown_bird": 0.28,
+    "tricorn_hat_alt": 0.119
+   }
+  },
+  "concernedape__c443": {
+   "seatingCompetitors": {
+    "orangeblossom__1_old_straw_hat_w_ribbon": 1.0,
+    "kailey__straw_hat_sunflower": 1.0,
+    "kailey__straw_hat_blue": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "1_old_straw_hat_w_ribbon": 0.237,
+    "straw_hat_sunflower": 0.226,
+    "hats_90": 0.223,
+    "straw_hat_blue": 0.22,
+    "tricorn_hat_alt": 0.094
+   }
+  },
+  "concernedape__c466": {
+   "seatingCompetitors": {
+    "kailey__straw_hat_sunflower": 1.0,
+    "kailey__flower_crown_bird": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "straw_hat_sunflower": 0.302,
+    "hats_90": 0.299,
+    "flower_crown_bird": 0.28,
+    "tricorn_hat_alt": 0.119
+   }
+  },
+  "concernedape__c478": {
+   "seatingCompetitors": {
+    "kailey__straw_hat_sunflower": 0.4,
+    "seyph__hats_90": 0.4,
+    "vhe__knight_s_helmet_alt__removed": 0.4,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "straw_hat_sunflower": 0.258,
+    "knight_s_helmet_alt": 0.256,
+    "tricorn_hat_alt": 0.25,
+    "hats_90": 0.236
+   }
+  },
+  "concernedape__c483": {
+   "seatingCompetitors": {
+    "orangeblossom__1_old_straw_hat_w_ribbon": 1.0,
+    "kailey__straw_hat_sunflower": 1.0,
+    "kailey__straw_hat_blue": 1.0,
+    "kailey__flower_crown_bird": 1.0,
+    "seyph__hats_90": 1.0,
+    "vhe__tricorn_hat_alt__added": 0.4
+   },
+   "pWin": {
+    "hats_90": 0.193,
+    "1_old_straw_hat_w_ribbon": 0.188,
+    "flower_crown_bird": 0.185,
+    "straw_hat_sunflower": 0.183,
+    "straw_hat_blue": 0.172,
+    "tricorn_hat_alt": 0.08
+   }
+  }
+ },
+ "generator": {
+  "hats": 5000,
+  "decorateCallsOnCompatibleHosts": {
+   "kailey__c213": 8,
+   "kailey__c212": 6,
+   "kailey__c215": 7
+  },
+  "winnerOnCompatibleHosts": {
+   "leaf sprig": 6,
+   "blue dotted band": 5,
+   "white ribbon band": 2,
+   "ribbon": 1,
+   "sunflower": 6,
+   "bird": 1
+  }
+ }
+}

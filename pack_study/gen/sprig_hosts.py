@@ -30,7 +30,7 @@ def main():
         v, w = S.verdict(prof, fams)
         _, masks = views_of(c)
         if w > 0:
-            if place(dec, masks) is not None: why = None
+            if place(dec, masks, host=fams) is not None: why = None
             elif all(place_side(dec['views'][x]['pixels'], dec['views'][x]['baseMask'], masks[x]) for x in VIEWS):
                 why = 'no-shelf'
             else: why = 'no-seat'

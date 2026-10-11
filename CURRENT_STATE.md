@@ -65,8 +65,20 @@ Results:
 - v2 02/03/04 are now rejected
 - the 4 surviving v2 hats are pixel-identical to the installed ones
 
-Only 2 normal hosts are generator-eligible, so the sprig is rare: 0 in 5x300.
-Do not redo: v1 sprig surface seat, tuft on flat tops, sprig on domes/beanies/caps/berets/bonnets.
+Follow-up, same day:
+- **brim is now a VERIFIED structure** in `pack_study/data/host_structure.json`, reviewed by eye for all 392 hosts; names and geometry are proposals only. Unreviewed (imported) hosts have no brim trait.
+- **boater measure:** for verified narrow brims, the stem rests on the lip (`decorate.stem_on_brim`).
+- **18 normal sprig hosts.** PSQC2 08–10 (boaters) are installed into QC v2 and NOT yet worn-verified.
+
+Sprig frequency is about 1 in 830 hats (6 in 5000). The bottlenecks:
+- 11 of 18 compatible hosts have no proven recolour
+- plurffle's rare pool is add-on bases only
+
+Competition is not the bottleneck.
+
+Next test: start the game, `python3 tools/qc.py refresh --pack PackStudy.QC2 --expect 9`, then `python3 tools/qc.py worn --pack PackStudy.QC2 --expect 9`.
+
+Do not redo: v1 sprig surface seat, tuft on flat tops, sprig on domes/beanies/caps/berets/bonnets, brim from names/geometry.
 
 ## Git-backed recovery anchors
 

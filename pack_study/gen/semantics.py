@@ -47,10 +47,24 @@ NOT_FAMILY = {                          # name words that look like a family but
     'mask': r'on head',
     'hair': r'old straw hat w/ ribbon|sun hat \(ribbon\)|boater hat \(|beret \(white ribbon\)|cap&headphones',
 }
-# TRAIT, not a family: positive evidence the hat HAS A BRIM (a beret / bonnet does not).
-# Names: band.BRIM_NAMES' words plus sou'wester; visual labels: the label note.
-BRIMMED_NAME = re.compile(r"straw|sun ?hat|boater|cowboy|cowgal|cowpoke|fedora|bowler|top ?hat|sombrero|fishing|bucket|panama|witch hat|sou.?wester", re.I)
-BRIMMED_NOTE = re.compile(r"brim|sun ?hat|bucket|cloche|boater|sombrero|ranger|cowboy|fedora|straw", re.I)
+# TRAITS, not families: verified hat STRUCTURE from data/host_structure.json (reviewed by
+# eye, never from names): 'brimmed' (brim wide or narrow) and 'brim-narrow' (boater lip).
+_STRUCT = None
+
+
+def structure(cons_id):
+    global _STRUCT
+    if _STRUCT is None:
+        p = os.path.join(HERE, 'data', 'host_structure.json')
+        _STRUCT = json.load(open(p))['hosts'] if os.path.exists(p) else {}
+    return _STRUCT.get(cons_id) or {}
+
+
+def traits(cons_id):
+    b = structure(cons_id).get('brim')
+    return ({'brimmed'} if b in ('wide', 'narrow') else set()) | ({'brim-narrow'} if b == 'narrow' else set())
+
+
 _RX = [(f, re.compile(p, re.I)) for f, p in FAMILIES]
 _NOT = {f: re.compile(p, re.I) for f, p in NOT_FAMILY.items()}
 _PROF = _LABELS = None
@@ -64,23 +78,22 @@ def norm(n):
 def host_families(names, cons_id=None):
     """Set of host families for a construction's names (author + vanilla); 'unknown'
     when none.  A hand label in data/host_labels.json wins.
-    Plus the trait 'brimmed' (never alone: an unknown host stays {'unknown'}) when the
-    names / label note say the hat has a brim; profiles may `require` it."""
+    Plus the verified structure traits (never alone: an unknown host stays {'unknown'}):
+    'brimmed', 'brim-narrow' from data/host_structure.json; profiles may `require` them."""
     global _LABELS
     if _LABELS is None:
         p = os.path.join(HERE, 'data', 'host_labels.json')
         raw = json.load(open(p)).get('labels', {}) if os.path.exists(p) else {}
         # visual labels: only high/medium confidence with a family count; low / [] stay unknown
-        _LABELS = {k: set(v['families']) | ({'brimmed'} if BRIMMED_NOTE.search(v.get('note', '')) else set())
-                   for k, v in raw.items() if v['families'] and v.get('confidence') in ('high', 'medium')}
-    if cons_id in _LABELS: return set(_LABELS[cons_id])
+        _LABELS = {k: set(v['families']) for k, v in raw.items()
+                   if v['families'] and v.get('confidence') in ('high', 'medium')}
+    if cons_id in _LABELS: return _LABELS[cons_id] | traits(cons_id)
     out = set()
     for n in filter(None, names):
         n = norm(n)
         for f, rx in _RX:
             if rx.search(n) and not (f in _NOT and _NOT[f].search(n)): out.add(f)
-    if out and any(BRIMMED_NAME.search(norm(n)) for n in filter(None, names)): out.add('brimmed')
-    return out or {'unknown'}
+    return (out | traits(cons_id)) if out else {'unknown'}
 
 
 def profiles():

@@ -11,6 +11,7 @@
   "keptFamilies": {
    "brimmed": 15,
    "straw": 11,
+   "brim-narrow": 3,
    "floral": 2,
    "cottage": 2,
    "fantasy": 1,
@@ -22,7 +23,7 @@
     "orangeblosso:1 - Old Straw Hat ['brimmed', 'straw']",
     "orangeblosso:3 - Old Straw Hat ['brimmed', 'straw']",
     "plurffle:Straw Hat (Messy) ['brimmed', 'straw']",
-    "plurffle:Boater Hat ['brimmed', 'straw']",
+    "plurffle:Boater Hat ['brim-narrow', 'brimmed', 'straw']",
     "Kailey:Straw Hat (Beekeeper) ['brimmed', 'straw']"
    ],
    "novelty": [],
@@ -80,12 +81,13 @@
   },
   "keptFamilies": {
    "cottage": 48,
+   "brimmed": 42,
    "hair": 39,
-   "brimmed": 36,
    "floral": 29,
    "straw": 22,
    "fantasy": 15,
    "western": 9,
+   "brim-narrow": 8,
    "animal": 7,
    "formal": 4,
    "hood": 2,
@@ -131,6 +133,7 @@
    "brimmed": 30,
    "straw": 16,
    "western": 8,
+   "brim-narrow": 6,
    "floral": 3,
    "formal": 3,
    "fantasy": 2,
@@ -170,13 +173,14 @@
   },
   "keptFamilies": {
    "cottage": 50,
+   "brimmed": 30,
    "knit": 29,
-   "brimmed": 26,
    "floral": 25,
    "hair": 23,
    "straw": 21,
    "fantasy": 15,
    "animal": 5,
+   "brim-narrow": 4,
    "hood": 2,
    "western": 1,
    "formal": 1,
@@ -220,28 +224,29 @@
    "bottomBelowTop": 4
   },
   "anchorOk": true,
-  "seated": 32,
+  "seated": 43,
   "verdicts": {
-   "reject": 20,
-   "prefer": 10,
-   "novelty": 1,
+   "reject": 19,
+   "prefer": 17,
+   "novelty": 6,
    "allow": 1
   },
   "keptFamilies": {
-   "brimmed": 11,
-   "straw": 7,
-   "cottage": 3,
+   "brimmed": 18,
+   "straw": 12,
+   "brim-narrow": 6,
+   "cottage": 5,
    "floral": 2,
    "western": 1
   },
   "examples": {
    "keep": [
     "plurffle:Straw Hat (Messy) ['brimmed', 'straw']",
-    "Kailey:Straw Hat (Beekeeper) ['brimmed', 'straw']",
-    "Kailey:Straw Hat (Prismatic F ['brimmed', 'floral', 'straw']",
-    "Kailey:Straw Hat (Sunflower) ['brimmed', 'floral', 'straw']",
-    "lovisity:3_Sombrero_0 ['brimmed', 'straw']",
-    "Seyph:hats_4 ['brimmed', 'straw']"
+    "plurffle:Boater Hat (Ribbons) ['brim-narrow', 'brimmed', 'straw']",
+    "plurffle:Boater Hat (Bow) ['brim-narrow', 'brimmed', 'straw']",
+    "plurffle:Boater Hat ['brim-narrow', 'brimmed', 'straw']",
+    "Kailey:Straw Hat (Blue) ['brim-narrow', 'brimmed', 'straw']",
+    "Kailey:Straw Hat (Colourable  ['brim-narrow', 'brimmed', 'straw']"
    ],
    "novelty": [],
    "reject": [
@@ -274,10 +279,11 @@
    "prefer": 21
   },
   "keptFamilies": {
+   "brimmed": 26,
    "formal": 20,
-   "brimmed": 16,
    "fantasy": 10,
    "western": 9,
+   "brim-narrow": 9,
    "helmet": 8,
    "cavalier": 3,
    "cap": 1
@@ -285,11 +291,11 @@
   "examples": {
    "keep": [
     "plurffle:Cowboy Hat ['brimmed', 'western']",
-    "marmuruah:Watson's Hat ['formal']",
-    "marmuruah:Sherlock's Hat ['formal']",
+    "marmuruah:Watson's Hat ['brim-narrow', 'brimmed', 'formal']",
+    "marmuruah:Sherlock's Hat ['brim-narrow', 'brimmed', 'formal']",
     "lovisity:15_DeviruchiHat_0 ['fantasy']",
     "lovisity:1_SweetGent_0 ['formal']",
-    "lovisity:2_MagicianHat_0 ['fantasy', 'formal']"
+    "lovisity:2_MagicianHat_0 ['brim-narrow', 'brimmed', 'fantasy', 'formal']"
    ],
    "novelty": [
     "TiaoTiao:TT.summer.blue1 ['cottage']",
@@ -374,17 +380,18 @@
   },
   "keptFamilies": {
    "fantasy": 9,
+   "brimmed": 4,
    "regal": 2,
    "formal": 2,
-   "brimmed": 1
+   "brim-narrow": 2
   },
   "examples": {
    "keep": [
     "plurffle:Crown (Coronet) ['regal']",
     "plurffle:Mushroom Hat (Dotted) ['fantasy']",
     "plurffle:Mushroom Hat ['fantasy']",
-    "lovisity:23_MageHat_0 ['fantasy']",
-    "lovisity:2_MagicianHat_0 ['fantasy', 'formal']",
+    "lovisity:23_MageHat_0 ['brimmed', 'fantasy']",
+    "lovisity:2_MagicianHat_0 ['brim-narrow', 'brimmed', 'fantasy', 'formal']",
     "ConcernedApe:hats_42 ['fantasy']"
    ],
    "novelty": [
@@ -599,9 +606,10 @@
   },
   "keptFamilies": {
    "cottage": 55,
-   "brimmed": 46,
+   "brimmed": 55,
    "straw": 27,
    "formal": 23,
+   "brim-narrow": 14,
    "western": 9,
    "cavalier": 6,
    "floral": 4,
@@ -679,8 +687,8 @@
   "keptFamilies": {
    "cottage": 7,
    "cap": 1,
-   "western": 1,
    "brimmed": 1,
+   "western": 1,
    "party": 1
   },
   "examples": {

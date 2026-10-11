@@ -191,6 +191,24 @@ def brim_shelf(out, tgt_mask, rows=3, step=2):
         if reach >= -1 and past >= step: return True
     return False
 
+def stem_on_brim(out, tgt_mask):
+    """NARROW-brim (boater) measure: the brim lip is too short to reach under the leaves,
+    so the STEM must rest on it instead.  Stem root = lowest part pixel with the hat beside
+    it; the pixel right under the root is hat, and that row reaches >= 1 px further out
+    than the crown edge on the root's row (a lip, not the crown wall carrying on down)."""
+    if not out: return True
+    ti = mask_info(tgt_mask)
+    if not ti: return False
+    occ = _occ(tgt_mask); P = {(x, y) for x, y, _ in out}
+    con = [(x, y, d) for x, y in P for d in (1, -1) if (x + d, y) in occ and (x + d, y) not in P]
+    if not con: return False
+    rx, ry, d = max(con, key=lambda t: t[1])
+    if (rx, ry + 1) not in occ: return False
+    mid = (ti[0] + ti[1]) // 2
+    crown, lip = _run_at(tgt_mask, ry, mid), _run_at(tgt_mask, ry + 1, mid)
+    if crown is None or lip is None: return False
+    return (crown[0] - lip[0] >= 1) if d == 1 else (lip[1] - crown[1] >= 1)
+
 def place_side(dec_px, src_mask, tgt_mask, shelf=False):
     """SIDE seat: a part tucked against the CROWN WALL (leaf sprig in a Forager's Hat).
     The stem root is the lowest part pixel with the source hat beside it.  On the source,
@@ -219,10 +237,18 @@ def place_side(dec_px, src_mask, tgt_mask, shelf=False):
     dx, dy0 = edge_t + off - rx, ty - ry
     over_s = sum(q in socc for q in P)
     need = need_contact(dec_px, src_mask)
-    for dy in (dy0, dy0 + 1, dy0 - 1, dy0 + 2):
-        out = [[x + dx, y + dy, p] for x, y, p in dec_px]
+    if shelf == 'narrow':                  # boater: slide down / in until the stem sits on the lip
+        pcx = sum(x for x, _, _ in dec_px) / len(dec_px) + dx
+        inward = 1 if (ti[0] + ti[1]) / 2 > pcx else -1   # toward the hat centre (d is ambiguous when the part overlaps the crown)
+        cands = [(dy0 + j, dx + k * inward) for j in (0, 1, -1, 2, -2, 3, -3) for k in (0, 1, 2)]
+        ok = stem_on_brim
+    else:
+        cands = [(dy, dx) for dy in (dy0, dy0 + 1, dy0 - 1, dy0 + 2)]
+        ok = brim_shelf if shelf else (lambda o, m: True)
+    for dy, ddx in cands:
+        out = [[x + ddx, y + dy, p] for x, y, p in dec_px]
         if sum((x, y) in tocc for x, y, _ in out) > over_s + 1: continue
-        if len(contacts(out, tocc)) >= need and _valid(out, tgt_mask) and (not shelf or brim_shelf(out, tgt_mask)):
+        if len(contacts(out, tocc)) >= need and _valid(out, tgt_mask) and ok(out, tgt_mask):
             return out, dy
     return None
 
@@ -236,18 +262,21 @@ def _contact_ok(px, src_mask, out, tgt_mask):
 
 RULE_WINS = ('right', 'left')   # A/B by eye 2026-10-09: rule better on sides; back keeps surface
 
-def place(dec, target_masks, info=None, prefer_rule=RULE_WINS):
+def place(dec, target_masks, info=None, prefer_rule=RULE_WINS, host=()):
     """target_masks: {view: rows of 0/1}.  Returns {view: pixels} or None if any view fails.
+    host: the host's families + verified traits (semantics.host_families); a 'brim-narrow'
+    host takes the boater measure (stem_on_brim) instead of brim_shelf for a brim-shelf part.
     info (dict, optional) receives 'reseated' (views placed by the rule) and 'reseatFlags'.
     prefer_rule: views that take the rule's move (if valid) when they disagree with it.
     Sides: the rule keeps a perched part on top in profile, as in the front view.
     Back: the surface wins -- a perched part seen from behind pokes above the crown."""
-    seat, fit, host = seat_of(dec)
+    seat, fit, shelf_rule = seat_of(dec)
+    host_traits, need_shelf = set(host), shelf_rule == 'brim-shelf'
     if seat == 'side':
         res = {}
         for v in VIEWS:
             r = place_side(dec['views'][v]['pixels'], dec['views'][v]['baseMask'], target_masks[v],
-                           shelf=host == 'brim-shelf')
+                           shelf=(('narrow' if 'brim-narrow' in host_traits else True) if need_shelf else False))
             if r is None: return None
             res[v] = r[0]
         if info is not None: info['reseated'], info['reseatFlags'] = [], []

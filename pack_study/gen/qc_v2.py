@@ -1,5 +1,6 @@
 """QC v2: the worn-QC failures of QC v1 rebuilt with the fixed primitives.  Pure Python.
 
+Cases 08-10 (boaters) were added after the v2 worn capture; 01-07 are unchanged.
 Worn QC of v1 (user, 2026-10-10):
   PSQC 03 propeller above frame  PASS (golden reference)
   PSQC 02 / 06 leaf sprig        FAIL: hat seated, sprig floats      -> decorate.place_side
@@ -27,6 +28,10 @@ CASES = [
     ('leaf sprig side seat', 'preferred straw host, closest to the source Forager\'s Hat', 'family:straw', 'seyph__hats_90'),
     ('tied tassel tuft', 'tuft tied round a narrow party-hat tip (fit=wrap)', 'lovisity__c', 'vhe__green_party_hat_alt__removed'),
     ('tied tassel tuft', 'second narrow-tip host', 'concernedape__c', 'vhe__red_party_hat_alt__removed'),
+    # 2026-10-10 follow-up: boaters (verified narrow brim) take the stem-on-brim measure
+    ('leaf sprig boater', 'boater (narrow brim): stem rests on the brim lip, leaves beside the short crown', 'plurffle__c120', 'seyph__hats_90'),
+    ('leaf sprig boater', 'boater with chin ribbons: stem on the lip, leaves rise just above the crown', 'plurffle__c118', 'seyph__hats_90'),
+    ('leaf sprig boater', 'boater-shaped straw with a band (verified narrow brim)', 'kailey__c212', 'seyph__hats_90'),
 ]
 
 
@@ -81,7 +86,7 @@ def main():
             base = [list(map(tuple, row)) for row in r1['base']][len(r1['base']) - h:]   # v1 base never has pad rows
             fams = S.host_families(G.names_of(c), c['id'])
             colour, author = r1['row']['colour'], r1['author']
-            res = place(dec, masks_of(base, w, h))
+            res = place(dec, masks_of(base, w, h), host=fams)
             novelty = S.weight(dec, fams) <= 0
         else:
             res = None
@@ -94,13 +99,13 @@ def main():
                     colour = {'mode': 'authored colourway (host not generator-eligible: primitive check only)',
                               'from': c['colourways'][0]['source']}
                 base = G.render(c, pal, None, colour.get('tint') if c['colourable'] else None)
-                res = place(dec, masks_of(base, w, h))
+                res = place(dec, masks_of(base, w, h), host=fams)
                 if res: break
             author, novelty = c['author'], False
         if res is None:
             index.append({'n': n, 'what': what, 'test': test, 'missing': True, 'host': host}); continue
         final = put(base, res, w)
-        hostname = ','.join(sorted(fams - {'brimmed'}))     # trait, not a family: keep v2 names stable
+        hostname = ','.join(sorted(fams - {'brimmed', 'brim-narrow'}))     # traits, not families: keep v2 names stable
         if not G.eligible(c): what += ' PRIMITIVE ONLY'
         name = f"PSQC2 {n:02d} {what} ({hostname})"
         G.write_hat(os.path.join(out), name, c, final)

@@ -195,7 +195,7 @@ def decorate(px, frame, rng, names=(), cons_id=None):
                 if not banded: continue
                 res = band.place(d, masks)
             else:
-                res = place(d, masks)
+                res = place(d, masks, host=fams)
             if res:
                 pad = max([0] + [-y for v in VIEWS for _, y, _ in res[v]])
                 if pad:                                   # part rises above the frame: grow upward

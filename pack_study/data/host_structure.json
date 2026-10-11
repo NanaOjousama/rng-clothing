@@ -1,0 +1,3552 @@
+{
+ "_note": "VERIFIED hat structure, independent of names (user 2026-10-10: the generator must recognise verified hat families, not naming conventions). brim: wide | narrow | upturned | none = a crown sitting over a brim that projects out (wide), a flat lip 1-2 px past the crown (narrow: boater, top hat, bowler), an upturned brim with no crown-over-brim notch (tricorn), or no brim. Verified by eye on the source sprite (Claude, 2026-10-10: 3x front+right sheet for all, 6x all four views for the uncertain), per CLAUDE.md s3; worn QC overrides. proposals = what the name words and the band.junction geometry said -- recorded, NOT used: the geometry proposal disagrees with the eye on ~half the hosts (beanies/berets widen downward too). A host missing here (e.g. from an imported pack) has NO verified brim, so brim-requiring parts reject it until it is reviewed: run gen/sprig_hosts.py / tools review sheets, add it here.",
+ "reviewed": "2026-10-10",
+ "hosts": {
+  "subabytvanz__c0": {
+   "brim": "none",
+   "name": "SubabyTvanZ hat 4",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "marmuruah__c1": {
+   "brim": "none",
+   "name": "Soul's Hood",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "tiaotiao__c3": {
+   "brim": "none",
+   "name": "TT.summer.bluecyan",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "tiaotiao__c4": {
+   "brim": "none",
+   "name": "TT.summer.blue4",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "tiaotiao__c5": {
+   "brim": "none",
+   "name": "TT.summer.blue3",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "tiaotiao__c7": {
+   "brim": "none",
+   "name": "TT.summer.blue1",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "tiaotiao__c8": {
+   "brim": "none",
+   "name": "TT.summer.pinkblue",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "tiaotiao__c13": {
+   "brim": "wide",
+   "name": "TT.summer.orange",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "tiaotiao__c14": {
+   "brim": "none",
+   "name": "TT.summer.red",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "orangeblossom__c15": {
+   "brim": "wide",
+   "name": "0 - Old Straw Hat",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "orangeblossom__c16": {
+   "brim": "wide",
+   "name": "0 - Old Straw Hat w/ Ribbon",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "orangeblossom__c17": {
+   "brim": "wide",
+   "name": "1 - Old Straw Hat w/ Ribbon",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "orangeblossom__c18": {
+   "brim": "wide",
+   "name": "1 - Old Straw Hat",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "orangeblossom__c19": {
+   "brim": "wide",
+   "name": "2 - Old Straw Hat w/ Ribbon",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "orangeblossom__c20": {
+   "brim": "wide",
+   "name": "3 - Old Straw Hat",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "billi__c23": {
+   "brim": "none",
+   "name": "Beanie",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c30": {
+   "brim": "none",
+   "name": "Veil (Speckled)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c39": {
+   "brim": "none",
+   "name": "Tulip Hat (Striped)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c40": {
+   "brim": "none",
+   "name": "Tulip Hat",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c45": {
+   "brim": "wide",
+   "name": "Sun Hat (Ribbon)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c46": {
+   "brim": "wide",
+   "name": "Sun Hat (Flowers)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "none"
+   }
+  },
+  "plurffle__c47": {
+   "brim": "wide",
+   "name": "Sun Hat",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "none"
+   }
+  },
+  "plurffle__c49": {
+   "brim": "wide",
+   "name": "Straw Hat (Messy)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "none"
+   }
+  },
+  "plurffle__c50": {
+   "brim": "wide",
+   "name": "Straw Hat",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c52": {
+   "brim": "none",
+   "name": "Plague Doctor Mask",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c53": {
+   "brim": "none",
+   "name": "Party Hat",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c54": {
+   "brim": "none",
+   "name": "Paperboy Hat",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c61": {
+   "brim": "none",
+   "name": "Headscarf (Small)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c80": {
+   "brim": "none",
+   "name": "Flower Dance Crown",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c83": {
+   "brim": "none",
+   "name": "Decorative Bells (Singles)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c84": {
+   "brim": "none",
+   "name": "Decorative Bells (Doubles)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c87": {
+   "brim": "none",
+   "name": "Crown (Coronet)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c88": {
+   "brim": "wide",
+   "name": "Cowboy Hat",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c89": {
+   "brim": "none",
+   "name": "Cap (Snapback)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c90": {
+   "brim": "none",
+   "name": "Cap 2",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c91": {
+   "brim": "none",
+   "name": "Cap 1",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c103": {
+   "brim": "none",
+   "name": "Beanie (Cat)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c105": {
+   "brim": "none",
+   "name": "Mushroom Hat (Dotted)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c106": {
+   "brim": "none",
+   "name": "Mushroom Hat",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c107": {
+   "brim": "none",
+   "name": "Hood (Pointy)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c108": {
+   "brim": "none",
+   "name": "Hood (Mushroom)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c109": {
+   "brim": "none",
+   "name": "Headscarf (Small, Dotted)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c110": {
+   "brim": "none",
+   "name": "Headscarf (Small)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c111": {
+   "brim": "none",
+   "name": "Headscarf (Dotted)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c112": {
+   "brim": "none",
+   "name": "Headscarf",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c113": {
+   "brim": "none",
+   "name": "Headband (Ribbon)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c118": {
+   "brim": "narrow",
+   "name": "Boater Hat (Ribbons)",
+   "review": "6x all views",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   },
+   "note": "boater, chin ribbons"
+  },
+  "plurffle__c119": {
+   "brim": "narrow",
+   "name": "Boater Hat (Bow)",
+   "review": "6x all views",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   },
+   "note": "boater"
+  },
+  "plurffle__c120": {
+   "brim": "narrow",
+   "name": "Boater Hat",
+   "review": "6x all views",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   },
+   "note": "boater"
+  },
+  "plurffle__c121": {
+   "brim": "none",
+   "name": "Beret (White Ribbon)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c122": {
+   "brim": "none",
+   "name": "Beret (Leaf)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c123": {
+   "brim": "none",
+   "name": "Beret (Dotted)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c124": {
+   "brim": "none",
+   "name": "Beret",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "plurffle__c133": {
+   "brim": "none",
+   "name": "Beanie (Cat)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "plurffle__c134": {
+   "brim": "none",
+   "name": "Beanie (Bunny)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kookoroo__c137": {
+   "brim": "none",
+   "name": "Kookoroo_9",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kookoroo__c138": {
+   "brim": "none",
+   "name": "Kookoroo_7",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kookoroo__c139": {
+   "brim": "none",
+   "name": "Kookoroo_6",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kookoroo__c140": {
+   "brim": "none",
+   "name": "Kookoroo_4",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kookoroo__c141": {
+   "brim": "none",
+   "name": "Kookoroo_3",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "kookoroo__c142": {
+   "brim": "none",
+   "name": "Kookoroo_1",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "kookoroo__c143": {
+   "brim": "none",
+   "name": "Kookoroo_18",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kookoroo__c144": {
+   "brim": "none",
+   "name": "Kookoroo_17",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kookoroo__c145": {
+   "brim": "none",
+   "name": "Kookoroo_15",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kookoroo__c146": {
+   "brim": "none",
+   "name": "Kookoroo_12",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "jedone__c147": {
+   "brim": "none",
+   "name": "Vintage Cap_03",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c148": {
+   "brim": "none",
+   "name": "Vintage Cap_01",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c149": {
+   "brim": "none",
+   "name": "Trapper Hat_02",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c150": {
+   "brim": "none",
+   "name": "Trapper Hat_01",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c151": {
+   "brim": "none",
+   "name": "Officer Cap",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c152": {
+   "brim": "none",
+   "name": "Hair_Kerchief_05",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "jedone__c153": {
+   "brim": "none",
+   "name": "Hair_Kerchief_03",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "jedone__c154": {
+   "brim": "none",
+   "name": "Fluffy_Beanie_03",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "jedone__c155": {
+   "brim": "none",
+   "name": "Cat_Headphones_03",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c156": {
+   "brim": "none",
+   "name": "Cat_Headphones_02",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c157": {
+   "brim": "none",
+   "name": "Cat_Headphones_01",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c158": {
+   "brim": "none",
+   "name": "Cap&Headphones_08",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c159": {
+   "brim": "none",
+   "name": "Cap&Headphones_05",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c160": {
+   "brim": "none",
+   "name": "Cap&Headphones_04",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c161": {
+   "brim": "none",
+   "name": "Cap&Headphones_03",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c162": {
+   "brim": "none",
+   "name": "Cap&Headphones_02",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c163": {
+   "brim": "none",
+   "name": "Cap&Headphones_01",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c164": {
+   "brim": "none",
+   "name": "Backwards_Cap_05",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "jedone__c165": {
+   "brim": "none",
+   "name": "Backwards_Cap_02",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c169": {
+   "brim": "none",
+   "name": "hyoung_hats_6",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c170": {
+   "brim": "none",
+   "name": "hyoung_hats_5",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c171": {
+   "brim": "none",
+   "name": "hyoung_hats_4",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c172": {
+   "brim": "none",
+   "name": "hyoung_hats_30",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c173": {
+   "brim": "none",
+   "name": "hyoung_hats_3",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c174": {
+   "brim": "none",
+   "name": "hyoung_hats_29",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c175": {
+   "brim": "none",
+   "name": "hyoung_hats_28",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c176": {
+   "brim": "none",
+   "name": "hyoung_hats_27",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c177": {
+   "brim": "none",
+   "name": "hyoung_hats_24",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c178": {
+   "brim": "none",
+   "name": "hyoung_hats_26",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c179": {
+   "brim": "none",
+   "name": "hyoung_hats_25",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c180": {
+   "brim": "none",
+   "name": "hyoung_hats_23",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c181": {
+   "brim": "none",
+   "name": "hyoung_hats_19",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c182": {
+   "brim": "none",
+   "name": "hyoung_hats_22",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c183": {
+   "brim": "none",
+   "name": "hyoung_hats_20",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c184": {
+   "brim": "none",
+   "name": "hyoung_hats_18",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c185": {
+   "brim": "none",
+   "name": "hyoung_hats_2",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c186": {
+   "brim": "none",
+   "name": "hyoung_hats_17",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c187": {
+   "brim": "none",
+   "name": "hyoung_hats_16",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c188": {
+   "brim": "none",
+   "name": "hyoung_hats_13",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c189": {
+   "brim": "none",
+   "name": "hyoung_hats_12",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c190": {
+   "brim": "none",
+   "name": "hyoung_hats_14",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "h_young_fs_code_by_mychocolate__c191": {
+   "brim": "none",
+   "name": "hyoung_hats_11",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "cuteberet_35115__c192": {
+   "brim": "none",
+   "name": "Cute_beret_9",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "cuteberet_35115__c193": {
+   "brim": "none",
+   "name": "Cute_beret_7",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "cuteberet_35115__c194": {
+   "brim": "none",
+   "name": "Cute_beret_4",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "cuteberet_35115__c195": {
+   "brim": "none",
+   "name": "Cute_beret_3",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "cuteberet_35115__c196": {
+   "brim": "none",
+   "name": "Cute_beret_6",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "cuteberet_35115__c197": {
+   "brim": "none",
+   "name": "Cute_beret_12",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "cuteberet_35115__c198": {
+   "brim": "none",
+   "name": "Cute_beret_5",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "cuteberet_35115__c199": {
+   "brim": "none",
+   "name": "Cute_beret_11",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "luny__c200": {
+   "brim": "none",
+   "name": "Basic Hood",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "samsomn__c206": {
+   "brim": "none",
+   "name": "Cute Colourable Bow",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "samsomn__c207": {
+   "brim": "none",
+   "name": "Lucille's Colourable Earmuffs",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c208": {
+   "brim": "none",
+   "name": "Winter Beanie (Colourable)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c209": {
+   "brim": "none",
+   "name": "Winter Beanie (Blue)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c210": {
+   "brim": "none",
+   "name": "Winter Beanie (Colourable 2)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c211": {
+   "brim": "none",
+   "name": "Winter Beanie (Pink)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c212": {
+   "brim": "narrow",
+   "name": "Straw Hat (Blue)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   },
+   "note": "boater-shaped straw, band"
+  },
+  "kailey__c213": {
+   "brim": "narrow",
+   "name": "Straw Hat (Colourable 2)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   },
+   "note": "boater-shaped straw"
+  },
+  "kailey__c214": {
+   "brim": "wide",
+   "name": "Straw Hat (Beekeeper)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "none"
+   }
+  },
+  "kailey__c215": {
+   "brim": "wide",
+   "name": "Straw Hat (Prismatic Flowers)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "none"
+   }
+  },
+  "kailey__c216": {
+   "brim": "wide",
+   "name": "Straw Hat (Sunflower)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c217": {
+   "brim": "none",
+   "name": "Flower Crown (Yellow)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c218": {
+   "brim": "none",
+   "name": "Flower Crown (Blue)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c219": {
+   "brim": "none",
+   "name": "Flower Crown (Colourable 1)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c220": {
+   "brim": "none",
+   "name": "Flower Crown (Orange)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c221": {
+   "brim": "none",
+   "name": "Flower Crown (Green)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c222": {
+   "brim": "none",
+   "name": "Flower Crown (Pink)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c223": {
+   "brim": "none",
+   "name": "Flower Crown (Gray)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c224": {
+   "brim": "none",
+   "name": "Flower Crown (Black White)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c225": {
+   "brim": "none",
+   "name": "Flower Crown (Red)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c226": {
+   "brim": "none",
+   "name": "Flower Crown (Purple)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c227": {
+   "brim": "none",
+   "name": "Flower Crown (White Purple)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c228": {
+   "brim": "none",
+   "name": "Flower Crown (Colourable 2)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c229": {
+   "brim": "none",
+   "name": "Flower Crown (Bird)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "kailey__c230": {
+   "brim": "none",
+   "name": "Trapper Hat (Prismatic)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "marmuruah__c237": {
+   "brim": "narrow",
+   "name": "Watson's Hat",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "marmuruah__c238": {
+   "brim": "narrow",
+   "name": "Sherlock's Hat",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "mok_tinora__c239": {
+   "brim": "none",
+   "name": "Hat 04",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "mok_tinora__c240": {
+   "brim": "none",
+   "name": "Hat 02",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "mok_tinora__c241": {
+   "brim": "none",
+   "name": "Hat 01",
+   "review": "6x all views",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   },
+   "note": "flat cap"
+  },
+  "mok_tinora__c242": {
+   "brim": "none",
+   "name": "Hat 03",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "plurffle__c243": {
+   "brim": "none",
+   "name": "Hood (Up)",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c244": {
+   "brim": "none",
+   "name": "0_BoysCap_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "lovisity__c245": {
+   "brim": "none",
+   "name": "10_WhisperMask_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c246": {
+   "brim": "none",
+   "name": "11_Beanie_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c249": {
+   "brim": "none",
+   "name": "14_OrchidHeadband_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c250": {
+   "brim": "none",
+   "name": "15_DeviruchiHat_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c251": {
+   "brim": "none",
+   "name": "16_BaoBao_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c252": {
+   "brim": "none",
+   "name": "17_Tam_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "lovisity__c253": {
+   "brim": "none",
+   "name": "18_GalapagoCap_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c254": {
+   "brim": "none",
+   "name": "19_KitsuneMask_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c255": {
+   "brim": "none",
+   "name": "1_SweetGent_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "lovisity__c256": {
+   "brim": "none",
+   "name": "20_DroopingCat_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c257": {
+   "brim": "none",
+   "name": "21_BlueCharmingRibbon_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c258": {
+   "brim": "none",
+   "name": "22_RedCharmingRibbon_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c259": {
+   "brim": "wide",
+   "name": "23_MageHat_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "lovisity__c260": {
+   "brim": "none",
+   "name": "24_SharkHat_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "lovisity__c261": {
+   "brim": "none",
+   "name": "25_SantaHat_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c262": {
+   "brim": "none",
+   "name": "26_Crown_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "lovisity__c263": {
+   "brim": "none",
+   "name": "27_AmistrHat_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "lovisity__c264": {
+   "brim": "none",
+   "name": "28_BlueFish_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c265": {
+   "brim": "none",
+   "name": "29_KafraBand_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "lovisity__c266": {
+   "brim": "narrow",
+   "name": "2_MagicianHat_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c267": {
+   "brim": "none",
+   "name": "30_RenownDetectivesCap_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c268": {
+   "brim": "none",
+   "name": "31_BunnyBand_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c269": {
+   "brim": "none",
+   "name": "32_BlackCatEars_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "lovisity__c270": {
+   "brim": "none",
+   "name": "33_SuccubusHorn_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c271": {
+   "brim": "none",
+   "name": "34_IncubusHorn_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c272": {
+   "brim": "none",
+   "name": "35_ChefHat_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c273": {
+   "brim": "none",
+   "name": "36_PandaHat_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c274": {
+   "brim": "none",
+   "name": "37_TeddybearHat_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c275": {
+   "brim": "none",
+   "name": "38_DecorativeGoldenBell_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c276": {
+   "brim": "none",
+   "name": "39_PartyHat_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c277": {
+   "brim": "wide",
+   "name": "3_Sombrero_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "lovisity__c278": {
+   "brim": "none",
+   "name": "4_Sakkat_0",
+   "review": "6x all views",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   },
+   "note": "sakkat cone, no distinct brim"
+  },
+  "lovisity__c279": {
+   "brim": "none",
+   "name": "5_Beret_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "lovisity__c280": {
+   "brim": "wide",
+   "name": "6_HatOfGirl_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c281": {
+   "brim": "none",
+   "name": "7_CakeHat_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "lovisity__c282": {
+   "brim": "none",
+   "name": "8_FestivalPumpkinHat_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "lovisity__c283": {
+   "brim": "none",
+   "name": "9_AngrySoloHat_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c284": {
+   "brim": "none",
+   "name": "hats_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c285": {
+   "brim": "none",
+   "name": "hats_1",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "kailey__c286": {
+   "brim": "none",
+   "name": "hats_2",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c287": {
+   "brim": "none",
+   "name": "hats_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c288": {
+   "brim": "none",
+   "name": "hats_1",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c289": {
+   "brim": "narrow",
+   "name": "hats_2",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c290": {
+   "brim": "none",
+   "name": "hats_3",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c291": {
+   "brim": "wide",
+   "name": "hats_4",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c292": {
+   "brim": "none",
+   "name": "hats_5",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "seyph__c293": {
+   "brim": "none",
+   "name": "hats_6",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c294": {
+   "brim": "none",
+   "name": "hats_7",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "seyph__c295": {
+   "brim": "none",
+   "name": "hats_8",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c296": {
+   "brim": "none",
+   "name": "hats_9",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "seyph__c297": {
+   "brim": "none",
+   "name": "hats_10",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "seyph__c298": {
+   "brim": "none",
+   "name": "hats_11",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c302": {
+   "brim": "none",
+   "name": "hats_15",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "seyph__c303": {
+   "brim": "none",
+   "name": "hats_16",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "seyph__c304": {
+   "brim": "none",
+   "name": "hats_17",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c305": {
+   "brim": "none",
+   "name": "hats_18",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c306": {
+   "brim": "none",
+   "name": "hats_19",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "seyph__c307": {
+   "brim": "none",
+   "name": "hats_20",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "seyph__c308": {
+   "brim": "none",
+   "name": "hats_21",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c309": {
+   "brim": "none",
+   "name": "hats_22",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c310": {
+   "brim": "none",
+   "name": "hats_23",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c311": {
+   "brim": "none",
+   "name": "hats_24",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "seyph__c312": {
+   "brim": "none",
+   "name": "hats_25",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c313": {
+   "brim": "none",
+   "name": "hats_26",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "seyph__c314": {
+   "brim": "none",
+   "name": "hats_27",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c315": {
+   "brim": "none",
+   "name": "hats_28",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "seyph__c317": {
+   "brim": "none",
+   "name": "hats_30",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "seyph__c318": {
+   "brim": "none",
+   "name": "hats_31",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c319": {
+   "brim": "none",
+   "name": "hats_32",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "seyph__c320": {
+   "brim": "none",
+   "name": "hats_33",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c321": {
+   "brim": "none",
+   "name": "hats_34",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "seyph__c322": {
+   "brim": "none",
+   "name": "hats_35",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c323": {
+   "brim": "none",
+   "name": "hats_36",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c324": {
+   "brim": "wide",
+   "name": "hats_37",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "seyph__c325": {
+   "brim": "wide",
+   "name": "hats_38",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c326": {
+   "brim": "wide",
+   "name": "hats_73",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "seyph__c327": {
+   "brim": "none",
+   "name": "hats_39",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c328": {
+   "brim": "none",
+   "name": "hats_40",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "concernedape__c329": {
+   "brim": "none",
+   "name": "hats_41",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c330": {
+   "brim": "none",
+   "name": "hats_42",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c331": {
+   "brim": "none",
+   "name": "hats_43",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c332": {
+   "brim": "none",
+   "name": "hats_44",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c333": {
+   "brim": "none",
+   "name": "hats_45",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c334": {
+   "brim": "none",
+   "name": "hats_46",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c335": {
+   "brim": "wide",
+   "name": "hats_47",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c336": {
+   "brim": "none",
+   "name": "hats_48",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c337": {
+   "brim": "none",
+   "name": "hats_49",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c338": {
+   "brim": "none",
+   "name": "hats_50",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c339": {
+   "brim": "none",
+   "name": "hats_51",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c340": {
+   "brim": "none",
+   "name": "hats_52",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c341": {
+   "brim": "none",
+   "name": "hats_53",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c342": {
+   "brim": "none",
+   "name": "hats_54",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c343": {
+   "brim": "wide",
+   "name": "hats_55",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c344": {
+   "brim": "none",
+   "name": "hats_56",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c345": {
+   "brim": "none",
+   "name": "hats_57",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c346": {
+   "brim": "none",
+   "name": "hats_58",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c347": {
+   "brim": "wide",
+   "name": "hats_60",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c348": {
+   "brim": "none",
+   "name": "hats_61",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c349": {
+   "brim": "none",
+   "name": "hats_62",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c350": {
+   "brim": "narrow",
+   "name": "hats_63",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c351": {
+   "brim": "none",
+   "name": "hats_64",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c352": {
+   "brim": "none",
+   "name": "hats_65",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c353": {
+   "brim": "none",
+   "name": "hats_66",
+   "review": "6x all views",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   },
+   "note": "disc / pan, no crown-over-brim"
+  },
+  "concernedape__c354": {
+   "brim": "none",
+   "name": "hats_67",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c355": {
+   "brim": "none",
+   "name": "hats_68",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c356": {
+   "brim": "none",
+   "name": "hats_69",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c357": {
+   "brim": "wide",
+   "name": "hats_70",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c358": {
+   "brim": "none",
+   "name": "hats_71",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c359": {
+   "brim": "none",
+   "name": "hats_107",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c360": {
+   "brim": "none",
+   "name": "hats_108",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c361": {
+   "brim": "none",
+   "name": "hats_109",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c362": {
+   "brim": "none",
+   "name": "hats_72",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c363": {
+   "brim": "none",
+   "name": "hats_74",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "seyph__c364": {
+   "brim": "none",
+   "name": "hats_75",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "seyph__c365": {
+   "brim": "none",
+   "name": "hats_76",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c366": {
+   "brim": "none",
+   "name": "hats_77",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c367": {
+   "brim": "none",
+   "name": "hats_78",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c368": {
+   "brim": "none",
+   "name": "hats_79",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c369": {
+   "brim": "none",
+   "name": "hats_80",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "seyph__c370": {
+   "brim": "wide",
+   "name": "hats_81",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "seyph__c371": {
+   "brim": "wide",
+   "name": "hats_82",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "seyph__c372": {
+   "brim": "none",
+   "name": "hats_84",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "seyph__c373": {
+   "brim": "upturned",
+   "name": "hats_85",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   },
+   "note": "tricorn"
+  },
+  "seyph__c374": {
+   "brim": "none",
+   "name": "hats_86",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "seyph__c375": {
+   "brim": "none",
+   "name": "hats_87",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "seyph__c377": {
+   "brim": "wide",
+   "name": "hats_90",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   },
+   "note": "vanilla Forager's Hat (the sprig's own source)"
+  },
+  "seyph__c378": {
+   "brim": "none",
+   "name": "hats_91",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "seyph__c379": {
+   "brim": "none",
+   "name": "hats_92",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "seyph__c380": {
+   "brim": "none",
+   "name": "hats_93",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "coii__c381": {
+   "brim": "none",
+   "name": "female_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "coii__c382": {
+   "brim": "none",
+   "name": "female_1",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c383": {
+   "brim": "none",
+   "name": "female_2",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "coii__c384": {
+   "brim": "none",
+   "name": "female_3",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c385": {
+   "brim": "wide",
+   "name": "female_4",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "coii__c386": {
+   "brim": "none",
+   "name": "female_5",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c387": {
+   "brim": "none",
+   "name": "female_6",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c388": {
+   "brim": "none",
+   "name": "female_7",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c389": {
+   "brim": "upturned",
+   "name": "female_8",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   },
+   "note": "tricorn"
+  },
+  "coii__c390": {
+   "brim": "none",
+   "name": "female_9",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c391": {
+   "brim": "none",
+   "name": "female_10",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c392": {
+   "brim": "none",
+   "name": "female_11",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c394": {
+   "brim": "none",
+   "name": "female_13",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "coii__c395": {
+   "brim": "none",
+   "name": "female_14",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "coii__c396": {
+   "brim": "none",
+   "name": "female_15",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c397": {
+   "brim": "none",
+   "name": "female_16",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c398": {
+   "brim": "none",
+   "name": "female_17",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c399": {
+   "brim": "none",
+   "name": "female_18",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c400": {
+   "brim": "wide",
+   "name": "female_19",
+   "review": "6x all views",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   },
+   "note": "floppy wide brim"
+  },
+  "coii__c401": {
+   "brim": "none",
+   "name": "female_21",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c402": {
+   "brim": "none",
+   "name": "female_23",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c403": {
+   "brim": "none",
+   "name": "female_24",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "coii__c404": {
+   "brim": "none",
+   "name": "female_25",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c405": {
+   "brim": "none",
+   "name": "female_26",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c406": {
+   "brim": "none",
+   "name": "female_27",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c407": {
+   "brim": "none",
+   "name": "female_28",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "coii__c410": {
+   "brim": "none",
+   "name": "female_31",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "coii__c411": {
+   "brim": "none",
+   "name": "female_32",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "coii__c412": {
+   "brim": "none",
+   "name": "female_33",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c413": {
+   "brim": "none",
+   "name": "female_36",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "coii__c414": {
+   "brim": "none",
+   "name": "female_37",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c415": {
+   "brim": "wide",
+   "name": "female_38",
+   "review": "6x all views",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   },
+   "note": "soft cloche, drooping brim ring"
+  },
+  "coii__c416": {
+   "brim": "none",
+   "name": "female_39",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "coii__c417": {
+   "brim": "none",
+   "name": "goodhatmale_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c418": {
+   "brim": "none",
+   "name": "goodhatmale_1",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c419": {
+   "brim": "none",
+   "name": "male_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "coii__c420": {
+   "brim": "none",
+   "name": "male_2",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "coii__c421": {
+   "brim": "none",
+   "name": "male_3",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c422": {
+   "brim": "wide",
+   "name": "male_4",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "coii__c423": {
+   "brim": "none",
+   "name": "male_6",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c424": {
+   "brim": "upturned",
+   "name": "male_8",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   },
+   "note": "tricorn"
+  },
+  "coii__c425": {
+   "brim": "none",
+   "name": "male_10",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c426": {
+   "brim": "none",
+   "name": "male_18",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c427": {
+   "brim": "wide",
+   "name": "male_19",
+   "review": "6x all views",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   },
+   "note": "floppy wide brim"
+  },
+  "coii__c428": {
+   "brim": "none",
+   "name": "male_21",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c429": {
+   "brim": "none",
+   "name": "male_23",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c430": {
+   "brim": "none",
+   "name": "male_25",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c431": {
+   "brim": "none",
+   "name": "male_27",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c432": {
+   "brim": "none",
+   "name": "male_28",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "coii__c433": {
+   "brim": "none",
+   "name": "male_33",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c434": {
+   "brim": "none",
+   "name": "male_36",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "coii__c435": {
+   "brim": "none",
+   "name": "male_37",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "coii__c436": {
+   "brim": "wide",
+   "name": "male_38",
+   "review": "6x all views",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   },
+   "note": "soft cloche, drooping brim ring"
+  },
+  "coii__c437": {
+   "brim": "none",
+   "name": "male_39",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c438": {
+   "brim": "wide",
+   "name": "hats_0",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c439": {
+   "brim": "narrow",
+   "name": "hats_1",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c440": {
+   "brim": "narrow",
+   "name": "hats_2",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c441": {
+   "brim": "narrow",
+   "name": "hats_110",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c442": {
+   "brim": "wide",
+   "name": "hats_3",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c443": {
+   "brim": "wide",
+   "name": "hats_4",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c444": {
+   "brim": "none",
+   "name": "hats_5",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c445": {
+   "brim": "none",
+   "name": "hats_6",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c446": {
+   "brim": "wide",
+   "name": "hats_7",
+   "review": "6x all views",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   },
+   "note": "floppy brim, round in back view"
+  },
+  "concernedape__c447": {
+   "brim": "none",
+   "name": "hats_8",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c448": {
+   "brim": "none",
+   "name": "hats_9",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c449": {
+   "brim": "none",
+   "name": "hats_10",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c450": {
+   "brim": "none",
+   "name": "hats_11",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c451": {
+   "brim": "none",
+   "name": "hats_12",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "concernedape__c452": {
+   "brim": "none",
+   "name": "hats_13",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "concernedape__c453": {
+   "brim": "none",
+   "name": "hats_15",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c454": {
+   "brim": "none",
+   "name": "hats_16",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c455": {
+   "brim": "none",
+   "name": "hats_17",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c456": {
+   "brim": "none",
+   "name": "hats_18",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c457": {
+   "brim": "wide",
+   "name": "hats_19",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c458": {
+   "brim": "none",
+   "name": "hats_20",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c459": {
+   "brim": "none",
+   "name": "hats_21",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c460": {
+   "brim": "none",
+   "name": "hats_22",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c461": {
+   "brim": "none",
+   "name": "hats_23",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c462": {
+   "brim": "none",
+   "name": "hats_24",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "concernedape__c463": {
+   "brim": "none",
+   "name": "hats_25",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c464": {
+   "brim": "none",
+   "name": "hats_26",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c465": {
+   "brim": "none",
+   "name": "hats_27",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c466": {
+   "brim": "wide",
+   "name": "hats_28",
+   "review": "6x all views",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   },
+   "note": "sou'wester, sloped brim"
+  },
+  "concernedape__c467": {
+   "brim": "none",
+   "name": "hats_29",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c468": {
+   "brim": "none",
+   "name": "hats_30",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "concernedape__c469": {
+   "brim": "none",
+   "name": "hats_31",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c470": {
+   "brim": "none",
+   "name": "hats_32",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "concernedape__c471": {
+   "brim": "wide",
+   "name": "hats_33",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c472": {
+   "brim": "wide",
+   "name": "hats_34",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c473": {
+   "brim": "none",
+   "name": "hats_35",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c474": {
+   "brim": "none",
+   "name": "hats_94",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "concernedape__c475": {
+   "brim": "none",
+   "name": "hats_95",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c476": {
+   "brim": "none",
+   "name": "hats_96",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c477": {
+   "brim": "none",
+   "name": "hats_97",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "concernedape__c478": {
+   "brim": "wide",
+   "name": "hats_98",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c479": {
+   "brim": "none",
+   "name": "hats_99",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c480": {
+   "brim": "none",
+   "name": "hats_119",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c481": {
+   "brim": "none",
+   "name": "hats_100",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "concernedape__c482": {
+   "brim": "none",
+   "name": "hats_101",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c483": {
+   "brim": "narrow",
+   "name": "hats_102",
+   "review": "3x front+right",
+   "proposals": {
+    "name": "brimmed",
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c484": {
+   "brim": "none",
+   "name": "hats_103",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c485": {
+   "brim": "none",
+   "name": "hats_104",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c486": {
+   "brim": "none",
+   "name": "hats_111",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c487": {
+   "brim": "none",
+   "name": "hats_105",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c488": {
+   "brim": "none",
+   "name": "hats_106",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c489": {
+   "brim": "narrow",
+   "name": "hats_112",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c490": {
+   "brim": "none",
+   "name": "hats_113",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c491": {
+   "brim": "none",
+   "name": "hats_114",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c492": {
+   "brim": "none",
+   "name": "hats_115",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c493": {
+   "brim": "none",
+   "name": "hats_116",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c494": {
+   "brim": "none",
+   "name": "hats_117",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "none"
+   }
+  },
+  "concernedape__c495": {
+   "brim": "wide",
+   "name": "hats_118",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "narrow"
+   }
+  },
+  "concernedape__c496": {
+   "brim": "none",
+   "name": "hats_120",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  },
+  "concernedape__c497": {
+   "brim": "none",
+   "name": "hats_121",
+   "review": "3x front+right",
+   "proposals": {
+    "name": null,
+    "geometry": "wide"
+   }
+  }
+ }
+}

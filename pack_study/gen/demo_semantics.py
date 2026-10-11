@@ -68,7 +68,7 @@ def main():
                 if d['kind'] == 'band':
                     res = B.place(d, masks) if B.eligible(names_of(c)) else None
                 else:
-                    res = place(d, masks)
+                    res = place(d, masks, host=fams[c["id"]])
                 ok = res is not None
             if not ok: continue
             v, w = S.verdict(prof, fams[c['id']])
