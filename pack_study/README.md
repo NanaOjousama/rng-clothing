@@ -500,3 +500,38 @@ A scratch simulation (not adopted) that lets an author's rare pool include its l
 - the rare-pool change
 - rendering non-recolourable compatible hosts in their authored colourway
 
+
+### QC2 cleanup + wrap pixel connectivity — 2026-10-12
+
+User worn verdict: the QC v2 pink party-hat topper (06) has floating side-view
+pieces, while QC v2 02/03 remain visibly poor sprig hosts (they were already
+rejected by the generator but their old proof sprites were still installed).
+
+- gen/decorate.py now verifies 4-connected part-to-host reachability for
+  fit=wrap attachments, after their existing contact and wrap-seat checks.
+  When a part fails, it tries a one-pixel horizontal re-seat of the whole
+  unchanged part, preserving all wrap/contact and overlap restrictions. Reject
+  the pairing if that cannot fix it; do not add bridge pixels or change parts.
+- PSQC2 06 corrected by one pixel toward the crown in right/left views.
+  Its sprite becomes one connected component in both; no other case changes.
+  PSQC2 07 and the 01 golden control are pixel-identical to prior records.
+- Active installed [FS] PackStudy QC v2: 7 hats (01,05,06,07,08,09,10).
+  Rejected 02/03 have been excluded from the installed pack. QC2's index still
+  records rejections 02/03/04. The 9-hat installation is recoverable at
+  archive/pack_study/retired_qc/PSQC2_9hats_before_connectivity_repair_20261012/.
+- Tests: python3 -m unittest pack_study/test_wrap_connectivity.py; rebuild
+  uses gen/qc_v2.py with out/qc_work/v1_records.json. Pixel-by-pixel
+  comparison against the previous 7 output records verified only case 06
+  changed (21 pixels per side); case 06 now has no disconnected components.
+- Worn check still needed after game restart. A pixel continuity check
+  is not enough to claim the topper looks right.
+
+Original-asset comparison after user questioned cap visor and straw-hat shape:
+author-extracted mok&Tinora Hat 01 / plurffle Straw Hat (Messy) /
+plurffle Boater Hat / plurffle Boater Hat (Ribbons) /
+Kailey Straw Hat (Blue) each had 0 per-view silhouette pixel differences
+against the generator's undecorated base. Those flat or slanted brims belong to
+the authored sources. The original plurffle messy straw hat uses 20x20 frames,
+HeadPosition 0,0 in every view, left view mirrored from right, and does not
+request hair hiding. Thus the side profile is source-derived, not a fit-offset
+added by the generator. Aesthetic approval is still a separate worn test.

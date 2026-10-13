@@ -260,6 +260,54 @@ def seat_of(dec):
 def _contact_ok(px, src_mask, out, tgt_mask):
     return len(contacts(out, _occ(tgt_mask))) >= need_contact(px, src_mask)
 
+
+def _all_part_pixels_attached(placed, tgt_mask):
+    """No detached islands: every ornament pixel must reach its host via 4-neighbours.
+
+    Deliberately used only for fit='wrap' parts.  Perched effects and authored
+    freestanding accent pixels need their own visual contracts, not this rule.
+    """
+    part = {(x, y) for x, y, _ in placed}
+    if not part:
+        return True
+    host = _occ(tgt_mask)
+    if not host:
+        return False
+    reached = set(host)
+    pending = list(host)
+    while pending:
+        x, y = pending.pop()
+        for q in _n4(x, y):
+            if q in part and q not in reached:
+                reached.add(q)
+                pending.append(q)
+    return part <= reached
+
+
+def _repair_wrap_islands(placed, px, src_mask, tgt_mask, dy, view):
+    """Try a one-pixel horizontal re-seat before rejecting a floating wrap tip.
+
+    The source part is moved intact.  No invented bridge pixels or recolouring.
+    This only runs on a failed wrap connection and preserves wrap and contacts.
+    """
+    if _all_part_pixels_attached(placed, tgt_mask):
+        return placed
+    rows = wrap_rows(px, src_mask)
+    host = _occ(tgt_mask)
+    overlap_before = sum((x, y) in host for x, y, _ in placed)
+    steps = (1, -1) if view == 'right' else (-1, 1)
+    for dx in steps:
+        candidate = [[x + dx, y, color] for x, y, color in placed]
+        if (sum((x, y) in host for x, y, _ in candidate) > overlap_before + 1
+            or not _valid(candidate, tgt_mask)
+            or not _contact_ok(px, src_mask, candidate, tgt_mask)
+            or (rows and not fits_wrap(candidate, [y + dy for y in rows], tgt_mask))
+            or not _all_part_pixels_attached(candidate, tgt_mask)):
+            continue
+        return candidate
+    return None
+
+
 RULE_WINS = ('right', 'left')   # A/B by eye 2026-10-09: rule better on sides; back keeps surface
 
 def place(dec, target_masks, info=None, prefer_rule=RULE_WINS, host=()):
@@ -306,6 +354,10 @@ def place(dec, target_masks, info=None, prefer_rule=RULE_WINS, host=()):
         if fit == 'wrap':
             rows = wrap_rows(px, sm)
             if rows and not fits_wrap(res[v], [y + dy[v] for y in rows], target_masks[v]): return None
+            adjusted = _repair_wrap_islands(res[v], px, sm, target_masks[v], dy[v], v)
+            if adjusted is None:
+                return None
+            res[v] = adjusted
     if info is not None:
         info['reseated'], info['reseatFlags'] = reseated, flags
     return res
