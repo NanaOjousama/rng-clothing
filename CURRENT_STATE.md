@@ -174,6 +174,14 @@ promoted only after worn QC + user approval. ChatGPT laptop LoRA lab = failure e
       No second "without Bloom" run. Front artwork: method B (reference-based) is the starting direction; T1r/P2r are not final.
     - **Immediate milestone: 1-2 genuinely good four-direction witch hats into the generator**, chosen after the
       Phase 4 eval for visual quality, 4-direction consistency and Stardew fit; nothing enters without user visual approval.
+    - **Staged on the laptop (2026-10-14), still NOT trained.**
+      - Bundle transfer was hash-verified.
+      - Both datasets rebuilt there; their pixel/caption fingerprint is identical to the validated Deck datasets
+        (4view 81e4b9f6..., front ccdfc90d...).
+      - `ready_check_phase4.py` reports READY.
+      - The upload-on-completion path was verified without pushing (read-only ls-remote OK; sandbox finalizer +
+        publisher dry run OK).
+      - Next: the user's explicit go, then `configs\train_phase4.ps1` (or `-FourViewOnly`).
     - VAE round trip: 10-px cells 0.21%, 20-px 0.15%.
     - Configs: `configs/phase4_*`, `train_phase4.ps1`.
     - Evals (written, not run): `eval_phase4.py` (vs e10), `eval_front_phase4.py` (vs phase-1).

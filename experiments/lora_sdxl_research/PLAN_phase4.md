@@ -1,6 +1,7 @@
 # Phase 4 plan: front LoRA + four-view LoRA with six witch reference packs
 
-Status 2026-10-14: **PREPARED, NOT TRAINED.** Datasets are built and validated, configs are written, and the
+Status 2026-10-14: **PREPARED AND STAGED ON THE LAPTOP, NOT TRAINED.** Preparation approved by the user; training is NOT
+approved yet and needs an explicit go. Datasets are built and validated, configs are written, and the
 eval harness is written. Training needs the user's approval.
 
 Kept separate from the front-design experiment (`experiments/witch_front_design_01`): no hand-drawn or
@@ -168,14 +169,53 @@ VRAM should match phase 3 (peak 5,979 MiB at 512): same resolution, rank and bat
     That would be a second training and needs its own approval.
 - **Worn QC is still the top authority:** nothing becomes a hat without a QC-bridge capture and approval.
 
+## Laptop staging (done 2026-10-14, no training)
+
+- **Transfer:** the compact datasets, manifests, eval jobs, configs and the build/eval scripts went over Desktop
+  Commander as one xz bundle in 8 base64 chunks. Every chunk MD5, the bundle SHA-256 and all 16 file SHA-256s
+  matched. The laptop's older `train_phase4.ps1` (without the variety step) is kept as `train_phase4.ps1.prev`.
+- **Rebuild:** `build_phase4_laptop.py` rebuilt both datasets on the laptop (550 + 565 images).
+- **Validation:** `tools/fingerprint_phase4.py` (decoded pixels + caption per image, folder split, manifest) gives
+  the *same combined hash* on the laptop and on the Deck datasets that passed `check_dataset_phase4.py` with 0 errors:
+  four-view `81e4b9f6…`, front `ccdfc90d…`. The full validator needs Deck-only inputs (corpus, colour module), so
+  the laptop copy inherits its result through this identity.
+- **Readiness:** `tools/ready_check_phase4.py` on the laptop reports READY:
+  - both configs parse with sd-scripts' `toml`; image/caption counts 478+43 and 490+43
+  - steps 5,640 / 5,760; output dirs empty (no overwrite)
+  - base model, e10 and phase-1 baselines present
+  - trainers and all eval scripts compile
+  - phase-1/phase-3 manifests carry the fields the evals read; 58 GiB free
+- **Upload on completion:** `train_phase4.ps1` calls `complete_lora_review.ps1` after each eval (four-view, front,
+  variety). It uploads only the review sheets + a short note, to the `lora-reviews` branch of private `hewyinw/tfwr`.
+  - Verified without uploading: read-only `ls-remote` authenticates and sees `lora-reviews` at `68e0d78`
+    (the 01:34 push of the e10 silhouette review).
+  - A sandbox finalizer run (`-Root` temp, `-NoPush`) plus a publisher `-DryRun` verified a sample package. The
+    real outbox was untouched.
+  - Sheet sizes and counts fit the limits (≤ 10 MB, ≤ 30 files): phase-3 sheets were ≤ 0.54 MB, and phase 4
+    writes 9 + 3 + 8 sheets.
+
 ## To run (after approval)
 
-1. **Copy to the laptop.** Use USB or a share, because Desktop Commander carries text only (about 900 kB):
+1. ~~Copy to the laptop.~~ Done (see Laptop staging).
    - `dataset/phase4_4view_512_compact.json` and its `manifest.json`
    - `dataset/phase4_front_512_compact.json` and its `manifest.json`
    - `dataset/phase4_eval_jobs.json`
    - the `tools/` and `configs/` files above
-2. **Rebuild on the laptop:**
+2. ~~Rebuild on the laptop.~~ Done and verified:
    `python tools\build_phase4_laptop.py dataset\phase4_4view_512_compact.json <manifest> dataset\phase4_4view_512`
    (same for the front dataset)
 3. **Start training:** `powershell -File configs\train_phase4.ps1` (or `-FourViewOnly` first).
+   Only after the user's explicit go. Optional re-check first: `python tools\ready_check_phase4.py`.
+
+## After evaluation (user direction 2026-10-14)
+
+- **Goal:** 1–2 genuinely good four-direction witch hats into the RNG Clothing generator. Dozens of new silhouettes
+  are not needed first.
+- **Pick the strongest candidates by:**
+  - visual quality
+  - four-direction consistency
+  - Stardew compatibility
+- **Then:** worn QC through the bridge, and the user's visual approval. Nothing enters the generator without it.
+- **The variety test is research:** failing its diversity bar does **not** block selecting 1–2 excellent candidates.
+- **Front artwork starts from method B** (reference-based, `witch_front_design_01`). T1r/P2r are not approved finals.
+- **No second "without Bloom" training run.**
