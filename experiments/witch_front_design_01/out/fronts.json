@@ -1,0 +1,64 @@
+{
+ "P2d": {
+  "name": "P2d classic cone, tip bends right, thin curl",
+  "size": [
+   20,
+   20
+  ],
+  "grid": [
+   "...........oooo.....",
+   ".........oolbsdo....",
+   "........olbbsoo.o...",
+   ".......olbbsdo..o...",
+   "......ollbbsdo.o....",
+   "......olhbbsdo......",
+   ".....olhhbbbsdo.....",
+   ".....ollhbbbsdo.....",
+   "....ollbbbbbbsdo....",
+   "....oYGGGGGGGGgo....",
+   "..olYbbbbbbbbbbgso..",
+   "ollbsoooooooooosddo.",
+   "olbso..........osddo",
+   ".obso..........osdo.",
+   "..oo............oo..",
+   "....................",
+   "....................",
+   "....................",
+   "....................",
+   "...................."
+  ],
+  "tag": "AI-ORIGINAL",
+  "method": "hand-placed pixels (Claude)"
+ },
+ "T1d": {
+  "name": "T1d tall, top flops left, tip hangs",
+  "size": [
+   20,
+   20
+  ],
+  "grid": [
+   ".....oooooo.........",
+   "...oollllbbo........",
+   "..olhhllbbbso.......",
+   ".olbsdooobbsdo......",
+   ".olso.olbbbsdo......",
+   ".oso..olhbbsdo......",
+   "..o...olhbbsdo......",
+   ".....olhhbbbsdo.....",
+   "....ollbbbbbbsdo....",
+   "....oYGGGGGGGGgo....",
+   "..olYbbbbbbbbbbgso..",
+   "ollbsoooooooooosddo.",
+   "olbso..........osddo",
+   ".obso..........osdo.",
+   "..oo............oo..",
+   "....................",
+   "....................",
+   "....................",
+   "....................",
+   "...................."
+  ],
+  "tag": "AI-ORIGINAL",
+  "method": "hand-placed pixels (Claude)"
+ }
+}

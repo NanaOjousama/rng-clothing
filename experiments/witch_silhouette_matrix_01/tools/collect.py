@@ -1,13 +1,13 @@
 """Collect every witch hat from the REFERENCE packs (read-only) -> out/refs.json + out/ref_fronts_x6.png.
 Packs: witch_reference_packs_01 (Hats and Horns / Luny / Kailey, Nexus), witch_reference_packs_02 (492815, Naver),
-wildwood_reference_01 (mushlune Wildwood).  Views cropped from each hat.json's StartingPosition + HatSize.
+wildwood_reference_01 (mushlune Wildwood), bloom_reference_01 (mushlune Bloom, added 2026-10-14).  Views cropped from each hat.json's StartingPosition + HatSize.
 Analysis only (.venv PIL)."""
 import json, os, re, sys
 from PIL import Image, ImageDraw
 EXP = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 PACKS = {'HnH': 'witch_reference_packs_01/raw/Hats and Horns', 'Luny': "witch_reference_packs_01/raw/Luny's Witch Hats for FS",
          'Kailey': 'witch_reference_packs_01/raw/Witch Hats', 'Naver': 'witch_reference_packs_02/raw',
-         'Wildwood': 'wildwood_reference_01/raw'}
+         'Wildwood': 'wildwood_reference_01/raw', 'Bloom': 'bloom_reference_01/raw'}
 
 
 def load(p):
@@ -22,6 +22,7 @@ def main():
             if 'hat.json' not in fs: continue
             j = load(os.path.join(dp, 'hat.json')); name = j.get('Name', os.path.basename(dp))
             if pk == 'HnH' and 'witch' not in name.lower(): continue
+            if pk == 'Bloom' and 'crown' in name.lower(): continue      # Fall/Spring Crown: flower crowns, not witch hats
             img = Image.open(os.path.join(dp, 'hat.png')).convert('RGBA'); views = {}
             for k, v in (('FrontHat', 'F'), ('RightHat', 'R'), ('LeftHat', 'L'), ('BackHat', 'B')):
                 if k not in j: continue

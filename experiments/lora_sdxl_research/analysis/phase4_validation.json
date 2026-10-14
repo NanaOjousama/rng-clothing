@@ -1,0 +1,383 @@
+{
+ "phase4_4view_512": {
+  "images": 550,
+  "counts": {
+   "holdout|general|orig": 26,
+   "holdout|witch|orig": 3,
+   "train|general|orig": 298,
+   "train|general|aug": 180,
+   "train|witch|orig": 31,
+   "train|witch|aug": 12
+  },
+  "family_counts": {
+   "holdout|short witch hat": 1,
+   "train|classic pointed witch hat": 6,
+   "train|short witch hat": 10,
+   "train|low sweeping witch hat": 16,
+   "train|tall floppy witch hat": 11,
+   "holdout|tall floppy witch hat": 1,
+   "holdout|low sweeping witch hat": 1
+  },
+  "errors": [],
+  "n_errors": 0,
+  "witch_holdout_nearest_train": {
+   "platinumcats__p21__w0": {
+    "name": "Witch Hat - Long",
+    "family": "short witch hat",
+    "nearest_train": "coii__c412__w1",
+    "front_iou": 0.795
+   },
+   "kaileyw__p38__w0": {
+    "name": "Witch Hat (Straw)",
+    "family": "tall floppy witch hat",
+    "nearest_train": "kaileyw__p37__w0",
+    "front_iou": 0.742
+   },
+   "mushlune_wildwood__p45__w0": {
+    "name": "Elegant Witch Hat",
+    "family": "low sweeping witch hat",
+    "nearest_train": "mushlune_wildwood__p47__w0",
+    "front_iou": 0.897
+   }
+  },
+  "background_nearest": [
+   {
+    "oklab_dist": 0.074,
+    "rgb": [
+     222,
+     102,
+     222
+    ],
+    "in": [
+     "platinumcats__p02__w0"
+    ]
+   },
+   {
+    "oklab_dist": 0.085,
+    "rgb": [
+     213,
+     132,
+     255
+    ],
+    "in": [
+     "platinumcats__p05__w0",
+     "platinumcats__p05__w0__mx"
+    ]
+   },
+   {
+    "oklab_dist": 0.107,
+    "rgb": [
+     228,
+     30,
+     255
+    ],
+    "in": [
+     "concernedape__c338__w0"
+    ]
+   },
+   {
+    "oklab_dist": 0.114,
+    "rgb": [
+     233,
+     138,
+     206
+    ],
+    "in": [
+     "platinumcats__p02__w0"
+    ]
+   },
+   {
+    "oklab_dist": 0.119,
+    "rgb": [
+     225,
+     129,
+     195
+    ],
+    "in": [
+     "concernedape__c333__w0"
+    ]
+   }
+  ],
+  "pack_skipped": [
+   {
+    "hat": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Cathulhu Hat",
+    "why": [
+     "outside 24x24 window (vanilla x 2..18, y 2..23)"
+    ]
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Magikarp Hat",
+    "why": [
+     "outside 24x24 window (vanilla x -5..24, y -5..16)"
+    ]
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Ribbon Straw Hat",
+    "why": [
+     "outside 24x24 window (vanilla x -1..20, y 2..20)"
+    ]
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Small Laurel",
+    "why": [
+     "back: missing"
+    ]
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Witchy Hat - Horn",
+    "why": [
+     "outside 24x24 window (vanilla x -4..23, y -1..17)"
+    ]
+   }
+  ],
+  "pack_dropped": [
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Flower Crown/Prismatic",
+    "why": "exact duplicate of witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Flower Crown/Colourable"
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Flower/Prismatic",
+    "why": "exact duplicate of witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Flower/Colourable"
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Green/Prismatic",
+    "why": "exact duplicate of witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Green/Colourable"
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Plain/Prismatic",
+    "why": "exact duplicate of witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Plain/Colourable"
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Green/Green",
+    "why": "recolour cap (6 recolours of one structure; kept Witch Hat (Blue), Witch Hat (Forest))"
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Plain/Plain",
+    "why": "recolour cap (6 recolours of one structure; kept Witch Hat (Blue), Witch Hat (Forest))"
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Green/Colourable",
+    "why": "recolour cap (6 recolours of one structure; kept Witch Hat (Blue), Witch Hat (Forest))"
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Plain/Colourable",
+    "why": "recolour cap (6 recolours of one structure; kept Witch Hat (Blue), Witch Hat (Forest))"
+   },
+   {
+    "hat": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_3",
+    "why": "recolour cap (3 recolours of one structure; kept Witch Hat_1, Witch Hat_5)"
+   },
+   {
+    "hat": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_2",
+    "why": "recolour cap (5 recolours of one structure; kept Witch Hat_10, Witch Hat_6)"
+   },
+   {
+    "hat": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_4",
+    "why": "recolour cap (5 recolours of one structure; kept Witch Hat_10, Witch Hat_6)"
+   },
+   {
+    "hat": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_8",
+    "why": "recolour cap (5 recolours of one structure; kept Witch Hat_10, Witch Hat_6)"
+   },
+   {
+    "hat": "bloom_reference_01/raw/[FS] Bloom Collection/Hats/Hyacinth Hat",
+    "why": "body cap (8 hats share one silhouette body; kept Baby's-breath Hat, Fiddle-leaf Hat, Pumpkin Hat, Iris Hat, Cornflower Hat, Sage Hat)"
+   },
+   {
+    "hat": "bloom_reference_01/raw/[FS] Bloom Collection/Hats/Hydrangias Hat",
+    "why": "body cap (8 hats share one silhouette body; kept Baby's-breath Hat, Fiddle-leaf Hat, Pumpkin Hat, Iris Hat, Cornflower Hat, Sage Hat)"
+   }
+  ]
+ },
+ "phase4_front_512": {
+  "images": 565,
+  "counts": {
+   "holdout|general|orig": 29,
+   "holdout|witch|orig": 3,
+   "train|general|orig": 295,
+   "train|general|aug": 195,
+   "train|witch|orig": 31,
+   "train|witch|aug": 12
+  },
+  "family_counts": {
+   "holdout|short witch hat": 1,
+   "train|classic pointed witch hat": 6,
+   "train|short witch hat": 10,
+   "train|low sweeping witch hat": 16,
+   "train|tall floppy witch hat": 11,
+   "holdout|tall floppy witch hat": 1,
+   "holdout|low sweeping witch hat": 1
+  },
+  "errors": [],
+  "n_errors": 0,
+  "witch_holdout_nearest_train": {
+   "platinumcats__p21__w0": {
+    "name": "Witch Hat - Long",
+    "family": "short witch hat",
+    "nearest_train": "coii__c412__w1",
+    "front_iou": 0.795
+   },
+   "kaileyw__p38__w0": {
+    "name": "Witch Hat (Straw)",
+    "family": "tall floppy witch hat",
+    "nearest_train": "kaileyw__p37__w0",
+    "front_iou": 0.742
+   },
+   "mushlune_wildwood__p45__w0": {
+    "name": "Elegant Witch Hat",
+    "family": "low sweeping witch hat",
+    "nearest_train": "mushlune_wildwood__p47__w0",
+    "front_iou": 0.897
+   }
+  },
+  "background_nearest": [
+   {
+    "oklab_dist": 0.074,
+    "rgb": [
+     222,
+     102,
+     222
+    ],
+    "in": [
+     "platinumcats__p02__w0"
+    ]
+   },
+   {
+    "oklab_dist": 0.085,
+    "rgb": [
+     213,
+     132,
+     255
+    ],
+    "in": [
+     "platinumcats__p05__w0",
+     "platinumcats__p05__w0__mx"
+    ]
+   },
+   {
+    "oklab_dist": 0.107,
+    "rgb": [
+     228,
+     30,
+     255
+    ],
+    "in": [
+     "concernedape__c338__w0"
+    ]
+   },
+   {
+    "oklab_dist": 0.114,
+    "rgb": [
+     233,
+     138,
+     206
+    ],
+    "in": [
+     "platinumcats__p02__w0"
+    ]
+   },
+   {
+    "oklab_dist": 0.119,
+    "rgb": [
+     225,
+     129,
+     195
+    ],
+    "in": [
+     "concernedape__c333__w0",
+     "concernedape__c333__w0__mx"
+    ]
+   }
+  ],
+  "pack_skipped": [
+   {
+    "hat": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Cathulhu Hat",
+    "why": [
+     "outside 24x24 window (vanilla x 2..18, y 2..23)"
+    ]
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Magikarp Hat",
+    "why": [
+     "outside 24x24 window (vanilla x -5..24, y -5..16)"
+    ]
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Ribbon Straw Hat",
+    "why": [
+     "outside 24x24 window (vanilla x -1..20, y 2..20)"
+    ]
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Small Laurel",
+    "why": [
+     "back: missing"
+    ]
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Witchy Hat - Horn",
+    "why": [
+     "outside 24x24 window (vanilla x -4..23, y -1..17)"
+    ]
+   }
+  ],
+  "pack_dropped": [
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Flower Crown/Prismatic",
+    "why": "exact duplicate of witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Flower Crown/Colourable"
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Flower/Prismatic",
+    "why": "exact duplicate of witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Flower/Colourable"
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Green/Prismatic",
+    "why": "exact duplicate of witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Green/Colourable"
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Plain/Prismatic",
+    "why": "exact duplicate of witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Plain/Colourable"
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Green/Green",
+    "why": "recolour cap (6 recolours of one structure; kept Witch Hat (Blue), Witch Hat (Forest))"
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Plain/Plain",
+    "why": "recolour cap (6 recolours of one structure; kept Witch Hat (Blue), Witch Hat (Forest))"
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Green/Colourable",
+    "why": "recolour cap (6 recolours of one structure; kept Witch Hat (Blue), Witch Hat (Forest))"
+   },
+   {
+    "hat": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Plain/Colourable",
+    "why": "recolour cap (6 recolours of one structure; kept Witch Hat (Blue), Witch Hat (Forest))"
+   },
+   {
+    "hat": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_3",
+    "why": "recolour cap (3 recolours of one structure; kept Witch Hat_1, Witch Hat_5)"
+   },
+   {
+    "hat": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_2",
+    "why": "recolour cap (5 recolours of one structure; kept Witch Hat_10, Witch Hat_6)"
+   },
+   {
+    "hat": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_4",
+    "why": "recolour cap (5 recolours of one structure; kept Witch Hat_10, Witch Hat_6)"
+   },
+   {
+    "hat": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_8",
+    "why": "recolour cap (5 recolours of one structure; kept Witch Hat_10, Witch Hat_6)"
+   },
+   {
+    "hat": "bloom_reference_01/raw/[FS] Bloom Collection/Hats/Hyacinth Hat",
+    "why": "body cap (8 hats share one silhouette body; kept Baby's-breath Hat, Fiddle-leaf Hat, Pumpkin Hat, Iris Hat, Cornflower Hat, Sage Hat)"
+   },
+   {
+    "hat": "bloom_reference_01/raw/[FS] Bloom Collection/Hats/Hydrangias Hat",
+    "why": "body cap (8 hats share one silhouette body; kept Baby's-breath Hat, Fiddle-leaf Hat, Pumpkin Hat, Iris Hat, Cornflower Hat, Sage Hat)"
+   }
+  ]
+ }
+}

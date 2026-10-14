@@ -1,0 +1,126 @@
+{
+ "T1r": {
+  "grid": [
+   ".....ooo............",
+   "...oobbbooo.........",
+   "..osbbbbbbbo........",
+   ".o.oobbbbbbbo.......",
+   ".o...obbbbbbso......",
+   "..o..oobbbbsso......",
+   ".....oobbbsssoo.....",
+   ".....osYYYYYYso.....",
+   "....ogYbbbbbbYgo....",
+   "....gssssssssssg....",
+   "...osooooooooooso...",
+   ".oosso........oosoo.",
+   "oosoo..........oosoo",
+   ".osoo..........ooso.",
+   "..ooo..........ooo..",
+   "....................",
+   "....................",
+   "....................",
+   "....................",
+   "...................."
+  ],
+  "sources": [
+   "rows 0-6: Kailey Witch Hat (Blue) front rows 1-7 mirrored (witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Blue)",
+   "rows 7-14: Naver Witch Hat_10 front rows 7-14 (witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_10)"
+  ],
+  "edits": [],
+  "tag": "AI-ORIGINAL (reference-based composite)",
+  "palette": {
+   "o": [
+    40,
+    26,
+    60
+   ],
+   "s": [
+    64,
+    44,
+    96
+   ],
+   "b": [
+    88,
+    64,
+    128
+   ],
+   "l": [
+    118,
+    92,
+    162
+   ],
+   "g": [
+    176,
+    126,
+    64
+   ],
+   "Y": [
+    228,
+    188,
+    112
+   ]
+  }
+ },
+ "P2r": {
+  "grid": [
+   ".........ooooo......",
+   "........obllbo......",
+   "........olboo.......",
+   ".......osbsso.......",
+   ".......obbbso.......",
+   "......osbbbbso......",
+   ".....oosbbbbsoo.....",
+   ".....osYYYYYYso.....",
+   "....ogYbbbbbbYgo....",
+   "....gssssssssssg....",
+   "...osooooooooooso...",
+   ".oosso........oosoo.",
+   "oosoo..........oosoo",
+   ".osoo..........ooso.",
+   "..ooo..........ooo..",
+   "....................",
+   "....................",
+   "....................",
+   "....................",
+   "...................."
+  ],
+  "sources": [
+   "rows 0-5: vanilla Witch Hat front rows 0-5 (Content/Characters/Farmer/hats.png slot 70)",
+   "rows 6-14: Naver Witch Hat_10 front rows 6-14 (witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_10)"
+  ],
+  "edits": [],
+  "tag": "AI-ORIGINAL (reference-based composite)",
+  "palette": {
+   "o": [
+    40,
+    26,
+    60
+   ],
+   "s": [
+    64,
+    44,
+    96
+   ],
+   "b": [
+    88,
+    64,
+    128
+   ],
+   "l": [
+    118,
+    92,
+    162
+   ],
+   "g": [
+    176,
+    126,
+    64
+   ],
+   "Y": [
+    228,
+    188,
+    112
+   ]
+  }
+ }
+}

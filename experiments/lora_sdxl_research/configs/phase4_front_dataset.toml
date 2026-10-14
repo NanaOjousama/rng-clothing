@@ -1,0 +1,26 @@
+# Phase-4 front dataset (plain sd-scripts sdxl_train_network.py, front view, 24x24 frame, 20-px cells).  PREPARED 2026-10-14 - NOT RUN, needs user approval.
+# 1_sdvhat: 490 general (295 + 195 mirror), num_repeats 1.   2_sdvhat: 43 witch (31 + 12 mirror), num_repeats 2 (witch families are thin; recolours already capped).
+# holdout/ is NOT trained on.
+[general]
+shuffle_caption = false
+caption_extension = ".txt"
+keep_tokens = 2
+enable_bucket = false
+
+[[datasets]]
+resolution = [512, 512]
+batch_size = 1
+
+  [[datasets.subsets]]
+  image_dir = 'C:\Users\Chris\sdxl_lora_research\dataset\phase4_front_512\train\1_sdvhat'
+  num_repeats = 1
+  flip_aug = false
+  color_aug = false
+  random_crop = false
+
+  [[datasets.subsets]]
+  image_dir = 'C:\Users\Chris\sdxl_lora_research\dataset\phase4_front_512\train\2_sdvhat'
+  num_repeats = 2
+  flip_aug = false
+  color_aug = false
+  random_crop = false

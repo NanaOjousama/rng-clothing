@@ -1925,5 +1925,381 @@
     }
    ]
   }
+ },
+ {
+  "pack": "Bloom",
+  "name": "Baby's-breath Hat",
+  "dir": "bloom_reference_01/raw/[FS] Bloom Collection/Hats/Baby's-breath Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Bloom",
+  "name": "Cornflower Hat",
+  "dir": "bloom_reference_01/raw/[FS] Bloom Collection/Hats/Cornflower Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Bloom",
+  "name": "Fiddle-leaf Hat",
+  "dir": "bloom_reference_01/raw/[FS] Bloom Collection/Hats/Fiddle-leaf Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Bloom",
+  "name": "Hyacinth Hat",
+  "dir": "bloom_reference_01/raw/[FS] Bloom Collection/Hats/Hyacinth Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Bloom",
+  "name": "Hydrangias Hat",
+  "dir": "bloom_reference_01/raw/[FS] Bloom Collection/Hats/Hydrangias Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Bloom",
+  "name": "Iris Hat",
+  "dir": "bloom_reference_01/raw/[FS] Bloom Collection/Hats/Iris Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Bloom",
+  "name": "Pumpkin Hat",
+  "dir": "bloom_reference_01/raw/[FS] Bloom Collection/Hats/Pumpkin Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Bloom",
+  "name": "Sage Hat",
+  "dir": "bloom_reference_01/raw/[FS] Bloom Collection/Hats/Sage Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
  }
 ]

@@ -155,6 +155,29 @@ promoted only after worn QC + user approval. ChatGPT laptop LoRA lab = failure e
     floppy + classic pointed rotate well; short compact partial (sides grow taller); low sweeping fails. Colours
     drift to black. Not content: nothing to generator, no polishing.
     **Next (user): keep the matrix; design better-looking fronts before more four-view hats.** No retraining yet.
+  - Checkpoint commit `7ab976e` (2026-10-14): all witch/LoRA experiments.
+    - Ignored: `experiments/*/raw/` (third-party packs) and `lora_sdxl_research/dataset/` (rebuildable).
+  - Front-design method test (`experiments/witch_front_design_01/`, 2 samples only, awaiting user verdict):
+    - A = hand-placed pixel grids (T1d, P2d).
+    - B = reference-based composites (T1r = mirrored Kailey crown + Naver brim; P2r = vanilla crown + Naver brim).
+    - Sheets: `out/compare_x{1,4,10}.png`. No batch, no e10, no in-game test until the user approves.
+  - **Phase-4 LoRA PREPARED, NOT TRAINED** (`lora_sdxl_research/PLAN_phase4.md`):
+    - Sources: 6 witch packs (+ Bloom, `experiments/bloom_reference_01/`) + the existing library.
+    - Frame: 24x24 window (vanilla x -2..21, y -4..19).
+    - Recolour caps: 2 per structure, 6 per silhouette body.
+    - Captions: family phrase + decoration word.
+    - Datasets: `phase4_4view_512` (550 imgs) and `phase4_front_512` (565 imgs); both validate with 0 errors.
+    - Rebuild check (`build_phase4_laptop.py` vs Deck build): four-view 550/550, front 565/565 pixel-identical; captions and manifest identical.
+    - Variety test added (`eval_variety_phase4.py`, run after the front eval): copy / variant / new per witch family vs training bodies; low sweeping = 3 bodies (Bloom 6, Wildwood 5, Luny 3). Dry-run with stubbed renders OK. Total estimate now ~7-10 h.
+    - User decisions 2026-10-14: preparation approved, **training NOT approved** (wait for explicit go).
+      Variety test approved for the future eval, but failing its diversity bar must not block picking 1-2 good hats.
+      No second "without Bloom" run. Front artwork: method B (reference-based) is the starting direction; T1r/P2r are not final.
+    - **Immediate milestone: 1-2 genuinely good four-direction witch hats into the generator**, chosen after the
+      Phase 4 eval for visual quality, 4-direction consistency and Stardew fit; nothing enters without user visual approval.
+    - VAE round trip: 10-px cells 0.21%, 20-px 0.15%.
+    - Configs: `configs/phase4_*`, `train_phase4.ps1`.
+    - Evals (written, not run): `eval_phase4.py` (vs e10), `eval_front_phase4.py` (vs phase-1).
+    - **Awaiting user approval**, then the user copies the compact exports to the laptop.
 Not proven: any worn capture (game not running; 3 new pack folders need a fresh launch).
 Next test: start game -> `qc.py refresh/worn` for Recombine.T01, AIOriginal.T01, TemplateLock.T01.
 
