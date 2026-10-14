@@ -1,0 +1,1511 @@
+{
+ "root_cause": "Root cause found: build_dataset.clean_name maps a 'hats_N' name to VANILLA hat N's name, whoever the author is.\nPacks that replace vanilla hat art (Seyph, ...) therefore get the replaced vanilla hat's name (hats_0 -> Cowboy Hat).",
+ "datasets": {
+  "phase1_front": {
+   "constructions": 276,
+   "flagged_constructions": 30,
+   "flag_counts": {
+    "BRIM_CONFLICT": 7,
+    "VANILLA_SLOT": 29
+   },
+   "files_affected": 32,
+   "files_total": 299,
+   "flagged": [
+    {
+     "construction": "lovisity__c278",
+     "author": "lovisity",
+     "names": [
+      "4_Sakkat_0"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "straw"
+     ],
+     "label_note": null,
+     "caption": "sdvhat, front view, straw hat, sakkat, pale orange, light orange, pale beige, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "BRIM_CONFLICT",
+       "detail": "['straw hat'] but verified brim = none"
+      }
+     ],
+     "files": [
+      "lovisity__c278__w0"
+     ]
+    },
+    {
+     "construction": "kailey__c284",
+     "author": "Kailey",
+     "names": [
+      "hats_0",
+      "hats_3"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "cottage"
+     ],
+     "label_note": "beret with stem",
+     "caption": "sdvhat, front view, cottage hat, cowboy hat, beret with stem, black, dark grey, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_0 -> 'Cowboy Hat' (author Kailey)"
+      },
+      {
+       "flag": "BRIM_CONFLICT",
+       "detail": "['cowboy hat'] but verified brim = none"
+      }
+     ],
+     "files": [
+      "kailey__c284__w0",
+      "kailey__c284__w1"
+     ]
+    },
+    {
+     "construction": "kailey__c285",
+     "author": "Kailey",
+     "names": [
+      "hats_1",
+      "hats_4"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "cottage"
+     ],
+     "label_note": "beret",
+     "caption": "sdvhat, front view, cottage hat, bowler hat, dark green, green, light green, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_1 -> 'Bowler Hat' (author Kailey)"
+      },
+      {
+       "flag": "BRIM_CONFLICT",
+       "detail": "['bowler hat'] but verified brim = none"
+      }
+     ],
+     "files": [
+      "kailey__c285__w0",
+      "kailey__c285__w1"
+     ]
+    },
+    {
+     "construction": "kailey__c286",
+     "author": "Kailey",
+     "names": [
+      "hats_2"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "cottage"
+     ],
+     "label_note": "beret",
+     "caption": "sdvhat, front view, cottage hat, top hat, dark brown, yellow, orange, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_2 -> 'Top Hat' (author Kailey)"
+      },
+      {
+       "flag": "BRIM_CONFLICT",
+       "detail": "['top hat'] but verified brim = none"
+      }
+     ],
+     "files": [
+      "kailey__c286__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c287",
+     "author": "Seyph",
+     "names": [
+      "hats_0"
+     ],
+     "split": "holdout",
+     "verified_brim": "none",
+     "families": [
+      "animal"
+     ],
+     "label_note": "bear hat with face",
+     "caption": "sdvhat, front view, animal hat, cowboy hat, bear hat with face, dark brown, brown, pale orange, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_0 -> 'Cowboy Hat' (author Seyph)"
+      },
+      {
+       "flag": "BRIM_CONFLICT",
+       "detail": "['cowboy hat'] but verified brim = none"
+      }
+     ],
+     "files": [
+      "seyph__c287__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c288",
+     "author": "Seyph",
+     "names": [
+      "hats_1"
+     ],
+     "split": "holdout",
+     "verified_brim": "none",
+     "families": [
+      "animal"
+     ],
+     "label_note": "cat hat, ears and tail",
+     "caption": "sdvhat, front view, animal hat, bowler hat, cat hat, ears and tail, black, dark grey, white, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_1 -> 'Bowler Hat' (author Seyph)"
+      },
+      {
+       "flag": "BRIM_CONFLICT",
+       "detail": "['bowler hat'] but verified brim = none"
+      }
+     ],
+     "files": [
+      "seyph__c288__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c289",
+     "author": "Seyph",
+     "names": [
+      "hats_2"
+     ],
+     "split": "train",
+     "verified_brim": "narrow",
+     "families": [
+      "brim-narrow",
+      "brimmed",
+      "formal"
+     ],
+     "label_note": "dark top hat with pin",
+     "caption": "sdvhat, front view, formal hat, narrow brim, top hat, dark top hat with pin, black, dark grey, grey, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_2 -> 'Top Hat' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c289__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c291",
+     "author": "Seyph",
+     "names": [
+      "hats_4"
+     ],
+     "split": "train",
+     "verified_brim": "wide",
+     "families": [
+      "brimmed",
+      "straw"
+     ],
+     "label_note": "smooth sun hat",
+     "caption": "sdvhat, front view, straw hat, wide brim, straw hat, smooth sun hat, dark brown, light yellow, orange, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_4 -> 'Straw Hat' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c291__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c292",
+     "author": "Seyph",
+     "names": [
+      "hats_5"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "unknown"
+     ],
+     "label_note": "sword through the head (gag prop)",
+     "caption": "sdvhat, front view, official cap, sword through the head (gag prop), black, grey, dark grey, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_5 -> 'Official Cap' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c292__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c293",
+     "author": "Seyph",
+     "names": [
+      "hats_6"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "unknown"
+     ],
+     "label_note": "frilled blue-white ring framing the face: bonnet or ghost hood -- cannot tell",
+     "caption": "sdvhat, front view, blue bonnet, purple, white, pale teal, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_6 -> 'Blue Bonnet' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c293__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c294",
+     "author": "Seyph",
+     "names": [
+      "hats_7"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "fantasy"
+     ],
+     "label_note": "ice-blue antlers",
+     "caption": "sdvhat, front view, fantasy hat, plum chapeau, ice-blue antlers, blue, white, light blue, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_7 -> 'Plum Chapeau' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c294__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c295",
+     "author": "Seyph",
+     "names": [
+      "hats_8"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "helmet"
+     ],
+     "label_note": "robot/mech helmet with visor",
+     "caption": "sdvhat, front view, helmet, skeleton mask, robot/mech helmet with visor, black, dark grey, dark beige, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_8 -> 'Skeleton Mask' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c295__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c297",
+     "author": "Seyph",
+     "names": [
+      "hats_10"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal",
+      "mask"
+     ],
+     "label_note": "chicken head costume",
+     "caption": "sdvhat, front view, animal hat, mask, chicken mask, chicken head costume, grey, white, light grey, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_10 -> 'Chicken Mask' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c297__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c302",
+     "author": "Seyph",
+     "names": [
+      "hats_15"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "unknown"
+     ],
+     "label_note": "strawberry hat",
+     "caption": "sdvhat, front view, hunter's cap, strawberry hat, pink, dark green, white, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_15 -> 'Hunter's Cap' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c302__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c303",
+     "author": "Seyph",
+     "names": [
+      "hats_16"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "floral"
+     ],
+     "label_note": "leafy bush with sprouts (cf. vanilla Living Hat)",
+     "caption": "sdvhat, front view, flower hat, trucker hat, leafy bush with sprouts (cf. vanilla Living Hat), dark green, green, pale green, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_16 -> 'Trucker Hat' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c303__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c304",
+     "author": "Seyph",
+     "names": [
+      "hats_17"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "floral",
+      "hair"
+     ],
+     "label_note": "daisy crown",
+     "caption": "sdvhat, front view, flower hat, hair accessory, sailor's cap, daisy crown, white, blue, green, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_17 -> 'Sailor's Cap' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c304__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c305",
+     "author": "Seyph",
+     "names": [
+      "hats_18"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal",
+      "mask"
+     ],
+     "label_note": "horse head mask",
+     "caption": "sdvhat, front view, animal hat, mask, good ol' cap, horse head mask, dark brown, brown, white, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_18 -> 'Good Ol' Cap' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c305__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c306",
+     "author": "Seyph",
+     "names": [
+      "hats_19"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "fantasy",
+      "hair"
+     ],
+     "label_note": "tiny mushroom on the head",
+     "caption": "sdvhat, front view, fantasy hat, hair accessory, fedora, tiny mushroom on the head, dark brown, brown, orange, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_19 -> 'Fedora' (author Seyph)"
+      },
+      {
+       "flag": "BRIM_CONFLICT",
+       "detail": "['fedora'] but verified brim = none"
+      }
+     ],
+     "files": [
+      "seyph__c306__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c307",
+     "author": "Seyph",
+     "names": [
+      "hats_20"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "party"
+     ],
+     "label_note": "cake hat",
+     "caption": "sdvhat, front view, party hat, cool cap, cake hat, pale beige, beige, brown, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_20 -> 'Cool Cap' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c307__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c309",
+     "author": "Seyph",
+     "names": [
+      "hats_22"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal"
+     ],
+     "label_note": "bluebird perched on the head",
+     "caption": "sdvhat, front view, animal hat, polka bow, bluebird perched on the head, black, pale teal, teal, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_22 -> 'Polka Bow' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c309__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c310",
+     "author": "Seyph",
+     "names": [
+      "hats_23"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "fantasy"
+     ],
+     "label_note": "green elf/archer pointed cap",
+     "caption": "sdvhat, front view, fantasy hat, gnome's cap, green elf/archer pointed cap, dark green, green, light yellow, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_23 -> 'Gnome's Cap' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c310__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c312",
+     "author": "Seyph",
+     "names": [
+      "hats_25"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "knit"
+     ],
+     "label_note": "Santa hat with star",
+     "caption": "sdvhat, front view, knit beanie, santa hat, Santa hat with star, grey, brown, dark brown, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_25 -> 'Santa Hat' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c312__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c313",
+     "author": "Seyph",
+     "names": [
+      "hats_26"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal",
+      "mask"
+     ],
+     "label_note": "shiba dog head",
+     "caption": "sdvhat, front view, animal hat, mask, tiara, shiba dog head, light yellow, brown, pale beige, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_26 -> 'Tiara' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c313__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c315",
+     "author": "Seyph",
+     "names": [
+      "hats_28"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal",
+      "cap"
+     ],
+     "label_note": "orange cap with bear ears",
+     "caption": "sdvhat, front view, animal hat, cap, sou'wester, orange cap with bear ears, dark brown, light yellow, pale yellow, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_28 -> 'Sou'wester' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c315__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c317",
+     "author": "Seyph",
+     "names": [
+      "hats_30"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "fantasy",
+      "hair"
+     ],
+     "label_note": "small white wings",
+     "caption": "sdvhat, front view, fantasy hat, hair accessory, watermelon band, small white wings, grey, white, dark grey, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_30 -> 'Watermelon Band' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c317__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c318",
+     "author": "Seyph",
+     "names": [
+      "hats_31"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal",
+      "hair"
+     ],
+     "label_note": "small ears",
+     "caption": "sdvhat, front view, animal hat, hair accessory, mouse ears, small ears, grey, light magenta, white, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_31 -> 'Mouse Ears' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c318__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c319",
+     "author": "Seyph",
+     "names": [
+      "hats_32"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal",
+      "hair"
+     ],
+     "label_note": "cat ears with whiskers",
+     "caption": "sdvhat, front view, animal hat, hair accessory, cat ears, cat ears with whiskers, dark brown, brown, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_32 -> 'Cat Ears' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c319__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c320",
+     "author": "Seyph",
+     "names": [
+      "hats_33"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal",
+      "hair"
+     ],
+     "label_note": "bunny ears",
+     "caption": "sdvhat, front view, animal hat, hair accessory, cowgal hat, bunny ears, grey, white, light pink, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_33 -> 'Cowgal Hat' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c320__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c321",
+     "author": "Seyph",
+     "names": [
+      "hats_34"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "floral",
+      "hair"
+     ],
+     "label_note": "daisy sprouting from the head",
+     "caption": "sdvhat, front view, flower hat, hair accessory, cowpoke hat, daisy sprouting from the head, dark green, green, white, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_34 -> 'Cowpoke Hat' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c321__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c322",
+     "author": "Seyph",
+     "names": [
+      "hats_35"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "floral"
+     ],
+     "label_note": "green vine sprouts",
+     "caption": "sdvhat, front view, flower hat, archer's cap, green vine sprouts, dark green, green, pale green, pixel art, 20x20 sprite, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_35 -> 'Archer's Cap' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c322__w0"
+     ]
+    }
+   ]
+  },
+  "phase2_4view_512": {
+   "constructions": 276,
+   "flagged_constructions": 30,
+   "flag_counts": {
+    "BRIM_CONFLICT": 7,
+    "VANILLA_SLOT": 29
+   },
+   "files_affected": 50,
+   "files_total": 464,
+   "flagged": [
+    {
+     "construction": "lovisity__c278",
+     "author": "lovisity",
+     "names": [
+      "4_Sakkat_0"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "straw"
+     ],
+     "label_note": null,
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, straw hat, sakkat, pale orange, light orange, pale beige, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "BRIM_CONFLICT",
+       "detail": "['straw hat'] but verified brim = none"
+      }
+     ],
+     "files": [
+      "lovisity__c278__w0",
+      "lovisity__c278__w0__mx"
+     ]
+    },
+    {
+     "construction": "kailey__c284",
+     "author": "Kailey",
+     "names": [
+      "hats_0",
+      "hats_3"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "cottage"
+     ],
+     "label_note": "beret with stem",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, cottage hat, cowboy hat, beret with stem, black, dark grey, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_0 -> 'Cowboy Hat' (author Kailey)"
+      },
+      {
+       "flag": "BRIM_CONFLICT",
+       "detail": "['cowboy hat'] but verified brim = none"
+      }
+     ],
+     "files": [
+      "kailey__c284__w0",
+      "kailey__c284__w1"
+     ]
+    },
+    {
+     "construction": "kailey__c285",
+     "author": "Kailey",
+     "names": [
+      "hats_1",
+      "hats_4"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "cottage"
+     ],
+     "label_note": "beret",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, cottage hat, bowler hat, dark green, green, light green, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_1 -> 'Bowler Hat' (author Kailey)"
+      },
+      {
+       "flag": "BRIM_CONFLICT",
+       "detail": "['bowler hat'] but verified brim = none"
+      }
+     ],
+     "files": [
+      "kailey__c285__w0",
+      "kailey__c285__w1"
+     ]
+    },
+    {
+     "construction": "kailey__c286",
+     "author": "Kailey",
+     "names": [
+      "hats_2"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "cottage"
+     ],
+     "label_note": "beret",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, cottage hat, top hat, dark brown, yellow, orange, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_2 -> 'Top Hat' (author Kailey)"
+      },
+      {
+       "flag": "BRIM_CONFLICT",
+       "detail": "['top hat'] but verified brim = none"
+      }
+     ],
+     "files": [
+      "kailey__c286__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c287",
+     "author": "Seyph",
+     "names": [
+      "hats_0"
+     ],
+     "split": "holdout",
+     "verified_brim": "none",
+     "families": [
+      "animal"
+     ],
+     "label_note": "bear hat with face",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, animal hat, cowboy hat, bear hat with face, dark brown, brown, pale orange, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_0 -> 'Cowboy Hat' (author Seyph)"
+      },
+      {
+       "flag": "BRIM_CONFLICT",
+       "detail": "['cowboy hat'] but verified brim = none"
+      }
+     ],
+     "files": [
+      "seyph__c287__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c288",
+     "author": "Seyph",
+     "names": [
+      "hats_1"
+     ],
+     "split": "holdout",
+     "verified_brim": "none",
+     "families": [
+      "animal"
+     ],
+     "label_note": "cat hat, ears and tail",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, animal hat, bowler hat, cat hat, ears and tail, black, dark grey, white, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_1 -> 'Bowler Hat' (author Seyph)"
+      },
+      {
+       "flag": "BRIM_CONFLICT",
+       "detail": "['bowler hat'] but verified brim = none"
+      }
+     ],
+     "files": [
+      "seyph__c288__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c289",
+     "author": "Seyph",
+     "names": [
+      "hats_2"
+     ],
+     "split": "train",
+     "verified_brim": "narrow",
+     "families": [
+      "brim-narrow",
+      "brimmed",
+      "formal"
+     ],
+     "label_note": "dark top hat with pin",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, formal hat, narrow brim, top hat, dark top hat with pin, black, dark grey, grey, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_2 -> 'Top Hat' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c289__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c291",
+     "author": "Seyph",
+     "names": [
+      "hats_4"
+     ],
+     "split": "train",
+     "verified_brim": "wide",
+     "families": [
+      "brimmed",
+      "straw"
+     ],
+     "label_note": "smooth sun hat",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, straw hat, wide brim, straw hat, smooth sun hat, dark brown, light yellow, orange, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_4 -> 'Straw Hat' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c291__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c292",
+     "author": "Seyph",
+     "names": [
+      "hats_5"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "unknown"
+     ],
+     "label_note": "sword through the head (gag prop)",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, official cap, sword through the head (gag prop), black, grey, dark grey, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_5 -> 'Official Cap' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c292__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c293",
+     "author": "Seyph",
+     "names": [
+      "hats_6"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "unknown"
+     ],
+     "label_note": "frilled blue-white ring framing the face: bonnet or ghost hood -- cannot tell",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, blue bonnet, purple, white, pale teal, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_6 -> 'Blue Bonnet' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c293__w0",
+      "seyph__c293__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c294",
+     "author": "Seyph",
+     "names": [
+      "hats_7"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "fantasy"
+     ],
+     "label_note": "ice-blue antlers",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, fantasy hat, plum chapeau, ice-blue antlers, blue, white, light blue, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_7 -> 'Plum Chapeau' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c294__w0",
+      "seyph__c294__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c295",
+     "author": "Seyph",
+     "names": [
+      "hats_8"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "helmet"
+     ],
+     "label_note": "robot/mech helmet with visor",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, helmet, skeleton mask, robot/mech helmet with visor, black, dark grey, dark beige, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_8 -> 'Skeleton Mask' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c295__w0",
+      "seyph__c295__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c297",
+     "author": "Seyph",
+     "names": [
+      "hats_10"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal",
+      "mask"
+     ],
+     "label_note": "chicken head costume",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, animal hat, mask, chicken mask, chicken head costume, grey, white, light grey, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_10 -> 'Chicken Mask' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c297__w0",
+      "seyph__c297__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c302",
+     "author": "Seyph",
+     "names": [
+      "hats_15"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "unknown"
+     ],
+     "label_note": "strawberry hat",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, hunter's cap, strawberry hat, pink, dark green, white, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_15 -> 'Hunter's Cap' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c302__w0",
+      "seyph__c302__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c303",
+     "author": "Seyph",
+     "names": [
+      "hats_16"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "floral"
+     ],
+     "label_note": "leafy bush with sprouts (cf. vanilla Living Hat)",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, flower hat, trucker hat, leafy bush with sprouts (cf. vanilla Living Hat), dark green, green, pale green, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_16 -> 'Trucker Hat' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c303__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c304",
+     "author": "Seyph",
+     "names": [
+      "hats_17"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "floral",
+      "hair"
+     ],
+     "label_note": "daisy crown",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, flower hat, hair accessory, sailor's cap, daisy crown, white, blue, green, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_17 -> 'Sailor's Cap' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c304__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c305",
+     "author": "Seyph",
+     "names": [
+      "hats_18"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal",
+      "mask"
+     ],
+     "label_note": "horse head mask",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, animal hat, mask, good ol' cap, horse head mask, dark brown, brown, white, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_18 -> 'Good Ol' Cap' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c305__w0",
+      "seyph__c305__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c306",
+     "author": "Seyph",
+     "names": [
+      "hats_19"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "fantasy",
+      "hair"
+     ],
+     "label_note": "tiny mushroom on the head",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, fantasy hat, hair accessory, fedora, tiny mushroom on the head, dark brown, brown, orange, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_19 -> 'Fedora' (author Seyph)"
+      },
+      {
+       "flag": "BRIM_CONFLICT",
+       "detail": "['fedora'] but verified brim = none"
+      }
+     ],
+     "files": [
+      "seyph__c306__w0",
+      "seyph__c306__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c307",
+     "author": "Seyph",
+     "names": [
+      "hats_20"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "party"
+     ],
+     "label_note": "cake hat",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, party hat, cool cap, cake hat, pale beige, beige, brown, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_20 -> 'Cool Cap' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c307__w0",
+      "seyph__c307__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c309",
+     "author": "Seyph",
+     "names": [
+      "hats_22"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal"
+     ],
+     "label_note": "bluebird perched on the head",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, animal hat, polka bow, bluebird perched on the head, black, pale teal, teal, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_22 -> 'Polka Bow' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c309__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c310",
+     "author": "Seyph",
+     "names": [
+      "hats_23"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "fantasy"
+     ],
+     "label_note": "green elf/archer pointed cap",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, fantasy hat, gnome's cap, green elf/archer pointed cap, dark green, green, light yellow, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_23 -> 'Gnome's Cap' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c310__w0",
+      "seyph__c310__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c312",
+     "author": "Seyph",
+     "names": [
+      "hats_25"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "knit"
+     ],
+     "label_note": "Santa hat with star",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, knit beanie, santa hat, Santa hat with star, grey, brown, dark brown, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_25 -> 'Santa Hat' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c312__w0"
+     ]
+    },
+    {
+     "construction": "seyph__c313",
+     "author": "Seyph",
+     "names": [
+      "hats_26"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal",
+      "mask"
+     ],
+     "label_note": "shiba dog head",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, animal hat, mask, tiara, shiba dog head, light yellow, brown, pale beige, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_26 -> 'Tiara' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c313__w0",
+      "seyph__c313__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c315",
+     "author": "Seyph",
+     "names": [
+      "hats_28"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal",
+      "cap"
+     ],
+     "label_note": "orange cap with bear ears",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, animal hat, cap, sou'wester, orange cap with bear ears, dark brown, light yellow, pale yellow, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_28 -> 'Sou'wester' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c315__w0",
+      "seyph__c315__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c317",
+     "author": "Seyph",
+     "names": [
+      "hats_30"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "fantasy",
+      "hair"
+     ],
+     "label_note": "small white wings",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, fantasy hat, hair accessory, watermelon band, small white wings, grey, white, dark grey, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_30 -> 'Watermelon Band' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c317__w0",
+      "seyph__c317__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c318",
+     "author": "Seyph",
+     "names": [
+      "hats_31"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal",
+      "hair"
+     ],
+     "label_note": "small ears",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, animal hat, hair accessory, mouse ears, small ears, grey, light magenta, white, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_31 -> 'Mouse Ears' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c318__w0",
+      "seyph__c318__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c319",
+     "author": "Seyph",
+     "names": [
+      "hats_32"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal",
+      "hair"
+     ],
+     "label_note": "cat ears with whiskers",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, animal hat, hair accessory, cat ears, cat ears with whiskers, dark brown, brown, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_32 -> 'Cat Ears' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c319__w0",
+      "seyph__c319__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c320",
+     "author": "Seyph",
+     "names": [
+      "hats_33"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "animal",
+      "hair"
+     ],
+     "label_note": "bunny ears",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, animal hat, hair accessory, cowgal hat, bunny ears, grey, white, light pink, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_33 -> 'Cowgal Hat' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c320__w0",
+      "seyph__c320__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c321",
+     "author": "Seyph",
+     "names": [
+      "hats_34"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "floral",
+      "hair"
+     ],
+     "label_note": "daisy sprouting from the head",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, flower hat, hair accessory, cowpoke hat, daisy sprouting from the head, dark green, green, white, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_34 -> 'Cowpoke Hat' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c321__w0",
+      "seyph__c321__w0__mx"
+     ]
+    },
+    {
+     "construction": "seyph__c322",
+     "author": "Seyph",
+     "names": [
+      "hats_35"
+     ],
+     "split": "train",
+     "verified_brim": "none",
+     "families": [
+      "floral"
+     ],
+     "label_note": "green vine sprouts",
+     "caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, flower hat, archer's cap, green vine sprouts, dark green, green, pale green, pixel art, 20x20 sprites, dark outline",
+     "flags": [
+      {
+       "flag": "VANILLA_SLOT",
+       "detail": "hats_35 -> 'Archer's Cap' (author Seyph)"
+      }
+     ],
+     "files": [
+      "seyph__c322__w0",
+      "seyph__c322__w0__mx"
+     ]
+    }
+   ]
+  }
+ }
+}

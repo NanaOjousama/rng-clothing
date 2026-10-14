@@ -1,0 +1,4 @@
+[{"name":"classic purple","base":[96,52,156],"band":[45,30,70],"accent":[235,190,70]},
+ {"name":"tall teal bent","base":[40,130,140],"band":[120,40,60],"accent":[240,220,140],"H":12,"bend":4,"bend_yaw":-70,"r0":4.0},
+ {"name":"wide black","base":[55,50,70],"band":[150,40,60],"accent":[220,220,230],"R":8.5,"r0":4.8,"H":9.5,"bend":1.5,"droop":1.2},
+ {"name":"short orange","base":[220,120,50],"band":[90,50,30],"accent":[250,240,180],"H":8,"r0":5,"taper":0.8,"bend":2,"bend_yaw":40}]

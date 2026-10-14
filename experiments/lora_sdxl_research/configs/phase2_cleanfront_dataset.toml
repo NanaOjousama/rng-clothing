@@ -1,0 +1,18 @@
+# Phase-2 full run dataset: 2x2 sheet at 512, 12-px cells (front top-left).  Approved by user 2026-10-12.
+# 273 train + 165 view-swap/mirror sheets; holdout (26) is NOT trained on.
+[general]
+shuffle_caption = false
+caption_extension = ".txt"
+keep_tokens = 2
+enable_bucket = false
+
+[[datasets]]
+resolution = [512, 512]
+batch_size = 1
+
+  [[datasets.subsets]]
+  image_dir = 'C:\Users\Chris\sdxl_lora_research\dataset\phase2_4view_512\train\1_sdvhat'
+  num_repeats = 1
+  flip_aug = false
+  color_aug = false
+  random_crop = false

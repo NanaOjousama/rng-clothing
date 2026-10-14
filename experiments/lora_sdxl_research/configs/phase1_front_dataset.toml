@@ -1,0 +1,18 @@
+# kohya sd-scripts dataset config, phase 1 (front views).  NOT RUN - needs user approval.
+# Laptop paths: the dataset is copied to C:\Users\Chris\sdxl_lora_research\dataset\phase1_front
+[general]
+shuffle_caption = false        # word order carries meaning (trigger, view, family first)
+caption_extension = ".txt"
+keep_tokens = 2
+enable_bucket = false          # one fixed canvas; buckets would rescale and break the 32 px grid
+
+[[datasets]]
+resolution = 768
+batch_size = 1
+
+  [[datasets.subsets]]
+  image_dir = 'C:\Users\Chris\sdxl_lora_research\dataset\phase1_front\train\1_sdvhat'
+  num_repeats = 1
+  flip_aug = false             # left/right matter for later view work
+  color_aug = false            # colours are the design
+  random_crop = false

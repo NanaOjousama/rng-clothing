@@ -80,6 +80,84 @@ Next test: start the game, `python3 tools/qc.py refresh --pack PackStudy.QC2 --e
 
 Do not redo: v1 sprig surface seat, tuft on flat tops, sprig on domes/beanies/caps/berets/bonnets, brim from names/geometry.
 
+## 2026-10-10/11 — AI lanes + independent LoRA project (experiments/, uncommitted)
+
+CLAUDE.md §2b added (user): **AI-original lane** allowed in `experiments/`, tagged AI-ORIGINAL,
+promoted only after worn QC + user approval. ChatGPT laptop LoRA lab = failure evidence only.
+- `experiments/template_locked_hats_01/`: one shared colour table = 4 matching views; per-view
+  generation mismatches even with the shape locked. Recolour only. Pack TemplateLock.T01 (35).
+- `experiments/recombine_hats_01/`: Lane 1, 12 source-part recombinations. Pack Recombine.T01.
+- `experiments/ai_original_hats_01/`: Lane 2a, SDXL base front -> 20x20 -> derived views (derive v2:
+  back = filled front silhouette, measured best). Round 4 (tinted generic blank) = 24/24 hats, 21
+  accepted; every render logged with a reason (`out/rejections.json`). Pack AIOriginal.T01 (7, round-2
+  set) installed; **round 4 not installed; user is reviewing the comparison sheets on the laptop.**
+- `experiments/lora_sdxl_research/`: plan, validated phase-1 dataset (299 fronts, 32 px grid,
+  magenta key), configs checked against sd-scripts 690ea7f. **Memory probe / training await approval.**
+- `experiments/witch_hat_quality_01/` (2026-10-11, user: witch hats only, vanilla Witch Hat = CONTROL):
+  muddy cause measured (downscaled illustrations collapse form; no deliberate ramps). New native-grid
+  ray-cast **witch forge** + SDXL design briefs -> `out/WITCH_COMPARISON_round1.png` (control | previous |
+  6 new). Not installed; awaiting user review. LoRA training proposal: `lora_sdxl_research/PROPOSAL_phase1.md`.
+- LoRA phase 1 trained by user (front-only, 12 ep): Stardew-like on known families, novel concepts
+  become objects. Phase 2 prep (2026-10-12, no training started):
+  - leak-free 4-view dataset `dataset/phase2_4view_512`
+  - probes: sheet512 r16 1.89 s/it
+  - method-C clean-front trainer + inference written and unit-tested; untrained demos show
+    A/B/C mechanics only
+  - dataset copied to the laptop by the user (930 files, byte count identical)
+  - **full run approved and STARTED 2026-10-12 17:01** on the laptop: `configs/train_phase2.ps1`
+    (method C, prob 0.75, r16, 10 ep, ckpt every 2 ep) -> `runs\phase2_cleanfront\`; status in
+    `runs\phase2_cleanfront.result`.
+  - try 1 (17:01-17:54, 1.33 s/it, e02+e04 saved in `runs\phase2_cleanfront_interrupted_20261012_1754`) ended by a
+    MANUAL restart (event 1074, no crash; laptop is sluggish, not frozen, during training). DC relay outage 17:27 was separate.
+  - after reboot desktop apps sat on the NVIDIA GPU -> 248 MiB spilled to shared memory -> 2.8 s/it. Closed Calculator,
+    Intel Graphics Software, Windows Search: **try 3 started 18:53, 1.57 s/it, no VRAM cap (user), save_state on**;
+    `configs/train_phase2.ps1` runs `tools/eval_phase2.py` automatically after (inference only; never a 2nd training).
+    Results: `runs\phase2_cleanfront.result`, sheets in `runs\phase2_eval\sheets\`.
+  - **DONE 21:53. Best e06**: sides tie the rule prior on IoU (0.63 vs 0.64), back beats it (0.76 vs 0.67); colour
+    drift is the weak point. User: most views OK, bear failed -> cause = 'cowboy hat' in its caption; corrected
+    caption fixes it (`tools/caption_retest.py`). Details: `lora_sdxl_research/PLAN_phase2.md` (evening results).
+    Caption audit DONE (`lora_sdxl_research/analysis/caption_audit.md`): 30/276 constructions (50/464 images)
+    mislabelled; 29 from `clean_name` mapping `hats_N` -> vanilla name for replacement-art packs (Seyph, Kailey).
+    Fix proposed, not applied; no retraining until the user has judged the worn test.
+  - **Worn test DONE** (`experiments/lora_worn_test_01/`, pack `LoraWorn.T01`, 7 hats, captures
+    `qc_bridge/captures/20261012-222738/`): witch s9 best; witch s8, purple crown, frog good; bear front covers
+    the face; pink crown flowers move between views; bee seated too low. Nothing promoted; awaiting user verdict.
+    Bridge note: `_head`/`_screen` crops come from a flipped screen grab and miss the farmer; use `_worn`.
+  - Round 2 (user review): witch s8 head gaps filled (capture-evidenced), frog left eye red, witch s9 right =
+    mirror(left); worn re-captured `qc_bridge/captures/20261012-231033/`, all three fixed. Awaiting user verdict.
+    First capture right after a save load can return wrong poses despite correct render_state -> recapture.
+  - Hat-hair test: FS has NO hat property for vanilla covered hair (only HideHair / UseBaldHead); FS applies it only
+    from a vanilla hat item in the slot (hairDrawType 1). Proven worn: vanilla Witch Hat in slot + FS witch hat ->
+    hair 38->30, no vanilla sprite drawn, hair no longer bulges under the narrow brim. Shipped route = ESM hat
+    carrier with showRealHair=false (likely, untested). Details: `experiments/lora_worn_test_01/README.md`.
+  - Witch side-view repair (`experiments/witch_side_repair_01/`): s8 orig/A/B/C, s9 orig/A/B/C/D worn with covered
+    hair, valid run WSR3_* (20261013-003631); awaiting the user's pick. Reference packs (PlatinumCats / Luny / Kailey
+    witch hats) unpacked as REFERENCE in `experiments/witch_reference_packs_01/` (all lean the side tip backward).
+    Bridge: use `fs_clear_all` (not `clear_hat`) to clear FS hat+accessories; `fs_dump` shows FS player keys.
+  - **ESM covered-hair test PASSED** (`experiments/esm_hairmode_test_01/`): HairMode Obscured on the ESM carrier ->
+    hair 38->30 automatically, `.full` pixel-identical to FS captures (no duplicate sprite), unequip restores,
+    other hats/hairstyle untouched. Staged ESM copy in Mods (only 4 test garments) still installed; bridge
+    `equip_garment` does not clear the FS custom hat (clear first) and drops replaced hats into the inventory.
+  - eval_phase2: 26 holdout (vs authored + rule prior), all checkpoints, 13 phase-1 LoRA fronts (flower /
+    animal / witch), sheets x1/x4/x10, front drift, palette/accent/shading/outline/silhouette consistency.
+  - see `lora_sdxl_research/PLAN_phase2.md` "Results 2026-10-12"
+  - **Phase-3 LoRA DONE** (2026-10-13, laptop): dataset `lora_sdxl_research/dataset/phase3_4view_512` (+34 witch
+    hats from the reference packs, caption fix hats_N -> vanilla name only for ConcernedApe). Resumed from e04 state
+    into `runs\phase3_cleanfront_resume` (originals intact); eval `runs\phase3_eval`, best = e10 (final checkpoint).
+    Holdout ~= phase-2 e06; witch side views clearly better. Slowness was GPU memory spill from other apps.
+  - Witch cleanup s8/s9 (`experiments/witch_cleanup_01/`, v1+v2 hand grids) — **PAUSED by user**, kept as is.
+  - References: `witch_reference_packs_02/` (Naver 492815), `wildwood_reference_01/` (mushlune, from `good hats/`;
+    NOT in any dataset). Matrix: `experiments/witch_silhouette_matrix_01/README.md` — 41 witch hats -> 21 front
+    silhouettes -> 4 families (short compact / tall floppy / low sweeping / classic pointed); decoration and colour
+    listed separately. User goal: every family represented eventually.
+  - Front candidates (`experiments/witch_front_candidates_01/`, AI-ORIGINAL, neutral palette masks): S1 T1 W1 W2 P2
+    (+P1 control) run through e10 as a SILHOUETTE TEST only (laptop `runs\witch_fronts_e10_01`). Verdict: tall
+    floppy + classic pointed rotate well; short compact partial (sides grow taller); low sweeping fails. Colours
+    drift to black. Not content: nothing to generator, no polishing.
+    **Next (user): keep the matrix; design better-looking fronts before more four-view hats.** No retraining yet.
+Not proven: any worn capture (game not running; 3 new pack folders need a fresh launch).
+Next test: start game -> `qc.py refresh/worn` for Recombine.T01, AIOriginal.T01, TemplateLock.T01.
+
 ## Git-backed recovery anchors
 
 - Recovery authority + continuity safeguards:

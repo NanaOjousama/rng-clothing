@@ -97,3 +97,8 @@ experiments/pixel_snapper_smoke_*.json
 # pack_study: extracted third-party hat sprites (regenerate: pack_study/tools/extract_hats.py) and regenerable output
 pack_study/data/hats/
 pack_study/out/
+
+# Experiment-local copies of third-party packs (REFERENCE only, synced out of band)
+experiments/*/raw/
+# LoRA training datasets: regenerable from experiments/lora_sdxl_research/tools, built from third-party art
+experiments/lora_sdxl_research/dataset/

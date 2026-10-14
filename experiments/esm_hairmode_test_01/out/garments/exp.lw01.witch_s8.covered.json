@@ -1,0 +1,62 @@
+{
+  "Id": "exp.lw01.witch_s8.covered",
+  "Category": "Hat",
+  "DefinitionVersion": 1,
+  "WornTexture": "assets/experiments/esm_hairmode_test_01/witch_s8.png",
+  "FrameWidth": 20,
+  "FrameHeight": 20,
+  "RenderScale": 1.0,
+  "VanillaReferenceAnchor": {
+    "X": 10,
+    "Y": 16
+  },
+  "HairMode": "Obscured",
+  "Directions": {
+    "Front": {
+      "SourceX": 0,
+      "SourceY": 0,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    "Right": {
+      "SourceX": 0,
+      "SourceY": 20,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    "Left": {
+      "SourceX": 0,
+      "SourceY": 40,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    "Back": {
+      "SourceX": 0,
+      "SourceY": 60,
+      "AnchorX": 10,
+      "AnchorY": 16,
+      "OffsetX": 0,
+      "OffsetY": 0
+    }
+  },
+  "Metadata": {
+    "Family": "witch_hat",
+    "Construction": "lora_worn_test_01/witch_s8",
+    "Material": "AI-ORIGINAL",
+    "Palette": "",
+    "Motif": "",
+    "GeneratorId": "esm_hairmode_test_01",
+    "GeneratorVersion": 1,
+    "GeneratorSeed": 0,
+    "Style": "hairmode-test,covered",
+    "QualityTier": "QC",
+    "Decals": "",
+    "Classification": "EXPERIMENT_ONLY"
+  }
+}

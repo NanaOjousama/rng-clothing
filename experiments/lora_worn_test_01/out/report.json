@@ -1,0 +1,1245 @@
+{
+ "lane": "AI-ORIGINAL",
+ "pack": "[FS] LoRA Worn Test 01",
+ "unique_id": "LoraWorn.T01",
+ "far_threshold": 0.12,
+ "snap": "nearest front colour, OKLab, chroma weight 2",
+ "hats": {
+  "witch_s8": {
+   "name": "LW01 01 Witch s8",
+   "provenance": {
+    "render": "phase2_eval\\renders\\e06\\witch__concept__witch__s8__s7.png",
+    "source": "eval_phase2",
+    "seed": 7,
+    "front_from": "phase-1 LoRA concept__witch__s8",
+    "checkpoint": "sdvhat_phase2_cleanfront-000006"
+   },
+   "host": {
+    "id": "seyph__c287",
+    "names": [
+     "hats_0"
+    ],
+    "head": {},
+    "why": "best unshifted front IoU",
+    "front_iou": 0.623
+   },
+   "views": {
+    "right": {
+     "cells": 99,
+     "changed": 96,
+     "mean_move": 0.032,
+     "max_move": 0.105,
+     "colours_before": 81,
+     "colours_after": 8,
+     "front_colours": 8,
+     "L_levels_before": 33,
+     "L_levels_after": 8,
+     "far_cells": 0,
+     "far": []
+    },
+    "left": {
+     "cells": 104,
+     "changed": 103,
+     "mean_move": 0.031,
+     "max_move": 0.157,
+     "colours_before": 84,
+     "colours_after": 7,
+     "front_colours": 8,
+     "L_levels_before": 36,
+     "L_levels_after": 7,
+     "far_cells": 1,
+     "far": [
+      {
+       "xy": [
+        11,
+        7
+       ],
+       "from": [
+        210,
+        156,
+        0
+       ],
+       "to": [
+        140,
+        120,
+        0
+       ],
+       "move": 0.157
+      }
+     ]
+    },
+    "back": {
+     "cells": 120,
+     "changed": 119,
+     "mean_move": 0.022,
+     "max_move": 0.06,
+     "colours_before": 93,
+     "colours_after": 4,
+     "front_colours": 8,
+     "L_levels_before": 26,
+     "L_levels_after": 4,
+     "far_cells": 0,
+     "far": []
+    },
+    "round2": {
+     "accents_synced": {
+      "left": [
+       [
+        7,
+        7
+       ]
+      ]
+     },
+     "head_gaps_filled": {
+      "front": [
+       [
+        7,
+        4
+       ],
+       [
+        12,
+        4
+       ],
+       [
+        5,
+        5
+       ],
+       [
+        6,
+        5
+       ],
+       [
+        7,
+        5
+       ],
+       [
+        12,
+        5
+       ],
+       [
+        13,
+        5
+       ],
+       [
+        14,
+        5
+       ],
+       [
+        6,
+        6
+       ],
+       [
+        13,
+        6
+       ]
+      ],
+      "back": [
+       [
+        7,
+        5
+       ],
+       [
+        5,
+        6
+       ],
+       [
+        6,
+        6
+       ],
+       [
+        7,
+        6
+       ],
+       [
+        12,
+        6
+       ],
+       [
+        13,
+        6
+       ],
+       [
+        14,
+        6
+       ],
+       [
+        6,
+        7
+       ],
+       [
+        14,
+        7
+       ]
+      ]
+     }
+    }
+   }
+  },
+  "witch_s9": {
+   "name": "LW01 02 Witch s9",
+   "provenance": {
+    "render": "phase2_eval\\renders\\e06\\witch__concept__witch__s9__s7.png",
+    "source": "eval_phase2",
+    "seed": 7,
+    "front_from": "phase-1 LoRA concept__witch__s9",
+    "checkpoint": "sdvhat_phase2_cleanfront-000006"
+   },
+   "host": {
+    "id": "concernedape__c329",
+    "names": [
+     "hats_41"
+    ],
+    "head": {},
+    "why": "best unshifted front IoU",
+    "front_iou": 0.728
+   },
+   "views": {
+    "right": {
+     "cells": 145,
+     "changed": 145,
+     "mean_move": 0.046,
+     "max_move": 0.394,
+     "colours_before": 114,
+     "colours_after": 8,
+     "front_colours": 12,
+     "L_levels_before": 40,
+     "L_levels_after": 8,
+     "far_cells": 11,
+     "far": [
+      {
+       "xy": [
+        7,
+        4
+       ],
+       "from": [
+        157,
+        106,
+        6
+       ],
+       "to": [
+        251,
+        223,
+        0
+       ],
+       "move": 0.348
+      },
+      {
+       "xy": [
+        7,
+        5
+       ],
+       "from": [
+        104,
+        64,
+        0
+       ],
+       "to": [
+        25,
+        4,
+        48
+       ],
+       "move": 0.275
+      },
+      {
+       "xy": [
+        11,
+        5
+       ],
+       "from": [
+        145,
+        88,
+        0
+       ],
+       "to": [
+        42,
+        4,
+        82
+       ],
+       "move": 0.344
+      },
+      {
+       "xy": [
+        6,
+        6
+       ],
+       "from": [
+        159,
+        110,
+        0
+       ],
+       "to": [
+        251,
+        223,
+        0
+       ],
+       "move": 0.337
+      },
+      {
+       "xy": [
+        7,
+        6
+       ],
+       "from": [
+        216,
+        166,
+        0
+       ],
+       "to": [
+        251,
+        223,
+        0
+       ],
+       "move": 0.157
+      },
+      {
+       "xy": [
+        11,
+        6
+       ],
+       "from": [
+        133,
+        97,
+        0
+       ],
+       "to": [
+        251,
+        223,
+        0
+       ],
+       "move": 0.394
+      },
+      {
+       "xy": [
+        12,
+        6
+       ],
+       "from": [
+        124,
+        90,
+        0
+       ],
+       "to": [
+        42,
+        4,
+        82
+       ],
+       "move": 0.326
+      },
+      {
+       "xy": [
+        7,
+        7
+       ],
+       "from": [
+        148,
+        109,
+        0
+       ],
+       "to": [
+        251,
+        223,
+        0
+       ],
+       "move": 0.35
+      },
+      {
+       "xy": [
+        8,
+        7
+       ],
+       "from": [
+        167,
+        120,
+        0
+       ],
+       "to": [
+        251,
+        223,
+        0
+       ],
+       "move": 0.306
+      },
+      {
+       "xy": [
+        9,
+        7
+       ],
+       "from": [
+        175,
+        128,
+        0
+       ],
+       "to": [
+        251,
+        223,
+        0
+       ],
+       "move": 0.28
+      },
+      {
+       "xy": [
+        10,
+        7
+       ],
+       "from": [
+        136,
+        91,
+        0
+       ],
+       "to": [
+        42,
+        4,
+        82
+       ],
+       "move": 0.34
+      }
+     ]
+    },
+    "left": {
+     "cells": 137,
+     "changed": 137,
+     "mean_move": 0.042,
+     "max_move": 0.391,
+     "colours_before": 107,
+     "colours_after": 9,
+     "front_colours": 12,
+     "L_levels_before": 41,
+     "L_levels_after": 9,
+     "far_cells": 8,
+     "far": [
+      {
+       "xy": [
+        8,
+        5
+       ],
+       "from": [
+        104,
+        49,
+        1
+       ],
+       "to": [
+        25,
+        4,
+        48
+       ],
+       "move": 0.247
+      },
+      {
+       "xy": [
+        7,
+        6
+       ],
+       "from": [
+        144,
+        102,
+        0
+       ],
+       "to": [
+        251,
+        223,
+        0
+       ],
+       "move": 0.37
+      },
+      {
+       "xy": [
+        8,
+        6
+       ],
+       "from": [
+        144,
+        96,
+        0
+       ],
+       "to": [
+        251,
+        223,
+        0
+       ],
+       "move": 0.384
+      },
+      {
+       "xy": [
+        13,
+        6
+       ],
+       "from": [
+        158,
+        114,
+        0
+       ],
+       "to": [
+        251,
+        223,
+        0
+       ],
+       "move": 0.328
+      },
+      {
+       "xy": [
+        9,
+        7
+       ],
+       "from": [
+        131,
+        99,
+        0
+       ],
+       "to": [
+        251,
+        223,
+        0
+       ],
+       "move": 0.391
+      },
+      {
+       "xy": [
+        10,
+        7
+       ],
+       "from": [
+        179,
+        135,
+        0
+       ],
+       "to": [
+        251,
+        223,
+        0
+       ],
+       "move": 0.26
+      },
+      {
+       "xy": [
+        11,
+        7
+       ],
+       "from": [
+        177,
+        135,
+        0
+       ],
+       "to": [
+        251,
+        223,
+        0
+       ],
+       "move": 0.262
+      },
+      {
+       "xy": [
+        12,
+        7
+       ],
+       "from": [
+        136,
+        98,
+        0
+       ],
+       "to": [
+        251,
+        223,
+        0
+       ],
+       "move": 0.388
+      }
+     ]
+    },
+    "back": {
+     "cells": 154,
+     "changed": 152,
+     "mean_move": 0.025,
+     "max_move": 0.067,
+     "colours_before": 116,
+     "colours_after": 8,
+     "front_colours": 12,
+     "L_levels_before": 36,
+     "L_levels_after": 8,
+     "far_cells": 0,
+     "far": []
+    },
+    "round2": {
+     "mirrored": "right := mirror(left)",
+     "accents_synced": {},
+     "head_gaps_filled": {
+      "front": [
+       [
+        7,
+        4
+       ]
+      ]
+     }
+    }
+   }
+  },
+  "frog": {
+   "name": "LW01 03 Frog",
+   "provenance": {
+    "render": "phase2_eval\\renders\\e06\\animal__concept__frog__s9__s9.png",
+    "source": "eval_phase2",
+    "seed": 9,
+    "front_from": "phase-1 LoRA concept__frog__s9",
+    "checkpoint": "sdvhat_phase2_cleanfront-000006"
+   },
+   "host": {
+    "id": "plurffle__c133",
+    "names": [
+     "Beanie (Cat)"
+    ],
+    "head": {
+     "front": [
+      0,
+      1
+     ],
+     "right": [
+      0,
+      1
+     ],
+     "left": [
+      0,
+      1
+     ],
+     "back": [
+      0,
+      1
+     ]
+    },
+    "why": "best unshifted front IoU",
+    "front_iou": 0.758
+   },
+   "views": {
+    "right": {
+     "cells": 111,
+     "changed": 110,
+     "mean_move": 0.043,
+     "max_move": 0.159,
+     "colours_before": 104,
+     "colours_after": 11,
+     "front_colours": 14,
+     "L_levels_before": 42,
+     "L_levels_after": 11,
+     "far_cells": 3,
+     "far": [
+      {
+       "xy": [
+        7,
+        7
+       ],
+       "from": [
+        181,
+        13,
+        5
+       ],
+       "to": [
+        246,
+        0,
+        29
+       ],
+       "move": 0.134
+      },
+      {
+       "xy": [
+        8,
+        7
+       ],
+       "from": [
+        182,
+        8,
+        7
+       ],
+       "to": [
+        246,
+        0,
+        29
+       ],
+       "move": 0.133
+      },
+      {
+       "xy": [
+        8,
+        8
+       ],
+       "from": [
+        170,
+        6,
+        10
+       ],
+       "to": [
+        246,
+        0,
+        29
+       ],
+       "move": 0.159
+      }
+     ]
+    },
+    "left": {
+     "cells": 111,
+     "changed": 111,
+     "mean_move": 0.038,
+     "max_move": 0.091,
+     "colours_before": 106,
+     "colours_after": 10,
+     "front_colours": 14,
+     "L_levels_before": 32,
+     "L_levels_after": 10,
+     "far_cells": 0,
+     "far": []
+    },
+    "back": {
+     "cells": 142,
+     "changed": 142,
+     "mean_move": 0.04,
+     "max_move": 0.089,
+     "colours_before": 128,
+     "colours_after": 8,
+     "front_colours": 14,
+     "L_levels_before": 23,
+     "L_levels_after": 8,
+     "far_cells": 0,
+     "far": []
+    },
+    "round2": {
+     "accents_synced": {
+      "left": [
+       [
+        12,
+        7
+       ],
+       [
+        11,
+        7
+       ],
+       [
+        12,
+        8
+       ],
+       [
+        11,
+        8
+       ]
+      ]
+     },
+     "head_gaps_filled": "skipped (open design)"
+    }
+   }
+  },
+  "bee": {
+   "name": "LW01 04 Bee",
+   "provenance": {
+    "render": "phase2_eval\\renders\\e06\\animal__concept__bee__s7__s8.png",
+    "source": "eval_phase2",
+    "seed": 8,
+    "front_from": "phase-1 LoRA concept__bee__s7",
+    "checkpoint": "sdvhat_phase2_cleanfront-000006"
+   },
+   "host": {
+    "id": "concernedape__c466",
+    "names": [
+     "hats_28"
+    ],
+    "head": {},
+    "why": "best unshifted front IoU",
+    "front_iou": 0.642
+   },
+   "views": {
+    "right": {
+     "cells": 143,
+     "changed": 117,
+     "mean_move": 0.038,
+     "max_move": 0.122,
+     "colours_before": 104,
+     "colours_after": 10,
+     "front_colours": 10,
+     "L_levels_before": 53,
+     "L_levels_after": 10,
+     "far_cells": 2,
+     "far": [
+      {
+       "xy": [
+        5,
+        6
+       ],
+       "from": [
+        215,
+        173,
+        0
+       ],
+       "to": [
+        182,
+        133,
+        0
+       ],
+       "move": 0.12
+      },
+      {
+       "xy": [
+        9,
+        12
+       ],
+       "from": [
+        217,
+        173,
+        0
+       ],
+       "to": [
+        182,
+        133,
+        0
+       ],
+       "move": 0.122
+      }
+     ]
+    },
+    "left": {
+     "cells": 144,
+     "changed": 109,
+     "mean_move": 0.031,
+     "max_move": 0.122,
+     "colours_before": 106,
+     "colours_after": 10,
+     "front_colours": 10,
+     "L_levels_before": 54,
+     "L_levels_after": 10,
+     "far_cells": 1,
+     "far": [
+      {
+       "xy": [
+        8,
+        11
+       ],
+       "from": [
+        218,
+        173,
+        0
+       ],
+       "to": [
+        253,
+        215,
+        0
+       ],
+       "move": 0.122
+      }
+     ]
+    },
+    "back": {
+     "cells": 178,
+     "changed": 151,
+     "mean_move": 0.032,
+     "max_move": 0.118,
+     "colours_before": 134,
+     "colours_after": 10,
+     "front_colours": 10,
+     "L_levels_before": 59,
+     "L_levels_after": 10,
+     "far_cells": 0,
+     "far": []
+    },
+    "round2": {
+     "accents_synced": {},
+     "head_gaps_filled": "skipped (open design)"
+    }
+   }
+  },
+  "flower_pink": {
+   "name": "LW01 05 Pink flower crown",
+   "provenance": {
+    "render": "phase2_eval\\renders\\e06\\flower__holdout__plurffle__c80__w0__s8__s9.png",
+    "source": "eval_phase2",
+    "seed": 9,
+    "front_from": "phase-1 LoRA holdout__plurffle__c80__w0__s8",
+    "checkpoint": "sdvhat_phase2_cleanfront-000006"
+   },
+   "host": {
+    "id": "plurffle__c80",
+    "names": [
+     "Flower Dance Crown"
+    ],
+    "head": {
+     "front": [
+      0,
+      0
+     ],
+     "right": [
+      0,
+      0
+     ],
+     "left": [
+      0,
+      0
+     ],
+     "back": [
+      0,
+      0
+     ]
+    },
+    "why": "source construction",
+    "front_iou": 1.0
+   },
+   "views": {
+    "right": {
+     "cells": 115,
+     "changed": 115,
+     "mean_move": 0.046,
+     "max_move": 0.161,
+     "colours_before": 115,
+     "colours_after": 16,
+     "front_colours": 27,
+     "L_levels_before": 50,
+     "L_levels_after": 15,
+     "far_cells": 7,
+     "far": [
+      {
+       "xy": [
+        15,
+        4
+       ],
+       "from": [
+        182,
+        82,
+        88
+       ],
+       "to": [
+        202,
+        0,
+        121
+       ],
+       "move": 0.121
+      },
+      {
+       "xy": [
+        15,
+        5
+       ],
+       "from": [
+        225,
+        115,
+        160
+       ],
+       "to": [
+        255,
+        162,
+        255
+       ],
+       "move": 0.161
+      },
+      {
+       "xy": [
+        14,
+        6
+       ],
+       "from": [
+        173,
+        66,
+        70
+       ],
+       "to": [
+        135,
+        1,
+        72
+       ],
+       "move": 0.137
+      },
+      {
+       "xy": [
+        15,
+        6
+       ],
+       "from": [
+        168,
+        60,
+        65
+       ],
+       "to": [
+        135,
+        1,
+        72
+       ],
+       "move": 0.122
+      },
+      {
+       "xy": [
+        12,
+        8
+       ],
+       "from": [
+        200,
+        103,
+        131
+       ],
+       "to": [
+        202,
+        0,
+        121
+       ],
+       "move": 0.134
+      },
+      {
+       "xy": [
+        13,
+        8
+       ],
+       "from": [
+        201,
+        103,
+        135
+       ],
+       "to": [
+        202,
+        0,
+        121
+       ],
+       "move": 0.133
+      },
+      {
+       "xy": [
+        11,
+        9
+       ],
+       "from": [
+        246,
+        142,
+        167
+       ],
+       "to": [
+        255,
+        162,
+        255
+       ],
+       "move": 0.122
+      }
+     ]
+    },
+    "left": {
+     "cells": 113,
+     "changed": 113,
+     "mean_move": 0.05,
+     "max_move": 0.119,
+     "colours_before": 113,
+     "colours_after": 15,
+     "front_colours": 27,
+     "L_levels_before": 45,
+     "L_levels_after": 14,
+     "far_cells": 0,
+     "far": []
+    },
+    "back": {
+     "cells": 113,
+     "changed": 113,
+     "mean_move": 0.047,
+     "max_move": 0.128,
+     "colours_before": 113,
+     "colours_after": 13,
+     "front_colours": 27,
+     "L_levels_before": 44,
+     "L_levels_after": 12,
+     "far_cells": 1,
+     "far": [
+      {
+       "xy": [
+        9,
+        10
+       ],
+       "from": [
+        62,
+        63,
+        74
+       ],
+       "to": [
+        54,
+        23,
+        33
+       ],
+       "move": 0.128
+      }
+     ]
+    },
+    "round2": {
+     "accents_synced": "skipped (asymmetric design)",
+     "head_gaps_filled": "skipped (open design)"
+    }
+   }
+  },
+  "flower_purple": {
+   "name": "LW01 06 Purple flower crown",
+   "provenance": {
+    "render": "phase2_eval\\renders\\e06\\flower__holdout__kailey__c226__w0__s9__s9.png",
+    "source": "eval_phase2",
+    "seed": 9,
+    "front_from": "phase-1 LoRA holdout__kailey__c226__w0__s9",
+    "checkpoint": "sdvhat_phase2_cleanfront-000006"
+   },
+   "host": {
+    "id": "kailey__c226",
+    "names": [
+     "Flower Crown (Purple)"
+    ],
+    "head": {
+     "front": [
+      0,
+      0
+     ],
+     "right": [
+      0,
+      0
+     ],
+     "left": [
+      0,
+      0
+     ],
+     "back": [
+      0,
+      0
+     ]
+    },
+    "why": "source construction",
+    "front_iou": 1.0
+   },
+   "views": {
+    "right": {
+     "cells": 115,
+     "changed": 115,
+     "mean_move": 0.057,
+     "max_move": 0.231,
+     "colours_before": 114,
+     "colours_after": 18,
+     "front_colours": 18,
+     "L_levels_before": 41,
+     "L_levels_after": 16,
+     "far_cells": 1,
+     "far": [
+      {
+       "xy": [
+        13,
+        9
+       ],
+       "from": [
+        236,
+        166,
+        254
+       ],
+       "to": [
+        183,
+        89,
+        151
+       ],
+       "move": 0.231
+      }
+     ]
+    },
+    "left": {
+     "cells": 95,
+     "changed": 95,
+     "mean_move": 0.054,
+     "max_move": 0.127,
+     "colours_before": 94,
+     "colours_after": 14,
+     "front_colours": 18,
+     "L_levels_before": 37,
+     "L_levels_after": 14,
+     "far_cells": 1,
+     "far": [
+      {
+       "xy": [
+        18,
+        10
+       ],
+       "from": [
+        21,
+        4,
+        37
+       ],
+       "to": [
+        56,
+        3,
+        89
+       ],
+       "move": 0.127
+      }
+     ]
+    },
+    "back": {
+     "cells": 101,
+     "changed": 101,
+     "mean_move": 0.054,
+     "max_move": 0.1,
+     "colours_before": 101,
+     "colours_after": 13,
+     "front_colours": 18,
+     "L_levels_before": 33,
+     "L_levels_after": 13,
+     "far_cells": 0,
+     "far": []
+    },
+    "round2": {
+     "accents_synced": "skipped (asymmetric design)",
+     "head_gaps_filled": "skipped (open design)"
+    }
+   }
+  },
+  "bear": {
+   "name": "LW01 07 Bear",
+   "provenance": {
+    "render": "caption_retest_e06\\animal__holdout__seyph__c287__w0__s9__s8.png",
+    "source": "caption_retest",
+    "seed": 8,
+    "front_from": "phase-1 LoRA holdout__seyph__c287__w0__s9",
+    "checkpoint": "sdvhat_phase2_cleanfront-000006"
+   },
+   "host": {
+    "id": "seyph__c287",
+    "names": [
+     "hats_0"
+    ],
+    "head": {},
+    "why": "source construction",
+    "front_iou": 1.0
+   },
+   "views": {
+    "right": {
+     "cells": 120,
+     "changed": 120,
+     "mean_move": 0.026,
+     "max_move": 0.062,
+     "colours_before": 110,
+     "colours_after": 10,
+     "front_colours": 12,
+     "L_levels_before": 30,
+     "L_levels_after": 10,
+     "far_cells": 0,
+     "far": []
+    },
+    "left": {
+     "cells": 121,
+     "changed": 121,
+     "mean_move": 0.025,
+     "max_move": 0.059,
+     "colours_before": 108,
+     "colours_after": 10,
+     "front_colours": 12,
+     "L_levels_before": 32,
+     "L_levels_after": 10,
+     "far_cells": 0,
+     "far": []
+    },
+    "back": {
+     "cells": 121,
+     "changed": 121,
+     "mean_move": 0.027,
+     "max_move": 0.061,
+     "colours_before": 114,
+     "colours_after": 6,
+     "front_colours": 12,
+     "L_levels_before": 28,
+     "L_levels_after": 6,
+     "far_cells": 0,
+     "far": []
+    },
+    "round2": {
+     "accents_synced": {},
+     "head_gaps_filled": "skipped (open design)"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,668 @@
+{
+  "label": "LW01 06 Purple flower crown",
+  "session": "20261012-222738",
+  "timestamp": "2026-10-12T22:38:24.7539735-04:00",
+  "isolated_target_size": 256,
+  "directions": {
+    "front": {
+      "direction": "front",
+      "facing_direction": 2,
+      "screen": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/front_screen.png",
+      "head_crop": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/front_head.png",
+      "screen_anchors": {
+        "zoom": 1.0,
+        "ui_scale": 0.85,
+        "get_local_position": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "get_local_position_scaled": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "global_to_local": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "global_to_local_scaled": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "player_position": {
+          "X": 329.00507,
+          "Y": 497.10245
+        },
+        "viewport": {
+          "X": -256,
+          "Y": 48,
+          "Width": 1280,
+          "Height": 720
+        },
+        "crop": {
+          "x": 553,
+          "y": 345,
+          "width": 128,
+          "height": 128
+        }
+      },
+      "worn": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/front_worn.png",
+      "worn_bounds": {
+        "x": 88,
+        "y": 60,
+        "width": 80,
+        "height": 116,
+        "pixels": 5760
+      },
+      "hair_real": 38,
+      "hair_policy": 38,
+      "nohat": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/front_nohat.png",
+      "hat_only": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/front_hatonly.png",
+      "hat_only_bounds": {
+        "x": 88,
+        "y": 64,
+        "width": 80,
+        "height": 28,
+        "pixels": 1904
+      },
+      "hat_changed_pixels": 1904,
+      "body_pixels_removed_by_hat": 0,
+      "head_bounds_without_hat": {
+        "x": 100,
+        "y": 60,
+        "width": 56,
+        "height": 116,
+        "pixels": 5072
+      },
+      "render_state": {
+        "session": "20261012-222738",
+        "timestamp": "2026-10-12T22:38:23.5530729-04:00",
+        "world_ready": true,
+        "farmer": {
+          "name": "nana",
+          "facing_direction": 2,
+          "facing_name": "front",
+          "current_frame": 0,
+          "animation_frame_flip": false,
+          "animation_frame_index": 1,
+          "source_rect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 16,
+            "Height": 32
+          },
+          "world_position": {
+            "X": 329.00507,
+            "Y": 497.10245
+          },
+          "tile": {
+            "X": 5,
+            "Y": 8
+          },
+          "location": "FarmHouse",
+          "hairstyle": 38,
+          "hair_color": {
+            "R": 175,
+            "G": 126,
+            "B": 110,
+            "A": 255
+          },
+          "skin": 23,
+          "is_male": false,
+          "swimming": false,
+          "is_moving": false
+        },
+        "view": {
+          "zoom_level": 1.0,
+          "ui_scale": 0.85,
+          "viewport": {
+            "X": -256,
+            "Y": 48,
+            "Width": 1280,
+            "Height": 720
+          },
+          "backbuffer": {
+            "Width": 1280,
+            "Height": 720
+          }
+        },
+        "hat": {
+          "fashion_sense_id": "LoraWorn.T01/Hat/LW01 06 Purple flower crown",
+          "is_fashion_sense": true,
+          "vanilla_hat": "",
+          "vanilla_hat_name": "",
+          "pack_id": "LoraWorn.T01",
+          "appearance_name": "LW01 06 Purple flower crown",
+          "texture_path": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/[FS] LoRA Worn Test 01/Hats/LW01 06 Purple flower crown/hat.png",
+          "direction_model": "FrontHat",
+          "source_rectangle": {
+            "X": 0,
+            "Y": 0,
+            "Width": 20,
+            "Height": 20
+          },
+          "native_frame_size": {
+            "Width": 20,
+            "Length": 20
+          },
+          "scale": 4.0,
+          "head_position": {
+            "X": 0,
+            "Y": 0
+          },
+          "hide_hair": false,
+          "flipped": false,
+          "disable_grayscale": true,
+          "predicted_draw": {
+            "feature_offset": {
+              "X": -8.0,
+              "Y": -4.0
+            },
+            "height_offset": 4,
+            "origin_shift_head_position": {
+              "X": 0,
+              "Y": 0
+            },
+            "effective_scale": 4.0,
+            "flip_from_animation_frame": false,
+            "note": "HeadPosition is added to the sprite ORIGIN, so it moves the hat by -HeadPosition * scale on screen."
+          }
+        }
+      }
+    },
+    "right": {
+      "direction": "right",
+      "facing_direction": 1,
+      "screen": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/right_screen.png",
+      "head_crop": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/right_head.png",
+      "screen_anchors": {
+        "zoom": 1.0,
+        "ui_scale": 0.85,
+        "get_local_position": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "get_local_position_scaled": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "global_to_local": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "global_to_local_scaled": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "player_position": {
+          "X": 329.00507,
+          "Y": 497.10245
+        },
+        "viewport": {
+          "X": -256,
+          "Y": 48,
+          "Width": 1280,
+          "Height": 720
+        },
+        "crop": {
+          "x": 553,
+          "y": 345,
+          "width": 128,
+          "height": 128
+        }
+      },
+      "worn": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/right_worn.png",
+      "worn_bounds": {
+        "x": 88,
+        "y": 60,
+        "width": 80,
+        "height": 116,
+        "pixels": 4912
+      },
+      "hair_real": 38,
+      "hair_policy": 38,
+      "nohat": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/right_nohat.png",
+      "hat_only": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/right_hatonly.png",
+      "hat_only_bounds": {
+        "x": 88,
+        "y": 68,
+        "width": 80,
+        "height": 36,
+        "pixels": 1840
+      },
+      "hat_changed_pixels": 1840,
+      "body_pixels_removed_by_hat": 0,
+      "head_bounds_without_hat": {
+        "x": 96,
+        "y": 60,
+        "width": 52,
+        "height": 116,
+        "pixels": 4288
+      },
+      "render_state": {
+        "session": "20261012-222738",
+        "timestamp": "2026-10-12T22:38:23.8698945-04:00",
+        "world_ready": true,
+        "farmer": {
+          "name": "nana",
+          "facing_direction": 1,
+          "facing_name": "right",
+          "current_frame": 6,
+          "animation_frame_flip": false,
+          "animation_frame_index": 7,
+          "source_rect": {
+            "X": 0,
+            "Y": 32,
+            "Width": 16,
+            "Height": 32
+          },
+          "world_position": {
+            "X": 329.00507,
+            "Y": 497.10245
+          },
+          "tile": {
+            "X": 5,
+            "Y": 8
+          },
+          "location": "FarmHouse",
+          "hairstyle": 38,
+          "hair_color": {
+            "R": 175,
+            "G": 126,
+            "B": 110,
+            "A": 255
+          },
+          "skin": 23,
+          "is_male": false,
+          "swimming": false,
+          "is_moving": false
+        },
+        "view": {
+          "zoom_level": 1.0,
+          "ui_scale": 0.85,
+          "viewport": {
+            "X": -256,
+            "Y": 48,
+            "Width": 1280,
+            "Height": 720
+          },
+          "backbuffer": {
+            "Width": 1280,
+            "Height": 720
+          }
+        },
+        "hat": {
+          "fashion_sense_id": "LoraWorn.T01/Hat/LW01 06 Purple flower crown",
+          "is_fashion_sense": true,
+          "vanilla_hat": "",
+          "vanilla_hat_name": "",
+          "pack_id": "LoraWorn.T01",
+          "appearance_name": "LW01 06 Purple flower crown",
+          "texture_path": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/[FS] LoRA Worn Test 01/Hats/LW01 06 Purple flower crown/hat.png",
+          "direction_model": "RightHat",
+          "source_rectangle": {
+            "X": 0,
+            "Y": 20,
+            "Width": 20,
+            "Height": 20
+          },
+          "native_frame_size": {
+            "Width": 20,
+            "Length": 20
+          },
+          "scale": 4.0,
+          "head_position": {
+            "X": 0,
+            "Y": 0
+          },
+          "hide_hair": false,
+          "flipped": false,
+          "disable_grayscale": true,
+          "predicted_draw": {
+            "feature_offset": {
+              "X": -8.0,
+              "Y": -4.0
+            },
+            "height_offset": 4,
+            "origin_shift_head_position": {
+              "X": 0,
+              "Y": 0
+            },
+            "effective_scale": 4.0,
+            "flip_from_animation_frame": false,
+            "note": "HeadPosition is added to the sprite ORIGIN, so it moves the hat by -HeadPosition * scale on screen."
+          }
+        }
+      }
+    },
+    "back": {
+      "direction": "back",
+      "facing_direction": 0,
+      "screen": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/back_screen.png",
+      "head_crop": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/back_head.png",
+      "screen_anchors": {
+        "zoom": 1.0,
+        "ui_scale": 0.85,
+        "get_local_position": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "get_local_position_scaled": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "global_to_local": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "global_to_local_scaled": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "player_position": {
+          "X": 329.00507,
+          "Y": 497.10245
+        },
+        "viewport": {
+          "X": -256,
+          "Y": 48,
+          "Width": 1280,
+          "Height": 720
+        },
+        "crop": {
+          "x": 553,
+          "y": 345,
+          "width": 128,
+          "height": 128
+        }
+      },
+      "worn": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/back_worn.png",
+      "worn_bounds": {
+        "x": 88,
+        "y": 60,
+        "width": 80,
+        "height": 116,
+        "pixels": 5648
+      },
+      "hair_real": 38,
+      "hair_policy": 38,
+      "nohat": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/back_nohat.png",
+      "hat_only": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/back_hatonly.png",
+      "hat_only_bounds": {
+        "x": 88,
+        "y": 64,
+        "width": 80,
+        "height": 36,
+        "pixels": 1616
+      },
+      "hat_changed_pixels": 1616,
+      "body_pixels_removed_by_hat": 0,
+      "head_bounds_without_hat": {
+        "x": 100,
+        "y": 60,
+        "width": 56,
+        "height": 116,
+        "pixels": 5056
+      },
+      "render_state": {
+        "session": "20261012-222738",
+        "timestamp": "2026-10-12T22:38:24.2965029-04:00",
+        "world_ready": true,
+        "farmer": {
+          "name": "nana",
+          "facing_direction": 0,
+          "facing_name": "back",
+          "current_frame": 12,
+          "animation_frame_flip": false,
+          "animation_frame_index": 13,
+          "source_rect": {
+            "X": 0,
+            "Y": 64,
+            "Width": 16,
+            "Height": 32
+          },
+          "world_position": {
+            "X": 329.00507,
+            "Y": 497.10245
+          },
+          "tile": {
+            "X": 5,
+            "Y": 8
+          },
+          "location": "FarmHouse",
+          "hairstyle": 38,
+          "hair_color": {
+            "R": 175,
+            "G": 126,
+            "B": 110,
+            "A": 255
+          },
+          "skin": 23,
+          "is_male": false,
+          "swimming": false,
+          "is_moving": false
+        },
+        "view": {
+          "zoom_level": 1.0,
+          "ui_scale": 0.85,
+          "viewport": {
+            "X": -256,
+            "Y": 48,
+            "Width": 1280,
+            "Height": 720
+          },
+          "backbuffer": {
+            "Width": 1280,
+            "Height": 720
+          }
+        },
+        "hat": {
+          "fashion_sense_id": "LoraWorn.T01/Hat/LW01 06 Purple flower crown",
+          "is_fashion_sense": true,
+          "vanilla_hat": "",
+          "vanilla_hat_name": "",
+          "pack_id": "LoraWorn.T01",
+          "appearance_name": "LW01 06 Purple flower crown",
+          "texture_path": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/[FS] LoRA Worn Test 01/Hats/LW01 06 Purple flower crown/hat.png",
+          "direction_model": "BackHat",
+          "source_rectangle": {
+            "X": 0,
+            "Y": 60,
+            "Width": 20,
+            "Height": 20
+          },
+          "native_frame_size": {
+            "Width": 20,
+            "Length": 20
+          },
+          "scale": 4.0,
+          "head_position": {
+            "X": 0,
+            "Y": 0
+          },
+          "hide_hair": false,
+          "flipped": false,
+          "disable_grayscale": true,
+          "predicted_draw": {
+            "feature_offset": {
+              "X": -8.0,
+              "Y": -8.0
+            },
+            "height_offset": 4,
+            "origin_shift_head_position": {
+              "X": 0,
+              "Y": 0
+            },
+            "effective_scale": 4.0,
+            "flip_from_animation_frame": false,
+            "note": "HeadPosition is added to the sprite ORIGIN, so it moves the hat by -HeadPosition * scale on screen."
+          }
+        }
+      }
+    },
+    "left": {
+      "direction": "left",
+      "facing_direction": 3,
+      "screen": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/left_screen.png",
+      "head_crop": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/left_head.png",
+      "screen_anchors": {
+        "zoom": 1.0,
+        "ui_scale": 0.85,
+        "get_local_position": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "get_local_position_scaled": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "global_to_local": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "global_to_local_scaled": {
+          "X": 585.00507,
+          "Y": 449.10245
+        },
+        "player_position": {
+          "X": 329.00507,
+          "Y": 497.10245
+        },
+        "viewport": {
+          "X": -256,
+          "Y": 48,
+          "Width": 1280,
+          "Height": 720
+        },
+        "crop": {
+          "x": 553,
+          "y": 345,
+          "width": 128,
+          "height": 128
+        }
+      },
+      "worn": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/left_worn.png",
+      "worn_bounds": {
+        "x": 88,
+        "y": 60,
+        "width": 80,
+        "height": 116,
+        "pixels": 4784
+      },
+      "hair_real": 38,
+      "hair_policy": 38,
+      "nohat": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/left_nohat.png",
+      "hat_only": "/run/media/deck/USD00/RNG_clothing/qc_bridge/captures/20261012-222738/LW01 06 Purple flower crown/left_hatonly.png",
+      "hat_only_bounds": {
+        "x": 88,
+        "y": 60,
+        "width": 80,
+        "height": 44,
+        "pixels": 1520
+      },
+      "hat_changed_pixels": 1520,
+      "body_pixels_removed_by_hat": 0,
+      "head_bounds_without_hat": {
+        "x": 108,
+        "y": 60,
+        "width": 52,
+        "height": 116,
+        "pixels": 4288
+      },
+      "render_state": {
+        "session": "20261012-222738",
+        "timestamp": "2026-10-12T22:38:24.6800066-04:00",
+        "world_ready": true,
+        "farmer": {
+          "name": "nana",
+          "facing_direction": 3,
+          "facing_name": "left",
+          "current_frame": 6,
+          "animation_frame_flip": true,
+          "animation_frame_index": 7,
+          "source_rect": {
+            "X": 0,
+            "Y": 32,
+            "Width": 16,
+            "Height": 32
+          },
+          "world_position": {
+            "X": 329.00507,
+            "Y": 497.10245
+          },
+          "tile": {
+            "X": 5,
+            "Y": 8
+          },
+          "location": "FarmHouse",
+          "hairstyle": 38,
+          "hair_color": {
+            "R": 175,
+            "G": 126,
+            "B": 110,
+            "A": 255
+          },
+          "skin": 23,
+          "is_male": false,
+          "swimming": false,
+          "is_moving": false
+        },
+        "view": {
+          "zoom_level": 1.0,
+          "ui_scale": 0.85,
+          "viewport": {
+            "X": -256,
+            "Y": 48,
+            "Width": 1280,
+            "Height": 720
+          },
+          "backbuffer": {
+            "Width": 1280,
+            "Height": 720
+          }
+        },
+        "hat": {
+          "fashion_sense_id": "LoraWorn.T01/Hat/LW01 06 Purple flower crown",
+          "is_fashion_sense": true,
+          "vanilla_hat": "",
+          "vanilla_hat_name": "",
+          "pack_id": "LoraWorn.T01",
+          "appearance_name": "LW01 06 Purple flower crown",
+          "texture_path": "/run/media/deck/USD00/steamapps/common/Stardew Valley/Mods/[FS] LoRA Worn Test 01/Hats/LW01 06 Purple flower crown/hat.png",
+          "direction_model": "LeftHat",
+          "source_rectangle": {
+            "X": 0,
+            "Y": 40,
+            "Width": 20,
+            "Height": 20
+          },
+          "native_frame_size": {
+            "Width": 20,
+            "Length": 20
+          },
+          "scale": 4.0,
+          "head_position": {
+            "X": 0,
+            "Y": 0
+          },
+          "hide_hair": false,
+          "flipped": false,
+          "disable_grayscale": true,
+          "predicted_draw": {
+            "feature_offset": {
+              "X": -8.0,
+              "Y": -4.0
+            },
+            "height_offset": 4,
+            "origin_shift_head_position": {
+              "X": 0,
+              "Y": 0
+            },
+            "effective_scale": 4.0,
+            "flip_from_animation_frame": true,
+            "note": "HeadPosition is added to the sprite ORIGIN, so it moves the hat by -HeadPosition * scale on screen."
+          }
+        }
+      }
+    }
+  }
+}

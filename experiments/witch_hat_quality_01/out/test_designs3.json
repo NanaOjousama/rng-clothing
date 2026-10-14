@@ -1,0 +1,4 @@
+[{"name":"classic crooked","base":[96,52,156],"band":[45,30,70],"accent":[235,190,70],"H":11,"bend":1.0,"crook":1.9,"bend_yaw":-90,"taper":1.15,"flare":0.25,"wrinkles":[0.4]},
+ {"name":"tall teal stars","base":[40,130,140],"band":[120,40,60],"accent":[240,220,140],"H":12.5,"bend":1.5,"crook":1.2,"bend_yaw":-120,"r0":4.0,"buckle":null,"charms":[{"h":0.4,"angle":-20,"shape":"star"},{"h":0.2,"angle":60,"shape":"dot"}]},
+ {"name":"wide black moon curl","base":[55,50,70],"band":[150,40,60],"accent":[220,220,230],"R":8.6,"r0":4.6,"H":10,"bend":0.5,"crook":2.4,"bend_yaw":90,"droop":0.2,"curl":1.4,"buckle":null,"charms":[{"h":0.35,"angle":0,"shape":"moon"}]},
+ {"name":"short orange patched","base":[220,120,50],"band":[90,50,30],"accent":[150,90,60],"H":8.5,"r0":5,"taper":0.85,"bend":1,"crook":1.4,"bend_yaw":40,"buckle":null,"charms":[{"h":0.35,"angle":-35,"shape":"patch"}],"wrinkles":[0.55]}]

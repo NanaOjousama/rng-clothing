@@ -1,0 +1,4 @@
+[{"name":"classic purple","base":[96,52,156],"band":[45,30,70],"accent":[235,190,70],"wrinkles":[0.45]},
+ {"name":"tall teal bent stars","base":[40,130,140],"band":[120,40,60],"accent":[240,220,140],"H":12,"bend":4,"bend_yaw":-70,"r0":4.0,"buckle":null,"charms":[{"h":0.45,"angle":-20,"shape":"star"},{"h":0.25,"angle":60,"shape":"dot"}],"wrinkles":[0.6]},
+ {"name":"wide black moon","base":[55,50,70],"band":[150,40,60],"accent":[220,220,230],"R":8.5,"r0":4.8,"H":9.5,"bend":1.5,"droop":1.2,"buckle":null,"charms":[{"h":0.4,"angle":0,"shape":"moon"}]},
+ {"name":"short orange patched","base":[220,120,50],"band":[90,50,30],"accent":[150,90,60],"H":8,"r0":5,"taper":0.8,"bend":2,"bend_yaw":40,"buckle":null,"charms":[{"h":0.35,"angle":-35,"shape":"patch"}],"wrinkles":[0.55]}]

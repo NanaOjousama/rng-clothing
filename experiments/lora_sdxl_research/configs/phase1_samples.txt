@@ -1,0 +1,4 @@
+sdvhat, front view, cowboy hat, wide brim, dark brown, brown, pale orange, pixel art, 20x20 sprite, dark outline --w 768 --h 768 --d 101 --s 28 --l 7
+sdvhat, front view, fantasy hat, witch hat with a crescent moon buckle, dark purple, purple, yellow, pixel art, 20x20 sprite, dark outline --w 768 --h 768 --d 102 --s 28 --l 7
+sdvhat, front view, animal hat, frog bucket hat with two eyes, green, light green, white, pixel art, 20x20 sprite, dark outline --w 768 --h 768 --d 103 --s 28 --l 7
+sdvhat, front view, knit beanie, strawberry beanie with a leaf stem, red, green, pixel art, 20x20 sprite, dark outline --w 768 --h 768 --d 104 --s 28 --l 7

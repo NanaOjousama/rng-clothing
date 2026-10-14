@@ -1,0 +1,11 @@
+{
+  "Name": "LoRA Worn Test 01",
+  "Author": "lora_worn_test_01 experiment (AI-ORIGINAL)",
+  "Version": "0.1.0",
+  "Description": "AI-ORIGINAL: phase-2 clean-front LoRA views (e06), side colours snapped to the front palette",
+  "UniqueID": "LoraWorn.T01",
+  "UpdateKeys": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense"
+  }
+}

@@ -1,0 +1,74 @@
+{
+ "lane": "AI-ORIGINAL",
+ "exported_on": "LAPTOP-GGEDSK3A C:\\Users\\Chris\\sdxl_lora_research\\runs\\worn_picks_atlas.png (md5 de0eb4f94156c8936f5f7a7d01ce214e)",
+ "model": "SDXL base 1.0 + LoRA sdvhat_phase2_cleanfront-000006 (method C clean-front, rank 16)",
+ "phase1_front_lora": "sdvhat_phase1_front_512",
+ "inference": "30 steps DPM++ (diffusers DPMSolverMultistep), cfg 7, 512 sheet, clean front latent held every step",
+ "order": [
+  "witch_s8",
+  "witch_s9",
+  "frog",
+  "bee",
+  "flower_pink",
+  "flower_purple",
+  "bear"
+ ],
+ "bg": [
+  255,
+  102,
+  255
+ ],
+ "hats": {
+  "witch_s8": {
+   "render": "phase2_eval\\renders\\e06\\witch__concept__witch__s8__s7.png",
+   "source": "eval_phase2",
+   "seed": 7,
+   "front_from": "phase-1 LoRA concept__witch__s8",
+   "checkpoint": "sdvhat_phase2_cleanfront-000006"
+  },
+  "witch_s9": {
+   "render": "phase2_eval\\renders\\e06\\witch__concept__witch__s9__s7.png",
+   "source": "eval_phase2",
+   "seed": 7,
+   "front_from": "phase-1 LoRA concept__witch__s9",
+   "checkpoint": "sdvhat_phase2_cleanfront-000006"
+  },
+  "frog": {
+   "render": "phase2_eval\\renders\\e06\\animal__concept__frog__s9__s9.png",
+   "source": "eval_phase2",
+   "seed": 9,
+   "front_from": "phase-1 LoRA concept__frog__s9",
+   "checkpoint": "sdvhat_phase2_cleanfront-000006"
+  },
+  "bee": {
+   "render": "phase2_eval\\renders\\e06\\animal__concept__bee__s7__s8.png",
+   "source": "eval_phase2",
+   "seed": 8,
+   "front_from": "phase-1 LoRA concept__bee__s7",
+   "checkpoint": "sdvhat_phase2_cleanfront-000006"
+  },
+  "flower_pink": {
+   "render": "phase2_eval\\renders\\e06\\flower__holdout__plurffle__c80__w0__s8__s9.png",
+   "source": "eval_phase2",
+   "seed": 9,
+   "front_from": "phase-1 LoRA holdout__plurffle__c80__w0__s8",
+   "checkpoint": "sdvhat_phase2_cleanfront-000006"
+  },
+  "flower_purple": {
+   "render": "phase2_eval\\renders\\e06\\flower__holdout__kailey__c226__w0__s9__s9.png",
+   "source": "eval_phase2",
+   "seed": 9,
+   "front_from": "phase-1 LoRA holdout__kailey__c226__w0__s9",
+   "checkpoint": "sdvhat_phase2_cleanfront-000006"
+  },
+  "bear": {
+   "render": "caption_retest_e06\\animal__holdout__seyph__c287__w0__s9__s8.png",
+   "source": "caption_retest",
+   "seed": 8,
+   "front_from": "phase-1 LoRA holdout__seyph__c287__w0__s9",
+   "checkpoint": "sdvhat_phase2_cleanfront-000006"
+  }
+ },
+ "bear_caption": "sdvhat, four views, front top-left, right top-right, left bottom-left, back bottom-right, animal hat, teddybear hat, bear hat with face, round ears, dark brown, brown, pale orange, pixel art, 20x20 sprites, dark outline",
+ "other_captions": "eval_phase2 captions: manifest caption for holdout-derived fronts, else layout + phase-1 concept prompt (tools/eval_phase2.py CUSTOM)"
+}

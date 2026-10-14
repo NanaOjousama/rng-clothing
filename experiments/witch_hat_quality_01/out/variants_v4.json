@@ -1,0 +1,6 @@
+[{"name":"A plum crook, gold buckle","base":[104,58,150],"band":[52,36,74],"accent":[240,196,80],"crook":1.8,"bend_yaw":-90},
+ {"name":"B teal, wavy brim, stars","base":[42,128,138],"band":[30,60,70],"accent":[250,226,140],"buckle":null,"wave":0.09,"lobes":6,"crook":1.4,"bend_yaw":-120,"H":8.5,"charms":[{"h":0.45,"angle":-25,"shape":"star"},{"h":0.25,"angle":70,"shape":"dot"},{"h":0.6,"angle":160,"shape":"star"}]},
+ {"name":"C black, crimson band+rim, moon","base":[58,52,74],"band":[160,44,66],"rim":[160,44,66],"accent":[228,228,236],"buckle":null,"crook":2.2,"bend_yaw":90,"charms":[{"h":0.4,"angle":0,"shape":"moon"}]},
+ {"name":"D pumpkin, droopy brim, patch","base":[222,124,52],"band":[70,110,50],"accent":[120,80,50],"buckle":null,"droop":1.3,"crook":1.2,"bend_yaw":-60,"H":7.5,"charms":[{"h":0.3,"angle":-30,"shape":"patch"}],"wrinkles":[0.55]},
+ {"name":"E forest green, tall, leaf trim","base":[62,120,64],"band":[120,82,46],"rim":[150,190,90],"accent":[250,220,110],"H":9.5,"crook":2.6,"bend_yaw":-150,"taper":0.55},
+ {"name":"F lilac, upturned brim","base":[176,150,214],"band":[88,62,130],"accent":[255,240,200],"curl":1.1,"droop":0.0,"crook":1.5,"bend_yaw":-90,"buckle":"square"}]

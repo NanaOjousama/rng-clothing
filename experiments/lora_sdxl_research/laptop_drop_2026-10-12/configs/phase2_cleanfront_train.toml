@@ -1,0 +1,37 @@
+# Phase-2 full run: method C clean-front (tools/sdxl_train_cleanfront.py).  Approved by user 2026-10-12.
+# 438 sheets x 10 epochs = 4380 steps, ~1.89 s/it (probe) ~= 2.3 h.  From the official base model.
+# clean_front_box/prob are passed on the command line (train_phase2.ps1).
+# Try 1 (2026-10-12 17:01-17:54, e02+e04 saved, 1.33 s/it) ended by a manual restart (no crash in the event log).
+# Try 2 adds save_state.  Optional VRAM cap: CLEANFRONT_VRAM_MB (off).
+# No in-training samples: the stock sampler does not hold the front clean, so they would mislead.
+pretrained_model_name_or_path = 'C:\Users\Chris\stardew-lora-lab\models\sdxl\sd_xl_base_1.0.safetensors'
+dataset_config = 'C:\Users\Chris\sdxl_lora_research\configs\phase2_cleanfront_dataset.toml'
+output_dir = 'C:\Users\Chris\sdxl_lora_research\runs\phase2_cleanfront'
+output_name = "sdvhat_phase2_cleanfront"
+logging_dir = 'C:\Users\Chris\sdxl_lora_research\runs\phase2_cleanfront\logs'
+
+network_module = "networks.lora"
+network_dim = 16
+network_alpha = 8
+network_train_unet_only = true
+
+optimizer_type = "AdamW8bit"
+learning_rate = 1e-4
+lr_scheduler = "constant_with_warmup"
+lr_warmup_steps = 100
+max_train_epochs = 10
+save_every_n_epochs = 2
+save_state = true                       # resumable (--resume <dir>-0000NN-state) after a crash
+min_snr_gamma = 5
+seed = 20261012
+
+mixed_precision = "bf16"
+save_precision = "bf16"
+gradient_checkpointing = true
+cache_latents = true
+cache_latents_to_disk = true
+cache_text_encoder_outputs = true
+cache_text_encoder_outputs_to_disk = true
+sdpa = true
+max_data_loader_n_workers = 0
+save_model_as = "safetensors"

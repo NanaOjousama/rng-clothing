@@ -1,0 +1,5308 @@
+[
+{
+"id": "subabytvanz__c0",
+"author": "SubabyTvanZ",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.019593259718545086,
+"right": 0.018112149324986615,
+"left": -0.01770963248722912,
+"back": -0.006508361747486924
+}
+},
+{
+"id": "marmuruah__c1",
+"author": "marmuruah",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.07863822803170814,
+"right": -0.023330268344792765,
+"left": -0.04516231315749758,
+"back": -0.21544868756224733
+}
+},
+{
+"id": "billi__c23",
+"author": "billi",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0016064386470443504,
+"right": -0.03899186152159795,
+"left": 0.03899186152159795,
+"back": -0.003139368671773002
+}
+},
+{
+"id": "plurffle__c30",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0,
+"right": 0.0,
+"left": 0.0,
+"back": 0.0
+}
+},
+{
+"id": "plurffle__c39",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.022119571741358035,
+"left": -0.022119571741358035,
+"back": -0.014396990634082396
+}
+},
+{
+"id": "plurffle__c40",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.052336561873788545,
+"left": -0.052336561873788545,
+"back": -0.02638333095086809
+}
+},
+{
+"id": "plurffle__c45",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.10688172716197197,
+"right": -0.12498123353558366,
+"left": 0.15190354583729948,
+"back": -0.01458001002443432
+}
+},
+{
+"id": "plurffle__c46",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.019647323840018993,
+"right": -0.057030470114114884,
+"left": 0.057030470114114884,
+"back": -0.06634491960276889
+}
+},
+{
+"id": "plurffle__c47",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.03319548558772156,
+"right": -0.09901197133820416,
+"left": 0.09901197133820416,
+"back": -0.05887151431418203
+}
+},
+{
+"id": "plurffle__c49",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.06395330809264399,
+"right": -0.06629066097943725,
+"left": 0.06629066097943725,
+"back": -0.03243018056607749
+}
+},
+{
+"id": "plurffle__c50",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0686905901735807,
+"right": -0.061449124369354124,
+"left": 0.061449124369354124,
+"back": -0.03375386140550918
+}
+},
+{
+"id": "plurffle__c52",
+"author": "plurffle",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0065718566940988765,
+"right": -0.07529695210033738,
+"left": 0.07529695210033738,
+"back": 0.0011126333194493299
+}
+},
+{
+"id": "plurffle__c53",
+"author": "plurffle",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.08044592876769863,
+"right": -0.09708477639252511,
+"left": 0.09708477639252511,
+"back": -0.06042942762247361
+}
+},
+{
+"id": "plurffle__c54",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.023819816860362164,
+"left": 0.023819816860362164,
+"back": 0.0
+}
+},
+{
+"id": "plurffle__c61",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.07277842743823182,
+"right": -0.04862078421834659,
+"left": 0.04862078421834659,
+"back": -0.004296918341921807
+}
+},
+{
+"id": "plurffle__c80",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.005947372030939979,
+"right": 0.005947372030939979,
+"left": -0.005947372030939979,
+"back": -0.005947372030939979
+}
+},
+{
+"id": "plurffle__c83",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.15344034317967437,
+"left": -0.15344034317967437,
+"back": 0.0
+}
+},
+{
+"id": "plurffle__c84",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.06752706762231264,
+"left": -0.06752706762231264,
+"back": 0.0
+}
+},
+{
+"id": "plurffle__c87",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.039593794929503656,
+"right": -0.15899160643916654,
+"left": 0.15899160643916654,
+"back": -0.039593794929503656
+}
+},
+{
+"id": "plurffle__c88",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.019009064418189503,
+"right": -0.06438111079686948,
+"left": 0.06438111079686948,
+"back": 0.0069395679742281224
+}
+},
+{
+"id": "plurffle__c89",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.08282251586101164,
+"right": -0.08495750065131324,
+"left": 0.08495750065131324,
+"back": -0.05147557096044886
+}
+},
+{
+"id": "plurffle__c90",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.004654994870415208,
+"right": -0.05893667757351828,
+"left": 0.05893667757351828,
+"back": -0.10909288538289952
+}
+},
+{
+"id": "plurffle__c91",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.03667349515452256,
+"right": -0.07976179135467076,
+"left": 0.07976179135467076,
+"back": -0.10909288538289952
+}
+},
+{
+"id": "plurffle__c103",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.06320858171922239,
+"right": -0.04250105099132906,
+"left": 0.04250105099132906,
+"back": -0.02333891616615602
+}
+},
+{
+"id": "plurffle__c105",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.00917915471544084,
+"right": -0.01482586336091618,
+"left": 0.01482586336091618,
+"back": -0.019436263560218547
+}
+},
+{
+"id": "plurffle__c106",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.02149418272782999,
+"right": -0.017985885546840885,
+"left": 0.017985885546840885,
+"back": -0.013508254224409821
+}
+},
+{
+"id": "plurffle__c107",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.005737494534643561,
+"right": -0.0038498907677188,
+"left": 0.0038498907677188,
+"back": -0.0014141756568349928
+}
+},
+{
+"id": "plurffle__c108",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.01662883885006794,
+"right": 0.03347856542670313,
+"left": -0.03347856542670313,
+"back": -0.005627291658564126
+}
+},
+{
+"id": "plurffle__c109",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.030033355216346314,
+"right": -0.03647713873815517,
+"left": 0.03647713873815517,
+"back": 0.002751734530591743
+}
+},
+{
+"id": "plurffle__c110",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.07188834856601678,
+"right": -0.0516419981231222,
+"left": 0.0516419981231222,
+"back": -0.006571757464115535
+}
+},
+{
+"id": "plurffle__c111",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.030033355216346314,
+"right": -0.05807322515651636,
+"left": 0.05807322515651636,
+"back": 0.006014833164968869
+}
+},
+{
+"id": "plurffle__c112",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.07188834856601678,
+"right": -0.07162242722385925,
+"left": 0.07162242722385925,
+"back": -0.006383992965140917
+}
+},
+{
+"id": "plurffle__c113",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.010156352444542271,
+"right": 0.118611313035631,
+"left": -0.118611313035631,
+"back": -0.010156352444542271
+}
+},
+{
+"id": "plurffle__c118",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.019437079561369308,
+"right": -0.04401768134187456,
+"left": 0.04401768134187456,
+"back": -0.03366266106950999
+}
+},
+{
+"id": "plurffle__c119",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.04008897659532429,
+"right": -0.13527367950279268,
+"left": 0.13527367950279268,
+"back": -0.02422996069413952
+}
+},
+{
+"id": "plurffle__c120",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.04008897659532429,
+"right": -0.09140356939229688,
+"left": 0.09140356939229688,
+"back": -0.03692033794720451
+}
+},
+{
+"id": "plurffle__c121",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.01611717362262599,
+"right": -0.11931385316589727,
+"left": 0.11931385316589727,
+"back": -0.01311926431139443
+}
+},
+{
+"id": "plurffle__c122",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.01289879554605644,
+"right": -0.030379248919433777,
+"left": 0.030379248919433777,
+"back": -0.086162023698507
+}
+},
+{
+"id": "plurffle__c123",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0001565688588833769,
+"right": -0.053658396328788105,
+"left": 0.053658396328788105,
+"back": -0.013296784857000699
+}
+},
+{
+"id": "plurffle__c124",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.02737778365607868,
+"right": -0.013505143027230493,
+"left": 0.013505143027230493,
+"back": -0.01329095423702542
+}
+},
+{
+"id": "plurffle__c133",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.09487159315149629,
+"right": -0.16677851527412946,
+"left": 0.16677851527412946,
+"back": -0.056726568716282344
+}
+},
+{
+"id": "plurffle__c134",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.07559764283353854,
+"right": -0.14178377051309532,
+"left": 0.14178377051309532,
+"back": -0.008957693636660213
+}
+},
+{
+"id": "kookoroo__c137",
+"author": "Kookoroo",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.01631682614665697,
+"left": 0.01631682614665697,
+"back": -0.0001923086246604644
+}
+},
+{
+"id": "kookoroo__c138",
+"author": "Kookoroo",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.0008829115960183875,
+"left": 0.0008829115960183875,
+"back": 0.0005522252336405131
+}
+},
+{
+"id": "kookoroo__c139",
+"author": "Kookoroo",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.006016759692221152,
+"right": 0.018853464801743658,
+"left": -0.018853464801743658,
+"back": 0.0024630861077498123
+}
+},
+{
+"id": "kookoroo__c140",
+"author": "Kookoroo",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.006095300541538395,
+"right": 0.023017898758013633,
+"left": -0.023017898758013633,
+"back": 0.0026604109791684705
+}
+},
+{
+"id": "kookoroo__c141",
+"author": "Kookoroo",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.04273434572005397,
+"left": 0.04610222034072342,
+"back": 0.0
+}
+},
+{
+"id": "kookoroo__c142",
+"author": "Kookoroo",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.04164161202123828,
+"left": 0.045001966577996155,
+"back": 0.0
+}
+},
+{
+"id": "kookoroo__c143",
+"author": "Kookoroo",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": -0.00473431577798733
+}
+},
+{
+"id": "kookoroo__c144",
+"author": "Kookoroo",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": -0.004828558088456392
+}
+},
+{
+"id": "kookoroo__c145",
+"author": "Kookoroo",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.02023910181223898,
+"left": 0.02023910181223898,
+"back": 0.0
+}
+},
+{
+"id": "kookoroo__c146",
+"author": "Kookoroo",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.021741367970308234,
+"left": 0.021741367970308234,
+"back": -0.0016348785987077008
+}
+},
+{
+"id": "jedone__c147",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.14011960113789584,
+"left": 0.14011960113789584,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c148",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.13560649330130292,
+"left": 0.13560649330130292,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c149",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0022034466203254555,
+"right": -0.25720346382818876,
+"left": 0.25720346382818876,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c150",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.006250561524474563,
+"right": -0.07730701286640751,
+"left": 0.07730701286640751,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c151",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.04419545512047862,
+"right": 0.005671619941394451,
+"left": 0.05558352872237185,
+"back": 0.008954580378887966
+}
+},
+{
+"id": "jedone__c152",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0,
+"right": 0.004029921453289287,
+"left": -0.004029921453289287,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c153",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0,
+"right": 0.00015234198436259172,
+"left": -0.00015234198436259172,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c154",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.005281267878707641,
+"right": -0.001597719374607065,
+"left": 0.001597719374607065,
+"back": 0.005281267878707641
+}
+},
+{
+"id": "jedone__c155",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.025533428746612574,
+"left": -0.025533428746612574,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c156",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.016296362926028207,
+"left": -0.016296362926028207,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c157",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.015164510839404066,
+"left": -0.015164510839404066,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c158",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.1745251244897812,
+"left": 0.1745251244897812,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c159",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.20460542605648802,
+"left": 0.20460542605648802,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c160",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.00201948040915112,
+"right": 0.14527767008032322,
+"left": -0.14527767008032322,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c161",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.16083150574139948,
+"left": 0.16083150574139948,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c162",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.046005259087405936,
+"left": 0.046005259087405936,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c163",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.16093978385056246,
+"left": 0.16093978385056246,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c164",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.004178230585653919,
+"right": -0.016296303991831962,
+"left": 0.016296303991831962,
+"back": 0.0
+}
+},
+{
+"id": "jedone__c165",
+"author": "Jedone",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0019590109989712223,
+"right": -0.006362232091777165,
+"left": 0.006362232091777165,
+"back": 0.0
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c169",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.08051128179923739,
+"left": 0.08051128179923739,
+"back": 0.0
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c170",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.003224017555235492,
+"right": -0.07284130485851115,
+"left": -0.06363220715348616,
+"back": -0.019970850180775268
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c171",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0013335882173163283,
+"right": null,
+"left": null,
+"back": 0.00508807390743915
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c172",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.015220901687051924,
+"right": 0.015536199915423765,
+"left": -0.015536199915423765,
+"back": 0.0024484080712573464
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c173",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": null,
+"left": null,
+"back": null
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c174",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.07498836798000996,
+"right": -0.17636129495823738,
+"left": 0.17636129495823738,
+"back": 0.0
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c175",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.017767918176312958,
+"right": -0.006753545333433086,
+"left": 0.006783747112239391,
+"back": 0.002611695095891431
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c176",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.030593063065809334,
+"right": -0.004231288157877433,
+"left": 0.006827354935474039,
+"back": 0.005520771642038902
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c177",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.04111641216281403,
+"right": -0.006242402617801179,
+"left": 0.006639766218872578,
+"back": 0.005838240837556463
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c178",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.00020787591559900953,
+"right": 0.12355410795882793,
+"left": -0.12355410795882793,
+"back": -0.0011208097489059377
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c179",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0002078759155988985,
+"right": 0.08991647410002135,
+"left": -0.08991647410002135,
+"back": -0.0011208097489059377
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c180",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.013368886911754196,
+"right": -0.026592684782831277,
+"left": 0.026592684782831277,
+"back": -0.004855617063171724
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c181",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.012474943001811623,
+"right": -0.029854806697066638,
+"left": 0.029854806697066638,
+"back": -0.003653552426597373
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c182",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.011634845176324182,
+"right": -0.028981516381656913,
+"left": 0.028332778815814974,
+"back": -0.004624397203020769
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c183",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.011943434440080836,
+"right": -0.029688772405068398,
+"left": 0.029049113956425954,
+"back": -0.004553460159321676
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c184",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.011427206464924122,
+"right": -0.031656588495769356,
+"left": 0.031257477957716384,
+"back": -0.0034795737396164927
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c185",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.08255025947994898,
+"right": 0.09309921517876463,
+"left": -0.09309921517876463,
+"back": 0.08255025947994898
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c186",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.010311777861065963,
+"right": -0.02092346314115834,
+"left": 0.02092346314115834,
+"back": 0.0
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c187",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.03123725267898303,
+"right": -0.05592529897952686,
+"left": 0.05592529897952686,
+"back": 0.0
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c188",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.010131819682523413,
+"right": -0.010851281779816535,
+"left": 0.010851281779816535,
+"back": 0.0
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c189",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.009210062239805916,
+"right": -0.018705586170613797,
+"left": 0.018705586170613797,
+"back": 0.0
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c190",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.026999094203489893,
+"right": -0.048303300878986155,
+"left": 0.048303300878986155,
+"back": 0.0
+}
+},
+{
+"id": "h_young_fs_code_by_mychocolate__c191",
+"author": "h young FS Code By Mychocolate",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.033240748704335576,
+"right": -0.05829255575076647,
+"left": 0.05829255575076647,
+"back": 8.871632415397013e-05
+}
+},
+{
+"id": "cuteberet_35115__c192",
+"author": "CuteBeret-35115",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.04780979150432829,
+"left": 0.04780979150432829,
+"back": 0.0
+}
+},
+{
+"id": "cuteberet_35115__c193",
+"author": "CuteBeret-35115",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.021352844025343654,
+"left": 0.021352844025343654,
+"back": 0.0
+}
+},
+{
+"id": "cuteberet_35115__c194",
+"author": "CuteBeret-35115",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.068860157450428,
+"left": 0.068860157450428,
+"back": 0.0
+}
+},
+{
+"id": "cuteberet_35115__c195",
+"author": "CuteBeret-35115",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.06102282337439313,
+"left": 0.06102282337439313,
+"back": 0.0
+}
+},
+{
+"id": "cuteberet_35115__c196",
+"author": "CuteBeret-35115",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.03353334535609248,
+"left": 0.03353334535609248,
+"back": 0.0
+}
+},
+{
+"id": "cuteberet_35115__c197",
+"author": "CuteBeret-35115",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.05238575856332606,
+"left": 0.05238575856332606,
+"back": 0.0
+}
+},
+{
+"id": "cuteberet_35115__c198",
+"author": "CuteBeret-35115",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.04497362368323976,
+"left": 0.05994718840916147,
+"back": 0.0
+}
+},
+{
+"id": "cuteberet_35115__c199",
+"author": "CuteBeret-35115",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.06667117918129795,
+"left": 0.0424086602093231,
+"back": 0.0
+}
+},
+{
+"id": "luny__c200",
+"author": "Luny",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.006697927117933378,
+"left": -0.006697927117933378,
+"back": 0.0
+}
+},
+{
+"id": "samsomn__c206",
+"author": "samsomn",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": 0.0
+}
+},
+{
+"id": "samsomn__c207",
+"author": "samsomn",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.028893393284637248,
+"right": 0.003095206236173098,
+"left": -0.12123098415981914,
+"back": 0.0
+}
+},
+{
+"id": "kailey__c208",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.03712471751331614,
+"right": 0.0145356437558537,
+"left": -0.0145356437558537,
+"back": -0.004019648839093448
+}
+},
+{
+"id": "kailey__c209",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.04195842706878872,
+"right": 0.019920745253367067,
+"left": -0.019920745253367067,
+"back": -0.004394712794521416
+}
+},
+{
+"id": "kailey__c210",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.002957623109161367,
+"right": 0.02256170903270527,
+"left": -0.02128115484743187,
+"back": -0.014899372705133085
+}
+},
+{
+"id": "kailey__c211",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.009120256227721946,
+"right": 0.03443928049165046,
+"left": -0.0335458002623612,
+"back": -0.012346140587878307
+}
+},
+{
+"id": "kailey__c212",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.002238661351340876,
+"left": -0.002238661351340876,
+"back": -0.0002528163764730085
+}
+},
+{
+"id": "kailey__c213",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.005035723922036883,
+"left": -0.005035723922036883,
+"back": -0.000928337003326285
+}
+},
+{
+"id": "kailey__c214",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0011911320076852805,
+"right": 0.003236108176209229,
+"left": -0.003236108176209229,
+"back": 0.00296677116639954
+}
+},
+{
+"id": "kailey__c215",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.005269929004809382,
+"right": 0.0011268794319824194,
+"left": -0.0011268794319824194,
+"back": 0.027508600080119905
+}
+},
+{
+"id": "kailey__c216",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0686178902163791,
+"right": 0.027405942733800037,
+"left": -0.09919928118629562,
+"back": -0.01044020409292823
+}
+},
+{
+"id": "kailey__c217",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.02309087666166776,
+"right": -0.0072390043412748906,
+"left": 0.0072390043412748906,
+"back": -0.03651187447351256
+}
+},
+{
+"id": "kailey__c218",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.021637714174940426,
+"right": -0.006843240483343838,
+"left": 0.007203718230983536,
+"back": -0.03177655024079884
+}
+},
+{
+"id": "kailey__c219",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0271134054844393,
+"right": -0.01263298195912077,
+"left": 0.007247828674366463,
+"back": -0.02756166140695404
+}
+},
+{
+"id": "kailey__c220",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.021860754185961784,
+"right": -0.007585843741620635,
+"left": 0.00718644911893096,
+"back": -0.036088079290226616
+}
+},
+{
+"id": "kailey__c221",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.028865965280758354,
+"right": -0.006434545675041425,
+"left": 0.0054121461870468845,
+"back": -0.04053107487867946
+}
+},
+{
+"id": "kailey__c222",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.02376703518310963,
+"right": -0.0060015442024148324,
+"left": 0.006482802029254997,
+"back": -0.03794335957096728
+}
+},
+{
+"id": "kailey__c223",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.02479632453831082,
+"right": -0.008002790983841046,
+"left": 0.006938724054803447,
+"back": -0.027510155320901286
+}
+},
+{
+"id": "kailey__c224",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0911861651299658,
+"right": 0.08030708575164747,
+"left": -0.07912091168410473,
+"back": 0.12456442085691721
+}
+},
+{
+"id": "kailey__c225",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.03643972403270823,
+"right": 0.03732243985235323,
+"left": -0.03732243985235323,
+"back": 0.04905164300702208
+}
+},
+{
+"id": "kailey__c226",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.03637269586188652,
+"right": 0.05017440363726855,
+"left": -0.050305021305682374,
+"back": 0.05464227641044517
+}
+},
+{
+"id": "kailey__c227",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.07963620760687884,
+"right": 0.04559138732707391,
+"left": -0.045422983017994856,
+"back": 0.09363503673566231
+}
+},
+{
+"id": "kailey__c228",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.07395473488968018,
+"right": 0.03541407756466486,
+"left": -0.03541407756466486,
+"back": 0.0669228297111496
+}
+},
+{
+"id": "kailey__c229",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.08507630188059867,
+"right": -0.10777570473534798,
+"left": 0.08077071836528393,
+"back": 0.02994062833351302
+}
+},
+{
+"id": "kailey__c230",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.03195088074375063,
+"right": -0.01257701173203346,
+"left": 0.01257701173203346,
+"back": -0.005637950048326734
+}
+},
+{
+"id": "marmuruah__c237",
+"author": "marmuruah",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.09573833792700209,
+"right": -0.10431870218196904,
+"left": -0.10807198350967989,
+"back": -0.09026757575974487
+}
+},
+{
+"id": "marmuruah__c238",
+"author": "marmuruah",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.04440525443423152,
+"right": -0.04524308942355662,
+"left": -0.04524308942355662,
+"back": -0.03805894665680523
+}
+},
+{
+"id": "mok_tinora__c239",
+"author": "mok&Tinora",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.010480655828728702,
+"right": -0.20405845916902426,
+"left": 0.22723350168676665,
+"back": 0.0
+}
+},
+{
+"id": "mok_tinora__c240",
+"author": "mok&Tinora",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.004920300705334391,
+"right": -0.0702928998174231,
+"left": 0.0835351883462635,
+"back": -0.014593401536022621
+}
+},
+{
+"id": "mok_tinora__c241",
+"author": "mok&Tinora",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.062102435954974444,
+"right": -0.12607283932956417,
+"left": 0.11819237784922992,
+"back": -0.02413075421541655
+}
+},
+{
+"id": "mok_tinora__c242",
+"author": "mok&Tinora",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0007020493015355012,
+"right": -0.025477354236630556,
+"left": 0.025477354236630556,
+"back": 0.00854658519146878
+}
+},
+{
+"id": "plurffle__c243",
+"author": "plurffle",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0,
+"right": -0.05101020239114196,
+"left": 0.05101020239114196,
+"back": -0.0015805713635221874
+}
+},
+{
+"id": "lovisity__c244",
+"author": "lovisity",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.0019089686201951839,
+"right": 0.0017083648973356125,
+"left": -0.0017083648973356125,
+"back": 0.0
+}
+},
+{
+"id": "lovisity__c245",
+"author": "lovisity",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.011517502797868118,
+"right": 0.04038154122809223,
+"left": -0.04038154122809223,
+"back": 0.025683567960172904
+}
+},
+{
+"id": "lovisity__c246",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.04114931118978293,
+"right": -0.05676829045305609,
+"left": 0.05676829045305609,
+"back": -0.0082762860745198
+}
+},
+{
+"id": "lovisity__c249",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.12572839948652587,
+"right": 0.08371339499503838,
+"left": -0.08385637805666091,
+"back": 0.04356595850107925
+}
+},
+{
+"id": "lovisity__c250",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0013155381764871077,
+"right": -0.09707388105395026,
+"left": 0.1135508870446692,
+"back": 0.030018321181933483
+}
+},
+{
+"id": "lovisity__c251",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.06360459770004889,
+"left": -0.06360459770004889,
+"back": 0.0
+}
+},
+{
+"id": "lovisity__c252",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.10457102624184045,
+"right": 0.04526977863975723,
+"left": 0.09868487114463154,
+"back": -0.03396006294712928
+}
+},
+{
+"id": "lovisity__c253",
+"author": "lovisity",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.026120923576810562,
+"right": -0.1298594257834102,
+"left": 0.1298594257834102,
+"back": 0.041625115754990616
+}
+},
+{
+"id": "lovisity__c254",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.09988316391632546,
+"right": -0.09341266895729439,
+"left": 0.06429124980724887,
+"back": -0.10726611895479687
+}
+},
+{
+"id": "lovisity__c255",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.039518442189165226,
+"right": -0.03582238367270657,
+"left": 0.03582238367270657,
+"back": 0.042725757207366544
+}
+},
+{
+"id": "lovisity__c256",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0077085411218313915,
+"right": -0.004282981224493054,
+"left": 0.004282981224493054,
+"back": -0.009124460054013461
+}
+},
+{
+"id": "lovisity__c257",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.02834873523094983,
+"left": 0.02834873523094983,
+"back": 0.006211261738487295
+}
+},
+{
+"id": "lovisity__c258",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.027251697590536694,
+"left": 0.027251697590536694,
+"back": 0.00946896523787727
+}
+},
+{
+"id": "lovisity__c259",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0800018998197568,
+"right": -0.07961730848677184,
+"left": 0.07961730848677184,
+"back": -0.0800018998197568
+}
+},
+{
+"id": "lovisity__c260",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.026147014970600346,
+"right": -0.13536184481452318,
+"left": 0.13536184481452318,
+"back": 0.05967102597174789
+}
+},
+{
+"id": "lovisity__c261",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.09034413246143358,
+"right": -0.11316098987193979,
+"left": 0.11736778283915561,
+"back": -0.0901569796800551
+}
+},
+{
+"id": "lovisity__c262",
+"author": "lovisity",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.05220180875524982,
+"right": -0.05167958947441731,
+"left": 0.05167958947441731,
+"back": 0.008558237133713176
+}
+},
+{
+"id": "lovisity__c263",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.01290803245170924,
+"right": -0.003517201828657557,
+"left": 0.003517201828657557,
+"back": 0.009335154381561628
+}
+},
+{
+"id": "lovisity__c264",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.07209733216845604,
+"right": 0.10040680511442279,
+"left": -0.021017309188478883,
+"back": -0.04653240145535831
+}
+},
+{
+"id": "lovisity__c265",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.01412471163035045,
+"right": -0.09789449082311674,
+"left": 0.09789449082311674,
+"back": -0.01412471163035045
+}
+},
+{
+"id": "lovisity__c266",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.07185231987276319,
+"right": -0.07662348545443104,
+"left": 0.07662348545443104,
+"back": -0.07192207275482548
+}
+},
+{
+"id": "lovisity__c267",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.04935295895134373,
+"right": 0.022111941468359708,
+"left": -0.022111941468359708,
+"back": 0.0609447465791062
+}
+},
+{
+"id": "lovisity__c268",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.08442475167805052,
+"left": 0.08442475167805052,
+"back": 0.015040620838571828
+}
+},
+{
+"id": "lovisity__c269",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.06982898460913994,
+"left": 0.06982898460913994,
+"back": 0.0
+}
+},
+{
+"id": "lovisity__c270",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.04044038991940968,
+"left": 0.029669819776964035,
+"back": 0.0
+}
+},
+{
+"id": "lovisity__c271",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.03309619586535162,
+"left": -0.03309619586535162,
+"back": 0.0
+}
+},
+{
+"id": "lovisity__c272",
+"author": "lovisity",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.008107582387459122,
+"right": -0.023221636373605636,
+"left": 0.023221636373605636,
+"back": -0.008107582387459122
+}
+},
+{
+"id": "lovisity__c273",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.004936856458995886,
+"right": -0.09684779168631841,
+"left": 0.09684779168631841,
+"back": 0.004936856458995886
+}
+},
+{
+"id": "lovisity__c274",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.007590303499894757,
+"right": -0.10689642157158319,
+"left": 0.10689642157158319,
+"back": 0.007590303499894646
+}
+},
+{
+"id": "lovisity__c275",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.02987879344306088,
+"left": -0.02987879344306088,
+"back": 0.0
+}
+},
+{
+"id": "lovisity__c276",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.006653846355717974,
+"right": -0.04198996073356409,
+"left": 0.013302379756122251,
+"back": 0.006653846355717974
+}
+},
+{
+"id": "lovisity__c277",
+"author": "lovisity",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.001919724384557342,
+"right": 0.011526139125433432,
+"left": -0.011526139125433432,
+"back": -0.001919724384557342
+}
+},
+{
+"id": "lovisity__c278",
+"author": "lovisity",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.020183258475508503,
+"left": 0.020183258475508503,
+"back": 0.0
+}
+},
+{
+"id": "lovisity__c279",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.11808864351345416,
+"right": -0.09785079186930001,
+"left": 0.0772664602127125,
+"back": 0.01113351392567652
+}
+},
+{
+"id": "lovisity__c280",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.024588153402981927,
+"right": -0.05213704278138598,
+"left": 0.08353376125416057,
+"back": -0.106029298603604
+}
+},
+{
+"id": "lovisity__c281",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.004505702667278344,
+"right": 0.02600906313909712,
+"left": -0.010813777350774045,
+"back": 0.00853293200595695
+}
+},
+{
+"id": "lovisity__c282",
+"author": "lovisity",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.028474629201943213,
+"right": 0.0045766217390064146,
+"left": 0.013095822709032201,
+"back": -0.015277256273375395
+}
+},
+{
+"id": "lovisity__c283",
+"author": "lovisity",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.04658439145873661,
+"right": -0.06463742345798573,
+"left": 0.06463742345798573,
+"back": 0.051388809770587796
+}
+},
+{
+"id": "kailey__c284",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.040763295348699186,
+"right": -0.05633158893444176,
+"left": 0.05633158893444176,
+"back": -0.007306589886416248
+}
+},
+{
+"id": "kailey__c285",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.09152097811262233,
+"right": -0.1264262560714436,
+"left": 0.1264262560714436,
+"back": -0.0165275884406062
+}
+},
+{
+"id": "kailey__c286",
+"author": "Kailey",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.05971982339972176,
+"right": -0.06949121131852515,
+"left": 0.07156560549096419,
+"back": 0.005765891777185228
+}
+},
+{
+"id": "seyph__c287",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.001957140101544963,
+"right": -0.13551528336430035,
+"left": 0.13551528336430035,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c288",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.08597395577809502,
+"left": 0.08597395577809502,
+"back": -0.0016186243588610094
+}
+},
+{
+"id": "seyph__c289",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.16508503567905813,
+"right": -0.104308650445361,
+"left": -0.03783763180757921,
+"back": -0.06763861665375642
+}
+},
+{
+"id": "seyph__c290",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.0034868658201889224,
+"left": 0.0034868658201889224,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c291",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.04293239616260236,
+"right": -0.013124809322329734,
+"left": 0.017201081526205364,
+"back": -0.03865391476052371
+}
+},
+{
+"id": "seyph__c292",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.21481096176115705,
+"right": 0.24418814589105398,
+"left": -0.24418814589105398,
+"back": 0.14316403871554811
+}
+},
+{
+"id": "seyph__c293",
+"author": "Seyph",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.006968358557562615,
+"right": 0.041196146435614645,
+"left": -0.041196146435614645,
+"back": -0.007131410499953139
+}
+},
+{
+"id": "seyph__c294",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.0005481936693514378,
+"left": -0.0005481936693514378,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c295",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0018640377812530473,
+"right": -0.012817459989362123,
+"left": 0.010029910956119492,
+"back": -0.008046563708022203
+}
+},
+{
+"id": "seyph__c296",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.028780383981075186,
+"right": -0.08166542247997671,
+"left": 0.0764480312598162,
+"back": 0.00955103819889036
+}
+},
+{
+"id": "seyph__c297",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.004813650639697631,
+"right": 0.20691694837406593,
+"left": -0.20691694837406593,
+"back": 0.0007918567300559953
+}
+},
+{
+"id": "seyph__c298",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.017183292967743402,
+"right": 0.06986668839099353,
+"left": -0.08094036608131705,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c302",
+"author": "Seyph",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.004469787189826935,
+"right": -0.0173037874040054,
+"left": 0.0173037874040054,
+"back": 0.0023646811010131774
+}
+},
+{
+"id": "seyph__c303",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.005903186402041072,
+"right": -0.043694400511710085,
+"left": 0.043694400511710085,
+"back": -0.02441942359933369
+}
+},
+{
+"id": "seyph__c304",
+"author": "Seyph",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.08054818680757625,
+"right": 0.03999580859722762,
+"left": -0.03999580859722762,
+"back": -0.020197593835855954
+}
+},
+{
+"id": "seyph__c305",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.06061580561048008,
+"left": 0.06061580561048008,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c306",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.0,
+"left": 0.0,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c307",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.009878533614220752,
+"right": 0.01634873311567342,
+"left": -0.019958896835883366,
+"back": 0.006727819115186162
+}
+},
+{
+"id": "seyph__c308",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.005992752433373605,
+"right": 0.2136284128149838,
+"left": -0.2136284128149838,
+"back": 0.005992752433373605
+}
+},
+{
+"id": "seyph__c309",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.25187160857634283,
+"right": -0.3319432059305213,
+"left": 0.3319432059305213,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c310",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.016899189889778676,
+"right": -0.055746284542596614,
+"left": 0.06947814327840801,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c311",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": null
+}
+},
+{
+"id": "seyph__c312",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.05054602987795653,
+"right": 0.052468981293764094,
+"left": -0.052468981293764094,
+"back": 0.09512689241597194
+}
+},
+{
+"id": "seyph__c313",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.013462091710066182,
+"right": 0.013462091710066182,
+"left": -0.013462091710066182,
+"back": -0.013462091710066182
+}
+},
+{
+"id": "seyph__c314",
+"author": "Seyph",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.042969291974442325,
+"right": -0.036241468014924116,
+"left": 0.036241468014924116,
+"back": -0.06542886389179525
+}
+},
+{
+"id": "seyph__c315",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.00807416173921549,
+"right": -0.24564999534496046,
+"left": 0.24564999534496046,
+"back": -0.0010581326528560364
+}
+},
+{
+"id": "seyph__c317",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.005350900306955064,
+"right": 0.06701358633464216,
+"left": -0.060656465040387464,
+"back": -0.005236496037481331
+}
+},
+{
+"id": "seyph__c318",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.00022896949117412468,
+"right": 0.026314726866914384,
+"left": -0.026314726866914384,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c319",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.12265251394929144,
+"left": -0.02960150523860061,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c320",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.03063190834568086,
+"left": -0.03063190834568086,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c321",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": null
+}
+},
+{
+"id": "seyph__c322",
+"author": "Seyph",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.10638466605458907,
+"left": 0.10638466605458907,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c323",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.040311698806343776,
+"left": 0.022001323741948853,
+"back": -0.029976440074718447
+}
+},
+{
+"id": "seyph__c324",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0023979829525691554,
+"right": -0.06105775942127972,
+"left": 0.057344346396735635,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c325",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0033706903907355645,
+"right": -0.053271013100736564,
+"left": 0.053271013100736564,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c326",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.000423315755897824,
+"right": -0.09964313276790171,
+"left": 0.09964313276790171,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c327",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.003035317401849258,
+"right": 0.006266001362271845,
+"left": -0.012228231973047232,
+"back": -0.003035317401849258
+}
+},
+{
+"id": "concernedape__c328",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.042891294864941365,
+"right": 0.02076488160329859,
+"left": -0.02076488160329859,
+"back": 0.03310060230359807
+}
+},
+{
+"id": "concernedape__c329",
+"author": "ConcernedApe",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.014713777257745697,
+"left": 0.014713777257745697,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c330",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0055191383088917245,
+"right": -0.006129190026683551,
+"left": 0.006129190026683551,
+"back": -0.005068596406125114
+}
+},
+{
+"id": "concernedape__c331",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.000209800080461231,
+"right": -0.0868692531203118,
+"left": 0.0868692531203118,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c332",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.018232267084406006,
+"right": -0.08462278087851072,
+"left": 0.08462278087851072,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c333",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.03957041784727244,
+"right": -0.10532305366490002,
+"left": 0.10532305366490002,
+"back": -0.016669646088857792
+}
+},
+{
+"id": "concernedape__c334",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0893331884156639,
+"right": -0.036956166631570586,
+"left": 0.036956166631570586,
+"back": -0.06635132809884314
+}
+},
+{
+"id": "concernedape__c335",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.008203903061378692,
+"right": -0.042105806969036874,
+"left": 0.039596582978433215,
+"back": -0.02329519852253914
+}
+},
+{
+"id": "concernedape__c336",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.03430189837429032,
+"right": 0.030255995786029,
+"left": -0.030255995786029,
+"back": -0.026733027616349103
+}
+},
+{
+"id": "concernedape__c337",
+"author": "ConcernedApe",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.09369957145868613,
+"left": -0.09369957145868613,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c338",
+"author": "ConcernedApe",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.08942038563662069,
+"right": -0.09266229402934545,
+"left": 0.09266229402934545,
+"back": -0.16134507909800022
+}
+},
+{
+"id": "concernedape__c339",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.01059282911835896,
+"right": -0.14237784705696255,
+"left": 0.14237784705696255,
+"back": -0.11397067458253596
+}
+},
+{
+"id": "concernedape__c340",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.005772623583183534,
+"right": -0.07640440079657884,
+"left": 0.07640440079657884,
+"back": 0.013389363642886454
+}
+},
+{
+"id": "concernedape__c341",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.06071832335178151,
+"right": -0.015930247965298405,
+"left": -0.001293483149588881,
+"back": -0.023991111259824005
+}
+},
+{
+"id": "concernedape__c342",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.03469036391076746,
+"right": 0.030986732361204805,
+"left": -0.030986732361204805,
+"back": 0.0061859627431979924
+}
+},
+{
+"id": "concernedape__c343",
+"author": "ConcernedApe",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.02427430816228604,
+"left": 0.02427430816228604,
+"back": -0.0015649936189489067
+}
+},
+{
+"id": "concernedape__c344",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.005227795394522339,
+"right": -0.03871846992097072,
+"left": 0.03871846992097072,
+"back": -0.009927665475690572
+}
+},
+{
+"id": "concernedape__c345",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.02536868452861052,
+"right": -0.0865076578472197,
+"left": -0.012852928059066127,
+"back": -0.03826458399731281
+}
+},
+{
+"id": "concernedape__c346",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.034829767092526165,
+"right": -0.10016569163382638,
+"left": -0.02717011559872262,
+"back": -0.04764102508297674
+}
+},
+{
+"id": "concernedape__c347",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.04538043469756431,
+"right": 0.0028319626757514205,
+"left": -0.0411486067457556,
+"back": -0.03712834442401003
+}
+},
+{
+"id": "concernedape__c348",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.05359960784105566,
+"right": -0.05528248760736321,
+"left": -0.03501817908441862,
+"back": -0.07273279352923956
+}
+},
+{
+"id": "concernedape__c349",
+"author": "ConcernedApe",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.0027043800397122397,
+"right": -0.09220074317366972,
+"left": 0.09220074317366972,
+"back": -0.03337221026868342
+}
+},
+{
+"id": "concernedape__c350",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.013549495725525551,
+"right": -0.046835623005190286,
+"left": 0.006538272089302688,
+"back": -0.01524434342005243
+}
+},
+{
+"id": "concernedape__c351",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.014300432872731084,
+"right": -0.10424234402695254,
+"left": 0.10424234402695254,
+"back": -0.008071564662206432
+}
+},
+{
+"id": "concernedape__c352",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.003524682106310739,
+"right": 0.0444170895189937,
+"left": -0.058149727671842455,
+"back": -0.017373420833883713
+}
+},
+{
+"id": "concernedape__c353",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.011624304393652252,
+"right": -0.0334023277697032,
+"left": -0.004192626157241475,
+"back": -0.00990231804274444
+}
+},
+{
+"id": "concernedape__c354",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.013092637202244628,
+"right": -0.1904125914285556,
+"left": 0.1904125914285556,
+"back": -0.01664561338031323
+}
+},
+{
+"id": "concernedape__c355",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.06022509009321653,
+"right": -0.15931598829904536,
+"left": 0.1611594177857969,
+"back": 0.05364957868702458
+}
+},
+{
+"id": "concernedape__c356",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 8.34955873163512e-06,
+"right": -0.001543838716594359,
+"left": 0.001543838716594359,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c357",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0185534621468898,
+"right": -0.018174268301912322,
+"left": -0.0161449588928122,
+"back": -0.019233915992078965
+}
+},
+{
+"id": "concernedape__c358",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.11929481289791788,
+"right": -0.11929481289791788,
+"left": -0.11929481289791788,
+"back": -0.10935539579579129
+}
+},
+{
+"id": "concernedape__c359",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.20616748575723032,
+"right": -0.20616748575723032,
+"left": -0.20616748575723032,
+"back": -0.19849738535653605
+}
+},
+{
+"id": "concernedape__c360",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.18358719985787197,
+"right": -0.18358719985787197,
+"left": -0.18358719985787197,
+"back": -0.1710784511229747
+}
+},
+{
+"id": "concernedape__c361",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.21765868802414756,
+"right": -0.21765868802414756,
+"left": -0.21765868802414756,
+"back": -0.20854663250999594
+}
+},
+{
+"id": "concernedape__c362",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0,
+"right": 0.03164536894789172,
+"left": -0.03164536894789172,
+"back": -0.023064986617199468
+}
+},
+{
+"id": "concernedape__c363",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.005300184860295265,
+"right": 0.15795055680181913,
+"left": -0.15446200698773516,
+"back": -0.040168189604437465
+}
+},
+{
+"id": "seyph__c364",
+"author": "ConcernedApe",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.11476947301624796,
+"right": -0.1301974230551678,
+"left": 0.1301974230551678,
+"back": -0.11936522556734519
+}
+},
+{
+"id": "seyph__c365",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.01082623807978772,
+"right": -0.03595138559168476,
+"left": 0.14880201724090336,
+"back": -0.05065329346234787
+}
+},
+{
+"id": "seyph__c366",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0020359509696500355,
+"right": 0.12992720366938915,
+"left": -0.11951227897982208,
+"back": 0.0020359509696500355
+}
+},
+{
+"id": "seyph__c367",
+"author": "ConcernedApe",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.07937958857765182,
+"left": -0.07937958857765182,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c368",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.03455900557992592,
+"right": -0.04259214437459563,
+"left": -0.0036095222692393847,
+"back": -0.028554451165765327
+}
+},
+{
+"id": "seyph__c369",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.01490280618006895,
+"right": -0.06633041249634403,
+"left": 0.06633041249634403,
+"back": -0.021250227062016513
+}
+},
+{
+"id": "seyph__c370",
+"author": "ConcernedApe",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.007404893679089974,
+"right": -0.04304688135397272,
+"left": 0.04304688135397272,
+"back": 0.003964660639887541
+}
+},
+{
+"id": "seyph__c371",
+"author": "ConcernedApe",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.01216644482530893,
+"right": 0.008226338423542312,
+"left": -0.008226338423542312,
+"back": -0.01216644482530893
+}
+},
+{
+"id": "seyph__c372",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0,
+"right": -0.1342141902553416,
+"left": 0.1342141902553416,
+"back": 0.0
+}
+},
+{
+"id": "seyph__c373",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.03379277193304159,
+"right": -0.04485537003455481,
+"left": 0.06762704768942651,
+"back": -0.07357800099792611
+}
+},
+{
+"id": "seyph__c374",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0016759312147374694,
+"right": 0.01888909901365987,
+"left": -0.030008037743370797,
+"back": 0.002287886531810668
+}
+},
+{
+"id": "seyph__c375",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.004998853375858148,
+"right": -0.0063312102137413895,
+"left": -0.0028056228884190126,
+"back": 0.008806940083122772
+}
+},
+{
+"id": "seyph__c377",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.05057341234768464,
+"right": -0.04861818021282327,
+"left": 0.01607701732858624,
+"back": -0.021701473620343914
+}
+},
+{
+"id": "seyph__c378",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.11988238642784627,
+"left": 0.11988238642784627,
+"back": -0.007012017947193083
+}
+},
+{
+"id": "seyph__c379",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0006315116278328148,
+"right": 0.10444839511345816,
+"left": -0.10074822430641361,
+"back": 0.00033296962753393
+}
+},
+{
+"id": "seyph__c380",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.042064353909906815,
+"right": -0.10675701472002697,
+"left": 0.10907895124970757,
+"back": -0.0484433143554166
+}
+},
+{
+"id": "coii__c381",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.040446510866474716,
+"right": -0.033085338237376694,
+"left": 0.033595157211144255,
+"back": 0.0031584722178791824
+}
+},
+{
+"id": "coii__c382",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.045842394848118584,
+"left": 0.045842394848118584,
+"back": 0.0
+}
+},
+{
+"id": "coii__c383",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.019603894260890195,
+"right": null,
+"left": -0.103000575418507,
+"back": -0.019603894260890195
+}
+},
+{
+"id": "coii__c384",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.06448615342561181,
+"left": -0.06448615342561181,
+"back": -0.018465159787349417
+}
+},
+{
+"id": "coii__c385",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0008246359814212401,
+"right": 0.01985967487341045,
+"left": -0.01985967487341045,
+"back": 0.001190227791652676
+}
+},
+{
+"id": "coii__c386",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.1515747202672003,
+"left": 0.1515747202672003,
+"back": 0.0
+}
+},
+{
+"id": "coii__c387",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.030395078208285353,
+"right": -0.05999872929448913,
+"left": 0.07979457726249073,
+"back": -0.028653817040314222
+}
+},
+{
+"id": "coii__c388",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.01594756942292619,
+"right": 0.019552641843120333,
+"left": -0.019552641843120333,
+"back": -0.009501564607526158
+}
+},
+{
+"id": "coii__c389",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.23728890202947386,
+"left": 0.23728890202947386,
+"back": 0.0
+}
+},
+{
+"id": "coii__c390",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.49405142094829385,
+"left": 0.49405142094829385,
+"back": 0.0
+}
+},
+{
+"id": "coii__c391",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.015421800370237326,
+"right": -0.03838100078533879,
+"left": 0.03838100078533879,
+"back": -0.04937621156027294
+}
+},
+{
+"id": "coii__c392",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.025743320911988832,
+"left": 0.025743320911988832,
+"back": 0.0
+}
+},
+{
+"id": "coii__c394",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": null
+}
+},
+{
+"id": "coii__c395",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.03725737491725922,
+"right": null,
+"left": -0.058838068529410426,
+"back": null
+}
+},
+{
+"id": "coii__c396",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.005849960226814499,
+"left": 0.005849960226814499,
+"back": 0.0
+}
+},
+{
+"id": "coii__c397",
+"author": "Coii",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.025124790271412123,
+"left": -0.025124790271412123,
+"back": 0.0
+}
+},
+{
+"id": "coii__c398",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.05342678245523613,
+"left": -0.05342678245523613,
+"back": 0.0
+}
+},
+{
+"id": "coii__c399",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.025352703358858586,
+"right": 0.040011204143985846,
+"left": -0.03987067412795034,
+"back": 0.029680641587414458
+}
+},
+{
+"id": "coii__c400",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.03911128813817152,
+"left": 0.03911128813817152,
+"back": 0.0
+}
+},
+{
+"id": "coii__c401",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.006592164151998259,
+"right": 0.019216115638682196,
+"left": -0.019216115638682196,
+"back": -0.0018002904939197206
+}
+},
+{
+"id": "coii__c402",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.0038731727832283097,
+"left": 0.0038731727832283097,
+"back": 0.0
+}
+},
+{
+"id": "coii__c403",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": null
+}
+},
+{
+"id": "coii__c404",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.15991575491757326,
+"left": 0.15991575491757326,
+"back": 0.002520033621085771
+}
+},
+{
+"id": "coii__c405",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": null,
+"left": null,
+"back": null
+}
+},
+{
+"id": "coii__c406",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.022533361388614392,
+"left": -0.022533361388614392,
+"back": 0.0
+}
+},
+{
+"id": "coii__c407",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.007831602266111126,
+"right": null,
+"left": -0.004388078627151626,
+"back": -0.007831602266111126
+}
+},
+{
+"id": "coii__c410",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": null,
+"left": null,
+"back": 0.0
+}
+},
+{
+"id": "coii__c411",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": null
+}
+},
+{
+"id": "coii__c412",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.018485094196066476,
+"right": 0.0003116201845476674,
+"left": 0.02385986676231322,
+"back": -0.0007247675439946422
+}
+},
+{
+"id": "coii__c413",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.03997117740154166,
+"left": -0.03997117740154166,
+"back": 0.0
+}
+},
+{
+"id": "coii__c414",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.0003520222669161077,
+"left": 0.0003520222669161077,
+"back": -7.765729972797342e-05
+}
+},
+{
+"id": "coii__c415",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.01983865064313073,
+"left": -0.01983865064313073,
+"back": 0.0
+}
+},
+{
+"id": "coii__c416",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.04646110375168533,
+"left": 0.04646110375168533,
+"back": 0.0
+}
+},
+{
+"id": "coii__c417",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.1515747202672003,
+"left": 0.1515747202672003,
+"back": 0.0
+}
+},
+{
+"id": "coii__c418",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.051210132288508015,
+"left": -0.051210132288508015,
+"back": 0.0
+}
+},
+{
+"id": "coii__c419",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.040446510866474716,
+"right": -0.033085338237376694,
+"left": 0.04824073313378291,
+"back": 0.0031584722178791824
+}
+},
+{
+"id": "coii__c420",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.019603894260890195,
+"right": null,
+"left": -0.103000575418507,
+"back": -0.019603894260890195
+}
+},
+{
+"id": "coii__c421",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.06328265626926333,
+"left": -0.06328265626926333,
+"back": -0.018465159787349417
+}
+},
+{
+"id": "coii__c422",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0008246359814212401,
+"right": 0.018291685059538043,
+"left": -0.018291685059538043,
+"back": 0.001190227791652676
+}
+},
+{
+"id": "coii__c423",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.030395078208285353,
+"right": -0.05999872929448913,
+"left": 0.07979457726249073,
+"back": -0.028653817040314222
+}
+},
+{
+"id": "coii__c424",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.24249409055612134,
+"left": 0.24249409055612134,
+"back": 0.0
+}
+},
+{
+"id": "coii__c425",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.015421800370237326,
+"right": -0.04118725328902695,
+"left": 0.04118725328902695,
+"back": -0.04937621156027294
+}
+},
+{
+"id": "coii__c426",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.1571422089714212,
+"right": 0.015682716359549653,
+"left": -0.08527186649317536,
+"back": 0.09673916603656457
+}
+},
+{
+"id": "coii__c427",
+"author": "Coii",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.022554555888033005,
+"left": 0.022554555888033005,
+"back": 0.0
+}
+},
+{
+"id": "coii__c428",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.006592164151998259,
+"right": 0.019216115638682196,
+"left": -0.019216115638682196,
+"back": -0.0018355903075258917
+}
+},
+{
+"id": "coii__c429",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.028707045334515666,
+"left": -0.028707045334515666,
+"back": 0.0
+}
+},
+{
+"id": "coii__c430",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.18459533630538527,
+"left": 0.18459533630538527,
+"back": 0.002520033621085771
+}
+},
+{
+"id": "coii__c431",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.022533361388614392,
+"left": -0.022533361388614392,
+"back": 0.0
+}
+},
+{
+"id": "coii__c432",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.007831602266111126,
+"right": null,
+"left": -0.004388078627151626,
+"back": -0.007831602266111126
+}
+},
+{
+"id": "coii__c433",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.022941826976470514,
+"right": 0.0003116201845476674,
+"left": 0.02385986676231322,
+"back": -0.0007777993155064777
+}
+},
+{
+"id": "coii__c434",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.03997117740154166,
+"left": -0.03997117740154166,
+"back": 0.0
+}
+},
+{
+"id": "coii__c435",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.0036409049966092955,
+"left": -0.0036409049966092955,
+"back": -7.765729972797342e-05
+}
+},
+{
+"id": "coii__c436",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.013263327347329601,
+"left": -0.013263327347329601,
+"back": 0.0
+}
+},
+{
+"id": "coii__c437",
+"author": "Coii",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.04646110375168533,
+"left": 0.04646110375168533,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c438",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.002551971681745646,
+"right": -0.03786167074983854,
+"left": 0.03746407557883463,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c439",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.015539107508532268,
+"right": -0.010473273462736105,
+"left": 0.010473273462736105,
+"back": -0.03193085652880695
+}
+},
+{
+"id": "concernedape__c440",
+"author": "ConcernedApe",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.052286186561348036,
+"right": -0.079803982605155,
+"left": 0.079803982605155,
+"back": -0.053604590192005946
+}
+},
+{
+"id": "concernedape__c441",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.09271412247710714,
+"right": -0.22027659481082262,
+"left": 0.20571694748053954,
+"back": -0.09929837866329444
+}
+},
+{
+"id": "concernedape__c442",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.012152708418290858,
+"right": -0.011144535144549272,
+"left": -0.007680346603007426,
+"back": -0.010344728633666866
+}
+},
+{
+"id": "concernedape__c443",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.04293239616260236,
+"right": -0.013124809322329734,
+"left": 0.017201081526205364,
+"back": -0.03865391476052371
+}
+},
+{
+"id": "concernedape__c444",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.049411277862506264,
+"right": -0.14212930754643233,
+"left": 0.14212930754643233,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c445",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.011721901933816059,
+"right": 0.05339756702255605,
+"left": -0.05339756702255605,
+"back": -0.014312643039854411
+}
+},
+{
+"id": "concernedape__c446",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.06816444164204893,
+"right": -0.04991036742415439,
+"left": 0.005401062914058452,
+"back": -0.03477301193284926
+}
+},
+{
+"id": "concernedape__c447",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.056661426639636026,
+"right": -0.1187339649716933,
+"left": 0.1187339649716933,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c448",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.010730107640918418,
+"right": -0.2080664272776,
+"left": 0.2080664272776,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c449",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.013355896313629545,
+"right": -0.025358969434755907,
+"left": 0.025358969434755907,
+"back": -0.035120757855430784
+}
+},
+{
+"id": "concernedape__c450",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.02268524232729785,
+"right": 0.002271727059252382,
+"left": -0.08867264472187475,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c451",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": null
+}
+},
+{
+"id": "concernedape__c452",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": null
+}
+},
+{
+"id": "concernedape__c453",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": -0.025845006980935337,
+"left": 0.025845006980935337,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c454",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.03385245706571327,
+"right": -0.1277818046146102,
+"left": 0.1277818046146102,
+"back": -0.043910668181419976
+}
+},
+{
+"id": "concernedape__c455",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.11602852678182585,
+"right": -0.06657981132914148,
+"left": 0.060205658149457775,
+"back": -0.0323999900762324
+}
+},
+{
+"id": "concernedape__c456",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.06375724186893539,
+"right": -0.10807122379356154,
+"left": 0.10807122379356154,
+"back": -0.04096524878572161
+}
+},
+{
+"id": "concernedape__c457",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.011357634260146243,
+"right": -0.04055961557038662,
+"left": 0.03439177888924433,
+"back": -0.021396584487382075
+}
+},
+{
+"id": "concernedape__c458",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.07871202903953356,
+"right": -0.10905731947710051,
+"left": -0.04917570953263051,
+"back": -0.05393890775047361
+}
+},
+{
+"id": "concernedape__c459",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.005823944743363452,
+"right": 0.20571811813941643,
+"left": -0.20571811813941643,
+"back": -0.005823944743363452
+}
+},
+{
+"id": "concernedape__c460",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.004315553679980877,
+"right": 0.12746927237721684,
+"left": -0.14660230104711824,
+"back": 0.008964459868742836
+}
+},
+{
+"id": "concernedape__c461",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.016899189889778676,
+"right": -0.055746284542596614,
+"left": 0.06947814327840801,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c462",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": null
+}
+},
+{
+"id": "concernedape__c463",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.010319086609383854,
+"right": -0.06249567279528451,
+"left": 0.018962646833095675,
+"back": -0.051541563327455464
+}
+},
+{
+"id": "concernedape__c464",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": null
+}
+},
+{
+"id": "concernedape__c465",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.04061807266674955,
+"right": -0.03407073236187519,
+"left": 0.03407073236187519,
+"back": -0.059870810014282294
+}
+},
+{
+"id": "concernedape__c466",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.010211439846654957,
+"right": -0.04867321156181459,
+"left": 0.04867321156181459,
+"back": -0.0012092944604069622
+}
+},
+{
+"id": "concernedape__c467",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": null
+}
+},
+{
+"id": "concernedape__c468",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": null
+}
+},
+{
+"id": "concernedape__c469",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.07300333279308013,
+"left": -0.07300333279308013,
+"back": 0.007713175125658334
+}
+},
+{
+"id": "concernedape__c470",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": true,
+"front_symmetric_90": true,
+"light": {
+"front": 0.0,
+"right": 0.12265251394929144,
+"left": -0.02960150523860061,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c471",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.003956619401949579,
+"right": 0.008862576894140273,
+"left": -0.07183248254423563,
+"back": -0.009970605264165155
+}
+},
+{
+"id": "concernedape__c472",
+"author": "ConcernedApe",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0031619898041413963,
+"right": -0.008092217209720587,
+"left": 0.008092217209720587,
+"back": -0.017179136890079216
+}
+},
+{
+"id": "concernedape__c473",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.045988310561066725,
+"right": -0.07090992580448957,
+"left": 0.031787301470877716,
+"back": -0.0252985799757936
+}
+},
+{
+"id": "concernedape__c474",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.0372829585954495,
+"right": -0.16206997768506803,
+"left": null,
+"back": 0.0372829585954495
+}
+},
+{
+"id": "concernedape__c475",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.05061247592739565,
+"right": -0.003130681111328082,
+"left": 0.003130681111328082,
+"back": -0.016792489400192123
+}
+},
+{
+"id": "concernedape__c476",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.05776466123803603,
+"right": -0.14404592819585021,
+"left": 0.14404592819585021,
+"back": -0.043736786582793785
+}
+},
+{
+"id": "concernedape__c477",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.03274238635882265,
+"right": -0.0812388085598108,
+"left": 0.0812388085598108,
+"back": -0.01722910431224889
+}
+},
+{
+"id": "concernedape__c478",
+"author": "ConcernedApe",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.026222620872547175,
+"right": -0.0027746502283588215,
+"left": 0.0027746502283588215,
+"back": -0.011131937354232846
+}
+},
+{
+"id": "concernedape__c479",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.005338527033741602,
+"right": 0.12464410059979453,
+"left": -0.10877125002278898,
+"back": 0.00891149517808909
+}
+},
+{
+"id": "concernedape__c480",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.0001900521381317244,
+"right": 0.12357008381127832,
+"left": -0.1163017693453795,
+"back": 0.0028152604673404857
+}
+},
+{
+"id": "concernedape__c481",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.0013431072010837708,
+"right": 0.059162650477879,
+"left": -0.059162650477879,
+"back": -0.0013431072010837708
+}
+},
+{
+"id": "concernedape__c482",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.017031518750131536,
+"right": -0.004976344090758977,
+"left": -0.005760453801353815,
+"back": -0.018332213941898767
+}
+},
+{
+"id": "concernedape__c483",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": -0.0056056456103363295,
+"right": -0.028088354287280404,
+"left": 0.028088354287280404,
+"back": -0.011211291220672603
+}
+},
+{
+"id": "concernedape__c484",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.014485825972175737,
+"right": -0.07120000232355927,
+"left": 0.05678770110174458,
+"back": -0.01701634597463686
+}
+},
+{
+"id": "concernedape__c485",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.055529605243291424,
+"right": -0.1354348083123446,
+"left": 0.12118846475129108,
+"back": -0.02224189530419418
+}
+},
+{
+"id": "concernedape__c486",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.03452787573746957,
+"right": -0.07914361818761778,
+"left": 0.07340155059223918,
+"back": -0.008964282706794613
+}
+},
+{
+"id": "concernedape__c487",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.043906315163582066,
+"right": -0.005407260216860943,
+"left": -0.043673236817287686,
+"back": -0.0012801893838554346
+}
+},
+{
+"id": "concernedape__c488",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.04763719107013331,
+"right": -0.10347827291514755,
+"left": 0.10347827291514755,
+"back": -0.062088902732204465
+}
+},
+{
+"id": "concernedape__c489",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.034313362398114444,
+"right": -0.15739929711063844,
+"left": 0.12467205886973243,
+"back": -0.05487732436951259
+}
+},
+{
+"id": "concernedape__c490",
+"author": "ConcernedApe",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.057330954883212826,
+"right": -0.07306091101550327,
+"left": 0.07306091101550327,
+"back": -0.044624946331748294
+}
+},
+{
+"id": "concernedape__c491",
+"author": "ConcernedApe",
+"left_is_mirror_right": true,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.10744938538818394,
+"right": -0.08276202790017595,
+"left": 0.08276202790017595,
+"back": -0.12853957451852194
+}
+},
+{
+"id": "concernedape__c492",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.06576255128656938,
+"right": -0.061076110806831896,
+"left": 0.061076110806831896,
+"back": -0.02597645827902889
+}
+},
+{
+"id": "concernedape__c493",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": 0.04689976876017976,
+"right": -0.04222093280799022,
+"left": 0.04222093280799022,
+"back": 0.040364123363233695
+}
+},
+{
+"id": "concernedape__c494",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": null,
+"right": null,
+"left": null,
+"back": 0.0
+}
+},
+{
+"id": "concernedape__c495",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.06507595818235606,
+"right": -0.06975710639618943,
+"left": -0.03329228313580923,
+"back": -0.06600101440984574
+}
+},
+{
+"id": "concernedape__c496",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": false,
+"front_symmetric": false,
+"front_symmetric_90": true,
+"light": {
+"front": 0.002356577517319214,
+"right": 0.019986033457450203,
+"left": -0.019986033457450203,
+"back": -0.08865403882270262
+}
+},
+{
+"id": "concernedape__c497",
+"author": "ConcernedApe",
+"left_is_mirror_right": false,
+"left_is_mirror_right_90": true,
+"front_symmetric": false,
+"front_symmetric_90": false,
+"light": {
+"front": -0.006472521978789669,
+"right": -0.032020489705095634,
+"left": 0.024004877623610033,
+"back": -0.026241175455201993
+}
+}
+]

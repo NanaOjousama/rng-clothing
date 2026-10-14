@@ -1,0 +1,1929 @@
+[
+ {
+  "pack": "HnH",
+  "name": "Witch Hat - Long",
+  "dir": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Witch Hat - Long",
+  "views": {
+   "F": [
+    0,
+    0,
+    16,
+    32,
+    {
+     "X": -2,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    32,
+    16,
+    32,
+    {
+     "X": -2,
+     "Y": -2
+    }
+   ],
+   "L": [
+    0,
+    64,
+    16,
+    32,
+    {
+     "X": -2,
+     "Y": -2
+    }
+   ],
+   "B": [
+    0,
+    96,
+    16,
+    32,
+    {
+     "X": -2,
+     "Y": 1
+    }
+   ]
+  }
+ },
+ {
+  "pack": "HnH",
+  "name": "Witch Hat - Veiled Colorable",
+  "dir": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Witch Hat - Veiled Colorable",
+  "views": {
+   "F": [
+    0,
+    0,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 4
+    }
+   ],
+   "R": [
+    0,
+    32,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 2
+    }
+   ],
+   "L": [
+    0,
+    64,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 2
+    }
+   ],
+   "B": [
+    0,
+    96,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 3
+    }
+   ]
+  }
+ },
+ {
+  "pack": "HnH",
+  "name": "Witch Hat - Veiled Colorable 2",
+  "dir": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Witch Hat - Veiled Colorable 2",
+  "views": {
+   "F": [
+    0,
+    0,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 4
+    }
+   ],
+   "R": [
+    0,
+    32,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 2
+    }
+   ],
+   "L": [
+    0,
+    64,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 2
+    }
+   ],
+   "B": [
+    0,
+    96,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 3
+    }
+   ]
+  }
+ },
+ {
+  "pack": "HnH",
+  "name": "Witch Hat - Veiled Red",
+  "dir": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Witch Hat - Veiled Red",
+  "views": {
+   "F": [
+    0,
+    0,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 4
+    }
+   ],
+   "R": [
+    0,
+    32,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 2
+    }
+   ],
+   "L": [
+    0,
+    64,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 2
+    }
+   ],
+   "B": [
+    0,
+    96,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 3
+    }
+   ]
+  }
+ },
+ {
+  "pack": "HnH",
+  "name": "Witchy Hat - Horn",
+  "dir": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Witchy Hat - Horn",
+  "views": {
+   "F": [
+    0,
+    0,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 3
+    }
+   ],
+   "R": [
+    0,
+    32,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    64,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    96,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "HnH",
+  "name": "Witchy Hat - Mossy",
+  "dir": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Witchy Hat - Mossy",
+  "views": {
+   "F": [
+    0,
+    0,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 4
+    }
+   ],
+   "R": [
+    0,
+    32,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 4
+    }
+   ],
+   "L": [
+    0,
+    64,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 4
+    }
+   ],
+   "B": [
+    0,
+    96,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 3
+    }
+   ]
+  }
+ },
+ {
+  "pack": "HnH",
+  "name": "Witchy Hat - Vines",
+  "dir": "witch_reference_packs_01/raw/Hats and Horns/[FS] PC's Hats and Horns/Hats/Witchy Hat - Vines",
+  "views": {
+   "F": [
+    0,
+    0,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 4
+    }
+   ],
+   "R": [
+    0,
+    32,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 1
+    }
+   ],
+   "L": [
+    0,
+    64,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 1
+    }
+   ],
+   "B": [
+    0,
+    96,
+    32,
+    32,
+    {
+     "X": 6,
+     "Y": 4
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Luny",
+  "name": "Luny's Basic Witch Hat",
+  "dir": "witch_reference_packs_01/raw/Luny's Witch Hats for FS/[FS] Luny's Witch Hats/Hats/Basic Witch Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Luny",
+  "name": "Luny's Floral Witch Hat",
+  "dir": "witch_reference_packs_01/raw/Luny's Witch Hats for FS/[FS] Luny's Witch Hats/Hats/Floral Witch Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Luny",
+  "name": "Luny's Floral Witch Hat With Trim",
+  "dir": "witch_reference_packs_01/raw/Luny's Witch Hats for FS/[FS] Luny's Witch Hats/Hats/Floral Witch Hat with Trim",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat (Blue)",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Blue",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat (Colourable Flower Crown)",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Flower Crown/Colourable",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat (Flower Crown)",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Flower Crown/Flower Crown",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat (Prismatic Flower Crown)",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Flower Crown/Prismatic",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat (Colourable Flower)",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Flower/Colourable",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat (Flower)",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Flower/Flower",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat (Prismatic Flower)",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Flower/Prismatic",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat (Forest)",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Forest",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat (Colourable Ribbon)",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Green/Colourable",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat (Green)",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Green/Green",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat (Prismatic Ribbon)",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Green/Prismatic",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat (Colourable)",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Plain/Colourable",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Plain/Plain",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat (Prismatic)",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Plain/Prismatic",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Kailey",
+  "name": "Witch Hat (Straw)",
+  "dir": "witch_reference_packs_01/raw/Witch Hats/[FS] Witch Hats/Hats/Straw",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Naver",
+  "name": "Witch Hat_1",
+  "dir": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_1",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Naver",
+  "name": "Witch Hat_10",
+  "dir": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_10",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Naver",
+  "name": "Witch Hat_2",
+  "dir": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_2",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Naver",
+  "name": "Witch Hat_3",
+  "dir": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_3",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Naver",
+  "name": "Witch Hat_4",
+  "dir": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_4",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Naver",
+  "name": "Witch Hat_5",
+  "dir": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_5",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Naver",
+  "name": "Witch Hat_6",
+  "dir": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_6",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Naver",
+  "name": "Witch Hat_7",
+  "dir": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_7",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Naver",
+  "name": "Witch Hat_8",
+  "dir": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_8",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Naver",
+  "name": "Witch Hat_9",
+  "dir": "witch_reference_packs_02/raw/[FS] Witch Hat 492815/Hats/hats_9",
+  "views": {
+   "F": [
+    0,
+    0,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    20,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Wildwood",
+  "name": "Bow Witch Hat",
+  "dir": "wildwood_reference_01/raw/[FS] Wildwood Collection/Hats/Bow Witch Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Wildwood",
+  "name": "Celestial Hat",
+  "dir": "wildwood_reference_01/raw/[FS] Wildwood Collection/Hats/Celestial Witch Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Wildwood",
+  "name": "Elegant Witch Hat",
+  "dir": "wildwood_reference_01/raw/[FS] Wildwood Collection/Hats/Elegant Witch Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Wildwood",
+  "name": "Forager's Witch Hat",
+  "dir": "wildwood_reference_01/raw/[FS] Wildwood Collection/Hats/Forager's Witch Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Wildwood",
+  "name": "Herbalist's Witch Hat",
+  "dir": "wildwood_reference_01/raw/[FS] Wildwood Collection/Hats/Herbalist's Witch Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ },
+ {
+  "pack": "Wildwood",
+  "name": "Straw Witch Hat",
+  "dir": "wildwood_reference_01/raw/[FS] Wildwood Collection/Hats/Straw Witch Hat",
+  "views": {
+   "F": [
+    0,
+    0,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ],
+   "R": [
+    0,
+    20,
+    22,
+    20,
+    {
+     "X": 2,
+     "Y": 0
+    }
+   ],
+   "L": [
+    0,
+    40,
+    22,
+    20,
+    {
+     "X": 0,
+     "Y": 0
+    }
+   ],
+   "B": [
+    0,
+    60,
+    22,
+    20,
+    {
+     "X": 1,
+     "Y": 0
+    }
+   ]
+  }
+ }
+]
