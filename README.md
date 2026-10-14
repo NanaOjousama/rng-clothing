@@ -1,5 +1,7 @@
 # RNG Clothing Feasibility Project
 
+**Project navigation:** [Workspace map and cleanup notes](docs/PROJECT_LAYOUT.md) · [Current milestone](CURRENT_STATE.md) · [Claude operating rules](CLAUDE.md) · [LoRA research plan](experiments/lora_sdxl_research/PLAN_phase4.md).
+
 ## Generator V4 multi-garment experiment
 
 V4 adds an article-translation layer above the frozen Generator V3 design system. The currently proven Fashion Sense set is `FITTED_SHIRT`, `SWEATER_TOP`, `VEST_TOP` (vest over an inner shirt), `CROPPED_JACKET`, and `SHORT_OUTERWEAR`. True long coats remain experimental and are rejected from generated output until lower-body animation/layering is proven. See `reports/V4_CAPABILITY_AUDIT.md` and `reports/V4_MULTI_GARMENT_REPORT.md`.

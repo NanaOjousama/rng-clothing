@@ -102,3 +102,17 @@ pack_study/out/
 experiments/*/raw/
 # LoRA training datasets: regenerable from experiments/lora_sdxl_research/tools, built from third-party art
 experiments/lora_sdxl_research/dataset/
+
+# Local workspace organization (2026-10-14)
+# These are external/reference materials or Claude-created local worktrees,
+# not project source. They remain on disk and are NOT deleted.
+/personal_sources/fs_scanned/
+/PhotoTailor/
+/cap reference/
+/Beret/
+/good hats/
+/.claude/worktrees/
+
+# Loose root assets moved to a reversible, dated archive.
+# See docs/PROJECT_LAYOUT.md and docs/ROOT_ASSET_RELOCATION_2026-10-14.tsv.
+/archive/loose_root_assets_2026-10-14/
