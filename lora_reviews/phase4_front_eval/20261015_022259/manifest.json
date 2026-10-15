@@ -1,0 +1,29 @@
+﻿{
+    "schema":  1,
+    "experiment":  "phase4_front_eval",
+    "finished_at":  "2026-10-15T02:22:59.8362094-04:00",
+    "checkpoint":  "p4e10",
+    "seeds":  "7,8,9",
+    "files":  [
+                  {
+                      "name":  "front_compare_x1.png",
+                      "bytes":  156611,
+                      "sha256":  "3F719E303CC38185418D6C671E03D33D99FBCBC40016C56CFE115F0F101D3D6A"
+                  },
+                  {
+                      "name":  "front_compare_x10.png",
+                      "bytes":  282021,
+                      "sha256":  "91E6F43EE35871B542EDF408E04411826FA160E1C47CB4A5544C0C01EEF008A0"
+                  },
+                  {
+                      "name":  "front_compare_x4.png",
+                      "bytes":  214561,
+                      "sha256":  "C2D57D77165FF230057066C6CE3DB8A26F8BF19E360776B52AC4396313DD4376"
+                  },
+                  {
+                      "name":  "REVIEW_SUMMARY.md",
+                      "bytes":  173,
+                      "sha256":  "BAC9ADBDFA734353A23D081241A608417A196540C248B8C4F4B5FE1844AD66A5"
+                  }
+              ]
+}
