@@ -1,0 +1,54 @@
+﻿{
+    "schema":  1,
+    "experiment":  "phase4_variety",
+    "finished_at":  "2026-10-15T03:18:42.8178994-04:00",
+    "checkpoint":  "p4e10",
+    "seeds":  "101-108",
+    "files":  [
+                  {
+                      "name":  "REVIEW_SUMMARY.md",
+                      "bytes":  172,
+                      "sha256":  "DBBDC947F94684CB72D272E0704E66E9223A69F6777D686C8BB252C23F64B2A0"
+                  },
+                  {
+                      "name":  "variety_classic_x10.png",
+                      "bytes":  146606,
+                      "sha256":  "91C50096ED36F8766D422AC8C39177F37E904D1CE93B32FC1FB71DC31C972417"
+                  },
+                  {
+                      "name":  "variety_classic_x4.png",
+                      "bytes":  107317,
+                      "sha256":  "5F9979BEB5054F10F2296A08CE4D1AC94870ABF11D9BB99AC8147E9DBB0B1F31"
+                  },
+                  {
+                      "name":  "variety_low_sweeping_x10.png",
+                      "bytes":  155335,
+                      "sha256":  "3D0EC5D053DDAAD568AA93DFECEE0D0252A9D240ED396887F97A3E86937F1FB2"
+                  },
+                  {
+                      "name":  "variety_low_sweeping_x4.png",
+                      "bytes":  115237,
+                      "sha256":  "985FF39F557C97BF332D07DB0BA1CD3F4130EFBB18086423B24A610C5EE74531"
+                  },
+                  {
+                      "name":  "variety_short_x10.png",
+                      "bytes":  150906,
+                      "sha256":  "BE8D4F98E83CE0B0CA233686578E098C39C3B9F4DC0F31FBFBBA94A5EA5063F8"
+                  },
+                  {
+                      "name":  "variety_short_x4.png",
+                      "bytes":  110782,
+                      "sha256":  "5A00D3983BF09F393F1406F4CD07E50F96DF47BCD344893CC2E6AF01AA1A8DF2"
+                  },
+                  {
+                      "name":  "variety_tall_floppy_x10.png",
+                      "bytes":  144570,
+                      "sha256":  "211A6F085BAE271A6E1C875AA49E594E1CF140B9A091A03FC1CF40FD9FD117A7"
+                  },
+                  {
+                      "name":  "variety_tall_floppy_x4.png",
+                      "bytes":  106031,
+                      "sha256":  "C21C491AAB5E98713C81EB0DF3B46AB69C2B40DEB70F58A240BD9D56B7415EC4"
+                  }
+              ]
+}
