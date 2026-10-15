@@ -1,0 +1,29 @@
+﻿{
+    "schema":  1,
+    "experiment":  "phase3_e10_witch_silhouette_test",
+    "finished_at":  "2026-10-14T01:29:07.0795514-04:00",
+    "checkpoint":  "phase3_e10",
+    "seeds":  "7,8,9",
+    "files":  [
+                  {
+                      "name":  "witch_fronts_e10_x1.png",
+                      "bytes":  29527,
+                      "sha256":  "FB49B6737C3149D5E169A2BEAA14D3979E415730191A5C8239CB1AE5C34C4EBE"
+                  },
+                  {
+                      "name":  "witch_fronts_e10_x10.png",
+                      "bytes":  58891,
+                      "sha256":  "1A5CC1BD334822A1668981C1B80CEA0CFBC355EF74651A7AC36FF708FECF6368"
+                  },
+                  {
+                      "name":  "witch_fronts_e10_x10_compact_preview.png",
+                      "bytes":  10521,
+                      "sha256":  "4F7A46B4577F9C2873210C659F80B7B55EA867522CF2CD65825441CF3348B110"
+                  },
+                  {
+                      "name":  "witch_fronts_e10_x4.png",
+                      "bytes":  44100,
+                      "sha256":  "6E34DE9EF0A21648E0294199AA2BDDE1F33117B1BB8AFE4BAD67DF648E5CA359"
+                  }
+              ]
+}

@@ -1,0 +1,59 @@
+﻿{
+    "schema":  1,
+    "experiment":  "phase4_eval",
+    "finished_at":  "2026-10-14T22:37:12.6006150-04:00",
+    "checkpoint":  "p10",
+    "seeds":  "7,8,9",
+    "files":  [
+                  {
+                      "name":  "REVIEW_SUMMARY.md",
+                      "bytes":  165,
+                      "sha256":  "1EA6978282D86E60FD6DB328A90B9589B0A4900C36B8EAE49E2F750814D0FE73"
+                  },
+                  {
+                      "name":  "holdout_e10_vs_p10_x1.png",
+                      "bytes":  235590,
+                      "sha256":  "1C151BA4F80F3B8258A45BB621E96AB0BE743709F5D138AB297B04871AEA2D23"
+                  },
+                  {
+                      "name":  "holdout_e10_vs_p10_x10.png",
+                      "bytes":  477091,
+                      "sha256":  "BB68058C887798A0429180CEB01E9B2252443676B6107426517E7DCF87018AE7"
+                  },
+                  {
+                      "name":  "holdout_e10_vs_p10_x4.png",
+                      "bytes":  342409,
+                      "sha256":  "61B4B0510980FE5FAD16E947FD108A490D5CAA8570468E22786B024F70CDCAA7"
+                  },
+                  {
+                      "name":  "holdout_witch_e10_vs_p10_x1.png",
+                      "bytes":  37852,
+                      "sha256":  "BFBDBA20DAD0E2917B8FFC4BADA65696B20DA024D989E85BE03E7E1FBE378484"
+                  },
+                  {
+                      "name":  "holdout_witch_e10_vs_p10_x10.png",
+                      "bytes":  70174,
+                      "sha256":  "24EAC8AE30D90054074811F394CC656928BEA7D0C9B61D4AD3DEF3CE415995CF"
+                  },
+                  {
+                      "name":  "holdout_witch_e10_vs_p10_x4.png",
+                      "bytes":  52955,
+                      "sha256":  "6C43CF729F8807C474C78092334D816B0AB9279D94FE7B027FAAE2AF39527C5D"
+                  },
+                  {
+                      "name":  "witch_test_e10_vs_p10_x1.png",
+                      "bytes":  65042,
+                      "sha256":  "45EF0E6F54418CD7BDFCD935CB760F7BF3430650A292320CD1332B62423696EE"
+                  },
+                  {
+                      "name":  "witch_test_e10_vs_p10_x10.png",
+                      "bytes":  125546,
+                      "sha256":  "9C7F9852994B2035CC90D93BEF750D5063106216F8B9B00FF1D627EAC299FE9B"
+                  },
+                  {
+                      "name":  "witch_test_e10_vs_p10_x4.png",
+                      "bytes":  93513,
+                      "sha256":  "FBC704D4015CACEC199AE5F98B11D0A44BA5CAF7C7878B0731926D9AA2B2200B"
+                  }
+              ]
+}
