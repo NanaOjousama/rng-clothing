@@ -1,0 +1,14 @@
+﻿{
+    "schema":  1,
+    "experiment":  "phase4_settings_probe_01",
+    "finished_at":  "2026-10-15T22:25:45.8876910-04:00",
+    "checkpoint":  "p4e10",
+    "seeds":  "7,8,9,101-108",
+    "files":  [
+                  {
+                      "name":  "empty_raws_contact.png",
+                      "bytes":  210543,
+                      "sha256":  "22337CA745B3CF2EBDF4182A78F87C1C009B979F9B1AE75CC02DFF45D8A51F00"
+                  }
+              ]
+}
