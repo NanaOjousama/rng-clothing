@@ -1,0 +1,34 @@
+﻿{
+    "schema":  1,
+    "experiment":  "phase4_settings_probe_01",
+    "finished_at":  "2026-10-15T22:26:48.2630414-04:00",
+    "checkpoint":  "p4e10",
+    "seeds":  "7,8,9,101-108",
+    "files":  [
+                  {
+                      "name":  "empty_raws_contact.png",
+                      "bytes":  210543,
+                      "sha256":  "22337CA745B3CF2EBDF4182A78F87C1C009B979F9B1AE75CC02DFF45D8A51F00"
+                  },
+                  {
+                      "name":  "focus_settings_compare.png",
+                      "bytes":  75478,
+                      "sha256":  "51F7685577D23E5B189717C2036006F8155715C797C37AE25CAAB7DA818CF1F3"
+                  },
+                  {
+                      "name":  "t1_settings_compare_sheet.png",
+                      "bytes":  169066,
+                      "sha256":  "63B8FE6A27A13D47F1FB1EA4C045AA58C9E67E01ECAA99BFC70E6B880A202A79"
+                  },
+                  {
+                      "name":  "t2_prompts_compare_sheet.png",
+                      "bytes":  44706,
+                      "sha256":  "2EAC56725D3BCB59B4670CECFA87754E50A54CAA7D02C652E7B0882623A64994"
+                  },
+                  {
+                      "name":  "t3_empties_compare_sheet.png",
+                      "bytes":  129184,
+                      "sha256":  "5112AA2AE9EEC387FF07947380B8638F82CFAB00CC330B5EA863B3CF8C615047"
+                  }
+              ]
+}
