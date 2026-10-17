@@ -1,0 +1,69 @@
+﻿{
+    "schema":  1,
+    "experiment":  "bear_hood_structural_01",
+    "finished_at":  "2026-10-16T21:17:04.2829764-04:00",
+    "checkpoint":  "p4e10",
+    "seeds":  "7,8,9,11",
+    "files":  [
+                  {
+                      "name":  "bear_hood_hat_x1.png",
+                      "bytes":  38698,
+                      "sha256":  "52FCF6A25592A0BF185FF61991682134F559622112CCC915C102AEE60379889B"
+                  },
+                  {
+                      "name":  "bear_hood_hat_x10.png",
+                      "bytes":  58989,
+                      "sha256":  "8838C8639F7FC91A5FF2C3A508B148D3DC686A20A42AF70CD1F935E201DB4029"
+                  },
+                  {
+                      "name":  "bear_hood_hat_x4.png",
+                      "bytes":  49015,
+                      "sha256":  "7AE510FE417FEFBB908B4F2C21646E750162E832599B1F50EFDD45FEFB1C7449"
+                  },
+                  {
+                      "name":  "bear_hood_picks_hat_x1.png",
+                      "bytes":  14279,
+                      "sha256":  "61E98204C8444FC0A1AC9E32DB2672864E7BB9C5B48082628F3EEE5F990CE7FA"
+                  },
+                  {
+                      "name":  "bear_hood_picks_hat_x10.png",
+                      "bytes":  22826,
+                      "sha256":  "F13024B07F76DBA4E185484DBF930EC2244A5CC6048358D866FB5840A23B43CB"
+                  },
+                  {
+                      "name":  "bear_hood_picks_hat_x4.png",
+                      "bytes":  18111,
+                      "sha256":  "8535C07A3C95CEDFFCED9B1CB3C34749CB8AE70144C26CAF688C4535B6FD4226"
+                  },
+                  {
+                      "name":  "bear_hood_picks_worn_x1.png",
+                      "bytes":  15372,
+                      "sha256":  "DEDE1DBD7F24C45FFC4FA3E6FA72B881E9A5504F11ABED824B21CC9A9234B5D3"
+                  },
+                  {
+                      "name":  "bear_hood_picks_worn_x4.png",
+                      "bytes":  19715,
+                      "sha256":  "89C26141C4D364EC8D3500C45F0A3855C401634371DB84192CABB59C0AAC4CF9"
+                  },
+                  {
+                      "name":  "bear_hood_picks_worn_x8.png",
+                      "bytes":  24275,
+                      "sha256":  "68015B981B9D8B502FA10183DC029D50DED1962A6694CB3AC167A94B790663FD"
+                  },
+                  {
+                      "name":  "bear_hood_worn_x1.png",
+                      "bytes":  41555,
+                      "sha256":  "E44D12634B2EC8FB0490F110A7A6C62F5298B87171AFAD87720C357B5EB0E534"
+                  },
+                  {
+                      "name":  "bear_hood_worn_x4.png",
+                      "bytes":  53034,
+                      "sha256":  "ABCB09EAD8966637DAA2DCBE1FA144579F8225460981B80D77029804B2BC0E9A"
+                  },
+                  {
+                      "name":  "REVIEW_SUMMARY.md",
+                      "bytes":  4373,
+                      "sha256":  "7ACF4BCFE39E4300369DF1DCB1CAE18AF5B7C575F08F078E2449B62CD672A861"
+                  }
+              ]
+}
