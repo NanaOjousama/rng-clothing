@@ -1,0 +1,89 @@
+﻿{
+    "schema":  1,
+    "experiment":  "bear_hood_structural_01_t2i",
+    "finished_at":  "2026-10-16T22:19:31.0846952-04:00",
+    "checkpoint":  "p4e10 + t2i-adapter-lineart-sdxl-1.0",
+    "seeds":  "7,8,9,11",
+    "files":  [
+                  {
+                      "name":  "t2i_v1_compare_hat_x1.png",
+                      "bytes":  69373,
+                      "sha256":  "3EB165A88E25796FAF6D5812362BF291B0B98139449521E5316FD25AB02F5FEB"
+                  },
+                  {
+                      "name":  "t2i_v1_compare_hat_x10.png",
+                      "bytes":  99868,
+                      "sha256":  "474990317C5A1016C179A07B6B35A011E431326B937DFFFBEF672F96F41D22D5"
+                  },
+                  {
+                      "name":  "t2i_v1_compare_hat_x4.png",
+                      "bytes":  83873,
+                      "sha256":  "FB8394DEF17C628F10126AF252E07855DFE0C0CB8F615F33F9B96376BE862D4F"
+                  },
+                  {
+                      "name":  "t2i_v1_compare_worn_x1.png",
+                      "bytes":  73073,
+                      "sha256":  "85F6964DA8E246E59124C1A9322A0F141A6185BF2E25C15F914B4C02EE6388AF"
+                  },
+                  {
+                      "name":  "t2i_v1_compare_worn_x4.png",
+                      "bytes":  90745,
+                      "sha256":  "CC7CCA1B7448D1F3AA60376BDD94275CD686F078B0D2D29D412E43C325912A33"
+                  },
+                  {
+                      "name":  "REVIEW_SUMMARY.md",
+                      "bytes":  5432,
+                      "sha256":  "103209BC45CDD33A82001C18FC1FACBAD1A58BE4C28107DBE0520CB1CC1F5D63"
+                  },
+                  {
+                      "name":  "t2i_final_picks_hat_x1.png",
+                      "bytes":  17572,
+                      "sha256":  "13EDA4880A7F92EA565530C8D90EF8645DDD9ECB039147649408F4EF42708866"
+                  },
+                  {
+                      "name":  "t2i_final_picks_hat_x10.png",
+                      "bytes":  27499,
+                      "sha256":  "389BEBCE67A9E42CC03FDED4DB6419C8D655020E2F878EF2AA6598B8677B81A2"
+                  },
+                  {
+                      "name":  "t2i_final_picks_hat_x4.png",
+                      "bytes":  23082,
+                      "sha256":  "3ABF479C0CAE811741CE66AEC0DFCE591C5CC62BE90D13BFB40D01B0FF2DEE99"
+                  },
+                  {
+                      "name":  "t2i_final_picks_worn_x4.png",
+                      "bytes":  25306,
+                      "sha256":  "9B7276336599DF50D830EDBB7C85A06DB172487F7DFF4B1E68EA8064C964B76B"
+                  },
+                  {
+                      "name":  "t2i_final_picks_worn_x8.png",
+                      "bytes":  29862,
+                      "sha256":  "0F91309539FD49E2012D07FA6D2AEB44835300002539545C0F4C2026E6D90F96"
+                  },
+                  {
+                      "name":  "t2i_v2_compare_hat_x1.png",
+                      "bytes":  60751,
+                      "sha256":  "E899423C9593CC061D5022BD3CCD8D8E3EEFDA97D703095D72767DA4963A626D"
+                  },
+                  {
+                      "name":  "t2i_v2_compare_hat_x10.png",
+                      "bytes":  87547,
+                      "sha256":  "17D2E6F8FB1675B5707BB9A87A70AED945288D85B6100A9F33F59BF58B526368"
+                  },
+                  {
+                      "name":  "t2i_v2_compare_hat_x4.png",
+                      "bytes":  72306,
+                      "sha256":  "2560A4A091CDB0839DEF46AA0B23ACB042884A796C73BAB883E6BC4E89E66C1F"
+                  },
+                  {
+                      "name":  "t2i_v2_compare_worn_x1.png",
+                      "bytes":  64109,
+                      "sha256":  "FA19B426968FB2D2AFBD05D68EC1D06A39396786CB97DEF59E225036EB537C8A"
+                  },
+                  {
+                      "name":  "t2i_v2_compare_worn_x4.png",
+                      "bytes":  78727,
+                      "sha256":  "F55B908B2FFA231312A7A29BC7240B80759346C896056C6D07C11D2DC7544334"
+                  }
+              ]
+}
