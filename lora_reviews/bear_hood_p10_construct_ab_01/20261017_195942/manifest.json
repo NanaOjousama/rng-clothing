@@ -1,0 +1,39 @@
+﻿{
+    "schema":  1,
+    "experiment":  "bear_hood_p10_construct_ab_01",
+    "finished_at":  "2026-10-17T19:59:42.9047662-04:00",
+    "checkpoint":  "phase4_4view_p10",
+    "seeds":  "7,9",
+    "files":  [
+                  {
+                      "name":  "ab_silver_x1.png",
+                      "bytes":  9119,
+                      "sha256":  "F5FDE3D26331031BC64ED5E5B6AB6F8742A17FDCFACEBCC7AD26B9E9CC30EB7F"
+                  },
+                  {
+                      "name":  "ab_silver_x10.png",
+                      "bytes":  16476,
+                      "sha256":  "1FE6C3D9C39F8C391A1AFDD4CD710E23C7FB29BB54EB6D41A3E367F7B1E9461D"
+                  },
+                  {
+                      "name":  "ab_silver_x4.png",
+                      "bytes":  12238,
+                      "sha256":  "B451E06CEDA70F9F920076F27BF163F57F61112818BB718141FBC44D5829DA24"
+                  },
+                  {
+                      "name":  "raw_sheet_p10_s7.png",
+                      "bytes":  188480,
+                      "sha256":  "8EACB1372D3401CCE1608AE05D8D56C0B6B2EB2CFC0F0ED5E5AFEB75F44B6CB8"
+                  },
+                  {
+                      "name":  "raw_sheet_p10_s9.png",
+                      "bytes":  156918,
+                      "sha256":  "A91357B918B43280F3478AFF279842CFC843D4D71EA1D561448BA1E4EA3C9ABA"
+                  },
+                  {
+                      "name":  "SUMMARY.md",
+                      "bytes":  1315,
+                      "sha256":  "DB1301A8841128905F2F5E9ECA938AA06B6A5B2F48931722616F70CAE00FF10C"
+                  }
+              ]
+}
