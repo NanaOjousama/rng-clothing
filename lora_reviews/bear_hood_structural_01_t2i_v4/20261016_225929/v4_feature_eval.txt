@@ -1,0 +1,52 @@
+# V4 per-feature evaluation (advisory metrics; the eye decides)
+
+palette clean A i0.60 s7: 148 raw colours -> 8; cells 176 -> 176; silhouette/alpha identical
+
+control (factor 1.0) identical to V2: s7=True, s8=True, s9=True, s11=True
+
+name	strength	adapter	factor	adapter_steps	silhouette	face_fill	ear_inner	flaps	cords	bead_delta	colours	SFELCB	n_pass
+TEMPLATE					1.0	0	111.7	1.0	True	[101.4, 101.4]	7	SFELCB	6
+A i0.60 s7					1.0	0	117.3	1.0	True	[120.2, 125.8]	17	SFELCB	6
+A i0.60 s7 PAL-CLEAN 8					1.0	0	118.9	1.0	True	[132.2, 132.2]	8	SFELCB	6
+V2 C_i2i_st075_ad040__s11	0.75	0.4	1.0		1.0	0	-13.1	1.0	True	[]	22	SF-LC-	4
+V2 C_i2i_st075_ad040__s7	0.75	0.4	1.0		1.0	0	-1.9	1.0	True	[-26.7, -26.3]	18	SF-LC-	4
+V2 C_i2i_st075_ad040__s8	0.75	0.4	1.0		1.0	0	-6.3	1.0	True	[-36.3, -35.9]	13	SF-LC-	4
+V2 C_i2i_st075_ad040__s9	0.75	0.4	1.0		1.0	0	1.4	1.0	True	[-9.3, -9.4]	17	SF-LC-	4
+V2 C_i2i_st075_ad080__s11	0.75	0.8	1.0		1.0	0	-22.7	1.0	True	[-34.2, -34.2]	15	SF-LC-	4
+V2 C_i2i_st075_ad080__s7	0.75	0.8	1.0		1.0	0	-20.2	1.0	True	[-34.5, -34.4]	12	SF-LC-	4
+V2 C_i2i_st075_ad080__s8	0.75	0.8	1.0		1.0	0	-18.7	1.0	True	[-37.5, -37.5]	10	SF-LC-	4
+V2 C_i2i_st075_ad080__s9	0.75	0.8	1.0		1.0	0	-6.9	1.0	True	[-28.0, -27.6]	12	SF-LC-	4
+V2 C_i2i_st090_ad040__s11	0.9	0.4	1.0		1.0	0	-7.5	1.0	True	[]	18	SF-LC-	4
+V2 C_i2i_st090_ad040__s7	0.9	0.4	1.0		1.0	0	-5.9	1.0	True	[]	17	SF-LC-	4
+V2 C_i2i_st090_ad040__s8	0.9	0.4	1.0		1.0	0	-7.5	1.0	True	[18.2, 22.5]	16	SF-LC-	4
+V2 C_i2i_st090_ad040__s9	0.9	0.4	1.0		1.0	0	-11.2	1.0	True	[]	18	SF-LC-	4
+V2 C_i2i_st090_ad080__s11	0.9	0.8	1.0		1.0	0	-27.0	1.0	True	[-40.4, -40.1]	17	SF-LC-	4
+V2 C_i2i_st090_ad080__s7	0.9	0.8	1.0		1.0	0	-23.8	1.0	True	[-39.6, -39.6]	12	SF-LC-	4
+V2 C_i2i_st090_ad080__s8	0.9	0.8	1.0		1.0	0	-20.4	1.0	True	[-42.2, -42.2]	11	SF-LC-	4
+V2 C_i2i_st090_ad080__s9	0.9	0.8	1.0		1.0	0	-11.9	1.0	True	[-32.3, -31.3]	20	SF-LC-	4
+V3 C_i2i_st075_ad040__s11	0.75	0.4	1.0		1.0	0	84.7	1.0	False	[]	13	SFEL--	4
+V3 C_i2i_st075_ad040__s7	0.75	0.4	1.0		1.0	0	11.5	1.0	False	[]	11	SF-L--	3
+V3 C_i2i_st075_ad040__s8	0.75	0.4	1.0		1.0	0	11.8	1.0	False	[]	10	SF-L--	3
+V3 C_i2i_st075_ad040__s9	0.75	0.4	1.0		1.0	0	14.6	1.0	False	[]	7	SF-L--	3
+V3 C_i2i_st090_ad040__s11	0.9	0.4	1.0		1.0	0	-1.7	1.0	False	[]	9	SF-L--	3
+V3 C_i2i_st090_ad040__s7	0.9	0.4	1.0		1.0	0	2.7	1.0	False	[]	12	SF-L--	3
+V3 C_i2i_st090_ad040__s8	0.9	0.4	1.0		1.0	0	-17.1	1.0	False	[]	15	SF-L--	3
+V3 C_i2i_st090_ad040__s9	0.9	0.4	1.0		1.0	0	5.0	1.0	False	[]	9	SF-L--	3
+V4 C_i2i_st075_ad040__s11	0.75	0.4	1.0	21	1.0	0	-13.1	1.0	True	[]	22	SF-LC-	4
+V4 C_i2i_st075_ad040__s7	0.75	0.4	1.0	21	1.0	0	-1.9	1.0	True	[-26.7, -26.3]	18	SF-LC-	4
+V4 C_i2i_st075_ad040__s8	0.75	0.4	1.0	21	1.0	0	-6.3	1.0	True	[-36.3, -35.9]	13	SF-LC-	4
+V4 C_i2i_st075_ad040__s9	0.75	0.4	1.0	21	1.0	0	1.4	1.0	True	[-9.3, -9.4]	17	SF-LC-	4
+V4 C_i2i_st075_ad040_f030__s11	0.75	0.4	0.3	6	1.0	0	1.0	1.0	True	[]	15	SF-LC-	4
+V4 C_i2i_st075_ad040_f030__s7	0.75	0.4	0.3	6	1.0	0	7.6	1.0	True	[66.2, 71.5]	17	SF-LCB	5
+V4 C_i2i_st075_ad040_f030__s8	0.75	0.4	0.3	6	1.0	0	11.2	1.0	True	[-13.9, -15.1]	14	SF-LC-	4
+V4 C_i2i_st075_ad040_f030__s9	0.75	0.4	0.3	6	1.0	0	-2.6	1.0	True	[-7.5, -5.5]	11	SF-LC-	4
+V4 C_i2i_st075_ad040_f040__s11	0.75	0.4	0.4	8	1.0	0	4.4	1.0	True	[]	18	SF-LC-	4
+V4 C_i2i_st075_ad040_f040__s7	0.75	0.4	0.4	8	1.0	0	5.3	1.0	True	[13.3, 11.3]	18	SF-LC-	4
+V4 C_i2i_st075_ad040_f040__s8	0.75	0.4	0.4	8	1.0	0	6.7	1.0	True	[-16.6, -17.5]	15	SF-LC-	4
+V4 C_i2i_st075_ad040_f040__s9	0.75	0.4	0.4	8	1.0	0	0.3	1.0	True	[-7.7, -6.1]	13	SF-LC-	4
+V4 C_i2i_st075_ad040_f050__s11	0.75	0.4	0.5	10	1.0	0	-1.0	1.0	True	[]	12	SF-LC-	4
+V4 C_i2i_st075_ad040_f050__s7	0.75	0.4	0.5	10	1.0	0	4.6	1.0	True	[-5.6, -4.6]	13	SF-LC-	4
+V4 C_i2i_st075_ad040_f050__s8	0.75	0.4	0.5	10	1.0	0	4.9	1.0	True	[-19.1, -19.0]	11	SF-LC-	4
+V4 C_i2i_st075_ad040_f050__s9	0.75	0.4	0.5	10	1.0	0	2.7	1.0	True	[-8.3, -7.0]	10	SF-LC-	4
+
+best by rule (most features passed, then fewest colours): V2=C_i2i_st075_ad080__s8, V3=C_i2i_st075_ad040__s11, V4=C_i2i_st075_ad040_f030__s7
