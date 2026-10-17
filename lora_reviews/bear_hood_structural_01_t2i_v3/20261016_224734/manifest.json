@@ -1,0 +1,69 @@
+﻿{
+    "schema":  1,
+    "experiment":  "bear_hood_structural_01_t2i_v3",
+    "finished_at":  "2026-10-16T22:47:34.1156121-04:00",
+    "checkpoint":  "p4e10 + t2i-adapter-lineart-sdxl-1.0 (V3 minimal map)",
+    "seeds":  "7,8,9,11",
+    "files":  [
+                  {
+                      "name":  "REVIEW_SUMMARY.md",
+                      "bytes":  5016,
+                      "sha256":  "FA72311987E50773D8080E087F2E09CCA3998B7C99C7E8B97A740D421D68C212"
+                  },
+                  {
+                      "name":  "v3_compare_hat_x1.png",
+                      "bytes":  60882,
+                      "sha256":  "98526B1CD792A076015587ABCD28332FEA37F5F0CC70B2788D06637F1243F495"
+                  },
+                  {
+                      "name":  "v3_compare_hat_x10.png",
+                      "bytes":  85402,
+                      "sha256":  "D3564106E7D3208A799D35434A4D1D71143AC8A60F7501C66397A9CE747BBD02"
+                  },
+                  {
+                      "name":  "v3_compare_hat_x4.png",
+                      "bytes":  70303,
+                      "sha256":  "AB9436462574F54267F1AED87BD4A9EBC2974D302CA5A9ED6F8A998307CDE606"
+                  },
+                  {
+                      "name":  "v3_compare_worn_x1.png",
+                      "bytes":  63885,
+                      "sha256":  "0F82A79937E8B510EDAEB150423E3700DC3353366BC3E6210E23D4F599133FD0"
+                  },
+                  {
+                      "name":  "v3_compare_worn_x4.png",
+                      "bytes":  76127,
+                      "sha256":  "04CD738E76BD75CD4BB6C7E6A3B22FC63B6867CF8C12D521A6F72E5196004FE9"
+                  },
+                  {
+                      "name":  "v3_feature_probe.txt",
+                      "bytes":  2450,
+                      "sha256":  "18A7A33B34455A9CD6DB26FB54672DD210DE252DFE47746CB0F46E32F9D99B9F"
+                  },
+                  {
+                      "name":  "v3_picks_hat_x1.png",
+                      "bytes":  14558,
+                      "sha256":  "063998DEE9A91D686793B2CBED1C08E2B68CFBB31456F04EC4615830E5FC478A"
+                  },
+                  {
+                      "name":  "v3_picks_hat_x10.png",
+                      "bytes":  23266,
+                      "sha256":  "9570BDB8327AA32AC5296D3BEEC4654C3FE241D664BB1A631CD206B30B7667C6"
+                  },
+                  {
+                      "name":  "v3_picks_hat_x4.png",
+                      "bytes":  19137,
+                      "sha256":  "81E4AD013AECB5D64978B62899BDD20F2B905569685B971D6078158273325103"
+                  },
+                  {
+                      "name":  "v3_picks_worn_x4.png",
+                      "bytes":  21363,
+                      "sha256":  "1C34358FB593C1B9E5C866D24F8F6A8FC48AFC0C5087C20E74751BA24126F660"
+                  },
+                  {
+                      "name":  "v3_picks_worn_x8.png",
+                      "bytes":  25611,
+                      "sha256":  "8E2C6D02352C92FB678D277C96B460B7280A05246FC94FF503E89DBD0A7775F5"
+                  }
+              ]
+}

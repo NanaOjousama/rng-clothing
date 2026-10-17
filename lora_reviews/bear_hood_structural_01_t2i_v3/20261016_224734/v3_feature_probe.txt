@@ -1,0 +1,34 @@
+run	key	strength	adapter_scale	cells	colours	ear_inner	cords	bead
+template	template			172	7	111.7	8	101.4
+bear_hood_structural_01_t2i	A_i2i_st060__s7	0.6		176	17	117.3	12	123.0
+bear_hood_structural_01_t2i	A_i2i_st060__s8	0.6		170	14	96.1	6	
+bear_hood_structural_01_t2i	A_i2i_st060__s9	0.6		168	13	100.0	4	
+bear_hood_structural_01_t2i	A_i2i_st060__s11	0.6		168	21	112.8	4	
+bear_hood_structural_01_t2i_v2	B_ad_sc040__s7		0.4	166	20	-16.6	2	
+bear_hood_structural_01_t2i_v2	B_ad_sc040__s8		0.4	170	16	-7.0	2	
+bear_hood_structural_01_t2i_v2	B_ad_sc040__s9		0.4	172	20	-15.5	2	
+bear_hood_structural_01_t2i_v2	B_ad_sc040__s11		0.4	172	15	-3.6	6	
+bear_hood_structural_01_t2i_v3	B_ad_sc040__s7		0.4	170	14	-15.3	0	
+bear_hood_structural_01_t2i_v3	B_ad_sc040__s8		0.4	166	18	-11.8	0	
+bear_hood_structural_01_t2i_v3	B_ad_sc040__s9		0.4	170	17	-2.8	0	
+bear_hood_structural_01_t2i_v3	B_ad_sc040__s11		0.4	171	10	-13.6	1	
+bear_hood_structural_01_t2i_v3	B_ad_sc050__s7		0.5	164	12	-6.0	0	
+bear_hood_structural_01_t2i_v3	B_ad_sc050__s8		0.5	168	14	-3.8	0	
+bear_hood_structural_01_t2i_v3	B_ad_sc050__s9		0.5	164	15	13.7	0	
+bear_hood_structural_01_t2i_v3	B_ad_sc050__s11		0.5	164	10	-14.3	0	
+bear_hood_structural_01_t2i_v2	C_i2i_st075_ad040__s7	0.75	0.4	172	18	-1.9	8	-26.5
+bear_hood_structural_01_t2i_v2	C_i2i_st075_ad040__s8	0.75	0.4	172	13	-6.3	8	-36.1
+bear_hood_structural_01_t2i_v2	C_i2i_st075_ad040__s9	0.75	0.4	172	17	1.4	8	-9.3
+bear_hood_structural_01_t2i_v2	C_i2i_st075_ad040__s11	0.75	0.4	167	22	-13.1	3	
+bear_hood_structural_01_t2i_v3	C_i2i_st075_ad040__s7	0.75	0.4	164	11	11.5	0	
+bear_hood_structural_01_t2i_v3	C_i2i_st075_ad040__s8	0.75	0.4	164	10	11.8	0	
+bear_hood_structural_01_t2i_v3	C_i2i_st075_ad040__s9	0.75	0.4	164	7	14.6	0	
+bear_hood_structural_01_t2i_v3	C_i2i_st075_ad040__s11	0.75	0.4	164	13	84.7	0	
+bear_hood_structural_01_t2i_v2	C_i2i_st090_ad040__s7	0.9	0.4	170	17	-5.9	6	
+bear_hood_structural_01_t2i_v2	C_i2i_st090_ad040__s8	0.9	0.4	172	16	-7.5	8	20.3
+bear_hood_structural_01_t2i_v2	C_i2i_st090_ad040__s9	0.9	0.4	169	18	-11.2	5	
+bear_hood_structural_01_t2i_v2	C_i2i_st090_ad040__s11	0.9	0.4	166	18	-7.5	2	
+bear_hood_structural_01_t2i_v3	C_i2i_st090_ad040__s7	0.9	0.4	164	12	2.7	0	
+bear_hood_structural_01_t2i_v3	C_i2i_st090_ad040__s8	0.9	0.4	164	15	-17.1	0	
+bear_hood_structural_01_t2i_v3	C_i2i_st090_ad040__s9	0.9	0.4	164	9	5.0	0	
+bear_hood_structural_01_t2i_v3	C_i2i_st090_ad040__s11	0.9	0.4	164	9	-1.7	0	
