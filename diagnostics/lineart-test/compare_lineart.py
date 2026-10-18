@@ -1,5 +1,3 @@
-[Reading 87 lines from start (total: 87 lines, 0 remaining)]
-
 #!/usr/bin/env python3
 """Small controlled SDXL/LoRA vs lineart adapter comparison. Inference only."""
 import argparse, json, random, time
