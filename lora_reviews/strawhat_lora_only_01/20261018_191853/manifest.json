@@ -1,0 +1,17 @@
+{
+  "experiment": "strawhat_lora_only_01",
+  "timestamp": "20261018_191853",
+  "kind": "resolution_comparison",
+  "lane": "ai-original",
+  "adapter": "none (LoRA-only, plan A)",
+  "resolutions": [512, 768, 1024],
+  "winner": 768,
+  "images": {
+    "512": "strawhat_lora_only_512.png",
+    "768": "strawhat_lora_only_768.png",
+    "1024": "strawhat_lora_only_1024.png"
+  },
+  "source_volume": "qlenaxj02c:/workspace/stardew-lora-lab/results/strawhat_lora_only_1024/",
+  "pod": "stardew-a40 (5kstuywlqnafya), stopped after run",
+  "review_only": true
+}
