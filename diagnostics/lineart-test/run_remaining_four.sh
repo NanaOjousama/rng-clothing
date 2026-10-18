@@ -1,5 +1,3 @@
-[Reading 8 lines from start (total: 8 lines, 0 remaining)]
-
 #!/usr/bin/env bash
 set -euo pipefail
 ROOT=/workspace/stardew-lora-lab
