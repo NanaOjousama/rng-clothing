@@ -1,7 +1,8 @@
 # Phase 5 — fresh general-purpose SDXL hat LoRA on the RunPod A40
 
-Status 2026-10-19: **dataset built and validated; three-arm pilot running on the A40.** Full run waits for the
-user's review of the pilot sheets (user rule: judged on images, never on loss / metrics alone).
+Status 2026-10-19: **dataset built and validated; three-arm pilot trained and evaluated on the A40; results
+published to `lora-reviews`.** Full run waits for the user's review of the pilot sheets (user rule: judged
+on images, never on loss / metrics alone). Pod `5kstuywlqnafya` stopped after results were pulled.
 
 AI-ORIGINAL lane (CLAUDE.md 2b): everything trained here is experimental and unapproved; nothing is promoted to any
 pool without a worn four-direction QC capture and explicit user approval.
@@ -56,9 +57,33 @@ holdout caption in both layouts; Euler a, 30 steps, CFG 6; decode by each image'
 side by side per family and layout, 4-seed variety per arm, decoded sprites with the background removed, holdout
 truth vs generation.  Metrics are context only.
 
+## Pilot results (2026-10-19)
+
+Trained all three arms (B, A, C in that order; ~27 min each) plus B's epoch-2 checkpoint (B_e2), then
+evaluated all five (base, A, B, C, B_e2) with `eval_phase5.py`: 8 families x {front, four-view} x 4 seeds,
+plus every holdout caption at seed 101. Two bugs hit and fixed along the way (not data/config bugs — tooling):
+- `validation_split` is dataset-level only in sd-scripts v0.12.0, not per-subset; removed the holdout subset
+  from `dataset_phase5.toml` (holdout is still never trained on, judged only through generated images).
+- diffusers 0.40.0's `pipe.load_lora_weights` crashes on this checkpoint's text-encoder-2 LoRA (its own
+  converter bug, confirmed via a raw safetensors key dump that both TE1/TE2 blocks are intact). Fixed by
+  loading/merging through sd-scripts' own `networks.lora.create_network_from_weights(for_inference=True)`
+  + `network.merge_to(...)` in `eval_phase5.py`, instead of diffusers' loader.
+
+**Verdict, by eye** (`lora-reviews` commit `bfa328f`, `lora_reviews/phase5_pilot_2026-10-19/`): arm **C**
+(rank 32/alpha 16, frozen text encoders, cached TE outputs) is the only usable arm. A and B (text encoders
+trained, lr 2.5e-5, 4 epochs) mostly failed to learn the training format — non-solid backgrounds, whole
+faces/bodies drawn instead of an isolated hat, broken four-view panel layouts; B_e2 is not meaningfully
+better, so this looks like instability from training the text encoders at this LR/schedule, not just
+undertraining. C reliably isolates a hat on a flat background in the correct 2x2 F/R/L/B layout, and
+generalizes plausibly to held-out families. Known gap even in C: background color drifts off the trained
+(0,0,255) per family (still flat/keyable, not exact) — worth tightening in the full run.
+
 ## Next
-1. pilot results + sheets on `lora-reviews`; user review
-2. full run only after review (winning arm, 16-20 epochs, cosine)
+1. **user review** of the published pilot sheets (done: published; awaiting verdict)
+2. full run only after review — recommended recipe: arm C's config (rank 32/alpha 16, frozen TE, cached TE
+   outputs), extended to 16-20 epochs, cosine schedule. Do not spend full-run budget retrying the
+   TE-trained recipe without a different schedule/LR — it underperformed not training the TEs at all here.
 3. ControlNet comparison later: a pretrained SDXL ControlNet with a **2x2 four-view conditioning sheet in the output
    layout** (never a single-view control against a four-view prompt — the failed T2I-adapter mismatch)
 4. 1024 px stays open for a later experiment
+5. consider tightening background-color fidelity for the full run (arm C drifted off-target per family)

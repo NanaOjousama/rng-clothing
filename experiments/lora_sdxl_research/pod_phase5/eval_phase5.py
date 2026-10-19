@@ -112,7 +112,18 @@ def generate(args):
     pipe = StableDiffusionXLPipeline.from_single_file(base, torch_dtype=torch.float16).to('cuda')
     pipe.scheduler = EulerAncestralDiscreteScheduler.from_config(pipe.scheduler.config)
     pipe.set_progress_bar_config(disable=True)
-    if args.lora: pipe.load_lora_weights(os.path.dirname(args.lora), weight_name=os.path.basename(args.lora))
+    if args.lora:
+        # diffusers 0.40.0's kohya-LoRA converter raises IndexError on this checkpoint's text-encoder-2
+        # weights (empty rank_dict) even though both lora_te1_*/lora_te2_* blocks are present and valid
+        # (verified via safetensors key dump). Use sd-scripts' own loader/merge path instead, which is
+        # known-correct for its own save format.
+        import sys
+        sys.path.insert(0, f'{os.path.dirname(os.path.abspath(__file__))}/sd-scripts')
+        from networks import lora as sds_lora
+        text_encoders = [pipe.text_encoder, pipe.text_encoder_2]
+        network, sd = sds_lora.create_network_from_weights(
+            1.0, args.lora, pipe.vae, text_encoders, pipe.unet, for_inference=True)
+        network.merge_to(text_encoders, pipe.unet, sd, torch.float16, 'cuda')
     fronts, man = train_fronts(); od = f'{OUT}/{args.tag}'; os.makedirs(od, exist_ok=True)
     jobs = [(f'fam__{fam.replace(" ", "_")}__{lay}', prompt(desc, lay), lay, SEEDS[:args.seeds], None)
             for fam, desc in FAMILIES for lay in LAYOUT]

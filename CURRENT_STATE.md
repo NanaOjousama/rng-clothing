@@ -2284,3 +2284,39 @@ Validation:
 - `validate_bucket_fisherman_navy16_template.py`: PASS.
 
 The earlier `bucket_fisherman_pt_frozen_01` PT shade-role proof is superseded for Fisherman shading authority. Its lesson remains useful, but the new source-golden path makes approved Fisherman pixels—not coarse PT shade roles—the visible shading authority.
+
+## Phase-5 LoRA pilot — 2026-10-19
+
+Three-arm SDXL LoRA pilot (fresh base, A40, `experiments/lora_sdxl_research/pod_phase5/`) **trained and
+evaluated**. Dataset `phase5_v1` (912 train / 82 holdout, 26 families) built and validated beforehand, 0 errors.
+
+Pitfalls hit and fixed (both now committed):
+- sd-scripts v0.12.0 rejects `validation_split` inside a dataset subset (dataset-level only, not a
+  validation-only folder) — dropped the holdout subset from `dataset_phase5.toml`; holdout hats are still
+  never trained on, judged only via generated images.
+- diffusers 0.40.0's `pipe.load_lora_weights` throws `IndexError` loading this checkpoint's text-encoder-2
+  weights (its own kohya-LoRA converter bug, not a bad checkpoint — verified both `lora_te1_*`/`lora_te2_*`
+  blocks are present and valid). `eval_phase5.py` now loads/merges LoRA via sd-scripts' own
+  `networks.lora.create_network_from_weights(..., for_inference=True)` + `network.merge_to(...)`, bypassing
+  diffusers' loader entirely.
+
+**Pilot verdict, judged by eye (not loss/metrics, per project rule)**: arm **C** (rank 32/alpha 16, **frozen**
+text encoders, cached TE outputs) is the clear and only usable arm. Arms A and B (trained text encoders,
+lr 2.5e-5, 4 epochs) mostly failed to learn the dataset format — striped/checkered backgrounds instead of
+solid, whole faces/bodies drawn instead of an isolated hat, broken four-view layouts. B_e2 (earlier
+checkpoint) no better — the TE-trained arms look unstable, not just undertrained. C reliably produces an
+isolated hat on a flat (if not exactly on-target-color) background with correct 2x2 F/R/L/B framing, and
+generalizes plausibly to held-out families (mushroom hat, crown, etc. holdout-only examples).
+
+Review sheets + notes published: `lora-reviews` branch, commit `bfa328f`,
+`lora_reviews/phase5_pilot_2026-10-19/` (front + four-view comparison grids across all arms, arm-C seed
+variety, arm-C holdout truth-vs-generation, NOTES.md with full writeup). No weights/data/source published.
+
+RunPod A40 pod `5kstuywlqnafya` stopped (EXITED) after pulling results — not billing. Volume `qlenaxj02c`
+keeps everything (dataset, base model, sd-scripts, all checkpoints, eval outputs).
+
+**Not yet done / next**: user review of the published sheets, then the full run (recommended: arm C's
+recipe — rank 32/alpha 16, frozen TE, cached TE outputs — extended to 16-20 epochs, cosine schedule).
+Do not spend full-run budget on the TE-trained recipe without a different schedule/LR first; at 4 epochs it
+actively hurt quality vs. not training the text encoders. ControlNet comparison stays a later, separate step
+(ticket per `PLAN_phase5.md`). 1024px stays open for later.
