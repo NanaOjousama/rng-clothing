@@ -102,6 +102,8 @@ pack_study/out/
 experiments/*/raw/
 # LoRA training datasets: regenerable from experiments/lora_sdxl_research/tools, built from third-party art
 experiments/lora_sdxl_research/dataset/
+# LoRA checkpoint backups pulled from RunPod: large binaries, not source
+experiments/lora_sdxl_research/lora_backups/
 
 # Local workspace organization (2026-10-14)
 # These are external/reference materials or Claude-created local worktrees,

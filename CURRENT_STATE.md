@@ -2320,3 +2320,84 @@ recipe — rank 32/alpha 16, frozen TE, cached TE outputs — extended to 16-20 
 Do not spend full-run budget on the TE-trained recipe without a different schedule/LR first; at 4 epochs it
 actively hurt quality vs. not training the text encoders. ControlNet comparison stays a later, separate step
 (ticket per `PLAN_phase5.md`). 1024px stays open for later.
+
+## Phase-5 pilot 2 (C2/C3) + isolation follow-up — 2026-10-19
+
+Short pilot testing arm C's recipe pushed further: **C2** = rank 32/alpha 16 (same as C), epochs 4->10.
+**C3** = rank 64/alpha 32, epochs 10. Both frozen TE / cached TE outputs, same as C.
+
+**Critical tooling bug found and fixed mid-pilot**: the eval script's LoRA-merge path
+(`create_network_from_weights(..., unet=pipe.unet)`) silently matched **0 U-Net modules** when `unet`
+was a diffusers `UNet2DConditionModel` — sd-scripts' saved keys use its own native SD-style module
+naming, which only matches its own `SdxlUNet2DConditionModel` class, never diffusers'. This affected
+every eval run after the first fix attempt (arms A, B, B_e2, C2, C3) and **invalidated the original
+"arm C wins" pilot-1 verdict's A/B/C comparison** (A/B never actually had their trained U-Net LoRA
+applied during eval; C's original pre-fix eval had used a different, working path and was unaffected).
+Final fix in `eval_phase5.py`: load a native `sdxl_model_util.load_models_from_sdxl_checkpoint(...)`
+U-Net, merge LoRA onto that via `networks.lora.create_network_from_weights(..., for_inference=True)` +
+`network.merge_to(...)`, then `sdxl_model_util.convert_sdxl_unet_state_dict_to_diffusers(...)` back into
+`pipe.unet`. Verified: "create LoRA for U-Net: 722 modules" (vs 0), 0 missing/unexpected keys on
+`load_state_dict`. All pilot-2 numbers below are from the corrected loader (arm C's own eval was also
+re-run under the fix as a consistency check — numbers matched the original).
+
+**Pilot-2 verdict (by eye): mixed, two-sided tradeoff.** Front layout (single sprite): C2/C3 are a real
+improvement over arm C — crisper detail, especially cap and flower crown; holdout generalization mostly
+good (2 clear misses: a headscarf as an orange glyph, an "animal hat"/party-hat family breaking into a
+garbled 4-panel grid instead of one sprite). **Four-view layout (2x2 F/R/L/B sheet): regressed badly** —
+noisy checkerboard-pattern backgrounds (not the training's solid background) and garbled panel structure
+in both C2 and C3, clearly worse than arm C's clean four-view output.
+
+**Isolation follow-up (same day, no retraining)**: C2 and C3 share the epoch count, so pilot 2 alone
+couldn't separate epoch-count from rank as the cause. Re-evaluated C3's own already-existing, never-scored
+epoch-4 checkpoint (`sdvhat_p5_pilot2_C3-000004.safetensors`, tag `p2_C3_e4`) — rank 64 but only 4 epochs,
+matching arm C's epoch count. **Result: also regressed on four-view**, same checkerboard/garbled pattern.
+So the four-view regression is not purely an epoch-count effect or purely a rank effect — *either* lever
+pushed above arm C's exact recipe (rank32/4ep) breaks four-view, consistent with four-view being crowded
+out by any extra capacity/training time the model spends on the front-layout majority instead.
+
+Published: `lora-reviews` commit `0873317` (pilot-2 sheets + NOTES) and `e2a06c9` (isolation follow-up,
+C3-epoch4 sheets). All pilot-2 checkpoints (C2 + C3, final + every epoch-2 intermediate, 10 total) backed
+up to the Steam Deck, sha256-verified against the pod, in
+`experiments/lora_sdxl_research/lora_backups/phase5_pilot2/` (not published). Network volume `qlenaxj02c`
+untouched throughout; all pods stopped after each run via a tested, exact-line-match watchdog with a
+safety timeout (an earlier watchdog draft had a self-matching grep bug — its own startup log line
+contained the done-marker substring, causing a false-positive stop mid-eval; fixed and verified before
+redeploy).
+
+## Phase-5 pilot 3 (D_balance: four-view upweighting) — 2026-10-19
+
+Verified first: the `phase5_v1` dataset is **already exactly 1:1** by raw image count (456 train front /
+456 train fourview, matching augmented counts too) — so the four-view regression above is not a raw-count
+imbalance. Working hypothesis instead: four-view cells render at 16px vs front's 32px (4x less pixel
+detail per view), so four-view carries a weaker training signal per image at equal counts.
+
+**D_balance experiment**: same recipe as C2 (rank 32/alpha 16, frozen TE, cached TE outputs, same
+optimizer/lr/seed), but the dataset was split into two subsets by layout via **symlinks only** (original
+`phase5_v1/train/1_sdvhat` folder never copied or modified) — front `num_repeats=1`, fourview
+`num_repeats=2`, doubling fourview's weight per epoch. Epochs cut 10->7 to hold total optimizer steps
+roughly level with C2 (2280 vs 2394 steps, +5%). Exact subset manifests (456 stems each) saved for
+reproducibility.
+
+**Result: four-view substantially recovered, not fully; front stays at C2 level — a genuine improvement
+to the tradeoff, not just a shift.** Metrics: fourview "empty"/noise score dropped from C2's 0.452/C3's
+0.507 to 0.041 (arm C's original: 0.0); background purity rose from ~0.88 (C2/C3) to 0.977 (arm C: 0.983).
+By eye: most families (mushroom hat, crown, helmet, party hat, cap) are back to a solid background
+instead of checkerboard noise; a few still regress (beret stays noisy; tricorn, cowboy hat, bucket hat,
+headscarves, animal hat show partial noise or an off-training-blue background hue). Front holdout IoU
+0.517, in the same band as C2/C3 (0.465-0.523), not degraded; same two known miss types recur (animal
+hat / party hat breaking into a garbled 4-panel grid) — not a new failure D_balance introduced.
+
+Cost: ~76 min GPU time (64 min train + 12 min eval), ~$0.75 at $0.59/hr A40 (secure cloud, CA-MTL-1),
+matching the pre-run estimate. Published: `lora-reviews` commit `b14d91b`
+(`lora_reviews/phase5_pilot3_D_balance_2026-10-19/`, includes the symlink-split manifests). All 7
+D_balance checkpoints backed up to the Steam Deck, sha256-verified, in
+`experiments/lora_sdxl_research/lora_backups/phase5_pilot3/pilot3_D_balance/`. Network volume untouched;
+all pods stopped.
+
+**Not yet done / next**: user review of the D_balance sheets together with pilot-2's. **No winner declared
+yet** across C / C2 / C3 / D_balance — awaiting user judgment, especially on four-direction consistency.
+Open question if pursued further: stronger fourview upweight (beyond 2x), or targeting the specific
+remaining failure families (beret especially) directly. CA-MTL-1 A40 capacity was intermittently very
+tight during this session (repeated "not enough free GPUs" / "no instances available" on both create and
+restart) despite the catalog reporting Low-but-available stock — expect to retry pod creation/restart
+several times as routine, not a sign of a real problem.

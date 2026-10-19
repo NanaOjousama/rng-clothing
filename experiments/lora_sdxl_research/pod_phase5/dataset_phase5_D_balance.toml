@@ -1,0 +1,27 @@
+# Phase-5 "D_balance" dataset: same phase5_v1 images as dataset_phase5.toml, split into two subsets by
+# layout so four-view can be given a higher num_repeats than front -- doubling its per-epoch weight to
+# test whether that recovers four-view structure without retraining from different source data.
+# Both subset dirs are symlink-only splits of the existing train folder (prepared on the pod at launch
+# time, never copying or modifying the original phase5_v1 dataset).
+[general]
+shuffle_caption = false
+caption_extension = ".txt"
+enable_bucket = false
+
+[[datasets]]
+resolution = [768, 768]
+batch_size = 4
+
+  [[datasets.subsets]]
+  image_dir = '/workspace/phase5/dataset/phase5_v1/train_split/front'
+  num_repeats = 1
+  flip_aug = false
+  color_aug = false
+  random_crop = false
+
+  [[datasets.subsets]]
+  image_dir = '/workspace/phase5/dataset/phase5_v1/train_split/fourview'
+  num_repeats = 2
+  flip_aug = false
+  color_aug = false
+  random_crop = false

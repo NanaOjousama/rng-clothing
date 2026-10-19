@@ -113,17 +113,42 @@ def generate(args):
     pipe.scheduler = EulerAncestralDiscreteScheduler.from_config(pipe.scheduler.config)
     pipe.set_progress_bar_config(disable=True)
     if args.lora:
-        # diffusers 0.40.0's kohya-LoRA converter raises IndexError on this checkpoint's text-encoder-2
-        # weights (empty rank_dict) even though both lora_te1_*/lora_te2_* blocks are present and valid
-        # (verified via safetensors key dump). Use sd-scripts' own loader/merge path instead, which is
-        # known-correct for its own save format.
+        # Two separate problems, fixed together:
+        # 1) diffusers 0.40.0's kohya-LoRA converter raises IndexError loading this checkpoint's
+        #    text-encoder-2 weights (empty rank_dict) even though lora_te1_*/lora_te2_* blocks are
+        #    present and valid (verified via a raw safetensors key dump).
+        # 2) sd-scripts' own create_network_from_weights(..., unet=pipe.unet) matches 0 U-Net modules
+        #    when given a *diffusers* UNet2DConditionModel: sd-scripts' LoRA keys are named against its
+        #    own SdxlUNet2DConditionModel (SD-style "input_blocks."/"output_blocks." naming), which does
+        #    not structurally match diffusers' "down_blocks."/"up_blocks." naming, so the match silently
+        #    finds nothing and the "merge" is a no-op (confirmed: "create LoRA for U-Net: 0 modules" in
+        #    every eval log, and C2/C3 eval outputs are byte-identical to each other despite different
+        #    rank/training -- neither had its U-Net LoRA applied).
+        # Fix: build a native sd-scripts SdxlUNet2DConditionModel from the same base checkpoint (its
+        # naming matches the saved LoRA keys), merge the LoRA onto *that*, convert its state dict back to
+        # diffusers naming (sd-scripts ships this exact converter), and load it into the diffusers pipe's
+        # U-Net. Text-encoder LoRA (when present) still merges directly into pipe.text_encoder{,_2} --
+        # those are plain transformers CLIP models and match sd-scripts' TE naming correctly already.
         import sys
         sys.path.insert(0, f'{os.path.dirname(os.path.abspath(__file__))}/sd-scripts')
         from networks import lora as sds_lora
+        from library import sdxl_model_util
+
         text_encoders = [pipe.text_encoder, pipe.text_encoder_2]
+        _, _, _, native_unet, _, _ = sdxl_model_util.load_models_from_sdxl_checkpoint(
+            'sdxl_base_v1-0', base, 'cpu')
+        native_unet.to('cuda')
+
         network, sd = sds_lora.create_network_from_weights(
-            1.0, args.lora, pipe.vae, text_encoders, pipe.unet, for_inference=True)
-        network.merge_to(text_encoders, pipe.unet, sd, torch.float16, 'cuda')
+            1.0, args.lora, pipe.vae, text_encoders, native_unet, for_inference=True)
+        network.merge_to(text_encoders, native_unet, sd, torch.float16, 'cuda')
+
+        converted = sdxl_model_util.convert_sdxl_unet_state_dict_to_diffusers(native_unet.state_dict())
+        missing, unexpected = pipe.unet.load_state_dict(converted, strict=False)
+        assert not missing and not unexpected, f"unet state_dict mismatch: missing={missing[:5]} unexpected={unexpected[:5]}"
+        pipe.unet.to('cuda', dtype=torch.float16)
+        del native_unet
+        torch.cuda.empty_cache()
     fronts, man = train_fronts(); od = f'{OUT}/{args.tag}'; os.makedirs(od, exist_ok=True)
     jobs = [(f'fam__{fam.replace(" ", "_")}__{lay}', prompt(desc, lay), lay, SEEDS[:args.seeds], None)
             for fam, desc in FAMILIES for lay in LAYOUT]

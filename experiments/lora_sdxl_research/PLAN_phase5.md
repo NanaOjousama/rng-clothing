@@ -78,12 +78,60 @@ undertraining. C reliably isolates a hat on a flat background in the correct 2x2
 generalizes plausibly to held-out families. Known gap even in C: background color drifts off the trained
 (0,0,255) per family (still flat/keyable, not exact) — worth tightening in the full run.
 
+## Pilot 2 results: C2 (rank32/10ep) vs C3 (rank64/10ep) — 2026-10-19
+
+Tested arm C's recipe pushed further in two ways: C2 = same rank 32/alpha 16, epochs 4->10. C3 = rank
+64/alpha 32, epochs 10. Both frozen TE / cached TE outputs, same as C.
+
+**Critical eval bug found and fixed**: the LoRA-merge path matched **0 U-Net modules** whenever `unet`
+passed to `create_network_from_weights` was a diffusers `UNet2DConditionModel` — sd-scripts' saved keys
+only match its own native SD-style-named `SdxlUNet2DConditionModel`. This silently affected every eval
+after the first bugfix attempt (arms A, B, B_e2, C2, C3), **invalidating the original pilot-1 "arm C
+wins" A/B/C comparison** (arm C's own original eval had used a different working path and was
+unaffected; A/B never actually got their trained U-Net LoRA applied). Fixed in `eval_phase5.py`: load a
+native `sdxl_model_util.load_models_from_sdxl_checkpoint(...)` U-Net, merge via
+`networks.lora.create_network_from_weights(..., for_inference=True)` + `network.merge_to(...)`, then
+`convert_sdxl_unet_state_dict_to_diffusers(...)` back into `pipe.unet`. Verified: 722 modules matched
+(vs 0), 0 missing/unexpected keys. Arm C's own eval was re-run under the fix as a consistency check and
+matched its original numbers.
+
+**Verdict, by eye** (`lora-reviews` commits `0873317`, `e2a06c9`): mixed, not a clean win. Front layout
+improved over arm C (crisper detail, esp. cap/flower crown; 2 clear holdout misses: an orange-glyph
+headscarf, an animal-hat/party-hat family breaking into a garbled 4-panel grid). **Four-view layout
+regressed badly** in both C2 and C3 — noisy checkerboard backgrounds and garbled panel structure, clearly
+worse than arm C. Isolation follow-up (re-evaluating C3's existing, never-scored epoch-4 checkpoint,
+i.e. rank64 at arm C's own 4-epoch count, no retraining) showed the **same regression**, so it's not
+purely an epoch-count or purely a rank effect — either lever pushed above arm C's exact recipe breaks
+four-view, consistent with four-view being crowded out by extra capacity/steps spent on the front-layout
+majority. All pilot-2 checkpoints backed up + sha256-verified locally (not published), network volume
+untouched.
+
+## Pilot 3 results: D_balance (four-view upweighting) — 2026-10-19
+
+Verified the dataset is already exactly 1:1 by raw count (456 train front / 456 train fourview) — the
+regression is not a raw-count imbalance. Hypothesis: four-view's 16px-per-view cells (vs front's 32px)
+carry a weaker training signal per image at equal counts.
+
+**D_balance**: C2's recipe, but the dataset split into two subsets by layout via symlinks only (original
+dataset untouched) — front `num_repeats=1`, fourview `num_repeats=2`. Epochs cut 10->7 to hold total
+steps roughly level with C2 (+5%). Exact subset manifests saved for reproducibility.
+
+**Result: four-view substantially recovered (not fully), front stays near C2 level — a genuine
+improvement to the tradeoff**, not just a shift. Fourview empty/noise score 0.041 (vs C2 0.452/C3 0.507,
+arm C 0.0); bg purity 0.977 (vs C2/C3 ~0.88, arm C 0.983). By eye: most families back to a solid
+background (mushroom hat, crown, helmet, party hat, cap); a few still regress (beret stays noisy;
+tricorn, cowboy hat, bucket hat, headscarves, animal hat show partial noise / off-hue background). Front
+holdout IoU 0.517, same band as C2/C3, not degraded; same two known miss types recur (not new). Cost:
+~76 min GPU, ~$0.75, matching the pre-run estimate. Published `lora-reviews` commit `b14d91b`. All 7
+checkpoints backed up + sha256-verified locally (not published), network volume untouched.
+
 ## Next
-1. **user review** of the published pilot sheets (done: published; awaiting verdict)
-2. full run only after review — recommended recipe: arm C's config (rank 32/alpha 16, frozen TE, cached TE
-   outputs), extended to 16-20 epochs, cosine schedule. Do not spend full-run budget retrying the
-   TE-trained recipe without a different schedule/LR — it underperformed not training the TEs at all here.
-3. ControlNet comparison later: a pretrained SDXL ControlNet with a **2x2 four-view conditioning sheet in the output
+1. **user review** of all pilot sheets together (C / C2 / C3 / D_balance) — **no winner declared yet**,
+   especially on four-direction consistency; awaiting verdict before any further training.
+2. If pursuing D_balance further: stronger fourview upweight (beyond 2x), or target the specific
+   remaining failure families (beret especially) directly, rather than a blanket rebalance.
+3. Full run (beyond pilot scale) only after a recipe is picked by the user from the above.
+4. ControlNet comparison later: a pretrained SDXL ControlNet with a **2x2 four-view conditioning sheet in the output
    layout** (never a single-view control against a four-view prompt — the failed T2I-adapter mismatch)
-4. 1024 px stays open for a later experiment
+5. 1024 px stays open for a later experiment
 5. consider tightening background-color fidelity for the full run (arm C drifted off-target per family)
