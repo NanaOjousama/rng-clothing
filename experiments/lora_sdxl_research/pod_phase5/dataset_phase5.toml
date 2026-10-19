@@ -1,0 +1,25 @@
+# Phase-5 dataset for sd-scripts v0.12.0 (built + validated on the Deck: tools/build_dataset_phase5.py,
+# tools/check_dataset_phase5.py).  One dataset, two layouts (front 32-px cells / four-view 16-px cells), 768x768,
+# solid background (0, 0, 255).  num_repeats 1 everywhere: balance is by selection, never by repetition.
+# The per-family holdout is the validation subset (deterministic validation loss, never trained on).
+[general]
+shuffle_caption = false
+caption_extension = ".txt"
+enable_bucket = false
+
+[[datasets]]
+resolution = [768, 768]
+batch_size = 4
+validation_seed = 20261018
+
+  [[datasets.subsets]]
+  image_dir = '/workspace/phase5/dataset/phase5_v1/train/1_sdvhat'
+  num_repeats = 1
+  flip_aug = false
+  color_aug = false
+  random_crop = false
+
+  [[datasets.subsets]]
+  image_dir = '/workspace/phase5/dataset/phase5_v1/holdout'
+  num_repeats = 1
+  validation_split = 1.0

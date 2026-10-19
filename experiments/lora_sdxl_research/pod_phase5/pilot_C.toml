@@ -1,0 +1,34 @@
+# Phase-5 pilot arm C: rank 32, U-Net only (the phase-4 choice), text-encoder outputs cached.  B vs C isolates
+# whether training the text encoders helps on the corrected captions.
+dataset_config = '/workspace/phase5/configs/dataset_phase5.toml'
+output_dir = '/workspace/phase5/runs/pilot_C'
+output_name = 'sdvhat_p5_pilot_C'
+logging_dir = '/workspace/phase5/runs/pilot_C/logs'
+log_with = 'tensorboard'
+
+network_module = 'networks.lora'
+network_dim = 32
+network_alpha = 16
+unet_lr = 1e-4
+network_train_unet_only = true
+cache_text_encoder_outputs = true
+cache_text_encoder_outputs_to_disk = true
+
+optimizer_type = 'AdamW8bit'
+lr_scheduler = 'constant_with_warmup'
+lr_warmup_steps = 0.05
+max_train_epochs = 4
+save_every_n_epochs = 1
+min_snr_gamma = 5
+seed = 20261018
+
+mixed_precision = 'bf16'
+save_precision = 'bf16'
+sdpa = true
+no_half_vae = true
+gradient_checkpointing = true
+cache_latents = true
+cache_latents_to_disk = true
+max_data_loader_n_workers = 2
+persistent_data_loader_workers = true
+save_model_as = 'safetensors'
