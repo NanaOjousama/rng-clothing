@@ -1,0 +1,122 @@
+{
+ "base": {
+  "front": {
+   "n": 8,
+   "empty_rate": 0.125,
+   "holdout_iou": null,
+   "novelty_mean": 0.572,
+   "copies(>=0.93)": 0,
+   "grid_dev": 48.724,
+   "bg_purity": 0.776,
+   "colours": 64.75
+  },
+  "fourview": {
+   "n": 8,
+   "empty_rate": 0.25,
+   "holdout_iou": null,
+   "novelty_mean": 0.485,
+   "copies(>=0.93)": 0,
+   "grid_dev": 42.281,
+   "bg_purity": 0.994,
+   "colours": 232.125,
+   "views_ok_rate": 1.0,
+   "lr_iou": 0.614
+  }
+ },
+ "A": {
+  "front": {
+   "n": 73,
+   "empty_rate": 0.301,
+   "holdout_iou": 0.407,
+   "novelty_mean": 0.618,
+   "copies(>=0.93)": 0,
+   "grid_dev": 49.646,
+   "bg_purity": 0.827,
+   "colours": 54.685
+  },
+  "fourview": {
+   "n": 73,
+   "empty_rate": 0.356,
+   "holdout_iou": 0.304,
+   "novelty_mean": 0.449,
+   "copies(>=0.93)": 0,
+   "grid_dev": 40.81,
+   "bg_purity": 0.94,
+   "colours": 178.63,
+   "views_ok_rate": 1.0,
+   "lr_iou": 0.655
+  }
+ },
+ "B": {
+  "front": {
+   "n": 73,
+   "empty_rate": 0.356,
+   "holdout_iou": 0.376,
+   "novelty_mean": 0.581,
+   "copies(>=0.93)": 0,
+   "grid_dev": 48.237,
+   "bg_purity": 0.764,
+   "colours": 57.671
+  },
+  "fourview": {
+   "n": 73,
+   "empty_rate": 0.384,
+   "holdout_iou": 0.302,
+   "novelty_mean": 0.458,
+   "copies(>=0.93)": 0,
+   "grid_dev": 43.067,
+   "bg_purity": 0.906,
+   "colours": 194.014,
+   "views_ok_rate": 1.0,
+   "lr_iou": 0.671
+  }
+ },
+ "C": {
+  "front": {
+   "n": 73,
+   "empty_rate": 0.014,
+   "holdout_iou": 0.498,
+   "novelty_mean": 0.726,
+   "copies(>=0.93)": 0,
+   "grid_dev": 8.874,
+   "bg_purity": 0.984,
+   "colours": 22.123
+  },
+  "fourview": {
+   "n": 73,
+   "empty_rate": 0.0,
+   "holdout_iou": 0.425,
+   "novelty_mean": 0.702,
+   "copies(>=0.93)": 0,
+   "grid_dev": 5.17,
+   "bg_purity": 0.996,
+   "colours": 49.082,
+   "views_ok_rate": 1.0,
+   "lr_iou": 0.828
+  }
+ },
+ "B_e2": {
+  "front": {
+   "n": 16,
+   "empty_rate": 0.375,
+   "holdout_iou": null,
+   "novelty_mean": 0.587,
+   "copies(>=0.93)": 0,
+   "grid_dev": 43.709,
+   "bg_purity": 0.422,
+   "colours": 50.375
+  },
+  "fourview": {
+   "n": 16,
+   "empty_rate": 0.562,
+   "holdout_iou": null,
+   "novelty_mean": 0.477,
+   "copies(>=0.93)": 0,
+   "grid_dev": 37.199,
+   "bg_purity": 0.66,
+   "colours": 171.312,
+   "views_ok_rate": 1.0,
+   "lr_iou": 0.752
+  }
+ }
+}
