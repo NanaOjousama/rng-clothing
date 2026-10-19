@@ -65,4 +65,6 @@ python eval_phase5.py --sheets > eval/sheets.log 2>&1
 st "DONE"
 for i in $(seq 60); do [ -f "$P/PULLED" ] && exit 0; sleep 60; done
 st "results not pulled in 60 min: stopping pod"
+# RUNPOD_* are set for the container's PID 1, not exported into SSH / nohup shells
+for v in RUNPOD_POD_ID RUNPOD_API_KEY; do export "$(tr '\0' '\n' < /proc/1/environ | grep "^$v=")"; done
 command -v runpodctl >/dev/null && runpodctl stop pod "$RUNPOD_POD_ID"

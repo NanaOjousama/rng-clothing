@@ -19,9 +19,9 @@ TORCH_BEFORE=$(python -c 'import torch; print(torch.__version__)')
 if [ ! -f venv/.sds_installed ]; then
     # requirements.txt has no torch pin; constrain to the image's torch so pip cannot swap it
     echo "torch==$TORCH_BEFORE" > /tmp/torch_constraint.txt
-    pip install -q -c /tmp/torch_constraint.txt -r sd-scripts/requirements.txt
+    # requirements.txt ends with '-e .' (the sd-scripts package itself): pip must run from inside the checkout
+    (cd sd-scripts && pip install -q -c /tmp/torch_constraint.txt -r requirements.txt)
     pip install -q -c /tmp/torch_constraint.txt peft tensorboard
-    pip install -q -c /tmp/torch_constraint.txt -e sd-scripts 2>/dev/null || true
     touch venv/.sds_installed
 fi
 python - <<'EOF'
