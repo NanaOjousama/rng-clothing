@@ -20,19 +20,39 @@ backgrounds (not the solid training background) and a garbled panel structure, c
 four-view output which stayed clean (solid background, correct 2x2 quadrants). Witch hat four-view is
 unrecognizable in both.
 
-So right now: extending epochs (and/or raising rank -- C2 and C3 share the epoch count, so this pilot alone
-doesn't separate which factor caused it) helped the front layout's detail but broke the four-view layout.
-Not declaring a winner from this pilot. Next experiment should isolate epoch-count from rank, and
-specifically check whether four-view-layout training signal is being crowded out (relatively less of the
-dataset, or converging slower, so extra epochs/capacity overfit toward front almost exclusively).
+## Follow-up: isolating epoch-count from rank (same day)
+
+C2 and C3 share the epoch count (10), so pilot 2 alone couldn't tell whether the four-view regression
+came from more epochs, more rank, or both. Rather than retrain, we re-evaluated a checkpoint that already
+existed and had never been scored: **C3's own epoch-4 intermediate save** (`sdvhat_p5_pilot2_C3-000004.safetensors`,
+tag `p2_C3_e4`) -- rank 64/alpha 32, but only 4 epochs, i.e. the same epoch count as the original arm C,
+with only rank changed. (No new training was run; this checkpoint was already backed up and sha256-verified
+before this eval.)
+
+**Result: p2_C3_e4 also shows the four-view regression** -- same noisy checkerboard background, same garbled
+panel structure, clearly worse than arm C, visible across every held-out family in `p2_C3_e4_fourview_holdout.png`.
+So the regression is **not** purely an epoch-count effect: raising rank alone (even at arm C's original 4
+epochs) is sufficient to break four-view. Combined with C2 (rank unchanged, epochs raised, four-view also
+regressed), the pattern is that *either* lever pushed above arm C's exact recipe breaks four-view -- consistent
+with the four-view layout being a minority of the training captions and getting crowded out by any extra
+capacity or training time that the model spends overfitting the front-layout majority instead. Front-view
+quality for p2_C3_e4 is comparable to C2/C3 (crisper detail, same kind of occasional holdout miss).
+
+Still not declaring a winner -- arm C (rank32/4ep) remains the only recipe tested so far with a clean
+four-view output. Next experiment, not yet started: directly test whether rebalancing/upweighting four-view
+captions in the dataset prevents the regression even at higher rank or epoch count.
 
 ## Files
-- `compare_front_s101.png`, `compare_fourview_s101.png` -- all checkpoints (base, A, B, C, B_e2, p2_C2, p2_C3)
-  side by side, 8 families, seed 101
-- `p2_C2_front_holdout.png`, `p2_C3_front_holdout.png` -- held-out hats: ground truth vs generation, front layout
-- `p2_C2_fourview_holdout.png`, `p2_C3_fourview_holdout.png` -- same, four-view layout (shows the regression)
-- `p2_C2_front_seeds.png`, `p2_C3_front_seeds.png` -- seed variety (4 seeds) per family, front layout
+- `compare_front_s101.png`, `compare_fourview_s101.png` -- all checkpoints (base, A, B, C, B_e2, p2_C2, p2_C3,
+  **p2_C3_e4**) side by side, 8 families, seed 101
+- `p2_C2_front_holdout.png`, `p2_C3_front_holdout.png`, `p2_C3_e4_front_holdout.png` -- held-out hats: ground
+  truth vs generation, front layout
+- `p2_C2_fourview_holdout.png`, `p2_C3_fourview_holdout.png`, `p2_C3_e4_fourview_holdout.png` -- same, four-view
+  layout (shows the regression in all three)
+- `p2_C2_front_seeds.png`, `p2_C3_front_seeds.png`, `p2_C3_e4_front_seeds.png` -- seed variety (4 seeds) per
+  family, front layout
 
 Images and notes only -- no weights, no training data, no source art, per CLAUDE.md. The actual checkpoints
-(C2 and C3, final + every epoch-2 intermediate) are backed up locally to the Steam Deck, verified by sha256
-against the pod, in `experiments/lora_sdxl_research/lora_backups/phase5_pilot2/` (not published anywhere).
+(C2 and C3, final + every epoch-2 intermediate, including the C3 epoch-4 save evaluated here) are backed up
+locally to the Steam Deck, verified by sha256 against the pod, in
+`experiments/lora_sdxl_research/lora_backups/phase5_pilot2/` (not published anywhere).
