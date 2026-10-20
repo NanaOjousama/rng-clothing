@@ -1,0 +1,56 @@
+[
+ {
+  "family": "witch hat",
+  "seed": 101,
+  "baseline_views_ok": true,
+  "baseline_lr_iou": 0.872,
+  "template_views_ok": true,
+  "template_lr_iou": 0.883,
+  "template_front_anchor_iou": 0.193
+ },
+ {
+  "family": "witch hat",
+  "seed": 102,
+  "baseline_views_ok": true,
+  "baseline_lr_iou": 0.805,
+  "template_views_ok": true,
+  "template_lr_iou": 0.807,
+  "template_front_anchor_iou": 0.513
+ },
+ {
+  "family": "straw sun hat",
+  "seed": 101,
+  "baseline_views_ok": true,
+  "baseline_lr_iou": 0.91,
+  "template_views_ok": true,
+  "template_lr_iou": 0.851,
+  "template_front_anchor_iou": 0.118
+ },
+ {
+  "family": "straw sun hat",
+  "seed": 102,
+  "baseline_views_ok": true,
+  "baseline_lr_iou": 0.816,
+  "template_views_ok": true,
+  "template_lr_iou": 0.923,
+  "template_front_anchor_iou": 0.49
+ },
+ {
+  "family": "cowboy hat",
+  "seed": 101,
+  "baseline_views_ok": true,
+  "baseline_lr_iou": 1.0,
+  "template_views_ok": true,
+  "template_lr_iou": 0.947,
+  "template_front_anchor_iou": 0.161
+ },
+ {
+  "family": "cowboy hat",
+  "seed": 102,
+  "baseline_views_ok": true,
+  "baseline_lr_iou": 0.881,
+  "template_views_ok": true,
+  "template_lr_iou": 0.883,
+  "template_front_anchor_iou": 0.095
+ }
+]
