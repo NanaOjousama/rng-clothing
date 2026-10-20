@@ -1,0 +1,26 @@
+{
+ "p4_D_balance_3x": {
+  "front": {
+   "n": 73,
+   "empty_rate": 0.0,
+   "holdout_iou": 0.525,
+   "novelty_mean": 0.751,
+   "copies(>=0.93)": 0,
+   "grid_dev": 8.34,
+   "bg_purity": 0.995,
+   "colours": 27.041
+  },
+  "fourview": {
+   "n": 73,
+   "empty_rate": 0.37,
+   "holdout_iou": 0.325,
+   "novelty_mean": 0.653,
+   "copies(>=0.93)": 0,
+   "grid_dev": 7.305,
+   "bg_purity": 0.908,
+   "colours": 75.041,
+   "views_ok_rate": 1.0,
+   "lr_iou": 0.856
+  }
+ }
+}
