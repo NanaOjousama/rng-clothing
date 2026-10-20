@@ -1,0 +1,26 @@
+# Phase-5 "D_balance_3x" dataset: same phase5_v1 images and same front/fourview symlink split as
+# dataset_phase5_D_balance.toml, but fourview num_repeats raised from 2 to 3 to test a stronger
+# four-view upweight. Reuses the existing train_split/{front,fourview} symlink dirs (built once by
+# build_split.py for D_balance) -- never copies or modifies the original phase5_v1 dataset.
+[general]
+shuffle_caption = false
+caption_extension = ".txt"
+enable_bucket = false
+
+[[datasets]]
+resolution = [768, 768]
+batch_size = 4
+
+  [[datasets.subsets]]
+  image_dir = '/workspace/phase5/dataset/phase5_v1/train_split/front'
+  num_repeats = 1
+  flip_aug = false
+  color_aug = false
+  random_crop = false
+
+  [[datasets.subsets]]
+  image_dir = '/workspace/phase5/dataset/phase5_v1/train_split/fourview'
+  num_repeats = 3
+  flip_aug = false
+  color_aug = false
+  random_crop = false
